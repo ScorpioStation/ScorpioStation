@@ -68,7 +68,6 @@
 			basedecal = (occupant ? "[icon_decal_root]-goliath" : "[icon_decal_root]-goliath-open")
 		else
 			basedecal = (occupant ? "[icon_decal_root]-goliath_full" : "[icon_decal_root]-goliath_full-open")
-			
 		overlays += create_overlay(basedecal, decal_layer = 2)
 
 /obj/mecha/working/ripley/firefighter

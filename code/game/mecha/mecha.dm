@@ -158,11 +158,9 @@
 ////////////////////////
 // See mecha_decals.dm for more info.
 
-/obj/mecha/update_icon(redraw_cache = FALSE)
+/obj/mecha/update_icon()
 	. = ..()
 	overlays.Cut()
-	if(redraw_cache)
-		redraw_cache()
 	icon_state = occupant ? "[base_icon_state]" : "[base_icon_state]-open"
 	if(cosmetics_enabled)
 		icon = mech_icon_cache
@@ -318,7 +316,8 @@
 			return TRUE
 		if(checked_decal.decal_layer > decal.decal_layer)
 			decals.Insert(decals.Find(checked_decal), decal)
-			update_icon(redraw_cache = TRUE)
+			redraw_cache()
+			update_icon()
 			return TRUE
 	decals.Add(decal)
 	redraw_cache()
