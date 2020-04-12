@@ -300,10 +300,9 @@
 		return MA
 	return
 
-#undef FORCE_NONE
 #undef FORCE_OCCUPIED
-#undef FORCE_UNOCCUPIED
 #undef FORCE_BROKEN
+#undef FORCE_OPEN
 #undef NO_COLOUR
 
 // Add decal to the list and order it according to its layer.
