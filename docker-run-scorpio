@@ -1,0 +1,8 @@
+#!/bin/bash
+docker run \
+--name=scorpio_station \
+--publish 7777:7777 \
+--rm \
+-v ${PWD}/config:/scorpio/config:ro \
+-v ${PWD}/data:/scorpio/data \
+scorpio:latest
