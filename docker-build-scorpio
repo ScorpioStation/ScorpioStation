@@ -1,0 +1,4 @@
+#!/bin/bash
+GIT_HASH="$(git log | head -1 | awk -e '{print $2}' | head -c 12)"
+docker build -t scorpio:${GIT_HASH} -f Dockerfile .
+docker image tag scorpio:${GIT_HASH} scorpio:latest
