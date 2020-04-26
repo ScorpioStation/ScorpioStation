@@ -7,6 +7,18 @@ ENV BYOND_PORT=7777
 EXPOSE $BYOND_PORT
 
 #-------------------------------------------------------------------------------
+# Install a MariaDB development package for a shared library we'll need later
+#-------------------------------------------------------------------------------
+FROM base as mariadb_library
+
+#
+# Install Debian packages
+#
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libmariadb-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+#-------------------------------------------------------------------------------
 # Build ScorpioStation from the DreamMaker code using BYOND
 #-------------------------------------------------------------------------------
 FROM base as byond_build
@@ -57,6 +69,7 @@ COPY --from=byond_build /byond /byond
 COPY --from=byond_build /scorpio/paradise.dmb /scorpio/paradise.dmb
 COPY --from=byond_build /scorpio/paradise.rsc /scorpio/paradise.rsc
 COPY --from=rust-g:latest /rust-g/target/release/librust_g.so /scorpio/librust_g.so
+COPY --from=mariadb_library /usr/lib/i386-linux-gnu/libmariadb.so /scorpio/libmariadb.so
 
 #
 # Configure the runtime environment for the docker image

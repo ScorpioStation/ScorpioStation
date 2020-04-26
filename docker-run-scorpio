@@ -1,5 +1,8 @@
 #!/bin/bash
+# run the Scorpio Station server in a container
+
 docker run \
+--link scorpio_db:scorpio_db \
 --name=scorpio_station \
 --publish 7777:7777 \
 --rm \
