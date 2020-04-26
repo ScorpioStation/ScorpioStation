@@ -1,0 +1,34 @@
+#!/bin/bash
+# initialize a MariaDB container to act as a database for Scorpio Station
+
+# generate some secure passwords
+DB_VERSION="11"
+MYSQL_DATABASE="scorpio"
+MYSQL_PASSWORD=$(dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64 | head -c 32)
+MYSQL_ROOT_PASSWORD=$(dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64 | head -c 32)
+MYSQL_USER="ss13"
+
+# create the container and import the Scorpio Station database schema
+docker run \
+-e MYSQL_DATABASE="${MYSQL_DATABASE}" \
+-e MYSQL_PASSWORD="${MYSQL_PASSWORD}" \
+-e MYSQL_ROOT_PASSWORD="${MYSQL_ROOT_PASSWORD}" \
+-e MYSQL_USER="${MYSQL_USER}" \
+--name=scorpio_db \
+--publish 3306:3306 \
+-v ${PWD}/SQL/scorpio:/docker-entrypoint-initdb.d:ro \
+mariadb:10 &
+
+# move the old dbconfig.txt to a backup file just in case...
+mv ${PWD}/config/dbconfig.txt ${PWD}/config/dbconfig.txt.bak
+
+# generate an appropriate dbconfig.txt configuration file
+echo "# MYSQL_ROOT_PASSWORD ${MYSQL_ROOT_PASSWORD}" >> ${PWD}/config/dbconfig.txt
+echo "SQL_ENABLED" >> ${PWD}/config/dbconfig.txt
+echo "DB_VERSION ${DB_VERSION}" >> ${PWD}/config/dbconfig.txt
+echo "ADDRESS scorpio_db" >> ${PWD}/config/dbconfig.txt
+echo "PORT 3306" >> ${PWD}/config/dbconfig.txt
+echo "FEEDBACK_DATABASE ${MYSQL_DATABASE}" >> ${PWD}/config/dbconfig.txt
+echo "FEEDBACK_TABLEPREFIX" >> ${PWD}/config/dbconfig.txt
+echo "FEEDBACK_LOGIN ${MYSQL_USER}" >> ${PWD}/config/dbconfig.txt
+echo "FEEDBACK_PASSWORD ${MYSQL_PASSWORD}" >> ${PWD}/config/dbconfig.txt

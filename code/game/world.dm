@@ -429,9 +429,9 @@ GLOBAL_VAR_INIT(failed_old_db_connections, 0)
 
 /hook/startup/proc/connectDB()
 	if(!setup_database_connection())
-		log_world("Your server failed to establish a connection with the feedback database.")
+		log_world("Your server failed to establish a connection with the [sqlfdbkdb] database.")
 	else
-		log_world("Feedback database connection established.")
+		log_world("Connection established to [sqlfdbkdb] database.")
 	return 1
 
 /proc/setup_database_connection()
