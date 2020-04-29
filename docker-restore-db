@@ -1,8 +1,0 @@
-#!/bin/bash
-# restore the MariaDB running in the container from a backup
-
-# compute the things we need to manage the backup
-MYSQL_ROOT_PASSWORD=$(cat ${PWD}/config/dbconfig.txt | head -1 | awk -e '{print $3}')
-
-# restore from the backup dump
-docker exec -i scorpio_db bash -c "exec mysql -uroot -p${MYSQL_ROOT_PASSWORD}" <"$1"

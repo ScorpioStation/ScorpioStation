@@ -1,9 +1,0 @@
-#!/bin/bash
-# generate a backup of the MariaDB running in the container
-
-# compute the things we need to manage the backup
-MYSQL_ROOT_PASSWORD=$(cat ${PWD}/config/dbconfig.txt | head -1 | awk -e '{print $3}')
-TIMESTAMP=$(date +%s)
-
-# generate the backup dump
-docker exec scorpio_db bash -c "exec mysqldump -uroot -p${MYSQL_ROOT_PASSWORD} --databases scorpio" > scorpio_db-backup-${TIMESTAMP}.sql
