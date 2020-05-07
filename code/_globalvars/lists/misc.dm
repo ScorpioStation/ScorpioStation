@@ -37,12 +37,12 @@ GLOBAL_LIST_INIT(restricted_camera_networks, list(
 GLOBAL_LIST_INIT(ruin_landmarks, list())
 
 GLOBAL_LIST_INIT(round_end_sounds, list(
-		'sound/AI/newroundsexy.ogg' = 2.3 SECONDS,
-		'sound/misc/apcdestroyed.ogg' = 3 SECONDS,
-		'sound/misc/bangindonk.ogg' = 1.6 SECONDS,
-		'sound/goonstation/misc/newround1.ogg' = 6.9 SECONDS,
-		'sound/goonstation/misc/newround2.ogg' = 14.8 SECONDS
-		))  // Maps available round end sounds to their duration
+	'sound/roundend/its_only_game.ogg' = 3.9 SECONDS,
+	'sound/roundend/nothing_works.ogg' = 7.4 SECONDS,
+	'sound/roundend/shot_out_of_a_cannon.ogg' = 15.0 SECONDS,
+	'sound/roundend/thats_teamwork.ogg' = 1.3 SECONDS,
+	'sound/roundend/youre_gonna_die_clown.ogg' = 8.0 SECONDS,
+	))  // Maps available round end sounds to their duration
 
 GLOBAL_LIST_INIT(cooking_recipe_types, list(
 	RECIPE_MICROWAVE = /datum/recipe/microwave,
