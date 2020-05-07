@@ -212,22 +212,6 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 	sleep(1)
 
 	initializations_finished_with_no_players_logged_in = initialized_tod < REALTIMEOFDAY - 10
-
-	// query the DB once every five minutes to keep the connection alive
-	if(GLOB.dbcon.IsConnected())
-		spawn while(1)
-			log_and_message_admins("Keeping MySQL Alive...")
-			var/DBQuery/query = GLOB.dbcon.NewQuery("SELECT 1")
-			query.Execute()
-			var/db_constant = 0
-			while(query.NextRow())
-				db_constant = query.item[1]
-			if(db_constant != "1")
-				log_and_message_admins("Houston, we have a problem... [db_constant]")
-			sleep(3000)
-	else
-		log_and_message_admins("MySQL not connected. Will not execute heartbeat queries.")
-
 	// Loop.
 	Master.StartProcessing(0)
 
