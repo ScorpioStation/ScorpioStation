@@ -374,7 +374,7 @@
 	return 0
 
 // Living mobs use can_inject() to make sure that the mob is not syringe-proof in general.
-/mob/living/proc/can_inject()
+/mob/living/proc/can_inject(mob/user, error_msg, target_zone, penetrate_thick)
 	return TRUE
 
 /mob/living/is_injectable(mob/user, allowmobs = TRUE)
@@ -405,6 +405,8 @@
 			C.reagents.clear_reagents()
 			QDEL_LIST(C.reagents.addiction_list)
 			C.reagents.addiction_threshold_accumulated.Cut()
+
+		QDEL_LIST(C.processing_patches)
 
 // rejuvenate: Called by `revive` to get the mob into a revivable state
 // the admin "rejuvenate" command calls `revive`, not this proc.
