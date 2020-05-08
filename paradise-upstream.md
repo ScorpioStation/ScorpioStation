@@ -28,6 +28,32 @@ Changelog for changes we incorporate from upstream (Paradise Station).
     * Fixes constructs not being able to teleport using teleport runes.
     * Fixes constructs not being able to be teleported by the Rite of Joined Souls rune.
     * Nuking the station won't cause runtimes anymore. People can now also walk after being nuked and living
+* Paradise #[13181](https://github.com/ParadiseSS13/Paradise/pull/13286): fixes smoking and similar incremental dosage systems for addiction
+    * Changes the way reagents are processed for addiction
+        * Adds `/datum/reagent/proc/sate_addiction` to handle getting a fix for your addiction
+* Paradise #[13286](https://github.com/ParadiseSS13/Paradise/pull/13286): Nanopaste resizeing (w_class)
+    * Changes Nanopaste to a tiny item, so it fits more appropriately
+    * Adds `w_class = WEIGHT_CLASS_TINY` to `/obj/item/stack/nanopaste`
+* Paradise #[13308](https://github.com/ParadiseSS13/Paradise/pull/13308): Sprite update to Lumi's vox fluff
+    * Sprite change for fluff item
+    * Changes `/obj/item/clothing/under/fluff/voxbodysuit` to `/obj/item/clothing/under/fluff/kikeridress`
+* Paradise #[13346](https://github.com/ParadiseSS13/Paradise/pull/13346): Removes AI notification on pAI hacking doors
+    * The AI no longer receives a notice that a pAI is hacking a door
+        * Logic was removed from `code/modules/mob/living/silicon/pai/software_modules.dm`
+* Paradise #[13284](https://github.com/ParadiseSS13/Paradise/pull/13284): Deconstructing and mice biting wires is now put in the investigation log
+    * Adds investigate logging calls for wire deconstruction
+* Paradise #[12674](https://github.com/ParadiseSS13/Paradise/pull/12674): Minor cargo supply crate pathing change
+    * Moves the "Hydroponics Watertank Crate" into the "Food and Livestock" section next to the rest of the hydroponics gear
+    * Simple re-path from `/datum/supply_packs/misc/hydroponics/hydrotank` to `/datum/supply_packs/organic/hydroponics/hydrotank`
+* Paradise #[12726](https://github.com/ParadiseSS13/Paradise/pull/12726): Added CC Stamp to Navy Officer's backpacks
+    * Adds a `/obj/item/stamp/centcom` to Navy Officer's backpack on spawn
+* Paradise #[13362](https://github.com/ParadiseSS13/Paradise/pull/13362): CI Hotfix
+    * Improves code quality in `code/modules/customitems/item_defines.dm`
+* Paradise #[13062](https://github.com/ParadiseSS13/Paradise/pull/13062): Patch rework
+    * Patches no longer instantly heal, but apply slowly over time.
+    * Adds new auto-mender device that can apply medicine to patients in a rapid manner
+    * Creates a `safe_chem_applicator_list` to control what can go in a non-emagged applicator
+    * Note: This is a large changeset and time constraints prevented a thorough code review
 * Paradise #[13368](https://github.com/ParadiseSS13/Paradise/pull/13368): Fixes the crossbow's cell being un-removable with a screwdriver
     * Fixes bug where screwdriver cannot remove cell from crossbow
     * Refactors screwdriver action logic to `/obj/item/gun/throw/crossbow/screwdriver_act`
