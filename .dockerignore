@@ -15,7 +15,6 @@
 /.gitignore
 /.travis.yml
 /appveyor.yml
-/COPYING
 /docker-build-scorpio
 /docker-init-db
 /docker-run-scorpio
@@ -24,6 +23,7 @@
 /libmysql.dll
 /LICENSE-AGPL3.txt
 /LICENSE-CC-BY-NC-SA.txt
+/LICENSE-CC-BY-SA.txt
 /LICENSE-GPL3.txt
 /paradise-upstream.md
 /README.md

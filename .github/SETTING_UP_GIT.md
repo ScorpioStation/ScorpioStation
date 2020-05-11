@@ -9,7 +9,7 @@ package manager, whatever that may be.
 
 ## Windows user
 ## Git-SCM
-So you want to start contributing to Paradise? Where, well do you start?
+So you want to start contributing to Scorpio? Where, well do you start?
 First off, you will need some tools to work with Git, the
 [Version Control System](https://en.wikipedia.org/wiki/Version_control)
 that we operate off. There are many choices out there for dealing with Git,

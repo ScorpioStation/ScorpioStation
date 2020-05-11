@@ -32,7 +32,7 @@ This section is for listing the contributors to NanoUI.
 NanoUI is licensed under AGPLv3. This applies to it's serverside `DM` code as well as it's
 clientside `JavaScript` and `LESS` code. The file `nano/images/nanotrasen.svg` is licensed
 under CC 3.0 BY-SA, and was created by Neersighted. All other image files in the
-`nano/images/` directory are subject to the standard image license applied to the Paradise
+`nano/images/` directory are subject to the standard image license applied to the Scorpio
 repository icons.
 
 ## Folder Rundown
@@ -74,7 +74,7 @@ as less complicated.
 
 Any LESS file that is prefixed with the `_` character will be ignored during compilation.
 These files are still included, however, via `@import`, view the file
-[`nanoui.less`](http://github.com/ParadiseSS13/Paradise/blob/master/nano/styles/nanoui.less) to see how this works.
+[`nanoui.less`](nano/styles/nanoui.less) to see how this works.
 
 
 ### /templates

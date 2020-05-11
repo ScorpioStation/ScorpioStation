@@ -1,10 +1,10 @@
 /datum/map/metastation
 	name = "MetaStation"
-	full_name = "NSS Cerebron"
+	full_name = "ARS Scorpius"
 
-	station_name  = "NSS Cerebron"
-	station_short = "Cerebron"
-	dock_name     = "NAS Trurl"
-	company_name  = "Nanotrasen"
-	company_short = "NT"
-	starsys_name  = "Epsilon Eridani "
+	station_name  = "ARS Scorpius"
+	station_short = "Scorpius"
+	dock_name     = "ACS Cephalon"
+	company_name  = "Ark-Soft"
+	company_short = "AS"
+	starsys_name  = "Tau Scorpii"

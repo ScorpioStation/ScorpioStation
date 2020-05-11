@@ -13,8 +13,8 @@
 		- [Initialization](#initialization)
 <!-- /TOC -->
 
- # Important note:
-The following readme was last updated during Late 2015. The changes between Paradise & TG's shuttle system has diverged greatly since then. Do not take the documentation here's description of differences between tg & paradise seriously without double checking. 
+# Important note
+The following readme was last updated during Late 2015. The changes between Paradise & TG's shuttle system has diverged greatly since then. Do not take the documentation here's description of differences between tg & Paradise seriously without double checking.
 
 # Shuttle system
 ## Introduction
@@ -22,9 +22,9 @@ This folder belongs to the "shuttle" system. The shuttle system is used to contr
 "Shuttles" on the map, which are, at their core, a rectangular area of turfs that "move".
 
 The shuttle system is comprised of two primary files.
-[`shuttle.dm`](http://github.com/ParadiseSS13/Paradise/blob/master/code/modules/shuttle/shuttle.dm),
+[`shuttle.dm`](code/modules/shuttle/shuttle.dm),
 which contains the primary code, and
-[`shuttles.dm`](http://github.com/ParadiseSS13/Paradise/blob/master/code/controllers/Process/shuttles.dm)
+[`shuttles.dm`](code/controllers/Process/shuttles.dm)
 which contains the back-end controller system.
 There are a few other files, but it isn't worth noting on.
 
