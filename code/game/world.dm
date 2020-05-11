@@ -363,39 +363,28 @@ GLOBAL_VAR_INIT(world_topic_spam_protect_time, world.timeofday)
 	var/s = ""
 
 	if(config && config.server_name)
-		s += "<b>[config.server_name]</b> &#8212; "
-	s += "<b>[station_name()]</b> "
-	if(config && config.githuburl)
-		s+= "([GLOB.game_version])"
-
-	if(config && config.server_tag_line)
-		s += "<br>[config.server_tag_line]"
-
-	if(SSticker && ROUND_TIME > 0)
-		s += "<br>[round(ROUND_TIME / 36000)]:[add_zero(num2text(ROUND_TIME / 600 % 60), 2)], " + capitalize(get_security_level())
+		s += "<b>[config.server_name]</b>] &#8212; "
 	else
-		s += "<br><b>STARTING</b>"
-
-	s += "<br>"
-	var/list/features = list()
-
-	if(!GLOB.enter_allowed)
-		features += "closed"
-
-	if(config && config.server_extra_features)
-		features += config.server_extra_features
-
-	if(config && config.allow_vote_mode)
-		features += "vote"
+		s += "<b>Space Station 13</b>] &#8212; "
 
 	if(config && config.wikiurl)
-		features += "<a href=\"[config.wikiurl]\">Wiki</a>"
+		s += "\[<a href=\"[config.wikiurl]\">Wiki</a>] "
+	else
+		s += "\[Wiki] "
 
-	if(GLOB.abandon_allowed)
-		features += "respawn"
+	if(config && config.server_tag_line)
+		s += "<br>[config.server_tag_line] "
 
-	if(features)
-		s += "[jointext(features, ", ")]"
+	s += "<br>"
+
+	s += "<br>Map: <b>[station_name()]</b> "
+
+	if(SSticker && (ROUND_TIME > 0))
+		s += "<br>Round Time: <b>[round(ROUND_TIME / 36000)]:[add_zero(num2text(ROUND_TIME / 600 % 60), 2)]</b>"
+	else
+		s += "<br>Round Time: <b>STARTING</b>"
+
+	s += "<br>Alert: \[<b>[capitalize(get_security_level())]</b>"
 
 	return s
 

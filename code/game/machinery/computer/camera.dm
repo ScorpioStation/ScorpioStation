@@ -317,7 +317,7 @@
 
 /obj/machinery/computer/security/telescreen/entertainment
 	name = "entertainment monitor"
-	desc = "Damn, they better have Paradise TV on these things."
+	desc = "Damn, they better have Scorpio TV on these things."
 	icon_state = "entertainment_console"
 	icon_screen = "entertainment"
 	light_color = "#FFEEDB"

@@ -7,4 +7,4 @@ assignees: ''
 
 ---
 
-Please place all features requests here: https://www.paradisestation.org/forum/60-suggestions/
+Please place all features requests here: https://scorpiostation.com/forum/category/8/ideas-and-suggestions
