@@ -192,7 +192,7 @@
 
 /obj/item/clothing/accessory/medal/gold/captain
 	name = "medal of captaincy"
-	desc = "A golden medal awarded exclusively to those promoted to the rank of captain. It signifies the codified responsibilities of a captain to Nanotrasen, and their undisputable authority over their crew."
+	desc = "A golden medal awarded exclusively to those promoted to the rank of captain. It signifies the codified responsibilities of a captain to Ark Soft, and their undisputable authority over their crew."
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 
 /obj/item/clothing/accessory/medal/gold/heroism
@@ -278,7 +278,7 @@
 		to_chat(user, "Waving around a badge before swiping an ID would be pretty pointless.")
 		return
 	if(isliving(user))
-		user.visible_message("<span class='warning'>[user] displays [user.p_their()] Nanotrasen Internal Security Legal Authorization Badge.\nIt reads: [stored_name], NT Security.</span>","<span class='warning'>You display your Nanotrasen Internal Security Legal Authorization Badge.\nIt reads: [stored_name], NT Security.</span>")
+		user.visible_message("<span class='warning'>[user] displays [user.p_their()] Ark Soft Internal Security Legal Authorization Badge.\nIt reads: [stored_name], NT Security.</span>","<span class='warning'>You display your Ark Soft Internal Security Legal Authorization Badge.\nIt reads: [stored_name], NT Security.</span>")
 
 /obj/item/clothing/accessory/holobadge/attackby(var/obj/item/O as obj, var/mob/user as mob, params)
 	if(istype(O, /obj/item/card/id) || istype(O, /obj/item/pda))

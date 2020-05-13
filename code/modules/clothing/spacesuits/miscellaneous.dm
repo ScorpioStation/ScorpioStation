@@ -25,7 +25,7 @@
 
 /obj/item/clothing/suit/space/captain
 	name = "captain's space suit"
-	desc = "A bulky, heavy-duty piece of exclusive Nanotrasen armor. YOU are in charge!"
+	desc = "A bulky, heavy-duty piece of exclusive Ark Soft armor. YOU are in charge!"
 	icon_state = "caparmor"
 	item_state = "capspacesuit"
 	w_class = WEIGHT_CLASS_BULKY

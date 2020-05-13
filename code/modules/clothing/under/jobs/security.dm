@@ -151,7 +151,7 @@
 
 /obj/item/clothing/under/rank/security/formal
 	name = "security suit"
-	desc = "A formal security suit for officers complete with nanotrasen belt buckle."
+	desc = "A formal security suit for officers complete with Ark Soft belt buckle."
 	icon_state = "security_formal"
 	item_state = "gy_suit"
 	item_color = "security_formal"

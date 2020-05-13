@@ -897,15 +897,15 @@
 	sprite_sheets = null
 
 /obj/item/clothing/suit/fluff/stobarico_greatcoat // Stobarico: F.U.R.R.Y
-	name = "\improper F.U.R.R.Y's Nanotrasen Greatcoat"
-	desc = "A greatcoat with Nanotrasen colors."
+	name = "\improper F.U.R.R.Y's Ark Soft Greatcoat"
+	desc = "A greatcoat with Ark Soft colors."
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "stobarico_jacket"
 
 
 /obj/item/clothing/suit/hooded/hoodie/fluff/linda // Epic_Charger: Linda Clark
-	name = "Green Nanotrasen Hoodie"
-	desc = "A green hoodie with the Nanotrasen logo on the back. It looks weathered."
+	name = "Green Ark Soft Hoodie"
+	desc = "A green hoodie with the Ark Soft logo on the back. It looks weathered."
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "linda_hoodie"
 	hoodtype = /obj/item/clothing/head/hooded/hood/fluff/linda
@@ -1140,7 +1140,7 @@
 
 /obj/item/clothing/under/fluff/jane_sidsuit // SyndiGirl: Zoey Scyth
 	name = "NT-SID jumpsuit"
-	desc = "A Nanotrasen Synthetic Intelligence Division jumpsuit, issued to 'volunteers'. On other people it looks fine, but right here a scientist has noted: on you it looks stupid."
+	desc = "A Ark Soft Synthetic Intelligence Division jumpsuit, issued to 'volunteers'. On other people it looks fine, but right here a scientist has noted: on you it looks stupid."
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "jane_sid_suit"
 	item_state = "jane_sid_suit"
@@ -1432,7 +1432,7 @@
 	options["Bunny"] = "bunny_witch"
 	options["Potions"] = "potions_witch"
 	options["Syndicate"] = "syndie_witch"
-	options["Nanotrasen"] ="nt_witch"
+	options["Ark Soft"] ="nt_witch"
 
 	var/choice = input(user, "To what form do you wish to Shapeshift this hat?", "Shapeshift Hat") as null|anything in options
 
@@ -1537,14 +1537,14 @@
 
 /obj/item/clothing/accessory/medal/fluff/elo	//V-Force_Bomber: E.L.O.
 	name = "distinguished medal of loyalty and excellence"
-	desc = "This medal is cut into the shape of a Victoria Cross, and is awarded to those who have proven themselves to Nanotrasen with a long and successful career."
+	desc = "This medal is cut into the shape of a Victoria Cross, and is awarded to those who have proven themselves to Ark Soft with a long and successful career."
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "elo-medal"
 	item_color = "elo-medal"
 
 /obj/item/clothing/suit/fluff/vetcoat //Furasian: Fillmoore Grayson
 	name = "Veteran Coat"
-	desc = "An old, yet well-kept Nanotrasen uniform. Very few of its kind are still produced."
+	desc = "An old, yet well-kept Ark Soft uniform. Very few of its kind are still produced."
 	icon = 'icons/obj/custom_items.dmi'
 	lefthand_file = 'icons/mob/inhands/fluff_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/fluff_righthand.dmi'

@@ -385,10 +385,10 @@
 				<li>Secure the mainboard with a screwdriver.</li>
 				<li>Install the peripherals control module (Not included. Use supplied datadisk to create one).</li>
 				<li>Secure the peripherals control module with a screwdriver</li>
-				<li>Install the internal armor plating (Not included due to Nanotrasen regulations. Can be made using 5 metal sheets.)</li>
+				<li>Install the internal armor plating (Not included due to Ark Soft regulations. Can be made using 5 metal sheets.)</li>
 				<li>Secure the internal armor plating with a wrench</li>
 				<li>Weld the internal armor plating to the chassis</li>
-				<li>Install the external reinforced armor plating (Not included due to Nanotrasen regulations. Can be made using 5 reinforced metal sheets.)</li>
+				<li>Install the external reinforced armor plating (Not included due to Ark Soft regulations. Can be made using 5 reinforced metal sheets.)</li>
 				<li>Secure the external reinforced armor plating with a wrench</li>
 				<li>Weld the external reinforced armor plating to the chassis</li>
 				<li></li>
@@ -398,7 +398,7 @@
 				<li>Internal armor is plasteel for additional strength.</li>
 				<li>External armor must be installed in 2 parts, totaling 10 sheets.</li>
 				<li>Completed mech is more resiliant against fire, and is a bit more durable overall</li>
-				<li>Nanotrasen is determined to the safety of its <s>investments</s> employees.</li>
+				<li>Ark Soft is determined to the safety of its <s>investments</s> employees.</li>
 				</ol>
 				</body>
 				</html>
@@ -631,7 +631,7 @@
 				This useful piece of equipment will suck power out of the power systems to charge a cyborg's power cell back up to full charge.
 
 				<h3>Robotics Control Console</h3>
-				This useful piece of equipment can be used to immobolize or destroy a cyborg. A word of warning: Cyborgs are expensive pieces of equipment, do not destroy them without good reason, or Nanotrasen may see to it that it never happens again.
+				This useful piece of equipment can be used to immobolize or destroy a cyborg. A word of warning: Cyborgs are expensive pieces of equipment, do not destroy them without good reason, or Ark Soft may see to it that it never happens again.
 
 
 				<h2><a name="Modules">Cyborg Modules</h2>
@@ -778,7 +778,7 @@
           <li>Expose the cyborg's internal wiring</li>
           <li>Check to make sure the LawSync and AI Sync lights are lit</li>
           <li>If they are not lit, pulse the LawSync wire using a multitool to enable the cyborg's Law Sync</li>
-          <li>Proceed to a cyborg upload console. Nanotrasen usually places these in the same location as AI uplaod consoles.</li>
+          <li>Proceed to a cyborg upload console. Ark Soft usually places these in the same location as AI uplaod consoles.</li>
           <li>Use a "Reset" upload moduleto reset the cyborg's laws</li>
           <li>Proceed to a Robotics Control console</li>
           <li>Remove the lockdown on the cyborg</li>
@@ -786,7 +786,7 @@
 
         <h3>As a last resort</h3>
         If all else fails in a case of cyborg-related emergency. There may be only one option. Using a Robotics Control console, you may have to remotely detonate the cyborg.
-        <h3>WARNING:</h3> Do not detonate a borg without an explicit reason for doing so. Cyborgs are expensive pieces of Nanotrasen equipment, and you may be punished for detonating them without reason.
+        <h3>WARNING:</h3> Do not detonate a borg without an explicit reason for doing so. Cyborgs are expensive pieces of Ark Soft equipment, and you may be punished for detonating them without reason.
 
         </body>
 		</html>
@@ -794,10 +794,10 @@
 
 /obj/item/book/manual/security_space_law
 	name = "Space Law"
-	desc = "A set of Nanotrasen guidelines for keeping law and order on their space stations."
+	desc = "A set of Ark Soft guidelines for keeping law and order on their space stations."
 	icon_state = "bookSpaceLaw"
 	force = 4 //advanced magistrate tactics
-	author = "Nanotrasen"
+	author = "Ark Soft"
 	title = "Space Law"
 	dat = {"
 
@@ -946,7 +946,7 @@
 /obj/item/book/manual/detective
 	name = "The Film Noir: Proper Procedures for Investigations"
 	icon_state ="bookDetective"
-	author = "Nanotrasen"
+	author = "Ark Soft"
 	title = "The Film Noir: Proper Procedures for Investigations"
 	dat = {"<html>
 			<head>
@@ -992,7 +992,7 @@
 	dat = {"<html>
 			Nuclear Explosives 101:<br>
 			Hello and thank you for choosing the Syndicate for your nuclear information needs.<br>
-			Today's crash course will deal with the operation of a Fusion Class Nanotrasen made Nuclear Device.<br>
+			Today's crash course will deal with the operation of a Fusion Class Ark Soft made Nuclear Device.<br>
 			First and foremost, DO NOT TOUCH ANYTHING UNTIL THE BOMB IS IN PLACE.<br>
 			Pressing any button on the compacted bomb will cause it to extend and bolt itself into place.<br>
 			If this is done to unbolt it one must completely log in which at this time may not be possible.<br>
@@ -1004,7 +1004,7 @@
 			<li>Press the E button to log onto the device.</li>
 			You now have activated the device. To deactivate the buttons at anytime for example when you've already prepped the bomb for detonation	remove the auth disk OR press the R on the keypad.<br>
 			Now the bomb CAN ONLY be detonated using the timer. Manual detonation is not an option.<br>
-			Note: Nanotrasen is a pain in the neck.<br>
+			Note: Ark Soft is a pain in the neck.<br>
 			Toggle off the SAFETY.<br>
 			Note: You wouldn't believe how many Syndicate Operatives with doctorates have forgotten this step.<br>
 			So use the - - and + + to set a det time between 5 seconds and 10 minutes.<br>
@@ -1015,7 +1015,7 @@
 			Toggle off the anchor, move it, and re-anchor.<br><br>
 			Good luck. Remember the order:<br>
 			<b>Disk, Code, Safety, Timer, Disk, RUN!</b><br>
-			Intelligence Analysts believe that normal Nanotrasen procedure is for the Captain to secure the nuclear authorisation disk.<br>
+			Intelligence Analysts believe that normal Ark Soft procedure is for the Captain to secure the nuclear authorisation disk.<br>
 			Good luck!
 			</html>"}
 
@@ -1187,9 +1187,9 @@
 
 /obj/item/book/manual/faxes
 	name = "A Guide to Faxes"
-	desc = "A Nanotrasen-approved guide to writing faxes"
+	desc = "A Ark Soft-approved guide to writing faxes"
 	icon_state = "book6"
-	author = "Nanotrasen"
+	author = "Ark Soft"
 	title = "A Guide to Faxes"
 	dat = {"
 
@@ -1217,7 +1217,7 @@
 				<li>Faxes are your main method of communicating with the NAS Trurl, better known as Central Command.</li>
 				<li>Faxes allow personnel on the station to maintain open lines of communication with the NAS Trurl, allowing for vital information to flow both ways.</li>
 				<li>Being written communications, proper grammar, syntax and typography is required, in addition to a signature and, if applicable, a stamp. Failure to sign faxes will lead to an automatic rejection.</li>
-				<li>We at Nanotrasen provide Fax Machines to every Head of Staff, in addition to the Magistrate, Ark Soft Representative, and Internal Affairs Agents.</li>
+				<li>We at Ark Soft provide Fax Machines to every Head of Staff, in addition to the Magistrate, Ark Soft Representative, and Internal Affairs Agents.</li>
 				<li>This means that we trust the recipients of these fax machines to only use them in the proper circumstances (see <B>When to Fax?</B>).</li>
 
 				<h1><a name="when"><B>When to Fax?</B></a></h1><BR>
@@ -1248,7 +1248,7 @@
 	name = "Science Standard Operating Procedures"
 	desc = "A set of guidelines aiming at the safe conduct of all scientific activities."
 	icon_state = "sop_science"
-	author = "Nanotrasen"
+	author = "Ark Soft"
 	title = "Science Standard Operating Procedures"
 	dat = {"
 
@@ -1266,7 +1266,7 @@
 	name = "Medical Standard Operating Procedures"
 	desc = "A set of guidelines aiming at the safe conduct of all medical activities."
 	icon_state = "sop_medical"
-	author = "Nanotrasen"
+	author = "Ark Soft"
 	title = "Medical Standard Operating Procedures"
 	dat = {"
 
@@ -1284,7 +1284,7 @@
 	name = "Engineering Standard Operating Procedures"
 	desc = "A set of guidelines aiming at the safe conduct of all engineering activities."
 	icon_state = "sop_engineering"
-	author = "Nanotrasen"
+	author = "Ark Soft"
 	title = "Engineering Standard Operating Procedures"
 	dat = {"
 
@@ -1302,7 +1302,7 @@
 	name = "Service Standard Operating Procedures"
 	desc = "A set of guidelines aiming at the safe conduct of all service activities."
 	icon_state = "sop_service"
-	author = "Nanotrasen"
+	author = "Ark Soft"
 	title = "Service Standard Operating Procedures"
 	dat = {"
 
@@ -1320,7 +1320,7 @@
 	name = "Supply Standard Operating Procedures"
 	desc = "A set of guidelines aiming at the safe conduct of all supply activities."
 	icon_state = "sop_cargo"
-	author = "Nanotrasen"
+	author = "Ark Soft"
 	title = "Supply Standard Operating Procedures"
 	dat = {"
 
@@ -1338,7 +1338,7 @@
 	name = "Security Standard Operating Procedures"
 	desc = "A set of guidelines aiming at the safe conduct of all security activities."
 	icon_state = "sop_security"
-	author = "Nanotrasen"
+	author = "Ark Soft"
 	title = "Security Standard Operating Procedures"
 	dat = {"
 
@@ -1356,7 +1356,7 @@
 	name = "Legal Standard Operating Procedures"
 	desc = "A set of guidelines aiming at the safe conduct of all legal activities."
 	icon_state = "sop_legal"
-	author = "Nanotrasen"
+	author = "Ark Soft"
 	title = "Legal Standard Operating Procedures"
 	dat = {"
 
@@ -1374,7 +1374,7 @@
 	name = "Standard Operating Procedures"
 	desc = "A set of guidelines aiming at the safe conduct of all station activities."
 	icon_state = "sop"
-	author = "Nanotrasen"
+	author = "Ark Soft"
 	title = "Standard Operating Procedures"
 	dat = {"
 
@@ -1392,7 +1392,7 @@
 	name = "Command Standard Operating Procedures"
 	desc = "A set of guidelines aiming at the safe conduct of all Command activities."
 	icon_state = "sop_command"
-	author = "Nanotrasen"
+	author = "Ark Soft"
 	title = "Command Standard Operating Procedures"
 	dat = {"
 

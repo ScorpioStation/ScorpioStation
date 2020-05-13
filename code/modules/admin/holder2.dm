@@ -20,7 +20,7 @@ GLOBAL_PROTECT(admin_datums) // This is protected because we dont want people ma
 		error("Admin datum created without a ckey argument. Datum has been deleted")
 		qdel(src)
 		return
-	admincaster_signature = "Nanotrasen Officer #[rand(0,9)][rand(0,9)][rand(0,9)]"
+	admincaster_signature = "Ark Soft Officer #[rand(0,9)][rand(0,9)][rand(0,9)]"
 	rank = initial_rank
 	rights = initial_rights
 	GLOB.admin_datums[ckey] = src

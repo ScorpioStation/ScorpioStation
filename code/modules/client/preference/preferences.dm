@@ -293,7 +293,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			if(S.bodyflags & (HAS_SKIN_TONE|HAS_ICON_SKIN_TONE))
 				dat += "<b>Skin Tone:</b> <a href='?_src_=prefs;preference=s_tone;task=input'>[S.bodyflags & HAS_ICON_SKIN_TONE ? "[s_tone]" : "[-s_tone + 35]/220"]</a><br>"
 			dat += "<b>Disabilities:</b> <a href='?_src_=prefs;preference=disabilities'>\[Set\]</a><br>"
-			dat += "<b>Nanotrasen Relation:</b> <a href ='?_src_=prefs;preference=nt_relation;task=input'>[ark_soft_relation]</a><br>"
+			dat += "<b>Ark Soft Relation:</b> <a href ='?_src_=prefs;preference=nt_relation;task=input'>[ark_soft_relation]</a><br>"
 			dat += "<a href='byond://?_src_=prefs;preference=flavor_text;task=input'>Set Flavor Text</a><br>"
 			if(length(flavor_text) <= 40)
 				if(!length(flavor_text))	dat += "\[...\]<br>"

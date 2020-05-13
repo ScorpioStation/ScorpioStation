@@ -1,15 +1,15 @@
 //Datums for different companies that can be used by busy_space
 /datum/lore/organization
 	var/name = ""				// Organization's name
-	var/short_name = ""			// Organization's shortname (Nanotrasen for "Nanotrasen Incorporated")
-	var/acronym = ""			// Organization's acronym, e.g. 'NT' for Nanotrasen'.
+	var/short_name = ""			// Organization's shortname (Ark Soft for "Ark Soft Incorporated")
+	var/acronym = ""			// Organization's acronym, e.g. 'AS' for Ark Soft'.
 	var/desc = ""				// One or two paragraph description of the organization, but only current stuff.  Currently unused.
 	var/history = ""			// Historical description of the organization's origins  Currently unused.
 	var/work = ""				// Short description of their work, eg "an arms manufacturer"
 	var/headquarters = ""		// Location of the organization's HQ.  Currently unused.
 	var/motto = ""				// A motto/jingle/whatever, if they have one.  Currently unused.
 
-	var/list/ship_prefixes = list()	//Some might have more than one! Like Nanotrasen. Value is the mission they perform, e.g. ("ABC" = "mission desc")
+	var/list/ship_prefixes = list()	//Some might have more than one! Like Ark Soft. Value is the mission they perform, e.g. ("ABC" = "mission desc")
 	var/list/ship_names = list(		//Names of spaceships.  This is a mostly generic list that all the other organizations inherit from if they don't have anything better.
 		"Kestrel",
 		"Beacon",
@@ -90,13 +90,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 // TSCs
-/datum/lore/organization/tsc/nanotrasen
-	name = "Nanotrasen Incorporated"
-	short_name = "Nanotrasen"
+/datum/lore/organization/tsc/arksoft
+	name = "Ark Soft Incorporated"
+	short_name = "Ark Soft"
 	acronym = "NT"
-	desc = "The largest shareholder in the galactic plasma markets, Nanotrasen is a research and mining corporation which specializes in\
+	desc = "The largest shareholder in the galactic plasma markets, Ark Soft is a research and mining corporation which specializes in\
 	 FTL technologies and weapon systems. Frowned upon by most governments due to their shady business tactics and poor ethics record,\
-	  Nanotrasen is often seen as a necessary evil for maintaining access to the often volatile plasma market. Nanotrasen was originally\
+	  Ark Soft is often seen as a necessary evil for maintaining access to the often volatile plasma market. Ark Soft was originally\
 	   incorporated on Earth with their headquarters situated on Mars, however they have recently moved most of their operations to the Epsilon Eridani sector."
 	history = "" // To be written someday.
 	work = "research giant"
@@ -119,7 +119,7 @@
 		"NAB North Cimmeria Central Offices on Mars",
 	)
 
-/datum/lore/organization/tsc/nanotrasen/New()
+/datum/lore/organization/tsc/arksoft/New()
 	..()
 	spawn(1) // BYOND shenanigans means using_map is not initialized yet.  Wait a tick.
 		// Get rid of the current map from the list, so ships flying in don't say they're coming to the current map.
@@ -133,7 +133,7 @@
 	short_name = "Donk Co."
 	acronym = "DC"
 	desc = "The infamous rival of the well-known Waffle Corporation, Donk Co. is a company specializing in food delivery systems and brand-name food\
-	products such as Donk Pockets. While generally seen as a neutral actor, Donk Corporation has been known to work both with Nanotrasen and\
+	products such as Donk Pockets. While generally seen as a neutral actor, Donk Corporation has been known to work both with Ark Soft and\
 	the Syndicate when it suits them - often acting as the primary logistical supplier for the Epsilon Eridani sector.\
 	Donk Corporation is better known for recent high-profile litigation alleging that their food products are used for illicit drug distribution.\
 	While the trial is ongoing, it has been repeatedly delayed due to incidents of methamphetamine poisoning."
@@ -184,8 +184,8 @@
 	acronym = "EEI"
 	desc = "An Engineering firm specializing in alternative fuel-technologies for FTL travel,\
 	Einstein Engines is an up and coming player in the galactic FTL and energy markets.\
-	As their research into alternative FTL fuel threatens both Nanotrasen's relative stranglehold on plasma as well as The Syndicate's vested\
-	interest in the market, they are often the target of industrial sabotage by both Nanotrasen and The Syndicate.\
+	As their research into alternative FTL fuel threatens both Ark Soft's relative stranglehold on plasma as well as The Syndicate's vested\
+	interest in the market, they are often the target of industrial sabotage by both Ark Soft and The Syndicate.\
 	Most of their contracts are based outside of the Epsilon Eridani sector, and they are frequently commissioned by smaller firms to retrofit new\
 	and existing colonies, space stations, and outposts."
 	history = ""
@@ -215,7 +215,7 @@
 	acronym = "BTS"
 	desc = "A company specializing in the field of synthetic biology, BioTech solutions is at the forefront of providing cutting-edge prosthetics,\
 	augmentations, and gene-therapy solutions. Their extensive list of patents and the highly secretive nature of their work often puts them at odds\
-	with companies such as Nanotrasen, who commonly reverse-engineer their products. BioTech Solutions is often the victim of industrial sabotage by\
+	with companies such as Ark Soft, who commonly reverse-engineer their products. BioTech Solutions is often the victim of industrial sabotage by\
 	Cybersun Industries and often relies on planetary governments for asset protection. BioTech Solutions also owns a number of prominent subsidiaries,\
 	such as Bishop Cybernetics, Hesphiastos Industries, and Xion Manufacturing Group."
 	history = ""
@@ -248,7 +248,7 @@
 	desc = "Cybersun Industries is a biotechnology company that primarily specializes on the research and development of human-enhancing augmentations.\
 	They are better known for their aggressive corporate tactics and are known to often subsidize pirate bands to commit acts of industrial sabotage.\
 	Cybersun Industries is usually the target of conspiracy theorists due to their development of the first mindslave implant, as well as their open financing of,\
-	and involvement in, The Syndicate. They are one of Nanotrasen's largest detractors, and a direct competitor to BioTech Solutions."
+	and involvement in, The Syndicate. They are one of Ark Soft's largest detractors, and a direct competitor to BioTech Solutions."
 	history = ""
 	work = "RND company specializing in augmentations and implants."
 	headquarters = "Luna"
@@ -424,7 +424,7 @@
 	acronym = "ASB"
 	desc = "A unifying body created to stave off extinction from a solar event,\
 	The Assembly is the loose federal coalition of the Vulpkanin. It holds little centralized authority and mostly serves as a diplomatic body,\
-	primarily concerned with facilitating trade between Vulpkanin colonies and Nanotrasen."
+	primarily concerned with facilitating trade between Vulpkanin colonies and Ark Soft."
 	history = "" // Todo
 	work = "governing body of the Vulpakanin"
 	headquarters = "Kelune and Dalstadt"

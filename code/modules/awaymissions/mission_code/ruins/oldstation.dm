@@ -79,7 +79,7 @@
 /obj/item/gun/energy/laser/retro/old
 	name ="laser gun"
 	icon_state = "retro"
-	desc = "First generation lasergun, developed by Nanotrasen. Suffers from ammo issues but its unique ability to recharge its ammo without the need of a magazine helps compensate. You really hope someone has developed a better lasergun while you were in cryo."
+	desc = "First generation lasergun, developed by Ark Soft. Suffers from ammo issues but its unique ability to recharge its ammo without the need of a magazine helps compensate. You really hope someone has developed a better lasergun while you were in cryo."
 	ammo_type = list(/obj/item/ammo_casing/energy/lasergun/old)
 	ammo_x_offset = 3
 
@@ -144,7 +144,7 @@
 	name = "Crew Reawakening Report"
 	info = "Artificial Program's report to surviving crewmembers.<br><br>Crew were placed into cryostasis on March 10th, 2445.<br><br>Crew were awoken from cryostasis around June, 2557.<br><br> \
 	<b>SIGNIFICANT EVENTS OF NOTE</b><br>1: The primary radiation detectors were taken offline after 112 years due to power failure, secondary radiation detectors showed no residual \
-	radiation on station. Deduction, primarily detector was malfunctioning and was producing a radiation signal when there was none.<br><br>2: A data burst from a nearby Nanotrasen Space \
+	radiation on station. Deduction, primarily detector was malfunctioning and was producing a radiation signal when there was none.<br><br>2: A data burst from a nearby Ark Soft Space \
 	Station was received, this data burst contained research data that has been uploaded to our RnD labs.<br><br>3: Unknown invasion force has occupied Delta station."
 
 /obj/item/paper/fluff/ruins/oldstation/generator_manual

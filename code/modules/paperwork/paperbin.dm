@@ -11,7 +11,7 @@
 	var/amount = 30					//How much paper is in the bin.
 	var/list/papers = list()	//List of papers put in the bin for reference.
 	var/letterhead_type
-	
+
 /obj/item/paper_bin/fire_act(datum/gas_mixture/air, exposed_temperature, exposed_volume, global_overlay = TRUE)
 	if(amount)
 		amount = 0
@@ -143,11 +143,11 @@
 
 	add_fingerprint(user)
 	return
-	
 
-/obj/item/paper_bin/nanotrasen
-	name = "nanotrasen paper bin"
-	letterhead_type = /obj/item/paper/nanotrasen
+
+/obj/item/paper_bin/arksoft
+	name = "Ark Soft paper bin"
+	letterhead_type = /obj/item/paper/arksoft
 
 /obj/item/paper_bin/syndicate
 	name = "syndicate paper bin"

@@ -954,7 +954,7 @@
 	new /obj/item/lipstick/white(src)
 
 #define NODESIGN "None"
-#define NANOTRASEN "NanotrasenStandard"
+#define ARK_SOFT "ArkSoftStandard"
 #define SYNDI "SyndiSnacks"
 #define HEART "Heart"
 #define SMILE "SmileyFace"
@@ -979,7 +979,7 @@
 		if(contents.len)
 			to_chat(user, "<span class='warning'>You can't modify [src] with items still inside!</span>")
 			return
-		var/list/designs = list(NODESIGN, NANOTRASEN, SYNDI, HEART, SMILE)
+		var/list/designs = list(NODESIGN, ARK_SOFT, SYNDI, HEART, SMILE)
 		var/switchDesign = input("Select a Design:", "Paper Sack Design", designs[1]) as null|anything in designs
 		if(!switchDesign)
 			return
@@ -995,8 +995,8 @@
 		switch(design)
 			if(NODESIGN)
 				desc = "A sack neatly crafted out of paper."
-			if(NANOTRASEN)
-				desc = "A standard Nanotrasen paper lunch sack for loyal employees on the go."
+			if(ARK_SOFT)
+				desc = "A standard Ark Soft paper lunch sack for loyal employees on the go."
 			if(SYNDI)
 				desc = "The design on this paper sack is a remnant of the notorious 'SyndieSnacks' program."
 			if(HEART)
@@ -1125,7 +1125,7 @@
 	user.visible_message("<span class='notice'>[user] hugs \the [src].</span>","<span class='notice'>You hug \the [src].</span>")
 
 #undef NODESIGN
-#undef NANOTRASEN
+#undef ARK_SOFT
 #undef SYNDI
 #undef HEART
 #undef SMILE

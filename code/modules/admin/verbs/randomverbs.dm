@@ -597,7 +597,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		return
 
 //the stuff on the list is |"report type" = "report title"|, if that makes any sense
-	var/list/MsgType = list("Central Command Report" = "Nanotrasen Update",
+	var/list/MsgType = list("Central Command Report" = "Ark Soft Update",
 		"Syndicate Communique" = "Syndicate Message",
 		"Space Wizard Federation Message" = "Sorcerous Message",
 		"Enemy Communications" = "Unknown Message",

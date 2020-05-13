@@ -523,8 +523,8 @@
 	hoodtype = /obj/item/clothing/head/hooded/hood/white
 
 /obj/item/clothing/suit/hooded/hoodie/nt
-	name = "Nanotrasen hoodie"
-	desc = "A blue hoodie with the Nanotrasen logo on the back."
+	name = "NaArk Softnotrasen hoodie"
+	desc = "A blue hoodie with the Ark Soft logo on the back."
 	icon_state = "nt_hoodie"
 	hoodtype = /obj/item/clothing/head/hooded/hood/blue
 

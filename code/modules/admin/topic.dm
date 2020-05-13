@@ -2058,7 +2058,7 @@
 		P.name = "Central Command - paper"
 		var/stypes = list("Handle it yourselves!","Illegible fax","Fax not signed","Not Right Now","You are wasting our time", "Keep up the good work", "ERT Instructions")
 		var/stype = input(src.owner, "Which type of standard reply do you wish to send to [H]?","Choose your paperwork", "") as null|anything in stypes
-		var/tmsg = "<font face='Verdana' color='black'><center><img src = 'ntlogo.png'><BR><BR><BR><font size='4'><B>Nanotrasen Science Station [GLOB.using_map.station_short]</B></font><BR><BR><BR><font size='4'>NAS Trurl Communications Department Report</font></center><BR><BR>"
+		var/tmsg = "<font face='Verdana' color='black'><center><img src = 'ntlogo.png'><BR><BR><BR><font size='4'><B>Ark Soft Science Station [GLOB.using_map.station_short]</B></font><BR><BR><BR><font size='4'>NAS Trurl Communications Department Report</font></center><BR><BR>"
 		if(stype == "Handle it yourselves!")
 			tmsg += "Greetings, esteemed crewmember. Your fax has been <B><I>DECLINED</I></B> automatically by NAS Trurl Fax Registration.<BR><BR>Please proceed in accordance with Standard Operating Procedure and/or Space Law. You are fully trained to handle this situation without Central Command intervention.<BR><BR><i><small>This is an automatic message.</small>"
 		else if(stype == "Illegible fax")
@@ -2197,9 +2197,9 @@
 		var/destination
 		var/notify
 		var/obj/item/paper/P
-		var/use_letterheard = alert("Use letterhead? If so, do not add your own header or a footer. Type and format only your actual message.",,"Nanotrasen","Syndicate", "No")
+		var/use_letterheard = alert("Use letterhead? If so, do not add your own header or a footer. Type and format only your actual message.",,"Ark Soft","Syndicate", "No")
 		switch(use_letterheard)
-			if("Nanotrasen")
+			if("Ark Soft")
 				P = new /obj/item/paper/central_command(null)
 			if("Syndicate")
 				P = new /obj/item/paper/syndicate(null)

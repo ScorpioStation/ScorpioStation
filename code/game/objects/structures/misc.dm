@@ -51,7 +51,7 @@
 
 /obj/structure/respawner
 	name = "\improper Long-Distance Cloning Machine"
-	desc = "Top-of-the-line Nanotrasen technology allows for cloning of crew members from off-station upon bluespace request."
+	desc = "Top-of-the-line Ark Soft technology allows for cloning of crew members from off-station upon bluespace request."
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "borgcharger1(old)"
 	anchored = 1

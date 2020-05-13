@@ -22,7 +22,7 @@
 
 /obj/item/clothing/under/plasmaman/enviroslacks
 	name = "enviroslacks"
-	desc = "The pet project of a particularly posh plasmaman, this custom suit was quickly appropriated by Nanotrasen for its detectives, lawyers, and bartenders alike."
+	desc = "The pet project of a particularly posh plasmaman, this custom suit was quickly appropriated by Ark Soft for its detectives, lawyers, and bartenders alike."
 	icon_state = "enviroslacks"
 	item_state = "enviroslacks"
 	item_color = "enviroslacks"
@@ -36,7 +36,7 @@
 
 /obj/item/clothing/under/plasmaman/librarian
 	name = "librarian's plasma envirosuit"
-	desc = "Made out of a modified voidsuit, this suit was Nanotrasen's first solution to the *logistical problems* that come with employing plasmamen. Due to the modifications, the suit is no longer space-worthy. Despite their limitations, these suits are still in used by historian and old-styled plasmamen alike."
+	desc = "Made out of a modified voidsuit, this suit was Ark Soft's first solution to the *logistical problems* that come with employing plasmamen. Due to the modifications, the suit is no longer space-worthy. Despite their limitations, these suits are still in used by historian and old-styled plasmamen alike."
 	icon_state = "prototype_envirosuit"
 	item_state = "prototype_envirosuit"
 	item_color = "prototype_envirosuit"
