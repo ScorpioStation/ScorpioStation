@@ -9,7 +9,7 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Chief Engineer",
 	"Research Director",
 	"Chief Medical Officer",
-	"Nanotrasen Representative"
+	"Ark Soft Representative"
 ))
 
 
@@ -57,7 +57,7 @@ GLOBAL_LIST_INIT(support_positions, list(
 	"Mime",
 	"Barber",
 	"Magistrate",
-	"Nanotrasen Representative",
+	"Ark Soft Representative",
 	"Blueshield"
 ))
 
@@ -95,7 +95,7 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 
 GLOBAL_LIST_INIT(whitelisted_positions, list(
 	"Blueshield",
-	"Nanotrasen Representative",
+	"Ark Soft Representative",
 	"Barber",
 	"Mechanic",
 	"Brig Physician",

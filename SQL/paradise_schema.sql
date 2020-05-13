@@ -69,7 +69,7 @@ CREATE TABLE `characters` (
   `player_alt_titles` mediumtext NOT NULL,
   `organ_data` mediumtext NOT NULL,
   `rlimb_data` mediumtext NOT NULL,
-  `nanotrasen_relation` varchar(45) NOT NULL,
+  `ark_soft_relation` varchar(45) NOT NULL,
   `speciesprefs` int(1) NOT NULL,
   `socks` mediumtext NOT NULL,
   `body_accessory` mediumtext NOT NULL,

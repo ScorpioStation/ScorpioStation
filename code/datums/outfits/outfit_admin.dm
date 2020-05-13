@@ -184,7 +184,7 @@
 
 	var/obj/item/card/id/I = H.wear_id
 	if(istype(I))
-		apply_to_card(I, H, get_centcom_access("Nanotrasen Navy Captain"), "Nanotrasen Navy Captain")
+		apply_to_card(I, H, get_centcom_access("Ark Soft Navy Captain"), "NanotArk Softrasen Navy Captain")
 	H.sec_hud_set_ID()
 
 /datum/outfit/admin/nt_diplomat
@@ -215,7 +215,7 @@
 
 	var/obj/item/card/id/I = H.wear_id
 	if(istype(I))
-		apply_to_card(I, H, get_centcom_access("Nanotrasen Navy Representative"), "Nanotrasen Diplomat")
+		apply_to_card(I, H, get_centcom_access("Ark Soft Navy Representative"), "Ark Soft Diplomat")
 	// Will show as ? on sec huds, as this is not a recognized rank.
 
 /datum/outfit/admin/nt_undercover

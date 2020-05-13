@@ -287,16 +287,16 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 	icon_state = "shuttle"
 
 /area/shuttle/administration
-	name = "\improper Nanotrasen Vessel"
+	name = "\improper Ark Soft Vessel"
 	icon_state = "shuttlered"
 	parallax_movedir = EAST
 
 /area/shuttle/administration/centcom
-	name = "\improper Nanotrasen Vessel Centcom"
+	name = "\improper Ark Soft Vessel Centcom"
 	icon_state = "shuttlered"
 
 /area/shuttle/administration/station
-	name = "\improper Nanotrasen Vessel"
+	name = "\improper Ark Soft Vessel"
 	icon_state = "shuttlered2"
 
 /area/shuttle/thunderdome
@@ -875,7 +875,7 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 	icon_state = "server"
 
 /area/ntrep
-	name = "\improper Nanotrasen Representative's Office"
+	name = "\improper Ark Soft Representative's Office"
 	icon_state = "bluenew"
 
 /area/blueshield

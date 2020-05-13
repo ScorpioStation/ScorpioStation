@@ -2184,7 +2184,7 @@
 "eR" = (
 /obj/structure/rack,
 /obj/item/newspaper{
-	desc = "An issue of The Griffon. Was Nanotrasen supplying this station at some point?"
+	desc = "An issue of The Griffon. Was Ark Soft supplying this station at some point?"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "grimy"
@@ -2811,7 +2811,7 @@
 /obj/item/pen,
 /obj/structure/window/reinforced,
 /obj/machinery/newscaster{
-	desc = "A standard Nanotrasen-licensed newsfeed handler for use in commercial space stations. Strange that it's on a Russian station.";
+	desc = "A standard Ark Soft-licensed newsfeed handler for use in commercial space stations. Strange that it's on a Russian station.";
 	layer = 3.3;
 	pixel_x = 27
 	},
@@ -3186,7 +3186,7 @@
 /area/derelict/crew_quarters)
 "hg" = (
 /obj/machinery/newscaster{
-	desc = "A standard Nanotrasen-licensed newsfeed handler for use in commercial space stations. Strange that it's on a Russian station.";
+	desc = "A standard Ark Soft-licensed newsfeed handler for use in commercial space stations. Strange that it's on a Russian station.";
 	layer = 3.3;
 	pixel_x = 30
 	},
@@ -8488,7 +8488,7 @@
 "sN" = (
 /obj/structure/table/wood,
 /obj/item/newspaper{
-	desc = "An issue of The Griffon. Was Nanotrasen supplying this station at some point?"
+	desc = "An issue of The Griffon. Was Ark Soft supplying this station at some point?"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel{
@@ -10119,10 +10119,10 @@
 "vR" = (
 /obj/structure/rack,
 /obj/item/newspaper{
-	desc = "An issue of The Griffon. Was Nanotrasen supplying this station at some point?"
+	desc = "An issue of The Griffon. Was Ark Soft supplying this station at some point?"
 	},
 /obj/machinery/newscaster{
-	desc = "A standard Nanotrasen-licensed newsfeed handler for use in commercial space stations. Strange that it's on a Russian station.";
+	desc = "A standard Ark Soft-licensed newsfeed handler for use in commercial space stations. Strange that it's on a Russian station.";
 	layer = 3.3;
 	pixel_x = 27
 	},
@@ -10739,7 +10739,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/newscaster{
-	desc = "A standard Nanotrasen-licensed newsfeed handler for use in commercial space stations. Strange that it's on a Russian station.";
+	desc = "A standard Ark Soft-licensed newsfeed handler for use in commercial space stations. Strange that it's on a Russian station.";
 	layer = 3.3;
 	pixel_x = 27
 	},
@@ -11009,7 +11009,7 @@
 "yh" = (
 /obj/structure/rack,
 /obj/item/newspaper{
-	desc = "An issue of The Griffon. Was Nanotrasen supplying this station at some point?"
+	desc = "An issue of The Griffon. Was Ark Soft supplying this station at some point?"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 6;

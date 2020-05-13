@@ -264,7 +264,7 @@
 
 
 /obj/structure/closet/secure_closet/ntrep
-	name = "\improper Nanotrasen Representative's locker"
+	name = "\improper Ark Soft Representative's locker"
 	req_access = list(ACCESS_NTREP)
 	icon_state = "ntsecure1"
 	icon_closed = "ntsecure"

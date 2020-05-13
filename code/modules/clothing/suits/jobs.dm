@@ -320,8 +320,8 @@
 		)
 
 /obj/item/clothing/suit/storage/ntrep
-	name = "\improper Nanotrasen Representative jacket"
-	desc = "A fancy black jacket; standard issue to Nanotrasen Representatives."
+	name = "\improper Ark Soft Representative jacket"
+	desc = "A fancy black jacket; standard issue to Ark Soft Representatives."
 	icon_state = "ntrep"
 	item_state = "ntrep"
 	blood_overlay_type = "coat"

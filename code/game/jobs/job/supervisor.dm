@@ -6,7 +6,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Nanotrasen officials"
-	department_head = list("Nanotrasen Navy Officer")
+	department_head = list("Ark Soft Navy Officer")
 	selection_color = "#ccccff"
 	req_admin_notify = 1
 	is_command = 1
@@ -102,7 +102,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 
 
 /datum/job/nanotrasenrep
-	title = "Nanotrasen Representative"
+	title = "Ark Soft Representative"
 	flag = JOB_NANO
 	department_flag = JOBCAT_KARMA
 	total_positions = 1
@@ -129,7 +129,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	outfit = /datum/outfit/job/nanotrasenrep
 
 /datum/outfit/job/nanotrasenrep
-	name = "Nanotrasen Representative"
+	name = "Ark Soft Representative"
 	jobtype = /datum/job/nanotrasenrep
 	uniform = /obj/item/clothing/under/rank/ntrep
 	suit = /obj/item/clothing/suit/storage/ntrep
@@ -151,7 +151,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	department_flag = JOBCAT_KARMA
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Nanotrasen representative"
+	supervisors = "the Ark Soft Representative"
 	department_head = list("Captain")
 	selection_color = "#ddddff"
 	req_admin_notify = 1

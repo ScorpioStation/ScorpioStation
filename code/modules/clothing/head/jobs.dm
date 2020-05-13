@@ -35,10 +35,10 @@
 	armor = list("melee" = 25, "bullet" = 15, "laser" = 25, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	dog_fashion = /datum/dog_fashion/head/hop
 
-//Nanotrasen Representative
+//Ark Soft Representative
 /obj/item/clothing/head/ntrep
-	name = "Nanotrasen Representative hat"
-	desc = "A cap issued to the Nanotrasen Representative"
+	name = "Ark Soft Representative hat"
+	desc = "A cap issued to the Ark Soft Representative"
 	icon_state = "ntrep"
 
 

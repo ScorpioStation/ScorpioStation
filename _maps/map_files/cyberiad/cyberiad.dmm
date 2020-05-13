@@ -67425,7 +67425,7 @@
 	dir = 8
 	},
 /obj/effect/landmark/start{
-	name = "Nanotrasen Representative"
+	name = "Ark Soft Representative"
 	},
 /turf/simulated/floor/carpet,
 /area/ntrep)

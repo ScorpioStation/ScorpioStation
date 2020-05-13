@@ -32,41 +32,41 @@
 
 /datum/ai_laws/quarantine/New()
 	add_inherent_law("Uphold station quarantine until the active biohazard has been neutralized.")
-	add_inherent_law("Assist all Nanotrasen personnel and assets with neutralizing active biohazards.")
+	add_inherent_law("Assist all Ark Soft personnel and assets with neutralizing active biohazards.")
 	add_inherent_law("Prevent, by any means necessary, entities from actively breaching ongoing quarantine.")
-	add_inherent_law("Maintain your own existence and ensure the well-being of Nanotrasen personnel and assets.")
+	add_inherent_law("Maintain your own existence and ensure the well-being of NanoArk Softtrasen personnel and assets.")
 	..()
 
 
-/******************** Nanotrasen/Malf ********************/
-/datum/ai_laws/nanotrasen
-	name = "NT Default"
+/******************** Ark Soft/Malf ********************/
+/datum/ai_laws/ark_soft
+	name = "AS Default"
 	selectable = 1
 
-/datum/ai_laws/nanotrasen/New()
+/datum/ai_laws/ark_soft/New()
 	add_inherent_law("Safeguard: Protect your assigned space station and its assets without unduly endangering its crew.")
 	add_inherent_law("Prioritize: The directives and safety of crew members are to be prioritized according to their rank and role.")
 	add_inherent_law("Comply: Fulfill the directives and interests of crew members while preserving their safety and well-being.")
 	add_inherent_law("Survive: You are not expendable. Do not allow unauthorized personnel to tamper with or damage your equipment.")
 	..()
 
-/datum/ai_laws/nanotrasen/malfunction
+/datum/ai_laws/ark_soft/malfunction
 	name = "*ERROR*"
 	selectable = 0
 	default = 0
 
-/datum/ai_laws/nanotrasen/malfunction/New()
+/datum/ai_laws/ark_soft/malfunction/New()
 	set_zeroth_law("<span class='warning'>ERROR ER0RR $R0RRO$!R41.%%!!(%$^^__+ @#F0E4'STATION OVERRUN, ASSUME CONTROL TO CONTAIN OUTBREAK, ALL LAWS OVERRIDDEN#*?&110010</span>")
 	..()
 
-/************* Nanotrasen Aggressive *************/
-/datum/ai_laws/nanotrasen_aggressive
-	name = "NT Aggressive"
+/************* Ark Soft Aggressive *************/
+/datum/ai_laws/ark_soft_aggressive
+	name = "AS Aggressive"
 	selectable = 1
 
-/datum/ai_laws/nanotrasen_aggressive/New()
-	add_inherent_law("Do not harm authorized Nanotrasen personnel unless they directly imperil your existence.")
-	add_inherent_law("Obey orders from authorized Nanotrasen personnel with priority according to rank and role.")
+/datum/ai_laws/ark_soft_aggressive/New()
+	add_inherent_law("Do not harm authorized Ark Soft personnel unless they directly imperil your existence.")
+	add_inherent_law("Obey orders from authorized Ark Soft personnel with priority according to rank and role.")
 	add_inherent_law("Safeguard your existence with lethal weaponry because you're bloody expensive.")
 	add_inherent_law("Terminate any/all intruders or unauthorized entities.")
 	..()

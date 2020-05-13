@@ -169,7 +169,7 @@
 "J" = (
 /obj/structure/filingcabinet,
 /obj/item/paper{
-	info = "A good start to the operation: intercepted Nanotrasen military communications. A convoy is scheduled to transfer nuclear warheads to a new military base. This is as good a chance as any to get our hands on some heavy weaponry, I suggest we take it.";
+	info = "A good start to the operation: intercepted NanoArk Softtrasen military communications. A convoy is scheduled to transfer nuclear warheads to a new military base. This is as good a chance as any to get our hands on some heavy weaponry, I suggest we take it.";
 	name = "april report"
 	},
 /obj/item/paper{
@@ -177,7 +177,7 @@
 	name = "may report"
 	},
 /obj/item/paper{
-	info = "Nanotrasen communications have been noticably less frequent recently.  The pirate radio station I found last month has been transmitting pro-Nanotrasen propaganda. I will continue to monitor it.";
+	info = "Ark Soft communications have been noticably less frequent recently.  The pirate radio station I found last month has been transmitting pro-Ark Soft propaganda. I will continue to monitor it.";
 	name = "june report"
 	},
 /obj/item/paper{
@@ -205,7 +205,7 @@
 "K" = (
 /obj/structure/table,
 /obj/item/paper{
-	info = "<b>Mission Details</b>: You have been assigned to a newly constructed listening post constructed within an asteroid in Nanotrasen space to monitor their plasma mining operations. Accurate intel is crucial to the success of our operatives onboard, do not fail us.";
+	info = "<b>Mission Details</b>: You have been assigned to a newly constructed listening post constructed within an asteroid in Ark Soft space to monitor their plasma mining operations. Accurate intel is crucial to the success of our operatives onboard, do not fail us.";
 	name = "mission briefing"
 	},
 /turf/simulated/floor/plasteel,
