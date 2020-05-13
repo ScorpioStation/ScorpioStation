@@ -1196,10 +1196,10 @@
 	build_path = /obj/item/mecha_modkit/voice
 	category = list("Misc")
 
-/datum/design/voice_nanotrasen
-	name = "Voice Modkit : Nanotrasen"
-	desc = "A modification kit that updates a mech's onboard voice to Nanotrasen."
-	id = "voice_nanotrasen"
+/datum/design/voice_arksoft
+	name = "Voice Modkit : Ark Soft"
+	desc = "A modification kit that updates a mech's onboard voice to Ark Soft."
+	id = "voice_arksoft"
 	build_type = MECHFAB
 	materials = list(MAT_METAL = 500)
 	construction_time = 50

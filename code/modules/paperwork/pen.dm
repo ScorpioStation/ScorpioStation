@@ -94,7 +94,7 @@
 
 /obj/item/pen/multi/gold
 	name = "Gilded Pen"
-	desc = "A golden pen that is gilded with a meager amount of gold material. The word 'Nanotrasen' is etched on the clip of the pen."
+	desc = "A golden pen that is gilded with a meager amount of gold material. The words 'Ark Soft' is etched on the clip of the pen."
 	icon_state = "goldpen"
 	pen_color_shift = 0
 

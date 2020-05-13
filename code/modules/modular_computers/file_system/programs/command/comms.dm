@@ -121,7 +121,7 @@
 		),
 
 		"alerts"=list(
-			list("alert" = "default",   "label" = "Nanotrasen",  "desc" = "Oh god."),
+			list("alert" = "default",   "label" = "Ark Soft",  "desc" = "Oh god."),
 			list("alert" = "redalert",  "label" = "Red Alert",   "desc" = "Nothing to do with communists."),
 			list("alert" = "lockdown",  "label" = "Lockdown",    "desc" = "Let everyone know they're on lockdown."),
 			list("alert" = "biohazard", "label" = "Biohazard",   "desc" = "Great for virus outbreaks and parties."),

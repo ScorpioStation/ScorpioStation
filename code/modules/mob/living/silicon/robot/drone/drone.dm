@@ -75,7 +75,7 @@
 	decompiler = locate(/obj/item/matter_decompiler) in src.module
 
 	//Some tidying-up.
-	flavor_text = "It's a tiny little repair drone. The casing is stamped with an NT logo and the subscript: 'Nanotrasen Recursive Repair Systems: Fixing Tomorrow's Problem, Today!'"
+	flavor_text = "It's a tiny little repair drone. The casing is stamped with an NT logo and the subscript: 'Ark Soft Recursive Repair Systems: Fixing Tomorrow's Problem, Today!'"
 	scanner.Grant(src)
 	update_icons()
 

@@ -615,7 +615,7 @@
 		if("pod_black")
 			desc = "An all black space pod with no insignias."
 		if("pod_mil")
-			desc = "A dark grey space pod brandishing the Nanotrasen Military insignia"
+			desc = "A dark grey space pod brandishing the Ark Soft Military insignia"
 		if("pod_synd")
 			desc = "A menacing military space pod with Fuck NT stenciled onto the side"
 		if("pod_gold")

@@ -375,8 +375,8 @@
 	dispensable_reagents = list("ice", "cream", "cider", "beer", "kahlua", "whiskey", "wine", "vodka", "gin", "rum", "tequila", "vermouth", "cognac", "ale", "mead", "synthanol")
 	upgrade_reagents = list("iced_beer", "irishcream", "manhattan", "antihol", "synthignon", "bravebull")
 	hacked_reagents = list("goldschlager", "patron", "absinthe", "ethanol", "nothing", "sake")
-	hack_message = "You disable the 'nanotrasen-are-cheap-bastards' lock, enabling hidden and very expensive boozes."
-	unhack_message = "You re-enable the 'nanotrasen-are-cheap-bastards' lock, disabling hidden and very expensive boozes."
+	hack_message = "You disable the 'Ark Soft-are-cheap-bastards' lock, enabling hidden and very expensive boozes."
+	unhack_message = "You re-enable the 'Ark Soft-are-cheap-bastards' lock, disabling hidden and very expensive boozes."
 
 /obj/machinery/chem_dispenser/beer/New()
 	..()

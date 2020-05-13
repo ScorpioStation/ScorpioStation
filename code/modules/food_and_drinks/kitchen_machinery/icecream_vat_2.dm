@@ -48,7 +48,7 @@ GLOBAL_LIST_INIT(ingredients_source, list(
 
 /obj/machinery/icecream_vat
 	name = "icecream vat"
-	desc = "Ding-aling ding dong. Get your Nanotrasen-approved ice cream!"
+	desc = "Ding-aling ding dong. Get your Ark Soft-approved ice cream!"
 	icon = 'icons/obj/kitchen.dmi'
 	icon_state = "icecream_vat"
 	density = 1

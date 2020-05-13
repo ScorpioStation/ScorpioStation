@@ -280,7 +280,7 @@ research holder datum.
 
 /datum/tech/syndicate
 	name = "Illegal Technologies Research"
-	desc = "The study of technologies that violate standard Nanotrasen regulations."
+	desc = "The study of technologies that violate standard Ark Soft regulations."
 	id = "syndicate"
 	max_level = 0 // Don't count towards maxed research, since it's illegal.
 	rare = 4

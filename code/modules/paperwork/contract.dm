@@ -29,7 +29,7 @@
 
 /obj/item/paper/contract/employment/update_text()
 	name = "paper- [target] employment contract"
-	info = "<center>Conditions of Employment</center><BR><BR><BR><BR>This Agreement is made and entered into as of the date of last signature below, by and between [target] (hereafter referred to as SLAVE), and Nanotrasen (hereafter referred to as the omnipresent and helpful watcher of humanity).\
+	info = "<center>Conditions of Employment</center><BR><BR><BR><BR>This Agreement is made and entered into as of the date of last signature below, by and between [target] (hereafter referred to as SLAVE), and Ark Soft (hereafter referred to as the omnipresent and helpful watcher of humanity).\
 	<BR>WITNESSETH:<BR>WHEREAS, SLAVE is a natural born human or humanoid, possessing skills upon which he or she can aid the omnipresent and helpful watcher of humanity, who seeks employment in the omnipresent and helpful watcher of humanity.\
 	<BR>WHEREAS, the omnipresent and helpful watcher of humanity agrees to sporadically provide payment to SLAVE, in exchange for permanent servitude.\
 	<BR>NOW THEREFORE in consideration of the mutual covenants herein contained, and other good and valuable consideration, the parties hereto mutually agree as follows:\
@@ -47,8 +47,8 @@
 		else
 			deconvert = 0.0001 // one out of a million
 	if(prob(deconvert))
-		M.visible_message("<span class='notice'>[user] reminds [M] that [M]'s soul was already purchased by Nanotrasen!</span>")
-		to_chat(M,"<span class='boldnotice'>You feel that your soul has returned to its rightful owner, Nanotrasen.</span>")
+		M.visible_message("<span class='notice'>[user] reminds [M] that [M]'s soul was already purchased by Ark Soft!</span>")
+		to_chat(M,"<span class='boldnotice'>You feel that your soul has returned to its rightful owner, Ark Soft.</span>")
 		M.return_soul()
 	return ..()
 

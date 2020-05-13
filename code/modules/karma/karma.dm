@@ -255,9 +255,9 @@ GLOBAL_LIST_EMPTY(karma_spenders)
 			if("Customs Officer" in purchased)
 				refundable += "Customs Officer"
 				dat += "<a href='?src=[UID()];karmashop=shop;KarmaRefund=Customs Officer;KarmaRefundType=job;KarmaRefundCost=30'>Refund Customs Officer -- 30KP</a><br>"
-			if("Nanotrasen Recruiter" in purchased)
-				refundable += "Nanotrasen Recruiter"
-				dat += "<a href='?src=[UID()];karmashop=shop;KarmaRefund=Nanotrasen Recruiter;KarmaRefundType=job;KarmaRefundCost=10'>Refund Nanotrasen Recruiter -- 10KP</a><br>"
+			if("Ark Soft Recruiter" in purchased)
+				refundable += "Ark Soft Recruiter"
+				dat += "<a href='?src=[UID()];karmashop=shop;KarmaRefund=Ark Soft Recruiter;KarmaRefundType=job;KarmaRefundCost=10'>Refund Ark Soft Recruiter -- 10KP</a><br>"
 
 			if(!refundable.len)
 				dat += "You do not have any refundable karma purchases.<br>"
@@ -382,7 +382,7 @@ GLOBAL_LIST_EMPTY(karma_spenders)
 		if("Tajaran Ambassador","Unathi Ambassador","Skrell Ambassador","Diona Ambassador","Kidan Ambassador",
 		"Slime People Ambassador","Grey Ambassador","Vox Ambassador","Customs Officer")
 			cost = 30
-		if("Nanotrasen Recruiter")
+		if("Ark Soft Recruiter")
 			cost = 10
 		else
 			to_chat(usr, "<span class='warning'>That job is not refundable.</span>")

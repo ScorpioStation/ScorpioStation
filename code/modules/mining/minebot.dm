@@ -3,7 +3,7 @@
 #define MINEDRONE_ATTACK 2
 
 /mob/living/simple_animal/hostile/mining_drone
-	name = "nanotrasen minebot"
+	name = "Ark Soft minebot"
 	desc = "The instructions printed on the side read: This is a small robot used to support miners, can be set to search and collect loose ore, or to help fend off wildlife. A mining scanner can instruct it to drop loose ore. Field repairs can be done with a welder."
 	gender = NEUTER
 	icon = 'icons/obj/aibots.dmi'
