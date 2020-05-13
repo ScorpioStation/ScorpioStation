@@ -9093,7 +9093,7 @@
 	pixel_y = -3
 	},
 /obj/item/radio/headset/syndicate,
-/obj/item/radio/headset/heads/ntrep{
+/obj/item/radio/headset/heads/asrep{
 	pixel_x = -3;
 	pixel_y = 3
 	},

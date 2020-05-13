@@ -85,7 +85,7 @@
 	detonate = 0
 	//toff = 1
 
-/obj/item/pda/heads/ntrep
+/obj/item/pda/heads/asrep
 	default_cartridge = /obj/item/cartridge/supervisor
 	icon_state = "pda-h"
 
@@ -191,7 +191,7 @@
 	var/datum/data/pda/app/messenger/M = find_program(/datum/data/pda/app/messenger)
 	if(M)
 		M.m_hidden = 1
-		
+
 //Some spare PDAs in a box
 /obj/item/storage/box/PDAs
 	name = "spare PDAs"

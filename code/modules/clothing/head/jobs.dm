@@ -36,10 +36,10 @@
 	dog_fashion = /datum/dog_fashion/head/hop
 
 //Ark Soft Representative
-/obj/item/clothing/head/ntrep
+/obj/item/clothing/head/asrep
 	name = "Ark Soft Representative hat"
 	desc = "A cap issued to the Ark Soft Representative"
-	icon_state = "ntrep"
+	icon_state = "asrep"
 
 
 //Chaplain

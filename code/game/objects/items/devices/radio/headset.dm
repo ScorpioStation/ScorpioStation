@@ -245,12 +245,12 @@
 	item_state = "headset"
 	ks2type = /obj/item/encryptionkey/headset_service
 
-/obj/item/radio/headset/heads/ntrep
+/obj/item/radio/headset/heads/asrep
 	name = "Ark Soft Representative's headset"
 	desc = "The headset of the Ark Soft Representative."
 	icon_state = "com_headset"
 	item_state = "headset"
-	ks2type = /obj/item/encryptionkey/heads/ntrep
+	ks2type = /obj/item/encryptionkey/heads/asrep
 
 /obj/item/radio/headset/heads/magistrate
 	name = "magistrate's headset"

@@ -874,7 +874,7 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 	name = "\improper Messaging Server Room"
 	icon_state = "server"
 
-/area/ntrep
+/area/asrep
 	name = "\improper Ark Soft Representative's Office"
 	icon_state = "bluenew"
 

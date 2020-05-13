@@ -263,9 +263,9 @@
 	new /obj/item/clothing/under/rank/centcom/blueshield(src)
 
 
-/obj/structure/closet/secure_closet/ntrep
+/obj/structure/closet/secure_closet/asrep
 	name = "\improper Ark Soft Representative's locker"
-	req_access = list(ACCESS_NTREP)
+	req_access = list(ACCESS_ASREP)
 	icon_state = "ntsecure1"
 	icon_closed = "ntsecure"
 	icon_locked = "ntsecure1"
@@ -273,7 +273,7 @@
 	icon_broken = "ntsecurebroken"
 	icon_off = "ntsecureoff"
 
-/obj/structure/closet/secure_closet/ntrep/New()
+/obj/structure/closet/secure_closet/asrep/New()
 	..()
 	new /obj/item/book/manual/faxes(src)
 	new /obj/item/storage/briefcase(src)
@@ -286,7 +286,7 @@
 	new /obj/item/clothing/under/lawyer/black(src)
 	new /obj/item/clothing/under/lawyer/female(src)
 	new /obj/item/clothing/under/rank/centcom/representative(src)
-	new /obj/item/clothing/head/ntrep(src)
+	new /obj/item/clothing/head/asrep(src)
 	new /obj/item/clothing/shoes/sandal/fancy(src)
 	new /obj/item/storage/box/tapes(src)
 	new /obj/item/taperecorder(src)

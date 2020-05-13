@@ -183,7 +183,7 @@ GLOBAL_LIST_INIT(potential_theft_objectives, (subtypesof(/datum/theft_objective)
 /datum/objective/hijack
 	martyr_compatible = 0 //Technically you won't get both anyway.
 	explanation_text = "Hijack the shuttle by escaping on it with no loyalist Ark Soft crew on board and free. \
-	Syndicate agents, other enemies of Nanotrasen, cyborgs, pets, and cuffed/restrained hostages may be allowed on the shuttle alive."
+	Syndicate agents, other enemies of Ark Soft, cyborgs, pets, and cuffed/restrained hostages may be allowed on the shuttle alive."
 
 /datum/objective/hijack/check_completion()
 	if(!owner.current || owner.current.stat)
