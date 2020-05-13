@@ -100,7 +100,7 @@
 
 /obj/item/folder/documents/New()
 	..()
-	new /obj/item/documents/nanotrasen(src)
+	new /obj/item/documents/arksoft(src)
 	update_icon()
 
 /obj/item/folder/syndicate

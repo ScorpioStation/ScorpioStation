@@ -152,7 +152,7 @@
 	channels = list("Service" = 1)
 
 /obj/item/encryptionkey/ert
-	name = "Nanotrasen ERT Radio Encryption Key"
+	name = "Ark Soft ERT Radio Encryption Key"
 	channels = list("Response Team" = 1, "Science" = 1, "Command" = 1, "Medical" = 1, "Engineering" = 1, "Security" = 1, "Supply" = 1, "Service" = 1)
 
 /obj/item/encryptionkey/centcom

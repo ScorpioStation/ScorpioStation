@@ -12,8 +12,8 @@
 	pressure_resistance = 2
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 
-/obj/item/documents/nanotrasen
-	desc = "\"Top Secret\" Nanotrasen documents printed on special copy-protected paper. It is filled with complex diagrams and lists of names, dates and coordinates."
+/obj/item/documents/arksoft
+	desc = "\"Top Secret\" Ark Soft documents printed on special copy-protected paper. It is filled with complex diagrams and lists of names, dates and coordinates."
 	icon_state = "docs_verified"
 
 /obj/item/documents/syndicate

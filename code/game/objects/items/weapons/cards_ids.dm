@@ -634,8 +634,8 @@
 	access = get_all_centcom_access()
 	..()
 
-/obj/item/card/id/nanotrasen
-	name = "nanotrasen ID card"
+/obj/item/card/id/arksoft
+	name = "Ark Soft ID card"
 	icon_state = "nanotrasen"
 
 /obj/item/card/id/prisoner
@@ -792,7 +792,7 @@
 
 /obj/item/card/id/lifetime
 	name = "Lifetime ID Card"
-	desc = "A modified ID card given only to those people who have devoted their lives to the better interests of Nanotrasen. It sparkles blue."
+	desc = "A modified ID card given only to those people who have devoted their lives to the better interests of Ark Soft. It sparkles blue."
 	icon_state = "lifetimeid"
 
 /obj/item/card/id/ert

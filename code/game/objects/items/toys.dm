@@ -1336,7 +1336,7 @@ obj/item/toy/cards/deck/syndicate/black
 
 /obj/item/toy/minigibber
 	name = "miniature gibber"
-	desc = "A miniature recreation of Nanotrasen's famous meat grinder."
+	desc = "A miniature recreation of Ark Soft's famous meat grinder."
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "minigibber"
 	attack_verb = list("grinded", "gibbed")

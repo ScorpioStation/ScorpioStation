@@ -567,7 +567,7 @@
 
 /obj/machinery/computer/secure_data/laptop
 	name = "security laptop"
-	desc = "Nanotrasen Security laptop. Bringing modern compact computing to this century!"
+	desc = "Ark Soft Security laptop. Bringing modern compact computing to this century!"
 	icon_state = "laptop"
 	icon_keyboard = "seclaptop_key"
 	icon_screen = "seclaptop"

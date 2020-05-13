@@ -5,7 +5,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	department_flag = JOBCAT_ENGSEC
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Nanotrasen officials"
+	supervisors = "Ark Soft officials"
 	department_head = list("Ark Soft Navy Officer")
 	selection_color = "#ccccff"
 	req_admin_notify = 1
@@ -101,7 +101,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 
 
 
-/datum/job/nanotrasenrep
+/datum/job/arksoftrep
 	title = "Ark Soft Representative"
 	flag = JOB_NANO
 	department_flag = JOBCAT_KARMA
@@ -126,16 +126,16 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 			            ACCESS_CREMATORIUM, ACCESS_KITCHEN, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_QM, ACCESS_HYDROPONICS, ACCESS_LAWYER,
 			            ACCESS_THEATRE, ACCESS_CHAPEL_OFFICE, ACCESS_LIBRARY, ACCESS_RESEARCH, ACCESS_MINING, ACCESS_HEADS_VAULT, ACCESS_MINING_STATION,
 			            ACCESS_CLOWN, ACCESS_MIME, ACCESS_RC_ANNOUNCE, ACCESS_KEYCARD_AUTH, ACCESS_GATEWAY, ACCESS_WEAPONS, ACCESS_ASREP)
-	outfit = /datum/outfit/job/nanotrasenrep
+	outfit = /datum/outfit/job/arksoftrep
 
-/datum/outfit/job/nanotrasenrep
+/datum/outfit/job/arksoftrep
 	name = "Ark Soft Representative"
-	jobtype = /datum/job/nanotrasenrep
+	jobtype = /datum/job/arksoftrep
 	uniform = /obj/item/clothing/under/rank/asrep
 	suit = /obj/item/clothing/suit/storage/asrep
 	shoes = /obj/item/clothing/shoes/centcom
 	l_ear = /obj/item/radio/headset/heads/asrep
-	id = /obj/item/card/id/nanotrasen
+	id = /obj/item/card/id/arksoft
 	l_pocket = /obj/item/lighter/zippo/nt_rep
 	pda = /obj/item/pda/heads/asrep
 	backpack_contents = list(
@@ -177,7 +177,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_ear = /obj/item/radio/headset/heads/blueshield/alt
 	glasses = /obj/item/clothing/glasses/hud/health/sunglasses
-	id = /obj/item/card/id/nanotrasen
+	id = /obj/item/card/id/arksoft
 	pda = /obj/item/pda/heads/blueshield
 	backpack_contents = list(
 		/obj/item/storage/box/deathimp = 1,
@@ -195,7 +195,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	department_flag = JOBCAT_KARMA
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Nanotrasen Supreme Court"
+	supervisors = "the Ark Soft Supreme Court"
 	department_head = list("Captain")
 	selection_color = "#ddddff"
 	req_admin_notify = 1
@@ -221,7 +221,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	head = /obj/item/clothing/head/powdered_wig
 	l_ear = /obj/item/radio/headset/heads/magistrate/alt
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
-	id = /obj/item/card/id/nanotrasen
+	id = /obj/item/card/id/arksoft
 	l_pocket = /obj/item/flash
 	pda = /obj/item/pda/heads/magistrate
 	backpack_contents = list(
