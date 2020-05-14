@@ -169,7 +169,7 @@
 "J" = (
 /obj/structure/filingcabinet,
 /obj/item/paper{
-	info = "A good start to the operation: intercepted NanoArk Softtrasen military communications. A convoy is scheduled to transfer nuclear warheads to a new military base. This is as good a chance as any to get our hands on some heavy weaponry, I suggest we take it.";
+	info = "A good start to the operation: intercepted Ark Soft military communications. A convoy is scheduled to transfer nuclear warheads to a new military base. This is as good a chance as any to get our hands on some heavy weaponry, I suggest we take it.";
 	name = "april report"
 	},
 /obj/item/paper{

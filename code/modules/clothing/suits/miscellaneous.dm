@@ -523,7 +523,7 @@
 	hoodtype = /obj/item/clothing/head/hooded/hood/white
 
 /obj/item/clothing/suit/hooded/hoodie/nt
-	name = "NaArk Softnotrasen hoodie"
+	name = "Ark Soft hoodie"
 	desc = "A blue hoodie with the Ark Soft logo on the back."
 	icon_state = "nt_hoodie"
 	hoodtype = /obj/item/clothing/head/hooded/hood/blue

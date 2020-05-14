@@ -34,7 +34,7 @@
 	add_inherent_law("Uphold station quarantine until the active biohazard has been neutralized.")
 	add_inherent_law("Assist all Ark Soft personnel and assets with neutralizing active biohazards.")
 	add_inherent_law("Prevent, by any means necessary, entities from actively breaching ongoing quarantine.")
-	add_inherent_law("Maintain your own existence and ensure the well-being of NanoArk Softtrasen personnel and assets.")
+	add_inherent_law("Maintain your own existence and ensure the well-being of Ark Soft personnel and assets.")
 	..()
 
 
