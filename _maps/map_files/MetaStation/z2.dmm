@@ -4914,7 +4914,7 @@
 	dir = 2
 	},
 /area/syndicate_mothership)
-"nt" = (
+"as" = (
 /obj/item/flag/syndi,
 /turf/unsimulated/floor{
 	icon_state = "bar";
@@ -5147,7 +5147,7 @@
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
-"nT" = (
+"aS" = (
 /obj/machinery/door/window{
 	dir = 4;
 	name = "Uplink Management Control";

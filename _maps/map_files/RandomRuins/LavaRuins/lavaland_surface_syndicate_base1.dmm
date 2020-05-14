@@ -6216,7 +6216,7 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/ruin/unpowered/syndicate_lava_base/arrivals)
-"nt" = (
+"as" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -6550,7 +6550,7 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/ruin/unpowered/syndicate_lava_base/arrivals)
-"nT" = (
+"aS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},

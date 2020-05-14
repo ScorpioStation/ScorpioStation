@@ -4847,7 +4847,7 @@
 /obj/item/storage/backpack/duffel,
 /turf/simulated/floor/plating/airless,
 /area/derelict/se_solar)
-"nt" = (
+"as" = (
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -5075,7 +5075,7 @@
 	icon_state = "derelict7"
 	},
 /area/derelict/hallway/secondary)
-"nT" = (
+"aS" = (
 /turf/simulated/floor/plating/airless{
 	icon_state = "derelict8"
 	},

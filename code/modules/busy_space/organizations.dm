@@ -93,7 +93,7 @@
 /datum/lore/organization/tsc/arksoft
 	name = "Ark Soft Incorporated"
 	short_name = "Ark Soft"
-	acronym = "NT"
+	acronym = "AS"
 	desc = "The largest shareholder in the galactic plasma markets, Ark Soft is a research and mining corporation which specializes in\
 	 FTL technologies and weapon systems. Frowned upon by most governments due to their shady business tactics and poor ethics record,\
 	  Ark Soft is often seen as a necessary evil for maintaining access to the often volatile plasma market. Ark Soft was originally\

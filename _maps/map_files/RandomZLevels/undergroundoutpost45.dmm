@@ -8785,7 +8785,7 @@
 	has_gravity = 1;
 	name = "UO45 Research"
 	})
-"nt" = (
+"as" = (
 /obj/structure/cable{
 	d1 = 2;
 	d2 = 4;
@@ -9190,7 +9190,7 @@
 	has_gravity = 1;
 	name = "UO45 Research"
 	})
-"nT" = (
+"aS" = (
 /obj/machinery/alarm/monitor{
 	dir = 4;
 	frequency = 1439;

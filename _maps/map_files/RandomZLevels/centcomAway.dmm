@@ -5555,7 +5555,7 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/awaymission/centcomAway/hangar)
-"nt" = (
+"as" = (
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -5766,7 +5766,7 @@
 	dir = 5
 	},
 /area/awaymission/centcomAway/general)
-"nT" = (
+"aS" = (
 /obj/machinery/door/airlock/external,
 /obj/structure/cable{
 	d1 = 1;

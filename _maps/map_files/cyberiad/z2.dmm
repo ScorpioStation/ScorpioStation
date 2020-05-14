@@ -5137,7 +5137,7 @@
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
-"nt" = (
+"as" = (
 /obj/structure/mirror{
 	pixel_x = -28
 	},
@@ -5407,7 +5407,7 @@
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
-"nT" = (
+"aS" = (
 /obj/machinery/door/poddoor{
 	id_tag = "ASSAULT";
 	name = "Assault Armor"

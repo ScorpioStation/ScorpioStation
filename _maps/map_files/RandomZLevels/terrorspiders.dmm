@@ -6571,7 +6571,7 @@
 	icon_state = "neutral"
 	},
 /area/awaymission/UO71/centralhall)
-"nt" = (
+"as" = (
 /obj/structure/chair/comfy/black{
 	tag = "icon-comfychair (WEST)";
 	icon_state = "comfychair";
@@ -6859,7 +6859,7 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/awaymission/UO71/centralhall)
-"nT" = (
+"aS" = (
 /turf/simulated/wall/rust,
 /area/awaymission/UO71/eng)
 "nU" = (
