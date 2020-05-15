@@ -1,6 +1,56 @@
 # paradise-upstream.md
 Changelog for changes we incorporate from upstream (Paradise Station).
 
+## 2020-05-14
+* Paradise #[13360](https://github.com/ParadiseSS13/Paradise/pull/13360): Fixes the missionary staff being unable to charge properly
+    * Adds `get_dist` check to make missionary staff charge properly
+* Paradise #[13380](https://github.com/ParadiseSS13/Paradise/pull/13380): Adds MC VIEWING to the VIEWRUNTIMES permission
+    * Adds check for `VIEWRUNTIMES` permission to see Master Controller tab
+* Paradise #[13406](https://github.com/ParadiseSS13/Paradise/pull/13406): Fixes MC perms spam
+    * Adds `FALSE` to prevent MC permissions checks from being logged
+* Paradise #[13415](https://github.com/ParadiseSS13/Paradise/pull/13415): Reduces automender attack log spam
+    * Adds a check for `emagged` to reduce log spam
+* Paradise #[13419](https://github.com/ParadiseSS13/Paradise/pull/13419): Medicines now properly sate addiction when smoked.
+    * Adds a call to `sate_addiction` in `/datum/reagent/medicine/on_mob_life`
+* Paradise #[13421](https://github.com/ParadiseSS13/Paradise/pull/13421): Fixes and pressing issue in a certain system
+    * Added check to prevent ghosts from getting shocked
+    * Obsoleted by Paradise #[13422](https://github.com/ParadiseSS13/Paradise/pull/13422)
+* Paradise #[13422](https://github.com/ParadiseSS13/Paradise/pull/13422): Prevents Shocking non-living Mobs
+    * Changes `/obj/machinery/proc/shock` to accept `mob/living` instead of `mob`
+* Paradise #[13427](https://github.com/ParadiseSS13/Paradise/pull/13427): Fixed description for corporate cap
+    * Fixes item `desc` for `/obj/item/clothing/head/soft/sec` and `/obj/item/clothing/head/soft/sec/corp`
+* Paradise #[13401](https://github.com/ParadiseSS13/Paradise/pull/13401): Borgs can no longer access mounted defibs
+    * Adds a NO-OP `/obj/machinery/defibrillator_mount/attack_ai` to prevent borgs from using the wall defibs
+* Paradise #[13414](https://github.com/ParadiseSS13/Paradise/pull/13414): Fixes some runtimes
+    * Adds some checks to avoid runtimes
+    * Moves a call to super in `/obj/structure/lattice/catwalk/swarmer_act`
+* Paradise #[13408](https://github.com/ParadiseSS13/Paradise/pull/13408): Moves config loading to world/New not Master/New
+    * Moves `load_configuration()` from `/datum/controller/master/New` to `/world/New`
+* Paradise #[13394](https://github.com/ParadiseSS13/Paradise/pull/13394): Fixes the sensory restoration symptom message
+    * Fixes typo from `healing` to `hearing`
+* Paradise #[13396](https://github.com/ParadiseSS13/Paradise/pull/13396): Makes trail_holders (blood trails) invisible upon examine.
+    * Explicitly sets `/obj/effect/decal/cleanable/trail_holder` to have no icon to prevent client crashes/lag
+* Paradise #[13399](https://github.com/ParadiseSS13/Paradise/pull/13399): Grammar and typo fixes
+    * Fixed grammar in flash message in `code/game/objects/items/devices/flash.dm`
+    * Fixed variable name typo in `code/modules/reagents/chemistry/holder.dm`
+* Paradise #[13431](https://github.com/ParadiseSS13/Paradise/pull/13431): Headcrab death check
+    * Dead Headcrabs no longer try to zombify dead humans or eat dead animals
+    * Calls super to check for life before processing Life in `/mob/living/simple_animal/hostile/headcrab/Life`
+* Paradise #[13400](https://github.com/ParadiseSS13/Paradise/pull/13400): Makes it so you can't repair wooden barricades with a welder
+    * Adds a check to `/obj/structure/barricade/welder_act` to ensure the barricade is made out of `METAL` before allowing repair
+* Paradise #[12899](https://github.com/ParadiseSS13/Paradise/pull/12899): Gas Mix Mistake Fix
+    * Fixes a comparison to the oxygen level when mixing carbon dioxide
+* Paradise #[13437](https://github.com/ParadiseSS13/Paradise/pull/13437): fixed apples not distilling in fermenting barrels
+    * Fixed the name of `distill_reagent` in `code/modules/hydroponics/grown/apple.dm`
+* Paradise #[13387](https://github.com/ParadiseSS13/Paradise/pull/13387): GC Fixes
+    * Fixes some circular references to allow better GC
+    * Fixed check for `user.incapacitated()` in `/obj/item/enginepicker/attack_self`
+    * Fixes references to globals without `GLOB` in `TESTING` defined code
+* Paradise #[13397](https://github.com/ParadiseSS13/Paradise/pull/13397): Fixes Chainsaw hitsound
+    * Adds null `hitsound` field to `/obj/item/twohanded/chainsaw` to allow custom sound handling
+* Paradise #[13420](https://github.com/ParadiseSS13/Paradise/pull/13420): Refactor and Fixes EMP's
+    * Refactors logic in `emp_act` across containers, items, and mobs to prevent duplicate firing
+
 ## 2020-05-07
 * Paradise #[13250](https://github.com/ParadiseSS13/Paradise/pull/13250): Adds vox bone armor sprites
     * Adds pixels and icon states for bone armor to `icons/mob/species/vox/suit.dmi`
