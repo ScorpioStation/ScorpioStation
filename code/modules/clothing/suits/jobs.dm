@@ -319,11 +319,11 @@
 		"Vox" = 'icons/mob/species/vox/suit.dmi'
 		)
 
-/obj/item/clothing/suit/storage/asrep
+/obj/item/clothing/suit/storage/arkrep
 	name = "\improper Ark Soft Representative jacket"
 	desc = "A fancy black jacket; standard issue to Ark Soft Representatives."
-	icon_state = "asrep"
-	item_state = "asrep"
+	icon_state = "arkrep"
+	item_state = "arkrep"
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|ARMS
 	ignore_suitadjust = 0

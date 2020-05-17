@@ -85,7 +85,7 @@
 	detonate = 0
 	//toff = 1
 
-/obj/item/pda/heads/asrep
+/obj/item/pda/heads/arkrep
 	default_cartridge = /obj/item/cartridge/supervisor
 	icon_state = "pda-h"
 
