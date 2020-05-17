@@ -2115,7 +2115,7 @@ entirety
 entity
 entrance
 entree
-easrepreneur
+entrepreneur
 entry
 envelope
 environment

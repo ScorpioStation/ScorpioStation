@@ -192,7 +192,7 @@
 
 /obj/item/clothing/under/color/red/jersey
 	name = "red team jersey"
-	desc = "The jersey of the Ark Soft Phi-ghters!"
+	desc = "The jersey of the Ark Soft Tau-rans!"
 	icon_state = "redjersey"
 	item_state = "r_suit"
 	item_color = "redjersey"
@@ -200,7 +200,7 @@
 
 /obj/item/clothing/under/color/blue/jersey
 	name = "blue team jersey"
-	desc = "The jersey of the Ark Soft Pi-rates!"
+	desc = "The jersey of the Ark Soft Gun-Takers! Flammable edition." // Unbreakable Kimmy Schmidt, Season 3, Episode 10
 	icon_state = "bluejersey"
 	item_state = "b_suit"
 	item_color = "bluejersey"

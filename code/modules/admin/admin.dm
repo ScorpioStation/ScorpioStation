@@ -388,7 +388,7 @@ GLOBAL_VAR_INIT(nologevent, 0)
 			dat+="<B>[src.admincaster_feed_channel.channel_name]: </B><FONT SIZE=1>\[created by: <FONT COLOR='maroon'>[src.admincaster_feed_channel.author]</FONT>\]</FONT><HR>"
 			if(src.admincaster_feed_channel.censored)
 				dat+={"
-					<FONT COLOR='red'><B>ATTENTION: </B></FONT>This channel has been deemed as threatening to the welfare of the station, and marked with a Ark Soft D-Notice.<BR>
+					<FONT COLOR='red'><B>ATTENTION: </B></FONT>This channel has been deemed as threatening to the welfare of the station, and marked with an Ark Soft D-Notice.<BR>
 					No further feed story additions are allowed while the D-Notice is in effect.</FONT><BR><BR>
 				"}
 			else

@@ -36,7 +36,7 @@
 			 			on live humans, including virology research, genetic manipulation, and \"feeding them
 			 			to the slimes to see what happens\". Allegedly, these test subjects were neither
 			 			humanified monkeys nor volunteers, but rather unqualified staff that were forced into
-			 			the experiments, and reported to have died in a \"work accident\" by NanotraArk Softsen Inc."}
+			 			the experiments, and reported to have died in a \"work accident\" by Ark Soft Inc."}
 			author = "Unauthorized"
 
 	bluespace_research

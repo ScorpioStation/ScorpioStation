@@ -278,7 +278,7 @@
 		to_chat(user, "Waving around a badge before swiping an ID would be pretty pointless.")
 		return
 	if(isliving(user))
-		user.visible_message("<span class='warning'>[user] displays [user.p_their()] Ark Soft Internal Security Legal Authorization Badge.\nIt reads: [stored_name], NT Security.</span>","<span class='warning'>You display your Ark Soft Internal Security Legal Authorization Badge.\nIt reads: [stored_name], NT Security.</span>")
+		user.visible_message("<span class='warning'>[user] displays [user.p_their()] Ark Soft Internal Security Legal Authorization Badge.\nIt reads: [stored_name], AS Security.</span>","<span class='warning'>You display your Ark Soft Internal Security Legal Authorization Badge.\nIt reads: [stored_name], AS Security.</span>")
 
 /obj/item/clothing/accessory/holobadge/attackby(var/obj/item/O as obj, var/mob/user as mob, params)
 	if(istype(O, /obj/item/card/id) || istype(O, /obj/item/pda))

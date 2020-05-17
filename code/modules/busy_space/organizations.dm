@@ -81,7 +81,7 @@
 		var/list/star_names = list(
 			"Sol", "Alpha Centauri", "Sirius", "Vega", "Regulus", "Vir", "Algol", "Aldebaran",
 			"Delta Doradus", "Menkar", "Geminga", "Elnath", "Gienah", "Mu Leporis", "Nyx", "Tau Ceti",
-			"Wazn", "Alphard", "Phact", "Altair", "Mauna", "Jargon", "Xarxis", "Hestia", "Dalstis", "Cygni", "Haverick", "Corvus", "Sancere", "Cydoni", "Kaliban", "Midway", "Dansik", "Branwyn")
+			"Wazn", "Alphard", "Phact", "Altair", "Mauna", "Jargon", "Xarxis", "Hestia", "Dalstis", "Cygni", "Haverick", "Corvus", "Sancere", "Cydoni", "Kaliban", "Midway", "Dansik", "Branwyn", "Scorpii")
 		var/list/destination_types = list("dockyard", "station", "vessel", "waystation", "telecommunications satellite", "spaceport", "distress beacon", "anomaly", "colony", "outpost")
 		while(i)
 			destination_names.Add("a [pick(destination_types)] in [pick(star_names)]")
@@ -94,29 +94,28 @@
 	name = "Ark Soft Incorporated"
 	short_name = "Ark Soft"
 	acronym = "AS"
-	desc = "The largest shareholder in the galactic plasma markets, Ark Soft is a research and mining corporation which specializes in\
-	 FTL technologies and weapon systems. Frowned upon by most governments due to their shady business tactics and poor ethics record,\
-	  Ark Soft is often seen as a necessary evil for maintaining access to the often volatile plasma market. Ark Soft was originally\
-	   incorporated on Earth with their headquarters situated on Mars, however they have recently moved most of their operations to the Epsilon Eridani sector."
+	desc = "The largest holder of technological and design patents, Ark Soft is a research and development corporation which specializes in\
+	 Bluespace, FTL, and Terraforming technologies. Frowned upon by most governments due to their shady business tactics and poor ethics record,\
+	  Ark Soft is often seen as a necessary evil for maintaining access to high tech equipment and weapons. Ark Soft was originally\
+	   incorporated on Earth, however they have recently moved most of their operations to the Tau Scorpii sector."
 	history = "" // To be written someday.
 	work = "research giant"
 	headquarters = "Mars"
 	motto = ""
 
-	ship_prefixes = list("NSV" = "exploration", "NTV" = "hauling", "NDV" = "patrol", "NRV" = "emergency response")
+	ship_prefixes = list("ASV" = "exploration", "ATV" = "hauling", "ADV" = "patrol", "ARV" = "emergency response")
 	// Note that the current station being used will be pruned from this list upon being instantiated
 	destination_names = list(
-		"NAS Trurl in Epsilon Eridani",
-		"NAS Crescent in Tau Ceti",
-		"NSS Exodus in Tau Ceti",
-		"NSS Antiqua in Darsing",
-		"NRS Orion in Sol",
-		"NSS Vector in Omicron Ceti",
-		"NBS Anansi in Omicron Ceti",
-		"NSS Redemption in Sirius",
-		"NDS Inferno in Tau Ceti",
-		"NAB Smythside Central Headquarters on Earth",
-		"NAB North Cimmeria Central Offices on Mars",
+		"ACS Cephalon in Tau Scorpii",
+		"AAS Crescent in Tau Ceti",
+		"ARS Exodus in Tau Ceti",
+		"ARS Antiqua in Darsing",
+		"ARS Orion in Sol",
+		"ARS Vector in Omicron Ceti",
+		"ABS Anansi in Omicron Ceti",
+		"ARS Redemption in Sirius",
+		"ADS Inferno in Tau Ceti",
+		"AAB Oceanside Central Headquarters on Earth",
 	)
 
 /datum/lore/organization/tsc/arksoft/New()

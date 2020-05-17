@@ -293,7 +293,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			if(S.bodyflags & (HAS_SKIN_TONE|HAS_ICON_SKIN_TONE))
 				dat += "<b>Skin Tone:</b> <a href='?_src_=prefs;preference=s_tone;task=input'>[S.bodyflags & HAS_ICON_SKIN_TONE ? "[s_tone]" : "[-s_tone + 35]/220"]</a><br>"
 			dat += "<b>Disabilities:</b> <a href='?_src_=prefs;preference=disabilities'>\[Set\]</a><br>"
-			dat += "<b>Ark Soft Relation:</b> <a href ='?_src_=prefs;preference=nt_relation;task=input'>[ark_soft_relation]</a><br>"
+			dat += "<b>Ark Soft Relation:</b> <a href ='?_src_=prefs;preference=as_relation;task=input'>[ark_soft_relation]</a><br>"
 			dat += "<a href='byond://?_src_=prefs;preference=flavor_text;task=input'>Set Flavor Text</a><br>"
 			if(length(flavor_text) <= 40)
 				if(!length(flavor_text))	dat += "\[...\]<br>"
@@ -1766,8 +1766,8 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 					if(new_backbag)
 						backbag = new_backbag
 
-				if("nt_relation")
-					var/new_relation = input(user, "Choose your relation to NT. Note that this represents what others can find out about your character by researching your background, not what your character actually thinks.", "Character Preference")  as null|anything in list("Loyal", "Supportive", "Neutral", "Skeptical", "Opposed")
+				if("as_relation")
+					var/new_relation = input(user, "Choose your relation to Ark Soft. Note that this represents what others can find out about your character by researching your background, not what your character actually thinks.", "Character Preference")  as null|anything in list("Loyal", "Supportive", "Neutral", "Skeptical", "Opposed")
 					if(new_relation)
 						ark_soft_relation = new_relation
 

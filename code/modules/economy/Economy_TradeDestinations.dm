@@ -19,7 +19,7 @@ GLOBAL_LIST_EMPTY(weighted_mundaneevent_locations)
 //distance is measured in AU and co-relates to travel time
 /datum/trade_destination/centcomm
 	name = "CentComm"
-	description = "Ark Soft's administrative centre for Tau Ceti."
+	description = "Ark Soft's administrative centre for Tau Scorpii."
 	distance = 1.2
 	willing_to_buy = list()
 	willing_to_sell = list()
@@ -51,7 +51,7 @@ GLOBAL_LIST_EMPTY(weighted_mundaneevent_locations)
 
 /datum/trade_destination/redolant
 	name = "OAV Redolant"
-	description = "Osiris Atmospherics station in orbit around the only gas giant insystem. They retain tight control over shipping rights, and Osiris warships protecting their prize are not an uncommon sight in Tau Ceti."
+	description = "Osiris Atmospherics station in orbit around the only gas giant insystem. They retain tight control over shipping rights, and Osiris warships protecting their prize are not an uncommon sight in Tau Scorpii."
 	distance = 0.6
 	willing_to_buy = list()
 	willing_to_sell = list()
@@ -66,7 +66,7 @@ GLOBAL_LIST_EMPTY(weighted_mundaneevent_locations)
 
 /datum/trade_destination/beltway
 	name = "Beltway mining chain"
-	description = "A co-operative effort between Beltway and Ark Soft to exploit the rich outer asteroid belt of the Tau Ceti system."
+	description = "A co-operative effort between Beltway and Ark Soft to exploit the rich outer asteroid belt of the Tau Scorpii system."
 	distance = 7.5
 	willing_to_buy = list()
 	willing_to_sell = list()

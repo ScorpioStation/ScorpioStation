@@ -6106,7 +6106,7 @@
 	icon_state = "dark"
 	},
 /area/syndicate_depot/core)
-"as" = (
+"nt" = (
 /obj/structure/sign/poster/contraband/fun_police,
 /turf/simulated/wall/mineral/plastitanium/nodiagonal,
 /area/syndicate_depot/core)
@@ -6288,7 +6288,7 @@
 	icon_state = "dark"
 	},
 /area/syndicate_depot/core)
-"aS" = (
+"nT" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"

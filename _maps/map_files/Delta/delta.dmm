@@ -50417,7 +50417,7 @@
 	pixel_x = -2;
 	pixel_y = 2
 	},
-/obj/item/aiModule/nanotrasen{
+/obj/item/aiModule/ark_soft{
 	pixel_x = 2;
 	pixel_y = -2
 	},

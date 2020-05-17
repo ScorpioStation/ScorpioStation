@@ -398,7 +398,7 @@
 				<li>Internal armor is plasteel for additional strength.</li>
 				<li>External armor must be installed in 2 parts, totaling 10 sheets.</li>
 				<li>Completed mech is more resiliant against fire, and is a bit more durable overall</li>
-				<li>Ark Soft is determined to the safety of its <s>investments</s> employees.</li>
+				<li>Ark Soft is committed to the safety of its <s>investments</s> employees.</li>
 				</ol>
 				</body>
 				</html>
@@ -778,8 +778,8 @@
           <li>Expose the cyborg's internal wiring</li>
           <li>Check to make sure the LawSync and AI Sync lights are lit</li>
           <li>If they are not lit, pulse the LawSync wire using a multitool to enable the cyborg's Law Sync</li>
-          <li>Proceed to a cyborg upload console. Ark Soft usually places these in the same location as AI uplaod consoles.</li>
-          <li>Use a "Reset" upload moduleto reset the cyborg's laws</li>
+          <li>Proceed to a cyborg upload console. Ark Soft usually places these in the same location as AI upload consoles.</li>
+          <li>Use a "Reset" upload module to reset the cyborg's laws</li>
           <li>Proceed to a Robotics Control console</li>
           <li>Remove the lockdown on the cyborg</li>
         </ol>
@@ -1015,7 +1015,7 @@
 			Toggle off the anchor, move it, and re-anchor.<br><br>
 			Good luck. Remember the order:<br>
 			<b>Disk, Code, Safety, Timer, Disk, RUN!</b><br>
-			Intelligence Analysts believe that normal Ark Soft procedure is for the Captain to secure the nuclear authorisation disk.<br>
+			Intelligence Analysts believe that normal Ark Soft procedure is for the Captain to secure the Nuclear Authorization Disk.<br>
 			Good luck!
 			</html>"}
 
@@ -1214,8 +1214,8 @@
 				<br><BR>
 
 				<h1><a name="what"><U><B>What's a Fax?</B></U></a></h1><BR>
-				<li>Faxes are your main method of communicating with the NAS Trurl, better known as Central Command.</li>
-				<li>Faxes allow personnel on the station to maintain open lines of communication with the NAS Trurl, allowing for vital information to flow both ways.</li>
+				<li>Faxes are your main method of communicating with the ACS Cephalon, better known as Central Command.</li>
+				<li>Faxes allow personnel on the station to maintain open lines of communication with the ACS Cephalon, allowing for vital information to flow both ways.</li>
 				<li>Being written communications, proper grammar, syntax and typography is required, in addition to a signature and, if applicable, a stamp. Failure to sign faxes will lead to an automatic rejection.</li>
 				<li>We at Ark Soft provide Fax Machines to every Head of Staff, in addition to the Magistrate, Ark Soft Representative, and Internal Affairs Agents.</li>
 				<li>This means that we trust the recipients of these fax machines to only use them in the proper circumstances (see <B>When to Fax?</B>).</li>

@@ -409,7 +409,7 @@
 	icon_state = "shirt_commie"
 
 /datum/sprite_accessory/undershirt/shirt_nano
-	name = "Ark Soft Shirt"
+	name = "Nanotrasen Shirt"
 	icon_state = "shirt_nano"
 
 /datum/sprite_accessory/undershirt/shirt_meat

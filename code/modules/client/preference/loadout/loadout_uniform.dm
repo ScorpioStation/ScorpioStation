@@ -103,7 +103,7 @@
 	allowed_roles = list("Head of Security")
 
 /datum/gear/uniform/skirt/job/asrep
-	display_name = "skirt, nt rep"
+	display_name = "skirt, AS Rep"
 	path = /obj/item/clothing/under/rank/asrep/skirt
 	allowed_roles = list("Ark Soft Representative")
 
@@ -222,4 +222,3 @@
 /datum/gear/uniform/pants/caopants
 	display_name = "pants, camo"
 	path = /obj/item/clothing/under/pants/camo
-

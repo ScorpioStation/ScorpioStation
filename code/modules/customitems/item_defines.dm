@@ -1140,7 +1140,7 @@
 
 /obj/item/clothing/under/fluff/jane_sidsuit // SyndiGirl: Zoey Scyth
 	name = "NT-SID jumpsuit"
-	desc = "A Ark Soft Synthetic Intelligence Division jumpsuit, issued to 'volunteers'. On other people it looks fine, but right here a scientist has noted: on you it looks stupid."
+	desc = "An Ark Soft Synthetic Intelligence Division jumpsuit, issued to 'volunteers'. On other people it looks fine, but right here a scientist has noted: on you it looks stupid."
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "jane_sid_suit"
 	item_state = "jane_sid_suit"
@@ -1432,7 +1432,7 @@
 	options["Bunny"] = "bunny_witch"
 	options["Potions"] = "potions_witch"
 	options["Syndicate"] = "syndie_witch"
-	options["Ark Soft"] ="nt_witch"
+	options["Ark Soft"] = "nt_witch"
 
 	var/choice = input(user, "To what form do you wish to Shapeshift this hat?", "Shapeshift Hat") as null|anything in options
 
