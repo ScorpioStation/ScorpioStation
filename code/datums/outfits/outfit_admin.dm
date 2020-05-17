@@ -156,7 +156,7 @@
 	H.sec_hud_set_ID()
 
 /datum/outfit/admin/nt_navy_captain
-	name = "NT Navy Captain"
+	name = "AS Navy Captain"
 
 	uniform = /obj/item/clothing/under/rank/centcom/captain
 	back = /obj/item/storage/backpack/satchel
@@ -188,7 +188,7 @@
 	H.sec_hud_set_ID()
 
 /datum/outfit/admin/nt_diplomat
-	name = "NT Diplomat"
+	name = "AS Diplomat"
 
 	uniform = /obj/item/clothing/under/rank/centcom/diplomatic
 	back = /obj/item/storage/backpack/satchel
@@ -219,7 +219,7 @@
 	// Will show as ? on sec huds, as this is not a recognized rank.
 
 /datum/outfit/admin/nt_undercover
-	name = "NT Undercover Operative"
+	name = "AS Undercover Operative"
 	// Disguised NT special forces, sent to quietly eliminate or keep tabs on people in high positions (e.g: captain)
 
 	uniform = /obj/item/clothing/under/color/black
@@ -254,7 +254,7 @@
 
 	var/obj/item/card/id/I = H.wear_id
 	if(istype(I))
-		apply_to_card(I, H, get_centcom_access("NT Undercover Operative"), "Civilian")
+		apply_to_card(I, H, get_centcom_access("AS Undercover Operative"), "Civilian")
 	H.sec_hud_set_ID() // Force it to show as Civ on sec huds
 
 	var/obj/item/radio/R = H.l_ear
@@ -263,7 +263,7 @@
 		R.icon_state = "headset"
 
 /datum/outfit/admin/death_commando
-	name = "NT Death Commando"
+	name = "AS Death Commando"
 
 /datum/outfit/admin/death_commando/equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	return H.equip_death_commando()
