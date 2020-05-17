@@ -58418,7 +58418,7 @@
 "cad" = (
 /obj/structure/table/wood,
 /obj/machinery/photocopier/faxmachine/longrange{
-	department = "NT Representative's Office"
+	department = "AS Representative's Office"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
@@ -63415,7 +63415,7 @@
 	pixel_y = -22
 	},
 /obj/machinery/camera{
-	c_tag = "NT Representative's Office";
+	c_tag = "AS Representative's Office";
 	dir = 1;
 	network = list("SS13")
 	},
@@ -64419,7 +64419,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
-	name = "NT Representative's Office";
+	name = "AS Representative's Office";
 	req_access_txt = "73"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,

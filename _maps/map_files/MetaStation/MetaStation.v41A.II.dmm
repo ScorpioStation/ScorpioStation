@@ -53317,7 +53317,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/command{
-	name = "NT Representative's Office";
+	name = "AS Representative's Office";
 	req_access_txt = "73"
 	},
 /turf/simulated/floor/wood,
@@ -59696,7 +59696,7 @@
 /area/atmos)
 "bYn" = (
 /obj/machinery/camera{
-	c_tag = "NT Representative's Office";
+	c_tag = "AS Representative's Office";
 	dir = 1;
 	network = list("SS13")
 	},
@@ -59706,7 +59706,7 @@
 	pixel_y = -32
 	},
 /obj/machinery/photocopier/faxmachine/longrange{
-	department = "NT Representative's Office"
+	department = "AS Representative's Office"
 	},
 /turf/simulated/floor/wood,
 /area/asrep)
@@ -60292,7 +60292,7 @@
 /area/asrep)
 "bZo" = (
 /obj/machinery/door/airlock/command{
-	name = "NT Representative's Office";
+	name = "AS Representative's Office";
 	req_access_txt = "73"
 	},
 /turf/simulated/floor/wood,
