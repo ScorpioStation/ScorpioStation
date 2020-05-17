@@ -10,7 +10,7 @@
 	var/list/default_genes = list(REGEN, BREATHLESS, COLDRES)
 	var/list/default_spells = list()
 	var/activated = FALSE //for wishgranters to not give an option if someone already has it.
-	
+
 /datum/superheroes/proc/create(var/mob/living/carbon/human/H)
 	assign_genes(H)
 	assign_spells(H)
@@ -198,7 +198,7 @@
 					target.Weaken(12)
 					sleep(20)
 					if(ismindshielded(target))
-						to_chat(user, "<span class='notice'>[target.p_they(TRUE)] are enslaved by Nanotrasen. You feel [target.p_their()] interest in your cause wane and disappear.</span>")
+						to_chat(user, "<span class='notice'>[target.p_they(TRUE)] are enslaved by Ark Soft. You feel [target.p_their()] interest in your cause wane and disappear.</span>")
 						user.visible_message("<span class='danger'>[user] stops talking for a moment, then moves back away from [target].</span>")
 						to_chat(target, "<span class='danger'>Your mindshield implant activates, protecting you from conversion.</span>")
 						return

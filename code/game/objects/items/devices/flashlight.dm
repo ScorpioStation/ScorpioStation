@@ -158,7 +158,7 @@
 
 /obj/item/flashlight/flare
 	name = "flare"
-	desc = "A red Nanotrasen issued flare. There are instructions on the side, it reads 'pull cord, make light'."
+	desc = "A red Ark Soft issued flare. There are instructions on the side, it reads 'pull cord, make light'."
 	brightness_on = 8
 	light_color = "#ff0000"
 	icon_state = "flare"

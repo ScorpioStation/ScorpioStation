@@ -4235,7 +4235,7 @@
 	dir = 5
 	},
 /obj/structure/sign/securearea{
-	desc = "A warning sign which reads 'WARNING: Do Not Enter When Red Light Shows', detailing the penalties that any NanoTrasen employee or silicon will suffer if violating this rule.";
+	desc = "A warning sign which reads 'WARNING: Do Not Enter When Red Light Shows', detailing the penalties that any Ark Soft employee or silicon will suffer if violating this rule.";
 	name = "WARNING: Do Not Enter When Red Light Shows";
 	pixel_y = 32
 	},
@@ -5202,7 +5202,7 @@
 /area/security/hos)
 "aiZ" = (
 /obj/item/phone{
-	desc = "Supposedly a direct line to NanoTrasen Central Command. It's not even plugged in.";
+	desc = "Supposedly a direct line to Ark Soft Central Command. It's not even plugged in.";
 	pixel_x = -3;
 	pixel_y = 3
 	},
@@ -12018,7 +12018,7 @@
 /area/security/main)
 "avn" = (
 /obj/item/phone{
-	desc = "Supposedly a direct line to NanoTrasen Central Command. It's not even plugged in.";
+	desc = "Supposedly a direct line to Ark Soft Central Command. It's not even plugged in.";
 	pixel_x = -3;
 	pixel_y = 3
 	},
@@ -42607,7 +42607,7 @@
 	},
 /obj/structure/cable/yellow,
 /turf/simulated/floor/plating,
-/area/ntrep)
+/area/asrep)
 "bvz" = (
 /obj/item/toy/cards/deck{
 	pixel_y = 4
@@ -44656,7 +44656,7 @@
 	dir = 8
 	},
 /obj/item/paper{
-	info = "Congratulations,<br><br>Your station has been selected to carry out the Gateway Project.<br><br>The equipment will be shipped to you at the start of the next quarter.<br> You are to prepare a secure location to house the equipment as outlined in the attached documents.<br><br>--Nanotrasen Blue Space Research";
+	info = "Congratulations,<br><br>Your station has been selected to carry out the Gateway Project.<br><br>The equipment will be shipped to you at the start of the next quarter.<br> You are to prepare a secure location to house the equipment as outlined in the attached documents.<br><br>--Ark Soft Blue Space Research";
 	name = "Confidential Correspondence, Pg 1"
 	},
 /obj/item/coin/plasma,
@@ -47069,7 +47069,7 @@
 	},
 /obj/structure/cable/yellow,
 /turf/simulated/floor/plating,
-/area/ntrep)
+/area/asrep)
 "bCE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	req_access_txt = 1
@@ -53301,7 +53301,7 @@
 /area/atmos)
 "bNd" = (
 /turf/simulated/wall,
-/area/ntrep)
+/area/asrep)
 "bNe" = (
 /obj/effect/spawner/window/reinforced,
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan{
@@ -53317,11 +53317,11 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/command{
-	name = "NT Representative's Office";
+	name = "AS Representative's Office";
 	req_access_txt = "73"
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bNg" = (
 /obj/effect/spawner/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/visible/green,
@@ -54282,14 +54282,14 @@
 	},
 /obj/item/twohanded/required/kirbyplants,
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bOM" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
 	dir = 1
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bON" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -54297,7 +54297,7 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bOO" = (
 /obj/machinery/camera{
 	c_tag = "Atmospherics Tank - Mix";
@@ -54893,7 +54893,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bPT" = (
 /obj/item/folder/blue,
 /obj/structure/table/wood,
@@ -54977,7 +54977,7 @@
 	pixel_y = 32
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bQb" = (
 /obj/structure/closet/firecloset,
 /turf/simulated/floor/plasteel{
@@ -55140,19 +55140,19 @@
 	dir = 4
 	},
 /turf/simulated/wall,
-/area/ntrep)
+/area/asrep)
 "bQr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bQs" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "bQt" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1;
@@ -55160,7 +55160,7 @@
 	level = 1
 	},
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "bQu" = (
 /obj/machinery/light_switch{
 	pixel_x = 27
@@ -55172,7 +55172,7 @@
 	scrub_Toxins = 1
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bQv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/spawner/window/reinforced,
@@ -56071,22 +56071,22 @@
 /area/blueshield)
 "bSd" = (
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bSe" = (
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "bSf" = (
 /obj/machinery/hologram/holopad,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "bSg" = (
 /obj/item/radio/intercom{
 	pixel_x = 29;
 	pixel_y = -1
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bSh" = (
 /obj/structure/closet/crate{
 	icon_state = "crateopen";
@@ -57064,11 +57064,11 @@
 "bTM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "bTN" = (
 /obj/structure/chair/office/dark,
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "bTO" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -57076,7 +57076,7 @@
 	pixel_x = 24
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bTP" = (
 /obj/structure/dresser,
 /obj/machinery/newscaster{
@@ -57828,14 +57828,14 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "bVd" = (
 /obj/structure/table/wood,
 /obj/item/folder,
 /obj/item/stamp/centcom,
 /obj/item/pen/multi/fountain,
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "bVe" = (
 /obj/machinery/camera/motion{
 	c_tag = "E.V.A. Storage";
@@ -58638,7 +58638,7 @@
 	pixel_x = 24
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bWx" = (
 /obj/structure/chair/comfy/brown,
 /turf/simulated/floor/plasteel{
@@ -58806,14 +58806,14 @@
 	dir = 4
 	},
 /turf/simulated/wall,
-/area/ntrep)
+/area/asrep)
 "bWM" = (
 /obj/item/flag/nt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bWN" = (
 /obj/structure/chair/comfy/black{
 	dir = 4
@@ -58823,7 +58823,7 @@
 	on = 1
 	},
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "bWO" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin,
@@ -58831,19 +58831,19 @@
 	pixel_x = -5;
 	pixel_y = 12
 	},
-/obj/item/paper/ntrep,
+/obj/item/paper/asrep,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "bWP" = (
 /obj/structure/chair/office/dark{
 	dir = 8
 	},
 /obj/effect/landmark/start{
-	name = "Nanotrasen Representative"
+	name = "Ark Soft Representative"
 	},
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "bWQ" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -58854,7 +58854,7 @@
 	pixel_x = 30
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bWR" = (
 /obj/item/tank/oxygen,
 /obj/item/tank/oxygen,
@@ -59635,7 +59635,7 @@
 "bYg" = (
 /obj/structure/filingcabinet,
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bYh" = (
 /obj/structure/cable,
 /obj/machinery/power/turbine,
@@ -59654,13 +59654,13 @@
 	layer = 2.4;
 	on = 1
 	},
-/obj/structure/closet/secure_closet/ntrep,
+/obj/structure/closet/secure_closet/asrep,
 /obj/machinery/firealarm{
 	dir = 4;
 	pixel_x = 24
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bYk" = (
 /obj/machinery/atmospherics/unary/portables_connector{
 	dir = 8
@@ -59696,7 +59696,7 @@
 /area/atmos)
 "bYn" = (
 /obj/machinery/camera{
-	c_tag = "NT Representative's Office";
+	c_tag = "AS Representative's Office";
 	dir = 1;
 	network = list("SS13")
 	},
@@ -59706,10 +59706,10 @@
 	pixel_y = -32
 	},
 /obj/machinery/photocopier/faxmachine/longrange{
-	department = "NT Representative's Office"
+	department = "AS Representative's Office"
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bYo" = (
 /obj/structure/cable/yellow{
 	d1 = 4;
@@ -59981,7 +59981,7 @@
 	},
 /obj/machinery/computer/secure_data,
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bYO" = (
 /obj/machinery/atmospherics/unary/outlet_injector/on{
 	dir = 8;
@@ -60289,18 +60289,18 @@
 /area/blueshield)
 "bZn" = (
 /turf/simulated/wall/r_wall,
-/area/ntrep)
+/area/asrep)
 "bZo" = (
 /obj/machinery/door/airlock/command{
-	name = "NT Representative's Office";
+	name = "AS Representative's Office";
 	req_access_txt = "73"
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "bZp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/wall/r_wall,
-/area/ntrep)
+/area/asrep)
 "bZq" = (
 /obj/structure/closet/fireaxecabinet{
 	pixel_x = -32
@@ -64336,7 +64336,7 @@
 	},
 /obj/machinery/photocopier,
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "cgr" = (
 /obj/machinery/computer/security/telescreen{
 	desc = "Used for monitoring medbay to ensure patient safety.";

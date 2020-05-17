@@ -83,7 +83,7 @@
 
 /datum/storeitem/minigibber
 	name = "Miniature Gibber"
-	desc = "A miniature recreation of Nanotrasen's famous meat grinder."
+	desc = "A miniature recreation of Ark Soft's famous meat grinder."
 	typepath = /obj/item/toy/minigibber
 	cost = 400
 

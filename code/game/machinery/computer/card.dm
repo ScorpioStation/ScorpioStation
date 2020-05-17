@@ -4,7 +4,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 
 /obj/machinery/computer/card
 	name = "identification computer"
-	desc = "Terminal for programming Nanotrasen employee ID cards to access parts of the station."
+	desc = "Terminal for programming Ark Soft employee ID cards to access parts of the station."
 	icon_keyboard = "id_key"
 	icon_screen = "id"
 	req_access = list(ACCESS_CHANGE_IDS)
@@ -39,7 +39,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 		/datum/job/cmo,
 		/datum/job/judge,
 		/datum/job/blueshield,
-		/datum/job/nanotrasenrep,
+		/datum/job/arksoftrep,
 		/datum/job/pilot,
 		/datum/job/brigdoc,
 		/datum/job/mechanic,

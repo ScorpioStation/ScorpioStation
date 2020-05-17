@@ -33,7 +33,7 @@
 	state = "mug_best"
 
 /datum/novelty_mug/best/New()
-	var/locale = pick("Room's", "Department's", "Station's", "World's", "Sector's", "System's", "Galaxy's", "Universe's", "Multi-verse's", "Nanotrasen's", "Syndicate's")
+	var/locale = pick("Room's", "Department's", "Station's", "World's", "Sector's", "System's", "Galaxy's", "Universe's", "Multi-verse's", "Ark Soft's", "Syndicate's")
 	var/what = pick("Crewmember", "Spessman", "Employee", "Coffee", "Coffee-drinker", "Survivor", "Personality", "Lifeform", "Doctor", "Scientist", "Engineer", "Officer", "Civillian", "Captain", "Agent")
 	name = "\"[locale] Best [what]\" mug"
 
@@ -43,7 +43,7 @@
 	state = "mug_worst"
 
 /datum/novelty_mug/worst/New()
-	var/locale = pick("Room's", "Department's", "Station's", "World's", "Sector's", "System's", "Galaxy's", "Universe's", "Multi-verse's", "Nanotrasen's", "Syndicate's")
+	var/locale = pick("Room's", "Department's", "Station's", "World's", "Sector's", "System's", "Galaxy's", "Universe's", "Multi-verse's", "Ark Soft's", "Syndicate's")
 	var/what = pick("Crewmember", "Spessman", "Employee", "Coffee", "Coffee-drinker", "Survivor", "Personality", "Lifeform", "Doctor", "Scientist", "Engineer", "Officer", "Civillian", "Captain", "Agent")
 	name = "\"[locale] Worst [what]\" mug"
 

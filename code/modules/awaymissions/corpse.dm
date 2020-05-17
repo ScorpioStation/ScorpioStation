@@ -533,9 +533,9 @@
 	mob_name = "Bridge Officer"
 	id_job = "Bridge Officer"
 	id_access = "Captain"
-	outfit = /datum/outfit/nanotrasenbridgeofficercorpse
+	outfit = /datum/outfit/arksoftbridgeofficercorpse
 
-/datum/outfit/nanotrasenbridgeofficercorpse
+/datum/outfit/arksoftbridgeofficercorpse
 	name = "Bridge Officer Corpse"
 	l_ear = /obj/item/radio/headset/heads/hop
 	uniform = /obj/item/clothing/under/rank/centcom_officer
@@ -550,9 +550,9 @@
 	mob_name = "Commander"
 	id_job = "Commander"
 	id_access = "Captain"
-	outfit = /datum/outfit/nanotrasencommandercorpse
+	outfit = /datum/outfit/arksoftcommandercorpse
 
-/datum/outfit/nanotrasencommandercorpse
+/datum/outfit/arksoftcommandercorpse
 	name = "Commander Corpse"
 
 	uniform = /obj/item/clothing/under/rank/centcom/officer

@@ -144,7 +144,7 @@
 
 /obj/item/storage/backpack/captain
 	name = "captain's backpack"
-	desc = "It's a special backpack made exclusively for Nanotrasen officers."
+	desc = "It's a special backpack made exclusively for Ark Soft officers."
 	icon_state = "captainpack"
 	item_state = "captainpack"
 	resistance_flags = FIRE_PROOF
@@ -195,7 +195,7 @@
 
 /obj/item/storage/backpack/blueshield
 	name = "blueshield backpack"
-	desc = "A robust backpack issued to Nanotrasen's finest."
+	desc = "A robust backpack issued to Ark Soft's finest."
 	icon_state = "blueshieldpack"
 	item_state = "blueshieldpack"
 
@@ -289,13 +289,13 @@
 
 /obj/item/storage/backpack/satchel_cap
 	name = "captain's satchel"
-	desc = "An exclusive satchel for Nanotrasen officers."
+	desc = "An exclusive satchel for Ark Soft officers."
 	icon_state = "satchel-cap"
 	resistance_flags = FIRE_PROOF
 
 /obj/item/storage/backpack/satchel_blueshield
 	name = "blueshield satchel"
-	desc = "A robust satchel issued to Nanotrasen's finest."
+	desc = "A robust satchel issued to Ark Soft's finest."
 	icon_state = "satchel-blueshield"
 
 /obj/item/storage/backpack/satchel_flat
@@ -544,14 +544,14 @@
 
 obj/item/storage/backpack/duffel/blueshield
 	name = "blueshield duffelbag"
-	desc = "A robust duffelbag issued to Nanotrasen's finest."
+	desc = "A robust duffelbag issued to Ark Soft's finest."
 	icon_state = "duffel-blueshield"
 	item_state = "duffel-blueshield"
 
 //ERT backpacks.
 /obj/item/storage/backpack/ert
 	name = "emergency response team backpack"
-	desc = "A spacious backpack with lots of pockets, used by members of the Nanotrasen Emergency Response Team."
+	desc = "A spacious backpack with lots of pockets, used by members of the Ark Soft Emergency Response Team."
 	icon_state = "ert_commander"
 	item_state = "backpack"
 	max_combined_w_class = 30
@@ -560,28 +560,28 @@ obj/item/storage/backpack/duffel/blueshield
 //Commander
 /obj/item/storage/backpack/ert/commander
 	name = "emergency response team commander backpack"
-	desc = "A spacious backpack with lots of pockets, worn by the commander of a Nanotrasen Emergency Response Team."
+	desc = "A spacious backpack with lots of pockets, worn by the commander of a Ark Soft Emergency Response Team."
 
 //Security
 /obj/item/storage/backpack/ert/security
 	name = "emergency response team security backpack"
-	desc = "A spacious backpack with lots of pockets, worn by security members of a Nanotrasen Emergency Response Team."
+	desc = "A spacious backpack with lots of pockets, worn by security members of a Ark Soft Emergency Response Team."
 	icon_state = "ert_security"
 
 //Engineering
 /obj/item/storage/backpack/ert/engineer
 	name = "emergency response team engineer backpack"
-	desc = "A spacious backpack with lots of pockets, worn by engineering members of a Nanotrasen Emergency Response Team."
+	desc = "A spacious backpack with lots of pockets, worn by engineering members of a Ark Soft Emergency Response Team."
 	icon_state = "ert_engineering"
 
 //Medical
 /obj/item/storage/backpack/ert/medical
 	name = "emergency response team medical backpack"
-	desc = "A spacious backpack with lots of pockets, worn by medical members of a Nanotrasen Emergency Response Team."
+	desc = "A spacious backpack with lots of pockets, worn by medical members of a Ark Soft Emergency Response Team."
 	icon_state = "ert_medical"
 
 //Janitorial
 /obj/item/storage/backpack/ert/janitor
 	name = "emergency response team janitor backpack"
-	desc = "A spacious backpack with lots of pockets, worn by janitorial members of a Nanotrasen Emergency Response Team."
+	desc = "A spacious backpack with lots of pockets, worn by janitorial members of a Ark Soft Emergency Response Team."
 	icon_state = "ert_janitor"

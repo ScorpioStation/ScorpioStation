@@ -1,4 +1,4 @@
-#define BASE_LAW_TYPE /datum/ai_laws/nanotrasen
+#define BASE_LAW_TYPE /datum/ai_laws/ark_soft
 
 /datum/ai_law
 	var/law = ""

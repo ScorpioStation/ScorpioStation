@@ -2,7 +2,7 @@
 
 /obj/item/weldingtool
 	name = "welding tool"
-	desc = "A standard edition welder provided by Nanotrasen."
+	desc = "A standard edition welder provided by Ark Soft."
 	icon = 'icons/obj/tools.dmi'
 	icon_state = "welder"
 	item_state = "welder"

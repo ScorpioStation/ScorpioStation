@@ -96,8 +96,8 @@
 	item_color = "centcom"
 
 /obj/item/clothing/under/rank/centcom/officer
-	desc = "Gold trim on space-black cloth, this uniform displays the rank of \"Lieutenant-Commander\" and bears \"N.A.S. Trurl \" on the left shoulder. Worn exclusively by officers of the Nanotrasen Navy. It's got exotic materials for protection."
-	name = "\improper Nanotrasen Naval Officer Uniform"
+	desc = "Gold trim on space-black cloth, this uniform displays the rank of \"Lieutenant-Commander\" and bears \"A.C.S. Cephalon\" on the left shoulder. Worn exclusively by officers of the Ark Soft Navy. It's got exotic materials for protection."
+	name = "\improper Ark Soft Naval Officer Uniform"
 	icon_state = "navy_gold"
 	item_state = "navy_gold"
 	item_color = "navy_gold"
@@ -105,8 +105,8 @@
 	flags_size = ONESIZEFITSALL
 
 /obj/item/clothing/under/rank/centcom/captain
-	desc = "Gold trim on space-black cloth, this uniform displays the rank of \"Captain\" and bears \"N.A.S. Trurl \" on the left shoulder. Worn exclusively by officers of the Nanotrasen Navy. It's got exotic materials for protection."
-	name = "\improper Nanotrasen Naval Captain Uniform"
+	desc = "Gold trim on space-black cloth, this uniform displays the rank of \"Captain\" and bears \"A.C.S. Cephalon\" on the left shoulder. Worn exclusively by officers of the Ark Soft Navy. It's got exotic materials for protection."
+	name = "\improper Ark Soft Naval Captain Uniform"
 	icon_state = "navy_gold"
 	item_state = "navy_gold"
 	item_color = "navy_gold"
@@ -115,7 +115,7 @@
 
 /obj/item/clothing/under/rank/centcom/blueshield
 	desc = "Gold trim on space-black cloth, this uniform bears \"Close Protection\" on the left shoulder."
-	name = "\improper Formal Nanotrasen Uniform"
+	name = "\improper Formal Ark Soft Uniform"
 	icon_state = "officer"
 	item_state = "g_suit"
 	item_color = "officer"
@@ -123,8 +123,8 @@
 	flags_size = ONESIZEFITSALL
 
 /obj/item/clothing/under/rank/centcom/representative
-	desc = "Gold trim on space-black cloth, this uniform bears \"N.S.S. Cyberiad\" on the left shoulder."
-	name = "\improper Formal Nanotrasen Uniform"
+	desc = "Gold trim on space-black cloth, this uniform bears \"A.R.S. Scorpius\" on the left shoulder."
+	name = "\improper Formal Ark Soft Uniform"
 	icon_state = "officer"
 	item_state = "g_suit"
 	item_color = "officer"
@@ -136,8 +136,8 @@
 	desc = "Gold trim on space-black cloth, this uniform bears [station_name()] on the left shoulder."
 
 /obj/item/clothing/under/rank/centcom/magistrate
-	desc = "Gold trim on space-black cloth, this uniform displays the rank of \"Magistrate\" and bears \"N.S.S. Cyberiad\" on the left shoulder."
-	name = "\improper Formal Nanotrasen Uniform"
+	desc = "Gold trim on space-black cloth, this uniform displays the rank of \"Magistrate\" and bears \"A.R.S. Scorpius\" on the left shoulder."
+	name = "\improper Formal Ark Soft Uniform"
 	icon_state = "officer"
 	item_state = "g_suit"
 	item_color = "officer"
@@ -149,8 +149,8 @@
 	desc = "Gold trim on space-black cloth, this uniform displays the rank of \"Magistrate\" and bears [station_name()] on the left shoulder."
 
 /obj/item/clothing/under/rank/centcom/diplomatic
-	desc = "A very gaudy and official looking uniform of the Nanotrasen Diplomatic Corps."
-	name = "\improper Nanotrasen Diplomatic Uniform"
+	desc = "A very gaudy and official looking uniform of the Ark Soft Diplomatic Corps."
+	name = "\improper Ark Soft Diplomatic Uniform"
 	icon_state = "presidente"
 	item_state = "g_suit"
 	item_color = "presidente"

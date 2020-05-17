@@ -61,7 +61,7 @@
  */
 //Captain's retro laser - Fires practice laser shots instead.
 obj/item/gun/energy/laser/retro/sc_retro
-	desc = "An older model of the basic lasergun, no longer used by Nanotrasen's security or military forces."
+	desc = "An older model of the basic lasergun, no longer used by Ark Soft's security or military forces."
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/practice)
 	clumsy_check = 0 //No sense in having a harmless gun blow up in the clowns face
 

@@ -125,7 +125,7 @@
 	path = /obj/item/clothing/suit/hooded/hoodie/tp
 
 /datum/gear/suit/nthoodie
-	display_name = "hoodie, Nanotrasen"
+	display_name = "hoodie, Ark Soft"
 	path = /obj/item/clothing/suit/hooded/hoodie/nt
 
 /datum/gear/suit/lamhoodie

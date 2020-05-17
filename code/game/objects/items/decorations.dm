@@ -124,7 +124,7 @@
 
 /obj/item/decorations/sticky_decorations/flammable/tinsel
 	name = "paper tinsel"
-	desc = "Paper tinsel, because Nanotrasen is too cheap to buy the real deal."
+	desc = "Paper tinsel, because Ark Soft is too cheap to buy the real deal."
 	icon_state = "decoration_tinsel_white"
 
 /obj/item/decorations/sticky_decorations/flammable/tinsel/red
@@ -149,7 +149,7 @@
 	icon_state = "decoration_tinsel_black"
 
 /obj/item/decorations/sticky_decorations/flammable/tinsel/halloween
-	desc = "Paper tinsel, because Nanotrasen is too cheap to buy the real deal. At least this one is spooky."
+	desc = "Paper tinsel, because Ark Soft is too cheap to buy the real deal. At least this one is spooky."
 	icon_state = "decoration_tinsel_halloween"
 
 //Valentines decorations

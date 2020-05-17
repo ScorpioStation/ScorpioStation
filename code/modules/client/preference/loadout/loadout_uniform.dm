@@ -102,10 +102,10 @@
 	path = /obj/item/clothing/under/rank/head_of_security/skirt
 	allowed_roles = list("Head of Security")
 
-/datum/gear/uniform/skirt/job/ntrep
-	display_name = "skirt, nt rep"
-	path = /obj/item/clothing/under/rank/ntrep/skirt
-	allowed_roles = list("Nanotrasen Representative")
+/datum/gear/uniform/skirt/job/asrep
+	display_name = "skirt, AS Rep"
+	path = /obj/item/clothing/under/rank/asrep/skirt
+	allowed_roles = list("Ark Soft Representative")
 
 /datum/gear/uniform/skirt/job/blueshield
 	display_name = "skirt, blueshield"
@@ -222,4 +222,3 @@
 /datum/gear/uniform/pants/caopants
 	display_name = "pants, camo"
 	path = /obj/item/clothing/under/pants/camo
-

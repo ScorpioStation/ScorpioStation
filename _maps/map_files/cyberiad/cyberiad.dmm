@@ -1624,7 +1624,7 @@
 	dir = 1;
 	on = 1
 	},
-/obj/item/paper_bin/nanotrasen,
+/obj/item/paper_bin/arksoft,
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"
 	},
@@ -16080,7 +16080,7 @@
 	pixel_x = 25;
 	pixel_y = 0
 	},
-/obj/item/paper_bin/nanotrasen,
+/obj/item/paper_bin/arksoft,
 /turf/simulated/floor/plasteel{
 	tag = "icon-cult";
 	icon_state = "cult";
@@ -16858,7 +16858,7 @@
 "aCj" = (
 /obj/structure/table/reinforced,
 /obj/item/stamp/magistrate,
-/obj/item/paper_bin/nanotrasen,
+/obj/item/paper_bin/arksoft,
 /turf/simulated/floor/carpet,
 /area/magistrateoffice)
 "aCk" = (
@@ -21867,7 +21867,7 @@
 "aMO" = (
 /obj/structure/table/reinforced,
 /obj/item/pen,
-/obj/item/paper_bin/nanotrasen,
+/obj/item/paper_bin/arksoft,
 /turf/simulated/floor/plasteel{
 	tag = "icon-cult";
 	icon_state = "cult";
@@ -27789,7 +27789,7 @@
 /obj/item/enginepicker{
 	layer = 3.1
 	},
-/obj/item/paper_bin/nanotrasen,
+/obj/item/paper_bin/arksoft,
 /turf/simulated/floor/plasteel{
 	dir = 8;
 	icon_state = "neutralfull"
@@ -43342,7 +43342,7 @@
 "bCG" = (
 /obj/item/pen,
 /obj/structure/table/wood,
-/obj/item/paper_bin/nanotrasen,
+/obj/item/paper_bin/arksoft,
 /turf/simulated/floor/carpet,
 /area/bridge/meeting_room)
 "bCH" = (
@@ -47107,7 +47107,7 @@
 /obj/item/radio/intercom{
 	pixel_x = -28
 	},
-/obj/item/paper_bin/nanotrasen,
+/obj/item/paper_bin/arksoft,
 /turf/simulated/floor/wood,
 /area/crew_quarters/captain)
 "bJO" = (
@@ -50560,7 +50560,7 @@
 /obj/item/book/manual/sop_science{
 	pixel_y = -14
 	},
-/obj/item/paper_bin/nanotrasen,
+/obj/item/paper_bin/arksoft,
 /turf/simulated/floor/plasteel{
 	dir = 2;
 	icon_state = "cafeteria";
@@ -55084,7 +55084,7 @@
 /obj/item/book/manual/sop_service,
 /obj/item/book/manual/sop_supply,
 /obj/item/book/manual/sop_command,
-/obj/item/paper_bin/nanotrasen,
+/obj/item/paper_bin/arksoft,
 /turf/simulated/floor/plasteel,
 /area/crew_quarters/heads)
 "bXa" = (
@@ -58950,7 +58950,7 @@
 /obj/item/book/manual/sop_legal,
 /obj/item/book/manual/sop_command,
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "ccM" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -60112,7 +60112,7 @@
 	pixel_x = 27
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "ceQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plasteel{
@@ -60862,7 +60862,7 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/obj/item/paper_bin/nanotrasen,
+/obj/item/paper_bin/arksoft,
 /turf/simulated/floor/plasteel{
 	dir = 4;
 	icon_state = "darkblue"
@@ -61367,7 +61367,7 @@
 /area/blueshield)
 "cgW" = (
 /turf/simulated/wall,
-/area/ntrep)
+/area/asrep)
 "cgX" = (
 /obj/machinery/light_switch{
 	pixel_y = -23
@@ -61388,7 +61388,7 @@
 	opacity = 0
 	},
 /turf/simulated/floor/plating,
-/area/ntrep)
+/area/asrep)
 "cgZ" = (
 /obj/effect/spawner/window/reinforced,
 /obj/structure/cable,
@@ -61401,7 +61401,7 @@
 	opacity = 0
 	},
 /turf/simulated/floor/plating,
-/area/ntrep)
+/area/asrep)
 "cha" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/window/brigdoor{
@@ -61815,7 +61815,7 @@
 	pixel_x = 24
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "chI" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -62335,7 +62335,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "ciH" = (
 /obj/machinery/light{
 	dir = 1
@@ -62365,7 +62365,7 @@
 	pixel_x = 0
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "ciJ" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -62399,7 +62399,7 @@
 	pixel_x = 24
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "ciL" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -62658,7 +62658,7 @@
 "cjd" = (
 /obj/machinery/photocopier,
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "cje" = (
 /obj/structure/table/wood,
 /obj/item/clipboard{
@@ -62668,14 +62668,14 @@
 /obj/item/pen/multi/fountain,
 /obj/item/stamp/rep,
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "cjf" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/skills{
 	req_access_txt = "57"
 	},
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "cjg" = (
 /obj/machinery/door/window{
 	dir = 1;
@@ -62687,7 +62687,7 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "cjh" = (
 /obj/machinery/light,
 /obj/structure/cable{
@@ -63498,10 +63498,10 @@
 /area/blueshield)
 "ckv" = (
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "ckw" = (
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "ckx" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -63699,7 +63699,7 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "ckN" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -63708,14 +63708,14 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
-	id_tag = "ntrepofficedoor";
-	name = "NT Representative's Office";
+	id_tag = "asrepofficedoor";
+	name = "AS Representative's Office";
 	req_access_txt = "73"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "ckO" = (
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plasteel{
@@ -64222,7 +64222,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "clM" = (
 /obj/machinery/camera{
 	c_tag = "Mining Dock External";
@@ -64434,13 +64434,13 @@
 /turf/simulated/floor/wood,
 /area/blueshield)
 "cmh" = (
-/obj/structure/closet/secure_closet/ntrep,
+/obj/structure/closet/secure_closet/asrep,
 /obj/machinery/firealarm{
 	dir = 4;
 	pixel_x = 24
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "cmi" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -64789,7 +64789,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "cmN" = (
 /obj/structure/table,
 /obj/item/storage/box/cups,
@@ -65136,7 +65136,7 @@
 "cnu" = (
 /obj/structure/chair/office/dark,
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "cnv" = (
 /obj/item/cigbutt,
 /obj/effect/decal/cleanable/dirt,
@@ -65705,7 +65705,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "coo" = (
 /obj/machinery/hologram/holopad,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -65713,7 +65713,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "cop" = (
 /obj/item/radio/intercom{
 	pixel_x = 29;
@@ -65727,7 +65727,7 @@
 	scrub_Toxins = 1
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "coq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -66034,20 +66034,20 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "coV" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "coW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
 	pixel_y = 0
 	},
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "coX" = (
 /obj/structure/table/wood,
 /obj/item/ashtray/glass{
@@ -67397,7 +67397,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "cqP" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -67425,10 +67425,10 @@
 	dir = 8
 	},
 /obj/effect/landmark/start{
-	name = "Nanotrasen Representative"
+	name = "Ark Soft Representative"
 	},
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "cqR" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -67445,10 +67445,10 @@
 	pixel_x = -5;
 	pixel_y = 12
 	},
-/obj/item/paper/ntrep,
-/obj/item/paper_bin/nanotrasen,
+/obj/item/paper/asrep,
+/obj/item/paper_bin/arksoft,
 /turf/simulated/floor/carpet,
-/area/ntrep)
+/area/asrep)
 "cqT" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -67459,7 +67459,7 @@
 	pixel_x = 30
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "cqU" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -68409,7 +68409,7 @@
 "csw" = (
 /obj/structure/filingcabinet,
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "csx" = (
 /obj/machinery/door_control{
 	id = "blueshield";
@@ -68488,7 +68488,7 @@
 	},
 /obj/machinery/computer/secure_data,
 /obj/machinery/door_control{
-	id = "ntrepofficedoor";
+	id = "asrepofficedoor";
 	name = "Office Door";
 	normaldoorcontrol = 1;
 	pixel_x = 6;
@@ -68496,26 +68496,26 @@
 	req_access_txt = "73"
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "csD" = (
 /turf/simulated/wall,
 /area/engine/controlroom)
 "csE" = (
 /obj/machinery/camera{
-	c_tag = "NT Representative's Office";
+	c_tag = "AS Representative's Office";
 	dir = 1;
 	network = list("SS13")
 	},
 /obj/structure/table/wood,
 /obj/machinery/photocopier/faxmachine/longrange{
-	department = "NT Representative's Office"
+	department = "AS Representative's Office"
 	},
 /obj/machinery/newscaster/security_unit{
 	pixel_x = 0;
 	pixel_y = -32
 	},
 /turf/simulated/floor/wood,
-/area/ntrep)
+/area/asrep)
 "csF" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 4;

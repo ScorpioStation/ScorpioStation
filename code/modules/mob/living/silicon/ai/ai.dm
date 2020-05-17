@@ -357,8 +357,8 @@ GLOBAL_LIST_INIT(ai_verbs_default, list(
 		"Sparkles",
 		"ANIMA",
 		"President",
-		"NT",
-		"NT2",
+		"AS",
+		"AS2",
 		"Rainbow",
 		"Angel",
 		"Heartline",
@@ -423,9 +423,9 @@ GLOBAL_LIST_INIT(ai_verbs_default, list(
 			icon_state = "ai-anima"
 		if("President")
 			icon_state = "ai-president"
-		if("NT")
+		if("AS")
 			icon_state = "ai-nt"
-		if("NT2")
+		if("AS2")
 			icon_state = "ai-nanotrasen"
 		if("Rainbow")
 			icon_state = "ai-rainbow"

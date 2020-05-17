@@ -67,7 +67,7 @@
 	explanation_text = "Flood the station's powernet with as much electricity as you can."
 
 /datum/objective/abductee/pristine
-	explanation_text = "The CEO of Nanotrasen is coming! Ensure the station is in absolutely pristine condition."
+	explanation_text = "The CEO of Ark Soft is coming! Ensure the station is in absolutely pristine condition."
 
 /datum/objective/abductee/nowalls
 	explanation_text = "The crew must get to know one another better. Break down the walls inside the station!"
@@ -93,13 +93,13 @@
 		explanation_text = "You know that [D] has perished. Hold a seance to call them from the spirit realm."
 
 /datum/objective/abductee/social_experiment
-	explanation_text = "This is a secret social experiment conducted by Nanotrasen. Convince the crew that this is the truth."
+	explanation_text = "This is a secret social experiment conducted by Ark Soft. Convince the crew that this is the truth."
 
 /datum/objective/abductee/vr
 	explanation_text = "It's all an entirely virtual simulation within an underground vault. Convince the crew to escape the shackles of VR."
 
 /datum/objective/abductee/pets
-	explanation_text = "Nanotrasen is abusing the animals! Save as many as you can!"
+	explanation_text = "Ark Soft is abusing the animals! Save as many as you can!"
 
 /datum/objective/abductee/defect
 	explanation_text = "Fuck the system! Defect from the station and start an independent colony in space, Mining Outpost or the derelict. Recruit crewmates if you can."

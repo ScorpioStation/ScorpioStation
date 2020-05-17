@@ -8,7 +8,7 @@
 	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 
 /area/awaymission/spacebattle/cruiser
-	name = "\improper Nanotrasen Cruiser"
+	name = "\improper Ark Soft Cruiser"
 
 /area/awaymission/spacebattle/syndicate1
 	name = "\improper Syndicate Assault Ship 1"

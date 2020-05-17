@@ -7,7 +7,7 @@
 
 /obj/item/implant/death_alarm/get_data()
 	var/dat = {"<b>Implant Specifications:</b><BR>
-				<b>Name:</b> Nanotrasen \"Profit Margin\" Class Employee Lifesign Sensor<BR>
+				<b>Name:</b> Ark Soft \"Profit Margin\" Class Employee Lifesign Sensor<BR>
 				<b>Life:</b> Activates upon death.<BR>
 				<b>Important Notes:</b> Alerts crew to crewmember death.<BR>
 				<HR>

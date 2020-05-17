@@ -65,8 +65,8 @@ GLOBAL_LIST_EMPTY(allNewscasters) //Global list that will contain reference to a
 #define NEWSCASTER_CREATE_FM	3	// Create feed message
 #define NEWSCASTER_PRINT		4	// Print newspaper
 #define NEWSCASTER_VIEW_FC		5	// Read feed channel
-#define NEWSCASTER_NT_CENSOR	6	// Nanotrasen Feed Censorship Tool
-#define NEWSCASTER_D_NOTICE		7	// Nanotrasen D-Notice Handler
+#define NEWSCASTER_AS_CENSOR	6	// Ark Soft Feed Censorship Tool
+#define NEWSCASTER_D_NOTICE		7	// Ark Soft D-Notice Handler
 #define NEWSCASTER_CENSOR_FC	8	// Censor feed channel
 #define NEWSCASTER_D_NOTICE_FC	9	// D-Notice feed channel
 #define NEWSCASTER_W_ISSUE_H	10	// Wanted Issue handler
@@ -75,7 +75,7 @@ GLOBAL_LIST_EMPTY(allNewscasters) //Global list that will contain reference to a
 
 /obj/machinery/newscaster
 	name = "newscaster"
-	desc = "A standard Nanotrasen-licensed newsfeed handler for use in commercial space stations. All the news you absolutely have no use for, in one place!"
+	desc = "A standard Ark Soft-licensed newsfeed handler for use in commercial space stations. All the news you absolutely have no use for, in one place!"
 	icon = 'icons/obj/terminals.dmi'
 	icon_state = "newscaster_normal"
 	armor = list(melee = 50, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 50, acid = 30)
@@ -107,7 +107,7 @@ GLOBAL_LIST_EMPTY(allNewscasters) //Global list that will contain reference to a
 		/datum/job/captain,
 		/datum/job/judge,
 		/datum/job/blueshield,
-		/datum/job/nanotrasenrep,
+		/datum/job/arksoftrep,
 		/datum/job/pilot,
 		/datum/job/brigdoc,
 		/datum/job/mechanic,
@@ -398,7 +398,7 @@ GLOBAL_LIST_EMPTY(allNewscasters) //Global list that will contain reference to a
 		silence = !silence
 
 	else if(href_list["menu_censor_story"])
-		screen = NEWSCASTER_NT_CENSOR
+		screen = NEWSCASTER_AS_CENSOR
 
 	else if(href_list["menu_censor_channel"])
 		screen = NEWSCASTER_D_NOTICE
@@ -449,7 +449,7 @@ GLOBAL_LIST_EMPTY(allNewscasters) //Global list that will contain reference to a
 					temp_back_screen = NEWSCASTER_MAIN
 				else
 					if(GLOB.news_network.wanted_issue.is_admin_message)
-						alert("The wanted issue has been distributed by a Nanotrasen higherup. You cannot edit it.","Ok")
+						alert("The wanted issue has been distributed by a Ark Soft higherup. You cannot edit it.","Ok")
 						return
 					GLOB.news_network.wanted_issue.author = channel_name
 					GLOB.news_network.wanted_issue.body = msg
@@ -461,7 +461,7 @@ GLOBAL_LIST_EMPTY(allNewscasters) //Global list that will contain reference to a
 
 	else if(href_list["cancel_wanted"])
 		if(GLOB.news_network.wanted_issue.is_admin_message)
-			alert("The wanted issue has been distributed by a Nanotrasen higherup. You cannot take it down.", "Ok")
+			alert("The wanted issue has been distributed by a Ark Soft higherup. You cannot take it down.", "Ok")
 			return
 		var/choice = alert("Please confirm wanted issue removal", "Network Security Handler", "Confirm", "Cancel")
 		if(choice == "Confirm")
@@ -477,7 +477,7 @@ GLOBAL_LIST_EMPTY(allNewscasters) //Global list that will contain reference to a
 		var/datum/feed_channel/FC = locate(href_list["censor_channel_author"])
 		if(FC)
 			if(FC.is_admin_channel)
-				alert("This channel was created by a Nanotrasen Officer. You cannot censor it.","Ok")
+				alert("This channel was created by a Ark Soft Officer. You cannot censor it.","Ok")
 				return
 			if(FC.author != REDACTED)
 				FC.backup_author = FC.author
@@ -489,7 +489,7 @@ GLOBAL_LIST_EMPTY(allNewscasters) //Global list that will contain reference to a
 		var/datum/feed_message/M = locate(href_list["censor_channel_story_author"])
 		if(M)
 			if(M.is_admin_message)
-				alert("This message was created by a Nanotrasen Officer. You cannot censor its author.","Ok")
+				alert("This message was created by a Ark Soft Officer. You cannot censor its author.","Ok")
 				return
 			if(M.author != REDACTED)
 				M.backup_author = M.author
@@ -501,7 +501,7 @@ GLOBAL_LIST_EMPTY(allNewscasters) //Global list that will contain reference to a
 		var/datum/feed_message/M = locate(href_list["censor_channel_story_body"])
 		if(M)
 			if(M.is_admin_message)
-				alert("This channel was created by a Nanotrasen Officer. You cannot censor it.","Ok")
+				alert("This channel was created by a Ark Soft Officer. You cannot censor it.","Ok")
 				return
 			if(M.img != null)
 				M.backup_img = M.img
@@ -524,7 +524,7 @@ GLOBAL_LIST_EMPTY(allNewscasters) //Global list that will contain reference to a
 		var/datum/feed_channel/FC = locate(href_list["toggle_d_notice"])
 		if(FC)
 			if(FC.is_admin_channel)
-				alert("This channel was created by a Nanotrasen Officer. You cannot place a D-Notice upon it.", "Ok")
+				alert("This channel was created by a Ark Soft Officer. You cannot place a D-Notice upon it.", "Ok")
 				return
 			FC.censored = !FC.censored
 
@@ -646,7 +646,7 @@ GLOBAL_LIST_EMPTY(allNewscasters) //Global list that will contain reference to a
 
 /obj/item/newspaper
 	name = "newspaper"
-	desc = "An issue of The Griffon, the newspaper circulating aboard Nanotrasen Space Stations."
+	desc = "An issue of The Griffon, the newspaper circulating aboard Ark Soft Space Stations."
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "newspaper"
 	w_class = WEIGHT_CLASS_SMALL	//Let's make it fit in trashbags!
@@ -667,7 +667,7 @@ GLOBAL_LIST_EMPTY(allNewscasters) //Global list that will contain reference to a
 		switch(screen)
 			if(0) //Cover
 				dat+="<DIV ALIGN='center'><B><FONT SIZE=6>The Griffon</FONT></B></div>"
-				dat+="<DIV ALIGN='center'><FONT SIZE=2>Nanotrasen-standard newspaper, for use on Nanotrasen Space Facilities</FONT></div><HR>"
+				dat+="<DIV ALIGN='center'><FONT SIZE=2>Ark Soft-standard newspaper, for use on Ark Soft Space Facilities</FONT></div><HR>"
 				if(isemptylist(news_content))
 					if(important_message)
 						dat+="Contents:<BR><ul><B><FONT COLOR='red'>**</FONT>Important Security Announcement<FONT COLOR='red'>**</FONT></B> <FONT SIZE=2>\[page [pages+2]\]</FONT><BR></ul>"

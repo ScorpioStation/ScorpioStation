@@ -5,7 +5,7 @@
 //mushroom hat
 /obj/item/clothing/head/fluff/mushhat
 	name = "Mushroom Hat"
-	desc = "A horrifying display of Nanotrasen's ruthless pursuit in being the forefront of fashion. Or genocide."
+	desc = "A horrifying display of Ark Soft's ruthless pursuit in being the forefront of fashion. Or genocide."
 	icon_state = "mushhat"
 	item_state = "mushhat"
 	flags = BLOCKHAIR

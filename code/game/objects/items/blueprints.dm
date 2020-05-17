@@ -49,7 +49,7 @@
 	name = "construction permit"
 	icon_state = "permit"
 	desc = "This is a one-use permit that allows the user to officially declare a built room as new addition to the station."
-	fluffnotice = "Nanotrasen Engineering requires all on-station construction projects to be approved by a head of staff, as detailed in Nanotrasen Company Regulation 512-C (Mid-Shift Modifications to Company Property). \
+	fluffnotice = "Ark Soft Engineering requires all on-station construction projects to be approved by a head of staff, as detailed in Ark Soft Company Regulation 512-C (Mid-Shift Modifications to Company Property). \
 						By submitting this form, you accept any fines, fees, or personal injury/death that may occur during construction."
 	w_class = WEIGHT_CLASS_TINY
 
@@ -91,7 +91,7 @@
 	desc = "Blueprints of the station. There is a \"Classified\" stamp and several coffee stains on it."
 	icon = 'icons/obj/items.dmi'
 	icon_state = "blueprints"
-	fluffnotice = "Property of Nanotrasen. For heads of staff only. Store in high-secure storage."
+	fluffnotice = "Property of Ark Soft. For heads of staff only. Store in high-secure storage."
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	w_class = WEIGHT_CLASS_NORMAL
 	var/list/showing = list()
@@ -326,7 +326,7 @@
 /obj/item/areaeditor/blueprints/cyborg
 	name = "station schematics"
 	desc = "A digital copy of the station blueprints stored in your memory."
-	fluffnotice = "Intellectual Property of Nanotrasen. For use in engineering cyborgs only. Wipe from memory upon departure from the station."
+	fluffnotice = "Intellectual Property of Ark Soft. For use in engineering cyborgs only. Wipe from memory upon departure from the station."
 
 /obj/item/areaeditor/blueprints/ce
 

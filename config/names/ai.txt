@@ -26,6 +26,7 @@ Brackenridge
 C-3PO
 Cassandra One
 Cell
+Cephalon
 Chii
 Chip
 Computer
@@ -118,7 +119,6 @@ Terminus
 Tidy
 Tik-Tok
 Tobor
-Trurl
 ULTRABOT
 Ulysses
 Uniblab

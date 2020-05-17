@@ -1,6 +1,6 @@
 /obj/structure/closet/secure_closet/chaplain
 	name = "chapel wardrobe"
-	desc = "A lockable storage unit for Nanotrasen-approved religious attire."
+	desc = "A lockable storage unit for Ark Soft-approved religious attire."
 	req_access = list(ACCESS_CHAPEL_OFFICE)
 	icon_state = "chaplainsecure1"
 	icon_closed = "chaplainsecure"

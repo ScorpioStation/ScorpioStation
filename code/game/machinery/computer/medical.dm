@@ -558,7 +558,7 @@
 
 /obj/machinery/computer/med_data/laptop
 	name = "medical laptop"
-	desc = "Cheap Nanotrasen laptop."
+	desc = "Cheap Ark Soft laptop."
 	icon_state = "laptop"
 	icon_keyboard = "laptop_key"
 	icon_screen = "medlaptop"

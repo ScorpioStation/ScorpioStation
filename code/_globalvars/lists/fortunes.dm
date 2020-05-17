@@ -54,4 +54,4 @@ GLOBAL_LIST_INIT(fortune_cookie_messages, list("If you feel you are right, stand
 "Thank you! But your fortune is in another cookie!",
 "The greatest danger could be your stupidity.",
 "He who laughs at himself never runs out of things to laugh at.",
-"Help! I'm being held prisoner in a Nanotrasen bakery!"))
+"Help! I'm being held prisoner in a Ark Soft bakery!"))

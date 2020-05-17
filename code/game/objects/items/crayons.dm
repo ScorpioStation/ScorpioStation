@@ -240,7 +240,7 @@
 
 /obj/item/toy/crayon/spraycan/New()
 	..()
-	name = "Nanotrasen-brand Rapid Paint Applicator"
+	name = "Ark Soft-brand Rapid Paint Applicator"
 	update_icon()
 
 /obj/item/toy/crayon/spraycan/attack_self(mob/living/user as mob)

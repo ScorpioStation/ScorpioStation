@@ -177,7 +177,7 @@
 					player_alt_titles,
 					organ_data,
 					rlimb_data,
-					nanotrasen_relation,
+					ark_soft_relation,
 					speciesprefs,
 					socks,
 					body_accessory,
@@ -253,7 +253,7 @@
 		player_alt_titles = params2list(query.item[44])
 		organ_data = params2list(query.item[45])
 		rlimb_data = params2list(query.item[46])
-		nanotrasen_relation = query.item[47]
+		ark_soft_relation = query.item[47]
 		speciesprefs = text2num(query.item[48])
 
 		//socks
@@ -268,7 +268,7 @@
 	real_name		= reject_bad_name(real_name, 1)
 	if(isnull(species)) species = "Human"
 	if(isnull(language)) language = "None"
-	if(isnull(nanotrasen_relation)) nanotrasen_relation = initial(nanotrasen_relation)
+	if(isnull(ark_soft_relation)) ark_soft_relation = initial(ark_soft_relation)
 	if(isnull(speciesprefs)) speciesprefs = initial(speciesprefs)
 	if(!real_name) real_name = random_name(gender,species)
 	be_random_name	= sanitize_integer(be_random_name, 0, 1, initial(be_random_name))
@@ -389,7 +389,7 @@
 												disabilities='[disabilities]',
 												organ_data='[organlist]',
 												rlimb_data='[rlimblist]',
-												nanotrasen_relation='[nanotrasen_relation]',
+												ark_soft_relation='[ark_soft_relation]',
 												speciesprefs='[speciesprefs]',
 												socks='[socks]',
 												body_accessory='[body_accessory]',
@@ -431,7 +431,7 @@
 											sec_record,
 											gen_record,
 											player_alt_titles,
-											disabilities, organ_data, rlimb_data, nanotrasen_relation, speciesprefs,
+											disabilities, organ_data, rlimb_data, ark_soft_relation, speciesprefs,
 											socks, body_accessory, gear, autohiss)
 
 					VALUES
@@ -459,7 +459,7 @@
 											'[sanitizeSQL(sec_record)]',
 											'[sanitizeSQL(gen_record)]',
 											'[playertitlelist]',
-											'[disabilities]', '[organlist]', '[rlimblist]', '[nanotrasen_relation]', '[speciesprefs]',
+											'[disabilities]', '[organlist]', '[rlimblist]', '[ark_soft_relation]', '[speciesprefs]',
 											'[socks]', '[body_accessory]', '[gearlist]', '[autohiss_mode]')
 
 "}

@@ -301,7 +301,7 @@
 	alcohol_perc = 0.2
 	drink_icon = "atomicbombglass"
 	drink_name = "Atomic Bomb"
-	drink_desc = "Nanotrasen cannot take legal responsibility for your actions after imbibing."
+	drink_desc = "Ark Soft cannot take legal responsibility for your actions after imbibing."
 	taste_description = "a long, fiery burn"
 
 /datum/reagent/consumable/ethanol/threemileisland
@@ -841,7 +841,7 @@
 /datum/reagent/consumable/ethanol/grog
 	name = "Grog"
 	id = "grog"
-	description = "Watered down rum, Nanotrasen approves!"
+	description = "Watered down rum, Ark Soft approves!"
 	reagent_state = LIQUID
 	color = "#664300" // rgb: 102, 67, 0
 	alcohol_perc = 0.2
@@ -889,13 +889,13 @@
 /datum/reagent/consumable/ethanol/acid_spit
 	name = "Acid Spit"
 	id = "acidspit"
-	description = "A drink by Nanotrasen. Made from live aliens."
+	description = "A drink by Ark Soft. Made from live aliens."
 	reagent_state = LIQUID
 	color = "#365000" // rgb: 54, 80, 0
 	alcohol_perc = 0.3
 	drink_icon = "acidspitglass"
 	drink_name = "Acid Spit"
-	drink_desc = "A drink from Nanotrasen. Made from live aliens."
+	drink_desc = "A drink from Ark Soft. Made from live aliens."
 	taste_description = "PAIN"
 
 /datum/reagent/consumable/ethanol/amasec

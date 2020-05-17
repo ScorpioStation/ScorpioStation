@@ -14,7 +14,7 @@ log transactions
 #define PRINT_DELAY 100
 
 /obj/machinery/atm
-	name = "Nanotrasen automatic teller machine"
+	name = "Ark Soft automatic teller machine"
 	desc = "For all your monetary needs!"
 	icon = 'icons/obj/terminals.dmi'
 	icon_state = "atm"
@@ -111,7 +111,7 @@ log transactions
 	if(..())
 		return 1
 	if(issilicon(user))
-		to_chat(user, "<span class='warning'>Artificial unit recognized. Artificial units do not currently receive monetary compensation, as per Nanotrasen regulation #1005.</span>")
+		to_chat(user, "<span class='warning'>Artificial unit recognized. Artificial units do not currently receive monetary compensation, as per Ark Soft regulation #1005.</span>")
 		return
 	if(!linked_db)
 		reconnect_database()

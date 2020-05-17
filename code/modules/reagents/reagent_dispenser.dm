@@ -252,9 +252,9 @@ obj/structure/reagent_dispensers/fueltank/welder_act(mob/user, obj/item/I)
 		qdel(src)
 
 /obj/structure/reagent_dispensers/beerkeg/nuke
-	name = "Nanotrasen-brand nuclear fission explosive"
-	desc = "One of the more successful achievements of the Nanotrasen Corporate Warfare Division, their nuclear fission explosives are renowned for being cheap\
-	to produce and devestatingly effective. Signs explain that though this is just a model, every Nanotrasen station is equipped with one, just in case. \
+	name = "Ark Soft-brand nuclear fission explosive"
+	desc = "One of the more successful achievements of the Ark Soft Corporate Warfare Division, their nuclear fission explosives are renowned for being cheap\
+	to produce and devestatingly effective. Signs explain that though this is just a model, every Ark Soft station is equipped with one, just in case. \
 	All Captains carefully guard the disk needed to detonate them - at least, the sign says they do. There seems to be a tap on the back."
 	icon = 'icons/obj/stationobjs.dmi'
 	icon_state = "nuclearbomb0"

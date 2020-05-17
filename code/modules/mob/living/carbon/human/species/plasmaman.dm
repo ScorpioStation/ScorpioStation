@@ -63,7 +63,7 @@
 		if("Botanist")
 			O = new /datum/outfit/plasmaman/botany
 
-		if("Bartender", "Internal Affairs Agent", "Magistrate", "Nanotrasen Representative", "Nanotrasen Navy Officer")
+		if("Bartender", "Internal Affairs Agent", "Magistrate", "Ark Soft Representative", "Ark Soft Navy Officer")
 			O = new /datum/outfit/plasmaman/bar
 
 		if("Chef")

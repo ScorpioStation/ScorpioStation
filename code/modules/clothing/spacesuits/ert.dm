@@ -1,7 +1,7 @@
 
 /obj/item/clothing/head/helmet/space/hardsuit/ert
 	name = "emergency response team helmet"
-	desc = "A helmet worn by members of the Nanotrasen Emergency Response Team. Armoured and space ready."
+	desc = "A helmet worn by members of the Ark Soft Emergency Response Team. Armoured and space ready."
 	icon_state = "hardsuit0-ert_commander"
 	item_state = "helm-command"
 	item_color = "ert_commander"
@@ -33,7 +33,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/ert
 	name = "emergency response team suit"
-	desc = "A suit worn by members of the Nanotrasen Emergency Response Team. Armoured, space ready, and fire resistant."
+	desc = "A suit worn by members of the Ark Soft Emergency Response Team. Armoured, space ready, and fire resistant."
 	icon_state = "ert_commander"
 	item_state = "suit-command"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -54,7 +54,7 @@
 //Commander
 /obj/item/clothing/head/helmet/space/hardsuit/ert/commander
 	name = "emergency response team commander helmet"
-	desc = "A helmet worn by the commander of a Nanotrasen Emergency Response Team. Has blue highlights. Armoured and space ready."
+	desc = "A helmet worn by the commander of a Ark Soft Emergency Response Team. Has blue highlights. Armoured and space ready."
 	icon_state = "hardsuit0-ert_commander"
 	item_state = "helm-command"
 	item_color = "ert_commander"
@@ -67,7 +67,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/ert/commander
 	name = "emergency response team commander suit"
-	desc = "A suit worn by the commander of a Nanotrasen Emergency Response Team. Has blue highlights. Armoured, space ready, and fire resistant."
+	desc = "A suit worn by the commander of a Ark Soft Emergency Response Team. Has blue highlights. Armoured, space ready, and fire resistant."
 	icon_state = "ert_commander"
 	item_state = "suit-command"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/commander
@@ -81,7 +81,7 @@
 //Security
 /obj/item/clothing/head/helmet/space/hardsuit/ert/security
 	name = "emergency response team security helmet"
-	desc = "A helmet worn by security members of a Nanotrasen Emergency Response Team. Has red highlights. Armoured and space ready."
+	desc = "A helmet worn by security members of a Ark Soft Emergency Response Team. Has red highlights. Armoured and space ready."
 	icon_state = "hardsuit0-ert_security"
 	item_state = "syndicate-helm-black-red"
 	item_color = "ert_security"
@@ -94,7 +94,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/ert/security
 	name = "emergency response team security suit"
-	desc = "A suit worn by security members of a Nanotrasen Emergency Response Team. Has red highlights. Armoured, space ready, and fire resistant."
+	desc = "A suit worn by security members of a Ark Soft Emergency Response Team. Has red highlights. Armoured, space ready, and fire resistant."
 	icon_state = "ert_security"
 	item_state = "syndicate-black-red"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/security
@@ -108,7 +108,7 @@
 //Engineer
 /obj/item/clothing/head/helmet/space/hardsuit/ert/engineer
 	name = "emergency response team engineer helmet"
-	desc = "A helmet worn by engineers of a Nanotrasen Emergency Response Team. Has yellow highlights. Armoured and space ready."
+	desc = "A helmet worn by engineers of a Ark Soft Emergency Response Team. Has yellow highlights. Armoured and space ready."
 	icon_state = "hardsuit0-ert_engineer"
 	item_state = "helm-orange"
 	item_color = "ert_engineer"
@@ -122,7 +122,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/ert/engineer
 	name = "emergency response team engineer suit"
-	desc = "A suit worn by the engineers of a Nanotrasen Emergency Response Team. Has yellow highlights. Armoured, space ready, and fire resistant."
+	desc = "A suit worn by the engineers of a Ark Soft Emergency Response Team. Has yellow highlights. Armoured, space ready, and fire resistant."
 	icon_state = "ert_engineer"
 	item_state = "suit-orange"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/engineer
@@ -136,7 +136,7 @@
 //Medical
 /obj/item/clothing/head/helmet/space/hardsuit/ert/medical
 	name = "emergency response team medical helmet"
-	desc = "A helmet worn by medical members of a Nanotrasen Emergency Response Team. Has white highlights. Armoured and space ready."
+	desc = "A helmet worn by medical members of a Ark Soft Emergency Response Team. Has white highlights. Armoured and space ready."
 	icon_state = "hardsuit0-ert_medical"
 	item_color = "ert_medical"
 
@@ -148,7 +148,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/ert/medical
 	name = "emergency response team medical suit"
-	desc = "A suit worn by medical members of a Nanotrasen Emergency Response Team. Has white highlights. Armoured and space ready."
+	desc = "A suit worn by medical members of a Ark Soft Emergency Response Team. Has white highlights. Armoured and space ready."
 	icon_state = "ert_medical"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/medical
 
@@ -161,7 +161,7 @@
 //Janitor
 /obj/item/clothing/head/helmet/space/hardsuit/ert/janitor
 	name = "emergency response team janitor helmet"
-	desc = "A helmet worn by janitorial members of a Nanotrasen Emergency Response Team. Has purple highlights. Armoured and space ready."
+	desc = "A helmet worn by janitorial members of a Ark Soft Emergency Response Team. Has purple highlights. Armoured and space ready."
 	icon_state = "hardsuit0-ert_janitor"
 	item_color = "ert_janitor"
 
@@ -173,7 +173,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/ert/janitor
 	name = "emergency response team janitor suit"
-	desc = "A suit worn by the janitorial of a Nanotrasen Emergency Response Team. Has purple highlights. Armoured, space ready, and fire resistant."
+	desc = "A suit worn by the janitorial of a Ark Soft Emergency Response Team. Has purple highlights. Armoured, space ready, and fire resistant."
 	icon_state = "ert_janitor"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/janitor
 

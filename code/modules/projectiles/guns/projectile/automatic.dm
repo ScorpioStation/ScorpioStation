@@ -80,7 +80,7 @@
 
 //Saber SMG//
 /obj/item/gun/projectile/automatic/proto
-	name = "\improper Nanotrasen Saber SMG"
+	name = "\improper Ark Soft Saber SMG"
 	desc = "A prototype three-round burst 9mm submachine gun, designated 'SABR'. Has a threaded barrel for suppressors."
 	icon_state = "saber"
 	mag_type = /obj/item/ammo_box/magazine/smgm9mm
@@ -237,7 +237,7 @@
 //ARG Assault Rifle//
 /obj/item/gun/projectile/automatic/ar
 	name = "ARG"
-	desc = "A robust assault rile used by Nanotrasen fighting forces."
+	desc = "A robust assault rile used by Ark Soft fighting forces."
 	icon_state = "arg"
 	item_state = "arg"
 	slot_flags = 0
@@ -289,7 +289,7 @@
 //Laser carbine//
 /obj/item/gun/projectile/automatic/lasercarbine
 	name = "\improper IK-60 Laser Carbine"
-	desc = "A short, compact carbine like rifle, relying more on battery cartridges rather than a built in power cell. Utilized by the Nanotrasen Navy for combat operations."
+	desc = "A short, compact carbine like rifle, relying more on battery cartridges rather than a built in power cell. Utilized by the Ark Soft Navy for combat operations."
 	icon_state = "lasercarbine"
 	item_state = "laser"
 	w_class = WEIGHT_CLASS_NORMAL

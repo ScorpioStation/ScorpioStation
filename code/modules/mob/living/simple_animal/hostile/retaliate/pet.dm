@@ -2,7 +2,7 @@
 	name = "Sergeant Araneus"
 	real_name = "Sergeant Araneus"
 	voice_name = "unidentifiable voice"
-	desc = "A fierce companion for any person of power, this spider has been carefully trained by Nanotrasen specialists. Its beady, staring eyes send shivers down your spine."
+	desc = "A fierce companion for any person of power, this spider has been carefully trained by Ark Soft specialists. Its beady, staring eyes send shivers down your spine."
 	faction = list("spiders")
 	icon_state = "guard"
 	icon_living = "guard"

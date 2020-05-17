@@ -19,7 +19,7 @@ GLOBAL_LIST_EMPTY(weighted_mundaneevent_locations)
 //distance is measured in AU and co-relates to travel time
 /datum/trade_destination/centcomm
 	name = "CentComm"
-	description = "Nanotrasen's administrative centre for Tau Ceti."
+	description = "Ark Soft's administrative centre for Tau Scorpii."
 	distance = 1.2
 	willing_to_buy = list()
 	willing_to_sell = list()
@@ -38,7 +38,7 @@ GLOBAL_LIST_EMPTY(weighted_mundaneevent_locations)
 /datum/trade_destination/anansi/get_custom_eventstring(var/event_type)
 	if(event_type == RESEARCH_BREAKTHROUGH)
 		return "Thanks to research conducted on the NSS Anansi, Second Red Cross Society wishes to announce a major breakthough in the field of \
-		[pick("mind-machine interfacing","neuroscience","nano-augmentation","genetics")]. Nanotrasen is expected to announce a co-exploitation deal within the fortnight."
+		[pick("mind-machine interfacing","neuroscience","nano-augmentation","genetics")]. Ark Soft is expected to announce a co-exploitation deal within the fortnight."
 	return null
 
 /datum/trade_destination/icarus
@@ -51,7 +51,7 @@ GLOBAL_LIST_EMPTY(weighted_mundaneevent_locations)
 
 /datum/trade_destination/redolant
 	name = "OAV Redolant"
-	description = "Osiris Atmospherics station in orbit around the only gas giant insystem. They retain tight control over shipping rights, and Osiris warships protecting their prize are not an uncommon sight in Tau Ceti."
+	description = "Osiris Atmospherics station in orbit around the only gas giant insystem. They retain tight control over shipping rights, and Osiris warships protecting their prize are not an uncommon sight in Tau Scorpii."
 	distance = 0.6
 	willing_to_buy = list()
 	willing_to_sell = list()
@@ -61,12 +61,12 @@ GLOBAL_LIST_EMPTY(weighted_mundaneevent_locations)
 /datum/trade_destination/redolant/get_custom_eventstring(var/event_type)
 	if(event_type == RESEARCH_BREAKTHROUGH)
 		return "Thanks to research conducted on the OAV Redolant, Osiris Atmospherics wishes to announce a major breakthough in the field of \
-		[pick("plasma research","high energy flux capacitance","super-compressed materials","theoretical particle physics")]. Nanotrasen is expected to announce a co-exploitation deal within the fortnight."
+		[pick("plasma research","high energy flux capacitance","super-compressed materials","theoretical particle physics")]. Ark Soft is expected to announce a co-exploitation deal within the fortnight."
 	return null
 
 /datum/trade_destination/beltway
 	name = "Beltway mining chain"
-	description = "A co-operative effort between Beltway and Nanotrasen to exploit the rich outer asteroid belt of the Tau Ceti system."
+	description = "A co-operative effort between Beltway and Ark Soft to exploit the rich outer asteroid belt of the Tau Scorpii system."
 	distance = 7.5
 	willing_to_buy = list()
 	willing_to_sell = list()

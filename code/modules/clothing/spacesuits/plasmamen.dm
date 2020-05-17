@@ -210,7 +210,7 @@
 
 /obj/item/clothing/head/helmet/space/plasmaman/librarian
 	name = "librarian's plasma envirosuit helmet"
-	desc = "A slight modification on a traditional voidsuit helmet, this helmet was Nanotrasen's first solution to the *logistical problems* that come with employing plasmamen. Despite their limitations, these helmets still see use by historian and old-styled plasmamen alike."
+	desc = "A slight modification on a traditional voidsuit helmet, this helmet was Ark Soft's first solution to the *logistical problems* that come with employing plasmamen. Despite their limitations, these helmets still see use by historian and old-styled plasmamen alike."
 	icon_state = "prototype_envirohelm"
 	item_state = "prototype_envirohelm"
 	actions_types = list(/datum/action/item_action/toggle_welding_screen/plasmaman)
