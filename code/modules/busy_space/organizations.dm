@@ -402,7 +402,7 @@
 	name = "The Alchemist's Council"
 	short_name = "The Council"
 	acronym = "AC"
-	desc = "The Alchemist's Council is a science-oriented organization of scholars, researchers, and easrepreneurs. \
+	desc = "The Alchemist's Council is a science-oriented organization of scholars, researchers, and entrepreneurs. \
 	Though dedicated to industrializing the Tajaran world of Ahdomai, it is seen as one of the few remaining centralized powers of the Tajara peoples \
 	due to the collapse of Ahdomai's provisional government."
 	history = "" // Todo
