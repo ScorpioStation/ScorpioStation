@@ -24,7 +24,7 @@
 #define SEC_ROLES list("Warden","Security","Brig Medbay","Head of Security's Desk")
 #define MISC_ROLES list("Bar","Chapel","Kitchen","Hydroponics","Janitorial")
 #define MED_ROLES list("Virology","Chief Medical Officer's Desk","Medbay")
-#define COM_ROLES list("Blueshield","AS Representative","Head of Personnel's Desk","Captain's Desk","Bridge")
+#define COM_ROLES list("Blueshield","Ark Representative","Head of Personnel's Desk","Captain's Desk","Bridge")
 #define SCI_ROLES list("Robotics","Science","Research Director's Desk")
 
 GLOBAL_LIST_EMPTY(req_console_assistance)

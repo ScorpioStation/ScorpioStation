@@ -57569,7 +57569,7 @@
 /area/crew_quarters/heads/hop)
 "bYv" = (
 /turf/simulated/wall/r_wall,
-/area/asrep)
+/area/arkrep)
 "bYw" = (
 /turf/simulated/wall/r_wall,
 /area/civilian/barber)
@@ -58404,32 +58404,32 @@
 	},
 /area/crew_quarters/heads/hop)
 "cab" = (
-/obj/structure/closet/secure_closet/asrep,
+/obj/structure/closet/secure_closet/arkrep,
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "cac" = (
 /obj/machinery/computer/secure_data,
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "cad" = (
 /obj/structure/table/wood,
 /obj/machinery/photocopier/faxmachine/longrange{
-	department = "AS Representative's Office"
+	department = "Ark Representative's Office"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "cae" = (
 /obj/item/flag/nt,
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "caf" = (
 /obj/machinery/dye_generator,
 /obj/machinery/alarm{
@@ -59500,17 +59500,17 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "cbX" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin,
-/obj/item/paper/asrep,
+/obj/item/paper/arkrep,
 /obj/item/flashlight/lamp/green{
 	pixel_x = -5;
 	pixel_y = 12
 	},
 /turf/simulated/floor/carpet,
-/area/asrep)
+/area/arkrep)
 "cbY" = (
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -59519,7 +59519,7 @@
 	name = "Ark Soft Representative"
 	},
 /turf/simulated/floor/carpet,
-/area/asrep)
+/area/arkrep)
 "cbZ" = (
 /obj/structure/chair/comfy/black{
 	dir = 8
@@ -59527,7 +59527,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "cca" = (
 /obj/machinery/newscaster{
 	pixel_x = -32
@@ -60570,21 +60570,21 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "cdJ" = (
 /obj/structure/table/wood,
 /obj/item/folder,
 /obj/item/stamp/centcom,
 /obj/item/pen/multi/fountain,
 /turf/simulated/floor/carpet,
-/area/asrep)
+/area/arkrep)
 "cdK" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/skills{
 	req_access_txt = "57"
 	},
 /turf/simulated/floor/carpet,
-/area/asrep)
+/area/arkrep)
 "cdL" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	on = 1
@@ -60596,7 +60596,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "cdM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/landmark/start{
@@ -61782,7 +61782,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "cfG" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -61792,10 +61792,10 @@
 	on = 1
 	},
 /turf/simulated/floor/carpet,
-/area/asrep)
+/area/arkrep)
 "cfH" = (
 /turf/simulated/floor/carpet,
-/area/asrep)
+/area/arkrep)
 "cfI" = (
 /obj/structure/cable{
 	icon_state = "0-2";
@@ -61815,7 +61815,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "cfJ" = (
 /obj/item/twohanded/required/kirbyplants,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -62651,11 +62651,11 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "chl" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/carpet,
-/area/asrep)
+/area/arkrep)
 "chm" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -62671,7 +62671,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "chn" = (
 /obj/effect/spawner/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -63390,7 +63390,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "ciG" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -63401,7 +63401,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "ciH" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -63415,7 +63415,7 @@
 	pixel_y = -22
 	},
 /obj/machinery/camera{
-	c_tag = "AS Representative's Office";
+	c_tag = "Ark Representative's Office";
 	dir = 1;
 	network = list("SS13")
 	},
@@ -63426,7 +63426,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "ciI" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -63454,7 +63454,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "ciJ" = (
 /obj/effect/spawner/window/reinforced,
 /obj/structure/cable{
@@ -63462,7 +63462,7 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating,
-/area/asrep)
+/area/arkrep)
 "ciK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plasteel{
@@ -64409,7 +64409,7 @@
 /obj/effect/spawner/window/reinforced,
 /obj/structure/cable,
 /turf/simulated/floor/plating,
-/area/asrep)
+/area/arkrep)
 "cku" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -64419,7 +64419,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
-	name = "AS Representative's Office";
+	name = "Ark Representative's Office";
 	req_access_txt = "73"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -64428,7 +64428,7 @@
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
 	},
-/area/asrep)
+/area/arkrep)
 "ckv" = (
 /turf/simulated/floor/plasteel{
 	dir = 8;

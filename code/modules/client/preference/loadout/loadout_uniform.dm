@@ -102,9 +102,9 @@
 	path = /obj/item/clothing/under/rank/head_of_security/skirt
 	allowed_roles = list("Head of Security")
 
-/datum/gear/uniform/skirt/job/asrep
-	display_name = "skirt, AS Rep"
-	path = /obj/item/clothing/under/rank/asrep/skirt
+/datum/gear/uniform/skirt/job/arkrep
+	display_name = "skirt, Ark Rep"
+	path = /obj/item/clothing/under/rank/arkrep/skirt
 	allowed_roles = list("Ark Soft Representative")
 
 /datum/gear/uniform/skirt/job/blueshield
