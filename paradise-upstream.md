@@ -1,6 +1,57 @@
 # paradise-upstream.md
 Changelog for changes we incorporate from upstream (Paradise Station).
 
+## 2020-05-21
+* Paradise #[13442](https://github.com/ParadiseSS13/Paradise/pull/13411): Subsystems now state implications if offlined
+    * Adds `offline_implications` text to subsystems so admins can be aware of their purpose/effect
+* Paradise #[13442](https://github.com/ParadiseSS13/Paradise/pull/13442): Your ears feel great
+    * Tweaks the messaging on the sensory restoration virus
+* Paradise #[13143](https://github.com/ParadiseSS13/Paradise/pull/13143): Makes classic secHUD available to Magistrate
+    * Adds `Magistrate` to the `allowed_roles` of `/datum/gear/sechud`
+* Paradise #[13448](https://github.com/ParadiseSS13/Paradise/pull/13448): Fixes Admin Logs
+    * Moves some log initialization code to the top of `/datum/controller/master/New()`
+* Paradise #[13334](https://github.com/ParadiseSS13/Paradise/pull/13334): Direction Locking Help Text
+    * Adds a helpful message when you direction-lock your character
+* Paradise #[13445](https://github.com/ParadiseSS13/Paradise/pull/13445): Makes round end more obvious in game logs
+    * Uses multiple log messages to create a banner effect making it easier to see exactly when a round ended
+* Paradise #[13282](https://github.com/ParadiseSS13/Paradise/pull/13282): Remove crowbarring sound on blast doors and update the proc
+    * Turns down the tool volume on crowbarring a door
+* Paradise #[12647](https://github.com/ParadiseSS13/Paradise/pull/12647): Makes some space ruins easier to find
+    * Adds `/obj/item/gps/ruin` to space ruins to help make them easier to find
+* Paradise #[12795](https://github.com/ParadiseSS13/Paradise/pull/12795): Emagproofs CC, adds admin warning if ert shuttle is moved by non-ert
+    * Adds an admin message is the shuttle is moved by unauthorized folks
+* Paradise #[13450](https://github.com/ParadiseSS13/Paradise/pull/13450): Fixes missing Syndicate Spacesuit sprite
+    * Adds missing suit icons to `icons/mob/species/tajaran/suit.dmi`
+* Paradise #[13051](https://github.com/ParadiseSS13/Paradise/pull/13051): Changelog Overhaul
+    * Adds a database based changelog system
+* Paradise #[13395](https://github.com/ParadiseSS13/Paradise/pull/13395): Shock Proof Heart
+    * Adds a check for `emp_proof` to `/obj/item/organ/internal/heart/cybernetic/upgraded/shock_organ`
+* Paradise #[13157](https://github.com/ParadiseSS13/Paradise/pull/13157): Lighter refactor + Reduces zippo lighter and gavel text and sound spam
+    * Adds a 5 second cooldown to gavel and zippo lighter to reduce spam
+    * Refactors zippo lighter use to `turn_on_lighter` and `turn_off_lighter` procs
+* Paradise #[13426](https://github.com/ParadiseSS13/Paradise/pull/13426): Removes gottagofast_meth
+    * Eliminates speed stacking meth with other speedups
+    * Removes define flag `GOTTAGOFAST_METH`
+    * Refactors code to use `GOTTAGOFAST` in place of `GOTTAGOFAST_METH`
+* Paradise #[13452](https://github.com/ParadiseSS13/Paradise/pull/13452): CL Fixes Round 1
+    * Fixes runtime with changelog system
+    * Makes changelog entries open in external browser
+* Paradise #[13432](https://github.com/ParadiseSS13/Paradise/pull/13432): Unscrewing Lava
+    * Adds no-op `/turf/simulated/floor/plating/lava/screwdriver_act()` to prevent unscrewing lava
+* Paradise #[13205](https://github.com/ParadiseSS13/Paradise/pull/13205): Add wizard loadouts, misc wiz features/fixes
+    * Extensive changes to the wizard loadout system, including new sprites
+* Paradise #[13454](https://github.com/ParadiseSS13/Paradise/pull/13454): Fixes Meatball in-hand icons
+    * Modifies `icons/mob/inhands/items_lefthand.dmi`
+    * Modifies `icons/mob/inhands/items_righthand.dmi`
+* Paradise #[13455](https://github.com/ParadiseSS13/Paradise/pull/13455): Removes a bunch of unused vars
+    * Removes many unused variables across 4 source files
+* Paradise #[13460](https://github.com/ParadiseSS13/Paradise/pull/13460): BSA strikes are now logged to disk
+    * Adds a log message for BSA usage
+* Paradise #[13436](https://github.com/ParadiseSS13/Paradise/pull/13436): Lighting Performance Improvement
+    * Changes some lighting related procs to macros to improve performance
+* Paradise #[13473](https://github.com/ParadiseSS13/Paradise/pull/13473): Fixed db version in dbconfig example file
+    * Bump from schema v11 to schema v12
+
 ## 2020-05-14
 * Paradise #[13360](https://github.com/ParadiseSS13/Paradise/pull/13360): Fixes the missionary staff being unable to charge properly
     * Adds `get_dist` check to make missionary staff charge properly
