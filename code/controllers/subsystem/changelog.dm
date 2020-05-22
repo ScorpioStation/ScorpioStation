@@ -1,5 +1,5 @@
 /*
-	Subsystem core for ParadiseSS13 changelogs
+	Subsystem core for Scorpio Station changelogs
 	Author: AffectedArc07
 
 	Basically this SS extracts changelogs from the past 30 days from the database, and cleanly formats them into HTML that the players can see
@@ -163,10 +163,10 @@ SUBSYSTEM_DEF(changelog)
 	// Modify the code below to modify the header of the changelog
 	var/changelog_header = {"
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
-		<title>ParadiseSS13 Changelog</title>
+		<title>Scorpio Station Changelog</title>
 		<link rel='styelsheet' href='fontawesome.min.css'>
 		<center>
-			<p style='font-size: 20px'><b>Paradise Station Changelog</b></p>
+			<p style='font-size: 20px'><b>Scorpio Station Changelog</b></p>
 			<p><a href='?src=[UID()];openPage=forum'>Forum</a> - <a href='?src=[UID()];openPage=wiki'>Wiki</a> - <a href='?src=[UID()];openPage=github'>GitHub</a></p>
 		</center>
 	"}
@@ -260,4 +260,3 @@ SUBSYSTEM_DEF(changelog)
 			usr << link(url)
 		else
 			to_chat(usr, "<span class='danger'>The GitHub URL is not set in the server configuration. PRs cannot be opened from changelog view. Please inform the server host.</span>")
-
