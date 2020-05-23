@@ -2,7 +2,7 @@
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/ScorpioStation/ScorpioStation.svg)](http://isitmaintained.com/project/ScorpioStation/ScorpioStation "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/ScorpioStation/ScorpioStation.svg)](http://isitmaintained.com/project/ScorpioStation/ScorpioStation "Percentage of issues still open")
 
-[Website](https://scorpiostation.com/) - [Code](https://github.com/ScorpioStation/ScorpioStation) - [Discord](https://discord.gg/CgrBjV)
+[Website](https://scorpiostation.com/) - [Code](https://github.com/ScorpioStation/ScorpioStation) - [Discord](https://scorpiostation.com/discord)
 
 ---
 
