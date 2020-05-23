@@ -11,7 +11,6 @@
 	var/message_type = "Story"
 
 /datum/news_announcement/revolution_inciting_event/paycuts_suspicion
-
 	round_time = 60*10
 	message = {"Reports have leaked that Ark Soft Inc. is planning to put paycuts into
 				effect on many of its Research Stations in Tau Ceti. Apparently these research
@@ -38,7 +37,6 @@
 	author = "Unauthorized"
 
 /datum/news_announcement/bluespace_research/announcement
-
 	round_time = 60*20
 	message = {"The new field of research trying to explain several interesting spacetime oddities,
 				also known as \"Bluespace Research\", has reached new heights. Of the several
@@ -48,7 +46,6 @@
 				team to an alternate reality."}
 
 /datum/news_announcement/random_junk/cheesy_honkers
-
 	author = "Assistant Editor Carl Ritz"
 	channel_name = "The Gibson Gazette"
 	message = {"Do cheesy honkers increase risk of having a miscarriage? Several health administrations
@@ -73,7 +70,6 @@
 	round_time = 60 * 90
 
 /datum/news_announcement/lotus_tree/explosions
-
 	channel_name = "Nyx Daily"
 	author = "Reporter Leland H. Howards"
 
@@ -85,8 +81,7 @@
 				with marriage tax-benefits."}
 	round_time = 60 * 30
 
-datum/news_announcement/food_riots/breaking_news
-
+/datum/news_announcement/food_riots/breaking_news
 	channel_name = "Nyx Daily"
 	author = "Reporter Ro'kii Ar-Raqis"
 
@@ -97,7 +92,7 @@ datum/news_announcement/food_riots/breaking_news
 				the hour."}
 	round_time = 60 * 10
 
-datum/news_announcement/food_riots/more
+/datum/news_announcement/food_riots/more
 	channel_name = "Nyx Daily"
 	author = "Reporter Ro'kii Ar-Raqis"
 
@@ -108,22 +103,21 @@ datum/news_announcement/food_riots/more
 	\"further proof\" of the colony's anti-Ark Soft stance. Meanwhile, Refuge Security has been unable to quell
 	the riots. More on this at 6."}
 	round_time = 60 * 60
-
 GLOBAL_LIST_INIT(newscaster_standard_feeds, list(/datum/news_announcement/bluespace_research, /datum/news_announcement/lotus_tree, /datum/news_announcement/random_junk,  /datum/news_announcement/food_riots))
 
-proc/process_newscaster()
+/proc/process_newscaster()
 	check_for_newscaster_updates(SSticker.mode.newscaster_announcements)
 
 GLOBAL_LIST_EMPTY(announced_news_types)
 
-proc/check_for_newscaster_updates(type)
+/proc/check_for_newscaster_updates(type)
 	for(var/subtype in subtypesof(type))
 		var/datum/news_announcement/news = new subtype()
 		if(news.round_time * 10 <= world.time && !(subtype in GLOB.announced_news_types))
 			GLOB.announced_news_types += subtype
 			announce_newscaster_news(news)
 
-proc/announce_newscaster_news(datum/news_announcement/news)
+/proc/announce_newscaster_news(datum/news_announcement/news)
 
 	var/datum/feed_channel/sendto
 	for(var/datum/feed_channel/FC in GLOB.news_network.network_channels)
