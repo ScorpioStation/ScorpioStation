@@ -6,7 +6,7 @@
 	circuit = /obj/item/circuitboard/aiupload
 	var/mob/living/silicon/ai/current = null
 	var/opened = 0
-	var/upload_cooldown = 0
+	var/next_upload = 0
 
 	light_color = LIGHT_COLOR_WHITE
 	light_range_on = 2
@@ -32,8 +32,8 @@
 			if(!current)//no AI selected
 				to_chat(user, "<span class='danger'>No AI selected. Please chose a target before proceeding with upload.")
 				return
-			if(upload_cooldown)
-				to_chat(user, "<span class='danger'>Please wait a little before using the upload again.")
+			if(next_upload > world.time)
+				to_chat(user, "<span class='danger'>No tensor processing units are available for neural network retraining. Please try again later.")
 				return
 			var/turf/T = get_turf(current)
 			if(!atoms_share_level(T, src))
@@ -41,9 +41,7 @@
 				return
 			var/obj/item/aiModule/M = O
 			M.install(src)
-			upload_cooldown = 1
-			spawn(600)
-				upload_cooldown = 0
+			next_upload = world.time + (60 SECONDS)
 			return
 		return ..()
 
