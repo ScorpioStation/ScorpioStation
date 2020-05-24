@@ -6,6 +6,7 @@
 	circuit = /obj/item/circuitboard/aiupload
 	var/mob/living/silicon/ai/current = null
 	var/opened = 0
+	var/upload_cooldown = 0
 
 	light_color = LIGHT_COLOR_WHITE
 	light_range_on = 2
@@ -31,12 +32,18 @@
 			if(!current)//no AI selected
 				to_chat(user, "<span class='danger'>No AI selected. Please chose a target before proceeding with upload.")
 				return
+			if(upload_cooldown)
+				to_chat(user, "<span class='danger'>Please wait a little before using the upload again.")
+				return
 			var/turf/T = get_turf(current)
 			if(!atoms_share_level(T, src))
 				to_chat(user, "<span class='danger'>Unable to establish a connection</span>: You're too far away from the target silicon!")
 				return
 			var/obj/item/aiModule/M = O
 			M.install(src)
+			upload_cooldown = 1
+			spawn(600)
+				upload_cooldown = 0
 			return
 		return ..()
 
