@@ -42,7 +42,7 @@
 
 /datum/map_template/shuttle/emergency/cyb
 	suffix = "cyb"
-	name = "emergency shuttle (Cyberiad)"
+	name = "emergency shuttle (Scorpius)"
 
 /datum/map_template/shuttle/emergency/dept
 	suffix = "dept"

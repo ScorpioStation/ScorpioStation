@@ -112673,7 +112673,7 @@
 	dwidth = 3;
 	height = 5;
 	id = "sit_scimaint";
-	name = "Cyberiad Science Maint";
+	name = "Scorpius Science Maint";
 	width = 11
 	},
 /turf/space,
