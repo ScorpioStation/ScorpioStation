@@ -14616,7 +14616,7 @@
 	dwidth = 3;
 	height = 5;
 	id = "sit_arrivals";
-	name = "Cyberiad Arrivals";
+	name = "Scorpius Arrivals";
 	width = 11
 	},
 /obj/structure/fans/tiny,
@@ -17093,7 +17093,7 @@
 	dwidth = 7;
 	height = 5;
 	id = "sst_home";
-	name = "Near Cyberiad Arrivals";
+	name = "Near Scorpius Arrivals";
 	width = 11
 	},
 /obj/structure/fans/tiny,
@@ -23880,7 +23880,7 @@
 	dwidth = 4;
 	height = 11;
 	id = "trade_dock";
-	name = "port bay 4 at Cyberiad";
+	name = "port bay 4 at Scorpius";
 	width = 9
 	},
 /turf/simulated/shuttle/floor,
@@ -44056,7 +44056,7 @@
 "bEb" = (
 /obj/structure/table,
 /obj/item/aiModule/protectStation,
-/obj/item/aiModule/nanotrasen,
+/obj/item/aiModule/ark_soft,
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"
 	},
@@ -89317,7 +89317,7 @@
 	dwidth = 3;
 	height = 5;
 	id = "sit_engshuttle";
-	name = "Cyberiad Eng Shuttle";
+	name = "Scorpius Eng Shuttle";
 	width = 11
 	},
 /turf/space,
