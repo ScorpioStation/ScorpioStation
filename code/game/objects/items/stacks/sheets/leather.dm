@@ -10,8 +10,8 @@
 	icon_state = "sheet-hide"
 
 GLOBAL_LIST_INIT(human_recipes, list( \
-	new/datum/stack_recipe("bloated human costume", /obj/item/clothing/suit/bloated_human, 5, on_floor = 1), \
-	new/datum/stack_recipe("bloated human costume head", /obj/item/clothing/head/human_head, 5, on_floor = 1), \
+	new/datum/stack_recipe("bloated human costume", /obj/item/clothing/suit/bloated_human, 5, on_floor = TRUE), \
+	new/datum/stack_recipe("bloated human costume head", /obj/item/clothing/head/human_head, 5, on_floor = TRUE), \
 	))
 
 /obj/item/stack/sheet/animalhide/human/New(var/loc, var/amount=null)
