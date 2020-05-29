@@ -1,6 +1,80 @@
 # paradise-upstream.md
 Changelog for changes we incorporate from upstream (Paradise Station).
 
+## 2020-05-28
+* Paradise #[13403](https://github.com/ParadiseSS13/Paradise/pull/13403): Cyborg Hypospray QOL tweak
+    * Cyborg's hypospay now replenishes reagents in inactive modes once the active mode is full
+* Paradise #[13375](https://github.com/ParadiseSS13/Paradise/pull/13375): The logviewer will now work if you have invalid mobs in your selection
+    * Remove deleted mobs from the list to allow the logview to open
+* Paradise #[12652](https://github.com/ParadiseSS13/Paradise/pull/12652): Fix paperwork acquiring extra line breaks when you change register
+    * Pencode and Markdown living together, mass hysteria
+* Paradise #[12423](https://github.com/ParadiseSS13/Paradise/pull/12423): Diona nymphs can eat veggies
+    * Diona nymphs can eat food and weeds now
+* Paradise #[12660](https://github.com/ParadiseSS13/Paradise/pull/12660): Game panel improvements
+    * Makes the game panel behave a little more intuitively
+* Paradise #[12827](https://github.com/ParadiseSS13/Paradise/pull/12827): Removes the Freeze Mech verb, and bundles its functionality into the Freeze verb
+    * Adds a nice message for those attempting to enter an admin-frozen mech
+* Paradise #[12820](https://github.com/ParadiseSS13/Paradise/pull/12820): Gives sleepers and cryotubes the ability to auto-eject dead people
+    * Modifies the cryotubes and sleepers to allow new auto-eject settings
+* Paradise #[13374](https://github.com/ParadiseSS13/Paradise/pull/13374): Newcrit Death Threshold Tweaks
+    * Modifies the formula for the death threshold
+* Paradise #[13478](https://github.com/ParadiseSS13/Paradise/pull/13478): Fixes a filesystem viewing exploit
+    * Fixes security hole whereby arbitrary server files could be read
+* Paradise #[13479](https://github.com/ParadiseSS13/Paradise/pull/13479): Fix spelling of Disintegrate
+    * Fixes up two spelling errors
+* Paradise #[13476](https://github.com/ParadiseSS13/Paradise/pull/13476): This time I dont break logs
+    * The MC restarting no longer re-enables OOC
+* Paradise #[13468](https://github.com/ParadiseSS13/Paradise/pull/13468): Allows the IPC players to select the bald IPC monitor using the "Change Monitor" button
+    * Added the "bald" IPC name and icon_state (Obsoleted by #13483)
+* Paradise #[13457](https://github.com/ParadiseSS13/Paradise/pull/13457): Updates the contribution info. Multiplications are not faster than divisions
+    * Modifies the code contribution guide on GitHub
+* Paradise #[12907](https://github.com/ParadiseSS13/Paradise/pull/12907): Fixes some armour value oversights
+    * Adjust the armor values on a handful of security items to make them more consistent
+* Paradise #[13443](https://github.com/ParadiseSS13/Paradise/pull/13443): Fire Cult sprite overhaul
+    * Incredible new graphics and thematic mob names for fire cult; no gameplay changes
+* Paradise #[13462](https://github.com/ParadiseSS13/Paradise/pull/13462): Replaces the bloodcrawl variable with a trait
+    * Refactors variable `bloodcrawl` into two new traits `TRAIT_BLOODCRAWL` and `TRAIT_BLOODCRAWL_EAT`
+    * `TRAIT_WATERBREATH` was also added, because hey, why not
+* Paradise #[13430](https://github.com/ParadiseSS13/Paradise/pull/13430): Removes Fat Sprites
+    * Fat condition remains, but the sprites to show it are removed
+* Paradise #[12666](https://github.com/ParadiseSS13/Paradise/pull/12666): Adds new SecHUD designations and tweaks secHUD on examining
+    * Nice enhancements to the Security HUD
+* Paradise #[13483](https://github.com/ParadiseSS13/Paradise/pull/13483): Fixes Having a Frigging Monitor Glued to Your Face
+    * Fixes the name and icon_state of "bald" IPCs
+* Paradise #[13481](https://github.com/ParadiseSS13/Paradise/pull/13481): Makes explicit paths in the code/datums/periodic_news.dm file
+    * No gameplay change; improves code-quality
+* Paradise #[13453](https://github.com/ParadiseSS13/Paradise/pull/13453): Removes Unused Factions
+    * Removes Syndicate factions from the game; they weren't used
+* Paradise #[13438](https://github.com/ParadiseSS13/Paradise/pull/13438): Ports Cybernetic Ears
+    * Adds cybernetic ears
+    * Fixes bug with cybernetic eye appearance
+* Paradise #[13449](https://github.com/ParadiseSS13/Paradise/pull/13449): TG Label Component Port
+    * Refactors the labeler to add a label component to an atom
+* Paradise #[13482](https://github.com/ParadiseSS13/Paradise/pull/13482): IPCs can now change their monitors while laying down
+    * Modifies the `incapacitated` check to allow IPCs to do this
+* Paradise #[13488](https://github.com/ParadiseSS13/Paradise/pull/13488): Makes airlocks destroyable again using weapons when the panel is open
+    * Changes a small bit of logic in `code/game/machinery/doors/airlock.dm`
+* Paradise #[13446](https://github.com/ParadiseSS13/Paradise/pull/13446): Telecommunications Overhaul
+    * Reworks Telecomms into two machines: Core and Relays
+    * Dramatically improves server side performance
+* Paradise #[13497](https://github.com/ParadiseSS13/Paradise/pull/13497): Fixes Intercomms and Station Bounce Radios
+    * Changes when broadcast messages are deleted so that intercoms and radios still work
+* Paradise #[13495](https://github.com/ParadiseSS13/Paradise/pull/13495): Library computer fix
+    * Fixes message monitor key not working (Obsoleted by #13498)
+* Paradise #[13486](https://github.com/ParadiseSS13/Paradise/pull/13486): Library computer fix
+    * Makes the library computer print the correct manuals.
+* Paradise #[13498](https://github.com/ParadiseSS13/Paradise/pull/13498): Minor tcomms fixes
+    * Adjusts message in `/obj/item/paper/tcommskey/LateInitialize`
+* Paradise #[13505](https://github.com/ParadiseSS13/Paradise/pull/13505): Annihilates the global iterator
+    * An ancient and vestigial mode of processing is removed from the codebase
+
+### Modified
+* Paradise #[13477](https://github.com/ParadiseSS13/Paradise/pull/13477): Lizard skin handbag
+    * Adds `lizard skin handbag`, a satchel made of Unathi skins
+    * Scorpio Station removed the crafting recipe for the bag:
+        * Admins can spawn the bag for a Hannibal Lecter style villain if they want
+        * Players cannot craft the bag themselves
+
 ## 2020-05-21
 * Paradise #[13442](https://github.com/ParadiseSS13/Paradise/pull/13411): Subsystems now state implications if offlined
     * Adds `offline_implications` text to subsystems so admins can be aware of their purpose/effect
