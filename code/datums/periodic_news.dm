@@ -7,7 +7,7 @@
 	var/message // body of the message
 	var/author = "Ark Soft Editor"
 	var/channel_name = "Nyx Daily"
-	var/can_be_redacted = 0
+	var/can_be_redacted = FALSE
 	var/message_type = "Story"
 
 /datum/news_announcement/revolution_inciting_event/paycuts_suspicion
@@ -103,6 +103,7 @@
 	\"further proof\" of the colony's anti-Ark Soft stance. Meanwhile, Refuge Security has been unable to quell
 	the riots. More on this at 6."}
 	round_time = 60 * 60
+
 GLOBAL_LIST_INIT(newscaster_standard_feeds, list(/datum/news_announcement/bluespace_research, /datum/news_announcement/lotus_tree, /datum/news_announcement/random_junk,  /datum/news_announcement/food_riots))
 
 /proc/process_newscaster()
@@ -118,7 +119,6 @@ GLOBAL_LIST_EMPTY(announced_news_types)
 			announce_newscaster_news(news)
 
 /proc/announce_newscaster_news(datum/news_announcement/news)
-
 	var/datum/feed_channel/sendto
 	for(var/datum/feed_channel/FC in GLOB.news_network.network_channels)
 		if(FC.channel_name == news.channel_name)
