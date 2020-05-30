@@ -7,9 +7,9 @@
 	supervisors = "the head of personnel"
 	department_head = list("Head of Personnel")
 	selection_color = "#dddddd"
-	access = list()			//See /datum/job/assistant/get_access()
-	minimal_access = list()	//See /datum/job/assistant/get_access()
-	alt_titles = list("Tourist","Businessman","Trader","Assistant")
+	access = list()         //See /datum/job/assistant/get_access()
+	minimal_access = list() //See /datum/job/assistant/get_access()
+	alt_titles = list("Assistant", "Businessman", "Tourist", "Trader")
 	outfit = /datum/outfit/job/assistant
 
 /datum/job/civilian/get_access()
@@ -25,4 +25,7 @@
 	uniform = /obj/item/clothing/under/color/random
 	shoes = /obj/item/clothing/shoes/black
 
-
+/datum/outfit/job/assistant/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(config.grey_assistants)
+		uniform = /obj/item/clothing/under/color/grey
