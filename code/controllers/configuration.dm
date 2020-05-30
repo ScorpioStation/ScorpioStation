@@ -84,6 +84,7 @@
 	var/list_afk_minimum = 5 // How long people have to be AFK before it's listed on the "List AFK players" verb
 
 	var/traitor_objectives_amount = 2
+	var/grey_assistants = 0
 	var/shadowling_max_age = 0
 
 	var/max_maint_drones = 5				//This many drones can spawn,
@@ -778,6 +779,8 @@
 					config.shuttle_refuel_delay     = text2num(value)
 				if("traitor_objectives_amount")
 					config.traitor_objectives_amount = text2num(value)
+				if("grey_assistants")
+					config.grey_assistants = 1
 				if("reactionary_explosions")
 					config.reactionary_explosions	= 1
 				if("bombcap")
