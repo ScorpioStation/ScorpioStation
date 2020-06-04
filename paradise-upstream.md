@@ -1,6 +1,38 @@
 # paradise-upstream.md
 Changelog for changes we incorporate from upstream (Paradise Station).
 
+## 2020-06-03
+* Paradise #[13511](https://github.com/ParadiseSS13/Paradise/pull/13511): Fixes whiteship spawning above station
+    * The white ship no longer spawns above the station
+
+* Paradise #[13506](https://github.com/ParadiseSS13/Paradise/pull/13506): Helps Organs GC Better
+    * Adds `/obj/item/organ/internal/brain/Destroy()` to clean up after brains
+    * Converts many `spawn` instances to `addtimer` callbacks
+
+* Paradise #[13526](https://github.com/ParadiseSS13/Paradise/pull/13516): You won't hit an airlock now when using a wirecutter on it while the panel is open
+    * You won't hit an airlock now when using a wirecutter on it while the panel is open
+
+* Paradise #[13516](https://github.com/ParadiseSS13/Paradise/pull/13516): Cleans up some awful code from the ticker
+    * Optimised part of the Ticker Subsystem code
+    * Modifies the subsystems related to statistics; admin and player population
+    * Modifies the subsystems related to vote timing; crew transfer shuttle
+
+* Paradise #[13513](https://github.com/ParadiseSS13/Paradise/pull/13513): Fixes the virus outbreak event, including naming
+    * Random normal viruses from the virus outbreak event now actually spawn instead of runtime and make everybody sad
+    * Random advanced viruses from the virus outbreak event now have proper working names
+
+* Paradise #[13471](https://github.com/ParadiseSS13/Paradise/pull/13471): Life refactor
+    * Note: This is a very large changeset (183 files); it was not fully reviewed for Scorpio
+    * All mobs, including simple mobs, have a health icon now
+    * Health and health doll should update more responsively
+    * Buffs remote view a bit; lowers the cooldown and makes it able to be cancelled; you no longer appear in the list of remote viewable mobs
+    * All mobs will now float up and down if they are flying
+    * Robots that lose an equipment slot to damage now play an audible sound
+    * Robots who lose control of one of their equipment slots can't re-equip an item and utilize it for the next two seconds before it unequips again
+    * Fixes being dead preventing you from being impacted by weather
+    * Fixes nearsighted glasses not rendering in player preview
+    * Fixes not getting prescription glasses if you're nearsighted
+
 ## 2020-05-28
 * Paradise #[13403](https://github.com/ParadiseSS13/Paradise/pull/13403): Cyborg Hypospray QOL tweak
     * Cyborg's hypospay now replenishes reagents in inactive modes once the active mode is full
