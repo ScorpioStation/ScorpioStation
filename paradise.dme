@@ -458,7 +458,7 @@
 #include "code\game\area\ai_monitored.dm"
 #include "code\game\area\areas.dm"
 #include "code\game\area\Dynamic areas.dm"
-#include "code\game\area\Space Station 13 areas.dm"
+#include "code\game\area\emerald_areas.dm"
 #include "code\game\area\areas\depot-areas.dm"
 #include "code\game\area\areas\mining.dm"
 #include "code\game\area\areas\ruins\lavaland.dm"
