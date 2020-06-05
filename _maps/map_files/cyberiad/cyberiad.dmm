@@ -37290,7 +37290,7 @@
 /area/hallway/primary/central/nw)
 "bqr" = (
 /turf/simulated/wall,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "bqs" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -37970,7 +37970,7 @@
 /area/crew_quarters/bar)
 "brU" = (
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "brV" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 4;
@@ -38727,7 +38727,7 @@
 /obj/structure/table/wood,
 /obj/item/pen/red,
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "btB" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green{
@@ -38735,7 +38735,7 @@
 	pixel_y = 5
 	},
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "btC" = (
 /obj/machinery/computer/shuttle/ferry/request,
 /turf/simulated/shuttle/floor,
@@ -38756,16 +38756,16 @@
 	},
 /obj/structure/table/wood,
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "btF" = (
 /obj/structure/table/wood,
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "btG" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp,
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "btH" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -38773,7 +38773,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "btI" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -39448,7 +39448,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "buY" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -39486,13 +39486,13 @@
 	dir = 8
 	},
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "bvc" = (
 /obj/machinery/alarm{
 	pixel_y = 23
 	},
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "bvd" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -39604,10 +39604,10 @@
 	dir = 8
 	},
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "bvn" = (
 /turf/simulated/floor/carpet,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "bvo" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -39615,7 +39615,7 @@
 	},
 /obj/structure/filingcabinet/chestdrawer,
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "bvp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -40333,7 +40333,7 @@
 "bwM" = (
 /obj/structure/chair/office/dark,
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "bwN" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -41172,14 +41172,14 @@
 	},
 /obj/structure/table/wood,
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "byh" = (
 /obj/item/radio/intercom{
 	name = "station intercom (General)";
 	pixel_y = -28
 	},
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "byi" = (
 /obj/structure/table/wood,
 /obj/machinery/firealarm{
@@ -41187,7 +41187,7 @@
 	pixel_y = -24
 	},
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "byj" = (
 /obj/machinery/camera{
 	c_tag = "Vacant Office";
@@ -41196,7 +41196,7 @@
 /obj/structure/table/wood,
 /obj/item/folder/blue,
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "byk" = (
 /obj/structure/chair/stool,
 /obj/effect/decal/warning_stripes/northwest,
@@ -41838,7 +41838,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/wall,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "bzu" = (
 /obj/structure/toilet{
 	pixel_y = 8
@@ -42032,7 +42032,7 @@
 	scrub_Toxins = 1
 	},
 /turf/simulated/floor/carpet,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "bzM" = (
 /obj/machinery/status_display{
 	density = 0;
@@ -42061,7 +42061,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/carpet,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "bzQ" = (
 /obj/machinery/door/airlock{
 	name = "Unisex Restrooms";
@@ -42755,7 +42755,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "bBs" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -42783,7 +42783,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "bBu" = (
 /obj/structure/table/wood,
 /obj/item/radio/intercom/command,
@@ -42881,7 +42881,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "bBH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -42890,7 +42890,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "bBI" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -42901,7 +42901,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/carpet,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "bBJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -42910,7 +42910,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet,
-/area/security/vacantoffice)
+/area/crew_quarters/vacantoffice)
 "bBK" = (
 /obj/effect/decal/warning_stripes/southeastcorner,
 /obj/effect/decal/warning_stripes/northeastcorner,

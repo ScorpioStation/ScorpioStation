@@ -37,3 +37,5 @@ DECLARE_LEVEL(EMPTY_AREA, CROSSLINKED, list(REACHABLE)))
 	#warn a map has already been included, ignoring Emerald.
 
 #endif
+
+//A map by EmeraldCandy
