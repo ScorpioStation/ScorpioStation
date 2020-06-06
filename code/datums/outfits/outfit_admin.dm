@@ -503,8 +503,8 @@
 
 
 
-/datum/outfit/admin/musician
-	name = "Musician"
+/datum/outfit/admin/popstar
+	name = "Popstar"
 
 	uniform = /obj/item/clothing/under/singerb
 	back = /obj/item/storage/backpack
@@ -519,22 +519,16 @@
 		/obj/item/flashlight = 1,
 		/obj/item/instrument/violin = 1,
 		/obj/item/instrument/piano_synth = 1,
-		/obj/item/instrument/guitar = 1,
-		/obj/item/instrument/eguitar = 1,
-		/obj/item/instrument/accordion = 1,
-		/obj/item/instrument/saxophone = 1,
-		/obj/item/instrument/trombone = 1,
-		/obj/item/instrument/harmonica = 1
 	)
 
-/datum/outfit/admin/musician/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/admin/popstar/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 	if(visualsOnly)
 		return
 
 	var/obj/item/card/id/I = H.wear_id
 	if(istype(I))
-		apply_to_card(I, H, list(ACCESS_MAINT_TUNNELS), "Bard")
+		apply_to_card(I, H, list(ACCESS_MAINT_TUNNELS), "Popstar")
 
 	var/obj/item/clothing/ears/headphones/P = r_ear
 	if(istype(P))
