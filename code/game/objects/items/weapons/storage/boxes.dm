@@ -203,7 +203,7 @@
 /obj/item/storage/box/iv_bags
 	name = "IV Bags"
 	desc = "A box full of empty IV bags."
-	icon_state = "beaker"
+	icon_state = "ivdrip"
 
 /obj/item/storage/box/iv_bags/New()
 	..()
