@@ -196,7 +196,7 @@
 	shoes = /obj/item/clothing/shoes/centcom
 	l_ear = /obj/item/radio/headset/centcom
 	id = /obj/item/card/id/centcom
-	r_pocket = /obj/item/lighter/zippo/nt_rep
+	r_pocket = /obj/item/lighter/zippo/ark_rep
 	l_pocket = /obj/item/storage/fancy/cigarettes/dromedaryco
 	pda = /obj/item/pda/centcom
 	backpack_contents = list(
