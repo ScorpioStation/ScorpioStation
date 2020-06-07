@@ -133,7 +133,7 @@
 //EXTRA LIGHTERS
 /obj/item/lighter/zippo/ark_rep
 	name = "gold engraved zippo"
-	desc = "An engraved golden Zippo lighter with the letters NT on it."
+	desc = "An engraved golden Zippo lighter with the letter A on it."
 	icon_state = "zippo_ark_off"
 	icon_on = "zippo_ark_on"
 	icon_off = "zippo_ark_off"
