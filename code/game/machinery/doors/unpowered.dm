@@ -24,6 +24,7 @@
 /obj/machinery/door/unpowered/shuttle/open()
 	playsound(loc, soundsopen, 30, 1)
 	. = ..()
+	autoclose = TRUE
 
 /obj/machinery/door/unpowered/shuttle/close()
 	if(density)
