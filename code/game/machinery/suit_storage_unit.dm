@@ -125,6 +125,15 @@
 /obj/machinery/suit_storage_unit/cmo/secure
 	secure = TRUE
 
+/obj/machinery/suit_storage_unit/hop
+	suit_type    = /obj/item/clothing/suit/space/nasavoid/ntblue
+	mask_type    = /obj/item/clothing/mask/breath
+	helmet_type = /obj/item/clothing/head/helmet/space/nasavoid/ntblue
+	req_access = list(ACCESS_HOP)
+
+/obj/machinery/suit_storage_unit/hop/secure
+	secure = TRUE
+
 //version of the SSU for medbay secondary storage. Includes magboots.
 /obj/machinery/suit_storage_unit/cmo/secure/sec_storage
 	name = "medical suit storage unit"
