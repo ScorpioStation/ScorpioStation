@@ -20,6 +20,7 @@
 	var/soundsclosed = 'sound/machines/airlock_close.ogg'
 	icon = 'icons/turf/shuttle.dmi'
 	icon_state = "door1"
+	autoclose = TRUE
 
 /obj/machinery/door/unpowered/shuttle/open()
 	playsound(loc, soundsopen, 30, 1)
