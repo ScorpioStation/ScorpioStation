@@ -1,6 +1,130 @@
 # paradise-upstream.md
 Changelog for changes we incorporate from upstream (Paradise Station).
 
+## 2020-06-11
+* Paradise #[13535](https://github.com/ParadiseSS13/Paradise/pull/13535): Patches a hole
+    * Mentors can no longer invoke player panel via F7
+
+* Paradise #[13536](https://github.com/ParadiseSS13/Paradise/pull/13536): Various Life Refactor Fixes
+    * Fixes guardians view being locked to the player
+    * Fixes SSD players being woken up and not going back to sleep
+    * Maybe fixes mobs ending up in null location unassigned to any z-level by going in disposals?
+
+* Paradise #[13539](https://github.com/ParadiseSS13/Paradise/pull/13539): Fix AI say logging and cult logging
+    * Cult commune is logged in the say log as well now
+    * AIs saying stuff on channels is logged again
+    * AIs saying stuff on channels is logged again
+
+* Paradise #[13543](https://github.com/ParadiseSS13/Paradise/pull/13543): Terror queens that evolve from princesses will now be able to see their medhud properly
+    * Terror queens that evolve from princesses will now be able to see their medhud properly
+
+* Paradise #[13519](https://github.com/ParadiseSS13/Paradise/pull/13519): Make light_constructs use X_acts. Fixes a runtime
+    * Using a wrench on a light construct now won't hit it when you're trying to deconstruct it
+
+* Paradise #[13528](https://github.com/ParadiseSS13/Paradise/pull/13528): Renames the old station Delta wing to Theta
+    * The oldstation Delta wing has been renamed to Theta.
+
+* Paradise #[13504](https://github.com/ParadiseSS13/Paradise/pull/13504): Fixes the cloning pod turning invisible when you use a screwdriver on it
+    * Fixes the cloning pod turning invisible when you use a screwdriver on it
+
+* Paradise #[13507](https://github.com/ParadiseSS13/Paradise/pull/13507): Cyborgs can't look inside storage containers with alt-click anymore
+    * Cyborgs can't look inside storage containers with alt-click anymore
+    * Alt-clicking on a storage container while it's on the floor will bring up the examine tab which lists a turf's contents
+
+* Paradise #[13469](https://github.com/ParadiseSS13/Paradise/pull/13469): Karma menu update
+    * Fixes Karma menu not showing current karma
+    * Fixes Karma menu not showing unlocked jobs/species
+
+* Paradise #[13490](https://github.com/ParadiseSS13/Paradise/pull/13490): Gives flashes and cameras a light flash
+    * Gives a flasher (portable and brig flashers) a light flash after it is used
+    * Gives a flash a light flash after it is used
+    * Gives a camera a light flash after it is used
+
+* Paradise #[13514](https://github.com/ParadiseSS13/Paradise/pull/13514): Changes the changelings absorb objective description to be more clear
+    * Tweak changelings absorb objective description is made more descriptive
+    * Tweak changelings spread infestation power description is made more clear
+
+* Paradise #[13117](https://github.com/ParadiseSS13/Paradise/pull/13117): Rework power outage event
+    * Removes moderate event Grid Check
+    * Adds moderate event APC Short
+    * Adds major event APC Overload
+
+* Paradise #[13332](https://github.com/ParadiseSS13/Paradise/pull/13332): Improves / Reworks Dark Gygax for Nuke Ops
+    * Improves Dark Gygax stats and equipment
+
+* Paradise #[13524](https://github.com/ParadiseSS13/Paradise/pull/13524): Programmatic Profiler Access
+    * The ingame profiler is now granted to people with R_DEBUG and R_VIEWRUNTIMES
+
+* Paradise #[12842](https://github.com/ParadiseSS13/Paradise/pull/12842): AFK subsystem now also despawns certain antags
+    * The autocryoing preference now also works for certain antags.
+        * Others like shadowlings won't get cryod but instead will send a message to admins that they are AFK.
+    * The autocryoing preference now will give feedback in the chat informing the player about the option when used.
+    * SSAfk subsystem now sends less messages to admins. Only when it cannot make a decision itself.
+
+* Paradise #[13555](https://github.com/ParadiseSS13/Paradise/pull/13555): Fixes karma shop
+    * Karma shop actually registers if you have brig phys unlocked
+
+* Paradise #[13556](https://github.com/ParadiseSS13/Paradise/pull/13556): Personal closet fix, makes it respect nodrop
+    * Clicking open personal closets with nodrop items will no longer place that item into the locker
+
+* Paradise #[13534](https://github.com/ParadiseSS13/Paradise/pull/13534): Organ processing performance
+    * Massive doses of spaceacillin no longer prevents organ necrosis from ever happening
+    * Buffs spaceacillin just a hair by making it kill a couple more germs per cycle
+    * Improves processing of organs so it improves game performance
+
+* Paradise #[13564](https://github.com/ParadiseSS13/Paradise/pull/13564): Dramatically Cuts Object Processing Down
+    * Dramatically improves object processing performance
+
+* Paradise #[13561](https://github.com/ParadiseSS13/Paradise/pull/13561): Fixes Excessive PDA Creation
+    * Fixes thousands of PDA's being created in a round, decreasing game performance
+
+* Paradise #[13563](https://github.com/ParadiseSS13/Paradise/pull/13563): Fixes Epilepsy Having Epilepsy
+    * Fixes message for epilepsy
+
+* Paradise #[13562](https://github.com/ParadiseSS13/Paradise/pull/13562): Fixes Vampire Vision
+    * Fixes vampire vision not updating when you get the proper blood level
+
+* Paradise #[13487](https://github.com/ParadiseSS13/Paradise/pull/13487): NanoUI Brig Timers
+    * Converts brig timers to NanoUI
+
+* Paradise #[13568](https://github.com/ParadiseSS13/Paradise/pull/13568): Fixes Shoe Shackle Handcuff Upgrading
+    * Fixes being able to upgrade cablecuffs to regular cuffs with shackled shoes
+
+* Paradise #[13572](https://github.com/ParadiseSS13/Paradise/pull/13572): Gamebreaking bug fix immediately
+    * Renames default subsystem from `fire coderbus` to `fire codertrain`
+
+* Paradise #[13580](https://github.com/ParadiseSS13/Paradise/pull/13580): Fixes Ghost Exploit
+    * Patches a ghost exploit
+
+* Paradise #[13586](https://github.com/ParadiseSS13/Paradise/pull/13586): Fixes an issue with personal closets
+    * Fixes an issue with personal lockers
+
+* Paradise #[13582](https://github.com/ParadiseSS13/Paradise/pull/13582): Cuts down on Pointless Status Effect Processing
+    * Cuts down on processing time of lavaland mobs
+
+* Paradise #[13571](https://github.com/ParadiseSS13/Paradise/pull/13571): Fixes the mech repair droid being undetachable from mechs
+    * Fixes the mech repair droid being undetachable from mechs
+
+* Paradise #[13589](https://github.com/ParadiseSS13/Paradise/pull/13589): Brigtimer runtime fix
+    * Brig timer runtime fix
+
+* Paradise #[12853](https://github.com/ParadiseSS13/Paradise/pull/12853): Makes tanks dispensed from tank storage units get placed into your hands
+    * Tanks dispensed from tank storage units now get placed into your hands, if your hands are not full
+
+* Paradise #[13552](https://github.com/ParadiseSS13/Paradise/pull/13552): Fixes the steal objective from runtiming
+    * Fixes a runtime where a cryod antag breaks the steal objective. Thus not showing the objective at the end and causing tons of runtimes
+
+* Paradise #[13558](https://github.com/ParadiseSS13/Paradise/pull/13558): Adds the slippery component
+    * Modifies the way slippery atoms are handled; modified component import from TG
+
+* Paradise #[13595](https://github.com/ParadiseSS13/Paradise/pull/13595): Updates nano dependencies
+    * Update for dependencies for NanoUI; no game effect
+
+### Modified
+* Paradise #[13532](https://github.com/ParadiseSS13/Paradise/pull/13504): Removes something which shouldnt really exist here
+    * Scorpio Station kept the human-snake body modification monster thingy
+    * Code to sanitize an unknown body_accessory in `/datum/preferences/proc/load_character` was not reverted
+
 ## 2020-06-03
 * Paradise #[13511](https://github.com/ParadiseSS13/Paradise/pull/13511): Fixes whiteship spawning above station
     * The white ship no longer spawns above the station
