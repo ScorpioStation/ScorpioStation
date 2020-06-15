@@ -836,7 +836,7 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 	music = null
 
 /area/bridge/lounge
-	name = "\improper Bridge Louge"
+	name = "\improper Bridge Lounge"
 	icon_state = "meeting"
 	music = null
 
