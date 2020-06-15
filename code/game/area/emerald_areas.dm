@@ -1020,6 +1020,11 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 	name = "\improper Chapel Office"
 	icon_state = "chapeloffice"
 
+/area/chapel/Funeral
+	name = "\improper Funeral Services"
+	icon_state = "chapel"
+
+
 /area/escapepodbay
 	name = "\improper Escape Shuttle Hallway Podbay"
 	icon_state = "escape"
