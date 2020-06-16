@@ -471,3 +471,36 @@
 	jobtype = /datum/job/explorer
 	uniform = /obj/item/clothing/under/color/random
 	shoes = /obj/item/clothing/shoes/black
+
+/datum/job/bouncer
+	title = "Bouncer"
+	flag = JOB_BOUNCER
+	department_flag = JOBCAT_SUPPORT
+	exp_requirements = 600
+	exp_type = EXP_TYPE_CREW
+	total_positions = 1
+	spawn_positions = 1
+	is_service = 1
+	supervisors = "the head of personnel"
+	selection_color = "#dddddd"
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_WEAPONS)
+	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_WEAPONS)
+	outfit = /datum/outfit/job/bouncer
+
+/datum/outfit/job/bouncer
+	name = "Bouncer"
+	jobtype = /datum/job/bouncer
+	uniform = /obj/item/clothing/under/bouncer
+	suit = /obj/item/clothing/suit/armor/vest
+	shoes = /obj/item/clothing/shoes/black
+	l_ear = /obj/item/radio/headset/headset_service
+	glasses = /obj/item/clothing/glasses/sunglasses
+	belt = /obj/item/melee/classic_baton/telescopic
+	backpack_contents = list(
+		/obj/item/flash = 1,
+		/obj/item/restraints/handcuffs/cable/zipties = 1
+)
+/datum/outfit/job/bouncer/post_equip(mob/living/carbon/human/H)
+	..()
+	var/datum/martial_art/cqc/under_siege/CQC = new(null)
+	CQC.teach(H)
