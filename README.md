@@ -1,28 +1,14 @@
-# Paradise
-[![Build Status](https://travis-ci.org/ParadiseSS13/Paradise.svg?branch=master)](https://travis-ci.org/ParadiseSS13/Paradise)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/paradisess13/paradise.svg)](http://isitmaintained.com/project/paradisess13/paradise "Average time to resolve an issue")
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/paradisess13/paradise.svg)](http://isitmaintained.com/project/paradisess13/paradise "Percentage of issues still open")
-[![Krihelimeter](http://www.krihelinator.xyz/badge/paradisess13/paradise)](http://www.krihelinator.xyz) 
-
-[![forthebadge](http://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/contains-technical-debt.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/fuck-it-ship-it.svg)](http://forthebadge.com)
-
-[Website](https://www.paradisestation.org/) - [Code](https://github.com/ParadiseSS13/Paradise) - [Discord](https://discordapp.com/invite/YJDsXFE)
-
----
-
 ### GETTING THE CODE
 The simplest way to obtain the code is using the github .zip feature.
 
-Click [here](https://github.com/ParadiseSS13/Paradise/archive/master.zip) to get the latest code as a .zip file, then unzip it to wherever you want.
+Click [here](https://github.com/RenewalSS13/Renewal/archive/master.zip) to get the latest code as a .zip file, then unzip it to wherever you want.
 
 The more complicated and easier to update method is using git.  
 You'll need to download git or some client from [here](http://git-scm.com/).  
 When that's installed, right click in any folder and click on "Git Bash".  
 When that opens, type in:
 
-    git clone https://github.com/ParadiseSS13/Paradise.git
+    git clone https://github.com/RenewalSS13/Renewal.git
 
 (hint: hold down ctrl and press insert to paste into git bash)
 
@@ -127,7 +113,7 @@ along with the bot/relay script itself.
 
 ### LICENSE
 
-Paradise is licensed under the GNU Affero General Public License version 3.
+Renewal is licensed under the GNU Affero General Public License version 3.
 As of 5th January 2015 any new contributions are licensed under the AGPL as well,
 if you wish to submit code under the GPL v3 then commits and files must be marked as such
 in comments. If you wish to use our code in a closed source manner you may use anything
@@ -140,9 +126,9 @@ including addons and modifications you have made.
 See [this](https://www.gnu.org/licenses/why-affero-gpl.html) for more information.
 
 Any files located in the
-`Paradise/goon`,
-`Paradise/icons/goonstation`, or
-`Paradise/sound/goonstation`
+`Renewal/goon`,
+`Renewal/icons/goonstation`, or
+`Renewal/sound/goonstation`
 directories, or any subdirectories of mentioned directories are licensed under the
 Creative Commons 3.0 BY-NC-SA license
 (https://creativecommons.org/licenses/by-nc-sa/3.0)
