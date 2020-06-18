@@ -36,7 +36,8 @@
 		/datum/job/ntspecops,
 		/datum/job/ntinstructor,
 		/datum/job/civilian,
-		/datum/job/syndicateofficer
+		/datum/job/syndicateofficer,
+		/datum/job/explorer // blacklisted so that HOPs don't try prioritizing it, then wonder why that doesn't work
 	)
 
 	//The scaling factor of max total positions in relation to the total amount of people on board the station in %
