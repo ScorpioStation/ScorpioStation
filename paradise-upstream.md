@@ -1,6 +1,59 @@
 # paradise-upstream.md
 Changelog for changes we incorporate from upstream (Paradise Station).
 
+## 2020-06-18
+* Paradise #[12891](https://github.com/ParadiseSS13/Paradise/pull/12891): Adds IPC plushie and toast, toast is made via IPC plushie
+    * IPC plushie and toast
+
+* Paradise #[13622](https://github.com/ParadiseSS13/Paradise/pull/13622): Fixes shuttle exploit
+    * Fixed an exploit with shuttle code
+
+* Paradise #[13624](https://github.com/ParadiseSS13/Paradise/pull/13624): minor fix
+    * minor formatting fix in toy foamblade
+
+* Paradise #[13608](https://github.com/ParadiseSS13/Paradise/pull/13608): Removes references to console screens and removes an unnecessary var from circuitboards
+    * Examine text for circuit boards that require more than 1 of a part will now have an "s" on the end of the name of that part
+        * For example "2 capacitor" becomes "2 capacitors"
+
+* Paradise #[13611](https://github.com/ParadiseSS13/Paradise/pull/13611): Removes Non-existent docking port from Delta
+    * ScorpioStation kept this when de-conflicting the merge; shrug
+
+* Paradise #[13605](https://github.com/ParadiseSS13/Paradise/pull/13605): Correcting Welder Messages on the Field Generator
+    * Replicates ScorpioStation #[47](https://github.com/ScorpioStation/ScorpioStation/pull/47) without the grammar fix
+
+* Paradise #[13594](https://github.com/ParadiseSS13/Paradise/pull/13594): Updates Components
+    * Modifies the way some things are handled internally to a Component style
+
+* Paradise #[13384](https://github.com/ParadiseSS13/Paradise/pull/13384): Explorer Transfers
+    * 'Explorer' is now a job transfer option in the ID computer
+
+* Paradise #[13629](https://github.com/ParadiseSS13/Paradise/pull/13629): Fixes a Couple of Components Things
+    * Fixes incorrect file path for the components readme/documentation
+    * Also fixes a spelling issue with grumpy fox plushie
+
+* Paradise #[13616](https://github.com/ParadiseSS13/Paradise/pull/13616): Fix HUDs taking parent atom's color
+    * Fix HUDs being rendered with colour of the object they belong to
+
+* Paradise #[13618](https://github.com/ParadiseSS13/Paradise/pull/13618): Ports TGs way of handling bullet_act on shooting targets
+    * Should fix the armory crash
+
+* Paradise #[13630](https://github.com/ParadiseSS13/Paradise/pull/13630): Minor refactor to wireless eguns
+    * Optimised the code of wireless eguns
+
+* Paradise #[13623](https://github.com/ParadiseSS13/Paradise/pull/13623): Fixes Shadowling darksight not giving night vision when toggled
+    * Fixed the shadowling darksight not toggling night vision without something else updating your vision
+
+* Paradise #[13627](https://github.com/ParadiseSS13/Paradise/pull/13627): Fixes No Slip Shoes
+    * Fixes no slips not working
+
+* Paradise #[13620](https://github.com/ParadiseSS13/Paradise/pull/13620): Fixes Unhackable Smartfridges
+    * Fixes being unable to disable ID scan on a smartfridge
+    * Smartfridges now check to see if they are verifying IDs before denying access due to ID
+
+* Paradise #[13591](https://github.com/ParadiseSS13/Paradise/pull/13591): Resolves some Reagent Runtimes
+    * Slight change to messages when using ethanol on paper and books
+    * Modifies the way mob life processes synthanol
+
 ## 2020-06-11
 * Paradise #[13535](https://github.com/ParadiseSS13/Paradise/pull/13535): Patches a hole
     * Mentors can no longer invoke player panel via F7
