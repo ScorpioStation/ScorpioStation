@@ -83591,7 +83591,6 @@
 /obj/item/folder/white,
 /obj/item/folder/white,
 /obj/structure/table/glass,
-/obj/item/radio/headset/headset_medsci,
 /obj/item/flashlight/pen,
 /turf/simulated/floor/plasteel{
 	tag = "icon-vault";
