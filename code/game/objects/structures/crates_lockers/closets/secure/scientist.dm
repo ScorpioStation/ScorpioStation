@@ -67,7 +67,7 @@
 	new /obj/item/clothing/suit/mantle/labcoat(src)
 	new /obj/item/cartridge/rd(src)
 	new /obj/item/clothing/shoes/white(src)
-	new /obj/item/clothing/gloves/color/latex(src)
+	new /obj/item/clothing/gloves/color/grey/rd(src)
 	new /obj/item/radio/headset/heads/rd(src)
 	new /obj/item/tank/air(src)
 	new /obj/item/clothing/mask/gas(src)
