@@ -6,7 +6,8 @@ on:
   pull_request:
 jobs:
   testing:
-    - name: Teststep
+    runs-on: ubuntu-latest
+    steps:
       run: |
         ls
   deploy:
