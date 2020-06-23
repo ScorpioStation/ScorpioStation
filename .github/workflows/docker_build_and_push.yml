@@ -8,8 +8,8 @@ jobs:
   testing:
     runs-on: ubuntu-latest
     steps:
-      run: |
-        ls
+      - run: |
+          ls
   deploy:
     runs-on: ubuntu-latest
     steps:
