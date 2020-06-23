@@ -5,6 +5,10 @@ on:
       - master
   pull_request:
 jobs:
+  testing:
+    - name: Teststep
+      run: |
+        ls
   deploy:
     runs-on: ubuntu-latest
     steps:
