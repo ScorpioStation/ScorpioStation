@@ -73,7 +73,7 @@ COPY --chown=ss13:ss13 . /scorpio
 COPY --chown=ss13:ss13 --from=byond_build /byond /byond
 COPY --chown=ss13:ss13 --from=byond_build /scorpio/paradise.dmb /scorpio/paradise.dmb
 COPY --chown=ss13:ss13 --from=byond_build /scorpio/paradise.rsc /scorpio/paradise.rsc
-COPY --chown=ss13:ss13 --from=rust-g:latest /rust-g/target/release/librust_g.so /scorpio/librust_g.so
+COPY --chown=ss13:ss13 --from=scorpiostation/rust-g:latest /rust-g/target/release/librust_g.so /scorpio/librust_g.so
 COPY --chown=ss13:ss13 --from=mariadb_library /usr/lib/i386-linux-gnu/libmariadb.so /scorpio/libmariadb.so
 
 #
