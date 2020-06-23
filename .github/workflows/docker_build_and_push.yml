@@ -7,20 +7,12 @@ on:
   pull_request:
 
 jobs:
-  checkout:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
-  display:
-    runs-on: ubuntu-latest
-    steps:
-      - run: |
-          ls
-
   build_and_push:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - run: |
+          ls
       - uses: docker/build-push-action@v1.1.0
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
