@@ -1,7 +1,17 @@
-uses: docker/build-push-action@v1
-with:
-  username: ${{ secrets.DOCKER_USERNAME }}
-  password: ${{ secrets.DOCKER_PASSWORD }}
-  repository: scorpiostation/scorpio
-  tag_with_sha: true
-  tags: ${{ env.GITHUB_SHA }}
+name: 'Build and Push to Docker'
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: docker/build-push-action@v1.1.0
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: scorpiostation/scorpio
+          tag_with_sha: true
+          tags: ${{ env.GITHUB_SHA }}
