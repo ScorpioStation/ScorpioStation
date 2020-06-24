@@ -50,7 +50,7 @@ WORKDIR /scorpio
 RUN DreamMaker paradise.dme
 
 #-------------------------------------------------------------------------------
-# Create the docker image for ScorpioStation
+# Create the docker image for Scorpio Station
 #-------------------------------------------------------------------------------
 FROM base as scorpio_image
 
