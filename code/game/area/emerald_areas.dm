@@ -44,6 +44,11 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 
 /*-----------------------------------------------------------------------------*/
 
+// This area is not used by EmeraldStation, and is only here to pacify Travis
+// when compiling other maps that do make use of it.
+/area/security/vacantoffice
+	name = "\improper Vacant Office"
+	icon_state = "security"
 
 /area/admin
 	name = "\improper Admin Room"
@@ -51,7 +56,6 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 	requires_power = FALSE
 	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 	hide_attacklogs = TRUE
-
 
 /area/adminconstruction
 	name = "\improper Admin Testing Area"
