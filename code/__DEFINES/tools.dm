@@ -30,9 +30,9 @@
 #define WELDER_REPAIR_SUCCESS_MESSAGE		to_chat(user, "<span class='notice'>You repair the damage on [src]!</span>")
 #define WELDER_ATTEMPT_SLICING_MESSAGE		user.visible_message("<span class='notice'>[user] begins slicing through [src]...</span>", "<span class='notice'>You begin slicing through [src]...</span>", "<span class='warning'>You hear welding.</span>")
 #define WELDER_SLICING_SUCCESS_MESSAGE		to_chat(user, "<span class='notice'>You slice clean through [src]!</span>")
-#define WELDER_ATTEMPT_FLOOR_SLICE_MESSAGE	user.visible_message("<span class='notice'>[user] begins slicing [src] free from [get_turf(src)]...</span>", "<span class='notice'>You begin slicing [src] free from [get_turf(src)]...</span>", "<span class='warning'>You hear welding.</span>")
+#define WELDER_ATTEMPT_FLOOR_SLICE_MESSAGE	user.visible_message("<span class='notice'>[user] begins slicing the [src] free from [get_turf(src)]...</span>", "<span class='notice'>You begin slicing the [src] free from [get_turf(src)]...</span>", "<span class='warning'>You hear welding.</span>")
 #define WELDER_FLOOR_SLICE_SUCCESS_MESSAGE	to_chat(user, "<span class='notice'>You slice [src] clear of [get_turf(src)]!</span>")
-#define WELDER_ATTEMPT_FLOOR_WELD_MESSAGE	user.visible_message("<span class='notice'>[user] begins welding [src] to [get_turf(src)]...</span>", "<span class='notice'>You begin welding [src] to [get_turf(src)]...</span>", "<span class='warning'>You hear welding.</span>")
+#define WELDER_ATTEMPT_FLOOR_WELD_MESSAGE	user.visible_message("<span class='notice'>[user] begins welding the [src] to [get_turf(src)]...</span>", "<span class='notice'>You begin welding the [src] to [get_turf(src)]...</span>", "<span class='warning'>You hear welding.</span>")
 #define WELDER_FLOOR_WELD_SUCCESS_MESSAGE	to_chat(user, "<span class='notice'>You weld [src] to [get_turf(src)]!</span>")
 
 //Wrench messages

@@ -60,6 +60,18 @@
 /obj/machinery/suit_storage_unit/captain/secure
 	secure = TRUE
 
+/obj/machinery/suit_storage_unit/Paramedic
+	name = "Paramedic suit storage unit"
+	desc = "An industrial U-Stor-It Storage unit designed to accomodate all kinds of space suits. Its on-board equipment also allows the user to decontaminate the contents through a UV-ray purging cycle. There's a warning label dangling from the control pad, reading \"STRICTLY NO BIOLOGICALS IN THE CONFINES OF THE UNIT\". This one looks kind of fancy."
+	suit_type    = /obj/item/clothing/suit/space/eva/paramedic
+	helmet_type  = /obj/item/clothing/head/helmet/space/eva/paramedic
+	mask_type    = /obj/item/clothing/mask/breath
+	storage_type = /obj/item/tank/air
+	req_access = list(ACCESS_EVA)
+
+/obj/machinery/suit_storage_unit/Paramedic/secure
+	secure = TRUE
+
 /obj/machinery/suit_storage_unit/engine
 	name = "engineering suit storage unit"
 	suit_type    = /obj/item/clothing/suit/space/hardsuit/engine
@@ -123,6 +135,15 @@
 	req_access = list(ACCESS_CMO)
 
 /obj/machinery/suit_storage_unit/cmo/secure
+	secure = TRUE
+
+/obj/machinery/suit_storage_unit/hop
+	suit_type    = /obj/item/clothing/suit/space/nasavoid/ntblue
+	mask_type    = /obj/item/clothing/mask/breath
+	helmet_type = /obj/item/clothing/head/helmet/space/nasavoid/ntblue
+	req_access = list(ACCESS_HOP)
+
+/obj/machinery/suit_storage_unit/hop/secure
 	secure = TRUE
 
 //version of the SSU for medbay secondary storage. Includes magboots.

@@ -37572,7 +37572,7 @@
 /obj/item/clothing/head/bearpelt,
 /obj/item/folder/documents,
 /obj/item/reagent_containers/food/drinks/bottle/vodka/badminka,
-/obj/item/lighter/zippo/nt_rep,
+/obj/item/lighter/zippo/ark_rep,
 /obj/item/storage/fancy/cigarettes/cigpack_robustgold,
 /obj/item/stack/spacecash/c1000{
 	amount = 100000
@@ -44413,7 +44413,7 @@
 	},
 /obj/item/gun/projectile/revolver/russian,
 /obj/item/reagent_containers/food/drinks/bottle/absinthe/premium,
-/obj/item/lighter/zippo/nt_rep,
+/obj/item/lighter/zippo/ark_rep,
 /obj/item/storage/fancy/cigarettes/cigpack_robustgold,
 /obj/item/toy/figure/captain,
 /turf/simulated/floor/carpet,
@@ -83591,7 +83591,6 @@
 /obj/item/folder/white,
 /obj/item/folder/white,
 /obj/structure/table/glass,
-/obj/item/radio/headset/headset_medsci,
 /obj/item/flashlight/pen,
 /turf/simulated/floor/plasteel{
 	tag = "icon-vault";

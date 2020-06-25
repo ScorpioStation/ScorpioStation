@@ -136,7 +136,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	shoes = /obj/item/clothing/shoes/centcom
 	l_ear = /obj/item/radio/headset/heads/arkrep
 	id = /obj/item/card/id/arksoft
-	l_pocket = /obj/item/lighter/zippo/nt_rep
+	l_pocket = /obj/item/lighter/zippo/ark_rep
 	pda = /obj/item/pda/heads/arkrep
 	backpack_contents = list(
 		/obj/item/melee/classic_baton/ntcane = 1
