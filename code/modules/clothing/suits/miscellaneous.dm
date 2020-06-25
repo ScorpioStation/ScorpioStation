@@ -528,6 +528,12 @@
 	icon_state = "nt_hoodie"
 	hoodtype = /obj/item/clothing/head/hooded/hood/blue
 
+/obj/item/clothing/suit/hooded/hoodie/ark
+	name = "ArkSoft hoodie"
+	desc = "A blue hoodie with the ArkSoft logo on the back."
+	icon_state = "ark_hoodie"
+	hoodtype = /obj/item/clothing/head/hooded/hood/blue
+
 /obj/item/clothing/suit/hooded/hoodie/tp
 	name = "Tharsis Polytech hoodie"
 	desc = "A dark hoodie with the Tharsis Polytech logo on the back."

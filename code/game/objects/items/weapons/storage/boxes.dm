@@ -996,7 +996,7 @@
 			if(NODESIGN)
 				desc = "A sack neatly crafted out of paper."
 			if(ARK_SOFT)
-				desc = "A standard Ark Soft paper lunch sack for loyal employees on the go."
+				desc = "A standard ArkSoft paper lunch sack for loyal employees on the go."
 			if(SYNDI)
 				desc = "The design on this paper sack is a remnant of the notorious 'SyndieSnacks' program."
 			if(HEART)

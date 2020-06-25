@@ -266,12 +266,12 @@
 /obj/structure/closet/secure_closet/arkrep
 	name = "\improper Ark Soft Representative's locker"
 	req_access = list(ACCESS_ARKREP)
-	icon_state = "ntsecure1"
-	icon_closed = "ntsecure"
-	icon_locked = "ntsecure1"
-	icon_opened = "ntsecureopen"
-	icon_broken = "ntsecurebroken"
-	icon_off = "ntsecureoff"
+	icon_state = "arksecure1"
+	icon_closed = "arksecure"
+	icon_locked = "arksecure1"
+	icon_opened = "arksecureopen"
+	icon_broken = "arksecurebroken"
+	icon_off = "arksecureoff"
 
 /obj/structure/closet/secure_closet/arkrep/New()
 	..()

@@ -124,9 +124,9 @@
 	display_name = "hoodie, Tharsis Polytech"
 	path = /obj/item/clothing/suit/hooded/hoodie/tp
 
-/datum/gear/suit/nthoodie
-	display_name = "hoodie, Ark Soft"
-	path = /obj/item/clothing/suit/hooded/hoodie/nt
+/datum/gear/suit/arkhoodie
+	display_name = "hoodie, ArkSoft"
+	path = /obj/item/clothing/suit/hooded/hoodie/ark
 
 /datum/gear/suit/lamhoodie
 	display_name = "hoodie, Lunar Academy of Medicine"
