@@ -37244,6 +37244,7 @@
 	dir = 1;
 	in_use = 1
 	},
+/obj/effect/decal/warning_stripes/north,
 /turf/simulated/floor/plasteel,
 /area/hallway/secondary/entry)
 "byS" = (
@@ -47765,6 +47766,7 @@
 	scrub_N2O = 1;
 	scrub_Toxins = 1
 	},
+/obj/effect/decal/warning_stripes/southeastcorner,
 /turf/simulated/floor/plasteel,
 /area/hallway/secondary/entry)
 "bRD" = (
@@ -49339,6 +49341,7 @@
 /area/medical/genetics_cloning)
 "bUw" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/effect/decal/warning_stripes/northwestcorner,
 /turf/simulated/floor/plasteel,
 /area/hallway/secondary/entry)
 "bUx" = (
@@ -54016,6 +54019,12 @@
 /turf/simulated/floor/plating,
 /area/maintenance/apmaint2)
 "ccN" = (
+/obj/machinery/ai_status_display{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -32;
+	step_size = 0
+	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
 	icon_state = "purplecorner"
@@ -56502,6 +56511,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/effect/decal/warning_stripes/south,
 /turf/simulated/floor/plasteel,
 /area/hallway/secondary/entry)
 "chb" = (
@@ -60037,6 +60047,22 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/structure/table/reinforced,
+/obj/item/folder/yellow{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/item/folder/blue{
+	pixel_x = 5
+	},
+/obj/item/folder/red{
+	pixel_y = 3
+	},
+/obj/item/folder{
+	pixel_x = -4
+	},
+/obj/item/stamp/law,
+/obj/item/pen/multi,
 /turf/simulated/floor/plasteel{
 	tag = "icon-cult";
 	icon_state = "cult";
@@ -62995,6 +63021,7 @@
 	dir = 2;
 	pixel_y = 24
 	},
+/obj/effect/decal/warning_stripes/northeast,
 /turf/simulated/floor/plasteel,
 /area/hallway/secondary/entry)
 "crM" = (
@@ -63299,6 +63326,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/effect/decal/warning_stripes/southwestcorner,
 /turf/simulated/floor/plasteel,
 /area/hallway/secondary/entry)
 "csm" = (
@@ -67869,6 +67897,8 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
+/obj/effect/decal/warning_stripes/north,
+/obj/structure/closet/firecloset,
 /turf/simulated/floor/plasteel,
 /area/hallway/secondary/entry)
 "czI" = (
@@ -69733,11 +69763,6 @@
 	},
 /area/crew_quarters/heads/hor)
 "cCK" = (
-/obj/machinery/camera{
-	c_tag = "Internal Affairs Office";
-	dir = 4;
-	network = list("SS13")
-	},
 /obj/machinery/requests_console{
 	department = "Internal Affairs Office";
 	name = "Internal Affairs Requests Console";
@@ -70148,6 +70173,11 @@
 /obj/structure/table/reinforced,
 /obj/machinery/photocopier/faxmachine/longrange{
 	department = "Internal Affairs Office"
+	},
+/obj/machinery/camera{
+	c_tag = "Internal Affairs Office";
+	dir = 4;
+	network = list("SS13")
 	},
 /turf/simulated/floor/plasteel{
 	tag = "icon-cult";
@@ -72913,12 +72943,6 @@
 	icon_state = "neutralfull"
 	},
 /area/crew_quarters/dorms)
-"cHF" = (
-/obj/structure/chair{
-	dir = 4
-	},
-/turf/simulated/floor/plasteel,
-/area/hallway/secondary/entry)
 "cHG" = (
 /obj/machinery/door/poddoor/shutters{
 	dir = 2;
@@ -72950,10 +72974,6 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/toxins/server)
-"cHI" = (
-/obj/structure/table,
-/turf/simulated/floor/plasteel,
-/area/hallway/secondary/entry)
 "cHJ" = (
 /obj/machinery/door/airlock/public{
 	name = "Theatre"
@@ -73022,12 +73042,6 @@
 /obj/item/stamp/hos,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/hos)
-"cHO" = (
-/obj/structure/chair{
-	dir = 8
-	},
-/turf/simulated/floor/plasteel,
-/area/hallway/secondary/entry)
 "cHP" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -73160,11 +73174,6 @@
 /obj/effect/decal/cleanable/blood/drip,
 /turf/simulated/floor/plating,
 /area/maintenance/asmaint2)
-"cIa" = (
-/obj/structure/table,
-/obj/item/reagent_containers/food/drinks/cans/cola,
-/turf/simulated/floor/plasteel,
-/area/hallway/secondary/entry)
 "cIb" = (
 /obj/machinery/light{
 	dir = 4
@@ -73418,28 +73427,10 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/obj/effect/decal/warning_stripes/west,
+/obj/effect/decal/warning_stripes/southwest,
 /turf/simulated/floor/plasteel,
 /area/hallway/secondary/entry)
 "cIz" = (
-/turf/simulated/floor/plasteel{
-	dir = 8;
-	icon_state = "neutralfull"
-	},
-/area/hallway/secondary/entry)
-"cIA" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
-	},
-/turf/simulated/floor/plasteel{
-	dir = 8;
-	icon_state = "neutralfull"
-	},
-/area/hallway/secondary/entry)
-"cIB" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 8
-	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
 	icon_state = "neutralfull"
@@ -73475,10 +73466,8 @@
 "cIE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/plasteel{
-	desc = "\"This is a plaque in honour of those who died in the great space lube airlock incident.\" Scratched in beneath that is a crude image of a clown and a spaceman. The spaceman is slipping. The clown is laughing.";
-	dir = 4;
-	icon_state = "plaque";
-	name = "Memorial Plaque"
+	dir = 8;
+	icon_state = "neutralfull"
 	},
 /area/hallway/secondary/entry{
 	desc = "A golden plaque dedicated to the brave founders of Arksoft as they colonised their forgotten station. Underneath it is an scratched-in etch of the crew murdering the clown"
@@ -93800,6 +93789,65 @@
 	},
 /turf/simulated/floor/plating/airless,
 /area/turret_protected/aisat_interior)
+"ffB" = (
+/obj/effect/decal/warning_stripes/northwest,
+/obj/item/twohanded/required/kirbyplants,
+/turf/simulated/floor/plasteel,
+/area/hallway/secondary/entry)
+"fEK" = (
+/obj/effect/decal/warning_stripes/northeast,
+/obj/item/twohanded/required/kirbyplants,
+/turf/simulated/floor/plasteel,
+/area/hallway/secondary/entry)
+"iBu" = (
+/obj/effect/decal/warning_stripes/yellow,
+/turf/simulated/floor/plasteel,
+/area/hallway/secondary/entry)
+"krk" = (
+/obj/effect/decal/warning_stripes/southwestcorner,
+/turf/simulated/floor/plasteel,
+/area/hallway/secondary/entry)
+"lYb" = (
+/obj/machinery/atmospherics/unary/vent_scrubber{
+	dir = 4;
+	name = "standard air scrubber";
+	on = 1;
+	scrub_N2O = 1;
+	scrub_Toxins = 1
+	},
+/obj/effect/decal/warning_stripes/northwestcorner,
+/turf/simulated/floor/plasteel,
+/area/hallway/secondary/entry)
+"pUZ" = (
+/obj/effect/decal/warning_stripes/yellow/hollow,
+/turf/simulated/floor/plasteel,
+/area/hallway/secondary/entry)
+"pZU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/effect/decal/warning_stripes/west,
+/turf/simulated/floor/plasteel,
+/area/hallway/secondary/entry)
+"tHF" = (
+/obj/effect/decal/warning_stripes/northwestcorner,
+/turf/simulated/floor/plasteel,
+/area/hallway/secondary/entry)
+"xah" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
+	},
+/obj/effect/decal/warning_stripes/southwestcorner,
+/turf/simulated/floor/plasteel,
+/area/hallway/secondary/entry)
+"xLV" = (
+/turf/simulated/floor/plasteel{
+	desc = "\"This is a plaque in honour of those who died in the great space lube airlock incident.\" Scratched in beneath that is a crude image of a clown and a spaceman. The spaceman is slipping. The clown is laughing.";
+	dir = 4;
+	icon_state = "plaque";
+	name = "Memorial Plaque"
+	},
+/area/hallway/secondary/entry)
 
 (1,1,1) = {"
 aaa
@@ -103193,7 +103241,7 @@ czv
 dco
 blv
 cIn
-bRB
+xah
 asS
 aAG
 apY
@@ -104765,7 +104813,7 @@ apY
 aaa
 apY
 byA
-aqn
+cIw
 aJM
 aDR
 aDZ
@@ -104992,7 +105040,7 @@ dbS
 dcs
 blv
 cIs
-aqn
+krk
 cIy
 apY
 bOS
@@ -105006,7 +105054,7 @@ aCc
 bOS
 apY
 aIN
-aqn
+tHF
 cJl
 apY
 aqc
@@ -105022,7 +105070,7 @@ apY
 apY
 apY
 aqn
-aqn
+cIw
 aJM
 aDS
 aEa
@@ -105519,21 +105567,21 @@ cIS
 cIU
 cIY
 asS
-aqn
+tHF
 aqn
 bNW
-aqn
+krk
 cJr
 asS
 aqn
 asS
-aqn
+tHF
 byA
-aqn
+krk
 asS
 aqn
 asS
-bRX
+lYb
 aqn
 aqn
 aqn
@@ -106535,9 +106583,9 @@ aqc
 aqc
 byR
 aqn
-cHF
-cHF
-cHF
+aqn
+aqn
+aqn
 aqn
 aqn
 ddB
@@ -106791,10 +106839,10 @@ bLN
 ary
 aqc
 crL
+asW
 aqn
-cHI
-cIa
-cHI
+aqn
+aqn
 aqn
 aqn
 ddB
@@ -107049,9 +107097,9 @@ arz
 arH
 aqn
 aqn
-cIz
-cIz
-cIz
+aqn
+aqn
+aqn
 aqn
 bRX
 ddB
@@ -107304,12 +107352,12 @@ azH
 coj
 arA
 arI
-aqn
-aqn
-cIA
+ffB
+pZU
+bVh
 cIE
 cII
-bVh
+cII
 bOn
 ddC
 aqn
@@ -107562,11 +107610,11 @@ aqc
 aqc
 aqc
 czH
+bQL
 aqn
-cIB
 cIz
+xLV
 cIz
-aqn
 cFj
 ddD
 bNV
@@ -107818,12 +107866,12 @@ azJ
 coo
 ary
 aqc
+fEK
+asW
 aqn
-aqn
-cHI
-cHI
-cIa
-aqn
+cIz
+cIz
+cIz
 aqn
 ddB
 aqn
@@ -108077,9 +108125,9 @@ arz
 arH
 aqn
 aqn
-cHO
-cHO
-cHO
+aqn
+aqn
+aqn
 aqn
 aqn
 ddB
@@ -108332,8 +108380,8 @@ azJ
 cBx
 arA
 arI
-aqn
-aqn
+aIN
+asS
 aqn
 aqn
 byj
@@ -108594,7 +108642,7 @@ bRD
 bRD
 aLf
 aLf
-aqn
+pUZ
 aqn
 ddB
 cwq
@@ -108851,7 +108899,7 @@ cxH
 cyH
 dcm
 cHo
-aqn
+pUZ
 aqn
 ddB
 dhn
@@ -109108,7 +109156,7 @@ cUj
 aLL
 dcn
 cjf
-aqn
+iBu
 aqn
 ddE
 bRB
@@ -114762,7 +114810,7 @@ cIj
 cIj
 cIj
 cIj
-aAf
+arY
 aVB
 bte
 aVB
@@ -115533,8 +115581,8 @@ cIx
 cEs
 bDB
 bDB
-aAf
-cFA
+arY
+aVB
 bOs
 ccN
 agS
@@ -128152,7 +128200,7 @@ clC
 clM
 aQE
 cmU
-cAT
+aQF
 cCK
 cDl
 aQG
