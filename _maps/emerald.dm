@@ -1,3 +1,4 @@
+// A map by EmeraldCandy
 /*
 All z-levels should be identical in size. Their numbers should not matter.
 The order of z-levels should not matter as long as their attributes are properly defined at MAP_TRANSITION_CONFIG.
@@ -37,5 +38,3 @@ DECLARE_LEVEL(EMPTY_AREA, CROSSLINKED, list(REACHABLE)))
 	#warn a map has already been included, ignoring Emerald.
 
 #endif
-
-//A map by EmeraldCandy
