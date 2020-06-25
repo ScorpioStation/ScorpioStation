@@ -69,6 +69,10 @@
 	desc = "A Nanotrasen brand bar of soap. Smells of plasma."
 	icon_state = "soapnt"
 
+/obj/item/soap/arksoft
+	desc = "An ArkSoft brand bar of soap. Smells of climate change."
+	icon_state = "soapark"
+
 /obj/item/soap/homemade
 	desc = "A homemade bar of soap. Smells of... well...."
 	icon_state = "soapgibs"

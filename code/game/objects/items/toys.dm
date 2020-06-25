@@ -427,8 +427,8 @@ obj/item/toy/cards/deck
 	name = "deck of cards"
 	desc = "A deck of space-grade playing cards."
 	icon = 'icons/obj/toy.dmi'
-	deckstyle = "nanotrasen"
-	icon_state = "deck_nanotrasen_full"
+	deckstyle = "arksoft"
+	icon_state = "deck_arksoft_full"
 	w_class = WEIGHT_CLASS_SMALL
 	var/cooldown = 0
 	var/list/cards = list()
@@ -635,7 +635,7 @@ obj/item/toy/cards/singlecard
 	name = "card"
 	desc = "a card"
 	icon = 'icons/obj/toy.dmi'
-	icon_state = "singlecard_nanotrasen_down"
+	icon_state = "singlecard_down_arksoft"
 	w_class = WEIGHT_CLASS_TINY
 	var/cardname = null
 	var/flipped = 0
