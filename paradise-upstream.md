@@ -1,6 +1,116 @@
 # paradise-upstream.md
 Changelog for changes we incorporate from upstream (Paradise Station).
 
+## 2020-06-25
+* Paradise #[13651](https://github.com/ParadiseSS13/Paradise/pull/13651): Bumps to DreamChecker 1.4
+    * Removes some redundant unreachable code
+
+* Paradise #[13646](https://github.com/ParadiseSS13/Paradise/pull/13654): Removes Set Background
+    * Removes antiquated code that was hypothetically slowing the game down
+    * Eliminates `BACKGROUND_ENABLED`
+
+* Paradise #[13654](https://github.com/ParadiseSS13/Paradise/pull/13654): Check antagonists panel fix for wizard apprentices
+    * Makes wizard apprentices show up in the check antagonists panel again
+
+* Paradise #[13593](https://github.com/ParadiseSS13/Paradise/pull/13593): Lighting Optimizations
+    * Ported some improvements to the overall lighting system
+        * Ports tgstation #43816
+        * Ports tgstation #45491
+        * Ports tgstation #51546
+
+* Paradise #[13644](https://github.com/ParadiseSS13/Paradise/pull/13644): Master Controller Fixes
+    * Fixes some potential issues with the Master Controller
+        * Ports tgstation #37126
+        * Ports tgstation #49848
+        * Ports tgstation #49893
+
+* Paradise #[13641](https://github.com/ParadiseSS13/Paradise/pull/13641): Purges a Bunch of In World Calls
+    * Performance refactoring; checks against absolutely everything in the world happen less often
+
+* Paradise #[13666](https://github.com/ParadiseSS13/Paradise/pull/13666): Fix sake makiroll recipe, "makiroll" -> "maki roll"
+    * Fix "sake maki roll" recipe requiring the wrong ingredients
+    * Fix recipe for "tobiko and egg maki" roll using the wrong name ("tobiko maki roll")
+    * Rename "makiroll" to "maki roll"
+
+* Paradise #[13664](https://github.com/ParadiseSS13/Paradise/pull/13664): Adds missed fingerprints logging to papers and adds normal logging
+    * Adding a paper to an airlock is now logged under misc
+    * Removing a paper from an airlock is now logged under misc.
+    * Removing a paper from a paperbin will generate a fingerprint on the paper
+    * Removing a pinned paper from an airlock will generate a fingerprint on the paper
+    * Adding a paper to an airlock will generate a fingerprint on the paper
+
+* Paradise #[13662](https://github.com/ParadiseSS13/Paradise/pull/13662): Removes some old and broken features
+    * Fixes a few problems the langserver complained at
+    * Removed Atmospheric Automations Console
+    * Removed logic gates
+    * Removed Trams (Yes, trams. We had those)
+
+* Paradise #[13669](https://github.com/ParadiseSS13/Paradise/pull/13669): Kills off (hopefully) the last hardcoded zlevel ID
+    * Blackbox now looks for which ZLevel is the admin ZLevel instead of just assuming Z2
+
+* Paradise #[13545](https://github.com/ParadiseSS13/Paradise/pull/13545): Nerfs Trashbags
+    * Trashbags no longer fit on belts
+    * Trashbags are always bulky, even when empty
+    * Fixes regular trashbags only being able to hold 14 items
+
+* Paradise #[13542](https://github.com/ParadiseSS13/Paradise/pull/13542): Hierophant Buff--Staff Nerf
+    * Hierophant has been made considerably strong when fighting it in melee range
+    * Hierophant staff damage and range values can't go negative, making them insanely strong
+
+* Paradise #[13583](https://github.com/ParadiseSS13/Paradise/pull/13583): Adds Swarming Component
+    * Bees, legions, and viscerators can now all swarm, making them significantly more difficult to fight
+    * Spiderlings can swarm, though this is mostly aesthetic
+
+* Paradise #[13672](https://github.com/ParadiseSS13/Paradise/pull/13672): Fix carbon hitby proc not returning parent result
+    * Fix thrown bolas (and other items) ignoring being blocked by a weapons and shields
+
+* Paradise #[13557](https://github.com/ParadiseSS13/Paradise/pull/13557): Re-adds NTTC filtering
+    * Re-added NTTC filtering
+
+* Paradise #[13515](https://github.com/ParadiseSS13/Paradise/pull/13515): Fixes the Changeling tentacle grab logging
+    * Fixes the logging for using the changeling tentacle on grab intent
+
+* Paradise #[13509](https://github.com/ParadiseSS13/Paradise/pull/13509): Ghosts can now hear guardian communication again
+    * Ghosts can now hear guardian communication again
+
+* Paradise #[13677](https://github.com/ParadiseSS13/Paradise/pull/13677): Allows SSinput to recover after an MC crash
+    * Adds `/datum/controller/subsystem/input/Recover`
+
+* Paradise #[13676](https://github.com/ParadiseSS13/Paradise/pull/13676): Makes the assembly cooldown happen before it triggers. Stopping an infinite loop
+    * Fixes a potential infinite loop in assembly grenades
+
+* Paradise #[13679](https://github.com/ParadiseSS13/Paradise/pull/13679): Removes an unused proc
+    * Removes `/obj/item/reagent_containers/food/snacks/grown/Crossed`
+    * Removes `/obj/item/grown/Crossed`
+    * Removes `/datum/plant_gene/trait/proc/on_cross`
+
+* Paradise #[13678](https://github.com/ParadiseSS13/Paradise/pull/13678): Adds whispering to the whisper verb
+    * Whispers are now logged in `SAY_LOG`
+
+* Paradise #[13683](https://github.com/ParadiseSS13/Paradise/pull/13683): Adds Global Carbon and Human Lists
+    * Creates `GLOB.carbon_list` and `GLOB.human_list` that track carbons and humans respectively
+
+* Paradise #[13682](https://github.com/ParadiseSS13/Paradise/pull/13682): Slightly improves the speed at which the crew monitor gets its data
+    * Reworks the way crew member health data is processed
+
+* Paradise #[13602](https://github.com/ParadiseSS13/Paradise/pull/13602): Gas Mixture Refactor
+    * NOTE: This changeset was quite extensive and was not fully reviewed when merged to Scorpio Station
+    * Replaces the trace gasses list with specific managed gas variables
+
+* Paradise #[13663](https://github.com/ParadiseSS13/Paradise/pull/13663): Optimize memory usage by eliminating/changing some lists
+    * NOTE: This changeset was quite extensive and was not fully reviewed when merged to Scorpio Station
+    * Ported from TG: Object armors are no longer defined in (unique) lists but rather datums that can be cached depending on their armor values.
+    * Adds LAZYSET define to lazily initialize a list then assigning a key to a value
+    * Adds alldirs2 global which is the same as alldirs except diagonals go first
+    * Optimizes atom memory by not creating hud_list list for all atoms
+    * Optimizes turf memory by not creating footstep_sounds list for all turfs
+    * Optimizes mob memory by making alerts list lazy
+    * Optimizes obj/machinery memory by making use_log and settagwhitelist lists lazy
+    * Cleans up code where possible
+
+* Paradise #[13689](https://github.com/ParadiseSS13/Paradise/pull/13689): Structures Armor Fix
+    * Moves armor initialization from `New` to `Initialize` for `/obj/structure`
+
 ## 2020-06-18
 * Paradise #[12891](https://github.com/ParadiseSS13/Paradise/pull/12891): Adds IPC plushie and toast, toast is made via IPC plushie
     * IPC plushie and toast
