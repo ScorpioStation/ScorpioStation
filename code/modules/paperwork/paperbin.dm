@@ -84,6 +84,7 @@
 
 		P.loc = user.loc
 		user.put_in_hands(P)
+		P.add_fingerprint(user)
 		to_chat(user, "<span class='notice'>You take [P] out of the [src].</span>")
 	else
 		to_chat(user, "<span class='notice'>[src] is empty!</span>")
@@ -152,4 +153,3 @@
 /obj/item/paper_bin/syndicate
 	name = "syndicate paper bin"
 	letterhead_type = /obj/item/paper/syndicate
-
