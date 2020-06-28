@@ -1608,6 +1608,11 @@ obj/item/toy/cards/deck/syndicate/black
 	icon_state = "bartender"
 	toysay = "Wheres my monkey?"
 
+/obj/item/toy/figure/bouncer
+	name = "Bouncer action figure"
+	icon_state = "bartender"
+	toysay = "You! Out!"
+
 /obj/item/toy/figure/borg
 	name = "Cyborg action figure"
 	icon_state = "borg"

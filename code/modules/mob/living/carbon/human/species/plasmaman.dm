@@ -66,6 +66,9 @@
 		if("Bartender", "Internal Affairs Agent", "Magistrate", "Ark Soft Representative", "Ark Soft Navy Officer")
 			O = new /datum/outfit/plasmaman/bar
 
+		if("Bouncer")
+			O = new /datum/outfit/plasmaman/bouncer
+
 		if("Chef")
 			O = new /datum/outfit/plasmaman/chef
 

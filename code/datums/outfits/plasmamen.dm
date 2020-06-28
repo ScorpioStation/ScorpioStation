@@ -12,6 +12,12 @@
 	head = /obj/item/clothing/head/helmet/space/plasmaman/white
 	uniform = /obj/item/clothing/under/plasmaman/enviroslacks
 
+/datum/outfit/plasmaman/bouncer
+	name = "Bouncer Plasmaman"
+
+	head = /obj/item/clothing/head/helmet/space/plasmaman/white
+	uniform = /obj/item/clothing/under/plasmaman/enviroslacks
+
 /datum/outfit/plasmaman/chef
 	name = "Chef Plasmaman"
 

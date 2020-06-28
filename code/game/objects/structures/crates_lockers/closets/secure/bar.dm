@@ -34,3 +34,30 @@
 				icon_state = icon_closed
 		else
 			icon_state = icon_opened
+
+
+/obj/structure/closet/secure_closet/bouncer
+	name = "bouncer's locker"
+	req_access = list(ACCESS_BAR)
+	icon_state = "secure1"
+	icon_broken = "securebroken"
+	icon_closed = "secure"
+	icon_locked = "secure1"
+	icon_off    = "secureoff"
+	icon_opened = "secureopen"
+
+
+/obj/structure/closet/secure_closet/bouncer/New()
+	..()
+	new /obj/item/clothing/head/soft/black(src)
+	new /obj/item/clothing/glasses/sunglasses(src)
+	new /obj/item/clothing/under/fluff/elishirt(src)
+	new /obj/item/clothing/accessory/black(src)
+	new /obj/item/radio/headset/headset_service(src)
+	new /obj/item/clothing/gloves/color/black(src)
+	new /obj/item/clothing/shoes/black(src)
+	new /obj/item/lighter/zippo(src)
+	new /obj/item/clothing/suit/armor/vest/old(src)
+	new /obj/item/restraints/handcuffs/cable/zipties(src)
+	new /obj/item/melee/classic_baton/telescopic(src)
+	new /obj/item/flash(src)

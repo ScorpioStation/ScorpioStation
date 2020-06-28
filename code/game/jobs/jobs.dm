@@ -58,7 +58,8 @@ GLOBAL_LIST_INIT(support_positions, list(
 	"Magistrate",
 	"Ark Soft Representative",
 	"Blueshield",
-	"Explorer"
+	"Explorer",
+	"Bouncer"
 ))
 
 GLOBAL_LIST_INIT(supply_positions, list(

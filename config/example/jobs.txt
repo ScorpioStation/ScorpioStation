@@ -16,6 +16,7 @@ Scientist=3
 Chemist=2
 
 Bartender=1
+Bouncer=1
 Botanist=2
 Chef=1
 Janitor=1

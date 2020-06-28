@@ -98,6 +98,7 @@
 		"Beautician" = "srvradio",
 		"Botanical Researcher" = "srvradio",
 		"Botanist" = "srvradio",
+		"Bouncer" = "srvradio",
 		"Butcher" = "srvradio",
 		"Chaplain" = "srvradio",
 		"Chef" = "srvradio",
