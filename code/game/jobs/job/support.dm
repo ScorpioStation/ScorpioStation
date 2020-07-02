@@ -40,6 +40,49 @@
 
 
 
+/datum/job/bouncer
+	title = "Bouncer"
+	flag = JOB_BOUNCER
+	department_flag = JOBCAT_SUPPORT
+	total_positions = 1
+	spawn_positions = 1
+	is_service = 1
+	supervisors = "the bartender"
+	department_head = list("Head of Personnel")
+	selection_color = "#dddddd"
+	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_BAR, ACCESS_MAINT_TUNNELS, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM)
+	outfit = /datum/outfit/job/bouncer
+
+/datum/outfit/job/bouncer
+	name = "Bouncer"
+	jobtype = /datum/job/bouncer
+
+	uniform = /obj/item/clothing/under/fluff/elishirt
+	gloves = /obj/item/clothing/gloves/color/black
+	belt = /obj/item/restraints/handcuffs/cable/zipties
+	shoes = /obj/item/clothing/shoes/black
+	head = /obj/item/clothing/head/soft/black
+	l_ear = /obj/item/radio/headset/headset_service
+	glasses = /obj/item/clothing/glasses/sunglasses
+	pda = /obj/item/pda/bouncer
+	l_pocket = /obj/item/melee/classic_baton/telescopic
+	r_pocket = /obj/item/flash
+	backpack_contents = list(
+		/obj/item/lighter/zippo = 1,
+		/obj/item/clothing/suit/armor/vest/old = 1,
+	)
+
+/datum/outfit/job/bouncer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+	if(H && H.w_uniform)
+		var/obj/item/clothing/under/U = H.w_uniform
+		var/obj/item/clothing/accessory/black/M = new /obj/item/clothing/accessory/black(U)
+		U.accessories += M
+		M.on_attached(U)
+
+
+
 /datum/job/chef
 	title = "Chef"
 	flag = JOB_CHEF
