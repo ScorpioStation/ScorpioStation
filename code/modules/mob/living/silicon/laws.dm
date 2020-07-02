@@ -1,6 +1,7 @@
 /mob/living/silicon
 	var/datum/ai_laws/laws = null
 	var/list/additional_law_channels = list("State" = "")
+	var/lawcooldown = FALSE
 
 /mob/living/silicon/proc/laws_sanity_check()
 	if(!src.laws)
@@ -140,3 +141,9 @@
 			continue
 		law_options += L
 	return pick(law_options)
+
+/mob/living/silicon/proc/uncooldown()
+	if(lawcooldown)
+		lawcooldown = FALSE
+	else
+		return

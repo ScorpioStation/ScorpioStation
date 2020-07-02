@@ -6,7 +6,6 @@
 	circuit = /obj/item/circuitboard/aiupload
 	var/mob/living/silicon/ai/current = null
 	var/opened = 0
-	var/next_upload = 0
 
 	light_color = LIGHT_COLOR_WHITE
 	light_range_on = 2
@@ -32,17 +31,21 @@
 			if(!current)//no AI selected
 				to_chat(user, "<span class='danger'>No AI selected. Please chose a target before proceeding with upload.")
 				return
-			if(next_upload > world.time)
-				to_chat(user, "<span class='danger'>No tensor processing units are available for neural network retraining. Please try again later.")
-				return
 			var/turf/T = get_turf(current)
 			if(!atoms_share_level(T, src))
 				to_chat(user, "<span class='danger'>Unable to establish a connection</span>: You're too far away from the target silicon!")
 				return
-			var/obj/item/aiModule/M = O
-			M.install(src)
-			next_upload = world.time + (60 SECONDS)
-			return
+			if(current.lawcooldown)
+				to_chat(user, "<span class='danger'>No tensor processing units are available for neural network retraining. Please try again later.")
+				return
+			else
+				var/obj/item/aiModule/M = O
+				M.install(src)
+				current.lawcooldown = TRUE
+				spawn(30 SECONDS)
+					current.uncooldown()
+				return
+
 		return ..()
 
 
@@ -83,8 +86,15 @@
 			if(!atoms_share_level(T, src))
 				to_chat(user, "<span class='danger'>Unable to establish a connection</span>: You're too far away from the target silicon!")
 				return
-			module.install(src)
-			return
+			if(current.lawcooldown)
+				to_chat(user, "<span class='danger'>No tensor processing units are available for neural network retraining. Please try again later.")
+				return
+			else
+				module.install(src)
+				current.lawcooldown = TRUE
+				spawn(30 SECONDS)
+					current.lawcooldown = FALSE
+				return
 		return ..()
 
 
