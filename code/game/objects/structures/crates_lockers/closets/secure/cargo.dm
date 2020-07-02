@@ -14,10 +14,8 @@
 	new /obj/item/clothing/under/rank/cargotech/skirt(src)
 	new /obj/item/clothing/shoes/black(src)
 	new /obj/item/radio/headset/headset_cargo(src)
-	new /obj/item/clothing/gloves/fingerless(src)
+	new /obj/item/clothing/gloves/color/brown/cargo(src)
 	new /obj/item/clothing/head/soft(src)
-//		new /obj/item/cartridge/quartermaster(src)
-
 
 /obj/structure/closet/secure_closet/quartermaster
 	name = "quartermaster's locker"
@@ -35,7 +33,7 @@
 	new /obj/item/clothing/under/rank/cargo/skirt(src)
 	new /obj/item/clothing/shoes/brown(src)
 	new /obj/item/radio/headset/headset_cargo(src)
-	new /obj/item/clothing/gloves/fingerless(src)
+	new /obj/item/clothing/gloves/color/brown/cargo(src)
 	new /obj/item/clothing/suit/fire/firefighter(src)
 	new /obj/item/tank/emergency_oxygen(src)
 	new /obj/item/clothing/mask/gas(src)
