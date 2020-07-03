@@ -480,10 +480,6 @@ SUBSYSTEM_DEF(ticker)
 
 	mode.declare_completion()//To declare normal completion.
 
-	//calls auto_declare_completion_* for all modes
-	for(var/handler in typesof(/datum/game_mode/proc))
-		if(findtext("[handler]","auto_declare_completion_"))
-			call(mode, handler)()
 
 	scoreboard()
 

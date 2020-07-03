@@ -285,39 +285,6 @@ Made by Xhuis
 	return 1
 
 
-/datum/game_mode/proc/auto_declare_completion_shadowling()
-	var/text = ""
-	if(shadows.len)
-		text += "<br><span class='big'><b>The shadowlings were:</b></span>"
-		for(var/datum/mind/shadow in shadows)
-			text += "<br>[shadow.key] was [shadow.name] ("
-			if(shadow.current)
-				if(shadow.current.stat == DEAD)
-					text += "died"
-				else
-					text += "survived"
-				if(shadow.current.real_name != shadow.name)
-					text += " as <b>[shadow.current.real_name]</b>"
-			else
-				text += "body destroyed"
-			text += ")"
-		text += "<br>"
-		if(shadowling_thralls.len)
-			text += "<br><span class='big'><b>The thralls were:</b></span>"
-			for(var/datum/mind/thrall in shadowling_thralls)
-				text += "<br>[thrall.key] was [thrall.name] ("
-				if(thrall.current)
-					if(thrall.current.stat == DEAD)
-						text += "died"
-					else
-						text += "survived"
-					if(thrall.current.real_name != thrall.name)
-						text += " as <b>[thrall.current.real_name]</b>"
-				else
-					text += "body destroyed"
-				text += ")"
-	text += "<br>"
-	to_chat(world, text)
 
 
 /*

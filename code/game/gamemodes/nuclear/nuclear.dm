@@ -384,40 +384,6 @@ proc/issyndicate(mob/living/M as mob)
 	return
 
 
-/datum/game_mode/proc/auto_declare_completion_nuclear()
-	if(syndicates.len || GAMEMODE_IS_NUCLEAR)
-		var/text = "<br><FONT size=3><B>The syndicate operatives were:</B></FONT>"
-
-		var/purchases = ""
-		var/TC_uses = 0
-
-		for(var/datum/mind/syndicate in syndicates)
-
-			text += "<br><b>[syndicate.key]</b> was <b>[syndicate.name]</b> ("
-			if(syndicate.current)
-				if(syndicate.current.stat == DEAD)
-					text += "died"
-				else
-					text += "survived"
-				if(syndicate.current.real_name != syndicate.name)
-					text += " as <b>[syndicate.current.real_name]</b>"
-			else
-				text += "body destroyed"
-			text += ")"
-			for(var/obj/item/uplink/H in GLOB.world_uplinks)
-				if(H && H.uplink_owner && H.uplink_owner==syndicate.key)
-					TC_uses += H.used_TC
-					purchases += H.purchase_log
-
-		text += "<br>"
-
-		text += "(Syndicates used [TC_uses] TC) [purchases]"
-
-		if(TC_uses==0 && station_was_nuked && !is_operatives_are_dead())
-			text += "<BIG><IMG CLASS=icon SRC=\ref['icons/badass.dmi'] ICONSTATE='badass'></BIG>"
-
-		to_chat(world, text)
-	return 1
 
 /proc/nukelastname(var/mob/M as mob) //--All praise goes to NEO|Phyte, all blame goes to DH, and it was Cindi-Kate's idea. Also praise Urist for copypasta ho.
 	var/randomname = pick(GLOB.last_names)
