@@ -81,7 +81,34 @@
 		U.accessories += M
 		M.on_attached(U)
 
+/datum/job/waiter
+	title = "Waiter"
+	flag = JOB_WAITER
+	department_flag = JOBCAT_SUPPORT
+	total_positions = 1
+	spawn_positions = 1
+	is_service = 1
+	supervisors = "the bartender"
+	department_head = list("Head of Personnel")
+	selection_color = "#dddddd"
+	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_WAITER)
+	minimal_access = list(ACCESS_BAR, ACCESS_MAINT_TUNNELS, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_WAITER)
+	outfit = /datum/outfit/job/waiter
 
+/datum/outfit/job/waiter
+	name = "Waiter"
+	jobtype = /datum/job/waiter
+
+	l_ear = /obj/item/radio/headset/headset_service
+	uniform = /obj/item/clothing/under/waiter
+	shoes = /obj/item/clothing/shoes/black
+	gloves = /obj/item/clothing/gloves/color/white
+	pda = /obj/item/pda/waiter
+
+	backpack_contents = list(
+	/obj/item/reagent_containers/glass/rag = 1,
+	/obj/item/storage/bag/tray = 1,
+	)
 
 /datum/job/chef
 	title = "Chef"

@@ -170,6 +170,9 @@
 /obj/item/pda/bouncer
 	icon_state = "pda-bartender"
 
+/obj/item/pda/waiter
+	icon_state = "pda-bartender"
+
 /obj/item/pda/atmos
 	default_cartridge = /obj/item/cartridge/atmos
 	icon_state = "pda-atmos"
