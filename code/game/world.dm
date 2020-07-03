@@ -9,6 +9,9 @@ GLOBAL_LIST_INIT(map_transition_config, MAP_TRANSITION_CONFIG)
 	// Setup all log paths and stamp them with startups
 	SetupLogs()
 	enable_debugger() // Enable the extools debugger
+
+	InitTgs()
+
 	log_world("World loaded at [time_stamp()]")
 	log_world("[GLOB.vars.len - GLOB.gvars_datum_in_built_vars.len] global variables")
 
@@ -473,3 +476,8 @@ proc/establish_db_connection()
     var/dll = world.GetConfig("env", "EXTOOLS_DLL")
     if (dll)
         call(dll, "debug_initialize")()
+
+
+/world/proc/InitTgs()
+	TgsNew(new /datum/tgs_event_handler/impl, TGS_SECURITY_TRUSTED)
+	//GLOB.revdata.load_tgs_info()
