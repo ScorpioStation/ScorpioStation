@@ -440,6 +440,10 @@
 /*
  * Premade paper
  */
+/obj/item/paper/waiter
+	name = "Note to Servers"
+	info = "For the last time, the bread is for greeting GUESTS with! If you need a snack go talk to the server!"
+
 /obj/item/paper/Court
 	name = "Judgement"
 	info = "For crimes against the station, the offender is sentenced to:<BR>\n<BR>\n"

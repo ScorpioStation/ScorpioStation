@@ -53,6 +53,7 @@
 #define JOB_CIVILIAN			(1<<13)
 #define JOB_EXPLORER			(1<<14)
 #define JOB_BOUNCER 			(1<<15)
+#define JOB_WAITER	 			(1<<16)
 
 #define JOBCAT_KARMA				(1<<3)
 
