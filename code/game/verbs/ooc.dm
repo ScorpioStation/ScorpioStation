@@ -40,7 +40,7 @@ GLOBAL_VAR_INIT(admin_ooc_colour, "#b82e00")
 		to_chat(src, "<span class='danger'>You have OOC muted.</span>")
 		return
 
-	if(!check_rights(R_ADMIN|R_MOD,0))
+	if(!check_rights(R_ADMIN|R_MOD|R_MENTOR,0))
 		if(!config.ooc_allowed)
 			to_chat(src, "<span class='danger'>OOC is globally muted.</span>")
 			return
