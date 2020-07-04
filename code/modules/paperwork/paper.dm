@@ -442,7 +442,7 @@
  */
 /obj/item/paper/waiter
 	name = "Note to Servers"
-	info = "For the last time, the bread is for greeting GUESTS with! If you need a snack go talk to the server!"
+	info = "For the last time, the bread is for greeting GUESTS with! If you need a snack go talk to the cook!"
 
 /obj/item/paper/Court
 	name = "Judgement"
