@@ -522,7 +522,7 @@
 	)
 
 // Mentor+ role for instructing new players
-/datum/job/ntinstructor
+/datum/job/arksoftinstructor
 	title = "Ark Soft Instructor"
 	flag = JOB_CENTCOM
 	department_flag = JOB_CENTCOM
@@ -546,18 +546,18 @@
 	transfer_allowed = FALSE
 	outfit = /datum/outfit/job/ntinstructor
 
-/datum/outfit/job/ntinstructor
+/datum/outfit/job/arksoftinstructor
 	name = "Ark Soft Instructor"
-	jobtype = /datum/job/ntinstructor
+	jobtype = /datum/job/arksoftinstructor
 
-	uniform = /obj/item/clothing/under/rank/centcom/representative // formal NT uniform
+	uniform = /obj/item/clothing/under/rank/centcom/representative // formal Arksoft uniform
 	shoes = /obj/item/clothing/shoes/centcom // fancy shoes
 	head = /obj/item/clothing/head/beret/blue // generic blue beret
-	l_ear = /obj/item/radio/headset/heads/ntinstructor //
+	l_ear = /obj/item/radio/headset/heads/arkinstructor //
 	glasses =  /obj/item/clothing/glasses/sunglasses
-	id = /obj/item/card/id/nanotrasen
+	id = /obj/item/card/id/arksoft
 	belt = /obj/item/storage/belt/utility/full/multitool
-	pda = /obj/item/pda/heads/ntrep
+	pda = /obj/item/pda/heads/arkrep
 	implants = list(
 		/obj/item/implant/mindshield
 	)
@@ -567,7 +567,7 @@
 		/obj/item/pinpointer/crew = 1,
 		/obj/item/healthanalyzer/advanced = 1,
 		/obj/item/laser_pointer/blue = 1,
-		/obj/item/book/manual/sop_ntinstructor = 1,
+		/obj/item/book/manual/sop_arkinstructor = 1,
 		/obj/item/flashlight/seclite = 1
 	)
 
@@ -598,36 +598,4 @@
 	uniform = /obj/item/clothing/under/color/random
 	shoes = /obj/item/clothing/shoes/black
 
-/datum/job/bouncer
-	title = "Bouncer"
-	flag = JOB_BOUNCER
-	department_flag = JOBCAT_SUPPORT
-	exp_requirements = 600
-	exp_type = EXP_TYPE_CREW
-	total_positions = 1
-	spawn_positions = 1
-	is_service = 1
-	supervisors = "the head of personnel"
-	selection_color = "#dddddd"
-	access = list(ACCESS_MAINT_TUNNELS, ACCESS_WEAPONS)
-	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_WEAPONS)
-	outfit = /datum/outfit/job/bouncer
-
-/datum/outfit/job/bouncer
-	name = "Bouncer"
-	jobtype = /datum/job/bouncer
-	uniform = /obj/item/clothing/under/bouncer
-	suit = /obj/item/clothing/suit/armor/vest
-	shoes = /obj/item/clothing/shoes/black
-	l_ear = /obj/item/radio/headset/headset_service
-	glasses = /obj/item/clothing/glasses/sunglasses
-	belt = /obj/item/melee/classic_baton/telescopic
-	backpack_contents = list(
-		/obj/item/flash = 1,
-		/obj/item/restraints/handcuffs/cable/zipties = 1
-)
-/datum/outfit/job/bouncer/post_equip(mob/living/carbon/human/H)
-	..()
-	var/datum/martial_art/cqc/under_siege/CQC = new(null)
-	CQC.teach(H)
 

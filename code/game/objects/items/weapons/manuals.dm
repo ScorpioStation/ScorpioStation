@@ -1406,7 +1406,7 @@
 
 		"}
 
-/obj/item/book/manual/sop_ntinstructor
+/obj/item/book/manual/sop_arkinstructor
 	name = "Instructor Guidelines"
 	desc = "A set of guidelines for Instructors."
 	icon_state = "sop_legal"
@@ -1427,7 +1427,7 @@
 				<h1><U><B>What is an Instructor?</B></U></h1><BR>
 				<ol>
 				<li>Instructors are teachers, who help new crewmen learn the basics, and help existing crewmen who wish to learn a new job.</li>
-				<li>Instructors report directly to CC, like the NT Rep, and Blueshield do.</li>
+				<li>Instructors report directly to CC, like the Ark Rep, and Blueshield do.</li>
 				<li>Instructors have NO AUTHORITY WHATSOEVER over the crew. Not even over Civilians. Like the NT Rep, they are an advisory role ONLY.</li>
 				</ol><BR>
 				<h1><U><B>Instructor SOP</B></U></h1><BR>
@@ -1440,7 +1440,7 @@
 				<li>Do not involve yourself in crew v antag struggles. Your telebaton is for self defense ONLY. You're not even allowed to fight antags that all crew can normally fight, such as blob, terrors, etc.</li>
 				<li>Do not claim you represent CC. You don't. Do not act like you're an authority over the crew. You aren't!</li>
 				<li>If you can't find anyone to teach, get a job transfer at HOP, or cryo. Do NOT get yourself into a situation where you're doing someone else's job. Do NOT treat this job like an excuse to do whatever you want.</li>
-				<li>Advising Command is the NT Rep's job, not yours. Do not advise command unless there is no NT Rep, and even then, do so sparingly.</li>
+				<li>Advising Command is the Ark Rep's job, not yours. Do not advise command unless there is no Ark Rep, and even then, do so sparingly.</li>
 				</ol><BR>
 				</body>
 				</html>

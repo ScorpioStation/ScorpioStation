@@ -248,9 +248,9 @@
 	item_state = "headset"
 	ks2type = /obj/item/encryptionkey/heads/arkrep
 
-/obj/item/radio/headset/heads/ntinstructor
-	name = "nanotrasen instructor's headset"
-	desc = "The headset of the Nanotrasen Instructor."
+/obj/item/radio/headset/heads/arkinstructor
+	name = "ark soft instructor's headset"
+	desc = "The headset of the Ark Soft Instructor."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks2type = /obj/item/encryptionkey/heads/ntinstructor
