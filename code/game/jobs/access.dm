@@ -400,7 +400,7 @@
 	return all_jobs
 
 /proc/get_all_centcom_jobs()
-	return list("VIP Guest","Custodian","Thunderdome Overseer","Emergency Response Team Member","Emergency Response Team Leader","Intel Officer","Medical Officer","Death Commando","Research Officer","Deathsquad Officer","Special Operations Officer","Ark Soft Navy Representative","Ark Soft Navy Officer","Ark Soft Navy Captain","Supreme Commander")
+	return list("VIP Guest","Custodian","Thunderdome Overseer","Emergency Response Team Member","Emergency Response Team Leader","Intel Officer","Medical Officer","Death Commando","Research Officer","Deathsquad Officer","Special Operations Officer","Ark Soft Instructor","Ark Soft Navy Representative","Ark Soft Navy Officer","Ark Soft Navy Captain","Supreme Commander")
 
 //gets the actual job rank (ignoring alt titles)
 //this is used solely for sechuds

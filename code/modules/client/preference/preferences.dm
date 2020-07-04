@@ -620,7 +620,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 		return
 	for(var/datum/job/job in SSjobs.occupations)
 
-		if(job.admin_only)
+		if(job.admin_only || job.mentor_only)
 			continue
 
 		if(job.hidden_from_job_prefs)

@@ -34,6 +34,7 @@
 		/datum/job/chaplain,
 		/datum/job/ntnavyofficer,
 		/datum/job/ntspecops,
+		/datum/job/ntinstructor,
 		/datum/job/civilian,
 		/datum/job/syndicateofficer,
 		/datum/job/explorer // blacklisted so that HOPs don't try prioritizing it, then wonder why that doesn't work

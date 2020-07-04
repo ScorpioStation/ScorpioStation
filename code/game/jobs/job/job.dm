@@ -54,6 +54,7 @@
 	var/hidden_from_job_prefs = FALSE // if true, job preferences screen never shows this job.
 
 	var/admin_only = 0
+	var/mentor_only = FALSE
 	var/spawn_ert = 0
 	var/syndicate_command = 0
 
