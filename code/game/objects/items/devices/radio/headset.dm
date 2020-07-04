@@ -253,7 +253,7 @@
 	desc = "The headset of the Ark Soft Instructor."
 	icon_state = "com_headset"
 	item_state = "headset"
-	ks2type = /obj/item/encryptionkey/heads/ntinstructor
+	ks2type = /obj/item/encryptionkey/heads/arksoftinstructor
 
 /obj/item/radio/headset/heads/magistrate
 	name = "magistrate's headset"

@@ -544,7 +544,7 @@
 			            ACCESS_CLOWN, ACCESS_MIME, ACCESS_RC_ANNOUNCE, ACCESS_WEAPONS)
 	mentor_only = TRUE
 	transfer_allowed = FALSE
-	outfit = /datum/outfit/job/ntinstructor
+	outfit = /datum/outfit/job/arksoftinstructor
 
 /datum/outfit/job/arksoftinstructor
 	name = "Ark Soft Instructor"
@@ -571,7 +571,7 @@
 		/obj/item/flashlight/seclite = 1
 	)
 
-/datum/outfit/job/ntinstructor/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/arksoftinstructor/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 	if(visualsOnly)
 		return
