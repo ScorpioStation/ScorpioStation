@@ -298,76 +298,66 @@ GLOBAL_LIST_EMPTY(all_cults)
 			var/explanation
 			switch(objectives[obj_count])
 				if("survive")
+					explanation = "Make sure at least [acolytes_needed] acolytes escape on the shuttle."
 					if(!check_survive())
-						explanation = "Make sure at least [acolytes_needed] acolytes escape on the shuttle. <font color='green'><B>Success!</B></font>"
 						feedback_add_details("cult_objective","cult_survive|SUCCESS|[acolytes_needed]")
 					else
-						explanation = "Make sure at least [acolytes_needed] acolytes escape on the shuttle. <font color='red'>Fail.</font>"
 						feedback_add_details("cult_objective","cult_survive|FAIL|[acolytes_needed]")
 				if("sacrifice")
 					if(sacrifice_target)
+						explanation = "Sacrifice [sacrifice_target.name], the [sacrifice_target.assigned_role]."
 						if(sacrifice_target in sacrificed)
-							explanation = "Sacrifice [sacrifice_target.name], the [sacrifice_target.assigned_role]. <font color='green'><B>Success!</B></font>"
 							feedback_add_details("cult_objective","cult_sacrifice|SUCCESS")
 						else if(sacrifice_target && sacrifice_target.current)
-							explanation = "Sacrifice [sacrifice_target.name], the [sacrifice_target.assigned_role]. <font color='red'>Fail.</font>"
 							feedback_add_details("cult_objective","cult_sacrifice|FAIL")
 						else
-							explanation = "Sacrifice [sacrifice_target.name], the [sacrifice_target.assigned_role]. <font color='red'>Fail (Gibbed).</font>"
 							feedback_add_details("cult_objective","cult_sacrifice|FAIL|GIBBED")
 				if("eldergod")
+					explanation = "Summon [SSticker.cultdat.entity_name]."
 					if(!eldergod)
-						explanation = "Summon [SSticker.cultdat.entity_name]. <font color='green'><B>Success!</B></font>"
 						feedback_add_details("cult_objective","cult_narsie|SUCCESS")
 					else
-						explanation = "Summon [SSticker.cultdat.entity_name]. <font color='red'>Fail.</font>"
 						feedback_add_details("cult_objective","cult_narsie|FAIL")
 				if("slaughter")
+					explanation = "Bring the Slaughter."
 					if(demons_summoned)
-						explanation = "Bring the Slaughter. <span class='greenannounce'>Success!</span>"
 						feedback_add_details("cult_objective","cult_demons|SUCCESS")
 					else
-						explanation = "Bring the Slaughter. <span class='boldannounce'>Fail.</span>"
 						feedback_add_details("cult_objective","cult_demons|FAIL")
 
 				if("convert")//convert half the crew
+					explanation = "Convert [convert_target] crewmembers ([cult.len] cultists at round end)."
 					if(cult.len >= convert_target)
-						explanation = "Convert [convert_target] crewmembers ([cult.len] cultists at round end). <font color='green'><B>Success!</B></font>"
 						feedback_add_details("cult_objective","cult_convertion|SUCCESS")
 					else
-						explanation = "Convert [convert_target] crewmembers ([cult.len] total cultists). <font color='red'><B>Fail!</B></font>"
 						feedback_add_details("cult_objective","cult_convertion|FAIL")
 
 				if("bloodspill")//cover a large portion of the station in blood
+					explanation = "Cover [spilltarget] tiles of the station in blood."
 					if(max_spilled_blood >= spilltarget)
-						explanation = "Cover [spilltarget] tiles of the station in blood (The peak number of covered tiles was: [max_spilled_blood]). <font color='green'><B>Success!</B></font>"
 						feedback_add_details("cult_objective","cult_bloodspill|SUCCESS")
 					else
-						explanation = "Cover [spilltarget] tiles of the station in blood (The peak number of covered tiles was: [max_spilled_blood]). <font color='red'><B>Fail!</B></font>"
 						feedback_add_details("cult_objective","cult_bloodspill|FAIL")
 
 				if("harvest")
+					explanation = "Offer [harvest_target] humans for [SSticker.cultdat.entity_name]'s first meal of the day."
 					if(harvested > harvest_target)
-						explanation = "Offer [harvest_target] humans for [SSticker.cultdat.entity_name]'s first meal of the day. ([harvested] sacrificed) <font color='green'><B>Success!</B></font>"
 						feedback_add_details("cult_objective","cult_harvest|SUCCESS")
 					else
-						explanation = "Offer [harvest_target] humans for [SSticker.cultdat.entity_name]'s first meal of the day. ([harvested] sacrificed) <font color='red'><B>Fail!</B></font>"
 						feedback_add_details("cult_objective","cult_harvest|FAIL")
 
 				if("hijack")
+					explanation = "Do not let a single non-cultist board the Escape Shuttle."
 					if(!escaped_shuttle)
-						explanation = "Do not let a single non-cultist board the Escape Shuttle. ([escaped_shuttle] escaped on the shuttle) ([escaped_pod] escaped on pods) <font color='green'><B>Success!</B></font>"
 						feedback_add_details("cult_objective","cult_hijack|SUCCESS")
 					else
-						explanation = "Do not let a single non-cultist board the Escape Shuttle. ([escaped_shuttle] escaped on the shuttle) ([escaped_pod] escaped on pods) <font color='red'><B>Fail!</B></font>"
 						feedback_add_details("cult_objective","cult_hijack|FAIL")
 
 				if("massacre")
+					explanation = "Massacre the crew until less than [massacre_target] people are left on the station."
 					if(survivors < massacre_target)
-						explanation = "Massacre the crew until less than [massacre_target] people are left on the station. ([survivors] humans left alive) <font color='green'><B>Success!</B></font>"
 						feedback_add_details("cult_objective","cult_massacre|SUCCESS")
 					else
-						explanation = "Massacre the crew until less than [massacre_target] people are left on the station. ([survivors] humans left alive) <font color='red'><B>Fail!</B></font>"
 						feedback_add_details("cult_objective","cult_massacre|FAIL")
 
 			text += "<br><B>Objective #[obj_count]</B>: [explanation]"
