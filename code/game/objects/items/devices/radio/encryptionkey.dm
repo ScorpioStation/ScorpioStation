@@ -121,7 +121,7 @@
 	channels = list("Command" = 1, "Security" = 0, "Engineering" = 0, "Science" = 0, "Medical" = 0, "Supply" = 0, "Service" = 0)
 
 /obj/item/encryptionkey/heads/ntinstructor
-	name = "Nanotrasen Instructor's Encryption Key"
+	name = "Ark Soft Instructor's Encryption Key"
 	icon_state = "com_cypherkey"
 	channels = list("Command" = TRUE, "Security" = TRUE, "Engineering" = TRUE, "Science" = TRUE, "Medical" = TRUE, "Supply" = TRUE, "Service" = TRUE)
 

@@ -1410,7 +1410,7 @@
 	name = "Instructor Guidelines"
 	desc = "A set of guidelines for Instructors."
 	icon_state = "sop_legal"
-	author = "Nanotrasen"
+	author = "Ark Soft"
 	title = "Instructor Guidelines"
 	dat = {"
 		<html>

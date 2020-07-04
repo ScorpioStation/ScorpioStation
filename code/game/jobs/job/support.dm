@@ -523,7 +523,7 @@
 
 // Mentor+ role for instructing new players
 /datum/job/ntinstructor
-	title = "Nanotrasen Instructor"
+	title = "Ark Soft Instructor"
 	flag = JOB_CENTCOM
 	department_flag = JOB_CENTCOM
 	total_positions = 2
@@ -547,7 +547,7 @@
 	outfit = /datum/outfit/job/ntinstructor
 
 /datum/outfit/job/ntinstructor
-	name = "Nanotrasen Instructor"
+	name = "Ark Soft Instructor"
 	jobtype = /datum/job/ntinstructor
 
 	uniform = /obj/item/clothing/under/rank/centcom/representative // formal NT uniform
