@@ -250,6 +250,34 @@ GLOBAL_LIST_EMPTY(cortical_stacks) //Stacks for 'leave nobody behind' objective.
 
 	..()
 
+datum/game_mode/proc/auto_declare_completion_heist()
+	if(raiders.len)
+		var/check_return = 0
+		if(GAMEMODE_IS_HEIST)
+			check_return = 1
+		var/text = "<FONT size = 2><B>The Vox raiders were:</B></FONT>"
+
+		for(var/datum/mind/vox in raiders)
+			text += "<br>[vox.key] was [vox.name] ("
+			if(check_return)
+				var/obj/stack = raiders[vox]
+				if(get_area(stack.loc) != locate(/area/shuttle/vox))
+					text += "left behind)"
+					continue
+			if(vox.current)
+				if(vox.current.stat == DEAD)
+					text += "died"
+				else
+					text += "survived"
+				if(vox.current.real_name != vox.name)
+					text += " as [vox.current.real_name]"
+			else
+				text += "body destroyed"
+			text += ")"
+
+		to_chat(world, text)
+
+	return 1
 
 /datum/game_mode/heist/check_finished()
 	if(!(is_raider_crew_alive()))

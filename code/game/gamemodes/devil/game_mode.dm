@@ -3,6 +3,31 @@
 	var/list/datum/mind/devils = list()
 	var/devil_ascended = 0 // Number of arch devils on station
 
+/datum/game_mode/proc/auto_declare_completion_sintouched()
+	var/text = ""
+	if(sintouched.len)
+		text += "<br><span class='big'><b>The sintouched were:</b></span>"
+		var/list/sintouchedUnique = uniqueList(sintouched)
+		for(var/S in sintouchedUnique)
+			var/datum/mind/sintouched_mind = S
+			text += printplayer(sintouched_mind)
+			text += printobjectives(sintouched_mind)
+			text += "<br>"
+		text += "<br>"
+	to_chat(world,text)
+
+/datum/game_mode/proc/auto_declare_completion_devils()
+	var/text = ""
+	if(devils.len)
+		text += "<br><span class='big'><b>The devils were:</b></span>"
+		for(var/D in devils)
+			var/datum/mind/devil = D
+			text += printplayer(devil)
+			text += printdevilinfo(devil)
+			text += printobjectives(devil)
+			text += "<br>"
+		text += "<br>"
+	to_chat(world,text)
 
 
 /datum/game_mode/proc/finalize_devil(datum/mind/devil_mind, ascendable = FALSE)
