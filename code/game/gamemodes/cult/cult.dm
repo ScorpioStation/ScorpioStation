@@ -326,7 +326,7 @@ GLOBAL_LIST_EMPTY(all_cults)
 						feedback_add_details("cult_objective","cult_demons|FAIL")
 
 				if("convert")//convert half the crew
-					explanation = "Convert [convert_target] crewmembers ([cult.len] cultists at round end)."
+					explanation = "Convert [convert_target] crewmembers."
 					if(cult.len >= convert_target)
 						feedback_add_details("cult_objective","cult_convertion|SUCCESS")
 					else
