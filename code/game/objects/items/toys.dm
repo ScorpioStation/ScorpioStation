@@ -1140,6 +1140,13 @@ obj/item/toy/cards/deck/syndicate/black
 	icon_state = "plushie_slime"
 	item_state = "plushie_slime"
 
+//Adorable little guy, really.
+
+/obj/item/toy/plushie/cogfeldplushie
+	name = "Rooster Plushie"
+	desc = "Unpleasantly damp to the touch, with a whiff of booze and cigar smoke.  An uncanny feckin' likeness."
+	icon_state = "Plushie_Cogfeld"
+
 /*
  * Foam Armblade
  */
