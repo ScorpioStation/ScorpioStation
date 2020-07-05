@@ -11,6 +11,10 @@
 	if(stat != DEAD)
 		handle_organs()
 
+	//stuff in the stomach
+	if(LAZYLEN(stomach_contents))
+		handle_stomach(times_fired)
+
 	. = ..()
 
 	if(QDELETED(src))
@@ -162,7 +166,7 @@
 	//TOXINS/PLASMA
 	if(Toxins_partialpressure > safe_tox_max)
 		var/ratio = (breath.toxins/safe_tox_max) * 10
-		adjustToxLoss(Clamp(ratio, MIN_TOXIC_GAS_DAMAGE, MAX_TOXIC_GAS_DAMAGE))
+		adjustToxLoss(clamp(ratio, MIN_TOXIC_GAS_DAMAGE, MAX_TOXIC_GAS_DAMAGE))
 		throw_alert("too_much_tox", /obj/screen/alert/too_much_tox)
 	else
 		clear_alert("too_much_tox")
@@ -243,7 +247,7 @@
 				adjustToxLoss(3)
 				updatehealth("handle mutations and radiation(75-100)")
 
-		radiation = Clamp(radiation, 0, 100)
+		radiation = clamp(radiation, 0, 100)
 
 
 /mob/living/carbon/handle_chemicals_in_body()
@@ -254,14 +258,15 @@
 	if(times_fired % 20==2) //dry off a bit once every 20 ticks or so
 		wetlevel = max(wetlevel - 1,0)
 
-/mob/living/carbon/handle_stomach(times_fired)
-	for(var/mob/living/M in stomach_contents)
+/mob/living/carbon/proc/handle_stomach(times_fired)
+	for(var/thing in stomach_contents)
+		var/mob/living/M = thing
 		if(M.loc != src)
-			stomach_contents.Remove(M)
+			LAZYREMOVE(stomach_contents, M)
 			continue
 		if(stat != DEAD)
 			if(M.stat == DEAD)
-				stomach_contents.Remove(M)
+				LAZYREMOVE(stomach_contents, M)
 				qdel(M)
 				continue
 			if(times_fired % 3 == 1)
@@ -476,7 +481,7 @@
 			P.reagents.remove_any(applied_amount * 0.5)
 		else
 			if(!P.reagents || P.reagents.total_volume <= 0)
-				processing_patches -= P
+				LAZYREMOVE(processing_patches, P)
 				qdel(P)
 
 /mob/living/carbon/proc/handle_germs()

@@ -208,7 +208,7 @@
 		if(!E)
 			wound_flavor_text["[organ_tag]"] = "<B>[p_they(TRUE)] [p_are()] missing [p_their()] [organ_descriptor].</B>\n"
 		else
-			if(!isSynthetic())
+			if(!ismachineperson(src))
 				if(E.is_robotic())
 					wound_flavor_text["[E.limb_name]"] = "[p_they(TRUE)] [p_have()] a robotic [E.name]!\n"
 
@@ -252,7 +252,7 @@
 	var/temp = getBruteLoss() //no need to calculate each of these twice
 
 	if(temp)
-		var/brute_message = !isSynthetic() ? "bruising" : "denting"
+		var/brute_message = !ismachineperson(src) ? "bruising" : "denting"
 		if(temp < 30)
 			msg += "[p_they(TRUE)] [p_have()] minor [brute_message ].\n"
 		else
