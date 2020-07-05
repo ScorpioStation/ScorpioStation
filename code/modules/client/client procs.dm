@@ -694,6 +694,7 @@
 			// Disable the reconnect button to force a CID change
 			winset(src, "reconnectbutton", "is-disable=true")
 
+			log_debug("cid randomizer debug - computer_id:[computer_id] lastcid:[lastcid]")
 			tokens[ckey] = cid_check_reconnect()
 			sleep(10) // Since browse is non-instant, and kinda async
 
@@ -706,6 +707,14 @@
 				message_admins("<span class='adminnotice'>[key_name(src)] appears to have attempted to spoof a cid randomizer check.</span>")
 				cidcheck_spoofckeys[ckey] = TRUE
 			cidcheck[ckey] = computer_id
+			if(!topic)
+				log_debug("cid randomizer debug - oldcid:[oldcid] !topic")
+			else if(!topic["token"])
+				log_debug("cid randomizer debug - oldcid:[oldcid] !topic-token")
+			else if(!tokens[ckey])
+				log_debug("cid randomizer debug - oldcid:[oldcid] !tokens-ckey")
+			else
+				log_debug("cid randomizer debug - oldcid:[oldcid] topic-token:[topic["token"]] token-ckey:[tokens[ckey]]")
 			tokens[ckey] = cid_check_reconnect()
 
 			sleep(10) //browse is queued, we don't want them to disconnect before getting the browse() command.
