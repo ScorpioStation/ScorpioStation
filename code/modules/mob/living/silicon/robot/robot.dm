@@ -33,6 +33,7 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 	var/module_state_1 = null
 	var/module_state_2 = null
 	var/module_state_3 = null
+	var/may_choose_security_until = 0
 
 	var/obj/item/radio/borg/radio = null
 	var/mob/living/silicon/ai/connected_ai = null
@@ -109,6 +110,8 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 	return cell
 
 /mob/living/silicon/robot/New(loc,var/syndie = 0,var/unfinished = 0, var/alien = 0)
+	may_choose_security_until = world.time + (5 MINUTES)
+
 	spark_system = new /datum/effect_system/spark_spread()
 	spark_system.set_up(5, 0, src)
 	spark_system.attach(src)
@@ -288,7 +291,9 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 /mob/living/silicon/robot/proc/pick_module()
 	if(module)
 		return
-	var/list/modules = list("Standard", "Engineering", "Medical", "Miner", "Janitor", "Service", "Security")
+	var/list/modules = list("Standard", "Engineering", "Medical", "Miner", "Janitor", "Service")
+	if(world.time < may_choose_security_until)
+		modules += "Security"
 	if(islist(force_modules) && force_modules.len)
 		modules = force_modules.Copy()
 	if(GLOB.security_level == (SEC_LEVEL_GAMMA || SEC_LEVEL_EPSILON) || crisis)
@@ -296,13 +301,20 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 		modules += "Combat"
 	if(mmi != null && mmi.alien)
 		modules = list("Hunter")
+	// ask the user to select a module
 	modtype = input("Please, select a module!", "Robot", null, null) as null|anything in modules
+	// if they didn't select one, just bail out
 	if(!modtype)
 		return
 	designation = modtype
 	var/module_sprites[0] //Used to store the associations between sprite names and sprite index.
 
+	// if we've already got a module, don't pick another one, just bail out
 	if(module)
+		return
+
+	// if it's too late to choose Security, just bail out
+	if((modtype == "Security") && (world.time >= may_choose_security_until))
 		return
 
 	switch(modtype)
@@ -429,6 +441,7 @@ GLOBAL_LIST_INIT(robot_verbs_default, list(
 	icon_state = "robot"
 	module.remove_subsystems_and_actions(src)
 	QDEL_NULL(module)
+	may_choose_security_until = world.time + (5 MINUTES)
 
 	camera.network.Remove(list("Engineering", "Medical", "Mining Outpost"))
 	rename_character(real_name, get_default_name("Default"))
