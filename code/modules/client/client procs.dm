@@ -432,7 +432,13 @@
 //////////////
 //DISCONNECT//
 //////////////
+
 /client/Del()
+	if(!gc_destroyed)
+		Destroy() //Clean up signals and timers.
+	return ..()
+
+/client/Destroy()
 	if(holder)
 		holder.owner = null
 		GLOB.admins -= src
@@ -442,7 +448,8 @@
 		movingmob.client_mobs_in_contents -= mob
 		UNSETEMPTY(movingmob.client_mobs_in_contents)
 	Master.UpdateTickRate()
-	return ..()
+	..() //Even though we're going to be hard deleted there are still some things that want to know the destroy is happening
+	return QDEL_HINT_HARDDEL_NOW
 
 
 /client/proc/donator_check()
@@ -556,7 +563,7 @@
 		if(GLOB.panic_bunker_enabled)
 			var/threshold = config.panic_bunker_threshold
 			src << "Server is not accepting connections from never-before-seen players until player count is less than [threshold]. Please try again later."
-			del(src)
+			qdel(src)
 			return // Dont insert or they can just go in again
 
 		var/DBQuery/query_insert = GLOB.dbcon.NewQuery("INSERT INTO [format_table_name("player")] (id, ckey, firstseen, lastseen, ip, computerid, lastadminrank) VALUES (null, '[ckey]', Now(), Now(), '[sql_ip]', '[sql_computerid]', '[sql_admin_rank]')")
@@ -694,6 +701,7 @@
 			// Disable the reconnect button to force a CID change
 			winset(src, "reconnectbutton", "is-disable=true")
 
+			log_debug("cid randomizer debug - computer_id:[computer_id] lastcid:[lastcid]")
 			tokens[ckey] = cid_check_reconnect()
 			sleep(10) // Since browse is non-instant, and kinda async
 
@@ -706,6 +714,14 @@
 				message_admins("<span class='adminnotice'>[key_name(src)] appears to have attempted to spoof a cid randomizer check.</span>")
 				cidcheck_spoofckeys[ckey] = TRUE
 			cidcheck[ckey] = computer_id
+			if(!topic)
+				log_debug("cid randomizer debug - oldcid:[oldcid] !topic")
+			else if(!topic["token"])
+				log_debug("cid randomizer debug - oldcid:[oldcid] !topic-token")
+			else if(!tokens[ckey])
+				log_debug("cid randomizer debug - oldcid:[oldcid] !tokens-ckey")
+			else
+				log_debug("cid randomizer debug - oldcid:[oldcid] topic-token:[topic["token"]] token-ckey:[tokens[ckey]]")
 			tokens[ckey] = cid_check_reconnect()
 
 			sleep(10) //browse is queued, we don't want them to disconnect before getting the browse() command.

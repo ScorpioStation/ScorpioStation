@@ -7364,7 +7364,7 @@
 	name = "MO19 Arrivals"
 	})
 "kz" = (
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_y = -32
 	},
 /turf/simulated/floor/plasteel{

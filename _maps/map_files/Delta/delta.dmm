@@ -37575,7 +37575,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_y = -32
 	},
 /obj/effect/decal/warning_stripes/yellow,
@@ -50036,7 +50036,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_y = -32
 	},
 /obj/effect/decal/warning_stripes/yellow,
@@ -66880,7 +66880,7 @@
 	dir = 4;
 	level = 1
 	},
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_y = 32
 	},
 /turf/simulated/floor/plasteel{
@@ -66978,7 +66978,7 @@
 	dir = 4;
 	level = 1
 	},
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_y = 32
 	},
 /obj/structure/disposalpipe/segment{
@@ -83408,7 +83408,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_x = -32
 	},
 /turf/simulated/floor/plasteel{
@@ -87109,7 +87109,7 @@
 	level = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_x = 32;
 	pixel_y = 32
 	},
@@ -92226,6 +92226,9 @@
 	pressure_checks = 1
 	},
 /obj/effect/decal/warning_stripes/yellow/hollow,
+/obj/effect/landmark/start{
+	name = "Cyborg"
+	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
 	icon_state = "neutralfull"
@@ -94897,6 +94900,9 @@
 	on = 1
 	},
 /obj/effect/decal/warning_stripes/yellow/hollow,
+/obj/effect/landmark/start{
+	name = "Cyborg"
+	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
 	icon_state = "neutralfull"
@@ -96512,7 +96518,7 @@
 "drI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_x = -32
 	},
 /obj/effect/decal/warning_stripes/yellow,
@@ -106438,7 +106444,7 @@
 /area/chapel/main)
 "dJA" = (
 /obj/item/twohanded/required/kirbyplants,
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_y = 32
 	},
 /obj/effect/decal/warning_stripes/yellow,
@@ -109732,7 +109738,7 @@
 	icon_state = "4-8";
 	tag = ""
 	},
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_y = -32
 	},
 /turf/simulated/floor/plating,
@@ -112998,7 +113004,7 @@
 /obj/machinery/computer/security{
 	network = list("SS13","Research Outpost","Mining Outpost","Telecomms")
 	},
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_x = -32;
 	pixel_y = 0
 	},
@@ -113036,7 +113042,7 @@
 /area/shuttle/escape)
 "dVM" = (
 /obj/machinery/computer/station_alert,
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_x = 32;
 	pixel_y = 0
 	},

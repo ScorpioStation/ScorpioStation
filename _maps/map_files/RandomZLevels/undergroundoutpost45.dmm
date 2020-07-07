@@ -326,7 +326,7 @@
 	name = "UO45 Central Hall"
 	})
 "aG" = (
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_y = 32
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -342,7 +342,7 @@
 	name = "UO45 Central Hall"
 	})
 "aI" = (
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_y = 32
 	},
 /turf/simulated/floor/plasteel,
@@ -966,7 +966,7 @@
 	name = "UO45 Central Hall"
 	})
 "bL" = (
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_y = -32
 	},
 /turf/simulated/floor/plasteel,
@@ -989,7 +989,7 @@
 	name = "UO45 Central Hall"
 	})
 "bO" = (
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_y = -32
 	},
 /obj/effect/decal/cleanable/dirt,
