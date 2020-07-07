@@ -76,7 +76,7 @@
 
 	for(var/datum/mind/rev_mind in head_revolutionaries)
 		greet_revolutionary(rev_mind)
-		rev_mind.current.verbs += /mob/living/carbon/human/proc/RevConvert
+		equip_revolutionary(rev_mind.current)
 	modePlayer += head_revolutionaries
 	if(SSshuttle)
 		SSshuttle.emergencyNoEscape = 1
@@ -121,6 +121,8 @@
 		return
 
 	if(mob.mind)
+		var/datum/action/innate/convertrev/C = new()
+		C.Grant(mob)
 		if(mob.mind.assigned_role == "Clown")
 			to_chat(mob, "Your training has allowed you to overcome your clownish nature, allowing you to wield weapons without harming yourself.")
 			mob.mutations.Remove(CLUMSY)
@@ -137,6 +139,7 @@
 		"right hand" = slot_r_hand,
 	)
 	mob.equip_in_one_of_slots(R,slots)
+
 
 	mob.update_icons()
 
@@ -198,7 +201,6 @@
 				revolutionaries -= stalin
 				head_revolutionaries += stalin
 				forge_revolutionary_objectives(stalin)
-			stalin.current.verbs += /mob/living/carbon/human/proc/RevConvert
 			log_game("[key_name(stalin)] has been promoted to a head rev")
 			equip_revolutionary(stalin.current)
 			greet_revolutionary(stalin)
@@ -456,35 +458,47 @@
 	return dat
 
 
-/mob/living/carbon/human/proc/RevConvert()
-	set name = "Rev-Convert"
-	set category = "IC"
+/proc/revconvert(mob/living/user)
 	var/list/Possible = list()
-	for (var/mob/living/carbon/human/P in oview(src))
-		if(!stat && P.client && P.mind && !P.mind.special_role)
+	for(var/mob/living/carbon/human/P in oview(user))
+		if((P.stat == CONSCIOUS) && P.client && P.mind && !P.mind.special_role)
 			Possible += P
 	if(!Possible.len)
-		src << "\red There doesn't appear to be anyone available for you to convert here."
+		user << "\red There doesn't appear to be anyone available for you to convert here."
 		return
 	var/mob/living/carbon/human/M = input("Select a person to convert", "Viva la revolution!", null) as mob in Possible
-	if(((src.mind in SSticker.mode.head_revolutionaries) || (src.mind in SSticker.mode.revolutionaries)))
+	if(((user.mind in SSticker.mode.head_revolutionaries) || (user.mind in SSticker.mode.revolutionaries)))
 		if((M.mind in SSticker.mode.head_revolutionaries) || (M.mind in SSticker.mode.revolutionaries))
-			src << "\red <b>[M] is already be a revolutionary!</b>"
+			user << "\red <b>[M] is already be a revolutionary!</b>"
 		else if(ismindshielded(M))
-			src << "\red <b>[M] has a mindshield implant - Remove it first!</b>"
+			user << "\red <b>[M] has a mindshield implant - Remove it first!</b>"
 		else
 			if(world.time < M.mind.rev_cooldown)
-				src << "\red Wait five seconds before reconversion attempt."
+				user << "\red Wait five seconds before reconversion attempt."
 				return
-			src << "\red Attempting to convert [M]..."
-			log_admin("[src]([src.ckey]) attempted to convert [M].")
-			message_admins("\red [src]([src.ckey]) attempted to convert [M].")
-			var/choice = alert(M,"Asked by [src]: Do you want to join the revolution?","Align Thyself with the Revolution!","No!","Yes!")
+			user << "\red Attempting to convert [M]..."
+			log_admin("[user]([user.ckey]) attempted to convert [M].")
+			message_admins("\red [user]([user.ckey]) attempted to convert [M].")
+			var/choice = alert(M,"Asked by [user]: Do you want to join the revolution?","Align Thyself with the Revolution!","No!","Yes!")
 			if(choice == "Yes!")
 				SSticker.mode.add_revolutionary(M.mind)
 				M << "\blue You join the revolution!"
-				src << "\blue <b>[M] joins the revolution!</b>"
+				user << "\blue <b>[M] joins the revolution!</b>"
 			else if(choice == "No!")
 				M << "\red You reject this traitorous cause!"
-				src << "\red <b>[M] does not support the revolution!</b>"
+				user << "\red <b>[M] does not support the revolution!</b>"
 			M.mind.rev_cooldown = world.time+50
+
+
+/datum/action/innate/convertrev
+	name = "Convert Rev"
+	button_icon_state = "revolution"
+	check_flags = AB_CHECK_RESTRAINED|AB_CHECK_STUNNED|AB_CHECK_CONSCIOUS
+
+/datum/action/innate/convertrev/IsAvailable()
+	if((!owner.mind in SSticker.mode.head_revolutionaries) || (!owner.mind in SSticker.mode.revolutionaries))
+		return 0
+	return ..()
+
+/datum/action/innate/convertrev/Activate()
+	revconvert(usr)

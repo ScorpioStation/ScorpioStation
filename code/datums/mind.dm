@@ -756,7 +756,8 @@
 					to_chat(current, "<span class='warning'><FONT size = 3><B>You have been brainwashed! You are no longer a head revolutionary!</B></FONT></span>")
 					SSticker.mode.update_rev_icons_removed(src)
 					special_role = null
-					src.current.verbs -= /mob/living/carbon/human/proc/RevConvert
+					var/datum/action/innate/convertrev/C = locate() in src.current.actions
+					C.Remove(src.current)
 				log_admin("[key_name(usr)] has de-rev'd [key_name(current)]")
 				message_admins("[key_name_admin(usr)] has de-rev'd [key_name_admin(current)]")
 
@@ -798,7 +799,8 @@
 				SSticker.mode.head_revolutionaries += src
 				SSticker.mode.update_rev_icons_added(src)
 				special_role = SPECIAL_ROLE_HEAD_REV
-				src.current.verbs += /mob/living/carbon/human/proc/RevConvert
+				var/datum/action/innate/convertrev/C = new()
+				C.Grant(src.current)
 				log_admin("[key_name(usr)] has head-rev'd [key_name(current)]")
 				message_admins("[key_name_admin(usr)] has head-rev'd [key_name_admin(current)]")
 
@@ -1504,7 +1506,6 @@
 		special_role = SPECIAL_ROLE_HEAD_REV
 		SSticker.mode.forge_revolutionary_objectives(src)
 		SSticker.mode.greet_revolutionary(src,0)
-	src.current.verbs += /mob/living/carbon/human/proc/RevConvert
 	SSticker.mode.equip_revolutionary(src.current)
 
 /datum/mind/proc/make_Abductor()
