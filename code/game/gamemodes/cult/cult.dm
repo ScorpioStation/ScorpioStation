@@ -84,8 +84,8 @@ GLOBAL_LIST_EMPTY(all_cults)
 	var/survivors = 0
 
 /datum/game_mode/cult/announce()
-	to_chat(world, "<B>The current game mode is - Cult!</B>")
-	to_chat(world, "<B>Some crewmembers are attempting to start a cult!<BR>\nCultists - complete your objectives. Convert crewmembers to your cause by using the convert rune. Remember - there is no you, there is only the cult.<BR>\nPersonnel - Do not let the cult succeed in its mission. Brainwashing them with the chaplain's bible reverts them to whatever CentComm-allowed faith they had.</B>")
+	to_chat(world, "<b>The current game mode is - Cult!</b>")
+	to_chat(world, "<b>Some crew members are attempting to start a cult!<br>\nCultists - complete your objectives. Convert crew members to your cause by using the convert rune. Remember - there is no you, there is only the cult.<br>\nPersonnel - Do not let the cult succeed in its mission. Brainwashing them with the chaplain's bible reverts them to whatever CentComm-allowed faith they had.</b>")
 
 
 /datum/game_mode/cult/pre_setup()
@@ -147,8 +147,8 @@ GLOBAL_LIST_EMPTY(all_cults)
 					explanation = "Free objective."
 			if("eldergod")
 				explanation = "Summon [SSticker.cultdat.entity_name] by invoking the 'Tear Reality' rune.<b>The summoning can only be accomplished in [english_list(GLOB.summon_spots)] - where the veil is weak enough for the ritual to begin.</b>"
-		to_chat(cult_mind.current, "<B>Objective #[obj_count]</B>: [explanation]")
-		cult_mind.memory += "<B>Objective #[obj_count]</B>: [explanation]<BR>"
+		to_chat(cult_mind.current, "<b>Objective #[obj_count]</b>: [explanation]")
+		cult_mind.memory += "<b>Objective #[obj_count]</b>: [explanation]<br>"
 
 
 /datum/game_mode/proc/equip_cultist(mob/living/carbon/human/mob)
@@ -210,7 +210,7 @@ GLOBAL_LIST_EMPTY(all_cults)
 		update_cult_icons_removed(cult_mind)
 		if(show_message)
 			for(var/mob/M in viewers(cult_mind.current))
-				to_chat(M, "<FONT size = 3>[cult_mind.current] looks like [cult_mind.current.p_they()] just reverted to [cult_mind.current.p_their()] old faith!</FONT>")
+				to_chat(M, "<font size=3>[cult_mind.current] looks like [cult_mind.current.p_they()] just reverted to [cult_mind.current.p_their()] old faith!</font>")
 
 
 /datum/game_mode/proc/update_cult_icons_added(datum/mind/cult_mind)
@@ -284,11 +284,11 @@ GLOBAL_LIST_EMPTY(all_cults)
 	if(!check_cult_victory())
 		feedback_set_details("round_end_result","cult win - cult win")
 		feedback_set("round_end_result",acolytes_survived)
-		to_chat(world, "<span class='danger'> <FONT size = 3> The cult wins! It has succeeded in serving its dark masters!</FONT></span>")
+		to_chat(world, "<span class='danger'> <font size=3>The cult wins! It has succeeded in serving its dark masters!</font></span>")
 	else
 		feedback_set_details("round_end_result","cult loss - staff stopped the cult")
 		feedback_set("round_end_result",acolytes_survived)
-		to_chat(world, "<span class='warning'> <FONT size = 3>The staff managed to stop the cult!</FONT></span>")
+		to_chat(world, "<span class='warning'> <font size=3>The staff managed to stop the cult!</font></span>")
 
 	var/text = "<b>Cultists escaped:</b> [acolytes_survived]"
 
@@ -360,7 +360,7 @@ GLOBAL_LIST_EMPTY(all_cults)
 					else
 						feedback_add_details("cult_objective","cult_massacre|FAIL")
 
-			text += "<br><B>Objective #[obj_count]</B>: [explanation]"
+			text += "<br><b>Objective #[obj_count]</b>: [explanation]"
 
 	to_chat(world, text)
 	..()
@@ -369,7 +369,7 @@ GLOBAL_LIST_EMPTY(all_cults)
 
 /datum/game_mode/proc/auto_declare_completion_cult()
 	if(cult.len || (SSticker && GAMEMODE_IS_CULT))
-		var/text = "<FONT size = 2><B>The cultists were:</B></FONT>"
+		var/text = "<font size = 2><b>The cultists were:</b></font>"
 		for(var/datum/mind/cultist in cult)
 
 			text += "<br>[cultist.key] was [cultist.name] ("

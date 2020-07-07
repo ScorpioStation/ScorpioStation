@@ -7,7 +7,6 @@
 	icon = "ICON FILENAME" 			(defaults to areas.dmi)
 	icon_state = "NAME OF ICON" 	(defaults to "unknown" (blank))
 	requires_power = FALSE 			(defaults to TRUE)
-	music = "music/music.ogg"		(defaults to "music/music.ogg")
 
 NOTE: there are two lists of areas in the end of this file: centcom and station itself. Please maintain these lists valid. --rastaf0
 
@@ -74,7 +73,7 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 	power_environ = FALSE
 	valid_territory = FALSE
 	outdoors = TRUE
-	ambientsounds = list('sound/ambience/ambispace.ogg','sound/music/title2.ogg','sound/music/space.ogg','sound/music/traitor.ogg')
+	ambientsounds = SPACE_SOUNDS
 
 /area/space/nearstation
 	icon_state = "space_near"
@@ -121,39 +120,33 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 
 /area/shuttle/escape
 	name = "\improper Emergency Shuttle"
-	music = "music/escape.ogg"
 	icon_state = "shuttle2"
 	nad_allowed = TRUE
 
 /area/shuttle/pod_1
 	name = "\improper Escape Pod One"
-	music = "music/escape.ogg"
 	icon_state = "shuttle"
 	nad_allowed = TRUE
 
 /area/shuttle/pod_2
 	name = "\improper Escape Pod Two"
-	music = "music/escape.ogg"
 	icon_state = "shuttle"
 	nad_allowed = TRUE
 
 /area/shuttle/pod_3
 	name = "\improper Escape Pod Three"
-	music = "music/escape.ogg"
 	icon_state = "shuttle"
 	nad_allowed = TRUE
 	parallax_movedir = EAST
 
 /area/shuttle/pod_4
 	name = "\improper Escape Pod Four"
-	music = "music/escape.ogg"
 	icon_state = "shuttle"
 	nad_allowed = TRUE
 	parallax_movedir = EAST
 
 /area/shuttle/escape_pod1
 	name = "\improper Escape Pod One"
-	music = "music/escape.ogg"
 	nad_allowed = TRUE
 
 /area/shuttle/escape_pod1/station
@@ -167,7 +160,6 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 
 /area/shuttle/escape_pod2
 	name = "\improper Escape Pod Two"
-	music = "music/escape.ogg"
 	nad_allowed = TRUE
 
 /area/shuttle/escape_pod2/station
@@ -181,7 +173,6 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 
 /area/shuttle/escape_pod3
 	name = "\improper Escape Pod Three"
-	music = "music/escape.ogg"
 	nad_allowed = TRUE
 
 /area/shuttle/escape_pod3/station
@@ -195,7 +186,6 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 
 /area/shuttle/escape_pod5 //Pod 4 was lost to meteors
 	name = "\improper Escape Pod Five"
-	music = "music/escape.ogg"
 	nad_allowed = TRUE
 
 /area/shuttle/escape_pod5/station
@@ -209,7 +199,6 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 
 /area/shuttle/mining
 	name = "\improper Mining Shuttle"
-	music = "music/escape.ogg"
 	icon_state = "shuttle"
 
 /area/shuttle/transport
@@ -250,7 +239,6 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 
 /area/shuttle/siberia
 	name = "\improper Labor Camp Shuttle"
-	music = "music/escape.ogg"
 	icon_state = "shuttle"
 
 /area/shuttle/specops
@@ -333,7 +321,6 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 
 /area/shuttle/research
 	name = "\improper Research Shuttle"
-	music = "music/escape.ogg"
 	icon_state = "shuttle"
 
 /area/shuttle/research/station
@@ -832,17 +819,17 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 /area/bridge
 	name = "\improper Bridge"
 	icon_state = "bridge"
-	music = "signal"
+	ambientsounds = list('sound/ambience/signal.ogg')
 
 /area/bridge/meeting_room
 	name = "\improper Heads of Staff Meeting Room"
 	icon_state = "meeting"
-	music = null
+	ambientsounds = null
 
 /area/bridge/lounge
 	name = "\improper Bridge Lounge"
 	icon_state = "meeting"
-	music = null
+	ambientsounds = null
 
 /area/crew_quarters/captain
 	name = "\improper Captain's Office"
@@ -1158,7 +1145,7 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 
 //Engineering
 /area/engine
-	ambientsounds = list('sound/ambience/ambisin1.ogg','sound/ambience/ambisin2.ogg','sound/ambience/ambisin3.ogg','sound/ambience/ambisin4.ogg')
+	ambientsounds = ENGINEERING_SOUNDS
 
 /area/engine/engine_smes
 	name = "\improper Engineering SMES"
@@ -1212,6 +1199,7 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 	requires_power = FALSE
 	valid_territory = FALSE
 	dynamic_lighting = DYNAMIC_LIGHTING_IFSTARLIGHT
+	ambientsounds = ENGINEERING_SOUNDS
 
 /area/solar/auxport
 	name = "\improper Fore Port Solar Array"
@@ -1278,17 +1266,16 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 /area/teleporter
 	name = "\improper Teleporter"
 	icon_state = "teleporter"
-	music = "signal"
+	ambientsounds = ENGINEERING_SOUNDS
 
 /area/gateway
 	name = "\improper Gateway"
 	icon_state = "teleporter"
-	music = "signal"
+	ambientsounds = ENGINEERING_SOUNDS
 
 /area/AIsattele
 	name = "\improper Abandoned Teleporter"
 	icon_state = "teleporter"
-	music = "signal"
 	ambientsounds = list('sound/ambience/ambimalf.ogg')
 
 /area/toxins/explab
@@ -1301,42 +1288,39 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 
 //MedBay
 
+/area/medical
+	ambientsounds = MEDICAL_SOUNDS
+
 /area/medical/medbay
 	name = "\improper Medbay"
 	icon_state = "medbay"
-	music = 'sound/ambience/signal.ogg'
 
 //Medbay is a large area, these additional areas help level out APC load.
 /area/medical/medbay2
 	name = "\improper Medbay"
 	icon_state = "medbay2"
-	music = 'sound/ambience/signal.ogg'
 
 /area/medical/medbay3
 	name = "\improper Medbay"
 	icon_state = "medbay3"
-	music = 'sound/ambience/signal.ogg'
 
 
 /area/medical/biostorage
 	name = "\improper Medical Storage"
 	icon_state = "medbaysecstorage"
-	music = 'sound/ambience/signal.ogg'
 
 /area/medical/reception
 	name = "\improper Medbay Reception"
 	icon_state = "medbay"
-	music = 'sound/ambience/signal.ogg'
 
 /area/medical/psych
 	name = "\improper Psych Room"
 	icon_state = "medbaypsych"
-	music = 'sound/ambience/signal.ogg'
+	ambientsounds = list('sound/ambience/aurora_caelus_short.ogg')
 
 /area/medical/medbreak
 	name = "\improper Break Room"
 	icon_state = "medbaybreak"
-	music = 'sound/ambience/signal.ogg'
 
 /area/medical/patients_rooms
 	name = "\improper Patient's Rooms"
@@ -1393,7 +1377,7 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 /area/medical/morgue
 	name = "\improper Morgue"
 	icon_state = "morgue"
-	ambientsounds = list('sound/ambience/ambimo1.ogg','sound/ambience/ambimo2.ogg')
+	ambientsounds = SPOOKY_SOUNDS
 
 /area/medical/chemistry
 	name = "\improper Chemistry"
@@ -1440,6 +1424,8 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 	icon_state = "medbay"
 
 //Security
+/area/security
+	ambientsounds = HIGHSEC_SOUNDS
 
 /area/security/main
 	name = "\improper Security Office"
@@ -2205,6 +2191,7 @@ GLOBAL_LIST_EMPTY(ghostteleportlocs)
 	name = "\improper Strange Location"
 	icon_state = "away"
 	report_alerts = FALSE
+	ambientsounds = AWAY_MISSION_SOUNDS
 
 /area/awaymission/example
 	name = "\improper Strange Station"
