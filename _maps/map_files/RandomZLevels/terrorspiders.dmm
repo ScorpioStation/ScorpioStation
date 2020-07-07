@@ -68,14 +68,14 @@
 /turf/simulated/floor/plasteel,
 /area/awaymission/UO71/plaza)
 "am" = (
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_y = 32
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel,
 /area/awaymission/UO71/plaza)
 "an" = (
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_y = 32
 	},
 /turf/simulated/floor/plasteel,
@@ -555,7 +555,7 @@
 	},
 /area/awaymission/UO71/plaza)
 "bt" = (
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_y = -32
 	},
 /turf/simulated/floor/plasteel,
@@ -569,7 +569,7 @@
 /turf/simulated/floor/plasteel,
 /area/awaymission/UO71/plaza)
 "bw" = (
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/official/arksoft_logo{
 	pixel_y = -32
 	},
 /obj/effect/decal/cleanable/dirt,
