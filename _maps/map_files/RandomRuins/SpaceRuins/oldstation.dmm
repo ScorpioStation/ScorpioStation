@@ -64,7 +64,7 @@
 /turf/simulated/wall/rust,
 /area/ruin/space/ancientstation/comm)
 "am" = (
-/obj/structure/sign/poster/official/nanotrasen_logo,
+/obj/structure/sign/poster/official/arksoft_logo,
 /turf/simulated/wall/rust,
 /area/ruin/space/ancientstation/comm)
 "an" = (
