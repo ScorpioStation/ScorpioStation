@@ -50,8 +50,8 @@
 	supervisors = "the bartender"
 	department_head = list("Head of Personnel")
 	selection_color = "#dddddd"
-	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM)
-	minimal_access = list(ACCESS_BAR, ACCESS_MAINT_TUNNELS, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM)
+	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_WAITER)
+	minimal_access = list(ACCESS_BAR, ACCESS_MAINT_TUNNELS, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_WAITER)
 	outfit = /datum/outfit/job/bouncer
 
 /datum/outfit/job/bouncer
