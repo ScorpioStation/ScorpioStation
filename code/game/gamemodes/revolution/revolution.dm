@@ -496,7 +496,7 @@
 	check_flags = AB_CHECK_RESTRAINED|AB_CHECK_STUNNED|AB_CHECK_CONSCIOUS
 
 /datum/action/innate/convertrev/IsAvailable()
-	if((!owner.mind in SSticker.mode.head_revolutionaries) || (!owner.mind in SSticker.mode.revolutionaries))
+	if(!(owner.mind in SSticker.mode.head_revolutionaries) || !(owner.mind in SSticker.mode.revolutionaries))
 		return 0
 	return ..()
 
