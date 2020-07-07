@@ -204,19 +204,7 @@
 		. += "<b>NO</b>|headrev|rev"
 	else if(src in SSticker.mode.head_revolutionaries)
 		. += "<a href='?src=[UID()];revolution=clear'>no</a>|<b><font color='red'>HEADREV</font></b>|<a href='?src=[UID()];revolution=rev'>rev</a>"
-		. += "<br>Flash: <a href='?src=[UID()];revolution=flash'>give</a>"
 
-		var/list/L = current.get_contents()
-		var/obj/item/flash/flash = locate() in L
-		if(flash)
-			if(!flash.broken)
-				. += "|<a href='?src=[UID()];revolution=takeflash'>take</a>."
-			else
-				. += "|<a href='?src=[UID()];revolution=takeflash'>take</a>|<a href='?src=[UID()];revolution=repairflash'>repair</a>."
-		else
-			. += "."
-
-		. += " <a href='?src=[UID()];revolution=reequip'>Reequip</a> (gives traitor uplink)."
 		if(objectives.len==0)
 			. += "<br>Objectives are empty! <a href='?src=[UID()];revolution=autoobjectives'>Set to kill all heads</a>."
 	else if(src in SSticker.mode.revolutionaries)
@@ -521,7 +509,7 @@
 			if(!def_value)//If it's a custom objective, it will be an empty string.
 				def_value = "custom"
 
-		var/new_obj_type = input("Select objective type:", "Objective type", def_value) as null|anything in list("assassinate", "blood", "debrain", "protect", "prevent", "brig", "hijack", "escape", "survive", "steal", "download", "nuclear", "capture", "absorb", "destroy", "maroon", "identity theft", "custom")
+		var/new_obj_type = input("Select objective type:", "Objective type", def_value) as null|anything in list("assassinate", "blood", "debrain", "protect", "prevent", "brig", "hijack", "escape", "survive", "steal", "download", "nuclear", "capture", "absorb", "destroy", "maroon", "identity theft", "mutiny", "custom")
 		if(!new_obj_type)
 			return
 
@@ -651,6 +639,30 @@
 				new_objective.owner = src
 				new_objective.target = new_target
 				new_objective.explanation_text = "Escape on the shuttle or an escape pod with the identity of [targ.current.real_name], the [targ.assigned_role] while wearing [targ.current.p_their()] identification card."
+
+			if("mutiny")
+				var/type = input("Select objective:", "Mutiny objective") in list("Kill all heads","Custom")
+				switch(type)
+					if("Kill all heads")
+						var/list/heads = new
+						for(var/mob/living/carbon/human/player in GLOB.mob_list)
+							var/list/real_command_positions = GLOB.command_positions.Copy() - "Ark Soft Representative"
+							if(player.stat != DEAD && player.mind && (player.mind.assigned_role in real_command_positions))
+								heads |= player.mind
+						for(var/datum/mind/head_mind in heads)
+							var/datum/objective/mutiny/rev_obj = new
+							rev_obj.owner = src
+							rev_obj.target = head_mind
+							rev_obj.explanation_text = "Assassinate or exile [head_mind.name], the [head_mind.assigned_role]."
+							objectives += rev_obj
+					if("Custom")
+						var/expl = sanitize(copytext(input("Custom objective:", "Objective", objective ? objective.explanation_text : "") as text|null,1,MAX_MESSAGE_LEN))
+						if(!expl)
+							return
+						new_objective = new /datum/objective/mutiny
+						new_objective.owner = src
+						new_objective.explanation_text = expl
+
 			if("custom")
 				var/expl = sanitize(copytext(input("Custom objective:", "Objective", objective ? objective.explanation_text : "") as text|null,1,MAX_MESSAGE_LEN))
 				if(!expl)
@@ -751,7 +763,7 @@
 					SSticker.mode.update_rev_icons_removed(src)
 					to_chat(current, "<span class='warning'><FONT size = 3><B>Revolution has been disappointed of your leadership traits! You are a regular revolutionary now!</B></FONT></span>")
 				else if(!(src in SSticker.mode.revolutionaries))
-					to_chat(current, "<span class='warning'><FONT size = 3> You are now a revolutionary! Help your cause. Do not harm your fellow freedom fighters. You can identify your comrades by the red \"R\" icons, and your leaders by the blue \"R\" icons. Help them kill the heads to win the revolution!</FONT></span>")
+					to_chat(current, "<span class='warning'><FONT size = 3> You are now a revolutionary! You can identify your comrades by the red \"R\" icons, and your leaders by the blue \"R\" icons. Help them complete their objectives, but do not murder non-revs unless you have the objective to do so!</FONT></span>")
 				else
 					return
 				SSticker.mode.revolutionaries += src
@@ -770,14 +782,14 @@
 				else
 					return
 				if(SSticker.mode.head_revolutionaries.len>0)
-					// copy targets
+					// copy objective
 					var/datum/mind/valid_head = locate() in SSticker.mode.head_revolutionaries
 					if(valid_head)
 						for(var/datum/objective/mutiny/O in valid_head.objectives)
 							var/datum/objective/mutiny/rev_obj = new
 							rev_obj.owner = src
 							rev_obj.target = O.target
-							rev_obj.explanation_text = "Assassinate [O.target.name], the [O.target.assigned_role]."
+							rev_obj.explanation_text = O.explanation_text
 							objectives += rev_obj
 						SSticker.mode.greet_revolutionary(src,0)
 				SSticker.mode.head_revolutionaries += src
@@ -792,45 +804,6 @@
 				log_admin("[key_name(usr)] has automatically forged revolutionary objectives for [key_name(current)]")
 				message_admins("[key_name_admin(usr)] has automatically forged revolutionary objectives for [key_name_admin(current)]")
 
-			if("flash")
-				if(!SSticker.mode.equip_revolutionary(current))
-					to_chat(usr, "<span class='warning'>Spawning flash failed!</span>")
-				log_admin("[key_name(usr)] has given [key_name(current)] a flash")
-				message_admins("[key_name_admin(usr)] has given [key_name_admin(current)] a flash")
-
-			if("takeflash")
-				var/list/L = current.get_contents()
-				var/obj/item/flash/flash = locate() in L
-				if(!flash)
-					to_chat(usr, "<span class='warning'>Deleting flash failed!</span>")
-				qdel(flash)
-				log_admin("[key_name(usr)] has taken [key_name(current)]'s flash")
-				message_admins("[key_name_admin(usr)] has taken [key_name_admin(current)]'s flash")
-
-			if("repairflash")
-				var/list/L = current.get_contents()
-				var/obj/item/flash/flash = locate() in L
-				if(!flash)
-					to_chat(usr, "<span class='warning'>Repairing flash failed!</span>")
-				else
-					flash.broken = 0
-					log_admin("[key_name(usr)] has repaired [key_name(current)]'s flash")
-					message_admins("[key_name_admin(usr)] has repaired [key_name_admin(current)]'s flash")
-
-			if("reequip")
-				var/list/L = current.get_contents()
-				var/obj/item/flash/flash = locate() in L
-				qdel(flash)
-				take_uplink()
-				var/fail = 0
-				var/datum/antagonist/traitor/T = has_antag_datum(/datum/antagonist/traitor)
-				fail |= !T.equip_traitor(src)
-				fail |= !SSticker.mode.equip_revolutionary(current)
-				if(fail)
-					to_chat(usr, "<span class='warning'>Reequipping revolutionary goes wrong!</span>")
-					return
-				log_admin("[key_name(usr)] has equipped [key_name(current)] as a revolutionary")
-				message_admins("[key_name_admin(usr)] has equipped [key_name_admin(current)] as a revolutionary")
 
 	else if(href_list["cult"])
 		switch(href_list["cult"])
