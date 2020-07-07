@@ -78677,8 +78677,6 @@
 /obj/structure/table/reinforced,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	step_x = 3;
-	step_y = 31;
 	level = 1
 	},
 /turf/simulated/floor/plasteel{
