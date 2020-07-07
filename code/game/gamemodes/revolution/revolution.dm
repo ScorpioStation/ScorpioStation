@@ -76,6 +76,7 @@
 
 	for(var/datum/mind/rev_mind in head_revolutionaries)
 		greet_revolutionary(rev_mind)
+		rev_mind.current.verbs += /mob/living/carbon/human/proc/RevConvert
 	modePlayer += head_revolutionaries
 	if(SSshuttle)
 		SSshuttle.emergencyNoEscape = 1
@@ -93,6 +94,7 @@
 
 
 /datum/game_mode/proc/forge_revolutionary_objectives(datum/mind/rev_mind)
+
 	var/list/heads = get_living_heads()
 	for(var/datum/mind/head_mind in heads)
 		var/datum/objective/mutiny/rev_obj = new
@@ -125,9 +127,7 @@
 			var/datum/action/innate/toggle_clumsy/A = new
 			A.Grant(mob)
 
-	var/obj/item/flash/T = new(mob)
 	var/obj/item/toy/crayon/spraycan/R = new(mob)
-	var/obj/item/clothing/glasses/hud/security/chameleon/C = new(mob)
 
 	var/list/slots = list (
 		"backpack" = slot_in_backpack,
@@ -136,22 +136,10 @@
 		"left hand" = slot_l_hand,
 		"right hand" = slot_r_hand,
 	)
-	var/where = mob.equip_in_one_of_slots(T, slots)
-	var/where2 = mob.equip_in_one_of_slots(C, slots)
 	mob.equip_in_one_of_slots(R,slots)
 
 	mob.update_icons()
 
-	if(!where2)
-		to_chat(mob, "The Syndicate were unfortunately unable to get you a chameleon security HUD.")
-	else
-		to_chat(mob, "The chameleon security HUD in your [where2] will help you keep track of who is mindshield-implanted, and unable to be recruited.")
-
-	if(!where)
-		to_chat(mob, "The Syndicate were unfortunately unable to get you a flash.")
-	else
-		to_chat(mob, "The flash in your [where] will help you to persuade the crew to join your cause.")
-		return 1
 
 /////////////////////////////////
 //Gives head revs their targets//
@@ -190,12 +178,29 @@
 				if(ROLE_REV in khrushchev.current.client.prefs.be_special)
 					promotable_revs += khrushchev
 		if(promotable_revs.len)
+			var/datum/mind/valid_head = locate() in head_revolutionaries
 			var/datum/mind/stalin = pick(promotable_revs)
-			revolutionaries -= stalin
-			head_revolutionaries += stalin
+			if(head_revolutionaries.len>0)
+				// copy objective
+				if(valid_head)
+					for(var/datum/objective/mutiny/O in valid_head.objectives)
+						var/datum/objective/mutiny/rev_obj = new
+						rev_obj.owner = stalin
+						rev_obj.target = O.target
+						rev_obj.explanation_text = O.explanation_text
+						stalin.objectives += rev_obj
+				revolutionaries -= stalin
+				head_revolutionaries += stalin
+				log_game("[key_name(stalin)] has been promoted to a head rev")
+				equip_revolutionary(stalin.current)
+				greet_revolutionary(stalin)
+			else
+				revolutionaries -= stalin
+				head_revolutionaries += stalin
+				forge_revolutionary_objectives(stalin)
+			stalin.current.verbs += /mob/living/carbon/human/proc/RevConvert
 			log_game("[key_name(stalin)] has been promoted to a head rev")
 			equip_revolutionary(stalin.current)
-			forge_revolutionary_objectives(stalin)
 			greet_revolutionary(stalin)
 
 //////////////////////////////////////
@@ -449,3 +454,37 @@
 	dat += "<HR>"
 
 	return dat
+
+
+/mob/living/carbon/human/proc/RevConvert()
+	set name = "Rev-Convert"
+	set category = "IC"
+	var/list/Possible = list()
+	for (var/mob/living/carbon/human/P in oview(src))
+		if(!stat && P.client && P.mind && !P.mind.special_role)
+			Possible += P
+	if(!Possible.len)
+		src << "\red There doesn't appear to be anyone available for you to convert here."
+		return
+	var/mob/living/carbon/human/M = input("Select a person to convert", "Viva la revolution!", null) as mob in Possible
+	if(((src.mind in SSticker.mode.head_revolutionaries) || (src.mind in SSticker.mode.revolutionaries)))
+		if((M.mind in SSticker.mode.head_revolutionaries) || (M.mind in SSticker.mode.revolutionaries))
+			src << "\red <b>[M] is already be a revolutionary!</b>"
+		else if(ismindshielded(M))
+			src << "\red <b>[M] has a mindshield implant - Remove it first!</b>"
+		else
+			if(world.time < M.mind.rev_cooldown)
+				src << "\red Wait five seconds before reconversion attempt."
+				return
+			src << "\red Attempting to convert [M]..."
+			log_admin("[src]([src.ckey]) attempted to convert [M].")
+			message_admins("\red [src]([src.ckey]) attempted to convert [M].")
+			var/choice = alert(M,"Asked by [src]: Do you want to join the revolution?","Align Thyself with the Revolution!","No!","Yes!")
+			if(choice == "Yes!")
+				SSticker.mode.add_revolutionary(M.mind)
+				M << "\blue You join the revolution!"
+				src << "\blue <b>[M] joins the revolution!</b>"
+			else if(choice == "No!")
+				M << "\red You reject this traitorous cause!"
+				src << "\red <b>[M] does not support the revolution!</b>"
+			M.mind.rev_cooldown = world.time+50

@@ -44,6 +44,7 @@
 	var/list/targets = list()
 
 	var/has_been_rev = 0//Tracks if this mind has been a rev or not
+	var/rev_cooldown = 0
 
 	var/miming = 0 // Mime's vow of silence
 	var/list/antag_datums
@@ -76,6 +77,7 @@
 	var/mob/living/carbon/human/zealot_master = null
 
 	var/list/learned_recipes //List of learned recipe TYPES.
+
 
 /datum/mind/New(new_key)
 	key = new_key
@@ -754,6 +756,7 @@
 					to_chat(current, "<span class='warning'><FONT size = 3><B>You have been brainwashed! You are no longer a head revolutionary!</B></FONT></span>")
 					SSticker.mode.update_rev_icons_removed(src)
 					special_role = null
+					src.current.verbs -= /mob/living/carbon/human/proc/RevConvert
 				log_admin("[key_name(usr)] has de-rev'd [key_name(current)]")
 				message_admins("[key_name_admin(usr)] has de-rev'd [key_name_admin(current)]")
 
@@ -795,6 +798,7 @@
 				SSticker.mode.head_revolutionaries += src
 				SSticker.mode.update_rev_icons_added(src)
 				special_role = SPECIAL_ROLE_HEAD_REV
+				src.current.verbs += /mob/living/carbon/human/proc/RevConvert
 				log_admin("[key_name(usr)] has head-rev'd [key_name(current)]")
 				message_admins("[key_name_admin(usr)] has head-rev'd [key_name_admin(current)]")
 
@@ -1479,30 +1483,29 @@
 
 /datum/mind/proc/make_Rev()
 	if(SSticker.mode.head_revolutionaries.len>0)
-		// copy targets
+		// copy objective
 		var/datum/mind/valid_head = locate() in SSticker.mode.head_revolutionaries
 		if(valid_head)
 			for(var/datum/objective/mutiny/O in valid_head.objectives)
 				var/datum/objective/mutiny/rev_obj = new
 				rev_obj.owner = src
 				rev_obj.target = O.target
-				rev_obj.explanation_text = "Assassinate [O.target.current.real_name], the [O.target.assigned_role]."
+				rev_obj.explanation_text = O.explanation_text
 				objectives += rev_obj
 			SSticker.mode.greet_revolutionary(src,0)
-	SSticker.mode.head_revolutionaries += src
-	SSticker.mode.update_rev_icons_added(src)
-	special_role = SPECIAL_ROLE_HEAD_REV
 
-	SSticker.mode.forge_revolutionary_objectives(src)
-	SSticker.mode.greet_revolutionary(src,0)
+		SSticker.mode.head_revolutionaries += src
+		SSticker.mode.update_rev_icons_added(src)
+		special_role = SPECIAL_ROLE_HEAD_REV
 
-	var/list/L = current.get_contents()
-	var/obj/item/flash/flash = locate() in L
-	qdel(flash)
-	take_uplink()
-	var/fail = 0
-//	fail |= !ticker.mode.equip_traitor(current, 1)
-	fail |= !SSticker.mode.equip_revolutionary(current)
+	else
+		SSticker.mode.head_revolutionaries += src
+		SSticker.mode.update_rev_icons_added(src)
+		special_role = SPECIAL_ROLE_HEAD_REV
+		SSticker.mode.forge_revolutionary_objectives(src)
+		SSticker.mode.greet_revolutionary(src,0)
+	src.current.verbs += /mob/living/carbon/human/proc/RevConvert
+	SSticker.mode.equip_revolutionary(src.current)
 
 /datum/mind/proc/make_Abductor()
 	var/role = alert("Abductor Role ?","Role","Agent","Scientist")
