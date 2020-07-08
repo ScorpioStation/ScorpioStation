@@ -167,7 +167,10 @@
   * * italics - Vacuum and other things
   * * radio_speech - Should we use radio speech icon
   */
-/mob/proc/create_chat_message(atom/movable/speaker, raw_message, radio_speech, italics = FALSE)
+/mob/proc/create_chat_message(atom/movable/speaker, raw_message, radio_speech, italics)
+
+	if((speaker == src) && radio_speech)
+		return
 
 	// Display visual above source
 	new /datum/chatmessage(raw_message, speaker, src, italics, radio_speech)
