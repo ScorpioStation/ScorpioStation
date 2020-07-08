@@ -54017,8 +54017,15 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fsmaint3)
 "ccW" = (
-/turf/simulated/floor/plasteel,
-/area/space)
+/obj/structure/sign/poster/random{
+	dir = 1;
+	pixel_y = 32
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/fpmaint3)
 "ccX" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -91330,12 +91337,9 @@
 	name = "\improper Garden"
 	})
 "dpP" = (
-/obj/structure/table,
-/obj/item/paper_bin{
-	pixel_x = 1;
-	pixel_y = 9
+/obj/machinery/light/small{
+	dir = 4
 	},
-/obj/item/pen,
 /turf/simulated/floor/plating,
 /area/maintenance/fpmaint3)
 "dpQ" = (
@@ -93830,17 +93834,17 @@
 /turf/simulated/floor/plasteel/dark,
 /area/toxins/lab)
 "dtJ" = (
-/obj/structure/shuttle/engine/propulsion{
-	dir = 8;
-	icon_state = "propulsion";
-	tag = "icon-propulsion (EAST)"
+/obj/structure/table,
+/obj/item/paper_bin{
+	pixel_x = 1;
+	pixel_y = 9
 	},
-/turf/space,
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_f6";
-	dir = 2
+/obj/item/pen,
+/obj/machinery/light/small{
+	dir = 8
 	},
-/area/shuttle/transport)
+/turf/simulated/floor/plating,
+/area/maintenance/fpmaint3)
 "dtK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
@@ -94406,17 +94410,9 @@
 /turf/simulated/floor/plasteel,
 /area/hallway/secondary/entry)
 "duJ" = (
-/obj/structure/shuttle/engine/propulsion{
-	dir = 8;
-	icon_state = "propulsion";
-	tag = "icon-propulsion (EAST)"
-	},
-/turf/space,
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_f5";
-	dir = 2
-	},
-/area/shuttle/transport)
+/obj/machinery/light,
+/turf/simulated/floor/plasteel,
+/area/hallway/secondary/entry)
 "duK" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -94483,16 +94479,17 @@
 /turf/simulated/floor/plasteel/airless,
 /area/toxins/test_area)
 "duP" = (
-/obj/structure/shuttle/engine/propulsion/burst{
-	dir = 8
+/obj/structure/shuttle/engine/propulsion{
+	dir = 8;
+	icon_state = "propulsion";
+	tag = "icon-propulsion (EAST)"
 	},
-/turf/simulated/floor/plating,
+/turf/space,
 /turf/simulated/shuttle/wall{
-	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
 	},
-/area/shuttle/pod_4)
+/area/shuttle/transport)
 "duQ" = (
 /obj/effect/decal/warning_stripes/north,
 /turf/simulated/floor/plasteel/airless,
@@ -94512,6 +94509,36 @@
 /turf/simulated/floor/plasteel/airless,
 /area/toxins/test_area)
 "duT" = (
+/obj/structure/shuttle/engine/propulsion{
+	dir = 8;
+	icon_state = "propulsion";
+	tag = "icon-propulsion (EAST)"
+	},
+/turf/space,
+/turf/simulated/shuttle/wall{
+	icon_state = "swall_f5";
+	dir = 2
+	},
+/area/shuttle/transport)
+"duU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/apmaint)
+"duV" = (
+/obj/structure/shuttle/engine/propulsion/burst{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/turf/simulated/shuttle/wall{
+	tag = "icon-swall_f6";
+	icon_state = "swall_f6";
+	dir = 2
+	},
+/area/shuttle/pod_4)
+"duW" = (
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 8
 	},
@@ -102855,9 +102882,9 @@ aaa
 aaa
 aaa
 aaa
-dtJ
+duP
 aDl
-duJ
+duT
 aaa
 aaa
 aaa
@@ -103111,11 +103138,11 @@ dbZ
 aaa
 aaa
 dbZ
-dtJ
+duP
 aDg
 aDm
 aDq
-duJ
+duT
 aaa
 aDw
 aDA
@@ -106677,11 +106704,11 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aPV
+dbZ
+dbZ
+dbZ
+dbZ
+aqb
 aqb
 aqb
 blv
@@ -106932,9 +106959,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+dbZ
+dbZ
+dbZ
 bIV
 azH
 azH
@@ -106943,7 +106970,7 @@ bVY
 aqc
 cHY
 aqn
-ccW
+aqn
 duI
 dcz
 dcQ
@@ -107200,7 +107227,7 @@ arz
 arH
 cHI
 cHI
-ccW
+aqn
 bQr
 bQL
 aqn
@@ -107457,7 +107484,7 @@ arA
 arI
 cmX
 aqn
-ccW
+aqn
 aqn
 aqn
 aqn
@@ -107704,9 +107731,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+dbZ
+dbZ
+dbZ
 apY
 apY
 aqc
@@ -107714,8 +107741,8 @@ aqc
 aqc
 cJd
 aqn
-ccW
 aqn
+duJ
 aqc
 aqc
 aqc
@@ -107971,7 +107998,7 @@ bVY
 aqc
 cIB
 aqn
-ccW
+aqn
 aqn
 aqc
 aZU
@@ -108228,7 +108255,7 @@ arz
 arH
 cHI
 cHI
-ccW
+aqn
 aqn
 aqc
 dgz
@@ -108485,11 +108512,11 @@ arA
 arI
 cqT
 aqn
-ccW
+aqn
 cBS
 aqc
 bxc
-bpZ
+dpP
 bsM
 bxb
 bpZ
@@ -108736,8 +108763,8 @@ dbZ
 aaa
 aaa
 aaa
-aaa
-cRk
+dbZ
+aqc
 aqc
 aqc
 aqc
@@ -108993,19 +109020,19 @@ bjT
 aaa
 aaa
 aaa
+dbZ
+dbZ
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+dbZ
+dbZ
+dbZ
 bml
 cnH
 cnH
 bml
 cTa
-dpP
+dtJ
 bpZ
 bpZ
 aqc
@@ -109256,9 +109283,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
+dbZ
 bml
-cLX
+ccW
 bpZ
 bsM
 bpZ
@@ -109507,8 +109534,8 @@ dbZ
 dbZ
 aaa
 aaa
-aaa
-aah
+dbZ
+dbZ
 bml
 bml
 bml
@@ -109539,7 +109566,7 @@ aHY
 aHY
 dnk
 aVJ
-cQX
+duU
 aVJ
 aVJ
 dnI
@@ -110568,7 +110595,7 @@ aJu
 aJu
 dpI
 aHY
-aVJ
+bBF
 aVJ
 aNR
 bDK
@@ -111595,7 +111622,7 @@ aJn
 aHY
 cen
 aVJ
-aVJ
+bzJ
 aVJ
 deV
 aNR
@@ -122162,9 +122189,9 @@ dbZ
 aaa
 aaa
 aCk
-duP
+duV
 aGh
-duT
+duW
 aCk
 dbZ
 dbZ
