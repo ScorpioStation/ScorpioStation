@@ -36,7 +36,7 @@
   * * italics - Should we use italics or not
   * * lifespan - The lifespan of the message in deciseconds
   */
-/datum/chatmessage/New(text, atom/target, mob/owner, radio_speech, italics, lifespan = CHAT_MESSAGE_LIFESPAN)
+/datum/chatmessage/New(text, atom/target, mob/owner, radio_speech, italics, size, lifespan = CHAT_MESSAGE_LIFESPAN)
 	. = ..()
 	if (!istype(target))
 		CRASH("Invalid target given for chatmessage")
@@ -44,7 +44,7 @@
 		stack_trace("/datum/chatmessage created with [isnull(owner) ? "null" : "invalid"] mob owner")
 		qdel(src)
 		return
-	INVOKE_ASYNC(src, .proc/generate_image, text, target, owner, radio_speech, lifespan, italics)
+	INVOKE_ASYNC(src, .proc/generate_image, text, target, owner, radio_speech, lifespan, italics, size)
 
 /datum/chatmessage/Destroy()
 	if (owned_by)
@@ -73,7 +73,7 @@
   * * lifespan - The lifespan of the message in deciseconds
   * * italics - Just copy and paste, sir
   */
-/datum/chatmessage/proc/generate_image(text, atom/target, mob/owner, radio_speech, lifespan, italics)
+/datum/chatmessage/proc/generate_image(text, atom/target, mob/owner, radio_speech, lifespan, italics, size)
 	// Register client who owns this message
 	owned_by = owner.client
 	RegisterSignal(owned_by, COMSIG_PARENT_QDELETING, .proc/on_parent_qdel)
@@ -112,7 +112,7 @@
 	// BYOND Bug #2563917
 	// Construct text
 	var/static/regex/html_metachars = new(@"&[A-Za-z]{1,7};", "g")
-	var/complete_text = "<span class='center maptext[italics ? "" : " italics"]' style='color: [tgt_color]'>[text]</span>"
+	var/complete_text = "<span class='center maptext[italics ? "" : " italics"] [size ? "" : " [size]"]' style='color: [tgt_color]'>[text]</span>"
 	var/mheight = WXH_TO_HEIGHT(owned_by.MeasureText(replacetext(complete_text, html_metachars, "m"), null, CHAT_MESSAGE_WIDTH))
 	approx_lines = max(1, mheight / CHAT_MESSAGE_APPROX_LHEIGHT)
 
@@ -167,13 +167,13 @@
   * * italics - Vacuum and other things
   * * radio_speech - Should we use radio speech icon
   */
-/mob/proc/create_chat_message(atom/movable/speaker, raw_message, radio_speech, italics)
+/mob/proc/create_chat_message(atom/movable/speaker, raw_message, radio_speech, italics, size)
 
-	if((speaker == src) && radio_speech)
+	if((speaker == src) && radio_speech && !(size == "big"))
 		return
 
 	// Display visual above source
-	new /datum/chatmessage(raw_message, speaker, src, italics, radio_speech)
+	new /datum/chatmessage(raw_message, speaker, src, italics, radio_speech, size)
 
 
 // Tweak these defines to change the available color ranges

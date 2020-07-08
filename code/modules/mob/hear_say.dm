@@ -105,7 +105,7 @@
 		to_chat(src, "<span class='game say'><span class='name'>[speaker_name]</span>[speaker.GetAltName()] [track][verb], \"[message]\"</span>")
 
 		// Create map text message
-		if (client?.prefs.chat_on_map && stat != UNCONSCIOUS && (client.prefs.see_chat_non_mob || ismob(speaker)))
+		if (client?.prefs.chat_on_map && can_hear() && (client.prefs.see_chat_non_mob || ismob(speaker)))
 			create_chat_message(speaker, message_clean, FALSE, italics)
 
 		if(speech_sound && (get_dist(speaker, src) <= world.view && src.z == speaker.z))
@@ -132,7 +132,7 @@
 	var/speaker_name = handle_speaker_name(speaker, vname, hard_to_hear)
 	track = handle_track(message, verb, speaker, speaker_name, follow_target, hard_to_hear)
 
-	if (client?.prefs.chat_on_map && stat != UNCONSCIOUS && (client.prefs.see_chat_non_mob || ismob(speaker)) && can_hear())
+	if (client?.prefs.chat_on_map && can_hear() && (client.prefs.see_chat_non_mob || ismob(speaker)) && can_hear())
 		create_chat_message(speaker, message, TRUE, FALSE)
 
 	if(!can_hear())
@@ -188,7 +188,7 @@
 		name = speaker.voice_name
 
 	// Create map text message
-	if (client?.prefs.chat_on_map && stat != UNCONSCIOUS && (client.prefs.see_chat_non_mob || ismob(speaker)))
+	if (client?.prefs.chat_on_map && can_hear() && (client.prefs.see_chat_non_mob || ismob(speaker)))
 		create_chat_message(speaker, message, TRUE, FALSE)
 
 	var/rendered = "<span class='game say'><span class='name'>[name]</span> [verb], \"[message]\"</span>"
