@@ -180,7 +180,7 @@
 
 	to_chat(src, heard)
 
-/mob/proc/hear_holopad_talk(list/message_pieces, var/verb = "says", var/mob/speaker = null)
+/mob/proc/hear_holopad_talk(list/message_pieces, var/verb = "says", var/mob/speaker = null, var/obj/effect/overlay/holo_pad_hologram/H )
 	var/message = combine_message(message_pieces, "", speaker)
 
 	var/name = speaker.name
@@ -189,7 +189,7 @@
 
 	// Create map text message
 	if (client?.prefs.chat_on_map && can_hear() && (client.prefs.see_chat_non_mob || ismob(speaker)))
-		create_chat_message(speaker, message, TRUE, FALSE)
+		create_chat_message(H, message)
 
 	var/rendered = "<span class='game say'><span class='name'>[name]</span> [verb], \"[message]\"</span>"
 	to_chat(src, rendered)
