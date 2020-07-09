@@ -241,7 +241,7 @@
 	var/mob/living/carbon/human/H = rev_mind.current//Check to see if the potential rev is implanted
 	if(ismindshielded(H))
 		return 0
-	if((rev_mind in revolutionaries) || (rev_mind in head_revolutionaries))
+	if(is_revolutionary(H))
 		return 0
 	revolutionaries += rev_mind
 	if(iscarbon(rev_mind.current))
@@ -347,7 +347,7 @@
 			if(survivor.ckey)
 				num_survivors++
 				if(survivor.mind)
-					if((survivor.mind in head_revolutionaries) || (survivor.mind in revolutionaries))
+					if(is_revolutionary(survivor))
 						num_revs++
 		if(num_survivors)
 			to_chat(world, "[TAB]Command's Approval Rating: <B>[100 - round((num_revs/num_survivors)*100, 0.1)]%</B>") // % of loyal crew
@@ -464,29 +464,29 @@
 		if((P.stat == CONSCIOUS) && P.client && P.mind && !P.mind.special_role)
 			Possible += P
 	if(!Possible.len)
-		user << "\red There doesn't appear to be anyone available for you to convert here."
+		to_chat(user, "<span class='warning'>There doesn't appear to be anyone available for you to convert here.</span>")
 		return
 	var/mob/living/carbon/human/M = input("Select a person to convert", "Viva la revolution!", null) as mob in Possible
-	if(((user.mind in SSticker.mode.head_revolutionaries) || (user.mind in SSticker.mode.revolutionaries)))
-		if((M.mind in SSticker.mode.head_revolutionaries) || (M.mind in SSticker.mode.revolutionaries))
-			user << "\red <b>[M] is already be a revolutionary!</b>"
+	if(is_revolutionary(user))
+		if(is_revolutionary(M))
+			to_chat(user, "<span class='warning'>[M] is already be a revolutionary!</span>")
 		else if(ismindshielded(M))
-			user << "\red <b>[M] has a mindshield implant - Remove it first!</b>"
+			to_chat(user, "<span class='warning'>[M] has a mindshield implant - Remove it first!</span>")
 		else
 			if(world.time < M.mind.rev_cooldown)
-				user << "\red Wait five seconds before reconversion attempt."
+				to_chat(user, "<span class='warning'>Wait five seconds before reconversion attempt.</span>")
 				return
-			user << "\red Attempting to convert [M]..."
+			to_chat(user, "<span class='warning'>Attempting to convert [M]...</span>")
 			log_admin("[user]([user.ckey]) attempted to convert [M].")
-			message_admins("\red [user]([user.ckey]) attempted to convert [M].")
+			message_admins("<span class='warning'>[user]([user.ckey]) attempted to convert [M].</span>")
 			var/choice = alert(M,"Asked by [user]: Do you want to join the revolution?","Align Thyself with the Revolution!","No!","Yes!")
 			if(choice == "Yes!")
 				SSticker.mode.add_revolutionary(M.mind)
-				M << "\blue You join the revolution!"
-				user << "\blue <b>[M] joins the revolution!</b>"
+				to_chat(M, "<span class='notice'>You join the revolution!</span>")
+				to_chat(user, "<span class='notice'>[M] joins the revolution!</span>")
 			else if(choice == "No!")
-				M << "\red You reject this traitorous cause!"
-				user << "\red <b>[M] does not support the revolution!</b>"
+				to_chat(M, "<span class='warning'>You reject this traitorous cause!</span>")
+				to_chat(user, "<span class='warning'>[M] does not support the revolution!</span>")
 			M.mind.rev_cooldown = world.time+50
 
 
@@ -496,9 +496,12 @@
 	check_flags = AB_CHECK_RESTRAINED|AB_CHECK_STUNNED|AB_CHECK_CONSCIOUS
 
 /datum/action/innate/convertrev/IsAvailable()
-	if(!(owner.mind in SSticker.mode.head_revolutionaries) || !(owner.mind in SSticker.mode.revolutionaries))
+	if(!is_revolutionary(owner))
 		return 0
 	return ..()
 
 /datum/action/innate/convertrev/Activate()
 	revconvert(usr)
+
+/proc/is_revolutionary(mob/M)
+    return (M.mind in SSticker.mode.head_revolutionaries || M.mind in SSticker.mode.revolutionaries)
