@@ -529,4 +529,4 @@
 	revconvert(usr)
 
 /proc/is_revolutionary(mob/M)
-    return (M.mind in SSticker.mode.head_revolutionaries || M.mind in SSticker.mode.revolutionaries)
+    return ((M.mind in SSticker.mode.head_revolutionaries) || (M.mind in SSticker.mode.revolutionaries))
