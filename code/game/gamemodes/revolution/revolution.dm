@@ -339,6 +339,7 @@
 	return TRUE
 
 /datum/game_mode/proc/auto_declare_completion_revolution()
+	var/custom = FALSE
 	var/list/targets = list()
 	if(head_revolutionaries.len || GAMEMODE_IS_REVOLUTION)
 		var/num_revs = 0
@@ -354,6 +355,9 @@
 		var/text = "<br><font size=3><b>The head revolutionaries were:</b></font>"
 		for(var/datum/mind/headrev in head_revolutionaries)
 			text += printplayer(headrev, 1)
+			for(var/datum/objective/mutiny/objective in headrev.objectives)
+				if(!objective.classic)
+					custom = TRUE
 		text += "<br>"
 		to_chat(world, text)
 
@@ -361,6 +365,9 @@
 		var/text = "<br><font size=3><b>The revolutionaries were:</b></font>"
 		for(var/datum/mind/rev in revolutionaries)
 			text += printplayer(rev, 1)
+			for(var/datum/objective/mutiny/objective in rev.objectives)
+				if(!objective.classic)
+					custom = TRUE
 		text += "<br>"
 		to_chat(world, text)
 
@@ -372,6 +379,15 @@
 			if(target)
 				text += "<span class='boldannounce'>Target</span>"
 			text += printplayer(head, 1)
+		text += "<br>"
+		to_chat(world, text)
+
+	if(custom)
+		var/text = "<br><font size=3><b>The custom objective was:</b></font>"
+		for(var/datum/mind/headrev in head_revolutionaries)
+			for(var/datum/objective/mutiny/objective in headrev.objectives)
+				if(!objective.classic)
+					text += objective.explanation_text
 		text += "<br>"
 		to_chat(world, text)
 
@@ -416,12 +432,19 @@
 	var/comcount = 0
 	var/revcount = 0
 	var/loycount = 0
+	var/custom = FALSE
 	for(var/datum/mind/M in SSticker.mode:head_revolutionaries)
 		if(M.current && M.current.stat != DEAD)
 			foecount++
+			for(var/datum/objective/mutiny/objective in M.objectives)
+				if(!objective.classic)
+					custom = TRUE
 	for(var/datum/mind/M in SSticker.mode:revolutionaries)
 		if(M.current && M.current.stat != DEAD)
 			revcount++
+			for(var/datum/objective/mutiny/objective in M.objectives)
+				if(!objective.classic)
+					custom = TRUE
 	for(var/mob/living/carbon/human/player in GLOB.mob_living_list)
 		if(player.mind)
 			var/role = player.mind.assigned_role
@@ -438,6 +461,7 @@
 			loycount++
 
 
+
 	var/dat = ""
 
 	dat += "<b><u>Mode Statistics</u></b><br>"
@@ -450,9 +474,10 @@
 	dat += "<b>Revolution Heads Arrested:</b> [GLOB.score_arrested] ([GLOB.score_arrested * 1000] Points)<br>"
 	dat += "<b>All Revolution Heads Arrested:</b> [GLOB.score_allarrested ? "Yes" : "No"] (Score tripled)<br>"
 
-	dat += "<b>Revolution Heads Slain:</b> [GLOB.score_opkilled] ([GLOB.score_opkilled * 500] Points)<br>"
-	dat += "<b>Command Staff Slain:</b> [GLOB.score_deadcommand] (-[GLOB.score_deadcommand * 500] Points)<br>"
-	dat += "<b>Revolution Successful:</b> [GLOB.score_traitorswon ? "Yes" : "No"] (-[GLOB.score_traitorswon * 10000] Points)<br>"
+	if(!custom)
+		dat += "<b>Revolution Heads Slain:</b> [GLOB.score_opkilled] ([GLOB.score_opkilled * 500] Points)<br>"
+		dat += "<b>Command Staff Slain:</b> [GLOB.score_deadcommand] (-[GLOB.score_deadcommand * 500] Points)<br>"
+		dat += "<b>Revolution Successful:</b> [GLOB.score_traitorswon ? "Yes" : "No"] (-[GLOB.score_traitorswon * 10000] Points)<br>"
 	dat += "<HR>"
 
 	return dat

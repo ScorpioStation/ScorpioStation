@@ -9,6 +9,7 @@ GLOBAL_LIST_INIT(potential_theft_objectives, (subtypesof(/datum/theft_objective)
 	var/target_amount = 0				//If they are focused on a particular number. Steal objectives have their own counter.
 	var/completed = 0					//currently only used for custom objectives.
 	var/martyr_compatible = 0			//If the objective is compatible with martyr objective, i.e. if you can still do it while dead.
+	var/classic = TRUE					//Classic objective
 
 /datum/objective/New(text)
 	GLOB.all_objectives += src
@@ -79,6 +80,7 @@ GLOBAL_LIST_INIT(potential_theft_objectives, (subtypesof(/datum/theft_objective)
 
 /datum/objective/mutiny
 	martyr_compatible = 1
+	classic = TRUE	// Classic 'Kill all heads' objective
 
 /datum/objective/mutiny/find_target()
 	..()
@@ -86,16 +88,19 @@ GLOBAL_LIST_INIT(potential_theft_objectives, (subtypesof(/datum/theft_objective)
 		explanation_text = "Assassinate [target.current.real_name], the [target.assigned_role]."
 	else
 		explanation_text = "Free Objective"
+		classic = FALSE
 	return target
 
 /datum/objective/mutiny/check_completion()
-	if(target && target.current)
-		if(target.current.stat == DEAD || !ishuman(target.current) || !target.current.ckey || !target.current.client)
-			return 1
-		var/turf/T = get_turf(target.current)
-		if(T && !is_station_level(T.z))			//If they leave the station they count as dead for this
-			return 1
-		return 0
+	if(classic)
+		if(target && target.current)
+			if(target.current.stat == DEAD || !ishuman(target.current) || !target.current.ckey || !target.current.client)
+				return 1
+			var/turf/T = get_turf(target.current)
+			if(T && !is_station_level(T.z))			//If they leave the station they count as dead for this
+				return 1
+			return 0
+		return 1
 	return 1
 
 /datum/objective/maroon

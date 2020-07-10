@@ -664,6 +664,7 @@
 						new_objective = new /datum/objective/mutiny
 						new_objective.owner = src
 						new_objective.explanation_text = expl
+						new_objective.classic = FALSE
 
 			if("custom")
 				var/expl = sanitize(copytext(input("Custom objective:", "Objective", objective ? objective.explanation_text : "") as text|null,1,MAX_MESSAGE_LEN))
