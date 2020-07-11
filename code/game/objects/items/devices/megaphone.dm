@@ -69,6 +69,12 @@
 
 /obj/item/megaphone/proc/saymsg(mob/living/user as mob, message)
 	audible_message("<span class='game say'><span class='name'>[user.GetVoice()]</span> [user.GetAltName()] broadcasts, <span class='reallybig'>\"[message]\"</span></span>", hearing_distance = 14)
+
+	for(var/mob/M in get_mobs_in_view(7, src))
+		if(M.client?.prefs.chat_on_map && M.can_hear() && (M.client.prefs.see_chat_non_mob || ismob(user)))
+			var/size = "big"
+			M.create_chat_message(user, message, TRUE, FALSE, size)
+
 	log_say(message, user)
 	for(var/obj/O in oview(14, get_turf(src)))
 		O.hear_talk(user, message_to_multilingual("<span class='reallybig'>[message]</span>"))
