@@ -346,6 +346,8 @@
 	return
 	// HOLOFLOOR DOES NOT GIVE A FUCK
 
+/* ONLY RE-ENABLE IF HOLODECK IS IN VERTICAL POSITION
+
 /turf/simulated/floor/holofloor/space
 	name = "\proper space"
 	icon = 'icons/turf/space.dmi'
@@ -361,6 +363,8 @@
 	underlay_appearance.icon_state = SPACE_ICON_STATE
 	underlay_appearance.plane = PLANE_SPACE
 	return TRUE
+
+*/
 
 /obj/structure/table/holotable
 	flags = NODECONSTRUCT
