@@ -14310,21 +14310,59 @@
 	},
 /area/hydroponics)
 "aGt" = (
-/obj/structure/shuttle/engine/propulsion/burst,
-/turf/simulated/floor/plating,
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_f5";
-	dir = 2
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "open";
+	id_tag = "hopqueue";
+	name = "Privacy Shutters";
+	opacity = 0
 	},
-/area/shuttle/pod_1)
+/obj/machinery/ticket_machine{
+	pixel_x = 32
+	},
+/turf/simulated/floor/plasteel,
+/area/hallway/primary/central/north)
 "aGu" = (
-/obj/structure/shuttle/engine/propulsion/burst,
-/turf/simulated/floor/plating,
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_f9";
-	dir = 2
+/obj/machinery/computer/secure_data,
+/obj/machinery/flasher_button{
+	id = "hopflash";
+	pixel_x = 6;
+	pixel_y = 36
 	},
-/area/shuttle/pod_1)
+/obj/machinery/door_control{
+	id = "hop";
+	name = "Privacy Shutters Control";
+	pixel_x = 6;
+	pixel_y = 25;
+	req_access_txt = "28"
+	},
+/obj/machinery/door_control{
+	id = "hopqueue";
+	name = "Queue Privacy Shutters Control";
+	pixel_x = -4;
+	pixel_y = 25;
+	req_access_txt = "28"
+	},
+/obj/machinery/door_control{
+	id = "hopofficedoor";
+	name = "Office Door";
+	normaldoorcontrol = 1;
+	pixel_x = 25;
+	pixel_y = 7;
+	req_access_txt = "57"
+	},
+/obj/machinery/keycard_auth{
+	pixel_x = 26;
+	pixel_y = -4
+	},
+/obj/machinery/door_control/ticket_machine_button{
+	pixel_x = 35;
+	pixel_y = 7
+	},
+/turf/simulated/floor/carpet,
+/area/crew_quarters/heads/hop)
 "aGv" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/simulated/floor/plating,
@@ -14332,7 +14370,7 @@
 	icon_state = "swall_f5";
 	dir = 2
 	},
-/area/shuttle/pod_2)
+/area/shuttle/pod_1)
 "aGw" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/simulated/floor/plating,
@@ -14340,8 +14378,24 @@
 	icon_state = "swall_f9";
 	dir = 2
 	},
-/area/shuttle/pod_2)
+/area/shuttle/pod_1)
 "aGx" = (
+/obj/structure/shuttle/engine/propulsion/burst,
+/turf/simulated/floor/plating,
+/turf/simulated/shuttle/wall{
+	icon_state = "swall_f5";
+	dir = 2
+	},
+/area/shuttle/pod_2)
+"aGy" = (
+/obj/structure/shuttle/engine/propulsion/burst,
+/turf/simulated/floor/plating,
+/turf/simulated/shuttle/wall{
+	icon_state = "swall_f9";
+	dir = 2
+	},
+/area/shuttle/pod_2)
+"aGz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5;
 	level = 1
@@ -14363,7 +14417,7 @@
 	dir = 1
 	},
 /area/crew_quarters/beach)
-"aGy" = (
+"aGA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -14380,7 +14434,7 @@
 	dir = 1
 	},
 /area/crew_quarters/beach)
-"aGz" = (
+"aGB" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/hologram/holopad,
@@ -14393,7 +14447,7 @@
 	dir = 1
 	},
 /area/crew_quarters/beach)
-"aGA" = (
+"aGC" = (
 /obj/machinery/power/apc{
 	dir = 4;
 	name = "east bump";
@@ -14416,7 +14470,7 @@
 	dir = 1
 	},
 /area/crew_quarters/beach)
-"aGB" = (
+"aGD" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 8;
 	icon_state = "propulsion";
@@ -14428,7 +14482,7 @@
 	dir = 2
 	},
 /area/shuttle/transport)
-"aGC" = (
+"aGE" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 8;
 	icon_state = "propulsion";
@@ -14440,7 +14494,15 @@
 	dir = 2
 	},
 /area/shuttle/transport)
-"aGD" = (
+"aGF" = (
+/obj/docking_port/stationary/whiteship{
+	dir = 8;
+	id = "whiteship_emerald";
+	name = "South of Emerald"
+	},
+/turf/space,
+/area/space)
+"aGG" = (
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 8
 	},
@@ -14451,7 +14513,7 @@
 	dir = 2
 	},
 /area/shuttle/pod_4)
-"aGE" = (
+"aGH" = (
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 8
 	},
@@ -14462,14 +14524,6 @@
 	dir = 2
 	},
 /area/shuttle/pod_4)
-"aGF" = (
-/obj/docking_port/stationary/whiteship{
-	dir = 8;
-	id = "whiteship_emerald";
-	name = "South of Emerald"
-	},
-/turf/space,
-/area/space)
 "aHR" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -50736,41 +50790,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/asmaint)
-"bXZ" = (
-/obj/machinery/computer/secure_data,
-/obj/machinery/flasher_button{
-	id = "hopflash";
-	pixel_x = 6;
-	pixel_y = 36
-	},
-/obj/machinery/door_control{
-	id = "hop";
-	name = "Privacy Shutters Control";
-	pixel_x = 6;
-	pixel_y = 25;
-	req_access_txt = "28"
-	},
-/obj/machinery/door_control{
-	id = "hopqueue";
-	name = "Queue Privacy Shutters Control";
-	pixel_x = -4;
-	pixel_y = 25;
-	req_access_txt = "28"
-	},
-/obj/machinery/door_control{
-	id = "hopofficedoor";
-	name = "Office Door";
-	normaldoorcontrol = 1;
-	pixel_x = 25;
-	pixel_y = 7;
-	req_access_txt = "57"
-	},
-/obj/machinery/keycard_auth{
-	pixel_x = 26;
-	pixel_y = -4
-	},
-/turf/simulated/floor/carpet,
-/area/crew_quarters/heads/hop)
 "bYa" = (
 /obj/structure/chair/sofa/left{
 	dir = 4
@@ -102713,9 +102732,9 @@ aaa
 aaa
 aaa
 aaa
-aGB
+aGD
 aDl
-aGC
+aGE
 aaa
 aaa
 aaa
@@ -102969,11 +102988,11 @@ dbZ
 aaa
 aaa
 dbZ
-aGB
+aGD
 aDg
 aDm
 aDq
-aGC
+aGE
 aaa
 aDw
 aDA
@@ -106796,7 +106815,7 @@ dbZ
 bIV
 azH
 azH
-aGt
+aGv
 bVY
 aqc
 cHY
@@ -107310,7 +107329,7 @@ aaa
 bJi
 azH
 azH
-aGu
+aGw
 arA
 arI
 cmX
@@ -107824,7 +107843,7 @@ aaa
 bJs
 azJ
 azJ
-aGv
+aGx
 bVY
 aqc
 cIB
@@ -108338,7 +108357,7 @@ aaa
 bKq
 azJ
 azJ
-aGw
+aGy
 arA
 arI
 cqT
@@ -110396,7 +110415,7 @@ auH
 cTI
 bIq
 bIy
-aGx
+aGz
 azr
 azr
 bwv
@@ -110653,7 +110672,7 @@ auH
 bGt
 aAe
 bLc
-aGy
+aGA
 azr
 azr
 azr
@@ -110910,7 +110929,7 @@ auH
 btv
 bIr
 bLo
-aGz
+aGB
 azr
 azr
 azr
@@ -111167,7 +111186,7 @@ auH
 bGx
 aAe
 bLc
-aGy
+aGA
 azr
 azr
 azr
@@ -111424,7 +111443,7 @@ auH
 bZM
 bIS
 bIz
-aGA
+aGC
 azr
 azr
 bwK
@@ -122020,9 +122039,9 @@ dbZ
 aaa
 aaa
 aCk
-aGD
+aGG
 aGh
-aGE
+aGH
 aCk
 dbZ
 dbZ
@@ -132231,7 +132250,7 @@ arB
 aMe
 awZ
 aVH
-bjy
+aGt
 aMO
 aoL
 alx
@@ -134033,7 +134052,7 @@ aXm
 aoN
 apX
 aoL
-bXZ
+aGu
 byE
 cds
 bEq
