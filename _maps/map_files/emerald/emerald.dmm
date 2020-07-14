@@ -155,7 +155,7 @@
 "acY" = (/obj/machinery/computer/shuttle/engineering,/turf/simulated/floor/plating,/area/maintenance/engi_shuttle)
 "acZ" = (/obj/machinery/camera{c_tag = "Fore Starboard Solars Exterior"; dir = 8; network = list("SS13")},/turf/simulated/floor/plating,/area/maintenance/fsmaint)
 "ada" = (/obj/structure/rack{dir = 8; layer = 2.9},/obj/item/circuitboard/crew{pixel_x = -1; pixel_y = 1},/obj/item/circuitboard/card{pixel_x = 2; pixel_y = -2},/obj/item/circuitboard/communications{pixel_x = 5; pixel_y = -5},/turf/simulated/floor/plasteel,/area/storage/tech)
-"adb" = (/obj/machinery/door/window/southright{dir = 1; name = "AI Core Door"; req_access = null; req_access_txt = "16"},/obj/machinery/power/smes/engineering{input_level = 0; output_level = 100000},/obj/structure/cable{icon_state = "0-2"; d2 = 2},/turf/simulated/floor/greengrid,/area/turret_protected/ai)
+"adb" = (/obj/machinery/door/window/southright{dir = 1; name = "AI Core Door"; req_access = null; req_access_txt = "16"},/obj/machinery/power/smes/engineering{capacity = 5e+007; charge = 5e+007; input_level = 0; output_level = 100000},/obj/structure/cable{icon_state = "0-2"; d2 = 2},/turf/simulated/floor/greengrid,/area/turret_protected/ai)
 "adc" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/turf/simulated/wall/r_wall,/area/turret_protected/ai)
 "add" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/plasteel/dark,/area/turret_protected/ai)
 "ade" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/decal/warning_stripes/north,/turf/simulated/floor/plasteel,/area/engine/engineering)
