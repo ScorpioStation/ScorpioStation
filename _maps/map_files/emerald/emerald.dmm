@@ -14224,616 +14224,306 @@
 /turf/space,
 /area/shuttle/gamma/station)
 "aGo" = (
+/obj/machinery/porta_turret/syndicate,
 /turf/space,
+/turf/simulated/shuttle/wall{
+	dir = 8;
+	icon_state = "diagonalWall3"
+	},
+/area/shuttle/syndicate)
+"aGp" = (
+/obj/machinery/porta_turret/syndicate,
+/turf/space,
+/turf/simulated/shuttle/wall{
+	dir = 1;
+	icon_state = "diagonalWall3"
+	},
+/area/shuttle/syndicate)
+"aGq" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	level = 1
+	},
+/turf/simulated/floor/plasteel{
+	dir = 2;
+	icon_state = "asteroid";
+	tag = "icon-asteroid (NORTH)"
+	},
+/turf/simulated/floor/plasteel{
+	tag = "icon-siding1 (NORTH)";
+	icon_state = "siding1";
+	dir = 1
+	},
+/turf/simulated/floor/plasteel{
+	tag = "icon-siding2 (NORTH)";
+	icon_state = "siding2";
+	dir = 1
+	},
+/area/hydroponics)
+"aGr" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	level = 1
+	},
+/mob/living/simple_animal/chicken{
+	name = "Commander Clucky"
+	},
+/turf/simulated/floor/plasteel{
+	dir = 2;
+	icon_state = "asteroid";
+	tag = "icon-asteroid (NORTH)"
+	},
+/turf/simulated/floor/plasteel{
+	tag = "icon-siding1 (NORTH)";
+	icon_state = "siding1";
+	dir = 1
+	},
+/turf/simulated/floor/plasteel{
+	tag = "icon-siding2 (NORTH)";
+	icon_state = "siding2";
+	dir = 1
+	},
+/area/hydroponics)
+"aGs" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	level = 1
+	},
+/turf/simulated/floor/plasteel{
+	dir = 2;
+	icon_state = "asteroid";
+	tag = "icon-asteroid (NORTH)"
+	},
+/turf/simulated/floor/plasteel{
+	tag = "icon-siding1 (NORTH)";
+	icon_state = "siding1";
+	dir = 1
+	},
+/area/hydroponics)
+"aGt" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "open";
+	id_tag = "hopqueue";
+	name = "Privacy Shutters";
+	opacity = 0
+	},
+/obj/machinery/ticket_machine{
+	pixel_x = 32
+	},
+/turf/simulated/floor/plasteel,
+/area/hallway/primary/central/north)
+"aGu" = (
+/obj/machinery/computer/secure_data,
+/obj/machinery/flasher_button{
+	id = "hopflash";
+	pixel_x = 6;
+	pixel_y = 36
+	},
+/obj/machinery/door_control{
+	id = "hop";
+	name = "Privacy Shutters Control";
+	pixel_x = 6;
+	pixel_y = 25;
+	req_access_txt = "28"
+	},
+/obj/machinery/door_control{
+	id = "hopqueue";
+	name = "Queue Privacy Shutters Control";
+	pixel_x = -4;
+	pixel_y = 25;
+	req_access_txt = "28"
+	},
+/obj/machinery/door_control{
+	id = "hopofficedoor";
+	name = "Office Door";
+	normaldoorcontrol = 1;
+	pixel_x = 25;
+	pixel_y = 7;
+	req_access_txt = "57"
+	},
+/obj/machinery/keycard_auth{
+	pixel_x = 26;
+	pixel_y = -4
+	},
+/obj/machinery/door_control/ticket_machine_button{
+	pixel_x = 35;
+	pixel_y = 7
+	},
+/turf/simulated/floor/carpet,
+/area/crew_quarters/heads/hop)
+"aGv" = (
+/obj/structure/shuttle/engine/propulsion/burst,
+/turf/simulated/floor/plating,
+/turf/simulated/shuttle/wall{
+	icon_state = "swall_f5";
+	dir = 2
+	},
+/area/shuttle/pod_1)
+"aGw" = (
+/obj/structure/shuttle/engine/propulsion/burst,
+/turf/simulated/floor/plating,
+/turf/simulated/shuttle/wall{
+	icon_state = "swall_f9";
+	dir = 2
+	},
+/area/shuttle/pod_1)
+"aGx" = (
+/obj/structure/shuttle/engine/propulsion/burst,
+/turf/simulated/floor/plating,
+/turf/simulated/shuttle/wall{
+	icon_state = "swall_f5";
+	dir = 2
+	},
+/area/shuttle/pod_2)
+"aGy" = (
+/obj/structure/shuttle/engine/propulsion/burst,
+/turf/simulated/floor/plating,
+/turf/simulated/shuttle/wall{
+	icon_state = "swall_f9";
+	dir = 2
+	},
+/area/shuttle/pod_2)
+"aGz" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5;
+	level = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/machinery/camera{
+	c_tag = "Beach Simulation";
+	dir = 4;
+	network = list("SS13")
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "neutral"
+	},
+/turf/simulated/floor/plasteel{
+	tag = "icon-siding2 (NORTH)";
+	icon_state = "siding2";
+	dir = 1
+	},
+/area/crew_quarters/beach)
+"aGA" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	level = 1
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "neutral"
+	},
+/turf/simulated/floor/plasteel{
+	tag = "icon-siding2 (NORTH)";
+	icon_state = "siding2";
+	dir = 1
+	},
+/area/crew_quarters/beach)
+"aGB" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/plasteel{
+	icon_state = "neutral"
+	},
+/turf/simulated/floor/plasteel{
+	tag = "icon-siding2 (NORTH)";
+	icon_state = "siding2";
+	dir = 1
+	},
+/area/crew_quarters/beach)
+"aGC" = (
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "neutral"
+	},
+/turf/simulated/floor/plasteel{
+	tag = "icon-siding2 (NORTH)";
+	icon_state = "siding2";
+	dir = 1
+	},
+/area/crew_quarters/beach)
+"aGD" = (
+/obj/structure/shuttle/engine/propulsion{
+	dir = 8;
+	icon_state = "propulsion";
+	tag = "icon-propulsion (EAST)"
+	},
+/turf/space,
+/turf/simulated/shuttle/wall{
+	icon_state = "swall_f6";
+	dir = 2
+	},
+/area/shuttle/transport)
+"aGE" = (
+/obj/structure/shuttle/engine/propulsion{
+	dir = 8;
+	icon_state = "propulsion";
+	tag = "icon-propulsion (EAST)"
+	},
+/turf/space,
+/turf/simulated/shuttle/wall{
+	icon_state = "swall_f5";
+	dir = 2
+	},
+/area/shuttle/transport)
+"aGF" = (
+/obj/docking_port/stationary/whiteship{
+	dir = 8;
+	id = "whiteship_emerald";
+	name = "South of Emerald"
+	},
+/turf/space,
+/area/space)
+"aGG" = (
+/obj/structure/shuttle/engine/propulsion/burst{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
 /turf/simulated/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
 	},
-/area/shuttle/abandoned)
-"aGp" = (
-/turf/simulated/shuttle/wall{
-	tag = "icon-swall12";
-	icon_state = "swall12";
-	dir = 2
-	},
-/area/shuttle/abandoned)
-"aGq" = (
-/turf/simulated/shuttle/wall{
-	tag = "icon-swall14";
-	icon_state = "swall14";
-	dir = 2
-	},
-/area/shuttle/abandoned)
-"aGr" = (
-/turf/space,
-/turf/simulated/shuttle/wall{
-	tag = "icon-swall_f10";
-	icon_state = "swall_f10";
-	dir = 2
-	},
-/area/shuttle/abandoned)
-"aGs" = (
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/turf/simulated/shuttle/wall/interior{
-	tag = "icon-swall_f9";
-	icon_state = "swall_f9"
-	},
-/area/shuttle/abandoned)
-"aGt" = (
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aGu" = (
-/obj/machinery/sleeper{
-	dir = 8
-	},
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/effect/decal/remains/human,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aGv" = (
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/turf/simulated/shuttle/wall/interior{
-	tag = "icon-swall_f5";
-	icon_state = "swall_f5"
-	},
-/area/shuttle/abandoned)
-"aGw" = (
-/turf/simulated/shuttle/wall{
-	tag = "icon-swall13";
-	icon_state = "swall13";
-	dir = 2
-	},
-/area/shuttle/abandoned)
-"aGx" = (
-/obj/structure/shuttle/engine/propulsion{
-	dir = 4;
-	icon_state = "burst_r";
-	tag = "icon-burst_r (WEST)"
-	},
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aGy" = (
-/turf/simulated/shuttle/wall{
-	tag = "icon-swall11";
-	icon_state = "swall11";
-	dir = 2
-	},
-/area/shuttle/abandoned)
-"aGz" = (
-/obj/machinery/computer/med_data,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aGA" = (
-/obj/structure/table,
-/obj/item/storage/firstaid/regular{
-	pixel_x = 6;
-	pixel_y = -5
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aGB" = (
-/turf/simulated/shuttle/wall{
-	tag = "icon-swall15";
-	icon_state = "swall15";
-	dir = 2
-	},
-/area/shuttle/abandoned)
-"aGC" = (
-/turf/simulated/shuttle/plating,
-/turf/simulated/shuttle/wall/interior{
-	tag = "icon-swall_f9";
-	icon_state = "swall_f9"
-	},
-/area/shuttle/abandoned)
-"aGD" = (
-/obj/structure/shuttle/engine/heater{
-	tag = "icon-heater (EAST)";
-	icon_state = "heater";
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aGE" = (
-/obj/structure/shuttle/engine/propulsion{
-	dir = 4;
-	icon_state = "propulsion";
-	tag = "icon-propulsion (WEST)"
-	},
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aGF" = (
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/turf/simulated/shuttle/wall/interior{
-	tag = "icon-swall_f10";
-	icon_state = "swall_f10"
-	},
-/area/shuttle/abandoned)
-"aGG" = (
-/obj/item/scalpel,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
+/area/shuttle/pod_4)
 "aGH" = (
-/turf/simulated/shuttle/wall{
-	tag = "icon-swall7";
-	icon_state = "swall7";
-	dir = 2
-	},
-/area/shuttle/abandoned)
-"aGI" = (
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aGJ" = (
-/obj/structure/computerframe{
-	anchored = 1
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aGK" = (
-/obj/structure/window/full/shuttle{
-	icon_state = "14"
-	},
-/obj/structure/grille,
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aGL" = (
-/obj/structure/window/full/shuttle{
-	dir = 10;
-	icon_state = "9"
-	},
-/obj/structure/grille,
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aGM" = (
-/obj/structure/window/full/shuttle{
-	icon_state = "17"
-	},
-/obj/structure/grille,
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aGN" = (
-/obj/machinery/door/airlock/public/glass{
-	name = "Hibernation Pods"
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aGO" = (
-/obj/machinery/light/small{
+/obj/structure/shuttle/engine/propulsion/burst{
 	dir = 8
 	},
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aGP" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 1
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aGQ" = (
-/obj/structure/table,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aGR" = (
-/turf/simulated/shuttle/wall{
-	tag = "icon-swall3";
-	icon_state = "swall3";
-	dir = 2
-	},
-/area/shuttle/abandoned)
-"aGS" = (
-/obj/item/multitool,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aGT" = (
-/obj/item/stock_parts/cell{
-	charge = 100;
-	maxcharge = 15000
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aGU" = (
-/obj/machinery/door/unpowered/shuttle,
 /turf/simulated/floor/plating,
-/area/shuttle/abandoned)
-"aGV" = (
-/turf/simulated/shuttle/plating,
-/turf/simulated/shuttle/wall/interior{
-	tag = "icon-swall_f6";
-	icon_state = "swall_f6"
-	},
-/area/shuttle/abandoned)
-"aGW" = (
-/obj/structure/shuttle/engine/propulsion{
-	dir = 4;
-	icon_state = "burst_l";
-	tag = "icon-burst_l (WEST)"
-	},
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aGX" = (
-/obj/structure/window/full/shuttle{
-	icon_state = "16"
-	},
-/obj/structure/grille,
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aGY" = (
-/obj/structure/table,
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aGZ" = (
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/turf/simulated/shuttle/wall/interior{
-	tag = "icon-swall_f6";
-	icon_state = "swall_f6"
-	},
-/area/shuttle/abandoned)
-"aHa" = (
-/obj/machinery/door/airlock/public/glass,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHb" = (
-/obj/machinery/light_switch{
-	pixel_x = 27
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHc" = (
-/obj/machinery/portable_atmospherics/scrubber,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHd" = (
-/obj/structure/grille,
-/obj/structure/window/full/shuttle{
-	icon_state = "8"
-	},
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aHe" = (
-/obj/structure/bed,
-/obj/item/bedsheet,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHf" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHg" = (
-/obj/structure/table,
-/obj/item/gun/energy/laser/retro,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHh" = (
-/obj/structure/grille,
-/obj/structure/window/full/shuttle,
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aHi" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHj" = (
-/obj/structure/table,
-/obj/item/tank/oxygen,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHk" = (
-/obj/structure/window/full/shuttle,
-/obj/structure/grille,
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aHl" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHm" = (
-/obj/structure/table,
-/obj/item/analyzer,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHn" = (
-/obj/effect/decal/remains/human,
-/obj/structure/chair/comfy/shuttle{
-	dir = 8
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHo" = (
-/obj/machinery/door/airlock/public/glass{
-	name = "Living Module"
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHp" = (
-/obj/machinery/door/unpowered/shuttle,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHq" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHr" = (
-/obj/machinery/door/unpowered/shuttle,
-/obj/docking_port/mobile{
-	dir = 8;
-	dwidth = 10;
-	height = 35;
-	id = "whiteship";
-	name = "NT Medical Ship";
-	roundstart_move = "whiteship_away";
-	width = 21
-	},
-/obj/docking_port/stationary{
-	dir = 8;
-	dwidth = 10;
-	height = 35;
-	id = "whiteship_home";
-	name = "north of SS13";
-	width = 21
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHs" = (
-/obj/effect/decal/remains/human,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHt" = (
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHu" = (
-/turf/space,
-/turf/simulated/shuttle/wall{
-	tag = "icon-swall_f9";
-	icon_state = "swall_f9";
-	dir = 2
-	},
-/area/shuttle/abandoned)
-"aHv" = (
-/turf/space,
 /turf/simulated/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
 	},
-/area/shuttle/abandoned)
-"aHw" = (
-/obj/structure/window/full/shuttle{
-	icon_state = "15"
-	},
-/obj/structure/grille,
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aHx" = (
-/obj/machinery/light_switch{
-	pixel_x = 27
-	},
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHy" = (
-/obj/item/shard{
-	icon_state = "medium"
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHz" = (
-/obj/item/shard,
-/obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHA" = (
-/obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHB" = (
-/obj/structure/computerframe{
-	anchored = 1
-	},
-/obj/item/stack/cable_coil/cut,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHC" = (
-/obj/structure/rack,
-/obj/item/tank/emergency_oxygen,
-/obj/item/tank/emergency_oxygen,
-/obj/item/tank/emergency_oxygen,
-/obj/item/tank/emergency_oxygen,
-/obj/item/storage/toolbox/mechanical,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHD" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/space/hardsuit/medical,
-/obj/item/clothing/mask/breath,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHE" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/space/syndicate/black/med,
-/obj/item/clothing/head/helmet/space/syndicate/black/med,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHF" = (
-/obj/machinery/light/small,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHG" = (
-/turf/simulated/shuttle/plating,
-/turf/simulated/shuttle/wall/interior{
-	tag = "icon-swall_f5";
-	icon_state = "swall_f5"
-	},
-/area/shuttle/abandoned)
-"aHH" = (
-/turf/simulated/shuttle/wall{
-	icon_state = "swall14";
-	dir = 2
-	},
-/area/shuttle/abandoned)
-"aHI" = (
-/obj/effect/decal/cleanable/blood{
-	amount = 0
-	},
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aHJ" = (
-/obj/structure/spacepoddoor,
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aHK" = (
-/obj/machinery/door/airlock/public/glass{
-	name = "Pod Bay"
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHL" = (
-/turf/simulated/shuttle/plating,
-/turf/simulated/shuttle/wall/interior{
-	tag = "icon-swall_f10";
-	icon_state = "swall_f10"
-	},
-/area/shuttle/abandoned)
-"aHM" = (
-/obj/effect/decal/remains/human,
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aHN" = (
-/obj/structure/spacepoddoor,
-/obj/machinery/door/poddoor/multi_tile/two_tile_ver{
-	id_tag = "whiteshippoddoor"
-	},
-/turf/simulated/shuttle/plating,
-/area/shuttle/abandoned)
-"aHO" = (
-/obj/machinery/door_control{
-	id = "whiteshippoddoor";
-	name = "Pod Door Control";
-	pixel_y = -24
-	},
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHP" = (
-/obj/structure/table,
-/obj/item/screwdriver,
-/obj/machinery/light,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
-"aHQ" = (
-/obj/structure/table,
-/obj/item/radio,
-/turf/simulated/shuttle/floor{
-	icon_state = "floor3"
-	},
-/area/shuttle/abandoned)
+/area/shuttle/pod_4)
 "aHR" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -20975,14 +20665,6 @@
 /obj/effect/spawner/window/reinforced,
 /turf/simulated/floor/plating,
 /area/hallway/primary/central/south)
-"aVA" = (
-/obj/machinery/porta_turret/syndicate,
-/turf/space,
-/turf/simulated/shuttle/wall{
-	dir = 8;
-	icon_state = "diagonalWall3"
-	},
-/area/shuttle/syndicate)
 "aVB" = (
 /turf/simulated/floor/plasteel,
 /area/hallway/primary/port/west)
@@ -21298,14 +20980,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/apmaint2)
-"aWm" = (
-/obj/machinery/porta_turret/syndicate,
-/turf/space,
-/turf/simulated/shuttle/wall{
-	dir = 1;
-	icon_state = "diagonalWall3"
-	},
-/area/shuttle/syndicate)
 "aWn" = (
 /obj/structure/dispenser,
 /turf/simulated/floor/plasteel,
@@ -32024,30 +31698,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fpmaint3)
-"bpA" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	level = 1
-	},
-/turf/simulated/floor/plasteel{
-	dir = 2;
-	icon_state = "asteroid";
-	tag = "icon-asteroid (NORTH)"
-	},
-/turf/simulated/floor/plasteel{
-	tag = "icon-siding1 (NORTH)";
-	icon_state = "siding1";
-	dir = 1
-	},
-/turf/simulated/floor/plasteel{
-	tag = "icon-siding2 (NORTH)";
-	icon_state = "siding2";
-	dir = 1
-	},
-/area/hydroponics)
 "bpB" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -32065,33 +31715,6 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/medical/virology)
-"bpC" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	level = 1
-	},
-/mob/living/simple_animal/chicken{
-	name = "Commander Clucky"
-	},
-/turf/simulated/floor/plasteel{
-	dir = 2;
-	icon_state = "asteroid";
-	tag = "icon-asteroid (NORTH)"
-	},
-/turf/simulated/floor/plasteel{
-	tag = "icon-siding1 (NORTH)";
-	icon_state = "siding1";
-	dir = 1
-	},
-/turf/simulated/floor/plasteel{
-	tag = "icon-siding2 (NORTH)";
-	icon_state = "siding2";
-	dir = 1
-	},
-/area/hydroponics)
 "bpD" = (
 /obj/structure/bookcase,
 /obj/item/book/manual/sop_engineering,
@@ -32508,25 +32131,6 @@
 	dir = 2
 	},
 /area/library)
-"bqo" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	level = 1
-	},
-/turf/simulated/floor/plasteel{
-	dir = 2;
-	icon_state = "asteroid";
-	tag = "icon-asteroid (NORTH)"
-	},
-/turf/simulated/floor/plasteel{
-	tag = "icon-siding1 (NORTH)";
-	icon_state = "siding1";
-	dir = 1
-	},
-/area/hydroponics)
 "bqp" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -32604,14 +32208,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/permabrig)
-"bqw" = (
-/obj/structure/shuttle/engine/propulsion/burst,
-/turf/simulated/floor/plating,
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_f5";
-	dir = 2
-	},
-/area/shuttle/pod_1)
 "bqx" = (
 /obj/structure/table/reinforced,
 /obj/machinery/light{
@@ -46844,14 +46440,6 @@
 /obj/item/twohanded/required/kirbyplants,
 /turf/simulated/floor/wood,
 /area/arkrep)
-"bQj" = (
-/obj/structure/shuttle/engine/propulsion/burst,
-/turf/simulated/floor/plating,
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_f9";
-	dir = 2
-	},
-/area/shuttle/pod_1)
 "bQk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -49707,14 +49295,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/maintenance/fpmaint3)
-"bVp" = (
-/obj/structure/shuttle/engine/propulsion/burst,
-/turf/simulated/floor/plating,
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_f5";
-	dir = 2
-	},
-/area/shuttle/pod_2)
 "bVq" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -51210,41 +50790,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/asmaint)
-"bXZ" = (
-/obj/machinery/computer/secure_data,
-/obj/machinery/flasher_button{
-	id = "hopflash";
-	pixel_x = 6;
-	pixel_y = 36
-	},
-/obj/machinery/door_control{
-	id = "hop";
-	name = "Privacy Shutters Control";
-	pixel_x = 6;
-	pixel_y = 25;
-	req_access_txt = "28"
-	},
-/obj/machinery/door_control{
-	id = "hopqueue";
-	name = "Queue Privacy Shutters Control";
-	pixel_x = -4;
-	pixel_y = 25;
-	req_access_txt = "28"
-	},
-/obj/machinery/door_control{
-	id = "hopofficedoor";
-	name = "Office Door";
-	normaldoorcontrol = 1;
-	pixel_x = 25;
-	pixel_y = 7;
-	req_access_txt = "57"
-	},
-/obj/machinery/keycard_auth{
-	pixel_x = 26;
-	pixel_y = -4
-	},
-/turf/simulated/floor/carpet,
-/area/crew_quarters/heads/hop)
 "bYa" = (
 /obj/structure/chair/sofa/left{
 	dir = 4
@@ -58555,14 +58100,6 @@
 	},
 /turf/simulated/floor/carpet,
 /area/crew_quarters/captain/bedroom)
-"ckM" = (
-/obj/structure/shuttle/engine/propulsion/burst,
-/turf/simulated/floor/plating,
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_f9";
-	dir = 2
-	},
-/area/shuttle/pod_2)
 "ckN" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -59304,28 +58841,6 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/hallway/primary/central/ne)
-"cma" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5;
-	level = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
-	},
-/obj/machinery/camera{
-	c_tag = "Beach Simulation";
-	dir = 4;
-	network = list("SS13")
-	},
-/turf/simulated/floor/plasteel{
-	icon_state = "neutral"
-	},
-/turf/simulated/floor/plasteel{
-	tag = "icon-siding2 (NORTH)";
-	icon_state = "siding2";
-	dir = 1
-	},
-/area/crew_quarters/beach)
 "cmb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
@@ -59350,23 +58865,6 @@
 	},
 /turf/simulated/floor/carpet,
 /area/crew_quarters/courtroom)
-"cmd" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	level = 1
-	},
-/turf/simulated/floor/plasteel{
-	icon_state = "neutral"
-	},
-/turf/simulated/floor/plasteel{
-	tag = "icon-siding2 (NORTH)";
-	icon_state = "siding2";
-	dir = 1
-	},
-/area/crew_quarters/beach)
 "cme" = (
 /obj/item/twohanded/required/kirbyplants,
 /turf/simulated/floor/plasteel{
@@ -59477,19 +58975,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/crew_quarters/bar)
-"cmo" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/plasteel{
-	icon_state = "neutral"
-	},
-/turf/simulated/floor/plasteel{
-	tag = "icon-siding2 (NORTH)";
-	icon_state = "siding2";
-	dir = 1
-	},
-/area/crew_quarters/beach)
 "cmp" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -59690,29 +59175,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/apmaint3)
-"cmE" = (
-/obj/machinery/power/apc{
-	dir = 4;
-	name = "east bump";
-	pixel_x = 24
-	},
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
-	pixel_y = 0
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
-/turf/simulated/floor/plasteel{
-	icon_state = "neutral"
-	},
-/turf/simulated/floor/plasteel{
-	tag = "icon-siding2 (NORTH)";
-	icon_state = "siding2";
-	dir = 1
-	},
-/area/crew_quarters/beach)
 "cmF" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -62343,18 +61805,6 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/security/main)
-"cqK" = (
-/obj/structure/shuttle/engine/propulsion{
-	dir = 8;
-	icon_state = "propulsion";
-	tag = "icon-propulsion (EAST)"
-	},
-/turf/space,
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_f6";
-	dir = 2
-	},
-/area/shuttle/transport)
 "cqL" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -63064,18 +62514,6 @@
 	icon_state = "darkredcorners"
 	},
 /area/security/prison/cell_block/A)
-"crY" = (
-/obj/structure/shuttle/engine/propulsion{
-	dir = 8;
-	icon_state = "propulsion";
-	tag = "icon-propulsion (EAST)"
-	},
-/turf/space,
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_f5";
-	dir = 2
-	},
-/area/shuttle/transport)
 "crZ" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -78171,23 +77609,6 @@
 	icon_state = "grimy"
 	},
 /area/security/detectives_office)
-"cQD" = (
-/turf/space,
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_f6";
-	dir = 2
-	},
-/area/shuttle/abandoned)
-"cQE" = (
-/turf/space,
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_f10";
-	dir = 2
-	},
-/area/shuttle/abandoned)
-"cQF" = (
-/turf/space,
-/area/shuttle/abandoned)
 "cQG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -90755,17 +90176,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/processing)
-"doA" = (
-/obj/structure/shuttle/engine/propulsion/burst{
-	dir = 8
-	},
-/turf/simulated/floor/plating,
-/turf/simulated/shuttle/wall{
-	tag = "icon-swall_f6";
-	icon_state = "swall_f6";
-	dir = 2
-	},
-/area/shuttle/pod_4)
 "doB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -93670,17 +93080,6 @@
 	dir = 1
 	},
 /area/security/lobby)
-"dtp" = (
-/obj/structure/shuttle/engine/propulsion/burst{
-	dir = 8
-	},
-/turf/simulated/floor/plating,
-/turf/simulated/shuttle/wall{
-	tag = "icon-swall_f5";
-	icon_state = "swall_f5";
-	dir = 2
-	},
-/area/shuttle/pod_4)
 "dtq" = (
 /obj/effect/spawner/random_spawners/blood_maybe,
 /obj/structure/sign/poster/contraband/random{
@@ -100182,7 +99581,7 @@ aaa
 aaa
 aaa
 aaa
-aVA
+aGo
 asw
 asw
 asw
@@ -102238,7 +101637,7 @@ aaa
 aaa
 aaa
 aaa
-aWm
+aGp
 asw
 asw
 asw
@@ -103333,9 +102732,9 @@ aaa
 aaa
 aaa
 aaa
-cqK
+aGD
 aDl
-crY
+aGE
 aaa
 aaa
 aaa
@@ -103589,11 +102988,11 @@ dbZ
 aaa
 aaa
 dbZ
-cqK
+aGD
 aDg
 aDm
 aDq
-crY
+aGE
 aaa
 aDw
 aDA
@@ -107416,7 +106815,7 @@ dbZ
 bIV
 azH
 azH
-bqw
+aGv
 bVY
 aqc
 cHY
@@ -107930,7 +107329,7 @@ aaa
 bJi
 azH
 azH
-bQj
+aGw
 arA
 arI
 cmX
@@ -108444,7 +107843,7 @@ aaa
 bJs
 azJ
 azJ
-bVp
+aGx
 bVY
 aqc
 cIB
@@ -108958,7 +108357,7 @@ aaa
 bKq
 azJ
 azJ
-ckM
+aGy
 arA
 arI
 cqT
@@ -111016,7 +110415,7 @@ auH
 cTI
 bIq
 bIy
-cma
+aGz
 azr
 azr
 bwv
@@ -111273,7 +110672,7 @@ auH
 bGt
 aAe
 bLc
-cmd
+aGA
 azr
 azr
 azr
@@ -111530,7 +110929,7 @@ auH
 btv
 bIr
 bLo
-cmo
+aGB
 azr
 azr
 azr
@@ -111787,7 +111186,7 @@ auH
 bGx
 aAe
 bLc
-cmd
+aGA
 azr
 azr
 azr
@@ -112044,7 +111443,7 @@ auH
 bZM
 bIS
 bIz
-cmE
+aGC
 azr
 azr
 bwK
@@ -122640,9 +122039,9 @@ dbZ
 aaa
 aaa
 aCk
-doA
+aGG
 aGh
-dtp
+aGH
 aCk
 dbZ
 dbZ
@@ -132851,7 +132250,7 @@ arB
 aMe
 awZ
 aVH
-bjy
+aGt
 aMO
 aoL
 alx
@@ -134653,7 +134052,7 @@ aXm
 aoN
 apX
 aoL
-bXZ
+aGu
 byE
 cds
 bEq
@@ -135007,7 +134406,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+aGF
 aaa
 aaa
 aaa
@@ -140911,19 +140310,19 @@ aaa
 aaa
 aaa
 aaa
-aGo
-aGH
-aGR
-aGX
-aHd
-aHd
-aHd
-aHd
-aHd
-aHw
-aGR
-aGH
-aHv
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -141167,20 +140566,20 @@ aaa
 aaa
 aaa
 aaa
-aGo
-aGB
-aGs
-aGt
-aGt
-aGt
-aHg
-aHm
-aGQ
-aGt
-aGt
-aHy
-aGF
-aGw
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -141330,7 +140729,7 @@ bxT
 any
 anL
 cyX
-bpA
+aGq
 bMz
 anL
 anO
@@ -141423,21 +140822,21 @@ aaa
 aaa
 aaa
 aaa
-aGo
-aGB
-aGs
-aGt
-aGt
-aGt
-aGt
-aGJ
-aHn
-aGQ
-aGt
-aGt
-aHz
-aGJ
-aGp
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -141587,7 +140986,7 @@ bGv
 any
 aRz
 anM
-bpC
+aGr
 anM
 anN
 anO
@@ -141679,25 +141078,25 @@ aaa
 aaa
 aaa
 aaa
-aGo
-aGy
-aGw
-aGJ
-aGP
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aHA
-aHB
-aHH
-aHJ
-aHN
-aHv
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -141844,7 +141243,7 @@ bHT
 any
 anL
 anM
-bpA
+aGq
 anM
 bsf
 anO
@@ -141936,25 +141335,25 @@ aaa
 aaa
 aaa
 aaa
-aGp
-aGz
-aGF
-aGv
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGZ
-aGw
-aGt
-aGt
-aGp
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -142101,7 +141500,7 @@ bxT
 any
 brQ
 bsS
-bqo
+aGs
 aol
 aol
 bVK
@@ -142192,27 +141591,27 @@ aaa
 aaa
 aaa
 aaa
-cQD
-aGs
-aGt
-aGt
-aGp
-aGQ
-aGQ
-aGY
-aGt
-aGt
-aGt
-aGt
-aGt
-aHx
-aGZ
-aGB
-aGs
-aGt
-aHO
-aGq
-aHv
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -142358,7 +141757,7 @@ bxT
 any
 bsf
 anM
-bpA
+aGq
 bLG
 anL
 anO
@@ -142449,27 +141848,27 @@ aaa
 aaa
 aaa
 aaa
-aGp
-aGt
-aGt
-aGt
-aGq
-aGR
-aGR
-aGR
-aGR
-aHh
-aHa
-aHh
-aGR
-aGH
-aGB
-aGs
-aGt
-aGt
-aGt
-aGF
-aGw
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -142615,7 +142014,7 @@ bIh
 any
 aRz
 anM
-bpA
+aGq
 anM
 anL
 anO
@@ -142706,27 +142105,27 @@ aaa
 aaa
 aaa
 aaa
-aGp
-aGt
-aGt
-aGt
-aGK
-aGS
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGF
-aGw
-aHC
-aGt
-aGt
-aGt
-aGt
-aGp
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -142963,27 +142362,27 @@ aaa
 aaa
 aaa
 aaa
-aGp
-aGu
-aGt
-aGt
-aGL
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGp
-aHD
-aGt
-aGt
-aGt
-aHP
-aGp
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -143220,27 +142619,27 @@ aaa
 aaa
 aaa
 aaa
-aGp
-aGt
-aGt
-aGG
-aGM
-aGT
-aGt
-aGZ
-aGR
-aGR
-aGR
-aGR
-aGv
-aGt
-aGp
-aHE
-aGt
-aGt
-aGt
-aHQ
-aGp
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -143477,27 +142876,27 @@ aaa
 aaa
 aaa
 aaa
-aGq
-aGv
-aGt
-aGt
-aGp
-aGt
-aGt
-aHa
-aGt
-aHi
-aGt
-aHs
-aGp
-aGt
-aGq
-aGv
-aGt
-aGt
-aGt
-aGZ
-aGw
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -143734,27 +143133,27 @@ aaa
 aaa
 aaa
 aaa
-cQE
-aGw
-aGA
-aGt
-aGp
-aGt
-aGt
-aGp
-aHe
-aHj
-aGt
-aHe
-aGp
-aGt
-aGF
-aGy
-aGR
-aHK
-aGH
-aGB
-aHu
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -143992,25 +143391,25 @@ aaa
 aaa
 aaa
 aaa
-aGq
-aGv
-aGt
-aGN
-aGt
-aGt
-aGp
-aGt
-aHb
-aGt
-aGt
-aHa
-aGt
-aGt
-aGt
-aGt
-aHs
-aGq
-aGw
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -144249,25 +143648,25 @@ aaa
 aaa
 aaa
 aaa
-aGr
-aGB
-aGH
-aGw
-aGt
-aGt
-aGF
-aGR
-aGR
-aGR
-aGR
-aGs
-aGt
-aGt
-aGt
-aGt
-aGZ
-aGB
-aHu
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -144507,23 +143906,23 @@ aaa
 aaa
 aaa
 aaa
-aGr
-aGB
-aGw
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGT
-aGZ
-aGB
-aHu
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -144765,21 +144164,21 @@ aaa
 aaa
 aaa
 aaa
-aGr
-aGw
-aGt
-aGt
-aHb
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aGt
-aHF
-aGq
-aHu
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -145022,21 +144421,21 @@ aaa
 aaa
 aaa
 aaa
-aGo
-aGy
-aGU
-aGH
-aGR
-aGR
-aHk
-aHo
-aHk
-aGR
-aGR
-aGH
-aGU
-aGy
-aHv
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -145278,23 +144677,23 @@ aaa
 aaa
 aaa
 aaa
-aGo
-aGC
-aGO
-aGI
-aGp
-aHc
-aHf
-aGt
-aGt
-aGt
-aHf
-aGt
-aGp
-aGI
-aGO
-aHL
-aHv
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -145534,25 +144933,25 @@ aaa
 aaa
 aaa
 aaa
-aGo
-aGC
-aGI
-aGI
-aGV
-aGB
-aGv
-aGt
-aGt
-aGt
-aGt
-aGt
-aGZ
-aGB
-aHG
-aHI
-aHM
-aHL
-aHv
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -145790,27 +145189,27 @@ aaa
 aaa
 aaa
 aaa
-cQF
-aGw
-aGD
-aGD
-aGD
-aGp
-aGr
-aGw
-aGt
-aGt
-aGt
-aGt
-aGt
-aGq
-aHu
-aGp
-aGD
-aGD
-aGD
-aGq
-aHv
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -146047,27 +145446,27 @@ aaa
 aaa
 aaa
 aaa
-cQF
-aGx
-aGE
-aGE
-aGE
-aGW
 aaa
-aGq
-aGv
-aGt
-aGt
-aGt
-aGZ
-aGw
 aaa
-aGx
-aGE
-aGE
-aGE
-aGW
-aHu
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -146311,13 +145710,13 @@ aaa
 aaa
 aaa
 aaa
-aGr
-aGB
-aGv
-aGt
-aGZ
-aGB
-aHu
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -146569,11 +145968,11 @@ aaa
 aaa
 aaa
 aaa
-aGr
-aGB
-aHp
-aGB
-aHu
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -146827,9 +146226,9 @@ aaa
 aaa
 aaa
 aaa
-aGp
-aHq
-aGp
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -147083,11 +146482,11 @@ aaa
 aaa
 aaa
 aaa
-aGo
-aGB
-aHp
-aGB
-aHv
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -147340,11 +146739,11 @@ aaa
 aaa
 aaa
 aaa
-aGq
-aGs
-aGt
-aGF
-aGw
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -147597,11 +146996,11 @@ aaa
 aaa
 aaa
 aaa
-aGp
-aGt
-aGt
-aGt
-aGp
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -147854,11 +147253,11 @@ aaa
 aaa
 aaa
 aaa
-aGp
-aGt
-aGt
-aGt
-aGp
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -148111,11 +147510,11 @@ aaa
 aaa
 aaa
 aaa
-aGp
-aGt
-aGt
-aGt
-aGp
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -148368,11 +147767,11 @@ aaa
 aaa
 aaa
 aaa
-aGp
-aHl
-aGt
-aGt
-aGp
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -148625,11 +148024,11 @@ aaa
 aaa
 aaa
 aaa
-aGp
-aGt
-aGt
-aGt
-aGp
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -148882,11 +148281,11 @@ aaa
 aaa
 aaa
 aaa
-aGp
-aGt
-aGt
-aGt
-aGp
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -149139,11 +148538,11 @@ aaa
 aaa
 aaa
 aaa
-aGp
-aGt
-aGt
-aHt
-aGp
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -149396,11 +148795,11 @@ aaa
 aaa
 aaa
 aaa
-aGq
-aGv
-aGt
-aGZ
-aGw
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -149653,11 +149052,11 @@ aaa
 aaa
 aaa
 aaa
-aGr
-aGy
-aHr
-aGy
-aHu
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
