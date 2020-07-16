@@ -246,4 +246,3 @@
 	chassis.occupant_message("<span class='notice'>The plating on the exosuit ripples nauseatingly as the colours shift wildly. Tasteful.</span>")
 	chassis.redraw_cache()
 	chassis.next_colourize_at = world.time + 120 SECONDS
-	
