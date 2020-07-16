@@ -3,9 +3,10 @@
 	//The name of the job
 	var/title = "NOPE"
 
-	//Job access. The use of minimal_access or access is determined by a config setting: config.jobs_have_minimal_access
-	var/list/minimal_access = list()		//Useful for servers which prefer to only have access given to the places a job absolutely needs (Larger server population)
-	var/list/access = list()				//Useful for servers which either have fewer players, so each person needs to fill more than one role, or servers which like to give more access, so players can't hide forever in their super secure departments (I'm looking at you, chemistry!)
+	// job access; which access is used is determined by config settings: jobs_have_department_access, jobs_have_minimal_access
+	var/list/department_access = list() // useful for lower population servers; players have broad access to their chosen department
+	var/list/minimal_access = list()    // useful for servers which prefer to only have access given to the places a job absolutely needs (Larger server population)
+	var/list/access = list()            // useful for servers which either have fewer players, so each person needs to fill more than one role, or servers which like to give more access, so players can't hide forever in their super secure departments (I'm looking at you, chemistry!)
 
 	//Bitflags for the job
 	var/flag = 0
@@ -85,13 +86,16 @@
 		announce(H)
 
 /datum/job/proc/get_access()
-	if(!config)	//Needed for robots.
+	if(!config)	// needed for robots
 		return src.minimal_access.Copy()
+
+	if(config.jobs_have_department_access)
+		return src.department_access.Copy()
 
 	if(config.jobs_have_minimal_access)
 		return src.minimal_access.Copy()
-	else
-		return src.access.Copy()
+
+	return src.access.Copy()
 
 //If the configuration option is set to require players to be logged as old enough to play certain jobs, then this proc checks that they are, otherwise it just returns 1
 /datum/job/proc/player_old_enough(client/C)

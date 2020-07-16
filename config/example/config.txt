@@ -16,6 +16,9 @@ BAN_LEGACY_SYSTEM
 ## Add a # infront of this to unlimit the builds used to play. Advised is to keep it atleast 1421 due to the middle mouse button locking exploit
 MINIMUM_CLIENT_BUILD 1421
 
+## Remove the # here if you wish to use the setup where jobs have a LOT of access. This is intended for servers with larger maps and lower populations
+#JOBS_HAVE_DEPARTMENT_ACCESS
+
 ## Add a # here if you wish to use the setup where jobs have more access. This is intended for servers with low populations - where there are not enough players to fill all roles, so players need to do more than just one job. Also for servers where they don't want people to hide in their own departments.
 JOBS_HAVE_MINIMAL_ACCESS
 

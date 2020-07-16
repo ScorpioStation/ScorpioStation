@@ -9,6 +9,7 @@
 	supervisors = "the head of personnel"
 	department_head = list("Head of Personnel")
 	selection_color = "#dddddd"
+	department_access = list(ACCESS_BAR, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_CHAPEL_OFFICE, ACCESS_CLOWN, ACCESS_CREMATORIUM, ACCESS_EVA, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_GATEWAY, ACCESS_HYDROPONICS, ACCESS_JANITOR, ACCESS_KITCHEN, ACCESS_LIBRARY, ACCESS_MINERAL_STOREROOM, ACCESS_MINING, ACCESS_MINING_STATION, ACCESS_MINT, ACCESS_MORGUE, ACCESS_MAILSORTING, ACCESS_MAINT_TUNNELS, ACCESS_MIME, ACCESS_QM, ACCESS_THEATRE, ACCESS_WAITER, ACCESS_WEAPONS)
 	access = list(ACCESS_MORGUE, ACCESS_CHAPEL_OFFICE, ACCESS_CREMATORIUM, ACCESS_MAINT_TUNNELS)
 	minimal_access = list(ACCESS_MORGUE, ACCESS_CHAPEL_OFFICE, ACCESS_CREMATORIUM, ACCESS_MAINT_TUNNELS)
 
@@ -26,7 +27,7 @@
 		/obj/item/camera/spooky = 1,
 		/obj/item/nullrod = 1
 	)
-	
+
 /datum/outfit/job/chaplain/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 
@@ -165,5 +166,3 @@
 			SSticker.Bible_deity_name = B.deity_name
 		feedback_set_details("religion_deity", "[new_deity]")
 		feedback_set_details("religion_book", "[new_book_style]")
-
-
