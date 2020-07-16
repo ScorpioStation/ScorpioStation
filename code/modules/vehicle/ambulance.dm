@@ -98,7 +98,10 @@
 		if(bed.has_buckled_mobs())
 			for(var/m in bed.buckled_mobs)
 				var/mob/living/buckled_mob = m
-				buckled_mob.setDir(Dir)
+				if(bed.dir == 1 || 2)
+					buckled_mob.setDir(2)
+				else
+					buckled_mob.setDir(8)
 
 /obj/vehicle/ambulance/relaymove(mob/user, direction)
 	if(user.l_hand || user.r_hand)
