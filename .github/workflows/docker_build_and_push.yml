@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-  pull_request:
 
 jobs:
   build_and_push:
@@ -20,3 +19,4 @@ jobs:
           repository: scorpiostation/scorpio
           tags: ${{ env.GITHUB_SHA_SHORT }}
           add_git_labels: true
+          push: true

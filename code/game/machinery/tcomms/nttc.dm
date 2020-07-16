@@ -33,7 +33,7 @@
 		"Blueshield" = "comradio",
 		"Captain" = "comradio",
 		"Head of Personnel" = "comradio",
-		"Nanotrasen Representative" = "comradio",
+		"Ark Soft Representative" = "comradio",
 		// Engineeering
 		"Atmospheric Technician" = "engradio",
 		"Chief Engineer" = "engradio",
@@ -114,7 +114,7 @@
 		"Mime" = "srvradio",
 	)
 	// Just command members
-	var/heads = list("Captain", "Head of Personnel", "Nanotrasen Representative", "Blueshield", "Chief Engineer", "Chief Medical Officer", "Research Director", "Head of Security", "Magistrate", "AI")
+	var/heads = list("Captain", "Head of Personnel", "Ark Soft Representative", "Blueshield", "Chief Engineer", "Chief Medical Officer", "Research Director", "Head of Security", "Magistrate", "AI")
 	// Just ERT
 	var/ert_jobs = list("Emergency Response Team Officer", "Emergency Response Team Engineer", "Emergency Response Team Medic", "Emergency Response Team Leader", "Emergency Response Team Member")
 	// Defined so code compiles and incase someone has a non-standard job

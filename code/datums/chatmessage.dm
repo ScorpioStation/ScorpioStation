@@ -169,7 +169,7 @@
   */
 /mob/proc/create_chat_message(atom/movable/speaker, raw_message, radio_speech, italics, size)
 
-	if((speaker == src) && radio_speech && !(size == "big"))
+	if(((speaker == src) || (isobserver(src))) && radio_speech && !(size == "big"))
 		return
 
 	// Display visual above source
