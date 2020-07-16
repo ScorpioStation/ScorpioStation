@@ -5911,7 +5911,7 @@
 /turf/simulated/floor/greengrid,
 /area/tcommsat/server)
 "ann" = (
-/obj/structure/chickenstatue,
+/obj/structure/statue/chickenstatue,
 /turf/simulated/floor/wood,
 /area/crew_quarters/mrchangs)
 "ano" = (
@@ -69339,7 +69339,7 @@
 	},
 /area/crew_quarters/heads/hor)
 "cCE" = (
-/obj/structure/chickenstatue,
+/obj/structure/statue/chickenstatue,
 /obj/machinery/light_switch{
 	pixel_y = 27
 	},
