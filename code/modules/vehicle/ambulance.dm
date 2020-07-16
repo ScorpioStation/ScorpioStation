@@ -2,7 +2,7 @@
 	name = "ambulance"
 	desc = "This is what the paramedic uses to run over people they need to take to medbay."
 	icon_state = "docwagon2"
-	vehicle_move_delay = 0.5
+	vehicle_move_delay = 1
 	key_type = /obj/item/key/ambulance
 	var/obj/structure/bed/amb_trolley/bed = null
 	var/datum/action/ambulance_alarm/AA
@@ -39,9 +39,11 @@
 	if(A.soundloop.muted)
 		A.soundloop.start()
 		A.set_light(4,3,"#F70027")
+		A.vehicle_move_delay = 0.5
 	else
 		A.soundloop.stop()
 		A.set_light(0)
+		A.vehicle_move_delay = 1
 
 
 /datum/looping_sound/ambulance_alarm
