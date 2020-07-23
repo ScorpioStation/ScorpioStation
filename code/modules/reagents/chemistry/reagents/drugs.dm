@@ -89,8 +89,8 @@
 	reagent_state = LIQUID
 	color = "#60A584" // rgb: 96, 165, 132
 	overdose_threshold = 35
-	addiction_chance = 15
-	addiction_threshold = 10
+	addiction_chance = 6
+	addiction_threshold = 15
 	minor_addiction = TRUE
 	heart_rate_increase = 1
 	taste_description = "calm"
@@ -543,7 +543,7 @@
 		M.AdjustConfused(-5)
 		update_flags |= M.SetWeakened(0, FALSE)
 	if(volume >= 70 && prob(25))
-		if(M.reagents.has_reagent("thc") <= 20)
+		if(M.reagents.get_reagent_amount("thc") <= 20)
 			M.Drowsy(10)
 	if(prob(25))
 		update_flags |= M.adjustBruteLoss(-2, FALSE)

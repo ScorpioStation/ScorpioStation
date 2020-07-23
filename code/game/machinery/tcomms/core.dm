@@ -57,6 +57,9 @@
   * * zlevel - The input z level to test
   */
 /obj/machinery/tcomms/core/proc/zlevel_reachable(zlevel)
+	// Nothing is reachable if the core is offline, unpowered, or ion'd
+	if(!active || (stat & NOPOWER) || ion)
+		return FALSE
 	if(zlevel in reachable_zlevels)
 		return TRUE
 	else
@@ -72,8 +75,8 @@
   * * tcm - The tcomms message datum
   */
 /obj/machinery/tcomms/core/proc/handle_message(datum/tcomms_message/tcm)
-	// Don't do anything with rejected signals, or if were offline, or if we have no power
-	if(tcm.reject || !active || (stat & NOPOWER))
+	// Don't do anything with rejected signals, if were offline, if we are ion'd, or if we have no power
+	if(tcm.reject || !active || (stat & NOPOWER) || ion)
 		return FALSE
 	// Kill the signal if its on a z-level that isnt reachable
 	if(!zlevel_reachable(tcm.source_level))
@@ -113,7 +116,7 @@
 	// Add all the linked relays in
 	for(var/obj/machinery/tcomms/relay/R in linked_relays)
 		// Only if the relay is active
-		if(R.active)
+		if(R.active && !(R.stat & NOPOWER))
 			reachable_zlevels |= R.loc.z
 
 
@@ -137,6 +140,7 @@
 	var/data[0]
 	// What tab are we on
 	data["tab"] = ui_tab
+	data["ion"] = ion
 
 	// Only send NTTC settings if were on the right tab. This saves on sending overhead.
 	if(ui_tab == UI_TAB_CONFIG)

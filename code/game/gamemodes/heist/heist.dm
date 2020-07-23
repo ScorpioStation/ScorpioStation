@@ -240,11 +240,10 @@ GLOBAL_LIST_EMPTY(cortical_stacks) //Stacks for 'leave nobody behind' objective.
 
 	var/count = 1
 	for(var/datum/objective/objective in raid_objectives)
+		to_chat(world, "<br><B>Objective #[count]</B>: [objective.explanation_text]")
 		if(objective.check_completion())
-			to_chat(world, "<br><B>Objective #[count]</B>: [objective.explanation_text] <font color='green'><B>Success!</B></font>")
 			feedback_add_details("traitor_objective","[objective.type]|SUCCESS")
 		else
-			to_chat(world, "<br><B>Objective #[count]</B>: [objective.explanation_text] <font color='red'>Fail.</font>")
 			feedback_add_details("traitor_objective","[objective.type]|FAIL")
 		count++
 

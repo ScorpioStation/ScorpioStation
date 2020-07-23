@@ -21,7 +21,10 @@
 					atklog,
 					fuid,
 					afk_watch,
-					parallax
+					parallax,
+					max_chat_length,
+					chat_on_map,
+					see_chat_non_mob
 					FROM [format_table_name("player")]
 					WHERE ckey='[C.ckey]'"}
 					)
@@ -56,6 +59,9 @@
 		fuid = text2num(query.item[19])
 		afk_watch = text2num(query.item[20])
 		parallax = text2num(query.item[21])
+		max_chat_length = text2num(query.item[22])
+		chat_on_map = text2num(query.item[23])
+		see_chat_non_mob = text2num(query.item[24])
 
 	//Sanitize
 	ooccolor		= sanitize_hexcolor(ooccolor, initial(ooccolor))
@@ -78,6 +84,9 @@
 	fuid = sanitize_integer(fuid, 0, 10000000, initial(fuid))
 	afk_watch = sanitize_integer(afk_watch, 0, 1, initial(afk_watch))
 	parallax = sanitize_integer(parallax, 0, 16, initial(parallax))
+	max_chat_length 	= sanitize_integer(max_chat_length, 1, CHAT_MESSAGE_MAX_LENGTH, initial(max_chat_length))
+	chat_on_map			= sanitize_integer(chat_on_map, 0, 1, initial(chat_on_map))
+	see_chat_non_mob	= sanitize_integer(see_chat_non_mob, 0, 1, initial(see_chat_non_mob))
 	return 1
 
 /datum/preferences/proc/save_preferences(client/C)
@@ -96,7 +105,7 @@
 					UI_style_alpha='[UI_style_alpha]',
 					be_role='[sanitizeSQL(list2params(be_special))]',
 					default_slot='[default_slot]',
-					toggles='[num2text(toggles, Ceiling(log(10, (TOGGLES_TOTAL))))]',
+					toggles='[num2text(toggles, CEILING(log(10, (TOGGLES_TOTAL)), 1))]',
 					atklog='[atklog]',
 					sound='[sound]',
 					randomslot='[randomslot]',
@@ -109,7 +118,10 @@
 					clientfps='[clientfps]',
 					atklog='[atklog]',
 					afk_watch='[afk_watch]',
-					parallax='[parallax]'
+					parallax='[parallax]',
+					max_chat_length='[max_chat_length]',
+					chat_on_map='[chat_on_map]',
+					see_chat_non_mob='[see_chat_non_mob]'
 					WHERE ckey='[C.ckey]'"}
 					)
 
@@ -121,6 +133,7 @@
 	return 1
 
 /datum/preferences/proc/load_character(client/C,slot)
+	saved = FALSE
 
 	if(!slot)	slot = default_slot
 	slot = sanitize_integer(slot, 1, max_save_slots, initial(default_slot))
@@ -261,6 +274,8 @@
 		body_accessory = query.item[50]
 		loadout_gear = params2list(query.item[51])
 		autohiss_mode = text2num(query.item[52])
+
+		saved = TRUE
 
 	//Sanitize
 	var/datum/species/SP = GLOB.all_species[species]
@@ -474,6 +489,8 @@
 		log_game("SQL ERROR during character slot saving. Error : \[[err]\]\n")
 		message_admins("SQL ERROR during character slot saving. Error : \[[err]\]\n")
 		return
+
+	saved = TRUE
 	return 1
 
 /datum/preferences/proc/load_random_character_slot(client/C)
@@ -494,3 +511,23 @@
 		return 0
 	load_character(C,pick(saves))
 	return 1
+
+
+/datum/preferences/proc/clear_character_slot(client/C)
+	. = FALSE
+	// Is there a character in that slot?
+	var/DBQuery/query = GLOB.dbcon.NewQuery("SELECT slot FROM [format_table_name("characters")] WHERE ckey='[C.ckey]' AND slot='[default_slot]'")
+	query.Execute()
+	if(!query.RowCount())
+		return
+
+	var/DBQuery/query2 = GLOB.dbcon.NewQuery("DELETE FROM [format_table_name("characters")] WHERE ckey='[C.ckey]' AND slot='[default_slot]'")
+	if(!query2.Execute())
+		var/err = query2.ErrorMsg()
+		log_game("SQL ERROR during character slot clearing. Error : \[[err]\]\n")
+		message_admins("SQL ERROR during character slot clearing. Error : \[[err]\]\n")
+		return
+
+	saved = FALSE
+	return TRUE
+

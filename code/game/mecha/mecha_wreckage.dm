@@ -17,6 +17,10 @@
 	var/mob/living/silicon/ai/AI //AIs to be salvaged
 	var/list/parts
 
+	// Holding vars for cosmetic mods
+	var/icon/wreck_cache_icon
+	var/icon/wreck_cache_glow
+
 /obj/structure/mecha_wreckage/Initialize(mapload, mob/living/silicon/ai/AI_pilot)
 	. = ..()
 	if(parts)
@@ -37,6 +41,19 @@
 	add_overlay(mutable_appearance('icons/obj/projectiles.dmi', "green_laser")) //Overlay for the recovery beacon
 	AI.controlled_mech = null
 	AI.remote_control = null
+
+////////////////////
+// DECAL OVERLAYS //
+////////////////////
+// See mecha_decals.dm for more info.
+
+/obj/structure/mecha_wreckage/update_icon()
+	..()
+	overlays.Cut()
+	if(wreck_cache_icon) // Apply basecoat first.
+		icon = wreck_cache_icon
+	if(wreck_cache_glow) // Glowy bits next, above the lighting plane.
+		overlays += mutable_appearance(wreck_cache_glow, "", ABOVE_LIGHTING_LAYER, ABOVE_LIGHTING_PLANE)
 
 /obj/structure/mecha_wreckage/Destroy()
 	QDEL_NULL(AI)

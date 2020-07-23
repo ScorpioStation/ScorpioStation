@@ -378,9 +378,9 @@
 	desc = "A poster glorifying the station's security force."
 	icon_state = "poster1_legit"
 
-/obj/structure/sign/poster/official/nanotrasen_logo
-	name = "Nanotrasen Logo"
-	desc = "A poster depicting the Nanotrasen logo."
+/obj/structure/sign/poster/official/arksoft_logo
+	name = "Ark Soft Logo"
+	desc = "A poster depicting the Ark Soft logo."
 	icon_state = "poster2_legit"
 
 /obj/structure/sign/poster/official/cleanliness

@@ -8341,12 +8341,6 @@
 	icon_state = "gcircuit"
 	},
 /area/centcom/control)
-"ux" = (
-/obj/machinery/blackbox_recorder,
-/turf/unsimulated/floor{
-	icon_state = "gcircuit"
-	},
-/area/centcom/control)
 "uy" = (
 /obj/machinery/computer/card/centcom,
 /turf/unsimulated/floor{
@@ -37256,7 +37250,7 @@ nD
 tR
 ud
 su
-ux
+uv
 tR
 tR
 tR
