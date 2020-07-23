@@ -15,9 +15,9 @@
 
 // If the nymph pods are fully grown, allow ghosts that click on them to spawn as a nymph (decreases yield by 1 and kills the plant when yield reaches 0)
 /obj/item/seeds/nymph/attack_ghost(mob/dead/observer/O, obj/machinery/hydroponics/H)
-	if(!planted && !H)
-		if(isobserver(O) && (world.time >= next_ping_at))
-			next_ping_at = world.time + (20 SECONDS)
+	if(!planted)
+		if(isobserver(O) && world.time >= next_ping_at)
+			next_ping_at = world.time + 20 SECONDS
 			visible_message("<span class='notice'>[src] rustles gently, as if moved by a gentle breeze.</span>")
 		return
 	if(!H.harvest)
@@ -33,20 +33,21 @@
 		to_chat(O, "<span class='warning'>You have enabled antag HUD and are unable to re-enter the round.</span>")
 		return
 	var/nymph_ask = alert("Become a Diona Nymph? You will not be able to be cloned!", "Diona Nymph Pod", "Yes", "No")
-	if(nymph_ask == "No" || !src || QDELETED(src))
+	if(nymph_ask == "No" || QDELETED(src))
 		return
 	if(H.myseed && yield && !H.dead)
 		adjust_yield(-1)
 		var/mob/living/simple_animal/diona/D = new(get_turf(H))
 		if(O.mind)
-			O.mind.transfer_to(D)
 			GLOB.non_respawnable_keys -= O.ckey
+			GLOB.respawnable_list += O
+			O.mind.transfer_to(D)
 			O.reenter_corpse()
 		visible_message(D, "<span class='notice'>A new diona nymph emerges from the pod, its antennae waving excitedly.</span>")
 		if(!yield)
 			visible_message("<span class='notice'>The seed pod withers away, now merely an empty husk.</span>")
 			H.plantdies()
-		GLOB.respawnable_list += usr
+
 	else
 		to_chat(O, "<span class='warning'>The seed pod is no longer functional.</span>")
 
