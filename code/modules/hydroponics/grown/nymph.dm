@@ -20,35 +20,35 @@
 			next_ping_at = world.time + (20 SECONDS)
 			visible_message("<span class='notice'>[src] rustles gently, as if moved by a gentle breeze.</span>")
 		return
-	if(!H.harvest) 
-		to_chat(O, "[src] is not yet ready.")
+	if(!H.harvest)
+		to_chat(O, "<span class='warning'>[src] is not yet ready.</span>")
 		return
 	if(H.dead)
-		to_chat(O, "[src] is dead!")
+		to_chat(O, "<span class='warning'>[src] is dead!</span>")
 		return
 	if(!(O in GLOB.respawnable_list))
-		to_chat(O, "You are not permitted to rejoin the round.")
+		to_chat(O, "<span class='warning'>You are not permitted to rejoin the round.</span>")
 		return
 	else if(cannotPossess(O))
-		to_chat(O, "You have enabled antag HUD and are unable to re-enter the round.")
+		to_chat(O, "<span class='warning'>You have enabled antag HUD and are unable to re-enter the round.</span>")
 		return
 	var/nymph_ask = alert("Become a Diona Nymph? You will not be able to be cloned!", "Diona Nymph Pod", "Yes", "No")
 	if(nymph_ask == "No" || !src || QDELETED(src))
 		return
-	if(H.myseed && yield > 0 && !H.dead)
+	if(H.myseed && yield && !H.dead)
 		adjust_yield(-1)
-		var/mob/living/simple_animal/diona/D = new /mob/living/simple_animal/diona(get_turf(H))
+		var/mob/living/simple_animal/diona/D = new(get_turf(H))
 		if(O.mind)
 			O.mind.transfer_to(D)
 			GLOB.non_respawnable_keys -= O.ckey
 			O.reenter_corpse()
-		visible_message(D, "A new diona nymph emerges from the pod, its antennae waving excitedly.")
-		if(yield <= 0)
-			visible_message("The seed pod withers away, now merely an empty husk.")
+		visible_message(D, "<span class='notice'>A new diona nymph emerges from the pod, its antennae waving excitedly.</span>")
+		if(!yield)
+			visible_message("<span class='notice'>The seed pod withers away, now merely an empty husk.</span>")
 			H.plantdies()
 		GLOB.respawnable_list += usr
 	else
-		to_chat(O, "The seed pod is no longer functional.")
+		to_chat(O, "<span class='warning'>The seed pod is no longer functional.</span>")
 
 /obj/item/reagent_containers/food/snacks/grown/nymph_pod
 	seed = /obj/item/seeds/nymph
