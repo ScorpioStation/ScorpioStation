@@ -15,7 +15,7 @@
 
 // If the nymph pods are fully grown, allow ghosts that click on them to spawn as a nymph (decreases yield by 1 and kills the plant when yield reaches 0)
 /obj/item/seeds/nymph/attack_ghost(mob/dead/observer/O, obj/machinery/hydroponics/H)
-	if(!planted)
+	if(!planted || !istype(O))
 		if(isobserver(O) && world.time >= next_ping_at)
 			next_ping_at = world.time + 20 SECONDS
 			visible_message("<span class='notice'>[src] rustles gently, as if moved by a gentle breeze.</span>")
