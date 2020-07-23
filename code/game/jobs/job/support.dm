@@ -566,7 +566,7 @@
 	uniform = /obj/item/clothing/under/rank/centcom/representative // formal Arksoft uniform
 	shoes = /obj/item/clothing/shoes/centcom // fancy shoes
 	head = /obj/item/clothing/head/beret/blue // generic blue beret
-	l_ear = /obj/item/radio/headset/heads/arkinstructor //
+	l_ear = /obj/item/radio/headset/heads/arkinstructor
 	glasses =  /obj/item/clothing/glasses/sunglasses
 	id = /obj/item/card/id/arksoft
 	belt = /obj/item/storage/belt/utility/full/multitool
