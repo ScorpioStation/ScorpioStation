@@ -175,7 +175,7 @@ SUBSYSTEM_DEF(ticker)
 
 	if(hide_mode)
 		var/list/modes = new
-		for(var/datum/game_mode/M in runnable_modes)
+		for(var/datum/game_mode/M in config.get_runnable_modes())
 			modes+=M.name
 		modes = sortList(modes)
 		to_chat(world, "<B>The current game mode is - Secret!</B>")
