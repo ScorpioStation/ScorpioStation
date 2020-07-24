@@ -44,8 +44,8 @@ GLOBAL_LIST_EMPTY(all_cults)
 	config_tag = "cult"
 	restricted_jobs = list("Chaplain","AI", "Cyborg", "Internal Affairs Agent", "Security Officer", "Warden", "Detective", "Security Pod Pilot", "Head of Security", "Captain", "Head of Personnel", "Blueshield", "Ark Soft Representative", "Magistrate", "Brig Physician", "Ark Soft Navy Officer", "Special Operations Officer", "Syndicate Officer")
 	protected_jobs = list()
-	required_players = 30
-	required_enemies = 3
+	required_players = 40
+	required_enemies = 2
 	recommended_enemies = 4
 
 	var/datum/mind/sacrifice_target = null
@@ -58,9 +58,10 @@ GLOBAL_LIST_EMPTY(all_cults)
 	var/demons_summoned = 0
 
 	var/acolytes_needed = 4 //for the survive objective - base number of acolytes, increased by 1 for every 10 players
-	var/const/min_cultists_to_start = 3
+	var/const/min_cultists_to_start = 2
 	var/const/max_cultists_to_start = 4
 	var/acolytes_survived = 0
+	var/cultist_amount = 0
 
 	var/narsie_condition_cleared = 0	//allows Nar-Sie to be summonned during cult rounds. set to 1 once the cult reaches the second phase.
 	var/current_objective = 1	//equals the number of cleared objectives + 1
@@ -94,7 +95,8 @@ GLOBAL_LIST_EMPTY(all_cults)
 	..()
 	var/list/cultists_possible = get_players_for_role(ROLE_CULTIST)
 
-	for(var/cultists_number = 1 to max_cultists_to_start)
+	cultist_amount = min(round(num_players() / (required_players / min_cultists_to_start)), max_cultists_to_start)
+	for(var/cultists_number = 1 to cultist_amount)
 		if(!cultists_possible.len)
 			break
 		var/datum/mind/cultist = pick(cultists_possible)
