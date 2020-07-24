@@ -9,8 +9,8 @@ proc/issyndicate(mob/living/M as mob)
 /datum/game_mode/nuclear
 	name = "nuclear emergency"
 	config_tag = "nuclear"
-	required_players = 30	// 30 players - 5 players to be the nuke ops = 25 players remaining
-	required_enemies = 5
+	required_players = 40
+	required_enemies = 3
 	recommended_enemies = 5
 
 	var/const/agents_possible = 5 //If we ever need more syndicate agents.
@@ -35,14 +35,17 @@ proc/issyndicate(mob/living/M as mob)
 	if(possible_syndicates.len < 1)
 		return 0
 
-	if(LAZYLEN(possible_syndicates) > agents_possible)
-		agent_number = agents_possible
-	else
-		agent_number = possible_syndicates.len
 
-	var/n_players = num_players()
-	if(agent_number > n_players)
-		agent_number = n_players/2
+
+	if(num_players() >= required_players && num_players() < required_players + 20)
+		agent_number = 3
+	else if(num_players() >= required_players + 20 && num_players() < required_players + 40)
+		agent_number = 4
+	else
+		agent_number = 5
+
+	if(LAZYLEN(possible_syndicates) < agent_number)
+		agent_number = LAZYLEN(possible_syndicates)
 
 	while(agent_number > 0)
 		var/datum/mind/new_syndicate = pick(possible_syndicates)
