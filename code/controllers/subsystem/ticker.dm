@@ -133,9 +133,20 @@ SUBSYSTEM_DEF(ticker)
 			var/datum/game_mode/M = config.pick_mode(GLOB.secret_force_mode)
 			if(M.can_start())
 				src.mode = config.pick_mode(GLOB.secret_force_mode)
-		SSjobs.ResetOccupations()
-		if(!src.mode)
-			src.mode = pickweight(runnable_modes)
+				SSjobs.ResetOccupations()
+			else
+				message_admins("<B>Unable to start secret [mode.name].</B> Not enough players, [mode.required_players] players needed. Reverting to normal secret rotation.")
+		while(!src.mode)
+			SSjobs.ResetOccupations()
+			if(runnable_modes)
+				var/datum/game_mode/M = pickweight(runnable_modes)
+				if(!M.can_start())
+					runnable_modes -= M
+				else
+					src.mode = M
+			else
+				to_chat(world, "<B>Unable to choose playable game mode.</B> Reverting to pre-game lobby.")
+				return 0
 		if(src.mode)
 			var/mtype = src.mode.type
 			src.mode = new mtype
