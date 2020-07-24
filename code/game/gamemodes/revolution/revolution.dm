@@ -14,13 +14,14 @@
 	name = "revolution"
 	config_tag = "revolution"
 	restricted_jobs = list("Security Officer", "Warden", "Detective", "Internal Affairs Agent", "AI", "Cyborg","Captain", "Head of Personnel", "Head of Security", "Chief Engineer", "Research Director", "Chief Medical Officer", "Blueshield", "Ark Soft Representative", "Security Pod Pilot", "Magistrate", "Brig Physician")
-	required_players = 20
+	required_players = 40
 	required_enemies = 1
 	recommended_enemies = 3
 
 	var/finished = 0
 	var/check_counter = 0
 	var/max_headrevs = 3
+	var/headrev_amount = 0
 	var/list/datum/mind/heads_to_kill = list()
 	var/list/possible_revolutionaries = list()
 
@@ -41,8 +42,14 @@
 	if(config.protect_roles_from_antagonist)
 		restricted_jobs += protected_jobs
 
+	if(num_players() >= required_players && num_players() < required_players + 20)
+		headrev_amount = 1
+	else if(num_players() >= required_players + 20 && num_players() < required_players + 40)
+		headrev_amount = 2
+	else
+		headrev_amount = 3
 
-	for(var/i=1 to max_headrevs)
+	for(var/i=1 to headrev_amount)
 		if(possible_revolutionaries.len==0)
 			break
 		var/datum/mind/lenin = pick(possible_revolutionaries)
