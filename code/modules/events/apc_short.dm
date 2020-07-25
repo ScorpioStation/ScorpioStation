@@ -60,7 +60,7 @@
 
 /proc/power_restore(announce=TRUE)
 	if(announce)
-		GLOB.event_announcement.Announce("Power has been restored to [station_name()]. We apologize for the inconvenience.", "Power Systems Nominal", new_sound = 'sound/AI/poweron.ogg')
+		GLOB.event_announcement.Announce("Power has been restored to the [station_name()]. We apologize for the inconvenience.", "Power Systems Nominal", new_sound = 'sound/AI/poweron.ogg')
 
 	// recharge the APCs
 	for(var/thing in GLOB.apcs)
