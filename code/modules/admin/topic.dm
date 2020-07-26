@@ -1901,7 +1901,6 @@
 			ptypes += "Hellwater Cookie"
 			ptypes += "Hunter"
 			ptypes += "Crew Traitor"
-			ptypes += "Floor Cluwne"
 			ptypes += "Shamebrero"
 			ptypes += "Dust"
 		var/punishment = input(owner, "How would you like to smite [M]?", "Its good to be baaaad...", "") as null|anything in ptypes
@@ -2003,12 +2002,6 @@
 					to_chat(usr, "<span class='warning'>ERROR: Unable to find any valid candidate to send after [H].</span>")
 					return
 				logmsg = "crew traitor."
-			if("Floor Cluwne")
-				var/turf/T = get_turf(M)
-				var/mob/living/simple_animal/hostile/floor_cluwne/FC = new /mob/living/simple_animal/hostile/floor_cluwne(T)
-				FC.smiting = TRUE
-				FC.Acquire_Victim(M)
-				logmsg = "floor cluwne"
 			if("Shamebrero")
 				if(H.head)
 					H.unEquip(H.head, TRUE)
