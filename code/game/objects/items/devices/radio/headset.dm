@@ -242,11 +242,18 @@
 	ks2type = /obj/item/encryptionkey/headset_service
 
 /obj/item/radio/headset/heads/arkrep
-	name = "Ark Soft Representative's headset"
+	name = "ark soft representative's headset"
 	desc = "The headset of the Ark Soft Representative."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks2type = /obj/item/encryptionkey/heads/arkrep
+
+/obj/item/radio/headset/heads/arkinstructor
+	name = "ark soft instructor's headset"
+	desc = "The headset of the Ark Soft Instructor."
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks2type = /obj/item/encryptionkey/heads/arksoftinstructor
 
 /obj/item/radio/headset/heads/magistrate
 	name = "magistrate's headset"
