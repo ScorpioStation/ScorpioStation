@@ -39,7 +39,7 @@
 	var/num_traitors = 1
 
 	if(config.traitor_scaling)
-		num_traitors = max(1, round((num_players())/(required_players)))
+		num_traitors = max(1, round(num_players()/required_players))
 	else
 		num_traitors = max(1, min(num_players(), traitors_possible))
 

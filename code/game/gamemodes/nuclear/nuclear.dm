@@ -35,17 +35,10 @@ proc/issyndicate(mob/living/M as mob)
 	if(possible_syndicates.len < 1)
 		return 0
 
+	agent_number = min(required_enemies + round((num_players() - required_players) / 20), recommended_enemies)
 
-
-	if(num_players() >= required_players && num_players() < required_players + 20)
-		agent_number = 3
-	else if(num_players() >= required_players + 20 && num_players() < required_players + 40)
-		agent_number = 4
-	else
-		agent_number = 5
-
-	if(LAZYLEN(possible_syndicates) < agent_number)
-		agent_number = LAZYLEN(possible_syndicates)
+	if(length(possible_syndicates) < agent_number)
+		agent_number = length(possible_syndicates)
 
 	while(agent_number > 0)
 		var/datum/mind/new_syndicate = pick(possible_syndicates)

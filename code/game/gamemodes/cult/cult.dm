@@ -96,7 +96,7 @@ GLOBAL_LIST_EMPTY(all_cults)
 	var/list/cultists_possible = get_players_for_role(ROLE_CULTIST)
 
 	cultist_amount = min(round(num_players() / (required_players / min_cultists_to_start)), max_cultists_to_start)
-	for(var/cultists_number = 1 to cultist_amount)
+	for(var/cultists_number in 1 to cultist_amount)
 		if(!cultists_possible.len)
 			break
 		var/datum/mind/cultist = pick(cultists_possible)

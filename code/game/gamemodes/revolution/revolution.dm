@@ -42,14 +42,9 @@
 	if(config.protect_roles_from_antagonist)
 		restricted_jobs += protected_jobs
 
-	if(num_players() >= required_players && num_players() < required_players + 20)
-		headrev_amount = 1
-	else if(num_players() >= required_players + 20 && num_players() < required_players + 40)
-		headrev_amount = 2
-	else
-		headrev_amount = 3
+	headrev_amount = min(required_enemies + round((num_players() - required_players) / 20), recommended_enemies)
 
-	for(var/i=1 to headrev_amount)
+	for(var/i in 1 to headrev_amount)
 		if(possible_revolutionaries.len==0)
 			break
 		var/datum/mind/lenin = pick(possible_revolutionaries)
