@@ -139,7 +139,7 @@ SUBSYSTEM_DEF(ticker)
 			current_state = GAME_STATE_PREGAME
 			Master.SetRunLevel(RUNLEVEL_LOBBY)
 			to_chat(world, "<B>Unable to start. </B> Not enough players. Reverting to pre-game lobby.")
-			return 0
+			return FALSE
 		M = pickweight(runnable_modes)
 		mode = M
 		if(mode)
@@ -153,7 +153,7 @@ SUBSYSTEM_DEF(ticker)
 		current_state = GAME_STATE_PREGAME
 		SSjobs.ResetOccupations()
 		Master.SetRunLevel(RUNLEVEL_LOBBY)
-		return 0
+		return FALSE
 
 	//Configure mode and assign player to special mode stuff
 	src.mode.pre_pre_setup()
@@ -166,7 +166,7 @@ SUBSYSTEM_DEF(ticker)
 		to_chat(world, "<B>Error setting up [GLOB.master_mode].</B> Reverting to pre-game lobby.")
 		SSjobs.ResetOccupations()
 		Master.SetRunLevel(RUNLEVEL_LOBBY)
-		return 0
+		return FALSE
 
 	if(hide_mode)
 		var/list/modes = new
