@@ -391,7 +391,10 @@
 	anchored = 1
 	var/id = null
 
-/obj/structure/closet/secure_closet/brig/New()
+/obj/structure/closet/secure_closet/brig/perma
+	name = "perma locker"
+
+/obj/structure/closet/secure_closet/brig/perma/New()
 	..()
 	new /obj/item/clothing/under/color/orange/prison(src)
 	new /obj/item/clothing/shoes/orange(src)
