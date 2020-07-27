@@ -1,7 +1,7 @@
 /datum/game_mode/extended
 	name = "extended"
 	config_tag = "extended"
-	required_players = 0
+	required_players = 1
 
 /datum/game_mode/announce()
 	to_chat(world, "<B>The current game mode is - Extended Role-Playing!</B>")

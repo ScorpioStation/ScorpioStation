@@ -11,7 +11,7 @@
 	restricted_jobs = list("AI", "Cyborg")
 	protected_jobs = list("Security Officer", "Warden", "Detective", "Head of Security", "Captain", "Blueshield", "Ark Soft Representative", "Security Pod Pilot", "Magistrate", "Chaplain", "Brig Physician", "Internal Affairs Agent", "Ark Soft Navy Officer", "Special Operations Officer", "Syndicate Officer")
 	protected_species = list("Machine")
-	required_players = 15
+	required_players = 25
 	required_enemies = 1
 	recommended_enemies = 4
 
@@ -45,7 +45,7 @@
 
 	var/list/datum/mind/possible_vampires = get_players_for_role(ROLE_VAMPIRE)
 
-	vampire_amount = 1 + round(num_players() / 10)
+	vampire_amount = round(num_players() / required_players)
 
 	if(possible_vampires.len>0)
 		for(var/i = 0, i < vampire_amount, i++)

@@ -13,7 +13,7 @@ GLOBAL_LIST_INIT(possible_changeling_IDs, list("Alpha","Beta","Gamma","Delta","E
 	restricted_jobs = list("AI", "Cyborg")
 	protected_jobs = list("Security Officer", "Warden", "Detective", "Head of Security", "Captain", "Blueshield", "Ark Soft Representative", "Security Pod Pilot", "Magistrate", "Brig Physician", "Internal Affairs Agent", "Ark Soft Navy Officer", "Special Operations Officer", "Syndicate Officer")
 	protected_species = list("Machine")
-	required_players = 15
+	required_players = 25
 	required_enemies = 1
 	recommended_enemies = 4
 
@@ -46,7 +46,7 @@ GLOBAL_LIST_INIT(possible_changeling_IDs, list("Alpha","Beta","Gamma","Delta","E
 
 	var/list/datum/mind/possible_changelings = get_players_for_role(ROLE_CHANGELING)
 
-	changeling_amount = 1 + round(num_players() / 10)
+	changeling_amount = round(num_players() / required_players)
 
 	if(possible_changelings.len>0)
 		for(var/i = 0, i < changeling_amount, i++)

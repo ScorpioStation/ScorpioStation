@@ -120,10 +120,12 @@ SUBSYSTEM_DEF(ticker)
 	cultdat = setupcult()
 	//Create and announce mode
 	if(GLOB.master_mode=="secret")
-		src.hide_mode = 1
+		hide_mode = 1
 	var/list/datum/game_mode/runnable_modes
+	var/list/datum/game_mode/raw_modes
 	if((GLOB.master_mode=="random") || (GLOB.master_mode=="secret"))
 		runnable_modes = config.get_runnable_modes()
+		raw_modes = runnable_modes.Copy()
 		if(runnable_modes.len==0)
 			current_state = GAME_STATE_PREGAME
 			Master.SetRunLevel(RUNLEVEL_LOBBY)
@@ -132,16 +134,27 @@ SUBSYSTEM_DEF(ticker)
 		if(GLOB.secret_force_mode != "secret")
 			var/datum/game_mode/M = config.pick_mode(GLOB.secret_force_mode)
 			if(M.can_start())
-				src.mode = config.pick_mode(GLOB.secret_force_mode)
-		SSjobs.ResetOccupations()
-		if(!src.mode)
-			src.mode = pickweight(runnable_modes)
+				mode = config.pick_mode(GLOB.secret_force_mode)
+				SSjobs.ResetOccupations()
+			else
+				message_admins("<B>Unable to start secret [mode.name].</B> Not enough players, [mode.required_players] players needed. Reverting to normal secret rotation.")
+		while(!mode)
+			SSjobs.ResetOccupations()
+			if(runnable_modes)
+				var/datum/game_mode/M = pickweight(runnable_modes)
+				if(!M.can_start())
+					runnable_modes -= M
+				else
+					mode = M
+			else
+				to_chat(world, "<B>Unable to choose playable game mode.</B> Reverting to pre-game lobby.")
+				return FALSE
 		if(src.mode)
-			var/mtype = src.mode.type
-			src.mode = new mtype
+			var/mtype = mode.type
+			mode = new mtype
 	else
-		src.mode = config.pick_mode(GLOB.master_mode)
-	if(!src.mode.can_start())
+		mode = config.pick_mode(GLOB.master_mode)
+	if(!mode.can_start())
 		to_chat(world, "<B>Unable to start [mode.name].</B> Not enough players, [mode.required_players] players needed. Reverting to pre-game lobby.")
 		mode = null
 		current_state = GAME_STATE_PREGAME
@@ -164,13 +177,13 @@ SUBSYSTEM_DEF(ticker)
 
 	if(hide_mode)
 		var/list/modes = new
-		for(var/datum/game_mode/M in runnable_modes)
+		for(var/datum/game_mode/M in raw_modes)
 			modes+=M.name
 		modes = sortList(modes)
 		to_chat(world, "<B>The current game mode is - Secret!</B>")
 		to_chat(world, "<B>Possibilities:</B> [english_list(modes)]")
 	else
-		src.mode.announce()
+		mode.announce()
 
 	create_characters() //Create player characters and transfer them
 	populate_spawn_points()
