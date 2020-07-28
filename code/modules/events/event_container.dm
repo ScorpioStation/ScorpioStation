@@ -21,10 +21,16 @@ GLOBAL_LIST_EMPTY(event_last_fired)
 	var/datum/event_meta/next_event = null
 
 	var/last_world_time = 0
+	var/minimum_players = 15 // Minimum amount of crew for events to kick off
 
 /datum/event_container/process()
 	if(!next_event_time)
 		set_event_delay()
+
+	if(SSticker.mode.num_players_started() < minimum_players)
+		delayed = TRUE
+	else
+		delayed = FALSE
 
 	if(delayed)
 		next_event_time += (world.time - last_world_time)
