@@ -122,15 +122,7 @@ SUBSYSTEM_DEF(ticker)
 	if(GLOB.master_mode=="secret")
 		hide_mode = 1
 	var/list/datum/game_mode/runnable_modes
-	var/list/datum/game_mode/raw_modes
 	if((GLOB.master_mode=="random") || (GLOB.master_mode=="secret"))
-		runnable_modes = config.get_runnable_modes()
-		raw_modes = runnable_modes.Copy()
-		if(runnable_modes.len==0)
-			current_state = GAME_STATE_PREGAME
-			Master.SetRunLevel(RUNLEVEL_LOBBY)
-			to_chat(world, "<B>Unable to choose playable game mode.</B> Reverting to pre-game lobby.")
-			return 0
 		if(GLOB.secret_force_mode != "secret")
 			var/datum/game_mode/M = config.pick_mode(GLOB.secret_force_mode)
 			if(M.can_start())
@@ -138,18 +130,19 @@ SUBSYSTEM_DEF(ticker)
 				SSjobs.ResetOccupations()
 			else
 				message_admins("<B>Unable to start secret [mode.name].</B> Not enough players, [mode.required_players] players needed. Reverting to normal secret rotation.")
-		while(!mode)
-			SSjobs.ResetOccupations()
-			if(runnable_modes)
-				var/datum/game_mode/M = pickweight(runnable_modes)
-				if(!M.can_start())
-					runnable_modes -= M
-				else
-					mode = M
-			else
-				to_chat(world, "<B>Unable to choose playable game mode.</B> Reverting to pre-game lobby.")
-				return FALSE
-		if(src.mode)
+		runnable_modes = config.get_runnable_modes()
+		var/datum/game_mode/M
+		for(M in runnable_modes)
+			if(!M.can_start())
+				runnable_modes -= M
+		if(runnable_modes.len==0)
+			current_state = GAME_STATE_PREGAME
+			Master.SetRunLevel(RUNLEVEL_LOBBY)
+			to_chat(world, "<B>Unable to start. </B> Not enough players. Reverting to pre-game lobby.")
+			return FALSE
+		M = pickweight(runnable_modes)
+		mode = M
+		if(mode)
 			var/mtype = mode.type
 			mode = new mtype
 	else
@@ -160,7 +153,7 @@ SUBSYSTEM_DEF(ticker)
 		current_state = GAME_STATE_PREGAME
 		SSjobs.ResetOccupations()
 		Master.SetRunLevel(RUNLEVEL_LOBBY)
-		return 0
+		return FALSE
 
 	//Configure mode and assign player to special mode stuff
 	src.mode.pre_pre_setup()
@@ -173,11 +166,11 @@ SUBSYSTEM_DEF(ticker)
 		to_chat(world, "<B>Error setting up [GLOB.master_mode].</B> Reverting to pre-game lobby.")
 		SSjobs.ResetOccupations()
 		Master.SetRunLevel(RUNLEVEL_LOBBY)
-		return 0
+		return FALSE
 
 	if(hide_mode)
 		var/list/modes = new
-		for(var/datum/game_mode/M in raw_modes)
+		for(var/datum/game_mode/M in runnable_modes)
 			modes+=M.name
 		modes = sortList(modes)
 		to_chat(world, "<B>The current game mode is - Secret!</B>")
