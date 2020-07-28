@@ -19,6 +19,9 @@ MINIMUM_CLIENT_BUILD 1421
 ## Remove the # here if you wish to use the setup where jobs have a LOT of access. This is intended for servers with larger maps and lower populations
 #JOBS_HAVE_DEPARTMENT_ACCESS
 
+## Number of players needed to disable department access at roundstart and instead use normal access
+DEPARTMENT_ACCESS_TRIGGER 20
+
 ## Add a # here if you wish to use the setup where jobs have more access. This is intended for servers with low populations - where there are not enough players to fill all roles, so players need to do more than just one job. Also for servers where they don't want people to hide in their own departments.
 JOBS_HAVE_MINIMAL_ACCESS
 
