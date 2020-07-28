@@ -13,7 +13,7 @@ GLOBAL_LIST_EMPTY(event_last_fired)
 
 /datum/event_container
 	var/severity = -1
-	var/delayed = 0
+	var/delayed = TRUE
 	var/delay_modifier = 1
 	var/next_event_time = 0
 	var/list/available_events
