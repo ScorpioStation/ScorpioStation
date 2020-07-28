@@ -35,8 +35,9 @@
 						<A href='?src=[UID()];secretsfun=blackout'>Break all lights</A>&nbsp;&nbsp;
 						<A href='?src=[UID()];secretsfun=whiteout'>Fix all lights</A><BR>
 						<A href='?src=[UID()];secretsfun=power'>Make all areas powered</A>&nbsp;&nbsp;
-						<A href='?src=[UID()];secretsfun=unpower'>Make all areas unpowered</A>&nbsp;&nbsp;
-						<A href='?src=[UID()];secretsfun=quickpower'>Power all SMES</A><BR>
+						<A href='?src=[UID()];secretsfun=unpower'>Make all areas unpowered</A><BR>
+						<A href='?src=[UID()];secretsfun=quickpower'>Power all SMES</A>&nbsp;&nbsp;
+						<A href='?src=[UID()];secretsfun=limitlesspower'>Limitless SMES</A><BR>
 						</center>
 					"}
 
