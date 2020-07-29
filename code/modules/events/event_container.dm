@@ -27,11 +27,6 @@ GLOBAL_LIST_EMPTY(event_last_fired)
 	if(!next_event_time)
 		set_event_delay()
 
-	if(SSticker.mode.num_players_started() < minimum_players)
-		delayed = TRUE
-	else
-		delayed = FALSE
-
 	if(delayed)
 		next_event_time += (world.time - last_world_time)
 	else if(world.time > next_event_time)
@@ -89,6 +84,10 @@ GLOBAL_LIST_EMPTY(event_last_fired)
 	return picked_event
 
 /datum/event_container/proc/set_event_delay()
+	if(SSticker.mode.num_players_started() < minimum_players)
+		delayed = TRUE
+	else
+		delayed = FALSE
 	// If the next event time has not yet been set and we have a custom first time start
 	if(next_event_time == 0 && config.event_first_run[severity])
 		var/lower = config.event_first_run[severity]["lower"]
