@@ -64,6 +64,7 @@
 	var/ToRban = 0
 	var/automute_on = 0					//enables automuting/spam prevention
 	var/jobs_have_department_access = FALSE       // determines whether jobs use department access
+	var/department_access_trigger = 20
 	var/jobs_have_minimal_access = 0	//determines whether jobs use minimal access or expanded access.
 	var/round_abandon_penalty_period = 30 MINUTES // Time from round start during which ghosting out is penalized
 	var/medal_hub_address = null
@@ -324,6 +325,9 @@
 
 				if("jobs_have_department_access")
 					config.jobs_have_department_access = TRUE
+
+				if("department_access_trigger")
+					config.department_access_trigger = text2num(value)
 
 				if("jobs_have_minimal_access")
 					config.jobs_have_minimal_access = 1

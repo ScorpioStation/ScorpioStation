@@ -178,6 +178,10 @@ SUBSYSTEM_DEF(ticker)
 	else
 		mode.announce()
 
+	// Disable department access if there are more players than the trigger BEFORE the accesses start getting assigned around.
+	if(config.jobs_have_department_access && config.department_access_trigger >= SSticker.mode.num_players())
+		config.jobs_have_department_access = FALSE
+
 	create_characters() //Create player characters and transfer them
 	populate_spawn_points()
 	collect_minds()
