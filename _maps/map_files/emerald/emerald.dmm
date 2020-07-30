@@ -19329,7 +19329,7 @@
 /turf/simulated/floor/plasteel/dark,
 /area/storage/eva)
 "aRl" = (
-/obj/structure/closet/secure_closet/brig,
+/obj/structure/closet/secure_closet/brig/perma,
 /turf/simulated/floor/plasteel,
 /area/security/prisonlockers)
 "aRm" = (
@@ -32496,10 +32496,10 @@
 /turf/simulated/floor/plasteel,
 /area/quartermaster/sorting)
 "bpT" = (
-/obj/structure/closet/secure_closet/brig,
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/structure/closet/secure_closet/brig/perma,
 /turf/simulated/floor/plasteel,
 /area/security/prisonlockers)
 "bpU" = (
@@ -67816,12 +67816,12 @@
 	},
 /area/lawoffice)
 "czW" = (
-/obj/structure/closet/secure_closet/brig,
 /obj/machinery/camera{
 	c_tag = "Prisoner Lockers";
 	dir = 2;
 	network = list("Prison","SS13")
 	},
+/obj/structure/closet/secure_closet/brig/perma,
 /turf/simulated/floor/plasteel,
 /area/security/prisonlockers)
 "czX" = (
@@ -67932,11 +67932,11 @@
 	},
 /area/security/range)
 "cAg" = (
-/obj/structure/closet/secure_closet/brig,
 /obj/machinery/light{
 	dir = 1;
 	on = 1
 	},
+/obj/structure/closet/secure_closet/brig/perma,
 /turf/simulated/floor/plasteel,
 /area/security/prisonlockers)
 "cAh" = (
