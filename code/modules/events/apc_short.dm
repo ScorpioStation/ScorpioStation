@@ -86,4 +86,20 @@
 		S.update_icon()
 		S.power_change()
 
+/proc/power_restore_limitless(announce=TRUE)
+	if(announce)
+		GLOB.event_announcement.Announce("All SMESs on [station_name()] have been supercharged. We apologize for the inconvenience.", "Power Systems Supercharged", new_sound = 'sound/AI/poweron.ogg')
+
+	// supercharge all of the SMESs
+	for(var/obj/machinery/power/smes/S in GLOB.machines)
+		if(!is_station_level(S.z))
+			continue
+		S.capacity = 9000000000  // what, 9000?! there's no way that can be right!
+		S.charge = S.capacity
+		S.output_level = S.output_level_max
+		S.output_attempt = 1
+		S.input_attempt = 1
+		S.update_icon()
+		S.power_change()
+
 #undef APC_BREAK_PROBABILITY
