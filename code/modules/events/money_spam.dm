@@ -1,5 +1,6 @@
 /datum/event/pda_spam
 	endWhen = 36000
+	var/spam_level = 0
 	var/last_spam_time = 0
 	var/obj/machinery/message_server/useMS
 
@@ -12,17 +13,27 @@
 		for(var/obj/machinery/message_server/MS in GLOB.message_servers)
 			if(MS.active)
 				useMS = MS
+				spam_level = MS.spam_filter_level
 				break
 
 /datum/event/pda_spam/tick()
-	if(world.time > last_spam_time + 3000)
-		//if there's no spam managed to get to receiver for five minutes, give up
+	// if no spam managed to get to a receiver for five minutes
+	if(world.time > last_spam_time + 5 MINUTES)
+		// then give up; stop the PDA spam event
 		kill()
 		return
 
+	// if we don't have an active messaging server
 	if(!useMS || !useMS.active)
+		// pick a new active messaging server
 		useMS = null
 		pick_message_server()
+
+	// if the messaging server had its spam filter upgraded
+	if(useMS && (useMS.spam_filter_level > spam_level))
+		// then stop the PDA spam event
+		kill()
+		return
 
 	if(useMS)
 		if(prob(5))
