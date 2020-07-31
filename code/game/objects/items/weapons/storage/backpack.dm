@@ -97,6 +97,77 @@
 	name = "trophy rack"
 	desc = "It's useful for both carrying extra gear and proudly declaring your insanity."
 	icon_state = "cultpack"
+	var/obj/item/organ/external/head/LS
+	var/obj/item/organ/external/head/MS
+	var/obj/item/organ/external/head/RS
+	var/mutable_appearance/LSma
+	var/mutable_appearance/MSma
+	var/mutable_appearance/RSma
+	var/placement
+
+/obj/item/storage/backpack/cultpack/attackby(obj/item/I, mob/living/user)
+	..()
+	if(istype(I, /obj/item/organ/external/head))
+		placement = input(user, "Where would you like to put the head?") in list(!LS ? "Left Spike" : "", !MS ? "Middle Spike" : "", !RS ? "Right Spike" : "", "Bag")
+		switch(placement)
+			if("Bag")
+				return
+			if("Left Spike")
+				if(!LS)
+					LS = I
+					LSma = mutable_appearance(I.icon, I.icon_state)
+					var/matrix/M = matrix()
+					M.Turn(335)
+					M.Translate(-4, 0)
+					I.transform = M
+					LSma.transform = M
+					add_overlay(LSma)
+				else
+					return
+			if("Middle Spike")
+				if(!MS)
+					MS = I
+					MSma = mutable_appearance(I.icon, I.icon_state)
+					add_overlay(MSma)
+				else
+					return
+			if("Right Spike")
+				if(!RS)
+					RS = I
+					RSma = mutable_appearance(I.icon, I.icon_state)
+					var/matrix/M = matrix()
+					M.Turn(25)
+					M.Translate(4, 0)
+					I.transform = M
+					RSma.transform = M
+					add_overlay(RSma)
+				else
+					return
+		user.visible_message("<span class='notice'>[user] sticks [I] onto the [placement] of the trophy rack</span>", "<span class='notice'>You stick [I] on the [placement] of the the trophy rack.</span>")
+		playsound(loc, 'sound/effects/bone_break_3.ogg', 25, 1)
+
+/obj/item/storage/backpack/cultpack/remove_from_storage(obj/item/W, atom/new_location)
+	..()
+	if(W == LS)
+		LS = FALSE
+		cut_overlay(LSma)
+	if(W == MS)
+		MS = FALSE
+		cut_overlay(MSma)
+	if(W == RS)
+		RS = FALSE
+		cut_overlay(RSma)
+	else return
+	usr.visible_message("<span class='notice'>[usr] unspikes [W] from the trophy rack</span>", "<span class='notice'>You unspike [W] from the trophy rack.</span>")
+
+/obj/item/storage/backpack/cultpack/examine(mob/user)
+	. = ..()
+	if(LS)
+		. += "\ [LS] is mounted on the left spike."
+	if(MS)
+		. += "\ [MS] is mounted on the middle spike."
+	if(RS)
+		. += "\ [RS] is mounted on the right spike."
 
 /obj/item/storage/backpack/clown
 	name = "Giggles Von Honkerton"
