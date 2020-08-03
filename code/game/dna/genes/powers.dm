@@ -117,11 +117,49 @@
 	M.resize = 0.8
 	M.update_transform()
 
+	if(M.move_resist == MOVE_FORCE_VERY_STRONG)
+		M.move_resist = MOVE_FORCE_STRONG
+	else if(M.move_resist == MOVE_FORCE_STRONG)
+		M.move_resist = MOVE_FORCE_NORMAL
+	else
+		M.move_resist = MOVE_FORCE_WEAK
+
+	if(M.move_force == MOVE_FORCE_STRONG)
+		M.move_force = MOVE_FORCE_NORMAL
+	else
+		M.move_force = MOVE_FORCE_WEAK
+
+	if(M.pull_force == MOVE_FORCE_VERY_STRONG)
+		M.pull_force = MOVE_FORCE_STRONG
+	else if(M.pull_force == MOVE_FORCE_STRONG)
+		M.pull_force = MOVE_FORCE_NORMAL
+	else
+		M.pull_force = MOVE_FORCE_WEAK
+
 /datum/dna/gene/basic/midget/deactivate(mob/M, connected, flags)
 	..()
 	M.pass_flags &= ~PASSTABLE
 	M.resize = 1.25
 	M.update_transform()
+
+	if(M.move_resist == MOVE_FORCE_STRONG)
+		M.move_resist = MOVE_FORCE_VERY_STRONG
+	else if(M.move_resist == MOVE_FORCE_NORMAL)
+		M.move_resist = MOVE_FORCE_STRONG
+	else
+		M.move_resist = MOVE_FORCE_NORMAL
+
+	if(M.move_force == MOVE_FORCE_NORMAL)
+		M.move_force = MOVE_FORCE_STRONG
+	else
+		M.move_force = MOVE_FORCE_NORMAL
+
+	if(M.pull_force == MOVE_FORCE_STRONG)
+		M.pull_force = MOVE_FORCE_VERY_STRONG
+	else if(M.pull_force == MOVE_FORCE_NORMAL)
+		M.pull_force = MOVE_FORCE_STRONG
+	else
+		M.pull_force = MOVE_FORCE_NORMAL
 
 // OLD HULK BEHAVIOR
 /datum/dna/gene/basic/hulk

@@ -157,6 +157,8 @@
 			push_anchored = TRUE
 	if((AM.anchored && !push_anchored) || (force < (AM.move_resist * MOVE_FORCE_PUSH_RATIO)))
 		now_pushing = FALSE
+		if(ishuman(AM))
+			to_chat(src, "<span class='warning'>You are not strong enough to push past [AM]!.</span>")
 		return
 	if(istype(AM, /obj/structure/window))
 		var/obj/structure/window/W = AM

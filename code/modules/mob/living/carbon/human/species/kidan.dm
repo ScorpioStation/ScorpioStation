@@ -40,3 +40,11 @@
 		"is cracking their exoskeleton!",
 		"is stabbing themselves with their mandibles!",
 		"is holding their breath!")
+
+/datum/species/kidan/on_species_gain(mob/living/carbon/human/H)
+	..()
+	H.pull_force = MOVE_FORCE_STRONG
+
+/datum/species/kidan/on_species_loss(mob/living/carbon/human/H)
+	..()
+	H.pull_force = MOVE_FORCE_NORMAL

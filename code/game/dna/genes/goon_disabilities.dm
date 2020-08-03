@@ -198,6 +198,49 @@
 	..()
 	block = GLOB.strongblock
 
+/datum/dna/gene/disability/strong/activate(mob/M, connected, flags)
+	..()
+	M.resize = 1.25
+	M.update_transform()
+	if(M.move_resist == MOVE_FORCE_WEAK)
+		M.move_resist = MOVE_FORCE_NORMAL
+	else
+		M.move_resist = MOVE_FORCE_STRONG
+
+	if(M.move_resist == MOVE_FORCE_WEAK)
+		M.move_resist = MOVE_FORCE_NORMAL
+	else
+		M.move_force = MOVE_FORCE_STRONG
+
+	if(M.pull_force == MOVE_FORCE_STRONG)
+		M.pull_force = MOVE_FORCE_VERY_STRONG
+	else if(M.pull_force == MOVE_FORCE_WEAK)
+		M.pull_force = MOVE_FORCE_NORMAL
+	else
+		M.pull_force = MOVE_FORCE_STRONG
+
+/datum/dna/gene/disability/strong/deactivate(mob/M, connected, flags)
+	..()
+	M.resize = 0.8
+	M.update_transform()
+	if(M.move_resist == MOVE_FORCE_NORMAL)
+		M.move_resist = MOVE_FORCE_WEAK
+	else
+		M.move_resist = MOVE_FORCE_NORMAL
+
+	if(M.move_force == MOVE_FORCE_NORMAL)
+		M.move_force = MOVE_FORCE_WEAK
+	else
+		M.move_force = MOVE_FORCE_NORMAL
+
+	if(M.pull_force == MOVE_FORCE_VERY_STRONG)
+		M.pull_force = MOVE_FORCE_STRONG
+	else if(M.pull_force == MOVE_FORCE_NORMAL)
+		M.pull_force = MOVE_FORCE_WEAK
+	else
+		M.pull_force = MOVE_FORCE_NORMAL
+
+
 // WAS: /datum/bioEffect/horns
 /datum/dna/gene/disability/horns
 	name = "Horns"

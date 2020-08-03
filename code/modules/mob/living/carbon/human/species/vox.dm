@@ -23,6 +23,8 @@
 
 	eyes = "vox_eyes_s"
 
+	default_genes = list(DWARF)
+
 	species_traits = list(NO_SCAN, NO_GERMS, NO_DECAY, IS_WHITELISTED, NOTRANSSTING)
 	clothing_flags = HAS_UNDERWEAR | HAS_UNDERSHIRT | HAS_SOCKS //Species-fitted 'em all.
 	dietflags = DIET_OMNI
@@ -74,6 +76,13 @@
 		"is deeply inhaling oxygen!")
 
 	speciesbox = /obj/item/storage/box/survival_vox
+
+/datum/species/vox/handle_dna(mob/living/carbon/human/H, remove)
+	..()
+	H.dna.SetSEState(GLOB.smallsizeblock, !remove, 1)
+	genemutcheck(H, GLOB.smallsizeblock, null, MUTCHK_FORCED)
+	H.dna.default_blocks.Add(GLOB.smallsizeblock)
+
 
 /datum/species/vox/handle_death(gibbed, mob/living/carbon/human/H)
 	H.stop_tail_wagging()
