@@ -124,9 +124,7 @@
 	else
 		M.move_resist = MOVE_FORCE_WEAK
 
-	if(M.move_force == MOVE_FORCE_STRONG)
-		M.move_force = MOVE_FORCE_NORMAL
-	else
+	if(M.move_force == MOVE_FORCE_NORMAL)
 		M.move_force = MOVE_FORCE_WEAK
 
 	if(M.pull_force == MOVE_FORCE_VERY_STRONG)
@@ -149,9 +147,7 @@
 	else
 		M.move_resist = MOVE_FORCE_NORMAL
 
-	if(M.move_force == MOVE_FORCE_NORMAL)
-		M.move_force = MOVE_FORCE_STRONG
-	else
+	if(M.move_force == MOVE_FORCE_WEAK)
 		M.move_force = MOVE_FORCE_NORMAL
 
 	if(M.pull_force == MOVE_FORCE_STRONG)
