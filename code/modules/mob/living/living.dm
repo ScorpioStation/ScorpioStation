@@ -970,7 +970,7 @@
 
 /mob/living/proc/check_pull()
 	if(pulling)
-		if(!pulling in orange(1))
+		if((!pulling) in orange(1))
 			stop_pulling()
 		else if(pull_force < (pulling.move_resist * MOVE_FORCE_PULL_RATIO))
 			var/mob/M = pulling
