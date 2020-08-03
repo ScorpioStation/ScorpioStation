@@ -932,8 +932,20 @@
 /mob/living/start_pulling(atom/movable/AM, state, force = pull_force, supress_message = FALSE)
 	if(!AM || !src)
 		return FALSE
-	if(!(AM.can_be_pulled(src, state, force)))
+
+	if(AM == src || !isturf(AM.loc))
 		return FALSE
+	if(AM.anchored || AM.throwing)
+		return FALSE
+	if(force < (AM.move_resist * MOVE_FORCE_PULL_RATIO))
+		if(ismob(AM))
+			var/mob/M = AM
+			if(M.a_intent != INTENT_HELP)
+				to_chat(src, "<span class='warning'>You're not strong enough to pull that!</span>")
+				return FALSE
+		else
+			return FALSE
+
 	if(incapacitated())
 		return
 	// If we're pulling something then drop what we're currently pulling and pull this instead.
@@ -957,8 +969,15 @@
 			M.LAssailant = usr
 
 /mob/living/proc/check_pull()
-	if(pulling && !(pulling in orange(1)))
-		stop_pulling()
+	if(pulling)
+		if(!pulling in orange(1))
+			stop_pulling()
+		else if(pull_force < (pulling.move_resist * MOVE_FORCE_PULL_RATIO))
+			var/mob/M = pulling
+			if(M && M.a_intent != INTENT_HELP)
+				to_chat(src, "<span class='warning'>[pulling] refuses to be pulled anymore!</span>")
+				stop_pulling()
+
 
 /mob/living/proc/update_z(new_z) // 1+ to register, null to unregister
 	if(registered_z != new_z)

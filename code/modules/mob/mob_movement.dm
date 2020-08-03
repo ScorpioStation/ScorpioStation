@@ -108,6 +108,12 @@
 		for(var/mob/M in orange(1, mob))
 			if(M.pulling == mob)
 				if(!M.incapacitated() && mob.Adjacent(M))
+					if(M.pull_force < (mob.move_resist * MOVE_FORCE_PULL_RATIO))
+						if(mob.a_intent != INTENT_HELP)
+							to_chat(M, "<span class='warning'>[mob] refuses to be pulled anymore!</span>")
+							to_chat(src, "<span class='warning'>You stop allowing yourself to be pulled!</span>")
+							M.stop_pulling()
+							return
 					to_chat(src, "<span class='warning'>You're restrained! You can't move!</span>")
 					move_delay = world.time + 10
 					return 0
