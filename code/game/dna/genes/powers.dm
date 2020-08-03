@@ -127,13 +127,6 @@
 	if(M.move_force == MOVE_FORCE_NORMAL)
 		M.move_force = MOVE_FORCE_WEAK
 
-	if(M.pull_force == MOVE_FORCE_VERY_STRONG)
-		M.pull_force = MOVE_FORCE_STRONG
-	else if(M.pull_force == MOVE_FORCE_STRONG)
-		M.pull_force = MOVE_FORCE_NORMAL
-	else
-		M.pull_force = MOVE_FORCE_WEAK
-
 /datum/dna/gene/basic/midget/deactivate(mob/M, connected, flags)
 	..()
 	M.pass_flags &= ~PASSTABLE
@@ -150,12 +143,6 @@
 	if(M.move_force == MOVE_FORCE_WEAK)
 		M.move_force = MOVE_FORCE_NORMAL
 
-	if(M.pull_force == MOVE_FORCE_STRONG)
-		M.pull_force = MOVE_FORCE_VERY_STRONG
-	else if(M.pull_force == MOVE_FORCE_NORMAL)
-		M.pull_force = MOVE_FORCE_STRONG
-	else
-		M.pull_force = MOVE_FORCE_NORMAL
 
 // OLD HULK BEHAVIOR
 /datum/dna/gene/basic/hulk
