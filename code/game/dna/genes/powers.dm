@@ -113,7 +113,7 @@
 
 /datum/dna/gene/basic/midget/activate(mob/M, connected, flags)
 	..()
-	M.pass_flags |= PASSTABLE
+	//M.pass_flags |= PASSTABLE
 	M.resize = 0.8
 	M.update_transform()
 
@@ -129,7 +129,7 @@
 
 /datum/dna/gene/basic/midget/deactivate(mob/M, connected, flags)
 	..()
-	M.pass_flags &= ~PASSTABLE
+	//M.pass_flags &= ~PASSTABLE
 	M.resize = 1.25
 	M.update_transform()
 
