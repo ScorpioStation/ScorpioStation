@@ -386,10 +386,13 @@ GLOBAL_VAR_INIT(world_topic_spam_protect_time, world.timeofday)
 	else
 		s += "<b>Space Station 13</b>] &#8212; "
 
-	if(config && config.wikiurl)
-		s += "\[<a href=\"[config.wikiurl]\">Wiki</a>] "
+	s += "\[MRP] &#8212; "
+	s += "\[Paracode] &#8212; "
+
+	if(config && config.discordurl)
+		s += "\[<a href=\"[config.discordurl]\">Discord</a>] &#8212; "
 	else
-		s += "\[Wiki] "
+		s += "\[Discord] &#8212; "
 
 	if(config && config.server_tag_line)
 		s += "<br>[config.server_tag_line] "
