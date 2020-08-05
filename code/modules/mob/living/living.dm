@@ -937,7 +937,7 @@
 		return FALSE
 	if(AM.anchored || AM.throwing)
 		return FALSE
-	if(force < (AM.move_resist * MOVE_FORCE_PULL_RATIO))
+	if(force < ((AM.move_resist / 2) * MOVE_FORCE_PULL_RATIO)) // DWARF mobs cannot pull uncooperative strong ones.
 		if(ismob(AM))
 			var/mob/M = AM
 			if(M.a_intent != INTENT_HELP)

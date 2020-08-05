@@ -108,10 +108,10 @@
 		for(var/mob/M in orange(1, mob))
 			if(M.pulling == mob)
 				if(!M.incapacitated() && mob.Adjacent(M))
-					if(M.pull_force < (mob.move_resist * MOVE_FORCE_PULL_RATIO))
+					if(M.pull_force < ((mob.move_resist / 2) * MOVE_FORCE_PULL_RATIO)) // Break out of DWARF grips, they're not strong enough to hold you
 						if(mob.a_intent != INTENT_HELP)
-							to_chat(M, "<span class='warning'>[mob] refuses to be pulled anymore!</span>")
-							to_chat(src, "<span class='warning'>You stop allowing yourself to be pulled!</span>")
+							to_chat(M, "<span class='warning'>[mob] breaks out of your pull!</span>")
+							to_chat(src, "<span class='warning'>You stop allowing yourself to be pulled by [M]!</span>")
 							M.stop_pulling()
 							return
 					to_chat(src, "<span class='warning'>You're restrained! You can't move!</span>")
@@ -120,6 +120,17 @@
 				else
 					M.stop_pulling()
 
+	if(mob.pulling)
+		for(var/mob/M in orange(1, mob))
+			if(M == mob.pulling)
+				if(mob.pull_force < ((M.move_resist) * MOVE_FORCE_PULL_RATIO))
+					if(M.a_intent != INTENT_HELP)
+						if(mob.pull_force < ((M.move_resist / 2) * MOVE_FORCE_PULL_RATIO)) //DWARFS can't pull STRONG period unless they're on help intent
+							to_chat(mob, "<span class='warning'>You are not strong enough to pull [M]!</span>")
+							to_chat(M, "<span class='warning'>You are resisting being pulled!</span>")
+							return
+						else //Normal characters can pull STRONG restrained ones, but more slowly.
+							move_delay = world.time + 10
 
 	//We are now going to move
 	moving = 1
