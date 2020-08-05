@@ -386,16 +386,15 @@ GLOBAL_VAR_INIT(world_topic_spam_protect_time, world.timeofday)
 	else
 		s += "<b>Space Station 13</b>] &#8212; "
 
-	s += "\[MRP] &#8212; "
-	s += "\[Paracode] &#8212; "
-
 	if(config && config.discordurl)
-		s += "\[<a href=\"[config.discordurl]\">Discord</a>] &#8212; "
+		s += "\[<a href=\"[config.discordurl]\">Discord</a>]"
 	else
-		s += "\[Discord] &#8212; "
+		s += "\[Discord]"
 
 	if(config && config.server_tag_line)
 		s += "<br>[config.server_tag_line] "
+
+	s += "<br>Modified Paracode, Medium RP"
 
 	s += "<br>"
 
