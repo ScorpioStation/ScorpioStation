@@ -385,6 +385,8 @@
 	invocation_type = "none"
 
 	action_icon_state = "genetic_jump"
+	var/descriptive = "huge"
+	var/leapdistance = 10
 
 /obj/effect/proc_holder/spell/targeted/leap/cast(list/targets, mob/user = usr)
 	var/failure = FALSE
@@ -401,7 +403,7 @@
 					else
 						M.stop_pulling()
 
-		user.visible_message("<span class='danger'>[user.name]</b> takes a huge leap!</span>")
+		user.visible_message("<span class='danger'>[user.name]</b> takes a [descriptive] leap!</span>")
 		playsound(user.loc, 'sound/weapons/thudswoosh.ogg', 50, 1)
 		if(failure)
 			user.Weaken(5)
@@ -415,9 +417,9 @@
 		user.layer = 9
 
 		user.flying = TRUE
-		for(var/i=0, i<10, i++)
+		for(var/i=0, i < leapdistance, i++)
 			step(user, user.dir)
-			if(i < 5) user.pixel_y += 8
+			if(i < (leapdistance / 2)) user.pixel_y += 8
 			else user.pixel_y -= 8
 			sleep(1)
 		user.flying = prevFlying
@@ -445,6 +447,15 @@
 			sleep(1)
 		container.pixel_x = 0
 		container.pixel_y = 0
+
+
+/obj/effect/proc_holder/spell/targeted/leap/lesser
+	name = "Lesser Jump"
+	desc = "Leap moderate distances!"
+
+	charge_max = 100
+	leapdistance = 6
+	descriptive = "moderate"
 
 ////////////////////////////////////////////////////////////////////////
 
