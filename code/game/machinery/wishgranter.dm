@@ -8,10 +8,12 @@
 	anchored = TRUE
 	density = TRUE
 
+
+/obj/machinery/wish_granter/classic
 	var/charges = 1
 	var/insisting = FALSE
 
-/obj/machinery/wish_granter/attack_hand(mob/living/carbon/user)
+/obj/machinery/wish_granter/classic/attack_hand(mob/living/carbon/user)
 	. = ..()
 
 	if(.)
@@ -42,11 +44,11 @@
 		user.mind.add_antag_datum(/datum/antagonist/wishgranter)
 
 		to_chat(user, "You have a very bad feeling about this.")
-		
+
 /obj/machinery/wish_granter/super
 	name = "super wish granter"
 	var/list/types = list()
-	
+
 /obj/machinery/wish_granter/super/attack_hand(mob/living/carbon/user)
 	. = ..()
 
@@ -60,9 +62,9 @@
 	if(is_special_character(user) || jobban_isbanned(user, ROLE_TRAITOR) || jobban_isbanned(user, "Syndicate"))
 		to_chat(user, "<span class='warning'>Something instinctual makes you pull away.</span>")
 		return TRUE
-	
+
 	to_chat(user, "<span class='notice'>Your touch makes the Wish Granter stir. Are you really sure you want to do this?</span>")
-	
+
 	for(var/supname in GLOB.all_superheroes)
 		types += supname
 
