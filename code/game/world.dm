@@ -280,6 +280,9 @@ GLOBAL_VAR_INIT(world_topic_spam_protect_time, world.timeofday)
 	return "Bad Key"
 
 /world/Reboot(var/reason, var/feedback_c, var/feedback_r, var/time)
+
+	TgsReboot()
+
 	if(reason == 1) //special reboot, do none of the normal stuff
 		if(usr)
 			if(!check_rights(R_SERVER))
