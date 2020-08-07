@@ -1,3 +1,5 @@
+#define OCCUPANT_LOGGING occupant ? occupant : "empty mech"
+
 /obj/mecha
 	name = "Mecha"
 	desc = "Exosuit"
@@ -798,6 +800,7 @@
 
 /obj/mecha/attack_alien(mob/living/user)
 	log_message("Attack by alien. Attacker - [user].", TRUE)
+	add_attack_logs(user, OCCUPANT_LOGGING, "Alien attacked mech [src]")
 	playsound(src.loc, 'sound/weapons/slash.ogg', 100, TRUE)
 	attack_generic(user, 15, BRUTE, "melee", 0)
 
@@ -815,8 +818,8 @@
 		if(user.obj_damage)
 			animal_damage = user.obj_damage
 		animal_damage = min(animal_damage, 20*user.environment_smash)
-		user.create_attack_log("<font color='red'>attacked [name]</font>")
-		add_attack_logs(user, src, "Attacked")
+		if(animal_damage)
+			add_attack_logs(user, OCCUPANT_LOGGING, "Animal attacked mech [src]")
 		attack_generic(user, animal_damage, user.melee_damage_type, "melee", play_soundeffect)
 		return TRUE
 
@@ -827,7 +830,7 @@
 	. = ..()
 	if(.)
 		log_message("Attack by hulk. Attacker - [user].", 1)
-		add_attack_logs(user, src, "Punched with hulk powers")
+		add_attack_logs(user, OCCUPANT_LOGGING, "Hulk punched mech [src]")
 
 /obj/mecha/blob_act(obj/structure/blob/B)
 	log_message("Attack by blob. Attacker - [B].")
@@ -838,10 +841,14 @@
 
 /obj/mecha/hitby(atom/movable/AM, skipcatch, hitpush, blocked, datum/thrownthing/throwingdatum) //wrapper
 	log_message("Hit by [AM].")
+	if(isitem(AM))
+		var/obj/item/I = AM
+		add_attack_logs(I.thrownby, OCCUPANT_LOGGING, "threw [AM] at mech [src]")
 	. = ..()
 
 /obj/mecha/bullet_act(obj/item/projectile/Proj) //wrapper
 	log_message("Hit by projectile. Type: [Proj.name]([Proj.flag]).")
+	add_attack_logs(Proj.firer, OCCUPANT_LOGGING, "shot [Proj.name]([Proj.flag]) at mech [src]")
 	..()
 
 /obj/mecha/ex_act(severity, target)
@@ -1030,6 +1037,8 @@
 			to_chat(user, "<span class='notice'>You stop installing [M].</span>")
 
 	else
+		if(W.force)
+			add_attack_logs(user, OCCUPANT_LOGGING, "attacked mech '[src]' using [W]")
 		return ..()
 
 
@@ -1784,3 +1793,5 @@
 	if(L.incapacitated())
 		return FALSE
 	return TRUE
+
+#undef OCCUPANT_LOGGING

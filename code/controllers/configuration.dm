@@ -61,7 +61,6 @@
 	var/usewhitelist = 0
 	var/mods_are_mentors = 0
 	var/load_jobs_from_txt = 0
-	var/ToRban = 0
 	var/automute_on = 0					//enables automuting/spam prevention
 	var/jobs_have_department_access = FALSE       // determines whether jobs use department access
 	var/department_access_trigger = 20
@@ -586,9 +585,6 @@
 
 				if("humans_need_surnames")
 					humans_need_surnames = 1
-
-				if("tor_ban")
-					ToRban = 1
 
 				if("automute_on")
 					automute_on = 1
