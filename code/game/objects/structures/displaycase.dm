@@ -236,3 +236,110 @@ obj/structure/displaycase/welder_act(mob/user, obj/item/I)
 	desc = "A display case containing a humble stechkin pistol. Never forget your roots."
 	start_showpiece_type = /obj/item/gun/projectile/automatic/pistol
 	req_access = list(ACCESS_SYNDICATE_COMMAND)
+
+GLOBAL_LIST_EMPTY(trophy_cases)
+
+/obj/structure/displaycase/trophy
+	name = "trophy display case"
+	desc = "Store your trophies of accomplishment in here, and they will stay forever."
+	var/placer_key = ""
+	var/added_roundstart = TRUE
+	var/is_locked = TRUE
+	integrity_failure = 0
+	openable = FALSE
+
+/obj/structure/displaycase/trophy/Initialize()
+	. = ..()
+	GLOB.trophy_cases += src
+
+/obj/structure/displaycase/trophy/Destroy()
+	GLOB.trophy_cases -= src
+	return ..()
+
+/obj/structure/displaycase/trophy/attackby(obj/item/W, mob/user, params)
+
+	if(!user.Adjacent(src)) //no TK museology
+		return
+	if(user.a_intent == INTENT_HARM)
+		return ..()
+
+	var/obj/item/key/displaycase/K = W
+	if(istype(K))
+		if(added_roundstart)
+			is_locked = !is_locked
+			to_chat(user, "<span class='notice'>You [!is_locked ? "un" : ""]lock the case.</span>")
+		else
+			to_chat(user, "<span class='warning'>The lock is stuck shut!</span>")
+		return
+
+	if(is_locked)
+		to_chat(user, "<span class='warning'>The case is shut tight with an old-fashioned physical lock. Maybe you should ask the curator for the key?</span>")
+		return
+
+	if(!added_roundstart)
+		to_chat(user, "<span class='warning'>You've already put something new in this case!</span>")
+		return
+
+	if(forbidden_atoms_check(W))
+		to_chat(user, "<span class='warning'>The case rejects the [W]!</span>")
+		return
+
+	for(var/a in W.GetAllContents())
+		if(forbidden_atoms_check(a))
+			to_chat(user, "<span class='warning'>The case rejects the [W]!</span>")
+			return
+
+	if(user.drop_item())
+		W.forceMove(src)
+
+		if(showpiece)
+			to_chat(user, "<span class='notice'>You press a button, and [showpiece] descends into the floor of the case.</span>")
+			QDEL_NULL(showpiece)
+
+		to_chat(user, "<span class='notice'>You insert [W] into the case.</span>")
+		showpiece = W
+		added_roundstart = FALSE
+		update_icon()
+
+		placer_key = user.ckey
+
+		trophy_message = W.desc //default value
+
+		var/chosen_plaque = stripped_input(user, "What would you like the plaque to say? Default value is item's description.", "Trophy Plaque")
+		if(chosen_plaque)
+			if(user.Adjacent(src))
+				trophy_message = chosen_plaque
+				to_chat(user, "<span class='notice'>You set the plaque's text.</span>")
+			else
+				to_chat(user, "<span class='warning'>You are too far to set the plaque's text!</span>")
+
+		SSpersistence.SaveTrophy(src)
+		return TRUE
+
+	else
+		to_chat(user, "<span class='warning'>\The [W] is stuck to your hand, you can't put it in the [src.name]!</span>")
+
+	return
+
+/obj/structure/displaycase/trophy/dump()
+	if (showpiece)
+		if(added_roundstart)
+			visible_message("<span class='danger'>The [showpiece] crumbles to dust!</span>")
+			new /obj/effect/decal/cleanable/ash(loc)
+			QDEL_NULL(showpiece)
+		else
+			..()
+
+/obj/item/key/displaycase
+	name = "display case key"
+	desc = "The key to the curator's display cases."
+
+/obj/item/showpiece_dummy
+	name = "Cheap replica"
+
+/obj/item/showpiece_dummy/Initialize(mapload, path)
+	. = ..()
+	var/obj/item/I = path
+	name = initial(I.name)
+	icon = initial(I.icon)
+	icon_state = initial(I.icon_state)
