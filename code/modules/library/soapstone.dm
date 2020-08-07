@@ -190,7 +190,7 @@
 
 /obj/structure/chisel_message/examine(mob/user)
 	. = ..()
-	ui_interact(user)
+	tgui_interact(user)
 
 /obj/structure/chisel_message/Destroy()
 	if(persists)
@@ -201,7 +201,7 @@
 /obj/structure/chisel_message/interact()
 	return
 
-/obj/structure/chisel_message/ui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = FALSE, datum/tgui/master_ui = null, datum/tgui_state/state = GLOB.tgui_always_state)
+/obj/structure/chisel_message/tgui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = FALSE, datum/tgui/master_ui = null, datum/tgui_state/state = GLOB.tgui_always_state)
 	ui = SStgui.try_update_ui(user, src, ui_key, ui, force_open)
 	if(!ui)
 		ui = new(user, src, ui_key, "EngravedMessage", name, 600, 300, master_ui, state)
