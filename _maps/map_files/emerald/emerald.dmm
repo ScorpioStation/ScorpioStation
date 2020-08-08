@@ -5648,8 +5648,8 @@
 /turf/simulated/floor/wood,
 /area/library)
 "amK" = (
-/obj/structure/bookcase{
-	name = "bookcase (Fiction)"
+/obj/structure/sign/painting/library{
+	pixel_y = 30
 	},
 /turf/simulated/floor/wood,
 /area/library)
@@ -5993,9 +5993,7 @@
 /turf/simulated/floor/wood,
 /area/library)
 "anA" = (
-/obj/structure/bookcase{
-	name = "bookcase (Religious)"
-	},
+/obj/structure/statue/gold/hos,
 /turf/simulated/floor/wood,
 /area/library)
 "anB" = (
@@ -17972,6 +17970,9 @@
 	dir = 8;
 	network = list("SS13")
 	},
+/obj/structure/sign/painting/library{
+	pixel_x = 30
+	},
 /turf/simulated/floor/wood,
 /area/library)
 "aOq" = (
@@ -19849,6 +19850,9 @@
 	pictures_left = 30;
 	pixel_x = 0;
 	pixel_y = 0
+	},
+/obj/structure/sign/painting/library_private{
+	pixel_x = -28
 	},
 /turf/simulated/floor/plasteel{
 	tag = "icon-cult";
@@ -32722,6 +32726,9 @@
 	},
 /obj/item/stack/tape_roll,
 /obj/item/pen/multi,
+/obj/structure/sign/painting/library_private{
+	pixel_y = 28
+	},
 /turf/simulated/floor/plasteel{
 	tag = "icon-cult";
 	icon_state = "cult";
@@ -36349,6 +36356,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
+/obj/structure/displaycase/trophy,
 /turf/simulated/floor/wood,
 /area/library)
 "bwU" = (
@@ -48537,6 +48545,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
+/obj/structure/easel,
 /turf/simulated/floor/plasteel,
 /area/storage/office)
 "bSR" = (
@@ -78278,18 +78287,6 @@
 	},
 /area/toxins/lab)
 "cRy" = (
-/obj/structure/table,
-/obj/item/toner{
-	pixel_y = 6
-	},
-/obj/item/toner{
-	pixel_y = 3
-	},
-/obj/item/toner,
-/obj/item/toner{
-	pixel_y = -4
-	},
-/obj/machinery/light,
 /turf/simulated/floor/plasteel{
 	icon_state = "floorgrime"
 	},
@@ -80182,22 +80179,6 @@
 	icon_state = "dark"
 	},
 /area/gateway)
-"cUZ" = (
-/obj/structure/table,
-/obj/item/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
-	},
-/obj/item/pen,
-/obj/machinery/alarm{
-	dir = 1;
-	pixel_y = -25
-	},
-/obj/machinery/light,
-/turf/simulated/floor/plasteel{
-	icon_state = "floorgrime"
-	},
-/area/storage/office)
 "cVa" = (
 /obj/effect/decal/warning_stripes/southeast,
 /obj/effect/decal/warning_stripes/yellow,
@@ -94625,6 +94606,66 @@
 	icon_state = "darkredcorners"
 	},
 /area/security/securehallway)
+"fpD" = (
+/obj/structure/sign/painting/library{
+	pixel_x = 30
+	},
+/turf/simulated/floor/wood,
+/area/library)
+"gdD" = (
+/obj/structure/bookcase{
+	name = "bookcase (Other)"
+	},
+/turf/simulated/floor/wood,
+/area/library)
+"koc" = (
+/obj/structure/table,
+/obj/item/storage/fancy/crayons,
+/obj/item/toy/crayon/spraycan,
+/turf/simulated/floor/plasteel{
+	icon_state = "floorgrime"
+	},
+/area/storage/office)
+"pEV" = (
+/obj/structure/bookcase{
+	name = "bookcase (Religion)"
+	},
+/turf/simulated/floor/wood,
+/area/library)
+"rdQ" = (
+/obj/structure/table,
+/obj/item/canvas/twentythreeXtwentythree,
+/obj/item/canvas/twentythreeXnineteen,
+/obj/item/canvas/nineteenXnineteen,
+/obj/item/canvas,
+/turf/simulated/floor/plasteel{
+	icon_state = "floorgrime"
+	},
+/area/storage/office)
+"tyd" = (
+/obj/structure/table,
+/obj/item/toner{
+	pixel_y = 6
+	},
+/obj/item/toner{
+	pixel_y = 3
+	},
+/obj/item/toner,
+/obj/item/toner{
+	pixel_y = -4
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "floorgrime"
+	},
+/area/storage/office)
+"xpp" = (
+/obj/structure/displaycase/trophy,
+/turf/simulated/floor/wood,
+/area/library)
+"xVl" = (
+/obj/structure/statue/diamond/captain,
+/turf/simulated/floor/wood,
+/area/library)
 
 (1,1,1) = {"
 aaa
@@ -117357,7 +117398,7 @@ cSC
 bkC
 ajb
 ajb
-amJ
+anW
 ajb
 anz
 bJx
@@ -117614,7 +117655,7 @@ ajI
 alR
 ajb
 ajb
-amJ
+pEV
 ajb
 anz
 bJx
@@ -117871,7 +117912,7 @@ ajJ
 aYW
 ajb
 ajb
-amJ
+gdD
 ajb
 anz
 bJx
@@ -118387,9 +118428,9 @@ aiM
 aiM
 amK
 bkO
-anA
+ajb
 bwO
-anW
+ajb
 ajb
 bjl
 aaa
@@ -118642,11 +118683,11 @@ bhX
 aRh
 bpw
 aiM
-amK
+xpp
 bkO
 anA
 ajb
-anW
+xVl
 bxn
 bjl
 aaa
@@ -118901,9 +118942,9 @@ bjG
 aiM
 amK
 bkO
-anA
 ajb
-anW
+ajb
+ajb
 ajb
 bjl
 aaa
@@ -119156,12 +119197,12 @@ aJI
 aAq
 bcP
 aiM
-amK
+xpp
 bkO
 aOp
 bwT
-ajb
-ajb
+fpD
+xpp
 bjl
 aaa
 arX
@@ -134613,8 +134654,8 @@ axS
 bXO
 bYr
 bYO
+bYO
 cDw
-caM
 caM
 caM
 dnd
@@ -134870,8 +134911,8 @@ axS
 aCv
 bQY
 cRy
+tyd
 axS
-ayZ
 ayZ
 ayZ
 ayZ
@@ -135126,9 +135167,9 @@ ceu
 axS
 bnp
 cFY
+cRy
 cuh
 axS
-aaa
 aaa
 aaa
 aaa
@@ -135383,9 +135424,9 @@ cfk
 axS
 cwx
 bEB
+cRy
 cRA
-axS
-aaa
+cRk
 aaa
 aaa
 aaa
@@ -135640,9 +135681,9 @@ cfp
 cuk
 biZ
 bSP
-cUZ
-axS
-aaa
+cRy
+koc
+cRk
 aaa
 aaa
 aaa
@@ -135897,9 +135938,9 @@ ctZ
 axS
 aCy
 bSQ
+rdQ
 aCF
-axS
-aaa
+cRk
 ayZ
 ayZ
 ayZ
