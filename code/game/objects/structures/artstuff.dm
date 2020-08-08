@@ -231,7 +231,7 @@
 	desc = "Art or \"Art\"? You decide."
 	icon = 'icons/obj/decals.dmi'
 	icon_state = "frame-empty"
-	var/obj/item/canvas/C
+	var/obj/item/canvas/canvas
 	var/persistence_id
 
 /obj/structure/sign/painting/Initialize(mapload, dir, building)
@@ -240,31 +240,30 @@
 	if(dir)
 		setDir(dir)
 	if(building)
-		pixel_x = (dir & 3)? 0 : (dir == 4 ? -30 : 30)
-		pixel_y = (dir & 3)? (dir ==1 ? -30 : 30) : 0
+		set_pixel_offsets_from_dir(30, -30, 30, -30)
 
 /obj/structure/sign/painting/Destroy()
 	. = ..()
 	SSpersistence.painting_frames -= src
 
 /obj/structure/sign/painting/attackby(obj/item/I, mob/user, params)
-	if(!C && istype(I, /obj/item/canvas))
+	if(!canvas && istype(I, /obj/item/canvas))
 		frame_canvas(user,I)
-	else if(C && !C.painting_name && istype(I,/obj/item/pen))
+	else if(canvas && !canvas.painting_name && istype(I,/obj/item/pen))
 		try_rename(user)
 	else
 		return ..()
 
 /obj/structure/sign/painting/examine(mob/user)
 	. = ..()
-	if(C)
-		C.tgui_interact(user,state = GLOB.tgui_physical_obscured_state)
+	if(canvas)
+		canvas.tgui_interact(user,state = GLOB.tgui_physical_obscured_state)
 
 /obj/structure/sign/painting/wirecutter_act(mob/living/user, obj/item/I)
 	. = ..()
-	if(C)
-		C.forceMove(drop_location())
-		C = null
+	if(canvas)
+		canvas.forceMove(drop_location())
+		canvas = null
 		to_chat(user, "<span class='notice'>You remove the painting from the frame.</span>")
 		update_icon()
 		return TRUE
@@ -272,33 +271,33 @@
 /obj/structure/sign/painting/proc/frame_canvas(mob/user,obj/item/canvas/new_canvas)
 	if(user.drop_item())
 		new_canvas.forceMove(src)
-		C = new_canvas
-		if(!C.finalized)
-			C.finalize(user)
-		to_chat(user,"<span class='notice'>You frame [C].</span>")
+		canvas = new_canvas
+		if(!canvas.finalized)
+			canvas.finalize(user)
+		to_chat(user,"<span class='notice'>You frame [canvas].</span>")
 	update_icon()
 	update_overlays()
 
 /obj/structure/sign/painting/proc/try_rename(mob/user)
-	if(!C.painting_name)
-		C.try_rename(user)
+	if(!canvas.painting_name)
+		canvas.try_rename(user)
 
 /obj/structure/sign/painting/proc/update_icon_state()
-	if(C && C.generated_icon)
+	if(canvas && canvas.generated_icon)
 		icon_state = "frame-overlay"
 	else
 		icon_state = "frame-empty"
 
 
 /obj/structure/sign/painting/proc/update_overlays()
-	if(C && C.generated_icon)
-		var/mutable_appearance/MA = mutable_appearance(C.generated_icon)
-		MA.pixel_x = C.framed_offset_x
-		MA.pixel_y = C.framed_offset_y
+	if(canvas && canvas.generated_icon)
+		var/mutable_appearance/MA = mutable_appearance(canvas.generated_icon)
+		MA.pixel_x = canvas.framed_offset_x
+		MA.pixel_y = canvas.framed_offset_y
 		add_overlay(MA)
-		var/mutable_appearance/frame = mutable_appearance(C.icon,"[C.icon_state]frame")
-		frame.pixel_x = C.framed_offset_x - 1
-		frame.pixel_y = C.framed_offset_y - 1
+		var/mutable_appearance/frame = mutable_appearance(canvas.icon,"[canvas.icon_state]frame")
+		frame.pixel_x = canvas.framed_offset_x - 1
+		frame.pixel_y = canvas.framed_offset_y - 1
 		add_overlay(frame)
 
 /obj/structure/sign/painting/proc/load_persistent()
@@ -328,18 +327,18 @@
 	new_canvas.finalized = TRUE
 	new_canvas.painting_name = title
 	new_canvas.author_ckey = author
-	C = new_canvas
+	canvas = new_canvas
 	update_icon()
 	update_overlays()
 	update_icon_state()
 
 /obj/structure/sign/painting/proc/save_persistent()
-	if(!persistence_id || !C)
+	if(!persistence_id || !canvas)
 		return
 	if(sanitize_filename(persistence_id) != persistence_id)
 		stack_trace("Invalid persistence_id - [persistence_id]")
 		return
-	var/data = C.get_data_string()
+	var/data = canvas.get_data_string()
 	var/md5 = md5(lowertext(data))
 	var/list/current = SSpersistence.paintings[persistence_id]
 	if(!current)
@@ -349,10 +348,10 @@
 			return
 	var/png_directory = "data/paintings/[persistence_id]/"
 	var/png_path = png_directory + "[md5].png"
-	var/result = rustg_dmi_create_png(png_path,"[C.width]","[C.height]",data)
+	var/result = rustg_dmi_create_png(png_path,"[canvas.width]","[canvas.height]",data)
 	if(result)
 		CRASH("Error saving persistent painting: [result]")
-	current += list(list("title" = C.painting_name , "md5" = md5, "ckey" = C.author_ckey))
+	current += list(list("title" = canvas.painting_name , "md5" = md5, "ckey" = canvas.author_ckey))
 	SSpersistence.paintings[persistence_id] = current
 
 /obj/item/canvas/proc/fill_grid_from_icon(icon/I)
@@ -380,11 +379,11 @@
 		return
 
 	var/mob/user = usr
-	if(!persistence_id || !C)
+	if(!persistence_id || !canvas)
 		to_chat(user,"<span class='warning'>This is not a persistent painting.</span>")
 		return
-	var/md5 = md5(lowertext(C.get_data_string()))
-	var/author = C.author_ckey
+	var/md5 = md5(lowertext(canvas.get_data_string()))
+	var/author = canvas.author_ckey
 	var/list/current = SSpersistence.paintings[persistence_id]
 	if(current)
 		for(var/list/entry in current)
@@ -393,7 +392,7 @@
 		var/png = "data/paintings/[persistence_id]/[md5].png"
 		fdel(png)
 	for(var/obj/structure/sign/painting/P in SSpersistence.painting_frames)
-		if(P.C && md5(P.C.get_data_string()) == md5)
-			QDEL_NULL(P.C)
+		if(P.canvas && md5(P.canvas.get_data_string()) == md5)
+			QDEL_NULL(P.canvas)
 	log_admin("[key_name(user)] has deleted a persistent painting made by [author].")
 	message_admins("<span class='notice'>[key_name_admin(user)] has deleted persistent painting made by [author].</span>")
