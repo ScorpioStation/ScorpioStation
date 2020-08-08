@@ -396,3 +396,4 @@
 			QDEL_NULL(P.canvas)
 	log_admin("[key_name(user)] has deleted a persistent painting made by [author].")
 	message_admins("<span class='notice'>[key_name_admin(user)] has deleted persistent painting made by [author].</span>")
+
