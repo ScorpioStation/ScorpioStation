@@ -535,6 +535,8 @@ SUBSYSTEM_DEF(ticker)
 			var/mob/M = m
 			H.add_hud_to(M)
 
+	//Collects persistence features
+	SSpersistence.CollectData()
 	return 1
 
 /datum/controller/subsystem/ticker/proc/HasRoundStarted()

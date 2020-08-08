@@ -13,6 +13,8 @@ GLOBAL_VAR_INIT(log_end, (world.system_type == UNIX ? ascii2text(13) : ""))
 #define SEND_TEXT(target, text) DIRECT_OUTPUT(target, text)
 #define WRITE_FILE(file, text) DIRECT_OUTPUT(file, text)
 #define WRITE_LOG(log, text) call(RUST_G, "log_write")(log, text)
+#define rustg_dmi_strip_metadata(fname) call(RUST_G, "dmi_strip_metadata")(fname)
+#define rustg_dmi_create_png(path, width, height, data) call(RUST_G, "dmi_create_png")(path, width, height, data)
 
 /proc/error(msg)
 	log_world("## ERROR: [msg]")
@@ -193,5 +195,3 @@ GLOBAL_VAR_INIT(log_end, (world.system_type == UNIX ? ascii2text(13) : ""))
 /client/proc/simple_info_line()
 	return "[key_name(src)] ([mob.x],[mob.y],[mob.z])"
 
-//this is only used here (for now)
-#undef RUST_G

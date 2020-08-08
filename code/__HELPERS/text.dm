@@ -51,6 +51,9 @@
 		t = replacetext(t, char, repl_chars[char])
 	return t
 
+/proc/sanitize_filename(t)
+	return sanitize_simple(t, list("\n"="", "\t"="", "/"="", "\\"="", "?"="", "%"="", "*"="", ":"="", "|"="", "\""="", "<"="", ">"=""))
+
 /proc/readd_quotes(var/t)
 	var/list/repl_chars = list("&#34;" = "\"")
 	for(var/char in repl_chars)
