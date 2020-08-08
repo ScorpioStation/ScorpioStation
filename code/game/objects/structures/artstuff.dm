@@ -73,9 +73,9 @@
 
 /obj/item/canvas/attack_self(mob/user)
 	. = ..()
-	ui_interact(user)
+	tgui_interact(user)
 
-/obj/item/canvas/ui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = FALSE, \
+/obj/item/canvas/tgui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = FALSE, \
 										datum/tgui/master_ui = null, datum/tgui_state/state = GLOB.tgui_default_state)
 
 	ui = SStgui.try_update_ui(user, src, ui_key, ui, force_open)
@@ -90,7 +90,7 @@
 	else
 		return ..()
 
-/obj/item/canvas/ui_data(mob/user)
+/obj/item/canvas/tgui_data(mob/user)
 	. = ..()
 	.["grid"] = grid
 	.["name"] = painting_name

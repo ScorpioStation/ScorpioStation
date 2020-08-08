@@ -207,7 +207,7 @@
 		ui = new(user, src, ui_key, "EngravedMessage", name, 600, 300, master_ui, state)
 		ui.open()
 
-/obj/structure/chisel_message/ui_data(mob/user)
+/obj/structure/chisel_message/tgui_data(mob/user)
 	var/list/data = list()
 
 	data["hidden_message"] = hidden_message
