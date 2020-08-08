@@ -86,7 +86,7 @@
 
 /obj/item/canvas/attackby(obj/item/I, mob/living/user, params)
 	if(user.a_intent == INTENT_HELP)
-		ui_interact(user)
+		tgui_interact(user)
 	else
 		return ..()
 
@@ -98,7 +98,7 @@
 
 /obj/item/canvas/examine(mob/user)
 	. = ..()
-	ui_interact(user)
+	tgui_interact(user)
 
 /obj/item/canvas/tgui_act(action, params)
 	. = ..()
@@ -135,12 +135,12 @@
 			var/mutable_appearance/detail = mutable_appearance(icon,"[icon_state]wip")
 			detail.pixel_x = 1
 			detail.pixel_y = 1
-			. += detail
+			add_overlay(detail)
 	else
 		var/mutable_appearance/detail = mutable_appearance(generated_icon)
 		detail.pixel_x = 1
 		detail.pixel_y = 1
-		. += detail
+		add_overlay(detail)
 
 /obj/item/canvas/proc/generate_proper_overlay()
 	if(icon_generated)
@@ -152,6 +152,7 @@
 	generated_icon = new(png_filename)
 	icon_generated = TRUE
 	update_icon()
+	update_overlays()
 
 /obj/item/canvas/proc/get_data_string()
 	var/list/data = list()
@@ -257,7 +258,7 @@
 /obj/structure/sign/painting/examine(mob/user)
 	. = ..()
 	if(C)
-		C.ui_interact(user,state = GLOB.tgui_physical_obscured_state)
+		C.tgui_interact(user,state = GLOB.tgui_physical_obscured_state)
 
 /obj/structure/sign/painting/wirecutter_act(mob/living/user, obj/item/I)
 	. = ..()
@@ -276,6 +277,7 @@
 			C.finalize(user)
 		to_chat(user,"<span class='notice'>You frame [C].</span>")
 	update_icon()
+	update_overlays()
 
 /obj/structure/sign/painting/proc/try_rename(mob/user)
 	if(!C.painting_name)
@@ -283,22 +285,21 @@
 
 /obj/structure/sign/painting/proc/update_icon_state()
 	if(C && C.generated_icon)
-		icon_state = null
+		icon_state = "frame-overlay"
 	else
 		icon_state = "frame-empty"
 
 
 /obj/structure/sign/painting/proc/update_overlays()
-	. = ..()
 	if(C && C.generated_icon)
 		var/mutable_appearance/MA = mutable_appearance(C.generated_icon)
 		MA.pixel_x = C.framed_offset_x
 		MA.pixel_y = C.framed_offset_y
-		. += MA
+		add_overlay(MA)
 		var/mutable_appearance/frame = mutable_appearance(C.icon,"[C.icon_state]frame")
 		frame.pixel_x = C.framed_offset_x - 1
 		frame.pixel_y = C.framed_offset_y - 1
-		. += frame
+		add_overlay(frame)
 
 /obj/structure/sign/painting/proc/load_persistent()
 	if(!persistence_id)
@@ -339,7 +340,7 @@
 		stack_trace("Invalid persistence_id - [persistence_id]")
 		return
 	var/data = C.get_data_string()
-	var/md5 = md5(data)
+	var/md5 = md5(lowertext(data))
 	var/list/current = SSpersistence.paintings[persistence_id]
 	if(!current)
 		current = list()
@@ -382,7 +383,7 @@
 	if(!persistence_id || !C)
 		to_chat(user,"<span class='warning'>This is not a persistent painting.</span>")
 		return
-	var/md5 = md5(C.get_data_string())
+	var/md5 = md5(lowertext(C.get_data_string()))
 	var/author = C.author_ckey
 	var/list/current = SSpersistence.paintings[persistence_id]
 	if(current)

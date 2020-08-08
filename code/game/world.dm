@@ -322,6 +322,10 @@ GLOBAL_VAR_INIT(world_topic_spam_protect_time, world.timeofday)
 	sleep(delay)
 	if(GLOB.blackbox)
 		GLOB.blackbox.save_all_data_to_sql()
+
+		//Collects persistence features
+	SSpersistence.CollectData()
+
 	if(SSticker.delay_end)
 		to_chat(world, "<span class='boldannounce'>Reboot was cancelled by an admin.</span>")
 		return
