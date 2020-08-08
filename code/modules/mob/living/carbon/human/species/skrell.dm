@@ -49,9 +49,9 @@
 /datum/species/skrell/on_species_gain(mob/living/carbon/human/H)
 	..()
 	ADD_TRAIT(H, TRAIT_WATERBREATH, "species")
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/leap/lesser(null))
+	H.AddSpell(new /obj/effect/proc_holder/spell/targeted/leap/lesser)
 
 /datum/species/skrell/on_species_loss(mob/living/carbon/human/H)
 	..()
 	REMOVE_TRAIT(H, TRAIT_WATERBREATH, "species")
-	H.mind.RemoveSpell(new /obj/effect/proc_holder/spell/targeted/leap/lesser)
+	H.RemoveSpell(/obj/effect/proc_holder/spell/targeted/leap/lesser)
