@@ -16,12 +16,17 @@
 //Adding canvases
 /obj/structure/easel/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/canvas))
-		var/obj/item/canvas/C = I
-		user.drop_item(C)
-		painting = C
-		C.forceMove(get_turf(src))
-		C.layer = layer+0.1
-		user.visible_message("<span class='notice'>[user] puts \the [C] on \the [src].</span>","<span class='notice'>You place \the [C] on \the [src].</span>")
+		if(!painting)
+			var/obj/item/canvas/C = I
+			user.drop_item(C)
+			painting = C
+			C.forceMove(get_turf(src))
+			C.layer = layer+0.1
+			C.pixel_x = initial(C.pixel_x)
+			C.pixel_y = initial(C.pixel_y)
+			user.visible_message("<span class='notice'>[user] puts \the [C] on \the [src].</span>","<span class='notice'>You place \the [C] on \the [src].</span>")
+		else
+			to_chat(user, "<span class='warning'>There is already a canvas on the easel!.</span>")
 	else
 		return ..()
 
@@ -182,7 +187,7 @@
 		return canvas_color
 
 /obj/item/canvas/proc/try_rename(mob/user)
-	var/new_name = stripped_input(user,"What do you want to name the painting?")
+	var/new_name = sanitize(copytext(input(user, "What do you want to name the painting?", "Name", "Painting"), 1, MAX_NAME_LEN))
 	if(!painting_name && new_name && user.IsAdvancedToolUser())
 		painting_name = new_name
 		SStgui.update_uis(src)
@@ -227,12 +232,13 @@
 	icon_state = "frame-empty"
 
 /obj/structure/sign/painting
-	name = "Painting"
-	desc = "Art or \"Art\"? You decide."
+	name = "painting frame"
+	desc = "The perfect showcase for your favorite deathtrap memories."
 	icon = 'icons/obj/decals.dmi'
 	icon_state = "frame-empty"
 	var/obj/item/canvas/canvas
 	var/persistence_id
+	var/alert = FALSE
 
 /obj/structure/sign/painting/Initialize(mapload, dir, building)
 	. = ..()
@@ -251,6 +257,14 @@
 		frame_canvas(user,I)
 	else if(canvas && !canvas.painting_name && istype(I,/obj/item/pen))
 		try_rename(user)
+	else if(istype(I, /obj/item/key/displaycase))
+		if(alert)
+			alert = FALSE
+			to_chat(user, "<span class='notice'>You turn off the alarm system.</span>")
+		else
+			alert = TRUE
+			to_chat(user, "<span class='notice'>You turn on the alarm system.</span>")
+		add_fingerprint(user)
 	else
 		return ..()
 
@@ -264,8 +278,15 @@
 	if(canvas)
 		canvas.forceMove(drop_location())
 		canvas = null
-		to_chat(user, "<span class='notice'>You remove the painting from the frame.</span>")
 		update_icon()
+		update_overlays()
+		name = initial(name)
+		if(alert)
+			trigger_alarm()
+			to_chat(user, "<span class='warning'>You remove the painting from the frame but trigger the alarm!.</span>")
+		else
+			to_chat(user, "<span class='notice'>You remove the painting from the frame.</span>")
+		add_fingerprint(user)
 		return TRUE
 
 /obj/structure/sign/painting/proc/frame_canvas(mob/user,obj/item/canvas/new_canvas)
@@ -274,9 +295,13 @@
 		canvas = new_canvas
 		if(!canvas.finalized)
 			canvas.finalize(user)
-		to_chat(user,"<span class='notice'>You frame [canvas].</span>")
-	update_icon()
-	update_overlays()
+		to_chat(user,"<span class='notice'>You frame [canvas] and attach the anti-theft system.</span>")
+		update_icon()
+		update_overlays()
+		name = canvas.name
+		alert = TRUE
+		add_fingerprint(user)
+		return TRUE
 
 /obj/structure/sign/painting/proc/try_rename(mob/user)
 	if(!canvas.painting_name)
@@ -299,6 +324,9 @@
 		frame.pixel_x = canvas.framed_offset_x - 1
 		frame.pixel_y = canvas.framed_offset_y - 1
 		add_overlay(frame)
+	else
+		for(var/mutable_appearance/MA in overlays)
+			cut_overlay(MA)
 
 /obj/structure/sign/painting/proc/load_persistent()
 	if(!persistence_id)
@@ -328,6 +356,7 @@
 	new_canvas.painting_name = title
 	new_canvas.author_ckey = author
 	canvas = new_canvas
+	name = canvas.name
 	update_icon()
 	update_overlays()
 	update_icon_state()
@@ -397,3 +426,18 @@
 	log_admin("[key_name(user)] has deleted a persistent painting made by [author].")
 	message_admins("<span class='notice'>[key_name_admin(user)] has deleted persistent painting made by [author].</span>")
 
+
+// Until somebody bigger brained wants to mess around with painting construction.
+/obj/structure/sign/painting/screwdriver_act(mob/user, obj/item/I)
+	return
+
+/obj/structure/sign/painting/proc/trigger_alarm()
+	set waitfor = FALSE
+	if(alert && is_station_contact(z))
+		var/area/alarmed = get_area(src)
+		alarmed.burglaralert(src)
+		visible_message("<span class='danger'>The burglar alarm goes off!</span>")
+		// Play the burglar alarm three times
+		for(var/i = 0, i < 4, i++)
+			playsound(src, 'sound/machines/burglar_alarm.ogg', 50, 0)
+			sleep(74) // 7.4 seconds long
