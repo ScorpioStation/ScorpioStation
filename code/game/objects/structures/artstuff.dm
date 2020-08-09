@@ -20,6 +20,7 @@
 			var/obj/item/canvas/C = I
 			user.drop_item(C)
 			painting = C
+			C.easel = src
 			C.forceMove(get_turf(src))
 			C.layer = layer+0.1
 			C.pixel_x = initial(C.pixel_x)
@@ -58,6 +59,7 @@
 	var/author_ckey
 	var/icon_generated = FALSE
 	var/icon/generated_icon
+	var/obj/structure/easel/easel
 
 	// Painting overlay offset when framed
 	var/framed_offset_x = 11
@@ -75,6 +77,10 @@
 	for(var/x in 1 to width)
 		for(var/y in 1 to height)
 			grid[x][y] = canvas_color
+
+/obj/item/canvas/attack_hand(mob/user)
+	if(..() && easel)
+		easel.painting = null
 
 /obj/item/canvas/attack_self(mob/user)
 	. = ..()
@@ -280,6 +286,7 @@
 		canvas = null
 		update_icon()
 		update_overlays()
+		update_icon_state()
 		name = initial(name)
 		if(alert)
 			trigger_alarm()
@@ -298,7 +305,8 @@
 		to_chat(user,"<span class='notice'>You frame [canvas] and attach the anti-theft system.</span>")
 		update_icon()
 		update_overlays()
-		name = canvas.name
+		update_icon_state()
+		name = canvas.painting_name
 		alert = TRUE
 		add_fingerprint(user)
 		return TRUE
@@ -325,8 +333,7 @@
 		frame.pixel_y = canvas.framed_offset_y - 1
 		add_overlay(frame)
 	else
-		for(var/mutable_appearance/MA in overlays)
-			cut_overlay(MA)
+		cut_overlays()
 
 /obj/structure/sign/painting/proc/load_persistent()
 	if(!persistence_id)
@@ -356,7 +363,8 @@
 	new_canvas.painting_name = title
 	new_canvas.author_ckey = author
 	canvas = new_canvas
-	name = canvas.name
+	name = canvas.painting_name
+	alert = TRUE
 	update_icon()
 	update_overlays()
 	update_icon_state()
