@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "blinkdog@protonmail.com",
   "license": "SEE LICENSE IN LICENSE-AGPL3.txt",
   "dependencies": {
-      "ansi-colors": "4.1.1"
+    "ansi-colors": "4.1.1"
   }
 }

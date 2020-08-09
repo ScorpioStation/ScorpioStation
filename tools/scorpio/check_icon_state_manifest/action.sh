@@ -4,5 +4,5 @@
 
 echo "PWD: $PWD"
 cd tools/scorpio/check_icon_state_manifest
-npm ci
+npm install  # try 'npm ci' for speed when complete
 node index
