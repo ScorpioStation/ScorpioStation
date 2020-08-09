@@ -5993,7 +5993,9 @@
 /turf/simulated/floor/wood,
 /area/library)
 "anA" = (
-/obj/structure/decorative_structures/metal/statue/tesla,
+/obj/structure/decorative_structures/metal/statue/tesla{
+	anchored = 1
+	},
 /turf/simulated/floor/wood,
 /area/library)
 "anB" = (
@@ -17971,6 +17973,7 @@
 	network = list("SS13")
 	},
 /obj/structure/sign/painting/library{
+	id = 3;
 	pixel_x = 30
 	},
 /turf/simulated/floor/wood,
@@ -32727,6 +32730,7 @@
 /obj/item/stack/tape_roll,
 /obj/item/pen/multi,
 /obj/structure/sign/painting/library_private{
+	id = 2;
 	pixel_y = 28
 	},
 /turf/simulated/floor/plasteel{
@@ -36356,7 +36360,9 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/obj/structure/displaycase/trophy,
+/obj/structure/displaycase/trophy{
+	id = 3
+	},
 /turf/simulated/floor/wood,
 /area/library)
 "bwU" = (
@@ -94610,6 +94616,7 @@
 /area/security/securehallway)
 "fpD" = (
 /obj/structure/sign/painting/library{
+	id = 4;
 	pixel_x = 30
 	},
 /turf/simulated/floor/wood,
@@ -94617,6 +94624,12 @@
 "gdD" = (
 /obj/structure/bookcase{
 	name = "bookcase (Other)"
+	},
+/turf/simulated/floor/wood,
+/area/library)
+"hIo" = (
+/obj/structure/displaycase/trophy{
+	id = 2
 	},
 /turf/simulated/floor/wood,
 /area/library)
@@ -94632,6 +94645,19 @@
 "myH" = (
 /obj/structure/bookcase{
 	name = "bookcase (Fiction)"
+	},
+/turf/simulated/floor/wood,
+/area/library)
+"nPm" = (
+/obj/structure/sign/painting/library{
+	id = 2;
+	pixel_y = 30
+	},
+/turf/simulated/floor/wood,
+/area/library)
+"oMS" = (
+/obj/structure/displaycase/trophy{
+	id = 4
 	},
 /turf/simulated/floor/wood,
 /area/library)
@@ -94673,7 +94699,9 @@
 /turf/simulated/floor/wood,
 /area/library)
 "xVl" = (
-/obj/structure/decorative_structures/metal/statue/metal_angel,
+/obj/structure/decorative_structures/metal/statue/metal_angel{
+	anchored = 1
+	},
 /turf/simulated/floor/wood,
 /area/library)
 
@@ -118950,7 +118978,7 @@ aJI
 aLS
 bjG
 aiM
-amK
+nPm
 bkO
 ajb
 ajb
@@ -119207,12 +119235,12 @@ aJI
 aAq
 bcP
 aiM
-xpp
+hIo
 bkO
 aOp
 bwT
 fpD
-xpp
+oMS
 bjl
 aaa
 arX
