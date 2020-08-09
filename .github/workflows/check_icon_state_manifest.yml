@@ -10,7 +10,11 @@ jobs:
   verify_manifest:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2-beta
-    - run: npm install
-    - run: npm test
+    - name: Checkout Project
+      uses: actions/checkout@v2
+
+    - name: Setup Node
+      uses: actions/setup-node@v2-beta
+
+    - name: Verify Manifest
+      run: './tools/scorpio/check_icon_state_manifest/action.sh'
