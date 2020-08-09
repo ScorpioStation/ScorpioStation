@@ -2,7 +2,7 @@
 # check_icon_state_manifest.sh
 # Verify the project contains icon_state listed in a manifest file
 
-echo "PWD: $PWD"
+PROJECT_ROOT="$PWD"
 cd tools/scorpio/check_icon_state_manifest
-npm install  # try 'npm ci' for speed when complete
-node index
+npm ci
+node_modules/.bin/coffee index.coffee "$PROJECT_ROOT"

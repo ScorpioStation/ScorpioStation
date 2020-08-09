@@ -2,13 +2,10 @@
   "name": "check_icon_state_manifest",
   "version": "1.0.0",
   "description": "Verify the project contains icon_state listed in a manifest file",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "blinkdog@protonmail.com",
   "license": "SEE LICENSE IN LICENSE-AGPL3.txt",
   "dependencies": {
-    "ansi-colors": "4.1.1"
+    "coffeescript": "2.5.1",
+    "png-chunks-extract": "1.0.0"
   }
 }
