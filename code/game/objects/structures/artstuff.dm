@@ -248,6 +248,7 @@
 	var/persistence_id
 	var/id = 1
 	var/alert = FALSE
+	var/obj/item/radio/Radio
 
 /obj/structure/sign/painting/Initialize(mapload, dir, building)
 	. = ..()
@@ -256,8 +257,13 @@
 		setDir(dir)
 	if(building)
 		set_pixel_offsets_from_dir(30, -30, 30, -30)
+	Radio = new /obj/item/radio(src)
+	Radio.listening = 0
+	Radio.config(list("Security" = 0))
+	Radio.follow_target = src
 
 /obj/structure/sign/painting/Destroy()
+	QDEL_NULL(Radio)
 	. = ..()
 	SSpersistence.painting_frames -= src
 
@@ -367,6 +373,7 @@
 		new_canvas.finalized = TRUE
 		new_canvas.painting_name = title
 		new_canvas.author_ckey = author
+		new_canvas.update_overlays()
 		canvas = new_canvas
 		name = canvas.painting_name
 		alert = TRUE
@@ -423,6 +430,8 @@
 		var/area/alarmed = get_area(src)
 		alarmed.burglaralert(src)
 		visible_message("<span class='danger'>The burglar alarm goes off!</span>")
+		var/announcetext = "403 - Grand Theft recorded occuring in [alarmed.name]."
+		Radio.autosay(announcetext, name, "Security", list(z))
 		// Play the burglar alarm three times
 		for(var/i in 1 to 4)
 			playsound(src, 'sound/machines/burglar_alarm.ogg', 50, 0)
