@@ -9,6 +9,7 @@
 	armor = list("melee" = 30, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 100)
 	max_integrity = 200
 	integrity_failure = 50
+	var/obj/item/radio/Radio
 	var/obj/item/showpiece = null
 	var/alert = TRUE
 	var/open = FALSE
@@ -30,8 +31,13 @@
 	if(start_showpiece_type)
 		showpiece = new start_showpiece_type (src)
 	update_icon()
+	Radio = new /obj/item/radio(src)
+	Radio.listening = 0
+	Radio.config(list("Security" = 0))
+	Radio.follow_target = src
 
 /obj/structure/displaycase/Destroy()
+	QDEL_NULL(Radio)
 	QDEL_NULL(electronics)
 	QDEL_NULL(showpiece)
 	return ..()
@@ -79,6 +85,8 @@
 	if(alert && is_station_contact(z))
 		var/area/alarmed = get_area(src)
 		alarmed.burglaralert(src)
+		var/announcetext = "403 - Grand Theft recorded occuring in [alarmed.name]."
+		Radio.autosay(announcetext, name, "Security", list(z))
 		visible_message("<span class='danger'>The burglar alarm goes off!</span>")
 		// Play the burglar alarm three times
 		for(var/i = 0, i < 4, i++)
@@ -245,9 +253,6 @@ GLOBAL_LIST_EMPTY(trophy_cases)
 	desc = "Store your trophies of accomplishment in here, and they will stay forever."
 	var/placer_key = ""
 	var/added_roundstart = TRUE
-	var/is_locked = TRUE
-	integrity_failure = 0
-	openable = FALSE
 
 /obj/structure/displaycase/trophy/Initialize()
 	. = ..()
@@ -258,24 +263,15 @@ GLOBAL_LIST_EMPTY(trophy_cases)
 	return ..()
 
 /obj/structure/displaycase/trophy/attackby(obj/item/W, mob/user, params)
-
 	if(!user.Adjacent(src)) //no TK museology
 		return
 	if(user.a_intent == INTENT_HARM)
 		return ..()
 
 	var/obj/item/key/displaycase/K = W
-	if(istype(K))
-		is_locked = !is_locked
-		to_chat(user, "<span class='notice'>You [!is_locked ? "un" : ""]lock the case.</span>")
-		return
-
-	if(is_locked)
-		to_chat(user, "<span class='warning'>The case is shut tight with an old-fashioned physical lock. Maybe you should ask the curator for the key?</span>")
-		return
-
-	if(!added_roundstart)
-		to_chat(user, "<span class='warning'>You've already put something new in this case!</span>")
+	if(istype(K) && !broken && openable)
+		to_chat(user,  "<span class='notice'>You [open ? "close":"open"] [src].</span>")
+		toggle_lock(user)
 		return
 
 	if(forbidden_atoms_check(W))
@@ -287,45 +283,30 @@ GLOBAL_LIST_EMPTY(trophy_cases)
 			to_chat(user, "<span class='warning'>The case rejects the [W]!</span>")
 			return
 
-	if(user.drop_item())
-		W.forceMove(src)
+	if(open && !showpiece)
+		if(user.drop_item())
+			W.forceMove(src)
+			added_roundstart = FALSE
+			showpiece = W
+			to_chat(user, "<span class='notice'>You put [W] on display</span>")
+			update_icon()
 
-		if(showpiece)
-			to_chat(user, "<span class='notice'>You press a button, and [showpiece] descends into the floor of the case.</span>")
-			QDEL_NULL(showpiece)
+			placer_key = user.ckey
 
-		to_chat(user, "<span class='notice'>You insert [W] into the case.</span>")
-		showpiece = W
-		added_roundstart = FALSE
-		update_icon()
+			trophy_message = W.desc //default value
 
-		placer_key = user.ckey
+			var/chosen_plaque = stripped_input(user, "What would you like the plaque to say? Default value is item's description.", "Trophy Plaque")
+			if(chosen_plaque)
+				if(user.Adjacent(src))
+					trophy_message = chosen_plaque
+					to_chat(user, "<span class='notice'>You set the plaque's text.</span>")
+				else
+					to_chat(user, "<span class='warning'>You are too far to set the plaque's text!</span>")
 
-		trophy_message = W.desc //default value
-
-		var/chosen_plaque = stripped_input(user, "What would you like the plaque to say? Default value is item's description.", "Trophy Plaque")
-		if(chosen_plaque)
-			if(user.Adjacent(src))
-				trophy_message = chosen_plaque
-				to_chat(user, "<span class='notice'>You set the plaque's text.</span>")
-			else
-				to_chat(user, "<span class='warning'>You are too far to set the plaque's text!</span>")
-
-		return TRUE
-
+			return TRUE
 	else
-		to_chat(user, "<span class='warning'>\The [W] is stuck to your hand, you can't put it in the [src.name]!</span>")
+		return ..()
 
-	return
-
-/obj/structure/displaycase/trophy/dump()
-	if (showpiece)
-		if(added_roundstart)
-			visible_message("<span class='danger'>The [showpiece] crumbles to dust!</span>")
-			new /obj/effect/decal/cleanable/ash(loc)
-			QDEL_NULL(showpiece)
-		else
-			..()
 
 /obj/item/key/displaycase
 	name = "display case key"
@@ -338,6 +319,6 @@ GLOBAL_LIST_EMPTY(trophy_cases)
 /obj/item/showpiece_dummy/Initialize(mapload, path)
 	. = ..()
 	var/obj/item/I = path
-	name = initial(I.name)
+	name = "replica [initial(I.name)]"
 	icon = initial(I.icon)
 	icon_state = initial(I.icon_state)
