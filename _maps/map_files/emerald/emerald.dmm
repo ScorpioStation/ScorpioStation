@@ -5993,7 +5993,7 @@
 /turf/simulated/floor/wood,
 /area/library)
 "anA" = (
-/obj/structure/statue/gold/hos,
+/obj/structure/decorative_structures/metal/statue/tesla,
 /turf/simulated/floor/wood,
 /area/library)
 "anB" = (
@@ -64317,7 +64317,9 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/public/glass,
+/obj/machinery/door/airlock/public/glass{
+	name = "Office/Art Supplies"
+	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plasteel,
 /area/storage/office)
@@ -94622,10 +94624,17 @@
 /obj/structure/table,
 /obj/item/storage/fancy/crayons,
 /obj/item/toy/crayon/spraycan,
+/obj/machinery/light,
 /turf/simulated/floor/plasteel{
 	icon_state = "floorgrime"
 	},
 /area/storage/office)
+"myH" = (
+/obj/structure/bookcase{
+	name = "bookcase (Fiction)"
+	},
+/turf/simulated/floor/wood,
+/area/library)
 "pEV" = (
 /obj/structure/bookcase{
 	name = "bookcase (Religion)"
@@ -94654,6 +94663,7 @@
 /obj/item/toner{
 	pixel_y = -4
 	},
+/obj/machinery/light,
 /turf/simulated/floor/plasteel{
 	icon_state = "floorgrime"
 	},
@@ -94663,7 +94673,7 @@
 /turf/simulated/floor/wood,
 /area/library)
 "xVl" = (
-/obj/structure/statue/diamond/captain,
+/obj/structure/decorative_structures/metal/statue/metal_angel,
 /turf/simulated/floor/wood,
 /area/library)
 
@@ -117143,7 +117153,7 @@ ajb
 ajb
 amJ
 ajb
-anz
+myH
 bJx
 bfq
 cTe
@@ -117400,7 +117410,7 @@ ajb
 ajb
 anW
 ajb
-anz
+myH
 bJx
 cSO
 aTQ
@@ -135426,7 +135436,7 @@ cwx
 bEB
 cRy
 cRA
-cRk
+axS
 aaa
 aaa
 aaa
@@ -135683,7 +135693,7 @@ biZ
 bSP
 cRy
 koc
-cRk
+axS
 aaa
 aaa
 aaa
@@ -135940,7 +135950,7 @@ aCy
 bSQ
 rdQ
 aCF
-cRk
+axS
 ayZ
 ayZ
 ayZ
