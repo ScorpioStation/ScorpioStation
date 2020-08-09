@@ -17,6 +17,7 @@
 	var/start_showpiece_type = null //add type for items on display
 	var/list/start_showpieces = list() //Takes sublists in the form of list("type" = /obj/item/bikehorn, "trophy_message" = "henk")
 	var/trophy_message = ""
+	var/id = 1
 
 /obj/structure/displaycase/Initialize(mapload)
 	. = ..()
@@ -265,11 +266,8 @@ GLOBAL_LIST_EMPTY(trophy_cases)
 
 	var/obj/item/key/displaycase/K = W
 	if(istype(K))
-		if(added_roundstart)
-			is_locked = !is_locked
-			to_chat(user, "<span class='notice'>You [!is_locked ? "un" : ""]lock the case.</span>")
-		else
-			to_chat(user, "<span class='warning'>The lock is stuck shut!</span>")
+		is_locked = !is_locked
+		to_chat(user, "<span class='notice'>You [!is_locked ? "un" : ""]lock the case.</span>")
 		return
 
 	if(is_locked)
@@ -313,7 +311,6 @@ GLOBAL_LIST_EMPTY(trophy_cases)
 			else
 				to_chat(user, "<span class='warning'>You are too far to set the plaque's text!</span>")
 
-		SSpersistence.SaveTrophy(src)
 		return TRUE
 
 	else
@@ -336,6 +333,7 @@ GLOBAL_LIST_EMPTY(trophy_cases)
 
 /obj/item/showpiece_dummy
 	name = "Cheap replica"
+	var/originalpath
 
 /obj/item/showpiece_dummy/Initialize(mapload, path)
 	. = ..()

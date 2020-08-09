@@ -139,6 +139,8 @@
 	author_ckey = user.ckey
 	generate_proper_overlay()
 	try_rename(user)
+	message_admins("[key_name_admin(user)] (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[x];Y=[y];Z=[z]'>JMP to canvas</a>) finalized a canvas named: [painting_name]")
+	log_admin("[key_name_admin(user)] finalized a canvas named: [painting_name]")
 
 /obj/item/canvas/proc/update_overlays()
 	if(!icon_generated)
@@ -244,6 +246,7 @@
 	icon_state = "frame-empty"
 	var/obj/item/canvas/canvas
 	var/persistence_id
+	var/id = 1
 	var/alert = FALSE
 
 /obj/structure/sign/painting/Initialize(mapload, dir, building)
@@ -340,34 +343,36 @@
 		return
 	if(!SSpersistence.paintings || !SSpersistence.paintings[persistence_id] || !length(SSpersistence.paintings[persistence_id]))
 		return
-	var/list/chosen = pick(SSpersistence.paintings[persistence_id])
-	var/title = chosen["title"]
-	var/author = chosen["ckey"]
-	var/png = "data/paintings/[persistence_id]/[chosen["md5"]].png"
-	if(!fexists(png))
-		stack_trace("Persistent painting [chosen["md5"]].png was not found in [persistence_id] directory.")
-		return
-	var/icon/I = new(png)
-	var/obj/item/canvas/new_canvas
-	var/w = I.Width()
-	var/h = I.Height()
-	for(var/T in typesof(/obj/item/canvas))
-		new_canvas = T
-		if(initial(new_canvas.width) == w && initial(new_canvas.height) == h)
-			new_canvas = new T(src)
-			break
-	new_canvas.fill_grid_from_icon(I)
-	new_canvas.generated_icon = I
-	new_canvas.icon_generated = TRUE
-	new_canvas.finalized = TRUE
-	new_canvas.painting_name = title
-	new_canvas.author_ckey = author
-	canvas = new_canvas
-	name = canvas.painting_name
-	alert = TRUE
-	update_icon()
-	update_overlays()
-	update_icon_state()
+	for(var/list/chosen in SSpersistence.paintings[persistence_id])
+		if(chosen["id"] != id)
+			continue
+		var/title = chosen["title"]
+		var/author = chosen["ckey"]
+		var/png = "data/paintings/[persistence_id]/[chosen["md5"]].png"
+		if(!fexists(png))
+			stack_trace("Persistent painting [chosen["md5"]].png was not found in [persistence_id] directory.")
+			return
+		var/icon/I = new(png)
+		var/obj/item/canvas/new_canvas
+		var/w = I.Width()
+		var/h = I.Height()
+		for(var/T in typesof(/obj/item/canvas))
+			new_canvas = T
+			if(initial(new_canvas.width) == w && initial(new_canvas.height) == h)
+				new_canvas = new T(src)
+				break
+		new_canvas.fill_grid_from_icon(I)
+		new_canvas.generated_icon = I
+		new_canvas.icon_generated = TRUE
+		new_canvas.finalized = TRUE
+		new_canvas.painting_name = title
+		new_canvas.author_ckey = author
+		canvas = new_canvas
+		name = canvas.painting_name
+		alert = TRUE
+		update_icon()
+		update_overlays()
+		update_icon_state()
 
 /obj/structure/sign/painting/proc/save_persistent()
 	if(!persistence_id || !canvas)
@@ -388,7 +393,7 @@
 	var/result = rustg_dmi_create_png(png_path,"[canvas.width]","[canvas.height]",data)
 	if(result)
 		CRASH("Error saving persistent painting: [result]")
-	current += list(list("title" = canvas.painting_name , "md5" = md5, "ckey" = canvas.author_ckey))
+	current += list(list("title" = canvas.painting_name , "md5" = md5, "ckey" = canvas.author_ckey, "id" = id))
 	SSpersistence.paintings[persistence_id] = current
 
 /obj/item/canvas/proc/fill_grid_from_icon(icon/I)
@@ -406,33 +411,6 @@
 
 /obj/structure/sign/painting/library_private // keep your smut away from prying eyes, or non-librarians at least
 	persistence_id = "library_private"
-
-/obj/structure/sign/painting/verb/remove_painting()
-	set name = "Remove Persistent Painting"
-	set desc = "Allows you to delete a persistant painting permanently"
-	set category = null
-
-	if(!check_rights(R_ADMIN))
-		return
-
-	var/mob/user = usr
-	if(!persistence_id || !canvas)
-		to_chat(user,"<span class='warning'>This is not a persistent painting.</span>")
-		return
-	var/md5 = md5(lowertext(canvas.get_data_string()))
-	var/author = canvas.author_ckey
-	var/list/current = SSpersistence.paintings[persistence_id]
-	if(current)
-		for(var/list/entry in current)
-			if(entry["md5"] == md5)
-				current -= entry
-		var/png = "data/paintings/[persistence_id]/[md5].png"
-		fdel(png)
-	for(var/obj/structure/sign/painting/P in SSpersistence.painting_frames)
-		if(P.canvas && md5(P.canvas.get_data_string()) == md5)
-			QDEL_NULL(P.canvas)
-	log_admin("[key_name(user)] has deleted a persistent painting made by [author].")
-	message_admins("<span class='notice'>[key_name_admin(user)] has deleted persistent painting made by [author].</span>")
 
 
 // Until somebody bigger brained wants to mess around with painting construction.
