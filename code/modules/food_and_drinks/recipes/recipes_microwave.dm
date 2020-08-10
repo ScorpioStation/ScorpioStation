@@ -56,6 +56,13 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/human/burger
 
+/datum/recipe/microwave/roachburger
+	items = list(
+		/obj/item/reagent_containers/food/snacks/bun,
+		/obj/item/holder/cockroach
+	)
+	result = /obj/item/reagent_containers/food/snacks/roachburger
+
 /datum/recipe/microwave/plainburger
 	items = list(
 		/obj/item/reagent_containers/food/snacks/bun,

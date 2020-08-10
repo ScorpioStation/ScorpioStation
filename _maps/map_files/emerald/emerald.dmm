@@ -94233,6 +94233,7 @@
 /turf/simulated/floor/plasteel,
 /area/assembly/chargebay)
 "dxa" = (
+/mob/living/simple_animal/cockroach,
 /turf/simulated/floor/plating,
 /area/toxins/misc_lab)
 "dxb" = (
@@ -94614,6 +94615,13 @@
 	icon_state = "darkredcorners"
 	},
 /area/security/securehallway)
+"ekn" = (
+/mob/living/simple_animal/cockroach,
+/turf/simulated/floor/wood{
+	tag = "icon-wood-broken5";
+	icon_state = "wood-broken5"
+	},
+/area/maintenance/fsmaint3)
 "fpD" = (
 /obj/structure/sign/painting/library{
 	id = 4;
@@ -94627,12 +94635,16 @@
 	},
 /turf/simulated/floor/wood,
 /area/library)
-"hIo" = (
+"ick" = (
 /obj/structure/displaycase/trophy{
 	id = 2
 	},
 /turf/simulated/floor/wood,
 /area/library)
+"ifu" = (
+/mob/living/simple_animal/cockroach,
+/turf/simulated/floor/plating,
+/area/maintenance/asmaint2)
 "koc" = (
 /obj/structure/table,
 /obj/item/storage/fancy/crayons,
@@ -94642,31 +94654,36 @@
 	icon_state = "floorgrime"
 	},
 /area/storage/office)
+"mry" = (
+/obj/structure/displaycase/trophy{
+	id = 4
+	},
+/turf/simulated/floor/wood,
+/area/library)
 "myH" = (
 /obj/structure/bookcase{
 	name = "bookcase (Fiction)"
 	},
 /turf/simulated/floor/wood,
 /area/library)
-"nPm" = (
-/obj/structure/sign/painting/library{
-	id = 2;
-	pixel_y = 30
-	},
-/turf/simulated/floor/wood,
-/area/library)
-"oMS" = (
-/obj/structure/displaycase/trophy{
-	id = 4
-	},
-/turf/simulated/floor/wood,
-/area/library)
+"nAv" = (
+/mob/living/simple_animal/cockroach,
+/turf/simulated/floor/plating,
+/area/maintenance/fsmaint2)
+"oPI" = (
+/mob/living/simple_animal/cockroach,
+/turf/simulated/floor/plating,
+/area/maintenance/fsmaint)
 "pEV" = (
 /obj/structure/bookcase{
 	name = "bookcase (Religion)"
 	},
 /turf/simulated/floor/wood,
 /area/library)
+"rdq" = (
+/mob/living/simple_animal/cockroach,
+/turf/simulated/floor/plating,
+/area/maintenance/fpmaint)
 "rdQ" = (
 /obj/structure/table,
 /obj/item/canvas/twentythreeXtwentythree,
@@ -94677,6 +94694,14 @@
 	icon_state = "floorgrime"
 	},
 /area/storage/office)
+"rGv" = (
+/mob/living/simple_animal/cockroach,
+/turf/simulated/floor/plating,
+/area/maintenance/fpmaint2)
+"tbD" = (
+/mob/living/simple_animal/cockroach,
+/turf/simulated/floor/plating,
+/area/maintenance/apmaint)
 "tyd" = (
 /obj/structure/table,
 /obj/item/toner{
@@ -94694,6 +94719,15 @@
 	icon_state = "floorgrime"
 	},
 /area/storage/office)
+"wWj" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/cockroach,
+/turf/simulated/floor/plating,
+/area/maintenance/asmaint2)
+"xcA" = (
+/mob/living/simple_animal/cockroach,
+/turf/simulated/floor/plating,
+/area/maintenance/fpmaint3)
 "xpp" = (
 /obj/structure/displaycase/trophy,
 /turf/simulated/floor/wood,
@@ -94701,6 +94735,13 @@
 "xVl" = (
 /obj/structure/decorative_structures/metal/statue/metal_angel{
 	anchored = 1
+	},
+/turf/simulated/floor/wood,
+/area/library)
+"ygw" = (
+/obj/structure/sign/painting/library{
+	id = 2;
+	pixel_y = 30
 	},
 /turf/simulated/floor/wood,
 /area/library)
@@ -110305,7 +110346,7 @@ dqF
 aaa
 aaa
 aVU
-aVJ
+tbD
 aVJ
 das
 cQX
@@ -112803,7 +112844,7 @@ bpZ
 bpZ
 bko
 bml
-bpZ
+xcA
 bpZ
 bpZ
 bpZ
@@ -114663,7 +114704,7 @@ cQX
 dnX
 diI
 dnI
-aVJ
+tbD
 aVJ
 bZv
 dff
@@ -114856,7 +114897,7 @@ bym
 aPV
 aAq
 dgW
-aAq
+rdq
 bml
 dfU
 dge
@@ -118978,7 +119019,7 @@ aJI
 aLS
 bjG
 aiM
-nPm
+ygw
 bkO
 ajb
 ajb
@@ -119235,12 +119276,12 @@ aJI
 aAq
 bcP
 aiM
-hIo
+ick
 bkO
 aOp
 bwT
 fpD
-oMS
+mry
 bjl
 aaa
 arX
@@ -126933,7 +126974,7 @@ aJD
 det
 deM
 deM
-aAd
+rGv
 dfA
 aJD
 bZA
@@ -138469,7 +138510,7 @@ aAC
 ack
 aGA
 ack
-ack
+oPI
 azG
 aae
 acs
@@ -140618,7 +140659,7 @@ diL
 aBw
 dhN
 dhN
-cIG
+wWj
 aCi
 dbZ
 dbZ
@@ -144672,7 +144713,7 @@ biq
 bkZ
 dhR
 dgi
-aAp
+nAv
 aAh
 aAp
 dgx
@@ -146531,7 +146572,7 @@ aBw
 der
 cSa
 djj
-aBw
+ifu
 aCi
 aaa
 aaa
@@ -148536,7 +148577,7 @@ byT
 aZq
 aZq
 axk
-dkA
+ekn
 dlo
 dln
 dlP

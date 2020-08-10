@@ -68,6 +68,8 @@
 
 	//Hot simple_animal baby making vars
 	var/list/childtype = null
+	var/adult_mob_type
+	var/growth_time
 	var/next_scan_time = 0
 	var/animal_species //Sorry, no spider+corgi buttbabies.
 
@@ -139,6 +141,7 @@
 
 /mob/living/simple_animal/examine(mob/user)
 	. = ..()
+	. += "<span class='notice'>It appears to be a [gender].</span>" // So we can easily tell their gender for breeding shenanigans.
 	if(stat == DEAD)
 		. += "<span class='deadsay'>Upon closer examination, [p_they()] appear[p_s()] to be dead.</span>"
 
@@ -415,33 +418,33 @@
 		collar_type = "[initial(collar_type)]"
 		regenerate_icons()
 
-/mob/living/simple_animal/proc/make_babies() // <3 <3 <3
+/mob/living/simple_animal/proc/make_babies(shy = TRUE) // <3 <3 <3
 	if(gender != FEMALE || stat || next_scan_time > world.time || !childtype || !animal_species || !SSticker.IsRoundInProgress())
 		return FALSE
-	next_scan_time = world.time + 400
+	next_scan_time = world.time + 40 SECONDS
 
-	var/alone = TRUE
-	var/mob/living/simple_animal/partner
-	var/children = 0
+	var/partner = FALSE
+	var/children = NONE
 
-	for(var/mob/M in oview(7, src))
+	for(var/mob/living/M in oview(7, src))
 		if(M.stat != CONSCIOUS) //Check if it's conscious FIRST.
 			continue
-		else if(istype(M, childtype)) //Check for children SECOND.
+		if(istype(M, childtype)) //Check for children SECOND.
 			children++
-		else if(istype(M, animal_species))
+			continue
+		if(istype(M, animal_species))
 			if(M.ckey)
 				continue
-			else if(!istype(M, childtype) && M.gender == MALE) //Better safe than sorry ;_;
-				partner = M
-		else if(isliving(M) && !faction_check_mob(M)) //shyness check. we're not shy in front of things that share a faction with us.
-			return //we never mate when not alone, so just abort early
+			if(M.gender == MALE) //Better safe than sorry ;_;
+				partner = TRUE
+		if(!faction_check_mob(M) && shy) //shyness check. we're not shy in front of things that share a faction with us.
+			return
 
-	if(alone && partner && children < 3)
-		var/childspawn = pickweight(childtype)
-		var/turf/target = get_turf(loc)
+	if(partner && children < 3)
+		var/child_type = pickweight(childtype)
+		var/turf/target = get_turf(src)
 		if(target)
-			return new childspawn(target)
+			return new child_type(target)
 
 /mob/living/simple_animal/show_inv(mob/user as mob)
 	if(!can_collar)
