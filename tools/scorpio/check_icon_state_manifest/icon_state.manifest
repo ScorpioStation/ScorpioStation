@@ -19,3 +19,6 @@ icons/obj/clothing/suits.dmi : arkrep
 icons/obj/clothing/suits.dmi : ark_hoodie
 icons/obj/clothing/uniforms.dmi : arkrepf
 icons/obj/items.dmi : soapark
+icons/obj/items.dmi : soapstone
+icons/obj/items.dmi : zippo_ark_off
+icons/obj/items.dmi : zippo_ark_on
