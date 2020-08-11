@@ -41,7 +41,7 @@
 		if("tranquillite")
 			max_integrity = 300
 			material_drop_type = /obj/item/stack/sheet/mineral/tranquillite
-	obj_integrety = max_integrity
+	obj_integrity = max_integrity
 
 /obj/structure/carving/attackby(obj/item/W, mob/living/user, params)
 	add_fingerprint(user)
@@ -397,9 +397,9 @@
 
 /obj/item/chisel/afterattack(atom/target, mob/living/carbon/user)
 	if(istype(target,/obj/structure/carving/block))
-		var/obj/structure/carving/C = target
-		var/list/availablestatues = typesof(text2path("/obj/structure/carving/statue/[C.material]"))
-		availablestatues -= text2path("/obj/structure/carving/statue/[C.material]")
+		var/obj/structure/carving/block/B = target
+		var/list/availablestatues = typesof(text2path("/obj/structure/carving/statue/[B.material]"))
+		availablestatues -= text2path("/obj/structure/carving/statue/[B.material]")
 		var/list/finallist = list()
 		for(var/S2 in availablestatues)
 			var/obj/structure/carving/statue/S = new S2
@@ -408,24 +408,25 @@
 			finallist += L
 		var/chosenstatue = input(user, "What do you want to carve?", "Carving") as null|anything in finallist
 		if(chosenstatue)
-			user.visible_message("<span class='notice'>[user] starts to carve [C].</span>", "<span class='notice'>You start carving [C].</span>", "<span class='hear'>You hear a chipping sound.</span>")
+			user.visible_message("<span class='notice'>[user] starts to carve [B].</span>", "<span class='notice'>You start carving [B].</span>", "<span class='hear'>You hear a chipping sound.</span>")
 			playsound(loc, 'sound/items/gavel.ogg', 50, TRUE, -1)
-			if(do_after(user, tool_speed, target = C))
+			if(do_after(user, tool_speed, target = B))
 				playsound(loc, 'sound/items/gavel.ogg', 50, TRUE, -1)
 				if(istype(chosenstatue,/obj/structure/carving/statue))
 					var/obj/structure/carving/statue/finalstatue = chosenstatue
-					new finalstatue.type(C.loc)
-					qdel(C)
+					new finalstatue.type(B.loc)
+					qdel(B)
 					user.visible_message("<span class='notice'>[user] finishes carving [finalstatue].</span>", "<span class='notice'>You finish carving [finalstatue].</span>")
 				else if(istype(chosenstatue,/mob/living))
 					var/mob/living/mobstatue = chosenstatue
-					var/path = text2path("/obj/structure/carving/statue/[C.material]")
-					var/obj/structure/carving/statue/finalstatue = new path(C.loc)
+					var/path = text2path("/obj/structure/carving/statue/[B.material]")
+					var/obj/structure/carving/statue/finalstatue = new path(B.loc)
 					finalstatue.generated_icon = getFlatIcon(mobstatue)
+				//	finalstatue.generated_icon = finalstatue.generated_icon.ColorTone(B.tone) // Requires a tone var with the list of material colortones
 					var/mutable_appearance/detail = mutable_appearance(finalstatue.generated_icon)
 					finalstatue.add_overlay(detail)
-					finalstatue.name = "[C.material] statue of [chosenstatue]"
-					qdel(C)
+					finalstatue.name = "[B.material] statue of [chosenstatue]"
+					qdel(B)
 					user.visible_message("<span class='notice'>[user] finishes carving [finalstatue].</span>", "<span class='notice'>You finish carving [finalstatue].</span>")
 	else
 		return ..()
