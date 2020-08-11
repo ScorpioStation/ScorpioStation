@@ -1,0 +1,24 @@
+# icon_state.manifest
+#
+# This is a manifest of all the icon_state that we want to verify are in
+# the project at build time. Each line has the following format:
+#
+# path/to/icon.dmi:icon_state
+#
+# The process will exit with an error if the icon file does not exist in
+# the project, or if that icon file exists but does not contain the
+# icon_state that has been specified.
+
+icons/obj/closet.dmi : arksecurebroken
+icons/obj/closet.dmi : arksecure
+icons/obj/closet.dmi : arksecure1
+icons/obj/closet.dmi : arksecureoff
+icons/obj/closet.dmi : arksecureopen
+icons/obj/clothing/hats.dmi : arkrep
+icons/obj/clothing/suits.dmi : arkrep
+icons/obj/clothing/suits.dmi : ark_hoodie
+icons/obj/clothing/uniforms.dmi : arkrepf
+icons/obj/items.dmi : soapark
+icons/obj/items.dmi : soapstone
+icons/obj/items.dmi : zippo_ark_off
+icons/obj/items.dmi : zippo_ark_on

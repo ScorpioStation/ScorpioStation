@@ -34,6 +34,14 @@
 	list_reagents = list("nutriment" = 6, "vitamin" = 1)
 	tastes = list("bun" = 4, "tender meat" = 2)
 
+/obj/item/reagent_containers/food/snacks/roachburger
+	name = "roach burger"
+	desc = "It's a dead cockroach stuffed between a bun. Are you really going to eat this?"
+	icon_state = "roachburger"
+	bitesize = 3
+	list_reagents = list("nutriment" = 5, "vitamin" = 1)
+	tastes = list("bun" = 4, "cockroach" = 3)
+
 /obj/item/reagent_containers/food/snacks/cheeseburger
 	name = "cheeseburger"
 	desc = "The cheese adds a good flavor."
