@@ -50,7 +50,7 @@
 
 // Allow humans on help intent to pick up the cockroaches, and handles hissing
 /mob/living/simple_animal/cockroach/attack_hand(mob/living/carbon/human/H)
-	do_hiss(20 SECONDS) // 30 seconds hiss cooldown to prevents hiss sound spam.
+	do_hiss()
 	if(H.a_intent == INTENT_HELP)
 		get_scooped(H)
 		playsound(loc, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
@@ -60,11 +60,12 @@
 	else
 		return ..()
 
-/mob/living/simple_animal/cockroach/proc/do_hiss(cooldown)
+/mob/living/simple_animal/cockroach/proc/do_hiss(cooldown = 20 SECONDS)
+	if(stat != CONSCIOUS || world.time < next_hiss)
+		return
 	custom_emote(2, "hisses.") // Hisssss!
-	if(!stat && world.time > next_hiss)
-		playsound(src, pick(hiss_sounds), 20, TRUE)
-		next_hiss = world.time + cooldown
+	playsound(src, pick(hiss_sounds), 20, TRUE)
+	next_hiss = world.time + cooldown
 
 /mob/living/simple_animal/cockroach/attackby(obj/item/O, mob/living/user)
 	if(pre_mutate_checks(O, user))
