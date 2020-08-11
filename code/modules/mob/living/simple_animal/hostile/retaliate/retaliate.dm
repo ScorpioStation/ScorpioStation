@@ -24,7 +24,7 @@
 	see &= enemies // Remove all entries that aren't in enemies
 	return see
 
-/mob/living/simple_animal/hostile/retaliate/proc/Retaliate()
+/mob/living/simple_animal/hostile/retaliate/proc/Retaliate(rally_others = TRUE)
 	var/list/around = view(src, vision_range)
 
 	for(var/atom/movable/A in around)
@@ -45,10 +45,12 @@
 				enemies |= S
 				enemies |= S.pilot
 
-	for(var/mob/living/simple_animal/hostile/retaliate/H in around)
-		if(faction_check_mob(H) && !attack_same && !H.attack_same)
-			H.enemies |= enemies
-	return 0
+	// If rally_others is true, other /retaliate mobs in the area that share our faction, will also aggro onto the attacker.
+	if(rally_others)
+		for(var/mob/living/simple_animal/hostile/retaliate/H in around)
+			if(faction_check_mob(H) && !attack_same && !H.attack_same)
+				H.enemies |= enemies
+	return FALSE
 
 /mob/living/simple_animal/hostile/retaliate/adjustHealth(amount, updating_health = TRUE)
 	. = ..()

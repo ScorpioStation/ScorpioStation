@@ -25,9 +25,9 @@
 
 		qdel(src)
 
-/obj/item/holder/attackby(obj/item/W as obj, mob/user as mob, params)
-	for(var/mob/M in src.contents)
-		M.attackby(W,user, params)
+/obj/item/holder/attackby(obj/item/W, mob/user, params)
+	for(var/mob/M in contents)
+		return M.attackby(W,user, params)
 
 /obj/item/holder/proc/show_message(var/message, var/m_type)
 	for(var/mob/living/M in contents)
@@ -104,3 +104,31 @@
 	desc = "It's a small, disease-ridden rodent."
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "mouse_gray"
+
+/obj/item/holder/cockroach
+	name = "cockroach"
+	desc = "This station is just crawling with bugs."
+	icon = 'icons/mob/animal.dmi'
+	icon_state = "cockroach_dead"
+	slot_flags = SLOT_POCKET
+
+/obj/item/holder/cockroach/attackby(obj/item/W, mob/user, params)
+	if(..()) // If the user tries to splash mutagen on the roach holder, this will be true.
+		var/mob/living/simple_animal/cockroach = locate() in contents
+		cockroach.forceMove(get_turf(src)) // Dump the roach onto the floor so it can mutate.
+		to_chat(user, "<span class='notice'>[cockroach] flops onto the ground.</span>")
+		qdel(src)
+		return TRUE
+	return FALSE
+
+/obj/item/holder/cockroach/baby
+	name = "baby cockroach"
+	desc = "A newly born cockroach. It's sort of cute."
+	icon_state = "cockroach_baby"
+
+/obj/item/holder/cockroach/attackby(obj/item/W, mob/user, params)
+	if(!..()) // Splashing mutagen on baby cockroaches kills them.
+		to_chat(user, "<span class='warning'>[src] shrivels up and dies as you pour the mutagen over it!</span>")
+		qdel(src)
+		return TRUE
+	return FALSE
