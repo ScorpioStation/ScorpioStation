@@ -182,6 +182,7 @@
 /obj/structure/carving/block/uranium
 	name = "uranium block"
 	material = "uranium"
+	icon_state = "block_uranium"
 
 /obj/structure/carving/statue/uranium/nuke
 	name = "statue of a nuclear fission explosive"
@@ -214,6 +215,7 @@
 /obj/structure/carving/block/gold
 	name = "gold block"
 	material = "gold"
+	icon_state = "block_gold"
 
 /obj/structure/carving/statue/gold
 	desc = "This is a highly valuable statue made from gold."
@@ -242,6 +244,7 @@
 /obj/structure/carving/block/silver
 	name = "silver block"
 	material = "silver"
+	icon_state = "block_silver"
 
 /obj/structure/carving/statue/silver/
 	desc = "This is a valuable statue made from silver."
@@ -291,6 +294,7 @@
 /obj/structure/carving/block/bananium
 	name = "bananium block"
 	material = "bananium"
+	icon_state = "block_bananium"
 
 /obj/structure/carving/statue/bananium
 	desc = "A bananium statue with a small engraving:'HOOOOOOONK'."
@@ -303,6 +307,7 @@
 /obj/structure/carving/block/sandstone
 	name = "sandstone block"
 	material = "sandstone"
+	icon_state = "block_sandstone"
 
 /obj/structure/carving/statue/sandstone
 	material = "sandstone"
