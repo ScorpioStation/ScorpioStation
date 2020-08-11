@@ -5993,9 +5993,7 @@
 /turf/simulated/floor/wood,
 /area/library)
 "anA" = (
-/obj/structure/decorative_structures/metal/statue/tesla{
-	anchored = 1
-	},
+/obj/structure/statuebase,
 /turf/simulated/floor/wood,
 /area/library)
 "anB" = (
@@ -94732,12 +94730,6 @@
 /obj/structure/displaycase/trophy,
 /turf/simulated/floor/wood,
 /area/library)
-"xVl" = (
-/obj/structure/decorative_structures/metal/statue/metal_angel{
-	anchored = 1
-	},
-/turf/simulated/floor/wood,
-/area/library)
 "ygw" = (
 /obj/structure/sign/painting/library{
 	id = 2;
@@ -118766,7 +118758,7 @@ xpp
 bkO
 anA
 ajb
-xVl
+anA
 bxn
 bjl
 aaa

@@ -180,6 +180,14 @@
 /obj/structure/carving/statue
 	var/customstatue = FALSE
 	var/icon/generated_icon
+	var/obj/structure/statuebase/pedestal
+
+/obj/structure/carving/statue/deconstruct(disassembled = TRUE)
+	if(pedestal)
+		pedestal = null
+	if(generated_icon)
+		qdel(generated_icon)
+	..(disassembled)
 
 /obj/structure/carving/block/uranium
 	name = "uranium block"
@@ -477,3 +485,13 @@
 			offset = 13
 
 
+/obj/structure/statuebase/MouseDrop_T(atom/movable/O, mob/user)
+	if(istype(O, /obj/structure/carving/statue))
+		if(!statue)
+			statue = O
+			statue.loc = loc
+			statue.anchored = TRUE
+			statue.pedestal = src
+			statue.pixel_y = offset
+		else
+			to_chat(user, "<span class='notice'>there is already a statue mounted to [src].</span>")
