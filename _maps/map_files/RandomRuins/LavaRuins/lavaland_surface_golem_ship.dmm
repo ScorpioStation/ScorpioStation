@@ -159,7 +159,7 @@
 /turf/simulated/shuttle/plating,
 /area/shuttle/freegolem)
 "aC" = (
-/obj/structure/statue/gold/rd{
+/obj/item/clothing/shoes/brown/rd{
 	name = "statue of the Liberator"
 	},
 /obj/structure/window/reinforced{

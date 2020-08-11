@@ -5915,7 +5915,7 @@
 /turf/simulated/floor/greengrid,
 /area/tcommsat/server)
 "ann" = (
-/obj/structure/statue/chickenstatue,
+/obj/structure/decorative_structures/metal/statue/chickenstatue,
 /turf/simulated/floor/wood,
 /area/crew_quarters/mrchangs)
 "ano" = (
@@ -42870,7 +42870,7 @@
 /turf/simulated/floor/grass,
 /area/crew_quarters/dorms)
 "bIH" = (
-/obj/structure/statue/sandstone/venus{
+/obj/structure/carving/statue/sandstone/venus{
 	layer = 4
 	},
 /obj/structure/disposalpipe/segment,
@@ -49496,7 +49496,7 @@
 	},
 /area/medical/genetics_cloning)
 "bUw" = (
-/obj/structure/statue/bananium/clown,
+/obj/structure/carving/statue/bananium/clown,
 /turf/simulated/floor/wood,
 /area/clownoffice)
 "bUx" = (
@@ -50025,7 +50025,7 @@
 	},
 /area/medical/reception)
 "bVt" = (
-/obj/structure/statue/tranquillite/mime,
+/obj/structure/carving/statue/tranquillite/mime,
 /turf/simulated/floor/mineral/tranquillite,
 /area/mimeoffice)
 "bVu" = (
@@ -69467,7 +69467,7 @@
 	},
 /area/crew_quarters/heads/hor)
 "cCE" = (
-/obj/structure/statue/chickenstatue,
+/obj/structure/decorative_structures/metal/statue/chickenstatue,
 /obj/machinery/light_switch{
 	pixel_y = 27
 	},

@@ -255,6 +255,24 @@
 	desc = "Praise be to lady Tesla!"
 	icon_state = "tesla_monument"
 
+/obj/structure/decorative_structures/metal/statue/kidanstatue
+	name = "Obsidian Kidan warrior statue"
+	desc = "A beautifully carved and menacing statue of a Kidan warrior made out of obsidian. It looks very heavy."
+	icon = 'icons/obj/statue.dmi'
+	icon_state = "kidan"
+
+/obj/structure/decorative_structures/metal/statue/chickenstatue
+	name = "Bronze Chickenman Statue"
+	desc = "An antique and oriental-looking statue of a Chickenman made of bronze."
+	icon = 'icons/obj/statue.dmi'
+	icon_state = "chicken"
+
+/obj/structure/decorative_structures/metal/statue/russian_mulebot
+	name = "OXENbot"
+	desc = "Like a MULEbot, but more Russian and less functional.";
+	icon = 'icons/obj/aibots.dmi';
+	icon_state = "mulebot0";
+
 
 /obj/structure/decorative_structures/flammable
 	resistance_flags = FLAMMABLE
