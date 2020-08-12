@@ -29,6 +29,7 @@ icons/obj/statue.dmi : block_plasma
 icons/obj/statue.dmi : block_sandstone
 icons/obj/statue.dmi : block_silver
 icons/obj/statue.dmi : block_uranium
+icons/obj/statue.dmi : block_tranquillite
 icons/obj/statue.dmi : chisel
 icons/obj/statue.dmi : pedestal1
 icons/obj/statue.dmi : pedestal2
