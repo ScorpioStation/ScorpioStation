@@ -178,9 +178,11 @@
 	desc = "A huge block of material."
 
 /obj/structure/carving/statue
+	desc = "a statue"
 	var/customstatue = FALSE
 	var/icon/generated_icon
 	var/obj/structure/statuebase/pedestal
+	var/author_ckey
 
 /obj/structure/carving/statue/deconstruct(disassembled = TRUE)
 	if(pedestal)
@@ -210,6 +212,7 @@
 /obj/structure/carving/block/plasma
 	name = "plasma block"
 	material = "plasma"
+	icon_state = "block_plasma"
 	colorcode = "#9016AD"
 
 /obj/structure/carving/statue/plasma/scientist
@@ -439,11 +442,12 @@
 					new finalstatue.type(B.loc)
 					qdel(B)
 					user.visible_message("<span class='notice'>[user] finishes carving [finalstatue].</span>", "<span class='notice'>You finish carving [finalstatue].</span>")
+					finalstatue.author_ckey = user.ckey
 			else if(istype(chosenstatue,/mob/living))
 				var/mob/living/mobstatue = chosenstatue
 				var/path = text2path("/obj/structure/carving/statue/[B.material]")
 				var/obj/structure/carving/statue/finalstatue = new path(B)
-				finalstatue.generated_icon = getFlatIcon(mobstatue)
+				finalstatue.generated_icon = getFlatIcon(mobstatue, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE)
 				if(B.material == "tranquillite")
 					finalstatue.generated_icon.ChangeOpacity(opacity = 0.5)
 				else
@@ -451,14 +455,17 @@
 				var/mutable_appearance/detail = mutable_appearance(finalstatue.generated_icon)
 				finalstatue.add_overlay(detail)
 				finalstatue.name = "[B.material] statue of [chosenstatue]"
+				finalstatue.desc = "A statue made our of [B.material]."
 				finalstatue.customstatue = TRUE
 				if(do_after(user, tool_speed, target = B))
 					playsound(loc, 'sound/items/gavel.ogg', 50, TRUE, -1)
 					finalstatue.loc = B.loc
+					finalstatue.author_ckey = user.ckey
 					qdel(B)
+					user.visible_message("<span class='notice'>[user] finishes carving [finalstatue].</span>", "<span class='notice'>You finish carving [finalstatue].</span>")
 				else
 					qdel(finalstatue)
-				user.visible_message("<span class='notice'>[user] finishes carving [finalstatue].</span>", "<span class='notice'>You finish carving [finalstatue].</span>")
+
 	else
 		return ..()
 
@@ -467,14 +474,20 @@
 
 /obj/structure/statuebase
 	name = "pedestal"
-	desc = "A pedestal for placing a statue on"
+	desc = "A pedestal for placing a statue on."
 	icon = 'icons/obj/statue.dmi'
 	icon_state = "pedestal1"
 	anchored = TRUE
 	var/offset = 11
 	var/obj/structure/carving/statue/statue
+	var/persistence_id = "library"
+	var/id = 1
+	var/alert = FALSE
+	var/obj/item/radio/Radio
+
 
 /obj/structure/statuebase/New()
+	..()
 	icon_state = "pedestal[rand(1,3)]"
 	switch(icon_state)
 		if("pedestal1")
@@ -484,14 +497,78 @@
 		if("pedestal3")
 			offset = 13
 
+/obj/structure/statuebase/Initialize(mapload, dir, building)
+	. = ..()
+	SSpersistence.pedestals += src
+	Radio = new /obj/item/radio(src)
+	Radio.listening = 0
+	Radio.config(list("Security" = 0))
+	Radio.follow_target = src
+
+/obj/structure/statuebase/Destroy()
+	QDEL_NULL(Radio)
+	. = ..()
+	SSpersistence.pedestals -= src
 
 /obj/structure/statuebase/MouseDrop_T(atom/movable/O, mob/user)
 	if(istype(O, /obj/structure/carving/statue))
 		if(!statue)
 			statue = O
-			statue.loc = loc
+			statue.forceMove(src.loc)
 			statue.anchored = TRUE
 			statue.pedestal = src
 			statue.pixel_y = offset
+			user.visible_message("<span class='notice'>[user] mounts [statue] on the pedestal.</span>", "<span class='notice'>You mount [statue] on the pedestal.</span>")
 		else
 			to_chat(user, "<span class='notice'>there is already a statue mounted to [src].</span>")
+
+
+/obj/structure/statuebase/proc/save_persistent()
+	if(!persistence_id || !statue)
+		return
+	if(sanitize_filename(persistence_id) != persistence_id)
+		stack_trace("Invalid persistence_id - [persistence_id]")
+		return
+	var/md5 = md5(lowertext(statue.author_ckey + num2text(id) + statue.name + num2text(rand(1,10000))))
+	var/list/current = SSpersistence.pedestals[persistence_id]
+	if(!current)
+		current = list()
+	for(var/list/entry in current)
+		if(entry["md5"] == md5)
+			return
+	var/directory = "data/statues/[persistence_id]/"
+	var/filepath = directory + "[md5].png"
+	fcopy(statue.generated_icon, filepath)
+	current += list(list("path" = statue.type, "title" = statue.name , "description" = desc, "md5" = md5, "ckey" = statue.author_ckey, "id" = id))
+	SSpersistence.statues[persistence_id] = current
+
+
+/obj/structure/statuebase/proc/load_persistent()
+	if(!persistence_id)
+		return
+	if(!SSpersistence.statues || !SSpersistence.statues[persistence_id] || !length(SSpersistence.statues[persistence_id]))
+		return
+	for(var/list/chosen in SSpersistence.statues[persistence_id])
+		if(chosen["id"] != id)
+			continue
+
+		var/png = "data/statues/[persistence_id]/[chosen["md5"]].png"
+		if(!fexists(png))
+			stack_trace("Persistent statue [chosen["md5"]].png was not found in [persistence_id] directory.")
+			return
+
+		var/path = text2path(chosen["path"])
+		if(!path)
+			return
+
+		statue = new path(src.loc)
+		var/icon/I = new(png)
+		statue.generated_icon = I
+		var/mutable_appearance/detail = mutable_appearance(statue.generated_icon)
+		statue.add_overlay(detail)
+		statue.pixel_y = offset
+		statue.anchored = TRUE
+		statue.name = chosen["title"]
+		statue.author_ckey = chosen["ckey"]
+		statue.desc = "a statue made out of [statue.material]."
+		desc = chosen["description"]

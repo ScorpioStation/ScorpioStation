@@ -94717,6 +94717,12 @@
 	icon_state = "floorgrime"
 	},
 /area/storage/office)
+"vIO" = (
+/obj/structure/statuebase{
+	id = 2
+	},
+/turf/simulated/floor/wood,
+/area/library)
 "wWj" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/cockroach,
@@ -118758,7 +118764,7 @@ xpp
 bkO
 anA
 ajb
-anA
+vIO
 bxn
 bjl
 aaa
