@@ -94620,6 +94620,12 @@
 	icon_state = "wood-broken5"
 	},
 /area/maintenance/fsmaint3)
+"enn" = (
+/obj/structure/sign/painting/library{
+	pixel_y = -30
+	},
+/turf/simulated/floor/wood,
+/area/library)
 "fpD" = (
 /obj/structure/sign/painting/library{
 	id = 4;
@@ -94675,6 +94681,13 @@
 "pEV" = (
 /obj/structure/bookcase{
 	name = "bookcase (Religion)"
+	},
+/turf/simulated/floor/wood,
+/area/library)
+"qHQ" = (
+/obj/structure/sign/painting/library{
+	id = 6;
+	pixel_y = -30
 	},
 /turf/simulated/floor/wood,
 /area/library)
@@ -118508,7 +118521,7 @@ bkO
 ajb
 bwO
 ajb
-ajb
+qHQ
 bjl
 aaa
 arY
@@ -119022,7 +119035,7 @@ bkO
 ajb
 ajb
 ajb
-ajb
+enn
 bjl
 aaa
 arY
