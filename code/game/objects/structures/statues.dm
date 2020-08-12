@@ -174,8 +174,106 @@
 		spawn(20)
 			spam_flag = 0
 
+///////////////////////////////////////////////////////
+
 /obj/structure/carving/block
 	desc = "A huge block of material."
+
+/obj/structure/carving/block/attackby(obj/item/W, mob/living/user, params)
+	if(istype(W, /obj/item/chisel))
+		var/list/availablestatues = typesof(text2path("/obj/structure/carving/statue/[material]"))
+		availablestatues -= text2path("/obj/structure/carving/statue/[material]")
+		var/list/finallist = list()
+		for(var/S2 in availablestatues)
+			var/obj/structure/carving/statue/S = new S2
+			finallist += S
+		for(var/mob/living/L in oview(7,user))
+			finallist += L
+		var/chosenstatue = input(user, "What do you want to carve?", "Carving") as null|anything in finallist
+		if(chosenstatue)
+			user.visible_message("<span class='notice'>[user] starts to carve [src].</span>", "<span class='notice'>You start carving [src].</span>", "<span class='hear'>You hear a chipping sound.</span>")
+			playsound(loc, 'sound/items/gavel.ogg', 50, TRUE, -1)
+			if(istype(chosenstatue,/obj/structure/carving/statue))
+				if(do_after(user, 100, target = src))
+					playsound(loc, 'sound/items/gavel.ogg', 50, TRUE, -1)
+					var/obj/structure/carving/statue/finalstatue = chosenstatue
+					new finalstatue.type(loc)
+					qdel(src)
+					user.visible_message("<span class='notice'>[user] finishes carving [finalstatue].</span>", "<span class='notice'>You finish carving [finalstatue].</span>")
+					finalstatue.author_ckey = user.ckey
+			else if(istype(chosenstatue,/mob/living))
+				var/mob/living/mobstatue = chosenstatue
+				var/path = text2path("/obj/structure/carving/statue/[material]")
+				var/obj/structure/carving/statue/finalstatue = new path(src)
+				finalstatue.generated_icon = getFlatIcon(mobstatue, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE)
+				if(material == "tranquillite")
+					finalstatue.generated_icon.ChangeOpacity(opacity = 0.5)
+				else
+					finalstatue.generated_icon.ColorTone(colorcode)
+				var/mutable_appearance/detail = mutable_appearance(finalstatue.generated_icon)
+				finalstatue.add_overlay(detail)
+				finalstatue.name = "[material] statue of [chosenstatue]"
+				finalstatue.desc = "A statue made out of [material]."
+				finalstatue.customstatue = TRUE
+				if(do_after(user, 100, target = src))
+					playsound(loc, 'sound/items/gavel.ogg', 50, TRUE, -1)
+					finalstatue.loc = loc
+					finalstatue.author_ckey = user.ckey
+					qdel(src)
+					user.visible_message("<span class='notice'>[user] finishes carving [finalstatue].</span>", "<span class='notice'>You finish carving [finalstatue].</span>")
+				else
+					qdel(finalstatue)
+	else
+		..()
+
+/obj/structure/carving/block/uranium
+	name = "uranium block"
+	material = "uranium"
+	icon_state = "block_uranium"
+	colorcode = "#326E28"
+
+/obj/structure/carving/block/plasma
+	name = "plasma block"
+	material = "plasma"
+	icon_state = "block_plasma"
+	colorcode = "#9016AD"
+
+/obj/structure/carving/block/gold
+	name = "gold block"
+	material = "gold"
+	icon_state = "block_gold"
+	colorcode = "#EFF084"
+
+/obj/structure/carving/block/silver
+	name = "silver block"
+	material = "silver"
+	icon_state = "block_silver"
+	colorcode = "#A9ABBA"
+
+/obj/structure/carving/block/diamond
+	name = "diamond block"
+	icon_state = "block_diamond"
+	material = "diamond"
+	colorcode = "#A6EDEF"
+
+/obj/structure/carving/block/bananium
+	name = "bananium block"
+	material = "bananium"
+	icon_state = "block_bananium"
+	colorcode = "#EAD026"
+
+/obj/structure/carving/block/sandstone
+	name = "sandstone block"
+	material = "sandstone"
+	icon_state = "block_sandstone"
+	colorcode = "#C69E6A"
+
+/obj/structure/carving/block/tranquillite
+	name = "tranquilite block"
+	material = "tranquillite"
+	icon_state = "block_tranquillite"
+
+////////////////////////////////////////////////////////////
 
 /obj/structure/carving/statue
 	desc = "a statue"
@@ -191,12 +289,6 @@
 		qdel(generated_icon)
 	..(disassembled)
 
-/obj/structure/carving/block/uranium
-	name = "uranium block"
-	material = "uranium"
-	icon_state = "block_uranium"
-	colorcode = "#326E28"
-
 /obj/structure/carving/statue/uranium/nuke
 	name = "statue of a nuclear fission explosive"
 	desc = "This is a grand statue of a Nuclear Explosive. It has a sickening green colour."
@@ -209,12 +301,6 @@
 	icon_state = "eng"
 	material = "uranium"
 
-/obj/structure/carving/block/plasma
-	name = "plasma block"
-	material = "plasma"
-	icon_state = "block_plasma"
-	colorcode = "#9016AD"
-
 /obj/structure/carving/statue/plasma/scientist
 	name = "statue of a scientist"
 	desc = "This statue is suitably made from plasma."
@@ -226,12 +312,6 @@
 	desc = "This statue is suitably made from plasma."
 	icon_state = "xeno"
 	material = "plasma"
-
-/obj/structure/carving/block/gold
-	name = "gold block"
-	material = "gold"
-	icon_state = "block_gold"
-	colorcode = "#EFF084"
 
 /obj/structure/carving/statue/gold
 	desc = "This is a highly valuable statue made from gold."
@@ -257,12 +337,6 @@
 	name = "statue of the research director"
 	icon_state = "rd"
 
-/obj/structure/carving/block/silver
-	name = "silver block"
-	material = "silver"
-	icon_state = "block_silver"
-	colorcode = "#A9ABBA"
-
 /obj/structure/carving/statue/silver/
 	desc = "This is a valuable statue made from silver."
 	material = "silver"
@@ -287,12 +361,6 @@
 	name = "statue of a medical cyborg"
 	icon_state = "medborg"
 
-/obj/structure/carving/block/diamond
-	name = "diamond block"
-	icon_state = "block_diamond"
-	material = "diamond"
-	colorcode = "#A6EDEF"
-
 /obj/structure/carving/statue/diamond
 	desc = "This is a very expensive diamond statue."
 	material = "diamond"
@@ -309,12 +377,6 @@
 	name = "statue of the AI core"
 	icon_state = "ai2"
 
-/obj/structure/carving/block/bananium
-	name = "bananium block"
-	material = "bananium"
-	icon_state = "block_bananium"
-	colorcode = "#EAD026"
-
 /obj/structure/carving/statue/bananium
 	desc = "A bananium statue with a small engraving:'HOOOOOOONK'."
 	material = "bananium"
@@ -322,12 +384,6 @@
 /obj/structure/carving/statue/bananium/clown
 	name = "statue of a clown"
 	icon_state = "clown"
-
-/obj/structure/carving/block/sandstone
-	name = "sandstone block"
-	material = "sandstone"
-	icon_state = "block_sandstone"
-	colorcode = "#C69E6A"
 
 /obj/structure/carving/statue/sandstone
 	material = "sandstone"
@@ -342,10 +398,6 @@
 	desc = "An ancient marble statue. The subject is depicted with a floor-length braid and is wielding a toolbox. By Jove, it's easily the most gorgeous depiction of a woman you've ever seen. The artist must truly be a master of his craft. Shame about the broken arm, though."
 	icon = 'icons/obj/statuelarge.dmi'
 	icon_state = "venus"
-
-/obj/structure/carving/block/tranquillite
-	name = "tranquilite block"
-	material = "tranquillite"
 
 /obj/structure/carving/statue/tranquillite/mime
 	name = "statue of a mime"
@@ -416,58 +468,7 @@
 	attack_verb = list("stabbed")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	usesound = 'sound/items/gavel.ogg'
-	var/tool_speed = 100
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
-
-
-/obj/item/chisel/afterattack(atom/target, mob/living/carbon/user)
-	if(istype(target,/obj/structure/carving/block))
-		var/obj/structure/carving/block/B = target
-		var/list/availablestatues = typesof(text2path("/obj/structure/carving/statue/[B.material]"))
-		availablestatues -= text2path("/obj/structure/carving/statue/[B.material]")
-		var/list/finallist = list()
-		for(var/S2 in availablestatues)
-			var/obj/structure/carving/statue/S = new S2
-			finallist += S
-		for(var/mob/living/L in oview(7,user))
-			finallist += L
-		var/chosenstatue = input(user, "What do you want to carve?", "Carving") as null|anything in finallist
-		if(chosenstatue)
-			user.visible_message("<span class='notice'>[user] starts to carve [B].</span>", "<span class='notice'>You start carving [B].</span>", "<span class='hear'>You hear a chipping sound.</span>")
-			playsound(loc, 'sound/items/gavel.ogg', 50, TRUE, -1)
-			if(istype(chosenstatue,/obj/structure/carving/statue))
-				if(do_after(user, tool_speed, target = B))
-					playsound(loc, 'sound/items/gavel.ogg', 50, TRUE, -1)
-					var/obj/structure/carving/statue/finalstatue = chosenstatue
-					new finalstatue.type(B.loc)
-					qdel(B)
-					user.visible_message("<span class='notice'>[user] finishes carving [finalstatue].</span>", "<span class='notice'>You finish carving [finalstatue].</span>")
-					finalstatue.author_ckey = user.ckey
-			else if(istype(chosenstatue,/mob/living))
-				var/mob/living/mobstatue = chosenstatue
-				var/path = text2path("/obj/structure/carving/statue/[B.material]")
-				var/obj/structure/carving/statue/finalstatue = new path(B)
-				finalstatue.generated_icon = getFlatIcon(mobstatue, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE)
-				if(B.material == "tranquillite")
-					finalstatue.generated_icon.ChangeOpacity(opacity = 0.5)
-				else
-					finalstatue.generated_icon.ColorTone(B.colorcode)
-				var/mutable_appearance/detail = mutable_appearance(finalstatue.generated_icon)
-				finalstatue.add_overlay(detail)
-				finalstatue.name = "[B.material] statue of [chosenstatue]"
-				finalstatue.desc = "A statue made our of [B.material]."
-				finalstatue.customstatue = TRUE
-				if(do_after(user, tool_speed, target = B))
-					playsound(loc, 'sound/items/gavel.ogg', 50, TRUE, -1)
-					finalstatue.loc = B.loc
-					finalstatue.author_ckey = user.ckey
-					qdel(B)
-					user.visible_message("<span class='notice'>[user] finishes carving [finalstatue].</span>", "<span class='notice'>You finish carving [finalstatue].</span>")
-				else
-					qdel(finalstatue)
-
-	else
-		return ..()
 
 
 ////////////////////////////////

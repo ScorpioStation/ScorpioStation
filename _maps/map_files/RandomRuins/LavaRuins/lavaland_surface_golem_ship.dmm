@@ -159,12 +159,12 @@
 /turf/simulated/shuttle/plating,
 /area/shuttle/freegolem)
 "aC" = (
-/obj/item/clothing/shoes/brown/rd{
-	name = "statue of the Liberator"
-	},
 /obj/structure/window/reinforced{
 	dir = 4;
 	pixel_x = 0
+	},
+/obj/structure/carving/statue/gold/rd{
+	name = "statue of the Liberator"
 	},
 /turf/simulated/shuttle/floor{
 	icon_state = "floor5"
