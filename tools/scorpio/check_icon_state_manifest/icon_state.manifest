@@ -9,6 +9,13 @@
 # the project, or if that icon file exists but does not contain the
 # icon_state that has been specified.
 
+icons/mob/head.dmi : arkrep
+icons/mob/hud.dmi : hudarksoftrepresentative
+icons/mob/hud.dmi : hudbouncer
+icons/mob/suit.dmi : arkrep
+icons/mob/suit.dmi : arkrep_open
+icons/mob/suit.dmi : ark_hoodie
+icons/mob/suit.dmi : ark_hoodie_hood
 icons/obj/closet.dmi : arksecurebroken
 icons/obj/closet.dmi : arksecure
 icons/obj/closet.dmi : arksecure1
@@ -16,7 +23,9 @@ icons/obj/closet.dmi : arksecureoff
 icons/obj/closet.dmi : arksecureopen
 icons/obj/clothing/hats.dmi : arkrep
 icons/obj/clothing/suits.dmi : arkrep
+icons/obj/clothing/suits.dmi : arkrep_open
 icons/obj/clothing/suits.dmi : ark_hoodie
+icons/obj/clothing/suits.dmi : ark_hoodie_hood
 icons/obj/clothing/uniforms.dmi : arkrepf
 icons/obj/items.dmi : soapark
 icons/obj/items.dmi : soapstone
