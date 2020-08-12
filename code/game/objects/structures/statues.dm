@@ -457,6 +457,7 @@
 	desc = "A carving tool."
 	icon = 'icons/obj/statue.dmi'
 	icon_state = "chisel"
+	item_state = "chisel"
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
 	force = 5
