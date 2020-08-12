@@ -513,12 +513,15 @@
 /obj/structure/statuebase/MouseDrop_T(atom/movable/O, mob/user)
 	if(istype(O, /obj/structure/carving/statue))
 		if(!statue)
-			statue = O
-			statue.forceMove(src.loc)
-			statue.anchored = TRUE
-			statue.pedestal = src
-			statue.pixel_y = offset
-			user.visible_message("<span class='notice'>[user] mounts [statue] on the pedestal.</span>", "<span class='notice'>You mount [statue] on the pedestal.</span>")
+			var/new_name = sanitize(copytext(input(user, "What do you want to name the pedestal?", "Name", "Pedestal"), 1, MAX_NAME_LEN))
+			if(new_name)
+				name = new_name
+				statue = O
+				statue.forceMove(src.loc)
+				statue.anchored = TRUE
+				statue.pedestal = src
+				statue.pixel_y = offset
+				user.visible_message("<span class='notice'>[user] mounts [statue] on the pedestal.</span>", "<span class='notice'>You mount [statue] on the pedestal.</span>")
 		else
 			to_chat(user, "<span class='notice'>there is already a statue mounted to [src].</span>")
 
@@ -539,7 +542,7 @@
 	var/directory = "data/statues/[persistence_id]/"
 	var/filepath = directory + "[md5].png"
 	fcopy(statue.generated_icon, filepath)
-	current += list(list("path" = statue.type, "title" = statue.name , "description" = desc, "md5" = md5, "ckey" = statue.author_ckey, "id" = id))
+	current += list(list("path" = statue.type, "statuename" = statue.name , "pedestalname" = name, "md5" = md5, "ckey" = statue.author_ckey, "id" = id))
 	SSpersistence.statues[persistence_id] = current
 
 
@@ -568,7 +571,7 @@
 		statue.add_overlay(detail)
 		statue.pixel_y = offset
 		statue.anchored = TRUE
-		statue.name = chosen["title"]
+		statue.name = chosen["statuename"]
 		statue.author_ckey = chosen["ckey"]
 		statue.desc = "a statue made out of [statue.material]."
-		desc = chosen["description"]
+		name = chosen["pedestalname"]
