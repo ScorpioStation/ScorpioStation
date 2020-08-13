@@ -5915,7 +5915,7 @@
 /turf/simulated/floor/greengrid,
 /area/tcommsat/server)
 "ann" = (
-/obj/structure/statue/chickenstatue,
+/obj/structure/decorative_structures/metal/statue/chickenstatue,
 /turf/simulated/floor/wood,
 /area/crew_quarters/mrchangs)
 "ano" = (
@@ -5993,9 +5993,7 @@
 /turf/simulated/floor/wood,
 /area/library)
 "anA" = (
-/obj/structure/decorative_structures/metal/statue/tesla{
-	anchored = 1
-	},
+/obj/structure/statuebase,
 /turf/simulated/floor/wood,
 /area/library)
 "anB" = (
@@ -42870,7 +42868,7 @@
 /turf/simulated/floor/grass,
 /area/crew_quarters/dorms)
 "bIH" = (
-/obj/structure/statue/sandstone/venus{
+/obj/structure/carving/statue/sandstone/venus{
 	layer = 4
 	},
 /obj/structure/disposalpipe/segment,
@@ -49496,7 +49494,7 @@
 	},
 /area/medical/genetics_cloning)
 "bUw" = (
-/obj/structure/statue/bananium/clown,
+/obj/structure/carving/statue/bananium/clown,
 /turf/simulated/floor/wood,
 /area/clownoffice)
 "bUx" = (
@@ -50025,7 +50023,7 @@
 	},
 /area/medical/reception)
 "bVt" = (
-/obj/structure/statue/tranquillite/mime,
+/obj/structure/carving/statue/tranquillite/mime,
 /turf/simulated/floor/mineral/tranquillite,
 /area/mimeoffice)
 "bVu" = (
@@ -69467,7 +69465,7 @@
 	},
 /area/crew_quarters/heads/hor)
 "cCE" = (
-/obj/structure/statue/chickenstatue,
+/obj/structure/decorative_structures/metal/statue/chickenstatue,
 /obj/machinery/light_switch{
 	pixel_y = 27
 	},
@@ -94622,6 +94620,12 @@
 	icon_state = "wood-broken5"
 	},
 /area/maintenance/fsmaint3)
+"enn" = (
+/obj/structure/sign/painting/library{
+	pixel_y = -30
+	},
+/turf/simulated/floor/wood,
+/area/library)
 "fpD" = (
 /obj/structure/sign/painting/library{
 	id = 4;
@@ -94680,6 +94684,13 @@
 	},
 /turf/simulated/floor/wood,
 /area/library)
+"qHQ" = (
+/obj/structure/sign/painting/library{
+	id = 6;
+	pixel_y = -30
+	},
+/turf/simulated/floor/wood,
+/area/library)
 "rdq" = (
 /mob/living/simple_animal/cockroach,
 /turf/simulated/floor/plating,
@@ -94719,6 +94730,12 @@
 	icon_state = "floorgrime"
 	},
 /area/storage/office)
+"vIO" = (
+/obj/structure/statuebase{
+	id = 2
+	},
+/turf/simulated/floor/wood,
+/area/library)
 "wWj" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/cockroach,
@@ -94730,12 +94747,6 @@
 /area/maintenance/fpmaint3)
 "xpp" = (
 /obj/structure/displaycase/trophy,
-/turf/simulated/floor/wood,
-/area/library)
-"xVl" = (
-/obj/structure/decorative_structures/metal/statue/metal_angel{
-	anchored = 1
-	},
 /turf/simulated/floor/wood,
 /area/library)
 "ygw" = (
@@ -118510,7 +118521,7 @@ bkO
 ajb
 bwO
 ajb
-ajb
+qHQ
 bjl
 aaa
 arY
@@ -118766,7 +118777,7 @@ xpp
 bkO
 anA
 ajb
-xVl
+vIO
 bxn
 bjl
 aaa
@@ -119024,7 +119035,7 @@ bkO
 ajb
 ajb
 ajb
-ajb
+enn
 bjl
 aaa
 arY

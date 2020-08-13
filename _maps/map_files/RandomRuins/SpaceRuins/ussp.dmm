@@ -5760,7 +5760,7 @@
 /turf/simulated/floor/plasteel,
 /area/derelict/arrival)
 "lw" = (
-/obj/structure/statue/russian_mulebot,
+/obj/structure/decorative_structures/metal/statue/russian_mulebot,
 /turf/simulated/floor/plasteel,
 /area/derelict/arrival)
 "lx" = (
@@ -8544,7 +8544,7 @@
 /turf/simulated/floor/grass,
 /area/derelict/arrival)
 "rz" = (
-/obj/structure/statue/diamond/captain{
+/obj/structure/carving/statue/diamond/captain{
 	anchored = 1;
 	desc = "A statue in honour of those who rose against the tyranny of the Trans-Solar Federation in 2443.";
 	icon_state = "russian";

@@ -1791,7 +1791,7 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 			/obj/mecha = "MECHA",
 			/obj/structure/closet/crate = "CRATE",
 			/obj/structure/closet = "CLOSET",
-			/obj/structure/statue = "STATUE",
+			/obj/structure/carving/statue = "STATUE",
 			/obj/structure/chair = "CHAIR", // oh no
 			/obj/structure/bed = "BED",
 			/obj/structure/chair/stool = "STOOL",

@@ -999,7 +999,7 @@
 /turf/simulated/floor/mineral/bananium/lubed,
 /area/ruin/powered/clownplanet)
 "bP" = (
-/obj/structure/statue/bananium/clown,
+/obj/structure/carving/statue/bananium/clown,
 /turf/simulated/floor/carpet,
 /area/ruin/powered/clownplanet)
 "bQ" = (
