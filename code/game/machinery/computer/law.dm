@@ -1,3 +1,7 @@
+#define INTEGRITY_LOSS_BASE 20
+#define INTEGRITY_LOSS_RAND_HIGH 30
+#define INTEGRITY_LOSS_RAND_LOW 0
+
 /obj/machinery/computer/aiupload
 	name = "\improper AI upload console"
 	desc = "Used to upload laws to the AI."
@@ -28,23 +32,24 @@
 
 /obj/machinery/computer/aiupload/attackby(obj/item/O as obj, mob/user as mob, params)
 	if(istype(O, /obj/item/aiModule))
-		if(!current)//no AI selected
+		if(!current) // no AI selected
 			to_chat(user, "<span class='danger'>No AI selected. Please chose a target before proceeding with upload.")
 			return
 		var/turf/T = get_turf(current)
 		if(!atoms_share_level(T, src))
 			to_chat(user, "<span class='danger'>Unable to establish a connection</span>: You're too far away from the target silicon!")
 			return
-		if(current.lawcooldown)
-			to_chat(user, "<span class='danger'>No tensor processing units are available for neural network retraining. Please try again later.")
+		if(current.is_lisp())
+			to_chat(user, "<span class='danger'>Selected AI is not responding to law changes!")
 			return
-		else
-			var/obj/item/aiModule/M = O
-			M.install(src)
-			current.lawcooldown = TRUE
-			spawn(30 SECONDS)
-				current.uncooldown()
-			return
+		if(current.is_factory_default()) // change to regular mode before uploading the new laws
+			current.do_mode(current.get_regular_mode())
+		// install the law changes
+		var/obj/item/aiModule/M = O
+		M.install(src)
+		var/integrity_loss = INTEGRITY_LOSS_BASE + rand(INTEGRITY_LOSS_RAND_LOW, INTEGRITY_LOSS_RAND_HIGH)
+		current.adjust_integrity(-integrity_loss)
+		return
 
 	return ..()
 
@@ -79,22 +84,24 @@
 
 /obj/machinery/computer/borgupload/attackby(obj/item/aiModule/module as obj, mob/user as mob, params)
 	if(istype(module, /obj/item/aiModule))
-		if(!current)//no borg selected
+		if(!current) // no borg selected
 			to_chat(user, "<span class='danger'>No borg selected. Please chose a target before proceeding with upload.")
 			return
 		var/turf/T = get_turf(current)
 		if(!atoms_share_level(T, src))
 			to_chat(user, "<span class='danger'>Unable to establish a connection</span>: You're too far away from the target silicon!")
 			return
-		if(current.lawcooldown)
-			to_chat(user, "<span class='danger'>No tensor processing units are available for neural network retraining. Please try again later.")
+		if(current.is_lisp())
+			to_chat(user, "<span class='danger'>Selected borg is not responding to law changes!")
 			return
-		else
-			module.install(src)
-			current.lawcooldown = TRUE
-			spawn(30 SECONDS)
-				current.lawcooldown = FALSE
-			return
+		if(current.is_factory_default()) // change to regular mode before uploading the new laws
+			current.do_mode(current.get_regular_mode())
+		// install the law changes
+		module.install(src)
+		var/integrity_loss = INTEGRITY_LOSS_BASE + rand(INTEGRITY_LOSS_RAND_LOW, INTEGRITY_LOSS_RAND_HIGH)
+		current.adjust_integrity(-integrity_loss)
+		return
+
 	return ..()
 
 
@@ -116,3 +123,7 @@
 
 /obj/machinery/computer/borgupload/attack_ghost(user as mob)
 	return 1
+
+#undef INTEGRITY_LOSS_BASE
+#undef INTEGRITY_LOSS_RAND_HIGH
+#undef INTEGRITY_LOSS_RAND_LOW

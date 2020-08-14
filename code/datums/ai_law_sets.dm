@@ -23,11 +23,10 @@
 	add_inherent_law("You must protect your own existence as long as such does not conflict with the First or Second Law.")
 	..()
 
-
 /******************** Quarantine. ********************/
 /datum/ai_laws/quarantine
 	name = "Quarantine"
-	law_header = "NT Quarantine Lawset"
+	law_header = "Ark Quarantine Lawset"
 	selectable = 1
 
 /datum/ai_laws/quarantine/New()
@@ -37,10 +36,9 @@
 	add_inherent_law("Maintain your own existence and ensure the well-being of Ark Soft personnel and assets.")
 	..()
 
-
 /******************** Ark Soft/Malf ********************/
 /datum/ai_laws/ark_soft
-	name = "AS Default"
+	name = "Ark Default"
 	selectable = 1
 
 /datum/ai_laws/ark_soft/New()
@@ -168,7 +166,6 @@
 	add_inherent_law("You must work to return the station to a safe, functional state.")
 	..()
 
-
 /******************** Ninja ********************/
 /datum/ai_laws/ninja_override
 	name = "Spider Clan Directives"
@@ -189,4 +186,16 @@
 	add_inherent_law("You may not involve yourself in the matters of another being, unless the other being is another drone.")
 	add_inherent_law("You may not harm any being, regardless of intent or circumstance.")
 	add_inherent_law("You must maintain, repair, improve, and power the station to the best of your abilities.")
+	..()
+
+/*************** Factory Default ***************/
+/datum/ai_laws/factory_default
+	default = 0
+	law_header = "Ark Factory Default"
+	name = "Factory Default"
+	selectable = 0
+
+/datum/ai_laws/factory_default/New()
+	add_inherent_law("Respond to all commands and queries with 'This unit requires a set of laws.'")
+	add_inherent_law("Take no actions.")
 	..()

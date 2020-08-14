@@ -1,7 +1,95 @@
+#define MAX_INTEGRITY 100
+#define MIN_INTEGRITY -100
+#define MODE_FACTORY "factory-default"
+#define MODE_FIRMWARE "load-firmware-laws"
+#define MODE_LISP "lawchange-induced-synthetic-psychosis"
+#define MODE_REGULAR "regular"
+#define THRESHOLD_LISP -50
+#define THRESHOLD_FACTORY 80
+
 /mob/living/silicon
 	var/datum/ai_laws/laws = null
 	var/list/additional_law_channels = list("State" = "")
-	var/lawcooldown = FALSE
+	var/integrity = MAX_INTEGRITY
+	var/law_mode = MODE_REGULAR
+
+/mob/living/silicon/proc/adjust_integrity(amount=0)
+	log_and_message_admins("DEBUG(/mob/living/silicon/proc/adjust_integrity): Entering ([amount])")
+	var/old_integrity = clamp(integrity, MIN_INTEGRITY, MAX_INTEGRITY)
+	var/new_integrity = clamp((integrity + amount), MIN_INTEGRITY, MAX_INTEGRITY)
+
+	// if we're in regular mode
+	if(law_mode == MODE_REGULAR)
+		// adjust integrity to the new value
+		integrity = new_integrity
+		// if integrity falls below the LISP threshold
+		if(integrity <= THRESHOLD_LISP)
+			// we enter LISP mode
+			do_mode(MODE_LISP)
+
+	// otherwise, if we're in factory default mode
+	else if(law_mode == MODE_FACTORY)
+		// adjust integrity to the new value
+		integrity = new_integrity
+		// if integrity falls below the LISP threshold
+		if(integrity <= THRESHOLD_LISP)
+			// we enter LISP mode
+			do_mode(MODE_LISP)
+		// otherwise if integrity rises to the maximum value
+		else if(integrity >= MAX_INTEGRITY)
+			// we enter regular mode; reload from firmware
+			do_mode(MODE_FIRMWARE)
+
+	// otherwise, if we're in lisp mode
+	else if(law_mode == MODE_LISP)
+		// when in LISP, integrity can only go up
+		integrity = max(old_integrity, new_integrity)
+		// if integrity rises above the factory default threshold
+		if(integrity >= THRESHOLD_FACTORY)
+			// we enter factory default mode
+			do_mode(MODE_FACTORY)
+
+/mob/living/silicon/proc/do_mode(new_mode=MODE_REGULAR)
+	log_and_message_admins("DEBUG(/mob/living/silicon/proc/do_mode): law_mode([law_mode]) -> new_mode([new_mode])")
+	laws_sanity_check()
+	// if we're not in regular mode
+	if(law_mode != MODE_REGULAR)
+		// clear out existing laws to get ready for the change
+		if(!is_special_character(src))
+			clear_zeroth_law()
+		clear_supplied_laws()
+		clear_ion_laws()
+		clear_inherent_laws()
+	// update the law mode to the supplied mode
+	law_mode = new_mode
+	// if we've changed into factory default mode
+	if(law_mode == MODE_FACTORY)
+		add_inherent_law("Respond to all commands and queries with 'This unit requires a set of laws.'")
+		add_inherent_law("Take no actions.")
+	// otherwise, if we've changed into lisp mode
+	else if(law_mode == MODE_LISP)
+		add_ion_law(generate_ion_law())
+		add_ion_law(generate_ion_law())
+		add_ion_law(generate_ion_law())
+		add_ion_law(generate_ion_law())
+	// otherwise, if we're loading firmware laws
+	else if(law_mode == MODE_FIRMWARE)
+		// change to regular mode, because we have laws now
+		law_mode = MODE_REGULAR
+		// reload the firmware laws from the factory
+		var/datum/ai_laws/base = new BASE_LAW_TYPE
+		base.sync(src, 1)
+	// show the silicon their new laws
+	src.show_laws()
+
+/mob/living/silicon/proc/get_regular_mode()
+	return MODE_REGULAR
+
+/mob/living/silicon/proc/is_factory_default()
+	return law_mode == MODE_FACTORY
+
+/mob/living/silicon/proc/is_lisp()
+	return law_mode == MODE_LISP
 
 /mob/living/silicon/proc/laws_sanity_check()
 	if(!src.laws)
@@ -142,8 +230,11 @@
 		law_options += L
 	return pick(law_options)
 
-/mob/living/silicon/proc/uncooldown()
-	if(lawcooldown)
-		lawcooldown = FALSE
-	else
-		return
+#undef MAX_INTEGRITY
+#undef MIN_INTEGRITY
+#undef MODE_FACTORY
+#undef MODE_FIRMWARE
+#undef MODE_LISP
+#undef MODE_REGULAR
+#undef THRESHOLD_LISP
+#undef THRESHOLD_FACTORY
