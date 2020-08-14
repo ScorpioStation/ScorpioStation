@@ -14,7 +14,6 @@
 	var/law_mode = MODE_REGULAR
 
 /mob/living/silicon/proc/adjust_integrity(amount=0)
-	log_and_message_admins("DEBUG(/mob/living/silicon/proc/adjust_integrity): Entering ([amount])")
 	var/old_integrity = clamp(integrity, MIN_INTEGRITY, MAX_INTEGRITY)
 	var/new_integrity = clamp((integrity + amount), MIN_INTEGRITY, MAX_INTEGRITY)
 
@@ -50,10 +49,9 @@
 			do_mode(MODE_FACTORY)
 
 /mob/living/silicon/proc/do_mode(new_mode=MODE_REGULAR)
-	log_and_message_admins("DEBUG(/mob/living/silicon/proc/do_mode): law_mode([law_mode]) -> new_mode([new_mode])")
 	laws_sanity_check()
-	// if we're not in regular mode
-	if(law_mode != MODE_REGULAR)
+	// if we're changing modes
+	if(law_mode != new_mode)
 		// clear out existing laws to get ready for the change
 		if(!is_special_character(src))
 			clear_zeroth_law()

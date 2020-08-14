@@ -173,12 +173,18 @@
 		stat(null, text("Systems nonfunctional"))
 
 
+/mob/living/silicon/proc/show_mental_integrity()
+	if(src.integrity)
+		stat(null, text("Mental integrity: [round(integrity)]%"))
+
+
 // This adds the basic clock, shuttle recall timer, and malf_ai info to all silicon lifeforms
 /mob/living/silicon/Stat()
 	..()
 	if(statpanel("Status"))
 		show_stat_emergency_shuttle_eta()
 		show_system_integrity()
+		show_mental_integrity()
 
 //Silicon mob language procs
 
@@ -359,4 +365,3 @@
 /////////////////////////////////// EAR DAMAGE ////////////////////////////////////
 /mob/living/silicon/can_hear()
 	. = TRUE
-
