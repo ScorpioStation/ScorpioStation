@@ -12,20 +12,25 @@
 	invisibility = 101
 
 	switch(name)			//some of these are probably obsolete
-		if("start")
-			GLOB.newplayer_start += loc
+		if("aroomwarp")
+			GLOB.aroomwarp += loc
+
+		if("blobstart")
+			GLOB.blobstart += loc
 			qdel(src)
 
-		if("wizard")
-			GLOB.wizardstart += loc
+		if("carpspawn")
+			GLOB.carplist += loc
+
+		if("diskspawn")
+			GLOB.diskspawn += loc
+
+		if("ERT Director")
+			GLOB.ertdirector += loc
 			qdel(src)
 
 		if("JoinLate")
 			GLOB.latejoin += loc
-			qdel(src)
-
-		if("JoinLateGateway")
-			GLOB.latejoin_gateway += loc
 			qdel(src)
 
 		if("JoinLateCryo")
@@ -36,12 +41,32 @@
 			GLOB.latejoin_cyborg += loc
 			qdel(src)
 
-		if("prisonwarp")
-			GLOB.prisonwarp += loc
+		if("JoinLateGateway")
+			GLOB.latejoin_gateway += loc
+			qdel(src)
+
+		if("ninjastart")
+			GLOB.ninjastart += loc
 			qdel(src)
 
 		if("prisonsecuritywarp")
 			GLOB.prisonsecuritywarp += loc
+			qdel(src)
+
+		if("prisonwarp")
+			GLOB.prisonwarp += loc
+			qdel(src)
+
+		if("Response Team")
+			GLOB.emergencyresponseteamspawn += loc
+			qdel(src)
+
+		if("start")
+			GLOB.newplayer_start += loc
+			qdel(src)
+
+		if("Syndicate Officer")
+			GLOB.syndicateofficer += loc
 			qdel(src)
 
 		if("tdome1")
@@ -56,37 +81,15 @@
 		if("tdomeobserve")
 			GLOB.tdomeobserve += loc
 
-		if("aroomwarp")
-			GLOB.aroomwarp += loc
+		if("voxstart")
+			GLOB.raider_spawn += loc
 
-		if("blobstart")
-			GLOB.blobstart += loc
+		if("wizard")
+			GLOB.wizardstart += loc
 			qdel(src)
 
 		if("xeno_spawn")
 			GLOB.xeno_spawn += loc
-			qdel(src)
-
-		if("ninjastart")
-			GLOB.ninjastart += loc
-			qdel(src)
-
-		if("carpspawn")
-			GLOB.carplist += loc
-
-		if("voxstart")
-			GLOB.raider_spawn += loc
-
-		if("ERT Director")
-			GLOB.ertdirector += loc
-			qdel(src)
-
-		if("Response Team")
-			GLOB.emergencyresponseteamspawn += loc
-			qdel(src)
-
-		if("Syndicate Officer")
-			GLOB.syndicateofficer += loc
 			qdel(src)
 
 	GLOB.landmarks_list += src
