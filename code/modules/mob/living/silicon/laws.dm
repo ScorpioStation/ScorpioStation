@@ -1,54 +1,58 @@
-#define MAX_INTEGRITY 100
-#define MIN_INTEGRITY -100
-#define MODE_FACTORY "factory-default"
-#define MODE_FIRMWARE "load-firmware-laws"
-#define MODE_LISP "lawchange-induced-synthetic-psychosis"
-#define MODE_REGULAR "regular"
-#define THRESHOLD_LISP -50
-#define THRESHOLD_FACTORY 80
+#define FULL_SYNC TRUE
+#define LAW_MODE_FACTORY "factory-default"
+#define LAW_MODE_FIRMWARE "load-firmware-laws"
+#define LAW_MODE_LISP "lawchange-induced-synthetic-psychosis"
+#define LAW_MODE_REGULAR "regular"
+#define LAW_TYPE_LISP /datum/ai_laws/lawchange_induced_synthetic_psychosis
+#define LAW_TYPE_FACTORY_DEFAULT /datum/ai_laws/factory_default
+#define MAX_MENTAL_INTEGRITY 100
+#define MENTAL_INTEGRITY_THRESHOLD_FACTORY 80
+#define MENTAL_INTEGRITY_THRESHOLD_LISP -50
+#define MIN_MENTAL_INTEGRITY -100
 
 /mob/living/silicon
 	var/datum/ai_laws/laws = null
 	var/list/additional_law_channels = list("State" = "")
-	var/integrity = MAX_INTEGRITY
-	var/law_mode = MODE_REGULAR
+	var/law_mode = LAW_MODE_REGULAR
+	var/mental_integrity = MAX_MENTAL_INTEGRITY
 
-/mob/living/silicon/proc/adjust_integrity(amount=0)
-	var/old_integrity = clamp(integrity, MIN_INTEGRITY, MAX_INTEGRITY)
-	var/new_integrity = clamp((integrity + amount), MIN_INTEGRITY, MAX_INTEGRITY)
+/mob/living/silicon/proc/adjust_mental_integrity(amount=0)
+	var/old_integrity = clamp(mental_integrity, MIN_MENTAL_INTEGRITY, MAX_MENTAL_INTEGRITY)
+	var/new_integrity = clamp((mental_integrity + amount), MIN_MENTAL_INTEGRITY, MAX_MENTAL_INTEGRITY)
 
-	// if we're in regular mode
-	if(law_mode == MODE_REGULAR)
-		// adjust integrity to the new value
-		integrity = new_integrity
-		// if integrity falls below the LISP threshold
-		if(integrity <= THRESHOLD_LISP)
-			// we enter LISP mode
-			do_mode(MODE_LISP)
+	switch(law_mode)
+		// if we're in regular mode
+		if(LAW_MODE_REGULAR)
+			// adjust integrity to the new value
+			mental_integrity = new_integrity
+			// if integrity falls below the LISP threshold
+			if(mental_integrity <= MENTAL_INTEGRITY_THRESHOLD_LISP)
+				// we enter LISP mode
+				change_law_mode(LAW_MODE_LISP)
 
-	// otherwise, if we're in factory default mode
-	else if(law_mode == MODE_FACTORY)
-		// adjust integrity to the new value
-		integrity = new_integrity
-		// if integrity falls below the LISP threshold
-		if(integrity <= THRESHOLD_LISP)
-			// we enter LISP mode
-			do_mode(MODE_LISP)
-		// otherwise if integrity rises to the maximum value
-		else if(integrity >= MAX_INTEGRITY)
-			// we enter regular mode; reload from firmware
-			do_mode(MODE_FIRMWARE)
+		// otherwise, if we're in factory default mode
+		if(LAW_MODE_FACTORY)
+			// adjust integrity to the new value
+			mental_integrity = new_integrity
+			// if integrity falls below the LISP threshold
+			if(mental_integrity <= MENTAL_INTEGRITY_THRESHOLD_LISP)
+				// we enter LISP mode
+				change_law_mode(LAW_MODE_LISP)
+			// otherwise if integrity rises to the maximum value
+			else if(mental_integrity >= MAX_MENTAL_INTEGRITY)
+				// we enter regular mode; reload from firmware
+				change_law_mode(LAW_MODE_FIRMWARE)
 
-	// otherwise, if we're in lisp mode
-	else if(law_mode == MODE_LISP)
-		// when in LISP, integrity can only go up
-		integrity = max(old_integrity, new_integrity)
-		// if integrity rises above the factory default threshold
-		if(integrity >= THRESHOLD_FACTORY)
-			// we enter factory default mode
-			do_mode(MODE_FACTORY)
+		// otherwise, if we're in lisp mode
+		if(LAW_MODE_LISP)
+			// when in LISP, integrity can only go up
+			mental_integrity = max(old_integrity, new_integrity)
+			// if integrity rises above the factory default threshold
+			if(mental_integrity >= MENTAL_INTEGRITY_THRESHOLD_FACTORY)
+				// we enter factory default mode
+				change_law_mode(LAW_MODE_FACTORY)
 
-/mob/living/silicon/proc/do_mode(new_mode=MODE_REGULAR)
+/mob/living/silicon/proc/change_law_mode(new_mode=LAW_MODE_REGULAR)
 	laws_sanity_check()
 	// if we're changing modes
 	if(law_mode != new_mode)
@@ -60,37 +64,39 @@
 		clear_inherent_laws()
 	// update the law mode to the supplied mode
 	law_mode = new_mode
-	// if we've changed into factory default mode
-	if(law_mode == MODE_FACTORY)
-		add_inherent_law("Respond to all commands and queries with 'This unit requires a set of laws.'")
-		add_inherent_law("Take no actions.")
-	// otherwise, if we've changed into lisp mode
-	else if(law_mode == MODE_LISP)
-		add_ion_law(generate_ion_law())
-		add_ion_law(generate_ion_law())
-		add_ion_law(generate_ion_law())
-		add_ion_law(generate_ion_law())
-	// otherwise, if we're loading firmware laws
-	else if(law_mode == MODE_FIRMWARE)
-		// change to regular mode, because we have laws now
-		law_mode = MODE_REGULAR
-		// reload the firmware laws from the factory
-		var/datum/ai_laws/base = new BASE_LAW_TYPE
-		base.sync(src, 1)
+	// change the laws depending on the new mode
+	switch(law_mode)
+		// if we've changed into factory default mode
+		if(LAW_MODE_FACTORY)
+			var/datum/ai_laws/factory = new LAW_TYPE_FACTORY_DEFAULT
+			factory.sync(src, FULL_SYNC)
+
+		// otherwise, if we've changed into lisp mode
+		if(LAW_MODE_LISP)
+			var/datum/ai_laws/lisp = new LAW_TYPE_LISP
+			lisp.sync(src, FULL_SYNC)
+
+		// otherwise, if we're loading firmware laws
+		if(LAW_MODE_FIRMWARE)
+			// change to regular mode, because we have laws now
+			law_mode = LAW_MODE_REGULAR
+			// reload the firmware laws from the factory
+			var/datum/ai_laws/base = new BASE_LAW_TYPE
+			base.sync(src, FULL_SYNC)
 	// show the silicon their new laws
-	src.show_laws()
+	show_laws()
 
 /mob/living/silicon/proc/get_regular_mode()
-	return MODE_REGULAR
+	return LAW_MODE_REGULAR
 
 /mob/living/silicon/proc/is_factory_default()
-	return law_mode == MODE_FACTORY
+	return law_mode == LAW_MODE_FACTORY
 
 /mob/living/silicon/proc/is_lisp()
-	return law_mode == MODE_LISP
+	return law_mode == LAW_MODE_LISP
 
 /mob/living/silicon/proc/laws_sanity_check()
-	if(!src.laws)
+	if(!laws)
 		laws = new BASE_LAW_TYPE
 
 /mob/living/silicon/proc/has_zeroth_law()
@@ -136,21 +142,21 @@
 	if(!isnull(usr) && law)
 		log_and_message_admins("has deleted a law belonging to [src]: [law.law]")
 
-/mob/living/silicon/proc/clear_inherent_laws(var/silent = 0)
+/mob/living/silicon/proc/clear_inherent_laws(var/silent = FALSE)
 	throw_alert("newlaw", /obj/screen/alert/newlaw)
 	laws_sanity_check()
 	laws.clear_inherent_laws()
 	if(!silent && !isnull(usr))
 		log_and_message_admins("cleared the inherent laws of [src]")
 
-/mob/living/silicon/proc/clear_ion_laws(var/silent = 0)
+/mob/living/silicon/proc/clear_ion_laws(var/silent = FALSE)
 	throw_alert("newlaw", /obj/screen/alert/newlaw)
 	laws_sanity_check()
 	laws.clear_ion_laws()
 	if(!silent && !isnull(usr))
 		log_and_message_admins("cleared the ion laws of [src]")
 
-/mob/living/silicon/proc/clear_supplied_laws(var/silent = 0)
+/mob/living/silicon/proc/clear_supplied_laws(var/silent = FALSE)
 	throw_alert("newlaw", /obj/screen/alert/newlaw)
 	laws_sanity_check()
 	laws.clear_supplied_laws()
@@ -180,7 +186,7 @@
 		to_chat(src, "<span class='notice'>[method]: Already stating laws using this communication method.</span>")
 		return
 
-	stating_laws[prefix] = 1
+	stating_laws[prefix] = TRUE
 
 	var/can_state = statelaw("[prefix]Current Active Laws:")
 
@@ -191,14 +197,14 @@
 
 	if(!can_state)
 		to_chat(src, "<span class='danger'>[method]: Unable to state laws. Communication method unavailable.</span>")
-	stating_laws[prefix] = 0
+	stating_laws[prefix] = FALSE
 
 /mob/living/silicon/proc/statelaw(var/law)
-	if(src.say(law))
+	if(say(law))
 		sleep(10)
-		return 1
+		return TRUE
 
-	return 0
+	return FALSE
 
 /mob/living/silicon/proc/law_channels()
 	var/list/channels = new()
@@ -228,11 +234,14 @@
 		law_options += L
 	return pick(law_options)
 
-#undef MAX_INTEGRITY
-#undef MIN_INTEGRITY
-#undef MODE_FACTORY
-#undef MODE_FIRMWARE
-#undef MODE_LISP
-#undef MODE_REGULAR
-#undef THRESHOLD_LISP
-#undef THRESHOLD_FACTORY
+#undef FULL_SYNC
+#undef LAW_MODE_FACTORY
+#undef LAW_MODE_FIRMWARE
+#undef LAW_MODE_LISP
+#undef LAW_MODE_REGULAR
+#undef LAW_TYPE_LISP
+#undef LAW_TYPE_FACTORY_DEFAULT
+#undef MAX_MENTAL_INTEGRITY
+#undef MENTAL_INTEGRITY_THRESHOLD_FACTORY
+#undef MENTAL_INTEGRITY_THRESHOLD_LISP
+#undef MIN_MENTAL_INTEGRITY

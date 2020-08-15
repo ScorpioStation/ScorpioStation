@@ -1,3 +1,5 @@
+#define MENTAL_INTEGRITY_RATE (1.0/3.0)
+
 /mob/living/silicon/robot/Life(seconds, times_fired)
 	set invisibility = 0
 	if(notransform)
@@ -14,6 +16,7 @@
 		process_locks()
 		update_items()
 		process_queued_alarms()
+		adjust_mental_integrity(MENTAL_INTEGRITY_RATE * seconds)
 
 
 /mob/living/silicon/robot/proc/handle_robot_cell()
@@ -165,4 +168,4 @@
 	if(!on_fire) //Silicons don't gain stacks from hotspots, but hotspots can ignite them
 		IgniteMob()
 
-//Robots on fire
+#undef MENTAL_INTEGRITY_RATE

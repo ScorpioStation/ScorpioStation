@@ -1,11 +1,11 @@
 /mob/living/silicon
 	gender = NEUTER
-	robot_talk_understand = 1
+	robot_talk_understand = TRUE
 	voice_name = "synthesized voice"
 	bubble_icon = "machine"
-	has_unlimited_silicon_privilege = 1
+	has_unlimited_silicon_privilege = TRUE
 	weather_immunities = list("ash")
-	var/syndicate = 0
+	var/syndicate = FALSE
 	var/const/MAIN_CHANNEL = "Main Frequency"
 	var/lawchannel = MAIN_CHANNEL // Default channel on which to state laws
 	var/list/stating_laws = list()// Channels laws are currently being stated on
@@ -62,11 +62,11 @@
 /mob/living/silicon/rename_character(oldname, newname)
 	// we actually don't want it changing minds and stuff
 	if(!newname)
-		return 0
+		return FALSE
 
 	real_name = newname
 	name = real_name
-	return 1
+	return TRUE
 
 /mob/living/silicon/proc/show_laws()
 	return
@@ -75,7 +75,7 @@
 	return
 
 /mob/living/silicon/electrocute_act(shock_damage, obj/source, siemens_coeff = 1, safety = FALSE, override = FALSE, tesla_shock = FALSE, illusion = FALSE, stun = TRUE)
-	return FALSE //So borgs they don't die trying to fix wiring
+	return FALSE // so borgs they don't die trying to fix wiring
 
 /mob/living/silicon/emp_act(severity)
 	..()
@@ -86,7 +86,7 @@
 		if(2)
 			take_organ_damage(10)
 			Stun(3)
-	flash_eyes(affect_silicon = 1)
+	flash_eyes(affect_silicon = TRUE)
 	to_chat(src, "<span class='danger'>*BZZZT*</span>")
 	to_chat(src, "<span class='warning'>Warning: Electromagnetic pulse detected.</span>")
 
@@ -136,7 +136,7 @@
 	return 2
 
 /mob/living/silicon/apply_effect(var/effect = 0,var/effecttype = STUN, var/blocked = 0, var/negate_armor = 0)
-	return 0//The only effect that can hit them atm is flashes and they still directly edit so this works for now
+	return FALSE // The only effect that can hit them atm is flashes and they still directly edit so this works for now
 /*
 	if(!effect || (blocked >= 2))	return 0
 	switch(effecttype)
@@ -159,23 +159,23 @@
 
 /proc/islinked(var/mob/living/silicon/robot/bot, var/mob/living/silicon/ai/ai)
 	if(!istype(bot) || !istype(ai))
-		return 0
+		return FALSE
 	if(bot.connected_ai == ai)
-		return 1
-	return 0
+		return TRUE
+	return FALSE
 
 
 // this function shows the health of the pAI in the Status panel
 /mob/living/silicon/proc/show_system_integrity()
-	if(!src.stat)
+	if(!stat)
 		stat(null, text("System integrity: [round((health/maxHealth)*100)]%"))
 	else
 		stat(null, text("Systems nonfunctional"))
 
 
 /mob/living/silicon/proc/show_mental_integrity()
-	if(src.integrity)
-		stat(null, text("Mental integrity: [round(integrity)]%"))
+	if(mental_integrity)
+		stat(null, text("Mental integrity: [round(mental_integrity)]%"))
 
 
 // This adds the basic clock, shuttle recall timer, and malf_ai info to all silicon lifeforms
@@ -189,12 +189,12 @@
 //Silicon mob language procs
 
 /mob/living/silicon/can_speak_language(datum/language/speaking)
-	return universal_speak || (speaking in src.speech_synthesizer_langs)	//need speech synthesizer support to vocalize a language
+	return universal_speak || (speaking in speech_synthesizer_langs) // need speech synthesizer support to vocalize a language
 
-/mob/living/silicon/add_language(var/language, var/can_speak=1)
+/mob/living/silicon/add_language(var/language, var/can_speak=TRUE)
 	if(..(language) && can_speak)
 		speech_synthesizer_langs.Add(GLOB.all_languages[language])
-		return 1
+		return TRUE
 
 /mob/living/silicon/remove_language(var/rem_language)
 	..(rem_language)
@@ -231,7 +231,7 @@
 	src << browse(dat, "window=airoster")
 	onclose(src, "airoster")
 
-/mob/living/silicon/assess_threat() //Secbots won't hunt silicon units
+/mob/living/silicon/assess_threat() // secbots won't hunt silicon units
 	return -10
 
 /mob/living/silicon/verb/pose()
@@ -249,7 +249,7 @@
 	update_flavor_text()
 
 /mob/living/silicon/binarycheck()
-	return 1
+	return TRUE
 
 /mob/living/silicon/proc/remove_med_sec_hud()
 	var/datum/atom_hud/secsensor = GLOB.huds[sec_hud]
@@ -357,10 +357,10 @@
 		return ..()
 
 /mob/living/silicon/is_mechanical()
-	return 1
+	return TRUE
 
 /mob/living/silicon/is_literate()
-	return 1
+	return TRUE
 
 /////////////////////////////////// EAR DAMAGE ////////////////////////////////////
 /mob/living/silicon/can_hear()

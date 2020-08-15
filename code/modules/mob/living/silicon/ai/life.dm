@@ -1,3 +1,4 @@
+#define MENTAL_INTEGRITY_RATE (1.0/3.0)
 #define POWER_RESTORATION_OFF 0
 #define POWER_RESTORATION_START 1
 #define POWER_RESTORATION_SEARCH_APC 2
@@ -18,6 +19,8 @@
 	if(stat == DEAD)
 		return
 	update_gravity(mob_has_gravity())
+
+	adjust_mental_integrity(MENTAL_INTEGRITY_RATE * seconds)
 
 	if(!eyeobj || QDELETED(eyeobj) || !eyeobj.loc)
 		view_core()
@@ -152,3 +155,5 @@
 /mob/living/silicon/ai/rejuvenate()
 	..()
 	add_ai_verbs(src)
+
+#undef MENTAL_INTEGRITY_RATE
