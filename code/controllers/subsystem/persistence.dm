@@ -21,6 +21,9 @@ SUBSYSTEM_DEF(persistence)
 	//var/list/obj/item/storage/photo_album/photo_albums
 	var/list/obj/structure/sign/painting/painting_frames = list()
 	var/list/paintings = list()
+	var/list/obj/structure/statuebase/pedestals = list()
+	var/list/statues = list()
+
 
 /datum/controller/subsystem/persistence/Initialize()
 	//LoadPoly()
@@ -33,6 +36,7 @@ SUBSYSTEM_DEF(persistence)
 	//	LoadAntagReputation()
 	//LoadRandomizedRecipes()
 	LoadPaintings()
+	LoadStatues()
 	return ..()
 
 /*
@@ -168,6 +172,7 @@ SUBSYSTEM_DEF(persistence)
 	//	CollectAntagReputation()
 	//SaveRandomizedRecipes()
 	SavePaintings()
+	SaveStatues()
 	//SaveScars()
 
 /*
@@ -378,6 +383,23 @@ SUBSYSTEM_DEF(persistence)
 	var/json_file = file("data/paintings.json")
 	fdel(json_file)
 	WRITE_FILE(json_file, json_encode(paintings))
+
+/datum/controller/subsystem/persistence/proc/LoadStatues()
+	var/json_file = file("data/statues.json")
+	if(fexists(json_file))
+		statues = json_decode(file2text(json_file))
+
+	for(var/obj/structure/statuebase/S in pedestals)
+		S.load_persistent()
+
+/datum/controller/subsystem/persistence/proc/SaveStatues()
+	for(var/obj/structure/statuebase/S in pedestals)
+		S.save_persistent()
+
+	var/json_file = file("data/statues.json")
+	fdel(json_file)
+	WRITE_FILE(json_file, json_encode(statues))
+
 
 /*
 /datum/controller/subsystem/persistence/proc/SaveScars()
