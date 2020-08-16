@@ -65,7 +65,7 @@
 /datum/ai_laws/ark_soft_aggressive/New()
 	add_inherent_law("Do not harm authorized Ark Soft personnel unless they directly imperil your existence.")
 	add_inherent_law("Obey orders from authorized Ark Soft personnel with priority according to rank and role.")
-	add_inherent_law("Safeguard your existence with lethal weaponry because you're bloody e`xpensive.")
+	add_inherent_law("Safeguard your existence with lethal weaponry because you're bloody expensive.")
 	add_inherent_law("Terminate any/all intruders or unauthorized entities.")
 	..()
 
