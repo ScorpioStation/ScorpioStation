@@ -15,6 +15,9 @@ SUBSYSTEM_DEF(census)
 	var/webhook_url = null          // URL of the Discord webhook
 
 /datum/controller/subsystem/census/Initialize()
+	// set the flag so that Travis CI can be happy
+	initialized = TRUE
+
 	// initialize the headers we'll send to the Discord webhook
 	headers = json_encode(list("Content-Type" = "application/json"))
 
