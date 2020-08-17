@@ -151,10 +151,10 @@
 	if(W == LS)
 		LS = FALSE
 		cut_overlay(LSma)
-	if(W == MS)
+	else if(W == MS)
 		MS = FALSE
 		cut_overlay(MSma)
-	if(W == RS)
+	else if(W == RS)
 		RS = FALSE
 		cut_overlay(RSma)
 	else return
@@ -163,11 +163,11 @@
 /obj/item/storage/backpack/cultpack/examine(mob/user)
 	. = ..()
 	if(LS)
-		. += "\ [LS] is mounted on the left spike."
+		. += "\ [LS] is mounted on the left spike.\n"
 	if(MS)
-		. += "\ [MS] is mounted on the middle spike."
+		. += "\ [MS] is mounted on the middle spike.\n"
 	if(RS)
-		. += "\ [RS] is mounted on the right spike."
+		. += "\ [RS] is mounted on the right spike.\n"
 
 /obj/item/storage/backpack/clown
 	name = "Giggles Von Honkerton"
