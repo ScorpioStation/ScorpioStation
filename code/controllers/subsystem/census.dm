@@ -51,8 +51,6 @@ SUBSYSTEM_DEF(census)
 	return ..()
 
 /datum/controller/subsystem/census/fire()
-	log_and_message_admins("DEBUG: [name] subsystem: Firing at [round(world.time/10)]s into the round")
-
 	// determine the current server population
 	var/next_pop = length(GLOB.clients)
 	var/list/notify_us = list()
@@ -97,5 +95,4 @@ SUBSYSTEM_DEF(census)
 	var/body = json_encode(body_obj)
 
 	// call the webhook async, because this is a best effort notification
-	log_and_message_admins("DEBUG: [name] subsystem: Calling Discord webhook: [RUSTG_HTTP_METHOD_POST] http://discord.com/webhook [body] [headers]")
 	rustg_http_request_async(RUSTG_HTTP_METHOD_POST, webhook_url, body, headers)
