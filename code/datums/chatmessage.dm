@@ -80,8 +80,10 @@
 
 	// Clip message
 	var/maxlen = owned_by.prefs.max_chat_length
-	if (length_char(text) > maxlen)
-		text = copytext_char(text, 1, maxlen + 1) + "..." // BYOND index moment
+	var/datum/html/split_holder/s = split_html(text)
+	if (length_char(s.inner_text) > maxlen)
+		var/chattext = copytext_char(s.inner_text, 1, maxlen + 1) + "..."
+		text = jointext(s.opening, "") + chattext + jointext(s.closing, "")
 
 	// Calculate target color if not already present
 //	if (!target.chat_color || target.chat_color_name != target.name)
