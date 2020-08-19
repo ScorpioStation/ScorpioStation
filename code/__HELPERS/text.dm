@@ -652,7 +652,7 @@ proc/checkhtml(var/t)
 			text = copytext_char(text, tag_start)
 			break
 		// otherwise, we found an opening tag, so add it to the list
-		var/tag = copytext_char(text, tag_start, tag_stop)
+		var/tag = copytext_char(text, tag_start, tag_stop+1)
 		s.opening.Add(tag)
 		// and chop the text for the next round
 		text = copytext_char(text, tag_stop+1)
@@ -660,10 +660,14 @@ proc/checkhtml(var/t)
 		tag_start = findtext(text, "<")
 		tag_stop = findtext(text, ">")
 
+	// search for tag brackets
+	tag_start = findtext(text, "<")
+	tag_stop = findtext(text, ">")
+
 	// until we run out of closing tags
 	while((tag_start != 0) && (tag_stop != 0))
 		// we found a closing tag, so add it to the list
-		var/tag = copytext_char(text, tag_start, tag_stop)
+		var/tag = copytext_char(text, tag_start, tag_stop+1)
 		s.closing.Add(tag)
 		// and chop the text for the next round
 		text = copytext_char(text, tag_stop+1)
