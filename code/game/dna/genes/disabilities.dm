@@ -6,6 +6,8 @@
 // Gene is always activated.
 /////////////////////
 
+#define string2charlist(string) (splittext(string, regex("(\\x0A|.)")) - splittext(string, ""))
+
 /datum/dna/gene/disability
 	name = "DISABILITY"
 
@@ -260,3 +262,5 @@
 			garbled_message += C
 	message = garbled_message
 	return message
+
+#undef string2charlist
