@@ -284,6 +284,8 @@
 
 /obj/structure/carving/statue/deconstruct(disassembled = TRUE)
 	if(pedestal)
+		var/obj/structure/statuebase/P = pedestal
+		P.statue = null
 		pedestal = null
 	if(generated_icon)
 		qdel(generated_icon)
