@@ -125,6 +125,7 @@
 	if(anchored || throwing)
 		return FALSE
 	if(force < (move_resist * MOVE_FORCE_PULL_RATIO))
+		to_chat(user, "<span class='warning'>You're not strong enough to pull that!</span>")
 		return FALSE
 	return TRUE
 

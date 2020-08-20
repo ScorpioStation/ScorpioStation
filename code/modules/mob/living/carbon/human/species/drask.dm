@@ -19,6 +19,8 @@
 	//exotic_blood = "cryoxadone"
 	body_temperature = 273
 
+	default_genes = list(STRONG)
+
 	blurb = "Hailing from Hoorlm, planet outside what is usually considered a habitable \
 	orbit, the Drask evolved to live in extreme cold. Their strange bodies seem \
 	to operate better the colder their surroundings are, and can regenerate rapidly \
@@ -61,3 +63,9 @@
 		"eyes" =     				/obj/item/organ/internal/eyes/drask, //5 darksight.
 		"brain" =  					/obj/item/organ/internal/brain/drask
 		)
+
+/datum/species/drask/handle_dna(mob/living/carbon/human/H, remove)
+	..()
+	H.dna.SetSEState(GLOB.strongblock, !remove, 1)
+	genemutcheck(H, GLOB.strongblock, null, MUTCHK_FORCED)
+	H.dna.default_blocks.Add(GLOB.strongblock)
