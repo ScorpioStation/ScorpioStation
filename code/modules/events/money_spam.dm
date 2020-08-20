@@ -33,6 +33,12 @@
 		pick_message_server()
 
 	if(useMS)
+		// if our active messaging server acquired a spam filter
+		if(useMS.spam_filter)
+			// stop using the message server and try again next cycle
+			useMS = null
+			return
+
 		if(prob(5))
 			// /obj/machinery/message_server/proc/send_pda_message(var/recipient = "",var/sender = "",var/message = "")
 			var/list/viables = list()
