@@ -215,6 +215,7 @@
 				finalstatue.name = "[material] statue of [chosenstatue]"
 				finalstatue.desc = "A statue made out of [material]."
 				finalstatue.customstatue = TRUE
+				finalstatue.mobtype = mobstatue.type
 				if(do_after(user, 100, target = src))
 					playsound(loc, 'sound/items/gavel.ogg', 50, TRUE, -1)
 					finalstatue.loc = loc
@@ -281,9 +282,12 @@
 	var/icon/generated_icon
 	var/obj/structure/statuebase/pedestal
 	var/author_ckey
+	var/mobtype
 
 /obj/structure/carving/statue/deconstruct(disassembled = TRUE)
 	if(pedestal)
+		var/obj/structure/statuebase/P = pedestal
+		P.statue = null
 		pedestal = null
 	if(generated_icon)
 		qdel(generated_icon)
@@ -544,7 +548,7 @@
 	var/directory = "data/statues/[persistence_id]/"
 	var/filepath = directory + "[md5].png"
 	fcopy(statue.generated_icon, filepath)
-	current += list(list("path" = statue.type, "statuename" = statue.name , "pedestalname" = name, "md5" = md5, "ckey" = statue.author_ckey, "id" = id))
+	current += list(list("path" = statue.type, "statuename" = statue.name , "pedestalname" = name, "mobtype" = statue.mobtype, "md5" = md5, "ckey" = statue.author_ckey, "id" = id))
 	SSpersistence.statues[persistence_id] = current
 
 
@@ -576,4 +580,7 @@
 		statue.name = chosen["statuename"]
 		statue.author_ckey = chosen["ckey"]
 		statue.desc = "a statue made out of [statue.material]."
+		statue.mobtype = chosen["mobtype"]
+		if(statue.mobtype && statue.mobtype == "/mob/living/simple_animal/hostile/megafauna/dragon")
+			statue.pixel_x = -16
 		name = chosen["pedestalname"]

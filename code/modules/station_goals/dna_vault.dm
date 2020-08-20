@@ -269,6 +269,7 @@ GLOBAL_LIST_INIT(non_simple_animals, typecacheof(list(/mob/living/carbon/human/m
 				uploaded++
 				dna[ui] = 1
 		check_goal()
+		P.clear_data()
 		to_chat(user, "<span class='notice'>[uploaded] new datapoints uploaded.</span>")
 	else
 		return ..()
