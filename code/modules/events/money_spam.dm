@@ -1,6 +1,6 @@
 /datum/event/pda_spam
-	endWhen = 36000
-	var/spam_level = 0
+	endWhen = 1 HOURS
+
 	var/last_spam_time = 0
 	var/obj/machinery/message_server/useMS
 
@@ -11,14 +11,17 @@
 /datum/event/pda_spam/proc/pick_message_server()
 	if(GLOB.message_servers)
 		for(var/obj/machinery/message_server/MS in GLOB.message_servers)
+			// if this message server has a spam filter, skip it
+			if(MS.spam_filter)
+				continue
+			// if this message server is active, choose it
 			if(MS.active)
 				useMS = MS
-				spam_level = MS.spam_filter_level
 				break
 
 /datum/event/pda_spam/tick()
 	// if no spam managed to get to a receiver for five minutes
-	if(world.time > last_spam_time + 5 MINUTES)
+	if(world.time > (last_spam_time + 5 MINUTES))
 		// then give up; stop the PDA spam event
 		kill()
 		return
@@ -28,12 +31,6 @@
 		// pick a new active messaging server
 		useMS = null
 		pick_message_server()
-
-	// if the messaging server had its spam filter upgraded
-	if(useMS && (useMS.spam_filter_level > spam_level))
-		// then stop the PDA spam event
-		kill()
-		return
 
 	if(useMS)
 		if(prob(5))
@@ -91,11 +88,11 @@
 					"Due to my lack of agents I require an off-world financial account to immediately deposit the sum of 1 POINT FIVE MILLION credits.",\
 					"Greetings sir, I regretfully to inform you that as I lay dying here due to my lack ofheirs I have chosen you to recieve the full sum of my lifetime savings of 1.5 billion credits")
 				if(6)
-					sender = pick("Ark Soft Morale Divison","Feeling Lonely?","Bored?","www.wetskrell.ax")
-					message = pick("The Ark Soft Morale Division wishes to provide you with quality entertainment sites.",\
-					"WetSkrell.ax is a xenophillic website endorsed by AS for the use of male crewmembers among it's many stations and outposts.",\
-					"Wetskrell.ax only provides the higest quality of male entertaiment to Ark Soft Employees.",\
-					"Simply enter your Ark Soft Bank account system number and pin. With three easy steps this service could be yours!")
+					sender = pick("ArkSoft Morale Divison","Feeling Lonely?","Bored?","www.wetskrell.ax")
+					message = pick("The ArkSoft Morale Division wishes to provide you with quality entertainment sites.",\
+					"WetSkrell.ark is a xenophillic website endorsed by ArkSoft for the use of male crewmembers among it's many stations and outposts.",\
+					"Wetskrell.ark only provides the higest quality of male entertaiment to ArkSoft Employees.",\
+					"Simply enter your ArkSoft Bank account system number and pin. With three easy steps this service could be yours!")
 				if(7)
 					sender = pick("You have won free tickets!","Click here to claim your prize!","You are the 1000th vistor!","You are our lucky grand prize winner!")
 					message = pick("You have won tickets to the newest ACTION JAXSON MOVIE!",\
@@ -103,14 +100,15 @@
 					"You have won tickets to the newest romantic comedy 16 RULES OF LOVE!",\
 					"You have won tickets to the newest thriller THE CULT OF THE SLEEPING ONE!")
 
-			if(useMS.send_pda_message("[P.owner]", sender, message))	//Message been filtered by spam filter.
+			// if the message was not delivered, don't count it as sent
+			if(useMS.send_pda_message("[P.owner]", sender, message))
 				return
 
 			last_spam_time = world.time
 
-			if(prob(50)) //Give the AI an increased chance to intercept the message
+			if(prob(50)) // give the AI an increased chance to intercept the message
 				for(var/mob/living/silicon/ai/ai in GLOB.mob_list)
-					// Allows other AIs to intercept the message but the AI won't intercept their own message.
+					// allows other AIs to intercept the message but the AI won't intercept their own message
 					if(ai.aiPDA != P && ai.aiPDA != src)
 						ai.show_message("<i>Intercepted message from <b>[sender]</b></i> (Unknown / spam?) <i>to <b>[P:owner]</b>: [message]</i>")
 

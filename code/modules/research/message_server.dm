@@ -58,7 +58,7 @@ GLOBAL_LIST_EMPTY(message_servers)
 	var/list/datum/data_rc_msg/rc_msgs = list()
 	var/active = 1
 	var/decryptkey = "password"
-	var/spam_filter_level = 1
+	var/spam_filter = FALSE
 
 /obj/machinery/message_server/New()
 	GLOB.message_servers += src
@@ -116,10 +116,10 @@ GLOBAL_LIST_EMPTY(message_servers)
 /obj/machinery/message_server/attack_hand(user as mob)
 	to_chat(user, "You toggle PDA message passing from [active ? "On" : "Off"] to [active ? "Off" : "On"]")
 	active = !active
-	// if we got turned back on, update the spam filter signatures
-	if(active)
-		to_chat(user, "A small display on the message server reads, 'Spam Filter Signatures Updated'")
-		spam_filter_level++
+	// if we got turned back on, and we don't have a spam filter
+	if(active && !spam_filter)
+		to_chat(user, "A small display on the message server reads, 'Spam Filter: Active'")
+		spam_filter = TRUE
 	update_icon()
 	return
 
