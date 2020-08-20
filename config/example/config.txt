@@ -463,3 +463,12 @@ DISABLE_HIGH_POP_MC_MODE_AMOUNT 60
 
 ## If uncommented, all gamemodes will respect the number of required players. Defaults to no.
 #ENABLE_GAMEMODE_PLAYER_LIMIT
+
+## Uncomment to use the Deputy subsystem to deputize players when conditions are met
+#USE_DEPUTY_SUBSYSTEM
+
+## Deputize players when the active player count falls below this number
+DEPUTY_BELOW_PLAYERCOUNT 20
+
+## Deputize players when the number of active security are less than this percent of active players
+DEPUTY_BELOW_SEC_PERCENT 10

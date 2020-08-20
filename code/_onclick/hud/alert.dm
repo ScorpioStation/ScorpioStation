@@ -579,6 +579,15 @@ so as to remain in compliance with the most up-to-date laws."
 	if(L.last_special <= world.time)
 		return L.resist_buckle()
 
+
+// ROUND-BASED
+
+/obj/screen/alert/deputized
+	name = "Deputized"
+	desc = "You are deputized and have authority to act as Security, if necessary."
+	icon_state = "status_sheriff"
+
+
 // PRIVATE = only edit, use, or override these if you're editing the system as a whole
 
 // Re-render all alerts - also called in /datum/hud/show_hud() because it's needed there

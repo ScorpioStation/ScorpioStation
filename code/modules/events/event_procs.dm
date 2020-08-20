@@ -77,7 +77,7 @@
 	active_with_role["Any"] = GLOB.player_list.len
 
 	for(var/mob/M in GLOB.player_list)
-		if(!M.mind || !M.client || M.client.inactivity > 10 * 10 * 60) // longer than 10 minutes AFK counts them as inactive
+		if(!M.mind || !M.client || M.client.inactivity > 10 MINUTES) // longer than 10 minutes AFK counts them as inactive
 			continue
 
 		if(istype(M, /mob/living/silicon/robot))

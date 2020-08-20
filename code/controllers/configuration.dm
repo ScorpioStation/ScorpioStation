@@ -253,6 +253,11 @@
 	// Makes gamemodes respect player limits
 	var/enable_gamemode_player_limit = 0
 
+	// Deputy subsystem
+	var/deputy_below_playercount = 1
+	var/deputy_below_sec_percent = 1
+	var/use_deputy_subsystem = FALSE
+
 /datum/configuration/New()
 	for(var/T in subtypesof(/datum/game_mode))
 		var/datum/game_mode/M = T
@@ -750,6 +755,14 @@
 					config.disable_localhost_admin = 1
 				if("enable_gamemode_player_limit")
 					config.enable_gamemode_player_limit = 1
+
+				if("deputy_below_playercount")
+					config.deputy_below_playercount = text2num(value)
+				if("deputy_below_sec_percent")
+					config.deputy_below_sec_percent = text2num(value)
+				if("use_deputy_subsystem")
+					config.use_deputy_subsystem = TRUE
+
 				else
 					log_config("Unknown setting in configuration: '[name]'")
 

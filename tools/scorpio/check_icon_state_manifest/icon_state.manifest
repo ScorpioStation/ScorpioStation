@@ -14,6 +14,8 @@ icons/mob/hud.dmi : hudarksoftrepresentative
 icons/mob/hud.dmi : hudbouncer
 icons/mob/inhands/items_lefthand.dmi : chisel
 icons/mob/inhands/items_righthand.dmi : chisel
+icons/mob/screen_alert.dmi : status_corp
+icons/mob/screen_alert.dmi : status_sheriff
 icons/mob/suit.dmi : ark_hoodie
 icons/mob/suit.dmi : ark_hoodie_hood
 icons/mob/suit.dmi : arkrep
