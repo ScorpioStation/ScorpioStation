@@ -717,7 +717,6 @@
 	A.icon = 'icons/effects/genetics.dmi'
 	A.icon_state = "eyelasers"
 	playsound(src.loc, 'sound/weapons/taser2.ogg', 75, 1)
-	A.current = T
 	A.yo = U.y - T.y
 	A.xo = U.x - T.x
 	A.fire()
