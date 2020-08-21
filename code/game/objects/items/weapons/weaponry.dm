@@ -217,7 +217,7 @@
 			else if(prob(30))
 				visible_message("<span class='warning'>[owner] swings! And [p_they()] miss[p_es()]! How embarassing.</span>", "<span class='warning'>You swing! You miss! Oh no!</span>")
 				playsound(get_turf(owner), 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
-				owner.do_attack_animation(get_step(owner, pick(alldirs)), ATTACK_EFFECT_DISARM)
+				owner.do_attack_animation(get_step(owner, pick(GLOB.alldirs)), ATTACK_EFFECT_DISARM)
 				if(!is_ball)
 					lastdeflect = world.time + 3000
 				deflectmode = can_deflect()
@@ -232,7 +232,7 @@
 					lastdeflect = world.time + 3000
 				deflectmode = can_deflect()
 				return TRUE
-				
+
 /obj/item/melee/baseball_bat/proc/can_deflect()
 	if(world.time >= lastdeflect)
 		return TRUE
