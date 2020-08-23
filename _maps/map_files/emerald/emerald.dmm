@@ -94580,6 +94580,10 @@
 	},
 /turf/simulated/floor/wood,
 /area/library)
+"exQ" = (
+/obj/machinery/baseball_machine,
+/turf/simulated/floor/plating,
+/area/maintenance/apmaint2)
 "fpD" = (
 /obj/structure/sign/painting/library{
 	id = 4;
@@ -120083,7 +120087,7 @@ aOO
 aON
 doL
 aCn
-aCn
+exQ
 aCo
 bWU
 cRD
