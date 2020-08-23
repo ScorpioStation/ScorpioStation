@@ -811,8 +811,8 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Captain's Bedroom"
 	icon_state = "captain"
 
-/area/crew_quarters/beach
-	name= "\improper Beach"
+/area/crew_quarters/gym
+	name= "\improper Gym"
 	icon_state= "dk_yellow"
 
 /area/crew_quarters/recruit

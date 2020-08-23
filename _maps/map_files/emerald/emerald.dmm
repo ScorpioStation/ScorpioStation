@@ -9064,7 +9064,7 @@
 /area/hallway/primary/fore/fore_starboard)
 "auH" = (
 /turf/simulated/wall,
-/area/crew_quarters/beach)
+/area/crew_quarters/gym)
 "auI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/wall/r_wall,
@@ -11244,8 +11244,8 @@
 	},
 /area/hydroponics)
 "azr" = (
-/turf/simulated/floor/beach/sand,
-/area/crew_quarters/beach)
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
 "azs" = (
 /obj/machinery/field/generator,
 /obj/structure/cable/yellow{
@@ -11553,8 +11553,9 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fpmaint2)
 "aAe" = (
+/obj/structure/weightmachine/stacklifter,
 /turf/simulated/floor/carpet,
-/area/crew_quarters/beach)
+/area/crew_quarters/gym)
 "aAf" = (
 /turf/simulated/wall,
 /area/crew_quarters/dorms)
@@ -14571,12 +14572,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plasteel/dark,
 /area/security/warden)
-"aGT" = (
-/mob/living/simple_animal/hostile/retaliate/carp/koi{
-	name = "Jeremy"
-	},
-/turf/simulated/floor/beach/coastline,
-/area/crew_quarters/beach)
 "aGU" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Secure Armory";
@@ -16095,9 +16090,6 @@
 	icon_state = "wood-broken3"
 	},
 /area/crew_quarters/vacantoffice)
-"aKp" = (
-/turf/simulated/floor/beach/coastline,
-/area/crew_quarters/beach)
 "aKq" = (
 /obj/effect/spawner/window/reinforced,
 /turf/simulated/floor/plating,
@@ -19399,7 +19391,7 @@
 	name = "Beach Simulation"
 	},
 /turf/simulated/floor/plasteel,
-/area/crew_quarters/beach)
+/area/crew_quarters/gym)
 "aRu" = (
 /obj/structure/curtain/open,
 /obj/machinery/shower{
@@ -30435,15 +30427,8 @@
 	dir = 4;
 	network = list("SS13")
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "neutral"
-	},
-/turf/simulated/floor/plasteel{
-	tag = "icon-siding2 (NORTH)";
-	icon_state = "siding2";
-	dir = 1
-	},
-/area/crew_quarters/beach)
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
 "bmi" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -34477,9 +34462,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/obj/structure/decorative_structures/metal/statue/sun,
 /turf/simulated/floor/plasteel,
-/area/crew_quarters/beach)
+/area/crew_quarters/gym)
 "btw" = (
 /obj/machinery/light{
 	dir = 1;
@@ -35589,15 +35573,8 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "neutral"
-	},
-/turf/simulated/floor/plasteel{
-	tag = "icon-siding2 (NORTH)";
-	icon_state = "siding2";
-	dir = 1
-	},
-/area/crew_quarters/beach)
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
 "bvt" = (
 /obj/structure/cable{
 	icon_state = "0-2";
@@ -36116,8 +36093,8 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/beach/sand,
-/area/crew_quarters/beach)
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
 "bww" = (
 /turf/simulated/floor/plasteel{
 	dir = 1;
@@ -36264,12 +36241,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/maintenance/fpmaint)
-"bwK" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/simulated/floor/beach/sand,
-/area/crew_quarters/beach)
 "bwL" = (
 /obj/effect/spawner/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -38348,15 +38319,8 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/plasteel{
-	icon_state = "neutral"
-	},
-/turf/simulated/floor/plasteel{
-	tag = "icon-siding2 (NORTH)";
-	icon_state = "siding2";
-	dir = 1
-	},
-/area/crew_quarters/beach)
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
 "bAE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -39505,15 +39469,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/turf/simulated/floor/plasteel{
-	icon_state = "neutral"
-	},
-/turf/simulated/floor/plasteel{
-	tag = "icon-siding2 (NORTH)";
-	icon_state = "siding2";
-	dir = 1
-	},
-/area/crew_quarters/beach)
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
 "bCC" = (
 /obj/structure/table/wood,
 /obj/item/paper/blueshield,
@@ -41593,7 +41550,7 @@
 	scrub_Toxins = 1
 	},
 /turf/simulated/floor/plasteel,
-/area/crew_quarters/beach)
+/area/crew_quarters/gym)
 "bGu" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/maintenance{
@@ -41621,7 +41578,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/plasteel,
-/area/crew_quarters/beach)
+/area/crew_quarters/gym)
 "bGy" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -42685,12 +42642,13 @@
 	dir = 10
 	},
 /turf/simulated/floor/plasteel,
-/area/crew_quarters/beach)
+/area/crew_quarters/gym)
 "bIr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/table,
 /turf/simulated/floor/plasteel,
-/area/crew_quarters/beach)
+/area/crew_quarters/gym)
 "bIs" = (
 /obj/structure/table,
 /obj/item/storage/firstaid/regular,
@@ -42763,14 +42721,13 @@
 /turf/simulated/floor/plasteel,
 /area/atmos/distribution)
 "bIy" = (
-/obj/item/beach_ball,
 /obj/machinery/light{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plasteel,
-/area/crew_quarters/beach)
+/area/crew_quarters/gym)
 "bIz" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -42782,7 +42739,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/plasteel,
-/area/crew_quarters/beach)
+/area/crew_quarters/gym)
 "bIA" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -42990,7 +42947,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plasteel,
-/area/crew_quarters/beach)
+/area/crew_quarters/gym)
 "bIT" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -44182,7 +44139,7 @@
 	name = "Civilian"
 	},
 /turf/simulated/floor/carpet,
-/area/crew_quarters/beach)
+/area/crew_quarters/gym)
 "bLd" = (
 /obj/structure/chair/comfy/black,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -44301,7 +44258,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/landmark/battle_mob_point,
 /turf/simulated/floor/plasteel,
-/area/crew_quarters/beach)
+/area/crew_quarters/gym)
 "bLp" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -45024,9 +44981,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/wall,
 /area/maintenance/fpmaint)
-"bMy" = (
-/turf/simulated/floor/beach/water,
-/area/crew_quarters/beach)
 "bMz" = (
 /obj/machinery/light_switch{
 	pixel_x = -27;
@@ -46036,8 +45990,8 @@
 /obj/effect/landmark{
 	name = "revenantspawn"
 	},
-/turf/simulated/floor/beach/water,
-/area/crew_quarters/beach)
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
 "bOk" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1;
@@ -46850,7 +46804,7 @@
 "bPG" = (
 /obj/effect/spawner/window/reinforced,
 /turf/simulated/floor/plating,
-/area/crew_quarters/beach)
+/area/crew_quarters/gym)
 "bPH" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -52380,7 +52334,7 @@
 	pixel_y = 27
 	},
 /turf/simulated/floor/plasteel,
-/area/crew_quarters/beach)
+/area/crew_quarters/gym)
 "bZN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -79449,7 +79403,7 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/plasteel,
-/area/crew_quarters/beach)
+/area/crew_quarters/gym)
 "cTJ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -94736,6 +94690,10 @@
 	},
 /turf/simulated/floor/wood,
 /area/library)
+"wQU" = (
+/obj/structure/weightmachine/weightlifter,
+/turf/simulated/floor/carpet,
+/area/crew_quarters/gym)
 "wWj" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/cockroach,
@@ -110312,8 +110270,8 @@ bmh
 azr
 azr
 bwv
-bMy
-aKp
+azr
+azr
 aLf
 csr
 cUe
@@ -110569,8 +110527,8 @@ bvs
 azr
 azr
 azr
-bMy
-aKp
+azr
+azr
 aLf
 bOi
 aLL
@@ -110827,7 +110785,7 @@ azr
 azr
 azr
 bOj
-aKp
+azr
 aLf
 cwy
 cUf
@@ -111077,14 +111035,14 @@ bBc
 aQL
 auH
 bGx
-aAe
+wQU
 bLc
 bvs
 azr
 azr
 azr
-bMy
-aGT
+azr
+azr
 aLf
 aLf
 aLf
@@ -111339,9 +111297,9 @@ bIz
 bCB
 azr
 azr
-bwK
-bMy
-aKp
+bIS
+azr
+azr
 arj
 arJ
 cUg
