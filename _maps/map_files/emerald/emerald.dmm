@@ -34437,7 +34437,7 @@
 	pixel_y = 25
 	},
 /obj/structure/weightmachine/stacklifter,
-/turf/simulated/floor/carpet/rubber,
+/turf/simulated/floor/rubber,
 /area/crew_quarters/gym)
 "btw" = (
 /obj/machinery/light{
@@ -52308,7 +52308,7 @@
 	pixel_y = 27
 	},
 /obj/structure/weightmachine/weightlifter,
-/turf/simulated/floor/carpet/rubber,
+/turf/simulated/floor/rubber,
 /area/crew_quarters/gym)
 "bZN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -94528,21 +94528,9 @@
 	icon_state = "darkredcorners"
 	},
 /area/security/securehallway)
-"dVH" = (
+"eds" = (
 /turf/simulated/floor/gym{
-	icon_state = "ring_11"
-	},
-/area/crew_quarters/gym)
-"dZU" = (
-/obj/decal/wrestling/rope/southmost{
-	icon_state = "border_34"
-	},
-/obj/decal/wrestling/rope/pillar/s{
-	icon_state = "pillar_27_34";
-	pixel_y = 16
-	},
-/turf/simulated/floor/gym{
-	icon_state = "ring_34"
+	icon_state = "ring_19"
 	},
 /area/crew_quarters/gym)
 "ekn" = (
@@ -94558,109 +94546,7 @@
 	},
 /turf/simulated/floor/wood,
 /area/library)
-"eTA" = (
-/obj/decal/wrestling/rope/south{
-	icon_state = "border_24_25_26"
-	},
-/turf/simulated/floor/gym{
-	icon_state = "ring_24"
-	},
-/area/crew_quarters/gym)
-"fpD" = (
-/obj/structure/sign/painting/library{
-	id = 4;
-	pixel_x = 30
-	},
-/turf/simulated/floor/wood,
-/area/library)
-"gdD" = (
-/obj/structure/bookcase{
-	name = "bookcase (Other)"
-	},
-/turf/simulated/floor/wood,
-/area/library)
-"gXu" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/structure/chair/sofa{
-	dir = 4
-	},
-/turf/simulated/floor/wood,
-/area/crew_quarters/dorms)
-"hgQ" = (
-/turf/simulated/floor/gym{
-	icon_state = "ring_19"
-	},
-/area/crew_quarters/gym)
-"ick" = (
-/obj/structure/displaycase/trophy{
-	id = 2
-	},
-/turf/simulated/floor/wood,
-/area/library)
-"ifu" = (
-/mob/living/simple_animal/cockroach,
-/turf/simulated/floor/plating,
-/area/maintenance/asmaint2)
-"ihs" = (
-/obj/decal/wrestling/rope/north{
-	icon_state = "border_3_4_5"
-	},
-/turf/simulated/floor/carpet/rubber,
-/area/crew_quarters/gym)
-"ime" = (
-/turf/simulated/floor/gym{
-	icon_state = "ring_10"
-	},
-/area/crew_quarters/gym)
-"irM" = (
-/obj/decal/wrestling/rope/east{
-	icon_state = "border_27"
-	},
-/turf/simulated/floor/gym{
-	icon_state = "ring_27"
-	},
-/area/crew_quarters/gym)
-"iCD" = (
-/obj/structure/punching_bag,
-/turf/simulated/floor/plasteel,
-/area/crew_quarters/gym)
-"koc" = (
-/obj/structure/table,
-/obj/item/storage/fancy/crayons,
-/obj/item/toy/crayon/spraycan,
-/obj/machinery/light,
-/turf/simulated/floor/plasteel{
-	icon_state = "floorgrime"
-	},
-/area/storage/office)
-"mry" = (
-/obj/structure/displaycase/trophy{
-	id = 4
-	},
-/turf/simulated/floor/wood,
-/area/library)
-"myH" = (
-/obj/structure/bookcase{
-	name = "bookcase (Fiction)"
-	},
-/turf/simulated/floor/wood,
-/area/library)
-"mTb" = (
-/obj/decal/wrestling/rope/west{
-	icon_state = "border_23";
-	step_x = 0
-	},
-/turf/simulated/floor/gym{
-	icon_state = "ring_23"
-	},
-/area/crew_quarters/gym)
-"nAv" = (
-/mob/living/simple_animal/cockroach,
-/turf/simulated/floor/plating,
-/area/maintenance/fsmaint2)
-"nOU" = (
+"esL" = (
 /obj/machinery/light{
 	dir = 4
 	},
@@ -94668,53 +94554,9 @@
 	dir = 8;
 	pixel_y = -16
 	},
-/turf/simulated/floor/carpet/rubber,
+/turf/simulated/floor/rubber,
 /area/crew_quarters/gym)
-"ofR" = (
-/turf/simulated/floor/carpet/rubber,
-/area/crew_quarters/gym)
-"oPI" = (
-/mob/living/simple_animal/cockroach,
-/turf/simulated/floor/plating,
-/area/maintenance/fsmaint)
-"pkK" = (
-/obj/decal/wrestling/rope/north{
-	icon_state = "border_6"
-	},
-/obj/decal/wrestling/rope/pillar/ne{
-	icon_state = "pillar_6"
-	},
-/turf/simulated/floor/carpet/rubber,
-/area/crew_quarters/gym)
-"pnL" = (
-/turf/simulated/floor/gym{
-	icon_state = "ring_12"
-	},
-/area/crew_quarters/gym)
-"pCW" = (
-/turf/simulated/floor/gym{
-	icon_state = "ring_18"
-	},
-/area/crew_quarters/gym)
-"pEV" = (
-/obj/structure/bookcase{
-	name = "bookcase (Religion)"
-	},
-/turf/simulated/floor/wood,
-/area/library)
-"pIh" = (
-/obj/decal/wrestling/rope/southmost{
-	icon_state = "border_30"
-	},
-/obj/decal/wrestling/rope/pillar/s{
-	icon_state = "pillar_23_30";
-	pixel_y = 16
-	},
-/turf/simulated/floor/gym{
-	icon_state = "ring_30"
-	},
-/area/crew_quarters/gym)
-"qnZ" = (
+"eQs" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
@@ -94729,6 +94571,166 @@
 	pixel_x = 24
 	},
 /turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
+"fpD" = (
+/obj/structure/sign/painting/library{
+	id = 4;
+	pixel_x = 30
+	},
+/turf/simulated/floor/wood,
+/area/library)
+"fJg" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/structure/chair/sofa{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/crew_quarters/dorms)
+"fSx" = (
+/obj/decal/wrestling/rope/southmost{
+	icon_state = "border_31_32_33"
+	},
+/turf/simulated/floor/gym{
+	icon_state = "ring_31"
+	},
+/area/crew_quarters/gym)
+"gdD" = (
+/obj/structure/bookcase{
+	name = "bookcase (Other)"
+	},
+/turf/simulated/floor/wood,
+/area/library)
+"gEW" = (
+/obj/decal/wrestling/rope/east{
+	icon_state = "border_13"
+	},
+/turf/simulated/floor/gym{
+	icon_state = "ring_13"
+	},
+/area/crew_quarters/gym)
+"gQC" = (
+/obj/decal/wrestling/rope/north{
+	icon_state = "border_3_4_5"
+	},
+/turf/simulated/floor/rubber,
+/area/crew_quarters/gym)
+"hmK" = (
+/turf/simulated/floor/gym{
+	icon_state = "ring_10"
+	},
+/area/crew_quarters/gym)
+"hti" = (
+/turf/simulated/floor/gym{
+	icon_state = "ring_12"
+	},
+/area/crew_quarters/gym)
+"hSr" = (
+/obj/structure/chair,
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
+"ick" = (
+/obj/structure/displaycase/trophy{
+	id = 2
+	},
+/turf/simulated/floor/wood,
+/area/library)
+"ifu" = (
+/mob/living/simple_animal/cockroach,
+/turf/simulated/floor/plating,
+/area/maintenance/asmaint2)
+"jdN" = (
+/obj/decal/wrestling/rope/southmost{
+	icon_state = "border_31_32_33"
+	},
+/turf/simulated/floor/gym{
+	icon_state = "ring_32"
+	},
+/area/crew_quarters/gym)
+"koc" = (
+/obj/structure/table,
+/obj/item/storage/fancy/crayons,
+/obj/item/toy/crayon/spraycan,
+/obj/machinery/light,
+/turf/simulated/floor/plasteel{
+	icon_state = "floorgrime"
+	},
+/area/storage/office)
+"kut" = (
+/obj/decal/wrestling/rope/east{
+	icon_state = "border_27"
+	},
+/turf/simulated/floor/gym{
+	icon_state = "ring_27"
+	},
+/area/crew_quarters/gym)
+"ljB" = (
+/obj/decal/wrestling/rope/west{
+	icon_state = "border_23";
+	step_x = 0
+	},
+/turf/simulated/floor/gym{
+	icon_state = "ring_23"
+	},
+/area/crew_quarters/gym)
+"mbZ" = (
+/obj/decal/wrestling/rope/south{
+	icon_state = "border_24_25_26"
+	},
+/turf/simulated/floor/gym{
+	icon_state = "ring_24"
+	},
+/area/crew_quarters/gym)
+"mry" = (
+/obj/structure/displaycase/trophy{
+	id = 4
+	},
+/turf/simulated/floor/wood,
+/area/library)
+"myH" = (
+/obj/structure/bookcase{
+	name = "bookcase (Fiction)"
+	},
+/turf/simulated/floor/wood,
+/area/library)
+"nAv" = (
+/mob/living/simple_animal/cockroach,
+/turf/simulated/floor/plating,
+/area/maintenance/fsmaint2)
+"oFo" = (
+/obj/structure/punching_bag,
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
+"oPI" = (
+/mob/living/simple_animal/cockroach,
+/turf/simulated/floor/plating,
+/area/maintenance/fsmaint)
+"pEV" = (
+/obj/structure/bookcase{
+	name = "bookcase (Religion)"
+	},
+/turf/simulated/floor/wood,
+/area/library)
+"pGW" = (
+/obj/decal/wrestling/rope/west{
+	icon_state = "border_9";
+	step_x = 0
+	},
+/turf/simulated/floor/gym,
+/area/crew_quarters/gym)
+"pVO" = (
+/obj/decal/wrestling/rope/north,
+/obj/decal/wrestling/rope/pillar/nw,
+/turf/simulated/floor/rubber,
+/area/crew_quarters/gym)
+"qDG" = (
+/obj/decal/wrestling/rope/southmost{
+	icon_state = "border_31_32_33"
+	},
+/turf/simulated/floor/gym{
+	icon_state = "ring_33"
+	},
 /area/crew_quarters/gym)
 "qHQ" = (
 /obj/structure/sign/painting/library{
@@ -94751,36 +94753,7 @@
 	icon_state = "floorgrime"
 	},
 /area/storage/office)
-"rzc" = (
-/turf/simulated/floor/gym{
-	icon_state = "ring_17"
-	},
-/area/crew_quarters/gym)
-"rGv" = (
-/mob/living/simple_animal/cockroach,
-/turf/simulated/floor/plating,
-/area/maintenance/fpmaint2)
-"rPx" = (
-/obj/structure/closet/crate,
-/obj/item/beach_ball/dodgeball,
-/obj/item/beach_ball/holoball,
-/obj/item/beach_ball/holoball/baseball,
-/obj/item/melee/baseball_bat,
-/turf/simulated/floor/plasteel,
-/area/crew_quarters/gym)
-"syr" = (
-/obj/decal/wrestling/rope/east{
-	icon_state = "border_13"
-	},
-/turf/simulated/floor/gym{
-	icon_state = "ring_13"
-	},
-/area/crew_quarters/gym)
-"tbD" = (
-/mob/living/simple_animal/cockroach,
-/turf/simulated/floor/plating,
-/area/maintenance/apmaint)
-"tdl" = (
+"rmr" = (
 /obj/decal/wrestling/rope/south{
 	icon_state = "border_24_25_26"
 	},
@@ -94788,6 +94761,28 @@
 	icon_state = "ring_26"
 	},
 /area/crew_quarters/gym)
+"rCC" = (
+/turf/simulated/floor/gym{
+	icon_state = "ring_11"
+	},
+/area/crew_quarters/gym)
+"rGv" = (
+/mob/living/simple_animal/cockroach,
+/turf/simulated/floor/plating,
+/area/maintenance/fpmaint2)
+"rJl" = (
+/obj/decal/wrestling/rope/north{
+	icon_state = "border_6"
+	},
+/obj/decal/wrestling/rope/pillar/ne{
+	icon_state = "pillar_6"
+	},
+/turf/simulated/floor/rubber,
+/area/crew_quarters/gym)
+"tbD" = (
+/mob/living/simple_animal/cockroach,
+/turf/simulated/floor/plating,
+/area/maintenance/apmaint)
 "tyd" = (
 /obj/structure/table,
 /obj/item/toner{
@@ -94805,31 +94800,21 @@
 	icon_state = "floorgrime"
 	},
 /area/storage/office)
-"tWD" = (
-/obj/decal/wrestling/rope/west{
-	icon_state = "border_9";
-	step_x = 0
+"tZO" = (
+/turf/simulated/floor/gym{
+	icon_state = "ring_17"
 	},
-/turf/simulated/floor/gym,
 /area/crew_quarters/gym)
-"ueH" = (
-/obj/structure/chair,
-/turf/simulated/floor/plasteel,
-/area/crew_quarters/gym)
-"uNY" = (
+"vxU" = (
 /obj/decal/wrestling/rope/southmost{
-	icon_state = "border_31_32_33"
+	icon_state = "border_34"
+	},
+/obj/decal/wrestling/rope/pillar/s{
+	icon_state = "pillar_27_34";
+	pixel_y = 16
 	},
 /turf/simulated/floor/gym{
-	icon_state = "ring_32"
-	},
-/area/crew_quarters/gym)
-"vcs" = (
-/obj/decal/wrestling/rope/southmost{
-	icon_state = "border_31_32_33"
-	},
-/turf/simulated/floor/gym{
-	icon_state = "ring_31"
+	icon_state = "ring_34"
 	},
 /area/crew_quarters/gym)
 "vIO" = (
@@ -94838,18 +94823,30 @@
 	},
 /turf/simulated/floor/wood,
 /area/library)
-"vJZ" = (
+"vWy" = (
+/obj/structure/closet/crate,
+/obj/item/beach_ball/dodgeball,
+/obj/item/beach_ball/holoball,
+/obj/item/beach_ball/holoball/baseball,
+/obj/item/melee/baseball_bat,
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
+"vYZ" = (
 /obj/decal/wrestling/rope/southmost{
-	icon_state = "border_31_32_33"
+	icon_state = "border_30"
+	},
+/obj/decal/wrestling/rope/pillar/s{
+	icon_state = "pillar_23_30";
+	pixel_y = 16
 	},
 /turf/simulated/floor/gym{
-	icon_state = "ring_33"
+	icon_state = "ring_30"
 	},
 /area/crew_quarters/gym)
-"wJO" = (
-/obj/decal/wrestling/rope/north,
-/obj/decal/wrestling/rope/pillar/nw,
-/turf/simulated/floor/carpet/rubber,
+"wBl" = (
+/turf/simulated/floor/gym{
+	icon_state = "ring_18"
+	},
 /area/crew_quarters/gym)
 "wWj" = (
 /obj/effect/decal/cleanable/dirt,
@@ -94864,6 +94861,9 @@
 /obj/structure/displaycase/trophy,
 /turf/simulated/floor/wood,
 /area/library)
+"xVL" = (
+/turf/simulated/floor/rubber,
+/area/crew_quarters/gym)
 "ygw" = (
 /obj/structure/sign/painting/library{
 	id = 2;
@@ -110424,11 +110424,11 @@ cTI
 bIq
 bIy
 bmh
-wJO
-tWD
+pVO
+pGW
 bwv
-mTb
-pIh
+ljB
+vYZ
 aLf
 csr
 cUe
@@ -110677,15 +110677,15 @@ cTv
 bBO
 apn
 auH
-rPx
+vWy
 bGt
 bLc
 bvs
-ihs
-ime
-rzc
-eTA
-vcs
+gQC
+hmK
+tZO
+mbZ
+fSx
 aLf
 bOi
 aLL
@@ -110938,11 +110938,11 @@ btv
 bIr
 bLo
 bAD
-ihs
-dVH
-pCW
+gQC
+rCC
+wBl
 bOj
-uNY
+jdN
 aLf
 cwy
 cUf
@@ -111191,15 +111191,15 @@ bAP
 bBc
 aQL
 auH
-iCD
+oFo
 bGx
 bLc
 bvs
-ihs
-pnL
-hgQ
-tdl
-vJZ
+gQC
+hti
+eds
+rmr
+qDG
 aLf
 aLf
 aLf
@@ -111450,13 +111450,13 @@ bWW
 auH
 bZM
 azr
-ueH
+hSr
 bCB
-pkK
-syr
+rJl
+gEW
 bIS
-irM
-dZU
+kut
+vxU
 arj
 arJ
 cUg
@@ -111708,11 +111708,11 @@ auH
 auH
 bPG
 bIz
-qnZ
-ofR
-ofR
-nOU
-ofR
+eQs
+xVL
+xVL
+esL
+xVL
 arj
 arj
 chq
@@ -112225,7 +112225,7 @@ bED
 bKd
 csD
 cyb
-gXu
+fJg
 cyl
 ark
 aro

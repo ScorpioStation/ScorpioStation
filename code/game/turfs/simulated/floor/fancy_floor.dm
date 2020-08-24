@@ -133,7 +133,3 @@
 	icon_state = "arcade"
 	floor_tile = /obj/item/stack/tile/arcade_carpet
 	smooth = SMOOTH_FALSE
-
-/turf/simulated/floor/carpet/rubber
-	icon = 'icons/misc/wrestling_ring.dmi'
-	icon_state = "rubber_carpet"

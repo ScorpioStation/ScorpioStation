@@ -195,3 +195,8 @@
 	icon = 'icons/misc/wrestling_ring.dmi'
 	icon_state = "ring_9"
 
+
+/turf/simulated/floor/rubber
+	name = "rubber floor"
+	icon = 'icons/misc/wrestling_ring.dmi'
+	icon_state = "rubber_carpet"
