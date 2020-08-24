@@ -188,3 +188,10 @@
 	icon_state = "reebe"
 	baseturf = /turf/simulated/floor/clockwork/reebe
 	uses_overlay = FALSE
+
+
+/turf/simulated/floor/gym
+	name = "wrestling mat"
+	icon = 'icons/misc/wrestling_ring.dmi'
+	icon_state = "ring_9"
+
