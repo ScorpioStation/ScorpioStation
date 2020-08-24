@@ -14,9 +14,10 @@
 		return
 	flick("[icon_state]2", src)
 	playsound(loc, pick(hit_sounds), 25, 1, -1)
-	if(isliving(user))
+	if(isliving(user) && prob(5))
 		var/mob/living/L = user
 		L.apply_status_effect(STATUS_EFFECT_EXERCISED)
+		to_chat(user, "<span class='notice'>You feel stronger!</span>")
 
 /obj/structure/weightmachine
 	name = "weight machine"
