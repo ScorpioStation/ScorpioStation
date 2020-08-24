@@ -30406,6 +30406,7 @@
 	dir = 4;
 	network = list("SS13")
 	},
+/obj/structure/chair,
 /turf/simulated/floor/plasteel,
 /area/crew_quarters/gym)
 "bmi" = (
@@ -35547,6 +35548,7 @@
 	dir = 4;
 	level = 1
 	},
+/obj/structure/chair/comfy/beige,
 /turf/simulated/floor/plasteel,
 /area/crew_quarters/gym)
 "bvt" = (
@@ -39429,6 +39431,17 @@
 	},
 /turf/simulated/floor/wood,
 /area/arkrep)
+"bCB" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	level = 1
+	},
+/obj/structure/chair,
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
 "bCC" = (
 /obj/structure/table/wood,
 /obj/item/paper/blueshield,
@@ -94501,15 +94514,6 @@
 	icon_state = "darkredcorners"
 	},
 /area/security/securehallway)
-"dDl" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/structure/chair/sofa{
-	dir = 4
-	},
-/turf/simulated/floor/wood,
-/area/crew_quarters/dorms)
 "ekn" = (
 /mob/living/simple_animal/cockroach,
 /turf/simulated/floor/wood{
@@ -94523,6 +94527,10 @@
 	},
 /turf/simulated/floor/wood,
 /area/library)
+"eIK" = (
+/obj/structure/chair,
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
 "fpD" = (
 /obj/structure/sign/painting/library{
 	id = 4;
@@ -94530,6 +94538,15 @@
 	},
 /turf/simulated/floor/wood,
 /area/library)
+"fSe" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/structure/chair/sofa{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/crew_quarters/dorms)
 "gdD" = (
 /obj/structure/bookcase{
 	name = "bookcase (Other)"
@@ -94555,8 +94572,14 @@
 	icon_state = "floorgrime"
 	},
 /area/storage/office)
-"mgb" = (
-/obj/structure/chair,
+"kyb" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/black,
+/area/crew_quarters/gym)
+"lmH" = (
+/obj/structure/table,
 /turf/simulated/floor/plasteel,
 /area/crew_quarters/gym)
 "mry" = (
@@ -94571,22 +94594,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/library)
-"mTf" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
-	pixel_y = 0
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
-/obj/machinery/power/apc{
-	dir = 4;
-	name = "east bump";
-	pixel_x = 24
-	},
-/turf/simulated/floor/plasteel,
-/area/crew_quarters/gym)
 "nAv" = (
 /mob/living/simple_animal/cockroach,
 /turf/simulated/floor/plating,
@@ -94601,17 +94608,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/library)
-"qDW" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	level = 1
-	},
-/obj/structure/chair/comfy/beige,
-/turf/simulated/floor/plasteel,
-/area/crew_quarters/gym)
 "qHQ" = (
 /obj/structure/sign/painting/library{
 	id = 6;
@@ -94633,16 +94629,26 @@
 	icon_state = "floorgrime"
 	},
 /area/storage/office)
+"rya" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
 "rGv" = (
 /mob/living/simple_animal/cockroach,
 /turf/simulated/floor/plating,
 /area/maintenance/fpmaint2)
-"syg" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/simulated/floor/carpet/black,
-/area/crew_quarters/gym)
 "tbD" = (
 /mob/living/simple_animal/cockroach,
 /turf/simulated/floor/plating,
@@ -94664,10 +94670,6 @@
 	icon_state = "floorgrime"
 	},
 /area/storage/office)
-"vHn" = (
-/obj/structure/table,
-/turf/simulated/floor/plasteel,
-/area/crew_quarters/gym)
 "vIO" = (
 /obj/structure/statuebase{
 	id = 2
@@ -110503,7 +110505,7 @@ auH
 azr
 bGt
 bLc
-qDW
+bvs
 azr
 azr
 azr
@@ -111014,10 +111016,10 @@ bAP
 bBc
 aQL
 auH
-vHn
+lmH
 bGx
 bLc
-qDW
+bvs
 azr
 azr
 azr
@@ -111273,8 +111275,8 @@ bWW
 auH
 bZM
 azr
-mgb
-bvs
+eIK
+bCB
 azr
 azr
 azr
@@ -111531,10 +111533,10 @@ auH
 auH
 bIS
 bIz
-mTf
+rya
 bPG
 bPG
-syg
+kyb
 bPG
 arj
 arj
@@ -112048,7 +112050,7 @@ bED
 bKd
 csD
 cyb
-dDl
+fSe
 cyl
 ark
 aro
