@@ -11552,10 +11552,6 @@
 "aAd" = (
 /turf/simulated/floor/plating,
 /area/maintenance/fpmaint2)
-"aAe" = (
-/obj/structure/weightmachine/stacklifter,
-/turf/simulated/floor/carpet,
-/area/crew_quarters/gym)
 "aAf" = (
 /turf/simulated/wall,
 /area/crew_quarters/dorms)
@@ -19375,23 +19371,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /turf/simulated/wall/r_wall,
 /area/turret_protected/aisat_interior)
-"aRt" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	level = 1
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/public/glass{
-	name = "Beach Simulation"
-	},
-/turf/simulated/floor/plasteel,
-/area/crew_quarters/gym)
 "aRu" = (
 /obj/structure/curtain/open,
 /obj/machinery/shower{
@@ -34453,16 +34432,11 @@
 /turf/simulated/floor/plasteel,
 /area/hallway/primary/central/east)
 "btv" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
-	},
 /obj/machinery/alarm{
 	pixel_y = 25
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
-	},
-/turf/simulated/floor/plasteel,
+/obj/structure/weightmachine/stacklifter,
+/turf/simulated/floor/carpet/black,
 /area/crew_quarters/gym)
 "btw" = (
 /obj/machinery/light{
@@ -38318,7 +38292,7 @@
 "bAD" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/obj/machinery/hologram/holopad,
+/obj/structure/table,
 /turf/simulated/floor/plasteel,
 /area/crew_quarters/gym)
 "bAE" = (
@@ -39455,22 +39429,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/arkrep)
-"bCB" = (
-/obj/machinery/power/apc{
-	dir = 4;
-	name = "east bump";
-	pixel_x = 24
-	},
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
-	pixel_y = 0
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
-/turf/simulated/floor/plasteel,
-/area/crew_quarters/gym)
 "bCC" = (
 /obj/structure/table/wood,
 /obj/item/paper/blueshield,
@@ -40464,10 +40422,11 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plasteel{
-	dir = 8;
-	icon_state = "neutralfull"
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/public/glass{
+	name = "Beach Simulation"
 	},
+/turf/simulated/floor/plasteel,
 /area/crew_quarters/dorms)
 "bEA" = (
 /obj/structure/cable{
@@ -42644,9 +42603,13 @@
 /turf/simulated/floor/plasteel,
 /area/crew_quarters/gym)
 "bIr" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/table,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/machinery/hologram/holopad,
 /turf/simulated/floor/plasteel,
 /area/crew_quarters/gym)
 "bIs" = (
@@ -42726,6 +42689,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/chair,
 /turf/simulated/floor/plasteel,
 /area/crew_quarters/gym)
 "bIz" = (
@@ -43478,15 +43442,6 @@
 	icon_state = "freezerfloor"
 	},
 /area/medical/genetics_cloning)
-"bJQ" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/simulated/floor/plasteel{
-	dir = 8;
-	icon_state = "neutralfull"
-	},
-/area/crew_quarters/dorms)
 "bJR" = (
 /obj/effect/landmark/battle_mob_point,
 /turf/simulated/floor/carpet,
@@ -44138,7 +44093,8 @@
 /obj/effect/landmark/start{
 	name = "Civilian"
 	},
-/turf/simulated/floor/carpet,
+/obj/structure/chair,
+/turf/simulated/floor/plasteel,
 /area/crew_quarters/gym)
 "bLd" = (
 /obj/structure/chair/comfy/black,
@@ -44257,6 +44213,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/landmark/battle_mob_point,
+/obj/structure/chair,
 /turf/simulated/floor/plasteel,
 /area/crew_quarters/gym)
 "bLp" = (
@@ -46802,8 +46759,7 @@
 /turf/simulated/floor/wood,
 /area/crew_quarters/vacantoffice)
 "bPG" = (
-/obj/effect/spawner/window/reinforced,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/carpet/black,
 /area/crew_quarters/gym)
 "bPH" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -48712,15 +48668,6 @@
 	icon_state = "blue"
 	},
 /area/bridge)
-"bTj" = (
-/obj/structure/chair/sofa{
-	dir = 1
-	},
-/obj/effect/landmark/start{
-	name = "Civilian"
-	},
-/turf/simulated/floor/wood,
-/area/crew_quarters/dorms)
 "bTk" = (
 /obj/machinery/light{
 	dir = 1;
@@ -52333,7 +52280,8 @@
 /obj/machinery/light_switch{
 	pixel_y = 27
 	},
-/turf/simulated/floor/plasteel,
+/obj/structure/weightmachine/weightlifter,
+/turf/simulated/floor/carpet/black,
 /area/crew_quarters/gym)
 "bZN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -53781,21 +53729,6 @@
 	icon_state = "bluecorner"
 	},
 /area/hallway/primary/central/sw)
-"ccv" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/item/radio/intercom{
-	dir = 0;
-	name = "station intercom (General)";
-	pixel_x = -28;
-	pixel_y = 0
-	},
-/obj/structure/chair/sofa{
-	dir = 4
-	},
-/turf/simulated/floor/wood,
-/area/crew_quarters/dorms)
 "ccw" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1;
@@ -79402,6 +79335,7 @@
 	pixel_x = -28;
 	pixel_y = 0
 	},
+/obj/machinery/baseball_machine,
 /turf/simulated/floor/plasteel,
 /area/crew_quarters/gym)
 "cTJ" = (
@@ -94567,6 +94501,15 @@
 	icon_state = "darkredcorners"
 	},
 /area/security/securehallway)
+"dDl" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/structure/chair/sofa{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/crew_quarters/dorms)
 "ekn" = (
 /mob/living/simple_animal/cockroach,
 /turf/simulated/floor/wood{
@@ -94580,10 +94523,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/library)
-"exQ" = (
-/obj/machinery/baseball_machine,
-/turf/simulated/floor/plating,
-/area/maintenance/apmaint2)
 "fpD" = (
 /obj/structure/sign/painting/library{
 	id = 4;
@@ -94616,6 +94555,10 @@
 	icon_state = "floorgrime"
 	},
 /area/storage/office)
+"mgb" = (
+/obj/structure/chair,
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
 "mry" = (
 /obj/structure/displaycase/trophy{
 	id = 4
@@ -94628,6 +94571,22 @@
 	},
 /turf/simulated/floor/wood,
 /area/library)
+"mTf" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
 "nAv" = (
 /mob/living/simple_animal/cockroach,
 /turf/simulated/floor/plating,
@@ -94642,6 +94601,17 @@
 	},
 /turf/simulated/floor/wood,
 /area/library)
+"qDW" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	level = 1
+	},
+/obj/structure/chair/comfy/beige,
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
 "qHQ" = (
 /obj/structure/sign/painting/library{
 	id = 6;
@@ -94667,6 +94637,12 @@
 /mob/living/simple_animal/cockroach,
 /turf/simulated/floor/plating,
 /area/maintenance/fpmaint2)
+"syg" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/black,
+/area/crew_quarters/gym)
 "tbD" = (
 /mob/living/simple_animal/cockroach,
 /turf/simulated/floor/plating,
@@ -94688,16 +94664,16 @@
 	icon_state = "floorgrime"
 	},
 /area/storage/office)
+"vHn" = (
+/obj/structure/table,
+/turf/simulated/floor/plasteel,
+/area/crew_quarters/gym)
 "vIO" = (
 /obj/structure/statuebase{
 	id = 2
 	},
 /turf/simulated/floor/wood,
 /area/library)
-"wQU" = (
-/obj/structure/weightmachine/weightlifter,
-/turf/simulated/floor/carpet,
-/area/crew_quarters/gym)
 "wWj" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/cockroach,
@@ -110524,10 +110500,10 @@ cTv
 bBO
 apn
 auH
+azr
 bGt
-aAe
 bLc
-bvs
+qDW
 azr
 azr
 azr
@@ -111038,10 +111014,10 @@ bAP
 bBc
 aQL
 auH
+vHn
 bGx
-wQU
 bLc
-bvs
+qDW
 azr
 azr
 azr
@@ -111296,12 +111272,12 @@ bTD
 bWW
 auH
 bZM
-bIS
-bIz
-bCB
+azr
+mgb
+bvs
 azr
 azr
-bIS
+azr
 azr
 azr
 arj
@@ -111553,13 +111529,13 @@ bLz
 aok
 auH
 auH
+bIS
+bIz
+mTf
 bPG
-aRt
-auH
 bPG
+syg
 bPG
-auH
-auH
 arj
 arj
 chq
@@ -111810,13 +111786,13 @@ bTW
 aoT
 aoS
 aok
-bDZ
+arY
 bEz
-bJQ
-bCs
-cyb
-ccv
-cyl
+aAf
+arY
+arY
+aAf
+aAf
 arj
 bOA
 aro
@@ -112067,13 +112043,13 @@ ctD
 aoT
 bIR
 bAM
-cqs
+bDZ
 bED
 bKd
 csD
-cyc
-cyh
-bTj
+cyb
+dDl
+cyl
 ark
 aro
 cUh
@@ -112586,7 +112562,7 @@ cqy
 bKl
 cuc
 bVW
-cyc
+cyh
 cyM
 ark
 aro
@@ -120087,7 +120063,7 @@ aOO
 aON
 doL
 aCn
-exQ
+aCn
 aCo
 bWU
 cRD
