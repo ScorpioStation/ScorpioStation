@@ -97,16 +97,14 @@
 	START_PROCESSING(SSprocessing, src) //this lasts 20 minutes, so SSfastprocess isn't needed.
 	if(ishuman(new_owner))
 		var/mob/living/carbon/human/H = new_owner
-		H.dna.species.punchdamagelow += 1
-		H.dna.species.punchdamagehigh += 1
+		H.dna.species.punchdamagelow += 2
 
 /datum/status_effect/exercised/Destroy()
 	. = ..()
 	STOP_PROCESSING(SSprocessing, src)
 	if(ishuman(owner))
 		var/mob/living/carbon/human/H = owner
-		H.dna.species.punchdamagelow -= 1
-		H.dna.species.punchdamagehigh -= 1
+		H.dna.species.punchdamagelow -= 2
 
 //Hippocratic Oath: Applied when the Rod of Asclepius is activated.
 /datum/status_effect/hippocraticOath
