@@ -36067,8 +36067,7 @@
 /area/crew_quarters/cafeteria)
 "bwv" = (
 /obj/decal/wrestling/rope/west{
-	icon_state = "border_16";
-	step_x = 0
+	icon_state = "border_16"
 	},
 /turf/simulated/floor/gym{
 	icon_state = "ring_16"
@@ -94667,8 +94666,7 @@
 /area/crew_quarters/gym)
 "ljB" = (
 /obj/decal/wrestling/rope/west{
-	icon_state = "border_23";
-	step_x = 0
+	icon_state = "border_23"
 	},
 /turf/simulated/floor/gym{
 	icon_state = "ring_23"
@@ -94714,8 +94712,7 @@
 /area/library)
 "pGW" = (
 /obj/decal/wrestling/rope/west{
-	icon_state = "border_9";
-	step_x = 0
+	icon_state = "border_9"
 	},
 /turf/simulated/floor/gym,
 /area/crew_quarters/gym)
