@@ -88,16 +88,23 @@
 /datum/status_effect/exercised
 	id = "Exercised"
 	duration = 1200
+	status_type = STATUS_EFFECT_REPLACE
 	alert_type = null
 
 /datum/status_effect/exercised/on_creation(mob/living/new_owner, ...)
 	. = ..()
 	STOP_PROCESSING(SSfastprocess, src)
 	START_PROCESSING(SSprocessing, src) //this lasts 20 minutes, so SSfastprocess isn't needed.
+	if(ishuman(new_owner))
+		var/mob/living/carbon/human/H = new_owner
+		H.dna.species.punchdamagelow += 2
 
 /datum/status_effect/exercised/Destroy()
 	. = ..()
 	STOP_PROCESSING(SSprocessing, src)
+	if(ishuman(owner))
+		var/mob/living/carbon/human/H = owner
+		H.dna.species.punchdamagelow -= 2
 
 //Hippocratic Oath: Applied when the Rod of Asclepius is activated.
 /datum/status_effect/hippocraticOath
