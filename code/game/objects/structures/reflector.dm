@@ -35,14 +35,14 @@
 		can_rotate = FALSE
 
 /obj/structure/reflector/examine(mob/user)
-	..()
+	. = ..()
 	if(finished)
-		to_chat(user, "It is set to [rotation_angle] degrees, and the rotation is [can_rotate ? "unlocked" : "locked"].")
+		. += "It is set to [rotation_angle] degrees, and the rotation is [can_rotate ? "unlocked" : "locked"]."
 		if(!admin)
 			if(can_rotate)
-				to_chat(user, "<span class='notice'>Alt-click to adjust its direction.</span>")
+				. += "<span class='notice'>Alt-click to adjust its direction.</span>"
 			else
-				to_chat(user, "<span class='notice'>Use screwdriver to unlock the rotation.</span>")
+				. += "<span class='notice'>Use screwdriver to unlock the rotation.</span>"
 
 /obj/structure/reflector/Moved()
 	setAngle(dir_map_to_angle(dir))
@@ -106,7 +106,7 @@
 			user.visible_message("<span class='notice'>[user] starts to weld [src] to the floor.</span>",
 								"<span class='notice'>You start to weld [src] to the floor...</span>",
 								"<span class='hear'>You hear welding.</span>")
-			if (W.use_tool(src, user, 20, volume=50))
+			if(W.use_tool(src, user, 20, volume=50))
 				anchored = TRUE
 				to_chat(user, "<span class='notice'>You weld [src] to the floor.</span>")
 		else
