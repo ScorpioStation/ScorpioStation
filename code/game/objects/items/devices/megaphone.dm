@@ -70,8 +70,7 @@
 
 	for(var/mob/M in get_mobs_in_view(7, src))
 		if(M.client?.prefs.chat_on_map && M.can_hear() && (M.client.prefs.see_chat_non_mob || ismob(user)))
-			var/size = "big"
-			M.create_chat_message(user, message, TRUE, FALSE, size)
+			M.create_chat_message(user, message, null, FALSE, "big")
 
 	log_say(message, user)
 	for(var/obj/O in oview(14, get_turf(src)))
