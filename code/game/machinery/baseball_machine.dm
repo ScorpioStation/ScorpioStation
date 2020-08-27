@@ -24,7 +24,7 @@
 	if(istype(I, /obj/item/beach_ball))
 		if(!user.drop_item())
 			return
-		visible_message("<span class='notice'>[src] loads the baseball machine with a [I].</span>")
+		visible_message("<span class='notice'>[user] loads the baseball machine with a [I].</span>")
 		I.forceMove(src)
 		baseball_count += I
 
