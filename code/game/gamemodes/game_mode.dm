@@ -498,7 +498,7 @@ proc/display_roundstart_logout_report()
 		send_station_goals_message()
 
 /datum/game_mode/proc/send_station_goals_message()
-	var/message_text = "<div style='text-align:center;'><img src='ntlogo.png'>"
+	var/message_text = "<div style='text-align:center;'><img src='arksoftlogo.png'>"
 	message_text += "<h3>[command_name()] Orders</h3></div><hr>"
 	message_text += "<b>Special Orders for [station_name()]:</b><br><br>"
 

@@ -201,7 +201,7 @@ GLOBAL_LIST_EMPTY(asset_datums)
 		"large_stamp-rep.png"	    = 'icons/paper_icons/large_stamp-rep.png',
 		"large_stamp-magistrate.png"= 'icons/paper_icons/large_stamp-magistrate.png',
 		"talisman.png"              = 'icons/paper_icons/talisman.png',
-		"ntlogo.png"                = 'icons/paper_icons/ntlogo.png',
+		"arksoftlogo.png"                = 'icons/paper_icons/arksoftlogo.png',
 		"syndielogo.png"		='icons/paper_icons/syndielogo.png'
 	)
 

@@ -536,7 +536,7 @@ proc/checkhtml(var/t)
 		text = replacetext(text, "\[/grid\]",	"</td></tr></table>")
 		text = replacetext(text, "\[row\]",		"</td><tr>")
 		text = replacetext(text, "\[cell\]",	"<td>")
-		text = replacetext(text, "\[logo\]",	"&ZeroWidthSpace;<img src = ntlogo.png>")
+		text = replacetext(text, "\[logo\]",	"&ZeroWidthSpace;<img src = arksoftlogo.png>")
 		text = replacetext(text, "\[time\]",	"[station_time_timestamp()]") // TO DO
 		if(!no_font)
 			if(P)
@@ -616,7 +616,7 @@ proc/checkhtml(var/t)
 	text = replacetext(text, "</td></tr></table>",		"\[/grid\]")
 	text = replacetext(text, "</td><tr>",				"\[row\]")
 	text = replacetext(text, "<td>",					"\[cell\]")
-	text = replacetext(text, "<img src = ntlogo.png>",	"\[logo\]")
+	text = replacetext(text, "<img src = arksoftlogo.png>",	"\[logo\]")
 	return text
 
 
