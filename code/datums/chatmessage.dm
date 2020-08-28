@@ -127,7 +127,7 @@
 
 	// Approximate text height
 	var/static/regex/html_metachars = new(@"&[A-Za-z]{1,7};", "g")
-	var/complete_text = "<span class='center maptext[italics ? "" : " italics"] [size ? "" : " [size]"]' style='color: [target.chat_color]'>[text]</span>"
+	var/complete_text = "<span class='center maptext[size ? " [size]" : ""]' style='[italics ? "font-style: italic; " : ""]color: [target.chat_color]'>[text]</span>"
 	var/mheight = WXH_TO_HEIGHT(owned_by.MeasureText(complete_text, null, CHAT_MESSAGE_WIDTH))
 	approx_lines = max(1, mheight / CHAT_MESSAGE_APPROX_LHEIGHT)
 
@@ -188,7 +188,7 @@
   * * italics - Vacuum and other things
   * * radio_freq - What frequency was used, if any. This is for tinting the radio icon
   */
-/mob/proc/create_chat_message(atom/movable/speaker, raw_message, radio_freq, italics, size)
+/mob/proc/create_chat_message(atom/movable/speaker, raw_message, radio_freq, italics=FALSE, size)
 
 	if(((speaker == src) || (!isturf(speaker.loc)) || (isobserver(src))) && radio_freq && !(size == "big"))
 		return
