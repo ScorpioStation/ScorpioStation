@@ -18,7 +18,7 @@
 
 /obj/decal/wrestling/rope/south
 	dir = SOUTH
-	layer = 4
+	layer = 4.5
 
 /obj/decal/wrestling/rope/southmost/CanPass(atom/movable/mover, turf/target, height=0, air_group=0) // stolen from window.dm
 	return FALSE
