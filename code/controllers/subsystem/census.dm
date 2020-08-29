@@ -1,6 +1,22 @@
 #define FILE_CENSUS_BOT_CONFIG_JSON "data/census_bot_config.json"
-#define RUSTG_HTTP_METHOD_POST "post"
-#define rustg_http_request_async(method, url, body, headers) call(RUST_G, "http_request_async")(method, url, body, headers)
+
+// {
+//     "pop_role_ids": {
+//         "@&7447----------8641":10,
+//         "@&7447----------5428":15,
+//         "@&7447----------2702":20,
+//         "@&7447----------4406":25,
+//         "@&7447----------2286":30
+//     },
+//     "round_start_role_id":"@&7447----------2979",
+//     "webhook_url":"https://discord.com/api/webhooks/7444----------2082/dSGEPnnbswOciRg+4zk4iD78upMj1LcrNbB9lBdvB3M-rA5Ka1mmB6bKYUThV55AbLOJ"
+// }
+//
+// pop_role_ids is an object
+//     the keys are the discord role id with  @&  prepended
+//     the values are the population levels that trigger a notification to that role
+// round_start_role_id is a string; a discord role id with  @&  prepended
+// webhook_url is a string; the URL of the Census Bot discord webhook
 
 SUBSYSTEM_DEF(census)
 	init_order = (INIT_ORDER_CHAT + 1)  // give people lots of time to connect
@@ -8,18 +24,14 @@ SUBSYSTEM_DEF(census)
 	offline_implications = "Census Bot will not report census levels to Discord. No immediate action is needed."
 	wait = 300 SECONDS
 
-	var/headers = list()            // headers sent in POST request to Discord
-	var/last_pop = 0                // highest population level yet observed
-	var/list/pop_role_ids = list()  // Discord Role IDs to notify for population levels
-	var/round_start_role_id = null  // Role ID to notify for Round Start
-	var/webhook_url = null          // URL of the Discord webhook
+	var/last_pop = 0                                // highest population level yet observed
+	var/list/pop_role_ids = list()                  // Discord Role IDs to notify for population levels
+	var/round_start_role_id = null                  // Role ID to notify for Round Start
+	var/datum/discord/webhook/census_bot = null     // Discord Webhook for notifications
 
 /datum/controller/subsystem/census/Initialize()
 	// set the flag so that Travis CI can be happy
 	initialized = TRUE
-
-	// initialize the headers we'll send to the Discord webhook
-	headers = json_encode(list("Content-Type" = "application/json"))
 
 	// read the current population of the server
 	last_pop = length(GLOB.clients)
@@ -41,18 +53,20 @@ SUBSYSTEM_DEF(census)
 	// load up our configuration variables with the JSON provided data
 	pop_role_ids = json["pop_role_ids"]
 	round_start_role_id = json["round_start_role_id"]
-	webhook_url = json["webhook_url"]
+
+	// create the census_bot webhook for notifications
+	census_bot = new(json["webhook_url"])
 
 	// if we've got a round start role, announce round start with the current server population
 	if(round_start_role_id)
-		post_discord("<[round_start_role_id]> A new round is starting; [last_pop] players reconnected when the server restarted.")
+		census_bot.post_message("<[round_start_role_id]> A new round is starting; [last_pop] players reconnected when the server restarted.")
 
 	// finish up successful initialization by returning whatever our parent returns
 	return ..()
 
 /datum/controller/subsystem/census/fire()
 	// determine the current server population
-	var/next_pop = length(GLOB.clients)
+	var/next_pop = num_active_players()
 	var/list/notify_us = list()
 
 	// for each population role we have
@@ -80,19 +94,16 @@ SUBSYSTEM_DEF(census)
 
 	// if we constructed a message
 	if(length(message) > 0)
-		post_discord(message)
+		census_bot.post_message(message)
 
 	// return successful completion of subsystem
 	return TRUE
 
-/datum/controller/subsystem/census/proc/post_discord(message="")
-	// if we weren't configured with a webhook, just bail out
-	if(!webhook_url)
-		return
-
-	// otherwise, prepare the message body to be sent to the webhook
-	var/body_obj = list("content" = message)
-	var/body = json_encode(body_obj)
-
-	// call the webhook async, because this is a best effort notification
-	rustg_http_request_async(RUSTG_HTTP_METHOD_POST, webhook_url, body, headers)
+/datum/controller/subsystem/census/proc/num_active_players()
+	// gently borrowed and re-purposed from code/modules/events/event_procs.dm
+	var/players = 0
+	for(var/mob/M in GLOB.player_list)
+		if(!M.mind || !M.client || M.client.inactivity > (10 MINUTES))
+			continue
+		players++
+	return players

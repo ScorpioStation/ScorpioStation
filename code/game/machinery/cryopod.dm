@@ -460,6 +460,10 @@
 			announce.autosay("[occupant.real_name] [on_store_message]", "[on_store_name]")
 	visible_message("<span class='notice'>\The [src] hums and hisses as it moves [occupant.real_name] into storage.</span>")
 
+	// inform Discord
+	var/datum/discord/webhook/cryo = new(config.discord_webhook_cryo_url)
+	cryo.post_message("[occupant.real_name][announce_rank ? " ([announce_rank])" : ""] [on_store_message]")
+
 	// Ghost and delete the mob.
 	if(!occupant.get_ghost(1))
 		if(TOO_EARLY_TO_GHOST)
