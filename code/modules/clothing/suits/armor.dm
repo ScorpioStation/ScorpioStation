@@ -95,7 +95,7 @@
 
 /obj/item/clothing/suit/armor/secjacket
 	name = "security jacket"
-	desc = "A sturdy black jacket with reinforced fabric. Bears insignia of NT corporate security."
+	desc = "A sturdy black jacket with reinforced fabric. Bears insignia of Ark Soft corporate security."
 	icon_state = "secjacket_open"
 	item_state = "hos"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS

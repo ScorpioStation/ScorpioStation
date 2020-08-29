@@ -210,7 +210,7 @@
 //Blueshield
 /obj/item/clothing/suit/storage/blueshield
 	name = "blueshield coat"
-	desc = "NT deluxe ripoff. You finally have your own coat."
+	desc = "Ark Soft deluxe ripoff. You finally have your own coat."
 	icon_state = "blueshieldcoat"
 	item_state = "blueshieldcoat"
 	blood_overlay_type = "coat"
