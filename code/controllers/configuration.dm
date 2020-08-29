@@ -106,6 +106,8 @@
 	var/repositoryurl = "http://example.org"
 	var/discordurl = "http://example.org"
 	var/discordforumurl = "http://example.org"
+	var/discord_webhook_arrivals_url = null
+	var/discord_webhook_cryo_url = null
 
 	var/overflow_server_url
 	var/forbid_singulo_possession = 0
@@ -504,6 +506,12 @@
 
 				if("discordforumurl")
 					config.discordforumurl = value
+
+				if("discord_webhook_arrivals_url")
+					config.discord_webhook_arrivals_url = value
+
+				if("discord_webhook_cryo_url")
+					config.discord_webhook_cryo_url = value
 
 				if("donationsurl")
 					config.donationsurl = value

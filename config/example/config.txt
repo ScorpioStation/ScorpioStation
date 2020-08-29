@@ -251,6 +251,12 @@ CHECK_RANDOMIZER
 ## Discord address (forum-based invite)
 # DISCORDFORUMURL http://example.org
 
+## Discord Webhook for Arrivals notification
+# DISCORD_WEBHOOK_ARRIVALS_URL https://discord.com/api/webhooks/7444...
+
+## Discord Webhook for Cryo notification
+# DISCORD_WEBHOOK_CRYO_URL https://discord.com/api/webhooks/7444...
+
 ## Donations address
 # DONATIONSURL http://example.org
 

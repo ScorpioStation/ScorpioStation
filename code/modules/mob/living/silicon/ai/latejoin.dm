@@ -14,6 +14,10 @@ GLOBAL_LIST_EMPTY(empty_playable_ai_cores)
 	GLOB.empty_playable_ai_cores += new /obj/structure/AIcore/deactivated(loc)
 	GLOB.global_announcer.autosay("[src] has been moved to intelligence storage.", "Artificial Intelligence Oversight")
 
+	// inform Discord
+	var/datum/discord/webhook/cryo = new(config.discord_webhook_cryo_url)
+	cryo.post_message("[src] has been moved to intelligence storage.")
+
 	//Handle job slot/tater cleanup.
 	var/job = mind.assigned_role
 
