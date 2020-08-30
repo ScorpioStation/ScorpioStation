@@ -187,6 +187,7 @@ SUBSYSTEM_DEF(ticker)
 	collect_minds()
 	equip_characters()
 	GLOB.data_core.manifest()
+	announce_manifest_to_discord()
 	current_state = GAME_STATE_PLAYING
 	Master.SetRunLevel(RUNLEVEL_GAME)
 
@@ -438,6 +439,22 @@ SUBSYSTEM_DEF(ticker)
 		for(var/mob/M in GLOB.player_list)
 			if(!isnewplayer(M))
 				to_chat(M, "Captainship not forced on anyone.")
+
+
+/datum/controller/subsystem/ticker/proc/announce_manifest_to_discord()
+	// build a list of everybody who is on the manifest
+	var/manifest = ""
+	for(var/datum/data/record/t in GLOB.data_core.general)
+		var/name = sanitize(t.fields["name"])
+		var/real_rank = t.fields["real_rank"]
+		manifest += "[name] ([real_rank])\n"
+	// if we have people on the list
+	if(length(manifest) > 0)
+		manifest = "The following brave souls have arrived on the station:\n" + manifest
+		// tell Discord who we've got
+		var/datum/discord/webhook/aac = new(config.discord_webhook_arrivals_url)
+		aac.post_message(manifest)
+
 
 /datum/controller/subsystem/ticker/proc/send_tip_of_the_round()
 	var/m
