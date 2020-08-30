@@ -420,9 +420,10 @@
 					if(character.mind.role_alt_title)
 						rank = character.mind.role_alt_title
 					GLOB.global_announcer.autosay("[character.real_name],[rank ? " [rank]," : " visitor," ] [join_message ? join_message : "has arrived on the station"].", "Arrivals Announcement Computer")
-					// inform Discord
-					var/datum/discord/webhook/aac = new(config.discord_webhook_arrivals_url)
-					aac.post_message("[character.real_name], [rank ? " [rank]," : " visitor,"] has arrived on the station.")
+		// inform Discord
+		var/datum/discord/webhook/aac = new(config.discord_webhook_arrivals_url)
+		aac.post_message("[character.real_name],[rank ? " [rank]," : " visitor,"] has arrived on the station.")
+
 
 /mob/new_player/proc/AddEmploymentContract(mob/living/carbon/human/employee)
 	spawn(30)
@@ -447,9 +448,9 @@
 				if(character.mind.assigned_role != character.mind.special_role)
 					// can't use their name here, since cyborg namepicking is done post-spawn, so we'll just say "A new Cyborg has arrived"/"A new Android has arrived"/etc.
 					GLOB.global_announcer.autosay("A new[rank ? " [rank]" : " visitor" ] [join_message ? join_message : "has arrived on the station"].", "Arrivals Announcement Computer")
-					// inform Discord
-					var/datum/discord/webhook/aac = new(config.discord_webhook_arrivals_url)
-					aac.post_message("A new[rank ? " [rank]" : " visitor" ] has arrived on the station.")
+		// inform Discord
+		var/datum/discord/webhook/aac = new(config.discord_webhook_arrivals_url)
+		aac.post_message("A new[rank ? " [rank]" : " visitor" ] has arrived on the station.")
 
 /mob/new_player/proc/LateChoices()
 	var/mills = ROUND_TIME // 1/10 of a second, not real milliseconds but whatever

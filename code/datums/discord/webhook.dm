@@ -1,4 +1,4 @@
-// discord.dm
+// webhook.dm
 // a datum to assist with Discord Webhook integrations
 //
 // see: https://support.discord.com/hc/en-us/articles/228383668
