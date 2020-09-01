@@ -37,6 +37,8 @@ SUBSYSTEM_DEF(deputy)
 	// update the deputy alert for connected clients
 	for(var/mob/M in GLOB.player_list)
 		if(make_crew_deputy)
+			log_admin("[name] subsystem determined that crew are deputized.")
 			M.throw_alert("deputy", /obj/screen/alert/deputized)
 		else
+			log_admin("[name] subsystem determined that crew are NOT deputized.")
 			M.clear_alert("deputy")
