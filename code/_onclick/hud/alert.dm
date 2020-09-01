@@ -584,7 +584,7 @@ so as to remain in compliance with the most up-to-date laws."
 
 /obj/screen/alert/deputized
 	name = "Deputized"
-	desc = "You are deputized and have authority to act as Security, if necessary."
+	desc = "Crew are deputized and may act against antagonists, if necessary."
 	icon_state = "status_sheriff"
 
 
