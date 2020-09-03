@@ -1,5 +1,5 @@
 ---
-name: Bug report
+name: Issue Report
 about: Create a report to help us improve
 title: ''
 labels: ''
@@ -11,7 +11,7 @@ assignees: ''
 <!---What is the problem?-->
 
 
-**What did you expect to happen**: 
+**What did you expect to happen**:
 <!--Why do you think this is an issue?-->
 
 
