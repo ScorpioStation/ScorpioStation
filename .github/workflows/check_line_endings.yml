@@ -7,7 +7,7 @@ on:
       - master
 
 jobs:
-  verify_manifest:
+  verify_line_endings:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Project
