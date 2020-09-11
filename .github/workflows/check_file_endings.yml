@@ -1,0 +1,20 @@
+name: 'Check File Endings'
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  verify_file_endings:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Project
+      uses: actions/checkout@v2
+
+    - name: Setup Node
+      uses: actions/setup-node@v2-beta
+
+    - name: Verify Line Endings
+      run: './tools/scorpio/check_file_endings/action.sh'
