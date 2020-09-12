@@ -58,6 +58,7 @@ GLOBAL_LIST_EMPTY(message_servers)
 	var/list/datum/data_rc_msg/rc_msgs = list()
 	var/active = 1
 	var/decryptkey = "password"
+	var/spam_filter = FALSE
 
 /obj/machinery/message_server/New()
 	GLOB.message_servers += src
@@ -113,11 +114,13 @@ GLOBAL_LIST_EMPTY(message_servers)
 			Console.set_light(2)
 
 /obj/machinery/message_server/attack_hand(user as mob)
-//	to_chat(user, "<span class='notice'>There seem to be some parts missing from this server. They should arrive on the station in a few days, give or take a few CentComm delays.</span>")
 	to_chat(user, "You toggle PDA message passing from [active ? "On" : "Off"] to [active ? "Off" : "On"]")
 	active = !active
+	// if we got turned back on, and we don't have a spam filter
+	if(active && !spam_filter)
+		to_chat(user, "A small display on the message server reads, 'Spam Filter: Active'")
+		spam_filter = TRUE
 	update_icon()
-
 	return
 
 /obj/machinery/message_server/update_icon()
