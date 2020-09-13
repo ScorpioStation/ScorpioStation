@@ -19,7 +19,7 @@
 // webhook_url is a string; the URL of the Census Bot discord webhook
 
 SUBSYSTEM_DEF(census)
-	init_order = (INIT_ORDER_CHAT + 1)  // give people lots of time to connect
+	init_order = (INIT_ORDER_LAST + 1)              // give people lots of time to reconnect
 	name = "Census"
 	offline_implications = "Census Bot will not report census levels to Discord. No immediate action is needed."
 	wait = 300 SECONDS
@@ -30,9 +30,6 @@ SUBSYSTEM_DEF(census)
 	var/datum/discord/webhook/census_bot = null     // Discord Webhook for notifications
 
 /datum/controller/subsystem/census/Initialize()
-	// set the flag so that Travis CI can be happy
-	initialized = TRUE
-
 	// read the current population of the server
 	last_pop = length(GLOB.clients)
 
@@ -42,13 +39,13 @@ SUBSYSTEM_DEF(census)
 	// if the file doesn't exist, complain and bail
 	if(!fexists(json_file))
 		log_and_message_admins("[name] subsystem unable to load data from [FILE_CENSUS_BOT_CONFIG_JSON]")
-		return
+		return ..()
 
 	// decode the JSON data, if it doesn't make sense, complain and bail
 	var/list/json = json_decode(file2text(json_file))
 	if(!json)
 		log_and_message_admins("[name] subsystem unable to decode JSON from [FILE_CENSUS_BOT_CONFIG_JSON]")
-		return
+		return ..()
 
 	// load up our configuration variables with the JSON provided data
 	pop_role_ids = json["pop_role_ids"]
