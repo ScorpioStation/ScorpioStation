@@ -19,6 +19,9 @@ for file in files
     if text.indexOf("\r\n") isnt -1
         process.stdout.write "ERROR: File '#{file}' contains Windows line endings\n"
         process.exitCode = 1
+    if not text.endsWith "\n"
+        process.stdout.write "ERROR: File '#{file}' does not end with a Linux newline\n"
+        process.exitCode = 1
 
 if process.exitCode is 0
     process.stdout.write "All source files have Linux line endings\n"
