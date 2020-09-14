@@ -23,7 +23,7 @@
 
 	eyes = "vox_eyes_s"
 
-	default_genes = list(DWARF)
+	default_genes = list(SMALLVOX)
 
 	species_traits = list(NO_SCAN, NO_GERMS, NO_DECAY, IS_WHITELISTED, NOTRANSSTING)
 	clothing_flags = HAS_UNDERWEAR | HAS_UNDERSHIRT | HAS_SOCKS //Species-fitted 'em all.
