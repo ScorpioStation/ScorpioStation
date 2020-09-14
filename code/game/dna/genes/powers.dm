@@ -100,6 +100,29 @@
 	..()
 	block = GLOB.shockimmunityblock
 
+/datum/dna/gene/basic/smallvox //This should not be acquirable in-game by players via Genetics as there is no assigned Structrural Enyzme for SmallVox
+	name= "SmallVox"
+	activation_messages = list("Now is smalls...")
+	deactivation_messages = list("Voxxy no longer feeling so small...Voxxy...talls?!")
+	instability = GENE_INSTABILITY_MINOR
+	mutation = SMALLVOX
+
+/datum/dna/gene/basic/smallvox/activate(mob/M, connected, flags)
+	..()
+	M.resize = 0.8
+	M.update_transform()
+	M_move_resist=M_FORCE_WEAK
+	
+/datum/dna/gene/basic/smallvox/deactivate(mob/M, connected, flags)
+	..()
+	M.resize = 1.25
+	M.update_transform()
+	M_move_resist = M_FORCE_NORMAL
+
+/datum/dna/gene/basic/smallvox/New()
+	..()
+	block = GLOB.voxxysizeblock
+
 /datum/dna/gene/basic/midget
 	name = "Midget"
 	activation_messages = list("Everything around you seems bigger now...")
