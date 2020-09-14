@@ -1,4 +1,4 @@
-name: 'Check Line Endings'
+name: 'Check Source Files'
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
       - master
 
 jobs:
-  verify_line_endings:
+  check_source_files:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Project
@@ -16,5 +16,5 @@ jobs:
     - name: Setup Node
       uses: actions/setup-node@v2-beta
 
-    - name: Verify Line Endings
-      run: './tools/scorpio/check_line_endings/action.sh'
+    - name: Check Source Files
+      run: './tools/scorpio/check_source_files/action.sh'
