@@ -30,6 +30,7 @@ GLOBAL_VAR_INIT(hallucinationblock, 0)
 GLOBAL_VAR_INIT(noprintsblock, 0)
 GLOBAL_VAR_INIT(shockimmunityblock, 0)
 GLOBAL_VAR_INIT(smallsizeblock, 0)
+GLOBAL_VAR_INIT(voxxysizeblock, 0)
 
 ///////////////////////////////
 // Goon Stuff
