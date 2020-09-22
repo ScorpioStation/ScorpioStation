@@ -23,8 +23,6 @@
 
 	eyes = "vox_eyes_s"
 
-	default_genes = list(DWARF)
-
 	species_traits = list(NO_SCAN, NO_GERMS, NO_DECAY, IS_WHITELISTED, NOTRANSSTING)
 	clothing_flags = HAS_UNDERWEAR | HAS_UNDERSHIRT | HAS_SOCKS //Species-fitted 'em all.
 	dietflags = DIET_OMNI
@@ -79,10 +77,6 @@
 
 /datum/species/vox/handle_dna(mob/living/carbon/human/H, remove)
 	..()
-	H.dna.SetSEState(GLOB.smallsizeblock, !remove, 1)
-	genemutcheck(H, GLOB.smallsizeblock, null, MUTCHK_FORCED)
-	H.dna.default_blocks.Add(GLOB.smallsizeblock)
-
 
 /datum/species/vox/handle_death(gibbed, mob/living/carbon/human/H)
 	H.stop_tail_wagging()
@@ -110,6 +104,16 @@
 /datum/species/vox/on_species_gain(mob/living/carbon/human/H)
 	..()
 	updatespeciescolor(H)
+	H.resize = 0.8
+	H.update_transform()
+	H.move_resist=MOVE_FORCE_WEAK
+	H.update_icons()
+
+/datum/species/vox/on_species_loss(mob/living/carbon/human/H)
+	..()
+	H.resize = 1.25
+	H.update_transform()
+	H.move_resist = MOVE_FORCE_NORMAL
 	H.update_icons()
 
 /datum/species/vox/updatespeciescolor(mob/living/carbon/human/H, owner_sensitive = 1) //Handling species-specific skin-tones for the Vox race.
