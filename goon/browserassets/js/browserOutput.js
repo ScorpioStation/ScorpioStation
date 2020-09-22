@@ -70,7 +70,10 @@ var opts = {
 	'macros': {},
 
 	// Emoji toggle
-	'enableEmoji': true
+	'enableEmoji': true,
+
+	// Reboot message stuff
+	'rebootIntervalHandler': null
 };
 
 var regexHasError = false; //variable to check if regex has excepted
@@ -218,10 +221,10 @@ function highlightTerms(el) {
 				ind = next_tag;
 			}
 		}
-		
+
 		element.innerHTML = s;
 	}
-	
+
 	for (var i = 0; i < opts.highlightTerms.length; i++) { //Each highlight term
 		if(opts.highlightTerms[i]) {
 			if(!opts.highlightRegexEnable){
@@ -572,6 +575,34 @@ function createPopup(contents, width) {
 
 function toggleWasd(state) {
 	opts.wasd = (state == 'on' ? true : false);
+}
+
+function reboot(timeRaw) {
+	var timeLeftSecs = parseInt(timeRaw);
+	const intervalSecs = 1; // tick every 1 second
+
+	rebootFinished();
+	internalOutput('<div class="rebooting internal">The server is restarting. <a href="byond://winset?command=.reconnect" id="reconnectTimer">Reconnect (' + timeLeftSecs + ')</a></div>', 'internal');
+
+	opts.rebootIntervalHandler = setInterval(function() {
+		timeLeftSecs -= intervalSecs;
+		if (timeLeftSecs <= 0) {
+			$("#reconnectTimer").text('Reconnecting...');
+			window.location.href = 'byond://winset?command=.reconnect';
+			clearInterval(opts.rebootIntervalHandler)
+			opts.rebootIntervalHandler = null;
+		} else {
+			$("#reconnectTimer").text('Reconnect (' + timeLeftSecs + ')');
+		}
+	}, intervalSecs * 1000);
+}
+
+function rebootFinished() {
+	if (opts.rebootIntervalHandler != null) {
+		clearInterval(opts.rebootIntervalHandler)
+	}
+	$("<span> Reconnected automatically!</span>").insertBefore("#reconnectTimer");
+	$("#reconnectTimer").remove();
 }
 
 /*****************************************
