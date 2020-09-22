@@ -90,7 +90,13 @@
 	item_color = "hosred"		//Exists for washing machines. Is not different from black gloves in any way.
 
 /obj/item/clothing/gloves/color/black/ce
-	item_color = "chief"			//Exists for washing machines. Is not different from black gloves in any way.
+	desc = "These stylish black gloves are both insulated and offer protection from heat sources."
+	name = "engineering gloves"
+	item_color = "chief"        // exists for washing machines
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
+	strip_delay = 80
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 50)
 
 /obj/item/clothing/gloves/color/black/thief
 	pickpocket = 1
