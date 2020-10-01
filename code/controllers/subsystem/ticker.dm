@@ -294,6 +294,23 @@ SUBSYSTEM_DEF(ticker)
 	// Sets the auto shuttle vote to happen after the config duration
 	next_autotransfer = world.time + config.vote_autotransfer_initial
 
+	// if we're trying to synchronize the auto-transfer with the wall clock
+	if(config.autotransfer_wall_clock)
+		// 12 minutes = 1 minute voting + 5 minutes transit + 3 minutes boarding + 2 minutes escape + 1 minute EORG
+		var/time_from_vote_to_restart = 12 MINUTES
+		// deciseconds of wall clock time into our timeslot
+		var/delta_clock_to_current = world.timeofday % config.vote_autotransfer_initial
+		// deciseconds of wall clock time left in our timeslot
+		var/round_time_left = config.vote_autotransfer_initial - delta_clock_to_current
+		// deciseconds of wall clock time left after subtracting the length of round-end activity
+		round_time_left -= time_from_vote_to_restart
+		// if we're too close to the end of a wall clock timeslot
+		if(round_time_left < 0)
+			// just move it up to the next slot instead
+			round_time_left += config.vote_autotransfer_initial
+		// set the next autotransfer vote time to the calculated duration
+		next_autotransfer = world.time + round_time_left
+
 	for(var/mob/new_player/N in GLOB.mob_list)
 		if(N.client)
 			N.new_player_panel_proc()

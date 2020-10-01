@@ -255,6 +255,8 @@
 	// Makes gamemodes respect player limits
 	var/enable_gamemode_player_limit = 0
 
+	var/autotransfer_wall_clock = FALSE // attempt to synchronize the autotransfer to the wall clock
+
 /datum/configuration/New()
 	for(var/T in subtypesof(/datum/game_mode))
 		var/datum/game_mode/M = T
@@ -446,6 +448,9 @@
 
 				if("vote_autotransfer_interval")
 					config.vote_autotransfer_interval = text2num(value)
+
+				if("autotransfer_wall_clock")
+					config.autotransfer_wall_clock = TRUE
 
 				if("default_no_vote")
 					config.vote_no_default = 1
