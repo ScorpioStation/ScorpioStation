@@ -54,8 +54,9 @@ SUBSYSTEM_DEF(census)
 	// create the census_bot webhook for notifications
 	census_bot = new(json["webhook_url"])
 
-	// if we've got a round start role, announce round start with the current server population
-	if(round_start_role_id)
+	// if we've got a round start Discord role and there are people connected to play with
+	if((round_start_role_id) && (last_pop > 0))
+		// announce round start with the current server population
 		census_bot.post_message("<[round_start_role_id]> A new round is starting; [last_pop] players reconnected when the server restarted.")
 
 	// finish up successful initialization by returning whatever our parent returns

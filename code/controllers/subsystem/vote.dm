@@ -111,7 +111,10 @@ SUBSYSTEM_DEF(vote)
 				choices["Initiate Crew Transfer"] = round(choices["Initiate Crew Transfer"] * factor)
 				to_chat(world, "<font color='purple'>Crew Transfer Factor: [factor]</font>")
 				greatest_votes = max(choices["Initiate Crew Transfer"], choices["Continue The Round"])
-
+				// if there were no votes whatsoever, just initiate crew transfer
+				if(greatest_votes == 0)
+					choices["Initiate Crew Transfer"] = 1
+					greatest_votes = 1
 
 	//get all options with that many votes and return them in a list
 	. = list()
