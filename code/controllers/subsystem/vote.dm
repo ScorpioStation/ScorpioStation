@@ -67,7 +67,8 @@ SUBSYSTEM_DEF(vote)
 	var/list/sorted_choices = list()
 	var/sorted_highest
 	var/sorted_votes = -1
-	//get the highest number of votes, while also sorting the list
+
+	// get the highest number of votes, while also sorting the list
 	while(choices.len)
 		// This is a very inefficient sorting method, but that's okay
 		for(var/option in choices)
@@ -82,7 +83,8 @@ SUBSYSTEM_DEF(vote)
 		sorted_choices[sorted_highest] = choices[sorted_highest] || 0
 		choices -= sorted_highest
 	choices = sorted_choices
-	//default-vote for everyone who didn't vote
+
+	// default-vote for everyone who didn't vote
 	if(!config.vote_no_default && choices.len)
 		var/non_voters = (GLOB.clients.len - total_votes)
 		if(non_voters > 0)
@@ -111,12 +113,14 @@ SUBSYSTEM_DEF(vote)
 				choices["Initiate Crew Transfer"] = round(choices["Initiate Crew Transfer"] * factor)
 				to_chat(world, "<font color='purple'>Crew Transfer Factor: [factor]</font>")
 				greatest_votes = max(choices["Initiate Crew Transfer"], choices["Continue The Round"])
-				// if there were no votes whatsoever, just initiate crew transfer
-				if(greatest_votes == 0)
-					choices["Initiate Crew Transfer"] = 1
-					greatest_votes = 1
 
-	//get all options with that many votes and return them in a list
+	// if there were no votes whatsoever on a crew transfer vote
+	if((mode == "crew_transfer") && (greatest_votes == 0))
+		// just initiate the crew transfer
+		choices["Initiate Crew Transfer"] = 1
+		greatest_votes = 1
+
+	// get all options with that many votes and return them in a list
 	. = list()
 	if(greatest_votes)
 		for(var/option in choices)

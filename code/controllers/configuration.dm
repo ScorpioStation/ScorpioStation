@@ -256,6 +256,7 @@
 	var/enable_gamemode_player_limit = 0
 
 	var/autotransfer_wall_clock = FALSE // attempt to synchronize the autotransfer to the wall clock
+	var/census_bot_minimum = 2          // require this many connected players before census bot will announce
 
 /datum/configuration/New()
 	for(var/T in subtypesof(/datum/game_mode))
@@ -511,6 +512,9 @@
 
 				if("discordforumurl")
 					config.discordforumurl = value
+
+				if("census_bot_minimum")
+					config.census_bot_minimum = text2num(value)
 
 				if("discord_webhook_arrivals_url")
 					config.discord_webhook_arrivals_url = value
