@@ -472,3 +472,6 @@ DISABLE_HIGH_POP_MC_MODE_AMOUNT 60
 
 ## If uncommented, all gamemodes will respect the number of required players. Defaults to no.
 #ENABLE_GAMEMODE_PLAYER_LIMIT
+
+## minimum number of players connected to the server before census bot will announce a new round (default 2)
+#CENSUS_BOT_MINIMUM 2
