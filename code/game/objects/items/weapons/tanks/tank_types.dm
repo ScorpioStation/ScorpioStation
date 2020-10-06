@@ -201,7 +201,7 @@ obj/item/tank/emergency_oxygen/double/empty/New()
 	name = "nitrogen tank"
 	desc = "A tank of nitrogen."
 	icon_state = "oxygen_fr"
-	distribute_pressure = ONE_ATMOSPHERE*O2STANDARD
+	distribute_pressure = TANK_DEFAULT_RELEASE_PRESSURE
 	sprite_sheets = list("Vox Armalis" = 'icons/mob/species/armalis/back.dmi') //Do it for Big Bird.
 
 /obj/item/tank/nitrogen/New()
