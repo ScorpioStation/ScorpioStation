@@ -61,6 +61,9 @@
 	if(stat & BROKEN)
 		to_chat(usr, "The upload computer is broken!")
 		return
+	if(stat & BROKEN)
+		to_chat(usr, "The upload computer is broken!")
+		return
 
 	current = select_active_ai(user)
 
@@ -73,6 +76,7 @@
 /obj/machinery/computer/aiupload/attack_ghost(user as mob)
 	return TRUE
 
+// Why is this not a subtype
 /obj/machinery/computer/borgupload
 	name = "cyborg upload console"
 	desc = "Used to upload laws to Cyborgs."

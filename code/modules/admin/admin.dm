@@ -20,22 +20,39 @@ GLOBAL_VAR_INIT(nologevent, 0)
 				if(C.prefs.atklog <= loglevel)
 					to_chat(C, msg)
 
-
-/proc/message_adminTicket(var/msg, var/alt = FALSE)
-	if(alt)
-		msg = "<span class=admin_channel>ADMIN TICKET: [msg]</span>"
-	else
-		msg = "<span class=adminticket><span class='prefix'>ADMIN TICKET:</span> [msg]</span>"
+/**
+ * Sends a message to the staff able to see admin tickets
+ * Arguments:
+ * msg - The message being send
+ * important - If the message is important. If TRUE it will ignore the CHAT_NO_TICKETLOGS preferences,
+               send a sound and flash the window. Defaults to FALSE
+ */
+/proc/message_adminTicket(msg, important = FALSE)
 	for(var/client/C in GLOB.admins)
 		if(R_ADMIN & C.holder.rights)
-			if(C.prefs && !(C.prefs.toggles & CHAT_NO_TICKETLOGS))
+			if(important || (C.prefs && !(C.prefs.toggles & CHAT_NO_TICKETLOGS)))
 				to_chat(C, msg)
+			if(important)
+				if(C.prefs?.sound & SOUND_ADMINHELP)
+					SEND_SOUND(C, 'sound/effects/adminhelp.ogg')
+				window_flash(C)
 
-/proc/message_mentorTicket(var/msg)
+/**
+ * Sends a message to the staff able to see mentor tickets
+ * Arguments:
+ * msg - The message being send
+ * important - If the message is important. If TRUE it will ignore the CHAT_NO_TICKETLOGS preferences,
+               send a sound and flash the window. Defaults to FALSE
+ */
+/proc/message_mentorTicket(msg, important = FALSE)
 	for(var/client/C in GLOB.admins)
 		if(check_rights(R_ADMIN | R_MENTOR | R_MOD, 0, C.mob))
-			if(C.prefs && !(C.prefs.toggles & CHAT_NO_MENTORTICKETLOGS))
+			if(important || (C.prefs && !(C.prefs.toggles & CHAT_NO_MENTORTICKETLOGS)))
 				to_chat(C, msg)
+			if(important)
+				if(C.prefs?.sound & SOUND_MENTORHELP)
+					SEND_SOUND(C, 'sound/effects/adminhelp.ogg')
+				window_flash(C)
 
 /proc/admin_ban_mobsearch(var/mob/M, var/ckey_to_find, var/mob/admin_to_notify)
 	if(!M || !M.ckey)
@@ -85,7 +102,7 @@ GLOBAL_VAR_INIT(nologevent, 0)
 	body += "<a href='?_src_=vars;Vars=[M.UID()]'>VV</a> - "
 	body += "[ADMIN_TP(M,"TP")] - "
 	if(M.client)
-		body += "<a href='?src=[usr.UID()];priv_msg=[M.client.UID()]'>PM</a> - "
+		body += "<a href='?src=[usr.UID()];priv_msg=[M.client.ckey]'>PM</a> - "
 		body += "[ADMIN_SM(M,"SM")] - "
 	if(ishuman(M) && M.mind)
 		body += "<a href='?_src_=holder;HeadsetMessage=[M.UID()]'>HM</a> -"
@@ -593,6 +610,25 @@ GLOBAL_VAR_INIT(nologevent, 0)
 	SSticker.delay_end = 0
 	feedback_add_details("admin_verb","R") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	world.Reboot("Initiated by [usr.client.holder.fakekey ? "Admin" : usr.key].", "end_error", "admin reboot - by [usr.key] [usr.client.holder.fakekey ? "(stealth)" : ""]", delay)
+
+/datum/admins/proc/end_round()
+	set category = "Server"
+	set name = "End Round"
+	set desc = "Instantly ends the round and brings up the scoreboard, like shadowlings or wizards dying."
+	if(!check_rights(R_SERVER))
+		return
+	var/input = sanitize(copytext(input(usr, "What text should players see announcing the round end? Input nothing to cancel.", "Specify Announcement Text", "Shift Has Ended!"), 1, MAX_MESSAGE_LEN))
+
+	if(!input)
+		return
+	if(SSticker.force_ending)
+		return
+	message_admins("[key_name_admin(usr)] has admin ended the round with message: '[input]'")
+	log_admin("[key_name(usr)] has admin ended the round with message: '[input]'")
+	SSticker.force_ending = TRUE
+	to_chat(world, "<span class='warning'><big><b>[input]</b></big></span>")
+	feedback_add_details("admin_verb", "END") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+	feedback_set_details("round_end_result", "Admin ended")
 
 /datum/admins/proc/announce()
 	set category = "Admin"

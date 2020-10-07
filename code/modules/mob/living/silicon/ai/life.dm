@@ -135,8 +135,6 @@
 						sleep(50)
 						theAPC = null
 
-	process_queued_alarms()
-
 /mob/living/silicon/ai/updatehealth(reason = "none given")
 	if(status_flags & GODMODE)
 		health = 100

@@ -2948,7 +2948,6 @@
 /turf/space,
 /area/space)
 "ahp" = (
-/obj/machinery/ntnet_relay,
 /turf/simulated/floor/greengrid,
 /area/tcommsat/server)
 "ahq" = (
@@ -17735,7 +17734,6 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/obj/machinery/computer/station_alert/all,
 /turf/simulated/floor/plasteel{
 	dir = 8;
 	icon_state = "neutralfull"
@@ -25148,7 +25146,6 @@
 /turf/simulated/floor/plasteel,
 /area/atmos)
 "bcA" = (
-/obj/machinery/vending/modularpc,
 /obj/machinery/light{
 	dir = 1;
 	on = 1
@@ -34192,9 +34189,6 @@
 /area/medical/paramedic)
 "bsV" = (
 /obj/structure/table/wood,
-/obj/machinery/computer/skills{
-	req_one_access = null
-	},
 /turf/simulated/floor/wood,
 /area/blueshield)
 "bsW" = (
@@ -36212,7 +36206,6 @@
 	},
 /area/medical/paramedic)
 "bwG" = (
-/obj/machinery/computer/ordercomp,
 /turf/simulated/floor/plasteel,
 /area/quartermaster/office)
 "bwH" = (
@@ -37256,9 +37249,6 @@
 	dir = 4
 	},
 /obj/structure/table/reinforced,
-/obj/machinery/computer/skills{
-	req_access_txt = "57"
-	},
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/hop)
 "byF" = (
@@ -44644,10 +44634,6 @@
 	pixel_x = -2;
 	pixel_y = 2
 	},
-/obj/item/circuitboard/stationalert_all{
-	pixel_x = 1;
-	pixel_y = -1
-	},
 /obj/item/circuitboard/atmos_alert{
 	pixel_x = 3;
 	pixel_y = -3
@@ -44850,7 +44836,6 @@
 	pixel_y = 30
 	},
 /obj/structure/table/reinforced,
-/obj/machinery/computer/skills,
 /obj/item/radio/intercom{
 	dir = 4;
 	name = "station intercom (General)";
@@ -48140,9 +48125,6 @@
 /area/crew_quarters/cafeteria)
 "bSd" = (
 /obj/structure/table/wood,
-/obj/machinery/computer/skills{
-	req_access_txt = "57"
-	},
 /turf/simulated/floor/wood,
 /area/arkrep)
 "bSe" = (
@@ -75268,7 +75250,6 @@
 	},
 /area/bridge)
 "cMu" = (
-/obj/machinery/computer/station_alert/all,
 /turf/simulated/floor/plasteel{
 	dir = 0;
 	icon_state = "yellow"
@@ -75804,7 +75785,6 @@
 	},
 /area/bridge)
 "cNs" = (
-/obj/machinery/modular_computer/console/preset/command,
 /turf/simulated/floor/plasteel{
 	icon_state = "blue";
 	dir = 10

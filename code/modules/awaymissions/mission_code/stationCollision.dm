@@ -60,8 +60,8 @@
  * Guns - I'm making these specifically so that I dont spawn a pile of fully loaded weapons on the map.
  */
 //Captain's retro laser - Fires practice laser shots instead.
-obj/item/gun/energy/laser/retro/sc_retro
-	desc = "An older model of the basic lasergun, no longer used by Ark Soft's security or military forces."
+/obj/item/gun/energy/laser/retro/sc_retro
+	desc = "An older model of the basic lasergun, no longer used by ArkSoft's security or military forces."
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/practice)
 	clumsy_check = 0 //No sense in having a harmless gun blow up in the clowns face
 
