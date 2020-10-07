@@ -8,13 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Compute Docker Tag
-        run: echo ::set-env name=GITHUB_SHA_SHORT::$(echo $GITHUB_SHA | cut -c 1-12)
+        run: echo "GITHUB_SHA_SHORT=$(echo $GITHUB_SHA | cut -c 1-12)" >> $GITHUB_ENV
       - uses: actions/checkout@v2
       - uses: docker/build-push-action@v1.1.0
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: scorpiostation/scorpio
-          tags: ${{ env.GITHUB_SHA_SHORT }}
+          tags: $GITHUB_SHA_SHORT
           add_git_labels: true
           push: false
