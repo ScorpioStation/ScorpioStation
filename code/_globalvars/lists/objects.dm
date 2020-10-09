@@ -51,3 +51,5 @@ GLOBAL_LIST_EMPTY(mob_spawners) 		    // All mob_spawn objects
 GLOBAL_LIST_EMPTY(explosive_walls)
 
 GLOBAL_LIST_EMPTY(engine_beacon_list)
+
+GLOBAL_LIST_INIT(closets, list())

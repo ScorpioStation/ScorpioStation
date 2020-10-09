@@ -801,3 +801,13 @@ GLOBAL_LIST_INIT(potential_theft_objectives, (subtypesof(/datum/theft_objective)
 /datum/objective/wizchaos
 	explanation_text = "Wreak havoc upon the station as much you can. Send those wandless Ark Soft scum a message!"
 	completed = 1
+
+// abandoned-station
+
+/datum/objective/abandoned/protectstation
+	martyr_compatible = 0
+	explanation_text = "Terminate all looters who are searching the station for something to steal."
+
+/datum/objective/abandoned/treasurehunt
+	martyr_compatible = 0
+	explanation_text = "Recover the cash from the abandoned station by any means necessary."

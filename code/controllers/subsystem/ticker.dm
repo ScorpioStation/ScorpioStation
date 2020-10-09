@@ -118,6 +118,16 @@ SUBSYSTEM_DEF(ticker)
 
 /datum/controller/subsystem/ticker/proc/setup()
 	cultdat = setupcult()
+
+	// count up the number of ready players
+	var/ready_player_count = 0
+	for(var/mob/new_player/player in GLOB.player_list)
+		if((player.client) && (player.ready))
+			ready_player_count++
+	// if nobody is ready up, change the game mode to abandoned station
+	if(ready_player_count == 0)
+		GLOB.master_mode = "abandoned-station"
+
 	//Create and announce mode
 	if(GLOB.master_mode=="secret")
 		hide_mode = 1
