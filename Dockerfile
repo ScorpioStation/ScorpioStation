@@ -17,6 +17,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 #-------------------------------------------------------------------------------
+# Build TGUI from the JavaScript code using Node
+#-------------------------------------------------------------------------------
+FROM node:lts-buster as tgui_build
+
+#
+# Build tgui -> tgui.bundle.css, tgui.bundle.js
+#
+COPY . /scorpio
+WORKDIR /scorpio/tgui
+RUN bin/tgui
+
+#-------------------------------------------------------------------------------
 # Build ScorpioStation from the DreamMaker code using BYOND
 #-------------------------------------------------------------------------------
 FROM scorpiostation/byond:latest as byond_build
@@ -28,6 +40,7 @@ ENV PATH="/byond/bin:${PATH}"
 # Build paradise.dme -> paradise.dmb, paradise.rsc
 #
 COPY . /scorpio
+COPY --from=tgui_build /scorpio/tgui/packages/tgui/public /scorpio/tgui/packages/tgui/public
 WORKDIR /scorpio
 RUN DreamMaker paradise.dme
 
@@ -52,6 +65,7 @@ RUN useradd -ms /bin/bash ss13
 # Copy things into the docker image
 #
 COPY --chown=ss13:ss13 . /scorpio
+COPY --chown=ss13:ss13 --from=tgui_build /scorpio/tgui/packages/tgui/public /scorpio/tgui/packages/tgui/public
 COPY --chown=ss13:ss13 --from=scorpiostation/byond:latest /byond /byond
 COPY --chown=ss13:ss13 --from=byond_build /scorpio/paradise.dmb /scorpio/paradise.dmb
 COPY --chown=ss13:ss13 --from=byond_build /scorpio/paradise.rsc /scorpio/paradise.rsc
