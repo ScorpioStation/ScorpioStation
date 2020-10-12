@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 #-------------------------------------------------------------------------------
 # Build TGUI from the JavaScript code using Node
 #-------------------------------------------------------------------------------
-FROM node:lts-buster as tgui_build
+FROM node:lts-buster-slim as tgui_build
 
 #
 # Build tgui -> tgui.bundle.css, tgui.bundle.js
@@ -27,6 +27,31 @@ FROM node:lts-buster as tgui_build
 COPY . /scorpio
 WORKDIR /scorpio/tgui
 RUN bin/tgui
+
+#-------------------------------------------------------------------------------
+# Render a nanomap for Emerald from the DreamMaker Map code using SpacemanDMM
+#-------------------------------------------------------------------------------
+FROM scorpiostation/spacemandmm:latest as nanomap_build
+
+#
+# Install Debian packages
+#
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    optipng \
+    pngcrush \
+    && rm -rf /var/lib/apt/lists/*
+
+#
+# Build emerald.dmm -> emerald-1.png
+#
+COPY . /scorpio
+WORKDIR /scorpio
+RUN /spacemandmm/target/release/dmm-tools minimap \
+    --disable all \
+    --enable hide-space,hide-areas,hide-invisible,random,pretty,icon-smoothing \
+    --optipng \
+    --pngcrush \
+    "./_maps/map_files/emerald/emerald.dmm"
 
 #-------------------------------------------------------------------------------
 # Build ScorpioStation from the DreamMaker code using BYOND
@@ -66,7 +91,8 @@ RUN useradd -ms /bin/bash ss13
 #
 COPY --chown=ss13:ss13 . /scorpio
 COPY --chown=ss13:ss13 --from=tgui_build /scorpio/tgui/packages/tgui/public /scorpio/tgui/packages/tgui/public
-COPY --chown=ss13:ss13 --from=scorpiostation/byond:latest /byond /byond
+COPY --chown=ss13:ss13 --from=nanomap_build /scorpio/data/minimaps/emerald-1.png /scorpio/nano/images/Emerald_nanomap_z1.png
+COPY --chown=ss13:ss13 --from=byond_build /byond /byond
 COPY --chown=ss13:ss13 --from=byond_build /scorpio/paradise.dmb /scorpio/paradise.dmb
 COPY --chown=ss13:ss13 --from=byond_build /scorpio/paradise.rsc /scorpio/paradise.rsc
 COPY --chown=ss13:ss13 --from=scorpiostation/rust-g:latest /rust-g/target/release/librust_g.so /scorpio/librust_g.so
