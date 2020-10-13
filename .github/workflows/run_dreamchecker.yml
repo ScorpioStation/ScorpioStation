@@ -1,0 +1,20 @@
+name: 'Run Dreamchecker'
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  dreamchecker:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Project
+      uses: actions/checkout@v2
+
+    - name: Run Dreamchecker
+      runs:
+        using: 'docker'
+        image: 'scorpiostation/spacemandmm:latest'
+        entrypoint: '/spacemandmm/target/release/dreamchecker'
