@@ -30,13 +30,13 @@ dmeText = fs.readFileSync dmePath, {encoding: "utf8"}
 # prepare a DME with Cyberiad as the map
 cyberiadPath = path.join process.argv[2], "ci-cyberiad.dme"
 dmeCyberiad = dmeText.replace '#include "_maps\\emerald.dm"', '#include "_maps\\cyberiad.dm"'
-dmeCyberiad = dmeCyberiad.replace '#include "code\\game\\area\\emerald_areas.dm"', '#include "Space Station 13 areas.dm"'
+dmeCyberiad = dmeCyberiad.replace '#include "code\\game\\area\\emerald_areas.dm"', '#include "code\\game\\area\\Space Station 13 areas.dm"'
 fs.writeFileSync cyberiadPath, dmeCyberiad
 
 # prepare a DME with Delta as the map
 deltaPath = path.join process.argv[2], "ci-delta.dme"
 dmeDelta = dmeText.replace '#include "_maps\\emerald.dm"', '#include "_maps\\delta.dm"'
-dmeDelta = dmeDelta.replace '#include "code\\game\\area\\emerald_areas.dm"', '#include "Space Station 13 areas.dm"'
+dmeDelta = dmeDelta.replace '#include "code\\game\\area\\emerald_areas.dm"', '#include "code\\game\\area\\Space Station 13 areas.dm"'
 fs.writeFileSync deltaPath, dmeDelta
 
 # prepare a DME with Emerald as the map
@@ -46,7 +46,7 @@ fs.writeFileSync emeraldPath, dmeText
 # prepare a DME with MetaStation as the map
 metastationPath = path.join process.argv[2], "ci-metastation.dme"
 dmeMetastation = dmeText.replace '#include "_maps\\emerald.dm"', '#include "_maps\\metastation.dm"'
-dmeMetastation = dmeMetastation.replace '#include "code\\game\\area\\emerald_areas.dm"', '#include "Space Station 13 areas.dm"'
+dmeMetastation = dmeMetastation.replace '#include "code\\game\\area\\emerald_areas.dm"', '#include "code\\game\\area\\Space Station 13 areas.dm"'
 fs.writeFileSync metastationPath, dmeMetastation
 
 if process.exitCode is 0
