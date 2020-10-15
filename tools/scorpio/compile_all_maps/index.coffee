@@ -27,6 +27,12 @@ for file in files
 dmePath = path.join process.argv[2], "ci-scorpio.dme"
 dmeText = fs.readFileSync dmePath, {encoding: "utf8"}
 
+# prepare a DME with Cyberiad as the map
+cyberiadPath = path.join process.argv[2], "ci-cyberiad.dme"
+dmeCyberiad = dmeText.replace '#include "_maps\\emerald.dm"', '#include "_maps\\cyberiad.dm"'
+dmeCyberiad = dmeCyberiad.replace '#include "code\\game\\area\\emerald_areas.dm"', '#include "Space Station 13 areas.dm"'
+fs.writeFileSync cyberiadPath, dmeCyberiad
+
 # prepare a DME with Delta as the map
 deltaPath = path.join process.argv[2], "ci-delta.dme"
 dmeDelta = dmeText.replace '#include "_maps\\emerald.dm"', '#include "_maps\\delta.dm"'

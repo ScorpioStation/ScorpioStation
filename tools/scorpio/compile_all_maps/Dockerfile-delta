@@ -1,4 +1,4 @@
-FROM scorpiostation/byond:latest as byond_build
+FROM scorpiostation/byond:latest
 
 ENV LD_LIBRARY_PATH="/byond/bin:${LD_LIBRARY_PATH}"
 ENV PATH="/byond/bin:${PATH}"
