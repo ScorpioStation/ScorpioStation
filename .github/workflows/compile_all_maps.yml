@@ -22,5 +22,6 @@ jobs:
     - name: Build Emerald
       uses: docker/build-push-action@v2
       with:
+        context: .
         file: './tools/scorpio/compile_all_maps/Dockerfile-emerald'
         push: false
