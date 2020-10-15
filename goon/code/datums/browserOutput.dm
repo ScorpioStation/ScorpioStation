@@ -1,4 +1,4 @@
-var/list/chatResources = list(
+GLOBAL_REAL_VAR(chatResources) = list(
 	"goon/browserassets/js/jquery.min.js",
 	"goon/browserassets/js/jquery.mark.min.js",
 	"goon/browserassets/js/json2.min.js",
@@ -13,14 +13,13 @@ var/list/chatResources = list(
 	"goon/browserassets/css/font-awesome.css",
 	"goon/browserassets/css/browserOutput.css",
 	"goon/browserassets/css/browserOutput-dark.css",
-	"goon/browserassets/html/saveInstructions.html"
-)
+	"goon/browserassets/html/saveInstructions.html")
 
 //Should match the value set in the browser js
 #define MAX_COOKIE_LENGTH 5
 
-/var/savefile/iconCache = new /savefile("data/iconCache.sav")
-/var/chatDebug = file("data/chatDebug.log")
+GLOBAL_REAL(iconCache, /savefile) = new /savefile("data/iconCache.sav")
+GLOBAL_REAL_VAR(chatDebug) = file("data/chatDebug.log")
 
 /datum/chatOutput
 	var/client/owner = null
@@ -203,7 +202,7 @@ var/list/chatResources = list(
 	chatOutput.ehjax_send(data = list("firebug" = 1))
 
 
-/var/list/bicon_cache = list()
+GLOBAL_REAL_VAR(bicon_cache) = list()
 
 //Converts an icon to base64. Operates by putting the icon in the iconCache savefile,
 // exporting it as text, and then parsing the base64 from that.
@@ -248,9 +247,9 @@ var/list/chatResources = list(
 /proc/is_valid_tochat_target(target)
 	return !istype(target, /savefile) && (ismob(target) || islist(target) || isclient(target) || target == world)
 
-var/to_chat_filename
-var/to_chat_line
-var/to_chat_src
+GLOBAL_REAL_VAR(to_chat_filename)
+GLOBAL_REAL_VAR(to_chat_line)
+GLOBAL_REAL_VAR(to_chat_src)
 
 /proc/to_chat(target, message, flag)
 	if(!is_valid_tochat_message(message) || !is_valid_tochat_target(target))
