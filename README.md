@@ -23,19 +23,16 @@ This will take a while to download, but it provides an easier method for updatin
 First-time installation should be fairly straightforward.  
 First, you'll need to install [BYOND](https://secure.byond.com/download/).
 
-Second, you'll need to install [Docker Desktop](https://www.docker.com/get-started).
-(Ask on Discord if you need help.)
-
 This is a sourcecode-only release, so the next steps are to compile the server files.
 
-Third, there are some dependencies not included in the source tree. The pros
+Second, there are some dependencies not included in the source tree. The pros
 like to build these things for themselves, but we're going to cheat for now
 and just take the latest copies that somebody else built.
 
 Open up the folder where the code is kept, and run the script called
 `prepare-dev-windows.bat`
 
-Fourth, open `paradise.dme` by double-clicking it, open the Build menu, and
+Third, open `paradise.dme` by double-clicking it, open the Build menu, and
 click compile.  
 
 This'll take a little while, and if everything's done right,
