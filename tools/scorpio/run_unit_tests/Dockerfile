@@ -10,7 +10,7 @@ WORKDIR /scorpio
 RUN DreamMaker ci-scorpio.dme
 
 # Run the Unit Tests
-RUN DreamDaemon paradise.dmb -close -trusted -verbose
+RUN DreamDaemon ci-scorpio.dmb -close -trusted -verbose
 
 # Check that the Unit Tests passed
 RUN cat data/clean_run.lk
