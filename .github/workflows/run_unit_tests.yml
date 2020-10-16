@@ -7,7 +7,7 @@ on:
       - master
 
 jobs:
-  compile_all_maps:
+  run_unit_tests:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Project
