@@ -7,7 +7,7 @@ ENV PATH="/byond/bin:${PATH}"
 COPY . /scorpio
 COPY --from=scorpiostation/scorpio:latest /scorpio/tgui/packages/tgui/public /scorpio/tgui/packages/tgui/public
 WORKDIR /scorpio
-RUN DreamMaker -DTRAVISBUILDING paradise.dme
+RUN DreamMaker ci-scorpio.dme
 
 # Run the Unit Tests
 RUN DreamDaemon paradise.dmb -close -trusted -verbose
