@@ -45,6 +45,7 @@ GLOBAL_VAR(test_log)
 	LAZYADD(fail_reasons, reason)
 
 /proc/RunUnitTests()
+	log_world("Unit Tests began running")
 	CHECK_TICK
 
 	for(var/I in subtypesof(/datum/unit_test))
@@ -70,6 +71,7 @@ GLOBAL_VAR(test_log)
 
 		CHECK_TICK
 
+	log_world("Unit Tests finished running")
 	world.Reboot("Unit Test Reboot", "end_test", "tests ended", 0)
 
 
