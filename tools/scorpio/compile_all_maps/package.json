@@ -1,7 +1,7 @@
 {
-  "name": "check_source_files",
+  "name": "compile_all_maps",
   "version": "1.0.0",
-  "description": "Verify the project source files have Linux line endings",
+  "description": "Prepare each map to be compiled by GitHub CI",
   "author": "blinkdog@protonmail.com",
   "license": "SEE LICENSE IN LICENSE-AGPL3.txt",
   "dependencies": {

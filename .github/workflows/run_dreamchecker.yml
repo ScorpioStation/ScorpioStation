@@ -1,0 +1,24 @@
+name: 'Run Dreamchecker'
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  run_dreamchecker:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Project
+      uses: actions/checkout@v2
+
+    - name: Prepare Build
+      run: './tools/scorpio/run_dreamchecker/action.sh'
+
+    - name: Run Dreamchecker
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        file: './tools/scorpio/run_dreamchecker/Dockerfile'
+        push: false

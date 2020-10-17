@@ -1,7 +1,7 @@
 {
-  "name": "check_source_files",
+  "name": "check_map_files",
   "version": "1.0.0",
-  "description": "Verify the project source files have Linux line endings",
+  "description": "Verify the project map files are solid",
   "author": "blinkdog@protonmail.com",
   "license": "SEE LICENSE IN LICENSE-AGPL3.txt",
   "dependencies": {

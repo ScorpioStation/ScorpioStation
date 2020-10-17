@@ -1,0 +1,24 @@
+name: 'Run Unit Tests'
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  run_unit_tests:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Project
+      uses: actions/checkout@v2
+
+    - name: Prepare Build
+      run: './tools/scorpio/run_unit_tests/action.sh'
+
+    - name: Build and Run Unit Tests
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        file: './tools/scorpio/run_unit_tests/Dockerfile'
+        push: false

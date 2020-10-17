@@ -42,3 +42,6 @@ stddef.dm
 
 # ignore TGUI artifacts
 /tgui/packages/tgui/public/tgui.bundle.*
+
+# ignore .dme for CI purposes
+/ci-*.dme
