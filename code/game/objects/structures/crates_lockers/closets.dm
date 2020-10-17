@@ -23,6 +23,8 @@
 
 /obj/structure/closet/New()
 	..()
+	GLOB.closets += src
+	GLOB.closets = sortAtom(GLOB.closets)
 	spawn(1)
 		if(!opened)		// if closed, any item at the crate's loc is put in the contents
 			var/itemcount = 0
@@ -35,6 +37,7 @@
 
 // Fix for #383 - C4 deleting fridges with corpses
 /obj/structure/closet/Destroy()
+	GLOB.closets -= src
 	dump_contents()
 	return ..()
 

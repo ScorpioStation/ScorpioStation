@@ -3,7 +3,7 @@ VOX HEIST ROUNDTYPE
 */
 GLOBAL_LIST_EMPTY(cortical_stacks) // Stacks for 'leave nobody behind' objective. Clumsy, rewrite sometime.
 
-/datum/game_mode/
+/datum/game_mode
 	var/list/datum/mind/raiders = list()  //Antags.
 	var/list/raid_objectives = list()     //Raid objectives
 
@@ -248,7 +248,7 @@ GLOBAL_LIST_EMPTY(cortical_stacks) // Stacks for 'leave nobody behind' objective
 
 	..()
 
-datum/game_mode/proc/auto_declare_completion_heist()
+/datum/game_mode/proc/auto_declare_completion_heist()
 	if(raiders.len)
 		var/check_return = 0
 		if(GAMEMODE_IS_HEIST)
