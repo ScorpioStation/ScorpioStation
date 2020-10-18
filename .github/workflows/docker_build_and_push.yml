@@ -17,6 +17,6 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: scorpiostation/scorpio
-          tags: ${{ env.GITHUB_SHA_SHORT }}
+          tags: ${{ env.GITHUB_SHA_SHORT }}, latest
           add_git_labels: true
           push: true

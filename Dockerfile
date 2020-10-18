@@ -1,7 +1,5 @@
 FROM i386/debian:buster-slim as base
 
-ENV BYOND_MAJOR=513
-ENV BYOND_MINOR=1526
 ENV BYOND_PORT=7777
 
 EXPOSE $BYOND_PORT
@@ -19,26 +17,47 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 #-------------------------------------------------------------------------------
-# Build ScorpioStation from the DreamMaker code using BYOND
+# Build TGUI from the JavaScript code using Node
 #-------------------------------------------------------------------------------
-FROM base as byond_build
+FROM node:lts-buster-slim as tgui_build
+
+#
+# Build tgui -> tgui.bundle.css, tgui.bundle.js
+#
+COPY . /scorpio
+WORKDIR /scorpio/tgui
+RUN bin/tgui
+
+#-------------------------------------------------------------------------------
+# Render a nanomap for Emerald from the DreamMaker Map code using SpacemanDMM
+#-------------------------------------------------------------------------------
+FROM scorpiostation/spacemandmm:latest as nanomap_build
 
 #
 # Install Debian packages
 #
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
-    make \
-    unzip \
+    optipng \
+    pngcrush \
     && rm -rf /var/lib/apt/lists/*
 
 #
-# Install BYOND
+# Build emerald.dmm -> emerald-1.png
 #
-RUN curl "http://www.byond.com/download/build/${BYOND_MAJOR}/${BYOND_MAJOR}.${BYOND_MINOR}_byond_linux.zip" -o byond.zip \
-    && unzip byond.zip \
-    && cd /byond \
-    && make here
+COPY . /scorpio
+WORKDIR /scorpio
+RUN /spacemandmm/target/release/dmm-tools minimap \
+    --disable all \
+    --enable hide-space,hide-areas,hide-invisible,random,pretty,icon-smoothing \
+    --optipng \
+    --pngcrush \
+    "./_maps/map_files/emerald/emerald.dmm"
+
+#-------------------------------------------------------------------------------
+# Build ScorpioStation from the DreamMaker code using BYOND
+#-------------------------------------------------------------------------------
+FROM scorpiostation/byond:latest as byond_build
+
 ENV LD_LIBRARY_PATH="/byond/bin:${LD_LIBRARY_PATH}"
 ENV PATH="/byond/bin:${PATH}"
 
@@ -46,6 +65,7 @@ ENV PATH="/byond/bin:${PATH}"
 # Build paradise.dme -> paradise.dmb, paradise.rsc
 #
 COPY . /scorpio
+COPY --from=tgui_build /scorpio/tgui/packages/tgui/public /scorpio/tgui/packages/tgui/public
 WORKDIR /scorpio
 RUN DreamMaker paradise.dme
 
@@ -70,6 +90,8 @@ RUN useradd -ms /bin/bash ss13
 # Copy things into the docker image
 #
 COPY --chown=ss13:ss13 . /scorpio
+COPY --chown=ss13:ss13 --from=tgui_build /scorpio/tgui/packages/tgui/public /scorpio/tgui/packages/tgui/public
+COPY --chown=ss13:ss13 --from=nanomap_build /scorpio/data/minimaps/emerald-1.png /scorpio/nano/images/Emerald_nanomap_z1.png
 COPY --chown=ss13:ss13 --from=byond_build /byond /byond
 COPY --chown=ss13:ss13 --from=byond_build /scorpio/paradise.dmb /scorpio/paradise.dmb
 COPY --chown=ss13:ss13 --from=byond_build /scorpio/paradise.rsc /scorpio/paradise.rsc

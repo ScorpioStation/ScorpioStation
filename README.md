@@ -1,7 +1,4 @@
 # Scorpio Station
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/ScorpioStation/ScorpioStation.svg)](http://isitmaintained.com/project/ScorpioStation/ScorpioStation "Average time to resolve an issue")
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/ScorpioStation/ScorpioStation.svg)](http://isitmaintained.com/project/ScorpioStation/ScorpioStation "Percentage of issues still open")
-
 [Website](https://scorpiostation.com/) - [Code](https://github.com/ScorpioStation/ScorpioStation) - [Discord](https://scorpiostation.com/discord)
 
 ---
@@ -24,11 +21,20 @@ This will take a while to download, but it provides an easier method for updatin
 
 ### INSTALLATION
 First-time installation should be fairly straightforward.  
-First, you'll need BYOND installed.  
-You can get it from [here](http://www.byond.com/).
+First, you'll need to install [BYOND](https://secure.byond.com/download/).
 
-This is a sourcecode-only release, so the next step is to compile the server files.  
-Open `paradise.dme` by double-clicking it, open the Build menu, and click compile.  
+This is a sourcecode-only release, so the next steps are to compile the server files.
+
+Second, there are some dependencies not included in the source tree. The pros
+like to build these things for themselves, but we're going to cheat for now
+and just take the latest copies that somebody else built.
+
+Open up the folder where the code is kept, and run the script called
+`prepare-dev-windows.bat`
+
+Third, open `paradise.dme` by double-clicking it, open the Build menu, and
+click compile.  
+
 This'll take a little while, and if everything's done right,
 you'll get a message like this:
 
@@ -37,12 +43,17 @@ you'll get a message like this:
     paradise.dmb - 0 errors, 0 warnings
 
 If you see any errors or warnings, something has gone wrong - possibly a
-corrupt download or the files extracted wrong, or a code issue on the main
-repo. Ask on Discord.
+corrupt download, the files extracted wrong, or the script didn't get those
+extra dependencies. Ask on #coding-talk on the [Discord](https://scorpiostation.com/discord).
 
 Once that's done, open up the `config` folder.  
+
+Inside the config folder is another `example` folder. Copy all of the text files
+from that folder to the `config` folder.
+
 You'll want to edit `config.txt` to set your server location,
 so that all your players don't get disconnected at the end of each round.
+
 It's recommended you don't turn on the gamemodes with probability 0,
 as they have various issues and aren't currently being tested,
 so they may have unknown and bizarre bugs.
@@ -53,7 +64,7 @@ recommended admin levels for now are "Game Admin" and "Mentor". The format is:
 
     byondkey - Rank
 
-where the BYOND key must be in lowercase and the admin rank must be properly capitalised.  
+where the BYOND key must be in lowercase and the admin rank must be properly capitalized.  
 There are a bunch more admin ranks, but these two should be enough for most servers,
 assuming you have trustworthy admins.
 

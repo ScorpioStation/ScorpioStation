@@ -1,5 +1,5 @@
 {
-  "name": "check_line_endings",
+  "name": "check_source_files",
   "version": "1.0.0",
   "description": "Verify the project source files have Linux line endings",
   "author": "blinkdog@protonmail.com",
