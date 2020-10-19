@@ -929,6 +929,8 @@
 		. += T.slowdown
 	if(slowed)
 		. += 10
+	if(forced_look)
+		. += 3
 	if(ignorewalk)
 		. += config.run_speed
 	else

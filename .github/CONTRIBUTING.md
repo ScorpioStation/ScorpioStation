@@ -42,7 +42,9 @@ actual development.
   decision making process.
 
  * Any pull request must have a changelog, this is to allow us to know when a PR is deployed
- on the live server. Inline changelogs are supported through the format described in the PR template.
+ on the live server. Inline changelogs are supported through the format described
+ [here](https://github.com/ParadiseSS13/Paradise/pull/3291#issuecomment-172950466)
+ and should be used rather than manually edited .yml file changelogs.
 
  * Pull requests should not have any merge commits except in the case of fixing merge
  conflicts for an existing pull request. New pull requests should not have any merge
@@ -587,6 +589,7 @@ pull requests/issues, and merging/closing pull requests.
 * [Fox P McCloud](https://github.com/Fox-McCloud)
 * [Crazy Lemon](https://github.com/Crazylemon64)
 * [Ansari](https://github.com/variableundefined)
+* [AffectedArc07](https://github.com/AffectedArc07)
 
 ### Maintainer instructions
 * Do not `self-merge`; this refers to the practice of opening a pull request, then

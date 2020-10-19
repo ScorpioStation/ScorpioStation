@@ -171,6 +171,7 @@ GLOBAL_LIST_INIT(sandbag_recipes, list ( \
 	singular_name = "diamond"
 	origin_tech = "materials=6"
 	sheettype = "diamond"
+	merge_type = /obj/item/stack/sheet/mineral/diamond
 	materials = list(MAT_DIAMOND=MINERAL_MATERIAL_AMOUNT)
 	point_value = 25
 
@@ -178,12 +179,16 @@ GLOBAL_LIST_INIT(sandbag_recipes, list ( \
 	..()
 	recipes = GLOB.diamond_recipes
 
+/obj/item/stack/sheet/mineral/diamond/fifty
+	amount = 50
+
 /obj/item/stack/sheet/mineral/uranium
 	name = "uranium"
 	icon_state = "sheet-uranium"
 	singular_name = "uranium sheet"
 	origin_tech = "materials=5"
 	sheettype = "uranium"
+	merge_type = /obj/item/stack/sheet/mineral/uranium
 	materials = list(MAT_URANIUM=MINERAL_MATERIAL_AMOUNT)
 	point_value = 20
 
@@ -197,6 +202,7 @@ GLOBAL_LIST_INIT(sandbag_recipes, list ( \
 	singular_name = "plasma sheet"
 	origin_tech = "plasmatech=2;materials=2"
 	sheettype = "plasma"
+	merge_type = /obj/item/stack/sheet/mineral/plasma
 	materials = list(MAT_PLASMA=MINERAL_MATERIAL_AMOUNT)
 	resistance_flags = FLAMMABLE
 	max_integrity = 100
@@ -205,6 +211,9 @@ GLOBAL_LIST_INIT(sandbag_recipes, list ( \
 /obj/item/stack/sheet/mineral/plasma/New()
 	..()
 	recipes = GLOB.plasma_recipes
+
+/obj/item/stack/sheet/mineral/plasma/fifty
+	amount = 50
 
 /obj/item/stack/sheet/mineral/plasma/welder_act(mob/user, obj/item/I)
 	if(I.use_tool(src, user, volume = I.tool_volume))
@@ -236,6 +245,7 @@ GLOBAL_LIST_INIT(sandbag_recipes, list ( \
 	singular_name = "gold bar"
 	origin_tech = "materials=4"
 	sheettype = "gold"
+	merge_type = /obj/item/stack/sheet/mineral/gold
 	materials = list(MAT_GOLD=MINERAL_MATERIAL_AMOUNT)
 	point_value = 20
 
@@ -249,6 +259,7 @@ GLOBAL_LIST_INIT(sandbag_recipes, list ( \
 	singular_name = "silver bar"
 	origin_tech = "materials=4"
 	sheettype = "silver"
+	merge_type = /obj/item/stack/sheet/mineral/silver
 	materials = list(MAT_SILVER=MINERAL_MATERIAL_AMOUNT)
 	point_value = 20
 
@@ -262,8 +273,12 @@ GLOBAL_LIST_INIT(sandbag_recipes, list ( \
 	singular_name = "bananium sheet"
 	origin_tech = "materials=4"
 	sheettype = "bananium"
+	merge_type = /obj/item/stack/sheet/mineral/bananium
 	materials = list(MAT_BANANIUM=MINERAL_MATERIAL_AMOUNT)
 	point_value = 50
+
+/obj/item/stack/sheet/mineral/bananium/fifty
+	amount = 50
 
 /obj/item/stack/sheet/mineral/bananium/New(loc, amount=null)
 	..()
@@ -275,9 +290,13 @@ GLOBAL_LIST_INIT(sandbag_recipes, list ( \
 	singular_name = "beret"
 	origin_tech = "materials=4"
 	sheettype = "tranquillite"
+	merge_type = /obj/item/stack/sheet/mineral/tranquillite
 	materials = list(MAT_TRANQUILLITE=MINERAL_MATERIAL_AMOUNT)
 	wall_allowed = FALSE	//no tranquilite walls in code
 	point_value = 50
+
+/obj/item/stack/sheet/mineral/tranquillite/fifty
+	amount = 50
 
 /obj/item/stack/sheet/mineral/tranquillite/New(loc, amount=null)
 	..()
@@ -297,6 +316,7 @@ GLOBAL_LIST_INIT(sandbag_recipes, list ( \
 	throw_speed = 1
 	throw_range = 3
 	sheettype = "titanium"
+	merge_type = /obj/item/stack/sheet/mineral/titanium
 	materials = list(MAT_TITANIUM=MINERAL_MATERIAL_AMOUNT)
 	point_value = 20
 
@@ -327,6 +347,7 @@ GLOBAL_LIST_INIT(titanium_recipes, list(
 	throw_speed = 1
 	throw_range = 3
 	sheettype = "plastitanium"
+	merge_type = /obj/item/stack/sheet/mineral/plastitanium
 	materials = list(MAT_TITANIUM=2000, MAT_PLASMA=2000)
 	point_value = 45
 
@@ -356,6 +377,9 @@ GLOBAL_LIST_INIT(plastitanium_recipes, list(
 	throw_speed = 1
 	origin_tech = "materials=6;abductor=1"
 	sheettype = "abductor"
+
+/obj/item/stack/sheet/mineral/abductor/fifty
+	amount = 50
 
 /obj/item/stack/sheet/mineral/abductor/New(loc, amount=null)
 	recipes = GLOB.abductor_recipes
