@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# backup the .dockerignore and adjust it
+cp .dockerignore .dockerignore.bak
+sed -i '/\/config/d' .dockerignore
+sed -i '/\/data/d' .dockerignore
+
+# create the DME for unit testing purposes
+rm -f ci-scorpio.dme
+echo "#define TRAVISBUILDING" >> ci-scorpio.dme
+cat paradise.dme >> ci-scorpio.dme
+
+# grab the Dockerfile from the CI action
+cp tools/scorpio/run_unit_tests/Dockerfile Dockerfile-test
+sed -i 's!scorpiostation/scorpio!scorpio!g' Dockerfile-test
+
+# build and run the unit tests
+GIT_HASH="$(git log | head -1 | awk -e '{print $2}' | head -c 12)"
+docker build -t scorpio:${GIT_HASH}-unit-test -f Dockerfile-test .
+
+# restore .dockerignore from the backup
+cp .dockerignore.bak .dockerignore

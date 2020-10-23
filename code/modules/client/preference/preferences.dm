@@ -27,6 +27,10 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	ROLE_DEVIL = 14
 ))
 
+GLOBAL_LIST_INIT(blood_types, list("A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"))
+
+GLOBAL_LIST_INIT(company_relations, list("Loyal", "Supportive", "Neutral", "Skeptical", "Opposed"))
+
 /proc/player_old_enough_antag(client/C, role)
 	if(available_in_days_antag(C, role))
 		return 0	//available_in_days>0 = still some days required = player not old enough
@@ -79,7 +83,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 	//game-preferences
 	var/lastchangelog = "1"				//Saved changlog timestamp (unix epoch) to detect if there was a change. Dont set this to 0 unless you want the last changelog date to be 4x longer than the expected lifespan of the universe.
-	var/exp
+	var/exp = ""
 	var/ooccolor = "#b82e00"
 	var/list/be_special = list()				//Special role selection
 	var/UI_style = "Midnight"
@@ -212,7 +216,8 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			if(unlock_content)
 				max_save_slots = MAX_SAVE_SLOTS_MEMBER
 
-		loaded_preferences_successfully = load_preferences(C) // Do not call this with no client/C, it generates a runtime / SQL error
+		loaded_preferences_successfully = load_pseudo_preferences(C)
+		loaded_preferences_successfully &= load_preferences(C) // Do not call this with no client/C, it generates a runtime / SQL error
 		if(loaded_preferences_successfully)
 			if(load_character(C))
 				return
@@ -1422,7 +1427,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 						metadata = sanitize(copytext(new_metadata,1,MAX_MESSAGE_LEN))
 
 				if("b_type")
-					var/new_b_type = input(user, "Choose your character's blood-type:", "Character Preference") as null|anything in list( "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" )
+					var/new_b_type = input(user, "Choose your character's blood-type:", "Character Preference") as null|anything in GLOB.blood_types
 					if(new_b_type)
 						b_type = new_b_type
 
@@ -1768,7 +1773,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 						backbag = new_backbag
 
 				if("as_relation")
-					var/new_relation = input(user, "Choose your relation to Ark Soft. Note that this represents what others can find out about your character by researching your background, not what your character actually thinks.", "Character Preference")  as null|anything in list("Loyal", "Supportive", "Neutral", "Skeptical", "Opposed")
+					var/new_relation = input(user, "Choose your relation to ArkSoft. Note that this represents what others can find out about your character by researching your background, not what your character actually thinks.", "Character Preference")  as null|anything in GLOB.company_relations
 					if(new_relation)
 						ark_soft_relation = new_relation
 
@@ -2309,8 +2314,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	character.regenerate_icons()
 
 /datum/preferences/proc/open_load_dialog(mob/user)
-
-	var/DBQuery/query = GLOB.dbcon.NewQuery("SELECT slot,real_name FROM [format_table_name("characters")] WHERE ckey='[user.ckey]' ORDER BY slot")
+	var/DBQuery/query = GLOB.dbcon.NewQuery("SELECT c.slot, ca.attr_val FROM [format_table_name("characters")] as c INNER JOIN [format_table_name("character_attributes")] as ca on ca.character_id = c.id and ca.attr_key = 'real_name' WHERE ckey = '[user.ckey]' ORDER BY slot")
 	var/list/slotnames[max_save_slots]
 
 	if(!query.Execute())

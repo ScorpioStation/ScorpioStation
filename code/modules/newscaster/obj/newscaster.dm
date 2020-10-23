@@ -16,7 +16,7 @@
   */
 /obj/machinery/newscaster
 	name = "newscaster"
-	desc = "A standard Nanotrasen-licensed newsfeed handler for use in commercial space stations. All the news you absolutely have no use for, in one place!"
+	desc = "A standard ArkSoft-licensed newsfeed handler for use in commercial space stations. All the news you absolutely have no use for, in one place!"
 	icon = 'icons/obj/terminals.dmi'
 	icon_state = "newscaster_normal"
 	max_integrity = 200
@@ -72,6 +72,7 @@
 			/datum/job/captain,
 			/datum/job/judge,
 			/datum/job/blueshield,
+			/datum/job/arksoftrep,
 			/datum/job/nanotrasenrep,
 			/datum/job/pilot,
 			/datum/job/brigdoc,
