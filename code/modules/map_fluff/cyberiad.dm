@@ -1,10 +1,10 @@
-/datum/map/box
-	name = "Box"
-	full_name = "ARS Scorpius"
+/datum/map/cyberiad
+	name = "Cyberiad"
+	full_name = "NSS Cyberiad"
 
-	station_name  = "ARS Scorpius"
-	station_short = "Scorpius"
-	dock_name     = "ACS Cephalon"
-	company_name  = "Ark Soft"
-	company_short = "Ark"
-	starsys_name  = "Tau Scorpii"
+	station_name  = "NSS Cyberiad"
+	station_short = "Cyberiad"
+	dock_name     = "NAS Trurl"
+	company_name  = "Nanotrasen"
+	company_short = "NT"
+	starsys_name  = "Epsilon Eridani "

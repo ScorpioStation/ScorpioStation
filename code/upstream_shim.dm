@@ -18,17 +18,35 @@
 // from: code/game/jobs/job/supervisor.dm
 /datum/job/nanotrasenrep
 
+// from: code/game/objects/items/weapons/AI_modules.dm
+/obj/item/aiModule/nanotrasen
+
 // from: code/game/objects/items/weapons/lighters.dm
 /obj/item/lighter/zippo/nt_rep
 
 // from: code/modules/paperwork/paper.dm
 /obj/item/paper/ntrep
 
+// from: code/modules/paperwork/paperbin.dm
+/obj/item/paper_bin/nanotrasen
+
 // from: code/game/jobs/job/medical.dm
 /obj/item/radio/headset/headset_medsci
 
+// from: code/game/objects/items/devices/radio/headset.dm
+/obj/item/radio/headset/heads/ntrep
+
+// from: code/game/machinery/computer/HolodeckControl.dm
+/obj/structure/chair/stool/holostool
+
 // from: code/game/objects/structures/crates_lockers/closets/secure/security.dm
 /obj/structure/closet/secure_closet/ntrep
+
+// from: code/game/objects/effects/decals/contraband.dm:
+/obj/structure/sign/poster/official/nanotrasen_logo
+
+// from: code/game/machinery/computer/HolodeckControl.dm
+/turf/simulated/floor/holofloor/space
 
 //------------------------------------------------------------------------------
 // upstream_shim.dm
