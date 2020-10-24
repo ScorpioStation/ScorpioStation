@@ -2077,9 +2077,6 @@ GLOBAL_LIST_INIT(company_relations, list("Loyal", "Supportive", "Neutral", "Skep
 				if("ghost_radio")
 					toggles ^= PREFTOGGLE_CHAT_GHOSTRADIO
 
-				if("ghost_radio")
-					toggles ^= PREFTOGGLE_CHAT_GHOSTRADIO
-
 				if("ghost_pda")
 					toggles ^= PREFTOGGLE_CHAT_GHOSTPDA
 
