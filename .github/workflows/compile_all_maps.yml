@@ -19,6 +19,20 @@ jobs:
     - name: Prepare Maps
       run: './tools/scorpio/compile_all_maps/action.sh'
 
+    - name: Build Cyberiad
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        file: './tools/scorpio/compile_all_maps/Dockerfile-cyberiad'
+        push: false
+
+    - name: Build Delta
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        file: './tools/scorpio/compile_all_maps/Dockerfile-delta'
+        push: false
+
     - name: Build Emerald
       uses: docker/build-push-action@v2
       with:
