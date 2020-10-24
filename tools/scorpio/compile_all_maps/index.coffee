@@ -2,6 +2,7 @@
 # Prepare each map to be compiled by GitHub CI
 
 CANONICAL_MAP_LIST = [
+    "cyberiad.dm"
     "delta.dm"
     "emerald.dm"
     "metastation.dm"
