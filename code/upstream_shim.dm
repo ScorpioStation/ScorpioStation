@@ -21,5 +21,14 @@
 // from: code/game/objects/items/weapons/lighters.dm
 /obj/item/lighter/zippo/nt_rep
 
+// from: code/modules/paperwork/paper.dm
+/obj/item/paper/ntrep
+
+// from: code/game/jobs/job/medical.dm
+/obj/item/radio/headset/headset_medsci
+
+// from: code/game/objects/structures/crates_lockers/closets/secure/security.dm
+/obj/structure/closet/secure_closet/ntrep
+
 //------------------------------------------------------------------------------
 // upstream_shim.dm

@@ -4246,7 +4246,7 @@
 	dir = 5
 	},
 /obj/structure/sign/securearea{
-	desc = "A warning sign which reads 'WARNING: Do Not Enter When Red Light Shows', detailing the penalties that any Ark Soft employee or silicon will suffer if violating this rule.";
+	desc = "A warning sign which reads 'WARNING: Do Not Enter When Red Light Shows', detailing the penalties that any NanoTrasen employee or silicon will suffer if violating this rule.";
 	name = "WARNING: Do Not Enter When Red Light Shows";
 	pixel_y = 32
 	},
@@ -5205,7 +5205,7 @@
 /area/security/hos)
 "aiZ" = (
 /obj/item/phone{
-	desc = "Supposedly a direct line to Ark Soft Central Command. It's not even plugged in.";
+	desc = "Supposedly a direct line to NanoTrasen Central Command. It's not even plugged in.";
 	pixel_x = -3;
 	pixel_y = 3
 	},
@@ -12123,7 +12123,7 @@
 /area/security/main)
 "avn" = (
 /obj/item/phone{
-	desc = "Supposedly a direct line to Ark Soft Central Command. It's not even plugged in.";
+	desc = "Supposedly a direct line to NanoTrasen Central Command. It's not even plugged in.";
 	pixel_x = -3;
 	pixel_y = 3
 	},
@@ -12933,7 +12933,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/structure/decorative_structures/metal/statue/chickenstatue,
+/obj/structure/statue/chickenstatue,
 /turf/simulated/floor/wood,
 /area/crew_quarters/mrchangs)
 "awO" = (
@@ -12941,7 +12941,7 @@
 /turf/simulated/floor/wood,
 /area/crew_quarters/mrchangs)
 "awP" = (
-/obj/structure/decorative_structures/metal/statue/chickenstatue,
+/obj/structure/statue/chickenstatue,
 /turf/simulated/floor/wood,
 /area/crew_quarters/mrchangs)
 "awQ" = (
@@ -37746,7 +37746,7 @@
 /obj/item/clothing/head/bearpelt,
 /obj/item/folder/documents,
 /obj/item/reagent_containers/food/drinks/bottle/vodka/badminka,
-/obj/item/lighter/zippo/ark_rep,
+/obj/item/lighter/zippo/nt_rep,
 /obj/item/storage/fancy/cigarettes/cigpack_robustgold,
 /obj/item/stack/spacecash/c1000{
 	amount = 100000
@@ -42792,7 +42792,7 @@
 	},
 /obj/structure/cable/yellow,
 /turf/simulated/floor/plating,
-/area/arkrep)
+/area/ntrep)
 "bvz" = (
 /obj/item/toy/cards/deck{
 	pixel_y = 4
@@ -44534,7 +44534,7 @@
 	},
 /obj/item/gun/projectile/revolver/russian,
 /obj/item/reagent_containers/food/drinks/bottle/absinthe/premium,
-/obj/item/lighter/zippo/ark_rep,
+/obj/item/lighter/zippo/nt_rep,
 /obj/item/storage/fancy/cigarettes/cigpack_robustgold,
 /obj/item/toy/figure/captain,
 /turf/simulated/floor/carpet,
@@ -44770,7 +44770,7 @@
 	dir = 8
 	},
 /obj/item/paper{
-	info = "Congratulations,<br><br>Your station has been selected to carry out the Gateway Project.<br><br>The equipment will be shipped to you at the start of the next quarter.<br> You are to prepare a secure location to house the equipment as outlined in the attached documents.<br><br>--Ark Soft Blue Space Research";
+	info = "Congratulations,<br><br>Your station has been selected to carry out the Gateway Project.<br><br>The equipment will be shipped to you at the start of the next quarter.<br> You are to prepare a secure location to house the equipment as outlined in the attached documents.<br><br>--Nanotrasen Blue Space Research";
 	name = "Confidential Correspondence, Pg 1"
 	},
 /obj/item/coin/plasma,
@@ -47186,7 +47186,7 @@
 	},
 /obj/structure/cable/yellow,
 /turf/simulated/floor/plating,
-/area/arkrep)
+/area/ntrep)
 "bCE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	req_access_txt = 1
@@ -53447,7 +53447,7 @@
 /area/atmos)
 "bNd" = (
 /turf/simulated/wall,
-/area/arkrep)
+/area/ntrep)
 "bNe" = (
 /obj/effect/spawner/window/reinforced,
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan{
@@ -53457,17 +53457,13 @@
 /turf/simulated/floor/plating,
 /area/atmos)
 "bNf" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/door/airlock/command{
-	name = "Ark Representative's Office";
-	req_access_txt = "73"
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/blueshield)
 "bNg" = (
 /obj/effect/spawner/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/visible/green,
@@ -54405,14 +54401,14 @@
 	},
 /obj/item/twohanded/required/kirbyplants,
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/ntrep)
 "bOM" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
 	dir = 1
 	},
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/ntrep)
 "bON" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -54420,7 +54416,7 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/ntrep)
 "bOO" = (
 /obj/machinery/camera{
 	c_tag = "Atmospherics Tank - Mix";
@@ -55031,8 +55027,10 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/wood,
-/area/arkrep)
+/turf/simulated/floor/plasteel,
+/area/teleporter{
+	name = "\improper Teleporter Room"
+	})
 "bPT" = (
 /obj/item/folder/blue,
 /obj/structure/table/wood,
@@ -55100,13 +55098,9 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/machinery/status_display{
-	density = 0;
-	layer = 4;
-	pixel_y = 32
-	},
-/turf/simulated/floor/wood,
-/area/arkrep)
+/obj/structure/closet/secure_closet/medical2,
+/turf/simulated/floor/plasteel,
+/area/assembly/robotics)
 "bQb" = (
 /obj/structure/closet/firecloset,
 /turf/simulated/floor/plasteel{
@@ -55269,19 +55263,19 @@
 	dir = 4
 	},
 /turf/simulated/wall,
-/area/arkrep)
+/area/ntrep)
 "bQr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/ntrep)
 "bQs" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /turf/simulated/floor/carpet,
-/area/arkrep)
+/area/ntrep)
 "bQt" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1;
@@ -55289,7 +55283,7 @@
 	level = 1
 	},
 /turf/simulated/floor/carpet,
-/area/arkrep)
+/area/ntrep)
 "bQu" = (
 /obj/machinery/light_switch{
 	pixel_x = 27
@@ -55301,14 +55295,7 @@
 	scrub_Toxins = 1
 	},
 /turf/simulated/floor/wood,
-/area/arkrep)
-"bQv" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/effect/spawner/window/reinforced,
-/turf/simulated/floor/plating,
-/area/medical/research{
-	name = "Research Division"
-	})
+/area/ntrep)
 "bQw" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -56227,22 +56214,22 @@
 /area/blueshield)
 "bSd" = (
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/ntrep)
 "bSe" = (
 /turf/simulated/floor/carpet,
-/area/arkrep)
+/area/ntrep)
 "bSf" = (
 /obj/machinery/hologram/holopad,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/carpet,
-/area/arkrep)
+/area/ntrep)
 "bSg" = (
 /obj/item/radio/intercom{
 	pixel_x = 29;
 	pixel_y = -1
 	},
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/ntrep)
 "bSh" = (
 /obj/structure/closet/crate{
 	icon_state = "crateopen";
@@ -57202,11 +57189,11 @@
 "bTM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/carpet,
-/area/arkrep)
+/area/ntrep)
 "bTN" = (
 /obj/structure/chair/office/dark,
 /turf/simulated/floor/carpet,
-/area/arkrep)
+/area/ntrep)
 "bTO" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -57214,7 +57201,7 @@
 	pixel_x = 24
 	},
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/ntrep)
 "bTP" = (
 /obj/structure/dresser,
 /obj/machinery/newscaster{
@@ -57915,14 +57902,14 @@
 /obj/structure/table/wood,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/carpet,
-/area/arkrep)
+/area/ntrep)
 "bVd" = (
 /obj/structure/table/wood,
 /obj/item/folder,
 /obj/item/stamp/centcom,
 /obj/item/pen/multi/fountain,
 /turf/simulated/floor/carpet,
-/area/arkrep)
+/area/ntrep)
 "bVe" = (
 /obj/machinery/camera/motion{
 	c_tag = "E.V.A. Storage";
@@ -58678,7 +58665,7 @@
 	pixel_x = 24
 	},
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/ntrep)
 "bWx" = (
 /obj/structure/chair/comfy/brown,
 /turf/simulated/floor/plasteel{
@@ -58843,14 +58830,14 @@
 	dir = 4
 	},
 /turf/simulated/wall,
-/area/arkrep)
+/area/ntrep)
 "bWM" = (
 /obj/item/flag/nt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/ntrep)
 "bWN" = (
 /obj/structure/chair/comfy/black{
 	dir = 4
@@ -58860,7 +58847,7 @@
 	on = 1
 	},
 /turf/simulated/floor/carpet,
-/area/arkrep)
+/area/ntrep)
 "bWO" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin,
@@ -58868,19 +58855,19 @@
 	pixel_x = -5;
 	pixel_y = 12
 	},
-/obj/item/paper/arkrep,
+/obj/item/paper/ntrep,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/carpet,
-/area/arkrep)
+/area/ntrep)
 "bWP" = (
 /obj/structure/chair/office/dark{
 	dir = 8
 	},
 /obj/effect/landmark/start{
-	name = "Ark Soft Representative"
+	name = "Nanotrasen Representative"
 	},
 /turf/simulated/floor/carpet,
-/area/arkrep)
+/area/ntrep)
 "bWQ" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -58891,7 +58878,7 @@
 	pixel_x = 30
 	},
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/ntrep)
 "bWR" = (
 /obj/item/tank/oxygen,
 /obj/item/tank/oxygen,
@@ -59650,7 +59637,7 @@
 "bYg" = (
 /obj/structure/filingcabinet,
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/ntrep)
 "bYh" = (
 /obj/structure/cable,
 /obj/machinery/power/turbine,
@@ -59669,13 +59656,13 @@
 	layer = 2.4;
 	on = 1
 	},
-/obj/structure/closet/secure_closet/arkrep,
+/obj/structure/closet/secure_closet/ntrep,
 /obj/machinery/firealarm{
 	dir = 4;
 	pixel_x = 24
 	},
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/ntrep)
 "bYk" = (
 /obj/machinery/atmospherics/unary/portables_connector{
 	dir = 8
@@ -59711,7 +59698,7 @@
 /area/atmos)
 "bYn" = (
 /obj/machinery/camera{
-	c_tag = "Ark Representative's Office";
+	c_tag = "NT Representative's Office";
 	dir = 1;
 	network = list("SS13")
 	},
@@ -59721,10 +59708,10 @@
 	pixel_y = -32
 	},
 /obj/machinery/photocopier/faxmachine/longrange{
-	department = "Ark Representative's Office"
+	department = "NT Representative's Office"
 	},
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/ntrep)
 "bYo" = (
 /obj/structure/cable/yellow{
 	d1 = 4;
@@ -59994,7 +59981,7 @@
 	},
 /obj/machinery/computer/secure_data,
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/ntrep)
 "bYO" = (
 /obj/machinery/atmospherics/unary/outlet_injector/on{
 	dir = 8;
@@ -60286,18 +60273,18 @@
 /area/blueshield)
 "bZn" = (
 /turf/simulated/wall/r_wall,
-/area/arkrep)
+/area/ntrep)
 "bZo" = (
 /obj/machinery/door/airlock/command{
-	name = "Ark Representative's Office";
+	name = "NT Representative's Office";
 	req_access_txt = "73"
 	},
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/ntrep)
 "bZp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/wall/r_wall,
-/area/arkrep)
+/area/ntrep)
 "bZq" = (
 /obj/structure/closet/fireaxecabinet{
 	pixel_x = -32
@@ -64315,7 +64302,7 @@
 	},
 /obj/machinery/photocopier,
 /turf/simulated/floor/wood,
-/area/arkrep)
+/area/ntrep)
 "cgr" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8;
@@ -83357,6 +83344,7 @@
 /obj/item/folder/white,
 /obj/item/folder/white,
 /obj/structure/table/glass,
+/obj/item/radio/headset/headset_medsci,
 /obj/item/flashlight/pen,
 /turf/simulated/floor/plasteel{
 	tag = "icon-vault";
