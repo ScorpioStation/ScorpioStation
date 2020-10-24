@@ -247,16 +247,16 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "shuttle"
 
 /area/shuttle/administration
-	name = "\improper Ark Soft Vessel"
+	name = "\improper Nanotrasen Vessel"
 	icon_state = "shuttlered"
 	parallax_movedir = EAST
 
 /area/shuttle/administration/centcom
-	name = "\improper Ark Soft Vessel Centcom"
+	name = "\improper Nanotrasen Vessel Centcom"
 	icon_state = "shuttlered"
 
 /area/shuttle/administration/station
-	name = "\improper Ark Soft Vessel"
+	name = "\improper Nanotrasen Vessel"
 	icon_state = "shuttlered2"
 
 /area/shuttle/thunderdome
@@ -831,8 +831,8 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Messaging Server Room"
 	icon_state = "server"
 
-/area/arkrep
-	name = "\improper Ark Soft Representative's Office"
+/area/ntrep
+	name = "\improper Nanotrasen Representative's Office"
 	icon_state = "bluenew"
 
 /area/blueshield
