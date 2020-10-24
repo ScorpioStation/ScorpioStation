@@ -14,7 +14,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	access = list()            // see get_access()
 	minimal_access = list()    // see get_access()
 	minimal_player_age = 30
-	exp_requirements = 300
+	exp_requirements = 1200
 	exp_type = EXP_TYPE_COMMAND
 	disabilities_allowed = 0
 	outfit = /datum/outfit/job/captain
@@ -34,7 +34,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	shoes = /obj/item/clothing/shoes/brown
 	head = /obj/item/clothing/head/caphat
 	l_ear = /obj/item/radio/headset/heads/captain/alt
-	glasses = /obj/item/clothing/glasses/sunglasses
+	glasses = /obj/item/clothing/glasses/hud/skills/sunglasses
 	id = /obj/item/card/id/gold
 	pda = /obj/item/pda/captain
 	backpack_contents = list(
@@ -68,7 +68,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	req_admin_notify = 1
 	is_command = 1
 	minimal_player_age = 21
-	exp_requirements = 300
+	exp_requirements = 1200
 	exp_type = EXP_TYPE_COMMAND
 	department_access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_COURT, ACCESS_FORENSICS_LOCKERS,
 			            ACCESS_MEDICAL, ACCESS_ENGINE, ACCESS_CHANGE_IDS, ACCESS_AI_UPLOAD, ACCESS_EVA, ACCESS_HEADS,
@@ -96,6 +96,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	uniform = /obj/item/clothing/under/rank/head_of_personnel
 	shoes = /obj/item/clothing/shoes/brown
 	head = /obj/item/clothing/head/hopcap
+	glasses = /obj/item/clothing/glasses/hud/skills/sunglasses
 	l_ear = /obj/item/radio/headset/heads/hop
 	id = /obj/item/card/id/silver
 	pda = /obj/item/pda/heads/hop
@@ -147,6 +148,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	uniform = /obj/item/clothing/under/rank/arkrep
 	suit = /obj/item/clothing/suit/storage/arkrep
 	shoes = /obj/item/clothing/shoes/centcom
+	glasses = /obj/item/clothing/glasses/hud/skills/sunglasses
 	l_ear = /obj/item/radio/headset/heads/arkrep
 	id = /obj/item/card/id/arksoft
 	l_pocket = /obj/item/lighter/zippo/ark_rep

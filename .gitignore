@@ -45,3 +45,7 @@ stddef.dm
 
 # ignore .dme for CI purposes
 /ci-*.dme
+
+# ignore things we create for unit test runs
+/.dockerignore.bak
+/Dockerfile-test

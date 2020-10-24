@@ -412,7 +412,6 @@
 	radio.name = "[src] radio"
 	radio.icon = icon
 	radio.icon_state = icon_state
-	radio.subspace_transmission = 1
 
 /obj/mecha/examine(mob/user)
 	. = ..()
@@ -679,12 +678,7 @@
 				return
 			if(isobj(obstacle))
 				var/obj/O = obstacle
-				if(istype(O, /obj/effect/portal)) //derpfix
-					anchored = 0
-					O.Bumped(src)
-					spawn(0) //countering portal teleport spawn(0), hurr
-						anchored = 1
-				else if(!O.anchored)
+				if(!O.anchored)
 					step(obstacle, dir)
 			else if(ismob(obstacle))
 				step(obstacle, dir)
@@ -1530,6 +1524,10 @@
 	if(L && L.client)
 		L.client.RemoveViewMod("mecha")
 		zoom_mode = FALSE
+
+	if(ishuman(L))
+		var/mob/living/carbon/human/H = L
+		H.regenerate_icons() // workaround for 14457
 
 /obj/mecha/force_eject_occupant()
 	go_out()

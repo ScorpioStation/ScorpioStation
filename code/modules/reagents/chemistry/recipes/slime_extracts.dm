@@ -146,7 +146,8 @@
 		/obj/item/reagent_containers/food/snacks/meat/slab,
 		/obj/item/reagent_containers/food/snacks/grown,
 		/obj/item/reagent_containers/food/snacks/grown/mushroom,
-		/obj/item/reagent_containers/food/snacks/deepfryholder
+		/obj/item/reagent_containers/food/snacks/deepfryholder,
+		/obj/item/reagent_containers/food/snacks/monstermeat
 		)
 	blocked |= typesof(/obj/item/reagent_containers/food/snacks/customizable)
 
@@ -601,7 +602,10 @@
 /datum/chemical_reaction/slimestop/on_reaction(datum/reagents/holder)
 	feedback_add_details("slime_cores_used","[type]")
 	var/mob/mob = get_mob_by_key(holder.my_atom.fingerprintslast)
-	new /obj/effect/timestop(get_turf(mob), 2, 140, list(mob))
+	var/obj/effect/timestop/T = new /obj/effect/timestop
+	T.forceMove(get_turf(holder.my_atom))
+	T.immune += mob
+	T.timestop()
 
 
 /datum/chemical_reaction/slimecamera

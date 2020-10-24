@@ -1,4 +1,4 @@
-//Ancient cryogenic sleepers. Players become NT crewmen from a hundred year old space station, now on the verge of collapse.
+// ancient cryogenic sleepers. Players become Ark crewmen from a hundred year old space station, now on the verge of collapse.
 
 /obj/effect/mob_spawn/human/oldsec
 	name = "old cryogenics pod"
@@ -10,10 +10,11 @@
 	death = FALSE
 	random = TRUE
 	mob_species = /datum/species/human
-	flavour_text = "<span class='big bold'>You are a security officer working for Ark Soft,</span><b> stationed onboard a state of the art research station. You vaguely recall rushing into a \
+	description = "Work as a team with your fellow survivors aboard a ruined, ancient space station."
+	important_info = ""
+	flavour_text = "You are a security officer working for ArkSoft, stationed onboard a state of the art research station. You vaguely recall rushing into a \
 	cryogenics pod due to an oncoming radiation storm. The last thing you remember is the station's Artificial Program telling you that you would only be asleep for eight hours. As you open \
-	your eyes, everything seems rusted and broken, a dark feeling swells in your gut as you climb out of your pod. \
-	Work as a team with your fellow survivors and do not abandon them.</b>"
+	your eyes, everything seems rusted and broken, a dark feeling swells in your gut as you climb out of your pod."
 	uniform = /obj/item/clothing/under/retro/security
 	shoes = /obj/item/clothing/shoes/jackboots
 	id = /obj/item/card/id/away/old/sec
@@ -35,10 +36,11 @@
 	death = FALSE
 	random = TRUE
 	mob_species = /datum/species/human
-	flavour_text = "<span class='big bold'>You are a medical working for Ark Soft,</span><b> stationed onboard a state of the art research station. You vaguely recall rushing into a \
+	description = "Work as a team with your fellow survivors aboard a ruined, ancient space station."
+	important_info = ""
+	flavour_text = "You are a medical doctor working for ArkSoft, stationed onboard a state of the art research station. You vaguely recall rushing into a \
 	cryogenics pod due to an oncoming radiation storm. The last thing you remember is the station's Artificial Program telling you that you would only be asleep for eight hours. As you open \
-	your eyes, everything seems rusted and broken, a dark feeling swells in your gut as you climb out of your pod. \
-	Work as a team with your fellow survivors and do not abandon them.</b>"
+	your eyes, everything seems rusted and broken, a dark feeling swells in your gut as you climb out of your pod."
 	uniform = /obj/item/clothing/under/retro/medical
 	shoes = /obj/item/clothing/shoes/black
 	id = /obj/item/card/id/away/old/med
@@ -60,10 +62,11 @@
 	death = FALSE
 	random = TRUE
 	mob_species = /datum/species/human
-	flavour_text = "<span class='big bold'>You are an engineer working for Ark Soft,</span><b> stationed onboard a state of the art research station. You vaguely recall rushing into a \
+	description = "Work as a team with your fellow survivors aboard a ruined, ancient space station."
+	important_info = ""
+	flavour_text = "You are an engineer working for ArkSoft, stationed onboard a state of the art research station. You vaguely recall rushing into a \
 	cryogenics pod due to an oncoming radiation storm. The last thing you remember is the station's Artificial Program telling you that you would only be asleep for eight hours. As you open \
-	your eyes, everything seems rusted and broken, a dark feeling swells in your gut as you climb out of your pod. \
-	Work as a team with your fellow survivors and do not abandon them.</b>"
+	your eyes, everything seems rusted and broken, a dark feeling swells in your gut as you climb out of your pod."
 	uniform = /obj/item/clothing/under/retro/engineering
 	shoes = /obj/item/clothing/shoes/workboots
 	id = /obj/item/card/id/away/old/eng
@@ -85,10 +88,11 @@
 	death = FALSE
 	random = TRUE
 	mob_species = /datum/species/human
-	flavour_text = "<span class='big bold'>You are a scientist working for Ark Soft,</span><b> stationed onboard a state of the art research station. You vaguely recall rushing into a \
+	description = "Work as a team with your fellow survivors aboard a ruined, ancient space station."
+	important_info = ""
+	flavour_text = "You are a scientist working for ArkSoft, stationed onboard a state of the art research station. You vaguely recall rushing into a \
 	cryogenics pod due to an oncoming radiation storm. The last thing you remember is the station's Artificial Program telling you that you would only be asleep for eight hours. As you open \
-	your eyes, everything seems rusted and broken, a dark feeling swells in your gut as you climb out of your pod. \
-	Work as a team with your fellow survivors and do not abandon them.</b>"
+	your eyes, everything seems rusted and broken, a dark feeling swells in your gut as you climb out of your pod."
 	uniform = /obj/item/clothing/under/retro/science
 	shoes = /obj/item/clothing/shoes/laceup
 	id = /obj/item/card/id/away/old/sci
