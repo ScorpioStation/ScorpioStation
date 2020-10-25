@@ -374,7 +374,7 @@ GLOBAL_LIST_INIT(saved_preferences, list(
 		return FALSE
 
 	// load pseudo preferences from the database
-	var/DBQuery/query = GLOB.dbcon.NewQuery("SELECT exp, fuid, lastchangelog FROM [format_table_name("player")] WHERE ckey='[C.ckey]'")
+	var/DBQuery/query = GLOB.dbcon.NewQuery("SELECT antag_raffle_tickets, exp, fuid, lastchangelog FROM [format_table_name("player")] WHERE ckey='[C.ckey]'")
 	if(!query.Execute())
 		var/err = query.ErrorMsg()
 		log_game("load_pseudo_preferences: SQL ERROR player: [err]")
@@ -383,11 +383,13 @@ GLOBAL_LIST_INIT(saved_preferences, list(
 
 	// load the database values into the preferences datum
 	while(query.NextRow())
-		exp = query.item[1]
-		fuid = text2num(query.item[2])
-		lastchangelog = query.item[3]
+		antag_raffle_tickets = text2num(query.item[1])
+		exp = query.item[2]
+		fuid = text2num(query.item[3])
+		lastchangelog = query.item[4]
 
 	// sanitize any wierdness that came out of the database
+	antag_raffle_tickets = sanitize_integer(antag_raffle_tickets, 0, 1000000, initial(antag_raffle_tickets))
 	exp	= sanitize_text(exp, initial(exp))
 	fuid = sanitize_integer(fuid, 0, 10000000, initial(fuid))
 	lastchangelog = sanitize_text(lastchangelog, initial(lastchangelog))

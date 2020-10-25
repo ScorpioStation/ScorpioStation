@@ -216,6 +216,7 @@ CREATE TABLE `player` (
   `computerid` varchar(32) NOT NULL,
   `lastadminrank` varchar(32) NOT NULL DEFAULT 'Player',
   `lastchangelog` varchar(32) NOT NULL DEFAULT '0',
+  `antag_raffle_tickets` int NOT NULL DEFAULT 0,
   `exp` mediumtext,
   `fuid` bigint(20) NULL DEFAULT NULL,
   `fupdate` smallint(4) NULL DEFAULT '0',
