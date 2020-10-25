@@ -67,8 +67,9 @@ GLOBAL_DATUM_INIT(event_announcement, /datum/announcement/priority/command/event
 
 	var/formatted_message = Format_Message(message, message_title, message_announcer, from)
 	var/garbled_formatted_message = Format_Message(message_language.scramble(message), message_language.scramble(message_title), message_language.scramble(message_announcer), message_language.scramble(from))
+	var/discord_message = Format_Discord_Message(message, title, announcer, from)
 
-	Message(formatted_message, garbled_formatted_message, receivers, garbled_receivers)
+	Message(formatted_message, garbled_formatted_message, discord_message, receivers, garbled_receivers)
 
 	if(do_newscast)
 		NewsCast(message, message_title)
@@ -100,11 +101,25 @@ GLOBAL_DATUM_INIT(event_announcement, /datum/announcement/priority/command/event
 
 	return list(receivers, garbled_receivers)
 
-/datum/announcement/proc/Message(message, garbled_message, receivers, garbled_receivers)
+/datum/announcement/proc/Message(message, garbled_message, discord_message, receivers, garbled_receivers)
 	for(var/mob/M in receivers)
 		to_chat(M, message)
 	for(var/mob/M in garbled_receivers)
 		to_chat(M, garbled_message)
+	var/datum/discord/webhook/sa = new(config.discord_webhook_announcement_url)
+	sa.post_message(discord_message)
+
+/datum/announcement/proc/Format_Discord_Message(message, message_title, message_announcer, from)
+	var/formatted_message = ""
+	if(from)
+		formatted_message += "__**[from]**__\n"
+	if(message_title)
+		formatted_message += "**[message_title]**\n"
+	if(message)
+		formatted_message += "[message]\n"
+	if(message_announcer)
+		formatted_message += "-[message_announcer]\n"
+	return formatted_message
 
 /datum/announcement/proc/Format_Message(message, message_title, message_announcer, from)
 	var/formatted_message

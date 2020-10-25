@@ -108,6 +108,7 @@
 	var/discordforumurl = "http://example.org"
 	var/discord_webhook_arrivals_url = null
 	var/discord_webhook_cryo_url = null
+	var/discord_webhook_announcement_url = null
 
 	var/overflow_server_url
 	var/forbid_singulo_possession = 0
@@ -515,6 +516,9 @@
 
 				if("census_bot_minimum")
 					config.census_bot_minimum = text2num(value)
+
+				if("discord_webhook_announcement_url")
+					config.discord_webhook_announcement_url = value
 
 				if("discord_webhook_arrivals_url")
 					config.discord_webhook_arrivals_url = value

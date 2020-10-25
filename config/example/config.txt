@@ -254,6 +254,9 @@ CHECK_RANDOMIZER
 ## Discord address (forum-based invite)
 # DISCORDFORUMURL http://example.org
 
+## Discord Webhook for Station Announcements
+# DISCORD_WEBHOOK_ANNOUNCEMENT_URL https://discord.com/api/webhooks/7444...
+
 ## Discord Webhook for Arrivals notification
 # DISCORD_WEBHOOK_ARRIVALS_URL https://discord.com/api/webhooks/7444...
 
