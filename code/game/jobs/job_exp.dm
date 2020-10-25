@@ -231,6 +231,7 @@ GLOBAL_LIST_INIT(role_playtime_requirements, list(
 		if(L.inactivity >= (10 MINUTES))
 			continue
 		L.update_exp_client(mins, ann)
+		L.update_antag_raffle_client(mins, ann, L.inactivity)
 		CHECK_TICK
 
 /client/proc/update_exp_client(minutes = 0, announce_changes = 0)
@@ -299,4 +300,36 @@ GLOBAL_LIST_INIT(role_playtime_requirements, list(
 		var/err = update_query_history.ErrorMsg()
 		log_game("SQL ERROR during exp_update_client write 2. Error : \[[err]\]\n")
 		message_admins("SQL ERROR during exp_update_client write 2. Error : \[[err]\]\n")
+		return
+
+/client/proc/update_antag_raffle_client(minutes = 0, announce_changes = 0, inactive_for = 0)
+	// TODO: borrowed from above; this probably isn't the best way to determine if someone is actively involved in the round
+	var/myrole = null
+	if(mob.mind)
+		if(mob.mind.playtime_role)
+			myrole = mob.mind.playtime_role
+		else if(mob.mind.assigned_role)
+			myrole = mob.mind.assigned_role
+	// determine how many raffle tickets to award
+	var/added_raffle_tickets = 0
+	if(mob.stat == CONSCIOUS && myrole)
+		added_raffle_tickets += minutes
+	else
+		added_raffle_tickets += 1
+	// reduce the award by inactivity levels
+	added_raffle_tickets -= round(inactive_for/(1 MINUTES), 1)
+	added_raffle_tickets = max(0, added_raffle_tickets)
+	// bail if we aren't awarding any tickets
+	if(!added_raffle_tickets)
+		return
+	// if we're announcing changes, tell them how many tickets they got
+	if(announce_changes)
+		to_chat(mob, "<span class='notice'>You got [added_raffle_tickets] antag raffle tickets!")
+	// award the tickets and update the database
+	prefs.antag_raffle_tickets += added_raffle_tickets
+	var/DBQuery/query1 = GLOB.dbcon.NewQuery("UPDATE [format_table_name("player")] SET antag_raffle_tickets='[prefs.antag_raffle_tickets]', lastseen=Now() WHERE ckey='[ckey]'")
+	if(!query1.Execute())
+		var/err = query1.ErrorMsg()
+		log_game("update_antag_raffle_client: SQL ERROR player UPDATE: [err]")
+		message_admins("update_antag_raffle_client: SQL ERROR player UPDATE: [err]")
 		return

@@ -1,7 +1,7 @@
 SUBSYSTEM_DEF(jobs)
 	name = "Jobs"
 	init_order = INIT_ORDER_JOBS // 12
-	wait = 3000 // 5 minutes (Deciseconds)
+	wait = 5 MINUTES
 	runlevels = RUNLEVEL_GAME
 	offline_implications = "Job playtime hours will no longer be logged. No immediate action is needed."
 

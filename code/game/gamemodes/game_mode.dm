@@ -523,3 +523,42 @@
 	var/datum/atom_hud/antag/antaghud = GLOB.huds[ANTAG_HUD_EVENTMISC]
 	antaghud.leave_hud(mob_mind.current)
 	set_antag_hud(mob_mind.current, null)
+
+/**
+  * Picks a random mind weighted according to its antag raffle tickets.
+  *
+  * After get_players_for_role has screened the connected players to determine
+  * eligiible candidates, it will return a list of minds. That list is passed
+  * in to this proc in order to pull one at random, but weighted by the number
+  * of antag raffle tickets the player has earned over time. The more tickets
+  * they've earned, the higher chance they have of being selected.
+  *
+  * Arguments:
+  * * minds - /datum/mind list of eligible candidates
+  *
+  * Returns:
+  * * /datum/mind randomly chosen from the list
+  */
+/datum/game_mode/proc/pickraffle(list/minds)
+	var/list/choices = list()
+	for(var/datum/mind/M in minds)
+		if((M.current) && (M.current.client) && (M.current.client.prefs))
+			choices[M] = M.current.client.prefs.antag_raffle_tickets
+	return pickweight(choices)
+
+/**
+  * Reset a raffle winner's antag raffle tickets to zero.
+  *
+  * After being selected for an antagonist role, the player's number of
+  * antag raffle tickets is reset to 0. They'll need to play some more in
+  * order to earn more tickets. Meanwhile, those who were not chosen for an
+  * antagonist role will have a better chance of being chosen next time.
+  *
+  * Arguments:
+  * * minds - /datum/mind list of those selected as antagonists
+  */
+/datum/game_mode/proc/update_raffle_winners(list/minds)
+	for(var/datum/mind/M in minds)
+		if((M.current) && (M.current.client) && (M.current.client.prefs))
+			M.current.client.prefs.antag_raffle_tickets = 0
+	return TRUE

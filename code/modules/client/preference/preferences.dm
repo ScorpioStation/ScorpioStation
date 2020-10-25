@@ -95,6 +95,7 @@ GLOBAL_LIST_INIT(company_relations, list("Loyal", "Supportive", "Neutral", "Skep
 	var/clientfps = 0
 	var/atklog = ATKLOG_ALL
 	var/fuid							// forum userid
+	var/antag_raffle_tickets = 1        // raffle tickets for antagonist role drawing
 
 	//character preferences
 	var/real_name						//our character's name
