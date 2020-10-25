@@ -67,7 +67,7 @@ GLOBAL_DATUM_INIT(event_announcement, /datum/announcement/priority/command/event
 
 	var/formatted_message = Format_Message(message, message_title, message_announcer, from)
 	var/garbled_formatted_message = Format_Message(message_language.scramble(message), message_language.scramble(message_title), message_language.scramble(message_announcer), message_language.scramble(from))
-	var/discord_message = Format_Discord_Message(message, title, announcer, from)
+	var/discord_message = Format_Discord_Message(message, message_title, message_announcer, from)
 
 	Message(formatted_message, garbled_formatted_message, discord_message, receivers, garbled_receivers)
 
