@@ -17,6 +17,7 @@
 
 // from: code/game/jobs/job/supervisor.dm
 /datum/job/nanotrasenrep
+    hidden_from_job_prefs = TRUE // NOPE ... this is a shim, not a real job
 
 // from: code/game/objects/items/weapons/AI_modules.dm
 /obj/item/aiModule/nanotrasen
