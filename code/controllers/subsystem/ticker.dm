@@ -119,36 +119,38 @@ SUBSYSTEM_DEF(ticker)
 					world.Reboot("Round ended.", "end_proper", "proper completion")
 
 /datum/controller/subsystem/ticker/proc/setup()
+	// TODO: refactor this out of SSticket.setup() and into the cult game mode
 	cultdat = setupcult()
-	//Create and announce mode
+
+	// hide the announcement, if we're in secret mode
 	if(GLOB.master_mode=="secret")
 		hide_mode = 1
+
+	// if we're in random or secret mode, choose a random runnable mode
 	var/list/datum/game_mode/runnable_modes
 	if((GLOB.master_mode=="random") || (GLOB.master_mode=="secret"))
+		runnable_modes = config.get_runnable_modes()
+		if(runnable_modes.len == 0)
+			current_state = GAME_STATE_PREGAME
+			Master.SetRunLevel(RUNLEVEL_LOBBY)
+			to_chat(world, "<B>Unable to choose playable game mode.</B> Reverting to pre-game lobby.")
+			return FALSE
 		if(GLOB.secret_force_mode != "secret")
 			var/datum/game_mode/M = config.pick_mode(GLOB.secret_force_mode)
 			if(M.can_start())
 				mode = config.pick_mode(GLOB.secret_force_mode)
-				SSjobs.ResetOccupations()
 			else
-				message_admins("<B>Unable to start secret [mode.name].</B> Not enough players, [mode.required_players] players needed. Reverting to normal secret rotation.")
-		runnable_modes = config.get_runnable_modes()
-		var/datum/game_mode/M
-		for(M in runnable_modes)
-			if(!M.can_start())
-				runnable_modes -= M
-		if(runnable_modes.len==0)
-			current_state = GAME_STATE_PREGAME
-			Master.SetRunLevel(RUNLEVEL_LOBBY)
-			to_chat(world, "<B>Unable to start. </B> Not enough players. Reverting to pre-game lobby.")
-			return FALSE
-		M = pickweight(runnable_modes)
-		mode = M
+				message_admins("<B>Unable to run [M.name].</B> Will choose another random mode.")
+		SSjobs.ResetOccupations()
+		if(!mode)
+			mode = pickweight(runnable_modes)
 		if(mode)
 			var/mtype = mode.type
 			mode = new mtype
 	else
 		mode = config.pick_mode(GLOB.master_mode)
+
+	// if we can't start the mode we chose, revert back to the lobby
 	if(!mode.can_start())
 		to_chat(world, "<B>Unable to start [mode.name].</B> Not enough players, [mode.required_players] players needed. Reverting to pre-game lobby.")
 		mode = null
