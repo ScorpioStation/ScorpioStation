@@ -11,7 +11,7 @@ SUBSYSTEM_DEF(shuttle)
 	var/list/stationary = list()
 	var/list/transit = list()
 
-		//emergency shuttle stuff
+	// emergency shuttle stuff
 	var/obj/docking_port/mobile/emergency/emergency
 	var/obj/docking_port/mobile/emergency/backup/backup_shuttle
 	var/emergencyCallTime = SHUTTLE_CALLTIME	//time taken for emergency shuttle to reach the station when called (in deciseconds)
@@ -143,14 +143,7 @@ SUBSYSTEM_DEF(shuttle)
 
 	var/area/signal_origin = get_area(user)
 	var/emergency_reason = "\nNature of emergency:\n\n[call_reason]"
-	if(seclevel2num(get_security_level()) >= SEC_LEVEL_RED) // There is a serious threat we gotta move no time to give them five minutes.
-		var/extra_minutes = 0
-		var/priority_time = emergencyCallTime * 0.5
-		if(world.time - emergency_sec_level_time < priority_time)
-			extra_minutes = 5
-		emergency.request(null, 0.5 + extra_minutes / (emergencyCallTime / 600), signal_origin, html_decode(emergency_reason), 1)
-	else
-		emergency.request(null, 1, signal_origin, html_decode(emergency_reason), 0)
+	emergency.request(null, 1, signal_origin, html_decode(emergency_reason), 0)
 
 	log_game("[key_name(user)] has called the shuttle.")
 	message_admins("[key_name_admin(user)] has called the shuttle.")

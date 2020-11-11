@@ -12,12 +12,13 @@
 	config_tag = "traitor"
 	restricted_jobs = list("Cyborg")//They are part of the AI if he is traitor so are they, they use to get double chances
 	protected_jobs = list("Security Officer", "Warden", "Detective", "Head of Security", "Captain", "Blueshield", "Ark Soft Representative", "Security Pod Pilot", "Magistrate", "Internal Affairs Agent", "Brig Physician", "Ark Soft Navy Officer", "Special Operations Officer", "Syndicate Officer")
-	required_players = 20
+	required_players = 5
 	required_enemies = 1
 	recommended_enemies = 4
 
 	var/list/datum/mind/pre_traitors = list()
 	var/traitors_possible = 4 //hard limit on traitors if scaling is turned off
+	var/const/traitor_scaling_coeff = 5.0 //how much does the amount of players get divided by to determine traitors
 	var/antag_datum = /datum/antagonist/traitor //what type of antag to create
 
 /datum/game_mode/traitor/announce()
@@ -39,15 +40,9 @@
 	var/num_traitors = 1
 
 	if(config.traitor_scaling)
-		num_traitors = max(1, round(num_players()/required_players))
+		num_traitors = max(1, round((num_players())/(traitor_scaling_coeff)))
 	else
 		num_traitors = max(1, min(num_players(), traitors_possible))
-
-	if(changelings)
-		num_traitors = min(1, num_traitors - 1)
-
-	if(vampires)
-		num_traitors = min(1, num_traitors - 1)
 
 	for(var/j = 0, j < num_traitors, j++)
 		if(!possible_traitors.len)
@@ -107,10 +102,11 @@
 			if(traitor.objectives && traitor.objectives.len)//If the traitor had no objectives, don't need to process this.
 				var/count = 1
 				for(var/datum/objective/objective in traitor.objectives)
-					text += "<br><B>Objective #[count]</B>: [objective.explanation_text]"
 					if(objective.check_completion())
+						text += "<br><B>Objective #[count]</B>: [objective.explanation_text] <font color='green'><B>Success!</B></font>"
 						feedback_add_details("traitor_objective","[objective.type]|SUCCESS")
 					else
+						text += "<br><B>Objective #[count]</B>: [objective.explanation_text] <font color='red'>Fail.</font>"
 						feedback_add_details("traitor_objective","[objective.type]|FAIL")
 						traitorwin = 0
 					count++

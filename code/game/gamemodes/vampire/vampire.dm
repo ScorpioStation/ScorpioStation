@@ -11,7 +11,7 @@
 	restricted_jobs = list("AI", "Cyborg")
 	protected_jobs = list("Security Officer", "Warden", "Detective", "Head of Security", "Captain", "Blueshield", "Ark Soft Representative", "Security Pod Pilot", "Magistrate", "Chaplain", "Brig Physician", "Internal Affairs Agent", "Ark Soft Navy Officer", "Special Operations Officer", "Syndicate Officer")
 	protected_species = list("Machine")
-	required_players = 25
+	required_players = 10
 	required_enemies = 1
 	recommended_enemies = 4
 
@@ -45,7 +45,7 @@
 
 	var/list/datum/mind/possible_vampires = get_players_for_role(ROLE_VAMPIRE)
 
-	vampire_amount = round(num_players() / required_players)
+	vampire_amount = 1 + round(num_players() / 10)
 
 	if(possible_vampires.len>0)
 		for(var/i = 0, i < vampire_amount, i++)
@@ -93,18 +93,26 @@
 			if(vampire.objectives.len)//If the traitor had no objectives, don't need to process this.
 				var/count = 1
 				for(var/datum/objective/objective in vampire.objectives)
-					text += "<br><B>Objective #[count]</B>: [objective.explanation_text]"
 					if(objective.check_completion())
+						text += "<br><B>Objective #[count]</B>: [objective.explanation_text] <font color='green'><B>Success!</B></font>"
 						feedback_add_details("traitor_objective","[objective.type]|SUCCESS")
 					else
+						text += "<br><B>Objective #[count]</B>: [objective.explanation_text] <font color='red'>Fail.</font>"
 						feedback_add_details("traitor_objective","[objective.type]|FAIL")
 						traitorwin = 0
 					count++
 
+			var/special_role_text
+			if(vampire.special_role)
+				special_role_text = lowertext(vampire.special_role)
+			else
+				special_role_text = "antagonist"
 
 			if(traitorwin)
+				text += "<br><font color='green'><B>The [special_role_text] was successful!</B></font>"
 				feedback_add_details("traitor_success","SUCCESS")
 			else
+				text += "<br><font color='red'><B>The [special_role_text] has failed!</B></font>"
 				feedback_add_details("traitor_success","FAIL")
 		to_chat(world, text)
 	return 1

@@ -9,8 +9,8 @@
 /datum/game_mode/nuclear
 	name = "nuclear emergency"
 	config_tag = "nuclear"
-	required_players = 40
-	required_enemies = 3
+	required_players = 30	// 30 players - 5 players to be the nuke ops = 25 players remaining
+	required_enemies = 5
 	recommended_enemies = 5
 
 	var/const/agents_possible = 5 //If we ever need more syndicate agents.
@@ -35,10 +35,14 @@
 	if(possible_syndicates.len < 1)
 		return 0
 
-	agent_number = min(required_enemies + round((num_players() - required_players) / 20), recommended_enemies)
+	if(LAZYLEN(possible_syndicates) > agents_possible)
+		agent_number = agents_possible
+	else
+		agent_number = possible_syndicates.len
 
-	if(length(possible_syndicates) < agent_number)
-		agent_number = length(possible_syndicates)
+	var/n_players = num_players()
+	if(agent_number > n_players)
+		agent_number = n_players/2
 
 	while(agent_number > 0)
 		var/datum/mind/new_syndicate = pick(possible_syndicates)

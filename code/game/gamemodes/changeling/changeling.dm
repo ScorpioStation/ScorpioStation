@@ -13,7 +13,7 @@ GLOBAL_LIST_INIT(possible_changeling_IDs, list("Alpha","Beta","Gamma","Delta","E
 	restricted_jobs = list("AI", "Cyborg")
 	protected_jobs = list("Security Officer", "Warden", "Detective", "Head of Security", "Captain", "Blueshield", "Ark Soft Representative", "Security Pod Pilot", "Magistrate", "Brig Physician", "Internal Affairs Agent", "Ark Soft Navy Officer", "Special Operations Officer", "Syndicate Officer")
 	protected_species = list("Machine")
-	required_players = 25
+	required_players = 10
 	required_enemies = 1
 	recommended_enemies = 4
 
@@ -46,7 +46,7 @@ GLOBAL_LIST_INIT(possible_changeling_IDs, list("Alpha","Beta","Gamma","Delta","E
 
 	var/list/datum/mind/possible_changelings = get_players_for_role(ROLE_CHANGELING)
 
-	changeling_amount = round(num_players() / required_players)
+	changeling_amount = 1 + round(num_players() / 10)
 
 	if(possible_changelings.len>0)
 		for(var/i = 0, i < changeling_amount, i++)
@@ -202,17 +202,20 @@ GLOBAL_LIST_INIT(possible_changeling_IDs, list("Alpha","Beta","Gamma","Delta","E
 			if(changeling.objectives.len)
 				var/count = 1
 				for(var/datum/objective/objective in changeling.objectives)
-					text += "<br><B>Objective #[count]</B>: [objective.explanation_text]"
 					if(objective.check_completion())
+						text += "<br><B>Objective #[count]</B>: [objective.explanation_text] <font color='green'><B>Success!</B></font>"
 						feedback_add_details("changeling_objective","[objective.type]|SUCCESS")
 					else
+						text += "<br><B>Objective #[count]</B>: [objective.explanation_text] <font color='red'>Fail.</font>"
 						feedback_add_details("changeling_objective","[objective.type]|FAIL")
 						changelingwin = 0
 					count++
 
 			if(changelingwin)
+				text += "<br><font color='green'><B>The changeling was successful!</B></font>"
 				feedback_add_details("changeling_success","SUCCESS")
 			else
+				text += "<br><font color='red'><B>The changeling has failed.</B></font>"
 				feedback_add_details("changeling_success","FAIL")
 
 		to_chat(world, text)
