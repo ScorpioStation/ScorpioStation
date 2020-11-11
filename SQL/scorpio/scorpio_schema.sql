@@ -20,29 +20,62 @@ DROP TABLE IF EXISTS `characters`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `characters` (
-  `id` int NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `ckey` varchar(32) NOT NULL,
-  `slot` int NOT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `index_characters_ckey` (`ckey`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Table structure for table `character_attributes`
---
-
-DROP TABLE IF EXISTS `character_attributes`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `character_attributes` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `character_id` int NOT NULL,
-  `attr_key` varchar(64) NOT NULL,
-  `attr_val` mediumtext NOT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `index_character_attributes_character_id` (`character_id`),
-  FOREIGN KEY (`character_id`) REFERENCES `characters`(`id`)
+  `slot` int(2) NOT NULL,
+  `OOC_Notes` mediumtext NOT NULL,
+  `real_name` varchar(45) NOT NULL,
+  `name_is_always_random` tinyint(1) NOT NULL,
+  `gender` varchar(11) NOT NULL,
+  `age` smallint(4) NOT NULL,
+  `species` varchar(45) NOT NULL,
+  `language` varchar(45) NOT NULL,
+  `hair_colour` varchar(7) NOT NULL DEFAULT '#000000',
+  `secondary_hair_colour` varchar(7) NOT NULL DEFAULT '#000000',
+  `facial_hair_colour` varchar(7) NOT NULL DEFAULT '#000000',
+  `secondary_facial_hair_colour` varchar(7) NOT NULL DEFAULT '#000000',
+  `skin_tone` smallint(4) NOT NULL,
+  `skin_colour` varchar(7) NOT NULL DEFAULT '#000000',
+  `marking_colours` varchar(255) NOT NULL DEFAULT 'head=%23000000&body=%23000000&tail=%23000000',
+  `head_accessory_colour` varchar(7) NOT NULL DEFAULT '#000000',
+  `hair_style_name` varchar(45) NOT NULL,
+  `facial_style_name` varchar(45) NOT NULL,
+  `marking_styles` varchar(255) NOT NULL DEFAULT 'head=None&body=None&tail=None',
+  `head_accessory_style_name` varchar(45) NOT NULL,
+  `alt_head_name` varchar(45) NOT NULL,
+  `eye_colour` varchar(7) NOT NULL DEFAULT '#000000',
+  `underwear` mediumtext NOT NULL,
+  `undershirt` mediumtext NOT NULL,
+  `backbag` mediumtext NOT NULL,
+  `b_type` varchar(45) NOT NULL,
+  `alternate_option` smallint(4) NOT NULL,
+  `job_support_high` mediumint(8) NOT NULL,
+  `job_support_med` mediumint(8) NOT NULL,
+  `job_support_low` mediumint(8) NOT NULL,
+  `job_medsci_high` mediumint(8) NOT NULL,
+  `job_medsci_med` mediumint(8) NOT NULL,
+  `job_medsci_low` mediumint(8) NOT NULL,
+  `job_engsec_high` mediumint(8) NOT NULL,
+  `job_engsec_med` mediumint(8) NOT NULL,
+  `job_engsec_low` mediumint(8) NOT NULL,
+  `job_karma_high` mediumint(8) NOT NULL,
+  `job_karma_med` mediumint(8) NOT NULL,
+  `job_karma_low` mediumint(8) NOT NULL,
+  `flavor_text` mediumtext NOT NULL,
+  `med_record` mediumtext NOT NULL,
+  `sec_record` mediumtext NOT NULL,
+  `gen_record` mediumtext NOT NULL,
+  `disabilities` mediumint(8) NOT NULL,
+  `player_alt_titles` mediumtext NOT NULL,
+  `organ_data` mediumtext NOT NULL,
+  `rlimb_data` mediumtext NOT NULL,
+  `ark_soft_relation` varchar(45) NOT NULL,
+  `speciesprefs` int(1) NOT NULL,
+  `socks` mediumtext NOT NULL,
+  `body_accessory` mediumtext NOT NULL,
+  `gear` mediumtext NOT NULL,
+  `autohiss` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -208,38 +241,36 @@ DROP TABLE IF EXISTS `player`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `player` (
-  `id` int NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `ckey` varchar(32) NOT NULL,
   `firstseen` datetime NOT NULL,
   `lastseen` datetime NOT NULL,
   `ip` varchar(18) NOT NULL,
   `computerid` varchar(32) NOT NULL,
   `lastadminrank` varchar(32) NOT NULL DEFAULT 'Player',
+  `ooccolor` varchar(7) DEFAULT '#b82e00',
+  `UI_style` varchar(10) DEFAULT 'Midnight',
+  `UI_style_color` varchar(7) DEFAULT '#ffffff',
+  `UI_style_alpha` smallint(4) DEFAULT '255',
+  `be_role` mediumtext,
+  `default_slot` smallint(4) DEFAULT '1',
+  `toggles` int(8) DEFAULT '383',
+  `toggles_2` INT NULL DEFAULT '0',
+  `sound` mediumint(8) DEFAULT '31',
+  `volume` smallint(4) DEFAULT '100',
   `lastchangelog` varchar(32) NOT NULL DEFAULT '0',
   `antag_raffle_tickets` int NOT NULL DEFAULT 0,
   `exp` mediumtext,
+  `clientfps` smallint(4) DEFAULT '0',
+  `atklog` smallint(4) DEFAULT '0',
   `fuid` bigint(20) NULL DEFAULT NULL,
   `fupdate` smallint(4) NULL DEFAULT '0',
+  `parallax` tinyint(1) DEFAULT '8',
+  `max_chat_length` tinyint(1) DEFAULT '110',
+  `chat_on_map` tinyint(1) DEFAULT '1',
+  `see_chat_non_mob` tinyint(1) DEFAULT '1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `ckey` (`ckey`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Table structure for table `player_preferences`
---
-
-DROP TABLE IF EXISTS `player_preferences`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `player_preferences` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `player_id` int NOT NULL,
-  `pref_key` varchar(64) NOT NULL,
-  `pref_val` mediumtext NOT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `index_player_preferences_player_id` (`player_id`),
-  FOREIGN KEY (`player_id`) REFERENCES `player`(`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
