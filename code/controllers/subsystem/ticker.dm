@@ -119,7 +119,7 @@ SUBSYSTEM_DEF(ticker)
 					world.Reboot("Round ended.", "end_proper", "proper completion")
 
 /datum/controller/subsystem/ticker/proc/setup()
-	// TODO: refactor this out of SSticket.setup() and into the cult game mode
+	// TODO: refactor this out of SSticker.setup() and into the cult game mode
 	cultdat = setupcult()
 
 	// hide the announcement, if we're in secret mode
