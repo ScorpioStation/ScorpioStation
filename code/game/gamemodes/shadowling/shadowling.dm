@@ -111,6 +111,7 @@ Made by Xhuis
 
 
 /datum/game_mode/shadowling/post_setup()
+	update_raffle_winners(shadows)
 	for(var/datum/mind/shadow in shadows)
 		log_game("[key_name(shadow)] has been selected as a Shadowling.")
 		spawn(rand(10,100))

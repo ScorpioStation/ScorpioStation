@@ -107,6 +107,7 @@ GLOBAL_LIST_EMPTY(all_cults)
 
 
 /datum/game_mode/cult/post_setup()
+	update_raffle_winners(cult)
 	modePlayer += cult
 	acolytes_needed = acolytes_needed + round((num_players_started() / 10))
 

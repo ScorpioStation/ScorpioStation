@@ -59,6 +59,7 @@
 
 
 /datum/game_mode/traitor/post_setup()
+	update_raffle_winners(pre_traitors)
 	for(var/datum/mind/traitor in pre_traitors)
 		var/datum/antagonist/traitor/new_antag = new antag_datum()
 		addtimer(CALLBACK(traitor, /datum/mind.proc/add_antag_datum, new_antag), rand(10,100))

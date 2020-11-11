@@ -67,6 +67,7 @@
 		head_revolutionaries -= trotsky
 		update_rev_icons_removed(trotsky)
 
+	update_raffle_winners(head_revolutionaries)
 	for(var/datum/mind/rev_mind in head_revolutionaries)
 		log_game("[key_name(rev_mind)] has been selected as a head rev")
 		for(var/datum/mind/head_mind in heads)

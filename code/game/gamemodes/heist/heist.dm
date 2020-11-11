@@ -66,6 +66,7 @@ GLOBAL_LIST_EMPTY(cortical_stacks) // Stacks for 'leave nobody behind' objective
 	var/index = 1
 
 	//Spawn the vox!
+	update_raffle_winners(raiders)
 	for(var/datum/mind/raider in raiders)
 
 		if(index > GLOB.raider_spawn.len)

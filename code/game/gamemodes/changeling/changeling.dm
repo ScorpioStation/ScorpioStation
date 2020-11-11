@@ -63,6 +63,7 @@ GLOBAL_LIST_INIT(possible_changeling_IDs, list("Alpha","Beta","Gamma","Delta","E
 		return 0
 
 /datum/game_mode/changeling/post_setup()
+	update_raffle_winners(changelings)
 	for(var/datum/mind/changeling in changelings)
 		grant_changeling_powers(changeling.current)
 		forge_changeling_objectives(changeling)

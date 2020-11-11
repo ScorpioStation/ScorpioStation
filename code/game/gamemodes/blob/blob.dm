@@ -153,7 +153,7 @@ GLOBAL_LIST_EMPTY(blob_nodes)
 					core.overmind.mind.special_role = SPECIAL_ROLE_BLOB_OVERMIND
 
 /datum/game_mode/blob/post_setup()
-
+	update_raffle_winners(infected_crew)
 	for(var/datum/mind/blob in infected_crew)
 		greet_blob(blob)
 		update_blob_icons_added(blob)

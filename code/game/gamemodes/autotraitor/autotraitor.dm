@@ -52,7 +52,7 @@
 		if(!traitor || !istype(traitor))
 			pre_traitors.Remove(traitor)
 			continue
-		if(istype(traitor)) 
+		if(istype(traitor))
 			traitor.special_role = SPECIAL_ROLE_TRAITOR
 			traitor.restricted_roles = restricted_jobs
 
@@ -130,6 +130,8 @@
 
 				to_chat(newtraitor, "<span class='danger'>ATTENTION:</span> It is time to pay your debt to the Syndicate...")
 				newtraitor.mind.add_antag_datum(/datum/antagonist/traitor)
+				// update the raffle tickets of the new traitor
+				update_raffle_winners(list(newtraitormind))
 			//else
 				//message_admins("No new traitor being added.")
 		//else

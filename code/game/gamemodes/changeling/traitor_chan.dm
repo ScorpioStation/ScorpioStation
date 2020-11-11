@@ -34,6 +34,7 @@
 		return 0
 
 /datum/game_mode/traitor/changeling/post_setup()
+	update_raffle_winners(changelings)
 	for(var/datum/mind/changeling in changelings)
 		grant_changeling_powers(changeling.current)
 		changeling.special_role = SPECIAL_ROLE_CHANGELING
