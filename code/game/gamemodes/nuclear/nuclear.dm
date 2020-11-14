@@ -108,6 +108,7 @@
 	var/agent_number = 1
 	var/spawnpos = 1
 
+	update_raffle_winners(syndicates)
 	for(var/datum/mind/synd_mind in syndicates)
 		if(spawnpos > synd_spawn.len)
 			spawnpos = 2

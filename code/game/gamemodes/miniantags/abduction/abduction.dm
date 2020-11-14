@@ -91,8 +91,12 @@
 	return 1
 
 /datum/game_mode/abduction/post_setup()
+	var/list/datum/mind/antagonists = list()
 	for(var/team_number=1,team_number<=abductor_teams,team_number++)
 		post_setup_team(team_number)
+		antagonists += scientists[team_number]
+		antagonists += agents[team_number]
+	update_raffle_winners(antagonists)
 	return ..()
 
 //Used for create antag buttons

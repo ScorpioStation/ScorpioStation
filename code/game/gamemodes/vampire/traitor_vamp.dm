@@ -39,6 +39,7 @@
 		return 0
 
 /datum/game_mode/traitor/vampire/post_setup()
+	update_raffle_winners(vampires)
 	for(var/datum/mind/vampire in vampires)
 		grant_vampire_powers(vampire.current)
 		vampire.special_role = SPECIAL_ROLE_VAMPIRE

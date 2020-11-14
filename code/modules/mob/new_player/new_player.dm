@@ -73,8 +73,10 @@
 
 	var/list/antags = client.prefs.be_special
 	if(antags && antags.len)
-		if(!client.skip_antag) output += "<p><a href='byond://?src=[UID()];skip_antag=1'>Global Antag Candidacy</A>"
-		else	output += "<p><a href='byond://?src=[UID()];skip_antag=2'>Global Antag Candidacy</A>"
+		if(!client.skip_antag)
+			output += "<p><a href='byond://?src=[UID()];skip_antag=1'>Global Antag Candidacy</A>"
+		else
+			output += "<p><a href='byond://?src=[UID()];skip_antag=2'>Global Antag Candidacy</A>"
 		output += "<br /><small>You are <b>[client.skip_antag ? "ineligible" : "eligible"]</b> for all antag roles.</small></p>"
 
 	if(!SSticker || SSticker.current_state == GAME_STATE_STARTUP)
@@ -119,6 +121,8 @@
 
 	statpanel("Lobby")
 	if(client.statpanel=="Lobby" && SSticker)
+		if(SSticker.current_state == GAME_STATE_PREGAME)
+			stat("Antag Raffle:", get_antag_raffle_status())
 		if(SSticker.hide_mode)
 			stat("Game Mode:", "Secret")
 		else
@@ -639,3 +643,34 @@
 // No hearing announcements
 /mob/new_player/can_hear()
 	return 0
+
+/mob/new_player/proc/get_antag_raffle_status()
+	// determine how many antag raffle tickets we've got
+	var/my_points = client.prefs.antag_raffle_tickets
+
+	// determine how many antag raffle tickets are in the drawing pool
+	var/total_points = 0
+	for(var/mob/new_player/P in GLOB.player_list)
+		// note: our own points (P == src) also count in the total pool!
+		if(P.client && P.client.prefs)
+			// if the player hasn't disabled antags and is ready
+			if(!P.client.skip_antag && P.ready)
+				// add their points to the pool
+				total_points += P.client.prefs.antag_raffle_tickets
+
+	// if we don't have any jobs selected, show the stats but note 0% chance
+	if(!has_valid_preferences(quiet=TRUE))
+		return "[my_points] / [total_points] (0.00% - No Jobs Selected)"
+
+	// if we've disabled antags, show the stats but note 0% chance
+	if(client.skip_antag)
+		return "[my_points] / [total_points] (0.00% - Antag Roles Disabled)"
+
+	// if we're not ready, show the stats but note 0% chance
+	if(!ready)
+		return "[my_points] / [total_points] (0.00% - Not Ready)"
+
+	// otherwise, compute the actual chance and return that to the caller
+	total_points = max(1, total_points)
+	var/chance = round(100*(my_points/total_points), 0.01)
+	return "[my_points] / [total_points] ([chance]%)"

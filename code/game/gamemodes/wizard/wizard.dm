@@ -42,6 +42,7 @@
 	return 1
 
 /datum/game_mode/wizard/post_setup()
+	update_raffle_winners(wizards)
 	for(var/datum/mind/wizard in wizards)
 		log_game("[key_name(wizard)] has been selected as a Wizard")
 		forge_wizard_objectives(wizard)

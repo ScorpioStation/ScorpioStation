@@ -51,6 +51,7 @@
 
 
 /datum/game_mode/devil/post_setup()
+	update_raffle_winners(devils)
 	for(var/datum/mind/devil in devils)
 		spawn(rand(10, 100))
 			finalize_devil(devil, TRUE)

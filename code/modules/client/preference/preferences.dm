@@ -91,6 +91,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/clientfps = 0
 	var/atklog = ATKLOG_ALL
 	var/fuid							// forum userid
+	var/antag_raffle_tickets = 1        // raffle tickets for antagonist role drawing
 
 	//character preferences
 	var/real_name						//our character's name

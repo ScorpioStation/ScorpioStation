@@ -259,6 +259,7 @@ CREATE TABLE `player` (
   `sound` mediumint(8) DEFAULT '31',
   `volume` smallint(4) DEFAULT '100',
   `lastchangelog` varchar(32) NOT NULL DEFAULT '0',
+  `antag_raffle_tickets` int NOT NULL DEFAULT 0,
   `exp` mediumtext,
   `clientfps` smallint(4) DEFAULT '0',
   `atklog` smallint(4) DEFAULT '0',
