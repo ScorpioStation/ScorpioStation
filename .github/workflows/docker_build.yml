@@ -27,19 +27,19 @@ jobs:
         push: false
 
     - name: Switch to Cyberiad Map
-      run:
+      run: |
         cp paradise.dme.original paradise.dme
         sed -i -e "s/_maps\\\emerald.dm/_maps\\\cyberiad.dm/" paradise.dme
 
-    # - name: Build and Push Cyberiad
-    #   uses: docker/build-push-action@v2
-    #   with:
-    #     username: ${{ secrets.DOCKER_USERNAME }}
-    #     password: ${{ secrets.DOCKER_PASSWORD }}
-    #     repository: scorpiostation/scorpio
-    #     tags: ${{ env.GITHUB_SHA_SHORT }}-cyberiad
-    #     add_git_labels: true
-    #     push: false
+    - name: Build and Push Cyberiad
+      uses: docker/build-push-action@v2
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        repository: scorpiostation/scorpio
+        tags: ${{ env.GITHUB_SHA_SHORT }}-cyberiad
+        add_git_labels: true
+        push: false
 
     # - name: Switch to Delta Map
     #   run: copy paradise.dme.original paradise.dme
