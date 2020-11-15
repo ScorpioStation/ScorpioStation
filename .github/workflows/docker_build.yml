@@ -14,7 +14,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Cache BYOND Environment
-      run: copy paradise.dme paradise.dme.original
+      run: cp paradise.dme paradise.dme.original
 
     - name: Build and Push Emerald
       uses: docker/build-push-action@v2
@@ -26,44 +26,44 @@ jobs:
         add_git_labels: true
         push: false
 
-    - name: Switch to Cyberiad Map
-      run: copy paradise.dme.original paradise.dme
-      run: sed -i -e "s/_maps\\\emerald.dm/_maps\\\cyberiad.dm/" paradise.dme
-
-    - name: Build and Push Cyberiad
-      uses: docker/build-push-action@v2
-      with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: scorpiostation/scorpio
-        tags: ${{ env.GITHUB_SHA_SHORT }}-cyberiad
-        add_git_labels: true
-        push: false
-
-    - name: Switch to Delta Map
-      run: copy paradise.dme.original paradise.dme
-      run: sed -i -e "s/_maps\\\emerald.dm/_maps\\\delta.dm/" paradise.dme
-
-    - name: Build and Push Delta
-      uses: docker/build-push-action@v2
-      with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: scorpiostation/scorpio
-        tags: ${{ env.GITHUB_SHA_SHORT }}-delta
-        add_git_labels: true
-        push: false
-
-    - name: Switch to MetaStation Map
-      run: copy paradise.dme.original paradise.dme
-      run: sed -i -e "s/_maps\\\emerald.dm/_maps\\\metastation.dm/" paradise.dme
-
-    - name: Build and Push MetaStation
-      uses: docker/build-push-action@v2
-      with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: scorpiostation/scorpio
-        tags: ${{ env.GITHUB_SHA_SHORT }}-metastation
-        add_git_labels: true
-        push: false
+    # - name: Switch to Cyberiad Map
+    #   run: copy paradise.dme.original paradise.dme
+    #   run: sed -i -e "s/_maps\\\emerald.dm/_maps\\\cyberiad.dm/" paradise.dme
+    #
+    # - name: Build and Push Cyberiad
+    #   uses: docker/build-push-action@v2
+    #   with:
+    #     username: ${{ secrets.DOCKER_USERNAME }}
+    #     password: ${{ secrets.DOCKER_PASSWORD }}
+    #     repository: scorpiostation/scorpio
+    #     tags: ${{ env.GITHUB_SHA_SHORT }}-cyberiad
+    #     add_git_labels: true
+    #     push: false
+    #
+    # - name: Switch to Delta Map
+    #   run: copy paradise.dme.original paradise.dme
+    #   run: sed -i -e "s/_maps\\\emerald.dm/_maps\\\delta.dm/" paradise.dme
+    #
+    # - name: Build and Push Delta
+    #   uses: docker/build-push-action@v2
+    #   with:
+    #     username: ${{ secrets.DOCKER_USERNAME }}
+    #     password: ${{ secrets.DOCKER_PASSWORD }}
+    #     repository: scorpiostation/scorpio
+    #     tags: ${{ env.GITHUB_SHA_SHORT }}-delta
+    #     add_git_labels: true
+    #     push: false
+    #
+    # - name: Switch to MetaStation Map
+    #   run: copy paradise.dme.original paradise.dme
+    #   run: sed -i -e "s/_maps\\\emerald.dm/_maps\\\metastation.dm/" paradise.dme
+    #
+    # - name: Build and Push MetaStation
+    #   uses: docker/build-push-action@v2
+    #   with:
+    #     username: ${{ secrets.DOCKER_USERNAME }}
+    #     password: ${{ secrets.DOCKER_PASSWORD }}
+    #     repository: scorpiostation/scorpio
+    #     tags: ${{ env.GITHUB_SHA_SHORT }}-metastation
+    #     add_git_labels: true
+    #     push: false
