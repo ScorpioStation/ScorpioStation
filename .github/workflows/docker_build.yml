@@ -38,7 +38,7 @@ jobs:
           scorpiostation/scorpio:${{ env.GITHUB_SHA_SHORT }}
           scorpiostation/scorpio:${{ env.GITHUB_SHA_SHORT }}-emerald
           scorpiostation/scorpio:latest
-        build-args: NANOMAP_FILE="./_maps/map_files/emerald/emerald.dmm"
+        build-args: NANOMAP_FILE=./_maps/map_files/emerald/emerald.dmm
         push: false
 
     - name: Switch to Cyberiad Map
@@ -53,7 +53,7 @@ jobs:
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
         tags: scorpiostation/scorpio:${{ env.GITHUB_SHA_SHORT }}-cyberiad
-        build-args: NANOMAP_FILE="./_maps/map_files/cyberiad/cyberiad.dmm"
+        build-args: NANOMAP_FILE=_maps/map_files/cyberiad/cyberiad.dmm
         push: false
 
     - name: Switch to Delta Map
