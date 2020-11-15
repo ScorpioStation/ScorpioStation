@@ -1,7 +1,9 @@
-name: 'Build and Push to Docker'
+name: 'Push Docker Images'
 
 on:
-  pull_request:
+  push:
+    branches:
+      - master
 
 jobs:
   push_docker_images:
@@ -24,7 +26,7 @@ jobs:
           repository: scorpiostation/scorpio
           tags: ${{ env.GITHUB_SHA_SHORT }}, ${{ env.GITHUB_SHA_SHORT }}-emerald, latest
           add_git_labels: true
-          push: false
+          push: true
 
       - name: Switch to Cyberiad Map
         run: copy paradise.dme.original paradise.dme
@@ -38,7 +40,7 @@ jobs:
           repository: scorpiostation/scorpio
           tags: ${{ env.GITHUB_SHA_SHORT }}-cyberiad
           add_git_labels: true
-          push: false
+          push: true
 
       - name: Switch to Delta Map
         run: copy paradise.dme.original paradise.dme
@@ -52,7 +54,7 @@ jobs:
           repository: scorpiostation/scorpio
           tags: ${{ env.GITHUB_SHA_SHORT }}-delta
           add_git_labels: true
-          push: false
+          push: true
 
       - name: Switch to MetaStation Map
         run: copy paradise.dme.original paradise.dme
@@ -66,4 +68,4 @@ jobs:
           repository: scorpiostation/scorpio
           tags: ${{ env.GITHUB_SHA_SHORT }}-metastation
           add_git_labels: true
-          push: false
+          push: true
