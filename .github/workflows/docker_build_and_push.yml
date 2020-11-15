@@ -1,22 +1,72 @@
 name: 'Build and Push to Docker'
 
 on:
+  pull_request:
   push:
     branches:
       - master
 
 jobs:
-  build_and_push:
+  push_docker_images:
     runs-on: ubuntu-latest
     steps:
       - name: Compute Docker Tag
         run: echo "GITHUB_SHA_SHORT=$(echo $GITHUB_SHA | cut -c 1-12)" >> $GITHUB_ENV
-      - uses: actions/checkout@v2
-      - uses: docker/build-push-action@v1.1.0
+
+      - name: Checkout Project
+        uses: actions/checkout@v2.3.4
+
+      - name: Cache BYOND Environment
+        run: copy paradise.dme paradise.dme.original
+
+      - name: Build and Push Emerald
+        uses: docker/build-push-action@v2.1.0
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: scorpiostation/scorpio
-          tags: ${{ env.GITHUB_SHA_SHORT }}, latest
+          tags: ${{ env.GITHUB_SHA_SHORT }}, ${{ env.GITHUB_SHA_SHORT }}-emerald, latest
           add_git_labels: true
-          push: true
+          push: false
+
+      - name: Switch to Cyberiad Map
+        run: copy paradise.dme.original paradise.dme
+        run: sed -i -e "s/_maps\\\emerald.dm/_maps\\\cyberiad.dm/" paradise.dme
+
+      - name: Build and Push Cyberiad
+        uses: docker/build-push-action@v2.1.0
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: scorpiostation/scorpio
+          tags: ${{ env.GITHUB_SHA_SHORT }}-cyberiad
+          add_git_labels: true
+          push: false
+
+      - name: Switch to Delta Map
+        run: copy paradise.dme.original paradise.dme
+        run: sed -i -e "s/_maps\\\emerald.dm/_maps\\\delta.dm/" paradise.dme
+
+      - name: Build and Push Delta
+        uses: docker/build-push-action@v2.1.0
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: scorpiostation/scorpio
+          tags: ${{ env.GITHUB_SHA_SHORT }}-delta
+          add_git_labels: true
+          push: false
+
+      - name: Switch to MetaStation Map
+        run: copy paradise.dme.original paradise.dme
+        run: sed -i -e "s/_maps\\\emerald.dm/_maps\\\metastation.dm/" paradise.dme
+
+      - name: Build and Push MetaStation
+        uses: docker/build-push-action@v2.1.0
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: scorpiostation/scorpio
+          tags: ${{ env.GITHUB_SHA_SHORT }}-metastation
+          add_git_labels: true
+          push: false
