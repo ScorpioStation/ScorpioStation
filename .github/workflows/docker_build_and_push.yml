@@ -2,9 +2,6 @@ name: 'Build and Push to Docker'
 
 on:
   pull_request:
-  push:
-    branches:
-      - master
 
 jobs:
   push_docker_images:
