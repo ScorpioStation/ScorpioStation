@@ -28,7 +28,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-buildx-
 
-    - name: Build and Push Emerald
+    - name: Build Emerald
       uses: docker/build-push-action@v2
       with:
         builder: ${{ steps.buildx.outputs.name }}
@@ -45,8 +45,9 @@ jobs:
       run: |
         cp paradise.dme.original paradise.dme
         sed -i -e "s/_maps\\\emerald.dm/_maps\\\cyberiad.dm/" paradise.dme
+        head -15 paradise.dme | tail -3
 
-    - name: Build and Push Cyberiad
+    - name: Build Cyberiad
       uses: docker/build-push-action@v2
       with:
         builder: ${{ steps.buildx.outputs.name }}
@@ -64,7 +65,7 @@ jobs:
         cp paradise.dme.original paradise.dme
         sed -i -e "s/_maps\\\emerald.dm/_maps\\\delta.dm/" paradise.dme
 
-    - name: Build and Push Delta
+    - name: Build Delta
       uses: docker/build-push-action@v2
       with:
         builder: ${{ steps.buildx.outputs.name }}
@@ -82,7 +83,7 @@ jobs:
         cp paradise.dme.original paradise.dme
         sed -i -e "s/_maps\\\emerald.dm/_maps\\\metastation.dm/" paradise.dme
 
-    - name: Build and Push MetaStation
+    - name: Build MetaStation
       uses: docker/build-push-action@v2
       with:
         builder: ${{ steps.buildx.outputs.name }}
