@@ -12,10 +12,7 @@ ENV PATH="/byond/bin:${PATH}"
 # Build paradise.dme -> paradise.dmb, paradise.rsc
 #
 COPY . /scorpio
-COPY --from=scorpiostation/scorpio:latest /scorpio/icons/_nanomaps/Cyberiad_nanomap_z1.png /scorpio/icons/_nanomaps/Cyberiad_nanomap_z1.png
-COPY --from=scorpiostation/scorpio:latest /scorpio/icons/_nanomaps/Delta_nanomap_z1.png /scorpio/icons/_nanomaps/Delta_nanomap_z1.png
 COPY --from=scorpiostation/scorpio:latest /scorpio/icons/_nanomaps/Emerald_nanomap_z1.png /scorpio/icons/_nanomaps/Emerald_nanomap_z1.png
-COPY --from=scorpiostation/scorpio:latest /scorpio/icons/_nanomaps/MetaStation_nanomap_z1.png /scorpio/icons/_nanomaps/MetaStation_nanomap_z1.png
 COPY --from=scorpiostation/scorpio:latest /scorpio/tgui/packages/tgui/public /scorpio/tgui/packages/tgui/public
 WORKDIR /scorpio
 RUN DreamMaker paradise.dme
@@ -46,10 +43,7 @@ COPY --chown=ss13:ss13 --from=byond_build /scorpio/paradise.dmb /scorpio/paradis
 COPY --chown=ss13:ss13 --from=byond_build /scorpio/paradise.rsc /scorpio/paradise.rsc
 COPY --chown=ss13:ss13 --from=scorpiostation/scorpio:latest /scorpio/librust_g.so /scorpio/librust_g.so
 COPY --chown=ss13:ss13 --from=scorpiostation/scorpio:latest /scorpio/libmariadb.so /scorpio/libmariadb.so
-COPY --chown=ss13:ss13 --from=scorpiostation/scorpio:latest /scorpio/icons/_nanomaps/Cyberiad_nanomap_z1.png /scorpio/icons/_nanomaps/Cyberiad_nanomap_z1.png
-COPY --chown=ss13:ss13 --from=scorpiostation/scorpio:latest /scorpio/icons/_nanomaps/Delta_nanomap_z1.png /scorpio/icons/_nanomaps/Delta_nanomap_z1.png
 COPY --chown=ss13:ss13 --from=scorpiostation/scorpio:latest /scorpio/icons/_nanomaps/Emerald_nanomap_z1.png /scorpio/icons/_nanomaps/Emerald_nanomap_z1.png
-COPY --chown=ss13:ss13 --from=scorpiostation/scorpio:latest /scorpio/icons/_nanomaps/MetaStation_nanomap_z1.png /scorpio/icons/_nanomaps/MetaStation_nanomap_z1.png
 COPY --chown=ss13:ss13 --from=scorpiostation/scorpio:latest /scorpio/tgui/packages/tgui/public /scorpio/tgui/packages/tgui/public
 
 #
