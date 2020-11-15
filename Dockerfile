@@ -43,11 +43,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY . /scorpio
 WORKDIR /scorpio
 ARG BYOND_MAP_FILE
-ARG MINIMAP_SRC_FILE
 RUN /spacemandmm/target/release/dmm-tools minimap \
     --disable all \
     --enable hide-space,hide-areas,hide-invisible,random,pretty,icon-smoothing \
     ${BYOND_MAP_FILE}
+ARG MINIMAP_SRC_FILE
 RUN convert ${MINIMAP_SRC_FILE} -resize 2040x2040 ${MINIMAP_SRC_FILE}
 RUN optipng -o2 ${MINIMAP_SRC_FILE}
 
