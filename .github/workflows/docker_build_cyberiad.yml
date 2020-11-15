@@ -13,7 +13,7 @@ jobs:
     - name: Checkout Project
       uses: actions/checkout@v2
 
-    - name: Prepare Map: Cyberiad
+    - name: "Prepare Map: Cyberiad"
       run: |
         rm icons/_nanomaps/*
         cp tools/scorpio/build_docker_images/nanomap_cyberiad.dm code/modules/client/asset_cache_nanomap.dm

@@ -13,7 +13,7 @@ jobs:
     - name: Checkout Project
       uses: actions/checkout@v2
 
-    - name: Prepare Map: MetaStation
+    - name: "Prepare Map: MetaStation"
       run: |
         rm icons/_nanomaps/*
         cp tools/scorpio/build_docker_images/nanomap_metastation.dm code/modules/client/asset_cache_nanomap.dm

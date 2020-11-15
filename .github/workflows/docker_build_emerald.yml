@@ -13,7 +13,7 @@ jobs:
     - name: Checkout Project
       uses: actions/checkout@v2
 
-    - name: Prepare Map: Emerald
+    - name: "Prepare Map: Emerald"
       run: |
         rm icons/_nanomaps/*
 
