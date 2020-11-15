@@ -27,8 +27,9 @@ jobs:
         push: false
 
     - name: Switch to Cyberiad Map
-      run: cp paradise.dme.original paradise.dme
-      run: sed -i -e "s/_maps\\\\\\emerald.dm/_maps\\\\\\cyberiad.dm/" paradise.dme
+      run:
+        cp paradise.dme.original paradise.dme
+        sed -i -e "s/_maps\\\emerald.dm/_maps\\\cyberiad.dm/" paradise.dme
 
     # - name: Build and Push Cyberiad
     #   uses: docker/build-push-action@v2
