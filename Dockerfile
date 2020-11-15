@@ -33,6 +33,8 @@ RUN bin/tgui
 #-------------------------------------------------------------------------------
 FROM scorpiostation/spacemandmm:latest as nanomap_build
 
+ARG NANOMAP_FILE
+
 #
 # Install Debian packages
 #
@@ -51,7 +53,7 @@ RUN /spacemandmm/target/release/dmm-tools minimap \
     --enable hide-space,hide-areas,hide-invisible,random,pretty,icon-smoothing \
     --optipng \
     --pngcrush \
-    "./_maps/map_files/emerald/emerald.dmm"
+    ${NANOMAP_FILE}
 
 #-------------------------------------------------------------------------------
 # Build ScorpioStation from the DreamMaker code using BYOND

@@ -38,7 +38,7 @@ jobs:
           scorpiostation/scorpio:${{ env.GITHUB_SHA_SHORT }}
           scorpiostation/scorpio:${{ env.GITHUB_SHA_SHORT }}-emerald
           scorpiostation/scorpio:latest
-        add_git_labels: true
+        build-args: NANOMAP_FILE="./_maps/map_files/emerald/emerald.dmm"
         push: false
 
     - name: Switch to Cyberiad Map
@@ -53,7 +53,7 @@ jobs:
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
         tags: scorpiostation/scorpio:${{ env.GITHUB_SHA_SHORT }}-cyberiad
-        add_git_labels: true
+        build-args: NANOMAP_FILE="./_maps/map_files/cyberiad/cyberiad.dmm"
         push: false
 
     - name: Switch to Delta Map
@@ -68,7 +68,7 @@ jobs:
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
         tags: scorpiostation/scorpio:${{ env.GITHUB_SHA_SHORT }}-delta
-        add_git_labels: true
+        build-args: NANOMAP_FILE="./_maps/map_files/Delta/delta.dmm"
         push: false
 
     - name: Switch to MetaStation Map
@@ -83,5 +83,5 @@ jobs:
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
         tags: scorpiostation/scorpio:${{ env.GITHUB_SHA_SHORT }}-metastation
-        add_git_labels: true
+        build-args: NANOMAP_FILE="./map_files/MetaStation/MetaStation.v41A.II.dmm"
         push: false
