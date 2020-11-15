@@ -1,4 +1,4 @@
-name: 'Build Emerald Image'
+name: 'Push Emerald Image'
 
 on:
   push:
@@ -37,7 +37,7 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Build Emerald
+    - name: Build and Push Emerald
       uses: docker/build-push-action@v2
       with:
         context: .
@@ -52,4 +52,4 @@ jobs:
           BYOND_MAP_FILE=_maps/map_files/emerald/emerald.dmm
           MINIMAP_DST_FILE=/scorpio/icons/_nanomaps/Emerald_nanomap_z1.png
           MINIMAP_SRC_FILE=/scorpio/data/minimaps/emerald-1.png
-        push: false
+        push: true
