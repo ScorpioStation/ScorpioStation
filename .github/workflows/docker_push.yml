@@ -30,18 +30,24 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-buildx-
 
+    - name: Login to DockerHub
+      uses: docker/login-action@v1
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+
     - name: Push Emerald
       uses: docker/build-push-action@v2
       with:
         builder: ${{ steps.buildx.outputs.name }}
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: scorpiostation/scorpio
-        tags: ${{ env.GITHUB_SHA_SHORT }}, ${{ env.GITHUB_SHA_SHORT }}-emerald, latest
+        tags: |
+          scorpiostation/scorpio:${{ env.GITHUB_SHA_SHORT }}
+          scorpiostation/scorpio:${{ env.GITHUB_SHA_SHORT }}-emerald
+          scorpiostation/scorpio:latest
         add_git_labels: true
-        push: false
+        push: true
 
     - name: Switch to Cyberiad Map
       run: |
@@ -54,12 +60,9 @@ jobs:
         builder: ${{ steps.buildx.outputs.name }}
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: scorpiostation/scorpio
-        tags: ${{ env.GITHUB_SHA_SHORT }}-cyberiad
+        tags: scorpiostation/scorpio:${{ env.GITHUB_SHA_SHORT }}-cyberiad
         add_git_labels: true
-        push: false
+        push: true
 
     - name: Switch to Delta Map
       run: |
@@ -72,12 +75,9 @@ jobs:
         builder: ${{ steps.buildx.outputs.name }}
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: scorpiostation/scorpio
-        tags: ${{ env.GITHUB_SHA_SHORT }}-delta
+        tags: scorpiostation/scorpio:${{ env.GITHUB_SHA_SHORT }}-delta
         add_git_labels: true
-        push: false
+        push: true
 
     - name: Switch to MetaStation Map
       run: |
@@ -90,9 +90,6 @@ jobs:
         builder: ${{ steps.buildx.outputs.name }}
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: scorpiostation/scorpio
-        tags: ${{ env.GITHUB_SHA_SHORT }}-metastation
+        tags: scorpiostation/scorpio:${{ env.GITHUB_SHA_SHORT }}-metastation
         add_git_labels: true
-        push: false
+        push: true
