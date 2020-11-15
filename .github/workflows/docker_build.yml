@@ -26,10 +26,10 @@ jobs:
         add_git_labels: true
         push: false
 
-    # - name: Switch to Cyberiad Map
-    #   run: copy paradise.dme.original paradise.dme
-    #   run: sed -i -e "s/_maps\\\emerald.dm/_maps\\\cyberiad.dm/" paradise.dme
-    #
+    - name: Switch to Cyberiad Map
+      run: cp paradise.dme.original paradise.dme
+      run: sed -i -e "s/_maps\\\emerald.dm/_maps\\\cyberiad.dm/" paradise.dme
+
     # - name: Build and Push Cyberiad
     #   uses: docker/build-push-action@v2
     #   with:
@@ -39,7 +39,7 @@ jobs:
     #     tags: ${{ env.GITHUB_SHA_SHORT }}-cyberiad
     #     add_git_labels: true
     #     push: false
-    #
+
     # - name: Switch to Delta Map
     #   run: copy paradise.dme.original paradise.dme
     #   run: sed -i -e "s/_maps\\\emerald.dm/_maps\\\delta.dm/" paradise.dme
