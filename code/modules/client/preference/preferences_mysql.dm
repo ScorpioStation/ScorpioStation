@@ -19,7 +19,8 @@
 					parallax,
 					max_chat_length,
 					chat_on_map,
-					see_chat_non_mob
+					see_chat_non_mob,
+					antag_raffle_tickets
 					FROM [format_table_name("player")]
 					WHERE ckey='[C.ckey]'"}
 					)
@@ -52,7 +53,7 @@
 		max_chat_length = text2num(query.item[17])
 		chat_on_map = text2num(query.item[18])
 		see_chat_non_mob = text2num(query.item[19])
-
+		antag_raffle_tickets = text2num(query.item[20])
 
 	//Sanitize
 	ooccolor		= sanitize_hexcolor(ooccolor, initial(ooccolor))
@@ -73,6 +74,7 @@
 	max_chat_length 	= sanitize_integer(max_chat_length, 1, CHAT_MESSAGE_MAX_LENGTH, initial(max_chat_length))
 	chat_on_map			= sanitize_integer(chat_on_map, 0, 1, initial(chat_on_map))
 	see_chat_non_mob	= sanitize_integer(see_chat_non_mob, 0, 1, initial(see_chat_non_mob))
+	antag_raffle_tickets = sanitize_integer(antag_raffle_tickets, 1, 1000000, initial(antag_raffle_tickets))
 	return 1
 
 /datum/preferences/proc/save_preferences(client/C)
