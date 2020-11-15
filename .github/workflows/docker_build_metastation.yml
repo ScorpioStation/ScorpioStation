@@ -15,9 +15,11 @@ jobs:
 
     - name: "Prepare Map: MetaStation"
       run: |
+        rm code/game/area/emerald_areas.dm
         rm code/modules/client/asset_cache_nanomap.dm
         rm icons/_nanomaps/*
         cp tools/scorpio/build_docker_images/nanomap_metastation.dm code/modules/client/asset_cache_nanomap.dm
+        cp code/game/area/ss13_areas.dm code/game/area/emerald_areas.dm
         sed -i -e "s/_maps\\\emerald.dm/_maps\\\metastation.dm/" paradise.dme
 
     - name: Set up Docker Buildx
@@ -35,7 +37,7 @@ jobs:
     - name: Build MetaStation
       uses: docker/build-push-action@v2
       with:
-        no-cache: true
+        context: .
         builder: ${{ steps.buildx.outputs.name }}
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
