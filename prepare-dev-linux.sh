@@ -17,9 +17,9 @@ docker pull scorpiostation/scorpio:latest
 docker create --name delete_me scorpiostation/scorpio:latest
 
 # copy build resources from container to code folders
+docker cp delete_me:/scorpio/icons/_nanomaps/Emerald_nanomap_z1.png icons/_nanomaps/Emerald_nanomap_z1.png
 docker cp delete_me:/scorpio/tgui/packages/tgui/public/tgui.bundle.css tgui/packages/tgui/public/tgui.bundle.css
 docker cp delete_me:/scorpio/tgui/packages/tgui/public/tgui.bundle.js tgui/packages/tgui/public/tgui.bundle.js
-docker cp delete_me:/scorpio/nano/images/Emerald_nanomap_z1.png nano/images/Emerald_nanomap_z1.png
 
 # remove the ScorpioStation container
 docker rm delete_me

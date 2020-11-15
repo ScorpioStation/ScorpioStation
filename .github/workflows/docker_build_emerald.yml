@@ -1,0 +1,47 @@
+name: 'Build Emerald Image'
+
+on:
+  pull_request:
+
+jobs:
+  build_emerald_image:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Compute Docker Tag
+      run: echo "GITHUB_SHA_SHORT=$(echo $GITHUB_SHA | cut -c 1-12)" >> $GITHUB_ENV
+
+    - name: Checkout Project
+      uses: actions/checkout@v2
+
+    - name: "Prepare Map: Emerald"
+      run: |
+        rm icons/_nanomaps/*
+
+    - name: Set up Docker Buildx
+      id: buildx
+      uses: docker/setup-buildx-action@v1
+
+    - name: Cache Docker layers
+      uses: actions/cache@v2
+      with:
+        path: /tmp/.buildx-cache
+        key: ${{ runner.os }}-buildx-emerald-${{ github.sha }}
+        restore-keys: |
+          ${{ runner.os }}-buildx-emerald-
+
+    - name: Build Emerald
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        builder: ${{ steps.buildx.outputs.name }}
+        cache-from: type=local,src=/tmp/.buildx-cache
+        cache-to: type=local,dest=/tmp/.buildx-cache
+        tags: |
+          scorpiostation/scorpio:${{ env.GITHUB_SHA_SHORT }}
+          scorpiostation/scorpio:${{ env.GITHUB_SHA_SHORT }}-emerald
+          scorpiostation/scorpio:latest
+        build-args: |
+          BYOND_MAP_FILE=_maps/map_files/emerald/emerald.dmm
+          MINIMAP_DST_FILE=/scorpio/icons/_nanomaps/Emerald_nanomap_z1.png
+          MINIMAP_SRC_FILE=/scorpio/data/minimaps/emerald-1.png
+        push: false

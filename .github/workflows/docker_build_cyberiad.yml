@@ -1,0 +1,50 @@
+name: 'Build Cyberiad Image'
+
+on:
+  pull_request:
+
+jobs:
+  build_cyberiad_image:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Compute Docker Tag
+      run: echo "GITHUB_SHA_SHORT=$(echo $GITHUB_SHA | cut -c 1-12)" >> $GITHUB_ENV
+
+    - name: Checkout Project
+      uses: actions/checkout@v2
+
+    - name: "Prepare Map: Cyberiad"
+      run: |
+        rm code/game/area/emerald_areas.dm
+        rm code/modules/client/asset_cache_nanomap.dm
+        rm icons/_nanomaps/*
+        cp tools/scorpio/build_docker_images/nanomap_cyberiad.dm code/modules/client/asset_cache_nanomap.dm
+        cp code/game/area/ss13_areas.dm code/game/area/emerald_areas.dm
+        sed -i -e "s/_maps\\\emerald.dm/_maps\\\cyberiad.dm/" paradise.dme
+        cat code/modules/client/asset_cache_nanomap.dm
+
+    - name: Set up Docker Buildx
+      id: buildx
+      uses: docker/setup-buildx-action@v1
+
+    - name: Cache Docker layers
+      uses: actions/cache@v2
+      with:
+        path: /tmp/.buildx-cache
+        key: ${{ runner.os }}-buildx-cyberiad-${{ github.sha }}
+        restore-keys: |
+          ${{ runner.os }}-buildx-cyberiad-
+
+    - name: Build Cyberiad
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        builder: ${{ steps.buildx.outputs.name }}
+        cache-from: type=local,src=/tmp/.buildx-cache
+        cache-to: type=local,dest=/tmp/.buildx-cache
+        tags: scorpiostation/scorpio:${{ env.GITHUB_SHA_SHORT }}-cyberiad
+        build-args: |
+          BYOND_MAP_FILE=_maps/map_files/cyberiad/cyberiad.dmm
+          MINIMAP_DST_FILE=/scorpio/icons/_nanomaps/Cyberiad_nanomap_z1.png
+          MINIMAP_SRC_FILE=/scorpio/data/minimaps/cyberiad-1.png
+        push: false
