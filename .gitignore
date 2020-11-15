@@ -38,7 +38,7 @@ stddef.dm
 /tools/midi2piano/midi2piano/obj/*
 
 # ignore rendered nanomap artifacts
-/nano/images/Emerald_nanomap_z1.png
+/icons/_nanomaps/*
 
 # ignore TGUI artifacts
 /tgui/packages/tgui/public/tgui.bundle.*

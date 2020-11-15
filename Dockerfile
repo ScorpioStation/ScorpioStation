@@ -25,7 +25,7 @@ WORKDIR /scorpio/tgui
 RUN bin/tgui
 
 #-------------------------------------------------------------------------------
-# Render minimap PNGs for each of the maps using SpacemanDMM
+# Render a mini-map of the station using SpacemanDMM
 #-------------------------------------------------------------------------------
 FROM scorpiostation/spacemandmm:latest as nanomap_build
 
@@ -38,50 +38,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 #
-# Copy our source files into the image
+# Render the station mini-map (nanomap)
 #
 COPY . /scorpio
 WORKDIR /scorpio
-
-#
-# Render icons/_nanomaps/Cyberiad_nanomap_z1.png
-#
+ARG BYOND_MAP_FILE
+ARG MINIMAP_SRC_FILE
 RUN /spacemandmm/target/release/dmm-tools minimap \
     --disable all \
     --enable hide-space,hide-areas,hide-invisible,random,pretty,icon-smoothing \
-    _maps/map_files/cyberiad/cyberiad.dmm
-RUN convert /scorpio/data/minimaps/cyberiad-1.png -resize 2040x2040 /scorpio/data/minimaps/cyberiad-1.png
-RUN optipng -o2 /scorpio/data/minimaps/cyberiad-1.png
-
-#
-# Render icons/_nanomaps/Delta_nanomap_z1.png
-#
-RUN /spacemandmm/target/release/dmm-tools minimap \
-    --disable all \
-    --enable hide-space,hide-areas,hide-invisible,random,pretty,icon-smoothing \
-    _maps/map_files/Delta/delta.dmm
-RUN convert /scorpio/data/minimaps/delta-1.png -resize 2040x2040 /scorpio/data/minimaps/delta-1.png
-RUN optipng -o2 /scorpio/data/minimaps/delta-1.png
-
-#
-# Render icons/_nanomaps/Emerald_nanomap_z1.png
-#
-RUN /spacemandmm/target/release/dmm-tools minimap \
-    --disable all \
-    --enable hide-space,hide-areas,hide-invisible,random,pretty,icon-smoothing \
-    _maps/map_files/emerald/emerald.dmm
-RUN convert /scorpio/data/minimaps/emerald-1.png -resize 2040x2040 /scorpio/data/minimaps/emerald-1.png
-RUN optipng -o2 /scorpio/data/minimaps/emerald-1.png
-
-#
-# Render icons/_nanomaps/Delta_nanomap_z1.png
-#
-RUN /spacemandmm/target/release/dmm-tools minimap \
-    --disable all \
-    --enable hide-space,hide-areas,hide-invisible,random,pretty,icon-smoothing \
-    _maps/map_files/MetaStation/MetaStation.v41A.II.dmm
-RUN convert /scorpio/data/minimaps/MetaStation.v41A.II-1.png -resize 2040x2040 /scorpio/data/minimaps/MetaStation.v41A.II-1.png
-RUN optipng -o2 /scorpio/data/minimaps/MetaStation.v41A.II-1.png
+    ${BYOND_MAP_FILE}
+RUN convert ${MINIMAP_SRC_FILE} -resize 2040x2040 ${MINIMAP_SRC_FILE}
+RUN optipng -o2 ${MINIMAP_SRC_FILE}
 
 #-------------------------------------------------------------------------------
 # Build ScorpioStation from the DreamMaker code using BYOND
@@ -95,11 +63,10 @@ ENV PATH="/byond/bin:${PATH}"
 # Build paradise.dme -> paradise.dmb, paradise.rsc
 #
 COPY . /scorpio
-COPY --from=nanomap_build /scorpio/data/minimaps/cyberiad-1.png /scorpio/icons/_nanomaps/Cyberiad_nanomap_z1.png
-COPY --from=nanomap_build /scorpio/data/minimaps/delta-1.png /scorpio/icons/_nanomaps/Delta_nanomap_z1.png
-COPY --from=nanomap_build /scorpio/data/minimaps/emerald-1.png /scorpio/icons/_nanomaps/Emerald_nanomap_z1.png
-COPY --from=nanomap_build /scorpio/data/minimaps/MetaStation.v41A.II-1.png /scorpio/icons/_nanomaps/MetaStation_nanomap_z1.png
 COPY --from=tgui_build /scorpio/tgui/packages/tgui/public /scorpio/tgui/packages/tgui/public
+ARG MINIMAP_DST_FILE
+ARG MINIMAP_SRC_FILE
+COPY --from=nanomap_build ${MINIMAP_SRC_FILE} ${MINIMAP_DST_FILE}
 WORKDIR /scorpio
 RUN DreamMaker paradise.dme
 
@@ -129,11 +96,10 @@ COPY --chown=ss13:ss13 --from=byond_build /byond /byond
 COPY --chown=ss13:ss13 --from=byond_build /scorpio/paradise.dmb /scorpio/paradise.dmb
 COPY --chown=ss13:ss13 --from=byond_build /scorpio/paradise.rsc /scorpio/paradise.rsc
 COPY --chown=ss13:ss13 --from=mariadb_library /usr/lib/i386-linux-gnu/libmariadb.so /scorpio/libmariadb.so
-COPY --chown=ss13:ss13 --from=nanomap_build /scorpio/data/minimaps/cyberiad-1.png /scorpio/icons/_nanomaps/Cyberiad_nanomap_z1.png
-COPY --chown=ss13:ss13 --from=nanomap_build /scorpio/data/minimaps/delta-1.png /scorpio/icons/_nanomaps/Delta_nanomap_z1.png
-COPY --chown=ss13:ss13 --from=nanomap_build /scorpio/data/minimaps/emerald-1.png /scorpio/icons/_nanomaps/Emerald_nanomap_z1.png
-COPY --chown=ss13:ss13 --from=nanomap_build /scorpio/data/minimaps/MetaStation.v41A.II-1.png /scorpio/icons/_nanomaps/MetaStation_nanomap_z1.png
 COPY --chown=ss13:ss13 --from=scorpiostation/rust-g:latest /rust-g/target/release/librust_g.so /scorpio/librust_g.so
+ARG MINIMAP_DST_FILE
+ARG MINIMAP_SRC_FILE
+COPY --chown=ss13:ss13 --from=nanomap_build ${MINIMAP_SRC_FILE} ${MINIMAP_DST_FILE}
 
 #
 # Configure the runtime environment for the docker image
