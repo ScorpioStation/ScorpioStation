@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  build_docker_images:
+  build_delta_image:
     runs-on: ubuntu-latest
     steps:
     - name: Compute Docker Tag
