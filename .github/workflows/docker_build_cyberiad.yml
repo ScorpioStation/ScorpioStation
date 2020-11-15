@@ -19,6 +19,7 @@ jobs:
         rm icons/_nanomaps/*
         cp tools/scorpio/build_docker_images/nanomap_cyberiad.dm code/modules/client/asset_cache_nanomap.dm
         sed -i -e "s/_maps\\\emerald.dm/_maps\\\cyberiad.dm/" paradise.dme
+        cat code/modules/client/asset_cache_nanomap.dm
 
     - name: Set up Docker Buildx
       id: buildx
@@ -35,6 +36,7 @@ jobs:
     - name: Build Cyberiad
       uses: docker/build-push-action@v2
       with:
+        context: .
         no-cache: true
         builder: ${{ steps.buildx.outputs.name }}
         cache-from: type=local,src=/tmp/.buildx-cache
