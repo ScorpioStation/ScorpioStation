@@ -384,5 +384,6 @@ GLOBAL_LIST_EMPTY(asset_datums)
 	assets = list(
 		"Cyberiad_nanomap_z1.png"		= 'icons/_nanomaps/Cyberiad_nanomap_z1.png',
 		"Delta_nanomap_z1.png"			= 'icons/_nanomaps/Delta_nanomap_z1.png',
+		"Emerald_nanomap_z1.png"			= 'icons/_nanomaps/Emerald_nanomap_z1.png',
 		"MetaStation_nanomap_z1.png"	= 'icons/_nanomaps/MetaStation_nanomap_z1.png',
 	)
