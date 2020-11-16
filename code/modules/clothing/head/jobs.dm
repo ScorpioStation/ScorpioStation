@@ -37,10 +37,15 @@
 
 //Ark Soft Representative
 /obj/item/clothing/head/arkrep
-	name = "Ark Soft Representative hat"
-	desc = "A cap issued to the Ark Soft Representative"
+	name = "ArkSoft Representative's hat"
+	desc = "A cap issued to the ArkSoft Representatives."
 	icon_state = "arkrep"
 
+//Nanotrasen Representative
+/obj/item/clothing/head/ntrep
+	name = "Nanotrasen Representative's hat"
+	desc = "A cap issued to Nanotrasen Representatives."
+	icon_state = "ntrep"
 
 //Chaplain
 /obj/item/clothing/head/hooded/chaplain_hood
@@ -80,6 +85,10 @@
 	allowed = list(/obj/item/reagent_containers/food/snacks/candy/candy_corn, /obj/item/pen)
 	armor = list("melee" = 25, "bullet" = 5, "laser" = 25, "energy" = 10, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 50)
 	dog_fashion = /datum/dog_fashion/head/detective
+
+	sprite_sheets = list(
+	"Vox" = 'icons/mob/species/vox/head.dmi'
+	)
 
 //Mime
 /obj/item/clothing/head/beret

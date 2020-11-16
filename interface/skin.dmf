@@ -222,7 +222,35 @@ window "mapwindow"
 		text-color = none
 		is-default = true
 		saved-params = "icon-size"
-		style=".center { text-align: center; } .maptext { font-family: 'Small Fonts'; font-size: 7px; -dm-text-outline: 1px black; color: white; line-height: 1.1; } .command_headset { font-weight: bold;	font-size: 8px; } .small { font-size: 6px; } .big { font-size: 8px; } .reallybig { font-size: 8px; } .extremelybig { font-size: 8px; } .greentext { color: #00FF00; font-size: 7px; } .redtext { color: #FF0000; font-size: 7px; } .clown { color: #FF69Bf;} .tajaran {color: #803B56;} .skrell {color: #00CED1;} .solcom {color: #22228B;} .com_srus {color: #7c4848;} .zombie	{color: #ff0000;} .soghun {color: #228B22;} .vox {color: #AA00AA;} .diona {color: #804000; font-weight: bold;} .trinary {color: #727272;} .kidan {color: #664205;} .slime {color: #0077AA;} .drask {color: #a3d4eb; font-family: "Arial Black";} .vulpkanin {color: #B97A57;} .abductor {color: #800080; font-style: italic;} .his_grace { color: #15D512; } .hypnophrase { color: #0d0d0d; font-weight: bold; } .yell { font-weight: bold; } .italics { font-size: 6px; }"
+		style="
+			.abductor { color: #800080; font-style: italic; }
+			.big { font-size: 8px; }
+			.center { text-align: center; }
+			.clown { color: #FF69BF;}
+			.com_srus { color: #7C4848; }
+			.command_headset { font-weight: bold; font-size: 8px; }
+			.diona { color: #804000; font-weight: bold; }
+			.drask { color: #A3D4EB; font-family: 'Arial Black'; }
+			.extremelybig { font-size: 8px; }
+			.greentext { color: #00FF00; font-size: 7px; }
+			.his_grace { color: #15D512; }
+			.hypnophrase { color: #0D0D0D; font-weight: bold; }
+			.italics { font-size: 6px; }
+			.kidan { color: #664205; }
+			.maptext { font-family: 'Small Fonts'; font-size: 7px; -dm-text-outline: 1px black; color: white; line-height: 1.1; }
+			.reallybig { font-size: 8px; }
+			.redtext { color: #FF0000; font-size: 7px; }
+			.skrell { color: #00CED1; }
+			.slime { color: #0077AA; }
+			.small { font-size: 6px; }
+			.soghun { color: #228B22; }
+			.solcom { color: #22228B; }
+			.tajaran { color: #803B56; }
+			.trinary { color: #727272; }
+			.vox { color: #AA00AA; }
+			.vulpkanin { color: #B97A57; }
+			.yell { font-weight: bold; }
+			.zombie	{ color: #FF0000; }"
 
 window "outputwindow"
 	elem "outputwindow"

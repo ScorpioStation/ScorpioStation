@@ -269,6 +269,7 @@ CREATE TABLE `player` (
   `max_chat_length` tinyint(1) DEFAULT '110',
   `chat_on_map` tinyint(1) DEFAULT '1',
   `see_chat_non_mob` tinyint(1) DEFAULT '1',
+  `byond_date` DATE DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `ckey` (`ckey`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;

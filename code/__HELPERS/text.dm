@@ -619,7 +619,6 @@
 	text = replacetext(text, "<img src = arksoftlogo.png>",	"\[logo\]")
 	return text
 
-
 /datum/html/split_holder
 	var/list/opening
 	var/inner_text

@@ -79,9 +79,10 @@
 		var/mob/living/carbon/human/H = speaker
 		speaker_name = H.GetVoice()
 
-	var/message = combine_message(message_pieces, "", speaker)
+	var/message = combine_message(message_pieces, null, speaker)
 	if(message == "")
 		return
+
 	var/message_clean = message
 	if(italics)
 		message = "<i>[message]</i>"
@@ -102,18 +103,18 @@
 		else
 			to_chat(src, "<span class='name'>[speaker.name]</span> talks but you cannot hear [speaker.p_them()].")
 	else
-		to_chat(src, "<span class='game say'><span class='name'>[speaker_name]</span>[use_voice ? speaker.GetAltName() : ""] [track][verb], \"[message]\"</span>")
+		to_chat(src, "<span class='game say'><span class='name'>[speaker_name]</span>[speaker.GetAltName()] [track][verb], \"[message]\"</span>")
 
 		// Create map text message
-		if (client?.prefs.chat_on_map && can_hear() && (client.prefs.see_chat_non_mob || ismob(speaker)))
-			create_chat_message(speaker, message_clean, FALSE, italics)
+		if (client?.prefs.toggles2 & PREFTOGGLE_2_RUNECHAT) // can_hear is checked up there on L99
+			create_chat_message(speaker, message_clean, italics)
 
 		if(speech_sound && (get_dist(speaker, src) <= world.view && src.z == speaker.z))
 			var/turf/source = speaker? get_turf(speaker) : get_turf(src)
 			playsound_local(source, speech_sound, sound_vol, 1, sound_frequency)
 
 
-/mob/proc/hear_radio(list/message_pieces, verb = "says", part_a, part_b, mob/speaker = null, hard_to_hear = 0, vname = "", atom/follow_target)
+/mob/proc/hear_radio(list/message_pieces, verb = "says", part_a, part_b, mob/speaker = null, hard_to_hear = 0, vname = "", atom/follow_target, radio_freq)
 	if(!client)
 		return
 
@@ -189,14 +190,14 @@
 		return
 
 	var/message = combine_message(message_pieces, verb, speaker)
+	var/message_unverbed = combine_message(message_pieces, null, speaker)
 
 	var/name = speaker.name
 	if(!say_understands(speaker))
 		name = speaker.voice_name
 
-	// Create map text message
-	if (client?.prefs.chat_on_map && can_hear() && (client.prefs.see_chat_non_mob || ismob(speaker)))
-		create_chat_message(H, message)
+	if((client?.prefs.toggles2 & PREFTOGGLE_2_RUNECHAT) && can_hear())
+		create_chat_message(H, message_unverbed)
 
-	var/rendered = "<span class='game say'><span class='name'>[name]</span> [verb], \"[message]\"</span>"
+	var/rendered = "<span class='game say'><span class='name'>[name]</span> [message]</span>"
 	to_chat(src, rendered)
