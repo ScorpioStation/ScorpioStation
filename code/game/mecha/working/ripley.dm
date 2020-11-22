@@ -16,7 +16,7 @@
 	var/list/cargo = new
 	var/cargo_capacity = 15
 	var/hides = 0
-
+	cosmetics_enabled = TRUE
 	basecoat_icon = "ripley-shell"
 	basecoat_colour = "#8a7810"
 	glow_icon = "ripley-glow"

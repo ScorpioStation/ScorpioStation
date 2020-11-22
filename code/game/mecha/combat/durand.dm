@@ -13,6 +13,7 @@
 	force = 40
 	wreckage = /obj/structure/mecha_wreckage/durand
 
+	cosmetics_enabled = TRUE
 	basecoat_icon = "durand-shell"
 	basecoat_colour = "#5b616e"
 	glow_icon = "durand-glow"
@@ -50,4 +51,3 @@
 	infra_luminosity = 8
 	force = 40
 	wreckage = /obj/structure/mecha_wreckage/durand/old
-	cosmetics_enabled = FALSE

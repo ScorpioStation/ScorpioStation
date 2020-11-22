@@ -102,7 +102,7 @@
 	var/base_icon_state
 
 	// Holding vars for cosmetic mods
-	var/cosmetics_enabled = TRUE // If false, will not show overlays nor open the paintgun UI.
+	var/cosmetics_enabled = FALSE // If false, will not show overlays nor open the paintgun UI.
 	var/basecoat_icon		// Base mech overlay (for colouring)
 	var/basecoat_colour = "#000000"
 
@@ -111,17 +111,17 @@
 
 	var/decal_icons = 'icons/mecha/mecha_decals.dmi'	// The file where the decal icons are stored. Seperated for neatness.
 	var/icon_decal_root	// Decals. Flame decals, anyone? Might have to make these as datums to hold colour info.
-	var/list/datum/mecha/mecha_decal/decals = list() 
+	var/list/datum/mecha/mecha_decal/decals = list()
 	var/list/datum/mecha/mecha_decal/default_decals = list() // Decals that come with the mech by default go here.
 
 	// Frontloads all the needed image processing to cut down on update checks.
 	var/icon/mech_icon_cache  // Contains the flattened new mech appearance after customization.
 	var/icon/glow_icon_cache  // Contains the glowy bits to be rendered on top.
 
-	// Some mechs with unreasonable numbers of decals can briefly halt the system while it processes. 
+	// Some mechs with unreasonable numbers of decals can briefly halt the system while it processes.
 	// This mode stops some of the more extraneous blends to speed up processing.
 	// This will reduce colour depth and may lead to layering issues if decals are not controlled.
-	var/fast_render_mode = FALSE 
+	var/fast_render_mode = FALSE
 
 	hud_possible = list (DIAG_STAT_HUD, DIAG_BATT_HUD, DIAG_MECH_HUD, DIAG_TRACK_HUD)
 
@@ -326,7 +326,7 @@
 	decals.Add(decal)
 	redraw_cache()
 	return TRUE
-	
+
 /obj/mecha/proc/strip_decal(var/datum/mecha/mecha_decal/decal)
 	if(decals)
 		decals.Remove(decal)
@@ -368,8 +368,8 @@
 	var/chosen_glitch = rand(1,5)
 	var/chosen_glitch_state = "glitch-[chosen_glitch]"
 	var/icon/glitch_icon = icon('icons/mecha/mecha_decals.dmi', chosen_glitch_state)
-	glitch_icon.Shift(NORTH,rand(-16, 16),TRUE) 
-	glitch_icon.Shift(EAST,rand(-16, 16),TRUE) 
+	glitch_icon.Shift(NORTH,rand(-16, 16),TRUE)
+	glitch_icon.Shift(EAST,rand(-16, 16),TRUE)
 	var/icon/glitch_mech = icon(mech_icon_cache, icon_state)
 	glitch_mech.AddAlphaMask(icon(glitch_icon))
 	var/icon/glitch_overlay = icon(glow_icon_cache, icon_state)
@@ -993,7 +993,7 @@
 		diag_hud_set_mechtracking()
 		return
 
-// Legacy support: adding paintkits disables the cosmetic modification system. 
+// Legacy support: adding paintkits disables the cosmetic modification system.
 // Still has some use for major visual overhauls.
 	else if(istype(W, /obj/item/overhaul_kit))
 		if(occupant)
