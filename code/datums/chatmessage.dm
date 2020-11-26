@@ -1,12 +1,25 @@
+/// How long the chat message's spawn-in animation will occur for
 #define CHAT_MESSAGE_SPAWN_TIME		0.2 SECONDS
+/// How long the chat message will exist prior to any exponential decay
 #define CHAT_MESSAGE_LIFESPAN		5 SECONDS
+/// How long the chat message's end of life fading animation will occur for
 #define CHAT_MESSAGE_EOL_FADE		0.7 SECONDS
-#define CHAT_MESSAGE_EXP_DECAY		0.7 // Messages decay at pow(factor, idx in stack)
-#define CHAT_MESSAGE_HEIGHT_DECAY	0.9 // Increase message decay based on the height of the message
-#define CHAT_MESSAGE_APPROX_LHEIGHT	11 // Approximate height in pixels of an 'average' line, used for height decay
-#define CHAT_MESSAGE_WIDTH			96 // pixels
-#define CHAT_MESSAGE_MAX_LENGTH		110 // characters
-#define WXH_TO_HEIGHT(x)			text2num(copytext((x), findtextEx((x), "x") + 1)) // thanks lummox
+/// Factor of how much the message index (number of messages) will account to exponential decay
+#define CHAT_MESSAGE_EXP_DECAY		0.7
+/// Factor of how much height will account to exponential decay
+#define CHAT_MESSAGE_HEIGHT_DECAY	0.9
+/// Approximate height in pixels of an 'average' line, used for height decay
+#define CHAT_MESSAGE_APPROX_LHEIGHT	11
+/// Max width of chat message in pixels
+#define CHAT_MESSAGE_WIDTH			96
+/// Max length of chat message in characters
+#define CHAT_MESSAGE_MAX_LENGTH		110
+/// Maximum precision of float before rounding errors occur (in this context)
+#define CHAT_LAYER_Z_STEP			0.0001
+/// The number of z-layer 'slices' usable by the chat message layering
+#define CHAT_LAYER_MAX_Z			(CHAT_LAYER_MAX - CHAT_LAYER) / CHAT_LAYER_Z_STEP
+/// Macro from Lummox used to get height from a MeasureText proc
+#define WXH_TO_HEIGHT(x)			text2num(copytext(x, findtextEx(x, "x") + 1))
 
 /**
   * # Chat Message Overlay
@@ -20,10 +33,18 @@
 	var/atom/message_loc
 	/// The client who heard this message
 	var/client/owned_by
-	/// Contains the scheduled destruction time
+	/// Contains the scheduled destruction time, used for scheduling EOL
 	var/scheduled_destruction
+	/// Contains the time that the EOL for the message will be complete, used for qdel scheduling
+	var/eol_complete
 	/// Contains the approximate amount of lines for height decay
 	var/approx_lines
+	/// The current index used for adjusting the layer of each sequential chat message such that recent messages will overlay older ones
+	var/static/current_z_idx = 0
+	/// Contains the reference to the next chatmessage in the bucket, used by runechat subsystem
+	var/datum/chatmessage/next
+	/// Contains the reference to the previous chatmessage in the bucket, used by runechat subsystem
+	var/datum/chatmessage/prev
 
 /**
   * Constructs a chat message overlay
@@ -32,11 +53,10 @@
   * * text - The text content of the overlay
   * * target - The target atom to display the overlay at
   * * owner - The mob that owns this overlay, only this mob will be able to view it
-  * * radio_speech - If we talk directly into radio
   * * italics - Should we use italics or not
   * * lifespan - The lifespan of the message in deciseconds
   */
-/datum/chatmessage/New(text, atom/target, mob/owner, radio_speech, italics, size, lifespan = CHAT_MESSAGE_LIFESPAN)
+/datum/chatmessage/New(text, atom/target, mob/owner, italics, size, lifespan = CHAT_MESSAGE_LIFESPAN)
 	. = ..()
 	if (!istype(target))
 		CRASH("Invalid target given for chatmessage")
@@ -44,7 +64,7 @@
 		stack_trace("/datum/chatmessage created with [isnull(owner) ? "null" : "invalid"] mob owner")
 		qdel(src)
 		return
-	INVOKE_ASYNC(src, .proc/generate_image, text, target, owner, radio_speech, lifespan, italics, size)
+	INVOKE_ASYNC(src, .proc/generate_image, text, target, owner, lifespan, italics, size)
 
 /datum/chatmessage/Destroy()
 	if (owned_by)
@@ -54,6 +74,7 @@
 	owned_by = null
 	message_loc = null
 	message = null
+	leave_subsystem()
 	return ..()
 
 /**
@@ -73,23 +94,22 @@
   * * lifespan - The lifespan of the message in deciseconds
   * * italics - Just copy and paste, sir
   */
-/datum/chatmessage/proc/generate_image(text, atom/target, mob/owner, radio_speech, lifespan, italics, size)
+/datum/chatmessage/proc/generate_image(text, atom/target, mob/owner, lifespan, italics, size)
 	// Register client who owns this message
 	owned_by = owner.client
 	RegisterSignal(owned_by, COMSIG_PARENT_QDELETING, .proc/on_parent_qdel)
 
 	// Clip message
-	var/maxlen = owned_by.prefs.max_chat_length
+	var/maxlen = CHAT_MESSAGE_MAX_LENGTH
 	var/datum/html/split_holder/s = split_html(text)
 	if (length_char(s.inner_text) > maxlen)
 		var/chattext = copytext_char(s.inner_text, 1, maxlen + 1) + "..."
 		text = jointext(s.opening, "") + chattext + jointext(s.closing, "")
 
 	// Calculate target color if not already present
-//	if (!target.chat_color || target.chat_color_name != target.name)
-//		target.chat_color = colorize_string(target.name)
-//		target.chat_color_darkened = colorize_string(target.name, 0.85, 0.85)
-//		target.chat_color_name = target.name
+	if (!target.chat_color || target.chat_color_name != target.name)
+		target.chat_color = colorize_string(target.name)
+		target.chat_color_name = target.name
 
 	// Get rid of any URL schemes that might cause BYOND to automatically wrap something in an anchor tag
 	var/static/regex/url_scheme = new(@"[A-Za-z][A-Za-z0-9+-\.]*:\/\/", "g")
@@ -101,21 +121,12 @@
 		qdel(src)
 		return
 
-	// Append radio icon
-	if (radio_speech)
-		var/image/r_icon = image('icons/effects/chat_icons.dmi', icon_state = "radio")
-		text =  "\icon[r_icon]&nbsp;" + text
-
-	// We dim italicized text to make it more distinguishable from regular text
-	var/tgt_color = radio_speech ? target.chat_color_darkened : target.chat_color
+	var/output_color = sanitize_color(target.get_runechat_color()) // Get_runechat_color can be overriden on atoms to display a specific one (Example: Humans having their hair colour as runechat colour)
 
 	// Approximate text height
-	// Note we have to replace HTML encoded metacharacters otherwise MeasureText will return a zero height
-	// BYOND Bug #2563917
-	// Construct text
 	var/static/regex/html_metachars = new(@"&[A-Za-z]{1,7};", "g")
-	var/complete_text = "<span class='center maptext[italics ? "" : " italics"] [size ? "" : " [size]"]' style='color: [tgt_color]'>[text]</span>"
-	var/mheight = WXH_TO_HEIGHT(owned_by.MeasureText(replacetext(complete_text, html_metachars, "m"), null, CHAT_MESSAGE_WIDTH))
+	var/complete_text = "<span class='center maptext[size ? " [size]" : ""]' style='[italics ? "font-style: italic; " : ""]color: [output_color]'>[text]</span>"
+	var/mheight = WXH_TO_HEIGHT(owned_by.MeasureText(complete_text, null, CHAT_MESSAGE_WIDTH))
 	approx_lines = max(1, mheight / CHAT_MESSAGE_APPROX_LHEIGHT)
 
 	// Translate any existing messages upwards, apply exponential decay factors to timers
@@ -128,13 +139,16 @@
 			animate(m.message, pixel_y = m.message.pixel_y + mheight, time = CHAT_MESSAGE_SPAWN_TIME)
 			combined_height += m.approx_lines
 			var/sched_remaining = m.scheduled_destruction - world.time
-			if (sched_remaining > CHAT_MESSAGE_SPAWN_TIME)
+			if (!m.eol_complete)
 				var/remaining_time = (sched_remaining) * (CHAT_MESSAGE_EXP_DECAY ** idx++) * (CHAT_MESSAGE_HEIGHT_DECAY ** combined_height)
-				m.scheduled_destruction = world.time + remaining_time
-				addtimer(CALLBACK(m, .proc/end_of_life), remaining_time, TIMER_UNIQUE|TIMER_OVERRIDE)
+				m.enter_subsystem(world.time + remaining_time) // push updated time to runechat SS
+
+	// Reset z index if relevant
+	if (current_z_idx >= CHAT_LAYER_MAX_Z)
+		current_z_idx = 0
 
 	// Build message image
-	message = image(loc = message_loc, layer = CHAT_LAYER)
+	message = image(loc = message_loc, layer = CHAT_LAYER + CHAT_LAYER_Z_STEP * current_z_idx++)
 	message.plane = GAME_PLANE
 	message.appearance_flags = APPEARANCE_UI_IGNORE_ALPHA | KEEP_APART
 	message.alpha = 0
@@ -151,14 +165,15 @@
 
 	// Prepare for destruction
 	scheduled_destruction = world.time + (lifespan - CHAT_MESSAGE_EOL_FADE)
-	addtimer(CALLBACK(src, .proc/end_of_life), lifespan - CHAT_MESSAGE_EOL_FADE, TIMER_UNIQUE|TIMER_OVERRIDE)
+	enter_subsystem()
 
 /**
   * Applies final animations to overlay CHAT_MESSAGE_EOL_FADE deciseconds prior to message deletion
   */
 /datum/chatmessage/proc/end_of_life(fadetime = CHAT_MESSAGE_EOL_FADE)
+	eol_complete = scheduled_destruction + fadetime
 	animate(message, alpha = 0, time = fadetime, flags = ANIMATION_PARALLEL)
-	QDEL_IN(src, fadetime)
+	enter_subsystem(eol_complete) // re-enter the runechat SS with the EOL completion time to QDEL self
 
 /**
   * Creates a message overlay at a defined location for a given speaker
@@ -167,15 +182,16 @@
   * * speaker - The atom who is saying this message
   * * raw_message - The text content of the message
   * * italics - Vacuum and other things
-  * * radio_speech - Should we use radio speech icon
+  * * size - Size of the message
   */
-/mob/proc/create_chat_message(atom/movable/speaker, raw_message, radio_speech, italics, size)
+/mob/proc/create_chat_message(atom/movable/speaker, raw_message, italics=FALSE, size)
 
-	if(((speaker == src) || (isobserver(src))) && radio_speech && !(size == "big"))
+	if(isobserver(src))
 		return
 
+
 	// Display visual above source
-	new /datum/chatmessage(raw_message, speaker, src, italics, radio_speech, size)
+	new /datum/chatmessage(raw_message, speaker, src, italics, size)
 
 
 // Tweak these defines to change the available color ranges
@@ -194,7 +210,6 @@
   * * sat_shift - A value between 0 and 1 that will be multiplied against the saturation
   * * lum_shift - A value between 0 and 1 that will be multiplied against the luminescence
   */
-/*
 /datum/chatmessage/proc/colorize_string(name, sat_shift = 1, lum_shift = 1)
 	// seed to help randomness
 	var/static/rseed = rand(1,26)
@@ -230,4 +245,28 @@
 			return "#[num2hex(x, 2)][num2hex(m, 2)][num2hex(c, 2)]"
 		if(5)
 			return "#[num2hex(c, 2)][num2hex(m, 2)][num2hex(x, 2)]"
-*/
+
+
+/**
+  * Ensures a colour is bright enough for the system
+  *
+  * This proc is used to brighten parts of a colour up if its too dark, and looks bad
+  *
+  * Arguments:
+  * * hex - Hex colour to be brightened up
+  */
+/datum/chatmessage/proc/sanitize_color(color)
+	var/list/HSL = rgb2hsl(hex2num(copytext(color,2,4)),hex2num(copytext(color,4,6)),hex2num(copytext(color,6,8)))
+	HSL[3] = max(HSL[3],0.4)
+	var/list/RGB = hsl2rgb(arglist(HSL))
+	return "#[num2hex(RGB[1],2)][num2hex(RGB[2],2)][num2hex(RGB[3],2)]"
+
+/**
+  * Proc to allow atoms to set their own runechat colour
+  *
+  * This is a proc designed to be overridden in places if you want a specific atom to use a specific runechat colour
+  * Exampls include consoles using a colour based on their screen colour, and mobs using a colour based off of a customisation property
+  *
+  */
+/atom/proc/get_runechat_color()
+	return chat_color

@@ -4,9 +4,6 @@
 // see: https://support.discord.com/hc/en-us/articles/228383668
 // see: https://discord.com/developers/docs/resources/webhook
 
-#define RUSTG_HTTP_METHOD_POST "post"
-#define rustg_http_request_async(method, url, body, headers) call(RUST_G, "http_request_async")(method, url, body, headers)
-
 /datum/discord/webhook
     var/headers     // headers sent in POST request to Discord
     var/webhook_url // URL of the Discord webhook
@@ -26,6 +23,3 @@
 	var/body = json_encode(body_obj)
 	// call the webhook async, because this is a best effort action
 	rustg_http_request_async(RUSTG_HTTP_METHOD_POST, webhook_url, body, headers)
-
-#undef RUSTG_HTTP_METHOD_POST
-#undef rustg_http_request_async

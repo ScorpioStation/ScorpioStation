@@ -182,3 +182,7 @@
 /datum/gear/hat/kitty
 	display_name = "kitty headband"
 	path = /obj/item/clothing/head/kitty
+
+/datum/gear/hat/capsolgov
+	display_name = "cap, Sol Gov"
+	path = /obj/item/clothing/head/soft/solgov

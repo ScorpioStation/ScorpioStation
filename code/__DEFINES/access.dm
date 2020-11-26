@@ -68,7 +68,8 @@
 #define ACCESS_SALVAGE_CAPTAIN 69 // Salvage ship captain's quarters
 #define ACCESS_MECHANIC 70
 #define ACCESS_PILOT 71
-#define ACCESS_ARKREP 73
+#define ACCESS_ARKREP 72
+#define ACCESS_NTREP 73
 #define ACCESS_MAGISTRATE 74
 #define ACCESS_MINISAT 75
 #define ACCESS_MINERAL_STOREROOM 76

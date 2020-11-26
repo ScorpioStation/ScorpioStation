@@ -379,6 +379,7 @@
 
 /obj/structure/chair/stool/holostool
 	flags = NODECONSTRUCT
+	item_chair = null
 
 /obj/item/clothing/gloves/boxing/hologlove
 	name = "boxing gloves"
