@@ -1796,6 +1796,7 @@ GLOBAL_LIST_INIT(all_supply_groups, list(SUPPLY_EMERGENCY,SUPPLY_SECURITY,SUPPLY
 /datum/supply_packs/misc/station_goal/bsa
 	name = "Bluespace Artillery Parts"
 	cost = 150
+	special_enabled = TRUE
 	contains = list(/obj/item/circuitboard/machine/bsa/front,
 					/obj/item/circuitboard/machine/bsa/middle,
 					/obj/item/circuitboard/machine/bsa/back,
@@ -1807,6 +1808,7 @@ GLOBAL_LIST_INIT(all_supply_groups, list(SUPPLY_EMERGENCY,SUPPLY_SECURITY,SUPPLY
 /datum/supply_packs/misc/station_goal/bluespace_tap
 	name = "Bluespace Harvester Parts"
 	cost = 150
+	special_enabled = TRUE
 	contains = list(
 					/obj/item/circuitboard/machine/bluespace_tap,
 					/obj/item/paper/bluespace_tap
@@ -1816,6 +1818,7 @@ GLOBAL_LIST_INIT(all_supply_groups, list(SUPPLY_EMERGENCY,SUPPLY_SECURITY,SUPPLY
 /datum/supply_packs/misc/station_goal/dna_vault
 	name = "DNA Vault Parts"
 	cost = 120
+	special_enabled = TRUE
 	contains = list(
 					/obj/item/circuitboard/machine/dna_vault
 					)
@@ -1824,6 +1827,7 @@ GLOBAL_LIST_INIT(all_supply_groups, list(SUPPLY_EMERGENCY,SUPPLY_SECURITY,SUPPLY
 /datum/supply_packs/misc/station_goal/dna_probes
 	name = "DNA Vault Samplers"
 	cost = 30
+	special_enabled = TRUE
 	contains = list(/obj/item/dna_probe,
 					/obj/item/dna_probe,
 					/obj/item/dna_probe,
@@ -1835,6 +1839,7 @@ GLOBAL_LIST_INIT(all_supply_groups, list(SUPPLY_EMERGENCY,SUPPLY_SECURITY,SUPPLY
 /datum/supply_packs/misc/station_goal/shield_sat
 	name = "Shield Generator Satellite"
 	cost = 30
+	special_enabled = TRUE
 	contains = list(
 					/obj/machinery/satellite/meteor_shield,
 					/obj/machinery/satellite/meteor_shield,
@@ -1845,6 +1850,7 @@ GLOBAL_LIST_INIT(all_supply_groups, list(SUPPLY_EMERGENCY,SUPPLY_SECURITY,SUPPLY
 /datum/supply_packs/misc/station_goal/shield_sat_control
 	name = "Shield System Control Board"
 	cost = 50
+	special_enabled = TRUE
 	contains = list(
 					/obj/item/circuitboard/computer/sat_control
 					)
