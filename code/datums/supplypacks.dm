@@ -1789,6 +1789,7 @@ GLOBAL_LIST_INIT(all_supply_groups, list(SUPPLY_EMERGENCY,SUPPLY_SECURITY,SUPPLY
 	name = "Empty Station Goal Crate"
 	cost = 10
 	special = TRUE
+	special_enabled = TRUE
 	containername = "empty station goal crate"
 	containertype = /obj/structure/closet/crate/engineering
 
