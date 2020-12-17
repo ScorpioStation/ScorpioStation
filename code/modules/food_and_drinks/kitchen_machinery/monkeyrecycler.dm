@@ -72,6 +72,8 @@ GLOBAL_LIST_EMPTY(monkey_recyclers)
 				if(4)
 					cube_type = /obj/item/reagent_containers/food/snacks/monkeycube/neaeracube
 				if(5)
+					cube_type = /obj/item/reagent_containers/food/snacks/monkeycube/wryncube
+				if(6)
 					cube_type = /obj/item/reagent_containers/food/snacks/monkeycube
 					cycle_through = 0
 			to_chat(user, "<span class='notice'>You change the monkeycube type to [initial(cube_type.name)].</span>")
