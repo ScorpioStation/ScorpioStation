@@ -333,6 +333,9 @@
 	name = "neaera cube"
 	monkey_type = /datum/species/monkey/skrell
 
+/obj/item/reagent_containers/food/snacks/monkeycube/wryncube
+	name = "wryn larva cube"
+	monkey_type = /datum/species/monkey/wryn
 
 //////////////////////
 //		Eggs		//
