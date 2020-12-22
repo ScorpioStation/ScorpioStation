@@ -24,7 +24,7 @@
 	if(!user)
 		return 0
 	to_chat(user, "<span class='notice'>We transform our appearance.</span>")
-	user.dna.SetSEState(GLOB.monkeyblock,0,1)
+	user.dna.SetDNAState(GLOB.monkeyblock, FALSE, DNA_SE, TRUE)
 	genemutcheck(user,GLOB.monkeyblock,null,MUTCHK_FORCED)
 	if(istype(user))
 		user.set_species(chosen_dna.species.type)

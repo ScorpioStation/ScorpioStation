@@ -48,16 +48,16 @@
 /obj/item/dnainjector/proc/SetState(on, selblock = 0)
 	var/real_block = GetRealBlock(selblock)
 	if(buf.types & DNA2_BUF_SE)
-		return buf.dna.SetSEState(real_block,on)
+		return buf.dna.SetDNAState(real_block, on, DNA_SE)
 	else
-		return buf.dna.SetUIState(real_block,on)
+		return buf.dna.SetDNAState(real_block, on, DNA_UI)
 
 /obj/item/dnainjector/proc/GetValue(selblock = 0)
 	var/real_block = GetRealBlock(selblock)
 	if(buf.types & DNA2_BUF_SE)
-		return buf.dna.GetSEValue(real_block)
+		return buf.dna.GetDNAValue(real_block, DNA_SE)
 	else
-		return buf.dna.GetUIValue(real_block)
+		return buf.dna.GetDNAValue(real_block, DNA_UI)
 
 /obj/item/dnainjector/proc/SetValue(val, selblock = 0)
 	var/real_block = GetRealBlock(selblock)

@@ -66,7 +66,7 @@
 
 /datum/species/drask/handle_dna(mob/living/carbon/human/H, remove)
 	..()
-	H.dna.SetSEState(GLOB.strongblock, !remove, 1)
+	H.dna.SetDNAState(GLOB.strongblock, !remove, DNA_SE, TRUE)
 	genemutcheck(H, GLOB.strongblock, null, MUTCHK_FORCED)
 	H.dna.default_blocks.Add(GLOB.strongblock)
 
