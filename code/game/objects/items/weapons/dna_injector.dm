@@ -62,9 +62,9 @@
 /obj/item/dnainjector/proc/SetValue(val, selblock = 0)
 	var/real_block = GetRealBlock(selblock)
 	if(buf.types & DNA2_BUF_SE)
-		return buf.dna.SetSEValue(real_block,val)
+		return buf.dna.SetDNAValue(real_block, val, DNA_SE)
 	else
-		return buf.dna.SetUIValue(real_block,val)
+		return buf.dna.SetDNAValue(real_block, val, DNA_UI)
 
 /obj/item/dnainjector/proc/inject(mob/living/M, mob/user)
 	if(used)
@@ -95,14 +95,14 @@
 						M.dna.real_name = buf.dna.real_name
 						M.dna.unique_enzymes = buf.dna.unique_enzymes
 				else
-					M.dna.SetUIValue(block,src.GetValue())
+					M.dna.SetDNAValue(block,src.GetValue(), DNA_UI)
 					M.UpdateAppearance()
 			if(buf.types & DNA2_BUF_SE)
 				if(!block) //isolated block?
 					M.dna.SE = buf.dna.SE.Copy()
 					M.dna.UpdateDNA(DNA_SE)
 				else
-					M.dna.SetSEValue(block,src.GetValue())
+					M.dna.SetDNAValue(block, src.GetValue(), DNA_SE)
 				domutcheck(M, null, forcedmutation ? MUTCHK_FORCED : 0)
 				M.update_mutations()
 			if(H)
