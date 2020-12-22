@@ -145,7 +145,7 @@
 				if("Mute")
 					voice_mutation = GLOB.muteblock
 			if(voice_mutation)
-				if(H.dna.GetSEState(voice_mutation))
+				if(H.dna.GetDNAState(voice_mutation, DNA_SE))
 					H.dna.SetDNAState(voice_mutation, FALSE, DNA_SE)
 					genemutcheck(H, voice_mutation, null, MUTCHK_FORCED)
 				else

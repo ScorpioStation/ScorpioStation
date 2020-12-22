@@ -162,7 +162,7 @@ GLOBAL_LIST_EMPTY(limb_icon_cache)
 		new_icon_state = "[icon_name][gendered_icon ? "_f" : ""]"
 	else
 		if(gendered_icon)
-			switch(dna.GetUITriState(DNA_UI_GENDER))
+			switch(dna.GetDNATriState(DNA_UI_GENDER, DNA_UI))
 				if(DNA_GENDER_FEMALE)
 					gender = "f"
 				if(DNA_GENDER_MALE)
