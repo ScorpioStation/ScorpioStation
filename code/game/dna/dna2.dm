@@ -71,7 +71,7 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 
 /datum/dna/proc/ResetDNA(dna_type, defer = FALSE)
 	ASSERT(dna_type >= 0)
-	ASSERT(dna_type >= 3)
+	ASSERT(dna_type <= 3)
 	switch(dna_type)
 		if(DNA_UI)					// Create a random UI
 			for(var/i =1, i <= DNA_UI_LENGTH, i++)
@@ -81,15 +81,15 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 					UI[i] = rand(0, 4095)
 			if(!defer)
 				UpdateDNA(DNA_UI)
-		else if(DNA_SE)				// "Zeroes out" all of the SE Blocks
+		if(DNA_SE)				// "Zeroes out" all of the SE Blocks
 			for(var/i = 1, i <= DNA_SE_LENGTH, i++)
 				SetDNAValue(i, rand(1, 1024), TRUE, DNA_SE)
 			UpdateDNA(DNA_SE)
-		else if(DNA_RP)
+		if(DNA_RP)
 			for(var/i = 1, i <= DNA_RP_LENGTH, i++)
 				SetDNAValue(i, rand(1, 1024), TRUE, DNA_RP)
 			UpdateDNA(DNA_RP)
-		else if(DNA_ALL) //Recurse! Reeeecccuuuuurrrrsssseeee! AHAHAHAHAHAHAHAHA!
+		if(DNA_ALL) //Recurse! Reeeecccuuuuurrrrsssseeee! AHAHAHAHAHAHAHAHA!
 			ResetDNA(DNA_UI)
 			ResetDNA(DNA_SE)
 			ResetDNA(DNA_RP)
@@ -103,17 +103,17 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 			for(var/block in UI)
 				uni_identity += EncodeDNABlock(block)
 			dirtyUI = FALSE
-		else if(DNA_SE)
+		if(DNA_SE)
 			struc_enzymes = ""
 			for(var/block in SE)
 				struc_enzymes += EncodeDNABlock(block)
 			dirtySE = FALSE
-		else if(DNA_RP)
+		if(DNA_RP)
 			roleplay_prefs = ""
 			for(var/block in RP)
 				roleplay_prefs += EncodeDNABlock(block)
 			dirtyRP = FALSE
-		else if(DNA_ALL) //Heck you again!
+		if(DNA_ALL) //Heck you again!
 			UpdateDNA(DNA_UI)
 			UpdateDNA(DNA_SE)
 			UpdateDNA(DNA_RP)
@@ -179,10 +179,11 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 
 
 /datum/dna/proc/ValidCheck(block, dna_type)
-	if(block <= 0 || dna_type < 0 || dna_type > 3)
+	if(block <= 0 || dna_type < 0 || dna_type > 2 || dna_type == null)
 		return FALSE
 	else
 		return TRUE
+
 ///////////////////////////////////////
 // SET and GET values for DNA blocks
 ///////////////////////////////////////
@@ -197,10 +198,10 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 		if(DNA_UI)
 			UI[block] = value
 			dirtyUI = TRUE
-		else if(DNA_SE)
+		if(DNA_SE)
 			SE[block] = value
 			dirtySE = TRUE
-		else if(DNA_RP)
+		if(DNA_RP)
 			RP[block] = value
 			dirtyRP = TRUE
 	if(!defer)
@@ -229,9 +230,9 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 			if(value == 0)
 				value = 1
 			SetDNAValue(block, round(value * range), DNA_UI, defer)
-		else if(DNA_SE)		// Might be used for species?
+		if(DNA_SE)		// Might be used for species?
 			SetDNAValue(block, round(value * range) - rand(1, range - 1), DNA_SE)
-		else if(DNA_RP)
+		if(DNA_RP)
 			SetDNAValue(block, round(value * range), DNA_RP)
 
 // Getter version of above.
@@ -256,13 +257,13 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 				val = rand(2050, 4095)
 			else		//Or to "off" (FALSE)?
 				val = rand(1, 2049)
-		else if(DNA_SE)
+		if(DNA_SE)
 			var/list/BOUNDS=GetDNABounds(block)
 			if(on)
 				val = rand(BOUNDS[DNA_ON_LOWERBOUND], BOUNDS[DNA_ON_UPPERBOUND])
 			else
 				val = rand(1, BOUNDS[DNA_OFF_UPPERBOUND])
-		else if(DNA_RP)
+		if(DNA_RP)
 			val = on		// DNA_RP is simple, okay? "on" is on and "off" is off!
 	SetDNAValue(block, val, dna_type, defer)
 
@@ -274,11 +275,11 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 	switch(dna_type)
 		if(DNA_UI)			// For UI, this is simply a check of if the value is > 2050.
 			return UI[block] > 2050
-		else if(DNA_SE)		//(Un-assigned genes are always off.)
+		if(DNA_SE)		//(Un-assigned genes are always off.)
 			var/list/BOUNDS = GetDNABounds(block)
 			var/value = GetDNAValue(block, DNA_SE)
 			return (value >= BOUNDS[DNA_ON_LOWERBOUND])
-		else if(DNA_RP)			//Look, it's simple!
+		if(DNA_RP)			//Look, it's simple!
 			return RP[block] > 0
 
 // Set Trinary DNA Block State
