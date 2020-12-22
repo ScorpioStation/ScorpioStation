@@ -265,7 +265,7 @@
 /obj/item/paper/contract/infernal/power/FulfillContract(mob/living/carbon/human/user = target.current, blood = 0)
 	if(!user.dna)
 		return -1
-	user.dna.SetSEState(GLOB.hulkblock,1)
+	user.dna.SetDNAState(GLOB.hulkblock, TRUE, DNA_SE)
 	genemutcheck(user, GLOB.hulkblock,null,MUTCHK_FORCED)
 	// Demonic power gives you consequenceless hulk
 	user.gene_stability += GENE_INSTABILITY_MAJOR

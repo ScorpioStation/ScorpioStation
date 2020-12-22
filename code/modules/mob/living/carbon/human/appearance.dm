@@ -473,4 +473,4 @@
 	update_body()
 	reset_hair() //No more winding up with hairstyles you're not supposed to have, and blowing your cover.
 	reset_markings() //...Or markings.
-	dna.ResetUIFrom(src)
+	dna.ResetDNAFrom(src, DNA_UI)

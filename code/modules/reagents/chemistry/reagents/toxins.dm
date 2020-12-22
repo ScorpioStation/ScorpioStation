@@ -225,8 +225,7 @@
 				H.dna = D.Clone()
 				H.real_name = D.real_name
 				domutcheck(H, null, MUTCHK_FORCED)
-				H.dna.UpdateSE()
-				H.dna.UpdateUI()
+				H.dna.UpdateDNA(DNA_ALL)
 				H.sync_organ_dna(TRUE)
 				H.UpdateAppearance()
 

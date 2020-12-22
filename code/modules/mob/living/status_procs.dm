@@ -545,7 +545,7 @@
 	if(dna && dna.GetSEState(block))
 		dna.SetSEState(block, 0, 1) //Fix the gene
 		genemutcheck(src, block,null, MUTCHK_FORCED)
-		dna.UpdateSE()
+		dna.UpdateDNA(DNA_SE)
 
 ///////////////////////////////// FROZEN /////////////////////////////////////
 

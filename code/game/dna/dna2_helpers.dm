@@ -26,7 +26,7 @@
 		return
 	M.dna.check_integrity()
 	var/block = pick(GLOB.bad_blocks)
-	M.dna.SetSEState(block, 1)
+	M.dna.SetDNAState(block, TRUE, DNA_SE)
 
 // Give Random Good Mutation to M
 /proc/randmutg(mob/living/M)
@@ -34,7 +34,7 @@
 		return
 	M.dna.check_integrity()
 	var/block = pick(GLOB.good_blocks)
-	M.dna.SetSEState(block, 1)
+	M.dna.SetDNAState(block, TRUE, DNA_SE)
 
 // Random Appearance Mutation
 /proc/randmuti(mob/living/M)
@@ -52,14 +52,14 @@
 		for(var/i = 1, i <= DNA_UI_LENGTH - 1, i++)
 			if(prob(prob))
 				M.dna.SetUIValue(i, rand(1, 4095), 1)
-		M.dna.UpdateUI()
+		M.dna.UpdateDNA(DNA_UI)
 		M.UpdateAppearance()
 
 	else
 		for(var/i = 1, i <= DNA_SE_LENGTH - 1, i++)
 			if(prob(prob))
 				M.dna.SetSEValue(i, rand(1, 4095), 1)
-		M.dna.UpdateSE()
+		M.dna.UpdateDNA(DNA_SE)
 		domutcheck(M, null)
 
 // I haven't yet figured out what the fuck this is supposed to do.
@@ -131,7 +131,7 @@
 	if(istype(src, /mob/living/carbon/human)) // WHY?!
 		if(UI!=null)
 			dna.UI = UI
-			dna.UpdateUI()
+			dna.UpdateDNA(DNA_UI)
 		dna.check_integrity()
 		var/mob/living/carbon/human/H = src
 		var/obj/item/organ/external/head/head_organ = H.get_organ("head")
@@ -150,7 +150,7 @@
 
 		H.s_tone   = 35 - dna.GetUIValueRange(DNA_UI_SKIN_TONE, 220) // Value can be negative.
 
-		switch(dna.GetUITriState(DNA_UI_GENDER))
+		switch(dna.GetDNATriState(DNA_UI_GENDER, DNA_UI))
 			if(DNA_GENDER_FEMALE)
 				H.change_gender(FEMALE, FALSE)
 			if(DNA_GENDER_MALE)

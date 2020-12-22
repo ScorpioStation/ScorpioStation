@@ -151,8 +151,8 @@ GLOBAL_LIST_INIT(cloner_biomass_items, list(\
 	if(buf.dna.UI.len != DNA_UI_LENGTH) //If there's a disparity b/w the dna UI string lengths, 0-fill the extra blocks in this UI.
 		for(var/i in buf.dna.UI.len to DNA_UI_LENGTH)
 			buf.dna.UI += 0x000
-	buf.dna.ResetSE()
-	buf.dna.UpdateUI()
+	buf.dna.ResetDNA(DNA_SE)
+	buf.dna.UpdateDNA(DNA_UI)
 
 /obj/item/disk/data/monkey
 	name = "data disk - 'Mr. Muggles'"
@@ -284,8 +284,7 @@ GLOBAL_LIST_INIT(cloner_biomass_items, list(\
 	if(efficiency < 3 && prob(50))
 		randmutb(H)
 
-	H.dna.UpdateSE()
-	H.dna.UpdateUI()
+	H.dna.UpdateDNA(DNA_ALL)
 
 	H.sync_organ_dna(1) // It's literally a fresh body as you can get, so all organs properly belong to it
 	H.UpdateAppearance()

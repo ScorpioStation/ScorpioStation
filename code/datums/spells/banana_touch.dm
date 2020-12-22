@@ -55,8 +55,8 @@
 		equip_to_slot_if_possible(new /obj/item/clothing/under/rank/clown/nodrop, slot_w_uniform, TRUE, TRUE)
 		equip_to_slot_if_possible(new /obj/item/clothing/shoes/clown_shoes/nodrop, slot_shoes, TRUE, TRUE)
 		equip_to_slot_if_possible(new /obj/item/clothing/mask/gas/clown_hat/nodrop, slot_wear_mask, TRUE, TRUE)
-	dna.SetSEState(GLOB.clumsyblock, TRUE, TRUE)
-	dna.SetSEState(GLOB.comicblock, TRUE, TRUE)
+	dna.SetDNAState(GLOB.clumsyblock, TRUE, DNA_SE, TRUE)
+	dna.SetDNAState(GLOB.comicblock, TRUE, DNA_SE, TRUE)
 	genemutcheck(src, GLOB.clumsyblock, null, MUTCHK_FORCED)
 	genemutcheck(src, GLOB.comicblock, null, MUTCHK_FORCED)
 	if(!(iswizard(src) || (mind && mind.special_role == SPECIAL_ROLE_WIZARD_APPRENTICE))) //Mutations are permanent on non-wizards. Can still be removed by genetics fuckery but not mutadone.

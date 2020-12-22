@@ -751,7 +751,7 @@
 						connected.occupant.UpdateAppearance(buf.dna.UI.Copy())
 					else if(buf.types & DNA2_BUF_SE)
 						connected.occupant.dna.SE = buf.dna.SE.Copy()
-						connected.occupant.dna.UpdateSE()
+						connected.occupant.dna.UpdateDNA(DNA_SE)
 						domutcheck(connected.occupant, connected)
 				if("createInjector")
 					if(!injector_ready)

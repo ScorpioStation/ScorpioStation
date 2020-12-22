@@ -46,7 +46,7 @@
 
 	if(!(COLOURBLIND in M.mutations) && (COLOURBLIND in dependent_disabilities)) //If the eyes are colourblind and we're not, carry over the gene.
 		dependent_disabilities -= COLOURBLIND
-		M.dna.SetSEState(GLOB.colourblindblock,1)
+		M.dna.SetDNAState(GLOB.colourblindblock, TRUE, DNA_SE)
 		genemutcheck(M,GLOB.colourblindblock,null,MUTCHK_FORCED)
 	else
 		M.update_client_colour() //If we're here, that means the mob acquired the colourblindness gene while they didn't have eyes. Better handle it.
@@ -55,7 +55,7 @@
 	if(!special && (COLOURBLIND in M.mutations)) //If special is set, that means these eyes are getting deleted (i.e. during set_species())
 		if(!(COLOURBLIND in dependent_disabilities)) //We only want to change COLOURBLINDBLOCK and such it the eyes are being surgically removed.
 			dependent_disabilities |= COLOURBLIND
-		M.dna.SetSEState(GLOB.colourblindblock,0)
+		M.dna.SetDNAState(GLOB.colourblindblock, FALSE, DNA_SE)
 		genemutcheck(M,GLOB.colourblindblock,null,MUTCHK_FORCED)
 	. = ..()
 
