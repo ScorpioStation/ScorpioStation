@@ -1332,7 +1332,7 @@ GLOBAL_LIST_EMPTY(damage_icon_parts)
 		if(part)
 			var/datum/species/S = GLOB.all_species[part.dna.species.name]
 			. += "[S.race_key]"
-			. += "[part.dna.GetUIValue(DNA_UI_SKIN_TONE)]"
+			. += "[part.dna.GetDNAValue(DNA_UI_SKIN_TONE, DNA_UI)]"
 			. += "[g]"
 			if(part.s_col)
 				. += "[part.s_col]"

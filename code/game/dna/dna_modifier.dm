@@ -571,7 +571,7 @@
 			selected_ui_block = clamp(select_block, 1, DNA_UI_LENGTH)
 			selected_ui_subblock = clamp(select_subblock, 1, DNA_BLOCK_SIZE)
 		if("pulseUIRadiation")
-			var/block = connected.occupant.dna.GetUISubBlock(selected_ui_block, selected_ui_subblock)
+			var/block = connected.occupant.dna.GetDNASubBlock(selected_ui_block, selected_ui_subblock, DNA_UI)
 
 			irradiating = radiation_duration
 			var/lock_state = connected.locked
@@ -627,7 +627,7 @@
 			selected_se_block = clamp(select_block, 1, DNA_SE_LENGTH)
 			selected_se_subblock = clamp(select_subblock, 1, DNA_BLOCK_SIZE)
 		if("pulseSERadiation")
-			var/block = connected.occupant.dna.GetSESubBlock(selected_se_block, selected_se_subblock)
+			var/block = connected.occupant.dna.GetDNASubBlock(selected_se_block, selected_se_subblock, DNA_SE)
 			//var/original_block=block
 			//testing("Irradiating SE block [selected_se_block]:[selected_se_subblock] ([block])...")
 
