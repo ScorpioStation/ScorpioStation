@@ -62,6 +62,8 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 #define TAB_GAME 1
 #define TAB_GEAR 2
 
+#define LIST_SP_LANGS list("Sinta'unathi", "Siik'tajr", "Canilunzt", "Skrellian", "Vox-pidgin", "Rootspeak", "Trinary", "Chittin", "Bubblish", "Psionic Communication", "Orluum", "Sol Common")
+
 /datum/preferences
 	var/client/parent
 	//doohickeys for savefiles
@@ -101,7 +103,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	//character preferences
 	var/real_name						//our character's name
 	var/be_random_name = 0				//whether we are a random name every round
-	var/gender = MALE					//gender of character (well duh)
+	var/gender = MALE					//gender identity of character (well duh)
 	var/age = 30						//age of character
 	var/spawnpoint = "Arrivals Shuttle" //where this character will spawn (0-2).
 	var/b_type = "A+"					//blood type (not-chooseable)
@@ -132,19 +134,22 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/e_colour = "#000000"			//Eye color
 	var/alt_head = "None"				//Alt head style.
 	var/species = "Human"
-	var/language = "None"				//Secondary language
+
 	var/autohiss_mode = AUTOHISS_OFF	//Species autohiss level. OFF, BASIC, FULL.
-
 	var/body_accessory = null
-
 	var/speciesprefs = 0//I hate having to do this, I really do (Using this for oldvox code, making names universal I guess
 
-		//Mob preview
+	//Language
+	var/language = "None"							//Secondary Language placeholder
+	var/list/known_langs = list("Galactic Common")	//What languages the character knows - we are going to start this list off with "Galatic Common"
+
+
+	//Mob preview
 	var/icon/preview_icon = null
 	var/icon/preview_icon_front = null
 	var/icon/preview_icon_side = null
 
-		//Jobs, uses bitflags
+	//Jobs, uses bitflags
 	var/job_support_high = 0
 	var/job_support_med = 0
 	var/job_support_low = 0
@@ -209,6 +214,8 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/max_chat_length = CHAT_MESSAGE_MAX_LENGTH
 	var/see_chat_non_mob = TRUE
 
+
+
 /datum/preferences/New(client/C)
 	parent = C
 	b_type = pick(4;"O-", 36;"O+", 3;"A-", 28;"A+", 1;"B-", 20;"B+", 1;"AB-", 5;"AB+")
@@ -236,7 +243,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 /datum/preferences/proc/color_square(colour)
 	return "<span style='font-face: fixedsys; background-color: [colour]; color: [colour]'>___</span>"
 
-// Hello I am a proc full of snowflake species checks how are you
 /datum/preferences/proc/ShowChoices(mob/user)
 	if(!user || !user.client)
 		return
@@ -259,6 +265,12 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				species = initial(species)
 				S = GLOB.all_species[species]
 				random_character()
+
+			for(var/i = 1 to 12)
+				if(LIST_SP_LANGS[i] in known_langs)
+					known_langs.Remove(LIST_SP_LANGS[i])
+				i += 1
+			known_langs += S.language
 
 			dat += "<div class='statusDisplay' style='max-width: 128px; position: absolute; left: 150px; top: 150px'><img src=previewicon.png class='charPreview'><img src=previewicon2.png class='charPreview'></div>"
 			dat += "<table width='100%'><tr><td width='405px' height='25px' valign='top'>"
@@ -865,18 +877,24 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 /datum/preferences/proc/SetDisabilities(mob/user)
 	var/datum/species/S = GLOB.all_species[species]
+	var/list/klangs = known_langs
 	var/HTML = "<body>"
 	HTML += "<tt><center>"
 
 	if(CAN_WINGDINGS in S.species_traits)
 		HTML += ShowDisabilityState(user, DISABILITY_FLAG_WINGDINGS, "Speak in Wingdings")
+
+	for(var/lang in klangs)
+		var/datum/language/L = GLOB.all_languages[lang]
+		HTML += ShowDisabilityState(user, DISABILITY_FLAG_NERVOUS, "Stutter: [L]")
+
+
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_NEARSIGHTED, "Nearsighted")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_COLOURBLIND, "Colourblind")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_BLIND, "Blind")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_DEAF, "Deaf")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_MUTE, "Mute")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_FAT, "Obese")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_NERVOUS, "Stutter")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_SWEDISH, "Swedish accent")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_CHAV, "Chav accent")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_LISP, "Lisp")
@@ -1307,8 +1325,8 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				if("species")
 					var/list/new_species = list("Human", "Tajaran", "Skrell", "Unathi", "Diona", "Vulpkanin")
 					var/prev_species = species
-//						var/whitelisted = 0
 
+//						var/whitelisted = 0
 					if(config.usealienwhitelist) //If we're using the whitelist, make sure to check it!
 						for(var/Spec in GLOB.whitelisted_species)
 							if(is_alien_whitelisted(user,Spec))
@@ -1321,14 +1339,29 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 					species = input("Please select a species", "Character Generation", null) in sortTim(new_species, /proc/cmp_text_asc)
 					var/datum/species/NS = GLOB.all_species[species]
+				//	var/datum/species/PS = GLOB.all_species[prev_species]
+
 					if(!istype(NS)) //The species was invalid. Notify the user and fail out.
 						species = prev_species
 						to_chat(user, "<span class='warning'>Invalid species, please pick something else.</span>")
 						return
+
+
+					//if(PS.language != null) //Remove, if any, the previously selected species' language from our character's known_langs() list
+					//	known_langs.Remove(PS.language)
+					//known_langs += NS.language //Add the selected species' language to our character's known_langs() list
+					for(var/i = 1 to 12)
+						if(LIST_SP_LANGS[i] in known_langs)
+							known_langs.Remove(LIST_SP_LANGS[i])
+						i += 1
+					known_langs += NS.language
+
 					if(prev_species != species)
 						if(NS.has_gender && gender == PLURAL)
 							gender = pick(MALE,FEMALE)
+
 						var/datum/robolimb/robohead
+
 						if(NS.bodyflags & ALL_RPARTS)
 							var/head_model = "[!rlimb_data["head"] ? "Morpheus Cyberkinetics" : rlimb_data["head"]]"
 							robohead = GLOB.all_robolimbs[head_model]
@@ -1395,29 +1428,20 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 						if(!(NS.autohiss_basic_map))
 							autohiss_mode = AUTOHISS_OFF
+
 				if("speciesprefs")
 					speciesprefs = !speciesprefs //Starts 0, so if someone clicks the button up top there, this won't be 0 anymore. If they click it again, it'll go back to 0.
-				if("language")
-//						var/languages_available
-					var/list/new_languages = list("None")
-/*
-					if(config.usealienwhitelist)
-						for(var/L in GLOB.all_languages)
-							var/datum/language/lang = GLOB.all_languages[L]
-							if((!(lang.flags & RESTRICTED)) && (is_alien_whitelisted(user, L)||(!( lang.flags & WHITELISTED ))))
-								new_languages += lang
-								languages_available = 1
 
-						if(!(languages_available))
-							alert(user, "There are not currently any available secondary languages.")
-					else
-*/
+				if("language")
+					var/list/new_languages = list()
 					for(var/L in GLOB.all_languages)
 						var/datum/language/lang = GLOB.all_languages[L]
 						if(!(lang.flags & RESTRICTED))
 							new_languages += lang.name
-
+					if(language != "none") //If we previously selected a Secondary Language, remove it from the known_langs list
+						known_langs.Remove(language)
 					language = input("Please select a secondary language", "Character Generation", null) in sortTim(new_languages, /proc/cmp_text_asc)
+					known_langs += language //Add the newly-selected Secondary Language to our character's known_langs list
 
 				if("autohiss_mode")
 					if(S.autohiss_basic_map)
