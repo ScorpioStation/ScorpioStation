@@ -241,7 +241,7 @@
 	..()
 	M.mutations.Add(CLUMSY)
 	M.mutations.Add(GLOB.comicblock)
-	M.dna.SetDNAState(GLOB.clumsyblock, TRUE, DNA_SE TRUE)
+	M.dna.SetDNAState(GLOB.clumsyblock, TRUE, DNA_SE, TRUE)
 	M.dna.SetDNAState(GLOB.comicblock, TRUE, DNA_SE, TRUE)
 	genemutcheck(M,GLOB.clumsyblock,null,MUTCHK_FORCED)
 	genemutcheck(M,GLOB.comicblock,null,MUTCHK_FORCED)

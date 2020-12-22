@@ -246,7 +246,7 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 
 
 // Set UI gene "on" (TRUE) or "off" (FALSE)
-/datum/dna/proc/SetDNAState(block, on, dna_type defer = FALSE)
+/datum/dna/proc/SetDNAState(block, on, dna_type, defer = FALSE)
 	if(!ValidCheck(block,dna_type))
 		return
 	var/val
@@ -264,7 +264,7 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 				val = rand(1, BOUNDS[DNA_OFF_UPPERBOUND])
 		else if(DNA_RP)
 			val = on		// DNA_RP is simple, okay? "on" is on and "off" is off!
-	SetDNAValue(block, val, dna_type defer)
+	SetDNAValue(block, val, dna_type, defer)
 
 
 // Is the block "on" (TRUE) or "off" (FALSE)?
@@ -278,7 +278,7 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 			var/list/BOUNDS = GetDNABounds(block)
 			var/value = GetDNAValue(block, DNA_SE)
 			return (value >= BOUNDS[DNA_ON_LOWERBOUND])
-		if(DNA_RP)			//Look, it's simple!
+		else if(DNA_RP)			//Look, it's simple!
 			return RP[block] > 0
 
 // Set Trinary DNA Block State
