@@ -10,15 +10,9 @@
 
 /datum/dna/gene/disability
 	name = "DISABILITY"
-
-	// Mutation to give (or 0)
-	var/mutation = 0
-
-	// Activation message
-	var/activation_message = ""
-
-	// Yay, you're no longer growing 3 arms
-	var/deactivation_message = ""
+	var/mutation = 0					// Mutation to give (or 0)
+	var/activation_message = ""			// Activation message
+	var/deactivation_message = ""		// Yay, you're no longer growing 3 arms
 
 /datum/dna/gene/disability/can_activate(mob/M, flags)
 	return TRUE // Always set!
@@ -261,5 +255,51 @@
 			garbled_message += message[i]
 	message = garbled_message
 	return message
+
+///////////////////////////////
+// Scorpio RP Genes
+///////////////////////////////
+/datum/dna/gene/disability/gstutter
+	name = "Galatic Common Stutter - RP Preference"
+	activation_message=""
+	deactivation_message =""
+	mutation = 0
+
+/datum/dna/gene/disability/gstutter/New()
+	..()
+	block = GLOB.g_stutterblock
+
+/datum/dna/gene/disability/gstutter/OnMobLife(mob/living/carbon/human/H)
+	if(prob(10))
+		H.Stuttering(10)
+
+/datum/dna/gene/disability/sputter
+	name = "Species Language Stutter - RP Preference"
+	activation_message=""
+	deactivation_message =""
+	mutation = 0
+
+/datum/dna/gene/disability/sputter/New()
+	..()
+	block = GLOB.sp_stutterblock
+
+/datum/dna/gene/disability/sputter/OnMobLife(mob/living/carbon/human/H)
+	if(prob(10))
+		H.Stuttering(10)
+
+
+/datum/dna/gene/disability/scutter
+	name = "Secondary Language Stutter - RP Preference"
+	activation_message=""
+	deactivation_message =""
+	mutation = 0
+
+/datum/dna/gene/disability/scutter/New()
+	..()
+	block = GLOB.sc_stutterblock
+
+/datum/dna/gene/disability/scutter/OnMobLife(mob/living/carbon/human/H)
+	if(prob(10))
+		H.Stuttering(10)
 
 #undef string2charlist
