@@ -895,11 +895,11 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	for(var/lang in known_langs)
 		var/datum/language/L = GLOB.all_languages[lang]
 		if(L == "Galactic Common")			//Set Stutter on Galactic Common
-			HTML += ShowDisabilityState(user, DISABILITY_FLAG_GALACTIC, "Stutter: [L]")
+			HTML += ShowDisabilityState(user, DISABILITY_FLAG_GALACTIC, "Galatic Common Stutter")
 		else if(L in sp_langs)					//Set Stutter on Species' Language
-			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SP_LANG, "Stutter: [L]")
+			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SP_LANG, "Species Language Stutter: [L]")
 		else if(L in sc_langs)					//Set Stutter on Secondary Language
-			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SC_LANG, "Stutter: [L]")
+			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SC_LANG, "Secondary Language Stutter: [L]")
 		else
 			HTML += "An Error Has Ocurred. Please file an Issue on the Scorpio Github with a screenshot of this Message."
 
@@ -2181,6 +2181,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 	character.real_name = real_name
 	character.dna.real_name = real_name
+	character.dna.native_langs = known_langs
 	character.name = character.real_name
 
 	character.flavor_text = flavor_text
