@@ -61,10 +61,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 #define TAB_CHAR 0
 #define TAB_GAME 1
 #define TAB_GEAR 2
-
-//Species' Languageg List
-#define LIST_SP_LANGS list("Sinta'unathi", "Siik'tajr", "Canilunzt", "Skrellian", "Vox-pidgin", "Rootspeak", "Trinary", "Chittin", "Bubblish", "Psionic Communication", "Orluum", "Sol Common")
-
 /datum/preferences
 	var/client/parent
 	//doohickeys for savefiles
@@ -134,6 +130,9 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	//Language
 	var/language = "None"				//Secondary Language placeholder
 	var/list/known_langs = list("Galactic Common")	//What languages the character knows - we are going to start this list off with "Galatic Common"
+	var/list/SPL = list("Sinta'unathi", "Siik'tajr", "Canilunzt", "Skrellian", "Vox-pidgin", "Rootspeak", "Trinary", "Chittin", "Bubblish", "Psionic Communication", "Orluum", "Sol Common")
+	var/list/SCL = list("None", "Tradeband", "Gutter", "Clownish", "Neo-Russkiya") //Secondary Languages List
+
 	var/autohiss_mode = AUTOHISS_OFF	//Species autohiss level. OFF, BASIC, FULL.
 
 	var/body_accessory = null
@@ -256,10 +255,10 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				S = GLOB.all_species[species]
 				random_character()
 
-			for(var/i = 1 to LIST_SP_LANGS.len)
-				if(LIST_SP_LANGS[i] in known_langs)
-					known_langs.Remove(LIST_SP_LANGS[i])
-				i += 1
+			for(var/i = 1 to (SPL.len))
+				if(SPL[i] in known_langs)
+					known_langs.Remove(SPL[i])
+				i ++
 			known_langs += S.language
 
 			dat += "<div class='statusDisplay' style='max-width: 128px; position: absolute; left: 150px; top: 150px'><img src=previewicon.png class='charPreview'><img src=previewicon2.png class='charPreview'></div>"
@@ -881,10 +880,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	if(CAN_WINGDINGS in S.species_traits)
 		HTML += ShowDisabilityState(user, DISABILITY_FLAG_WINGDINGS, "Speak in Wingdings")
 
-	for(var/lang in known_langs)
-		var/datum/language/L = GLOB.all_languages[lang]
-		HTML += ShowDisabilityState(user, DISABILITY_FLAG_NERVOUS, "Stutter: [L]")
-
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_NEARSIGHTED, "Nearsighted")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_COLOURBLIND, "Colourblind")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_BLIND, "Blind")
@@ -897,6 +892,16 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_LISP, "Lisp")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_DIZZY, "Dizziness")
 
+	for(var/lang in known_langs)
+		var/datum/language/L = GLOB.all_languages[lang]
+		if(L == "Galactic Common")			//Set Stutter on Galactic Common
+			HTML += ShowDisabilityState(user, DISABILITY_FLAG_GALACTIC, "Stutter: [L]")
+		else if(L in SPL)					//Set Stutter on Species' Language
+			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SPLANG, "Stutter: [L]")
+		else if(L in SCL)					//Set Stutter on Secondary Language
+			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SCLANG, "Stutter: [L]")
+		else
+			HTML += "An Error Has Ocurred. Please file an Issue on the Scorpio Github with a screenshot of this Message."
 
 	HTML += {"</ul>
 		<a href=\"?_src_=prefs;task=close;preference=disabilities\">\[Done\]</a>
@@ -1303,8 +1308,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 						s_colour = rand_hex_color()
 				if("bag")
 					backbag = pick(GLOB.backbaglist)
-				/*if("skin_style")
-					h_style = random_skin_style(gender)*/
 				if("all")
 					random_character()
 		if("input")
@@ -1347,10 +1350,10 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 						to_chat(user, "<span class='warning'>Invalid species, please pick something else.</span>")
 						return
 
-					for(var/i = 1 to LIST_SP_LANGS.len)
-						if(LIST_SP_LANGS[i] in known_langs)
-							known_langs.Remove(LIST_SP_LANGS[i])	//Remove, if any, the previously selected species' language from our character's known_langs() lis
-						i += 1
+					for(var/i = 1 to SPL.len)
+						if(SPL[i] in known_langs)
+							known_langs.Remove(SPL[i])	//Remove, if any, the previously selected species' language from our character's known_langs() lis
+						i ++
 					known_langs += NS.language						//Add the selected species' language to our character's known_langs() lis
 
 					if(prev_species != species)
@@ -1424,17 +1427,10 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				if("speciesprefs")
 					speciesprefs = !speciesprefs //Starts 0, so if someone clicks the button up top there, this won't be 0 anymore. If they click it again, it'll go back to 0.
 				if("language")
-
-					var/list/new_languages = list("None")
-					for(var/L in GLOB.all_languages)
-						var/datum/language/lang = GLOB.all_languages[L]
-						if(!(lang.flags & RESTRICTED))
-							new_languages += lang.name
-
-					if(language != "None") //If we previously selected a Secondary Language, remove it from the known_langs list
-						known_langs.Remove(language)
-					language = input("Please select a secondary language", "Character Generation", null) in sortTim(new_languages, /proc/cmp_text_asc)
-					known_langs += language //Add the newly-selected Secondary Language to our character's known_langs list
+					known_langs.Remove(language)	//If we previously selected a Secondary Language, remove it from the known_langs list
+					language = input("Please select a secondary language", "Character Generation", null) in sortTim(SCL, /proc/cmp_text_asc)
+					if(language != "None")
+						known_langs += language //Add the newly-selected Secondary Language to our character's known_langs list
 
 				if("autohiss_mode")
 					if(S.autohiss_basic_map)
@@ -2294,8 +2290,16 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 		character.dna.SetDNAState(GLOB.muteblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.muteblock)
 
-	if(disabilities & DISABILITY_FLAG_NERVOUS)
-		character.dna.SetDNAState(GLOB.nervousblock, TRUE, DNA_SE, TRUE)
+	if(disabilities & DISABILITY_FLAG_GALACTIC)
+		character.dna.SetDNAState(GLOB.nervousblock, TRUE, DNA_RP, TRUE)
+		character.dna.default_blocks.Add(GLOB.nervousblock)
+
+	if(disabilities & DISABILITY_FLAG_SPLANG)
+		character.dna.SetDNAState(GLOB.nervousblock, TRUE, DNA_RP, TRUE)
+		character.dna.default_blocks.Add(GLOB.nervousblock)
+
+	if(disabilities & DISABILITY_FLAG_SCLANG)
+		character.dna.SetDNAState(GLOB.nervousblock, TRUE, DNA_RP, TRUE)
 		character.dna.default_blocks.Add(GLOB.nervousblock)
 
 	if(disabilities & DISABILITY_FLAG_SWEDISH)
