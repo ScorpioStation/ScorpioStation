@@ -71,4 +71,4 @@ GLOBAL_LIST_EMPTY(global_mutations)
 // Scorpio RP Blocks
 ///////////////////////////////
 
-GLOBAL_VAR_INIT(rp_sutterblock, FALSE)	//RP Stutter block
+GLOBAL_VAR_INIT(rp_stutterblock, FALSE)		//RP Stutter block

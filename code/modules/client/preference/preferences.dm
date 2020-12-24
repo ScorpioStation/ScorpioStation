@@ -261,7 +261,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				i ++
 			known_langs += S.language
 
-			dat += "<div class='statusDisp_langsay' style='max-width: 128px; position: absolute; left: 150px; top: 150px'><img src=previewicon.png class='charPreview'><img src=previewicon2.png class='charPreview'></div>"
+			dat += "<div class='statusDisplay' style='max-width: 128px; position: absolute; left: 150px; top: 150px'><img src=previewicon.png class='charPreview'><img src=previewicon2.png class='charPreview'></div>"
 			dat += "<table width='100%'><tr><td width='405px' height='25px' valign='top'>"
 			dat += "<b>Name: </b>"
 			dat += "<a href='?_src_=prefs;preference=name;task=input'><b>[real_name]</b></a>"
@@ -375,7 +375,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			if(species != "Slime People" && species != "Machine")
 				dat += "<b>Internal Organs:</b> <a href='?_src_=prefs;preference=organs;task=input'>Adjust</a><br>"
 
-			//disp_langsay limbs below
+			//display limbs below
 			var/ind = 0
 			for(var/name in organ_data)
 				var/status = organ_data[name]
@@ -555,11 +555,11 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			dat += "<tr><td colspan=4><hr></td></tr>"
 			for(var/gear_name in LC.gear)
 				var/datum/gear/G = LC.gear[gear_name]
-				var/ticked = (G.disp_langsay_name in loadout_gear)
+				var/ticked = (G.display_name in loadout_gear)
 				if(G.donator_tier > user.client.donator_level)
-					dat += "<tr style='vertical-align:top;'><td width=15%><B>[G.disp_langsay_name]</B></td>"
+					dat += "<tr style='vertical-align:top;'><td width=15%><B>[G.display_name]</B></td>"
 				else
-					dat += "<tr style='vertical-align:top;'><td width=15%><a style='white-space:normal;' [ticked ? "class='linkOn' " : ""]href='?_src_=prefs;preference=gear;toggle_gear=[G.disp_langsay_name]'>[G.disp_langsay_name]</a></td>"
+					dat += "<tr style='vertical-align:top;'><td width=15%><a style='white-space:normal;' [ticked ? "class='linkOn' " : ""]href='?_src_=prefs;preference=gear;toggle_gear=[G.display_name]'>[G.display_name]</a></td>"
 				dat += "<td width = 5% style='vertical-align:top'>[G.cost]</td><td>"
 				if(G.allowed_roles)
 					dat += "<font size=2>Restrictions: "
@@ -570,7 +570,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				if(ticked)
 					. += "<tr><td colspan=4>"
 					for(var/datum/gear_tweak/tweak in G.gear_tweaks)
-						. += " <a href='?_src_=prefs;preference=gear;gear=[G.disp_langsay_name];tweak=\ref[tweak]'>[tweak.get_contents(get_tweak_metadata(G, tweak))]</a>"
+						. += " <a href='?_src_=prefs;preference=gear;gear=[G.display_name];tweak=\ref[tweak]'>[tweak.get_contents(get_tweak_metadata(G, tweak))]</a>"
 					. += "</td></tr>"
 			dat += "</table>"
 
@@ -588,10 +588,10 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 
 /datum/preferences/proc/get_gear_metadata(var/datum/gear/G)
-	. = loadout_gear[G.disp_langsay_name]
+	. = loadout_gear[G.display_name]
 	if(!.)
 		. = list()
-		loadout_gear[G.disp_langsay_name] = .
+		loadout_gear[G.display_name] = .
 
 /datum/preferences/proc/get_tweak_metadata(var/datum/gear/G, var/datum/gear_tweak/tweak)
 	var/list/metadata = get_gear_metadata(G)
@@ -1198,8 +1198,8 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	if(href_list["preference"] == "gear")
 		if(href_list["toggle_gear"])
 			var/datum/gear/TG = GLOB.gear_datums[href_list["toggle_gear"]]
-			if(TG.disp_langsay_name in loadout_gear)
-				loadout_gear -= TG.disp_langsay_name
+			if(TG.display_name in loadout_gear)
+				loadout_gear -= TG.display_name
 			else
 				if(TG.donator_tier && user.client.donator_level < TG.donator_tier)
 					to_chat(user, "<span class='warning'>That gear is only available at a higher donation tier than you are on.</span>")
@@ -1216,7 +1216,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 						total_cost += G.cost
 
 				if((total_cost + TG.cost) <= max_gear_slots)
-					loadout_gear += TG.disp_langsay_name
+					loadout_gear += TG.display_name
 
 		else if(href_list["gear"] && href_list["tweak"])
 			var/datum/gear/gear = GLOB.gear_datums[href_list["gear"]]
