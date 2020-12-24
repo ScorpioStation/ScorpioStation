@@ -61,7 +61,7 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 /mob/living/get_default_language()
 	return default_language
 
-/mob/living/proc/handle_speech_problems(list/message_pieces, var/verb, var/prob_lang = null)
+/mob/living/proc/handle_speech_problems(list/message_pieces, var/verb, var/datum/language/prob_lang = null)
 	var/robot = ismachineperson(src)
 	for(var/datum/multilingual_say_piece/S in message_pieces)
 		if(S.speaking && S.speaking.flags & NO_STUTTER)
@@ -79,7 +79,7 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 			verb = "slurs"
 
 		if(stuttering)
-			if(dna.GetDNAState(GLOB.rp_stutterblock, DNA_RP))
+			if(dna.GetDNAState(GLOB.rp_stutterblock, DNA_RP) && prob_lang != null)
 				for(var/lang in dna.stutter_langs)	//Check character's Stutter Language settings
 					var/datum/language/L = GLOB.all_languages[lang]
 					var/lname = L.name
