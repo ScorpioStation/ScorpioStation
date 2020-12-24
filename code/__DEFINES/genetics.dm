@@ -14,12 +14,17 @@
 #define DISABILITY_FLAG_MUTE        8
 #define DISABILITY_FLAG_COLOURBLIND 16
 #define DISABILITY_FLAG_WINGDINGS   32
-#define DISABILITY_FLAG_NERVOUS     64
-#define DISABILITY_FLAG_SWEDISH     128
-#define DISABILITY_FLAG_LISP        256
-#define DISABILITY_FLAG_DIZZY       512
-#define DISABILITY_FLAG_CHAV        1024
-#define DISABILITY_FLAG_DEAF        2048
+#define DISABILITY_FLAG_SWEDISH     64
+#define DISABILITY_FLAG_LISP        128
+#define DISABILITY_FLAG_DIZZY       256
+#define DISABILITY_FLAG_CHAV        512
+#define DISABILITY_FLAG_DEAF        1024
+
+/* Scorpio Disability RP */
+#define DISABILITY_FLAG_GALACTIC	4096
+#define DISABILITY_FLAG_SP_LANG		8192
+#define DISABILITY_FLAG_SC_LANG		16384
+
 
 ///////////////////////////////////////
 // MUTATIONS
@@ -79,6 +84,7 @@
 #define COLOURBLIND		"colorblind"
 #define MUTE			"mute"
 #define DEAF			"deaf"
+#define RPSTUTTER		"rpstutter"		//Scorpio RP Stutter
 
 //Nutrition levels for humans. No idea where else to put it
 #define NUTRITION_LEVEL_FAT 600

@@ -79,6 +79,9 @@
 	GLOB.hornsblock     = getAssignedBlock("HORNS",      numsToAssign)
 	GLOB.comicblock     = getAssignedBlock("COMIC",      numsToAssign)
 
+	//Scorpio RP Disabilities
+	GLOB.rp_stutterblock       = getAssignedBlock("RPSTUTTER",       numsToAssign)
+
 	// Powers
 	GLOB.soberblock     = getAssignedBlock("SOBER",      numsToAssign, good=1)
 	GLOB.psyresistblock = getAssignedBlock("PSYRESIST",  numsToAssign, DNA_HARD_BOUNDS, good=1)

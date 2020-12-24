@@ -71,6 +71,4 @@ GLOBAL_LIST_EMPTY(global_mutations)
 // Scorpio RP Blocks
 ///////////////////////////////
 
-GLOBAL_VAR_INIT(g_sutterblock, FALSE)	//Galatic Common Stutter block
-GLOBAL_VAR_INIT(sp_stutterlock, FALSE)	//Species' Language Stutter block
-GLOBAL_VAR_INIT(sc_stutterblock, FALSE)	//Secondary Language Stutter block
+GLOBAL_VAR_INIT(rp_sutterblock, FALSE)	//RP Stutter block

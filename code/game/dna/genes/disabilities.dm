@@ -259,46 +259,17 @@
 ///////////////////////////////
 // Scorpio RP Genes
 ///////////////////////////////
-/datum/dna/gene/disability/gstutter
-	name = "Galatic Common Stutter - RP Preference"
+/datum/dna/gene/disability/rpstutter
+	name = "Roleplaying Stutter - RP Preference"
 	activation_message=""
 	deactivation_message =""
 	mutation = 0
 
-/datum/dna/gene/disability/gstutter/New()
+/datum/dna/gene/disability/rpstutter/New()
 	..()
-	block = GLOB.g_stutterblock
+	block = GLOB.rp_stutterblock
 
-/datum/dna/gene/disability/gstutter/OnMobLife(mob/living/carbon/human/H)
-	if(prob(10))
-		H.Stuttering(10)
-
-/datum/dna/gene/disability/sputter
-	name = "Species Language Stutter - RP Preference"
-	activation_message=""
-	deactivation_message =""
-	mutation = 0
-
-/datum/dna/gene/disability/sputter/New()
-	..()
-	block = GLOB.sp_stutterblock
-
-/datum/dna/gene/disability/sputter/OnMobLife(mob/living/carbon/human/H)
-	if(prob(10))
-		H.Stuttering(10)
-
-
-/datum/dna/gene/disability/scutter
-	name = "Secondary Language Stutter - RP Preference"
-	activation_message=""
-	deactivation_message =""
-	mutation = 0
-
-/datum/dna/gene/disability/scutter/New()
-	..()
-	block = GLOB.sc_stutterblock
-
-/datum/dna/gene/disability/scutter/OnMobLife(mob/living/carbon/human/H)
+/datum/dna/gene/disability/rpstutter/OnMobLife(mob/living/carbon/human/H)
 	if(prob(10))
 		H.Stuttering(10)
 

@@ -79,11 +79,26 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 			verb = "slurs"
 
 		if(stuttering)
-			if(robot)
-				S.message = robostutter(S.message)
+			if(dna.GetDNAState(GLOB.rp_stutterblock, DNA_RP))
+				var/list/pref = list()
+				for(var/lang in dna.stutter_langs)			//Add in Stutter Language  prefixes
+					var/datum/language/L = GLOB.all_languages[lang]
+					pref += ":[lowertext(L.key)]"
+					pref += ".[lowertext(L.key)]"
+					pref += "#[lowertext(L.key)]"
+				for(var/p  in find_valid_prefixes(S.message))	//Check Stutter Language prefixes for prefixes found in Stutter-triggered messages
+					if(p in pref)								//Aha!
+						if(robot)
+							S.message = robostutter(S.message)
+						else
+							S.message = stutter(S.message)
+					verb = "stutters"
 			else
-				S.message = stutter(S.message)
-			verb = "stammers"
+				if(robot)
+					S.message = robostutter(S.message)
+				else
+					S.message = stutter(S.message)
+				verb = "stammers"
 
 		if(cultslurring)
 			S.message = cultslur(S.message)
