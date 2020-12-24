@@ -179,6 +179,10 @@
 		if(i + 1 > length(message))
 			. += copytext(message, last_index)
 
+/mob/proc/identify_language(message)
+	var/list/pref = find_valid_prefixes(message)
+	return pref[1]
+
 // this returns a structured message with language sections
 // list(/datum/multilingual_say_piece(common, "hi"), /datum/multilingual_say_piece(farwa, "squik"), /datum/multilingual_say_piece(common, "meow!"))
 /mob/proc/parse_languages(message)

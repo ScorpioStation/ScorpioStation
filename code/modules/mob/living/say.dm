@@ -61,7 +61,7 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 /mob/living/get_default_language()
 	return default_language
 
-/mob/living/proc/handle_speech_problems(list/message_pieces, var/verb)
+/mob/living/proc/handle_speech_problems(list/message_pieces, var/verb, var/prob_lang = null)
 	var/robot = ismachineperson(src)
 	for(var/datum/multilingual_say_piece/S in message_pieces)
 		if(S.speaking && S.speaking.flags & NO_STUTTER)
@@ -80,14 +80,10 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 
 		if(stuttering)
 			if(dna.GetDNAState(GLOB.rp_stutterblock, DNA_RP))
-				var/list/pref = list()
-				for(var/lang in dna.stutter_langs)			//Add in Stutter Language  prefixes
+				for(var/lang in dna.stutter_langs)	//Check character's Stutter Language settings
 					var/datum/language/L = GLOB.all_languages[lang]
-					pref += ":[lowertext(L.key)]"
-					pref += ".[lowertext(L.key)]"
-					pref += "#[lowertext(L.key)]"
-				for(var/p  in find_valid_prefixes(S.message))	//Check Stutter Language prefixes for prefixes found in Stutter-triggered messages
-					if(p in pref)								//Aha!
+					var/lname = L.name
+					if(prob_lang.name == lname)
 						if(robot)
 							S.message = robostutter(S.message)
 						else
@@ -185,7 +181,8 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 			verb = "mumbles"
 
 	if(!ignore_speech_problems)
-		var/list/hsp = handle_speech_problems(message_pieces, verb)
+		var/prob_lang = identify_language(message)
+		var/list/hsp = handle_speech_problems(message_pieces, verb, prob_lang)
 		verb = hsp["verb"]
 
 	// Do this so it gets logged for all types of communication
