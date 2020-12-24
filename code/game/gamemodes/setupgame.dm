@@ -80,7 +80,7 @@
 	GLOB.comicblock     = getAssignedBlock("COMIC",      numsToAssign)
 
 	//Scorpio RP Disabilities
-	GLOB.rp_stutterblock = getAssignedBlock("RPSTUTTER",       numsToAssign)
+	GLOB.rp_stutterblock = 1	//It's 1.
 
 	// Powers
 	GLOB.soberblock     = getAssignedBlock("SOBER",      numsToAssign, good=1)

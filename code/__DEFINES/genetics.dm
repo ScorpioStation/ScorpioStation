@@ -84,7 +84,7 @@
 #define COLOURBLIND		"colorblind"
 #define MUTE			"mute"
 #define DEAF			"deaf"
-#define RPSTUTTER		"rp stutter"		//Scorpio RP Stutter
+#define RPSTUTTER		"rpstutter"		//Scorpio RP Stutter
 
 //Nutrition levels for humans. No idea where else to put it
 #define NUTRITION_LEVEL_FAT 600
