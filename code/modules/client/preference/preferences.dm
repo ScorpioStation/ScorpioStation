@@ -2183,14 +2183,14 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 		var/datum/language/L = GLOB.all_languages[lang]
 		var/lname = L.name
 		if(lname == "Galactic Common" && DISABILITY_FLAG_GALACTIC)
-			character.dna.stutter_langs += L	//Add Galactic Common stutter to stutter_langs on DNA
+			character.dna.stutter_langs += lname	//Add Galactic Common stutter to stutter_langs on DNA
 		else if(lname in sp_langs && DISABILITY_FLAG_SP_LANG)
-			character.dna.stutter_langs += L	//Add Species Language stutter to stutter_langs on DNA
+			character.dna.stutter_langs += lname	//Add Species Language stutter to stutter_langs on DNA
 		else if(lname in sc_langs && DISABILITY_FLAG_SC_LANG && lname != "None")
-			character.dna.stutter_langs += L	//Add Secondary Language stutter to stutter_langs on DNA
+			character.dna.stutter_langs += lname	//Add Secondary Language stutter to stutter_langs on DNA
 
-	if(disabilities & (DISABILITY_FLAG_GALACTIC || DISABILITY_FLAG_SP_LANG || DISABILITY_FLAG_SC_LANG)) //We really only need ONE genetic block to turn on for this, but three flags so there can be three separate yes/no flags for the Character Setup interface.
-		character.dna.SetDNAState(GLOB.rp_stutterblock, TRUE, DNA_RP, TRUE)
+	if(DISABILITY_FLAG_GALACTIC || DISABILITY_FLAG_SP_LANG || DISABILITY_FLAG_SC_LANG) //We really only need ONE genetic block to turn on for this, but three flags so there can be three separate yes/no flags for the Character Setup interface.
+		character.dna.SetDNAState(GLOB.rp_stutterblock, TRUE, DNA_RP)
 		character.dna.default_blocks.Add(GLOB.rp_stutterblock)
 
 
