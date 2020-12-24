@@ -2179,19 +2179,21 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	//Languages
 	character.add_language(language)			//Add Secondary Language to list of languages our character can speak
 
-	for(var/lang in known_langs)				//Check our character's known_langs for languages selected for stutters
-		var/datum/language/L = GLOB.all_languages[lang]
-		var/lname = L.name
-		if((lname == "Galactic Common") && DISABILITY_FLAG_GALACTIC)
-			character.dna.stutter_langs += lname	//Add Galactic Common stutter to stutter_langs on DNA
-		else if((lname in sp_langs) && DISABILITY_FLAG_SP_LANG)
-			character.dna.stutter_langs += lname	//Add Species Language stutter to stutter_langs on DNA
-		else if((lname in sc_langs) && (!lname != "None") && DISABILITY_FLAG_SC_LANG)
-			character.dna.stutter_langs += lname	//Add Secondary Language stutter to stutter_langs on DNA
-
-	if(disabilities & (DISABILITY_FLAG_GALACTIC | DISABILITY_FLAG_SP_LANG | DISABILITY_FLAG_SC_LANG)) //We really only need ONE genetic block to turn on for this, but three flags so there can be three separate yes/no flags for the Character Setup interface.
+	//We really only need ONE genetic block to turn on for this, but three flags so there can be three separate yes/no flags for the Character Setup interface.
+	if(disabilities & (DISABILITY_FLAG_GALACTIC | DISABILITY_FLAG_SP_LANG | DISABILITY_FLAG_SC_LANG))
+		for(var/lang in known_langs)				//Check our character's known_langs for languages selected for stutters
+			var/datum/language/L = GLOB.all_languages[lang]
+			var/lname = L.name
+			if((lname == "Galactic Common") && (disabilities & DISABILITY_FLAG_GALACTIC))
+				character.dna.stutter_langs += lname	//Add Galactic Common stutter to stutter_langs on DNA
+			else if((lname in sp_langs) && (disabilities & DISABILITY_FLAG_SP_LANG))
+				character.dna.stutter_langs += lname	//Add Species Language stutter to stutter_langs on DNA
+			else if((lname in sc_langs) && (disabilities & DISABILITY_FLAG_SC_LANG) && lname != "None")
+				character.dna.stutter_langs += lname	//Add Secondary Language stutter to stutter_langs on DNA
 		character.dna.SetDNAState(GLOB.rp_stutterblock, TRUE, DNA_RP)
 		character.dna.default_blocks.Add(GLOB.rp_stutterblock)
+
+
 
 
 	//Other Character Data
