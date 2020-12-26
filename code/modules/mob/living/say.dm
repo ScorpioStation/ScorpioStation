@@ -61,7 +61,7 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 /mob/living/get_default_language()
 	return default_language
 
-/mob/living/proc/handle_speech_problems(list/message_pieces, var/verb, var/prob_lang = null)
+/mob/living/proc/handle_speech_problems(list/message_pieces, var/verb, var/prob_lang)
 	var/robot = ismachineperson(src)
 	for(var/datum/multilingual_say_piece/S in message_pieces)
 		if(S.speaking && S.speaking.flags & NO_STUTTER)
@@ -81,7 +81,7 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 		if(stuttering)
 			message_admins(prob_lang)
 			if(dna.GetDNAState(GLOB.rp_stutterblock, DNA_RP))
-				if(prob_lang in dna.stutter_langs) //'proc_lang' is Language Name. This is why we have cast it as a typeless variable.
+				if(prob_lang in dna.stutter_langs) //'prob_lang' is Language Name. This is why we have cast it as a typeless variable.
 					if(robot)
 						S.message = robostutter(S.message)
 					else
@@ -395,7 +395,8 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 	else
 		not_heard = "[verb] something"
 
-	var/list/hsp = handle_speech_problems(message_pieces, verb)
+	var/prob_lang = identify_language(message)
+	var/list/hsp = handle_speech_problems(message_pieces, verb, prob_lang)
 	verb = hsp["verb"]
 	if(verb == "yells loudly")
 		verb = "slurs emphatically"

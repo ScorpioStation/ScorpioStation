@@ -181,15 +181,11 @@
 
 /mob/proc/identify_language(message)
 	var/list/prefix_locations = find_valid_prefixes(message)
-	var/i = 1
-	for(i in 1 to length(prefix_locations))
+	for(var/i in 1 to length(prefix_locations))
 		var/current = prefix_locations[i]
-		var/datum/language/L = current[1]
-		message_admins("[current[1]]") // IREN - REMOVE THIS
-		if(L in GLOB.all_languages)
-			message_admins(L.name)
-			return L.name
-		i += 1
+		var/lname = current[1]	//The name of the Language the message was spoken in
+		return lname
+
 
 // this returns a structured message with language sections
 // list(/datum/multilingual_say_piece(common, "hi"), /datum/multilingual_say_piece(farwa, "squik"), /datum/multilingual_say_piece(common, "meow!"))

@@ -532,6 +532,11 @@
 	mutations -= NERVOUS
 	CureIfHasDisability(GLOB.nervousblock)
 
+//Scorpio RP Stutter
+
+/mob/living/proc/DisabilityStutter()
+	mutations |= RPSTUTTER
+
 // Tourettes
 
 /mob/living/proc/BecomeTourettes()
