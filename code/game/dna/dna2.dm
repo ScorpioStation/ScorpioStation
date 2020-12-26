@@ -14,7 +14,7 @@ GLOBAL_LIST_INIT(assigned_gene_blocks, new(DNA_SE_LENGTH))
 // Used to determine what each block means (admin hax and species stuff on /vg/, mostly)
 GLOBAL_LIST_INIT(assigned_blocks, new(DNA_SE_LENGTH))
 
-GLOBAL_LIST_EMPTY(dna_genes)
+GLOBAL_LIST_EMPTY(struc_enzy_genes)
 
 GLOBAL_LIST_EMPTY(good_blocks)
 GLOBAL_LIST_EMPTY(bad_blocks)

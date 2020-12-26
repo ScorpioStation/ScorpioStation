@@ -154,7 +154,7 @@
 				verb = pick("whinnies", "neighs", "says")
 
 		if(dna)
-			for(var/datum/dna/gene/gene in GLOB.dna_genes)
+			for(var/datum/dna/gene/gene in GLOB.struc_enzy_genes)
 				if(!gene.block)
 					continue
 				if(gene.is_active(src))

@@ -117,7 +117,7 @@
 		if(G.block)
 			if(G.block in blocks_assigned)
 				warning("DNA2: Gene [G.name] trying to use already-assigned block [G.block] (used by [english_list(blocks_assigned[G.block])])")
-			GLOB.dna_genes.Add(G)
+			GLOB.struc_enzy_genes.Add(G)
 			var/list/assignedToBlock[0]
 			if(blocks_assigned[G.block])
 				assignedToBlock=blocks_assigned[G.block]
@@ -128,7 +128,7 @@
 	// I WILL HAVE A LIST OF GENES THAT MATCHES THE RANDOMIZED BLOCKS GODDAMNIT!
 	for(var/block=1;block<=DNA_SE_LENGTH;block++)
 		var/name = GLOB.assigned_blocks[block]
-		for(var/datum/dna/gene/gene in GLOB.dna_genes)
+		for(var/datum/dna/gene/gene in GLOB.struc_enzy_genes)
 			if(gene.name == name || gene.block == block)
 				if(gene.block in GLOB.assigned_gene_blocks)
 					warning("DNA2: Gene [gene.name] trying to add to already assigned gene block list (used by [english_list(GLOB.assigned_gene_blocks[block])])")
