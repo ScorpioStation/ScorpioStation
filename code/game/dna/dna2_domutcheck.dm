@@ -4,7 +4,7 @@
 // connected: Machine we're in, type unchecked so I doubt it's used beyond monkeying
 // flags: See below, bitfield.
 /proc/domutcheck(mob/living/M, connected = null, flags = 0)
-	for(var/datum/dna/gene/gene in GLOB.struc_enzy_genes)
+	for(var/datum/dna/gene/gene in GLOB.all_dna_genes)
 		if(!M || !M.dna)
 			return
 		if(!gene.block)

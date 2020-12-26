@@ -1,4 +1,4 @@
-/proc/getAssignedBlock(var/name,var/list/blocksLeft, var/activity_bounds=DNA_DEFAULT_BOUNDS, var/good=0)
+/proc/getAssignedBlock(var/name, var/list/blocksLeft, var/activity_bounds=DNA_DEFAULT_BOUNDS, var/good=0)
 	if(blocksLeft.len==0)
 		warning("[name]: No more blocks left to assign!")
 		return 0
@@ -81,6 +81,7 @@
 
 	//Scorpio RP Disabilities
 	GLOB.rp_stutterblock = 1	//It's 1.
+	GLOB.all_dna_genes.Add("RPSTUTTER")
 
 	// Powers
 	GLOB.soberblock     = getAssignedBlock("SOBER",      numsToAssign, good=1)
@@ -117,7 +118,8 @@
 		if(G.block)
 			if(G.block in blocks_assigned)
 				warning("DNA2: Gene [G.name] trying to use already-assigned block [G.block] (used by [english_list(blocks_assigned[G.block])])")
-			GLOB.struc_enzy_genes.Add(G)
+			GLOB.struc_enzy_genes.Add(G)		//See? Structural Enzymes!
+			GLOB.all_dna_genes.Add(G)
 			var/list/assignedToBlock[0]
 			if(blocks_assigned[G.block])
 				assignedToBlock=blocks_assigned[G.block]
