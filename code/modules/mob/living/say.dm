@@ -79,20 +79,26 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 			verb = "slurs"
 
 		if(stuttering)
-			message_admins(prob_lang)
-			if(dna.GetDNAState(GLOB.rp_stutterblock, DNA_RP))
-				if(prob_lang in dna.stutter_langs) //'prob_lang' is Language Name. This is why we have cast it as a typeless variable.
-					if(robot)
-						S.message = robostutter(S.message)
-					else
-						S.message = stutter(S.message)
-					verb = "stutters"
-			else
+			var/combatstutter = FALSE
+			if(stuttering > 10)
+				combatstutter = TRUE
+			if(dna.GetDNAState(GLOB.rp_stutterblock, DNA_RP) && !combatstutter)
+				for(var/i in 1 to dna.stutter_langs.len)
+					if(prob_lang == dna.stutter_langs[i])
+						if(robot)
+							S.message = robostutter(S.message)
+						else
+							S.message = stutter(S.message)
+						verb = "stutters"
+			else if(combatstutter)
 				if(robot)
 					S.message = robostutter(S.message)
 				else
 					S.message = stutter(S.message)
 				verb = "stammers"
+
+
+
 
 		if(cultslurring)
 			S.message = cultslur(S.message)
