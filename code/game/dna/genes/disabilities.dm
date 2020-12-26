@@ -263,7 +263,7 @@
 	name = "Roleplaying Stutter - RP Preference"
 	activation_message=""
 	deactivation_message =""
-	mutation = 0
+	mutation = RPSTUTTER
 
 /datum/dna/gene/disability/rpstutter/New()
 	..()

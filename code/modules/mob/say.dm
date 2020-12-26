@@ -181,15 +181,15 @@
 
 /mob/proc/identify_language(message)
 	var/list/prefix_locations = find_valid_prefixes(message)
-	if(!LAZYLEN(prefix_locations))
-		return null
-	else
-		for(var/i in 1 to length(prefix_locations))
-			var/current = prefix_locations[i]
-			var/datum/language/L = current[1]
-			if(L in GLOB.all_languages)
-				message_admins(L)
-				return L
+	var/i = 1
+	for(i in 1 to length(prefix_locations))
+		var/current = prefix_locations[i]
+		var/datum/language/L = current[1]
+		message_admins("[current[1]]") // IREN - REMOVE THIS
+		if(L in GLOB.all_languages)
+			message_admins(L.name)
+			return L.name
+		i += 1
 
 // this returns a structured message with language sections
 // list(/datum/multilingual_say_piece(common, "hi"), /datum/multilingual_say_piece(farwa, "squik"), /datum/multilingual_say_piece(common, "meow!"))
