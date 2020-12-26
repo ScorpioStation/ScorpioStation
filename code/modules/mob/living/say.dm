@@ -61,7 +61,7 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 /mob/living/get_default_language()
 	return default_language
 
-/mob/living/proc/handle_speech_problems(list/message_pieces, var/verb, var/prob_lang)
+/mob/living/proc/handle_speech_problems(list/message_pieces, var/verb, var/datum/language/spoken_lang)
 	var/robot = ismachineperson(src)
 	for(var/datum/multilingual_say_piece/S in message_pieces)
 		if(S.speaking && S.speaking.flags & NO_STUTTER)
@@ -79,18 +79,24 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 			verb = "slurs"
 
 		if(stuttering)
-			var/combatstutter = FALSE
+			var/damagestutter = FALSE
 			if(stuttering > 10)
-				combatstutter = TRUE
-			if(dna.GetDNAState(GLOB.rp_stutterblock, DNA_RP) && !combatstutter)
+				damagestutter = TRUE
+			if(dna.GetDNAState(GLOB.rp_stutterblock, DNA_RP) && !damagestutter)
 				for(var/i in 1 to dna.stutter_langs.len)
-					if(prob_lang == dna.stutter_langs[i])
+					var/datum/language/match_lang = dna.stutter_langs[i]
+					message_admins("Language to Match: '[spoken_lang]' ([spoken_lang.type])")
+					message_admins("Matchable Language: '[match_lang]' ([match_lang.type])")
+					if(spoken_lang.name == match_lang.name)		//Compare the Spoken Language against the Stutter Languages
+						message_admins("Did it match: Yes.")
 						if(robot)
 							S.message = robostutter(S.message)
 						else
 							S.message = stutter(S.message)
 						verb = "stutters"
-			else if(combatstutter)
+					else
+						message_admins("Did it match: No.")
+			else if(damagestutter)
 				if(robot)
 					S.message = robostutter(S.message)
 				else
@@ -185,8 +191,8 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 			verb = "mumbles"
 
 	if(!ignore_speech_problems)
-		var/prob_lang = identify_language(message)
-		var/list/hsp = handle_speech_problems(message_pieces, verb, prob_lang)
+		var/spoken_lang = identify_language(message)
+		var/list/hsp = handle_speech_problems(message_pieces, verb, spoken_lang)
 		verb = hsp["verb"]
 
 	// Do this so it gets logged for all types of communication
@@ -401,8 +407,8 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 	else
 		not_heard = "[verb] something"
 
-	var/prob_lang = identify_language(message)
-	var/list/hsp = handle_speech_problems(message_pieces, verb, prob_lang)
+	var/spoken_lang = identify_language(message)
+	var/list/hsp = handle_speech_problems(message_pieces, verb, spoken_lang)
 	verb = hsp["verb"]
 	if(verb == "yells loudly")
 		verb = "slurs emphatically"
