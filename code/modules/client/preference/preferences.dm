@@ -870,7 +870,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	return TRUE
 
 /datum/preferences/proc/ShowDisabilityState(mob/user, flag, label)
-	return "<li><b>[label]:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability=[flag]\">[disabilities & flag ? "Yes" : "No"]</a></li>"
+	return "<li><b>[label]:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability=[flag]curability=[cure]\">[disabilities & flag ? "Yes" : "No"]</a></li>"
 
 /datum/preferences/proc/SetDisabilities(mob/user)
 	var/datum/species/S = GLOB.all_species[species]
@@ -897,9 +897,9 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 		if(lname == "Galactic Common")			//Set Stutter on Galactic Common
 			HTML += ShowDisabilityState(user, DISABILITY_FLAG_GALACTIC, "Galactic Common Stutter")
 		else if(lname in sp_langs)					//Set Stutter on Species' Language
-			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SP_LANG, "Species Language Stutter: [L]")
+			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SP_LANG, "Species Stutter: [L]")
 		else if(lname in sc_langs)					//Set Stutter on Secondary Language
-			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SC_LANG, "Secondary Language Stutter: [L]")
+			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SC_LANG, "Secondary Stutter: [L]")
 		else
 			HTML += "An Error Has Ocurred. Please file an Issue on the Scorpio Github with a screenshot of this Message."
 
