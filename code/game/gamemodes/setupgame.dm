@@ -25,6 +25,13 @@
 //Thanks to nexis for the fancy code
 // BITCH I AIN'T DONE YET
 
+
+
+	//Scorpio RP blocks to assign
+	GLOB.rp_stutterblock = 1	//The position of the rp_stutterblock in the DNA_RP list is 1!
+	GLOB.roleplaying_blocks.Add(GLOB.rp_stutterblock)
+	GLOB.all_dna_genes.Add(RPSTUTTER)
+
 	// SE blocks to assign.
 	var/list/numsToAssign=new()
 	for(var/i=1;i<DNA_SE_LENGTH;i++)
@@ -79,10 +86,6 @@
 	GLOB.hornsblock     = getAssignedBlock("HORNS",      numsToAssign)
 	GLOB.comicblock     = getAssignedBlock("COMIC",      numsToAssign)
 
-	//Scorpio RP Disabilities
-	GLOB.rp_stutterblock = 1	//It's 1.
-	GLOB.all_dna_genes.Add("RPSTUTTER")
-
 	// Powers
 	GLOB.soberblock     = getAssignedBlock("SOBER",      numsToAssign, good=1)
 	GLOB.psyresistblock = getAssignedBlock("PSYRESIST",  numsToAssign, DNA_HARD_BOUNDS, good=1)
@@ -118,13 +121,13 @@
 		if(G.block)
 			if(G.block in blocks_assigned)
 				warning("DNA2: Gene [G.name] trying to use already-assigned block [G.block] (used by [english_list(blocks_assigned[G.block])])")
-			GLOB.struc_enzy_genes.Add(G)		//See? Structural Enzymes!
+			GLOB.struc_enzy_genes.Add(G)
 			GLOB.all_dna_genes.Add(G)
 			var/list/assignedToBlock[0]
 			if(blocks_assigned[G.block])
-				assignedToBlock=blocks_assigned[G.block]
+				assignedToBlock = blocks_assigned[G.block]
 			assignedToBlock.Add(G.name)
-			blocks_assigned[G.block]=assignedToBlock
+			blocks_assigned[G.block] = assignedToBlock
 			//testing("DNA2: Gene [G.name] assigned to block [G.block].")
 
 	// I WILL HAVE A LIST OF GENES THAT MATCHES THE RANDOMIZED BLOCKS GODDAMNIT!

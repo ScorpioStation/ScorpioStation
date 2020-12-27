@@ -18,13 +18,14 @@
 		var/mob/living/carbon/human/H = M
 		if(NO_DNA in H.dna.species.species_traits)
 			return
-	if(!M)
+	if(!M || block < 0)
 		return
-	if(block < 0)
-		return
-
-	var/datum/dna/gene/gene = GLOB.assigned_gene_blocks[block]
-	domutation(gene, M, connected, flags)
+	var/datum/dna/gene/gene = GLOB.assigned_blocks[block]
+	if(gene != null)
+		domutation(gene, M, connected, flags)
+	else
+		gene = GLOB.roleplaying_blocks[block]
+		domutation(gene, M, connected, flags)
 
 
 /proc/domutation(datum/dna/gene/gene, mob/living/M, connected = null, flags = 0)
@@ -32,7 +33,12 @@
 		return FALSE
 
 	// Current state
-	var/gene_active = M.dna.GetDNAState(gene.block, DNA_SE)
+	var/gene_active = FALSE
+	if(gene in GLOB.struc_enzy_genes)
+		gene_active = M.dna.GetDNAState(gene.block, DNA_SE)
+	else if(gene in GLOB.all_dna_genes)
+		gene_active = M.dna.GetDNAState(gene.block, DNA_RP)
+
 
 	// Sanity checks, don't skip.
 	if(!gene.can_activate(M,flags) && gene_active)
