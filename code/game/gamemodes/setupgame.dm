@@ -29,8 +29,8 @@
 
 	//Scorpio RP blocks to assign
 	GLOB.rp_stutterblock = 1	//The position of the rp_stutterblock in the DNA_RP list is 1!
-	GLOB.roleplaying_blocks.Add(GLOB.rp_stutterblock)
-	GLOB.all_dna_genes.Add(RPSTUTTER)
+	GLOB.roleplaying_blocks.Add("RPSTUTTER")
+	GLOB.all_dna_genes.Add("RPSTUTTER")
 
 	// SE blocks to assign.
 	var/list/numsToAssign=new()
