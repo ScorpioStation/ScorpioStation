@@ -9,13 +9,13 @@
 //  and to tell our new DNA datum which values to set in order to turn something
 //  on or off.
 GLOBAL_LIST_INIT(dna_activity_bounds, new(DNA_SE_LENGTH))
-GLOBAL_LIST_INIT(assigned_gene_blocks, new(DNA_SE_LENGTH))	//Scorpio RP Gene Blocks
 
-// Used to determine what each block means (admin hax and species stuff on /vg/, mostly)
-GLOBAL_LIST_INIT(assigned_blocks, new(DNA_SE_LENGTH))
-GLOBAL_LIST_INIT(roleplaying_blocks, new(DNA_RP_LENGTH))
+GLOBAL_LIST_INIT(assigned_SE_blocks, new(DNA_SE_LENGTH))	// Used to determine what each block means (admin hax and species stuff on /vg/, mostly)
+GLOBAL_LIST_INIT(randomized_SE_blocks, new(DNA_SE_LENGTH))	//List of SE gene blocks randomly-assigned per game-round via 'setupgame.dm'
+GLOBAL_LIST_INIT(assigned_RP_blocks, new(DNA_RP_LENGTH))	// Assigned RP Gene Blocks
 
 GLOBAL_LIST_EMPTY(struc_enzy_genes)		//Structural Enzyme Genes
+GLOBAL_LIST_EMPTY(roleplay_genes)		//Roleplaying Preferences Genes
 GLOBAL_LIST_EMPTY(all_dna_genes)		//All Genes
 
 GLOBAL_LIST_EMPTY(good_blocks)

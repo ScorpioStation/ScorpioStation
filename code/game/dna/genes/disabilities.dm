@@ -263,7 +263,7 @@
 	name = "RPSTUTTER"
 	activation_message=""
 	deactivation_message =""
-	mutation = RPSTUTTER
+	mutation = 0
 
 /datum/dna/gene/disability/rpstutter/New()
 	..()

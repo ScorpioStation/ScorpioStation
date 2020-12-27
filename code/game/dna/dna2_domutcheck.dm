@@ -22,15 +22,11 @@
 	if(!M || block < 0)
 		return
 	var/datum/dna/gene/gene
-	if(block in GLOB.assigned_blocks)
-		gene = GLOB.assigned_blocks[block]
-		message_admins("Block: '[block]'")
-		message_admins("Gene: '[gene]'")
+	if(block in GLOB.struc_enzy_genes)
+		gene = GLOB.struc_enzy_genes[gene]
 		domutation(gene, M, connected, flags)
-	else if(block in GLOB.roleplaying_blocks)
-		gene = GLOB.roleplaying_blocks[block]
-		message_admins("Block: '[block]'")
-		message_admins("Gene: '[gene]'")
+	else if(block in GLOB.roleplay_genes)
+		gene = GLOB.roleplay_genes[gene]
 		domutation(gene, M, connected, flags)
 
 
@@ -38,13 +34,13 @@
 	if(!gene || !istype(gene))
 		return FALSE
 	// Current state
-	var/gene_active = FALSE
+	var/gene_active
 	if(gene in GLOB.struc_enzy_genes)
 		gene_active = M.dna.GetDNAState(gene.block, DNA_SE)
-	else if(gene.block in GLOB.roleplaying_blocks)
-		message_admins("Gene: '[gene]'. Gene.Type: '[gene.type]'.")
-		message_admins("Gene Block: '[gene.block]'.")
+		message_admins("SE Gene: '[gene]'.' Active? '[gene_active]'.")
+	else if(gene in GLOB.roleplay_genes)
 		gene_active = M.dna.GetDNAState(gene.block, DNA_RP)
+		message_admins("RP Gene: '[gene]'.' Active? '[gene_active]'.")
 
 
 	// Sanity checks, don't skip.

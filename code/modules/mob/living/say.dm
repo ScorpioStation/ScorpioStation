@@ -85,17 +85,12 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 			if(dna.GetDNAState(GLOB.rp_stutterblock, DNA_RP) && !damagestutter)
 				for(var/i in 1 to dna.stutter_langs.len)
 					var/datum/language/match_lang = dna.stutter_langs[i]
-					message_admins("Language to Match: '[spoken_lang]' ([spoken_lang.type])")
-					message_admins("Matchable Language: '[match_lang]' ([match_lang.type])")
 					if(spoken_lang.name == match_lang.name)		//Compare the Spoken Language against the Stutter Languages
-						message_admins("Did it match: Yes.")
 						if(robot)
 							S.message = robostutter(S.message)
 						else
 							S.message = stutter(S.message)
 						verb = "stutters"
-					else
-						message_admins("Did it match: No.")
 			else if(damagestutter)
 				if(robot)
 					S.message = robostutter(S.message)

@@ -8,7 +8,7 @@
 		GLOB.good_blocks += assigned
 	else
 		GLOB.bad_blocks += assigned
-	GLOB.assigned_blocks[assigned]=name
+	GLOB.assigned_SE_blocks[assigned]=name
 	GLOB.dna_activity_bounds[assigned]=activity_bounds
 	//Debug message_admins("[name] assigned to block #[assigned].")
 //	testing("[name] assigned to block #[assigned].")
@@ -25,16 +25,18 @@
 //Thanks to nexis for the fancy code
 // BITCH I AIN'T DONE YET
 
-
-
-	//Scorpio RP blocks to assign
+	//Scorpio RP Genes to assign
 	GLOB.rp_stutterblock = 1	//The position of the rp_stutterblock in the DNA_RP list is 1!
-	GLOB.roleplaying_blocks.Add("RPSTUTTER")
-	GLOB.all_dna_genes.Add("RPSTUTTER")
+	for(var/gene_type in typesof(/datum/dna/gene))
+		var/datum/dna/gene/G = new gene_type
+		if(G.block)
+	GLOB.roleplay_genes.Add(RPSTUTTER)
+	GLOB.all_dna_genes.Add(RPSTUTTER)
+
 
 	// SE blocks to assign.
-	var/list/numsToAssign=new()
-	for(var/i=1;i<DNA_SE_LENGTH;i++)
+	var/list/numsToAssign = new()
+	for(var/i = 1; i < DNA_SE_LENGTH ; i++)
 		numsToAssign += i
 
 //	testing("Assigning DNA blocks:")
@@ -121,23 +123,25 @@
 		if(G.block)
 			if(G.block in blocks_assigned)
 				warning("DNA2: Gene [G.name] trying to use already-assigned block [G.block] (used by [english_list(blocks_assigned[G.block])])")
-			GLOB.struc_enzy_genes.Add(G)
-			GLOB.all_dna_genes.Add(G)
-			var/list/assignedToBlock[0]
-			if(blocks_assigned[G.block])
-				assignedToBlock = blocks_assigned[G.block]
-			assignedToBlock.Add(G.name)
-			blocks_assigned[G.block] = assignedToBlock
-			//testing("DNA2: Gene [G.name] assigned to block [G.block].")
+			if(!(G in GLOB.roleplay_genes))
+				message_admins("Adding Gene to SE: '[G]'.")
+				GLOB.struc_enzy_genes.Add(G)
+				GLOB.all_dna_genes.Add(G)
+				var/list/assignedToBlock[0]
+				if(blocks_assigned[G.block])
+					assignedToBlock = blocks_assigned[G.block]
+				assignedToBlock.Add(G.name)
+				blocks_assigned[G.block] = assignedToBlock
+				//testing("DNA2: Gene [G.name] assigned to block [G.block].")
 
 	// I WILL HAVE A LIST OF GENES THAT MATCHES THE RANDOMIZED BLOCKS GODDAMNIT!
-	for(var/block=1;block<=DNA_SE_LENGTH;block++)
-		var/name = GLOB.assigned_blocks[block]
+	for(var/block=1 ; block <= DNA_SE_LENGTH ; block++)
+		var/name = GLOB.assigned_SE_blocks[block]
 		for(var/datum/dna/gene/gene in GLOB.struc_enzy_genes)
 			if(gene.name == name || gene.block == block)
-				if(gene.block in GLOB.assigned_gene_blocks)
-					warning("DNA2: Gene [gene.name] trying to add to already assigned gene block list (used by [english_list(GLOB.assigned_gene_blocks[block])])")
-				GLOB.assigned_gene_blocks[block] = gene
+				if(gene.block in GLOB.randomized_SE_blocks)
+					warning("DNA2: Gene [gene.name] trying to add to already assigned gene block list (used by [english_list(GLOB.randomized_SE_blocks[block])])")
+				GLOB.randomized_SE_blocks[block] = gene
 
 	//testing("DNA2: [numsToAssign.len] blocks are unused: [english_list(numsToAssign)]")
 
