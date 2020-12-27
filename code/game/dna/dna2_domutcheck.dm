@@ -4,14 +4,13 @@
 // connected: Machine we're in, type unchecked so I doubt it's used beyond monkeying
 // flags: See below, bitfield.
 /proc/domutcheck(mob/living/M, connected = null, flags = 0)
-	var/datum/dna/gene/gene
-	for(gene in GLOB.all_dna_genes)
-		//message_admins("Gene: '[gene]'. Gene.Block: '[gene.block]'.")
-		if(!M || !M.dna)
-			return
-		if(!gene.block)
+	if(!M || !M.dna)
+		return
+	for(var/datum/dna/gene/G in GLOB.all_dna_genes)
+		if(!G.block)
 			continue
-		domutation(gene, M, connected, flags)
+		var/dna_type = G.gene_dna
+		domutation(G, M, connected, flags, dna_type)
 
 // Use this to force a mut check on a single gene!
 /proc/genemutcheck(mob/living/M, block, connected = null, flags = 0)
@@ -21,27 +20,18 @@
 			return
 	if(!M || block < 0)
 		return
-	var/datum/dna/gene/gene
-	if(block in GLOB.struc_enzy_genes)
-		gene = GLOB.struc_enzy_genes[gene]
-		domutation(gene, M, connected, flags)
-	else if(block in GLOB.roleplay_genes)
-		gene = GLOB.roleplay_genes[gene]
-		domutation(gene, M, connected, flags)
+	var/datum/dna/gene/gene = GLOB.randomized_SE_blocks[block]
+	domutation(gene, M, connected, flags)
 
-
-/proc/domutation(datum/dna/gene/gene, mob/living/M, connected = null, flags = 0)
+/proc/domutation(datum/dna/gene/gene, mob/living/M, connected = null, flags = 0, dna_type = DNA_SE)
 	if(!gene || !istype(gene))
 		return FALSE
-	// Current state
-	var/gene_active
-	if(gene in GLOB.struc_enzy_genes)
-		gene_active = M.dna.GetDNAState(gene.block, DNA_SE)
-		message_admins("SE Gene: '[gene]'.' Active? '[gene_active]'.")
-	else if(gene in GLOB.roleplay_genes)
-		gene_active = M.dna.GetDNAState(gene.block, DNA_RP)
-		message_admins("RP Gene: '[gene]'.' Active? '[gene_active]'.")
 
+	var/gene_active		// Current state
+	if(dna_type == DNA_SE)
+		gene_active = M.dna.GetDNAState(gene.block, DNA_SE)
+	else if(dna_type == DNA_RP)
+		gene_active = M.dna.GetDNAState(gene.block, DNA_RP)
 
 	// Sanity checks, don't skip.
 	if(!gene.can_activate(M,flags) && gene_active)
@@ -56,8 +46,7 @@
 		if((gene in defaultgenes) && gene_active)
 			return
 
-	// Prior state
-	var/gene_prior_status = (gene.type in M.active_genes)
+	var/gene_prior_status = (gene.type in M.active_genes)		// Prior state
 	var/changed = gene_active != gene_prior_status
 
 	// If gene state has changed:

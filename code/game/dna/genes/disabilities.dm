@@ -10,9 +10,11 @@
 
 /datum/dna/gene/disability
 	name = "DISABILITY"
+	gene_dna = DNA_SE					// Most of these Disabilities are on DNA_SE
 	var/mutation = 0					// Mutation to give (or 0)
 	var/activation_message = ""			// Activation message
 	var/deactivation_message = ""		// Yay, you're no longer growing 3 arms
+
 
 /datum/dna/gene/disability/can_activate(mob/M, flags)
 	return TRUE // Always set!
@@ -263,7 +265,8 @@
 	name = "RPSTUTTER"
 	activation_message=""
 	deactivation_message =""
-	mutation = 0
+	mutation = RPSTUTTER
+	gene_dna = DNA_RP
 
 /datum/dna/gene/disability/rpstutter/New()
 	..()
