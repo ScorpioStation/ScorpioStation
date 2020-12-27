@@ -2191,7 +2191,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			else if((lname in sc_langs) && (disabilities & DISABILITY_FLAG_SC_LANG) && lname != "None")
 				character.dna.stutter_langs += L	//Add Secondary Language stutter to stutter_langs on DNA
 		character.dna.SetDNAState(GLOB.rp_stutterblock, TRUE, DNA_RP)
-		character.dna.genes..activate(character, connected, MUTCHK_FORCED)
 		character.dna.default_blocks.Add(GLOB.rp_stutterblock)
 
 

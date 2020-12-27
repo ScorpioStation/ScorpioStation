@@ -20,13 +20,15 @@
 			return
 	if(!M || block < 0)
 		return
-	var/datum/dna/gene/gene = GLOB.assigned_blocks[block]
-	message_admins("Block: '[block]'")
-	if(gene != null)
+	var/datum/dna/gene/gene
+	if(block in GLOB.assigned_blocks)
+		gene = GLOB.assigned_blocks[block]
+		message_admins("Block: '[block]'")
 		message_admins("Gene: '[gene]'")
 		domutation(gene, M, connected, flags)
 	else if(block in GLOB.roleplaying_blocks)
 		gene = GLOB.roleplaying_blocks[block]
+		message_admins("Block: '[block]'")
 		message_admins("Gene: '[gene]'")
 		domutation(gene, M, connected, flags)
 
