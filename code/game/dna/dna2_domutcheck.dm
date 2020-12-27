@@ -4,12 +4,13 @@
 // connected: Machine we're in, type unchecked so I doubt it's used beyond monkeying
 // flags: See below, bitfield.
 /proc/domutcheck(mob/living/M, connected = null, flags = 0)
-	for(var/datum/dna/gene/gene in GLOB.all_dna_genes)
+	var/datum/dna/gene/gene
+	for(gene in GLOB.all_dna_genes)
+		//message_admins("Gene: '[gene]'. Gene.Block: '[gene.block]'.")
 		if(!M || !M.dna)
 			return
 		if(!gene.block)
 			continue
-
 		domutation(gene, M, connected, flags)
 
 // Use this to force a mut check on a single gene!
@@ -36,12 +37,13 @@
 /proc/domutation(datum/dna/gene/gene, mob/living/M, connected = null, flags = 0)
 	if(!gene || !istype(gene))
 		return FALSE
-
 	// Current state
 	var/gene_active = FALSE
 	if(gene in GLOB.struc_enzy_genes)
 		gene_active = M.dna.GetDNAState(gene.block, DNA_SE)
-	else if(gene in GLOB.roleplaying_blocks)
+	else if(gene.block in GLOB.roleplaying_blocks)
+		message_admins("Gene: '[gene]'. Gene.Type: '[gene.type]'.")
+		message_admins("Gene Block: '[gene.block]'.")
 		gene_active = M.dna.GetDNAState(gene.block, DNA_RP)
 
 

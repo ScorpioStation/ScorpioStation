@@ -2193,9 +2193,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 		character.dna.SetDNAState(GLOB.rp_stutterblock, TRUE, DNA_RP)
 		character.dna.default_blocks.Add(GLOB.rp_stutterblock)
 
-
-
-
 	//Other Character Data
 	character.real_name = real_name
 	character.dna.real_name = real_name
