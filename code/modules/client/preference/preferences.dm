@@ -138,12 +138,20 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	//Disabilities
 	var/disabilities= 0			//Stores bits for DISABILITY_FLAGs
 	var/disabilities_cures = 0	//Stores bits for CURE_FLAGs
-	var/list/dname_list = list("Nearsightedness", "Colourblindness", "Blindness", "Deafness", "Mute", "Obesity", "Swedish Accent", "Chav Accent", "Lisp", "Clumsiness")
+	//Don't mess with the order of these lists unless you sync them, please
+	var/list/dname_list = list("Nearsighted", "Colourblind", "Blind", "Deaf", "Mute", "Obesity", "Swedish Accent", "Chav Accent", "Lisp", "Clumsiness")
 	var/list/dflag_list = list(DISABILITY_FLAG_NEARSIGHTED, DISABILITY_FLAG_COLOURBLIND, DISABILITY_FLAG_BLIND, DISABILITY_FLAG_DEAF, DISABILITY_FLAG_MUTE, DISABILITY_FLAG_FAT, DISABILITY_FLAG_SWEDISH, DISABILITY_FLAG_CHAV, DISABILITY_FLAG_LISP, DISABILITY_FLAG_CLUMSY)
 	var/list/dcure_list = list(CURE_FLAG_NEARSIGHTED, CURE_FLAG_COLOURBLIND, CURE_FLAG_BLIND, CURE_FLAG_DEAF, CURE_FLAG_MUTE, CURE_FLAG_FAT, CURE_FLAG_SWEDISH, CURE_FLAG_CHAV, CURE_FLAG_LISP, CURE_FLAG_CLUMSY)
 
 	var/body_accessory = null
 
+	/*
+	Stop blaming everything on Vox!
+	This is used this any preferences that are species-specific.
+	In the *case* of Vox, this is used to toggle between Large vs Small N2 tanks.
+	For Greys, it *was* used to toggle Wingdings.
+	svq - shaking voxxy's quills
+	*/
 	var/speciesprefs = 0//I hate having to do this, I really do (Using this for oldvox code, making names universal I guess
 
 	//Mob preview
@@ -879,9 +887,14 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/HTML = "<li><b>[label]:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability=[flag]\">[disabilities & flag ? "Yes" : "No"]</a>  "
 	return HTML
 
-/datum/preferences/proc/ShowDisabilityCure(mob/user, cure)
+/datum/preferences/proc/ShowDisabilityCure(mob/user, flag, cure)
 	//Curable == "Yes" == TRUE; Incurable == "No" == FALSE
-	var/HTML = "  <b>Curable:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability_cure=[cure]\">[disabilities_cures & cure ? "Yes" : "No"]</a></li>"
+	var/HTML
+	HTML += "  <b>Curable:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability_cure=[cure]\">"
+	if(disabilities & flag)
+		HTML +=  "[disabilities_cures & cure ? "Yes" : "No"]</a></li>"
+	else
+		HTML += "</a></li>"
 	return HTML
 
 /datum/preferences/proc/SetDisabilities(mob/user)
@@ -891,11 +904,11 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 	for(var/D in 1 to dname_list.len)	//Lists, thank you very much, lists.
 		HTML += ShowDisabilityState(user, dflag_list[D], dname_list[D])
-		HTML += ShowDisabilityCure(user, dcure_list[D])
+		HTML += ShowDisabilityCure(user, dflag_list[D], dcure_list[D])
 
 	if(CAN_WINGDINGS in S.species_traits)
 		HTML += ShowDisabilityState(user, DISABILITY_FLAG_WINGDINGS, "Speak in Wingdings")
-		HTML += ShowDisabilityCure(user, CURE_FLAG_WINGDINGS)
+		HTML += ShowDisabilityCure(user, DISABILITY_FLAG_WINGDINGS, CURE_FLAG_WINGDINGS)
 
 	for(var/lang in known_langs)
 		var/datum/language/L = GLOB.all_languages[lang]
