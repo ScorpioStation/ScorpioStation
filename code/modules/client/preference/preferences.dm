@@ -1164,9 +1164,9 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				disabilities = 0
 				SetDisabilities(user)
 			if("input")
-				var/dflag=text2num(href_list["disability"])
+				var/dflag = text2num(href_list["disability"])
 				if(dflag >= 0) // Toggle it.
-					disabilities ^= text2num(href_list["disability"]) //MAGIC
+					disabilities ^= dflag //MAGIC
 				SetDisabilities(user)
 			else
 				SetDisabilities(user)
