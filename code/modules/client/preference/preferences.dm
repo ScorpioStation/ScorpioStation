@@ -61,6 +61,11 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 #define TAB_CHAR 0
 #define TAB_GAME 1
 #define TAB_GEAR 2
+
+#define DISABILITY_NAMES = list("Nearsighted", "Colourblind", "Blind", "Deaf", "Mute", "Obese", "Swedish Accent", "Chav Accent", "Lisp", "Dizziness")
+#define DISABILITY_FLAGS = list(DISABILITY_FLAG_NEARSIGHTED, DISABILITY_FLAG_COLOURBLIND, DISABILITY_FLAG_BLIND, DISABILITY_FLAG_DEAF, DISABILITY_FLAG_MUTE, DISABILITY_FLAG_FAT, DISABILITY_FLAG_SWEDISH, DISABILITY_FLAG_CHAV, DISABILITY_FLAG_LISP, DISABILITY_FLAG_DIZZY)
+#define DISABILITY_CURES = list(CURE_FLAG_NEARSIGHTED, CURE_FLAG_COLOURBLIND, CURE_FLAG_BLIND, CURE_FLAG_DEAF, CURE_FLAG_MUTE, CURE_FLAG_FAT, CURE_FLAG_SWEDISH, CURE_FLAG_CHAV, CURE_FLAG_LISP, CURE_FLAG_DIZZY)
+
 /datum/preferences
 	var/client/parent
 	//doohickeys for savefiles
@@ -132,8 +137,15 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/list/known_langs = list("Galactic Common")	//What languages the character knows - we are going to start this list off with "Galactic Common"
 	var/list/sp_langs = list("Sinta'unathi", "Siik'tajr", "Canilunzt", "Skrellian", "Vox-pidgin", "Rootspeak", "Trinary", "Chittin", "Bubblish", "Psionic Communication", "Orluum", "Sol Common")
 	var/list/sc_langs = list("None", "Tradeband", "Gutter", "Clownish", "Neo-Russkiya") //Secondary Languages List
-
 	var/autohiss_mode = AUTOHISS_OFF	//Species autohiss level. OFF, BASIC, FULL.
+
+	//Disabilities
+	var/disabilities = 0
+	var/list/disability_names = list("Nearsighted", "Colourblind", "Blind", "Deaf", "Mute", "Obese", "Swedish Accent", "Chav Accent", "Lisp", "Dizziness")
+	var/list/disability_flags = list(DISABILITY_FLAG_NEARSIGHTED, DISABILITY_FLAG_COLOURBLIND, DISABILITY_FLAG_BLIND, DISABILITY_FLAG_DEAF, DISABILITY_FLAG_MUTE, DISABILITY_FLAG_FAT, DISABILITY_FLAG_SWEDISH, DISABILITY_FLAG_CHAV, DISABILITY_FLAG_LISP, DISABILITY_FLAG_DIZZY)
+	var/list/disability_cures = list(CURE_FLAG_NEARSIGHTED, CURE_FLAG_COLOURBLIND, CURE_FLAG_BLIND, CURE_FLAG_DEAF, CURE_FLAG_MUTE, CURE_FLAG_FAT, CURE_FLAG_SWEDISH, CURE_FLAG_CHAV, CURE_FLAG_LISP, CURE_FLAG_DIZZY)
+
+
 
 	var/body_accessory = null
 
@@ -176,7 +188,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/sec_record = ""
 	var/gen_record = ""
 
-	var/disabilities = 0
 
 	var/ark_soft_relation = "Neutral"
 
@@ -870,26 +881,26 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	return TRUE
 
 /datum/preferences/proc/ShowDisabilityState(mob/user, flag, label)
-	return "<li><b>[label]:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability=[flag]curability=[cure]\">[disabilities & flag ? "Yes" : "No"]</a></li>"
+	return "<li><b>[label]:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability=[flag]\">[disabilities & flag ? "Yes" : "No"]</a></li>"
+
+/datum/preferences/proc/ShowDisabilityCure(mob/user, cure)
+	//Curable == "Yes" == TRUE; Incurable == "No" == FALSE
+	return "<li><b>Curable?:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability=[cure]\">[disabilities & cure ? "Yes" : "No"]</a></li>"
 
 /datum/preferences/proc/SetDisabilities(mob/user)
 	var/datum/species/S = GLOB.all_species[species]
 	var/HTML = "<body>"
 	HTML += "<tt><center>"
 
+	for(var/D in 1 to disability_names.len)	//Lists, thank you very much, lists.
+		var/dis_name = disability_names[D]
+		var/dis_flag = disability_flags[D]
+		var/dis_cure = disability_cures[D]
+		HTML += ShowDisabilityState(user, dis_flag, dis_name)
+		HTML += ShowDisabilityCure(user, dis_cure)
+
 	if(CAN_WINGDINGS in S.species_traits)
 		HTML += ShowDisabilityState(user, DISABILITY_FLAG_WINGDINGS, "Speak in Wingdings")
-
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_NEARSIGHTED, "Nearsighted")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_COLOURBLIND, "Colourblind")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_BLIND, "Blind")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_DEAF, "Deaf")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_MUTE, "Mute")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_FAT, "Obese")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_SWEDISH, "Swedish accent")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_CHAV, "Chav accent")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_LISP, "Lisp")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_DIZZY, "Dizziness")
 
 	for(var/lang in known_langs)
 		var/datum/language/L = GLOB.all_languages[lang]
@@ -1150,7 +1161,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				user << browse(null, "window=disabil")
 				ShowChoices(user)
 			if("reset")
-				disabilities=0
+				disabilities = 0
 				SetDisabilities(user)
 			if("input")
 				var/dflag=text2num(href_list["disability"])
