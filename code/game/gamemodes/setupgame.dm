@@ -30,18 +30,25 @@
 	for(var/i = 1; i < DNA_SE_LENGTH ; i++)
 		numsToAssign += i
 
-	// Standard muts
-	GLOB.blindblock         = getAssignedBlock("BLINDNESS",     numsToAssign)
+	// Disabilities
+	GLOB.glassesblock       = getAssignedBlock("GLASSES",       numsToAssign)
 	GLOB.colourblindblock   = getAssignedBlock("COLOURBLIND",   numsToAssign)
+	GLOB.blindblock         = getAssignedBlock("BLINDNESS",     numsToAssign)
 	GLOB.deafblock          = getAssignedBlock("DEAF",          numsToAssign)
+	GLOB.muteblock          = getAssignedBlock("MUTE",          numsToAssign)
+	GLOB.fatblock           = getAssignedBlock("FAT",           numsToAssign)
+	GLOB.swedeblock         = getAssignedBlock("SWEDE",         numsToAssign)
+	GLOB.chavblock          = getAssignedBlock("CHAV",          numsToAssign)
+	GLOB.lispblock          = getAssignedBlock("LISP",          numsToAssign)
+	GLOB.clumsyblock        = getAssignedBlock("CLUMSY",        numsToAssign)
+
+	// Standard muts
 	GLOB.hulkblock          = getAssignedBlock("HULK",          numsToAssign, DNA_HARD_BOUNDS, good = TRUE)
 	GLOB.teleblock          = getAssignedBlock("TELE",          numsToAssign, DNA_HARD_BOUNDS, good = TRUE)
 	GLOB.fireblock          = getAssignedBlock("FIRE",          numsToAssign, DNA_HARDER_BOUNDS, good = TRUE)
 	GLOB.xrayblock          = getAssignedBlock("XRAY",          numsToAssign, DNA_HARDER_BOUNDS, good = TRUE)
-	GLOB.clumsyblock        = getAssignedBlock("CLUMSY",        numsToAssign)
 	GLOB.fakeblock          = getAssignedBlock("FAKE",          numsToAssign)
 	GLOB.coughblock         = getAssignedBlock("COUGH",         numsToAssign)
-	GLOB.glassesblock       = getAssignedBlock("GLASSES",       numsToAssign)
 	GLOB.epilepsyblock      = getAssignedBlock("EPILEPSY",      numsToAssign)
 	GLOB.twitchblock        = getAssignedBlock("TWITCH",        numsToAssign)
 	GLOB.nervousblock       = getAssignedBlock("NERVOUS",       numsToAssign)
@@ -65,12 +72,7 @@
 	/////////////////////////////////////////////
 
 	// Disabilities
-	GLOB.lispblock      = getAssignedBlock("LISP",       numsToAssign)
-	GLOB.muteblock      = getAssignedBlock("MUTE",       numsToAssign)
 	GLOB.radblock       = getAssignedBlock("RAD",        numsToAssign)
-	GLOB.fatblock       = getAssignedBlock("FAT",        numsToAssign)
-	GLOB.chavblock      = getAssignedBlock("CHAV",       numsToAssign)
-	GLOB.swedeblock     = getAssignedBlock("SWEDE",      numsToAssign)
 	GLOB.scrambleblock  = getAssignedBlock("SCRAMBLE",   numsToAssign)
 	GLOB.strongblock    = getAssignedBlock("STRONG",     numsToAssign, good = TRUE)
 	GLOB.hornsblock     = getAssignedBlock("HORNS",      numsToAssign)

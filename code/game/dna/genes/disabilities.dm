@@ -15,7 +15,6 @@
 	var/activation_message = ""			// Activation message
 	var/deactivation_message = ""		// Yay, you're no longer growing 3 arms
 
-
 /datum/dna/gene/disability/can_activate(mob/M, flags)
 	return TRUE // Always set!
 
@@ -51,7 +50,6 @@
 	..()
 	block = GLOB.clumsyblock
 
-
 //Blindness, Blind
 /datum/dna/gene/disability/blindness
 	name = "Blindness"
@@ -63,6 +61,7 @@
 /datum/dna/gene/disability/blindness/New()
 	..()
 	block = GLOB.blindblock
+
 
 /datum/dna/gene/disability/blindness/activate(mob/M, connected, flags)
 	..()
@@ -83,6 +82,7 @@
 /datum/dna/gene/disability/colourblindness/New()
 	..()
 	block = GLOB.colourblindblock
+
 
 /datum/dna/gene/disability/colourblindness/activate(mob/M, connected, flags)
 	..()
@@ -105,6 +105,7 @@
 /datum/dna/gene/disability/deaf/New()
 	..()
 	block = GLOB.deafblock
+
 
 /datum/dna/gene/disability/deaf/activate(mob/M, connected, flags)
 	..()
@@ -163,11 +164,11 @@
 /datum/dna/gene/disability/lisp/OnSay(mob/M, message)
 	return replacetext(message,"s","th")
 
-
+//Scorpio RP Stutter
 /datum/dna/gene/disability/rpstutter
 	name = "RPSTUTTER"
-	activation_message=""
-	deactivation_message =""
+	activation_message = ""
+	deactivation_message = ""
 	mutation = RPSTUTTER
 	gene_dna = DNA_RP
 
@@ -194,8 +195,6 @@
 	if(prob(10))
 		H.Stuttering(10)
 
-
-
 //Mute
 /datum/dna/gene/disability/mute
 	name = "Mute"
@@ -209,37 +208,9 @@
 	..()
 	block = GLOB.muteblock
 
+
 /datum/dna/gene/disability/mute/OnSay(mob/M, message)
 	return ""
-
-/* Language Tics, Replacements */
-
-//Tourettes
-/datum/dna/gene/disability/tourettes
-	name = "Tourettes"
-	activation_message = "You twitch."
-	deactivation_message = "Your mouth tastes like soap."
-	instability = -GENE_INSTABILITY_MODERATE
-	mutation = TOURETTES
-
-/datum/dna/gene/disability/tourettes/New()
-	..()
-	block = GLOB.twitchblock
-
-/datum/dna/gene/disability/tourettes/OnMobLife(mob/living/carbon/human/H)
-	if((prob(10) && H.paralysis <= 1))
-		H.Stun(10)
-		switch(rand(1, 3))
-			if(1)
-				H.emote("twitch")
-			if(2 to 3)
-				H.say("[prob(50) ? ";" : ""][pick("SHIT", "PISS", "FUCK ME SIDEWAYS", "VULVA VIBRATING A VENEZULEAN VUVUZELA", "PREHENSILE PENISES", "MOTHERFUCKER", "TITS")]")
-		var/x_offset_old = H.pixel_x
-		var/y_offset_old = H.pixel_y
-		var/x_offset = H.pixel_x + rand(-2, 2)
-		var/y_offset = H.pixel_y + rand(-1, 1)
-		animate(H, pixel_x = x_offset, pixel_y = y_offset, time = 1)
-		animate(H, pixel_x = x_offset_old, pixel_y = y_offset_old, time = 1)
 
 //Chav
 /datum/dna/gene/disability/speech/chav
@@ -311,7 +282,7 @@
 
 //Wingdings
 /datum/dna/gene/disability/wingdings
-	name = "Alien Voice"
+	name = "Grey Speech"
 	desc = "Garbles the subject's voice into an incomprehensible speech."
 	activation_message = "<span class='wingdings'>Your vocal cords feel alien.</span>"
 	deactivation_message = "Your vocal cords no longer feel alien."
@@ -333,7 +304,6 @@
 			garbled_message += message[i]
 	message = garbled_message
 	return message
-
 
 /*
  Mutation-Only Disabilities
@@ -398,5 +368,33 @@
 	if((prob(5) && H.paralysis <= 1))
 		H.drop_item()
 		H.emote("cough")
+//Tourettes
+/datum/dna/gene/disability/tourettes
+	name = "Tourettes"
+	activation_message = "You twitch."
+	deactivation_message = "Your mouth tastes like soap."
+	instability = -GENE_INSTABILITY_MODERATE
+	mutation = TOURETTES
+
+/datum/dna/gene/disability/tourettes/New()
+	..()
+	block = GLOB.twitchblock
+
+/datum/dna/gene/disability/tourettes/OnMobLife(mob/living/carbon/human/H)
+	if((prob(10) && H.paralysis <= 1))
+		H.Stun(10)
+		switch(rand(1, 3))
+			if(1)
+				H.emote("twitch")
+			if(2 to 3)
+				H.say("[prob(50) ? ";" : ""][pick("SHIT", "PISS", "FUCK ME SIDEWAYS", "VULVA VIBRATING A VENEZULEAN VUVUZELA", "PREHENSILE PENISES", "MOTHERFUCKER", "TITS")]")
+		var/x_offset_old = H.pixel_x
+		var/y_offset_old = H.pixel_y
+		var/x_offset = H.pixel_x + rand(-2, 2)
+		var/y_offset = H.pixel_y + rand(-1, 1)
+		animate(H, pixel_x = x_offset, pixel_y = y_offset, time = 1)
+		animate(H, pixel_x = x_offset_old, pixel_y = y_offset_old, time = 1)
+
+
 
 #undef string2charlist
