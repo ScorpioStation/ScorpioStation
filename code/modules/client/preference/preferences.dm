@@ -878,11 +878,13 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	return TRUE
 
 /datum/preferences/proc/ShowDisabilityState(mob/user, flag, label)
-	return "<li><b>[label]:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability=[flag]\">[disabilities & flag ? "Yes" : "No"]</a></li>"
+	var/HTML = "<li><b>[label]:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability=[flag]\">[disabilities & flag ? "Yes" : "No"]</a>  "
+	return HTML
 
 /datum/preferences/proc/ShowDisabilityCure(mob/user, cure)
 	//Curable == "Yes" == TRUE; Incurable == "No" == FALSE
-	return "<li><b>Curable?:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability_cure=[cure]\">[disabilities_cures & cure ? "Yes" : "No"]</a></li>"
+	var/HTML = "  <b>Curable:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability_cure=[cure]\">[disabilities_cures & cure ? "Yes" : "No"]</a></li>"
+	return HTML
 
 /datum/preferences/proc/SetDisabilities(mob/user)
 	var/datum/species/S = GLOB.all_species[species]
@@ -900,14 +902,18 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	for(var/lang in known_langs)
 		var/datum/language/L = GLOB.all_languages[lang]
 		var/lname = L.name
-		if(lname == "Galactic Common")			//Set Stutter on Galactic Common
+		if(lname == "Galactic Common")	//Set Stutter on Galactic Common
 			HTML += ShowDisabilityState(user, DISABILITY_FLAG_GALACTIC, "Galactic Common Stutter")
-		else if(lname in sp_langs)					//Set Stutter on Species' Language
+			HTML += "</li>"
+		else if(lname in sp_langs)		//Set Stutter on Species Language
 			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SP_LANG, "Species Stutter: [L]")
-		else if(lname in sc_langs)					//Set Stutter on Secondary Language
+			HTML += "</li>"
+		else if(lname in sc_langs)		//Set Stutter on Secondary Language
 			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SC_LANG, "Secondary Stutter: [L]")
+			HTML += "</li>"
 		else
 			HTML += "An Error Has Ocurred. Please file an Issue on the Scorpio Github with a screenshot of this Message."
+			HTML += "</li>"
 
 	HTML += {"</ul>
 		<a href=\"?_src_=prefs;task=close;preference=disabilities\">\[Done\]</a>
