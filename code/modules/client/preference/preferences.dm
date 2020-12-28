@@ -1160,7 +1160,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				SetDisabilities(user)
 			if("input")											// Preference: "disabilities"; Task: "input"
 				var/dflag = text2num(href_list["disability"])	// "disability" == [flag] from ShowDisabilityState == DISABILITY_FLAG_blah == bitflag
-				var/dcure = text2num(href_list["disability_Cure"])	// "disability_cure" == [cure] from ShowDisabilityCure == CURE_FLAG_blah == bitflag
+				var/dcure = text2num(href_list["disability_cure"])	// "disability_cure" == [cure] from ShowDisabilityCure == CURE_FLAG_blah == bitflag
 				if(dflag >= 0)									// Is this bitflag for this disability already set?
 					disabilities ^= dflag //MAGIC				// This adds or removes the 'dflag' bit to/from 'disabilities' by comparing the two lists.
 				if(dcure >= 0)
