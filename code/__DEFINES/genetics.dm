@@ -8,6 +8,8 @@
 // mob/var/list/mutations
 
 // Used in preferences.
+
+/* Disability Flags */
 #define DISABILITY_FLAG_NEARSIGHTED 1
 #define DISABILITY_FLAG_FAT         2
 #define DISABILITY_FLAG_BLIND       4
@@ -25,17 +27,18 @@
 #define DISABILITY_FLAG_SP_LANG		8192
 #define DISABILITY_FLAG_SC_LANG		16384
 
-//Cure Flags
-#define CURE_FLAG_NEARSIGHTED		32768
-#define CURE_FLAG_FAT				65536
-#define CURE_FLAG_BLIND				131072
-#define CURE_FLAG_MUTE				262144
-#define CURE_FLAG_COLOURBLIND		524288
-#define CURE_FLAG_SWEDISH			1048576
-#define CURE_FLAG_LISP				2097152
-#define CURE_FLAG_DIZZY				4194304
-#define CURE_FLAG_CHAV				8388608
-#define CURE_FLAG_DEAF				16777216
+/* Disability Cure Flags */
+#define CURE_FLAG_NEARSIGHTED       1
+#define CURE_FLAG_FAT               2
+#define CURE_FLAG_BLIND             4
+#define CURE_FLAG_MUTE              8
+#define CURE_FLAG_COLOURBLIND       16
+#define CURE_FLAG_WINGDINGS         32
+#define CURE_FLAG_SWEDISH           64
+#define CURE_FLAG_LISP              128
+#define CURE_FLAG_DIZZY             256
+#define CURE_FLAG_CHAV              512
+#define CURE_FLAG_DEAF              1024
 
 
 ///////////////////////////////////////
