@@ -139,18 +139,16 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/disabilities= 0			//Stores bits for DISABILITY_FLAGs
 	var/disabilities_cures = 0	//Stores bits for CURE_FLAGs
 	//Don't mess with the order of these lists unless you sync them, please
-	var/list/dname_list = list("Nearsighted", "Colourblind", "Blind", "Deaf", "Mute", "Obesity", "Swedish Accent", "Chav Accent", "Lisp", "Clumsiness")
-	var/list/dflag_list = list(DISABILITY_FLAG_NEARSIGHTED, DISABILITY_FLAG_COLOURBLIND, DISABILITY_FLAG_BLIND, DISABILITY_FLAG_DEAF, DISABILITY_FLAG_MUTE, DISABILITY_FLAG_FAT, DISABILITY_FLAG_SWEDISH, DISABILITY_FLAG_CHAV, DISABILITY_FLAG_LISP, DISABILITY_FLAG_CLUMSY)
-	var/list/dcure_list = list(CURE_FLAG_NEARSIGHTED, CURE_FLAG_COLOURBLIND, CURE_FLAG_BLIND, CURE_FLAG_DEAF, CURE_FLAG_MUTE, CURE_FLAG_FAT, CURE_FLAG_SWEDISH, CURE_FLAG_CHAV, CURE_FLAG_LISP, CURE_FLAG_CLUMSY)
+	var/list/dname_list = list("Nearsighted", "Colourblind", "Blind", "Deaf", "Mute", "Obesity", "Swedish Accent", "Chav Accent", "Lisp", "Dizziness")
+	var/list/dflag_list = list(DISABILITY_FLAG_NEARSIGHTED, DISABILITY_FLAG_COLOURBLIND, DISABILITY_FLAG_BLIND, DISABILITY_FLAG_DEAF, DISABILITY_FLAG_MUTE, DISABILITY_FLAG_FAT, DISABILITY_FLAG_SWEDISH, DISABILITY_FLAG_CHAV, DISABILITY_FLAG_LISP, DISABILITY_FLAG_DIZZY)
+	var/list/dcure_list = list(CURE_FLAG_NEARSIGHTED, CURE_FLAG_COLOURBLIND, CURE_FLAG_BLIND, CURE_FLAG_DEAF, CURE_FLAG_MUTE, CURE_FLAG_FAT, CURE_FLAG_SWEDISH, CURE_FLAG_CHAV, CURE_FLAG_LISP, CURE_FLAG_DIZZY)
 
 	var/body_accessory = null
-
 	/*
 	Stop blaming everything on Vox!
 	This is used this any preferences that are species-specific.
 	In the *case* of Vox, this is used to toggle between Large vs Small N2 tanks.
 	For Greys, it *was* used to toggle Wingdings.
-	svq - shaking voxxy's quills
 	*/
 	var/speciesprefs = 0//I hate having to do this, I really do (Using this for oldvox code, making names universal I guess
 
@@ -2210,19 +2208,38 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	Y'all are Killing Voxxy
 	*/
 
-	var/list/dblock_list = new(GLOB.glassesblock, GLOB.colourblindblock, GLOB.blindblock, GLOB.deafblock, GLOB.muteblock, GLOB.fatblock, GLOB.swedeblock, GLOB.chavblock, GLOB.lispblock, GLOB.clumsyblock)
-	for(var/D in 1 to dname_list.len)	//Let's use THOSE lists!
-		var/disflag = dflag_list[D]
-		if(disabilities & disflag)
-			var/dna_type = DNA_SE	//Curable Disabilities go onto the DNA_SE list
-			var/discure = dcure_list[D]
-			if(disflag == DISABILITY_FLAG_FAT)
-				character.overeatduration = 600
-			if(disabilities_cures & discure)
-				dna_type = DNA_RP	//Incurable Disabilities go onto the DNA_RP list
-			var/disblock = dblock_list[D]
-			character.dna.SetDNAState(disblock, TRUE, dna_type, TRUE)
-			character.dna.default_blocks.Add(disblock)
+	if(disabilities & DISABILITY_FLAG_BLIND)
+		character.dna.SetDNAState(GLOB.blindblock, TRUE, DNA_SE, TRUE)
+		character.dna.default_blocks.Add(GLOB.blindblock)
+
+	if(disabilities & DISABILITY_FLAG_DEAF)
+		character.dna.SetDNAState(GLOB.deafblock, TRUE, DNA_SE, TRUE)
+		character.dna.default_blocks.Add(GLOB.deafblock)
+
+	if(disabilities & DISABILITY_FLAG_COLOURBLIND)
+		character.dna.SetDNAState(GLOB.colourblindblock, TRUE, DNA_SE, TRUE)
+		character.dna.default_blocks.Add(GLOB.colourblindblock)
+
+	if(disabilities & DISABILITY_FLAG_MUTE)
+		character.dna.SetDNAState(GLOB.muteblock, TRUE, DNA_SE, TRUE)
+		character.dna.default_blocks.Add(GLOB.muteblock)
+
+	if(disabilities & DISABILITY_FLAG_SWEDISH)
+		character.dna.SetDNAState(GLOB.swedeblock, TRUE, DNA_SE, TRUE)
+		character.dna.default_blocks.Add(GLOB.swedeblock)
+
+	if(disabilities & DISABILITY_FLAG_CHAV)
+		character.dna.SetDNAState(GLOB.chavblock, TRUE, DNA_SE, TRUE)
+		character.dna.default_blocks.Add(GLOB.chavblock)
+
+	if(disabilities & DISABILITY_FLAG_LISP)
+		character.dna.SetDNAState(GLOB.lispblock, TRUE, DNA_SE, TRUE)
+		character.dna.default_blocks.Add(GLOB.lispblock)
+
+	if(disabilities & DISABILITY_FLAG_DIZZY)
+		character.dna.SetDNAState(GLOB.dizzyblock, TRUE, DNA_SE, TRUE)
+		character.dna.default_blocks.Add(GLOB.dizzyblock)
+
 
 	//Oh gods, why am I doing this? Kek, let's do it, I guess. ;-;
 	if(disabilities & DISABILITY_FLAG_WINGDINGS && (CAN_WINGDINGS in character.dna.species.species_traits))

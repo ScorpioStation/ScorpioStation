@@ -18,7 +18,7 @@
 #define DISABILITY_FLAG_WINGDINGS   32
 #define DISABILITY_FLAG_SWEDISH     64
 #define DISABILITY_FLAG_LISP        128
-#define DISABILITY_FLAG_CLUMSY       256
+#define DISABILITY_FLAG_DIZZY       256
 #define DISABILITY_FLAG_CHAV        512
 #define DISABILITY_FLAG_DEAF        1024
 
@@ -36,7 +36,7 @@
 #define CURE_FLAG_WINGDINGS         32
 #define CURE_FLAG_SWEDISH           64
 #define CURE_FLAG_LISP              128
-#define CURE_FLAG_CLUMSY             256
+#define CURE_FLAG_DIZZY             256
 #define CURE_FLAG_CHAV              512
 #define CURE_FLAG_DEAF              1024
 
