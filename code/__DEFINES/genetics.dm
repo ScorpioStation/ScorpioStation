@@ -27,20 +27,6 @@
 #define DISABILITY_FLAG_SP_LANG		8192
 #define DISABILITY_FLAG_SC_LANG		16384
 
-/* Disability Cure Flags */
-#define CURE_FLAG_NEARSIGHTED       1
-#define CURE_FLAG_FAT               2
-#define CURE_FLAG_BLIND             4
-#define CURE_FLAG_MUTE              8
-#define CURE_FLAG_COLOURBLIND       16
-#define CURE_FLAG_WINGDINGS         32
-#define CURE_FLAG_SWEDISH           64
-#define CURE_FLAG_LISP              128
-#define CURE_FLAG_DIZZY             256
-#define CURE_FLAG_CHAV              512
-#define CURE_FLAG_DEAF              1024
-
-
 ///////////////////////////////////////
 // MUTATIONS
 ///////////////////////////////////////

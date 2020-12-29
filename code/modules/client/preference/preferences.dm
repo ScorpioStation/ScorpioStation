@@ -139,9 +139,8 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/disabilities= 0			//Stores bits for DISABILITY_FLAGs
 	var/disabilities_cures = 0	//Stores bits for CURE_FLAGs
 	//Don't mess with the order of these lists unless you sync them, please
-	var/list/dname_list = list("Nearsighted", "Colourblind", "Blind", "Deaf", "Mute", "Obesity", "Swedish Accent", "Chav Accent", "Lisp", "Dizziness")
-	var/list/dflag_list = list(DISABILITY_FLAG_NEARSIGHTED, DISABILITY_FLAG_COLOURBLIND, DISABILITY_FLAG_BLIND, DISABILITY_FLAG_DEAF, DISABILITY_FLAG_MUTE, DISABILITY_FLAG_FAT, DISABILITY_FLAG_SWEDISH, DISABILITY_FLAG_CHAV, DISABILITY_FLAG_LISP, DISABILITY_FLAG_DIZZY)
-	var/list/dcure_list = list(CURE_FLAG_NEARSIGHTED, CURE_FLAG_COLOURBLIND, CURE_FLAG_BLIND, CURE_FLAG_DEAF, CURE_FLAG_MUTE, CURE_FLAG_FAT, CURE_FLAG_SWEDISH, CURE_FLAG_CHAV, CURE_FLAG_LISP, CURE_FLAG_DIZZY)
+	var/list/dname_list = list("Nearsighted", "Colourblind", "Blind", "Deaf", "Mute", "Obesity", "Swedish Accent", "Chav Accent", "Lisp", "Dizziness", "Wingdings")
+	var/list/dflag_list = list(DISABILITY_FLAG_NEARSIGHTED, DISABILITY_FLAG_COLOURBLIND, DISABILITY_FLAG_BLIND, DISABILITY_FLAG_DEAF, DISABILITY_FLAG_MUTE, DISABILITY_FLAG_FAT, DISABILITY_FLAG_SWEDISH, DISABILITY_FLAG_CHAV, DISABILITY_FLAG_LISP, DISABILITY_FLAG_DIZZY, DISABILITY_FLAG_WINGDINGS)
 
 	var/body_accessory = null
 	/*
@@ -885,12 +884,12 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/HTML = "<li><b>[label]:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability=[flag]\">[disabilities & flag ? "Yes" : "No"]</a>  "
 	return HTML
 
-/datum/preferences/proc/ShowDisabilityCure(mob/user, flag, cure)
+/datum/preferences/proc/ShowDisabilityCure(mob/user, flag)
 	//Curable == "Yes" == TRUE; Incurable == "No" == FALSE
 	var/HTML
-	HTML += "  <b>Curable:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability_cure=[cure]\">"
+	HTML += "  <b>Curable:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability_cure=[flag]\">"
 	if(disabilities & flag)
-		HTML +=  "[disabilities_cures & cure ? "Yes" : "No"]</a></li>"
+		HTML +=  "[disabilities_cures & flag ? "Yes" : "No"]</a></li>"
 	else
 		HTML += "</a></li>"
 	return HTML
@@ -901,12 +900,14 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	HTML += "<tt><center>"
 
 	for(var/D in 1 to dname_list.len)	//Lists, thank you very much, lists.
-		HTML += ShowDisabilityState(user, dflag_list[D], dname_list[D])
-		HTML += ShowDisabilityCure(user, dflag_list[D], dcure_list[D])
-
-	if(CAN_WINGDINGS in S.species_traits)
-		HTML += ShowDisabilityState(user, DISABILITY_FLAG_WINGDINGS, "Speak in Wingdings")
-		HTML += ShowDisabilityCure(user, DISABILITY_FLAG_WINGDINGS, CURE_FLAG_WINGDINGS)
+		var/dname = dname_list[D]
+		if(dname == "Wingdings")
+			if(CAN_WINGDINGS in S.species_traits)
+				HTML += ShowDisabilityState(user, dflag_list[D], "Speak in Wingdings")
+				HTML += ShowDisabilityCure(user, dflag_list[D])	//Dang it, Wingdings
+		else
+			HTML += ShowDisabilityState(user, dflag_list[D], dname_list[D])
+			HTML += ShowDisabilityCure(user, dflag_list[D])
 
 	for(var/lang in known_langs)
 		var/datum/language/L = GLOB.all_languages[lang]
@@ -2243,7 +2244,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 	//Oh gods, why am I doing this? Kek, let's do it, I guess. ;-;
 	if(disabilities & DISABILITY_FLAG_WINGDINGS && (CAN_WINGDINGS in character.dna.species.species_traits))
-		if(disabilities_cures & CURE_FLAG_WINGDINGS)
+		if(disabilities_cures & DISABILITY_FLAG_WINGDINGS)
 			character.dna.SetDNAState(GLOB.wingdingsblock, TRUE, DNA_SE, TRUE)
 		else
 			character.dna.SetDNAState(GLOB.wingdingsblock, TRUE, DNA_RP, TRUE)	//Y'all killing me, I'm going to need to revamp setupgame.dm now x3
