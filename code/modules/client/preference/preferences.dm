@@ -2201,86 +2201,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 		else if(firstspace == name_length)
 			real_name += "[pick(GLOB.last_names)]"
 
-	character.add_language(language) //Add Secondary Language to list of languages our character can speak
-
-	/*
-	Disabilities,
-	Oh My Freakin' Heck,
-	Y'all are Killing Voxxy
-	*/
-
-	if(disabilities & DISABILITY_FLAG_BLIND)
-		character.dna.SetDNAState(GLOB.blindblock, TRUE, DNA_SE, TRUE)
-		character.dna.default_blocks.Add(GLOB.blindblock)
-		if(disabilities_cures & DISABILITY_FLAG_BLIND)	//"TRUE" is Incurable
-			character.dna.incur_blocks.Add(GLOB.blindblock)
-
-	if(disabilities & DISABILITY_FLAG_DEAF)
-		character.dna.SetDNAState(GLOB.deafblock, TRUE, DNA_SE, TRUE)
-		character.dna.default_blocks.Add(GLOB.deafblock)
-		if(disabilities_cures & DISABILITY_FLAG_DEAF)
-			character.dna.incur_blocks.Add(GLOB.deafblock)
-
-	if(disabilities & DISABILITY_FLAG_COLOURBLIND)
-		character.dna.SetDNAState(GLOB.colourblindblock, TRUE, DNA_SE, TRUE)
-		character.dna.default_blocks.Add(GLOB.colourblindblock)
-		if(disabilities_cures & DISABILITY_FLAG_COLOURBLIND)
-			character.dna.incur_blocks.Add(GLOB.colourblindblock)
-
-	if(disabilities & DISABILITY_FLAG_MUTE)
-		character.dna.SetDNAState(GLOB.muteblock, TRUE, DNA_SE, TRUE)
-		character.dna.default_blocks.Add(GLOB.muteblock)
-		if(disabilities_cures & DISABILITY_FLAG_MUTE)
-			character.dna.incur_blocks.Add(GLOB.muteblock)
-
-	if(disabilities & DISABILITY_FLAG_SWEDISH)
-		character.dna.SetDNAState(GLOB.swedeblock, TRUE, DNA_SE, TRUE)
-		character.dna.default_blocks.Add(GLOB.swedeblock)
-		if(disabilities_cures & DISABILITY_FLAG_SWEDISH)
-			character.dna.incur_blocks.Add(GLOB.swedeblock)
-
-	if(disabilities & DISABILITY_FLAG_CHAV)
-		character.dna.SetDNAState(GLOB.chavblock, TRUE, DNA_SE, TRUE)
-		character.dna.default_blocks.Add(GLOB.chavblock)
-		if(disabilities_cures & DISABILITY_FLAG_CHAV)
-			character.dna.incur_blocks.Add(GLOB.chavblock)
-
-	if(disabilities & DISABILITY_FLAG_LISP)
-		character.dna.SetDNAState(GLOB.lispblock, TRUE, DNA_SE, TRUE)
-		character.dna.default_blocks.Add(GLOB.lispblock)
-		if(disabilities_cures & DISABILITY_FLAG_LISP)
-			character.dna.incur_blocks.Add(GLOB.lispblock)
-
-	if(disabilities & DISABILITY_FLAG_DIZZY)
-		character.dna.SetDNAState(GLOB.dizzyblock, TRUE, DNA_SE, TRUE)
-		character.dna.default_blocks.Add(GLOB.dizzyblock)
-		if(disabilities_cures & DISABILITY_FLAG_DIZZY)
-			character.dna.incur_blocks.Add(GLOB.dizzyblock)
-
-	//Oh gods, why am I doing this? Kek, let's do it, I guess. ;-;
-	if(disabilities & DISABILITY_FLAG_WINGDINGS && (CAN_WINGDINGS in character.dna.species.species_traits))
-		if(disabilities_cures & DISABILITY_FLAG_WINGDINGS)
-			character.dna.SetDNAState(GLOB.wingdingsblock, TRUE, DNA_SE, TRUE)
-			character.dna.default_blocks.Add(GLOB.wingdingsblock)
-			if(disabilities_cures & DISABILITY_FLAG_WINGDINGS)
-				character.dna.incur_blocks.Add(GLOB.wingdingsblock)
-
-	//We really only need ONE genetic block to turn on for this, but three flags so there can be three separate yes/no flags for the Character Setup interface.
-	if(disabilities & (DISABILITY_FLAG_GALACTIC | DISABILITY_FLAG_SP_LANG | DISABILITY_FLAG_SC_LANG))
-		for(var/lang in known_langs)				//Check our character's known_langs for languages selected for stutters
-			var/datum/language/L = GLOB.all_languages[lang]
-			var/lname = L.name
-			if((lname == "Galactic Common") && (disabilities & DISABILITY_FLAG_GALACTIC))
-				character.dna.stutter_langs += L	//Add Galactic Common stutter to stutter_langs on DNA
-			else if((lname in sp_langs) && (disabilities & DISABILITY_FLAG_SP_LANG))
-				character.dna.stutter_langs += L	//Add Species Language stutter to stutter_langs on DNA
-			else if((lname in sc_langs) && (disabilities & DISABILITY_FLAG_SC_LANG) && lname != "None")
-				character.dna.stutter_langs += L	//Add Secondary Language stutter to stutter_langs on DNA
-		character.dna.SetDNAState(GLOB.rp_stutterblock, TRUE, DNA_RP)	//We should probably have this defer and then run UpdateDNA(DNA_ALL)
-		character.dna.default_blocks.Add(GLOB.rp_stutterblock)
-
-
-	//Other Character Data
 	character.real_name = real_name
 	character.dna.real_name = real_name
 	character.name = character.real_name
@@ -2366,8 +2286,83 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 	character.change_eye_color(e_colour)
 	character.original_eye_color = e_colour
+	character.add_language(language)	//Add Secondary Language to list of languages our character can speak
 
+	/*
+	Disabilities,
+	Oh My Freakin' Heck,
+	Y'all are Killing Voxxy
+	*/
 
+	if(disabilities & DISABILITY_FLAG_BLIND)
+		character.dna.SetDNAState(GLOB.blindblock, TRUE, DNA_SE, TRUE)
+		character.dna.default_blocks.Add(GLOB.blindblock)
+		if(disabilities_cures & DISABILITY_FLAG_BLIND)	//"TRUE" is Incurable
+			character.dna.incur_blocks.Add(GLOB.blindblock)
+
+	if(disabilities & DISABILITY_FLAG_DEAF)
+		character.dna.SetDNAState(GLOB.deafblock, TRUE, DNA_SE, TRUE)
+		character.dna.default_blocks.Add(GLOB.deafblock)
+		if(disabilities_cures & DISABILITY_FLAG_DEAF)
+			character.dna.incur_blocks.Add(GLOB.deafblock)
+
+	if(disabilities & DISABILITY_FLAG_COLOURBLIND)
+		character.dna.SetDNAState(GLOB.colourblindblock, TRUE, DNA_SE, TRUE)
+		character.dna.default_blocks.Add(GLOB.colourblindblock)
+		if(disabilities_cures & DISABILITY_FLAG_COLOURBLIND)
+			character.dna.incur_blocks.Add(GLOB.colourblindblock)
+
+	if(disabilities & DISABILITY_FLAG_MUTE)
+		character.dna.SetDNAState(GLOB.muteblock, TRUE, DNA_SE, TRUE)
+		character.dna.default_blocks.Add(GLOB.muteblock)
+		if(disabilities_cures & DISABILITY_FLAG_MUTE)
+			character.dna.incur_blocks.Add(GLOB.muteblock)
+
+	if(disabilities & DISABILITY_FLAG_SWEDISH)
+		character.dna.SetDNAState(GLOB.swedeblock, TRUE, DNA_SE, TRUE)
+		character.dna.default_blocks.Add(GLOB.swedeblock)
+		if(disabilities_cures & DISABILITY_FLAG_SWEDISH)
+			character.dna.incur_blocks.Add(GLOB.swedeblock)
+
+	if(disabilities & DISABILITY_FLAG_CHAV)
+		character.dna.SetDNAState(GLOB.chavblock, TRUE, DNA_SE, TRUE)
+		character.dna.default_blocks.Add(GLOB.chavblock)
+		if(disabilities_cures & DISABILITY_FLAG_CHAV)
+			character.dna.incur_blocks.Add(GLOB.chavblock)
+
+	if(disabilities & DISABILITY_FLAG_LISP)
+		character.dna.SetDNAState(GLOB.lispblock, TRUE, DNA_SE, TRUE)
+		character.dna.default_blocks.Add(GLOB.lispblock)
+		if(disabilities_cures & DISABILITY_FLAG_LISP)
+			character.dna.incur_blocks.Add(GLOB.lispblock)
+
+	if(disabilities & DISABILITY_FLAG_DIZZY)
+		character.dna.SetDNAState(GLOB.dizzyblock, TRUE, DNA_SE, TRUE)
+		character.dna.default_blocks.Add(GLOB.dizzyblock)
+		if(disabilities_cures & DISABILITY_FLAG_DIZZY)
+			character.dna.incur_blocks.Add(GLOB.dizzyblock)
+
+	//Oh gods, why am I doing this? Kek, let's do it, I guess. ;-;
+	if(disabilities & DISABILITY_FLAG_WINGDINGS && (CAN_WINGDINGS in character.dna.species.species_traits))
+		if(disabilities_cures & DISABILITY_FLAG_WINGDINGS)
+			character.dna.SetDNAState(GLOB.wingdingsblock, TRUE, DNA_SE, TRUE)
+			character.dna.default_blocks.Add(GLOB.wingdingsblock)
+			if(disabilities_cures & DISABILITY_FLAG_WINGDINGS)
+				character.dna.incur_blocks.Add(GLOB.wingdingsblock)
+
+	//We really only need ONE genetic block to turn on for this, but three flags so there can be three separate yes/no flags for the Character Setup interface.
+	if(disabilities & (DISABILITY_FLAG_GALACTIC | DISABILITY_FLAG_SP_LANG | DISABILITY_FLAG_SC_LANG))
+		for(var/lang in known_langs)				//Check our character's known_langs for languages selected for stutters
+			var/datum/language/L = GLOB.all_languages[lang]
+			var/lname = L.name
+			if((lname == "Galactic Common") && (disabilities & DISABILITY_FLAG_GALACTIC))
+				character.dna.stutter_langs += L	//Add Galactic Common stutter to stutter_langs on DNA
+			else if((lname in sp_langs) && (disabilities & DISABILITY_FLAG_SP_LANG))
+				character.dna.stutter_langs += L	//Add Species Language stutter to stutter_langs on DNA
+			else if((lname in sc_langs) && (disabilities & DISABILITY_FLAG_SC_LANG) && lname != "None")
+				character.dna.stutter_langs += L	//Add Secondary Language stutter to stutter_langs on DNA
+		character.dna.SetDNAState(GLOB.rp_stutterblock, TRUE, DNA_RP)	//We should probably have this defer and then run UpdateDNA(DNA_ALL)
+		character.dna.default_blocks.Add(GLOB.rp_stutterblock)
 
 	character.dna.species.handle_dna(character)
 
