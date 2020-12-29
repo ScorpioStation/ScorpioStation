@@ -46,10 +46,13 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 	// From old dna.
 	var/blood_type = "A+"  // Should probably change to an integer => string map but I'm lazy.
 	var/real_name          // Stores the real name of the person who originally got this dna datum. Used primarily for changelings,
-	var/list/stutter_langs = list()		//List of languages a character is set to trigger an RP stutter on.
 
 	var/datum/species/species = new /datum/species/human //The type of mutant race the player is if applicable (i.e. potato-man)
 	var/list/default_blocks = list() //list of all blocks toggled at roundstart
+
+	//Disabilities
+	var/list/incur_blocks = list()		//List of incurable Disability blocks
+	var/list/stutter_langs = list()		//List of languages a character is set to trigger an RP stutter on.
 
 // Make a copy of this strand.
 // USE THIS WHEN COPYING STUFF OR YOU'LL GET CORRUPTION!

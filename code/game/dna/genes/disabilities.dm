@@ -14,6 +14,7 @@
 	var/mutation = 0					// Mutation to give (or 0)
 	var/activation_message = ""			// Activation message
 	var/deactivation_message = ""		// Yay, you're no longer growing 3 arms
+	var/curable	= TRUE					// Can this Disability be cured?
 
 /datum/dna/gene/disability/can_activate(mob/M, flags)
 	return TRUE // Always set!
@@ -203,6 +204,7 @@
 	deactivation_message = "You feel able to speak freely again."
 	instability = -GENE_INSTABILITY_MODERATE
 	mutation = MUTE
+	curable = TRUE
 
 /datum/dna/gene/disability/mute/New()
 	..()

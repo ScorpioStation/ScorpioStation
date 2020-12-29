@@ -542,10 +542,11 @@
 	CureIfHasDisability(GLOB.twitchblock)
 
 /mob/living/proc/CureIfHasDisability(block)
-	if(dna && dna.GetDNAState(block, DNA_SE))
-		dna.SetDNAState(block, FALSE, DNA_SE, TRUE) //Fix the gene
-		genemutcheck(src, block,null, MUTCHK_FORCED)
-		dna.UpdateDNA(DNA_SE)
+	if(dna && !(block in dna.incur_blocks))
+		if(dna.GetDNAState(block, DNA_SE))
+			dna.SetDNAState(block, FALSE, DNA_SE, TRUE) //Fix the gene
+			genemutcheck(src, block, null, MUTCHK_FORCED)
+			dna.UpdateDNA(DNA_SE)
 
 ///////////////////////////////// FROZEN /////////////////////////////////////
 

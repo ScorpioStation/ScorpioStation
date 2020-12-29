@@ -885,11 +885,11 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	return HTML
 
 /datum/preferences/proc/ShowDisabilityCure(mob/user, flag)
-	//Curable == "Yes" == TRUE; Incurable == "No" == FALSE
+	//Curable == "No" == TRUE; Incurable == "Yes" == FALSE
 	var/HTML
 	HTML += "  <b>Curable:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability_cure=[flag]\">"
 	if(disabilities & flag)
-		HTML +=  "[disabilities_cures & flag ? "Yes" : "No"]</a></li>"
+		HTML +=  "[disabilities_cures & flag ? "No" : "Yes"]</a></li>"
 	else
 		HTML += "</a></li>"
 	return HTML
@@ -1176,7 +1176,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				SetDisabilities(user)
 			if("input")											// Preference: "disabilities"; Task: "input"
 				var/dflag = text2num(href_list["disability"])	// "disability" == [flag] from ShowDisabilityState == DISABILITY_FLAG_blah == bitflag
-				var/dcure = text2num(href_list["disability_cure"])	// "disability_cure" == [cure] from ShowDisabilityCure == CURE_FLAG_blah == bitflag
+				var/dcure = text2num(href_list["disability_cure"])	// "disability_cure" == [cure] from ShowDisabilityCure
 				if(dflag >= 0)									// Is this bitflag for this disability already set?
 					disabilities ^= dflag //MAGIC				// This adds or removes the 'dflag' bit to/from 'disabilities' by comparing the two lists.
 				if(dcure >= 0)
@@ -2212,43 +2212,59 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	if(disabilities & DISABILITY_FLAG_BLIND)
 		character.dna.SetDNAState(GLOB.blindblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.blindblock)
+		if(disabilities_cures & DISABILITY_FLAG_BLIND)	//"TRUE" is Incurable
+			character.dna.incur_blocks.Add(GLOB.blindblock)
 
 	if(disabilities & DISABILITY_FLAG_DEAF)
 		character.dna.SetDNAState(GLOB.deafblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.deafblock)
+		if(disabilities_cures & DISABILITY_FLAG_DEAF)
+			character.dna.incur_blocks.Add(GLOB.deafblock)
 
 	if(disabilities & DISABILITY_FLAG_COLOURBLIND)
 		character.dna.SetDNAState(GLOB.colourblindblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.colourblindblock)
+		if(disabilities_cures & DISABILITY_FLAG_COLOURBLIND)
+			character.dna.incur_blocks.Add(GLOB.colourblindblock)
 
 	if(disabilities & DISABILITY_FLAG_MUTE)
 		character.dna.SetDNAState(GLOB.muteblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.muteblock)
+		if(disabilities_cures & DISABILITY_FLAG_MUTE)
+			character.dna.incur_blocks.Add(GLOB.muteblock)
 
 	if(disabilities & DISABILITY_FLAG_SWEDISH)
 		character.dna.SetDNAState(GLOB.swedeblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.swedeblock)
+		if(disabilities_cures & DISABILITY_FLAG_SWEDISH)
+			character.dna.incur_blocks.Add(GLOB.swedeblock)
 
 	if(disabilities & DISABILITY_FLAG_CHAV)
 		character.dna.SetDNAState(GLOB.chavblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.chavblock)
+		if(disabilities_cures & DISABILITY_FLAG_CHAV)
+			character.dna.incur_blocks.Add(GLOB.chavblock)
 
 	if(disabilities & DISABILITY_FLAG_LISP)
 		character.dna.SetDNAState(GLOB.lispblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.lispblock)
+		if(disabilities_cures & DISABILITY_FLAG_LISP)
+			character.dna.incur_blocks.Add(GLOB.lispblock)
 
 	if(disabilities & DISABILITY_FLAG_DIZZY)
 		character.dna.SetDNAState(GLOB.dizzyblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.dizzyblock)
+		if(disabilities_cures & DISABILITY_FLAG_DIZZY)
+			character.dna.incur_blocks.Add(GLOB.dizzyblock)
 
 
 	//Oh gods, why am I doing this? Kek, let's do it, I guess. ;-;
 	if(disabilities & DISABILITY_FLAG_WINGDINGS && (CAN_WINGDINGS in character.dna.species.species_traits))
 		if(disabilities_cures & DISABILITY_FLAG_WINGDINGS)
 			character.dna.SetDNAState(GLOB.wingdingsblock, TRUE, DNA_SE, TRUE)
-		else
-			character.dna.SetDNAState(GLOB.wingdingsblock, TRUE, DNA_RP, TRUE)	//Y'all killing me, I'm going to need to revamp setupgame.dm now x3
-		character.dna.default_blocks.Add(GLOB.wingdingsblock)
+			character.dna.default_blocks.Add(GLOB.wingdingsblock)
+			if(disabilities_cures & DISABILITY_FLAG_WINGDINGS)
+				character.dna.incur_blocks.Add(GLOB.wingdingsblock)
 
 	//We really only need ONE genetic block to turn on for this, but three flags so there can be three separate yes/no flags for the Character Setup interface.
 	if(disabilities & (DISABILITY_FLAG_GALACTIC | DISABILITY_FLAG_SP_LANG | DISABILITY_FLAG_SC_LANG))
