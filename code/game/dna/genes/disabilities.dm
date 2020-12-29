@@ -14,6 +14,7 @@
 	var/mutation = 0					// Mutation to give (or 0)
 	var/activation_message = ""			// Activation message
 	var/deactivation_message = ""		// Yay, you're no longer growing 3 arms
+	var/curable	= TRUE					// Can this Disability be cured?
 
 /datum/dna/gene/disability/can_activate(mob/M, flags)
 	return TRUE // Always set!
@@ -131,6 +132,20 @@
 	..()
 	M.update_nearsighted_effects()
 
+
+//Obesity, Fat
+/datum/dna/gene/disability/fat
+	name = "Obesity"
+	desc = "Greatly slows the subject's metabolism, enabling greater buildup of lipid tissue."
+	activation_message = "You feel blubbery and lethargic!"
+	deactivation_message = "You feel fit!"
+	instability = -GENE_INSTABILITY_MINOR
+	mutation = OBESITY
+
+/datum/dna/gene/disability/fat/New()
+	..()
+	block = GLOB.fatblock
+
 /*
  Language
 */
@@ -180,6 +195,92 @@
 /datum/dna/gene/disability/nervousness/OnMobLife(mob/living/carbon/human/H)
 	if(prob(10))
 		H.Stuttering(10)
+
+//Mute
+/datum/dna/gene/disability/mute
+	name = "Mute"
+	desc = "Completely shuts down the speech center of the subject's brain."
+	activation_message   = "You feel unable to express yourself at all."
+	deactivation_message = "You feel able to speak freely again."
+	instability = -GENE_INSTABILITY_MODERATE
+	mutation = MUTE
+	curable = TRUE
+
+/datum/dna/gene/disability/mute/New()
+	..()
+	block = GLOB.muteblock
+
+
+/datum/dna/gene/disability/mute/OnSay(mob/M, message)
+	return ""
+
+//Chav
+/datum/dna/gene/disability/speech/chav
+	name = "Chav"
+	desc = "Forces the language center of the subject's brain to construct sentences in a more rudimentary manner."
+	activation_message = "Ye feel like a reet prat like, innit?"
+	deactivation_message = "You no longer feel like being rude and sassy."
+	mutation = CHAV
+
+/datum/dna/gene/disability/speech/chav/New()
+	..()
+	block = GLOB.chavblock
+
+/datum/dna/gene/disability/speech/chav/OnSay(mob/M, message)
+	// THIS ENTIRE THING BEGS FOR REGEX
+	message = replacetext(message,"dick","prat")
+	message = replacetext(message,"comdom","knob'ead")
+	message = replacetext(message,"looking at","gawpin' at")
+	message = replacetext(message,"great","bangin'")
+	message = replacetext(message,"man","mate")
+	message = replacetext(message,"friend",pick("mate","bruv","bledrin"))
+	message = replacetext(message,"what","wot")
+	message = replacetext(message,"drink","wet")
+	message = replacetext(message,"get","giz")
+	message = replacetext(message,"what","wot")
+	message = replacetext(message,"no thanks","wuddent fukken do one")
+	message = replacetext(message,"i don't know","wot mate")
+	message = replacetext(message,"no","naw")
+	message = replacetext(message,"robust","chin")
+	message = replacetext(message," hi ","how what how")
+	message = replacetext(message,"hello","sup bruv")
+	message = replacetext(message,"kill","bang")
+	message = replacetext(message,"murder","bang")
+	message = replacetext(message,"windows","windies")
+	message = replacetext(message,"window","windy")
+	message = replacetext(message,"break","do")
+	message = replacetext(message,"your","yer")
+	message = replacetext(message,"security","coppers")
+	return message
+
+//Swedish
+/datum/dna/gene/disability/speech/swedish
+	name = "Swedish"
+	desc = "Forces the language center of the subject's brain to construct sentences in a vaguely norse manner."
+	activation_message = "You feel Swedish, however that works."
+	deactivation_message = "The feeling of Swedishness passes."
+	mutation = SWEDISH
+
+/datum/dna/gene/disability/speech/swedish/New()
+	..()
+	block = GLOB.swedeblock
+
+/datum/dna/gene/disability/speech/swedish/OnSay(mob/M, message)
+	// svedish
+	message = replacetextEx(message,"W","V")
+	message = replacetextEx(message,"w","v")
+	message = replacetextEx(message,"J","Y")
+	message = replacetextEx(message,"j","y")
+	message = replacetextEx(message,"A",pick("Å","Ä","Æ","A"))
+	message = replacetextEx(message,"a",pick("å","ä","æ","a"))
+	message = replacetextEx(message,"BO","BJO")
+	message = replacetextEx(message,"Bo","Bjo")
+	message = replacetextEx(message,"bo","bjo")
+	message = replacetextEx(message,"O",pick("Ö","Ø","O"))
+	message = replacetextEx(message,"o",pick("ö","ø","o"))
+	if(prob(30) && !M.is_muzzled())
+		message += " Bork[pick("",", bork",", bork, bork")]!"
+	return message
 
 //Wingdings
 /datum/dna/gene/disability/wingdings

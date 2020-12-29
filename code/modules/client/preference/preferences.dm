@@ -2257,7 +2257,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 		if(disabilities_cures & DISABILITY_FLAG_DIZZY)
 			character.dna.incur_blocks.Add(GLOB.dizzyblock)
 
-
 	//Oh gods, why am I doing this? Kek, let's do it, I guess. ;-;
 	if(disabilities & DISABILITY_FLAG_WINGDINGS && (CAN_WINGDINGS in character.dna.species.species_traits))
 		if(disabilities_cures & DISABILITY_FLAG_WINGDINGS)
@@ -2277,7 +2276,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				character.dna.stutter_langs += L	//Add Species Language stutter to stutter_langs on DNA
 			else if((lname in sc_langs) && (disabilities & DISABILITY_FLAG_SC_LANG) && lname != "None")
 				character.dna.stutter_langs += L	//Add Secondary Language stutter to stutter_langs on DNA
-		character.dna.SetDNAState(GLOB.rp_stutterblock, TRUE, DNA_RP)
+		character.dna.SetDNAState(GLOB.rp_stutterblock, TRUE, DNA_RP)	//We should probably have this defer and then run UpdateDNA(DNA_ALL)
 		character.dna.default_blocks.Add(GLOB.rp_stutterblock)
 
 
