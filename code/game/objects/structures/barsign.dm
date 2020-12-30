@@ -46,19 +46,19 @@
 /obj/structure/sign/barsign/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
 	switch(damage_type)
 		if(BRUTE)
-			playsound(src.loc, 'sound/effects/glasshit.ogg', 75, TRUE)
+			playsound(loc, 'sound/effects/glasshit.ogg', 75, TRUE)
 		if(BURN)
-			playsound(src.loc, 'sound/items/welder.ogg', 100, TRUE)
+			playsound(loc, 'sound/items/welder.ogg', 100, TRUE)
 
 /obj/structure/sign/barsign/attack_ai(mob/user)
-	return src.attack_hand(user)
+	return attack_hand(user)
 
 /obj/structure/sign/barsign/attack_hand(mob/user)
-	if(!src.allowed(user))
-		to_chat(user, "<span class = 'info'>Access denied.</span>")
+	if(!allowed(user))
+		to_chat(user, "<span class='info'>Access denied.</span>")
 		return
 	if(broken)
-		to_chat(user, "<span class ='danger'>The controls seem unresponsive.</span>")
+		to_chat(user, "<span class='danger'>The controls seem unresponsive.</span>")
 		return
 	pick_sign()
 
@@ -175,36 +175,30 @@
 	icon = "theouterspess"
 	desc = "This bar isn't actually located in outer space."
 
-
 /datum/barsign/slipperyshots
 	name = "Slippery Shots"
 	icon = "slipperyshots"
 	desc = "Slippery slope to drunkeness with our shots!"
-
 
 /datum/barsign/thegreytide
 	name = "The Grey Tide"
 	icon = "thegreytide"
 	desc = "Abandon your toolboxing ways and enjoy a lazy beer!"
 
-
 /datum/barsign/honkednloaded
 	name = "Honked 'n' Loaded"
 	icon = "honkednloaded"
 	desc = "Honk."
-
 
 /datum/barsign/thenest
 	name = "The Nest"
 	icon = "thenest"
 	desc = "A good place to retire for a drink after a long night of crime fighting."
 
-
 /datum/barsign/thecoderbus
 	name = "The Coderbus"
 	icon = "thecoderbus"
 	desc = "A very controversial bar known for its wide variety of constantly-changing drinks."
-
 
 /datum/barsign/theadminbus
 	name = "The Adminbus"
