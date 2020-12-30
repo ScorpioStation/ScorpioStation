@@ -10,7 +10,7 @@
 	var/list/barsigns = list()
 	var/list/hiddensigns = list()
 	var/panel_open = FALSE
-	var/emagged =FALSE
+	var/emagged = FALSE
 	var/prev_sign = ""
 	var/state = 0
 
