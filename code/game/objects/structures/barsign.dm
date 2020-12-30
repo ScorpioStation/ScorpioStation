@@ -16,11 +16,13 @@
 
 /obj/structure/sign/barsign/New()
 	..()
-	//filling the barsigns list
+	//filling the barsigns lists
 	for(var/bartype in subtypesof(/datum/barsign))
 		var/datum/barsign/signinfo = new bartype
 		if(!signinfo.hidden)
 			barsigns += signinfo
+		else
+			hiddensigns += signinfo
 	//randomly assigning a sign
 	set_sign(pick(barsigns))
 
@@ -54,30 +56,40 @@
 	return attack_hand(user)
 
 /obj/structure/sign/barsign/attack_hand(mob/user)
-	if(!allowed(user))
+	if(allowed(user))
+		if(broken)
+			to_chat(user, "<span class='danger'>The controls seem unresponsive.</span>")
+			return
+		else
+			if(panel_open)
+				pick_sign()
+				to_chat(user, "<span class='notice'>You set the barsign and close the maintenance panel.</span>")
+				panel_open = FALSE
+				return
+			else
+				to_chat(user, "<span class='info'>The maintenance panel is currently closed.</span>")
+				return
+	else
 		to_chat(user, "<span class='info'>Access denied.</span>")
 		return
-	if(broken)
-		to_chat(user, "<span class='danger'>The controls seem unresponsive.</span>")
-		return
-	pick_sign()
 
 /obj/structure/sign/barsign/attackby(var/obj/item/I, mob/user)
 	if(istype(I, /obj/item/stack/cable_coil) && panel_open)
 		var/obj/item/stack/cable_coil/C = I
-		if(emagged) //Emagged, not broken by EMP
+		if(broken && emagged) //Emagged, not broken by EMP
 			to_chat(user, "<span class='warning'>Sign has been damaged beyond repair!</span>")
 			return
-		else if(!broken)
+		else if(broken && !emagged)
+			if(C.use(2))
+				to_chat(user, "<span class='notice'>You replace the burnt wiring.</span>")
+				broken = FALSE
+			else
+				to_chat(user, "<span class='warning'>You need at least two lengths of cable!</span>")
+		else if(!broken && !emagged)
 			to_chat(user, "<span class='warning'>This sign is functioning properly!</span>")
 			return
-		if(C.use(2))
-			to_chat(user, "<span class='notice'>You replace the burnt wiring.</span>")
-			broken = FALSE
-		else
-			to_chat(user, "<span class='warning'>You need at least two lengths of cable!</span>")
 	else
-		return ..()
+		return
 
 /obj/structure/sign/barsign/screwdriver_act(mob/user)
 	if(!panel_open)
@@ -86,13 +98,20 @@
 		panel_open = TRUE
 	else
 		to_chat(user, "<span class='notice'>You close the maintenance panel.</span>")
-		if(!broken && !emagged)
-			set_sign(pick(barsigns))
-		else if(emagged)
-			set_sign(new /datum/barsign/hiddensigns/syndibarsign)
-		else
-			set_sign(new /datum/barsign/hiddensigns/empbarsign)
 		panel_open = FALSE
+
+/obj/structure/sign/barsign/proc/pick_sign()
+	var/list/signs = barsigns
+	var/new_sign
+	if(!broken && !emagged)
+		new_sign = input("Available Signage: ", "Bar Sign", null) as null|anything in signs
+		set_sign(new_sign)
+	else if(!broken && emagged)
+		signs += hiddensigns
+		new_sign = input("Available Signage: ", "Bar Sign", null) as null|anything in signs
+		set_sign(new_sign)
+	else
+		set_sign(new /datum/barsign/hiddensigns/empbarsign)
 
 /obj/structure/sign/barsign/emp_act(severity)
 	set_sign(new /datum/barsign/hiddensigns/empbarsign)
@@ -111,14 +130,6 @@
 	set_sign(new /datum/barsign/hiddensigns/syndibarsign)
 	emagged = TRUE
 	req_access = list(ACCESS_SYNDICATE)
-
-/obj/structure/sign/barsign/proc/pick_sign()
-	var/picked_name = input("Available Signage", "Bar Sign") as null|anything in barsigns
-	if(!picked_name)
-		return
-	set_sign(picked_name)
-
-
 
 //Code below is to define useless variables for datums. It errors without these
 /datum/barsign
@@ -168,7 +179,6 @@
 	name = "The Cavern"
 	icon = "thecavern"
 	desc = "Fine drinks while listening to some fine tunes."
-
 
 /datum/barsign/theouterspess
 	name = "The Outer Spess"
