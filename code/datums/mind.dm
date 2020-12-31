@@ -148,7 +148,7 @@
 
 	if(!recipient)
 		recipient = current
-	var/output = "<B>[current.real_name]'s Memories:</B><HR>"
+
 	output += memory
 
 	var/antag_datum_objectives = FALSE
@@ -733,7 +733,7 @@ GLOBAL_LIST(objective_choices)
 			return
 		var/ambition_index = text2num(href_list["edit_ambition"])
 		if(!isnum(ambition_index) || ambition_index < 0 || ambition_index % 1)
-			to_chat(user, "<span class='warning'You attempted to edit your ambitions with an invalid ambition_index ([ambition_index]) at [AREACOORD(user.loc)].")
+			to_chat(user, "<span class='warning'You attempted to edit your ambitions with an invalid ambition_index ([ambition_index]).</span>")
 			log_and_message_admins("key_name_admin(user) attempted to edit their ambitions with an invalid ambition_index ([ambition_index]). Possible HREF exploit.")
 			return
 		if(ambition_index > LAZYLEN(ambitions))
@@ -788,8 +788,7 @@ GLOBAL_LIST(objective_choices)
 			do_edit_objectives_ambitions()
 			return
 		if(!isnum(ambition_index) || ambition_index < 0 || ambition_index % 1)
-			log_admin_private("[key_name(user)] attempted to remove an ambition with and invalid ambition_index ([ambition_index]) at [AREACOORD(user.loc)].")
-			message_admins("[key_name(user)] attempted to remove an ambition with and invalid ambition_index ([ambition_index]). Possible HREF exploit.")
+			log_and_message_admins("[key_name(user)] attempted to remove an ambition with and invalid ambition_index ([ambition_index]). Possible HREF exploit.")
 			return
 		var/old_ambition = ambitions[ambition_index]
 		if(alert(user, "Are you sure you want to delete this ambition?", "Delete ambition", "Yes", "No") != "Yes")
@@ -1441,16 +1440,15 @@ GLOBAL_LIST(objective_choices)
 		if(!GLOB.objective_choices)
 			populate_objective_choices()
 
-		if(current_objective && GLOB.objective_choices[current_objective.name])
-			def_value = current_objective.name
+		if(current_objective)
+			if(GLOB.objective_choices[current_objective.name])
+				def_value = current_objective.name
 
 		var/new_obj_type = input("Select objective type:", "Objective type", def_value) as null|anything in GLOB.objective_choices
 		new_obj_type = GLOB.objective_choices[selected_type]
 
 		if(!new_obj_type)
 			return
-
-		var/datum/objective/new_objective = null
 
 		switch(new_obj_type)
 			if("assassinate","protect","debrain", "brig", "maroon")
