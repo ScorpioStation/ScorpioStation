@@ -536,8 +536,6 @@ SUBSYSTEM_DEF(timer)
 		return timer.timeToRun - world.time
 	return null
 
-
-
 #undef BUCKET_LEN
 #undef BUCKET_POS
 #undef TIMER_MAX

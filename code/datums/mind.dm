@@ -23,7 +23,8 @@
 #define AMBITION_COOLDOWN_TIME (5 SECONDS)
 #define OBJECTIVES_COOLDOWN_TIME (2 SECONDS)
 #define ADMIN_PING_COOLDOWN_TIME (10 MINUTES)
-#define MAX_AMBITION_LEN		1024
+#define MAX_AMBITION_LEN 1024
+#define MAX_AMBITIONS 5
 ////////////////////////////////////////
 
 /datum/mind
@@ -82,7 +83,8 @@
 	var/list/learned_recipes //List of learned recipe TYPES.
 
 	//Used for Ambitions & Objectives Skyrat Port
-	var/appear_in_round_end_report = TRUE	//This is a long varname, let's reduce you.
+	var/list/all_objectives = list()
+	//var/appear_in_round_end_report = TRUE	//This is a long varname, let's reduce you. //Nope.
 	var/mob/original_character		//Does this need to be typecast to a higher level?
 	var/list/ambitions			//Lazy list for antagonists to set goals they wish to achieve, to be shown at the round-end report.
 
@@ -133,7 +135,7 @@
 	if(active)
 		new_character.key = key		//now transfer the key to link the client to our new body
 
-	appear_in_round_end_report = current.client?.prefs?.appear_in_round_end_report //Used for Ambitions & Objectives Skyrat Port
+	//appear_in_round_end_report = current.client?.prefs?.appear_in_round_end_report //Naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah :C
 
 /datum/mind/proc/store_memory(new_text)
 	memory += "[new_text]<BR>"
@@ -183,8 +185,9 @@
 
 
 /datum/mind/proc/show_editable_objectives_and_ambitions()
+	var/user = usr
 	var/is_admin = check_rights(R_ADMIN, FALSE)
-	var/self_mind = usr == current
+	var/self_mind = user == current
 	if(!is_admin && !self_mind)
 		return ""
 	var/list/output = list()
@@ -229,7 +232,7 @@
 					if(REQUEST_DEL_OBJECTIVE)
 						var/datum/objective/objective_ref = locate(objectives_info["target"]) in antag_datum.objectives
 						if(QDELETED(objective_ref))
-							stack_trace("Objective request found with deleted reference. UID: [uid] | Antag: [antag_datum] | Mind: [src] | User: [usr]")
+							stack_trace("Objective request found with deleted reference. UID: [uid] | Antag: [antag_datum] | Mind: [src] | User: [user]")
 							antag_datum.remove_objective_change(uid)
 							continue
 						output += "<li><B>Request #[uid]</B>: DEL [objective_ref.name] - [objective_ref.explanation_text] - [objectives_info["text"]]"
@@ -240,7 +243,7 @@
 					if(REQUEST_WIN_OBJECTIVE, REQUEST_LOSE_OBJECTIVE)
 						var/datum/objective/objective_ref = locate(objectives_info["target"]) in antag_datum.objectives
 						if(QDELETED(objective_ref))
-							stack_trace("Objective request found with deleted reference. UID: [uid] | Antag: [antag_datum] | Mind: [src] | User: [usr]")
+							stack_trace("Objective request found with deleted reference. UID: [uid] | Antag: [antag_datum] | Mind: [src] | User: [user]")
 							antag_datum.remove_objective_change(uid)
 							continue
 						output += "<li><B>Request #[uid]</B>: [obj_request == REQUEST_WIN_OBJECTIVE ? "WIN" : "LOSE"] [objective_ref.name] - [objective_ref.explanation_text] - [objectives_info["text"]]"
@@ -249,7 +252,7 @@
 						if(is_admin)
 							output += " <a href='?src=\ref[antag_datum.owner];req_obj_accept=\ref[antag_datum];req_obj_id=[uid]'>Accept</a> <a href='?src=\ref[antag_datum.owner];req_obj_deny=\ref[antag_datum];req_obj_id=[uid]'>Deny</a>"
 					else
-						stack_trace("Objective request found with no request index. UID: [uid] | Antag: [antag_datum] | Mind: [src] | User: [usr]")
+						stack_trace("Objective request found with no request index. UID: [uid] | Antag: [antag_datum] | Mind: [src] | User: [user]")
 						continue
 			output += "</ul><br>"
 			if(self_mind)
@@ -257,7 +260,7 @@
 			if(is_admin)
 				output += "<a href='?src=\ref[src];req_obj_ping_cd_clear=1'>Clear ping cooldown</a><br>"
 	output += "<br><b>[current.real_name]'s Ambitions:</b>"
-	if(LAZYLEN(ambitions) < CONFIG_GET(number/max_ambitions))
+	if(LAZYLEN(ambitions) < 5)
 		output += " <a href='?src=\ref[src];add_ambition=1'>Add Ambition</a>"
 	output += "<ul>"
 	if(!LAZYLEN(ambitions))
@@ -277,7 +280,8 @@
 
 
 /datum/mind/proc/do_edit_objectives_ambitions()
-	var/datum/browser/popup = new(usr, "objectives and ambitions", "Objectives and Ambitions")
+	var/user = usr
+	var/datum/browser/popup = new(user, "objectives and ambitions", "Objectives and Ambitions")
 	popup.set_content(show_editable_objectives_and_ambitions())
 	popup.open()
 
@@ -290,15 +294,11 @@ GLOBAL_LIST(objective_player_choices)
 /proc/populate_objective_player_choices()
 	GLOB.objective_player_choices = list()
 	var/list/allowed_types = list(
-		/datum/objective/custom,
-		/datum/objective/assassinate/once,
 		/datum/objective/protect,
 		/datum/objective/escape,
 		/datum/objective/survive,
-		/datum/objective/martyr,
 		/datum/objective/steal,
 		/datum/objective/download,
-		/datum/objective/blackmail_implant //SKYRAT ADDITION
 		)
 
 	for(var/t in allowed_types)
@@ -311,9 +311,7 @@ GLOBAL_LIST(objective_choices)
 /proc/populate_objective_choices()
 	GLOB.objective_choices = list()
 	var/list/allowed_types = list(
-		/datum/objective/custom,
 		/datum/objective/assassinate,
-		/datum/objective/assassinate/once,
 		/datum/objective/maroon,
 		/datum/objective/debrain,
 		/datum/objective/protect,
@@ -321,12 +319,10 @@ GLOBAL_LIST(objective_choices)
 		/datum/objective/hijack,
 		/datum/objective/escape,
 		/datum/objective/survive,
-		/datum/objective/martyr,
 		/datum/objective/steal,
 		/datum/objective/download,
 		/datum/objective/nuclear,
 		/datum/objective/absorb,
-		/datum/objective/blackmail_implant //SKYRAT ADDITION
 		)
 
 	for(var/t in allowed_types)
@@ -558,6 +554,7 @@ GLOBAL_LIST(objective_choices)
 		. += "<br>[n_e_robots] of [ai.connected_robots.len] slaved cyborgs are emagged. <a href='?src=[UID()];silicon=unemagcyborgs'>Unemag</a>"
 
 /datum/mind/proc/memory_edit_uplink()
+	var/user = usr
 	. = ""
 	if(ishuman(current) && ((src in SSticker.mode.head_revolutionaries) || \
 		(has_antag_datum(/datum/antagonist/traitor)) || \
@@ -569,7 +566,7 @@ GLOBAL_LIST(objective_choices)
 			crystals = suplink.uses
 		if(suplink)
 			. += "|<a href='?src=[UID()];common=takeuplink'>take</a>"
-			if(usr.client.holder.rights & (R_SERVER|R_EVENT))
+			if(user.client.holder.rights & (R_SERVER|R_EVENT))
 				. += ", <a href='?src=[UID()];common=crystals'>[crystals]</a> crystals"
 			else
 				. += ", [crystals] crystals"
@@ -577,6 +574,7 @@ GLOBAL_LIST(objective_choices)
 		//         ^ whoever left this comment is literally a grammar nazi. stalin better. in russia grammar correct you.
 
 /datum/mind/proc/edit_memory()
+	var/user = usr
 	if(!SSticker || !SSticker.mode)
 		alert("Not before round-start!", "Alert")
 		return
@@ -668,65 +666,66 @@ GLOBAL_LIST(objective_choices)
 		out += gen_objective_text(admin = TRUE)
 	out += "<a href='?src=[UID()];obj_add=1'>Add objective</a><br><br>"
 	out += "<a href='?src=[UID()];obj_announce=1'>Announce objectives</a><br><br>"
-	usr << browse(out, "window=edit_memory[src];size=500x500")
+	user << browse(out, "window=edit_memory[src];size=500x500")
 
 /datum/mind/Topic(href, href_list)
+	var/user = usr
 	if(!check_rights(R_ADMIN))
 		return
-	if (href_list["refresh_obj_amb"])
+	if(href_list["refresh_obj_amb"])
 		do_edit_objectives_ambitions()
 		return
-	else if (href_list["add_ambition"])
+	else if(href_list["add_ambition"])
 		if(!check_rights(R_ADMIN, FALSE))
-			if(usr != current)
+			if(user != current)
 				return
 			if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_AMBITION))
-				to_chat(usr, "<span class='warning'>You must wait [AMBITION_COOLDOWN_TIME * 0.1] seconds between changes.</span>")
+				to_chat(user, "<span class='warning'>You must wait [AMBITION_COOLDOWN_TIME * 0.1] seconds between changes.</span>")
 				return
 		if(!isliving(current))
 			return
 		if(!antag_datums)
 			return
-		var/max_ambitions = CONFIG_GET(number/max_ambitions)
-		if(LAZYLEN(ambitions) >= max_ambitions)
-			to_chat(usr, "<span class='warning'>There's a limit of [max_ambitions] ambitions. Edit or remove some to accomodate for your new additions.</span>")
+		if(LAZYLEN(ambitions) >= MAX_AMBITIONS)
+			to_chat(user, "<span class='warning'>There's a limit of [MAX_AMBITIONS] ambitions. Edit or remove some to accomodate for your new additions.</span>")
 			do_edit_objectives_ambitions()
 			return
-		var/new_ambition = stripped_multiline_input(usr, "Write new ambition", "Ambition", "", MAX_AMBITION_LEN)
+		var/new_ambition = stripped_multiline_input(user, "Write new ambition", "Ambition", "", MAX_AMBITION_LEN)
 		if(isnull(new_ambition))
 			return
 		if(!check_rights(R_ADMIN, FALSE))
-			if(usr != current)
+			if(user != current)
 				return
 			if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_AMBITION))
-				to_chat(usr, "<span class='warning'>You must wait [AMBITION_COOLDOWN_TIME * 0.1] seconds between changes.</span>")
+				to_chat(user, "<span class='warning'>You must wait [AMBITION_COOLDOWN_TIME * 0.1] seconds between changes.</span>")
 				return
 		if(!isliving(current))
-			to_chat(usr, "<span class='warning'>The mind holder is no longer a living creature.</span>")
+			to_chat(user, "<span class='warning'>The mind holder is no longer a living creature.</span>")
 			return
 		if(!antag_datums)
-			to_chat(usr, "<span class='warning'>The mind holder is no longer an antagonist.</span>")
+			to_chat(user, "<span class='warning'>The mind holder is no longer an antagonist.</span>")
 			return
-		if(LAZYLEN(ambitions) >= max_ambitions)
-			to_chat(usr, "<span class='warning'>There's a limit of [max_ambitions] ambitions. Edit or remove some to accomodate for your new additions.</span>")
+		if(LAZYLEN(ambitions) >= MAX_AMBITIONS)
+			to_chat(user, "<span class='warning'>There's a limit of [MAX_AMBITIONS] ambitions. Edit or remove some to accomodate for your new additions.</span>")
 			do_edit_objectives_ambitions()
 			return
 		TIMER_COOLDOWN_START(src, COOLDOWN_AMBITION, AMBITION_COOLDOWN_TIME)
 		LAZYADD(ambitions, new_ambition)
-		if(usr == current)
-			log_game("[key_name(usr)] has created their ambition of index [LAZYLEN(ambitions)].\nNEW AMBITION:\n[new_ambition]")
+		if(user == current)
+			log_game("[key_name(user)] has created their ambition of index [LAZYLEN(ambitions)].\nNEW AMBITION:\n[new_ambition]")
+			log_and_message_admins("[key_name(user)] has created their ambition of index [LAZYLEN(ambitions)].\nNEW AMBITION:\n[new_ambition]")
 		else
-			log_game("[key_name(usr)] has created [key_name(current)]'s ambition of index [LAZYLEN(ambitions)].\nNEW AMBITION:\n[new_ambition]")
-			message_admins("[ADMIN_TPMONTY(usr)] has created [ADMIN_TPMONTY(current)]'s ambition of index [LAZYLEN(ambitions)].")
+			log_game("[key_name(user)] has created [key_name(current)]'s ambition of index [LAZYLEN(ambitions)].\nNEW AMBITION:\n[new_ambition]")
+			log_and_message_admins("[key_name(user)] has created [key_name(current)]'s ambition of index [LAZYLEN(ambitions)].")
 		do_edit_objectives_ambitions()
 		return
 
 	else if (href_list["edit_ambition"])
 		if(!check_rights(R_ADMIN, FALSE))
-			if(usr != current)
+			if(user != current)
 				return
 			if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_AMBITION))
-				to_chat(usr, "<span class='warning'>You must wait [AMBITION_COOLDOWN_TIME * 0.1] seconds between changes.</span>")
+				to_chat(user, "<span class='warning'>You must wait [AMBITION_COOLDOWN_TIME * 0.1] seconds between changes.</span>")
 				return
 		if(!isliving(current))
 			return
@@ -734,51 +733,51 @@ GLOBAL_LIST(objective_choices)
 			return
 		var/ambition_index = text2num(href_list["edit_ambition"])
 		if(!isnum(ambition_index) || ambition_index < 0 || ambition_index % 1)
-			log_admin_private("[key_name(usr)] attempted to edit their ambitions with and invalid ambition_index ([ambition_index]) at [AREACOORD(usr.loc)].")
-			message_admins("[ADMIN_TPMONTY(usr)] attempted to edit their ambitions with and invalid ambition_index ([ambition_index]). Possible HREF exploit.")
+			to_chat(user, "<span class='warning'You attempted to edit your ambitions with an invalid ambition_index ([ambition_index]) at [AREACOORD(user.loc)].")
+			log_and_message_admins("key_name_admin(user) attempted to edit their ambitions with an invalid ambition_index ([ambition_index]). Possible HREF exploit.")
 			return
 		if(ambition_index > LAZYLEN(ambitions))
 			return
 		var/old_ambition = ambitions[ambition_index]
-		var/new_ambition = stripped_multiline_input(usr, "Write new ambition", "Ambition", ambitions[ambition_index], MAX_AMBITION_LEN)
+		var/new_ambition = stripped_multiline_input(user, "Write new ambition", "Ambition", ambitions[ambition_index], MAX_AMBITION_LEN)
 		if(isnull(new_ambition))
 			return
 		if(!check_rights(R_ADMIN, FALSE))
-			if(usr != current)
+			if(user != current)
 				return
 			if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_AMBITION))
-				to_chat(usr, "<span class='warning'>You must wait [AMBITION_COOLDOWN_TIME * 0.1] seconds between changes.</span>")
+				to_chat(user, "<span class='warning'>You must wait [AMBITION_COOLDOWN_TIME * 0.1] seconds between changes.</span>")
 				return
 		if(!isliving(current))
-			to_chat(usr, "<span class='warning'>The mind holder is no longer a living creature.</span>")
+			to_chat(user, "<span class='warning'>The mind holder is no longer a living creature.</span>")
 			return
 		if(!antag_datums)
-			to_chat(usr, "<span class='warning'>The mind holder is no longer an antagonist.</span>")
+			to_chat(user, "<span class='warning'>The mind holder is no longer an antagonist.</span>")
 			return
 		if(ambition_index > LAZYLEN(ambitions))
-			to_chat(usr, "<span class='warning'>The ambition we were editing was deleted before we finished. Aborting.</span>")
+			to_chat(user, "<span class='warning'>The ambition we were editing was deleted before we finished. Aborting.</span>")
 			do_edit_objectives_ambitions()
 			return
 		if(old_ambition != ambitions[ambition_index])
-			to_chat(usr, "<span class='warning'>The ambition has changed since we started editing it. Aborting to prevent data loss.</span>")
+			to_chat(user, "<span class='warning'>The ambition has changed since we started editing it. Aborting to prevent data loss.</span>")
 			do_edit_objectives_ambitions()
 			return
 		TIMER_COOLDOWN_START(src, COOLDOWN_AMBITION, AMBITION_COOLDOWN_TIME)
 		ambitions[ambition_index] = new_ambition
-		if(usr == current)
-			log_game("[key_name(usr)] has edited their ambition of index [ambition_index].\nOLD AMBITION:\n[old_ambition]\nNEW AMBITION:\n[new_ambition]")
+		if(user.key == current.key)
+			log_game("[key_name(user)] has edited their ambition of index [ambition_index].\nOLD AMBITION:\n[old_ambition]\nNEW AMBITION:\n[new_ambition]")
 		else
-			log_game("[key_name(usr)] has edited [key_name(current)]'s ambition of index [ambition_index].\nOLD AMBITION:\n[old_ambition]\nNEW AMBITION:\n[new_ambition]")
-			message_admins("[ADMIN_TPMONTY(usr)] has edited [ADMIN_TPMONTY(current)]'s ambition of index [ambition_index].")
+			log_game("[key_name(user)] has edited [key_name(current)]'s ambition of index [ambition_index].\nOLD AMBITION:\n[old_ambition]\nNEW AMBITION:\n[new_ambition]")
+			message_admins("[key_name_admin(user)] has edited key_name_admin(current)]'s ambition of index [ambition_index].")
 		do_edit_objectives_ambitions()
 		return
 
 	else if (href_list["remove_ambition"])
 		if(!check_rights(R_ADMIN, FALSE))
-			if(usr != current)
+			if(user != current)
 				return
 			if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_AMBITION))
-				to_chat(usr, "<span class='warning'>You must wait [AMBITION_COOLDOWN_TIME * 0.1] seconds between changes.</span>")
+				to_chat(user, "<span class='warning'>You must wait [AMBITION_COOLDOWN_TIME * 0.1] seconds between changes.</span>")
 				return
 		if(!isliving(current))
 			return
@@ -789,47 +788,48 @@ GLOBAL_LIST(objective_choices)
 			do_edit_objectives_ambitions()
 			return
 		if(!isnum(ambition_index) || ambition_index < 0 || ambition_index % 1)
-			log_admin_private("[key_name(usr)] attempted to remove an ambition with and invalid ambition_index ([ambition_index]) at [AREACOORD(usr.loc)].")
-			message_admins("[ADMIN_TPMONTY(usr)] attempted to remove an ambition with and invalid ambition_index ([ambition_index]). Possible HREF exploit.")
+			log_admin_private("[key_name(user)] attempted to remove an ambition with and invalid ambition_index ([ambition_index]) at [AREACOORD(user.loc)].")
+			message_admins("[key_name(user)] attempted to remove an ambition with and invalid ambition_index ([ambition_index]). Possible HREF exploit.")
 			return
 		var/old_ambition = ambitions[ambition_index]
-		if(alert(usr, "Are you sure you want to delete this ambition?", "Delete ambition", "Yes", "No") != "Yes")
+		if(alert(user, "Are you sure you want to delete this ambition?", "Delete ambition", "Yes", "No") != "Yes")
 			return
 		if(!check_rights(R_ADMIN, FALSE))
-			if(usr != current)
+			if(user != current)
 				return
 			if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_AMBITION))
-				to_chat(usr, "<span class='warning'>You must wait [AMBITION_COOLDOWN_TIME * 0.1] seconds between changes.</span>")
+				to_chat(user, "<span class='warning'>You must wait [AMBITION_COOLDOWN_TIME * 0.1] seconds between changes.</span>")
 				return
 		if(!isliving(current))
-			to_chat(usr, "<span class='warning'>The mind holder is no longer a living creature. The ambition we were deleting should no longer exist already.</span>")
+			to_chat(user, "<span class='warning'>The mind holder is no longer a living creature. The ambition we were deleting should no longer exist already.</span>")
 			return
 		if(!antag_datums)
-			to_chat(usr, "<span class='warning'>The mind holder is no longer an antagonist. The ambition we were deleting should no longer exist already.</span>")
+			to_chat(user, "<span class='warning'>The mind holder is no longer an antagonist. The ambition we were deleting should no longer exist already.</span>")
 			return
 		if(ambition_index > LAZYLEN(ambitions))
-			to_chat(usr, "<span class='warning'>The ambition we were deleting was deleted before we finished. No need to continue.</span>")
+			to_chat(user, "<span class='warning'>The ambition we were deleting was deleted before we finished. No need to continue.</span>")
 			do_edit_objectives_ambitions()
 			return
 		if(old_ambition != ambitions[ambition_index])
-			to_chat(usr, "<span class='warning'>The ambition has changed since we started considering its deletion. Aborting to prevent conflicts.</span>")
+			to_chat(user, "<span class='warning'>The ambition has changed since we started considering its deletion. Aborting to prevent conflicts.</span>")
 			do_edit_objectives_ambitions()
 			return
 		TIMER_COOLDOWN_START(src, COOLDOWN_AMBITION, AMBITION_COOLDOWN_TIME)
 		LAZYCUT(ambitions, ambition_index, ambition_index + 1)
-		if(usr == current)
-			log_game("[key_name(usr)] has deleted their ambition of index [ambition_index].\nDELETED AMBITION:\n[old_ambition]")
+		if(user == current)
+			log_game("[key_name(user)] has deleted their ambition of index [ambition_index].\nDELETED AMBITION:\n[old_ambition]")
+			log_and_message_admins("[key_name(user)] has deleted their ambition of index [ambition_index].\nDELETED AMBITION:\n[old_ambition]")
 		else
-			log_game("[key_name(usr)] has deleted [key_name(current)]'s ambition of index [ambition_index].\nDELETED AMBITION:\n[old_ambition]")
-			message_admins("[ADMIN_TPMONTY(usr)] has deleted [ADMIN_TPMONTY(current)]'s ambition of index [ambition_index].")
+			log_game("[key_name(user)] has deleted [key_name(current)]'s ambition of index [ambition_index].\nDELETED AMBITION:\n[old_ambition]")
+			log_and_message_admins("[key_name(user)] has deleted [key_name(current)]'s ambition of index [ambition_index].")
 		do_edit_objectives_ambitions()
 		return
 
 	else if (href_list["req_obj_ping"])
-		if(usr != current)
+		if(user != current)
 			return
 		if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_OBJ_ADMIN_PING))
-			to_chat(usr, "<span class='warning'>You must wait [S_TIMER_COOLDOWN_TIMELEFT(src, COOLDOWN_OBJ_ADMIN_PING) * 0.1] seconds before your next admin ping.</span>")
+			to_chat(user, "<span class='warning'>You must wait [S_TIMER_COOLDOWN_TIMELEFT(src, COOLDOWN_OBJ_ADMIN_PING) * 0.1] seconds before your next admin ping.</span>")
 			do_edit_objectives_ambitions()
 			return
 		if(!antag_datums)
@@ -841,19 +841,19 @@ GLOBAL_LIST(objective_choices)
 				pending_request = TRUE
 				break
 		if(!pending_request)
-			to_chat(usr, "<span class='warning'>You have no pending requests to warn the admins about. Request changes for them to review before poking them.</span>")
+			to_chat(user, "<span class='warning'>You have no pending requests to warn the admins about. Request changes for them to review before poking them.</span>")
 			do_edit_objectives_ambitions()
 			return
-		var/justification = stripped_multiline_input(usr,
+		var/justification = stripped_multiline_input(user,
 			"Send a message to the admins requesting a review of your objective change requests.\
 			There's a [ADMIN_PING_COOLDOWN_TIME * 0.1] seconds cooldown between requests, so try to think it through before sending it. Cancelling this does not trigger the cooldown.",
 			"Request Admin Review", max_length = MAX_MESSAGE_LEN)
 		if(isnull(justification))
 			return
-		if(usr != current)
+		if(user != current)
 			return
 		if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_OBJ_ADMIN_PING))
-			to_chat(usr, "<span class='warning'>You must wait [S_TIMER_COOLDOWN_TIMELEFT(src, COOLDOWN_OBJ_ADMIN_PING) * 0.1] seconds before your next admin ping.</span>")
+			to_chat(user, "<span class='warning'>You must wait [S_TIMER_COOLDOWN_TIMELEFT(src, COOLDOWN_OBJ_ADMIN_PING) * 0.1] seconds before your next admin ping.</span>")
 			do_edit_objectives_ambitions()
 			return
 		if(!antag_datums)
@@ -867,31 +867,31 @@ GLOBAL_LIST(objective_choices)
 		if(!pending_request)
 			return
 		if(!length(GLOB.admins))
-			to_chat(usr, "<span class='warning'>No admins currently connected, failed to notify them. Wait for one to connect before trying to ping them again.</span>")
+			to_chat(user, "<span class='warning'>No admins currently connected, failed to notify them. Wait for one to connect before trying to ping them again.</span>")
 			do_edit_objectives_ambitions()
 			return
 		S_TIMER_COOLDOWN_START(src, COOLDOWN_OBJ_ADMIN_PING, ADMIN_PING_COOLDOWN_TIME)
 		RegisterSignal(src, list(COMSIG_CD_STOP(COOLDOWN_OBJ_ADMIN_PING), COMSIG_CD_RESET(COOLDOWN_OBJ_ADMIN_PING)), .proc/on_objectives_request_cd_end)
-		log_admin("Objectives review request - [key_name(usr)] has requested a review of their objective changes, pinging the admins.")
+		log_admin("Objectives review request - [key_name(user)] has requested a review of their objective changes, pinging the admins.")
 		for(var/a in GLOB.admins)
 			var/client/admin_client = a
 			if(admin_client.prefs.toggles & SOUND_ADMINHELP)
 				SEND_SOUND(admin_client, sound('sound/effects/adminhelp.ogg'))
 			window_flash(admin_client)
-		message_admins("<span class='adminhelp'>[ADMIN_TPMONTY(usr)] has requested a review of their objective changes. (<a href='?_src_=holder;[HrefToken(TRUE)];ObjectiveRequest=\ref[src]'>RPLY</a>)</span>")
+		message_admins("<span class='adminhelp'>[key_name(user)] has requested a review of their objective changes. (<a href='?_src_=holder;[HrefToken(TRUE)];ObjectiveRequest=\ref[src]'>RPLY</a>)</span>")
 		do_edit_objectives_ambitions()
 		return
 
 	else if (href_list["req_obj_add"])
-		if(usr != current)
+		if(user != current)
 			return
 		if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_OBJECTIVES))
-			to_chat(usr, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
+			to_chat(user, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
 			do_edit_objectives_ambitions()
 			return
 		var/datum/antagonist/target_antag = locate(href_list["target_antag"]) in antag_datums
 		if(QDELETED(target_antag))
-			to_chat(usr, "<span class='warning'>No antagonist found for this objective.</span>")
+			to_chat(user, "<span class='warning'>No antagonist found for this objective.</span>")
 			do_edit_objectives_ambitions()
 			return
 		if(!GLOB.objective_player_choices)
@@ -900,49 +900,49 @@ GLOBAL_LIST(objective_choices)
 		var/selected_type = GLOB.objective_player_choices[choice]
 		if(!selected_type)
 			return
-		var/new_objective = stripped_multiline_input(usr,\
+		var/new_objective = stripped_multiline_input(user,\
 			selected_type == /datum/objective/custom\
 			? "Write the custom objective you'd like to request the admins to grant you. Remember they can edit or deny your request at their own discretion."\
 			: "Justify your request for a new objective to the admins. Add the required clarifations, if you have a specific targets in mind and the likes.",\
 			"New Objective", max_length = MAX_MESSAGE_LEN)
 		if(isnull(new_objective))
 			return
-		if(usr != current)
+		if(user != current)
 			return
 		if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_OBJECTIVES))
-			to_chat(usr, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME] minutes between request changes.</span>")
+			to_chat(user, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME] minutes between request changes.</span>")
 			return
 		if(QDELETED(target_antag))
 			return
 		TIMER_COOLDOWN_START(src, COOLDOWN_OBJECTIVES, OBJECTIVES_COOLDOWN_TIME)
 		var/uid = "[GLOB.requested_objective_uid++]"
 		target_antag.add_objective_change(uid, list("request" = REQUEST_NEW_OBJECTIVE, "target" = selected_type, "text" = new_objective))
-		log_admin("Objectives request [uid] - [key_name(usr)] has requested a [choice] objective: [new_objective]")
+		log_admin("Objectives request [uid] - [key_name(user)] has requested a [choice] objective: [new_objective]")
 		do_edit_objectives_ambitions()
 		return
 
 	else if (href_list["req_obj_cancel"])
-		if(usr != current)
+		if(user != current)
 			return
 		if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_OBJECTIVES))
-			to_chat(usr, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
+			to_chat(user, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
 			return
 		var/datum/antagonist/target_antag = locate(href_list["target_antag"]) in antag_datums
 		if(QDELETED(target_antag))
-			to_chat(usr, "<span class='warning'>No antagonist found for this objective.</span>")
+			to_chat(user, "<span class='warning'>No antagonist found for this objective.</span>")
 			do_edit_objectives_ambitions()
 			return
 		var/uid = href_list["req_obj_cancel"]
 		if(!LAZYACCESS(target_antag.requested_objective_changes, uid))
-			to_chat(usr, "<span class='warning'>No requested objective change found. Perhaps it was deleted already?</span>")
+			to_chat(user, "<span class='warning'>No requested objective change found. Perhaps it was deleted already?</span>")
 			do_edit_objectives_ambitions()
 			return
-		if(alert(usr, "Are you sure you want to delete this change request?", "Delete change request", "Yes", "No") != "Yes")
+		if(alert(user, "Are you sure you want to delete this change request?", "Delete change request", "Yes", "No") != "Yes")
 			return
-		if(usr != current)
+		if(user != current)
 			return
 		if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_OBJECTIVES))
-			to_chat(usr, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
+			to_chat(user, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
 			return
 		if(QDELETED(target_antag))
 			do_edit_objectives_ambitions()
@@ -951,37 +951,37 @@ GLOBAL_LIST(objective_choices)
 			do_edit_objectives_ambitions()
 			return
 		TIMER_COOLDOWN_START(src, COOLDOWN_OBJECTIVES, OBJECTIVES_COOLDOWN_TIME)
-		log_admin("Objectives request deletion - [key_name(usr)] has deleted the objective change request of UID [uid].")
+		log_admin("Objectives request deletion - [key_name(user)] has deleted the objective change request of UID [uid].")
 		target_antag.remove_objective_change(uid)
 		do_edit_objectives_ambitions()
 		return
 
 	else if (href_list["req_obj_delete"])
-		if(usr != current)
+		if(user != current)
 			return
 		if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_OBJECTIVES))
-			to_chat(usr, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
+			to_chat(user, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
 			return
 		var/datum/antagonist/target_antag = locate(href_list["target_antag"]) in antag_datums
 		if(QDELETED(target_antag))
-			to_chat(usr, "<span class='warning'>No antagonist found for this objective.</span>")
+			to_chat(user, "<span class='warning'>No antagonist found for this objective.</span>")
 			do_edit_objectives_ambitions()
 			return
 		var/objective_reference = href_list["req_obj_delete"]
 		var/datum/objective/objective_to_delete = locate(objective_reference) in target_antag.objectives
 		if(!istype(objective_to_delete) || QDELETED(objective_to_delete))
-			to_chat(usr, "<span class='warning'>No objective found. Perhaps it was already deleted?</span>")
+			to_chat(user, "<span class='warning'>No objective found. Perhaps it was already deleted?</span>")
 			do_edit_objectives_ambitions()
 			return
-		var/justification = stripped_multiline_input(usr,
+		var/justification = stripped_multiline_input(user,
 			"Justify your request for a deleting this objective to the admins.",
 			"Objective Deletion", max_length = MAX_MESSAGE_LEN)
 		if(isnull(justification))
 			return
-		if(usr != current)
+		if(user != current)
 			return
 		if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_OBJECTIVES))
-			to_chat(usr, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
+			to_chat(user, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
 			return
 		if(QDELETED(objective_to_delete) || QDELETED(target_antag))
 			do_edit_objectives_ambitions()
@@ -994,13 +994,13 @@ GLOBAL_LIST(objective_choices)
 			matching_request = TRUE
 			break
 		if(matching_request)
-			if(alert(usr, "There is already a change request tied to this objective waiting to be processed. Adding this request will delete the old ones.", "Delete matching objective requests?", "Yes", "No") != "Yes")
+			if(alert(user, "There is already a change request tied to this objective waiting to be processed. Adding this request will delete the old ones.", "Delete matching objective requests?", "Yes", "No") != "Yes")
 				do_edit_objectives_ambitions()
 				return
-			if(usr != current)
+			if(user != current)
 				return
 			if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_OBJECTIVES))
-				to_chat(usr, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
+				to_chat(user, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
 				return
 			if(QDELETED(objective_to_delete) || QDELETED(target_antag))
 				do_edit_objectives_ambitions()
@@ -1013,36 +1013,36 @@ GLOBAL_LIST(objective_choices)
 		TIMER_COOLDOWN_START(src, COOLDOWN_OBJECTIVES, OBJECTIVES_COOLDOWN_TIME)
 		var/uid = "[GLOB.requested_objective_uid++]"
 		target_antag.add_objective_change(uid, list("request" = REQUEST_DEL_OBJECTIVE, "target" = objective_reference, "text" = justification))
-		log_admin("Objectives request [uid] - [key_name(usr)] has requested the deletion of the following objective: [objective_to_delete.explanation_text].\nTheir justification is as follows: [justification]")
+		log_admin("Objectives request [uid] - [key_name(user)] has requested the deletion of the following objective: [objective_to_delete.explanation_text].\nTheir justification is as follows: [justification]")
 		do_edit_objectives_ambitions()
 		return
 
 	else if (href_list["req_obj_completed"])
-		if(usr != current)
+		if(user != current)
 			return
 		if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_OBJECTIVES))
-			to_chat(usr, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
+			to_chat(user, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
 			return
 		var/datum/antagonist/target_antag = locate(href_list["target_antag"]) in antag_datums
 		if(QDELETED(target_antag))
-			to_chat(usr, "<span class='warning'>No antagonist found for this objective.</span>")
+			to_chat(user, "<span class='warning'>No antagonist found for this objective.</span>")
 			do_edit_objectives_ambitions()
 			return
 		var/objective_reference = href_list["req_obj_completed"]
 		var/datum/objective/objective_to_complete = locate(objective_reference) in target_antag.objectives
 		if(!istype(objective_to_complete) || QDELETED(objective_to_complete))
-			to_chat(usr, "<span class='warning'>No objective found. Perhaps it was deleted?</span>")
+			to_chat(user, "<span class='warning'>No objective found. Perhaps it was deleted?</span>")
 			do_edit_objectives_ambitions()
 			return
-		var/justification = stripped_multiline_input(usr,
+		var/justification = stripped_multiline_input(user,
 			"Justify to the admins your request to mark this objective as [objective_to_complete.completed ? "incomplete" : "completed"].",
 			"Objective [objective_to_complete.completed ? "Incompletion" : "Completion"]", max_length = MAX_MESSAGE_LEN)
 		if(isnull(justification))
 			return
-		if(usr != current)
+		if(user != current)
 			return
 		if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_OBJECTIVES))
-			to_chat(usr, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
+			to_chat(user, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
 			return
 		if(QDELETED(objective_to_complete) || QDELETED(target_antag))
 			do_edit_objectives_ambitions()
@@ -1055,12 +1055,12 @@ GLOBAL_LIST(objective_choices)
 			matching_request = TRUE
 			break
 		if(matching_request)
-			if(alert(usr, "There is already a change request tied to this objective waiting to be processed. Adding this request will delete the old ones.", "Delete matching objective requests?", "Yes", "No") != "Yes")
+			if(alert(user, "There is already a change request tied to this objective waiting to be processed. Adding this request will delete the old ones.", "Delete matching objective requests?", "Yes", "No") != "Yes")
 				return
-			if(usr != current)
+			if(user != current)
 				return
 			if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_OBJECTIVES))
-				to_chat(usr, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
+				to_chat(user, "<span class='warning'>You must wait [OBJECTIVES_COOLDOWN_TIME * 0.1] seconds between request changes.</span>")
 				return
 			if(QDELETED(objective_to_complete) || QDELETED(target_antag))
 				do_edit_objectives_ambitions()
@@ -1073,14 +1073,14 @@ GLOBAL_LIST(objective_choices)
 		TIMER_COOLDOWN_START(src, COOLDOWN_OBJECTIVES, OBJECTIVES_COOLDOWN_TIME)
 		var/uid = "[GLOB.requested_objective_uid++]"
 		target_antag.add_objective_change(uid, list("request" = (objective_to_complete.completed ? REQUEST_LOSE_OBJECTIVE : REQUEST_WIN_OBJECTIVE), "target" = objective_reference, "text" = justification))
-		log_admin("Objectives request [uid] - [key_name(usr)] has requested the [objective_to_complete.completed ? "incompletion" : "completion"] of the following objective: [objective_to_complete.explanation_text].\nTheir justification is as follows: [justification]")
+		log_admin("Objectives request [uid] - [key_name(user)] has requested the [objective_to_complete.completed ? "incompletion" : "completion"] of the following objective: [objective_to_complete.explanation_text].\nTheir justification is as follows: [justification]")
 		do_edit_objectives_ambitions()
 		return
 
 	if(!check_rights(R_ADMIN))
 		return
 
-	var/self_antagging = usr == current
+	var/self_antagging = user == current
 
 	if(href_list["edit_ambitions_panel"])
 		do_edit_objectives_ambitions()
@@ -1088,10 +1088,10 @@ GLOBAL_LIST(objective_choices)
 
 	else if(href_list["req_obj_ping_cd_clear"])
 		if(!TIMER_COOLDOWN_CHECK(src, COOLDOWN_OBJ_ADMIN_PING))
-			to_chat(usr, "<span class='warning'>Mind is not under a cooldown.</span>")
+			to_chat(user, "<span class='warning'>Mind is not under a cooldown.</span>")
 			do_edit_objectives_ambitions()
 			return
-		if(alert(usr, "Are you sure you want reset this cooldown, letting the user ping the admins again?", "Clear ping cooldown", "Yes", "No") != "Yes")
+		if(alert(user, "Are you sure you want reset this cooldown, letting the user ping the admins again?", "Clear ping cooldown", "Yes", "No") != "Yes")
 			do_edit_objectives_ambitions()
 			return
 		if(!check_rights(R_ADMIN))
@@ -1111,32 +1111,32 @@ GLOBAL_LIST(objective_choices)
 		var/datum/antagonist/antag_datum = locate(href_list["req_obj_edit"]) in antag_datums
 		if(QDELETED(antag_datum))
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>No antag found.</span>")
+			to_chat(user, "<span class='warning'>No antag found.</span>")
 			return
 		if(antag_datum.owner != src)
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>Invalid antag reference.</span>")
+			to_chat(user, "<span class='warning'>Invalid antag reference.</span>")
 			return
 		var/uid = href_list["req_obj_id"]
 		var/list/requested_obj_change = LAZYACCESS(antag_datum.requested_objective_changes, uid)
 		if(!requested_obj_change)
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>Invalid requested objective reference.</span>")
+			to_chat(user, "<span class='warning'>Invalid requested objective reference.</span>")
 			return
 		if(requested_obj_change["request"] != REQUEST_NEW_OBJECTIVE)
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>This is not an editable request. How did you even got here?</span>")
+			to_chat(user, "<span class='warning'>This is not an editable request. How did you even got here?</span>")
 			return
-		switch(alert(usr, "Do you want to edit the requested objective type or text?", "Edit requested objective", "Type", "Text", "Cancel"))
+		switch(alert(user, "Do you want to edit the requested objective type or text?", "Edit requested objective", "Type", "Text", "Cancel"))
 			if("Type")
 				if(!check_rights(R_ADMIN))
 					return
 				if(QDELETED(antag_datum))
-					to_chat(usr, "<span class='warning'>No antag found.</span>")
+					to_chat(user, "<span class='warning'>No antag found.</span>")
 					do_edit_objectives_ambitions()
 					return
 				if(!LAZYACCESS(antag_datum.requested_objective_changes, uid))
-					to_chat(usr, "<span class='warning'>Invalid requested objective change reference.</span>")
+					to_chat(user, "<span class='warning'>Invalid requested objective change reference.</span>")
 					do_edit_objectives_ambitions()
 					return
 				var/datum/objective/type_cast = requested_obj_change["target"]
@@ -1147,42 +1147,42 @@ GLOBAL_LIST(objective_choices)
 				if(!check_rights(R_ADMIN))
 					return
 				if(QDELETED(antag_datum))
-					to_chat(usr, "<span class='warning'>No antag found.</span>")
+					to_chat(user, "<span class='warning'>No antag found.</span>")
 					do_edit_objectives_ambitions()
 					return
 				if(!LAZYACCESS(antag_datum.requested_objective_changes, uid))
-					to_chat(usr, "<span class='warning'>Invalid requested objective change reference.</span>")
+					to_chat(user, "<span class='warning'>Invalid requested objective change reference.</span>")
 					do_edit_objectives_ambitions()
 					return
-				log_admin("[key_name(usr)] has edited the requested objective type for [current], of UID [uid], from [requested_obj_change["target"]] to [selected_type]")
-				message_admins("[key_name_admin(usr)] has edited the requested objective type for [current], of UID [uid], from [requested_obj_change["target"]] to [selected_type]")
+				log_admin("[key_name(user)] has edited the requested objective type for [current], of UID [uid], from [requested_obj_change["target"]] to [selected_type]")
+				message_admins("[key_name_admin(user)] has edited the requested objective type for [current], of UID [uid], from [requested_obj_change["target"]] to [selected_type]")
 				requested_obj_change["target"] = selected_type
 			if("Text")
 				if(!check_rights(R_ADMIN))
 					return
 				if(QDELETED(antag_datum))
-					to_chat(usr, "<span class='warning'>No antag found.</span>")
+					to_chat(user, "<span class='warning'>No antag found.</span>")
 					do_edit_objectives_ambitions()
 					return
 				if(!LAZYACCESS(antag_datum.requested_objective_changes, uid))
-					to_chat(usr, "<span class='warning'>Invalid requested objective change reference.</span>")
+					to_chat(user, "<span class='warning'>Invalid requested objective change reference.</span>")
 					do_edit_objectives_ambitions()
 					return
-				var/new_text = stripped_multiline_input(usr, "Input new requested objective text", "Requested Objective Text", requested_obj_change["text"], MAX_MESSAGE_LEN)
+				var/new_text = stripped_multiline_input(user, "Input new requested objective text", "Requested Objective Text", requested_obj_change["text"], MAX_MESSAGE_LEN)
 				if (isnull(new_text))
 					return
 				if(!check_rights(R_ADMIN))
 					return
 				if(QDELETED(antag_datum))
-					to_chat(usr, "<span class='warning'>No antag found.</span>")
+					to_chat(user, "<span class='warning'>No antag found.</span>")
 					do_edit_objectives_ambitions()
 					return
 				if(!LAZYACCESS(antag_datum.requested_objective_changes, uid))
-					to_chat(usr, "<span class='warning'>Invalid requested objective change reference.</span>")
+					to_chat(user, "<span class='warning'>Invalid requested objective change reference.</span>")
 					do_edit_objectives_ambitions()
 					return
-				log_admin("[key_name(usr)] has edited the requested objective text for [current], of UID [uid], from [requested_obj_change["text"]] to [new_text]")
-				message_admins("[key_name_admin(usr)] has edited the requested objective text for [current], of UID [uid], from [requested_obj_change["text"]] to [new_text]")
+				log_admin("[key_name(user)] has edited the requested objective text for [current], of UID [uid], from [requested_obj_change["text"]] to [new_text]")
+				message_admins("[key_name_admin(user)] has edited the requested objective text for [current], of UID [uid], from [requested_obj_change["text"]] to [new_text]")
 				requested_obj_change["text"] = new_text
 		do_edit_objectives_ambitions()
 		return
@@ -1191,17 +1191,17 @@ GLOBAL_LIST(objective_choices)
 		var/datum/antagonist/antag_datum = locate(href_list["req_obj_accept"]) in antag_datums
 		if(QDELETED(antag_datum))
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>No antag found.</span>")
+			to_chat(user, "<span class='warning'>No antag found.</span>")
 			return
 		if(antag_datum.owner != src)
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>Invalid antag reference.</span>")
+			to_chat(user, "<span class='warning'>Invalid antag reference.</span>")
 			return
 		var/uid = href_list["req_obj_id"]
 		var/list/requested_obj_change = LAZYACCESS(antag_datum.requested_objective_changes, uid)
 		if(!requested_obj_change)
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>Invalid requested objective reference.</span>")
+			to_chat(user, "<span class='warning'>Invalid requested objective reference.</span>")
 			return
 
 		var/datum/objective/request_target
@@ -1210,26 +1210,26 @@ GLOBAL_LIST(objective_choices)
 			if(REQUEST_NEW_OBJECTIVE)
 				request_target = requested_obj_change["target"]
 				if(!ispath(request_target, /datum/objective))
-					to_chat(usr, "<span class='warning'>Invalid requested objective target path.</span>")
+					to_chat(user, "<span class='warning'>Invalid requested objective target path.</span>")
 					return
 			if(REQUEST_DEL_OBJECTIVE, REQUEST_WIN_OBJECTIVE, REQUEST_LOSE_OBJECTIVE)
 				request_target = locate(requested_obj_change["target"]) in antag_datum.objectives
 				if(QDELETED(request_target))
-					to_chat(usr, "<span class='warning'>Invalid requested objective target reference.</span>")
+					to_chat(user, "<span class='warning'>Invalid requested objective target reference.</span>")
 					return
 			else
-				to_chat(usr, "<span class='warning'>Invalid request type.</span>")
+				to_chat(user, "<span class='warning'>Invalid request type.</span>")
 				return
-		if(alert(usr, "Are you sure you want to approve this objective change?", "Approve objective change", "Yes", "No") != "Yes")
+		if(alert(user, "Are you sure you want to approve this objective change?", "Approve objective change", "Yes", "No") != "Yes")
 			return
 		if(!check_rights(R_ADMIN))
 			return
 		if(QDELETED(antag_datum))
-			to_chat(usr, "<span class='warning'>No antag found.</span>")
+			to_chat(user, "<span class='warning'>No antag found.</span>")
 			do_edit_objectives_ambitions()
 			return
 		if(!LAZYACCESS(antag_datum.requested_objective_changes, uid))
-			to_chat(usr, "<span class='warning'>Invalid requested objective change reference.</span>")
+			to_chat(user, "<span class='warning'>Invalid requested objective change reference.</span>")
 			do_edit_objectives_ambitions()
 			return
 		switch(request_type) //Last checks
@@ -1240,10 +1240,10 @@ GLOBAL_LIST(objective_choices)
 					return
 			if(REQUEST_DEL_OBJECTIVE, REQUEST_WIN_OBJECTIVE, REQUEST_LOSE_OBJECTIVE)
 				if(QDELETED(request_target))
-					to_chat(usr, "<span class='warning'>Invalid requested objective target reference.</span>")
+					to_chat(user, "<span class='warning'>Invalid requested objective target reference.</span>")
 					return
 			else
-				to_chat(usr, "<span class='warning'>Invalid request type.</span>")
+				to_chat(user, "<span class='warning'>Invalid request type.</span>")
 				return
 		antag_datum.remove_objective_change(uid)
 		switch(request_type) //All is clear, let get things done.
@@ -1253,21 +1253,21 @@ GLOBAL_LIST(objective_choices)
 				if(istype(request_target, /datum/objective/custom))
 					request_target.explanation_text = requested_obj_change["text"]
 				else
-					request_target.admin_edit(usr)
+					request_target.admin_edit(user)
 				antag_datum.objectives += request_target
-				message_admins("[key_name_admin(usr)] approved a requested objective from [current]: [request_target.explanation_text]")
-				log_admin("[key_name(usr)] approved a requested objective from [current]: [request_target.explanation_text]")
+				message_admins("[key_name_admin(user)] approved a requested objective from [current]: [request_target.explanation_text]")
+				log_admin("[key_name(user)] approved a requested objective from [current]: [request_target.explanation_text]")
 			if(REQUEST_DEL_OBJECTIVE)
-				message_admins("[key_name_admin(usr)] approved the request to delete an objective from [current]: [request_target.explanation_text]")
-				log_admin("[key_name(usr)] approved the request to delete an objective from [current]: [request_target.explanation_text]")
+				message_admins("[key_name_admin(user)] approved the request to delete an objective from [current]: [request_target.explanation_text]")
+				log_admin("[key_name(user)] approved the request to delete an objective from [current]: [request_target.explanation_text]")
 				qdel(request_target)
 			if(REQUEST_WIN_OBJECTIVE)
-				message_admins("[key_name_admin(usr)] approved the victory request for an objective from [current]: [request_target.explanation_text]")
-				log_admin("[key_name(usr)] approved the victory request for an objective from [current]: [request_target.explanation_text]")
+				message_admins("[key_name_admin(user)] approved the victory request for an objective from [current]: [request_target.explanation_text]")
+				log_admin("[key_name(user)] approved the victory request for an objective from [current]: [request_target.explanation_text]")
 				request_target.completed = TRUE
 			if(REQUEST_LOSE_OBJECTIVE)
-				message_admins("[key_name_admin(usr)] approved the defeat request for an objective from [current]: [request_target.explanation_text]")
-				log_admin("[key_name(usr)] approved the defeat request for an objective from [current]: [request_target.explanation_text]")
+				message_admins("[key_name_admin(user)] approved the defeat request for an objective from [current]: [request_target.explanation_text]")
+				log_admin("[key_name(user)] approved the defeat request for an objective from [current]: [request_target.explanation_text]")
 				request_target.completed = FALSE
 		to_chat(current, "<span class='boldnotice'>Your objective change request has been approved.</span>")
 		do_edit_objectives_ambitions()
@@ -1277,35 +1277,35 @@ GLOBAL_LIST(objective_choices)
 		var/datum/antagonist/antag_datum = locate(href_list["req_obj_deny"]) in antag_datums
 		if(QDELETED(antag_datum))
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>No antag found.</span>")
+			to_chat(user, "<span class='warning'>No antag found.</span>")
 			return
 		if(antag_datum.owner != src)
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>Invalid antag reference.</span>")
+			to_chat(user, "<span class='warning'>Invalid antag reference.</span>")
 			return
 		var/uid = href_list["req_obj_id"]
 		var/list/requested_obj_change = LAZYACCESS(antag_datum.requested_objective_changes, uid)
 		if(!requested_obj_change)
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>Invalid requested objective change reference.</span>")
+			to_chat(user, "<span class='warning'>Invalid requested objective change reference.</span>")
 			return
-		var/justification = stripped_multiline_input(usr, "Justify why you are denying this objective request change.", "Deny", memory, MAX_MESSAGE_LEN)
+		var/justification = stripped_multiline_input(user, "Justify why you are denying this objective request change.", "Deny", memory, MAX_MESSAGE_LEN)
 		if(isnull(justification))
 			return
 		if(!check_rights(R_ADMIN))
 			return
 		if(QDELETED(antag_datum))
-			to_chat(usr, "<span class='warning'>No antag found.</span>")
+			to_chat(user, "<span class='warning'>No antag found.</span>")
 			do_edit_objectives_ambitions()
 			return
 		if(!LAZYACCESS(antag_datum.requested_objective_changes, uid))
-			to_chat(usr, "<span class='warning'>Invalid requested objective change reference.</span>")
+			to_chat(user, "<span class='warning'>Invalid requested objective change reference.</span>")
 			do_edit_objectives_ambitions()
 			return
 		var/datum/objective/type_cast = requested_obj_change["target"]
 		var/objective_name = initial(type_cast.name)
-		message_admins("[key_name_admin(usr)] denied a requested [objective_name] objective from [current]: [requested_obj_change["text"]]")
-		log_admin("[key_name(usr)] denied a requested [objective_name] objective from [current]: [requested_obj_change["text"]]")
+		message_admins("[key_name_admin(user)] denied a requested [objective_name] objective from [current]: [requested_obj_change["text"]]")
+		log_admin("[key_name(user)] denied a requested [objective_name] objective from [current]: [requested_obj_change["text"]]")
 		to_chat(current, "<span class='boldwarning'>Your objective request has been denied for the following reason: [justification]</span>")
 		antag_datum.remove_objective_change(uid)
 		do_edit_objectives_ambitions()
@@ -1315,25 +1315,25 @@ GLOBAL_LIST(objective_choices)
 		var/datum/antagonist/antag_datum = locate(href_list["target_antag"]) in antag_datums
 		if(QDELETED(antag_datum))
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>No antag found.</span>")
+			to_chat(user, "<span class='warning'>No antag found.</span>")
 			return
 		if(antag_datum.owner != src)
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>Invalid antag reference.</span>")
+			to_chat(user, "<span class='warning'>Invalid antag reference.</span>")
 			return
 		var/datum/objective/objective_to_toggle = locate(href_list["obj_panel_complete_toggle"]) in antag_datum.objectives
 		if(QDELETED(objective_to_toggle))
-			to_chat(usr, "<span class='warning'>No objective found. Perhaps it was already deleted?</span>")
+			to_chat(user, "<span class='warning'>No objective found. Perhaps it was already deleted?</span>")
 			do_edit_objectives_ambitions()
 			return
 		if(objective_to_toggle.owner != src)
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>Invalid objective reference.</span>")
+			to_chat(user, "<span class='warning'>Invalid objective reference.</span>")
 			return
 		objective_to_toggle.completed = !objective_to_toggle.completed
-		message_admins("[key_name_admin(usr)] toggled the win state for [current]'s objective: [objective_to_toggle.explanation_text]")
-		log_admin("[key_name(usr)] toggled the win state for [current]'s objective: [objective_to_toggle.explanation_text]")
-		if(alert(usr, "Would you like to alert the player of the change?", "Deny objective", "Yes", "No") == "Yes")
+		message_admins("[key_name_admin(user)] toggled the win state for [current]'s objective: [objective_to_toggle.explanation_text]")
+		log_admin("[key_name(user)] toggled the win state for [current]'s objective: [objective_to_toggle.explanation_text]")
+		if(alert(user, "Would you like to alert the player of the change?", "Deny objective", "Yes", "No") == "Yes")
 			to_chat(current, "[objective_to_toggle.completed ? "<span class='boldnotice'>" : "<span class='boldwarning'>"]Your objective status has changed!</span>")
 		do_edit_objectives_ambitions()
 		return
@@ -1342,29 +1342,29 @@ GLOBAL_LIST(objective_choices)
 		var/datum/antagonist/antag_datum = locate(href_list["target_antag"]) in antag_datums
 		if(QDELETED(antag_datum))
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>No antag found.</span>")
+			to_chat(user, "<span class='warning'>No antag found.</span>")
 			return
 		if(antag_datum.owner != src)
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>Invalid antag reference.</span>")
+			to_chat(user, "<span class='warning'>Invalid antag reference.</span>")
 			return
 		var/datum/objective/objective_to_delete = locate(href_list["obj_panel_delete"]) in antag_datum.objectives
 		if(QDELETED(objective_to_delete))
-			to_chat(usr, "<span class='warning'>No objective found. Perhaps it was already deleted?</span>")
+			to_chat(user, "<span class='warning'>No objective found. Perhaps it was already deleted?</span>")
 			do_edit_objectives_ambitions()
 			return
 		if(objective_to_delete.owner != src)
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>Invalid objective reference.</span>")
+			to_chat(user, "<span class='warning'>Invalid objective reference.</span>")
 			return
-		if(alert(usr, "Are you sure you want to delete this objective?", "Delete objective", "Yes", "No") != "Yes")
+		if(alert(user, "Are you sure you want to delete this objective?", "Delete objective", "Yes", "No") != "Yes")
 			return
 		if(!check_rights(R_ADMIN))
 			return
 		if(QDELETED(objective_to_delete))
 			return
-		message_admins("[key_name_admin(usr)] removed an objective from [current]: [objective_to_delete.explanation_text]")
-		log_admin("[key_name(usr)] removed an objective from [current]: [objective_to_delete.explanation_text]")
+		message_admins("[key_name_admin(user)] removed an objective from [current]: [objective_to_delete.explanation_text]")
+		log_admin("[key_name(user)] removed an objective from [current]: [objective_to_delete.explanation_text]")
 		qdel(objective_to_delete)
 		do_edit_objectives_ambitions()
 		return
@@ -1373,29 +1373,29 @@ GLOBAL_LIST(objective_choices)
 		var/datum/antagonist/antag_datum = locate(href_list["target_antag"]) in antag_datums
 		if(QDELETED(antag_datum))
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>No antag found.</span>")
+			to_chat(user, "<span class='warning'>No antag found.</span>")
 			return
 		if(antag_datum.owner != src)
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>Invalid antag reference.</span>")
+			to_chat(user, "<span class='warning'>Invalid antag reference.</span>")
 			return
 		var/datum/objective/objective_to_edit = locate(href_list["obj_panel_edit"]) in antag_datum.objectives
 		if(QDELETED(objective_to_edit))
-			to_chat(usr, "<span class='warning'>No objective found. Perhaps it was already deleted?</span>")
+			to_chat(user, "<span class='warning'>No objective found. Perhaps it was already deleted?</span>")
 			do_edit_objectives_ambitions()
 			return
 		if(objective_to_edit.owner != src)
 			do_edit_objectives_ambitions()
-			to_chat(usr, "<span class='warning'>Invalid objective reference.</span>")
+			to_chat(user, "<span class='warning'>Invalid objective reference.</span>")
 			return
 		var/explanation_before = objective_to_edit.explanation_text
-		objective_to_edit.admin_edit(usr)
+		objective_to_edit.admin_edit(user)
 		if(QDELETED(objective_to_edit))
 			return
-		message_admins("[key_name_admin(usr)] edited an objective from [current]:\
+		message_admins("[key_name_admin(user)] edited an objective from [current]:\
 		Before: [explanation_before]\
 		After: [objective_to_edit.explanation_text]")
-		log_admin("[key_name(usr)] edited an objective from [current]:\
+		log_admin("[key_name(user)] edited an objective from [current]:\
 		Before: [explanation_before]\
 		After: [objective_to_edit.explanation_text]")
 		do_edit_objectives_ambitions()
@@ -1405,33 +1405,35 @@ GLOBAL_LIST(objective_choices)
 		if(!new_role)
 			return
 		assigned_role = new_role
-		log_admin("[key_name(usr)] has changed [key_name(current)]'s assigned role to [assigned_role]")
-		message_admins("[key_name_admin(usr)] has changed [key_name_admin(current)]'s assigned role to [assigned_role]")
+		log_admin("[key_name(user)] has changed [key_name(current)]'s assigned role to [assigned_role]")
+		message_admins("[key_name_admin(user)] has changed [key_name_admin(current)]'s assigned role to [assigned_role]")
 
 	else if(href_list["memory_edit"])
 		var/messageinput = input("Write new memory", "Memory", memory) as null|message
 		if(isnull(messageinput))
 			return
 		var/new_memo = copytext(messageinput, 1,MAX_MESSAGE_LEN)
-		var/confirmed = alert(usr, "Are you sure you want to edit their memory? It will wipe out their original memory!", "Edit Memory", "Yes", "No")
+		var/confirmed = alert(user, "Are you sure you want to edit their memory? It will wipe out their original memory!", "Edit Memory", "Yes", "No")
 		if(confirmed == "Yes") // Because it is too easy to accidentally wipe someone's memory
 			memory = new_memo
-			log_admin("[key_name(usr)] has edited [key_name(current)]'s memory")
-			message_admins("[key_name_admin(usr)] has edited [key_name_admin(current)]'s memory")
+			log_admin("[key_name(user)] has edited [key_name(current)]'s memory")
+			message_admins("[key_name_admin(user)] has edited [key_name_admin(current)]'s memory")
 
 	else if(href_list["obj_edit"] || href_list["obj_add"])
-		var/datum/objective/objective
-		var/objective_pos
+		var/datum/antagonist/target_antag
+		var/datum/objective/current_objective //The current objective we're replacing/editing
+		var/datum/objective/new_objective //New objective we're be adding
+		var/objective_pos //Edited objectives need to keep same order in antag objective list
 		var/def_value
 
 		if(href_list["obj_edit"])
-			objective = locate(href_list["obj_edit"])
-			if(!objective)
+			current_objective = locate(href_list["obj_edit"])
+			if(!current_objective)
 				return
-			objective_pos = objectives.Find(objective)
+			objective_pos = objectives.Find(current_objective)
 
 			//Text strings are easy to manipulate. Revised for simplicity.
-			var/temp_obj_type = "[objective.type]"//Convert path into a text string.
+			var/temp_obj_type = "[current_objective.type]"//Convert path into a text string.
 			def_value = copytext(temp_obj_type, 19)//Convert last part of path into an objective keyword.
 			if(!def_value)//If it's a custom objective, it will be an empty string.
 				def_value = "custom"
@@ -1439,8 +1441,8 @@ GLOBAL_LIST(objective_choices)
 		if(!GLOB.objective_choices)
 			populate_objective_choices()
 
-		if(old_objective && GLOB.objective_choices[old_objective.name])
-			def_value = old_objective.name
+		if(current_objective && GLOB.objective_choices[current_objective.name])
+			def_value = current_objective.name
 
 		var/new_obj_type = input("Select objective type:", "Objective type", def_value) as null|anything in GLOB.objective_choices
 		new_obj_type = GLOB.objective_choices[selected_type]
@@ -1463,14 +1465,14 @@ GLOBAL_LIST(objective_choices)
 						possible_targets += possible_target.current
 
 				var/mob/def_target = null
-				var/objective_list[] = list(/datum/objective/assassinate, /datum/objective/protect, /datum/objective/debrain)
-				if(objective&&(objective.type in objective_list) && objective:target)
-					def_target = objective.target.current
+				var/objective_list = list(/datum/objective/assassinate, /datum/objective/protect, /datum/objective/debrain)
+				if(current_objective && (current_objective.type in objective_list) && current_objective:target)
+					def_target = current_objective.target.current
 				possible_targets = sortAtom(possible_targets)
 
 				var/new_target
 				if(length(possible_targets) > 0)
-					if(alert(usr, "Do you want to pick the objective yourself? No will randomise it", "Pick objective", "Yes", "No") == "Yes")
+					if(alert(user, "Do you want to pick the objective yourself? No will randomise it", "Pick objective", "Yes", "No") == "Yes")
 						possible_targets += "Free objective"
 						new_target = input("Select target:", "Objective target", def_target) as null|anything in possible_targets
 					else
@@ -1479,7 +1481,7 @@ GLOBAL_LIST(objective_choices)
 					if(!new_target)
 						return
 				else
-					to_chat(usr, "<span class='warning'>No possible target found. Defaulting to a Free objective.</span>")
+					to_chat(user, "<span class='warning'>No possible target found. Defaulting to a Free objective.</span>")
 					new_target = "Free objective"
 
 				var/objective_path = text2path("/datum/objective/[new_obj_type]")
@@ -1504,7 +1506,7 @@ GLOBAL_LIST(objective_choices)
 					new_objective.owner = src
 					new_objective.explanation_text = "Destroy [new_target.name], the experimental AI."
 				else
-					to_chat(usr, "No active AIs with minds")
+					to_chat(user, "No active AIs with minds")
 
 			if("prevent")
 				new_objective = new /datum/objective/block
@@ -1531,19 +1533,19 @@ GLOBAL_LIST(objective_choices)
 				new_objective.owner = src
 
 			if("steal")
-				if(!istype(objective, /datum/objective/steal))
+				if(!istype(current_objective, /datum/objective/steal))
 					new_objective = new /datum/objective/steal
 					new_objective.owner = src
 				else
-					new_objective = objective
+					new_objective = current_objective
 				var/datum/objective/steal/steal = new_objective
 				if(!steal.select_target())
 					return
 
 			if("download","capture","absorb", "blood")
 				var/def_num
-				if(objective&&objective.type==text2path("/datum/objective/[new_obj_type]"))
-					def_num = objective.target_amount
+				if(current_objective && (current_objective.type == text2path("/datum/objective/[new_obj_type]")))
+					def_num = current_objective.target_amount
 
 				var/target_number = input("Input target number:", "Objective", def_num) as num|null
 				if(isnull(target_number))//Ordinarily, you wouldn't need isnull. In this case, the value may already exist.
@@ -1571,8 +1573,8 @@ GLOBAL_LIST(objective_choices)
 					if((possible_target != src) && ishuman(possible_target.current))
 						possible_targets += possible_target
 				possible_targets = sortAtom(possible_targets)
-				possible_targets += "Free objective"
-				var/new_target = input("Select target:", "Objective target") as null|anything in possible_targets
+				possible_targets += "Free "
+				var/new_target = input("Select Target:", "Objective Target") as null|anything in possible_targets
 				if(!new_target)
 					return
 				var/datum/mind/targ = new_target
@@ -1584,7 +1586,7 @@ GLOBAL_LIST(objective_choices)
 				new_objective.target = new_target
 				new_objective.explanation_text = "Escape on the shuttle or an escape pod with the identity of [targ.current.real_name], the [targ.assigned_role] while wearing [targ.current.p_their()] identification card."
 			if("custom")
-				var/expl = sanitize(copytext(input("Custom objective:", "Objective", objective ? objective.explanation_text : "") as text|null,1,MAX_MESSAGE_LEN))
+				var/expl = sanitize(copytext(input("Custom objective:", "Objective", current_objective ? current_objective.explanation_text : "") as text|null,1,MAX_MESSAGE_LEN))
 				if(!expl)
 					return
 				new_objective = new /datum/objective
@@ -1594,34 +1596,31 @@ GLOBAL_LIST(objective_choices)
 		if(!new_objective)
 			return
 
-		if(objective)
-			objectives -= objective
-			qdel(objective)
+		if(current_objective)
+			objectives -= current_objective
+			qdel(current_objective)
 			objectives.Insert(objective_pos, new_objective)
 		else
 			objectives += new_objective
 
-		log_admin("[key_name(usr)] has updated [key_name(current)]'s objectives: [new_objective]")
-		message_admins("[key_name_admin(usr)] has updated [key_name_admin(current)]'s objectives: [new_objective]")
+		log_and_message_admins("[key_name(user)] has updated [key_name(current)]'s objectives: [new_objective]")
 
 	else if(href_list["obj_delete"])
-		var/datum/objective/objective = locate(href_list["obj_delete"])
-		if(!istype(objective))
+		var/datum/objective/del_objective = locate(href_list["obj_delete"])
+		if(!istype(del_objective))
 			return
-		objectives -= objective
+		objectives -= del_objective
 
-		log_admin("[key_name(usr)] has removed one of [key_name(current)]'s objectives: [objective]")
-		message_admins("[key_name_admin(usr)] has removed one of [key_name_admin(current)]'s objectives: [objective]")
-		qdel(objective)
+		log_and_message_admins("[key_name(user)] has removed one of [key_name(current)]'s objectives: [del_objective]")
+		qdel(del_objective)
 
 	else if(href_list["obj_completed"])
-		var/datum/objective/objective = locate(href_list["obj_completed"])
-		if(!istype(objective))
+		var/datum/objective/compl_obj = locate(href_list["obj_completed"])
+		if(!istype(compl_obj))
 			return
-		objective.completed = !objective.completed
+		compl_obj.completed = !compl_obj.completed
 
-		log_admin("[key_name(usr)] has toggled the completion of one of [key_name(current)]'s objectives")
-		message_admins("[key_name_admin(usr)] has toggled the completion of one of [key_name_admin(current)]'s objectives")
+		log_and_message_admins("[key_name(user)] has toggled the completion of one of [key_name(current)]'s objectives")
 
 	else if(href_list["implant"])
 		var/mob/living/carbon/human/H = current
@@ -1632,14 +1631,14 @@ GLOBAL_LIST(objective_choices)
 					if(I && I.implanted)
 						qdel(I)
 				to_chat(H, "<span class='notice'><Font size =3><B>Your mindshield implant has been deactivated.</B></FONT></span>")
-				log_admin("[key_name(usr)] has deactivated [key_name(current)]'s mindshield implant")
-				message_admins("[key_name_admin(usr)] has deactivated [key_name_admin(current)]'s mindshield implant")
+				log_admin("[key_name(user)] has deactivated [key_name(current)]'s mindshield implant")
+				message_admins("[key_name_admin(user)] has deactivated [key_name_admin(current)]'s mindshield implant")
 			if("add")
 				var/obj/item/implant/mindshield/L = new/obj/item/implant/mindshield(H)
 				L.implant(H)
 
-				log_admin("[key_name(usr)] has given [key_name(current)] a mindshield implant")
-				message_admins("[key_name_admin(usr)] has given [key_name_admin(current)] a mindshield implant")
+				log_admin("[key_name(user)] has given [key_name(current)] a mindshield implant")
+				message_admins("[key_name_admin(user)] has given [key_name_admin(current)] a mindshield implant")
 
 				to_chat(H, "<span class='warning'><Font size =3><B>You somehow have become the recepient of a mindshield transplant, and it just activated!</B></FONT></span>")
 				if(src in SSticker.mode.revolutionaries)
@@ -1665,8 +1664,8 @@ GLOBAL_LIST(objective_choices)
 					to_chat(current, "<span class='warning'><FONT size = 3><B>You have been brainwashed! You are no longer a head revolutionary!</B></FONT></span>")
 					SSticker.mode.update_rev_icons_removed(src)
 					special_role = null
-				log_admin("[key_name(usr)] has de-rev'd [key_name(current)]")
-				message_admins("[key_name_admin(usr)] has de-rev'd [key_name_admin(current)]")
+				log_admin("[key_name(user)] has de-rev'd [key_name(current)]")
+				message_admins("[key_name_admin(user)] has de-rev'd [key_name_admin(current)]")
 
 			if("rev")
 				if(src in SSticker.mode.head_revolutionaries)
@@ -1680,8 +1679,8 @@ GLOBAL_LIST(objective_choices)
 				SSticker.mode.revolutionaries += src
 				SSticker.mode.update_rev_icons_added(src)
 				special_role = SPECIAL_ROLE_REV
-				log_admin("[key_name(usr)] has rev'd [key_name(current)]")
-				message_admins("[key_name_admin(usr)] has rev'd [key_name_admin(current)]")
+				log_admin("[key_name(user)] has rev'd [key_name(current)]")
+				message_admins("[key_name_admin(user)] has rev'd [key_name_admin(current)]")
 
 			if("headrev")
 				if(src in SSticker.mode.revolutionaries)
@@ -1706,39 +1705,39 @@ GLOBAL_LIST(objective_choices)
 				SSticker.mode.head_revolutionaries += src
 				SSticker.mode.update_rev_icons_added(src)
 				special_role = SPECIAL_ROLE_HEAD_REV
-				log_admin("[key_name(usr)] has head-rev'd [key_name(current)]")
-				message_admins("[key_name_admin(usr)] has head-rev'd [key_name_admin(current)]")
+				log_admin("[key_name(user)] has head-rev'd [key_name(current)]")
+				message_admins("[key_name_admin(user)] has head-rev'd [key_name_admin(current)]")
 
 			if("autoobjectives")
 				SSticker.mode.forge_revolutionary_objectives(src)
 				SSticker.mode.greet_revolutionary(src,0)
-				log_admin("[key_name(usr)] has automatically forged revolutionary objectives for [key_name(current)]")
-				message_admins("[key_name_admin(usr)] has automatically forged revolutionary objectives for [key_name_admin(current)]")
+				log_admin("[key_name(user)] has automatically forged revolutionary objectives for [key_name(current)]")
+				message_admins("[key_name_admin(user)] has automatically forged revolutionary objectives for [key_name_admin(current)]")
 
 			if("flash")
 				if(!SSticker.mode.equip_revolutionary(current))
-					to_chat(usr, "<span class='warning'>Spawning flash failed!</span>")
-				log_admin("[key_name(usr)] has given [key_name(current)] a flash")
-				message_admins("[key_name_admin(usr)] has given [key_name_admin(current)] a flash")
+					to_chat(user, "<span class='warning'>Spawning flash failed!</span>")
+				log_admin("[key_name(user)] has given [key_name(current)] a flash")
+				message_admins("[key_name_admin(user)] has given [key_name_admin(current)] a flash")
 
 			if("takeflash")
 				var/list/L = current.get_contents()
 				var/obj/item/flash/flash = locate() in L
 				if(!flash)
-					to_chat(usr, "<span class='warning'>Deleting flash failed!</span>")
+					to_chat(user, "<span class='warning'>Deleting flash failed!</span>")
 				qdel(flash)
-				log_admin("[key_name(usr)] has taken [key_name(current)]'s flash")
-				message_admins("[key_name_admin(usr)] has taken [key_name_admin(current)]'s flash")
+				log_admin("[key_name(user)] has taken [key_name(current)]'s flash")
+				message_admins("[key_name_admin(user)] has taken [key_name_admin(current)]'s flash")
 
 			if("repairflash")
 				var/list/L = current.get_contents()
 				var/obj/item/flash/flash = locate() in L
 				if(!flash)
-					to_chat(usr, "<span class='warning'>Repairing flash failed!</span>")
+					to_chat(user, "<span class='warning'>Repairing flash failed!</span>")
 				else
 					flash.broken = 0
-					log_admin("[key_name(usr)] has repaired [key_name(current)]'s flash")
-					message_admins("[key_name_admin(usr)] has repaired [key_name_admin(current)]'s flash")
+					log_admin("[key_name(user)] has repaired [key_name(current)]'s flash")
+					message_admins("[key_name_admin(user)] has repaired [key_name_admin(current)]'s flash")
 
 			if("reequip")
 				var/list/L = current.get_contents()
@@ -1750,10 +1749,10 @@ GLOBAL_LIST(objective_choices)
 				fail |= !T.equip_traitor(src)
 				fail |= !SSticker.mode.equip_revolutionary(current)
 				if(fail)
-					to_chat(usr, "<span class='warning'>Reequipping revolutionary goes wrong!</span>")
+					to_chat(user, "<span class='warning'>Reequipping revolutionary goes wrong!</span>")
 					return
-				log_admin("[key_name(usr)] has equipped [key_name(current)] as a revolutionary")
-				message_admins("[key_name_admin(usr)] has equipped [key_name_admin(current)] as a revolutionary")
+				log_admin("[key_name(user)] has equipped [key_name(current)] as a revolutionary")
+				message_admins("[key_name_admin(user)] has equipped [key_name_admin(current)] as a revolutionary")
 
 	else if(href_list["cult"])
 		switch(href_list["cult"])
@@ -1761,8 +1760,8 @@ GLOBAL_LIST(objective_choices)
 				if(src in SSticker.mode.cult)
 					SSticker.mode.remove_cultist(src)
 					special_role = null
-					log_admin("[key_name(usr)] has de-culted [key_name(current)]")
-					message_admins("[key_name_admin(usr)] has de-culted [key_name_admin(current)]")
+					log_admin("[key_name(user)] has de-culted [key_name(current)]")
+					message_admins("[key_name_admin(user)] has de-culted [key_name_admin(current)]")
 			if("cultist")
 				if(!(src in SSticker.mode.cult))
 					if(!SSticker.mode.ascend_percent) // If the rise/ascend thresholds haven't been set (non-cult rounds)
@@ -1772,17 +1771,17 @@ GLOBAL_LIST(objective_choices)
 					special_role = SPECIAL_ROLE_CULTIST
 					to_chat(current, CULT_GREETING)
 					to_chat(current, "<span class='cultitalic'>Assist your new compatriots in their dark dealings. Their goal is yours, and yours is theirs. You serve [SSticker.cultdat.entity_title2] above all else. Bring It back.</span>")
-					log_and_message_admins("[key_name(usr)] has culted [key_name(current)]")
+					log_and_message_admins("[key_name(user)] has culted [key_name(current)]")
 			if("dagger")
 				var/mob/living/carbon/human/H = current
 				if(!SSticker.mode.cult_give_item(/obj/item/melee/cultblade/dagger, H))
-					to_chat(usr, "<span class='warning'>Spawning dagger failed!</span>")
-				log_and_message_admins("[key_name(usr)] has equipped [key_name(current)] with a cult dagger")
+					to_chat(user, "<span class='warning'>Spawning dagger failed!</span>")
+				log_and_message_admins("[key_name(user)] has equipped [key_name(current)] with a cult dagger")
 			if("runedmetal")
 				var/mob/living/carbon/human/H = current
 				if(!SSticker.mode.cult_give_item(/obj/item/stack/sheet/runed_metal/ten, H))
-					to_chat(usr, "<span class='warning'>Spawning runed metal failed!</span>")
-				log_and_message_admins("[key_name(usr)] has equipped [key_name(current)] with 10 runed metal sheets")
+					to_chat(user, "<span class='warning'>Spawning runed metal failed!</span>")
+				log_and_message_admins("[key_name(user)] has equipped [key_name(current)] with 10 runed metal sheets")
 
 	else if(href_list["wizard"])
 
@@ -1795,8 +1794,8 @@ GLOBAL_LIST(objective_choices)
 					current.faction = list("Station")
 					SSticker.mode.update_wiz_icons_removed(src)
 					to_chat(current, "<span class='warning'><FONT size = 3><B>You have been brainwashed! You are no longer a wizard!</B></FONT></span>")
-					log_admin("[key_name(usr)] has de-wizarded [key_name(current)]")
-					message_admins("[key_name_admin(usr)] has de-wizarded [key_name_admin(current)]")
+					log_admin("[key_name(user)] has de-wizarded [key_name(current)]")
+					message_admins("[key_name_admin(user)] has de-wizarded [key_name_admin(current)]")
 			if("wizard")
 				if(!(src in SSticker.mode.wizards))
 					SSticker.mode.wizards += src
@@ -1806,25 +1805,25 @@ GLOBAL_LIST(objective_choices)
 					SEND_SOUND(current, 'sound/ambience/antag/ragesmages.ogg')
 					to_chat(current, "<span class='danger'>You are a Space Wizard!</span>")
 					current.faction = list("wizard")
-					log_admin("[key_name(usr)] has wizarded [key_name(current)]")
-					message_admins("[key_name_admin(usr)] has wizarded [key_name_admin(current)]")
+					log_admin("[key_name(user)] has wizarded [key_name(current)]")
+					message_admins("[key_name_admin(user)] has wizarded [key_name_admin(current)]")
 			if("lair")
 				current.forceMove(pick(GLOB.wizardstart))
-				log_admin("[key_name(usr)] has moved [key_name(current)] to the wizard's lair")
-				message_admins("[key_name_admin(usr)] has moved [key_name_admin(current)] to the wizard's lair")
+				log_admin("[key_name(user)] has moved [key_name(current)] to the wizard's lair")
+				message_admins("[key_name_admin(user)] has moved [key_name_admin(current)] to the wizard's lair")
 			if("dressup")
 				SSticker.mode.equip_wizard(current)
-				log_admin("[key_name(usr)] has equipped [key_name(current)] as a wizard")
-				message_admins("[key_name_admin(usr)] has equipped [key_name_admin(current)] as a wizard")
+				log_admin("[key_name(user)] has equipped [key_name(current)] as a wizard")
+				message_admins("[key_name_admin(user)] has equipped [key_name_admin(current)] as a wizard")
 			if("name")
 				INVOKE_ASYNC(SSticker.mode, /datum/game_mode/wizard.proc/name_wizard, current)
-				log_admin("[key_name(usr)] has allowed wizard [key_name(current)] to name themselves")
-				message_admins("[key_name_admin(usr)] has allowed wizard [key_name_admin(current)] to name themselves")
+				log_admin("[key_name(user)] has allowed wizard [key_name(current)] to name themselves")
+				message_admins("[key_name_admin(user)] has allowed wizard [key_name_admin(current)] to name themselves")
 			if("autoobjectives")
 				SSticker.mode.forge_wizard_objectives(src)
-				to_chat(usr, "<span class='notice'>The objectives for wizard [key] have been generated. You can edit them and announce manually.</span>")
-				log_admin("[key_name(usr)] has automatically forged wizard objectives for [key_name(current)]")
-				message_admins("[key_name_admin(usr)] has automatically forged wizard objectives for [key_name_admin(current)]")
+				to_chat(user, "<span class='notice'>The objectives for wizard [key] have been generated. You can edit them and announce manually.</span>")
+				log_admin("[key_name(user)] has automatically forged wizard objectives for [key_name(current)]")
+				message_admins("[key_name_admin(user)] has automatically forged wizard objectives for [key_name_admin(current)]")
 
 
 	else if(href_list["changeling"])
@@ -1841,8 +1840,8 @@ GLOBAL_LIST(objective_choices)
 						changeling = null
 					SSticker.mode.update_change_icons_removed(src)
 					to_chat(current, "<FONT color='red' size = 3><B>You grow weak and lose your powers! You are no longer a changeling and are stuck in your current form!</B></FONT>")
-					log_admin("[key_name(usr)] has de-changelinged [key_name(current)]")
-					message_admins("[key_name_admin(usr)] has de-changelinged [key_name_admin(current)]")
+					log_admin("[key_name(user)] has de-changelinged [key_name(current)]")
+					message_admins("[key_name_admin(user)] has de-changelinged [key_name_admin(current)]")
 			if("changeling")
 				if(!(src in SSticker.mode.changelings))
 					SSticker.mode.changelings += src
@@ -1851,25 +1850,25 @@ GLOBAL_LIST(objective_choices)
 					special_role = SPECIAL_ROLE_CHANGELING
 					SEND_SOUND(current, 'sound/ambience/antag/ling_aler.ogg')
 					to_chat(current, "<B><font color='red'>Your powers have awoken. A flash of memory returns to us... we are a changeling!</font></B>")
-					log_admin("[key_name(usr)] has changelinged [key_name(current)]")
-					message_admins("[key_name_admin(usr)] has changelinged [key_name_admin(current)]")
+					log_admin("[key_name(user)] has changelinged [key_name(current)]")
+					message_admins("[key_name_admin(user)] has changelinged [key_name_admin(current)]")
 
 			if("autoobjectives")
 				SSticker.mode.forge_changeling_objectives(src)
-				to_chat(usr, "<span class='notice'>The objectives for changeling [key] have been generated. You can edit them and announce manually.</span>")
-				log_admin("[key_name(usr)] has automatically forged objectives for [key_name(current)]")
-				message_admins("[key_name_admin(usr)] has automatically forged objectives for [key_name_admin(current)]")
+				to_chat(user, "<span class='notice'>The objectives for changeling [key] have been generated. You can edit them and announce manually.</span>")
+				log_admin("[key_name(user)] has automatically forged objectives for [key_name(current)]")
+				message_admins("[key_name_admin(user)] has automatically forged objectives for [key_name_admin(current)]")
 
 			if("initialdna")
 				if(!changeling || !changeling.absorbed_dna.len)
-					to_chat(usr, "<span class='warning'>Resetting DNA failed!</span>")
+					to_chat(user, "<span class='warning'>Resetting DNA failed!</span>")
 				else
 					current.dna = changeling.absorbed_dna[1]
 					current.real_name = current.dna.real_name
 					current.UpdateAppearance()
 					domutcheck(current, null)
-					log_admin("[key_name(usr)] has reset [key_name(current)]'s DNA")
-					message_admins("[key_name_admin(usr)] has reset [key_name_admin(current)]'s DNA")
+					log_admin("[key_name(user)] has reset [key_name(current)]'s DNA")
+					message_admins("[key_name_admin(user)] has reset [key_name_admin(current)]'s DNA")
 
 	else if(href_list["vampire"])
 		switch(href_list["vampire"])
@@ -1883,8 +1882,8 @@ GLOBAL_LIST(objective_choices)
 						vampire = null
 					SSticker.mode.update_vampire_icons_removed(src)
 					to_chat(current, "<FONT color='red' size = 3><B>You grow weak and lose your powers! You are no longer a vampire and are stuck in your current form!</B></FONT>")
-					log_admin("[key_name(usr)] has de-vampired [key_name(current)]")
-					message_admins("[key_name_admin(usr)] has de-vampired [key_name_admin(current)]")
+					log_admin("[key_name(user)] has de-vampired [key_name(current)]")
+					message_admins("[key_name_admin(user)] has de-vampired [key_name_admin(current)]")
 			if("vampire")
 				if(!(src in SSticker.mode.vampires))
 					SSticker.mode.vampires += src
@@ -1896,22 +1895,22 @@ GLOBAL_LIST(objective_choices)
 					special_role = SPECIAL_ROLE_VAMPIRE
 					SEND_SOUND(current, 'sound/ambience/antag/vampalert.ogg')
 					to_chat(current, "<B><font color='red'>Your powers have awoken. Your lust for blood grows... You are a Vampire!</font></B>")
-					log_admin("[key_name(usr)] has vampired [key_name(current)]")
-					message_admins("[key_name_admin(usr)] has vampired [key_name_admin(current)]")
+					log_admin("[key_name(user)] has vampired [key_name(current)]")
+					message_admins("[key_name_admin(user)] has vampired [key_name_admin(current)]")
 
 			if("autoobjectives")
 				SSticker.mode.forge_vampire_objectives(src)
-				to_chat(usr, "<span class='notice'>The objectives for vampire [key] have been generated. You can edit them and announce manually.</span>")
-				log_admin("[key_name(usr)] has automatically forged objectives for [key_name(current)]")
-				message_admins("[key_name_admin(usr)] has automatically forged objectives for [key_name_admin(current)]")
+				to_chat(user, "<span class='notice'>The objectives for vampire [key] have been generated. You can edit them and announce manually.</span>")
+				log_admin("[key_name(user)] has automatically forged objectives for [key_name(current)]")
+				message_admins("[key_name_admin(user)] has automatically forged objectives for [key_name_admin(current)]")
 
 	else if(href_list["vampthrall"])
 		switch(href_list["vampthrall"])
 			if("clear")
 				if(src in SSticker.mode.vampire_enthralled)
 					SSticker.mode.remove_vampire_mind(src)
-					log_admin("[key_name(usr)] has de-vampthralled [key_name(current)]")
-					message_admins("[key_name_admin(usr)] has de-vampthralled [key_name_admin(current)]")
+					log_admin("[key_name(user)] has de-vampthralled [key_name(current)]")
+					message_admins("[key_name_admin(user)] has de-vampthralled [key_name_admin(current)]")
 
 	else if(href_list["nuclear"])
 		var/mob/living/carbon/human/H = current
@@ -1926,8 +1925,8 @@ GLOBAL_LIST(objective_choices)
 						objectives-=O
 						qdel(O)
 					to_chat(current, "<span class='warning'><FONT size = 3><B>You have been brainwashed! You are no longer a syndicate operative!</B></FONT></span>")
-					log_admin("[key_name(usr)] has de-nuke op'd [key_name(current)]")
-					message_admins("[key_name_admin(usr)] has de-nuke op'd [key_name_admin(current)]")
+					log_admin("[key_name(user)] has de-nuke op'd [key_name(current)]")
+					message_admins("[key_name_admin(user)] has de-nuke op'd [key_name_admin(current)]")
 			if("nuclear")
 				if(!(src in SSticker.mode.syndicates))
 					SSticker.mode.syndicates += src
@@ -1940,12 +1939,12 @@ GLOBAL_LIST(objective_choices)
 					to_chat(current, "<span class='notice'>You are a [syndicate_name()] agent!</span>")
 					SSticker.mode.forge_syndicate_objectives(src)
 					SSticker.mode.greet_syndicate(src)
-					log_admin("[key_name(usr)] has nuke op'd [key_name(current)]")
-					message_admins("[key_name_admin(usr)] has nuke op'd [key_name_admin(current)]")
+					log_admin("[key_name(user)] has nuke op'd [key_name(current)]")
+					message_admins("[key_name_admin(user)] has nuke op'd [key_name_admin(current)]")
 			if("lair")
 				current.forceMove(get_turf(locate("landmark*Syndicate-Spawn")))
-				log_admin("[key_name(usr)] has moved [key_name(current)] to the nuclear operative spawn")
-				message_admins("[key_name_admin(usr)] has moved [key_name_admin(current)] to the nuclear operative spawn")
+				log_admin("[key_name(user)] has moved [key_name(current)] to the nuclear operative spawn")
+				message_admins("[key_name_admin(user)] has moved [key_name_admin(current)] to the nuclear operative spawn")
 			if("dressup")
 				qdel(H.belt)
 				qdel(H.back)
@@ -1960,11 +1959,11 @@ GLOBAL_LIST(objective_choices)
 				qdel(H.w_uniform)
 
 				if(!SSticker.mode.equip_syndicate(current))
-					to_chat(usr, "<span class='warning'>Equipping a syndicate failed!</span>")
+					to_chat(user, "<span class='warning'>Equipping a syndicate failed!</span>")
 					return
 				SSticker.mode.update_syndicate_id(current.mind, SSticker.mode.syndicates.len == 1)
-				log_admin("[key_name(usr)] has equipped [key_name(current)] as a nuclear operative")
-				message_admins("[key_name_admin(usr)] has equipped [key_name_admin(current)] as a nuclear operative")
+				log_admin("[key_name(user)] has equipped [key_name(current)] as a nuclear operative")
+				message_admins("[key_name_admin(user)] has equipped [key_name_admin(current)] as a nuclear operative")
 
 			if("tellcode")
 				var/code
@@ -1975,10 +1974,10 @@ GLOBAL_LIST(objective_choices)
 				if(code)
 					store_memory("<B>Syndicate Nuclear Bomb Code</B>: [code]", 0, 0)
 					to_chat(current, "The nuclear authorization code is: <B>[code]</B>")
-					log_admin("[key_name(usr)] has given [key_name(current)] the nuclear authorization code")
-					message_admins("[key_name_admin(usr)] has given [key_name_admin(current)] the nuclear authorization code")
+					log_admin("[key_name(user)] has given [key_name(current)] the nuclear authorization code")
+					message_admins("[key_name_admin(user)] has given [key_name_admin(current)] the nuclear authorization code")
 				else
-					to_chat(usr, "<span class='warning'>No valid nuke found!</span>")
+					to_chat(user, "<span class='warning'>No valid nuke found!</span>")
 
 	else if(href_list["eventmisc"])
 		switch(href_list["eventmisc"])
@@ -1987,20 +1986,20 @@ GLOBAL_LIST(objective_choices)
 					SSticker.mode.eventmiscs -= src
 					SSticker.mode.update_eventmisc_icons_removed(src)
 					special_role = null
-					message_admins("[key_name_admin(usr)] has de-eventantag'ed [current].")
-					log_admin("[key_name(usr)] has de-eventantag'ed [current].")
+					message_admins("[key_name_admin(user)] has de-eventantag'ed [current].")
+					log_admin("[key_name(user)] has de-eventantag'ed [current].")
 			if("eventmisc")
 				SSticker.mode.eventmiscs += src
 				special_role = SPECIAL_ROLE_EVENTMISC
 				SSticker.mode.update_eventmisc_icons_added(src)
-				message_admins("[key_name_admin(usr)] has eventantag'ed [current].")
-				log_admin("[key_name(usr)] has eventantag'ed [current].")
+				message_admins("[key_name_admin(user)] has eventantag'ed [current].")
+				log_admin("[key_name(user)] has eventantag'ed [current].")
 	else if(href_list["devil"])
 		switch(href_list["devil"])
 			if("clear")
 				if(src in SSticker.mode.devils)
 					if(istype(current,/mob/living/carbon/true_devil/))
-						to_chat(usr,"<span class='warning'>This cannot be used on true or arch-devils.</span>")
+						to_chat(user,"<span class='warning'>This cannot be used on true or arch-devils.</span>")
 					else
 						SSticker.mode.devils -= src
 						SSticker.mode.update_devil_icons_removed(src)
@@ -2016,24 +2015,24 @@ GLOBAL_LIST(objective_choices)
 						RemoveSpell(/obj/effect/proc_holder/spell/targeted/summon_dancefloor)
 						RemoveSpell(/obj/effect/proc_holder/spell/targeted/sintouch)
 						RemoveSpell(/obj/effect/proc_holder/spell/targeted/sintouch/ascended)
-						message_admins("[key_name_admin(usr)] has de-devil'ed [current].")
+						message_admins("[key_name_admin(user)] has de-devil'ed [current].")
 						if(issilicon(current))
 							var/mob/living/silicon/S = current
 							S.laws.clear_sixsixsix_laws()
 						devilinfo = null
-						log_admin("[key_name(usr)] has de-devil'ed [current].")
+						log_admin("[key_name(user)] has de-devil'ed [current].")
 				else if(src in SSticker.mode.sintouched)
 					SSticker.mode.sintouched -= src
-					message_admins("[key_name_admin(usr)] has de-sintouch'ed [current].")
-					log_admin("[key_name(usr)] has de-sintouch'ed [current].")
+					message_admins("[key_name_admin(user)] has de-sintouch'ed [current].")
+					log_admin("[key_name(user)] has de-sintouch'ed [current].")
 			if("devil")
 				if(devilinfo)
 					devilinfo.ascendable = FALSE
-					message_admins("[key_name_admin(usr)] has made [current] unable to ascend as a devil.")
-					log_admin("[key_name_admin(usr)] has made [current] unable to ascend as a devil.")
+					message_admins("[key_name_admin(user)] has made [current] unable to ascend as a devil.")
+					log_admin("[key_name_admin(user)] has made [current] unable to ascend as a devil.")
 					return
 				if(!ishuman(current) && !isrobot(current))
-					to_chat(usr, "<span class='warning'>This only works on humans and cyborgs!</span>")
+					to_chat(user, "<span class='warning'>This only works on humans and cyborgs!</span>")
 					return
 				SSticker.mode.devils += src
 				special_role = "devil"
@@ -2041,16 +2040,16 @@ GLOBAL_LIST(objective_choices)
 				SSticker.mode.finalize_devil(src, FALSE)
 				SSticker.mode.forge_devil_objectives(src, 2)
 				SSticker.mode.greet_devil(src)
-				message_admins("[key_name_admin(usr)] has devil'ed [current].")
-				log_admin("[key_name(usr)] has devil'ed [current].")
+				message_admins("[key_name_admin(user)] has devil'ed [current].")
+				log_admin("[key_name(user)] has devil'ed [current].")
 			if("ascendable_devil")
 				if(devilinfo)
 					devilinfo.ascendable = TRUE
-					message_admins("[key_name_admin(usr)] has made [current] able to ascend as a devil.")
-					log_admin("[key_name_admin(usr)] has made [current] able to ascend as a devil.")
+					message_admins("[key_name_admin(user)] has made [current] able to ascend as a devil.")
+					log_admin("[key_name_admin(user)] has made [current] able to ascend as a devil.")
 					return
 				if(!ishuman(current) && !isrobot(current))
-					to_chat(usr, "<span class='warning'>This only works on humans and cyborgs!</span>")
+					to_chat(user, "<span class='warning'>This only works on humans and cyborgs!</span>")
 					return
 				SSticker.mode.devils += src
 				special_role = "devil"
@@ -2058,11 +2057,11 @@ GLOBAL_LIST(objective_choices)
 				SSticker.mode.finalize_devil(src, TRUE)
 				SSticker.mode.forge_devil_objectives(src, 2)
 				SSticker.mode.greet_devil(src)
-				log_and_message_admins("[key_name_admin(usr)] has devil'ed [current].  The devil has been marked as ascendable.")
+				log_and_message_admins("[key_name_admin(user)] has devil'ed [current].  The devil has been marked as ascendable.")
 			if("sintouched")
 				var/mob/living/carbon/human/H = current
 				H.influenceSin()
-				log_and_message_admins("[key_name_admin(usr)] has sintouch'ed [current].")
+				log_and_message_admins("[key_name_admin(user)] has sintouch'ed [current].")
 
 		if(href_list["ambition_panel"])
 			do_edit_objectives_ambitions()
@@ -2075,7 +2074,7 @@ GLOBAL_LIST(objective_choices)
 					to_chat(current, "<span class='warning'><FONT size = 3><B>You have been brainwashed! You are no longer a traitor!</B></FONT></span>")
 					remove_antag_datum(/datum/antagonist/traitor)
 					current.client.chatOutput?.clear_syndicate_codes()
-					log_and_message_admins("[key_name(usr)] has de-traitored [key_name(current)]")
+					log_and_message_admins("[key_name(user)] has de-traitored [key_name(current)]")
 
 			if("traitor")
 				if(!(has_antag_datum(/datum/antagonist/traitor)))
@@ -2083,13 +2082,13 @@ GLOBAL_LIST(objective_choices)
 					T.give_objectives = FALSE
 					T.should_equip = FALSE
 					add_antag_datum(T)
-					log_and_message_admins("[key_name(usr)] has traitored [key_name(current)]")
+					log_and_message_admins("[key_name(user)] has traitored [key_name(current)]")
 
 			if("autoobjectives")
 				var/datum/antagonist/traitor/T = has_antag_datum(/datum/antagonist/traitor)
 				T.forge_traitor_objectives(src)
-				to_chat(usr, "<span class='notice'>The objectives for traitor [key] have been generated. You can edit them and announce manually.</span>")
-				log_and_message_admins("[key_name(usr)] has automatically forged objectives for [key_name(current)]")
+				to_chat(user, "<span class='notice'>The objectives for traitor [key] have been generated. You can edit them and announce manually.</span>")
+				log_and_message_admins("[key_name(user)] has automatically forged objectives for [key_name(current)]")
 
 	else if(href_list["mindslave"])
 		switch(href_list["mindslave"])
@@ -2101,8 +2100,8 @@ GLOBAL_LIST(objective_choices)
 							qdel(i)
 							break
 					remove_antag_datum(/datum/antagonist/mindslave)
-					log_admin("[key_name(usr)] has de-mindslaved [key_name(current)]")
-					message_admins("[key_name_admin(usr)] has de-mindslaved [key_name_admin(current)]")
+					log_admin("[key_name(user)] has de-mindslaved [key_name(current)]")
+					message_admins("[key_name_admin(user)] has de-mindslaved [key_name_admin(current)]")
 
 	else if(href_list["shadowling"])
 		switch(href_list["shadowling"])
@@ -2112,18 +2111,18 @@ GLOBAL_LIST(objective_choices)
 					SSticker.mode.shadows -= src
 					special_role = null
 					to_chat(current, "<span class='userdanger'>Your powers have been quenched! You are no longer a shadowling!</span>")
-					message_admins("[key_name_admin(usr)] has de-shadowlinged [current].")
-					log_admin("[key_name(usr)] has de-shadowlinged [current].")
+					message_admins("[key_name_admin(user)] has de-shadowlinged [current].")
+					log_admin("[key_name(user)] has de-shadowlinged [current].")
 					current.spellremove(current)
 					current.remove_language("Shadowling Hivemind")
 				else if(src in SSticker.mode.shadowling_thralls)
 					SSticker.mode.remove_thrall(src,0)
-					message_admins("[key_name_admin(usr)] has de-thrall'ed [current].")
-					log_admin("[key_name(usr)] has de-thralled [key_name(current)]")
-					message_admins("[key_name_admin(usr)] has de-thralled [key_name_admin(current)]")
+					message_admins("[key_name_admin(user)] has de-thrall'ed [current].")
+					log_admin("[key_name(user)] has de-thralled [key_name(current)]")
+					message_admins("[key_name_admin(user)] has de-thralled [key_name_admin(current)]")
 			if("shadowling")
 				if(!ishuman(current))
-					to_chat(usr, "<span class='warning'>This only works on humans!</span>")
+					to_chat(user, "<span class='warning'>This only works on humans!</span>")
 					return
 				SSticker.mode.shadows += src
 				special_role = SPECIAL_ROLE_SHADOWLING
@@ -2132,31 +2131,31 @@ GLOBAL_LIST(objective_choices)
 				</b></span>")
 				SSticker.mode.finalize_shadowling(src)
 				SSticker.mode.update_shadow_icons_added(src)
-				log_admin("[key_name(usr)] has shadowlinged [key_name(current)]")
-				message_admins("[key_name_admin(usr)] has shadowlinged [key_name_admin(current)]")
+				log_admin("[key_name(user)] has shadowlinged [key_name(current)]")
+				message_admins("[key_name_admin(user)] has shadowlinged [key_name_admin(current)]")
 			if("thrall")
 				if(!ishuman(current))
-					to_chat(usr, "<span class='warning'>This only works on humans!</span>")
+					to_chat(user, "<span class='warning'>This only works on humans!</span>")
 					return
 				SSticker.mode.add_thrall(src)
-				message_admins("[key_name_admin(usr)] has thralled [current].")
-				log_admin("[key_name(usr)] has thralled [current].")
+				message_admins("[key_name_admin(user)] has thralled [current].")
+				log_admin("[key_name(user)] has thralled [current].")
 
 	else if(href_list["abductor"])
 		switch(href_list["abductor"])
 			if("clear")
-				to_chat(usr, "Not implemented yet. Sorry!")
+				to_chat(user, "Not implemented yet. Sorry!")
 				//ticker.mode.update_abductor_icons_removed(src)
 			if("abductor")
 				if(!ishuman(current))
-					to_chat(usr, "<span class='warning'>This only works on humans!</span>")
+					to_chat(user, "<span class='warning'>This only works on humans!</span>")
 					return
 				make_Abductor()
-				log_admin("[key_name(usr)] turned [current] into abductor.")
+				log_admin("[key_name(user)] turned [current] into abductor.")
 				SSticker.mode.update_abductor_icons_added(src)
 			if("equip")
 				if(!ishuman(current))
-					to_chat(usr, "<span class='warning'>This only works on humans!</span>")
+					to_chat(user, "<span class='warning'>This only works on humans!</span>")
 					return
 
 				var/mob/living/carbon/human/H = current
@@ -2187,8 +2186,8 @@ GLOBAL_LIST(objective_choices)
 							R.contents -= R.module.emag
 					R.clear_supplied_laws()
 					R.laws = new /datum/ai_laws/crewsimov
-					log_admin("[key_name(usr)] has un-emagged [key_name(current)]")
-					message_admins("[key_name_admin(usr)] has un-emagged [key_name_admin(current)]")
+					log_admin("[key_name(user)] has un-emagged [key_name(current)]")
+					message_admins("[key_name_admin(user)] has un-emagged [key_name_admin(current)]")
 
 			if("unemagcyborgs")
 				if(isAI(current))
@@ -2209,8 +2208,8 @@ GLOBAL_LIST(objective_choices)
 								R.contents -= R.module.emag
 						R.clear_supplied_laws()
 						R.laws = new /datum/ai_laws/crewsimov
-					log_admin("[key_name(usr)] has unemagged [key_name(ai)]'s cyborgs")
-					message_admins("[key_name_admin(usr)] has unemagged [key_name_admin(ai)]'s cyborgs")
+					log_admin("[key_name(user)] has unemagged [key_name(ai)]'s cyborgs")
+					message_admins("[key_name_admin(user)] has unemagged [key_name_admin(ai)]'s cyborgs")
 
 	else if(href_list["common"])
 		switch(href_list["common"])
@@ -2223,14 +2222,14 @@ GLOBAL_LIST(objective_choices)
 				else
 					for(var/obj/item/W in current)
 						current.unEquip(W, 1)
-				log_admin("[key_name(usr)] has unequipped [key_name(current)]")
-				message_admins("[key_name_admin(usr)] has unequipped [key_name_admin(current)]")
+				log_admin("[key_name(user)] has unequipped [key_name(current)]")
+				message_admins("[key_name_admin(user)] has unequipped [key_name_admin(current)]")
 			if("takeuplink")
 				take_uplink()
 				var/datum/antagonist/traitor/T = has_antag_datum(/datum/antagonist/traitor)
 				T.antag_memory = "" //Remove any antag memory they may have had (uplink codes, code phrases)
-				log_admin("[key_name(usr)] has taken [key_name(current)]'s uplink")
-				message_admins("[key_name_admin(usr)] has taken [key_name_admin(current)]'s uplink")
+				log_admin("[key_name(user)] has taken [key_name(current)]'s uplink")
+				message_admins("[key_name_admin(user)] has taken [key_name_admin(current)]'s uplink")
 			if("crystals")
 				if(usr.client.holder.rights & (R_SERVER|R_EVENT))
 					var/obj/item/uplink/hidden/suplink = find_syndicate_uplink()
@@ -2241,17 +2240,17 @@ GLOBAL_LIST(objective_choices)
 					if(!isnull(crystals))
 						if(suplink)
 							suplink.uses = crystals
-							log_admin("[key_name(usr)] has set [key_name(current)]'s telecrystals to [crystals]")
-							message_admins("[key_name_admin(usr)] has set [key_name_admin(current)]'s telecrystals to [crystals]")
+							log_admin("[key_name(user)] has set [key_name(current)]'s telecrystals to [crystals]")
+							message_admins("[key_name_admin(user)] has set [key_name_admin(current)]'s telecrystals to [crystals]")
 			if("uplink")
 				if(has_antag_datum(/datum/antagonist/traitor))
 					var/datum/antagonist/traitor/T = has_antag_datum(/datum/antagonist/traitor)
 					T.give_codewords()
 					if(!T.equip_traitor(src))
-						to_chat(usr, "<span class='warning'>Equipping a syndicate failed!</span>")
+						to_chat(user, "<span class='warning'>Equipping a syndicate failed!</span>")
 						return
-				log_admin("[key_name(usr)] has given [key_name(current)] an uplink")
-				message_admins("[key_name_admin(usr)] has given [key_name_admin(current)] an uplink")
+				log_admin("[key_name(user)] has given [key_name(current)] an uplink")
+				message_admins("[key_name_admin(user)] has given [key_name_admin(current)] an uplink")
 
 	else if(href_list["obj_announce"])
 		announce_objectives()
@@ -2259,7 +2258,7 @@ GLOBAL_LIST(objective_choices)
 			do_edit_objectives_ambitions()
 			return
 		SEND_SOUND(current, sound('sound/ambience/alarm4.ogg'))
-		log_and_message_admins("[key_name(usr)] has announced [key_name(current)]'s objectives")
+		log_and_message_admins("[key_name(user)] has announced [key_name(current)]'s objectives")
 
 	edit_memory()
 
@@ -2638,7 +2637,7 @@ GLOBAL_LIST(objective_choices)
 	if(!mind.name)
 		mind.name = real_name
 	mind.current = src
-	mind.appear_in_round_end_report = client?.prefs?.appear_in_round_end_report
+	//mind.appear_in_round_end_report = client?.prefs?.appear_in_round_end_report //No thanks D:
 
 //HUMAN
 /mob/living/carbon/human/mind_initialize()
