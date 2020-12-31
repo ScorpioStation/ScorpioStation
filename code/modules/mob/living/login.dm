@@ -2,6 +2,8 @@
 	..()
 	//Mind updates
 	sync_mind()
+	if(mind.memory || mind.antag_datums)
+		to_chat(src, "<i>[mind.show_memory()]</i>")
 	update_stat("mob login")
 	update_sight()
 

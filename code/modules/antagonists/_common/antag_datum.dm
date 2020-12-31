@@ -2,17 +2,18 @@ GLOBAL_LIST_EMPTY(antagonists)
 
 /datum/antagonist
 	var/name = "Antagonist"
-	var/roundend_category = "other antagonists"				//Section of roundend report, datums with same category will be displayed together, also default header for the section
-	var/show_in_roundend = TRUE								//Set to false to hide the antagonists from roundend report
+	var/roundend_category = "other antagonists"	//Section of roundend report, datums with same category will be displayed together, also default header for the section
+	var/show_in_roundend = TRUE					//Set to false to hide the antagonists from roundend report
 	var/datum/mind/owner						//Mind that owns this datum
 	var/silent = FALSE							//Silent will prevent the gain/lose texts to show
 	var/can_coexist_with_others = TRUE			//Whether or not the person will be able to have more than one datum
 	var/list/typecache_datum_blacklist = list()	//List of datums this type can't coexist with
 	var/delete_on_mind_deletion = TRUE
 	var/job_rank
-	var/replace_banned = TRUE //Should replace jobbaned player with ghosts if granted.
+	var/replace_banned = TRUE			//Should replace jobbaned player with ghosts if granted.
 	var/list/objectives = list()
-	var/antag_memory = ""//These will be removed with antag datum
+	var/antag_memory = ""				//These will be removed with antag datum
+	var/list/requested_objective_changes // Lazy list for antagonists to request the admins objectives.
 
 /datum/antagonist/New()
 	GLOB.antagonists += src
@@ -21,7 +22,7 @@ GLOBAL_LIST_EMPTY(antagonists)
 /datum/antagonist/Destroy()
 	GLOB.antagonists -= src
 	if(owner)
-		LAZYREMOVE(owner.antag_datums, src)
+		owner?.do_remove_antag_datum(src)
 	owner = null
 	return ..()
 
@@ -84,7 +85,7 @@ GLOBAL_LIST_EMPTY(antagonists)
 /datum/antagonist/proc/on_removal()
 	remove_innate_effects()
 	if(owner)
-		LAZYREMOVE(owner.antag_datums, src)
+		owner.do_remove_antag_datum(src)
 		if(!silent && owner.current)
 			farewell()
 		owner.objectives -= objectives
@@ -135,3 +136,34 @@ GLOBAL_LIST_EMPTY(antagonists)
 //Displayed at the end of roundend_category section
 /datum/antagonist/proc/roundend_report_footer()
 	return
+
+// Ported from Skyrat
+// Clears change requests from deleted objectives to avoid broken references.
+/datum/antagonist/proc/clean_request_from_del_objective(datum/objective/source, force)
+	var/objective_reference = REF(source)
+	for(var/uid in requested_objective_changes)
+		var/list/change_request = requested_objective_changes[uid]
+		if(change_request["target"] != objective_reference)
+			continue
+		LAZYREMOVE(requested_objective_changes, uid)
+
+
+/datum/antagonist/proc/add_objective_change(uid, list/additions)
+	LAZYADD(requested_objective_changes, uid)
+	var/datum/objective/request_target = additions["target"]
+	if(!ispath(request_target))
+		request_target = locate(request_target) in objectives
+		if(istype(request_target))
+			RegisterSignal(request_target, COMSIG_PARENT_QDELETING, .proc/clean_request_from_del_objective)
+	requested_objective_changes[uid] = additions
+
+
+/datum/antagonist/proc/remove_objective_change(uid)
+	if(!LAZYACCESS(requested_objective_changes, uid))
+		return
+	var/datum/objective/request_target = requested_objective_changes[uid]["target"]
+	if(!ispath(request_target))
+		request_target = locate(request_target) in objectives
+		if(istype(request_target))
+			UnregisterSignal(request_target, COMSIG_PARENT_QDELETING)
+	LAZYREMOVE(requested_objective_changes, uid)

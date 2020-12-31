@@ -62,7 +62,7 @@
 
 	if(target.mind)//if the victim has got a mind
 
-		target.mind.show_memory(user, FALSE) //I can read your mind, kekeke. Output all their notes.
+		to_chat(user, "<i>[target.mind.show_memory()]</i>") //I can read your mind, kekeke. Output all their notes.
 
 		//Some of target's recent speech, so the changeling can attempt to imitate them better.
 		//Recent as opposed to all because rounds tend to have a LOT of text.
