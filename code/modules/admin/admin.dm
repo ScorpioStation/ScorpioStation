@@ -82,7 +82,8 @@ GLOBAL_VAR_INIT(nologevent, 0)
 	if(!check_rights(R_ADMIN|R_MOD))
 		return
 
-	var/body = "<html><head><title>Options for [M.key]</title></head>"
+	var/list/body = list("<html><head><meta http-equiv='Content-Type' content='text/html; charset=UTF-8'><title>Options for [M.key]</title></head>")
+
 	body += "<body>Options panel for <b>[M]</b>"
 	if(M.client)
 		body += " played by <b>[M.client]</b> "
@@ -98,18 +99,23 @@ GLOBAL_VAR_INIT(nologevent, 0)
 	else
 		body += " \[<A href='?_src_=holder;revive=[M.UID()]'>Heal</A>\] "
 
+	if(M.mind)
+		body += " | <A href='?_src_=holder;[HrefToken()];ObjectiveRequest=[REF(M.mind)]'>Objective-Ambition Menu</A>"
 
 	body += "<br><br>\[ "
 	body += "<a href='?_src_=holder;open_logging_view=[M.UID()];'>LOGS</a> - "
 	body += "<a href='?_src_=vars;Vars=[M.UID()]'>VV</a> - "
 	body += "[ADMIN_TP(M,"TP")] - "
+
 	if(M.client)
 		body += "<a href='?src=[usr.UID()];priv_msg=[M.client.ckey]'>PM</a> - "
 		body += "[ADMIN_SM(M,"SM")] - "
+
 	if(ishuman(M) && M.mind)
 		body += "<a href='?_src_=holder;HeadsetMessage=[M.UID()]'>HM</a> -"
 	body += "[admin_jump_link(M)]\] </b><br>"
 	body += "<b>Mob type:</b> [M.type]<br>"
+
 	if(M.client)
 		if(M.client.related_accounts_cid.len)
 			body += "<b>Related accounts by CID:</b> [jointext(M.client.related_accounts_cid, " - ")]<br>"
@@ -160,6 +166,9 @@ GLOBAL_VAR_INIT(nologevent, 0)
 		<A href='?_src_=holder;narrateto=[M.UID()]'>Narrate to</A> |
 		[ADMIN_SM(M,"Subtle message")]
 	"}
+
+	if(M.mind)
+		body += " | <A href='?_src_=holder;[HrefToken()];ObjectiveRequest=[REF(M.mind)]'>Objective-Ambition Menu</A>"
 
 	if(check_rights(R_EVENT, 0))
 		body += {" | <A href='?_src_=holder;Bless=[M.UID()]'>Bless</A> | <A href='?_src_=holder;Smite=[M.UID()]'>Smite</A>"}
@@ -269,9 +278,11 @@ GLOBAL_VAR_INIT(nologevent, 0)
 			<A href='?_src_=holder;tdomeobserve=[M.UID()]'>Thunderdome Observer</A> |
 		"}
 
-	body += {"<br>
-		</body></html>
-	"}
+	body += "<br>"
+	body += "</body></html>"
+	var/datum/browser/popup = new(usr, "adminplayeropts-[REF(M)]", "Player Panel", nwidth = 550, nheight = 515)
+	popup.set_content(body.Join())
+	popup.open()
 
 	usr << browse(body, "window=adminplayeropts;size=550x615")
 	feedback_add_details("admin_verb","SPP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
