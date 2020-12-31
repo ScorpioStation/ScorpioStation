@@ -10,7 +10,8 @@
 	var/list/barsigns = list()
 	var/list/hiddensigns = list()
 	var/panel_open = FALSE
-	var/emagged = FALSE
+	var/emagged = TRUE
+	var/bolted = FALSE
 	var/prev_sign = ""
 	var/state = 0
 
@@ -56,22 +57,19 @@
 	return attack_hand(user)
 
 /obj/structure/sign/barsign/attack_hand(mob/user)
-	if(allowed(user))
+	if(panel_open)
 		if(broken)
 			to_chat(user, "<span class='danger'>The controls seem unresponsive.</span>")
 			return
 		else
-			if(panel_open)
-				pick_sign()
-				to_chat(user, "<span class='notice'>You set the barsign and close the maintenance panel.</span>")
-				panel_open = FALSE
-				return
-			else
-				to_chat(user, "<span class='info'>The maintenance panel is currently closed.</span>")
-				return
+			pick_sign()
+			to_chat(user, "<span class='notice'>You set the barsign and close the maintenance panel.</span>")
+			panel_open = FALSE
+			return
 	else
-		to_chat(user, "<span class='info'>Access denied.</span>")
+		to_chat(user, "<span class='info'>The maintenance panel is currently closed.</span>")
 		return
+
 
 /obj/structure/sign/barsign/attackby(var/obj/item/I, mob/user)
 	if(istype(I, /obj/item/stack/cable_coil) && panel_open)
@@ -92,13 +90,17 @@
 		return
 
 /obj/structure/sign/barsign/screwdriver_act(mob/user)
-	if(!panel_open)
-		to_chat(user, "<span class='notice'>You open the maintenance panel.</span>")
-		set_sign(new /datum/barsign/hiddensigns/signoff)
-		panel_open = TRUE
+	if(allowed(user))
+		if(!panel_open)
+			to_chat(user, "<span class='notice'>You open the maintenance panel.</span>")
+			set_sign(new /datum/barsign/hiddensigns/signoff)
+			panel_open = TRUE
+		else
+			to_chat(user, "<span class='notice'>You close the maintenance panel.</span>")
+			panel_open = FALSE
 	else
-		to_chat(user, "<span class='notice'>You close the maintenance panel.</span>")
-		panel_open = FALSE
+		to_chat(user, "<span class='info'>Access denied.</span>")
+		return
 
 /obj/structure/sign/barsign/proc/pick_sign()
 	var/list/signs = barsigns
@@ -382,6 +384,6 @@
 
 /datum/barsign/hiddensigns/signoff
 	name = "Bar Sign"
-	icon = "empty"
+	icon = "off"
 	desc = "This sign doesn't seem to be on."
 

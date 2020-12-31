@@ -24,7 +24,7 @@
 	if(!I.use_tool(src, user, 0, volume = I.tool_volume))
 		return
 	to_chat(user, "You unfasten the sign with [I].")
-	var/obj/item/sign/S = new(src.loc)
+	var/obj/item/sign/S = new(loc)
 	S.name = name
 	S.desc = desc
 	S.icon_state = icon_state
@@ -42,7 +42,7 @@
 	resistance_flags = FLAMMABLE
 	var/sign_state = ""
 
-/obj/item/sign/attackby(obj/item/tool as obj, mob/user as mob)	//construction
+/obj/item/sign/attackby(obj/item/tool, mob/user)	//construction
 	if(istype(tool, /obj/item/screwdriver) && isturf(user.loc))
 		var/direction = input("In which direction?", "Select direction.") in list("North", "East", "South", "West", "Cancel")
 		if(direction == "Cancel")
