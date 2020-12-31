@@ -764,11 +764,11 @@ GLOBAL_LIST(objective_choices)
 			return
 		TIMER_COOLDOWN_START(src, COOLDOWN_AMBITION, AMBITION_COOLDOWN_TIME)
 		ambitions[ambition_index] = new_ambition
-		if(user.key == current.key)
+		if(user == current)
 			log_game("[key_name(user)] has edited their ambition of index [ambition_index].\nOLD AMBITION:\n[old_ambition]\nNEW AMBITION:\n[new_ambition]")
 		else
 			log_game("[key_name(user)] has edited [key_name(current)]'s ambition of index [ambition_index].\nOLD AMBITION:\n[old_ambition]\nNEW AMBITION:\n[new_ambition]")
-			message_admins("[key_name_admin(user)] has edited key_name_admin(current)]'s ambition of index [ambition_index].")
+			log_and_message_admins("[key_name_admin(user)] has edited key_name_admin(current)]'s ambition of index [ambition_index].")
 		do_edit_objectives_ambitions()
 		return
 
