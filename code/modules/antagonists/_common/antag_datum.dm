@@ -140,7 +140,7 @@ GLOBAL_LIST_EMPTY(antagonists)
 // Ported from Skyrat
 // Clears change requests from deleted objectives to avoid broken references.
 /datum/antagonist/proc/clean_request_from_del_objective(datum/objective/source, force)
-	var/objective_reference = REF(source)
+	var/objective_reference = \ref(source)
 	for(var/uid in requested_objective_changes)
 		var/list/change_request = requested_objective_changes[uid]
 		if(change_request["target"] != objective_reference)

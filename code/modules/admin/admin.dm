@@ -100,7 +100,7 @@ GLOBAL_VAR_INIT(nologevent, 0)
 		body += " \[<A href='?_src_=holder;revive=[M.UID()]'>Heal</A>\] "
 
 	if(M.mind)
-		body += " | <A href='?_src_=holder;[HrefToken()];ObjectiveRequest=\ref[M.mind]'>Objective-Ambition Menu</A>"
+		body += {" | <A href='?_src_=holder;ObjAmb=[M.UID()]'>Objective Request</A>"}
 
 	body += "<br><br>\[ "
 	body += "<a href='?_src_=holder;open_logging_view=[M.UID()];'>LOGS</a> - "
@@ -168,7 +168,7 @@ GLOBAL_VAR_INIT(nologevent, 0)
 	"}
 
 	if(M.mind)
-		body += " | <A href='?_src_=holder;[HrefToken()];ObjectiveRequest=\ref[M.mind]'>Objective-Ambition Menu</A>"
+		body += {" | <A href='?_src_=holder;ObjAmb=[M.UID()]'>Objective Request</A>"}
 
 	if(check_rights(R_EVENT, 0))
 		body += {" | <A href='?_src_=holder;Bless=[M.UID()]'>Bless</A> | <A href='?_src_=holder;Smite=[M.UID()]'>Smite</A>"}
