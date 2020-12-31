@@ -341,3 +341,11 @@ GLOBAL_LIST_EMPTY(all_cults)
 
 	to_chat(world, endtext)
 	..()
+
+/datum/game_mode/cult/proc/add_objectives()
+	objectives |= cult_team?.cult_objs
+	if(cult_team)
+		objectives |= cult_objs
+
+
+
