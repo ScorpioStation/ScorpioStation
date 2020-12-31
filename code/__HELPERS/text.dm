@@ -83,7 +83,7 @@
 	return copytext((sanitize(strip_html_simple(t))),1,limit)
 
 // Used to get a properly sanitized multiline input, of max_length
-/proc/stripped_multiline_input(mob/user, message = "", title = "", default = "", max_length=MAX_MESSAGE_LEN, no_trim=FALSE)
+/proc/stripped_multiline_input(mob/user, message = "", title = "", default = "", max_length = MAX_MESSAGE_LEN, no_trim = FALSE)
 	var/name = input(user, message, title, default) as message|null
 	if(no_trim)
 		return copytext(html_encode(name), 1, max_length)

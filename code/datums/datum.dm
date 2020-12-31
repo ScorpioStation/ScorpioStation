@@ -2,14 +2,14 @@
 	var/gc_destroyed //Time when this object was destroyed.
 	var/list/active_timers  //for SStimer
 	var/list/datum_components //for /datum/components
-	/// Status traits attached to this datum
-	var/list/status_traits
+	var/list/status_traits	/// Status traits attached to this datum
 	var/list/comp_lookup
 	var/list/list/datum/callback/signal_procs
 	var/signal_enabled = FALSE
 	var/datum_flags = NONE
 	var/var_edited = FALSE //Warranty void if seal is broken
 	var/tmp/unique_datum_id = null
+	var/list/cooldowns	//Lazy associative list of currently active cooldowns.
 
 #ifdef TESTING
 	var/running_find_references
@@ -65,6 +65,36 @@
 
 	return QDEL_HINT_QUEUE
 
+/**
+  * Callback called by a timer to end an associative-list-indexed cooldown.
+  *
+  * Arguments:
+  * * source - datum storing the cooldown
+  * * index - string index storing the cooldown on the cooldowns associative list
+  *
+  * This sends a signal reporting the cooldown end.
+  */
+/proc/end_cooldown(datum/source, index)
+	if(QDELETED(source))
+		return
+	SEND_SIGNAL(source, COMSIG_CD_STOP(index))
+	TIMER_COOLDOWN_END(source, index)
+
+
+/**
+  * Proc used by stoppable timers to end a cooldown before the time has ran out.
+  *
+  * Arguments:
+  * * source - datum storing the cooldown
+  * * index - string index storing the cooldown on the cooldowns associative list
+  *
+  * This sends a signal reporting the cooldown end, passing the time left as an argument.
+  */
+/proc/reset_cooldown(datum/source, index)
+	if(QDELETED(source))
+		return
+	SEND_SIGNAL(source, COMSIG_CD_RESET(index), S_TIMER_COOLDOWN_TIMELEFT(source, index))
+	TIMER_COOLDOWN_END(source, index)
 
 /datum/nothing
 	// Placeholder object, used for ispath checks. Has to be defined to prevent errors, but shouldn't ever be created.

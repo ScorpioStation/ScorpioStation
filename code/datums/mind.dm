@@ -23,6 +23,7 @@
 #define AMBITION_COOLDOWN_TIME (5 SECONDS)
 #define OBJECTIVES_COOLDOWN_TIME (2 SECONDS)
 #define ADMIN_PING_COOLDOWN_TIME (10 MINUTES)
+#define MAX_AMBITION_LEN		1024
 ////////////////////////////////////////
 
 /datum/mind
@@ -672,12 +673,9 @@ GLOBAL_LIST(objective_choices)
 /datum/mind/Topic(href, href_list)
 	if(!check_rights(R_ADMIN))
 		return
-
-
 	if (href_list["refresh_obj_amb"])
 		do_edit_objectives_ambitions()
 		return
-
 	else if (href_list["add_ambition"])
 		if(!check_rights(R_ADMIN, FALSE))
 			if(usr != current)
@@ -2732,3 +2730,4 @@ GLOBAL_LIST(objective_choices)
 	mind.special_role = SPECIAL_ROLE_CULTIST
 
 #undef AMBITION_COOLDOWN_TIME
+#undef MAX_AMBITION_LEN
