@@ -100,7 +100,7 @@ GLOBAL_VAR_INIT(nologevent, 0)
 		body += " \[<A href='?_src_=holder;revive=[M.UID()]'>Heal</A>\] "
 
 	if(M.mind)
-		body += " | <A href='?_src_=holder;[HrefToken()];ObjectiveRequest=[REF(M.mind)]'>Objective-Ambition Menu</A>"
+		body += " | <A href='?_src_=holder;[HrefToken()];ObjectiveRequest=\ref[M.mind]'>Objective-Ambition Menu</A>"
 
 	body += "<br><br>\[ "
 	body += "<a href='?_src_=holder;open_logging_view=[M.UID()];'>LOGS</a> - "
@@ -168,7 +168,7 @@ GLOBAL_VAR_INIT(nologevent, 0)
 	"}
 
 	if(M.mind)
-		body += " | <A href='?_src_=holder;[HrefToken()];ObjectiveRequest=[REF(M.mind)]'>Objective-Ambition Menu</A>"
+		body += " | <A href='?_src_=holder;[HrefToken()];ObjectiveRequest=\ref[M.mind]'>Objective-Ambition Menu</A>"
 
 	if(check_rights(R_EVENT, 0))
 		body += {" | <A href='?_src_=holder;Bless=[M.UID()]'>Bless</A> | <A href='?_src_=holder;Smite=[M.UID()]'>Smite</A>"}
@@ -280,7 +280,7 @@ GLOBAL_VAR_INIT(nologevent, 0)
 
 	body += "<br>"
 	body += "</body></html>"
-	var/datum/browser/popup = new(usr, "adminplayeropts-[REF(M)]", "Player Panel", nwidth = 550, nheight = 515)
+	var/datum/browser/popup = new(usr, "adminplayeropts-\ref[M]", "Player Panel", nwidth = 550, nheight = 515)
 	popup.set_content(body.Join())
 	popup.open()
 
@@ -595,43 +595,43 @@ GLOBAL_VAR_INIT(nologevent, 0)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////ADMIN HELPER PROCS
 
-/proc/is_special_character(mob/M as mob) // returns 1 for specail characters and 2 for heroes of gamemode
+/proc/is_special_character(mob/M) // returns 1 for Special characters and 2 for Heroes of gamemode
+	var/HERO = 2
 	if(!SSticker || !SSticker.mode)
-		return 0
+		return FALSE
 	if(!istype(M))
-		return 0
+		return FALSE
 	if((M.mind in SSticker.mode.head_revolutionaries) || (M.mind in SSticker.mode.revolutionaries))
 		if(SSticker.mode.config_tag == "revolution")
-			return 2
-		return 1
+			return HERO
+		return TRUE
 	if(M.mind in SSticker.mode.cult)
 		if(SSticker.mode.config_tag == "cult")
-			return 2
-		return 1
+			return HERO
+		return TRUE
 	if(M.mind in SSticker.mode.syndicates)
 		if(SSticker.mode.config_tag == "nuclear")
-			return 2
-		return 1
+			return HERO
+		return TRUE
 	if(M.mind in SSticker.mode.wizards)
 		if(SSticker.mode.config_tag == "wizard")
-			return 2
-		return 1
+			return HERO
+		return TRUE
 	if(M.mind in SSticker.mode.changelings)
 		if(SSticker.mode.config_tag == "changeling")
-			return 2
-		return 1
+			return HERO
+		return TRUE
 	if(M.mind in SSticker.mode.abductors)
 		if(SSticker.mode.config_tag == "abduction")
-			return 2
-		return 1
+			return HERO
+		return TRUE
 	if(isrobot(M))
 		var/mob/living/silicon/robot/R = M
 		if(R.emagged)
-			return 1
+			return TRUE
 	if(M.mind&&M.mind.special_role)//If they have a mind and special role, they are some type of traitor or antagonist.
-		return 1
-
-	return 0
+		return TRUE
+	return FALSE
 
 /datum/admins/proc/spawn_atom(var/object as text)
 	set category = "Debug"

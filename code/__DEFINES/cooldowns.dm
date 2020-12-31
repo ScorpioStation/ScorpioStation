@@ -1,4 +1,5 @@
-//// COOLDOWN SYSTEMS
+
+// COOLDOWN SYSTEMS
 /*
  * We have 2 cooldown systems: timer cooldowns (divided between stoppable and regular) and world.time cooldowns.
  *
@@ -21,6 +22,11 @@
 */
 
 // Cooldown system based on an datum-level associative lazylist using timers.
+
+//Cooldown Indices
+#define COOLDOWN_AMBITION		"ambition"
+#define COOLDOWN_OBJECTIVES		"objectives"
+#define COOLDOWN_OBJ_ADMIN_PING	"obj_admin_ping"
 
 //TIMER COOLDOWN MACROS
 #define COMSIG_CD_STOP(cd_index) "cooldown_[cd_index]"
@@ -51,3 +57,4 @@
 #define COOLDOWN_CHECK(cd_source, cd_index) (cd_source.cd_index < world.time)
 #define COOLDOWN_RESET(cd_source, cd_index) cd_source.cd_index = 0
 #define COOLDOWN_TIMELEFT(cd_source, cd_index) (max(0, cd_source.cd_index - world.time))
+

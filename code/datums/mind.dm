@@ -192,7 +192,7 @@
 		var/datum/antagonist/antag_datum = a
 		output += "<i><b>Objectives</b></i>:"
 		if(is_admin)
-			output += " <a href='?src=[REF(antag_datum.owner)];obj_add=[REF(antag_datum)];ambition_panel=1'>Add Objective</a>"
+			output += " <a href='?src=\ref[antag_datum.owner];obj_add=\ref[antag_datum];ambition_panel=1'>Add Objective</a>"
 		output += "<ul>"
 		if(!length(antag_datum.objectives))
 			output += "<li><i><b>NONE</b></i>"
@@ -201,15 +201,15 @@
 				var/datum/objective/objective = antag_datum.objectives[count]
 				output += "<li><B>[count]</B>: [objective.explanation_text]"
 				if(self_mind)
-					output += " <a href='?src=[REF(antag_datum.owner)];req_obj_delete=[REF(objective)];target_antag=[REF(antag_datum)]'>Request Remove</a> <a href='?src=[REF(antag_datum.owner)];req_obj_completed=[REF(objective)];target_antag=[REF(antag_datum)]'><font color=[objective.completed ? "green" : "red"]>[objective.completed ? "Request incompletion" : "Request completion"]</font></a><br>"
+					output += " <a href='?src=\ref[antag_datum.owner];req_obj_delete=\ref[objective];target_antag=\ref[antag_datum]'>Request Remove</a> <a href='?src=\ref[antag_datum.owner];req_obj_completed=\ref[objective];target_antag=\ref[antag_datum]'><font color=[objective.completed ? "green" : "red"]>[objective.completed ? "Request incompletion" : "Request completion"]</font></a><br>"
 				if(is_admin)
-					output += " <a href='?src=[REF(antag_datum.owner)];obj_edit=[REF(objective)];target_antag=[REF(antag_datum)]'>Edit</a> <a href='?src=[REF(antag_datum.owner)];obj_panel_delete=[REF(objective)];target_antag=[REF(antag_datum)]'>Remove</a> <a href='?src=[REF(antag_datum.owner)];obj_panel_complete_toggle=[REF(objective)];target_antag=[REF(antag_datum)]'><font color=[objective.completed ? "green" : "red"]>[objective.completed ? "Mark as incomplete" : "Mark as complete"]</font></a><br>"
+					output += " <a href='?src=\ref[antag_datum.owner];obj_edit=\ref[objective];target_antag=\ref[antag_datum]'>Edit</a> <a href='?src=\ref[antag_datum.owner];obj_panel_delete=\ref[objective];target_antag=\ref[antag_datum]'>Remove</a> <a href='?src=\ref[antag_datum.owner];obj_panel_complete_toggle=\ref[objective];target_antag=\ref[antag_datum]'><font color=[objective.completed ? "green" : "red"]>[objective.completed ? "Mark as incomplete" : "Mark as complete"]</font></a><br>"
 		output += "</ul>"
 		if(is_admin)
-			output += "<a href='?src=[REF(antag_datum.owner)];obj_announce=1;ambition_panel=1'>Announce objectives</a><br>"
+			output += "<a href='?src=\ref[antag_datum.owner];obj_announce=1;ambition_panel=1'>Announce objectives</a><br>"
 		output += "<br><i><b>Requested Objective Changes</b></i>:"
 		if(self_mind)
-			output += " <a href='?src=[REF(antag_datum.owner)];req_obj_add=1;target_antag=[REF(antag_datum)]'>Request objective</a>"
+			output += " <a href='?src=\ref[antag_datum.owner];req_obj_add=1;target_antag=\ref[antag_datum]'>Request objective</a>"
 		output += "<ul>"
 		if(!LAZYLEN(antag_datum.requested_objective_changes))
 			output += "<li><i><b>NONE</b></i></ul><br>"
@@ -223,9 +223,9 @@
 						var/objective_text = objectives_info["text"]
 						output += "<li><B>Request #[uid]</B>: ADD [initial(type_cast_objective.name)] - [objective_text]"
 						if(self_mind)
-							output += " <a href='?src=[REF(antag_datum.owner)];req_obj_cancel=[uid];target_antag=[REF(antag_datum)]'>Cancel Request</a>"
+							output += " <a href='?src=\ref[antag_datum.owner];req_obj_cancel=[uid];target_antag=\ref[antag_datum]'>Cancel Request</a>"
 						if(is_admin)
-							output += " <a href='?src=[REF(antag_datum.owner)];req_obj_accept=[REF(antag_datum)];req_obj_id=[uid]'>Accept</a> <a href='?src=[REF(antag_datum.owner)];req_obj_edit=[REF(antag_datum)];req_obj_id=[uid]'>Edit</a> <a href='?src=[REF(antag_datum.owner)];req_obj_deny=[REF(antag_datum)];req_obj_id=[uid]'>Deny</a>"
+							output += " <a href='?src=\ref[antag_datum.owner];req_obj_accept=\ref[antag_datum];req_obj_id=[uid]'>Accept</a> <a href='?src=\ref[antag_datum.owner];req_obj_edit=\ref[antag_datum];req_obj_id=[uid]'>Edit</a> <a href='?src=\ref[antag_datum.owner];req_obj_deny=\ref[antag_datum];req_obj_id=[uid]'>Deny</a>"
 					if(REQUEST_DEL_OBJECTIVE)
 						var/datum/objective/objective_ref = locate(objectives_info["target"]) in antag_datum.objectives
 						if(QDELETED(objective_ref))
@@ -234,9 +234,9 @@
 							continue
 						output += "<li><B>Request #[uid]</B>: DEL [objective_ref.name] - [objective_ref.explanation_text] - [objectives_info["text"]]"
 						if(self_mind)
-							output += " <a href='?src=[REF(antag_datum.owner)];req_obj_cancel=[uid];target_antag=[REF(antag_datum)]'>Cancel Request</a>"
+							output += " <a href='?src=\ref[antag_datum.owner];req_obj_cancel=[uid];target_antag=\ref[antag_datum]'>Cancel Request</a>"
 						if(is_admin)
-							output += " <a href='?src=[REF(antag_datum.owner)];req_obj_accept=[REF(antag_datum)];req_obj_id=[uid]'>Accept</a> <a href='?src=[REF(antag_datum.owner)];req_obj_deny=[REF(antag_datum)];req_obj_id=[uid]'>Deny</a>"
+							output += " <a href='?src=\ref[antag_datum.owner];req_obj_accept=\ref[antag_datum];req_obj_id=[uid]'>Accept</a> <a href='?src=\ref[antag_datum.owner];req_obj_deny=\ref[antag_datum];req_obj_id=[uid]'>Deny</a>"
 					if(REQUEST_WIN_OBJECTIVE, REQUEST_LOSE_OBJECTIVE)
 						var/datum/objective/objective_ref = locate(objectives_info["target"]) in antag_datum.objectives
 						if(QDELETED(objective_ref))
@@ -245,27 +245,27 @@
 							continue
 						output += "<li><B>Request #[uid]</B>: [obj_request == REQUEST_WIN_OBJECTIVE ? "WIN" : "LOSE"] [objective_ref.name] - [objective_ref.explanation_text] - [objectives_info["text"]]"
 						if(self_mind)
-							output += " <a href='?src=[REF(antag_datum.owner)];req_obj_cancel=[uid];target_antag=[REF(antag_datum)]'>Cancel Request</a>"
+							output += " <a href='?src=\ref[antag_datum.owner];req_obj_cancel=[uid];target_antag=\ref[antag_datum]'>Cancel Request</a>"
 						if(is_admin)
-							output += " <a href='?src=[REF(antag_datum.owner)];req_obj_accept=[REF(antag_datum)];req_obj_id=[uid]'>Accept</a> <a href='?src=[REF(antag_datum.owner)];req_obj_deny=[REF(antag_datum)];req_obj_id=[uid]'>Deny</a>"
+							output += " <a href='?src=\ref[antag_datum.owner];req_obj_accept=\ref[antag_datum];req_obj_id=[uid]'>Accept</a> <a href='?src=\ref[antag_datum.owner];req_obj_deny=\ref[antag_datum];req_obj_id=[uid]'>Deny</a>"
 					else
 						stack_trace("Objective request found with no request index. UID: [uid] | Antag: [antag_datum] | Mind: [src] | User: [usr]")
 						continue
 			output += "</ul><br>"
 			if(self_mind)
-				output += "<a href='?src=[REF(src)];req_obj_ping=1'>Ping the admins</a><br>"
+				output += "<a href='?src=\ref[src];req_obj_ping=1'>Ping the admins</a><br>"
 			if(is_admin)
-				output += "<a href='?src=[REF(src)];req_obj_ping_cd_clear=1'>Clear ping cooldown</a><br>"
+				output += "<a href='?src=\ref[src];req_obj_ping_cd_clear=1'>Clear ping cooldown</a><br>"
 	output += "<br><b>[current.real_name]'s Ambitions:</b>"
 	if(LAZYLEN(ambitions) < CONFIG_GET(number/max_ambitions))
-		output += " <a href='?src=[REF(src)];add_ambition=1'>Add Ambition</a>"
+		output += " <a href='?src=\ref[src];add_ambition=1'>Add Ambition</a>"
 	output += "<ul>"
 	if(!LAZYLEN(ambitions))
 		output += "<li><i><b>NONE</b></i>"
 	else
 		for(var/count in 1 to LAZYLEN(ambitions))
-			output += "<li><B>Ambition #[count]</B> (<a href='?src=[REF(src)];edit_ambition=[count]'>Edit</a>) (<a href='?src=[REF(src)];remove_ambition=[count]'>Remove</a>):<br>[ambitions[count]]"
-	output += "</ul><br>(<a href='?src=[REF(src)];refresh_obj_amb=1'>Refresh</a>)"
+			output += "<li><B>Ambition #[count]</B> (<a href='?src=\ref[src];edit_ambition=[count]'>Edit</a>) (<a href='?src=\ref[src];remove_ambition=[count]'>Remove</a>):<br>[ambitions[count]]"
+	output += "</ul><br>(<a href='?src=\ref[src];refresh_obj_amb=1'>Refresh</a>)"
 	return output.Join()
 
 
@@ -878,7 +878,7 @@ GLOBAL_LIST(objective_choices)
 			if(admin_client.prefs.toggles & SOUND_ADMINHELP)
 				SEND_SOUND(admin_client, sound('sound/effects/adminhelp.ogg'))
 			window_flash(admin_client)
-		message_admins("<span class='adminhelp'>[ADMIN_TPMONTY(usr)] has requested a review of their objective changes. (<a href='?_src_=holder;[HrefToken(TRUE)];ObjectiveRequest=[REF(src)]'>RPLY</a>)</span>")
+		message_admins("<span class='adminhelp'>[ADMIN_TPMONTY(usr)] has requested a review of their objective changes. (<a href='?_src_=holder;[HrefToken(TRUE)];ObjectiveRequest=\ref[src]'>RPLY</a>)</span>")
 		do_edit_objectives_ambitions()
 		return
 

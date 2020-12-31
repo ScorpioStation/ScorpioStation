@@ -74,7 +74,7 @@
   *
   * This sends a signal reporting the cooldown end.
   */
-/proc/end_cooldown(datum/source, index)
+datum/proc/end_cooldown(datum/source, index)
 	if(QDELETED(source))
 		return
 	SEND_SIGNAL(source, COMSIG_CD_STOP(index))
@@ -90,7 +90,7 @@
   *
   * This sends a signal reporting the cooldown end, passing the time left as an argument.
   */
-/proc/reset_cooldown(datum/source, index)
+datum/proc/reset_cooldown(datum/source, index)
 	if(QDELETED(source))
 		return
 	SEND_SIGNAL(source, COMSIG_CD_RESET(index), S_TIMER_COOLDOWN_TIMELEFT(source, index))
