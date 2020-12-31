@@ -78,54 +78,53 @@ proc/admin_proc()
 NOTE: it checks usr! not src! So if you're checking somebody's rank in a proc which they did not call
 you will have to do something like if(client.holder.rights & R_ADMIN) yourself.
 */
-/proc/check_rights(rights_required, show_msg=1, var/mob/user = usr)
+/proc/check_rights(rights_required, show_msg = TRUE, var/mob/user = usr)
 	if(user && user.client)
 		if(rights_required)
 			if(user.client.holder)
 				if(rights_required & user.client.holder.rights)
-					return 1
+					return TRUE
 				else
 					if(show_msg)
 						to_chat(user, "<font color='red'>Error: You do not have sufficient rights to do that. You require one of the following flags:[rights2text(rights_required," ")].</font>")
 		else
 			if(user.client.holder)
-				return 1
+				return TRUE
 			else
 				if(show_msg)
 					to_chat(user, "<font color='red'>Error: You are not an admin.</font>")
-	return 0
+	return FALSE
 
 //probably a bit iffy - will hopefully figure out a better solution
 /proc/check_if_greater_rights_than(client/other)
 	if(usr && usr.client)
 		if(usr.client.holder)
 			if(!other || !other.holder)
-				return 1
+				return TRUE
 			if(usr.client.holder.rights != other.holder.rights)
 				if( (usr.client.holder.rights & other.holder.rights) == other.holder.rights )
-					return 1	//we have all the rights they have and more
+					return TRUE	//we have all the rights they have and more
 		to_chat(usr, "<font color='red'>Error: Cannot proceed. They have more or equal rights to us.</font>")
-	return 0
+	return FALSE
 
 /client/proc/deadmin()
 	if(IsAdminAdvancedProcCall())
 		to_chat(usr, "<span class='boldannounce'>Deadmin blocked: Advanced ProcCall detected.</span>")
-		message_admins("[key_name(usr)] attempted to de-admin a client via advanced proc-call")
-		log_admin("[key_name(usr)] attempted to de-admin a client via advanced proc-call")
+		log_and_message_admins("[key_name(usr)] attempted to de-admin a client via advanced proc-call")
 		return
 	GLOB.admin_datums -= ckey
 	if(holder)
 		holder.disassociate()
 		qdel(holder)
-	return 1
+	return TRUE
 
 //This proc checks whether subject has at least ONE of the rights specified in rights_required.
 /proc/check_rights_for(client/subject, rights_required)
 	if(subject && subject.holder)
 		if(rights_required && !(rights_required & subject.holder.rights))
-			return 0
-		return 1
-	return 0
+			return FALSE
+		return TRUE
+	return FALSE
 
 /datum/admins/vv_edit_var(var_name, var_value)
 	return FALSE // no admin abuse
