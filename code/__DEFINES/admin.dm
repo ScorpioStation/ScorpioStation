@@ -66,6 +66,12 @@
 #define ADMIN_VERBOSEJMP(src) "[src ? "[AREACOORD(src)] [ADMIN_JMP(src)]" : "nonexistent location"]"
 #define ADMIN_SHOWDETAILS(mask, content) "<a href='?_src_=holder;showdetails=[html_encode(content)]'>[mask]</a>"
 
+////////////////////
+//Ported from Skyrat
+#define ADMIN_TPMONTY_NONAME(user) "[ADMIN_QUE(user)] [ADMIN_JMP(user)] [ADMIN_FLW(user)]"
+#define ADMIN_TPMONTY(user) "[key_name_admin(user)] [ADMIN_TPMONTY_NONAME(user)]"
+////////////////////
+
 ///Max length of a keypress command before it's considered to be a forged packet/bogus command
 #define MAX_KEYPRESS_COMMANDLENGTH 16
 ///Max amount of keypress messages per second over two seconds before client is autokicked
