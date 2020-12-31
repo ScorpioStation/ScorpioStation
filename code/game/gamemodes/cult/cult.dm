@@ -346,6 +346,3 @@ GLOBAL_LIST_EMPTY(all_cults)
 	objectives |= cult_team?.cult_objs
 	if(cult_team)
 		objectives |= cult_objs
-
-
-
