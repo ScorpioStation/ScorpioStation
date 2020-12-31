@@ -58,3 +58,33 @@
 #define COOLDOWN_RESET(cd_source, cd_index) cd_source.cd_index = 0
 #define COOLDOWN_TIMELEFT(cd_source, cd_index) (max(0, cd_source.cd_index - world.time))
 
+/**
+  * Callback called by a timer to end an associative-list-indexed cooldown.
+  *
+  * Arguments:
+  * * source - datum storing the cooldown
+  * * index - string index storing the cooldown on the cooldowns associative list
+  *
+  * This sends a signal reporting the cooldown end.
+  */
+/proc/end_cooldown(datum/source, index)
+	if(QDELETED(source))
+		return
+	SEND_SIGNAL(source, COMSIG_CD_STOP(index))
+	TIMER_COOLDOWN_END(source, index)
+
+/**
+  * Proc used by stoppable timers to end a cooldown before the time has ran out.
+  *
+  * Arguments:
+  * * source - datum storing the cooldown
+  * * index - string index storing the cooldown on the cooldowns associative list
+  *
+  * This sends a signal reporting the cooldown end, passing the time left as an argument.
+  */
+/proc/reset_cooldown(datum/source, index)
+	if(QDELETED(source))
+		return
+	SEND_SIGNAL(source, COMSIG_CD_RESET(index), S_TIMER_COOLDOWN_TIMELEFT(source, index))
+	TIMER_COOLDOWN_END(source, index)
+
