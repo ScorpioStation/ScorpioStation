@@ -280,11 +280,10 @@ GLOBAL_VAR_INIT(nologevent, 0)
 
 	body += "<br>"
 	body += "</body></html>"
-	var/datum/browser/popup = new(usr, "adminplayeropts-\ref[M]", "Player Panel", nwidth = 550, nheight = 515)
+	var/datum/browser/popup = new(usr, "adminplayeropts-\ref[M]", "Player Panel", nwidth = 650, nheight = 715)
 	popup.set_content(body.Join())
 	popup.open()
 
-	usr << browse(body, "window=adminplayeropts;size=550x615")
 	feedback_add_details("admin_verb","SPP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 
