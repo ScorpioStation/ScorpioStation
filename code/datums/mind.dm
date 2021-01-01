@@ -145,10 +145,6 @@
 
 /datum/mind/proc/show_memory()
 	var/list/output = list("<B>[current.real_name]'s Memories:</B><br>")
-
-	if(!recipient)
-		recipient = current
-
 	output += memory
 
 	var/antag_datum_objectives = FALSE
@@ -281,7 +277,7 @@
 
 /datum/mind/proc/do_edit_objectives_ambitions()
 	var/user = usr
-	var/datum/browser/popup = new(user, "objectives and ambitions", "Objectives and Ambitions")
+	var/datum/browser/popup = new(user, "Objectives and Ambitions", "Objectives and Ambitions")
 	popup.set_content(show_editable_objectives_and_ambitions())
 	popup.open()
 
@@ -554,7 +550,6 @@ GLOBAL_LIST(objective_choices)
 		. += "<br>[n_e_robots] of [ai.connected_robots.len] slaved cyborgs are emagged. <a href='?src=[UID()];silicon=unemagcyborgs'>Unemag</a>"
 
 /datum/mind/proc/memory_edit_uplink()
-	var/user = usr
 	. = ""
 	if(ishuman(current) && ((src in SSticker.mode.head_revolutionaries) || \
 		(has_antag_datum(/datum/antagonist/traitor)) || \
@@ -566,7 +561,7 @@ GLOBAL_LIST(objective_choices)
 			crystals = suplink.uses
 		if(suplink)
 			. += "|<a href='?src=[UID()];common=takeuplink'>take</a>"
-			if(user.client.holder.rights & (R_SERVER|R_EVENT))
+			if(usr.client.holder.rights & (R_SERVER|R_EVENT))
 				. += ", <a href='?src=[UID()];common=crystals'>[crystals]</a> crystals"
 			else
 				. += ", [crystals] crystals"
@@ -871,13 +866,13 @@ GLOBAL_LIST(objective_choices)
 			return
 		S_TIMER_COOLDOWN_START(src, COOLDOWN_OBJ_ADMIN_PING, ADMIN_PING_COOLDOWN_TIME)
 		RegisterSignal(src, list(COMSIG_CD_STOP(COOLDOWN_OBJ_ADMIN_PING), COMSIG_CD_RESET(COOLDOWN_OBJ_ADMIN_PING)), .proc/on_objectives_request_cd_end)
-		log_admin("Objectives review request - [key_name(user)] has requested a review of their objective changes, pinging the admins.")
 		for(var/a in GLOB.admins)
 			var/client/admin_client = a
 			if(admin_client.prefs.toggles & SOUND_ADMINHELP)
 				SEND_SOUND(admin_client, sound('sound/effects/adminhelp.ogg'))
 			window_flash(admin_client)
-		message_admins("<span class='adminhelp'>[key_name(user)] has requested a review of their objective changes. (<a href='?_src_=holder;[HrefToken(TRUE)];ObjectiveRequest=\ref[src]'>RPLY</a>)</span>")
+		log_and_message_admins("<span class='adminhelp'>[key_name(user)] has requested a review of their objective changes.</span>")
+		// (<a href='?_src_=holder;[HrefToken(TRUE)];ObjectiveRequest=\ref[src]'>RPLY</a>)</span>") // Nopers!
 		do_edit_objectives_ambitions()
 		return
 
@@ -1079,8 +1074,6 @@ GLOBAL_LIST(objective_choices)
 	if(!check_rights(R_ADMIN))
 		return
 
-	var/self_antagging = user == current
-
 	if(href_list["edit_ambitions_panel"])
 		do_edit_objectives_ambitions()
 		return
@@ -1100,10 +1093,6 @@ GLOBAL_LIST(objective_choices)
 			return
 		S_TIMER_COOLDOWN_RESET(src, COOLDOWN_OBJ_ADMIN_PING)
 		do_edit_objectives_ambitions()
-		return
-
-	else if(href_list["refresh_antag_panel"])
-		traitor_panel()
 		return
 
 	else if (href_list["req_obj_edit"])
@@ -1437,6 +1426,13 @@ GLOBAL_LIST(objective_choices)
 			if(!def_value)//If it's a custom objective, it will be an empty string.
 				def_value = "custom"
 
+		else if(href_list["target_antag"])
+			var/datum/antagonist/X = locate(href_list["target_antag"]) in antag_datums
+			if(X)
+				target_antag = X
+			if(!target_antag)
+				target_antag = antag_datums[1]
+
 		if(!GLOB.objective_choices)
 			populate_objective_choices()
 
@@ -1444,14 +1440,14 @@ GLOBAL_LIST(objective_choices)
 			if(GLOB.objective_choices[current_objective.name])
 				def_value = current_objective.name
 
-		var/new_obj_type = input("Select objective type:", "Objective type", def_value) as null|anything in GLOB.objective_choices
-		new_obj_type = GLOB.objective_choices[selected_type]
+		var/new_obj_type = input("Select Objective Type:", "Objective Type", def_value) as null|anything in GLOB.objective_choices
+		new_obj_type = GLOB.objective_choices[new_obj_type]
 
 		if(!new_obj_type)
 			return
 
 		switch(new_obj_type)
-			if("assassinate","protect","debrain", "brig", "maroon")
+			if("Assassinate","Protect","Debrain", "Brig", "Maroon")
 				//To determine what to name the objective in explanation text.
 				var/objective_type_capital = uppertext(copytext(new_obj_type, 1,2))//Capitalize first letter.
 				var/objective_type_text = copytext(new_obj_type, 2)//Leave the rest of the text.
