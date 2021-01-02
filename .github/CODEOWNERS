@@ -12,12 +12,12 @@
 # These owners will be the default owners for everything in
 # the repo. Unless a later match takes precedence, they will
 # be requested for review when someone opens a pull request.
-*	@blinkdog
+* @blinkdog
 
 # Modifications to any station maps will request a review from
 # the map lead.
-/_maps/	@blinkdog @emeraldcandy
+/_maps/ @blinkdog @emeraldcandy
 
 # Modifications to areas on EmeraldStation will request a
 # review from the map lead.
-/code/game/area/ss13_areas.dm	@blinkdog @emeraldcandy
+/code/game/area/ss13_areas.dm @blinkdog @emeraldcandy
