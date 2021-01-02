@@ -1,6 +1,5 @@
-/*
-VOX HEIST ROUNDTYPE
-*/
+// VOX HEIST ROUNDTYPE
+
 GLOBAL_LIST_EMPTY(cortical_stacks) // Stacks for 'leave nobody behind' objective. Clumsy, rewrite sometime.
 
 /datum/game_mode/
@@ -236,15 +235,17 @@ GLOBAL_LIST_EMPTY(cortical_stacks) // Stacks for 'leave nobody behind' objective
 
 	to_chat(world, "<span class='warning'><FONT size = 3><B>[win_type] [win_group] victory!</B></FONT></span>")
 	to_chat(world, "[win_msg]")
-	feedback_set_details("round_end_result","heist - [win_type] [win_group]")
+	SSticker.mode_result = "heist - [win_type] [win_group]"
 
 	var/count = 1
 	for(var/datum/objective/objective in raid_objectives)
 		to_chat(world, "<br><B>Objective #[count]</B>: [objective.explanation_text]")
 		if(objective.check_completion())
-			feedback_add_details("traitor_objective","[objective.type]|SUCCESS")
+			to_chat(world, "<br><B>Objective #[count]</B>: [objective.explanation_text] <font color='green'><B>Success!</B></font>")
+			SSblackbox.record_feedback("nested tally", "traitor_objective", 1, list("[objective.type]", "SUCCESS"))
 		else
-			feedback_add_details("traitor_objective","[objective.type]|FAIL")
+			to_chat(world, "<br><B>Objective #[count]</B>: [objective.explanation_text] <font color='red'>Fail.</font>")
+			SSblackbox.record_feedback("nested tally", "traitor_objective", 1, list("[objective.type]", "FAIL"))
 		count++
 
 	..()
@@ -297,7 +298,7 @@ GLOBAL_LIST_EMPTY(cortical_stacks) // Stacks for 'leave nobody behind' objective
 	overlays += icon('icons/obj/computer.dmi', "syndie")
 
 /obj/machinery/vox_win_button/attack_hand(mob/user)
-	if(!GAMEMODE_IS_HEIST || (world.time < 10 MINUTES)) //has to be heist, and at least ten minutes into the round
+	if(!GAMEMODE_IS_HEIST || (world.time < 10 MINUTES)) // has to be heist, and at least ten minutes into the round
 		to_chat(user, "<span class='warning'>\The [src] does not appear to have a connection.</span>")
 		return 0
 

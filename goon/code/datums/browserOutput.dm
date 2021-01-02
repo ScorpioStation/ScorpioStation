@@ -189,7 +189,7 @@ GLOBAL_REAL_VAR(chatDebug) = file("data/chatDebug.log")
 			//Add autoban using the DB_ban_record function
 			//Uh oh this fucker has a history of playing on a banned account!!
 			if (found.len > 0)
-				message_admins("[key_name(src.owner)] has a cookie from a banned account! (Matched: [found["ckey"]], [found["ip"]], [found["compid"]])")
+				message_admins("[key_name(src.owner)] <span class='boldannounce'>has a cookie from a banned account!</span> (Matched: [found["ckey"]], [found["ip"]], [found["compid"]])")
 				log_admin("[key_name(src.owner)] has a cookie from a banned account! (Matched: [found["ckey"]], [found["ip"]], [found["compid"]])")
 
 	cookieSent = 1
@@ -217,7 +217,7 @@ GLOBAL_REAL_VAR(chatDebug) = file("data/chatDebug.log")
   * Clears any locally stored code phrases to highlight
   */
 /datum/chatOutput/proc/clear_syndicate_codes()
-	notify_syndicate_codes("", "")
+	owner << output(null, "browseroutput:codewordsClear")
 
 /client/verb/debug_chat()
 	set hidden = 1

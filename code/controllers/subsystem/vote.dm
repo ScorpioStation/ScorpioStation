@@ -187,7 +187,7 @@ SUBSYSTEM_DEF(vote)
 
 
 	if(restart)
-		world.Reboot("Restart vote successful.", "end_error", "restart vote")
+		world.Reboot("Restart vote successful.", "restart vote")
 
 	return .
 

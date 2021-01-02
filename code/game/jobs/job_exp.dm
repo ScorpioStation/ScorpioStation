@@ -1,4 +1,4 @@
-// Playtime requirements for special roles (hours)
+// playtime requirements for special roles (hours)
 
 GLOBAL_LIST_INIT(role_playtime_requirements, list(
 	// NT ROLES
@@ -224,8 +224,8 @@ GLOBAL_LIST_INIT(role_playtime_requirements, list(
 	else
 		return "none"
 
-/proc/update_exp(mins = 0, ann = 0)
-	if(!GLOB.dbcon.IsConnected())
+/proc/update_exp(mins = 0, ann = FALSE)
+	if(!SSdbcore.IsConnected())
 		return
 	for(var/client/L in GLOB.clients)
 		if(L.inactivity >= (10 MINUTES))
@@ -234,22 +234,30 @@ GLOBAL_LIST_INIT(role_playtime_requirements, list(
 		L.update_antag_raffle_client(mins, ann, L.inactivity)
 		CHECK_TICK
 
-/client/proc/update_exp_client(minutes = 0, announce_changes = 0)
-	if(!src || !ckey || !GLOB.dbcon.IsConnected())
+/client/proc/update_exp_client(minutes = 0, announce_changes = FALSE)
+	if(!src || !ckey || !SSdbcore.IsConnected())
 		return
-	var/DBQuery/exp_read = GLOB.dbcon.NewQuery("SELECT exp FROM [format_table_name("player")] WHERE ckey='[ckey]'")
-	if(!exp_read.Execute())
-		var/err = exp_read.ErrorMsg()
-		log_game("SQL ERROR during exp_update_client read. Error : \[[err]\]\n")
-		message_admins("SQL ERROR during exp_update_client read. Error : \[[err]\]\n")
-		return
+
+	var/datum/db_query/exp_read = SSdbcore.NewQuery(
+		"SELECT exp FROM [format_table_name("player")] WHERE ckey=:ckey",
+		list("ckey" = ckey)
+	)
+
+	if(!exp_read.warn_execute())
+		qdel(exp_read)
+		return FALSE
+
 	var/list/read_records = list()
-	var/hasread = 0
+	var/hasread = FALSE
 	while(exp_read.NextRow())
 		read_records = params2list(exp_read.item[1])
-		hasread = 1
+		hasread = TRUE
+
+	qdel(exp_read)
+
 	if(!hasread)
 		return
+
 	var/list/play_records = list()
 	for(var/rtype in GLOB.exp_jobsmap)
 		if(text2num(read_records[rtype]))
@@ -288,21 +296,31 @@ GLOBAL_LIST_INIT(role_playtime_requirements, list(
 		return
 	var/new_exp = list2params(play_records)
 	prefs.exp = new_exp
-	new_exp = sanitizeSQL(new_exp)
-	var/DBQuery/update_query = GLOB.dbcon.NewQuery("UPDATE [format_table_name("player")] SET exp = '[new_exp]',lastseen = Now() WHERE ckey='[ckey]'")
-	if(!update_query.Execute())
-		var/err = update_query.ErrorMsg()
-		log_game("SQL ERROR during exp_update_client write 1. Error : \[[err]\]\n")
-		message_admins("SQL ERROR during exp_update_client write 1. Error : \[[err]\]\n")
-		return
-	var/DBQuery/update_query_history = GLOB.dbcon.NewQuery("INSERT INTO [format_table_name("playtime_history")] (ckey, date, time_living, time_ghost) VALUES ('[ckey]',CURDATE(),[added_living],[added_ghost]) ON DUPLICATE KEY UPDATE time_living=time_living+VALUES(time_living),time_ghost=time_ghost+VALUES(time_ghost)")
-	if(!update_query_history.Execute())
-		var/err = update_query_history.ErrorMsg()
-		log_game("SQL ERROR during exp_update_client write 2. Error : \[[err]\]\n")
-		message_admins("SQL ERROR during exp_update_client write 2. Error : \[[err]\]\n")
-		return
+	var/datum/db_query/update_query = SSdbcore.NewQuery(
+		"UPDATE [format_table_name("player")] SET exp =:newexp, lastseen=NOW() WHERE ckey=:ckey",
+		list(
+			"newexp" = new_exp,
+			"ckey" = ckey
+		)
+	)
+	update_query.warn_execute()
+	qdel(update_query)
 
-/client/proc/update_antag_raffle_client(minutes = 0, announce_changes = 0, inactive_for = 0)
+	var/datum/db_query/update_query_history = SSdbcore.NewQuery({"
+		INSERT INTO [format_table_name("playtime_history")] (ckey, date, time_living, time_ghost)
+		VALUES (:ckey, CURDATE(), :addedliving, :addedghost)
+		ON DUPLICATE KEY UPDATE time_living=time_living + VALUES(time_living), time_ghost=time_ghost + VALUES(time_ghost)"},
+		list(
+			"ckey" = ckey,
+			"addedliving" = added_living,
+			"addedghost" = added_ghost
+		)
+	)
+	update_query_history.warn_execute()
+	qdel(update_query_history)
+
+
+/client/proc/update_antag_raffle_client(minutes = 0, announce_changes = FALSE, inactive_for = 0)
 	// TODO: borrowed from above; this probably isn't the best way to determine if someone is actively involved in the round
 	var/myrole = null
 	if(mob.mind)
@@ -327,9 +345,13 @@ GLOBAL_LIST_INIT(role_playtime_requirements, list(
 		to_chat(mob, "<span class='notice'>You got [added_raffle_tickets] antag raffle tickets!")
 	// award the tickets and update the database
 	prefs.antag_raffle_tickets += added_raffle_tickets
-	var/DBQuery/query1 = GLOB.dbcon.NewQuery("UPDATE [format_table_name("player")] SET antag_raffle_tickets='[prefs.antag_raffle_tickets]', lastseen=Now() WHERE ckey='[ckey]'")
-	if(!query1.Execute())
-		var/err = query1.ErrorMsg()
-		log_game("update_antag_raffle_client: SQL ERROR player UPDATE: [err]")
-		message_admins("update_antag_raffle_client: SQL ERROR player UPDATE: [err]")
-		return
+	var/datum/db_query/update_query_raffle_tickets = SSdbcore.NewQuery({"
+		UPDATE [format_table_name("player")]
+		SET antag_raffle_tickets=:antag_raffle_tickets, lastseen=NOW() WHERE ckey=:ckey"},
+		list(
+			"antag_raffle_tickets" = prefs.antag_raffle_tickets,
+			"ckey" = ckey
+		)
+	)
+	update_query_raffle_tickets.warn_execute()
+	qdel(update_query_raffle_tickets)

@@ -60,12 +60,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/space/firereset(obj/source)
 	return
 
-/area/space/readyalert()
-	return
-
-/area/space/partyalert()
-	return
-
 //These are shuttle areas, they must contain two areas in a subgroup if you want to move a shuttle from one
 //place to another. Look at escape shuttle for example.
 //All shuttles show now be under shuttle since we have smooth-wall code.
@@ -474,6 +468,9 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Syndicate Infiltrators"
 	icon_state = "syndie-elite"
 
+/area/syndicate_mothership/jail
+	name = "\improper Syndicate Jail"
+
 //EXTRA
 
 /area/asteroid					// -- TLE
@@ -718,6 +715,9 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 
 //Hallway
+
+/area/hallway
+	valid_territory = FALSE // too many areas with similar/same names, also not very interesting summon spots
 
 /area/hallway/primary/fore
 	name = "\improper Fore Primary Hallway"
@@ -973,6 +973,9 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/library/abandoned
 	name = "\improper Abandoned Library"
 	icon_state = "library"
+
+/area/chapel
+	is_haunted = TRUE
 
 /area/chapel/main
 	name = "\improper Chapel"
@@ -1350,6 +1353,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Morgue"
 	icon_state = "morgue"
 	ambientsounds = SPOOKY_SOUNDS
+	is_haunted = TRUE
 
 /area/medical/chemistry
 	name = "\improper Chemistry"
@@ -1821,10 +1825,12 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/derelict/medical/morgue
 	name = "\improper Derelict Morgue"
 	icon_state = "morgue"
+	is_haunted = TRUE
 
 /area/derelict/medical/chapel
 	name = "\improper Derelict Chapel"
 	icon_state = "chapel"
+	is_haunted = TRUE
 
 /area/derelict/teleporter
 	name = "\improper Derelict Teleporter"
@@ -2351,3 +2357,50 @@ GLOBAL_LIST_INIT(the_station_areas, list(
 	/area/turret_protected/ai_upload_foyer,
 	/area/turret_protected/ai,
 ))
+
+// areas that used to be in code/game/area/dynamic_areas.dm (removed at upstream)
+
+/area/dynamic // Do not use.
+	name = "dynamic area"
+	icon_state = "purple"
+	var/match_tag = "none"
+	var/match_width = -1
+	var/match_height = -1
+	var/enable_lights = 0
+
+/area/dynamic/destination // Do not use.
+	name = "dynamic area destination"
+
+/area/dynamic/destination/lobby
+	name = "Arrivals Lobby"
+	match_tag = "arrivals"
+	match_width = 5
+	match_height = 4
+	enable_lights = 1
+
+/area/dynamic/source // Do not use.
+	name = "dynamic area source"
+
+/area/dynamic/source/lobby_bar
+	name = "\improper Bar Lounge"
+	match_tag = "arrivals"
+	match_width = 5
+	match_height = 4
+	requires_power = FALSE
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+
+/area/dynamic/source/lobby_russian
+	name = "\improper Russian Lounge"
+	match_tag = "arrivals"
+	match_width = 5
+	match_height = 4
+	requires_power = FALSE
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+
+/area/dynamic/source/lobby_disco
+	name = "\improper Disco Lounge"
+	match_tag = "arrivals"
+	match_width = 5
+	match_height = 4
+	requires_power = FALSE
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED

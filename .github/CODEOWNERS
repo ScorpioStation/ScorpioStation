@@ -1,2 +1,23 @@
-/ @blinkdog
-/_maps/emerald/ @emeraldcandy
+# CODEOWNERS
+# See: https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/about-code-owners
+
+# About code owners
+# Code owners are automatically requested for review when
+# someone opens a pull request that modifies code that they
+# own. Code owners are not automatically requested to review
+# draft pull requests.
+
+# Each line is a file pattern followed by one or more owners.
+
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence, they will
+# be requested for review when someone opens a pull request.
+*	@blinkdog
+
+# Modifications to any station maps will request a review from
+# the map lead.
+/_maps/	@blinkdog @emeraldcandy
+
+# Modifications to areas on EmeraldStation will request a
+# review from the map lead.
+/code/game/area/ss13_areas.dm	@blinkdog @emeraldcandy

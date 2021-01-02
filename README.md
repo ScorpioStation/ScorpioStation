@@ -1,6 +1,16 @@
 # Scorpio Station
 [Website](https://scorpiostation.com/) - [Code](https://github.com/ScorpioStation/ScorpioStation) - [Discord](https://scorpiostation.com/discord)
 
+## Useful Documents
+
+- [Installation Guide](.github/DOWNLOADING.md)
+- [Contribution Guide](.github/CONTRIBUTING.md)
+- [Autodocumentation Guide](.github/AUTODOC_GUIDE.md)
+
+## Quick Troubleshooting
+If the code doesn't build, did you forget to run `prepare-dev-windows.bat`?
+You can double-click the script from the GUI. No command line required.
+
 ---
 
 ### GETTING THE CODE
@@ -122,8 +132,8 @@ General Public License. If you wish to submit code under the GPL v3 then commits
 and files must be marked as such in comments.
 
 If you wish to use our code in a closed source manner you may use anything
-before commit 445615b8439bf606ff204a42c8e7b6b69d983255, which is licensed
-under GPL v3.
+before [commit 445615b8439bf606ff204a42c8e7b6b69d983255](https://github.com/ScorpioStation/ScorpioStation/tree/445615b8439bf606ff204a42c8e7b6b69d983255),
+which is licensed under GPL v3.
 
 See [this](https://www.gnu.org/licenses/why-affero-gpl.html) for more information.
 
