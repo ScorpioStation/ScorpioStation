@@ -99,17 +99,18 @@
 		fusion.get_new_tag(user)
 		return
 
-/obj/machinery/power/fusion_core/wrench_act(mob/user)
-	anchored = !anchored
+/obj/machinery/power/fusion_core/wrench_act(var/mob/user)
 	playsound(loc, 'sound/items/Ratchet.ogg', 75, 1)
 	if(anchored)
-		user.visible_message("[user.name] secures [name] to the floor.", \
-			"You secure the [name] to the floor.", \
-			"You hear a ratchet")
-	else
 		user.visible_message("[user.name] unsecures [name] from the floor.", \
 			"You unsecure the [name] from the floor.", \
 			"You hear a ratchet")
+		anchored = FALSE
+	else
+		user.visible_message("[user.name] secures [name] to the floor.", \
+			"You secure the [name] to the floor.", \
+			"You hear a ratchet")
+		anchored = TRUE
 	return
 
 
