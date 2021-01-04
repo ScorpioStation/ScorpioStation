@@ -2188,7 +2188,7 @@
 #include "code\modules\power\fusion\components\fusion_particle_catcher.dm"
 #include "code\modules\power\fusion\components\gyrotron.dm"
 #include "code\modules\power\fusion\components\kinetic_harvester.dm"
-#include "code\modules\power\fusion\core\core.dm"
+#include "code\modules\power\fusion\core\_core.dm"
 #include "code\modules\power\fusion\core\core_field.dm"
 #include "code\modules\power\fusion\fuel_assembly\fuel_assembly.dm"
 #include "code\modules\power\fusion\fuel_assembly\fuel_compressor.dm"
