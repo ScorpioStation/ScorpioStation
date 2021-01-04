@@ -20,7 +20,7 @@
 	var/tick_instability = 0
 	var/percent_unstable = 0
 
-	var/obj/machinery/power/fusion_core/owned_core
+	var/obj/machinery/power_machine/fusion_core/owned_core
 	var/list/reactants = list()
 	var/list/particle_catchers = list()
 
@@ -39,7 +39,7 @@
 	var/last_range
 	var/last_power
 
-/obj/effect/fusion_em_field/New(loc, var/obj/machinery/power/fusion_core/new_owned_core)
+/obj/effect/fusion_em_field/New(loc, var/obj/machinery/power_machine/fusion_core/new_owned_core)
 	..()
 
 	set_light(light_min_power, light_min_range / 10, light_min_range)
@@ -366,7 +366,7 @@
 			for(var/cur_s_react in possible_s_reacts)
 				if(possible_s_reacts[cur_s_react] < 1)
 					continue
-				var/obj/effect/decal/fusion_reaction/cur_reaction = get_fusion_reaction(cur_p_react, cur_s_react)
+				var/decl/fusion_reaction/cur_reaction = get_fusion_reaction(cur_p_react, cur_s_react)
 				if(cur_reaction && plasma_temperature >= cur_reaction.minimum_energy_level)
 					LAZYDISTINCTADD(possible_reactions, cur_reaction)
 
@@ -379,7 +379,7 @@
 
 			//split up the reacting atoms between the possible reactions
 			while(possible_reactions.len)
-				var/obj/effect/decal/fusion_reaction/cur_reaction = possible_reactions[1]
+				var/decl/fusion_reaction/cur_reaction = possible_reactions[1]
 				possible_reactions.Remove(cur_reaction)
 
 				//set the randmax to be the lower of the two involved reactants

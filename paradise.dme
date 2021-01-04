@@ -689,6 +689,7 @@
 #include "code\game\machinery\poolcontroller.dm"
 #include "code\game\machinery\portable_tag_turret.dm"
 #include "code\game\machinery\portable_turret.dm"
+#include "code\game\machinery\power_machine.dm"
 #include "code\game\machinery\quantum_pad.dm"
 #include "code\game\machinery\recharger.dm"
 #include "code\game\machinery\rechargestation.dm"

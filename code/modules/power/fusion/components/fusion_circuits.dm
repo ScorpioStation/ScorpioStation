@@ -39,7 +39,7 @@
 
 /obj/item/weapon/stock_parts/circuitboard/fusion_core
 	name = T_BOARD("fusion core")
-	build_path = /obj/machinery/power/fusion_core
+	build_path = /obj/machinery/power_machine/fusion_core
 	board_type = "machine"
 	origin_tech = list(TECH_BLUESPACE = 2, TECH_MAGNET = 4, TECH_POWER = 4)
 	req_components = list(
@@ -65,7 +65,7 @@
 
 /obj/item/weapon/stock_parts/circuitboard/gyrotron
 	name = T_BOARD("gyrotron")
-	build_path = /obj/machinery/power/emitter/gyrotron
+	build_path = /obj/machinery/power_machine/emitter/gyrotron
 	board_type = "machine"
 	origin_tech = list(TECH_POWER = 4, TECH_ENGINEERING = 4)
 	req_components = list(

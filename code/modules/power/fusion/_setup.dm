@@ -7,21 +7,22 @@
 #define SETUP_DELAYED 4		// Wait for other things first.
 
 /datum/admins/proc/setup_fusion()
+	var/user = usr
 	set category = "Debug"
 	set name = "Setup Fusion Core"
 	set desc = "Allows you to start the R-UST engine."
 
-	if (!istype(src,/datum/admins))
-		src = usr.client.holder
-	if (!istype(src,/datum/admins))
-		to_chat(usr, "Error: you are not an admin!")
+	if(!istype(src, /datum/admins))
+		src = user.client.holder
+	if(!istype(src, /datum/admins))
+		to_chat(user, "Error: you are not an admin!")
 		return
 
-	if(!(locate(/obj/machinery/power/fusion_core/mapped) in world))
-		to_chat(usr, "This map is not appropriate for this verb.")
+	if(!(locate(/obj/machinery/power_machine/fusion_core/mapped) in world))
+		to_chat(user, "This map is not appropriate for this verb.")
 		return
 
-	var/response = input(usr, "Are you sure?", "Engine setup") as null|anything in list("No", "Yes")
+	var/response = input(user, "Are you sure?", "Engine setup") as null|anything in list("No", "Yes")
 	if(!response || response == "No")
 		return
 
@@ -29,19 +30,21 @@
 	var/warnings = 0
 	var/success = 0
 
-	log_and_message_admins("## FUSION CORE SETUP - Setup initiated by [usr].")
+	log_and_message_admins("## FUSION CORE SETUP - Setup initiated by [user].")
 
-	for(var/obj/machinery/fusion_fuel_injector/mapped/injector in SSmachines.machinery)
+	for(var/fuel in SSmachines.machinery)
+		var/obj/machinery/fusion_fuel_injector/mapped/injector = fuel
 		injector.cur_assembly = new /obj/item/weapon/fuel_assembly/deuterium(injector)
 		injector.BeginInjecting()
 
-	var/obj/machinery/power/fusion_core/mapped/core = locate() in SSmachines.machinery
+	var/obj/machinery/power_machine/fusion_core/mapped/core = locate() in SSmachines.machinery
 	if(core.jumpstart(15000))
 		var/list/delayed_objects = list()
 
 		// SETUP PHASE
-		for(var/obj/effect/engine_setup/S in world)
-			var/result = S.activate(0)
+		for(var/S in world)
+			var/obj/effect/engine_setup/EffectSetup = S
+			var/result = EffectSetup.activate(0)
 			switch(result)
 				if(SETUP_OK)
 					success++
@@ -54,12 +57,13 @@
 					log_and_message_admins("## FUSION CORE SETUP - Error encountered! Aborting.")
 					break
 				if(SETUP_DELAYED)
-					delayed_objects.Add(S)
+					delayed_objects.Add(EffectSetup)
 					continue
 
 		if(!errors)
-			for(var/obj/effect/engine_setup/S in delayed_objects)
-				var/result = S.activate(1)
+			for(var/G in delayed_objects)
+				var/obj/effect/engine_setup/EngineSetup = G
+				var/result = EngineSetup.activate(1)
 				switch(result)
 					if(SETUP_OK)
 						success++

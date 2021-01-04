@@ -34,7 +34,7 @@
 		thing.reagents.remove_reagent(R.type, 100)
 		user.put_in_hands(F)
 		return TRUE
-	else if(istype(thing, /obj/machinery/power/supermatter/shard))
+	else if(istype(thing, /obj/machinery/power_machine/supermatter/shard))
 		var/obj/item/weapon/fuel_assembly/F = new(get_turf(src), MATERIAL_SUPERMATTER)
 		visible_message("<span class='notice'>\The [src] compresses the \[thing] into a new fuel assembly.</span>")
 		qdel(thing)

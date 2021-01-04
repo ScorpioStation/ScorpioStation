@@ -9,8 +9,8 @@
 	var/initial_id_tag
 	var/list/stored =     list()
 	var/list/harvesting = list()
-	var/obj/machinery/power/fusion_core/harvest_from
-	construct_state = /obj/effect/decal/machine_construction/default/panel_closed
+	var/obj/machinery/power_machine/fusion_core/harvest_from
+	construct_state = /decl/machine_construction/default/panel_closed
 	uncreated_component_parts = null
 	stat_immune = 0
 
@@ -41,7 +41,7 @@
 	var/datum/local_network/lan = lanm.get_local_network()
 
 	if(lan)
-		var/list/fusion_cores = lan.get_devices(/obj/machinery/power/fusion_core)
+		var/list/fusion_cores = lan.get_devices(/obj/machinery/power_machine/fusion_core)
 		if(fusion_cores && fusion_cores.len)
 			harvest_from = fusion_cores[1]
 	return harvest_from

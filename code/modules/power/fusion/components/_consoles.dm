@@ -57,7 +57,7 @@
 
 /obj/machinery/computer/fusion/core_control/OnTopic(var/mob/user, var/href_list, var/datum/topic_state/state)
 	if(href_list["toggle_active"] || href_list["str"])
-		var/obj/machinery/power/fusion_core/C = locate(href_list["machine"])
+		var/obj/machinery/power_machine/fusion_core/C = locate(href_list["machine"])
 		if(!istype(C))
 			return TOPIC_NOACTION
 
@@ -90,10 +90,10 @@
 	var/datum/local_network/lan = fusion.get_local_network()
 	var/list/cores = list()
 	if(lan)
-		var/list/fusion_cores = lan.get_devices(/obj/machinery/power/fusion_core)
+		var/list/fusion_cores = lan.get_devices(/obj/machinery/power_machine/fusion_core)
 		for(var/i in 1 to LAZYLEN(fusion_cores))
 			var/list/core = list()
-			var/obj/machinery/power/fusion_core/C = fusion_cores[i]
+			var/obj/machinery/power_machine/fusion_core/C = fusion_cores[i]
 			core["id"] =          "#[i]"
 			core["ref"] =         "\ref[C]"
 			core["field"] =       !isnull(C.owned_field)
@@ -128,12 +128,12 @@
 
 	if(href_list["modifypower"] || href_list["modifyrate"] || href_list["toggle"])
 
-		var/obj/machinery/power/emitter/gyrotron/G = locate(href_list["machine"])
+		var/obj/machinery/power_machine/emitter/gyrotron/G = locate(href_list["machine"])
 		if(!istype(G))
 			return TOPIC_NOACTION
 
 		var/datum/local_network/lan = get_local_network()
-		var/list/gyrotrons = lan.get_devices(/obj/machinery/power/emitter/gyrotron)
+		var/list/gyrotrons = lan.get_devices(/obj/machinery/power_machine/emitter/gyrotron)
 		if(!lan || !gyrotrons || !gyrotrons[G])
 			return TOPIC_NOACTION
 
@@ -168,10 +168,10 @@
 	var/datum/local_network/lan = fusion.get_local_network()
 	var/list/gyrotrons = list()
 	if(lan && gyrotrons)
-		var/list/lan_gyrotrons = lan.get_devices(/obj/machinery/power/emitter/gyrotron)
+		var/list/lan_gyrotrons = lan.get_devices(/obj/machinery/power_machine/emitter/gyrotron)
 		for(var/i in 1 to LAZYLEN(lan_gyrotrons))
 			var/list/gyrotron = list()
-			var/obj/machinery/power/emitter/gyrotron/G = lan_gyrotrons[i]
+			var/obj/machinery/power_machine/emitter/gyrotron/G = lan_gyrotrons[i]
 			gyrotron["id"] =        "#[i]"
 			gyrotron["ref"] =       "\ref[G]"
 			gyrotron["active"] =    G.active
