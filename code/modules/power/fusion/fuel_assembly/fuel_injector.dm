@@ -1,13 +1,13 @@
 /obj/machinery/fusion_fuel_injector
 	name = "fuel injector"
-	icon = 'icons/obj/machines/power/fusion.dmi'
+	icon = 'icons/obj/fusion_engine/fusion.dmi'
 	icon_state = "injector0"
 	density = 1
 	anchored = FALSE
 	req_access = list(access_engine)
 	idle_power_usage = 10
 	active_power_usage = 500
-	construct_state = /decl/machine_construction/default/panel_closed
+	construct_state = /obj/effect/decal/machine_construction/default/panel_closed
 	uncreated_component_parts = null
 	stat_immune = FALSE
 	base_type = /obj/machinery/fusion_fuel_injector

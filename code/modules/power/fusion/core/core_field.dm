@@ -6,7 +6,7 @@
 /obj/effect/fusion_em_field
 	name = "electromagnetic field"
 	desc = "A coruscating, barely visible field of energy. It is shaped like a slightly flattened torus."
-	icon = 'icons/obj/machines/power/fusion.dmi'
+	icon = 'icons/obj/fusion_engine/fusion.dmi'
 	icon_state = "emfield_s1"
 	alpha = 50
 	layer = 4
@@ -58,25 +58,26 @@
 	catcher.SetSize(1)
 	particle_catchers.Add(catcher)
 
-	for(var/i = 1, i <= 6, i++)
-		catcher = new (locate(x-i, y, z))
+	for(var/i in 1 to 6)
+		var/csize = ((i*2) + 1)
+		catcher = new (locate((x - i), y, z))
 		catcher.parent = src
-		catcher.SetSize((i*2)+1)
+		catcher.SetSize(csize)
 		particle_catchers.Add(catcher)
 
 		catcher = new (locate((x + i), y, z))
 		catcher.parent = src
-		catcher.SetSize((i * 2) + 1)
+		catcher.SetSize(csize)
 		particle_catchers.Add(catcher)
 
 		catcher = new (locate(x ,(y + i), z))
 		catcher.parent = src
-		catcher.SetSize((i * 2) + 1)
+		catcher.SetSize(csize)
 		particle_catchers.Add(catcher)
 
 		catcher = new (locate(x, (y - i) , z))
 		catcher.parent = src
-		catcher.SetSize((i *2 ) + 1)
+		catcher.SetSize(csize)
 		particle_catchers.Add(catcher)
 
 	START_PROCESSING(SSobj, src)
@@ -142,7 +143,7 @@
 	Radiate()
 	if(radiation)
 		SSradiation.radiate(src, round(radiation*0.001))
-	return 1
+	return TRUE
 
 /obj/effect/fusion_em_field/proc/check_instability()
 	if(tick_instability > 0)
@@ -316,8 +317,8 @@
 			"13" = 'icons/effects/416x416.dmi'
 			)
 
-	if( ((newsize-1)%2 == 0) && (newsize <= 13) )
-		icon = 'icons/obj/machines/power/fusion.dmi'
+	if(((newsize-1)%2 == 0) && (newsize <= 13) )
+		icon = 'icons/obj/fusion_engine/fusion.dmi'	//Is this recast of 'icon' necessary?
 		if(newsize>1)
 			icon = size_to_icon["[newsize]"]
 		icon_state = "emfield_s[newsize]"
@@ -365,7 +366,7 @@
 			for(var/cur_s_react in possible_s_reacts)
 				if(possible_s_reacts[cur_s_react] < 1)
 					continue
-				var/decl/fusion_reaction/cur_reaction = get_fusion_reaction(cur_p_react, cur_s_react)
+				var/obj/effect/decal/fusion_reaction/cur_reaction = get_fusion_reaction(cur_p_react, cur_s_react)
 				if(cur_reaction && plasma_temperature >= cur_reaction.minimum_energy_level)
 					LAZYDISTINCTADD(possible_reactions, cur_reaction)
 
@@ -378,7 +379,7 @@
 
 			//split up the reacting atoms between the possible reactions
 			while(possible_reactions.len)
-				var/decl/fusion_reaction/cur_reaction = possible_reactions[1]
+				var/obj/effect/decal/fusion_reaction/cur_reaction = possible_reactions[1]
 				possible_reactions.Remove(cur_reaction)
 
 				//set the randmax to be the lower of the two involved reactants
@@ -396,12 +397,11 @@
 					if(max_num_reactants < 1)
 						continue
 
-				//randomly determined amount to react
-				var/amount_reacting = rand(1, max_num_reactants)
+				var/amount_reacting = rand(1, max_num_reactants)	//randomly determined amount to react
 
 				//removing the reacting substances from the list of substances that are primed to react this cycle
 				//if there aren't enough of that substance (there should be) then modify the reactant amounts accordingly
-				if( react_pool[cur_reaction.p_react] - amount_reacting >= 0 )
+				if(react_pool[cur_reaction.p_react] - amount_reacting >= 0 )
 					react_pool[cur_reaction.p_react] -= amount_reacting
 				else
 					amount_reacting = react_pool[cur_reaction.p_react]
@@ -448,7 +448,8 @@
 /obj/effect/fusion_em_field/Destroy()
 	set_light(0)
 	RadiateAll()
-	for(var/obj/effect/fusion_particle_catcher/catcher in particle_catchers)
+	for(var/C in particle_catchers) // We use typeless loops here in paracode!
+		var/obj/effect/fusion_particle_catcher/catcher = C
 		qdel(catcher)
 	if(owned_core)
 		owned_core.owned_field = null

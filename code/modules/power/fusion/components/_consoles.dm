@@ -91,7 +91,7 @@
 	var/list/cores = list()
 	if(lan)
 		var/list/fusion_cores = lan.get_devices(/obj/machinery/power/fusion_core)
-		for(var/i = 1 to LAZYLEN(fusion_cores))
+		for(var/i in 1 to LAZYLEN(fusion_cores))
 			var/list/core = list()
 			var/obj/machinery/power/fusion_core/C = fusion_cores[i]
 			core["id"] =          "#[i]"
@@ -169,7 +169,7 @@
 	var/list/gyrotrons = list()
 	if(lan && gyrotrons)
 		var/list/lan_gyrotrons = lan.get_devices(/obj/machinery/power/emitter/gyrotron)
-		for(var/i = 1 to LAZYLEN(lan_gyrotrons))
+		for(var/i in 1 to LAZYLEN(lan_gyrotrons))
 			var/list/gyrotron = list()
 			var/obj/machinery/power/emitter/gyrotron/G = lan_gyrotrons[i]
 			gyrotron["id"] =        "#[i]"
@@ -196,8 +196,8 @@
 	if(href_list["global_toggle"])
 		if(!lan || !fuel_injectors)
 			return TOPIC_NOACTION
-
-		for(var/obj/machinery/fusion_fuel_injector/F in fuel_injectors)
+		for(var/thing in fuel_injectors)	//Paracode uses typeless loops
+			var/obj/machinery/fusion_fuel_injector/F = thing
 			if(F.injecting)
 				F.StopInjecting()
 			else
@@ -215,7 +215,7 @@
 			else
 				I.BeginInjecting()
 
-		if(href_list["injection_rate"])
+		else if(href_list["injection_rate"])
 			var/new_injection_rate = input("Enter a new injection rate between 0 and 100", "Modifying injection rate", I.injection_rate) as num
 			if(!istype(I))
 				return TOPIC_NOACTION
@@ -232,7 +232,7 @@
 	var/list/injectors = list()
 	if(lan)
 		var/list/fuel_injectors = lan.get_devices(/obj/machinery/fusion_fuel_injector)
-		for(var/i = 1 to LAZYLEN(fuel_injectors))
+		for(var/i in 1 to LAZYLEN(fuel_injectors))
 			var/list/injector = list()
 			var/obj/machinery/fusion_fuel_injector/I = fuel_injectors[i]
 			injector["id"] =       "#[i]"

@@ -2,7 +2,7 @@
 
 /obj/machinery/power/emitter/gyrotron
 	name = "gyrotron"
-	icon = 'icons/obj/machines/power/fusion.dmi'
+	icon = 'icons/obj/fusion_engine/fusion.dmi'
 	desc = "It is a heavy duty industrial gyrotron suited for powering fusion reactors."
 	icon_state = "emitter-off"
 	req_access = list(access_engine)
@@ -13,7 +13,7 @@
 	var/rate = 3
 	var/mega_energy = 1
 
-	construct_state = /decl/machine_construction/default/panel_closed
+	construct_state = /obj/effect/decal/machine_construction/default/panel_closed
 	uncreated_component_parts = list(
 		/obj/item/weapon/stock_parts/radio/receiver,
 	)
@@ -48,7 +48,7 @@
 	return E
 
 /obj/machinery/power/emitter/gyrotron/on_update_icon()
-	if (active && powernet && avail(active_power_usage))
+	if(active && powernet && avail(active_power_usage))
 		icon_state = "emitter-on"
 	else
 		icon_state = "emitter-off"

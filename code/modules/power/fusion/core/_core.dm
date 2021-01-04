@@ -4,7 +4,7 @@
 /obj/machinery/power/fusion_core
 	name = "\improper R-UST Mk. 8 Tokamak core"
 	desc = "An enormous solenoid for generating extremely high power electromagnetic fields. It includes a kinetic energy harvester."
-	icon = 'icons/obj/machines/power/fusion_core.dmi'
+	icon = 'icons/obj/fusion_engine/fusion_core.dmi'
 	icon_state = "core0"
 	layer = ABOVE_HUMAN_LAYER
 	density = 1
@@ -14,7 +14,7 @@
 	anchored = FALSE
 	stat_immune = FALSE
 	base_type = /obj/machinery/power/fusion_core
-	construct_state = /decl/machine_construction/default/panel_closed
+	construct_state = /obj/effect/decal/machine_construction/default/panel_closed
 	uncreated_component_parts = null
 
 	var/obj/effect/fusion_em_field/owned_field

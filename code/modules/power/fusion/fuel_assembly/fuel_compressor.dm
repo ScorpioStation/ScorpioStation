@@ -5,12 +5,12 @@
 
 /obj/machinery/fusion_fuel_compressor
 	name = "fuel compressor"
-	icon = 'icons/obj/machines/power/fusion.dmi'
+	icon = 'icons/obj/fusion_engine/fusion.dmi'
 	icon_state = "fuel_compressor1"
 	density = 1
 	anchored = TRUE
 	layer = 4
-	construct_state = /decl/machine_construction/default/panel_closed
+	construct_state = /obj/effect/decal/machine_construction/default/panel_closed
 
 /obj/machinery/fusion_fuel_compressor/MouseDrop_T(var/atom/movable/target, var/mob/user)
 	if(user.incapacitated() || !user.Adjacent(src))

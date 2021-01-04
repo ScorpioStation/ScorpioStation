@@ -4,13 +4,13 @@
 	density = TRUE
 	anchored = TRUE
 	use_power = POWER_USE_IDLE
-	icon = 'icons/obj/kinetic_harvester.dmi'
+	icon = 'icons/obj/fusion_engine/kinetic_harvester.dmi'
 	icon_state = "off"
 	var/initial_id_tag
 	var/list/stored =     list()
 	var/list/harvesting = list()
 	var/obj/machinery/power/fusion_core/harvest_from
-	construct_state = /decl/machine_construction/default/panel_closed
+	construct_state = /obj/effect/decal/machine_construction/default/panel_closed
 	uncreated_component_parts = null
 	stat_immune = 0
 
@@ -59,7 +59,7 @@
 	data["id"] = plant ? plant.id_tag : "unset"
 	data["status"] = (use_power >= POWER_USE_ACTIVE)
 	data["materials"] = list()
-	for(var/mat in stored)
+	for(var/mat in stored)		//Nice job! Already typeless!
 		var/material/material = SSmaterials.get_material_by_name(mat)
 		if(material)
 			var/sheets = Floor(stored[mat]/(material.units_per_sheet * 1.5))
