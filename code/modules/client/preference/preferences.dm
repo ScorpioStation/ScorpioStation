@@ -61,6 +61,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 #define TAB_CHAR 0
 #define TAB_GAME 1
 #define TAB_GEAR 2
+
 /datum/preferences
 	var/client/parent
 	//doohickeys for savefiles
@@ -132,11 +133,22 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/list/known_langs = list("Galactic Common")	//What languages the character knows - we are going to start this list off with "Galactic Common"
 	var/list/sp_langs = list("Sinta'unathi", "Siik'tajr", "Canilunzt", "Skrellian", "Vox-pidgin", "Rootspeak", "Trinary", "Chittin", "Bubblish", "Psionic Communication", "Orluum", "Sol Common")
 	var/list/sc_langs = list("None", "Tradeband", "Gutter", "Clownish", "Neo-Russkiya") //Secondary Languages List
-
 	var/autohiss_mode = AUTOHISS_OFF	//Species autohiss level. OFF, BASIC, FULL.
 
-	var/body_accessory = null
+	//Disabilities
+	var/disabilities= 0			//Stores bits for DISABILITY_FLAGs
+	var/disabilities_cures = 0	//Stores bits for CURE_FLAGs
+	//Don't mess with the order of these lists unless you sync them, please
+	var/list/dname_list = list("Nearsighted", "Colourblind", "Blind", "Deaf", "Mute", "Obesity", "Swedish Accent", "Chav Accent", "Lisp", "Dizziness", "Wingdings")
+	var/list/dflag_list = list(DISABILITY_FLAG_NEARSIGHTED, DISABILITY_FLAG_COLOURBLIND, DISABILITY_FLAG_BLIND, DISABILITY_FLAG_DEAF, DISABILITY_FLAG_MUTE, DISABILITY_FLAG_FAT, DISABILITY_FLAG_SWEDISH, DISABILITY_FLAG_CHAV, DISABILITY_FLAG_LISP, DISABILITY_FLAG_DIZZY, DISABILITY_FLAG_WINGDINGS)
 
+	var/body_accessory = null
+	/*
+	Stop blaming everything on Vox!
+	This is used this any preferences that are species-specific.
+	In the *case* of Vox, this is used to toggle between Large vs Small N2 tanks.
+	For Greys, it *was* used to toggle Wingdings.
+	*/
 	var/speciesprefs = 0//I hate having to do this, I really do (Using this for oldvox code, making names universal I guess
 
 	//Mob preview
@@ -176,7 +188,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/sec_record = ""
 	var/gen_record = ""
 
-	var/disabilities = 0
 
 	var/ark_soft_relation = "Neutral"
 
@@ -291,7 +302,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			if(species == "Vox")
 				dat += "<b>N2 Tank:</b> <a href='?_src_=prefs;preference=speciesprefs;task=input'>[speciesprefs ? "Large N2 Tank" : "Specialized N2 Tank"]</a><br>"
 			if(species == "Grey")
-				dat += "<b>Wingdings:</b> Set in disabilities<br>"
+				dat += "<b>Grey Speech (Wingdings):</b> Set in disabilities<br>"
 				dat += "<b>Voice Translator:</b> <a href ='?_src_=prefs;preference=speciesprefs;task=input'>[speciesprefs ? "Yes" : "No"]</a><br>"
 			dat += "<b>Secondary Language:</b> <a href='?_src_=prefs;preference=language;task=input'>[language]</a><br>"
 			if(S.autohiss_basic_map)
@@ -870,38 +881,49 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	return TRUE
 
 /datum/preferences/proc/ShowDisabilityState(mob/user, flag, label)
-	return "<li><b>[label]:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability=[flag]\">[disabilities & flag ? "Yes" : "No"]</a></li>"
+	var/HTML = "<li><b>[label]:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability=[flag]\">[disabilities & flag ? "Yes" : "No"]</a>  "
+	return HTML
+
+/datum/preferences/proc/ShowDisabilityCure(mob/user, flag)
+	//Curable == "No" == TRUE; Incurable == "Yes" == FALSE
+	var/HTML
+	HTML += "  <b>Curable:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability_cure=[flag]\">"
+	if(disabilities & flag)
+		HTML +=  "[disabilities_cures & flag ? "No" : "Yes"]</a></li>"
+	else
+		HTML += "</a></li>"
+	return HTML
 
 /datum/preferences/proc/SetDisabilities(mob/user)
 	var/datum/species/S = GLOB.all_species[species]
 	var/HTML = "<body>"
 	HTML += "<tt><center>"
 
-	if(CAN_WINGDINGS in S.species_traits)
-		HTML += ShowDisabilityState(user, DISABILITY_FLAG_WINGDINGS, "Speak in Wingdings")
-
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_NEARSIGHTED, "Nearsighted")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_COLOURBLIND, "Colourblind")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_BLIND, "Blind")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_DEAF, "Deaf")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_MUTE, "Mute")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_FAT, "Obese")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_SWEDISH, "Swedish accent")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_CHAV, "Chav accent")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_LISP, "Lisp")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_DIZZY, "Dizziness")
+	for(var/D in 1 to dname_list.len)	//Lists, thank you very much, lists.
+		var/dname = dname_list[D]
+		if(dname == "Wingdings")
+			if(CAN_WINGDINGS in S.species_traits)
+				HTML += ShowDisabilityState(user, dflag_list[D], "Speak in Wingdings")
+				HTML += ShowDisabilityCure(user, dflag_list[D])	//Dang it, Wingdings
+		else
+			HTML += ShowDisabilityState(user, dflag_list[D], dname_list[D])
+			HTML += ShowDisabilityCure(user, dflag_list[D])
 
 	for(var/lang in known_langs)
 		var/datum/language/L = GLOB.all_languages[lang]
 		var/lname = L.name
-		if(lname == "Galactic Common")			//Set Stutter on Galactic Common
+		if(lname == "Galactic Common")	//Set Stutter on Galactic Common
 			HTML += ShowDisabilityState(user, DISABILITY_FLAG_GALACTIC, "Galactic Common Stutter")
-		else if(lname in sp_langs)					//Set Stutter on Species' Language
-			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SP_LANG, "Species Language Stutter: [L]")
-		else if(lname in sc_langs)					//Set Stutter on Secondary Language
-			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SC_LANG, "Secondary Language Stutter: [L]")
+			HTML += "</li>"
+		else if(lname in sp_langs)		//Set Stutter on Species Language
+			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SP_LANG, "Species Stutter: [L]")
+			HTML += "</li>"
+		else if(lname in sc_langs)		//Set Stutter on Secondary Language
+			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SC_LANG, "Secondary Stutter: [L]")
+			HTML += "</li>"
 		else
 			HTML += "An Error Has Ocurred. Please file an Issue on the Scorpio Github with a screenshot of this Message."
+			HTML += "</li>"
 
 	HTML += {"</ul>
 		<a href=\"?_src_=prefs;task=close;preference=disabilities\">\[Done\]</a>
@@ -1150,12 +1172,15 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				user << browse(null, "window=disabil")
 				ShowChoices(user)
 			if("reset")
-				disabilities=0
+				disabilities = 0
 				SetDisabilities(user)
-			if("input")
-				var/dflag=text2num(href_list["disability"])
-				if(dflag >= 0) // Toggle it.
-					disabilities ^= text2num(href_list["disability"]) //MAGIC
+			if("input")											// Preference: "disabilities"; Task: "input"
+				var/dflag = text2num(href_list["disability"])	// "disability" == [flag] from ShowDisabilityState == DISABILITY_FLAG_blah == bitflag
+				var/dcure = text2num(href_list["disability_cure"])	// "disability_cure" == [cure] from ShowDisabilityCure
+				if(dflag >= 0)									// Is this bitflag for this disability already set?
+					disabilities ^= dflag //MAGIC				// This adds or removes the 'dflag' bit to/from 'disabilities' by comparing the two lists.
+				if(dcure >= 0)
+					disabilities_cures ^= dcure
 				SetDisabilities(user)
 			else
 				SetDisabilities(user)
@@ -2176,24 +2201,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 		else if(firstspace == name_length)
 			real_name += "[pick(GLOB.last_names)]"
 
-	//Languages
-	character.add_language(language)			//Add Secondary Language to list of languages our character can speak
-
-	//We really only need ONE genetic block to turn on for this, but three flags so there can be three separate yes/no flags for the Character Setup interface.
-	if(disabilities & (DISABILITY_FLAG_GALACTIC | DISABILITY_FLAG_SP_LANG | DISABILITY_FLAG_SC_LANG))
-		for(var/lang in known_langs)				//Check our character's known_langs for languages selected for stutters
-			var/datum/language/L = GLOB.all_languages[lang]
-			var/lname = L.name
-			if((lname == "Galactic Common") && (disabilities & DISABILITY_FLAG_GALACTIC))
-				character.dna.stutter_langs += L	//Add Galactic Common stutter to stutter_langs on DNA
-			else if((lname in sp_langs) && (disabilities & DISABILITY_FLAG_SP_LANG))
-				character.dna.stutter_langs += L	//Add Species Language stutter to stutter_langs on DNA
-			else if((lname in sc_langs) && (disabilities & DISABILITY_FLAG_SC_LANG) && lname != "None")
-				character.dna.stutter_langs += L	//Add Secondary Language stutter to stutter_langs on DNA
-		character.dna.SetDNAState(GLOB.rp_stutterblock, TRUE, DNA_RP)
-		character.dna.default_blocks.Add(GLOB.rp_stutterblock)
-
-	//Other Character Data
 	character.real_name = real_name
 	character.dna.real_name = real_name
 	character.name = character.real_name
@@ -2279,51 +2286,83 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 	character.change_eye_color(e_colour)
 	character.original_eye_color = e_colour
+	character.add_language(language)	//Add Secondary Language to list of languages our character can speak
 
-	if(disabilities & DISABILITY_FLAG_FAT)
-		character.dna.SetDNAState(GLOB.fatblock, TRUE, DNA_SE, TRUE)
-		character.overeatduration = 600
-		character.dna.default_blocks.Add(GLOB.fatblock)
-
-	if(disabilities & DISABILITY_FLAG_NEARSIGHTED)
-		character.dna.SetDNAState(GLOB.glassesblock, TRUE, DNA_SE, TRUE)
-		character.dna.default_blocks.Add(GLOB.glassesblock)
+	/*
+	Disabilities,
+	Oh My Freakin' Heck,
+	Y'all are Killing Voxxy
+	*/
 
 	if(disabilities & DISABILITY_FLAG_BLIND)
 		character.dna.SetDNAState(GLOB.blindblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.blindblock)
+		if(disabilities_cures & DISABILITY_FLAG_BLIND)	//"TRUE" is Incurable
+			character.dna.incur_blocks.Add(GLOB.blindblock)
 
 	if(disabilities & DISABILITY_FLAG_DEAF)
 		character.dna.SetDNAState(GLOB.deafblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.deafblock)
+		if(disabilities_cures & DISABILITY_FLAG_DEAF)
+			character.dna.incur_blocks.Add(GLOB.deafblock)
 
 	if(disabilities & DISABILITY_FLAG_COLOURBLIND)
 		character.dna.SetDNAState(GLOB.colourblindblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.colourblindblock)
+		if(disabilities_cures & DISABILITY_FLAG_COLOURBLIND)
+			character.dna.incur_blocks.Add(GLOB.colourblindblock)
 
 	if(disabilities & DISABILITY_FLAG_MUTE)
 		character.dna.SetDNAState(GLOB.muteblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.muteblock)
+		if(disabilities_cures & DISABILITY_FLAG_MUTE)
+			character.dna.incur_blocks.Add(GLOB.muteblock)
 
 	if(disabilities & DISABILITY_FLAG_SWEDISH)
 		character.dna.SetDNAState(GLOB.swedeblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.swedeblock)
+		if(disabilities_cures & DISABILITY_FLAG_SWEDISH)
+			character.dna.incur_blocks.Add(GLOB.swedeblock)
 
 	if(disabilities & DISABILITY_FLAG_CHAV)
 		character.dna.SetDNAState(GLOB.chavblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.chavblock)
+		if(disabilities_cures & DISABILITY_FLAG_CHAV)
+			character.dna.incur_blocks.Add(GLOB.chavblock)
 
 	if(disabilities & DISABILITY_FLAG_LISP)
 		character.dna.SetDNAState(GLOB.lispblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.lispblock)
+		if(disabilities_cures & DISABILITY_FLAG_LISP)
+			character.dna.incur_blocks.Add(GLOB.lispblock)
 
 	if(disabilities & DISABILITY_FLAG_DIZZY)
 		character.dna.SetDNAState(GLOB.dizzyblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.dizzyblock)
+		if(disabilities_cures & DISABILITY_FLAG_DIZZY)
+			character.dna.incur_blocks.Add(GLOB.dizzyblock)
 
+	//Oh gods, why am I doing this? Kek, let's do it, I guess. ;-;
 	if(disabilities & DISABILITY_FLAG_WINGDINGS && (CAN_WINGDINGS in character.dna.species.species_traits))
-		character.dna.SetDNAState(GLOB.wingdingsblock, TRUE, DNA_SE, TRUE)
-		character.dna.default_blocks.Add(GLOB.wingdingsblock)
+		if(disabilities_cures & DISABILITY_FLAG_WINGDINGS)
+			character.dna.SetDNAState(GLOB.wingdingsblock, TRUE, DNA_SE, TRUE)
+			character.dna.default_blocks.Add(GLOB.wingdingsblock)
+			if(disabilities_cures & DISABILITY_FLAG_WINGDINGS)
+				character.dna.incur_blocks.Add(GLOB.wingdingsblock)
+
+	//We really only need ONE genetic block to turn on for this, but three flags so there can be three separate yes/no flags for the Character Setup interface.
+	if(disabilities & (DISABILITY_FLAG_GALACTIC | DISABILITY_FLAG_SP_LANG | DISABILITY_FLAG_SC_LANG))
+		for(var/lang in known_langs)				//Check our character's known_langs for languages selected for stutters
+			var/datum/language/L = GLOB.all_languages[lang]
+			var/lname = L.name
+			if((lname == "Galactic Common") && (disabilities & DISABILITY_FLAG_GALACTIC))
+				character.dna.stutter_langs += L	//Add Galactic Common stutter to stutter_langs on DNA
+			else if((lname in sp_langs) && (disabilities & DISABILITY_FLAG_SP_LANG))
+				character.dna.stutter_langs += L	//Add Species Language stutter to stutter_langs on DNA
+			else if((lname in sc_langs) && (disabilities & DISABILITY_FLAG_SC_LANG) && lname != "None")
+				character.dna.stutter_langs += L	//Add Secondary Language stutter to stutter_langs on DNA
+		character.dna.SetDNAState(GLOB.rp_stutterblock, TRUE, DNA_RP)	//We should probably have this defer and then run UpdateDNA(DNA_ALL)
+		character.dna.default_blocks.Add(GLOB.rp_stutterblock)
 
 	character.dna.species.handle_dna(character)
 
