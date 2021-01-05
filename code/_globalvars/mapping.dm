@@ -38,12 +38,13 @@ GLOBAL_LIST_EMPTY(prisonsecuritywarp) // prison security goes to these
 GLOBAL_LIST_EMPTY(prisonwarp)         // prisoners go to these
 GLOBAL_LIST_EMPTY(raider_spawn)
 GLOBAL_LIST_EMPTY(syndicateofficer)
+GLOBAL_LIST_EMPTY(syndieprisonwarp)   // contractor targets go to these
 GLOBAL_LIST_EMPTY(tdome1)
 GLOBAL_LIST_EMPTY(tdome2)
 GLOBAL_LIST_EMPTY(tdomeadmin)
 GLOBAL_LIST_EMPTY(tdomeobserve)
 GLOBAL_LIST_EMPTY(wizardstart)
-GLOBAL_LIST_EMPTY(xeno_spawn) // aliens spawn at these.
+GLOBAL_LIST_EMPTY(xeno_spawn)         // aliens spawn at these
 
 // player lists; admin prison, dodgeball mode, etc.
 GLOBAL_LIST_EMPTY(prisonwarped)	//list of players already warped

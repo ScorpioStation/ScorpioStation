@@ -8,7 +8,7 @@ sed -i '/\/data/d' .dockerignore
 
 # add the flag to trigger unit tests
 rm -f ci-scorpio.dme
-echo "#define TRAVISBUILDING" >> ci-scorpio.dme
+echo "#define CIBUILDING" >> ci-scorpio.dme
 cat paradise.dme >> ci-scorpio.dme
 
 # copy the example configuration into the config directory

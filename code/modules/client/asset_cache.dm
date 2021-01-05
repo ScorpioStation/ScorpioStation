@@ -179,120 +179,53 @@ GLOBAL_LIST_EMPTY(asset_datums)
 //DEFINITIONS FOR ASSET DATUMS START HERE.
 /datum/asset/simple/tgui
 	assets = list(
-		"tgui.bundle.js" = 'tgui/packages/tgui/public/tgui.bundle.js',
+		"tgui.bundle.js"  = 'tgui/packages/tgui/public/tgui.bundle.js',
 		"tgui.bundle.css" = 'tgui/packages/tgui/public/tgui.bundle.css'
 )
 
 /datum/asset/simple/paper
 	assets = list(
-		"large_stamp-clown.png"     = 'icons/paper_icons/large_stamp-clown.png',
-		"large_stamp-deny.png"      = 'icons/paper_icons/large_stamp-deny.png',
-		"large_stamp-ok.png"        = 'icons/paper_icons/large_stamp-ok.png',
-		"large_stamp-hop.png"       = 'icons/paper_icons/large_stamp-hop.png',
-		"large_stamp-cmo.png"       = 'icons/paper_icons/large_stamp-cmo.png',
-		"large_stamp-ce.png"        = 'icons/paper_icons/large_stamp-ce.png',
-		"large_stamp-hos.png"       = 'icons/paper_icons/large_stamp-hos.png',
-		"large_stamp-rd.png"        = 'icons/paper_icons/large_stamp-rd.png',
-		"large_stamp-cap.png"       = 'icons/paper_icons/large_stamp-cap.png',
-		"large_stamp-qm.png"        = 'icons/paper_icons/large_stamp-qm.png',
-		"large_stamp-law.png"       = 'icons/paper_icons/large_stamp-law.png',
-		"large_stamp-cent.png"      = 'icons/paper_icons/large_stamp-cent.png',
-		"large_stamp-syndicate.png" = 'icons/paper_icons/large_stamp-syndicate.png',
-		"large_stamp-rep.png"	    = 'icons/paper_icons/large_stamp-rep.png',
-		"large_stamp-magistrate.png"= 'icons/paper_icons/large_stamp-magistrate.png',
-		"talisman.png"              = 'icons/paper_icons/talisman.png',
-		"arksoftlogo.png"                = 'icons/paper_icons/arksoftlogo.png',
-		"syndielogo.png"		='icons/paper_icons/syndielogo.png'
+		"large_stamp-clown.png"      = 'icons/paper_icons/large_stamp-clown.png',
+		"large_stamp-deny.png"       = 'icons/paper_icons/large_stamp-deny.png',
+		"large_stamp-ok.png"         = 'icons/paper_icons/large_stamp-ok.png',
+		"large_stamp-hop.png"        = 'icons/paper_icons/large_stamp-hop.png',
+		"large_stamp-cmo.png"        = 'icons/paper_icons/large_stamp-cmo.png',
+		"large_stamp-ce.png"         = 'icons/paper_icons/large_stamp-ce.png',
+		"large_stamp-hos.png"        = 'icons/paper_icons/large_stamp-hos.png',
+		"large_stamp-rd.png"         = 'icons/paper_icons/large_stamp-rd.png',
+		"large_stamp-cap.png"        = 'icons/paper_icons/large_stamp-cap.png',
+		"large_stamp-qm.png"         = 'icons/paper_icons/large_stamp-qm.png',
+		"large_stamp-law.png"        = 'icons/paper_icons/large_stamp-law.png',
+		"large_stamp-cent.png"       = 'icons/paper_icons/large_stamp-cent.png',
+		"large_stamp-syndicate.png"  = 'icons/paper_icons/large_stamp-syndicate.png',
+		"large_stamp-rep.png"        = 'icons/paper_icons/large_stamp-rep.png',
+		"large_stamp-magistrate.png" = 'icons/paper_icons/large_stamp-magistrate.png',
+		"talisman.png"               = 'icons/paper_icons/talisman.png',
+		"arksoftlogo.png"            = 'icons/paper_icons/arksoftlogo.png',
+		"syndielogo.png"             = 'icons/paper_icons/syndielogo.png'
 	)
 
 /datum/asset/simple/chess
 	assets = list(
-		"bishop_black.png"			= 'icons/chess_pieces/bishop_black.png',
-		"bishop_white.png"			= 'icons/chess_pieces/bishop_white.png',
-		"king_black.png"			= 'icons/chess_pieces/king_black.png',
-		"king_white.png"			= 'icons/chess_pieces/king_white.png',
-		"knight_black.png"			= 'icons/chess_pieces/knight_black.png',
-		"knight_white.png"			= 'icons/chess_pieces/knight_white.png',
-		"pawn_black.png"			= 'icons/chess_pieces/pawn_black.png',
-		"pawn_white.png"			= 'icons/chess_pieces/pawn_white.png',
-		"queen_black.png"			= 'icons/chess_pieces/queen_black.png',
-		"queen_white.png"			= 'icons/chess_pieces/queen_white.png',
-		"rook_black.png"			= 'icons/chess_pieces/rook_black.png',
-		"rook_white.png"			= 'icons/chess_pieces/rook_white.png',
-		"sprites.png"			    = 'icons/chess_pieces/sprites.png',
-		"blank.gif"                 = 'icons/chess_pieces/blank.gif',
-		"background.png"            = 'nano/images/uiBackground.png',
-		"garbochess.js"             = 'html/browser/garbochess.js',
-		"boardui.js"                = 'html/browser/boardui.js'
+		"bishop_black.png"           = 'icons/chess_pieces/bishop_black.png',
+		"bishop_white.png"           = 'icons/chess_pieces/bishop_white.png',
+		"king_black.png"             = 'icons/chess_pieces/king_black.png',
+		"king_white.png"             = 'icons/chess_pieces/king_white.png',
+		"knight_black.png"           = 'icons/chess_pieces/knight_black.png',
+		"knight_white.png"           = 'icons/chess_pieces/knight_white.png',
+		"pawn_black.png"             = 'icons/chess_pieces/pawn_black.png',
+		"pawn_white.png"             = 'icons/chess_pieces/pawn_white.png',
+		"queen_black.png"            = 'icons/chess_pieces/queen_black.png',
+		"queen_white.png"            = 'icons/chess_pieces/queen_white.png',
+		"rook_black.png"             = 'icons/chess_pieces/rook_black.png',
+		"rook_white.png"             = 'icons/chess_pieces/rook_white.png',
+		"sprites.png"                = 'icons/chess_pieces/sprites.png',
+		"blank.gif"                  = 'icons/chess_pieces/blank.gif',
+		"garbochess.js"              = 'html/browser/garbochess.js',
+		"boardui.js"                 = 'html/browser/boardui.js'
 	)
 
-/datum/asset/simple/headers
-	assets = list(
-		"alarm_green.gif" 			= 'icons/program_icons/alarm_green.gif',
-		"alarm_red.gif" 			= 'icons/program_icons/alarm_red.gif',
-		"batt_5.gif" 				= 'icons/program_icons/batt_5.gif',
-		"batt_20.gif" 				= 'icons/program_icons/batt_20.gif',
-		"batt_40.gif" 				= 'icons/program_icons/batt_40.gif',
-		"batt_60.gif" 				= 'icons/program_icons/batt_60.gif',
-		"batt_80.gif" 				= 'icons/program_icons/batt_80.gif',
-		"batt_100.gif" 				= 'icons/program_icons/batt_100.gif',
-		"charging.gif" 				= 'icons/program_icons/charging.gif',
-		"downloader_finished.gif" 	= 'icons/program_icons/downloader_finished.gif',
-		"downloader_running.gif" 	= 'icons/program_icons/downloader_running.gif',
-		"ntnrc_idle.gif"			= 'icons/program_icons/ntnrc_idle.gif',
-		"ntnrc_new.gif"				= 'icons/program_icons/ntnrc_new.gif',
-		"power_norm.gif"			= 'icons/program_icons/power_norm.gif',
-		"power_warn.gif"			= 'icons/program_icons/power_warn.gif',
-		"sig_high.gif" 				= 'icons/program_icons/sig_high.gif',
-		"sig_low.gif" 				= 'icons/program_icons/sig_low.gif',
-		"sig_lan.gif" 				= 'icons/program_icons/sig_lan.gif',
-		"sig_none.gif" 				= 'icons/program_icons/sig_none.gif',
-		"smmon_0.gif"				= 'icons/program_icons/smmon_0.gif',
-		"smmon_1.gif"				= 'icons/program_icons/smmon_1.gif',
-		"smmon_2.gif"				= 'icons/program_icons/smmon_2.gif',
-		"smmon_3.gif"				= 'icons/program_icons/smmon_3.gif',
-		"smmon_4.gif"				= 'icons/program_icons/smmon_4.gif',
-		"smmon_5.gif"				= 'icons/program_icons/smmon_5.gif',
-		"smmon_6.gif"				= 'icons/program_icons/smmon_6.gif',
-	)
-
-/datum/asset/nanoui
-	var/list/common = list()
-
-	var/list/common_dirs = list(
-		"nano/assets/",
-		"nano/codemirror/",
-		"nano/layouts/"
-	)
-	var/list/uncommon_dirs = list(
-		"nano/templates/"
-	)
-
-/datum/asset/nanoui/register()
-	// Crawl the directories to find files.
-	for(var/path in common_dirs)
-		var/list/filenames = flist(path)
-		for(var/filename in filenames)
-			if(copytext(filename, length(filename)) != "/") // Ignore directories.
-				if(fexists(path + filename))
-					common[filename] = fcopy_rsc(path + filename)
-					register_asset(filename, common[filename])
-	for(var/path in uncommon_dirs)
-		var/list/filenames = flist(path)
-		for(var/filename in filenames)
-			if(copytext(filename, length(filename)) != "/") // Ignore directories.
-				if(fexists(path + filename))
-					register_asset(filename, fcopy_rsc(path + filename))
-
-/datum/asset/nanoui/send(client, uncommon)
-	if(!islist(uncommon))
-		uncommon = list(uncommon)
-
-	send_asset_list(client, uncommon)
-	send_asset_list(client, common)
-
-
-//Pill sprites for UIs
+// pill sprites for UIs
 /datum/asset/chem_master
 	var/assets = list()
 	var/verify = FALSE
@@ -308,7 +241,7 @@ GLOBAL_LIST_EMPTY(asset_datums)
 /datum/asset/chem_master/send(client)
 	send_asset_list(client, assets, verify)
 
-//Cloning pod sprites for UIs
+// cloning pod sprites for UIs
 /datum/asset/cloning
 	var/assets = list()
 	var/verify = FALSE
@@ -323,7 +256,7 @@ GLOBAL_LIST_EMPTY(asset_datums)
 /datum/asset/cloning/send(client)
 	send_asset_list(client, assets, verify)
 
-//Pipe sprites for UIs
+// pipe sprites for UIs
 /datum/asset/rpd
 	var/assets = list()
 	var/verify = FALSE
@@ -348,7 +281,7 @@ GLOBAL_LIST_EMPTY(asset_datums)
 /datum/asset/rpd/send(client)
 	send_asset_list(client, assets, verify)
 
-//Mob Hunt sprites for UIs
+// mob hunt sprites for UIs
 /datum/asset/mob_hunt
 	var/assets = list()
 	var/verify = FALSE
@@ -364,7 +297,7 @@ GLOBAL_LIST_EMPTY(asset_datums)
 /datum/asset/mob_hunt/send(client)
 	send_asset_list(client, assets, verify)
 
-// Fontawesome
+// font-awesome
 /datum/asset/simple/fontawesome
 	verify = FALSE
 	assets = list(
@@ -375,3 +308,19 @@ GLOBAL_LIST_EMPTY(asset_datums)
 		"font-awesome.css"    = 'html/font-awesome/css/all.min.css',
 		"v4shim.css"          = 'html/font-awesome/css/v4-shims.min.css'
 	)
+
+/datum/asset/simple/safe
+	verify = FALSE
+	assets = list(
+		"safe_dial.png" = 'icons/safe_dial.png'
+	)
+
+// materials (metal, glass...)
+/datum/asset/simple/materials
+	verify = FALSE
+
+/datum/asset/simple/materials/register()
+	for(var/n in list("metal", "glass", "silver", "gold", "diamond", "uranium", "plasma", "clown", "mime", "titanium", "plastic"))
+		assets["sheet-[n].png"] = icon('icons/obj/items.dmi', "sheet-[n]")
+	assets["sheet-bluespace.png"] = icon('icons/obj/telescience.dmi', "polycrystal")
+	..()

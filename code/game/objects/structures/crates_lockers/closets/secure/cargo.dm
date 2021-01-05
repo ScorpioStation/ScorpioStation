@@ -8,8 +8,7 @@
 	icon_broken = "securecargobroken"
 	icon_off = "securecargooff"
 
-/obj/structure/closet/secure_closet/cargotech/New()
-	..()
+/obj/structure/closet/secure_closet/cargotech/populate_contents()
 	new /obj/item/clothing/under/rank/cargotech(src)
 	new /obj/item/clothing/under/rank/cargotech/skirt(src)
 	new /obj/item/clothing/shoes/black(src)
@@ -27,8 +26,7 @@
 	icon_broken = "secureqmbroken"
 	icon_off = "secureqmoff"
 
-/obj/structure/closet/secure_closet/quartermaster/New()
-	..()
+/obj/structure/closet/secure_closet/quartermaster/populate_contents()
 	new /obj/item/clothing/under/rank/cargo(src)
 	new /obj/item/clothing/under/rank/cargo/skirt(src)
 	new /obj/item/clothing/shoes/brown(src)

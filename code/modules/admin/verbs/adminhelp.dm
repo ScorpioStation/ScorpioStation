@@ -36,7 +36,7 @@ GLOBAL_LIST_INIT(adminhelp_ignored_words, list("unknown","the","a","an","of","mo
 
 	//show it to the person adminhelping too
 	to_chat(src, "<span class='boldnotice'>[selected_type]</b>: [msg]</span>")
-	feedback_add_details("admin_verb","AH") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+	SSblackbox.record_feedback("tally", "admin_verb", 1, "Adminhelp") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 	switch(selected_type)
 		if("Adminhelp")
@@ -45,7 +45,7 @@ GLOBAL_LIST_INIT(adminhelp_ignored_words, list("unknown","the","a","an","of","mo
 			var/active_admins = admincount[1]
 
 			log_admin("[selected_type]: [key_name(src)]: [msg] - heard by [active_admins] non-AFK admins.")
-			SSdiscord.send2discord_simple_noadmins("[selected_type] from [key_name(src)]: [msg]", check_send_always = TRUE)
+			SSdiscord.send2discord_simple_noadmins("**\[Adminhelp]** [key_name(src)]: [msg]", check_send_always = TRUE)
 
 		if("Mentorhelp")
 			var/alerttext

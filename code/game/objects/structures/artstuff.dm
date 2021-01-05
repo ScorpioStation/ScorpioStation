@@ -84,10 +84,10 @@
 
 /obj/item/canvas/attack_self(mob/user)
 	. = ..()
-	tgui_interact(user)
+	ui_interact(user)
 
-/obj/item/canvas/tgui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = FALSE, \
-										datum/tgui/master_ui = null, datum/tgui_state/state = GLOB.tgui_default_state)
+/obj/item/canvas/ui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = FALSE, \
+										datum/tgui/master_ui = null, datum/ui_state/state = GLOB.default_state)
 
 	ui = SStgui.try_update_ui(user, src, ui_key, ui, force_open)
 	if(!ui)
@@ -97,11 +97,11 @@
 
 /obj/item/canvas/attackby(obj/item/I, mob/living/user, params)
 	if(user.a_intent == INTENT_HELP)
-		tgui_interact(user)
+		ui_interact(user)
 	else
 		return ..()
 
-/obj/item/canvas/tgui_data(mob/user)
+/obj/item/canvas/ui_data(mob/user)
 	. = ..()
 	.["grid"] = grid
 	.["name"] = painting_name
@@ -109,9 +109,9 @@
 
 /obj/item/canvas/examine(mob/user)
 	. = ..()
-	tgui_interact(user)
+	ui_interact(user)
 
-/obj/item/canvas/tgui_act(action, params)
+/obj/item/canvas/ui_act(action, params)
 	. = ..()
 	if(. || finalized)
 		return
@@ -286,7 +286,7 @@
 /obj/structure/sign/painting/examine(mob/user)
 	. = ..()
 	if(canvas)
-		canvas.tgui_interact(user,state = GLOB.tgui_physical_obscured_state)
+		canvas.ui_interact(user,state = GLOB.physical_obscured_state)
 
 /obj/structure/sign/painting/wirecutter_act(mob/living/user, obj/item/I)
 	. = ..()

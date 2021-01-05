@@ -92,7 +92,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	if(item)
 		U.uses -= max(cost, 0)
 		U.used_TC += cost
-		feedback_add_details("traitor_uplink_items_bought", name)
+		SSblackbox.record_feedback("nested tally", "traitor_uplink_items_bought", 1, list("[initial(name)]", "[cost]"))
 		return new item(loc)
 
 
@@ -127,8 +127,12 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 				var/mob/living/carbon/human/A = user
 				if(limited_stock > 0)
 					log_game("[key_name(user)] purchased [name]. [name] was discounted to [cost].")
+					if(!user.mind.special_role)
+						message_admins("[key_name_admin(user)] purchased [name] (discounted to [cost]), as a non antagonist.")
 				else
 					log_game("[key_name(user)] purchased [name].")
+					if(!user.mind.special_role)
+						message_admins("[key_name_admin(user)] purchased [name], as a non antagonist.")
 				A.put_in_any_hand_if_possible(I)
 
 				if(istype(I,/obj/item/storage/box/) && I.contents.len>0)
@@ -1290,6 +1294,16 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/storage/box/syndie_kit/bonerepair
 	cost = 4
 
+/datum/uplink_item/device_tools/syndicate_teleporter
+	name = "Experimental Syndicate Teleporter"
+	desc = "The Syndicate teleporter is a handheld device that teleports the user 4-8 meters forward. \
+			Beware, teleporting into a wall will make the teleporter do a parallel emergency teleport, \
+			but if that emergency teleport fails, it will kill you. \
+			Has 4 charges, recharges, warrenty voided if exposed to EMP."
+	reference = "TELE"
+	item = /obj/item/storage/box/syndie_kit/teleporter
+	cost = 8
+
 /datum/uplink_item/device_tools/thermal_drill
 	name = "Thermal Safe Drill"
 	desc = "A tungsten carbide thermal drill with magnetic clamps for the purpose of drilling hardened objects. Guaranteed 100% jam proof."
@@ -1547,7 +1561,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 		if(findtext(item, /obj/item/organ/internal/cyberimp))
 			U.uses -= max(cost, 0)
 			U.used_TC += cost
-			feedback_add_details("traitor_uplink_items_bought", name) //this one and the line before copypasted because snowflaek code
+			SSblackbox.record_feedback("nested tally", "traitor_uplink_items_bought", 1, list("[initial(name)]", "[cost]")) //this one and the line before copypasted because snowflaek code
 			return new /obj/item/storage/box/cyber_implants(loc, item)
 		else
 			return ..()
