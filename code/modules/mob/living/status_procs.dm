@@ -463,12 +463,13 @@
 		update_blind_effects()
 
 /mob/living/proc/CureBlind(updating = TRUE)
-	var/val_change = !!(BLINDNESS in mutations)
-	. = val_change ? STATUS_UPDATE_BLIND : STATUS_UPDATE_NONE
-	mutations -= BLINDNESS
-	if(val_change && updating)
-		CureIfHasDisability(GLOB.blindblock)
-		update_blind_effects()
+	if(!(GLOB.blindblock in dna.incur_blocks))
+		var/val_change = !!(BLINDNESS in mutations)
+		. = val_change ? STATUS_UPDATE_BLIND : STATUS_UPDATE_NONE
+		mutations -= BLINDNESS
+		if(val_change && updating)
+			CureIfHasDisability(GLOB.blindblock)
+			update_blind_effects()
 
 // Coughing
 
@@ -485,8 +486,9 @@
 	mutations |= DEAF
 
 /mob/living/proc/CureDeaf()
-	mutations -= DEAF
-	CureIfHasDisability(GLOB.deafblock)
+	if(!(GLOB.deafblock in dna.incur_blocks))
+		mutations -= DEAF
+		CureIfHasDisability(GLOB.deafblock)
 
 // Epilepsy
 
@@ -503,8 +505,9 @@
 	mutations |= MUTE
 
 /mob/living/proc/CureMute()
-	mutations -= MUTE
-	CureIfHasDisability(GLOB.muteblock)
+	if(!(GLOB.muteblock in dna.incur_blocks))
+		mutations -= MUTE
+		CureIfHasDisability(GLOB.muteblock)
 
 // Nearsighted
 
@@ -516,12 +519,13 @@
 		update_nearsighted_effects()
 
 /mob/living/proc/CureNearsighted(updating = TRUE)
-	var/val_change = !!(NEARSIGHTED in mutations)
-	. = val_change ? STATUS_UPDATE_NEARSIGHTED : STATUS_UPDATE_NONE
-	mutations -= NEARSIGHTED
-	if(val_change && updating)
-		CureIfHasDisability(GLOB.glassesblock)
-		update_nearsighted_effects()
+	if(!(GLOB.glassesblock in dna.incur_blocks))
+		var/val_change = !!(NEARSIGHTED in mutations)
+		. = val_change ? STATUS_UPDATE_NEARSIGHTED : STATUS_UPDATE_NONE
+		mutations -= NEARSIGHTED
+		if(val_change && updating)
+			CureIfHasDisability(GLOB.glassesblock)
+			update_nearsighted_effects()
 
 // Nervous
 
@@ -544,7 +548,7 @@
 /mob/living/proc/CureIfHasDisability(block)
 	if(dna && dna.GetDNAState(block, DNA_SE))
 		dna.SetDNAState(block, FALSE, DNA_SE, TRUE) //Fix the gene
-		genemutcheck(src, block,null, MUTCHK_FORCED)
+		genemutcheck(src, block, null, MUTCHK_FORCED)
 		dna.UpdateDNA(DNA_SE)
 
 ///////////////////////////////// FROZEN /////////////////////////////////////
