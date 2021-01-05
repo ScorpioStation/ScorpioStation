@@ -520,9 +520,9 @@
 	name = "Read Mind"
 	desc = "Read the minds of others for information."
 	charge_max = 180
-	clothes_req = FALSE
-	human_req = TRUE
-	stat_allowed = CONSCIOUS
+	clothes_req = 0
+	human_req = 1
+	stat_allowed = 0
 	invocation_type = "none"
 	range = -2
 	selection_type = "range"
@@ -530,16 +530,14 @@
 	action_icon_state = "genetic_empath"
 
 /obj/effect/proc_holder/spell/targeted/empath/choose_targets(mob/user = usr)
-	var/list/possible_targets = list()
-	for(var/mob/living/carbon/C in range(7, user))
-		possible_targets += C
-	var/target = input("Choose the target to spy on.", "Targeting") as null|mob in possible_targets
+	var/list/targets = new /list()
+	targets += input("Choose the target to spy on.", "Targeting") as null|mob in range(7,usr)
 
-	if(!target) //doesn't waste the spell
+	if(!targets.len || !targets[1]) //doesn't waste the spell
 		revert_cast(user)
 		return
 
-	perform(list(target), user = user)
+	perform(targets, user = user)
 
 /obj/effect/proc_holder/spell/targeted/empath/cast(list/targets, mob/user = usr)
 	for(var/mob/living/carbon/M in targets)
@@ -618,3 +616,43 @@
 			to_chat(M, "<span class='warning'>You sense [user.name] reading your mind.</span>")
 		else if(prob(5) || M.mind.assigned_role=="Chaplain")
 			to_chat(M, "<span class='warning'>You sense someone intruding upon your thoughts...</span>")
+
+////////////////////////////////////////////////////////////////////////
+// WAS: /datum/bioEffect/immolate
+/datum/dna/gene/basic/grant_spell/immolate
+	name = "Incendiary Mitochondria"
+	desc = "The subject becomes able to convert excess cellular energy into thermal energy."
+	activation_messages = list("You suddenly feel rather hot.")
+	deactivation_messages = list("You no longer feel uncomfortably hot.")
+	mutation = IMMOLATE
+
+	spelltype = /obj/effect/proc_holder/spell/targeted/immolate
+
+/datum/dna/gene/basic/grant_spell/immolate/New()
+	..()
+	block = GLOB.immolateblock
+
+/obj/effect/proc_holder/spell/targeted/immolate
+	name = "Incendiary Mitochondria"
+	desc = "The subject becomes able to convert excess cellular energy into thermal energy."
+	panel = "Abilities"
+
+	charge_type = "recharge"
+	charge_max = 600
+
+	clothes_req = 0
+	stat_allowed = 0
+	invocation_type = "none"
+	range = -1
+	selection_type = "range"
+	var/list/compatible_mobs = list(/mob/living/carbon/human)
+	include_user = 1
+
+	action_icon_state = "genetic_incendiary"
+
+/obj/effect/proc_holder/spell/targeted/immolate/cast(list/targets, mob/living/user = usr)
+	var/mob/living/carbon/L = user
+	L.adjust_fire_stacks(0.5)
+	L.visible_message("<span class='danger'>[L.name]</b> suddenly bursts into flames!</span>")
+	L.IgniteMob()
+	playsound(L.loc, 'sound/effects/bamf.ogg', 50, 0)
