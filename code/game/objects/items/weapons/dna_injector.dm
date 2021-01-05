@@ -25,7 +25,7 @@
 		buf = new
 		buf.dna = new
 		buf.types = datatype
-		buf.dna.ResetSE()
+		buf.dna.ResetDNA(DNA_SE)
 		SetValue(value)
 
 /obj/item/dnainjector/Destroy()
