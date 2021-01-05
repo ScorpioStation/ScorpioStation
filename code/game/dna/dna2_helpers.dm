@@ -58,7 +58,7 @@
 	else
 		for(var/i = 1, i <= DNA_SE_LENGTH - 1, i++)
 			if(prob(prob))
-				M.dna.SetSEValue(i, rand(1, 4095), 1)
+				M.dna.SetDNAValue(i, rand(1, 4095), DNA_SE, TRUE)
 		M.dna.UpdateDNA(DNA_SE)
 		domutcheck(M, null)
 
@@ -150,7 +150,7 @@
 
 		H.s_tone   = 35 - dna.GetUIValueRange(DNA_UI_SKIN_TONE, 220) // Value can be negative.
 
-		switch(dna.GetUITriState(DNA_UI_GENDER))
+		switch(dna.GetDNATriState(DNA_UI_GENDER, DNA_UI))
 			if(DNA_GENDER_FEMALE)
 				H.change_gender(FEMALE, FALSE)
 			if(DNA_GENDER_MALE)

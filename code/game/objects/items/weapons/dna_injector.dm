@@ -95,14 +95,14 @@
 						M.dna.real_name = buf.dna.real_name
 						M.dna.unique_enzymes = buf.dna.unique_enzymes
 				else
-					M.dna.SetUIValue(block,src.GetValue())
+					M.dna.SetDNAValue(block, GetValue(), DNA_UI)
 					M.UpdateAppearance()
 			if(buf.types & DNA2_BUF_SE)
 				if(!block) //isolated block?
 					M.dna.SE = buf.dna.SE.Copy()
 					M.dna.UpdateDNA(DNA_SE)
 				else
-					M.dna.SetSEValue(block,src.GetValue())
+					M.dna.SetDNAValue(block, GetValue(), DNA_SE)
 				domutcheck(M, null, forcedmutation ? MUTCHK_FORCED : 0)
 				M.update_mutations()
 			if(H)

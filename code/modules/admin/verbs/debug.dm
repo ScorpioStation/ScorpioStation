@@ -856,7 +856,7 @@ GLOBAL_PROTECT(AdminProcCallSpamPrevention)
 		M.dna.SetDNAState(block, !M.dna.GetDNAState(block, DNA_SE), DNA_SE)
 		genemutcheck(M,block,null,MUTCHK_FORCED)
 		M.update_mutations()
-		var/state="[M.dna.GetSEState(block)?"on":"off"]"
+		var/state="[M.dna.GetDNAState(block, DNA_SE)?"on":"off"]"
 		var/blockname=GLOB.assigned_blocks[block]
 		message_admins("[key_name_admin(src)] has toggled [M.key]'s [blockname] block [state]!")
 		log_admin("[key_name(src)] has toggled [M.key]'s [blockname] block [state]!")

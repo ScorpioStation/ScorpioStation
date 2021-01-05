@@ -1301,7 +1301,7 @@ GLOBAL_LIST_EMPTY(damage_icon_parts)
 	var/husk = (HUSK in mutations)
 	var/hulk = (HULK in mutations)
 	var/skeleton = (SKELETON in mutations)
-	var/g = dna.GetUITriState(DNA_UI_GENDER)
+	var/g = dna.GetDNATriState(DNA_UI_GENDER, DNA_UI)
 	if(g == DNA_GENDER_PLURAL)
 		g = DNA_GENDER_FEMALE
 

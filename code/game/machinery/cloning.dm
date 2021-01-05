@@ -165,7 +165,7 @@ GLOBAL_LIST_INIT(cloner_biomass_items, list(\
 	for(var/i=new_SE.len;i<=DNA_SE_LENGTH;i++)
 		new_SE += rand(1,1024)
 	buf.dna.SE=new_SE
-	buf.dna.SetSEValueRange(GLOB.monkeyblock,0xDAC, 0xFFF)
+	buf.dna.SetDNAValueRange(GLOB.monkeyblock, 0xDAC, 0xFFF, DNA_SE)
 
 //Disk stuff.
 /obj/item/disk/data/New()

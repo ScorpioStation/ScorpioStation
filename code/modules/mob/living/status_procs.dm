@@ -542,7 +542,7 @@
 	CureIfHasDisability(GLOB.twitchblock)
 
 /mob/living/proc/CureIfHasDisability(block)
-	if(dna && dna.GetSEState(block))
+	if(dna && dna.GetDNAState(block, DNA_SE))
 		dna.SetDNAState(block, FALSE, DNA_SE, TRUE) //Fix the gene
 		genemutcheck(src, block,null, MUTCHK_FORCED)
 		dna.UpdateDNA(DNA_SE)

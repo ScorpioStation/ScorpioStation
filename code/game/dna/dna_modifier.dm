@@ -571,7 +571,7 @@
 			selected_ui_block = clamp(select_block, 1, DNA_UI_LENGTH)
 			selected_ui_subblock = clamp(select_subblock, 1, DNA_BLOCK_SIZE)
 		if("pulseUIRadiation")
-			var/block = connected.occupant.dna.GetUISubBlock(selected_ui_block, selected_ui_subblock)
+			var/block = connected.occupant.dna.GetDNASubBlock(selected_ui_block, selected_ui_subblock, DNA_UI)
 
 			irradiating = radiation_duration
 			var/lock_state = connected.locked
@@ -594,7 +594,7 @@
 					return
 
 				block = miniscrambletarget(num2text(selected_ui_target), radiation_intensity, radiation_duration)
-				connected.occupant.dna.SetUISubBlock(selected_ui_block, selected_ui_subblock, block)
+				connected.occupant.dna.SetDNASubBlock(selected_ui_block, selected_ui_subblock, block, DNA_UI)
 				connected.occupant.UpdateAppearance()
 			else
 				var/radiation = ((radiation_intensity * 2) + radiation_duration)
@@ -627,7 +627,7 @@
 			selected_se_block = clamp(select_block, 1, DNA_SE_LENGTH)
 			selected_se_subblock = clamp(select_subblock, 1, DNA_BLOCK_SIZE)
 		if("pulseSERadiation")
-			var/block = connected.occupant.dna.GetSESubBlock(selected_se_block, selected_se_subblock)
+			var/block = connected.occupant.dna.GetDNASubBlock(selected_se_block, selected_se_subblock, DNA_SE)
 			//var/original_block=block
 			//testing("Irradiating SE block [selected_se_block]:[selected_se_subblock] ([block])...")
 
@@ -658,7 +658,7 @@
 							real_SE_block--
 
 					//testing("Irradiated SE block [real_SE_block]:[selected_se_subblock] ([original_block] now [block]) [(real_SE_block!=selected_se_block) ? "(SHIFTED)":""]!")
-					connected.occupant.dna.SetSESubBlock(real_SE_block, selected_se_subblock, block)
+					connected.occupant.dna.SetDNASubBlock(real_SE_block, selected_se_subblock, block, DNA_SE)
 					domutcheck(connected.occupant, connected)
 				else
 					var/radiation = (((radiation_intensity * 2) + radiation_duration) / connected.damage_coeff)
