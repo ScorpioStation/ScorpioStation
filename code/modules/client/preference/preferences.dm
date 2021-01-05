@@ -29,23 +29,23 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 /proc/player_old_enough_antag(client/C, role)
 	if(available_in_days_antag(C, role))
-		return 0	//available_in_days>0 = still some days required = player not old enough
+		return FALSE	//available_in_days>0 = still some days required = player not old enough
 	if(role_available_in_playtime(C, role))
-		return 0	//available_in_playtime>0 = still some more playtime required = they are not eligible
-	return 1
+		return FALSE	//available_in_playtime>0 = still some more playtime required = they are not eligible
+	return TRUE
 
 /proc/available_in_days_antag(client/C, role)
 	if(!C)
-		return 0
+		return FALSE
 	if(!role)
-		return 0
+		return FALSE
 	if(!config.use_age_restriction_for_antags)
-		return 0
+		return FALSE
 	if(!isnum(C.player_age))
-		return 0 //This is only a number if the db connection is established, otherwise it is text: "Requires database", meaning these restrictions cannot be enforced
+		return FALSE //This is only a number if the db connection is established, otherwise it is text: "Requires database", meaning these restrictions cannot be enforced
 	var/minimal_player_age_antag = GLOB.special_role_times[num2text(role)]
 	if(!isnum(minimal_player_age_antag))
-		return 0
+		return FALSE
 
 	return max(0, minimal_player_age_antag - C.player_age)
 
@@ -61,7 +61,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 #define TAB_CHAR 0
 #define TAB_GAME 1
 #define TAB_GEAR 2
-
 /datum/preferences
 	var/client/parent
 	//doohickeys for savefiles
@@ -96,7 +95,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	//character preferences
 	var/real_name						//our character's name
 	var/be_random_name = 0				//whether we are a random name every round
-	var/gender = MALE					//gender of character (well duh)
+	var/gender = MALE					//gender identity of character (well duh)
 	var/age = 30						//age of character
 	var/spawnpoint = "Arrivals Shuttle" //where this character will spawn (0-2).
 	var/b_type = "A+"					//blood type (not-chooseable)
@@ -127,19 +126,25 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/e_colour = "#000000"			//Eye color
 	var/alt_head = "None"				//Alt head style.
 	var/species = "Human"
-	var/language = "None"				//Secondary language
+
+	//Language
+	var/language = "None"				//Secondary Language placeholder
+	var/list/known_langs = list("Galactic Common")	//What languages the character knows - we are going to start this list off with "Galactic Common"
+	var/list/sp_langs = list("Sinta'unathi", "Siik'tajr", "Canilunzt", "Skrellian", "Vox-pidgin", "Rootspeak", "Trinary", "Chittin", "Bubblish", "Psionic Communication", "Orluum", "Sol Common")
+	var/list/sc_langs = list("None", "Tradeband", "Gutter", "Clownish", "Neo-Russkiya") //Secondary Languages List
+
 	var/autohiss_mode = AUTOHISS_OFF	//Species autohiss level. OFF, BASIC, FULL.
 
 	var/body_accessory = null
 
 	var/speciesprefs = 0//I hate having to do this, I really do (Using this for oldvox code, making names universal I guess
 
-		//Mob preview
+	//Mob preview
 	var/icon/preview_icon = null
 	var/icon/preview_icon_front = null
 	var/icon/preview_icon_side = null
 
-		//Jobs, uses bitflags
+	//Jobs, uses bitflags
 	var/job_support_high = 0
 	var/job_support_med = 0
 	var/job_support_low = 0
@@ -165,14 +170,12 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/list/rlimb_data = list()
 
 	var/list/player_alt_titles = new()		// the default name of a job like "Medical Doctor"
-//	var/accent = "en-us"
-//	var/voice = "m1"
-//	var/pitch = 50
-//	var/talkspeed = 175
 	var/flavor_text = ""
+
 	var/med_record = ""
 	var/sec_record = ""
 	var/gen_record = ""
+
 	var/disabilities = 0
 
 	var/ark_soft_relation = "Neutral"
@@ -189,7 +192,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/volume = 100
 
 	// BYOND membership
-	var/unlock_content = 0
+	var/unlock_content = FALSE
 
 	//Gear stuff
 	var/list/loadout_gear = list()
@@ -251,6 +254,12 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				species = initial(species)
 				S = GLOB.all_species[species]
 				random_character()
+
+			for(var/i = 1 to sp_langs.len)
+				if(sp_langs[i] in known_langs)
+					known_langs.Remove(sp_langs[i])
+				i += 1
+			known_langs += S.language
 
 			dat += "<div class='statusDisplay' style='max-width: 128px; position: absolute; left: 150px; top: 150px'><img src=previewicon.png class='charPreview'><img src=previewicon2.png class='charPreview'></div>"
 			dat += "<table width='100%'><tr><td width='405px' height='25px' valign='top'>"
@@ -458,7 +467,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			dat += "<b>Deadchat Anonymity:</b> <a href='?_src_=prefs;preference=ghost_anonsay'><b>[toggles2 & PREFTOGGLE_2_ANONDCHAT ? "Anonymous" : "Not Anonymous"]</b></a><br>"
 			if(user.client.donator_level > 0)
 				dat += "<b>Donator Publicity:</b> <a href='?_src_=prefs;preference=donor_public'><b>[(toggles & PREFTOGGLE_DONATOR_PUBLIC) ? "Public" : "Hidden"]</b></a><br>"
-			dat += "<b>Fancy TGUI:</b> <a href='?_src_=prefs;preference=tgui'>[(toggles2 & PREFTOGGLE_2_FANCYUI) ? "Yes" : "No"]</a><br>"
+			dat += "<b>Fancy NanoUI:</b> <a href='?_src_=prefs;preference=nanoui'>[(toggles2 & PREFTOGGLE_2_FANCYUI) ? "Yes" : "No"]</a><br>"
 			dat += "<b>FPS:</b>	 <a href='?_src_=prefs;preference=clientfps;task=input'>[clientfps]</a><br>"
 			dat += "<b>Ghost Ears:</b> <a href='?_src_=prefs;preference=ghost_ears'><b>[(toggles & PREFTOGGLE_CHAT_GHOSTEARS) ? "All Speech" : "Nearest Creatures"]</b></a><br>"
 			dat += "<b>Ghost Radio:</b> <a href='?_src_=prefs;preference=ghost_radio'><b>[(toggles & PREFTOGGLE_CHAT_GHOSTRADIO) ? "All Chatter" : "Nearest Speakers"]</b></a><br>"
@@ -596,12 +605,12 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	metadata["[tweak]"] = new_metadata
 
 
-/datum/preferences/proc/SetChoices(mob/user, limit = 17, list/splitJobs = list("Head of Security", "Bartender"), widthPerColumn = 400, height = 700)
+/datum/preferences/proc/SetChoices(mob/user, limit = 17, list/sp_langsitJobs = list("Head of Security", "Bartender"), widthPerColumn = 400, height = 700)
 	if(!SSjobs)
 		return
 
 	//limit - The amount of jobs allowed per column. Defaults to 17 to make it look nice.
-	//splitJobs - Allows you split the table by job. You can make different tables for each department by including their heads. Defaults to CE to make it look nice.
+	//sp_langsitJobs - Allows you sp_langsit the table by job. You can make different tables for each department by including their heads. Defaults to CE to make it look nice.
 	//widthPerColumn - Screen's width for every column.
 	//height - Screen's height.
 	var/width = widthPerColumn
@@ -636,11 +645,11 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				continue
 
 			index += 1
-			if((index >= limit) || (job.title in splitJobs))
+			if((index >= limit) || (job.title in sp_langsitJobs))
 				if((index < limit) && (lastJob != null))
 					// Dynamic window width
 					width += widthPerColumn
-					//If the cells were broken up by a job in the splitJob list then it will fill in the rest of the cells with
+					//If the cells were broken up by a job in the sp_langsitJob list then it will fill in the rest of the cells with
 					//the last job's selection color. Creating a rather nice effect.
 					for(var/i in 1 to limit - index)
 						html += "<tr bgcolor='[lastJob.selection_color]'><td width='60%' align='right'>&nbsp</td><td>&nbsp</td></tr>"
@@ -762,7 +771,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 /datum/preferences/proc/SetJobPreferenceLevel(var/datum/job/job, var/level)
 	if(!job)
-		return 0
+		return FALSE
 
 	if(level == 1) // to high
 		// remove any other job(s) set to high
@@ -788,7 +797,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			if(3)
 				job_support_low |= job.flag
 
-		return 1
+		return TRUE
 	else if(job.department_flag == JOBCAT_ENGSEC)
 		job_engsec_low &= ~job.flag
 		job_engsec_med &= ~job.flag
@@ -802,7 +811,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			if(3)
 				job_engsec_low |= job.flag
 
-		return 1
+		return TRUE
 	else if(job.department_flag == JOBCAT_MEDSCI)
 		job_medsci_low &= ~job.flag
 		job_medsci_med &= ~job.flag
@@ -816,7 +825,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			if(3)
 				job_medsci_low |= job.flag
 
-		return 1
+		return TRUE
 	else if(job.department_flag == JOBCAT_KARMA)
 		job_karma_low &= ~job.flag
 		job_karma_med &= ~job.flag
@@ -830,9 +839,9 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			if(3)
 				job_karma_low |= job.flag
 
-		return 1
+		return TRUE
 
-	return 0
+	return FALSE
 
 /datum/preferences/proc/UpdateJobPreference(mob/user, role, desiredLvl)
 	var/datum/job/job = SSjobs.GetJob(role)
@@ -853,12 +862,12 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 		else
 			job_support_low |= job.flag
 		SetChoices(user)
-		return 1
+		return TRUE
 
 	SetJobPreferenceLevel(job, desiredLvl)
 	SetChoices(user)
 
-	return 1
+	return TRUE
 
 /datum/preferences/proc/ShowDisabilityState(mob/user, flag, label)
 	return "<li><b>[label]:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability=[flag]\">[disabilities & flag ? "Yes" : "No"]</a></li>"
@@ -870,19 +879,29 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 	if(CAN_WINGDINGS in S.species_traits)
 		HTML += ShowDisabilityState(user, DISABILITY_FLAG_WINGDINGS, "Speak in Wingdings")
+
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_NEARSIGHTED, "Nearsighted")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_COLOURBLIND, "Colourblind")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_BLIND, "Blind")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_DEAF, "Deaf")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_MUTE, "Mute")
-	if(!(NO_OBESITY in S.species_traits))
-		HTML += ShowDisabilityState(user, DISABILITY_FLAG_FAT, "Obese")
-	HTML += ShowDisabilityState(user, DISABILITY_FLAG_NERVOUS, "Stutter")
+	HTML += ShowDisabilityState(user, DISABILITY_FLAG_FAT, "Obese")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_SWEDISH, "Swedish accent")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_CHAV, "Chav accent")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_LISP, "Lisp")
 	HTML += ShowDisabilityState(user, DISABILITY_FLAG_DIZZY, "Dizziness")
 
+	for(var/lang in known_langs)
+		var/datum/language/L = GLOB.all_languages[lang]
+		var/lname = L.name
+		if(lname == "Galactic Common")			//Set Stutter on Galactic Common
+			HTML += ShowDisabilityState(user, DISABILITY_FLAG_GALACTIC, "Galactic Common Stutter")
+		else if(lname in sp_langs)					//Set Stutter on Species' Language
+			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SP_LANG, "Species Language Stutter: [L]")
+		else if(lname in sc_langs)					//Set Stutter on Secondary Language
+			HTML += ShowDisabilityState(user, DISABILITY_FLAG_SC_LANG, "Secondary Language Stutter: [L]")
+		else
+			HTML += "An Error Has Ocurred. Please file an Issue on the Scorpio Github with a screenshot of this Message."
 
 	HTML += {"</ul>
 		<a href=\"?_src_=prefs;task=close;preference=disabilities\">\[Done\]</a>
@@ -951,7 +970,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 		else
 			job_support_low |= job.flag
 		SetChoices(user)
-		return 1
+		return TRUE
 
 	if(GetJobDepartment(job, 1) & job.flag)
 		SetJobDepartment(job, 1)
@@ -963,7 +982,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 		SetJobDepartment(job, 4)
 
 	SetChoices(user)
-	return 1
+	return TRUE
 
 /datum/preferences/proc/ResetJobs()
 	job_support_high = 0
@@ -984,7 +1003,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 
 /datum/preferences/proc/GetJobDepartment(var/datum/job/job, var/level)
-	if(!job || !level)	return 0
+	if(!job || !level)	return FALSE
 	switch(job.department_flag)
 		if(JOBCAT_SUPPORT)
 			switch(level)
@@ -1018,17 +1037,18 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 					return job_karma_med
 				if(3)
 					return job_karma_low
-	return 0
+	return FALSE
 
 /datum/preferences/proc/SetJobDepartment(var/datum/job/job, var/level)
-	if(!job || !level)	return 0
+	if(!job || !level)
+		return FALSE
 	switch(level)
 		if(1)//Only one of these should ever be active at once so clear them all here
 			job_support_high = 0
 			job_medsci_high = 0
 			job_engsec_high = 0
 			job_karma_high = 0
-			return 1
+			return TRUE
 		if(2)//Set current highs to med, then reset them
 			job_support_med |= job_support_high
 			job_medsci_med |= job_medsci_high
@@ -1080,7 +1100,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 					job_karma_low &= ~job.flag
 				else
 					job_karma_low |= job.flag
-	return 1
+	return TRUE
 
 /datum/preferences/proc/process_link(mob/user, list/href_list)
 	if(!user)	return
@@ -1106,7 +1126,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				else if(alternate_option == RETURN_TO_LOBBY)
 					alternate_option = 0
 				else
-					return 0
+					return FALSE
 				SetChoices(user)
 			if("alt_title")
 				var/datum/job/job = locate(href_list["job"])
@@ -1122,7 +1142,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				UpdateJobPreference(user, href_list["text"], text2num(href_list["level"]))
 			else
 				SetChoices(user)
-		return 1
+		return TRUE
 	else if(href_list["preference"] == "disabilities")
 
 		switch(href_list["task"])
@@ -1139,7 +1159,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				SetDisabilities(user)
 			else
 				SetDisabilities(user)
-		return 1
+		return TRUE
 
 	else if(href_list["preference"] == "records")
 		if(text2num(href_list["record"]) >= 1)
@@ -1289,8 +1309,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 						s_colour = rand_hex_color()
 				if("bag")
 					backbag = pick(GLOB.backbaglist)
-				/*if("skin_style")
-					h_style = random_skin_style(gender)*/
 				if("all")
 					random_character()
 		if("input")
@@ -1332,6 +1350,13 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 						species = prev_species
 						to_chat(user, "<span class='warning'>Invalid species, please pick something else.</span>")
 						return
+
+					for(var/i = 1 to sp_langs.len)
+						if(sp_langs[i] in known_langs)
+							known_langs.Remove(sp_langs[i])	//Remove, if any, the previously selected species' language from our character's known_langs() lis
+						i += 1
+					known_langs += NS.language						//Add the selected species' language to our character's known_langs() lis
+
 					if(prev_species != species)
 						if(NS.has_gender && gender == PLURAL)
 							gender = pick(MALE,FEMALE)
@@ -1339,11 +1364,9 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 						if(NS.bodyflags & ALL_RPARTS)
 							var/head_model = "[!rlimb_data["head"] ? "Morpheus Cyberkinetics" : rlimb_data["head"]]"
 							robohead = GLOB.all_robolimbs[head_model]
-						//grab one of the valid hair styles for the newly chosen species
-						h_style = random_hair_style(gender, species, robohead)
 
-						//grab one of the valid facial hair styles for the newly chosen species
-						f_style = random_facial_hair_style(gender, species, robohead)
+						h_style = random_hair_style(gender, species, robohead)	//grab one of the valid hair styles for the newly chosen species
+						f_style = random_facial_hair_style(gender, species, robohead)	//grab one of the valid facial hair styles for the newly chosen species
 
 						if(NS.bodyflags & HAS_HEAD_ACCESSORY) //Species that have head accessories.
 							ha_style = random_head_accessory(species)
@@ -1405,26 +1428,10 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				if("speciesprefs")
 					speciesprefs = !speciesprefs //Starts 0, so if someone clicks the button up top there, this won't be 0 anymore. If they click it again, it'll go back to 0.
 				if("language")
-//						var/languages_available
-					var/list/new_languages = list("None")
-/*
-					if(config.usealienwhitelist)
-						for(var/L in GLOB.all_languages)
-							var/datum/language/lang = GLOB.all_languages[L]
-							if((!(lang.flags & RESTRICTED)) && (is_alien_whitelisted(user, L)||(!( lang.flags & WHITELISTED ))))
-								new_languages += lang
-								languages_available = 1
-
-						if(!(languages_available))
-							alert(user, "There are not currently any available secondary languages.")
-					else
-*/
-					for(var/L in GLOB.all_languages)
-						var/datum/language/lang = GLOB.all_languages[L]
-						if(!(lang.flags & RESTRICTED))
-							new_languages += lang.name
-
-					language = input("Please select a secondary language", "Character Generation", null) in sortTim(new_languages, /proc/cmp_text_asc)
+					known_langs.Remove(language)	//If we previously selected a Secondary Language, remove it from the known_langs list
+					language = input("Please select a secondary language", "Character Generation", null) in sortTim(sc_langs, /proc/cmp_text_asc)
+					if(language != "None")
+						known_langs += language //Add the newly-selected Secondary Language to our character's known_langs list
 
 				if("autohiss_mode")
 					if(S.autohiss_basic_map)
@@ -2021,7 +2028,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				if("see_chat_non_mob")
 					see_chat_non_mob = !see_chat_non_mob
 
-				if("tgui")
+				if("nanoui")
 					toggles2 ^= PREFTOGGLE_2_FANCYUI
 
 				if("ghost_att_anim")
@@ -2111,7 +2118,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				if("open_load_dialog")
 					if(!IsGuestKey(user.key))
 						open_load_dialog(user)
-						return 1
+						return TRUE
 
 				if("close_load_dialog")
 					close_load_dialog(user)
@@ -2153,7 +2160,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 
 	ShowChoices(user)
-	return 1
+	return TRUE
 
 /datum/preferences/proc/copy_to(mob/living/carbon/human/character)
 	var/datum/species/S = GLOB.all_species[species]
@@ -2169,13 +2176,27 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 		else if(firstspace == name_length)
 			real_name += "[pick(GLOB.last_names)]"
 
-	character.add_language(language)
+	//Languages
+	character.add_language(language)			//Add Secondary Language to list of languages our character can speak
 
+	//We really only need ONE genetic block to turn on for this, but three flags so there can be three separate yes/no flags for the Character Setup interface.
+	if(disabilities & (DISABILITY_FLAG_GALACTIC | DISABILITY_FLAG_SP_LANG | DISABILITY_FLAG_SC_LANG))
+		for(var/lang in known_langs)				//Check our character's known_langs for languages selected for stutters
+			var/datum/language/L = GLOB.all_languages[lang]
+			var/lname = L.name
+			if((lname == "Galactic Common") && (disabilities & DISABILITY_FLAG_GALACTIC))
+				character.dna.stutter_langs += L	//Add Galactic Common stutter to stutter_langs on DNA
+			else if((lname in sp_langs) && (disabilities & DISABILITY_FLAG_SP_LANG))
+				character.dna.stutter_langs += L	//Add Species Language stutter to stutter_langs on DNA
+			else if((lname in sc_langs) && (disabilities & DISABILITY_FLAG_SC_LANG) && lname != "None")
+				character.dna.stutter_langs += L	//Add Secondary Language stutter to stutter_langs on DNA
+		character.dna.SetDNAState(GLOB.rp_stutterblock, TRUE, DNA_RP)
+		character.dna.default_blocks.Add(GLOB.rp_stutterblock)
 
+	//Other Character Data
 	character.real_name = real_name
 	character.dna.real_name = real_name
 	character.name = character.real_name
-
 	character.flavor_text = flavor_text
 	character.med_record = med_record
 	character.sec_record = sec_record
@@ -2284,10 +2305,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 		character.dna.SetDNAState(GLOB.muteblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.muteblock)
 
-	if(disabilities & DISABILITY_FLAG_NERVOUS)
-		character.dna.SetDNAState(GLOB.nervousblock, TRUE, DNA_SE, TRUE)
-		character.dna.default_blocks.Add(GLOB.nervousblock)
-
 	if(disabilities & DISABILITY_FLAG_SWEDISH)
 		character.dna.SetDNAState(GLOB.swedeblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.swedeblock)
@@ -2325,18 +2342,16 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 /datum/preferences/proc/open_load_dialog(mob/user)
 
-	var/datum/db_query/query = SSdbcore.NewQuery("SELECT slot, real_name FROM [format_table_name("characters")] WHERE ckey=:ckey ORDER BY slot", list(
-		"ckey" = user.ckey
-	))
+	var/DBQuery/query = GLOB.dbcon.NewQuery("SELECT slot,real_name FROM [format_table_name("characters")] WHERE ckey='[user.ckey]' ORDER BY slot")
 	var/list/slotnames[max_save_slots]
 
-	if(!query.warn_execute())
-		qdel(query)
+	if(!query.Execute())
+		var/err = query.ErrorMsg()
+		log_game("SQL ERROR during character slot loading. Error : \[[err]\]\n")
+		message_admins("SQL ERROR during character slot loading. Error : \[[err]\]\n")
 		return
-
 	while(query.NextRow())
 		slotnames[text2num(query.item[1])] = query.item[2]
-	qdel(query)
 
 	var/dat = "<body>"
 	dat += "<tt><center>"

@@ -10,21 +10,13 @@
 */
 
 /datum/dna/gene
-	// Display name
-	var/name = "BASE GENE"
-
-	// Probably won't get used but why the fuck not
-	var/desc="Oh god who knows what this does."
-
+	var/name = "BASE GENE"						// Display name
+	var/desc = "Oh god who knows what this does."	// Probably won't get used but why the fuck not
+	var/gene_dna = DNA_SE						// Type of DNA to set the gene on - default to 'DNA_SE'
 	// Set in initialize()!
-	//  What gene activates this?
-	var/block = 0
-
-	// Any of a number of GENE_ flags.
-	var/flags = 0
-
-	// Chance of the gene to cause adverse effects when active
-	var/instability = 0
+	var/block = 0	//  What gene activates this?
+	var/flags = 0		// Any of a number of GENE_ flags.
+	var/instability = 0		// Chance of the gene to cause adverse effects when active
 
 /*
 * Is the gene active in this mob's DNA?
@@ -92,18 +84,10 @@
 
 /datum/dna/gene/basic
 	name = "BASIC GENE"
-
-	// Mutation to give
-	var/mutation = 0
-
-	// Activation probability
-	var/activation_prob = 100
-
-	// Possible activation messages
-	var/list/activation_messages = list()
-
-	// Possible deactivation messages
-	var/list/deactivation_messages = list()
+	var/mutation = 0						// Mutation to give
+	var/activation_prob = 100				// Activation probability
+	var/list/activation_messages = list()	// Possible activation messages
+	var/list/deactivation_messages = list()	// Possible deactivation messages
 
 /datum/dna/gene/basic/can_activate(mob/M, flags)
 	if(flags & MUTCHK_FORCED)

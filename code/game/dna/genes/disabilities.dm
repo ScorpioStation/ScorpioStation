@@ -10,15 +10,10 @@
 
 /datum/dna/gene/disability
 	name = "DISABILITY"
-
-	// Mutation to give (or 0)
-	var/mutation = 0
-
-	// Activation message
-	var/activation_message = ""
-
-	// Yay, you're no longer growing 3 arms
-	var/deactivation_message = ""
+	gene_dna = DNA_SE					// Most of these Disabilities are on DNA_SE
+	var/mutation = 0					// Mutation to give (or 0)
+	var/activation_message = ""			// Activation message
+	var/deactivation_message = ""		// Yay, you're no longer growing 3 arms
 
 /datum/dna/gene/disability/can_activate(mob/M, flags)
 	return TRUE // Always set!
@@ -261,5 +256,23 @@
 			garbled_message += message[i]
 	message = garbled_message
 	return message
+
+///////////////////////////////
+// Scorpio RP Genes
+///////////////////////////////
+/datum/dna/gene/disability/rpstutter
+	name = "RPSTUTTER"
+	activation_message=""
+	deactivation_message =""
+	mutation = RPSTUTTER
+	gene_dna = DNA_RP
+
+/datum/dna/gene/disability/rpstutter/New()
+	..()
+	block = GLOB.rp_stutterblock
+
+/datum/dna/gene/disability/rpstutter/OnMobLife(mob/living/carbon/human/H)
+	if(prob(10))
+		H.Stuttering(10)
 
 #undef string2charlist
