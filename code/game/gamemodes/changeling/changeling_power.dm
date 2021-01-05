@@ -35,8 +35,7 @@ the same goes for Remove(). if you override Remove(), call parent or else your p
 		return
 	try_to_sting(user)
 
-/datum/action/changeling/proc/try_to_sting(mob/user, mob/target)
-	user.changeNext_click(5)
+/datum/action/changeling/proc/try_to_sting(var/mob/user, var/mob/target)
 	if(!user.mind || !user.mind.changeling)
 		return
 	if(!can_sting(user, target))
@@ -47,47 +46,47 @@ the same goes for Remove(). if you override Remove(), call parent or else your p
 		take_chemical_cost(c)
 
 /datum/action/changeling/proc/sting_action(var/mob/user, var/mob/target)
-	return 0
+	return FALSE
 
 /datum/action/changeling/proc/sting_feedback(var/mob/user, var/mob/target)
-	return 0
+	return FALSE
 
 /datum/action/changeling/proc/take_chemical_cost(var/datum/changeling/changeling)
 	changeling.chem_charges -= chemical_cost
 	changeling.geneticdamage += genetic_damage
 
-//Fairly important to remember to return 1 on success >.<
+//Fairly important to remember to return TRUE on success >.<
 /datum/action/changeling/proc/can_sting(var/mob/user, var/mob/target)
 	if(!ishuman(user)) //typecast everything from mob to carbon from this point onwards
-		return 0
+		return FALSE
 	if(req_human && (!ishuman(user) || issmall(user)))
 		to_chat(user, "<span class='warning'>We cannot do that in this form!</span>")
-		return 0
+		return FALSE
 	var/datum/changeling/c = user.mind.changeling
 	if(c.chem_charges<chemical_cost)
 		to_chat(user, "<span class='warning'>We require at least [chemical_cost] unit\s of chemicals to do that!</span>")
-		return 0
+		return FALSE
 	if(c.absorbedcount<req_dna)
 		to_chat(user, "<span class='warning'>We require at least [req_dna] sample\s of compatible DNA.</span>")
-		return 0
+		return FALSE
 	if(req_stat < user.stat)
 		to_chat(user, "<span class='warning'>We are incapacitated.</span>")
-		return 0
+		return FALSE
 	if((user.status_flags & FAKEDEATH) && name!="Regenerate")
 		to_chat(user, "<span class='warning'>We are incapacitated.</span>")
-		return 0
+		return FALSE
 	if(c.geneticdamage > max_genetic_damage)
 		to_chat(user, "<span class='warning'>Our genomes are still reassembling. We need time to recover first.</span>")
-		return 0
-	return 1
+		return FALSE
+	return TRUE
 
 //used in /mob/Stat()
 /datum/action/changeling/proc/can_be_used_by(var/mob/user)
 	if(!ishuman(user))
-		return 0
+		return FALSE
 	if(req_human && !ishuman(user))
-		return 0
-	return 1
+		return FALSE
+	return TRUE
 
 // Transform the target to the chosen dna. Used in transform.dm and tiny_prick.dm (handy for changes since it's the same thing done twice)
 /datum/action/changeling/proc/transform_dna(var/mob/living/carbon/human/H, var/datum/dna/D)
@@ -100,5 +99,5 @@ the same goes for Remove(). if you override Remove(), call parent or else your p
 	domutcheck(H, null, MUTCHK_FORCED) //Ensures species that get powers by the species proc handle_dna keep them
 	H.flavor_text = ""
 	H.dna.UpdateDNA(DNA_ALL)
-	H.sync_organ_dna(1)
+	H.sync_organ_dna(TRUE)
 	H.UpdateAppearance()
