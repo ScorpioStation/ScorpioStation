@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 #-------------------------------------------------------------------------------
 # Build TGUI from the JavaScript code using Node
 #-------------------------------------------------------------------------------
-FROM node:lts-buster-slim as tgui_build
+FROM --platform=linux/amd64 node:lts-buster-slim as tgui_build
 
 #
 # Build tgui -> tgui.bundle.css, tgui.bundle.js

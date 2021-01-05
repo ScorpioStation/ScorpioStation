@@ -1,8 +1,9 @@
 #!/bin/bash
 GIT_HASH="$(git log | head -1 | awk -e '{print $2}' | head -c 12)"
-docker build \
+docker buildx build \
 --build-arg BYOND_MAP_FILE=_maps/map_files/emerald/emerald.dmm \
 --build-arg MINIMAP_DST_FILE=/scorpio/icons/_nanomaps/Emerald_nanomap_z1.png \
 --build-arg MINIMAP_SRC_FILE=/scorpio/data/minimaps/emerald-1.png \
+--platform linux/386 \
 -t scorpio:${GIT_HASH} -f Dockerfile .
 docker image tag scorpio:${GIT_HASH} scorpio:latest
