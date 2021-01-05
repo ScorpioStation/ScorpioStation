@@ -1,3 +1,5 @@
+USE `scorpio`;
+
 -- Removes player poll tables and old feedback table
 DROP TABLE `feedback`;
 DROP TABLE `poll_option`;
