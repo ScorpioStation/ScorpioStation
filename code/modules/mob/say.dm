@@ -179,6 +179,13 @@
 		if(i + 1 > length(message))
 			. += copytext(message, last_index)
 
+/mob/proc/identify_language(message)
+	var/list/prefix_locations = find_valid_prefixes(message)
+	for(var/i in 1 to length(prefix_locations))
+		var/current = prefix_locations[i]
+		var/lname = current[1]	//The name of the Language the message was spoken in
+		return lname
+
 // this returns a structured message with language sections
 // list(/datum/multilingual_say_piece(common, "hi"), /datum/multilingual_say_piece(farwa, "squik"), /datum/multilingual_say_piece(common, "meow!"))
 /mob/proc/parse_languages(message)

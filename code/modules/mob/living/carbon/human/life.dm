@@ -170,7 +170,7 @@
 					emote("drool")
 
 /mob/living/carbon/human/handle_mutations_and_radiation()
-	for(var/datum/dna/gene/gene in GLOB.dna_genes)
+	for(var/datum/dna/gene/gene in GLOB.all_dna_genes)
 		if(!gene.block)
 			continue
 		if(gene.is_active(src))

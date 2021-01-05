@@ -61,7 +61,7 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 /mob/living/get_default_language()
 	return default_language
 
-/mob/living/proc/handle_speech_problems(list/message_pieces, var/verb)
+/mob/living/proc/handle_speech_problems(list/message_pieces, var/verb, var/datum/language/spoken_lang)
 	var/robot = ismachineperson(src)
 	for(var/datum/multilingual_say_piece/S in message_pieces)
 		if(S.speaking && S.speaking.flags & NO_STUTTER)
@@ -79,11 +79,24 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 			verb = "slurs"
 
 		if(stuttering)
-			if(robot)
-				S.message = robostutter(S.message)
-			else
-				S.message = stutter(S.message)
-			verb = "stammers"
+			var/damagestutter = FALSE
+			if(stuttering > 10)
+				damagestutter = TRUE
+			if(dna.GetDNAState(GLOB.rp_stutterblock, DNA_RP) && !damagestutter)
+				for(var/i in 1 to dna.stutter_langs.len)
+					var/datum/language/match_lang = dna.stutter_langs[i]
+					if((spoken_lang != null) && (spoken_lang.name == match_lang.name))	//Compare the Spoken Language against the Stutter Languages
+						if(robot)
+							S.message = robostutter(S.message)
+						else
+							S.message = stutter(S.message)
+						verb = "stutters"
+			else if(damagestutter)
+				if(robot)
+					S.message = robostutter(S.message)
+				else
+					S.message = stutter(S.message)
+				verb = "stammers"
 
 		if(cultslurring)
 			S.message = cultslur(S.message)
@@ -170,7 +183,8 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 			verb = "mumbles"
 
 	if(!ignore_speech_problems)
-		var/list/hsp = handle_speech_problems(message_pieces, verb)
+		var/spoken_lang = identify_language(message)
+		var/list/hsp = handle_speech_problems(message_pieces, verb, spoken_lang)
 		verb = hsp["verb"]
 
 	// Do this so it gets logged for all types of communication
@@ -385,7 +399,8 @@ GLOBAL_LIST_EMPTY(channel_to_radio_key)
 	else
 		not_heard = "[verb] something"
 
-	var/list/hsp = handle_speech_problems(message_pieces, verb)
+	var/spoken_lang = identify_language(message)
+	var/list/hsp = handle_speech_problems(message_pieces, verb, spoken_lang)
 	verb = hsp["verb"]
 	if(verb == "yells loudly")
 		verb = "slurs emphatically"
