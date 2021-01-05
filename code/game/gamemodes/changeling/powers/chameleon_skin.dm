@@ -23,7 +23,7 @@
 
 /datum/action/changeling/chameleon_skin/Remove(mob/user)
 	var/mob/living/carbon/C = user
-	if(C.dna.GetDNAState(GLOB.chameleonblock), DNA_SE)
+	if(C.dna.GetDNAState(GLOB.chameleonblock, DNA_SE))
 		C.dna.SetDNAState(GLOB.chameleonblock, FALSE, DNA_SE)
 		genemutcheck(C, GLOB.chameleonblock, null, MUTCHK_FORCED)
 	..()

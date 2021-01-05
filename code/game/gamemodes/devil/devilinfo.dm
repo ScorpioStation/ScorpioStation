@@ -476,7 +476,7 @@ GLOBAL_LIST_INIT(lawlorify, list (
 			H.set_species(humanform.species)
 			H.dna = humanform.Clone()
 
-			H.UpdateDNA(DNA_ALL)
+			H.dna.UpdateDNA(DNA_ALL)
 
 			H.sync_organ_dna(1) // It's literally a fresh body as you can get, so all organs properly belong to it
 			H.UpdateAppearance()

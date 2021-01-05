@@ -41,7 +41,7 @@
 	if(!M || !M.dna)
 		return
 	M.dna.check_integrity()
-	M.dna.SetUIValue(rand(1, DNA_UI_LENGTH), rand(1, 4095))
+	M.dna.SetDNAValue(rand(1, DNA_UI_LENGTH), rand(1, 4095), DNA_UI)
 
 // Scramble UI or SE.
 /proc/scramble(UI, mob/M, prob)
@@ -51,7 +51,7 @@
 	if(UI)
 		for(var/i = 1, i <= DNA_UI_LENGTH - 1, i++)
 			if(prob(prob))
-				M.dna.SetUIValue(i, rand(1, 4095), 1)
+				M.dna.SetDNAValue(i, rand(1, 4095), DNA_UI, TRUE)
 		M.dna.UpdateDNA(DNA_UI)
 		M.UpdateAppearance()
 
