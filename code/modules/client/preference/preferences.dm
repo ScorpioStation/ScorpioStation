@@ -2260,52 +2260,52 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	character.original_eye_color = e_colour
 
 	if(disabilities & DISABILITY_FLAG_FAT)
-		character.dna.SetSEState(GLOB.fatblock, TRUE, TRUE)
+		character.dna.SetDNAState(GLOB.fatblock, TRUE, DNA_SE, TRUE)
 		character.overeatduration = 600
 		character.dna.default_blocks.Add(GLOB.fatblock)
 
 	if(disabilities & DISABILITY_FLAG_NEARSIGHTED)
-		character.dna.SetSEState(GLOB.glassesblock, TRUE, TRUE)
+		character.dna.SetDNAState(GLOB.glassesblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.glassesblock)
 
 	if(disabilities & DISABILITY_FLAG_BLIND)
-		character.dna.SetSEState(GLOB.blindblock, TRUE, TRUE)
+		character.dna.SetDNAState(GLOB.blindblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.blindblock)
 
 	if(disabilities & DISABILITY_FLAG_DEAF)
-		character.dna.SetSEState(GLOB.deafblock, TRUE, TRUE)
+		character.dna.SetDNAState(GLOB.deafblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.deafblock)
 
 	if(disabilities & DISABILITY_FLAG_COLOURBLIND)
-		character.dna.SetSEState(GLOB.colourblindblock, TRUE, TRUE)
+		character.dna.SetDNAState(GLOB.colourblindblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.colourblindblock)
 
 	if(disabilities & DISABILITY_FLAG_MUTE)
-		character.dna.SetSEState(GLOB.muteblock, TRUE, TRUE)
+		character.dna.SetDNAState(GLOB.muteblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.muteblock)
 
 	if(disabilities & DISABILITY_FLAG_NERVOUS)
-		character.dna.SetSEState(GLOB.nervousblock, TRUE, TRUE)
+		character.dna.SetDNAState(GLOB.nervousblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.nervousblock)
 
 	if(disabilities & DISABILITY_FLAG_SWEDISH)
-		character.dna.SetSEState(GLOB.swedeblock, TRUE, TRUE)
+		character.dna.SetDNAState(GLOB.swedeblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.swedeblock)
 
 	if(disabilities & DISABILITY_FLAG_CHAV)
-		character.dna.SetSEState(GLOB.chavblock, TRUE, TRUE)
+		character.dna.SetDNAState(GLOB.chavblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.chavblock)
 
 	if(disabilities & DISABILITY_FLAG_LISP)
-		character.dna.SetSEState(GLOB.lispblock, TRUE, TRUE)
+		character.dna.SetDNAState(GLOB.lispblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.lispblock)
 
 	if(disabilities & DISABILITY_FLAG_DIZZY)
-		character.dna.SetSEState(GLOB.dizzyblock, TRUE, TRUE)
+		character.dna.SetDNAState(GLOB.dizzyblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.dizzyblock)
 
 	if(disabilities & DISABILITY_FLAG_WINGDINGS && (CAN_WINGDINGS in character.dna.species.species_traits))
-		character.dna.SetSEState(GLOB.wingdingsblock, TRUE, TRUE)
+		character.dna.SetDNAState(GLOB.wingdingsblock, TRUE, DNA_SE, TRUE)
 		character.dna.default_blocks.Add(GLOB.wingdingsblock)
 
 	character.dna.species.handle_dna(character)

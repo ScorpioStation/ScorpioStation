@@ -149,7 +149,7 @@
 					H.dna.SetSEState(voice_mutation, FALSE)
 					genemutcheck(H, voice_mutation, null, MUTCHK_FORCED)
 				else
-					H.dna.SetSEState(voice_mutation, TRUE)
+					H.dna.SetDNAState(voice_mutation, DNA_SE, TRUE)
 					genemutcheck(H, voice_mutation, null, MUTCHK_FORCED)
 
 			if(voice_choice)

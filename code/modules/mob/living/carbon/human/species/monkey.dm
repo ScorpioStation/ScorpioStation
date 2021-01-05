@@ -58,7 +58,7 @@
 /datum/species/monkey/handle_dna(mob/living/carbon/human/H, remove)
 	..()
 	if(!remove)
-		H.dna.SetSEState(GLOB.monkeyblock, TRUE)
+		H.dna.SetDNAState(GLOB.monkeyblock, DNA_SE, TRUE)
 		genemutcheck(H, GLOB.monkeyblock, null, MUTCHK_FORCED)
 
 /datum/species/monkey/tajaran

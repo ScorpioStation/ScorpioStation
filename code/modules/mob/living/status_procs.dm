@@ -543,7 +543,7 @@
 
 /mob/living/proc/CureIfHasDisability(block)
 	if(dna && dna.GetSEState(block))
-		dna.SetSEState(block, 0, 1) //Fix the gene
+		dna.SetDNAState(block, FALSE, DNA_SE, TRUE) //Fix the gene
 		genemutcheck(src, block,null, MUTCHK_FORCED)
 		dna.UpdateDNA(DNA_SE)
 

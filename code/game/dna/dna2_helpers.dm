@@ -26,7 +26,7 @@
 		return
 	M.dna.check_integrity()
 	var/block = pick(GLOB.bad_blocks)
-	M.dna.SetSEState(block, 1)
+	M.dna.SetDNAState(block, DNA_SE, TRUE)
 
 // Give Random Good Mutation to M
 /proc/randmutg(mob/living/M)
@@ -34,7 +34,7 @@
 		return
 	M.dna.check_integrity()
 	var/block = pick(GLOB.good_blocks)
-	M.dna.SetSEState(block, 1)
+	M.dna.SetDNAState(block, DNA_SE, TRUE)
 
 // Random Appearance Mutation
 /proc/randmuti(mob/living/M)

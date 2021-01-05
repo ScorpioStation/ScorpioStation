@@ -825,7 +825,7 @@
 	if(needs_update)
 		for(var/block = 1; block<=DNA_SE_LENGTH; block++)
 			if(!(block in M.dna.default_blocks))
-				M.dna.SetSEState(block, FALSE, TRUE)
+				M.dna.SetDNAState(block, FALSE, DNA_SE, TRUE)
 				genemutcheck(M, block, null, MUTCHK_FORCED)
 		M.dna.UpdateDNA(DNA_SE)
 
