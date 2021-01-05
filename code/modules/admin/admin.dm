@@ -224,7 +224,7 @@ GLOBAL_VAR_INIT(nologevent, 0)
 				for(var/block=1;block<=DNA_SE_LENGTH;block++)
 					if(((block-1)%5)==0)
 						body += "</tr><tr><th>[block-1]</th>"
-					bname = GLOB.assigned_blocks[block]
+					bname = GLOB.assigned_SE_blocks[block]
 					body += "<td>"
 					if(bname)
 						var/bstate=M.dna.GetDNAState(block, DNA_SE)

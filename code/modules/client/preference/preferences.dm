@@ -467,7 +467,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			dat += "<b>Deadchat Anonymity:</b> <a href='?_src_=prefs;preference=ghost_anonsay'><b>[toggles2 & PREFTOGGLE_2_ANONDCHAT ? "Anonymous" : "Not Anonymous"]</b></a><br>"
 			if(user.client.donator_level > 0)
 				dat += "<b>Donator Publicity:</b> <a href='?_src_=prefs;preference=donor_public'><b>[(toggles & PREFTOGGLE_DONATOR_PUBLIC) ? "Public" : "Hidden"]</b></a><br>"
-			dat += "<b>Fancy NanoUI:</b> <a href='?_src_=prefs;preference=nanoui'>[(toggles2 & PREFTOGGLE_2_FANCYUI) ? "Yes" : "No"]</a><br>"
+			dat += "<b>Fancy TGUI:</b> <a href='?_src_=prefs;preference=tgui'>[(toggles2 & PREFTOGGLE_2_FANCYUI) ? "Yes" : "No"]</a><br>"
 			dat += "<b>FPS:</b>	 <a href='?_src_=prefs;preference=clientfps;task=input'>[clientfps]</a><br>"
 			dat += "<b>Ghost Ears:</b> <a href='?_src_=prefs;preference=ghost_ears'><b>[(toggles & PREFTOGGLE_CHAT_GHOSTEARS) ? "All Speech" : "Nearest Creatures"]</b></a><br>"
 			dat += "<b>Ghost Radio:</b> <a href='?_src_=prefs;preference=ghost_radio'><b>[(toggles & PREFTOGGLE_CHAT_GHOSTRADIO) ? "All Chatter" : "Nearest Speakers"]</b></a><br>"
@@ -2028,7 +2028,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				if("see_chat_non_mob")
 					see_chat_non_mob = !see_chat_non_mob
 
-				if("nanoui")
+				if("tgui")
 					toggles2 ^= PREFTOGGLE_2_FANCYUI
 
 				if("ghost_att_anim")
@@ -2342,16 +2342,18 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 /datum/preferences/proc/open_load_dialog(mob/user)
 
-	var/DBQuery/query = GLOB.dbcon.NewQuery("SELECT slot,real_name FROM [format_table_name("characters")] WHERE ckey='[user.ckey]' ORDER BY slot")
+	var/datum/db_query/query = SSdbcore.NewQuery("SELECT slot, real_name FROM [format_table_name("characters")] WHERE ckey=:ckey ORDER BY slot", list(
+		"ckey" = user.ckey
+	))
 	var/list/slotnames[max_save_slots]
 
-	if(!query.Execute())
-		var/err = query.ErrorMsg()
-		log_game("SQL ERROR during character slot loading. Error : \[[err]\]\n")
-		message_admins("SQL ERROR during character slot loading. Error : \[[err]\]\n")
+	if(!query.warn_execute())
+		qdel(query)
 		return
+
 	while(query.NextRow())
 		slotnames[text2num(query.item[1])] = query.item[2]
+	qdel(query)
 
 	var/dat = "<body>"
 	dat += "<tt><center>"

@@ -4,13 +4,16 @@
 * @author N3X15 <nexisentertainment@gmail.com>
 */
 
-GLOBAL_LIST_INIT(dna_activity_bounds, new(DNA_SE_LENGTH))
-GLOBAL_LIST_INIT(assigned_gene_blocks, new(DNA_SE_LENGTH))
 
 // Used to determine what each block means (admin hax and species stuff on /vg/, mostly)
-GLOBAL_LIST_INIT(assigned_blocks, new(DNA_SE_LENGTH))
+GLOBAL_LIST_INIT(dna_activity_bounds, new(DNA_SE_LENGTH))
 
-GLOBAL_LIST_EMPTY(dna_genes)
+GLOBAL_LIST_INIT(assigned_SE_blocks, new(DNA_SE_LENGTH))	// Used to determine what each block means (admin hax and species stuff on /vg/, mostly)
+GLOBAL_LIST_INIT(randomized_SE_blocks, new(DNA_SE_LENGTH))	//List of SE gene blocks randomly-assigned per game-round via 'setupgame.dm'
+
+GLOBAL_LIST_EMPTY(struc_enzy_genes)		//Structural Enzyme Genes
+GLOBAL_LIST_EMPTY(roleplay_genes)		//Roleplaying Preferences Genes
+GLOBAL_LIST_EMPTY(all_dna_genes)		//All Genes
 
 GLOBAL_LIST_EMPTY(good_blocks)
 GLOBAL_LIST_EMPTY(bad_blocks)
@@ -39,8 +42,9 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 	var/list/RP[DNA_RP_LENGTH]
 
 	// From old dna.
-	var/blood_type = "A+"  // Should probably change to an integer => string map but I'm lazy.
-	var/real_name          // Stores the real name of the person who originally got this dna datum. Used primarily for changelings,
+	var/blood_type = "A+"				// Should probably change to an integer => string map but I'm lazy. //Voxxy thinks is fine for now, past commenter, but maybe can help you?
+	var/real_name						// Stores the real name of the person who originally got this dna datum. Used primarily for changelings,
+	var/list/stutter_langs = list()		//List of languages a character is set to trigger an RP stutter on.
 
 	var/datum/species/species = new /datum/species/human //The type of mutant race the player is if applicable (i.e. potato-man)
 	var/list/default_blocks = list() //list of all blocks toggled at roundstart
