@@ -55,30 +55,30 @@ the same goes for Remove(). if you override Remove(), call parent or else your p
 	changeling.chem_charges -= chemical_cost
 	changeling.geneticdamage += genetic_damage
 
-//Fairly important to remember to return TRUE on success >.<
+//Fairly important to remember to return 1 on success >.<
 /datum/action/changeling/proc/can_sting(var/mob/user, var/mob/target)
 	if(!ishuman(user)) //typecast everything from mob to carbon from this point onwards
-		return FALSE
+		return 0
 	if(req_human && (!ishuman(user) || issmall(user)))
 		to_chat(user, "<span class='warning'>We cannot do that in this form!</span>")
-		return FALSE
+		return 0
 	var/datum/changeling/c = user.mind.changeling
 	if(c.chem_charges<chemical_cost)
 		to_chat(user, "<span class='warning'>We require at least [chemical_cost] unit\s of chemicals to do that!</span>")
-		return FALSE
+		return 0
 	if(c.absorbedcount<req_dna)
 		to_chat(user, "<span class='warning'>We require at least [req_dna] sample\s of compatible DNA.</span>")
-		return FALSE
+		return 0
 	if(req_stat < user.stat)
 		to_chat(user, "<span class='warning'>We are incapacitated.</span>")
-		return FALSE
+		return 0
 	if((user.status_flags & FAKEDEATH) && name!="Regenerate")
 		to_chat(user, "<span class='warning'>We are incapacitated.</span>")
-		return FALSE
+		return 0
 	if(c.geneticdamage > max_genetic_damage)
 		to_chat(user, "<span class='warning'>Our genomes are still reassembling. We need time to recover first.</span>")
-		return FALSE
-	return TRUE
+		return 0
+	return 1
 
 //used in /mob/Stat()
 /datum/action/changeling/proc/can_be_used_by(var/mob/user)
