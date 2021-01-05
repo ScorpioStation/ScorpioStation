@@ -46,12 +46,12 @@ GLOBAL_LIST_EMPTY(limb_icon_cache)
 /obj/item/organ/external/proc/sync_colour_to_dna()
 	if(is_robotic())
 		return
-	if(!isnull(dna.GetUIValue(DNA_UI_SKIN_TONE)) && ((dna.species.bodyflags & HAS_SKIN_TONE) || (dna.species.bodyflags & HAS_ICON_SKIN_TONE)))
+	if(!isnull(dna.GetDNAValue(DNA_UI_SKIN_TONE, DNA_UI)) && ((dna.species.bodyflags & HAS_SKIN_TONE) || (dna.species.bodyflags & HAS_ICON_SKIN_TONE)))
 		s_col = null
-		s_tone = dna.GetUIValue(DNA_UI_SKIN_TONE)
+		s_tone = dna.GetDNAValue(DNA_UI_SKIN_TONE, DNA_UI)
 	if(dna.species.bodyflags & HAS_SKIN_COLOR)
 		s_tone = null
-		s_col = rgb(dna.GetUIValue(DNA_UI_SKIN_R), dna.GetUIValue(DNA_UI_SKIN_G), dna.GetUIValue(DNA_UI_SKIN_B))
+		s_col = rgb(dna.GetDNAValue(DNA_UI_SKIN_R, DNA_UI), dna.GetDNAValue(DNA_UI_SKIN_G, DNA_UI), dna.GetDNAValue(DNA_UI_SKIN_B, DNA_UI))
 
 /obj/item/organ/external/head/sync_colour_to_human(var/mob/living/carbon/human/H)
 	..()
