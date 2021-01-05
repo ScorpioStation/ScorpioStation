@@ -2,7 +2,6 @@
 * DNA 2: The Spaghetti Strikes Back
 *
 * @author N3X15 <nexisentertainment@gmail.com>
-* @co-author Iren <uuuh I don't give out my email, find me on Discord as Iren? ;--; all I did was combine the procs?? serious shout out to N3X15! <3 >
 */
 
 GLOBAL_LIST_INIT(dna_activity_bounds, new(DNA_SE_LENGTH))

@@ -100,7 +100,7 @@
 		target.dna.SetDNAState(GLOB.hulkblock, DNA_SE, TRUE)
 		genemutcheck(target, GLOB.hulkblock, null, MUTCHK_FORCED)
 		spawn(duration)
-			target.dna.SetSEState(GLOB.hulkblock, FALSE)
+			target.dna.SetDNAState(GLOB.hulkblock, FALSE, DNA_SE)
 			genemutcheck(target, GLOB.hulkblock, null, MUTCHK_FORCED)
 	..()
 

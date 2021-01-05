@@ -41,30 +41,30 @@
 /obj/item/dnainjector/proc/GetState(selblock = 0)
 	var/real_block = GetRealBlock(selblock)
 	if(buf.types & DNA2_BUF_SE)
-		return buf.dna.GetSEState(real_block)
+		return buf.dna.GetDNAState(real_block, DNA_SE)
 	else
-		return buf.dna.GetUIState(real_block)
+		return buf.dna.GetDNAState(real_block, DNA_UI)
 
 /obj/item/dnainjector/proc/SetState(on, selblock = 0)
 	var/real_block = GetRealBlock(selblock)
 	if(buf.types & DNA2_BUF_SE)
-		return buf.dna.SetSEState(real_block,on)
+		return buf.dna.SetDNAState(real_block, on, DNA_SE)
 	else
-		return buf.dna.SetUIState(real_block,on)
+		return buf.dna.SetDNAState(real_block, on, DNA_UI)
 
 /obj/item/dnainjector/proc/GetValue(selblock = 0)
 	var/real_block = GetRealBlock(selblock)
 	if(buf.types & DNA2_BUF_SE)
-		return buf.dna.GetSEValue(real_block)
+		return buf.dna.GetDNAValue(real_block, DNA_SE)
 	else
-		return buf.dna.GetUIValue(real_block)
+		return buf.dna.GetDNAValue(real_block, DNA_UI)
 
 /obj/item/dnainjector/proc/SetValue(val, selblock = 0)
 	var/real_block = GetRealBlock(selblock)
 	if(buf.types & DNA2_BUF_SE)
-		return buf.dna.SetSEValue(real_block,val)
+		return buf.dna.SetDNAValue(real_block, val, DNA_SE)
 	else
-		return buf.dna.SetUIValue(real_block,val)
+		return buf.dna.SetDNAValue(real_block, val, DNA_UI)
 
 /obj/item/dnainjector/proc/inject(mob/living/M, mob/user)
 	if(used)

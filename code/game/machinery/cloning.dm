@@ -150,7 +150,7 @@ GLOBAL_LIST_INIT(cloner_biomass_items, list(\
 	if(buf.dna.UI.len != DNA_UI_LENGTH) //If there's a disparity b/w the dna UI string lengths, 0-fill the extra blocks in this UI.
 		for(var/i in buf.dna.UI.len to DNA_UI_LENGTH)
 			buf.dna.UI += 0x000
-	buf.dna.ResetSE()
+	buf.dna.ResetDNA(DNA_SE)
 	buf.dna.UpdateDNA(DNA_UI)
 
 /obj/item/disk/data/monkey

@@ -176,7 +176,7 @@
 		return
 	if((HULK in M.mutations) && M.health <= 0)
 		M.mutations.Remove(HULK)
-		M.dna.SetSEState(GLOB.hulkblock,0)
+		M.dna.SetDNAState(GLOB.hulkblock, FALSE, DNA_SE)
 		genemutcheck(M, GLOB.hulkblock,null,MUTCHK_FORCED)
 		M.update_mutations()		//update our mutation overlays
 		M.update_body()

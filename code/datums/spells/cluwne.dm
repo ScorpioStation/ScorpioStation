@@ -57,12 +57,12 @@
 	else
 		mutations.Remove(CLUMSY)
 		mutations.Remove(GLOB.comicblock)
-		dna.SetSEState(GLOB.clumsyblock,0)
-		dna.SetSEState(GLOB.comicblock,0)
+		dna.SetDNAState(GLOB.clumsyblock, FALSE, DNA_SE)
+		dna.SetDNAState(GLOB.comicblock, FALSE, DNA_SE)
 		genemutcheck(src, GLOB.clumsyblock, null, MUTCHK_FORCED)
 		genemutcheck(src, GLOB.comicblock, null, MUTCHK_FORCED)
 	mutations.Remove(NERVOUS)
-	dna.SetSEState(GLOB.nervousblock, FALSE)
+	dna.SetDNAState(GLOB.nervousblock, FALSE, DNA_SE)
 	genemutcheck(src, GLOB.nervousblock, null, MUTCHK_FORCED)
 
 	var/obj/item/clothing/under/U = w_uniform

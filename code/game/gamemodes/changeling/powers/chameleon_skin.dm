@@ -11,8 +11,8 @@
 	var/mob/living/carbon/human/H = user //SHOULD always be human, because req_human = 1
 	if(!istype(H)) // req_human could be done in can_sting stuff.
 		return
-	if(H.dna.GetSEState(GLOB.chameleonblock))
-		H.dna.SetSEState(GLOB.chameleonblock, FALSE)
+	if(H.dna.GetDNAState(GLOB.chameleonblock, DNA_SE))
+		H.dna.SetDNAState(GLOB.chameleonblock, FALSE, DNA_SE)
 		genemutcheck(H, GLOB.chameleonblock, null, MUTCHK_FORCED)
 	else
 		H.dna.SetDNAState(GLOB.chameleonblock, DNA_SE, TRUE)
@@ -23,7 +23,7 @@
 
 /datum/action/changeling/chameleon_skin/Remove(mob/user)
 	var/mob/living/carbon/C = user
-	if(C.dna.GetSEState(GLOB.chameleonblock))
-		C.dna.SetSEState(GLOB.chameleonblock, FALSE)
+	if(C.dna.GetDNAState(GLOB.chameleonblock), DNA_SE)
+		C.dna.SetDNAState(GLOB.chameleonblock, FALSE, DNA_SE)
 		genemutcheck(C, GLOB.chameleonblock, null, MUTCHK_FORCED)
 	..()
