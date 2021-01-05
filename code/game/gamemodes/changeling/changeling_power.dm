@@ -98,5 +98,5 @@ the same goes for Remove(). if you override Remove(), call parent or else your p
 	domutcheck(H, null, MUTCHK_FORCED) //Ensures species that get powers by the species proc handle_dna keep them
 	H.flavor_text = ""
 	H.dna.UpdateDNA(DNA_ALL)
-	H.sync_organ_dna(1)
+	H.sync_organ_dna(TRUE)
 	H.UpdateAppearance()
