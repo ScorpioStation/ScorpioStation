@@ -52,14 +52,14 @@
 		for(var/i = 1, i <= DNA_UI_LENGTH - 1, i++)
 			if(prob(prob))
 				M.dna.SetUIValue(i, rand(1, 4095), 1)
-		M.dna.UpdateUI()
+		M.dna.UpdateDNA(DNA_UI)
 		M.UpdateAppearance()
 
 	else
 		for(var/i = 1, i <= DNA_SE_LENGTH - 1, i++)
 			if(prob(prob))
 				M.dna.SetSEValue(i, rand(1, 4095), 1)
-		M.dna.UpdateSE()
+		M.dna.UpdateDNA(DNA_SE)
 		domutcheck(M, null)
 
 // I haven't yet figured out what the fuck this is supposed to do.
@@ -131,7 +131,7 @@
 	if(istype(src, /mob/living/carbon/human)) // WHY?!
 		if(UI!=null)
 			dna.UI = UI
-			dna.UpdateUI()
+			dna.UpdateDNA(DNA_UI)
 		dna.check_integrity()
 		var/mob/living/carbon/human/H = src
 		var/obj/item/organ/external/head/head_organ = H.get_organ("head")

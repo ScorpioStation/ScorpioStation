@@ -32,8 +32,7 @@
 	user.real_name = chosen_dna.real_name
 	domutcheck(user,null,MUTCHK_FORCED)
 	user.flavor_text = ""
-	user.dna.UpdateSE()
-	user.dna.UpdateUI()
+	user.dna.UpdateDNA(DNA_ALL)
 	user.sync_organ_dna(1)
 	user.UpdateAppearance()
 

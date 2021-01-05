@@ -86,7 +86,7 @@
 			if(buf.types & DNA2_BUF_UI)
 				if(!block) //isolated block?
 					M.dna.UI = buf.dna.UI.Copy()
-					M.dna.UpdateUI()
+					M.dna.UpdateDNA(DNA_UI)
 					M.UpdateAppearance()
 					if(buf.types & DNA2_BUF_UE) //unique enzymes? yes
 
@@ -100,7 +100,7 @@
 			if(buf.types & DNA2_BUF_SE)
 				if(!block) //isolated block?
 					M.dna.SE = buf.dna.SE.Copy()
-					M.dna.UpdateSE()
+					M.dna.UpdateDNA(DNA_SE)
 				else
 					M.dna.SetSEValue(block,src.GetValue())
 				domutcheck(M, null, forcedmutation ? MUTCHK_FORCED : 0)

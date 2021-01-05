@@ -827,7 +827,7 @@
 			if(!(block in M.dna.default_blocks))
 				M.dna.SetSEState(block, FALSE, TRUE)
 				genemutcheck(M, block, null, MUTCHK_FORCED)
-		M.dna.UpdateSE()
+		M.dna.UpdateDNA(DNA_SE)
 
 		M.dna.struc_enzymes = M.dna.struc_enzymes_original
 

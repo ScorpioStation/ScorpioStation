@@ -2311,7 +2311,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	character.dna.species.handle_dna(character)
 
 	if(character.dna.dirtySE)
-		character.dna.UpdateSE()
+		character.dna.UpdateDNA(DNA_SE)
 	domutcheck(character, null, MUTCHK_FORCED) //'Activates' all the above disabilities.
 
 	character.dna.ready_dna(character, flatten_SE = 0)
