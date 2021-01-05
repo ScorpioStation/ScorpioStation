@@ -12,6 +12,14 @@
 #define DNA_HARDER_BOUNDS  list(1,3049,3050,4095)
 #define DNA_HARD_BOUNDS    list(1,3490,3500,4095)
 
+//DNA Types
+#define DNA_UI	0
+#define DNA_SE	1
+#define DNA_RP	2
+#define DNA_ALL 3
+
+#define DNA_RP_LENGTH 3
+
 // UI Indices (can change to mutblock style, if desired)
 #define DNA_UI_HAIR_R		1
 #define DNA_UI_HAIR_G		2
