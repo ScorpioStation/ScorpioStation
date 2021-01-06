@@ -404,7 +404,7 @@
 /mob/living/carbon/update_damage_hud()
 	if(!client)
 		return
-	if(stat == (UNCONSCIOUS || ANESTHETIZED) && health <= HEALTH_THRESHOLD_CRIT)
+	if(stat == (UNCONSCIOUS | ANESTHETIZED) && health <= HEALTH_THRESHOLD_CRIT)
 		if(check_death_method())
 			var/severity = 0
 			switch(health)

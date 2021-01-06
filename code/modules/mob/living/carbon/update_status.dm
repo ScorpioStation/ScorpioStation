@@ -11,7 +11,7 @@
 				KnockOut(TRUE, anesthetized)
 				create_debug_log("fell unconscious, trigger reason: [reason]")
 		else
-			if(stat == (UNCONSCIOUS || ANESTHETIZED))
+			if(stat == (UNCONSCIOUS | ANESTHETIZED))
 				WakeUp()
 				create_debug_log("woke up, trigger reason: [reason]")
 	update_damage_hud()

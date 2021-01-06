@@ -496,7 +496,7 @@
 	surgeries.Cut() //End all surgeries.
 	if(stat == DEAD)
 		update_revive()
-	else if(stat == (UNCONSCIOUS || ANESTHETIZED))
+	else if(stat == (UNCONSCIOUS | ANESTHETIZED))
 		WakeUp()
 
 	update_fire()

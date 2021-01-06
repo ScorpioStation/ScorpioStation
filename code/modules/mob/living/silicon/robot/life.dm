@@ -57,7 +57,7 @@
 	if(stat != CONSCIOUS)
 		uneq_all()
 
-	if(!is_component_functioning("radio") || stat == (UNCONSCIOUS || ANESTHETIZED))
+	if(!is_component_functioning("radio") || stat == (UNCONSCIOUS | ANESTHETIZED))
 		radio.on = 0
 	else
 		radio.on = 1

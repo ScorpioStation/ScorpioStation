@@ -4,9 +4,8 @@
 	if(stat == DEAD)
 		log_runtime(EXCEPTION("KnockOut called on a dead mob."), src)
 		return FALSE
-	else if(stat == (UNCONSCIOUS || ANESTHETIZED))
+	else if(stat == (UNCONSCIOUS | ANESTHETIZED))
 		return FALSE
-
 	if(anesthetized)
 		stat = ANESTHETIZED
 		create_attack_log("<font color='red'>Anesthetized at [atom_loc_line(get_turf(src))]</font>")
