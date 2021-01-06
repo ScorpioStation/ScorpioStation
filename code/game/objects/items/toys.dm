@@ -223,19 +223,19 @@
 	if(!wielded)
 		return
 	if(HULK in user.mutations)
-		to_chat(user, "<span class='warning'>You grip the [name] too hard and accidentally close it!</span>")
+		to_chat(user, "<span class='warning'>You grip \the [name] too hard and accidentally close it!</span>")
 		unwield()
 		return
 	if((CLUMSY in user.mutations) && prob(40))
-		to_chat(user, "<span class='warning'>You twirl around a bit before losing your balance and impaling yourself on [name]. Oof! Right through the armpit!</span>")
+		to_chat(user, "<span class='warning'>You twirl around a bit before losing your balance and impaling yourself on \the [name]. Oof! Right through the armpit!</span>")
 		return			//Note: I want this to knock them down or do stamina damage, but it IS just a toy x3
 	if(prob(50))
 		INVOKE_ASYNC(src, .proc/jedi_spin, user)
 	var/mob/U = user	//Recast as lower class to match class of mob/target
 	if(target == U)
-		to_chat(user, "<span class='warning'>You hit yourself with [name]! Be careful! This toy is dangerous!</span>")
+		to_chat(user, "<span class='warning'>You hit yourself with \the [name]! Be careful! This toy is dangerous!</span>")
 	else
-		to_chat(target, "<span class='warning'>You thought you were the chosen one. But [user] had the high ground and they got you good with [name].</span>")
+		to_chat(target, "<span class='warning'>You thought you were the chosen one. But [user] had the high ground and they got you good with \the [name].</span>")
 	return
 
 /obj/item/toy/katana
