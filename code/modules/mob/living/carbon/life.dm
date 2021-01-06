@@ -320,10 +320,13 @@
 		AdjustDizzy(-restingpwr)
 
 	if(drowsyness)
-		AdjustDrowsy(-restingpwr)
+		var/ane = FALSE
+		if(anesthetized)
+			ane = TRUE
+		AdjustDrowsy(-restingpwr, ane)
 		EyeBlurry(2)
 		if(prob(5))
-			AdjustSleeping(1)
+			AdjustSleeping(1, 0, INFINITY, 1, FALSE, ane)
 			Paralyse(5)
 
 	if(confused)
@@ -401,7 +404,7 @@
 /mob/living/carbon/update_damage_hud()
 	if(!client)
 		return
-	if(stat == UNCONSCIOUS && health <= HEALTH_THRESHOLD_CRIT)
+	if(stat == (UNCONSCIOUS || ANESTHETIZED) && health <= HEALTH_THRESHOLD_CRIT)
 		if(check_death_method())
 			var/severity = 0
 			switch(health)

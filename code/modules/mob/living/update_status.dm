@@ -123,6 +123,8 @@
 			SetParalysis(paralysis)
 		if("sleeping")
 			SetSleeping(sleeping)
+		if("anesthetized")
+			SetSleeping(anesthetized)
 		if("eye_blind")
 			SetEyeBlind(eye_blind)
 		if("eye_blurry")

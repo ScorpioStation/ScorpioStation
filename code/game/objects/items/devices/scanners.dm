@@ -723,6 +723,8 @@ REAGENT SCANNER
 			t1 = "Conscious"
 		if(UNCONSCIOUS)
 			t1 = "Unconscious"
+		if(ANESTHETIZED)
+			t1 = "Anesthetized"
 		else
 			t1 = "*dead*"
 	dat += "[target.health > 50 ? "<font color='blue'>" : "<font color='red'>"]\tHealth %: [target.health], ([t1])</font><br>"

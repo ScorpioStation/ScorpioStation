@@ -58,7 +58,7 @@
 	. = ..()
 	if(real)//So that giant red text about probisci doesn't show up for fake ones
 		switch(stat)
-			if(DEAD,UNCONSCIOUS)
+			if(DEAD,UNCONSCIOUS,ANESTHETIZED)
 				. += "<span class='boldannounce'>[src] is not moving.</span>"
 			if(CONSCIOUS)
 				. += "<span class='boldannounce'>[src] seems to be active!</span>"
@@ -197,7 +197,7 @@
 	icon_state = "[initial(icon_state)]"
 
 /obj/item/clothing/mask/facehugger/proc/GoIdle()
-	if(stat == DEAD || stat == UNCONSCIOUS)
+	if(stat != CONSCIOUS)
 		return
 
 	stat = UNCONSCIOUS

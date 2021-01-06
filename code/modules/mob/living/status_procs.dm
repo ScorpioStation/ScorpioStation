@@ -124,6 +124,7 @@
 	var/stunned = 0
 	var/stuttering = 0
 	var/weakened = 0
+	var/anesthetized = FALSE
 
 // RESTING
 
@@ -170,15 +171,16 @@
 
 // DROWSY
 
-/mob/living/Drowsy(amount)
-	SetDrowsy(max(drowsyness, amount))
+/mob/living/Drowsy(amount, ane = FALSE)
+	SetDrowsy(max(drowsyness, amount), ane)
 
-/mob/living/SetDrowsy(amount)
+/mob/living/SetDrowsy(amount, ane = FALSE)
 	drowsyness = max(amount, 0)
+	anesthetized = ane
 
-/mob/living/AdjustDrowsy(amount, bound_lower = 0, bound_upper = INFINITY)
+/mob/living/AdjustDrowsy(amount, bound_lower = 0, bound_upper = INFINITY, ane = FALSE)
 	var/new_value = directional_bounded_sum(drowsyness, amount, bound_lower, bound_upper)
-	SetDrowsy(new_value)
+	SetDrowsy(new_value, ane)
 
 // DRUNK
 
@@ -324,10 +326,10 @@
 
 // SLEEPING
 
-/mob/living/Sleeping(amount, updating = 1, no_alert = FALSE)
+/mob/living/Sleeping(amount, updating = 1, no_alert = FALSE, ane = FALSE)
 	return SetSleeping(max(sleeping, amount), updating, no_alert)
 
-/mob/living/SetSleeping(amount, updating = 1, no_alert = FALSE)
+/mob/living/SetSleeping(amount, updating = 1, no_alert = FALSE, ane = FALSE)
 	if(frozen) // If the mob has been admin frozen, sleeping should not be changeable
 		return
 	. = STATUS_UPDATE_STAT
@@ -336,13 +338,15 @@
 		. = STATUS_UPDATE_NONE
 	sleeping = max(amount, 0)
 	if(updating)
+		anesthetized = ane
 		update_sleeping_effects(no_alert)
-		update_stat("sleeping")
 		update_canmove()
+		update_stat("sleeping")
 
-/mob/living/AdjustSleeping(amount, bound_lower = 0, bound_upper = INFINITY, updating = 1, no_alert = FALSE)
+
+/mob/living/AdjustSleeping(amount, bound_lower = 0, bound_upper = INFINITY, updating = 1, no_alert = FALSE, ane = FALSE)
 	var/new_value = directional_bounded_sum(sleeping, amount, bound_lower, bound_upper)
-	return SetSleeping(new_value, updating, no_alert)
+	return SetSleeping(new_value, updating, no_alert, ane)
 
 // SLOWED
 

@@ -378,7 +378,7 @@
 
 	if(isliving(held))
 		data["holder"] = held.name
-		data["dead"] = (held.stat > UNCONSCIOUS)
+		data["dead"] = (held.stat == DEAD)
 		data["health"] = held.health
 		data["brute"] = held.getBruteLoss()
 		data["oxy"] = held.getOxyLoss()

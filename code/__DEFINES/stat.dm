@@ -1,7 +1,8 @@
 //mob/var/stat things
-#define CONSCIOUS	0
-#define UNCONSCIOUS	1
-#define DEAD		2
+#define CONSCIOUS		0
+#define UNCONSCIOUS		1
+#define DEAD			2
+#define ANESTHETIZED	3
 
 // TGUI flags
 #define STATUS_INTERACTIVE 2 // GREEN Visability

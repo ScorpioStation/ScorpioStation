@@ -303,6 +303,8 @@
 			holder.icon_state = "hudstat"
 		if(UNCONSCIOUS)
 			holder.icon_state = "hudoffline"
+		if(ANESTHEIZED)
+			holder.icon_state = "hudoffline"
 		else
 			holder.icon_state = "huddead2"
 

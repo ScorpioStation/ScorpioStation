@@ -20,7 +20,7 @@
 				update_headlamp()
 				create_debug_log("fell unconscious, trigger reason: [reason]")
 		else
-			if(stat == UNCONSCIOUS)
+			if(stat == (UNCONSCIOUS || ANESTHETIZED))
 				WakeUp()
 				update_headlamp()
 				create_debug_log("woke up, trigger reason: [reason]")

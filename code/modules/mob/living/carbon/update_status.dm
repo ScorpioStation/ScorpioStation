@@ -8,10 +8,10 @@
 			return
 		if(paralysis || sleeping || (check_death_method() && getOxyLoss() > 50) || (status_flags & FAKEDEATH) || health <= HEALTH_THRESHOLD_CRIT && check_death_method())
 			if(stat == CONSCIOUS)
-				KnockOut()
+				KnockOut(TRUE, anesthetized)
 				create_debug_log("fell unconscious, trigger reason: [reason]")
 		else
-			if(stat == UNCONSCIOUS)
+			if(stat == (UNCONSCIOUS || ANESTHETIZED))
 				WakeUp()
 				create_debug_log("woke up, trigger reason: [reason]")
 	update_damage_hud()

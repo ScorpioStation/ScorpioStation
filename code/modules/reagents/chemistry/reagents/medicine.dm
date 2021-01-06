@@ -1038,10 +1038,10 @@
 			if(prob(7))
 				M.emote("yawn")
 		if(31 to 40)
-			M.Drowsy(20)
+			M.Drowsy(20, TRUE)
 		if(41 to INFINITY)
 			update_flags |= M.Paralyse(15, FALSE)
-			M.Drowsy(20)
+			M.Drowsy(20, TRUE)
 	return ..() | update_flags
 
 /datum/reagent/medicine/syndicate_nanites //Used exclusively by Syndicate medical cyborgs
