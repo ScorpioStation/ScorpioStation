@@ -343,7 +343,6 @@
 		update_canmove()
 		update_stat("sleeping")
 
-
 /mob/living/AdjustSleeping(amount, bound_lower = 0, bound_upper = INFINITY, updating = 1, no_alert = FALSE, ane = FALSE)
 	var/new_value = directional_bounded_sum(sleeping, amount, bound_lower, bound_upper)
 	return SetSleeping(new_value, updating, no_alert, ane)

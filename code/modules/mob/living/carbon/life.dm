@@ -176,7 +176,7 @@
 		if(SA_partialpressure > SA_para_min)
 			Paralyse(3)
 			if(SA_partialpressure > SA_sleep_min)
-				AdjustSleeping(2, bound_lower = 0, bound_upper = 10)
+				AdjustSleeping(2, 0, 10, TRUE, FALSE, TRUE) //Amount=2, bound_lower=0,bound_upper=10,updating=TRUE,no_alert=FALSE,ane=TRUE
 		else if(SA_partialpressure > 0.01)
 			if(prob(20))
 				emote(pick("giggle","laugh"))
