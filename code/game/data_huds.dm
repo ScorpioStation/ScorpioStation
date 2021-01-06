@@ -301,9 +301,7 @@
 	switch(stat)
 		if(CONSCIOUS)
 			holder.icon_state = "hudstat"
-		if(UNCONSCIOUS)
-			holder.icon_state = "hudoffline"
-		if(ANESTHEIZED)
+		if(UNCONSCIOUS,ANESTHETIZED)
 			holder.icon_state = "hudoffline"
 		else
 			holder.icon_state = "huddead2"

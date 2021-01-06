@@ -6,20 +6,24 @@
 		return FALSE
 	else if(stat == (UNCONSCIOUS || ANESTHETIZED))
 		return FALSE
-	create_attack_log("<font color='red'>Fallen unconscious at [atom_loc_line(get_turf(src))]</font>")
-	add_attack_logs(src, null, "Fallen unconscious", ATKLOG_ALL)
-	log_game("[key_name(src)] fell unconscious at [atom_loc_line(get_turf(src))]")
 
 	if(anesthetized)
 		stat = ANESTHETIZED
+		create_attack_log("<font color='red'>Anesthetized at [atom_loc_line(get_turf(src))]</font>")
+		add_attack_logs(src, null, "Anesthetized", ATKLOG_ALL)
+		log_game("[key_name(src)] was anesthetized at [atom_loc_line(get_turf(src))]")
 	else
 		stat = UNCONSCIOUS
+		create_attack_log("<font color='red'>Fallen unconscious at [atom_loc_line(get_turf(src))]</font>")
+		add_attack_logs(src, null, "Fallen unconscious", ATKLOG_ALL)
+		log_game("[key_name(src)] fell unconscious at [atom_loc_line(get_turf(src))]")
 
 	if(updating)
 		update_sight()
 		update_blind_effects()
 		update_canmove()
 		set_typing_indicator(FALSE)
+
 	return TRUE
 
 /mob/living/proc/WakeUp(updating = 1)

@@ -294,10 +294,10 @@
 
 // PARALYSE
 
-/mob/living/Paralyse(amount, updating = 1, force = 0)
-	return SetParalysis(max(paralysis, amount), updating, force)
+/mob/living/Paralyse(amount, updating = 1, force = 0, ane = FALSE)
+	return SetParalysis(max(paralysis, amount), updating, force, ane)
 
-/mob/living/SetParalysis(amount, updating = 1, force = 0)
+/mob/living/SetParalysis(amount, updating = 1, force = 0, ane = FALSE)
 	. = STATUS_UPDATE_STAT
 	if((!!amount) == (!!paralysis)) // We're not changing from + to 0 or vice versa
 		updating = FALSE
@@ -305,12 +305,13 @@
 	if(status_flags & CANPARALYSE || force)
 		paralysis = max(amount, 0)
 		if(updating)
+			anesthetized = ane
 			update_canmove()
 			update_stat("paralysis")
 
-/mob/living/AdjustParalysis(amount, bound_lower = 0, bound_upper = INFINITY, updating = 1, force = 0)
+/mob/living/AdjustParalysis(amount, bound_lower = 0, bound_upper = INFINITY, updating = 1, force = 0, ane = FALSE)
 	var/new_value = directional_bounded_sum(paralysis, amount, bound_lower, bound_upper)
-	return SetParalysis(new_value, updating, force)
+	return SetParalysis(new_value, updating, force, ane)
 
 // SILENT
 
@@ -327,7 +328,7 @@
 // SLEEPING
 
 /mob/living/Sleeping(amount, updating = 1, no_alert = FALSE, ane = FALSE)
-	return SetSleeping(max(sleeping, amount), updating, no_alert)
+	return SetSleeping(max(sleeping, amount), updating, no_alert, ane)
 
 /mob/living/SetSleeping(amount, updating = 1, no_alert = FALSE, ane = FALSE)
 	if(frozen) // If the mob has been admin frozen, sleeping should not be changeable

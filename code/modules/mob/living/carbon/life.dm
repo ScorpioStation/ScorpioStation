@@ -174,9 +174,9 @@
 	//TRACE GASES
 	if(breath.sleeping_agent)
 		if(SA_partialpressure > SA_para_min)
-			Paralyse(3)
+			Paralyse(3, TRUE, 0, TRUE)						//amount=3,updating=TRUE,force=0,ane=TRUE
 			if(SA_partialpressure > SA_sleep_min)
-				AdjustSleeping(2, 0, 10, TRUE, FALSE, TRUE) //Amount=2, bound_lower=0,bound_upper=10,updating=TRUE,no_alert=FALSE,ane=TRUE
+				AdjustSleeping(2, 0, 10, TRUE, FALSE, TRUE) //amount=2,bound_lower=0,bound_upper=10,updating=TRUE,no_alert=FALSE,ane=TRUE
 		else if(SA_partialpressure > 0.01)
 			if(prob(20))
 				emote(pick("giggle","laugh"))
