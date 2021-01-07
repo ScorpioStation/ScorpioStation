@@ -831,7 +831,7 @@
 			M.emote("faint")
 			update_flags |= M.Weaken(5, FALSE)
 		if(11 to INFINITY)
-			update_flags |= M.Paralyse(25, FALSE)
+			update_flags |= M.Paralyse(25, FALSE, 0, TRUE)	//Anethesize
 	return ..() | update_flags
 
 /datum/reagent/sulfonal
