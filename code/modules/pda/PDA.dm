@@ -180,7 +180,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 			SStgui.update_uis(src)
 		else
 			id.forceMove(get_turf(src))
-		overlays -= image('icons/obj/pda/pda_overlay.dmi', id.icon_state)
+		overlays -= image('icons/obj/pda/pda_id_overlay.dmi', id.icon_state)
 		id = null
 
 /obj/item/pda/verb/verb_remove_id()
@@ -276,7 +276,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 				if( can_use(user) )//If they can still act.
 					id_check(user, 2)
 					to_chat(user, "<span class='notice'>You put the ID into \the [src]'s slot.<br>You can remove it with ALT click.</span>")
-					overlays += image('icons/obj/pda/pda_overlay.dmi', C.icon_state)
+					overlays += image('icons/obj/pda/pda_id_overlay.dmi', C.icon_state)
 					SStgui.update_uis(src)
 
 	else if(istype(C, /obj/item/paicard) && !src.pai)
