@@ -630,14 +630,14 @@
 			M.AdjustDizzy(1)
 			M.Confused(10)
 		if(9 to 12)
-			M.Drowsy(10)
+			M.Drowsy(10, TRUE)	//Anesthetize
 			M.AdjustDizzy(1)
 			M.Confused(20)
 		if(13)
 			M.emote("faint")
 		if(14 to INFINITY)
 			update_flags |= M.Paralyse(10, FALSE)
-			M.Drowsy(20)
+			M.Drowsy(20, TRUE)	//Anesthetize
 
 	M.AdjustJitter(-30)
 	if(M.getBrainLoss() <= 80)
@@ -794,7 +794,7 @@
 			M.emote("drool")
 			M.Confused(5)
 		if(2 to 4)
-			M.Drowsy(20)
+			M.Drowsy(20, TRUE)	//Anesthetize me, Cap'n!
 		if(5)
 			M.emote("faint")
 			update_flags |= M.Weaken(5, FALSE)
@@ -851,14 +851,14 @@
 			if(prob(7))
 				M.emote("yawn")
 		if(11 to 20)
-			M.Drowsy(20)
+			M.Drowsy(20, TRUE)	//Anesthetize
 		if(21)
 			M.emote("faint")
 		if(22 to INFINITY)
 			if(prob(20))
 				M.emote("faint")
 				update_flags |= M.Paralyse(5, FALSE)
-			M.Drowsy(20)
+			M.Drowsy(20, TRUE)	//Anesthetize
 	update_flags |= M.adjustToxLoss(1, FALSE)
 	return ..() | update_flags
 
@@ -943,7 +943,7 @@
 				M.emote(pick("drool", "pale", "gasp"))
 		if(11 to INFINITY)
 			update_flags |= M.Stun(30, FALSE)
-			M.Drowsy(20)
+			M.Drowsy(20, TRUE)	//Anesthetize
 			if(prob(20))
 				M.emote(pick("drool", "faint", "pale", "gasp", "collapse"))
 			else if(prob(8))
@@ -1106,7 +1106,7 @@
 		if(1 to 5)
 			update_flags |= M.AdjustEyeBlurry(10, FALSE)
 		if(6 to 10)
-			M.Drowsy(10)
+			M.Drowsy(10, TRUE)	//Anesthetize
 		if(11)
 			fakedeath(M)
 		if(61 to 69)
