@@ -4,6 +4,7 @@
 	notify_icon = "comments"
 	title = "SpaceMessenger V4.1.0"
 	template = "pda_messenger"
+	//icon_state = "message"
 
 	var/toff = 0 //If 1, messenger disabled
 	var/list/tnote = list()  //Current Texts
