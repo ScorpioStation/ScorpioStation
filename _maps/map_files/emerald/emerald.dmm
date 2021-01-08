@@ -72,7 +72,9 @@
 /turf/simulated/floor/plasteel/dark,
 /area/storage/secure)
 "aap" = (
-/obj/machinery/particle_accelerator/control_box,
+/obj/machinery/particle_accelerator/control_box{
+	tag = "particle_accelerator_control_box"
+	},
 /turf/simulated/floor/plasteel/dark,
 /area/storage/secure)
 "aaq" = (

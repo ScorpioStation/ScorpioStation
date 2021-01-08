@@ -315,6 +315,9 @@ SUBSYSTEM_DEF(ticker)
 	else
 		log_debug("Playercount: [playercount] versus trigger: [highpop_trigger] - keeping standard job config")
 
+	// later, let's ask the players if they want power (if they don't have it yet)
+	addtimer(CALLBACK(SSvote, /datum/controller/subsystem/vote/.proc/initiate_vote, VOTE_TYPE_SUPERCHARGE), 15 MINUTES)
+
 	#ifdef UNIT_TESTS
 	RunUnitTests()
 	#endif

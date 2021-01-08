@@ -1,3 +1,6 @@
+#define VOTE_SUPERCHARGE_NO "Our Power Situation Is Under Control"
+#define VOTE_SUPERCHARGE_YES "Request Emergency Power Transmission"
+
 SUBSYSTEM_DEF(vote)
 	name = "Vote"
 	wait = 10
@@ -168,6 +171,9 @@ SUBSYSTEM_DEF(vote)
 	var/restart = 0
 	if(.)
 		switch(mode)
+			if(VOTE_TYPE_SUPERCHARGE)
+				if(. == VOTE_SUPERCHARGE_YES)
+					power_restore_limitless()
 			if("restart")
 				if(. == "Restart Round")
 					restart = 1
@@ -213,6 +219,10 @@ SUBSYSTEM_DEF(vote)
 
 		reset()
 		switch(vote_type)
+			if(VOTE_TYPE_SUPERCHARGE)
+				if(i_have_the_power())
+					return FALSE
+				choices.Add(VOTE_SUPERCHARGE_YES, VOTE_SUPERCHARGE_NO)
 			if("restart")
 				choices.Add("Restart Round","Continue Playing")
 			if("gamemode")
@@ -247,6 +257,8 @@ SUBSYSTEM_DEF(vote)
 			text += "\n[question]"
 			if(usr)
 				log_admin("[capitalize(mode)] ([question]) vote started by [key_name(usr)].")
+		else if(mode == VOTE_TYPE_SUPERCHARGE)
+			text = "Request Emergency Bluespace Power Transmission?"
 		else if(usr)
 			log_admin("[capitalize(mode)] vote started by [key_name(usr)].")
 
@@ -255,6 +267,8 @@ SUBSYSTEM_DEF(vote)
 			<a href='?src=[UID()];vote=open'>Click here or type vote to place your vote.</a>
 			You have [config.vote_period/10] seconds to vote.</font>"})
 		switch(vote_type)
+			if(VOTE_TYPE_SUPERCHARGE)
+				world << sound('sound/ambience/alarm4.ogg')
 			if("crew_transfer")
 				world << sound('sound/ambience/alarm4.ogg')
 			if("gamemode")
@@ -407,3 +421,21 @@ SUBSYSTEM_DEF(vote)
 
 	if(SSvote)
 		SSvote.browse_to(client)
+
+/**
+  * Determine if the station has power.
+  *
+  * Actually, we'll just cheat and see if the Particle Accelerator is active.
+  * If the Particle Accelerator is active, we'll assume that we have power.
+  * See: https://www.youtube.com/watch?v=-dJolYw8tnk
+  */
+/proc/i_have_the_power()
+	var/obj/machinery/particle_accelerator/control_box/the_pa = locate("particle_accelerator_control_box")
+	if(!the_pa)
+		log_and_message_admins("Unable to locate Particle Accelerator Control Console on this map.")
+		log_and_message_admins("Missing tag: particle_accelerator_control_box")
+		return FALSE
+	return the_pa.active
+
+#undef VOTE_SUPERCHARGE_NO
+#undef VOTE_SUPERCHARGE_YES
