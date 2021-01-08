@@ -199,7 +199,7 @@
  */
 /obj/item/twohanded/dualsaber/toy
 	name = "double-bladed toy sword"
-	desc = "A cheap, plastic replica of TWO energy swords.  Double the fun!"
+	desc = "A cheap, plastic replica of TWO energy swords. Double the fun!"
 	force = 0
 	throwforce = 0
 	throw_speed = 3
@@ -207,7 +207,7 @@
 	force_unwielded = 0
 	force_wielded = 0
 	origin_tech = null
-	attack_verb = list("attacked", "struck", "hit")
+	attack_verb = list("attacked", "struck", "hit", "defeated youngling")
 	brightness_on = 0
 	sharp_when_wielded = FALSE // It's a toy
 	needs_permit = FALSE
@@ -218,6 +218,25 @@
 /obj/item/twohanded/dualsaber/toy/IsReflect()
 	if(wielded)
 		return 2
+
+/obj/item/twohanded/dualsaber/toy/attack(mob/target, mob/living/user)
+	if(!wielded)
+		return
+	if(HULK in user.mutations)
+		to_chat(user, "<span class='warning'>You grip \the [name] too hard and accidentally close it!</span>")
+		unwield()
+		return
+	if((CLUMSY in user.mutations) && prob(40))
+		to_chat(user, "<span class='warning'>You twirl around a bit before losing your balance and impaling yourself on \the [name]. Oof! Right through the armpit!</span>")
+		return			//Note: I want this to knock them down or do stamina damage, but it IS just a toy x3
+	if(prob(50))
+		INVOKE_ASYNC(src, .proc/jedi_spin, user)
+	var/mob/U = user	//Recast as lower class to match class of mob/target
+	if(target == U)
+		to_chat(user, "<span class='warning'>You hit yourself with \the [name]! Be careful! This toy is dangerous!</span>")
+	else
+		to_chat(target, "<span class='warning'>You thought you were the chosen one. But [user] had the high ground and they got you good with \the [name].</span>")
+	return
 
 /obj/item/toy/katana
 	name = "replica katana"
