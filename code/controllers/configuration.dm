@@ -764,6 +764,9 @@
 				if("start_now_confirmation")
 					config.start_now_confirmation = 1
 
+				if("gamer_words")
+					add_gamer_words(value)
+
 				if("tick_limit_mc_init")
 					config.tick_limit_mc_init = text2num(value)
 				if("base_mc_tick_rate")
