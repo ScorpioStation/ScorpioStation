@@ -16,9 +16,7 @@
 //------------------------------------------------------------------------------
 
 GLOBAL_LIST_EMPTY(gamer_words)
-
-/proc/add_gamer_words(config_value)
-	GLOB.gamer_words += splittext(config_value, ",")
+GLOBAL_LIST_EMPTY(gamer_word_uses)
 
 /proc/ban_and_kick_troll(context, message, word, mob_name, client/ban_me)
 	ban_troll(context, message, word, mob_name, ban_me)
@@ -33,14 +31,14 @@ GLOBAL_LIST_EMPTY(gamer_words)
 	// build up all the things we need to record the ban
 	var/serverip = "[world.internet_address]:[world.port]"
 	var/bantype_str = "PERMABAN"
-	var/reason = "[ban_me] / ([mob_name]) used gamer word '[word]' in [context] message '[message]'"
+	var/reason = "[ban_me] / ([mob_name]) used gamer word '[word]' in [context] message: [message]"
 	var/job = ""
 	var/duration = -1 // PERMABAN
 	var/rounds = 0
 	var/ckey = "[ban_me.ckey]"
 	var/computerid = "[ban_me.computer_id]"
 	var/ip = "[ban_me.address]"
-	var/a_ckey = "Automated_Gamer_Word_Ban_System"
+	var/a_ckey = "Gamer_Word_Ban_System"
 	var/a_computerid = 0x7f000001
 	var/a_ip = "127.0.0.1"
 	var/who = english_list(GLOB.clients)
@@ -75,7 +73,7 @@ GLOBAL_LIST_EMPTY(gamer_words)
 
 	// tell Discord why we banned the mob
 	var/datum/discord/webhook/cryo = new(config.discord_webhook_cryo_url)
-	cryo.post_message("[mob_name] used a gamer word.")
+	cryo.post_message("[mob_name] used too many gamer words.")
 
 	// tell the caller we banned the mob
 	return TRUE
@@ -106,15 +104,34 @@ GLOBAL_LIST_EMPTY(gamer_words)
 	// check the message for gamer words
 	for(var/word in GLOB.gamer_words)
 		if(findtext_char(check_me, word) > 0)
-			// tell the caller we kickban'd a troll
-			ban_and_kick_troll(context, message, word, mob_name, ban_client)
-			return TRUE
-	// nope, no gamer words found
+			// ensure the ckey is on the list
+			var/ban_ckey = ban_client.ckey
+			if(!GLOB.gamer_word_uses[ban_ckey])
+				GLOB.gamer_word_uses[ban_ckey] = 0
+			// bump the count of gamer word uses
+			GLOB.gamer_word_uses[ban_ckey]++
+			// if they've gone too far this time
+			if(GLOB.gamer_word_uses[ban_ckey] >= config.num_gamer_words_to_get_banned)
+				// tell the caller we kickban'd a troll
+				ban_and_kick_troll(context, message, word, mob_name, ban_client)
+				return TRUE
+			// not too far yet, just give them a warning this time
+			warn_troll(context, message, word, mob_name, ban_client)
+	// we didn't kickban any trolls
 	return FALSE
 
 /proc/kick_troll(client/C)
 	spawn(1)
 		qdel(C)
+
+/proc/set_gamer_words(config_value)
+	GLOB.gamer_words = splittext(config_value, ",")
+
+/proc/warn_troll(context, message, word, mob_name, client/ban_me)
+	to_chat(usr, "<span class='danger'>Gamer word '[word]' was detected in [context] message: [message]</span>")
+	to_chat(usr, "<span class='danger'>Using any slurs is against the rules of this server.</span>")
+	to_chat(usr, "<span class='danger'>Continued use of slurs may result in an automatic ban.</span>")
+	log_and_message_admins("was warned for using gamer word '[word]' in [context] message: [message]")
 
 //------------------------------------------------------------------------------
 // end of troll.dm

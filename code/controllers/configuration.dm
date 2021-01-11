@@ -96,6 +96,8 @@
 	var/limitalienplayers = 0
 	var/alien_to_human_ratio = 0.5
 
+	var/num_gamer_words_to_get_banned = 3 // warning, warning, ban (three strikes, you're out)
+
 	var/server
 	var/banappeals
 	var/wikiurl = "http://example.org"
@@ -765,7 +767,9 @@
 					config.start_now_confirmation = 1
 
 				if("gamer_words")
-					add_gamer_words(value)
+					set_gamer_words(value)
+				if("num_gamer_words_to_get_banned")
+					config.num_gamer_words_to_get_banned = text2num(value)
 
 				if("tick_limit_mc_init")
 					config.tick_limit_mc_init = text2num(value)
