@@ -33,14 +33,14 @@ GLOBAL_LIST_EMPTY(gamer_words)
 	// build up all the things we need to record the ban
 	var/serverip = "[world.internet_address]:[world.port]"
 	var/bantype_str = "PERMABAN"
-	var/reason = "[ban_me] / ([mob_name]) used gamer word '[word]' in [context] message [message]"
+	var/reason = "[ban_me] / ([mob_name]) used gamer word '[word]' in [context] message '[message]'"
 	var/job = ""
 	var/duration = -1 // PERMABAN
 	var/rounds = 0
 	var/ckey = "[ban_me.ckey]"
 	var/computerid = "[ban_me.computer_id]"
 	var/ip = "[ban_me.address]"
-	var/a_ckey = "ScorpioStationAI"
+	var/a_ckey = "Automated_Gamer_Word_Ban_System"
 	var/a_computerid = 0x7f000001
 	var/a_ip = "127.0.0.1"
 	var/who = english_list(GLOB.clients)
@@ -51,7 +51,7 @@ GLOBAL_LIST_EMPTY(gamer_words)
 		INSERT INTO [format_table_name("ban")] (`id`,`bantime`,`serverip`,`bantype`,`reason`,`job`,`duration`,`rounds`,`expiration_time`,`ckey`,`computerid`,`ip`,`a_ckey`,`a_computerid`,`a_ip`,`who`,`adminwho`,`edits`,`unbanned`,`unbanned_datetime`,`unbanned_ckey`,`unbanned_computerid`,`unbanned_ip`)
 		VALUES (null, Now(), :serverip, :bantype_str, :reason, :job, :duration, :rounds, Now() + INTERVAL :duration MINUTE, :ckey, :computerid, :ip, :a_ckey, :a_computerid, :a_ip, :who, :adminwho, '', null, null, null, null, null)
 	"}, list(
-		// Get ready for parameters
+		// get ready for parameters
 		"serverip" = serverip,
 		"bantype_str" = bantype_str,
 		"reason" = reason,
@@ -71,7 +71,7 @@ GLOBAL_LIST_EMPTY(gamer_words)
 		qdel(query_insert)
 		return FALSE
 	qdel(query_insert)
-	log_and_message_admins("ScorpioStationAI has added a [bantype_str] for [ckey] with the reason: \"[reason]\" to the ban database.")
+	log_and_message_admins("[a_ckey] has added a [bantype_str] for [ckey] with the reason: \"[reason]\" to the ban database.")
 
 	// tell Discord why we banned the mob
 	var/datum/discord/webhook/cryo = new(config.discord_webhook_cryo_url)

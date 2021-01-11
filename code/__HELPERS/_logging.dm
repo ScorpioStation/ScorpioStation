@@ -73,7 +73,6 @@ GLOBAL_PROTECT(log_end)
 		rustg_log_write(GLOB.world_game_log, "OOC: [user.simple_info_line()]: [html_decode(text)][GLOB.log_end]")
 
 /proc/log_aooc(text, client/user)
-	check_for_troll("AOOC", text, user)
 	if(config.log_ooc)
 		rustg_log_write(GLOB.world_game_log, "AOOC: [user.simple_info_line()]: [html_decode(text)][GLOB.log_end]")
 
