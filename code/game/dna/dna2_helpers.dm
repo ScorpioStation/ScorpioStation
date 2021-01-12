@@ -26,7 +26,7 @@
 		return
 	M.dna.check_integrity()
 	var/block = pick(GLOB.bad_blocks)
-	M.dna.SetDNAState(block, DNA_SE, TRUE)
+	M.dna.SetDNAState(block, TRUE, DNA_SE)
 
 // Give Random Good Mutation to M
 /proc/randmutg(mob/living/M)
@@ -34,7 +34,7 @@
 		return
 	M.dna.check_integrity()
 	var/block = pick(GLOB.good_blocks)
-	M.dna.SetDNAState(block, DNA_SE, TRUE)
+	M.dna.SetDNAState(block, TRUE, DNA_SE)
 
 // Random Appearance Mutation
 /proc/randmuti(mob/living/M)
@@ -129,7 +129,7 @@
 // Simpler. Don't specify UI in order for the mob to use its own.
 /mob/proc/UpdateAppearance(list/UI = null)
 	if(istype(src, /mob/living/carbon/human)) // WHY?!
-		if(UI!=null)
+		if(UI != null)
 			dna.UI = UI
 			dna.UpdateDNA(DNA_UI)
 		dna.check_integrity()
@@ -142,13 +142,13 @@
 			dna.write_eyes_attributes(eye_organ)
 		H.update_eyes()
 
-		H.skin_colour = rgb(dna.GetDNAValue(DNA_UI_SKIN_R, 255, DNA_UI), dna.GetDNAValue(DNA_UI_SKIN_G, 255, DNA_UI), dna.GetDNAValue(DNA_UI_SKIN_B, 255, DNA_UI))
+		H.skin_colour = rgb(dna.GetDNAValueRange(DNA_UI_SKIN_R, 255, DNA_UI), dna.GetDNAValueRange(DNA_UI_SKIN_G, 255, DNA_UI), dna.GetDNAValueRange(DNA_UI_SKIN_B, 255, DNA_UI))
 
-		H.m_colours["head"] = rgb(dna.GetDNAValue(DNA_UI_HEAD_MARK_R, 255, DNA_UI), dna.GetDNAValue(DNA_UI_HEAD_MARK_G, 255, DNA_UI), dna.GetDNAValue(DNA_UI_HEAD_MARK_B, 255, DNA_UI))
-		H.m_colours["body"] = rgb(dna.GetDNAValue(DNA_UI_BODY_MARK_R, 255, DNA_UI), dna.GetDNAValue(DNA_UI_BODY_MARK_G, 255, DNA_UI), dna.GetDNAValue(DNA_UI_BODY_MARK_B, 255, DNA_UI))
-		H.m_colours["tail"] = rgb(dna.GetDNAValue(DNA_UI_TAIL_MARK_R, 255, DNA_UI), dna.GetDNAValue(DNA_UI_TAIL_MARK_G, 255, DNA_UI), dna.GetDNAValue(DNA_UI_TAIL_MARK_B, 255, DNA_UI))
+		H.m_colours["head"] = rgb(dna.GetDNAValueRange(DNA_UI_HEAD_MARK_R, 255, DNA_UI), dna.GetDNAValueRange(DNA_UI_HEAD_MARK_G, 255, DNA_UI), dna.GetDNAValueRange(DNA_UI_HEAD_MARK_B, 255, DNA_UI))
+		H.m_colours["body"] = rgb(dna.GetDNAValueRange(DNA_UI_BODY_MARK_R, 255, DNA_UI), dna.GetDNAValueRange(DNA_UI_BODY_MARK_G, 255, DNA_UI), dna.GetDNAValueRange(DNA_UI_BODY_MARK_B, 255, DNA_UI))
+		H.m_colours["tail"] = rgb(dna.GetDNAValueRange(DNA_UI_TAIL_MARK_R, 255, DNA_UI), dna.GetDNAValueRange(DNA_UI_TAIL_MARK_G, 255, DNA_UI), dna.GetDNAValueRange(DNA_UI_TAIL_MARK_B, 255, DNA_UI))
 
-		H.s_tone   = 35 - dna.GetDNAValue(DNA_UI_SKIN_TONE, 220, DNA_UI) // Value can be negative.
+		H.s_tone   = 35 - dna.GetDNAValueRange(DNA_UI_SKIN_TONE, 220, DNA_UI) // Value can be negative.
 
 		switch(dna.GetDNATriState(DNA_UI_GENDER, DNA_UI))
 			if(DNA_GENDER_FEMALE)
@@ -159,15 +159,15 @@
 				H.change_gender(PLURAL, FALSE)
 
 		//Head Markings
-		var/head_marks = dna.GetDNAValue(DNA_UI_HEAD_MARK_STYLE, GLOB.marking_styles_list.len, DNA_UI)
+		var/head_marks = dna.GetDNAValueRange(DNA_UI_HEAD_MARK_STYLE, GLOB.marking_styles_list.len, DNA_UI)
 		if((head_marks > 0) && (head_marks <= GLOB.marking_styles_list.len))
 			H.m_styles["head"] = GLOB.marking_styles_list[head_marks]
 		//Body Markings
-		var/body_marks = dna.GetDNAValue(DNA_UI_BODY_MARK_STYLE, GLOB.marking_styles_list.len, DNA_UI)
+		var/body_marks = dna.GetDNAValueRange(DNA_UI_BODY_MARK_STYLE, GLOB.marking_styles_list.len, DNA_UI)
 		if((body_marks > 0) && (body_marks <= GLOB.marking_styles_list.len))
 			H.m_styles["body"] = GLOB.marking_styles_list[body_marks]
 		//Tail Markings
-		var/tail_marks = dna.GetDNAValue(DNA_UI_TAIL_MARK_STYLE, GLOB.marking_styles_list.len, DNA_UI)
+		var/tail_marks = dna.GetDNAValueRange(DNA_UI_TAIL_MARK_STYLE, GLOB.marking_styles_list.len, DNA_UI)
 		if((tail_marks > 0) && (tail_marks <= GLOB.marking_styles_list.len))
 			H.m_styles["tail"] = GLOB.marking_styles_list[tail_marks]
 
@@ -189,31 +189,31 @@
 /datum/dna/proc/write_head_attributes(obj/item/organ/external/head/head_organ)
 
 	//Hair
-	var/hair = GetDNAValue(DNA_UI_HAIR_STYLE, GLOB.hair_styles_full_list.len, DNA_UI)
+	var/hair = GetDNAValueRange(DNA_UI_HAIR_STYLE, GLOB.hair_styles_full_list.len, DNA_UI)
 	if((hair > 0) && (hair <= GLOB.hair_styles_full_list.len))
 		head_organ.h_style = GLOB.hair_styles_full_list[hair]
 
-	head_organ.hair_colour = rgb(head_organ.dna.GetDNAValue(DNA_UI_HAIR_R, 255, DNA_UI), head_organ.dna.GetDNAValue(DNA_UI_HAIR_G, 255, DNA_UI), head_organ.dna.GetDNAValue(DNA_UI_HAIR_B, 255, DNA_UI))
-	head_organ.sec_hair_colour = rgb(head_organ.dna.GetDNAValue(DNA_UI_HAIR2_R, 255, DNA_UI), head_organ.dna.GetDNAValue(DNA_UI_HAIR2_G, 255, DNA_UI), head_organ.dna.GetDNAValue(DNA_UI_HAIR2_B, 255, DNA_UI))
+	head_organ.hair_colour = rgb(head_organ.dna.GetDNAValueRange(DNA_UI_HAIR_R, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_HAIR_G, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_HAIR_B, 255, DNA_UI))
+	head_organ.sec_hair_colour = rgb(head_organ.dna.GetDNAValueRange(DNA_UI_HAIR2_R, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_HAIR2_G, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_HAIR2_B, 255, DNA_UI))
 
 	//Facial Hair
-	var/beard = GetDNAValue(DNA_UI_BEARD_STYLE, GLOB.facial_hair_styles_list.len, DNA_UI)
+	var/beard = GetDNAValueRange(DNA_UI_BEARD_STYLE, GLOB.facial_hair_styles_list.len, DNA_UI)
 	if((beard > 0) && (beard <= GLOB.facial_hair_styles_list.len))
 		head_organ.f_style = GLOB.facial_hair_styles_list[beard]
 
-	head_organ.facial_colour = rgb(head_organ.dna.GetDNAValue(DNA_UI_BEARD_R, 255, DNA_UI), head_organ.dna.GetDNAValue(DNA_UI_BEARD_G, 255, DNA_UI), head_organ.dna.GetDNAValue(DNA_UI_BEARD_B, 255, DNA_UI))
-	head_organ.sec_facial_colour = rgb(head_organ.dna.GetDNAValue(DNA_UI_BEARD2_R, 255, DNA_UI), head_organ.dna.GetDNAValue(DNA_UI_BEARD2_G, 255, DNA_UI), head_organ.dna.GetDNAValue(DNA_UI_BEARD2_B, 255, DNA_UI))
+	head_organ.facial_colour = rgb(head_organ.dna.GetDNAValueRange(DNA_UI_BEARD_R, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_BEARD_G, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_BEARD_B, 255, DNA_UI))
+	head_organ.sec_facial_colour = rgb(head_organ.dna.GetDNAValueRange(DNA_UI_BEARD2_R, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_BEARD2_G, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_BEARD2_B, 255, DNA_UI))
 
 	//Head Accessories
-	var/headacc = GetDNAValue(DNA_UI_HACC_STYLE, GLOB.head_accessory_styles_list.len, DNA_UI)
+	var/headacc = GetDNAValueRange(DNA_UI_HACC_STYLE, GLOB.head_accessory_styles_list.len, DNA_UI)
 	if((headacc > 0) && (headacc <= GLOB.head_accessory_styles_list.len))
 		head_organ.ha_style = GLOB.head_accessory_styles_list[headacc]
 
-	head_organ.headacc_colour = rgb(head_organ.dna.GetDNAValue(DNA_UI_HACC_R, 255, DNA_UI), head_organ.dna.GetDNAValue(DNA_UI_HACC_G, 255, DNA_UI), head_organ.dna.GetDNAValue(DNA_UI_HACC_B, 255, DNA_UI))
+	head_organ.headacc_colour = rgb(head_organ.dna.GetDNAValueRange(DNA_UI_HACC_R, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_HACC_G, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_HACC_B, 255, DNA_UI))
 
 // This proc gives the DNA info for eye color to the given eyes
 /datum/dna/proc/write_eyes_attributes(obj/item/organ/internal/eyes/eyes_organ)
-	eyes_organ.eye_colour = rgb(eyes_organ.dna.GetDNAValue(DNA_UI_EYES_R, 255, DNA_UI), eyes_organ.dna.GetDNAValue(DNA_UI_EYES_G, 255, DNA_UI), eyes_organ.dna.GetDNAValue(DNA_UI_EYES_B, 255, DNA_UI))
+	eyes_organ.eye_colour = rgb(eyes_organ.dna.GetDNAValueRange(DNA_UI_EYES_R, 255, DNA_UI), eyes_organ.dna.GetDNAValueRange(DNA_UI_EYES_G, 255, DNA_UI), eyes_organ.dna.GetDNAValueRange(DNA_UI_EYES_B, 255, DNA_UI))
 
 /*
 	TRAIT CHANGING PROCS
