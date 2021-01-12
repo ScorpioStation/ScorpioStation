@@ -20,10 +20,10 @@
 #define DISABILITY_FLAG_CHAV        512
 #define DISABILITY_FLAG_DEAF        1024
 
-/* Scorpio Disability RP */
-#define DISABILITY_FLAG_GALACTIC    4096
-#define DISABILITY_FLAG_SP_LANG     8192
-#define DISABILITY_FLAG_SC_LANG     16384
+/* Multiple Language Stutter */
+#define DISABILITY_FLAG_GALACTIC    2048
+#define DISABILITY_FLAG_SP_LANG     4096
+#define DISABILITY_FLAG_SC_LANG     8192
 
 ///////////////////////////////////////
 // MUTATIONS
