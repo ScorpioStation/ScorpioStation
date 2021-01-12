@@ -423,8 +423,10 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 						dat += "\tAmputated [organ_name]"
 					if("cybernetic")
 						dat += "\tCybernetic [organ_name]"
-			if(!ind)	dat += "\[...\]<br>"
-			else		dat += "<br>"
+			if(!ind)
+				dat += "\[...\]<br>"
+			else
+				dat += "<br>"
 
 			dat += "<h2>Clothing</h2>"
 			if(S.clothing_flags & HAS_UNDERWEAR)
@@ -1404,6 +1406,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 							autohiss_mode = AUTOHISS_OFF
 				if("speciesprefs")
 					speciesprefs = !speciesprefs //Starts 0, so if someone clicks the button up top there, this won't be 0 anymore. If they click it again, it'll go back to 0.
+
 				if("language")
 //						var/languages_available
 					var/list/new_languages = list("None")
@@ -1472,7 +1475,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 							else
 								head_model = rlimb_data["head"]
 							var/datum/robolimb/robohead = GLOB.all_robolimbs[head_model]
-							if((species in SA.species_allowed) && robohead.is_monitor && ((SA.models_allowed && (robohead.company in SA.models_allowed)) || !SA.models_allowed)) //If this is a hair style native to the user's species, check to see if they have a head with an ipc-style screen and that the head's company is in the screen style's allowed models list.
+							if((species in SA.species_allowed) && robohead.is_monitor && ((SA.models_allowed && (robohead.model_name in SA.models_allowed)) || !SA.models_allowed)) //If this is a hair style native to the user's species, check to see if they have a head with an ipc-style screen and that the head's company is in the screen style's allowed models list.
 								valid_hairstyles += hairstyle //Give them their hairstyles if they do.
 							else
 								if(!robohead.is_monitor && ("Human" in SA.species_allowed)) /*If the hairstyle is not native to the user's species and they're using a head with an ipc-style screen, don't let them access it.
@@ -1558,7 +1561,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 								if(robohead.is_monitor && M.name != "None") //If the character can have prosthetic heads and they have the default Morpheus head (or another monitor-head), no optic markings.
 									continue
 								else if(!robohead.is_monitor && M.name != "None") //Otherwise, if they DON'T have the default head and the head's not a monitor but the head's not in the style's list of allowed models, skip.
-									if(!(robohead.company in M.models_allowed))
+									if(!(robohead.model_name in M.models_allowed))
 										continue
 
 							valid_markings += markingstyle
@@ -1679,7 +1682,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 							else
 								head_model = rlimb_data["head"]
 							var/datum/robolimb/robohead = GLOB.all_robolimbs[head_model]
-							if((species in SA.species_allowed) && robohead.is_monitor && ((SA.models_allowed && (robohead.company in SA.models_allowed)) || !SA.models_allowed)) //If this is a facial hair style native to the user's species, check to see if they have a head with an ipc-style screen and that the head's company is in the screen style's allowed models list.
+							if((species in SA.species_allowed) && robohead.is_monitor && ((SA.models_allowed && (robohead.model_name in SA.models_allowed)) || !SA.models_allowed)) //If this is a facial hair style native to the user's species, check to see if they have a head with an ipc-style screen and that the head's company is in the screen style's allowed models list.
 								valid_facial_hairstyles += facialhairstyle //Give them their facial hairstyles if they do.
 							else
 								if(!robohead.is_monitor && ("Human" in SA.species_allowed)) /*If the facial hairstyle is not native to the user's species and they're using a head with an ipc-style screen, don't let them access it.
@@ -1888,17 +1891,23 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 								return
 							R.company = choice
 							R = GLOB.all_robolimbs[R.company]
-							if(R.has_subtypes == 1) //If the company the user selected provides more than just one base model, lets handle it.
+
+							// var/list/robolimb_models = list
+							// for(var/b in typesof(R))
+							// 	var/datum/robolimb/rbrand = b
+
+							if(R.has_subtypes != 0)				//If the company the user selected provides more than just one base model, lets handle it.
 								var/list/robolimb_models = list()
-								for(var/limb_type in typesof(R)) //Handling the different models of parts that manufacturers can provide.
+
+								for(var/limb_type in typesof(R))	//Handling the different models of parts that manufacturers can provide.
 									var/datum/robolimb/L = new limb_type()
-									if(limb in L.parts) //Make sure that only models that provide the parts the user needs populate the list.
+									if(limb in L.parts)					//Make sure that only models that provide the parts the user needs populate the list.
 										robolimb_models[L.company] = L
-										if(robolimb_models.len == 1) //If there's only one model available in the list, autoselect it to avoid having to bother the user with a dialog that provides only one option.
-											subchoice = L.company //If there ends up being more than one model populating the list, subchoice will be overwritten later anyway, so this isn't a problem.
-										if(second_limb in L.parts) //If the child limb of the limb the user selected is also present in the model's parts list, state it's been found so the second limb can be set later.
-											in_model = 1
-								if(robolimb_models.len > 1) //If there's more than one model in the list that can provide the part the user wants, let them choose.
+										if(length(robolimb_models) == 1)	//If there's only one model available in the list, autoselect it to avoid having to bother the user with a dialog that provides only one option.
+											subchoice = L.company		//If there ends up being more than one model populating the list, subchoice will be overwritten later anyway, so this isn't a problem.
+										if(second_limb in L.parts)		//If the child limb of the limb the user selected is also present in the model's parts list, state it's been found so the second limb can be set later.
+											in_model = TRUE
+								if(length(robolimb_models) > 1)				//If there's more than one model in the list that can provide the part the user wants, let them choose.
 									subchoice = input(user, "Which model of [choice] [limb_name] do you wish to use?") as null|anything in robolimb_models
 								if(subchoice)
 									choice = subchoice
