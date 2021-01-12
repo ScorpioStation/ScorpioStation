@@ -60,7 +60,7 @@
 		if(species == "Machine") //If the user is a species who can have a robotic head...
 			if(!robohead)
 				robohead = GLOB.all_robolimbs["Morpheus Cyberkinetics"]
-			if((species in S.species_allowed) && robohead.is_monitor && ((S.models_allowed && (robohead.model_name in S.models_allowed)) || !S.models_allowed)) //If this is a hair style native to the user's species, check to see if they have a head with an ipc-style screen and that the head's company is in the screen style's allowed models list.
+			if((species in S.species_allowed) && robohead.is_monitor && ((S.models_allowed && (robohead.company in S.models_allowed)) || !S.models_allowed)) //If this is a hair style native to the user's species, check to see if they have a head with an ipc-style screen and that the head's company is in the screen style's allowed models list.
 				valid_hairstyles += hairstyle //Give them their hairstyles if they do.
 			else
 				if(!robohead.is_monitor && ("Human" in S.species_allowed)) /*If the hairstyle is not native to the user's species and they're using a head with an ipc-style screen, don't let them access it.
@@ -89,7 +89,7 @@
 		if(species == "Machine") //If the user is a species who can have a robotic head...
 			if(!robohead)
 				robohead = GLOB.all_robolimbs["Morpheus Cyberkinetics"]
-			if((species in S.species_allowed) && robohead.is_monitor && ((S.models_allowed && (robohead.model_name in S.models_allowed)) || !S.models_allowed)) //If this is a facial hair style native to the user's species, check to see if they have a head with an ipc-style screen and that the head's company is in the screen style's allowed models list.
+			if((species in S.species_allowed) && robohead.is_monitor && ((S.models_allowed && (robohead.company in S.models_allowed)) || !S.models_allowed)) //If this is a facial hair style native to the user's species, check to see if they have a head with an ipc-style screen and that the head's company is in the screen style's allowed models list.
 				valid_facial_hairstyles += facialhairstyle //Give them their facial hairstyles if they do.
 			else
 				if(!robohead.is_monitor && ("Human" in S.species_allowed)) /*If the facial hairstyle is not native to the user's species and they're using a head with an ipc-style screen, don't let them access it.
@@ -143,7 +143,7 @@
 			if(species == "Machine")//If the user is a species that can have a robotic head...
 				if(!robohead)
 					robohead = GLOB.all_robolimbs["Morpheus Cyberkinetics"]
-				if(!(S.models_allowed && (robohead.model_name in S.models_allowed))) //Make sure they don't get markings incompatible with their head.
+				if(!(S.models_allowed && (robohead.company in S.models_allowed))) //Make sure they don't get markings incompatible with their head.
 					continue
 			else if(alt_head && alt_head != "None") //If the user's got an alt head, validate markings for that head.
 				if(!("All" in M.heads_allowed) && !(alt_head in M.heads_allowed))

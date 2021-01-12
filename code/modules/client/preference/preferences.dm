@@ -1475,7 +1475,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 							else
 								head_model = rlimb_data["head"]
 							var/datum/robolimb/robohead = GLOB.all_robolimbs[head_model]
-							if((species in SA.species_allowed) && robohead.is_monitor && ((SA.models_allowed && (robohead.model_name in SA.models_allowed)) || !SA.models_allowed)) //If this is a hair style native to the user's species, check to see if they have a head with an ipc-style screen and that the head's company is in the screen style's allowed models list.
+							if((species in SA.species_allowed) && robohead.is_monitor && ((SA.models_allowed && (robohead.company in SA.models_allowed)) || !SA.models_allowed)) //If this is a hair style native to the user's species, check to see if they have a head with an ipc-style screen and that the head's company is in the screen style's allowed models list.
 								valid_hairstyles += hairstyle //Give them their hairstyles if they do.
 							else
 								if(!robohead.is_monitor && ("Human" in SA.species_allowed)) /*If the hairstyle is not native to the user's species and they're using a head with an ipc-style screen, don't let them access it.
@@ -1561,7 +1561,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 								if(robohead.is_monitor && M.name != "None") //If the character can have prosthetic heads and they have the default Morpheus head (or another monitor-head), no optic markings.
 									continue
 								else if(!robohead.is_monitor && M.name != "None") //Otherwise, if they DON'T have the default head and the head's not a monitor but the head's not in the style's list of allowed models, skip.
-									if(!(robohead.model_name in M.models_allowed))
+									if(!(robohead.company in M.models_allowed))
 										continue
 
 							valid_markings += markingstyle
@@ -1682,7 +1682,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 							else
 								head_model = rlimb_data["head"]
 							var/datum/robolimb/robohead = GLOB.all_robolimbs[head_model]
-							if((species in SA.species_allowed) && robohead.is_monitor && ((SA.models_allowed && (robohead.model_name in SA.models_allowed)) || !SA.models_allowed)) //If this is a facial hair style native to the user's species, check to see if they have a head with an ipc-style screen and that the head's company is in the screen style's allowed models list.
+							if((species in SA.species_allowed) && robohead.is_monitor && ((SA.models_allowed && (robohead.company in SA.models_allowed)) || !SA.models_allowed)) //If this is a facial hair style native to the user's species, check to see if they have a head with an ipc-style screen and that the head's company is in the screen style's allowed models list.
 								valid_facial_hairstyles += facialhairstyle //Give them their facial hairstyles if they do.
 							else
 								if(!robohead.is_monitor && ("Human" in SA.species_allowed)) /*If the facial hairstyle is not native to the user's species and they're using a head with an ipc-style screen, don't let them access it.
