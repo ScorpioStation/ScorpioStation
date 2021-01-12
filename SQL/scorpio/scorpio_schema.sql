@@ -66,6 +66,7 @@ CREATE TABLE `characters` (
   `sec_record` mediumtext NOT NULL,
   `gen_record` mediumtext NOT NULL,
   `disabilities` mediumint(8) NOT NULL,
+  `disabilities_cures` mediumint(8) NOT NULL,
   `player_alt_titles` mediumtext NOT NULL,
   `organ_data` mediumtext NOT NULL,
   `rlimb_data` mediumtext NOT NULL,

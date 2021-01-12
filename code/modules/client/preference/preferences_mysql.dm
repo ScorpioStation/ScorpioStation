@@ -196,6 +196,7 @@
 					sec_record,
 					gen_record,
 					disabilities,
+					disabilities_cures,
 					player_alt_titles,
 					organ_data,
 					rlimb_data,
@@ -259,31 +260,32 @@
 		job_karma_low = text2num(query.item[38])
 
 		//Miscellaneous
-		flavor_text = query.item[39]
-		med_record = query.item[40]
-		sec_record = query.item[41]
-		gen_record = query.item[42]
+		flavor_text			= query.item[39]
+		med_record			= query.item[40]
+		sec_record			= query.item[41]
+		gen_record			= query.item[42]
 		// Apparently, the preceding vars weren't always encoded properly...
 		if(findtext(flavor_text, "<")) // ... so let's clumsily check for tags!
-			flavor_text = html_encode(flavor_text)
+			flavor_text		= html_encode(flavor_text)
 		if(findtext(med_record, "<"))
-			med_record = html_encode(med_record)
+			med_record		= html_encode(med_record)
 		if(findtext(sec_record, "<"))
-			sec_record = html_encode(sec_record)
+			sec_record		= html_encode(sec_record)
 		if(findtext(gen_record, "<"))
-			gen_record = html_encode(gen_record)
-		disabilities = text2num(query.item[43])
-		player_alt_titles = params2list(query.item[44])
-		organ_data = params2list(query.item[45])
-		rlimb_data = params2list(query.item[46])
-		ark_soft_relation = query.item[47]
-		speciesprefs = text2num(query.item[48])
+			gen_record		= html_encode(gen_record)
+		disabilities		= text2num(query.item[43])
+		disabilities_cures	= text2num(query.item[44])
+		player_alt_titles	= params2list(query.item[45])
+		organ_data			= params2list(query.item[46])
+		rlimb_data			= params2list(query.item[47])
+		ark_soft_relation	= query.item[48]
+		speciesprefs		= text2num(query.item[49])
 
 		//socks
-		socks = query.item[49]
-		body_accessory = query.item[50]
-		loadout_gear = params2list(query.item[51])
-		autohiss_mode = text2num(query.item[52])
+		socks = query.item[50]
+		body_accessory = query.item[51]
+		loadout_gear = params2list(query.item[52])
+		autohiss_mode = text2num(query.item[53])
 
 		saved = TRUE
 
@@ -322,20 +324,21 @@
 	b_type			= sanitize_text(b_type, initial(b_type))
 	autohiss_mode	= sanitize_integer(autohiss_mode, 0, 2, initial(autohiss_mode))
 
-	alternate_option = sanitize_integer(alternate_option, 0, 2, initial(alternate_option))
-	job_support_high = sanitize_integer(job_support_high, 0, 65535, initial(job_support_high))
-	job_support_med = sanitize_integer(job_support_med, 0, 65535, initial(job_support_med))
-	job_support_low = sanitize_integer(job_support_low, 0, 65535, initial(job_support_low))
-	job_medsci_high = sanitize_integer(job_medsci_high, 0, 65535, initial(job_medsci_high))
-	job_medsci_med = sanitize_integer(job_medsci_med, 0, 65535, initial(job_medsci_med))
-	job_medsci_low = sanitize_integer(job_medsci_low, 0, 65535, initial(job_medsci_low))
-	job_engsec_high = sanitize_integer(job_engsec_high, 0, 65535, initial(job_engsec_high))
-	job_engsec_med = sanitize_integer(job_engsec_med, 0, 65535, initial(job_engsec_med))
-	job_engsec_low = sanitize_integer(job_engsec_low, 0, 65535, initial(job_engsec_low))
-	job_karma_high = sanitize_integer(job_karma_high, 0, 65535, initial(job_karma_high))
-	job_karma_med = sanitize_integer(job_karma_med, 0, 65535, initial(job_karma_med))
-	job_karma_low = sanitize_integer(job_karma_low, 0, 65535, initial(job_karma_low))
-	disabilities = sanitize_integer(disabilities, 0, 65535, initial(disabilities))
+	alternate_option	= sanitize_integer(alternate_option, 0, 2, initial(alternate_option))
+	job_support_high	= sanitize_integer(job_support_high, 0, 65535, initial(job_support_high))
+	job_support_med		= sanitize_integer(job_support_med, 0, 65535, initial(job_support_med))
+	job_support_low		= sanitize_integer(job_support_low, 0, 65535, initial(job_support_low))
+	job_medsci_high		= sanitize_integer(job_medsci_high, 0, 65535, initial(job_medsci_high))
+	job_medsci_med		= sanitize_integer(job_medsci_med, 0, 65535, initial(job_medsci_med))
+	job_medsci_low		= sanitize_integer(job_medsci_low, 0, 65535, initial(job_medsci_low))
+	job_engsec_high		= sanitize_integer(job_engsec_high, 0, 65535, initial(job_engsec_high))
+	job_engsec_med		= sanitize_integer(job_engsec_med, 0, 65535, initial(job_engsec_med))
+	job_engsec_low		= sanitize_integer(job_engsec_low, 0, 65535, initial(job_engsec_low))
+	job_karma_high		= sanitize_integer(job_karma_high, 0, 65535, initial(job_karma_high))
+	job_karma_med		= sanitize_integer(job_karma_med, 0, 65535, initial(job_karma_med))
+	job_karma_low		= sanitize_integer(job_karma_low, 0, 65535, initial(job_karma_low))
+	disabilities		= sanitize_integer(disabilities, 0, 65535, initial(disabilities))
+	disabilities_cures	= sanitize_integer(disabilities_cures, 0 , 65535, initial(disabilities_cures))
 
 	socks			= sanitize_text(socks, initial(socks))
 	body_accessory	= sanitize_text(body_accessory, initial(body_accessory))
@@ -423,6 +426,7 @@
 												gen_record=:gen_record,
 												player_alt_titles=:playertitlelist,
 												disabilities=:disabilities,
+												disabilities_cures=:disabilities_cures,
 												organ_data=:organlist,
 												rlimb_data=:rlimblist,
 												ark_soft_relation=:ark_soft_relation,
@@ -478,6 +482,7 @@
 													"gen_record" = gen_record,
 													"playertitlelist" = (playertitlelist ? playertitlelist : ""), // This it intentnional. It wont work without it!
 													"disabilities" = disabilities,
+													"disabilities_cures" = disabilities_cures,
 													"organlist" = (organlist ? organlist : ""),
 													"rlimblist" = (rlimblist ? rlimblist : ""),
 													"ark_soft_relation" = ark_soft_relation,
@@ -525,7 +530,7 @@
 											sec_record,
 											gen_record,
 											player_alt_titles,
-											disabilities, organ_data, rlimb_data, ark_soft_relation, speciesprefs,
+											disabilities, :disabilities_cures, organ_data, rlimb_data, ark_soft_relation, speciesprefs,
 											socks, body_accessory, gear, autohiss)
 
 					VALUES
@@ -553,7 +558,7 @@
 											:sec_record,
 											:gen_record,
 											:playertitlelist,
-											:disabilities, :organlist, :rlimblist, :ark_soft_relation, :speciesprefs,
+											:disabilities, :disabilities_cures, :organlist, :rlimblist, :ark_soft_relation, :speciesprefs,
 											:socks, :body_accessory, :gearlist, :autohiss_mode)
 
 	"}, list(
@@ -604,6 +609,7 @@
 		"gen_record" = gen_record,
 		"playertitlelist" = (playertitlelist ? playertitlelist : ""), // This it intentnional. It wont work without it!
 		"disabilities" = disabilities,
+		"disabilities_cures" = disabilities_cures,
 		"organlist" = (organlist ? organlist : ""),
 		"rlimblist" = (rlimblist ? rlimblist : ""),
 		"ark_soft_relation" = ark_soft_relation,
