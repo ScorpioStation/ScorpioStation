@@ -91,13 +91,14 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 	desc = "This limb is simple and functional; no effort has been made to make it look human."
 	icon = 'icons/mob/human_races/cyberlimbs/morpheus/morpheus_main.dmi'
 	has_subtypes = brand
+	is_monitor = TRUE
+	unavailable_at_chargen = TRUE
 
 /datum/robolimb/morpheus/monitor
 	model_name = "Morpheus Cyberkinetics Monitor"
 	icon = 'icons/mob/human_races/cyberlimbs/morpheus/morpheus_alt1.dmi'
 	parts = list("head")
-	is_monitor = TRUE
-	unavailable_at_chargen = null
+	unavailable_at_chargen = FALSE
 	has_subtypes = childless //Edge case. We want to be able to pick this one, and if we had it left as null for has_subtypes we'd be assuming it'll be chosen as a child model, and since the parent is unavailable at chargen, we wouldn't be able to see it in the list anyway. Now, we'll be able to select the Morpheus Ckt. Alt. head as a solo-model.
 
 //Mantis
@@ -220,6 +221,7 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 	desc = "This limb has a sleek black and white polymer finish."
 	icon = 'icons/mob/human_races/cyberlimbs/zenghu/zenghu_spirit.dmi'
 	has_subtypes = childless
+
 
 #undef model
 #undef brand
