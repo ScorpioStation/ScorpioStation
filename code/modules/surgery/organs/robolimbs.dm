@@ -17,7 +17,6 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 	var/parts = list("chest", "groin", "head", "r_arm", "r_hand", "r_leg", "r_foot", "l_leg", "l_foot", "l_arm", "l_hand")	// Defines what parts said brand can replace on a body.
 
 /* Bishop */
-
 //Main
 /datum/robolimb/bishop
 	company = "Bishop Cybernetics"
@@ -47,7 +46,6 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 	has_subtypes = model
 
 /* Hesphiastos */
-
 //Main
 /datum/robolimb/hesphiastos
 	company = "Hesphiastos Industries"
@@ -155,6 +153,10 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 
 //Economy
 /datum/robolimb/xioneconomy
+	company = "Xion Manufacturing Group Economy"
+	desc = "This skeletal mechanical limb has a minimalist black and red casing."
+	icon = 'icons/mob/human_races/cyberlimbs/xion/xion_econo.dmi'
+	has_subtypes = brand
 
 /datum/robolimb/xioneconomy/monitor
 	company = "Xion Manufacturing Group Economy Monitor"
