@@ -37,7 +37,7 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 
 //Rook
 /datum/robolimb/rook
-	company = "Bishop Cybernetics"
+	company = "Bishop Rook"
 	model_name = "The Rook"
 	desc = "This limb has a polished metallic casing and a holographic face emitter."
 	icon = 'icons/mob/human_races/cyberlimbs/bishop/bishop_rook.dmi'
@@ -69,7 +69,7 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 
 //Titan
 /datum/robolimb/titan
-	company = "Hesphiastos Industries"
+	company = "Hesphiastos Titan"
 	model_name = "Hesphiastos Titan"
 	desc = "This limb has a casing of an olive drab finish, providing a reinforced housing look."
 	icon = 'icons/mob/human_races/cyberlimbs/hesphiastos/hesphiastos_titan.dmi'
@@ -87,12 +87,13 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 //Main
 /datum/robolimb/morpheus
 	company = "Morpheus Cyberkinetics"
+	model_name = "Morpheus Cyberkinetics"
 	desc = "This limb is simple and functional; no effort has been made to make it look human."
 	icon = 'icons/mob/human_races/cyberlimbs/morpheus/morpheus_main.dmi'
 	has_subtypes = brand
 
 /datum/robolimb/morpheus/monitor
-	model_name = "Morpheus Monitor"
+	model_name = "Morpheus Cyberkinetics Monitor"
 	icon = 'icons/mob/human_races/cyberlimbs/morpheus/morpheus_alt1.dmi'
 	parts = list("head")
 	is_monitor = TRUE
@@ -101,7 +102,7 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 
 //Mantis
 /datum/robolimb/mantis
-	company = "Morpheus Cyberkinetics"
+	company = "Morpheus Mantis"
 	model_name = "Morpheus Mantis"
 	desc = "This limb has a casing of sleek black metal and innovative insectile design."
 	icon = 'icons/mob/human_races/cyberlimbs/morpheus/morpheus_mantis.dmi'
@@ -119,8 +120,8 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 //Main
 /datum/robolimb/wardtakahashi
 	company = "Ward-Takahashi"
-	desc = "This limb features sleek black and white polymers."
 	model_name = "Ward-Takahashi"
+	desc = "This limb features sleek black and white polymers."
 	icon = 'icons/mob/human_races/cyberlimbs/wardtakahashi/wardtakahashi_main.dmi'
 	has_subtypes = brand
 
@@ -133,7 +134,7 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 
 //Economy
 /datum/robolimb/wardeconomy
-	company = "Ward-Takahashi"
+	company = "Ward-Takahashi Efficiency"
 	model_name = "Ward-Takahashi Efficiency"
 	desc = "A simple robotic limb with retro design. Seems rather stiff."
 	icon = 'icons/mob/human_races/cyberlimbs/wardtakahashi/wardtakahashi_main.dmi'
@@ -165,7 +166,7 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 
 //Economy
 /datum/robolimb/xioneconomy
-	company = "Xion Manufacturing Group"
+	company = "Xion Economy"
 	desc = "This skeletal mechanical limb has a minimalist black and red casing."
 	model_name = "Xion Economy"
 	icon = 'icons/mob/human_races/cyberlimbs/xion/xion_econo.dmi'
@@ -215,8 +216,11 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 
 //Zenghu - Spirit
 /datum/robolimb/spirit
-	company = "Zeng-Hu Pharmaceuticals"
+	company = "Zeng-Hu Spirit"
 	desc = "This limb has a sleek black and white polymer finish."
-	model_name = "Zeng-Hu Spirit"
 	icon = 'icons/mob/human_races/cyberlimbs/zenghu/zenghu_spirit.dmi'
 	has_subtypes = childless
+
+#undef model
+#undef brand
+#undef childless
