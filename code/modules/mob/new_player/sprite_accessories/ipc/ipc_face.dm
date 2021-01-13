@@ -2,7 +2,7 @@
 	icon = 'icons/mob/sprite_accessories/ipc/ipc_face.dmi'
 	species_allowed = list("Machine")
 	glasses_over = 1
-	models_allowed = list("The Rook Monitor", "Hesphiastos Industries Monitor", "Morpheus Cyberkinetics Monitor", "Ward-Takahashi Monitor", "Xion Manufacturing Group Monitor", "Shellguard Munitions Standard Series Monitor")
+	models_allowed = list("The Rook", "Industrial Monitor", "Cyberkinetics Monitor", "Ward-Takahashi Monitor", "Alternative Xion Monitor", "Shellguard Munitions Standard Series")
 
 /datum/sprite_accessory/hair/ipc/ipc_screen_blank
 	name = "Blank IPC Screen"

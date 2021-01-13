@@ -121,6 +121,7 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 	has_subtypes = brand
 
 /datum/robolimb/wardtakahashi/monitor
+	company = "Ward-Takahashi Monitor"
 	icon = 'icons/mob/human_races/cyberlimbs/wardtakahashi/wardtakahashi_monitor.dmi'
 	parts = list("head")
 	is_monitor = TRUE
@@ -134,6 +135,7 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 	has_subtypes = brand
 
 /datum/robolimb/wardeconomy/monitor
+	company = "Alternative Efficiency Monitor"
 	icon = 'icons/mob/human_races/cyberlimbs/wardtakahashi/wardtakahashi_alt1.dmi'
 	parts = list("head")
 	is_monitor = TRUE
@@ -149,6 +151,7 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 	has_subtypes = brand
 
 /datum/robolimb/xion/monitor
+	company = "Alternative Xion Monitor"
 	icon = 'icons/mob/human_races/cyberlimbs/xion/xion_monitor.dmi'
 	parts = list("head")
 	is_monitor = TRUE
@@ -162,6 +165,7 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 	has_subtypes = brand
 
 /datum/robolimb/xioneconomy/monitor
+	company = "Alternative Economy Monitor"
 	icon = 'icons/mob/human_races/cyberlimbs/xion/xion_alt1.dmi'
 	parts = list("head")
 	is_monitor = TRUE
@@ -177,6 +181,7 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 	has_subtypes = brand
 
 /datum/robolimb/shellguard/monitor
+	company = "Shellguard Munitions Standard Series"
 	icon = 'icons/mob/human_races/cyberlimbs/shellguard/shellguard_monitor.dmi'
 	parts = list("head")
 	is_monitor = TRUE
@@ -184,7 +189,7 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 
 //Elite
 /datum/robolimb/shellguard/alt1
-	company = "Shellguard Munitions"
+	company = "Shellguard Munitions Elite Series"
 	icon = 'icons/mob/human_races/cyberlimbs/shellguard/shellguard_alt1.dmi'
 	parts = list("head")
 	is_monitor = TRUE

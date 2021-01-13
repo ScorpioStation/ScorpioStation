@@ -3,7 +3,7 @@
 	icon = 'icons/mob/sprite_accessories/ipc/ipc_optics.dmi'
 	icon_state = "optics"
 	species_allowed = list("Machine")
-	models_allowed = list("The Rook Monitor", "Hesphiastos Industries Monitor", "Ward-Takahashi Monitor", "Xion Manufacturing Group Monitor", "Zeng-Hu Pharmaceuticals Monitor") //Should be the same as the manufacturing company of the limb in robolimbs.dm
+	models_allowed = list("The Rook Monitor", "Industrial Monitor", "Ward-Takahashi Monitor", "Alternative Xion Monitor", "Zeng-Hu Pharmaceuticals Monitor") //Should be the same as the manufacturing company of the limb in robolimbs.dm
 
 /datum/sprite_accessory/body_markings/head/optics/bishop_alt
 	name = "The Bishop Optics"
@@ -18,7 +18,7 @@
 /datum/sprite_accessory/body_markings/head/optics/wardtakahashi_alt
 	name = "Ward-Takahashi Efficiency Optics"
 	icon_state = "wardtakahashi_alt_optics"
-	models_allowed = list("Ward-Takahashi Efficiecny Monitor")
+	models_allowed = list("Ward-Takahashi Efficiency Monitor")
 
 /datum/sprite_accessory/body_markings/head/optics/xion_alt
 	name = "Xion Economy Optics"
