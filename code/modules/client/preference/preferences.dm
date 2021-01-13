@@ -133,6 +133,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/body_accessory = null
 
 	var/speciesprefs = 0//I hate having to do this, I really do (Using this for oldvox code, making names universal I guess
+	var/r_company = "Morpheus Cyberkinetics"
 
 		//Mob preview
 	var/icon/preview_icon = null
@@ -284,6 +285,8 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			if(species == "Grey")
 				dat += "<b>Wingdings:</b> Set in disabilities<br>"
 				dat += "<b>Voice Translator:</b> <a href ='?_src_=prefs;preference=speciesprefs;task=input'>[speciesprefs ? "Yes" : "No"]</a><br>"
+			if(species == "Machine")
+				dat += "<b>Synthetic Shell:</b> <a href='?_src_=prefs;preference=ipcloadouts;task=input'>[r_company]</a><br>"
 			dat += "<b>Secondary Language:</b> <a href='?_src_=prefs;preference=language;task=input'>[language]</a><br>"
 			if(S.autohiss_basic_map)
 				dat += "<b>Auto-accent:</b> <a href='?_src_=prefs;preference=autohiss_mode;task=input'>[autohiss_mode == AUTOHISS_FULL ? "Full" : (autohiss_mode == AUTOHISS_BASIC ? "Basic" : "Off")]</a><br>"
@@ -861,7 +864,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	SetChoices(user)
 
 	return 1
-
 /datum/preferences/proc/ShowDisabilityState(mob/user, flag, label)
 	return "<li><b>[label]:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability=[flag]\">[disabilities & flag ? "Yes" : "No"]</a></li>"
 
@@ -1125,6 +1127,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			else
 				SetChoices(user)
 		return 1
+
 	else if(href_list["preference"] == "disabilities")
 
 		switch(href_list["task"])
@@ -1800,6 +1803,31 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 						flavor_text = msg
 
+				if("ipcloadouts")
+					var/choice
+					var/datum/robolimb/R = new()
+					var/robolimb_companies = list()
+					var/rparts = list("chest", "groin", "head", "r_arm", "r_hand", "r_leg", "r_foot", "l_leg", "l_foot", "l_arm", "l_hand")
+					for(var/comp in typesof(/datum/robolimb)) //This loop populates a list of companies that shells
+						R = new comp()
+						robolimb_companies[R.company] = R	//Before the GLOBAL list gets populated, I think?
+					R = new() //Re-initialize R.
+					choice = input(user, "Which manufacturer model would you like to use?") as null|anything in robolimb_companies
+					if(!choice)
+						return
+					R.company = choice
+					R = GLOB.all_robolimbs[R.company]
+					for(var/limb in rparts)
+						if(limb == "head")
+							ha_style = "None"
+							alt_head = null
+							h_style = GLOB.hair_styles_public_list["Bald"]
+							f_style = GLOB.facial_hair_styles_list["Shaved"]
+							m_styles["head"] = "None"
+						rlimb_data[limb] = choice
+						organ_data[limb] = "cyborg"
+					r_company = choice
+
 				if("limbs")
 					var/valid_limbs = list("Left Leg", "Right Leg", "Left Arm", "Right Arm", "Left Foot", "Right Foot", "Left Hand", "Right Hand")
 					if(S.bodyflags & ALL_RPARTS)
@@ -1891,10 +1919,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 								return
 							R.company = choice
 							R = GLOB.all_robolimbs[R.company]
-
-							// var/list/robolimb_models = list
-							// for(var/b in typesof(R))
-							// 	var/datum/robolimb/rbrand = b
 
 							if(R.has_subtypes != 0)				//If the company the user selected provides more than just one base model, lets handle it.
 								var/list/robolimb_models = list()
