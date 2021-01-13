@@ -50,6 +50,7 @@
 	var/med_record = ""
 	var/sec_record = ""
 	var/gen_record = ""
+	var/is_shifted = FALSE
 	var/lying = 0
 	var/lying_prev = 0
 	var/lastpuke = 0

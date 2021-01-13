@@ -893,12 +893,6 @@
 
 	return loc_temp
 
-/mob/living/proc/get_standard_pixel_x_offset(lying = 0)
-	return initial(pixel_x)
-
-/mob/living/proc/get_standard_pixel_y_offset(lying = 0)
-	return initial(pixel_y)
-
 /mob/living/proc/spawn_dust()
 	new /obj/effect/decal/cleanable/ash(loc)
 
