@@ -11,10 +11,12 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 	var/company = "Unbranded"								// Shown when selecting the limb. Dio Unbrando.
 	var/desc = "A generic unbranded robotic prosthesis."	// Seen when examining a limb.
 	var/icon = 'icons/mob/human_races/robotic.dmi'			// Icon base to draw from.
-	var/unavailable_at_chargen = FALSE	// No, apparently not. ==> // If TRUE, not available at chargen.
-	var/selectable = TRUE				// This is NOT what this flag has come to mean. This means whether you can select it at loadout. ==> // If set, is it available for selection on attack_self with a robo limb?
-	var/is_monitor						// If set, limb is a monitor and should be getting monitor styles.
-	var/has_subtypes = childless		// If 0, object is a model. If 1, object is a brand (that serves as the default model) with child models. If 2, object is a brand that has no child models and thus also serves as the model..
+	var/unavailable_at_chargen = FALSE						// If TRUE, not available at chargen.
+	var/selectable = TRUE	// If set, is it available for selection on attack_self with a robo limb?
+							// This also affects character set up. Setting everything to TRUE by default. If we want to change this, let me know (Iren / Kiyahitayika)
+	var/is_monitor			// If set, limb is a monitor and should be getting monitor styles.
+	// If 0, object is a model. If 1, object is a brand (that serves as the default model) with child models. If 2, object is a brand that has no child models and thus also serves as the model..
+	var/has_subtypes = childless
 	var/parts = list("chest", "groin", "head", "r_arm", "r_hand", "r_leg", "r_foot", "l_leg", "l_foot", "l_arm", "l_hand")	// Defines what parts said brand can replace on a body.
 
 /* Arksoft's Tableau Entertainment */
@@ -167,7 +169,7 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 	has_subtypes = brand
 
 /datum/robolimb/xioneconomy/monitor
-	company_name = "Economy Standard"
+	company = "Economy Standard"
 	icon = 'icons/mob/human_races/cyberlimbs/xion/xion_alt1.dmi'
 	parts = list("head")
 	has_subtypes = model

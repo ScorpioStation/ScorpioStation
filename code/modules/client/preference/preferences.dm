@@ -1839,7 +1839,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 					var/limb = null
 					var/second_limb = null // if you try to change the arm, the hand should also change
 					var/third_limb = null  // if you try to unchange the hand, the arm should also change
-					var/valid_limb_states = list("Normal", "Amputated", "Prosthesis")
+					var/valid_limb_states = list("Normal", "Prosthesis")
 					var/no_amputate = FALSE
 
 					switch(limb_name)
