@@ -73,7 +73,10 @@
 
 		if (!faction_check_mob(L) && attack_same == 2)
 			return FALSE
-		if(L.stat > stat_attack)
+		var/lstat = L.stat
+		if(lstat == ANESTHETIZED)
+			lstat = UNCONSCIOUS
+		if(lstat > stat_attack)
 			return FALSE
 
 		return TRUE
