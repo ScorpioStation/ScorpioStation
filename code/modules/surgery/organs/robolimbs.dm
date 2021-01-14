@@ -140,8 +140,7 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 	has_subtypes = brand
 
 /datum/robolimb/wardeconomy/monitor
-	company = "Alternative Efficiency Monitor"		//Required for ipc_optics || ics_fac
-	model_name = "Alternative Efficiency"
+	company = "Alternative Efficiency"
 	icon = 'icons/mob/human_races/cyberlimbs/wardtakahashi/wardtakahashi_alt1.dmi'
 	parts = list("head")
 	is_monitor = TRUE
@@ -166,18 +165,15 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 //Economy
 /datum/robolimb/xioneconomy
 	company = "Xion Economy"
-	model_name = "Economy Standard"
 	desc = "This skeletal mechanical limb has a minimalist black and red casing."
 	icon = 'icons/mob/human_races/cyberlimbs/xion/xion_econo.dmi'
 	has_subtypes = brand
 
 /datum/robolimb/xioneconomy/monitor
-	company = "Alternative Economy Monitor"		//Required for ipc_optics || ics_face
-	model_name = "Economy Simple"
+	company_name = "Economy Standard"
 	icon = 'icons/mob/human_races/cyberlimbs/xion/xion_alt1.dmi'
 	parts = list("head")
 	is_monitor = TRUE
-	selectable = FALSE
 	has_subtypes = model
 
 /* Shellguard */

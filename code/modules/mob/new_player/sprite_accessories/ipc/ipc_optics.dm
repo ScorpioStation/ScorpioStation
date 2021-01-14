@@ -8,19 +8,19 @@
 /datum/sprite_accessory/body_markings/head/optics/bishop_alt
 	name = "The Bishop Optics"
 	icon_state = "bishop_alt_optics"
-	models_allowed = list("The Bishop Monitor")
+	models_allowed = list("Bishop Knight")
 
 /datum/sprite_accessory/body_markings/head/optics/morpheus_alt
 	name = "Morpheus Cybernetic Optics"
 	icon_state = "morpheus_alt_optics"
-	models_allowed = list("Morpheus Cyberkinetics Monitor")
+	models_allowed = list("Cyberkinetics Sport")
 
 /datum/sprite_accessory/body_markings/head/optics/wardtakahashi_alt
 	name = "Ward-Takahashi Efficiency Optics"
 	icon_state = "wardtakahashi_alt_optics"
-	models_allowed = list("Ward-Takahashi Efficiency Monitor")
+	models_allowed = list("Alternative Efficiency")
 
 /datum/sprite_accessory/body_markings/head/optics/xion_alt
 	name = "Xion Economy Optics"
 	icon_state = "xion_alt_optics"
-	models_allowed = list("Xion Economy")
+	models_allowed = list("Economy Standard")

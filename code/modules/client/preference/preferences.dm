@@ -1882,7 +1882,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 							if(!(S.bodyflags & ALL_RPARTS))
 								third_limb = "r_arm"
 
-					if(!no_amputate)	// I don't want this in my menu if it's not an option, geez.
+					if(!no_amputate)	// I don't want this in my menu if it's not an option, heck.
 						valid_limb_states += "Amputated"
 
 					var/new_state = input(user, "What state do you wish the limb to be in?") as null|anything in valid_limb_states
