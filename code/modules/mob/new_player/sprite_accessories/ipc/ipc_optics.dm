@@ -6,12 +6,12 @@
 	models_allowed = list("Tableau Entertainment Powered Mechanics", "Bishop Cybernetics", "Hesphiastos Industries", "Ward-Takahashi", "Xion Manufacturing Group", "Zeng-Hu Pharmaceuticals", "Zeng-Hu Spirit") //These 'monitors' need eyes, I mean, uh, "optics".
 
 /datum/sprite_accessory/body_markings/head/optics/bishop_alt
-	name = "Bishop Cyberknietics Optics"
+	name = "Bishop Cybernetics Optics"
 	icon_state = "bishop_alt_optics"
 	models_allowed = list("Bishop Knight")
 
 /datum/sprite_accessory/body_markings/head/optics/morpheus_alt
-	name = "Morpheus Cybernetic Optics"
+	name = "Morpheus Cyberkinetics Optics"
 	icon_state = "morpheus_alt_optics"
 	models_allowed = list("Cyberkinetics Sport")
 
