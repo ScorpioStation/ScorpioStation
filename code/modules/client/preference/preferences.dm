@@ -1808,9 +1808,10 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 					var/datum/robolimb/R = new()
 					var/robolimb_companies = list()
 					var/rparts = list("chest", "groin", "head", "r_arm", "r_hand", "r_leg", "r_foot", "l_leg", "l_foot", "l_arm", "l_hand")
-					for(var/comp in typesof(/datum/robolimb)) //This loop populates a list of companies that shells
+					for(var/comp in typesof(/datum/robolimb))	//This loop populates a list of companies that shells
 						R = new comp()
-						robolimb_companies[R.company] = R	//Before the GLOBAL list gets populated, I think?
+						if(R.has_subtypes != 0)					//No Monitor Models
+							robolimb_companies[R.company] = R
 					R = new() //Re-initialize R.
 					choice = input(user, "Which manufacturer model would you like to use?") as null|anything in robolimb_companies
 					if(!choice)
@@ -1839,19 +1840,19 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 					var/second_limb = null // if you try to change the arm, the hand should also change
 					var/third_limb = null  // if you try to unchange the hand, the arm should also change
 					var/valid_limb_states = list("Normal", "Amputated", "Prosthesis")
-					var/no_amputate = 0
+					var/no_amputate = FALSE
 
 					switch(limb_name)
 						if("Torso")
 							limb = "chest"
 							second_limb = "groin"
-							no_amputate = 1
+							no_amputate = TRUE
 						if("Lower Body")
 							limb = "groin"
-							no_amputate = 1
+							no_amputate = TRUE
 						if("Head")
 							limb = "head"
-							no_amputate = 1
+							no_amputate = TRUE
 						if("Left Leg")
 							limb = "l_leg"
 							second_limb = "l_foot"
@@ -1881,9 +1882,12 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 							if(!(S.bodyflags & ALL_RPARTS))
 								third_limb = "r_arm"
 
-					var/new_state = input(user, "What state do you wish the limb to be in?") as null|anything in valid_limb_states
-					if(!new_state) return
+					if(!no_amputate)	// I don't want this in my menu if it's not an option, geez.
+						valid_limb_states += "Amputated"
 
+					var/new_state = input(user, "What state do you wish the limb to be in?") as null|anything in valid_limb_states
+					if(!new_state)
+						return
 					switch(new_state)
 						if("Normal")
 							if(limb == "head")
@@ -1896,12 +1900,11 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 								organ_data[third_limb] = null
 								rlimb_data[third_limb] = null
 						if("Amputated")
-							if(!no_amputate)
-								organ_data[limb] = "amputated"
-								rlimb_data[limb] = null
-								if(second_limb)
-									organ_data[second_limb] = "amputated"
-									rlimb_data[second_limb] = null
+							organ_data[limb] = "amputated"
+							rlimb_data[limb] = null
+							if(second_limb)
+								organ_data[second_limb] = "amputated"
+								rlimb_data[second_limb] = null
 						if("Prosthesis")
 							var/choice
 							var/subchoice
@@ -1922,7 +1925,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 							if(R.has_subtypes != 0)				//If the company the user selected provides more than just one base model, lets handle it.
 								var/list/robolimb_models = list()
-
 								for(var/limb_type in typesof(R))	//Handling the different models of parts that manufacturers can provide.
 									var/datum/robolimb/L = new limb_type()
 									if(limb in L.parts)					//Make sure that only models that provide the parts the user needs populate the list.

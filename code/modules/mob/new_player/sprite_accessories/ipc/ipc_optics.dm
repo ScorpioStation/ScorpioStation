@@ -3,7 +3,7 @@
 	icon = 'icons/mob/sprite_accessories/ipc/ipc_optics.dmi'
 	icon_state = "optics"
 	species_allowed = list("Machine")
-	models_allowed = list("The Rook Monitor", "Industrial Monitor", "Ward-Takahashi Monitor", "Alternative Xion Monitor", "Zeng-Hu Pharmaceuticals Monitor") //Should be the same as the manufacturing company of the limb in robolimbs.dm
+	models_allowed = list("Bishop Rook", "Industrial Revolution", "Ward-Takahashi Monitor", "Alternative Xion Monitor", "Zeng-Hu Pharmaceuticals Monitor") //Should be the same as the manufacturing company of the limb in robolimbs.dm
 
 /datum/sprite_accessory/body_markings/head/optics/bishop_alt
 	name = "The Bishop Optics"
