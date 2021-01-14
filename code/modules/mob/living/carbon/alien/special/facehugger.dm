@@ -57,11 +57,10 @@
 /obj/item/clothing/mask/facehugger/examine(mob/user)
 	. = ..()
 	if(real)//So that giant red text about probisci doesn't show up for fake ones
-		switch(stat)
-			if(DEAD,UNCONSCIOUS,ANESTHETIZED)
-				. += "<span class='boldannounce'>[src] is not moving.</span>"
-			if(CONSCIOUS)
-				. += "<span class='boldannounce'>[src] seems to be active!</span>"
+		if(stat == CONSCIOUS)
+			. += "<span class='boldannounce'>[src] seems to be active!</span>"
+		else
+			. += "<span class='boldannounce'>[src] is not moving.</span>"
 		if(sterile)
 			. += "<span class='boldannounce'>It looks like the proboscis has been removed.</span>"
 

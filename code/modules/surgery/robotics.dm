@@ -322,24 +322,25 @@
 		user.visible_message("[user] begins reattaching [target]'s [tool].", \
 		"You start reattaching [target]'s [tool].")
 		target.custom_pain("Someone's rooting around in your [affected.name]!")
+
 	else if(istype(tool,/obj/item/mmi))
 		current_type = "install"
-
 		if(target_zone != "chest")
 			to_chat(user, "<span class='notice'> You must target the chest cavity.</span>")
-
 			return -1
 		var/obj/item/mmi/M = tool
-
-
 		if(!affected)
 			return -1
-
 		if(!istype(M))
 			return -1
-
-		if(!M.brainmob || !M.brainmob.client || !M.brainmob.ckey || M.brainmob.stat == DEAD)
+		if(!M.brainmob || !M.brainmob.ckey)
 			to_chat(user, "<span class='danger'>That brain is not usable.</span>")
+			return -1
+		if(!M.brainmob.client)
+			to_chat(user, "<span class='danger'>That brain seems to be missing a mind.</span>")
+			return -1
+		if(!M.brainmob.stat == DEAD)
+			to_chat(user, "<span class='danger'>That brain appears lifeless and dead.</span>")
 			return -1
 
 		if(!affected.is_robotic())

@@ -303,7 +303,7 @@
 			holder.icon_state = "hudstat"
 		if(UNCONSCIOUS,ANESTHETIZED)
 			holder.icon_state = "hudoffline"
-		else
+		if(DEAD)
 			holder.icon_state = "huddead2"
 
 //Borgie battery tracking!
