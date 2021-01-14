@@ -411,7 +411,10 @@ GLOBAL_LIST_INIT(intents, list(INTENT_HELP,INTENT_DISARM,INTENT_GRAB,INTENT_HARM
 /mob/living/verb/lay_down()
 	set name = "Rest"
 	set category = "IC"
-
+	if(is_shifted)
+		pixel_x = initial(pixel_x)
+		pixel_y = initial(pixel_y)
+		is_shifted = FALSE
 	if(!resting)
 		client.move_delay = world.time + 20
 		to_chat(src, "<span class='notice'>You are now resting.</span>")

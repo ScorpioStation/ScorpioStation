@@ -1075,35 +1075,49 @@ GLOBAL_LIST_INIT(slot_equipment_priority, list( \
 	set hidden = TRUE
 	return facedir(SOUTH)
 
+/mob/proc/canshift()
+	if(!canface() || pulling || pulledby)
+		return FALSE
+	var/turf/T = get_turf(src)
+	if(!T)
+		return FALSE
+	var/list/range = view(0, T)	// Same tile as usr
+	for(var/atom/A in range)
+		if(ismob(A))
+			var/mob/M = A
+			if(M != src)
+				return FALSE
+	return TRUE
+
 /mob/verb/eastshift()
 	set hidden = TRUE
-	if(!canface())
+	if(!canshift())
 		return FALSE
-	if(pixel_x <= 16)
+	if(pixel_x < 10)
 		pixel_x++
 		is_shifted = TRUE
 
 /mob/verb/westshift()
 	set hidden = TRUE
-	if(!canface())
+	if(!canshift())
 		return FALSE
-	if(pixel_x >= -16)
+	if(pixel_x > -10)
 		pixel_x--
 		is_shifted = TRUE
 
 /mob/verb/northshift()
 	set hidden = TRUE
-	if(!canface())
+	if(!canshift())
 		return FALSE
-	if(pixel_y <= 16)
+	if(pixel_y < 0)		//No vertical pixel-shifting, please
 		pixel_y++
 		is_shifted = TRUE
 
 /mob/verb/southshift()
 	set hidden = TRUE
-	if(!canface())
+	if(!canshift())
 		return FALSE
-	if(pixel_y >= -16)
+	if(pixel_y > 0)		//No vertical pixel-shifting, please
 		pixel_y--
 		is_shifted = TRUE
 

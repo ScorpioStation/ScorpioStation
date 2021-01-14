@@ -254,9 +254,9 @@
 
 /mob/living/proc/grabbedby(mob/living/carbon/user, supress_message = FALSE)
 	if(user == src || anchored)
-		return 0
+		return FALSE
 	if(!(status_flags & CANPUSH))
-		return 0
+		return FALSE
 
 	for(var/obj/item/grab/G in grabbed_by)
 		if(G.assailant == user)
@@ -267,7 +267,7 @@
 
 	var/obj/item/grab/G = new /obj/item/grab(user, src)
 	if(!G)	//the grab will delete itself in New if src is anchored
-		return 0
+		return FALSE
 	user.put_in_active_hand(G)
 	G.synch()
 	LAssailant = user
@@ -281,7 +281,6 @@
 	else*///This is an example of how you can make special types of grabs simply based on direction.
 	if(!supress_message)
 		visible_message("<span class='warning'>[user] has grabbed [src] passively!</span>")
-
 	return G
 
 /mob/living/attack_slime(mob/living/simple_animal/slime/M)

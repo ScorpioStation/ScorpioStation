@@ -1,12 +1,12 @@
-/mob/CanPass(atom/movable/mover, turf/target, height=0)
-	if(height==0)
-		return 1
+/mob/CanPass(atom/movable/mover, turf/target, height = 0)
+	if(height == 0)
+		return TRUE
 	if(istype(mover, /obj/item/projectile))
 		return (!density || lying)
 	if(mover.throwing)
 		return (!density || lying || (mover.throwing.thrower == src))
 	if(mover.checkpass(PASSMOB))
-		return 1
+		return TRUE
 	if(buckled == mover)
 		return TRUE
 	if(ismob(mover))
