@@ -37,8 +37,6 @@
 	bodyflags = HAS_SKIN_COLOR
 	dietflags = DIET_HERB		//bees feed off nectar, so bee people feed off plants too
 
-	dies_at_threshold = TRUE
-
 	reagent_tag = PROCESS_ORG
 	base_color = "#704300"
 	flesh_color = "#704300"
