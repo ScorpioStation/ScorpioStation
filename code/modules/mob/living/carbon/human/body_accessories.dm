@@ -31,18 +31,13 @@ GLOBAL_LIST_INIT(body_accessory_by_species, list("None" = null))
 
 /datum/body_accessory
 	var/name = "default"
-
 	var/icon = null
 	var/icon_state = ""
-
 	var/animated_icon = null
 	var/animated_icon_state = ""
-
 	var/blend_mode = null
-
 	var/pixel_x_offset = 0
 	var/pixel_y_offset = 0
-
 	var/list/allowed_species = list()
 
 /datum/body_accessory/proc/try_restrictions(mob/living/carbon/human/H)
@@ -130,4 +125,4 @@ GLOBAL_LIST_INIT(body_accessory_by_species, list("None" = null))
 	name = "Bee Tail"
 	icon_state = "wryntail"
 	allowed_species = list("Wryn")
-	
+
