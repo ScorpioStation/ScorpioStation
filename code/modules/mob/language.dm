@@ -435,7 +435,7 @@
 
 /datum/language/wryn
 	name = "Wryn Hivemind"
-	desc = "Wryn have the strange ability to commune over a psychic hivemind."
+	desc = "Wryn have the fascinating ability to commune over a psychic hivemind."
 	speech_verb = "chitters"
 	ask_verb = "chitters"
 	exclaim_verbs = list("buzzes")
@@ -444,13 +444,15 @@
 	flags = RESTRICTED | HIVEMIND | NOBABEL
 	follow = TRUE
 
-/datum/language/wryn/check_special_condition(mob/other)
-	var/mob/living/carbon/M = other
-	if(!istype(M))
-		return TRUE
+/datum/language/wryn/check_special_condition(mob/living/carbon/human/other, mob/living/carbon/human/speaker)
+	var/mob/living/carbon/human/M = other
+	var/mob/living/carbon/human/S = speaker
+	if(!atoms_share_level(M, S))
+		return FALSE
+	if(!iswryn(M))
+		return FALSE
 	if(locate(/obj/item/organ/internal/wryn/hivenode) in M.internal_organs)
 		return TRUE
-
 	return FALSE
 
 /datum/language/xenocommon
