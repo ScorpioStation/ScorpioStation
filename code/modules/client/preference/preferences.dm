@@ -304,23 +304,18 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 				var/headaccessoryname = "Head Accessory: "
 				if(species == "Unathi")
 					headaccessoryname = "Horns: "
-				if(species == "Kidan" || species == "Wryn")
-					headaccessoryname = "Antennae: "
 				dat += "<b>[headaccessoryname]</b>"
 				dat += "<a href='?_src_=prefs;preference=ha_style;task=input'>[ha_style]</a> "
-				if(!(S.bodyflags & NO_ACCESSORY_COLOR))
-					dat += "<a href='?_src_=prefs;preference=headaccessory;task=input'>Color</a> [color_square(hacc_colour)]"
-				dat += "<br>"
+				dat += "<a href='?_src_=prefs;preference=headaccessory;task=input'>Color</a> [color_square(hacc_colour)]<br>"
+
 			if(S.bodyflags & HAS_HEAD_MARKINGS) //Species with head markings.
 				dat += "<b>Head Markings:</b> "
 				dat += "<a href='?_src_=prefs;preference=m_style_head;task=input'>[m_styles["head"]]</a>"
-				dat += "<a href='?_src_=prefs;preference=m_head_colour;task=input'>Color</a> [color_square(m_colours["head"])]"
+				dat += "<a href='?_src_=prefs;preference=m_head_colour;task=input'>Color</a> [color_square(m_colours["head"])]<br>"
 			if(S.bodyflags & HAS_BODY_MARKINGS) //Species with body markings/tattoos.
 				dat += "<b>Body Markings:</b> "
 				dat += "<a href='?_src_=prefs;preference=m_style_body;task=input'>[m_styles["body"]]</a>"
-				if(!(S.bodyflags & NO_ACCESSORY_COLOR))
-					dat += "<a href='?_src_=prefs;preference=m_body_colour;task=input'>Color</a> [color_square(m_colours["body"])]"
-				dat += "<br>"
+				dat += "<a href='?_src_=prefs;preference=m_body_colour;task=input'>Color</a> [color_square(m_colours["body"])]<br>"
 			if(S.bodyflags & HAS_TAIL_MARKINGS) //Species with tail markings.
 				dat += "<b>Tail Markings:</b> "
 				dat += "<a href='?_src_=prefs;preference=m_style_tail;task=input'>[m_styles["tail"]]</a>"

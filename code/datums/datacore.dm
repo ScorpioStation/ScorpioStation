@@ -379,6 +379,18 @@ GLOBAL_VAR_INIT(record_id_num, 1001)
 	for(var/obj/item/organ/external/E in H.bodyparts)
 		preview_icon.Blend(E.get_icon(), ICON_OVERLAY)
 
+	// //Wings -- BUH for ids help
+	// if(H.body_accessory && istype(H.body_accessory, /datum/body_accessory/wings))
+	// 	temp = new/icon("icon" = H.body_accessory.icon, "icon_state" = H.body_accessory.icon_state)
+	// 	preview_icon.Blend(temp, ICON_OVERLAY)
+	// else if(H.wings && H.dna.species.bodyflags & HAS_WINGS)
+	// 	temp = new/icon("icon" = 'icons/effects/species.dmi', "icon_state" = "[H.wings]_s")
+	// 	preview_icon.Blend(temp, ICON_OVERLAY)
+
+	// for(var/obj/item/organ/external/E in H.bodyparts)
+	// 	preview_icon.Blend(E.get_icon(), ICON_OVERLAY)
+
+
 	// Skin tone
 	if(H.dna.species.bodyflags & HAS_SKIN_TONE)
 		if(H.s_tone >= 0)

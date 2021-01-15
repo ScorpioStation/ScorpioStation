@@ -1,7 +1,8 @@
 /datum/sprite_accessory/head_accessory/wryn
-	icon = 'icons/mob/sprite_accessories/wryn/wryn_hair.dmi'	// Sprites ported from /tg/'s moths
+	icon = 'icons/mob/sprite_accessories/wryn/wryn_head_accessories.dmi'	// Sprites ported from /tg/'s moths
 	species_allowed = list("Wryn")
-	glasses_over = TRUE
+	over_hair = TRUE
+	do_colouration = FALSE
 
 /datum/sprite_accessory/head_accessory/wryn/monarch
 	name = "Wryn Monarch Antennae"
@@ -15,7 +16,7 @@
 	name = "Wryn Altas Antennae"
 	icon_state = "altas"
 
-/datum/sprite_accessory/hairy/wryn/plain
+/datum/sprite_accessory/head_accessory/wryn/plain
 	name = "Wryn Plain Antennae"
 	icon_state = "plain"
 
