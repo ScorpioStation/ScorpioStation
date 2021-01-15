@@ -6,11 +6,6 @@
 	blacklisted = TRUE
 	language = "Wryn Hivemind"
 	tail = "wryntail"
-	punchdamagelow = 0
-	punchdamagehigh = 1
-	speed_mod = 1
-	warning_low_pressure = -300
-	hazard_low_pressure = 1
 	blurb = "The wryn (r-in, singular r-in) are a humanoid race that possess many bee-like features. Originating from Alveare they \
 	have adapted extremely well to cold environments though have lost most of their muscles over generations.\
 	In order to communicate and work with multi-species crew Wryn were forced to take on names. Wryn have tended towards using only \
@@ -37,7 +32,7 @@
 		"antennae" = /obj/item/organ/internal/wryn/hivenode
 		)
 
-	species_traits = list(HIVEMIND, IS_WHITELISTED, LIPS, NO_BREATHE, NO_SCAN)
+	species_traits = list(HIVEMIND, IS_WHITELISTED, LIPS, NO_SCAN)
 	clothing_flags = HAS_UNDERWEAR | HAS_UNDERSHIRT | HAS_SOCKS
 	bodyflags = HAS_SKIN_COLOR
 	dietflags = DIET_HERB		//bees feed off nectar, so bee people feed off plants too
