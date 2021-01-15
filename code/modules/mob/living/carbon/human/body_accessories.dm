@@ -8,7 +8,8 @@ GLOBAL_LIST_INIT(body_accessory_by_species, list("None" = null))
 		if(!istype(accessory))	continue
 
 		for(var/species in accessory.allowed_species)
-			if(!GLOB.body_accessory_by_species["[species]"])	GLOB.body_accessory_by_species["[species]"] = list()
+			if(!GLOB.body_accessory_by_species["[species]"])
+				GLOB.body_accessory_by_species["[species]"] = list()
 			GLOB.body_accessory_by_species["[species]"] += accessory
 
 	if(GLOB.body_accessory_by_species.len)
