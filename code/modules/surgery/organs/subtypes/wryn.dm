@@ -27,6 +27,6 @@
 	name = "wryn lungs"
 	icon = 'icons/obj/species_organs/kidan.dmi'
 
-/obj/item/organ/internal/kidneys/kidan
+/obj/item/organ/internal/kidneys/wryn
 	name = "wryn kidneys"
 	icon = 'icons/obj/species_organs/kidan.dmi'
