@@ -1,5 +1,5 @@
 /datum/sprite_accessory/body_markings/wryn
-	icon = 'icons/mob/sprite_accessories/wryn/wryn_body_markings.dmi'
+	icon = 'icons/mob/sprite_accessories/wryn/wryn_body_markings.dmi'	// Sprites ported from /tg/'s moths
 	species_allowed = list("Wryn")
 
 /datum/sprite_accessory/body_markings/wryn/reddish
@@ -12,11 +12,11 @@
 
 /datum/sprite_accessory/body_markings/wryn/gothic
 	name = "Wryn Gothic Markings"
-	icon_state = "gothic_adj"
+	icon_state = "gothic_ADJ"
 
 /datum/sprite_accessory/body_markings/wryn/white
-	name = "Wryn White Stripes"
-	icon_state = "whitestripes_ADJ"
+	name = "Wryn Whitefly Markings"
+	icon_state = "whitefly_ADJ"
 
 /datum/sprite_accessory/body_markings/wryn/pink
 	name = "Wryn Pink Markings"
