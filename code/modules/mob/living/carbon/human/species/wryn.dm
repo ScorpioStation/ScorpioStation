@@ -52,11 +52,15 @@
 	..()
 	wryn_sting = new
 	wryn_sting.Grant(H)
+	if(!("antennae" in H.has_organ))
+		H.has_organ.Add("antennae" = /obj/item/organ/internal/wryn/hivenode)
 
 /datum/species/wryn/on_species_loss(mob/living/carbon/human/H)
 	..()
 	if(wryn_sting)
 		wryn_sting.Remove(H)
+	if("antennae" in H.has_organ)
+		H.has_organ.Remove("antennae" = /obj/item/organ/internal/wryn/hivenode)
 
 /* Wryn Sting Action Begin */
 

@@ -640,7 +640,6 @@ BLIND     // can't see anything
 	put_on_delay = 80
 	resistance_flags = NONE
 	hide_tail_by_species = null
-	species_restricted = list("exclude","Wryn")
 
 
 //Under clothing
