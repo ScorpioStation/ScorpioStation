@@ -192,7 +192,7 @@ GLOBAL_DATUM(basic_robolimb, /datum/robolimb)
 
 //Elite
 /datum/robolimb/shellguard/alt1
-	company = "Shellguard Minitions Elite Series"
+	company = "Shellguard Munitions Elite Series"
 	icon = 'icons/mob/human_races/cyberlimbs/shellguard/shellguard_alt1.dmi'
 	parts = list("head")
 	has_subtypes = model
