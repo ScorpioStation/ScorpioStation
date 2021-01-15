@@ -23,6 +23,14 @@
 	mmi_icon = 'icons/obj/species_organs/kidan.dmi'
 	mmi_icon_state = "mmi_full"
 
+/obj/item/organ/internal/brain/wryn/insert(var/mob/living/carbon/M, var/special = 0)
+	..()
+	M.add_language("Wryn Hivemind")
+
+/obj/item/organ/internal/brain/wryn/remove(var/mob/living/carbon/M, var/special = 0)
+	. = ..()
+	M.remove_language("Wryn Hivemind")
+
 /obj/item/organ/internal/lungs/wryn
 	name = "wryn lungs"
 	icon = 'icons/obj/species_organs/kidan.dmi'

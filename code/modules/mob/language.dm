@@ -437,7 +437,7 @@
 	name = "Wryn Hivemind"
 	desc = "Wryn have the fascinating ability to commune over a psychic hivemind."
 	speech_verb = "chitters"
-	ask_verb = "chitters"
+	ask_verb = "churrs"
 	exclaim_verbs = list("buzzes")
 	colour = "alien"
 	key = "y"
@@ -449,7 +449,9 @@
 	var/mob/living/carbon/human/S = speaker
 	if(!atoms_share_level(M, S))
 		return FALSE
-	if(!iswryn(M))
+	if(M.incapacitated() || S.incapacitated())
+		return FALSE
+	if(!iswryn(M) || !iswryn(S))
 		return FALSE
 	if(locate(/obj/item/organ/internal/wryn/hivenode) in M.internal_organs)
 		return TRUE
