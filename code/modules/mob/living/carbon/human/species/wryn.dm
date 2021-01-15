@@ -28,11 +28,13 @@
 	body_temperature = 286
 
 	has_organ = list(
-		"heart" =    /obj/item/organ/internal/heart,
-		"brain" =    /obj/item/organ/internal/brain,
-		"eyes" =     /obj/item/organ/internal/eyes/wryn, //3 darksight.
+		"heart" =    /obj/item/organ/internal/heart/wryn,
+		"lungs" =    /obj/item/organ/internal/lungs/wryn,
+		"kidneys" =  /obj/item/organ/internal/kidneys/wryn,
+		"brain" =    /obj/item/organ/internal/brain/wryn,
 		"appendix" = /obj/item/organ/internal/appendix,
-		"antennae" =    /obj/item/organ/internal/wryn/hivenode
+		"eyes" =     /obj/item/organ/internal/eyes/wryn,	//3 darksight.
+		"antennae" = /obj/item/organ/internal/wryn/hivenode
 		)
 
 	species_traits = list(HIVEMIND, IS_WHITELISTED, LIPS, NO_BREATHE, NO_SCAN)
