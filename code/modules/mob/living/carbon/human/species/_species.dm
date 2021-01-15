@@ -15,7 +15,8 @@
 
 	var/datum/species/primitive_form = null          // Lesser form, if any (ie. monkey for humans)
 	var/datum/species/greater_form = null             // Greater form, if any, ie. human for monkeys.
-	var/tail                     // Name of tail image in species effects icon file.
+	var/tail						// Name of tail image in species effects icon file.
+	var/wings						// Name of wings image in wryn body accessories icon file, oh skrek oh why oh skrek.
 	var/datum/unarmed_attack/unarmed                  //For empty hand harm-intent attack
 	var/unarmed_type = /datum/unarmed_attack
 	var/silent_steps = 0          // Stops step noises

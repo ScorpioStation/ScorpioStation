@@ -313,6 +313,32 @@
 
 		preview_icon.Blend(temp, ICON_OVERLAY)
 
+	//Wings
+	if(current_species && (current_species.bodyflags & HAS_WINGS))
+		var/wings_icon
+		var/wings_icon_state
+		var/wings_shift_x
+		var/wings_shift_y
+
+		if(body_accessory && GLOB.body_accessory_by_name[body_accessory])
+			var/datum/body_accessory/accessory = GLOB.body_accessory_by_name[body_accessory]
+			wings_icon = accessory.icon
+			wings_icon_state = accessory.icon_state
+			if(accessory.pixel_x_offset)
+				wings_shift_x = accessory.pixel_x_offset
+			if(accessory.pixel_y_offset)
+				wings_shift_y = accessory.pixel_y_offset
+		wings_icon = "icons/mob/sprite_accessories/wryn/wryn_body_accessories.dmi"
+		wings_icon_state = "[current_species.wings]_s"
+
+		var/icon/temp = new/icon("icon" = wings_icon, "icon_state" = wings_icon_state)
+		if(wings_shift_x)
+			temp.Shift(EAST, wings_shift_x)
+		if(wings_shift_y)
+			temp.Shift(NORTH, wings_shift_y)
+
+		preview_icon.Blend(temp, ICON_OVERLAY)
+
 	//Markings
 	if(current_species && ((current_species.bodyflags & HAS_HEAD_MARKINGS) || (current_species.bodyflags & HAS_BODY_MARKINGS)))
 		if(current_species.bodyflags & HAS_BODY_MARKINGS) //Body markings.

@@ -114,6 +114,7 @@
 
 	m_styles["tail"] = "None"
 	update_tail_layer()
+	update_wings_layer()
 	return 1
 
 /mob/living/carbon/human/proc/change_alt_head(var/alternate_head)

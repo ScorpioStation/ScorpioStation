@@ -33,7 +33,7 @@
 
 	species_traits = list(HIVEMIND, IS_WHITELISTED, LIPS, NO_SCAN)
 	clothing_flags = HAS_UNDERWEAR | HAS_UNDERSHIRT | HAS_SOCKS
-	bodyflags = HAS_SKIN_COLOR | HAS_HEAD_ACCESSORY | HAS_BODY_MARKINGS
+	bodyflags = HAS_SKIN_COLOR | HAS_HEAD_ACCESSORY | HAS_BODY_MARKINGS | HAS_WINGS | WINGS_OVERLAPPED
 	dietflags = DIET_HERB		//bees feed off nectar, so bee people feed off plants too
 
 	reagent_tag = PROCESS_ORG
@@ -41,8 +41,8 @@
 	flesh_color = "#704300"
 	blood_color = "#FFFF99"
 	//Default styles for created mobs.
-	default_hair = "Antennae"
-
+	//default_hair = "Antennae"
+	default_headacc = "Wryn Monarch Antennae"
 	var/datum/action/innate/wryn_sting/wryn_sting
 
 /datum/species/wryn/on_species_gain(mob/living/carbon/human/H)
@@ -143,7 +143,7 @@
 	for(var/mob/living/carbon/C in GLOB.alive_mob_list)
 		if(C.get_int_organ(/obj/item/organ/internal/wryn/hivenode))
 			to_chat(C, "<span class='danger'><B>Your antennae tingle as you are overcome with pain...</B></span>")
-			to_chat(C, "<span class='danger'>It feels like part of you has died.</span>") // This is bullshit
+			to_chat(C, "<span class='danger'>It feels like part of you has died.</span>") // This is bullshit // Stop whining - Arnold Schwazenager
 
 /datum/species/wryn/harm(mob/living/carbon/human/user, mob/living/carbon/human/target, datum/martial_art/attacker_style)
 	if(target.handcuffed && target.get_int_organ(/obj/item/organ/internal/wryn/hivenode))

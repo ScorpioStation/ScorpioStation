@@ -81,6 +81,8 @@
 #define NO_EYES				1024
 #define HAS_ALT_HEADS		2048
 #define ALL_RPARTS			4096
+#define HAS_WINGS			8192
+#define WINGS_OVERLAPPED	16384
 
 //Species Diet Flags
 #define DIET_CARN		1

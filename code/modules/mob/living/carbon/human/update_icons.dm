@@ -277,6 +277,9 @@ GLOBAL_LIST_EMPTY(damage_icon_parts)
 	apply_overlay(BODY_LAYER)
 	//tail
 	update_tail_layer()
+	//wings
+	update_wings_layer()
+	//internal organs
 	update_int_organs()
 	//head accessory
 	update_head_accessory()
@@ -525,6 +528,7 @@ GLOBAL_LIST_EMPTY(damage_icon_parts)
 	UpdateDamageIcon()
 	force_update_limbs()
 	update_tail_layer()
+	update_wings_layer()
 	update_halo_layer()
 	overlays.Cut() // Force all overlays to regenerate
 	update_fire()
@@ -883,6 +887,7 @@ GLOBAL_LIST_EMPTY(damage_icon_parts)
 
 	apply_overlay(SUIT_LAYER)
 	update_tail_layer()
+	update_wings_layer()
 	update_collar()
 
 /mob/living/carbon/human/update_inv_pockets()
@@ -1075,7 +1080,7 @@ GLOBAL_LIST_EMPTY(damage_icon_parts)
 				accessory_s.Blend(skin_colour, body_accessory.blend_mode)
 			if(tail_marking_icon && (body_accessory.name in tail_marking_style.tails_allowed))
 				accessory_s.Blend(tail_marking_icon, ICON_OVERLAY)
-			if((!body_accessory || (istype(body_accessory, /datum/body_accessory/tail) || istype(body_accessory, /datum/body_accessory/wings))) && dna.species.bodyflags & TAIL_OVERLAPPED) // If the player has a species whose tail is overlapped by limbs... (having a non-tail body accessory like the snake body will override this)
+			if((!body_accessory || istype(body_accessory, /datum/body_accessory/tail)) && dna.species.bodyflags & TAIL_OVERLAPPED) // If the player has a species whose tail is overlapped by limbs... (having a non-tail body accessory like the snake body will override this)
 				// Gives the underlimbs layer SEW direction icons since it's overlayed by limbs and just about everything else anyway.
 				var/icon/under = new/icon("icon" = 'icons/mob/body_accessory.dmi', "icon_state" = "accessory_none_s")
 				under.Insert(new/icon(accessory_s, dir=SOUTH), dir=SOUTH)
@@ -1109,7 +1114,7 @@ GLOBAL_LIST_EMPTY(damage_icon_parts)
 				tail_s.Blend(skin_colour, ICON_ADD)
 			if(tail_marking_icon && !tail_marking_style.tails_allowed)
 				tail_s.Blend(tail_marking_icon, ICON_OVERLAY)
-			if((!body_accessory || (istype(body_accessory, /datum/body_accessory/tail) || istype(body_accessory, /datum/body_accessory/wings))) && dna.species.bodyflags & TAIL_OVERLAPPED) // If the player has a species whose tail is overlapped by limbs... (having a non-tail body accessory like the snake body will override this)
+			if((!body_accessory || istype(body_accessory, /datum/body_accessory/tail)) && dna.species.bodyflags & TAIL_OVERLAPPED) // If the player has a species whose tail is overlapped by limbs... (having a non-tail body accessory like the snake body will override this)
 				// Gives the underlimbs layer SEW direction icons since it's overlayed by limbs and just about everything else anyway.
 				var/icon/under = new/icon("icon" = 'icons/effects/species.dmi', "icon_state" = "blank")
 				under.Insert(new/icon(tail_s, dir=SOUTH), dir=SOUTH)
@@ -1225,6 +1230,7 @@ GLOBAL_LIST_EMPTY(damage_icon_parts)
 /mob/living/carbon/human/handle_transform_change()
 	..()
 	update_tail_layer()
+	update_wings_layer()
 
 //Adds a collar overlay above the helmet layer if the suit has one
 //	Suit needs an identically named sprite in icons/mob/collar.dmi
@@ -1340,3 +1346,61 @@ GLOBAL_LIST_EMPTY(damage_icon_parts)
 				. += "[part.s_tone]"
 
 	. = "[.][!!husk][!!hulk][!!skeleton]"
+
+/mob/living/carbon/human/proc/update_wings_layer()
+	remove_overlay(WINGS_UNDERLIMBS_LAYER) // SEW direction icons, overlayed by LIMBS_LAYER.
+	remove_overlay(WINGS_LAYER) /* This will be one of two things:
+							If the species' wings is overlapped by limbs, this will be only the N direction icon so tails
+							can still appear on the outside of uniforms and such.
+							Otherwise, since the user's wings isn't overlapped by limbs, it will be a full icon with all directions. */
+
+	if(body_accessory)
+		if(body_accessory.try_restrictions(src))
+			var/icon/accessory_s = new/icon("icon" = body_accessory.icon, "icon_state" = body_accessory.icon_state)
+			if((!body_accessory || istype(body_accessory, /datum/body_accessory/wings)) && dna.species.bodyflags & WINGS_OVERLAPPED) // If the player has a species whose wings is overlapped by limbs... (having a non-wings body accessory like the snake body will override this)
+				// Gives the underlimbs layer SEW direction icons since it's overlayed by limbs and just about everything else anyway.
+				var/icon/under = new/icon("icon" = 'icons/mob/body_accessory.dmi', "icon_state" = "accessory_none_s")
+				under.Insert(new/icon(accessory_s, dir=SOUTH), dir=SOUTH)
+				under.Insert(new/icon(accessory_s, dir=EAST), dir=EAST)
+				under.Insert(new/icon(accessory_s, dir=WEST), dir=WEST)
+
+				var/mutable_appearance/underlimbs = mutable_appearance(under, layer = -WINGS_UNDERLIMBS_LAYER)
+				underlimbs.pixel_x = body_accessory.pixel_x_offset
+				underlimbs.pixel_y = body_accessory.pixel_y_offset
+				overlays_standing[WINGS_UNDERLIMBS_LAYER] = underlimbs
+
+				// Creates a blank icon, and copies accessory_s' north direction sprite into it
+				// before passing that to the wings layer that overlays uniforms and such.
+				var/icon/over = new/icon("icon" = 'icons/mob/body_accessory.dmi', "icon_state" = "accessory_none_s")
+				over.Insert(new/icon(accessory_s, dir=NORTH), dir=NORTH)
+
+				var/mutable_appearance/wings = mutable_appearance(over, layer = -WINGS_LAYER)
+				wings.pixel_x = body_accessory.pixel_x_offset
+				wings.pixel_y = body_accessory.pixel_y_offset
+				overlays_standing[WINGS_LAYER] = wings
+			else // Otherwise, since the user's wings isn't overlapped by limbs, go ahead and use default icon generation.
+				var/mutable_appearance/wings = mutable_appearance(accessory_s, layer = -WINGS_LAYER)
+				wings.pixel_x = body_accessory.pixel_x_offset
+				wings.pixel_y = body_accessory.pixel_y_offset
+				overlays_standing[WINGS_LAYER] = wings
+
+	else if(wings && dna.species.bodyflags & HAS_WINGS) //no tailless tajaran
+		var/icon/wings_s = new/icon("icon" = 'icons/mob/sprite_accessories/wryn/wryn_body_accessories.dmi', "icon_state" = "[wings]")
+		var/icon/wings_b = new/icon("icon" = 'icons/mob/sprite_accessories/wryn/wryn_body_accessories.dmi', "icon_state" = "[wings]_BEHIND_s")
+		if((!body_accessory || istype(body_accessory, /datum/body_accessory/wings)) && dna.species.bodyflags & WINGS_OVERLAPPED) // If the player has a species whose wings is overlapped by limbs... (having a non-wings body accessory like the snake body will override this)
+			// Gives the underlimbs layer SEW direction icons since it's overlayed by limbs and just about everything else anyway.
+			var/icon/under = new/icon("icon" = 'icons/effects/species.dmi', "icon_state" = "blank")
+			under.Insert(new/icon(wings_s, dir=SOUTH), dir=SOUTH)
+			under.Insert(new/icon(wings_b, dir=SOUTH), dir=SOUTH)
+			under.Insert(new/icon(wings_s, dir=EAST), dir=EAST)
+			under.Insert(new/icon(wings_s, dir=WEST), dir=WEST)
+
+			overlays_standing[WINGS_UNDERLIMBS_LAYER] = mutable_appearance(under, layer = -WINGS_UNDERLIMBS_LAYER)
+
+			// Creates a blank icon, and copies accessory_s' north direction sprite into it before passing that to the wings layer that overlays uniforms and such.
+			var/icon/over = new/icon("icon" = 'icons/effects/species.dmi', "icon_state" = "blank")
+			over.Insert(new/icon(wings_s, dir=NORTH), dir=NORTH) //We also want the wings behind icon here
+
+			overlays_standing[WINGS_LAYER] = mutable_appearance(over, layer = -WINGS_LAYER)
+	apply_overlay(WINGS_LAYER)
+	apply_overlay(WINGS_UNDERLIMBS_LAYER)
