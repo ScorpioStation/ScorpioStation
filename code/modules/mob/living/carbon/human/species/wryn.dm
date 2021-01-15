@@ -33,7 +33,7 @@
 
 	species_traits = list(HIVEMIND, IS_WHITELISTED, LIPS, NO_SCAN)
 	clothing_flags = HAS_UNDERWEAR | HAS_UNDERSHIRT | HAS_SOCKS
-	bodyflags = HAS_SKIN_COLOR
+	bodyflags = HAS_SKIN_COLOR | HAS_BODY_MARKINGS
 	dietflags = DIET_HERB		//bees feed off nectar, so bee people feed off plants too
 
 	reagent_tag = PROCESS_ORG
