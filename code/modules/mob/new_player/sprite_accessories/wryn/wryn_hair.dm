@@ -4,89 +4,88 @@
 	do_colouration = FALSE
 	glasses_over = TRUE
 
-
 /datum/sprite_accessory/hair/wryn/wryn_antennae_default
-	name = "Antennae"
+	name = "Thin Antennae"
 	icon_state = "antennae"
 	do_colouration = TRUE
 
 // Sprites ported from /tg/'s moths
 /datum/sprite_accessory/hair/wryn/monarch
-	name = "Wryn Monarch Antennae"
+	name = "Monarch Antennae"
 	icon_state = "monarch"
 
 /datum/sprite_accessory/hair/wryn/luna
-	name = "Wryn Luna Antennae"
+	name = "Luna Antennae"
 	icon_state = "luna"
 
 /datum/sprite_accessory/hair/wryn/altas
-	name = "Wryn Altas Antennae"
+	name = "Altas Antennae"
 	icon_state = "altas"
 
 /datum/sprite_accessory/hair/wryn/plain
-	name = "Wryn Plain Antennae"
+	name = "Plain Antennae"
 	icon_state = "plain"
 
 /datum/sprite_accessory/hair/wryn/reddish
-	name = "Wryn Reddish Antennae"
+	name = "Reddish Antennae"
 	icon_state = "reddish"
 
 /datum/sprite_accessory/hair/wryn/royal
-	name = "Wryn Royal Antennae"
+	name = "Royal Antennae"
 	icon_state = "royal"
 
 /datum/sprite_accessory/hair/wryn/gothic
-	name = "Wryn Gothic Antennae"
+	name = "Gothic Antennae"
 	icon_state = "gothic"
 
 /datum/sprite_accessory/hair/wryn/pink
-	name = "Wryn Pink Antennae"
+	name = "Pink Antennae"
 	icon_state = "lovers"
 
 /datum/sprite_accessory/hair/wryn/whitefly
-	name = "Wryn Whitefly Antennae"
+	name = "Whitefly Antennae"
 	icon_state = "whitefly"
 
 /datum/sprite_accessory/hair/wryn/burnt
-	name = "Wryn Burnt Off Antennae"
+	name = "Burnt Off Antennae"
 	icon_state = "burnt_off"
 
 /datum/sprite_accessory/hair/wryn/firewatch
-	name = "Wryn Firewatch Antennae"
+	name = "Firewatch Antennae"
 	icon_state = "firewatch"
 
 /datum/sprite_accessory/hair/wryn/deathhead
-	name = "Wryn Deathhead Antennae"
+	name = "Deathhead Antennae"
 	icon_state = "deathhead"
 
 /datum/sprite_accessory/hair/wryn/poisonous
-	name = "Wryn Poisonous Antennae"
+	name = "Poisonous Antennae"
 	icon_state = "poison"
 
 /datum/sprite_accessory/hair/wryn/ragged
-	name = "Wryn Ragged Antennae"
+	name = "Ragged Antennae"
 	icon_state = "ragged"
 
 /datum/sprite_accessory/hair/wryn/moonglow
-	name = "Wryn Moonglow Antennae"
+	name = "Moonglow Antennae"
 	icon_state = "moonglow"
 
 /datum/sprite_accessory/hair/wryn/snow
-	name = "Wryn Snow Antennae"
+	name = "Snow Antennae"
 	icon_state = "snow"
 
 /datum/sprite_accessory/hair/wryn/oakworm
-	name = "Wryn Oakworm Antennae"
+	name = "Oakworm Antennae"
 	icon_state = "oakworm"
 
 /datum/sprite_accessory/hair/wryn/witchwing
-	name = "Wryn Witchwing Antennae"
+	name = "Witchwing Antennae"
 	icon_state = "witchwing"
 
 /datum/sprite_accessory/hair/wryn/jungle
-	name = "Wryn Jungle Antennae"
+	name = "Jungle Antennae"
 	icon_state = "jungle"
 
 /datum/sprite_accessory/hair/wryn/regal
-	name = "Wryn Regal Antennae"
+	name = "Regal Antennae"
 	icon_state = "regal"
