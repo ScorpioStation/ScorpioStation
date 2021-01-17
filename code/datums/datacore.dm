@@ -379,10 +379,14 @@ GLOBAL_VAR_INIT(record_id_num, 1001)
 	//Wings
 	if(H.body_accessory && istype(H.body_accessory, /datum/body_accessory/wings))
 		temp = new/icon("icon" = H.body_accessory.icon, "icon_state" = H.body_accessory.icon_state)
+		var/temp_b = new/icon("icon" = H.body_accessory.icon, "icon_state" = "[H.body_accessory.icon_state]_BEHIND")
 		preview_icon.Blend(temp, ICON_OVERLAY)
+		preview_icon.Blend(temp_b,ICON_UNDERLAY)
 	else if(H.wings && H.dna.species.bodyflags & HAS_WINGS)
-		temp = new/icon("icon" = 'icons/mob/sprite_accessories/wryn/wryn_body_accessories.dmi', "icon_state" = "[H.wings]_BEHIND_s")
+		temp = new/icon("icon" = H.body_accessory.icon, "icon_state" = H.body_accessory.icon_state)
+		var/temp_b = new/icon("icon" = H.body_accessory.icon, "icon_state" = "[H.body_accessory.icon_state]_BEHIND")
 		preview_icon.Blend(temp, ICON_OVERLAY)
+		preview_icon.Blend(temp_b,ICON_UNDERLAY)
 
 	//Internal Organs
 	for(var/obj/item/organ/external/E in H.bodyparts)

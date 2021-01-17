@@ -1352,7 +1352,6 @@ GLOBAL_LIST_EMPTY(damage_icon_parts)
 	if(body_accessory && istype(body_accessory, /datum/body_accessory/wings))
 		var/icon/accessory_s = new/icon("icon" = body_accessory.icon, "icon_state" = body_accessory.icon_state)
 		var/bstate = "[body_accessory.icon_state]_BEHIND"
-		message_admins("[bstate]")
 		var/icon/accessory_b = new/icon("icon" = body_accessory.icon, "icon_state" = bstate)
 		//Behind layer only needs to populate with a South direction
 		var/icon/behind = new/icon("icon" = 'icons/mob/body_accessory.dmi', "icon_state" = "accessory_none_s")	//Empty image holders
