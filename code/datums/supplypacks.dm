@@ -1494,26 +1494,45 @@ GLOBAL_LIST_INIT(all_supply_groups, list(SUPPLY_EMERGENCY,SUPPLY_SECURITY,SUPPLY
 	cost = 10
 	containername = "toner cartridges crate"
 
+
+/datum/supply_packs/misc/artscrafts
+	name = "Packaging, Paints, and Photos Crate"
+	contains = list(/obj/item/camera,
+					/obj/item/camera_film,
+					/obj/item/camera_film,
+					/obj/item/storage/photo_album,
+					/obj/item/stack/packageWrap,
+					/obj/item/reagent_containers/glass/paint/red,
+					/obj/item/reagent_containers/glass/paint/green,
+					/obj/item/reagent_containers/glass/paint/blue,
+					/obj/item/reagent_containers/glass/paint/yellow,
+					/obj/item/reagent_containers/glass/paint/violet,
+					/obj/item/reagent_containers/glass/paint/black,
+					/obj/item/reagent_containers/glass/paint/white,
+					/obj/item/reagent_containers/glass/paint/remover,
+					/obj/item/poster/random_official,
+					/obj/item/stack/wrapping_paper,
+					/obj/item/stack/wrapping_paper,
+					/obj/item/stack/wrapping_paper)
+	cost = 10
+	containername = "packaging paints photos crate"
+
 /datum/supply_packs/misc/artscrafts
 	name = "Arts and Crafts Supplies Crate"
 	contains = list(/obj/item/storage/fancy/crayons,
-	/obj/item/camera,
-	/obj/item/camera_film,
-	/obj/item/camera_film,
-	/obj/item/storage/photo_album,
-	/obj/item/stack/packageWrap,
-	/obj/item/reagent_containers/glass/paint/red,
-	/obj/item/reagent_containers/glass/paint/green,
-	/obj/item/reagent_containers/glass/paint/blue,
-	/obj/item/reagent_containers/glass/paint/yellow,
-	/obj/item/reagent_containers/glass/paint/violet,
-	/obj/item/reagent_containers/glass/paint/black,
-	/obj/item/reagent_containers/glass/paint/white,
-	/obj/item/reagent_containers/glass/paint/remover,
-	/obj/item/poster/random_official,
-	/obj/item/stack/wrapping_paper,
-	/obj/item/stack/wrapping_paper,
-	/obj/item/stack/wrapping_paper)
+					/obj/item/toy/crayon/spraycan,
+					/obj/item/toy/crayon/spraycan,
+					/obj/item/toy/crayon/spraycan,
+					/obj/structure/easel,
+					/obj/item/canvas,
+					/obj/item/canvas,
+					/obj/item/canvas/nineteenXnineteen,
+					/obj/item/canvas/nineteenXnineteen,
+					/obj/item/canvas/twentythreeXnineteen,
+					/obj/item/canvas/twentythreeXnineteen,
+					/obj/item/canvas/twentythreeXtwentythree,
+					/obj/item/canvas/twentythreeXtwentythree,
+					)
 	cost = 10
 	containername = "arts and crafts crate"
 
