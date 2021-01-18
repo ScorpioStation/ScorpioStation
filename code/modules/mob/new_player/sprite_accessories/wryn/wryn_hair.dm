@@ -38,8 +38,8 @@
 	name = "Gothic Antennae"
 	icon_state = "gothic"
 
-/datum/sprite_accessory/hair/wryn/pink
-	name = "Pink Antennae"
+/datum/sprite_accessory/hair/wryn/lovers
+	name = "Lovers Antennae"
 	icon_state = "lovers"
 
 /datum/sprite_accessory/hair/wryn/whitefly
