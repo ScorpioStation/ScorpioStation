@@ -27,7 +27,7 @@
 	__init_body_accessory(/datum/body_accessory/body)
 	// Different tails
 	__init_body_accessory(/datum/body_accessory/tail)
-	//Diferent wings
+	//Different wings
 	__init_body_accessory(/datum/body_accessory/wings)
 
 	// Setup species:accessory relations
