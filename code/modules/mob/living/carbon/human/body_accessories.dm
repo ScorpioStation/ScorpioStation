@@ -128,7 +128,7 @@ GLOBAL_LIST_INIT(body_accessory_by_species, list("None" = null))
 	allowed_species = list("Wryn")
 
 //Wings
-datum/body_accessory/wings/try_restrictions(mob/living/carbon/human/H)
+/datum/body_accessory/wings/try_restrictions(mob/living/carbon/human/H)
 	if(!H.wear_suit || !(H.wear_suit.flags_inv & HIDEBACK))
 		return TRUE
 	return FALSE
@@ -150,9 +150,9 @@ datum/body_accessory/wings/try_restrictions(mob/living/carbon/human/H)
 	name = "Luna Wings"
 	icon_state = "wings_luna"
 
-/datum/body_accessory/wings/altas
-	name = "Altas Wings"
-	icon_state = "wings_altas"
+/datum/body_accessory/wings/atlas
+	name = "Atlas Wings"
+	icon_state = "wings_atlas"
 
 /datum/sprite_accessory/wings/plain
 	name = "Plain Wings"

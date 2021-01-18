@@ -18,9 +18,9 @@
 	name = "Luna Antennae"
 	icon_state = "luna"
 
-/datum/sprite_accessory/hair/wryn/altas
-	name = "Altas Antennae"
-	icon_state = "altas"
+/datum/sprite_accessory/hair/wryn/atlas
+	name = "Atlas Antennae"
+	icon_state = "atlas"
 
 /datum/sprite_accessory/hair/wryn/plain
 	name = "Plain Antennae"
