@@ -58,7 +58,7 @@
 	var/no_sec_colour = null //If exists, prohibit the colouration of the secondary theme.
 	var/fluff = 0
 	// Whether or not the accessory can be affected by colouration
-	var/do_colouration = 1
+	var/do_colouration = TRUE
 
 /* HAIR */
 

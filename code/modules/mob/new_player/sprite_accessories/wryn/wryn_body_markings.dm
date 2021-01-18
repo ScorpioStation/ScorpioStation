@@ -1,5 +1,6 @@
 /datum/sprite_accessory/body_markings/wryn
 	icon = 'icons/mob/sprite_accessories/wryn/wryn_body_markings.dmi'	// Sprites ported from /tg/'s moths
+	do_colouration = FALSE
 	species_allowed = list("Wryn")
 
 /datum/sprite_accessory/body_markings/wryn/reddish

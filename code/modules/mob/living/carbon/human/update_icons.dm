@@ -308,6 +308,7 @@ GLOBAL_LIST_EMPTY(damage_icon_parts)
 			if(body_marking_style.do_colouration)
 				b_marking_s.Blend(m_colours["body"], ICON_ADD)
 			markings_standing.Blend(b_marking_s, ICON_OVERLAY)
+
 	//Head markings.
 	var/obj/item/organ/external/head/head_organ = get_organ("head")
 	if(head_organ && m_styles["head"]) //If the head is destroyed, forget the head markings. This prevents floating optical markings on decapitated IPCs, for example.
