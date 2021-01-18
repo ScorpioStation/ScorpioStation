@@ -21,7 +21,7 @@
 	allowed = list(/obj/item/flashlight,/obj/item/tank/emergency_oxygen,/obj/item/extinguisher)
 	slowdown = 1
 	armor = list("melee" = 15, "bullet" = 5, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 10, "rad" = 20, "fire" = 100, "acid" = 50)
-	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HIDETAIL
+	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HIDEBACK
 	flags = STOPSPRESSUREDMAGE | THICKMATERIAL
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
@@ -95,7 +95,7 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	slowdown = 2
 	armor = list("melee" = 20, "bullet" = 0, "laser" = 20,"energy" = 10, "bomb" = 100, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 50)
-	flags_inv = HIDEJUMPSUIT|HIDETAIL
+	flags_inv = HIDEJUMPSUIT|HIDEBACK
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
@@ -150,7 +150,7 @@
 	allowed = list(/obj/item/flashlight,/obj/item/tank/emergency_oxygen)
 	slowdown = 1.5
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 60, "rad" = 100, "fire" = 30, "acid" = 30)
-	flags_inv = HIDEJUMPSUIT|HIDETAIL
+	flags_inv = HIDEJUMPSUIT|HIDEBACK
 	strip_delay = 60
 	put_on_delay = 60
 	resistance_flags = NONE

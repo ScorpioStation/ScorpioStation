@@ -79,7 +79,7 @@ GLOBAL_LIST_INIT(body_accessory_by_species, list("None" = null))
 	animated_icon_state = "null"
 
 /datum/body_accessory/tail/try_restrictions(mob/living/carbon/human/H)
-	if(!H.wear_suit || !(H.wear_suit.flags_inv & HIDETAIL))
+	if(!H.wear_suit || !(H.wear_suit.flags_inv & HIDEBACK))
 		return TRUE
 	return FALSE
 
@@ -127,10 +127,15 @@ GLOBAL_LIST_INIT(body_accessory_by_species, list("None" = null))
 	icon_state = "wryntail"
 	allowed_species = list("Wryn")
 
+//Wings
+datum/body_accessory/wings/try_restrictions(mob/living/carbon/human/H)
+	if(!H.wear_suit || !(H.wear_suit.flags_inv & HIDEBACK))
+		return TRUE
+	return FALSE
 
-// Wings - Ported from /tg/'s Moths
+//Sprites Ported from /tg/'s Moths
 /datum/body_accessory/wings
-	icon = 'icons/mob/sprite_accessories/wryn/wryn_body_accessories.dmi'	// Sprites ported from /tg/'s moths
+	icon = 'icons/mob/sprite_accessories/wryn/wryn_body_accessories.dmi'
 	animated_icon = "null"
 	blend_mode = ICON_ADD
 	icon_state = "null"

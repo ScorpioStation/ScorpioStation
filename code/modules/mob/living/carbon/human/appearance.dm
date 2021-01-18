@@ -114,6 +114,7 @@
 
 	m_styles["tail"] = "None"
 	update_tail_layer()
+	m_styles["wings"] = "None"
 	update_wings_layer()
 	return 1
 

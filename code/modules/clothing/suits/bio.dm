@@ -31,7 +31,7 @@
 	slowdown = 1
 	allowed = list(/obj/item/tank/emergency_oxygen,/obj/item/pen,/obj/item/flashlight/pen)
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 100, "rad" = 80, "fire" = 30, "acid" = 100)
-	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HIDETAIL
+	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HIDEBACK
 	strip_delay = 70
 	put_on_delay = 70
 	resistance_flags = ACID_PROOF
@@ -107,4 +107,4 @@
 		"Unathi" = 'icons/mob/species/unathi/suit.dmi',
 		"Vulpkanin" = 'icons/mob/species/vulpkanin/suit.dmi',
 		)
-	hide_tail_by_species = list("Unathi, Tajaran, Vulpkanin")
+	hide_back_by_species = list("Unathi, Tajaran, Vulpkanin", "Wryn")

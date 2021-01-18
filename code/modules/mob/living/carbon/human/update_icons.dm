@@ -888,6 +888,7 @@ GLOBAL_LIST_EMPTY(damage_icon_parts)
 
 	apply_overlay(SUIT_LAYER)
 	update_tail_layer()
+	update_wings_layer()
 	update_collar()
 
 /mob/living/carbon/human/update_inv_pockets()
@@ -1108,7 +1109,7 @@ GLOBAL_LIST_EMPTY(damage_icon_parts)
 				overlays_standing[TAIL_LAYER] = tail
 
 	else if(tail && dna.species.bodyflags & HAS_TAIL) //no tailless tajaran
-		if(!wear_suit || !(wear_suit.flags_inv & HIDETAIL))
+		if(!wear_suit || !(wear_suit.flags_inv & HIDEBACK))
 			var/icon/tail_s = new/icon("icon" = 'icons/effects/species.dmi', "icon_state" = "[tail]_s")
 			if(dna.species.bodyflags & HAS_SKIN_COLOR)
 				tail_s.Blend(skin_colour, ICON_ADD)
@@ -1214,6 +1215,39 @@ GLOBAL_LIST_EMPTY(damage_icon_parts)
 	remove_overlay(TAIL_LAYER)
 	update_tail_layer() //just trigger a full update for normal stationary sprites
 
+//Wings
+/mob/living/carbon/human/proc/update_wings_layer()
+	remove_overlay(WINGS_BEHIND_LAYER)
+	remove_overlay(WINGS_LAYER)
+	if(body_accessory && istype(body_accessory, /datum/body_accessory/wings))
+		if(body_accessory.try_restrictions(src))
+			var/icon/accessory_s = new/icon("icon" = body_accessory.icon, "icon_state" = body_accessory.icon_state)
+			var/bstate = "[body_accessory.icon_state]_BEHIND"
+			var/icon/accessory_b = new/icon("icon" = body_accessory.icon, "icon_state" = bstate)
+			//Behind layer only needs to populate with a South direction
+			var/icon/behind = new/icon("icon" = 'icons/mob/body_accessory.dmi', "icon_state" = "accessory_none_s")	//Empty image holders
+			behind.Insert(new/icon(accessory_b, dir=SOUTH), dir=SOUTH)	// BEHIND Wing Sprite
+
+			var/mutable_appearance/wingsbehind = mutable_appearance(behind, layer = -WINGS_BEHIND_LAYER)
+			wingsbehind.pixel_x = body_accessory.pixel_x_offset
+			wingsbehind.pixel_y = body_accessory.pixel_y_offset
+			overlays_standing[WINGS_BEHIND_LAYER] = wingsbehind
+
+			//Our South Wings Sprite is not blank
+			var/icon/over = new/icon("icon" = 'icons/mob/body_accessory.dmi', "icon_state" = "accessory_none_s")
+			over.Insert(new/icon(accessory_s, dir=SOUTH), dir=SOUTH)
+			over.Insert(new/icon(accessory_s, dir=EAST), dir=EAST)
+			over.Insert(new/icon(accessory_s, dir=WEST), dir=WEST)
+			over.Insert(new/icon(accessory_s, dir=NORTH), dir=NORTH)
+			var/mutable_appearance/wingsover = mutable_appearance(over, layer = -WINGS_LAYER)
+			wingsover.pixel_x = body_accessory.pixel_x_offset
+			wingsover.pixel_y = body_accessory.pixel_y_offset
+			overlays_standing[WINGS_LAYER] = wingsover
+
+	apply_overlay(WINGS_LAYER)
+	apply_overlay(WINGS_BEHIND_LAYER)
+
+//Internal Organs
 /mob/living/carbon/human/proc/update_int_organs()
 	remove_overlay(INTORGAN_LAYER)
 
@@ -1346,33 +1380,3 @@ GLOBAL_LIST_EMPTY(damage_icon_parts)
 				. += "[part.s_tone]"
 
 	. = "[.][!!husk][!!hulk][!!skeleton]"
-
-/mob/living/carbon/human/proc/update_wings_layer()
-	remove_overlay(WINGS_BEHIND_LAYER)
-	remove_overlay(WINGS_LAYER)
-	if(body_accessory && istype(body_accessory, /datum/body_accessory/wings))
-		var/icon/accessory_s = new/icon("icon" = body_accessory.icon, "icon_state" = body_accessory.icon_state)
-		var/bstate = "[body_accessory.icon_state]_BEHIND"
-		var/icon/accessory_b = new/icon("icon" = body_accessory.icon, "icon_state" = bstate)
-		//Behind layer only needs to populate with a South direction
-		var/icon/behind = new/icon("icon" = 'icons/mob/body_accessory.dmi', "icon_state" = "accessory_none_s")	//Empty image holders
-		behind.Insert(new/icon(accessory_b, dir=SOUTH), dir=SOUTH)	// BEHIND Wing Sprite
-
-		var/mutable_appearance/wingsbehind = mutable_appearance(behind, layer = -WINGS_BEHIND_LAYER)
-		wingsbehind.pixel_x = body_accessory.pixel_x_offset
-		wingsbehind.pixel_y = body_accessory.pixel_y_offset
-		overlays_standing[WINGS_BEHIND_LAYER] = wingsbehind
-
-		//Our South Wings Sprite is not blank
-		var/icon/over = new/icon("icon" = 'icons/mob/body_accessory.dmi', "icon_state" = "accessory_none_s")
-		over.Insert(new/icon(accessory_s, dir=SOUTH), dir=SOUTH)
-		over.Insert(new/icon(accessory_s, dir=EAST), dir=EAST)
-		over.Insert(new/icon(accessory_s, dir=WEST), dir=WEST)
-		over.Insert(new/icon(accessory_s, dir=NORTH), dir=NORTH)
-		var/mutable_appearance/wingsover = mutable_appearance(over, layer = -WINGS_LAYER)
-		wingsover.pixel_x = body_accessory.pixel_x_offset
-		wingsover.pixel_y = body_accessory.pixel_y_offset
-		overlays_standing[WINGS_LAYER] = wingsover
-
-	apply_overlay(WINGS_LAYER)
-	apply_overlay(WINGS_BEHIND_LAYER)
