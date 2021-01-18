@@ -330,9 +330,6 @@
 				wings_shift_x = accessory.pixel_x_offset
 			if(accessory.pixel_y_offset)
 				wings_shift_y = accessory.pixel_y_offset
-		// wings_icon = "icons/mob/sprite_accessories/wryn/wryn_body_accessories.dmi"
-		// wings_icon_state = wings_icon.icon_state
-
 
 		var/icon/temp = new/icon("icon" = wings_icon, "icon_state" = wings_icon_state)
 		var/icon/b_temp = new/icon("icon" = wings_icon, "icon_state" = wings_behind_state)

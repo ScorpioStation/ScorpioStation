@@ -33,7 +33,7 @@
 
 	species_traits = list(HIVEMIND, IS_WHITELISTED, LIPS, NO_SCAN)
 	clothing_flags = HAS_UNDERWEAR | HAS_UNDERSHIRT | HAS_SOCKS
-	bodyflags = HAS_SKIN_COLOR | HAS_HEAD_ACCESSORY | HAS_BODY_MARKINGS | HAS_WINGS
+	bodyflags = HAS_SKIN_COLOR | HAS_BODY_MARKINGS | HAS_WINGS
 	dietflags = DIET_HERB		//bees feed off nectar, so bee people feed off plants too
 
 	reagent_tag = PROCESS_ORG
@@ -41,8 +41,7 @@
 	flesh_color = "#704300"
 	blood_color = "#FFFF99"
 	//Default styles for created mobs.
-	//default_hair = "Antennae"
-	default_headacc = "Wryn Monarch Antennae"
+	default_hair = "Antennae"
 	var/datum/action/innate/wryn_sting/wryn_sting
 
 /datum/species/wryn/on_species_gain(mob/living/carbon/human/H)

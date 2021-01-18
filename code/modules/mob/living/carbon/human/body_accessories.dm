@@ -138,77 +138,77 @@ GLOBAL_LIST_INIT(body_accessory_by_species, list("None" = null))
 	allowed_species = list("Wryn")
 
 /datum/body_accessory/wings/monarch
-	name = "Wryn Monarch Wings"
+	name = "Monarch Wings"
 	icon_state = "wings_monarch"
 
 /datum/body_accessory/wings/luna
-	name = "Wryn Luna Wings"
+	name = "Luna Wings"
 	icon_state = "wings_luna"
 
 /datum/body_accessory/wings/altas
-	name = "Wryn Altas Wings"
+	name = "Altas Wings"
 	icon_state = "wings_altas"
 
 /datum/sprite_accessory/wings/plain
-	name = "Wryn Plain Wings"
+	name = "Plain Wings"
 	icon_state = "wings_plain"
 
 /datum/body_accessory/wings/reddish
-	name = "Wryn Reddish Wings"
+	name = "Reddish Wings"
 	icon_state = "wings_reddish"
 
 /datum/body_accessory/wings/royal
-	name = "Wryn Royal Wings"
+	name = "Royal Wings"
 	icon_state = "wings_royal"
 
 /datum/body_accessory/wings/gothic
-	name = "Wryn Gothic Wings"
+	name = "Gothic Wings"
 	icon_state = "wings_gothic"
 
-/datum/body_accessory/wings/pink
-	name = "Wryn Pink Wings"
+/datum/body_accessory/wings/lovers
+	name = "Lovers Wings"
 	icon_state = "wings_lovers"
 
 /datum/body_accessory/wings/whitefly
-	name = "Wryn Whitefly Wings"
+	name = "Whitefly Wings"
 	icon_state = "wings_whitefly"
 
 /datum/body_accessory/wings/burnt
-	name = "Wryn Burnt Off Wings"
+	name = "Burnt Off Wings"
 	icon_state = "wings_burnt_off"
 
 /datum/body_accessory/wings/firewatch
-	name = "Wryn Firewatch Wings"
+	name = "Firewatch Wings"
 	icon_state = "wings_firewatch"
 
 /datum/body_accessory/wings/deathhead
-	name = "Wryn Deathhead Wings"
+	name = "Deathhead Wings"
 	icon_state = "wings_deathhead"
 
 /datum/body_accessory/wings/poisonous
-	name = "Wryn Poisonous Wings"
+	name = "Poisonous Wings"
 	icon_state = "wings_poison"
 
 /datum/body_accessory/wings/ragged
-	name = "Wryn Ragged Wings"
+	name = "Ragged Wings"
 	icon_state = "wings_ragged"
 
 /datum/body_accessory/wings/moonglow
-	name = "Wryn Moonglow Wings"
+	name = "Moonglow Wings"
 	icon_state = "wings_moonglow"
 
 /datum/body_accessory/wings/snow
-	name = "Wryn Snow Wings"
+	name = "Snow Wings"
 	icon_state = "wings_snow"
 
 /datum/body_accessory/wings/oakworm
-	name = "Wryn Oakworm Wings"
+	name = "Oakworm Wings"
 	icon_state = "wings_oakworm"
 
 /datum/body_accessory/wings/witchwing
-	name = "Wryn Witchwing Wings"
+	name = "Witchwing Wings"
 	icon_state = "wings_witchwing"
 
 /datum/body_accessory/wings/jungle
-	name = "Wryn Jungle Wings"
+	name = "Jungle Wings"
 	icon_state = "wings_jungle"
