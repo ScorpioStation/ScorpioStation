@@ -56,6 +56,21 @@
 		if(ranged_ability && prev_client)
 			ranged_ability.remove_mousepointer(prev_client)
 
+/mob/living/can_zFall(turf/T, levels)
+	return TRUE
+
+/mob/living/canZMove(dir, turf/target)
+	return can_zTravel(target, dir)
+
+/mob/living/onZImpact(turf/T, levels)
+	ZImpactDamage(T, levels)
+	return ..()
+
+/mob/living/proc/ZImpactDamage(turf/T, levels)
+	visible_message("<span class='danger'>[src] crashes into [T] with a sickening noise!</span>")
+	adjustBruteLoss((levels * 5) ** 1.5)
+	Paralyse((levels * 10))	//tg uses 'Knockdown()', Paracode doesn't. We're going to use Paralyse() instead.
+
 /mob/living/proc/OpenCraftingMenu()
 	return
 
