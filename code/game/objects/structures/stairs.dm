@@ -79,19 +79,19 @@
 
 /obj/structure/stairs/proc/build_signal_listener()
 	QDEL_NULL(multiz_signal_listener)
-	var/turf/open/openspace/T = get_step_multiz(get_turf(src), UP)
+	var/turf/space/openspace/T = get_step_multiz(get_turf(src), UP)
 	multiz_signal_listener = T.AddComponent(/datum/component/redirect, list(COMSIG_TURF_MULTIZ_NEW = CALLBACK(src, .proc/on_multiz_new)))
 
 /obj/structure/stairs/proc/force_open_above()
-	var/turf/open/openspace/T = get_step_multiz(get_turf(src), UP)
+	var/turf/space/openspace/T = get_step_multiz(get_turf(src), UP)
 	if(T && !istype(T))
-		T.ChangeTurf(/turf/open/openspace)
+		T.ChangeTurf(/turf/space/openspace)
 
 /obj/structure/stairs/proc/on_multiz_new(turf/source, dir)
 	if(dir == UP)
-		var/turf/open/openspace/T = get_step_multiz(get_turf(src), UP)
+		var/turf/space/openspace/T = get_step_multiz(get_turf(src), UP)
 		if(T && !istype(T))
-			T.ChangeTurf(/turf/open/openspace)
+			T.ChangeTurf(/turf/space/openspace)
 
 /obj/structure/stairs/intercept_zImpact(atom/movable/AM, levels = 1)
 	return isTerminator()
