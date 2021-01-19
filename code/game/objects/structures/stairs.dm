@@ -32,7 +32,7 @@
 
 /obj/structure/stairs/proc/update_surrounding()
 	update_icon()
-	for(var/i in GLOB.cardinals)
+	for(var/i in GLOB.cardinal)
 		var/turf/T = get_step(get_turf(src), i)
 		var/obj/structure/stairs/S = locate() in T
 		if(S)

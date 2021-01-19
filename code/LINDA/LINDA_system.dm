@@ -14,7 +14,7 @@
 /turf/CanAtmosPass = ATMOS_PASS_NO
 /turf/CanAtmosPassVertical = ATMOS_PASS_NO
 
-/turf/proc/CanAtmosPass(turf/T)
+/turf/simulated/CanAtmosPass(turf/T, vertical = FALSE)
 	var/dir = vertical? get_dir_multiz(src, T) : get_dir(src, T)
 	var/opp = dir_inverse_multiz(dir)
 	var/R = FALSE
@@ -134,7 +134,7 @@
 	air_update_turf(1)
 
 /atom/movable/proc/atmos_spawn_air(text, amount) //because a lot of people loves to copy paste awful code lets just make a easy proc to spawn your plasma fires
-	var/turf/simulated/T = get_turf()
+	var/turf/simulated/T = get_turf(src)
 	if(!istype(T))
 		return
 	T.atmos_spawn_air(text, amount)
