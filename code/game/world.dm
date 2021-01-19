@@ -35,15 +35,10 @@ GLOBAL_LIST_INIT(map_transition_config, MAP_TRANSITION_CONFIG)
 	GLOB.timezoneOffset = text2num(time2text(0, "hh")) * 36000
 
 	startup_procs() // Call procs that need to occur on startup (Generate lists, load MOTD, etc)
-
-	src.update_status()
-
+	update_status()
 	GLOB.space_manager.initialize() //Before the MC starts up
-
 	. = ..()
-
 	Master.Initialize(10, FALSE, TRUE)
-
 
 	#ifdef UNIT_TESTS
 	HandleTestRun()
@@ -98,7 +93,7 @@ GLOBAL_LIST_EMPTY(world_topic_handlers)
 	wth = new wth()
 	return wth.invoke(input)
 
-/world/Reboot(var/reason, end_string, var/time)
+/world/Reboot(reason, end_string, time)
 	// special reboot, do none of the normal stuff
 	if(reason == 1) // Do NOT change this to if(reason). You WILL break the entirety of world rebooting
 		if(usr)
@@ -204,6 +199,11 @@ GLOBAL_LIST_EMPTY(world_topic_handlers)
 	config.loadsql("config/dbconfig.txt")
 	config.loadoverflowwhitelist("config/ofwhitelist.txt")
 	// apply some settings from config..
+
+/world/proc/incrementMaxZ()
+	maxz++
+	SSmobs.MaxZChanged()
+	SSidlenpcpool.MaxZChanged()
 
 /world/proc/update_status()
 	status = get_status_text()

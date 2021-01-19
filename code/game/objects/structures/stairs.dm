@@ -1,6 +1,6 @@
-#define STAIR_TERMINATOR_AUTOMATIC 0
-#define STAIR_TERMINATOR_NO 1
-#define STAIR_TERMINATOR_YES 2
+#define STAIR_TERMINATOR_AUTOMATIC  0
+#define STAIR_TERMINATOR_NO         1
+#define STAIR_TERMINATOR_YES        2
 
 /obj/structure/stairs
 	name = "stairs"
@@ -11,7 +11,18 @@
 
 	var/force_open_above = FALSE
 	var/terminator_mode = STAIR_TERMINATOR_AUTOMATIC
-	var/datum/component/redirect/multiz_signal_listener
+	var/turf/listeningTo
+/obj/structure/stairs/north
+	dir = NORTH
+
+/obj/structure/stairs/south
+	dir = SOUTH
+
+/obj/structure/stairs/east
+	dir = EAST
+
+/obj/structure/stairs/west
+	dir = WEST
 
 /obj/structure/stairs/Initialize(mapload)
 	if(force_open_above)
@@ -21,7 +32,7 @@
 	return ..()
 
 /obj/structure/stairs/Destroy()
-	QDEL_NULL(multiz_signal_listener)
+	listeningTo = null
 	return ..()
 
 /obj/structure/stairs/Move()			//Look this should never happen but...
@@ -69,18 +80,24 @@
 
 /obj/structure/stairs/vv_edit_var(var_name, var_value)
 	. = ..()
-	if(.)
-		if(var_name == NAMEOF(src, force_open_above))
-			if(!var_value)
-				QDEL_NULL(multiz_signal_listener)
-			else
-				build_signal_listener()
-				force_open_above()
+	if(!.)
+		return
+	if(var_name != NAMEOF(src, force_open_above))
+		return
+	if(!var_value)
+		if(listeningTo)
+			UnregisterSignal(listeningTo, COMSIG_TURF_MULTIZ_NEW)
+			listeningTo = null
+	else
+		build_signal_listener()
+		force_open_above()
 
 /obj/structure/stairs/proc/build_signal_listener()
-	QDEL_NULL(multiz_signal_listener)
+	if(listeningTo)
+		UnregisterSignal(listeningTo, COMSIG_TURF_MULTIZ_NEW)
 	var/turf/space/openspace/T = get_step_multiz(get_turf(src), UP)
-	multiz_signal_listener = T.AddComponent(/datum/component/redirect, list(COMSIG_TURF_MULTIZ_NEW = CALLBACK(src, .proc/on_multiz_new)))
+	RegisterSignal(T, COMSIG_TURF_MULTIZ_NEW, .proc/on_multiz_new)
+	listeningTo = T
 
 /obj/structure/stairs/proc/force_open_above()
 	var/turf/space/openspace/T = get_step_multiz(get_turf(src), UP)

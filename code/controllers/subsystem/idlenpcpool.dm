@@ -12,7 +12,14 @@ SUBSYSTEM_DEF(idlenpcpool)
 /datum/controller/subsystem/idlenpcpool/stat_entry()
 	var/list/idlelist = GLOB.simple_animals[AI_IDLE]
 	var/list/zlist = GLOB.simple_animals[AI_Z_OFF]
-	..("IdleNPCS:[idlelist.len]|Z:[zlist.len]")
+	..("IdleNPCS:[length(idlelist)]|Z:[length(zlist)]")
+
+/datum/controller/subsystem/idlenpcpool/proc/MaxZChanged()
+	if (!islist(idle_mobs_by_zlevel))
+		idle_mobs_by_zlevel = new /list(world.maxz,0)
+	while (SSidlenpcpool.idle_mobs_by_zlevel.len < world.maxz)
+		SSidlenpcpool.idle_mobs_by_zlevel.len++
+		SSidlenpcpool.idle_mobs_by_zlevel[idle_mobs_by_zlevel.len] = list()
 
 /datum/controller/subsystem/idlenpcpool/Initialize(start_timeofday)
 	idle_mobs_by_zlevel = new /list(world.maxz,0)
