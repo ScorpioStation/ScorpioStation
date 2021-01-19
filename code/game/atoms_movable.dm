@@ -29,6 +29,52 @@
 	var/moving_diagonally = 0 //0: not doing a diagonal move. 1 and 2: doing the first/second step of the diagonal move
 	var/list/client_mobs_in_contents
 
+	var/can_be_z_moved = TRUE
+	var/zfalling = FALSE
+
+/atom/movable/proc/can_zFall(turf/source, levels = 1, turf/target, direction)
+	if(!direction)
+		direction = DOWN
+	if(!source)
+		source = get_turf(src)
+		if(!source)
+			return FALSE
+	if(!target)
+		target = get_step_multiz(source, direction)
+		if(!target)
+			return FALSE
+	return !(movement_type & FLYING) && has_gravity(source) && !throwing
+
+/atom/movable/proc/onZImpact(turf/T, levels)
+	var/atom/highest = T
+	for(var/i in T.contents)
+		var/atom/A = i
+		if(!A.density)
+			continue
+		if(isobj(A) || ismob(A))
+			if(A.layer > highest.layer)
+				highest = A
+	INVOKE_ASYNC(src, .proc/SpinAnimation, 5, 2)
+	throw_impact(highest)
+	return TRUE
+
+//For physical constraints to travelling up/down.
+/atom/movable/proc/can_zTravel(turf/destination, direction)
+	var/turf/T = get_turf(src)
+	if(!T)
+		return FALSE
+	if(!direction)
+		if(!destination)
+			return FALSE
+		direction = get_dir(T, destination)
+	if(direction != UP && direction != DOWN)
+		return FALSE
+	if(!destination)
+		destination = get_step_multiz(src, direction)
+		if(!destination)
+			return FALSE
+	return T.zPassOut(src, direction, destination) && destination.zPassIn(src, direction, T)
+
 /atom/movable/attempt_init(loc, ...)
 	var/turf/T = get_turf(src)
 	if(T && SSatoms.initialized != INITIALIZATION_INSSATOMS && GLOB.space_manager.is_zlevel_dirty(T.z))

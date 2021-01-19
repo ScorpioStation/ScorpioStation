@@ -75,6 +75,9 @@
 /obj/effect/abstract/singularity_act()
 	return
 
+/obj/effect/abstract/has_gravity(turf/T)
+	return FALSE
+
 /obj/effect/abstract/narsie_act()
 	return
 
