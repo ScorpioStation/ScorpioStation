@@ -64,7 +64,7 @@
 	return FALSE
 
 /turf/proc/CalculateAdjacentTurfs()
-	var/list/atmos_adjacent_turfs = src.atmos_adjacent_turfs.Copy	// .src is necessary
+	var/list/atmos_adjacent_turfs = src.atmos_adjacent_turfs.Copy()	// .src is necessary
 	for(var/direction in GLOB.cardinals_multiz)
 		var/turf/T = get_step_multiz(src, direction)
 		if(!istype(T))
