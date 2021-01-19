@@ -40,9 +40,6 @@
 
 	return !R
 
-/atom/movable/proc/CanAtmosPass()
-	return TRUE
-
 /atom/proc/CanPass(atom/movable/mover, turf/target, height=1.5)
 	return (!density || !height)
 
@@ -67,7 +64,7 @@
 	return FALSE
 
 /turf/proc/CalculateAdjacentTurfs()
-	atmos_adjacent_turfs_amount = 0
+	var/list/atmos_adjacent_turfs = src.atmos_adjacent_turfs.Copy	// .src is necessary
 	for(var/direction in GLOB.cardinals_multiz)
 		var/turf/T = get_step_multiz(src, direction)
 		if(!istype(T))
@@ -84,7 +81,7 @@
 				T.atmos_adjacent_turfs -= src
 			UNSETEMPTY(T.atmos_adjacent_turfs)
 	UNSETEMPTY(atmos_adjacent_turfs)
-	src.atmos_adjacent_turfs = atmos_adjacent_turfs
+	src.atmos_adjacent_turfs = atmos_adjacent_turfs			// .src is necessary
 
 //returns a list of adjacent turfs that can share air with this one.
 //alldir includes adjacent diagonal tiles that can share
@@ -98,7 +95,6 @@
 
 	for(var/direction in GLOB.diagonals_multiz)
 		var/matchingDirections = 0
-		var/turf/S = get_step(curloc, direction)
 		var/turf/S = get_step_multiz(curloc, direction)
 		if(!S)
 			continue

@@ -100,9 +100,9 @@
 	// Adds the adjacent turfs to the current atmos processing
 	for(var/direction in GLOB.cardinal)
 		if(atmos_adjacent_turfs & direction)
-			var/turf/simulated/T = get_step(src, direction)
+			var/turf/simulated/X = get_step(src, direction)
 			if(istype(T))
-				SSair.add_to_active(T)
+				SSair.add_to_active(X)
 	SSair.remove_from_active(src)
 	visibilityChanged()
 	QDEL_LIST(blueprint_data)
