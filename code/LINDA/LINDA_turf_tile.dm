@@ -62,14 +62,12 @@
 	..()
 	if(!blocks_air)
 		air = new
-
 		air.oxygen = oxygen
 		air.carbon_dioxide = carbon_dioxide
 		air.nitrogen = nitrogen
 		air.toxins = toxins
 		air.sleeping_agent = sleeping_agent
 		air.agent_b = agent_b
-
 		air.temperature = temperature
 
 /turf/Destroy()
