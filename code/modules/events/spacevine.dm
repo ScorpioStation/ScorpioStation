@@ -101,7 +101,7 @@
 	hue = "#aa77aa"
 	quality = POSITIVE
 
-/turf/simulated/floor/vines
+/turf/open/floor/vines
 	color = "#aa77aa"
 	icon_state = "vinefloor"
 	broken_states = list()
@@ -109,35 +109,35 @@
 
 //All of this shit is useless for vines
 
-/turf/simulated/floor/vines/attackby()
+/turf/open/floor/vines/attackby()
 	return
 
-/turf/simulated/floor/vines/burn_tile()
+/turf/open/floor/vines/burn_tile()
 	return
 
-/turf/simulated/floor/vines/break_tile()
+/turf/open/floor/vines/break_tile()
 	return
 
-/turf/simulated/floor/vines/make_plating()
+/turf/open/floor/vines/make_plating()
 	return
 
-/turf/simulated/floor/vines/break_tile_to_plating()
+/turf/open/floor/vines/break_tile_to_plating()
 	return
 
-/turf/simulated/floor/vines/ex_act(severity)
+/turf/open/floor/vines/ex_act(severity)
 	if(severity < 3)
 		ChangeTurf(baseturf)
 
-/turf/simulated/floor/vines/narsie_act()
+/turf/open/floor/vines/narsie_act()
 	if(prob(20))
 		ChangeTurf(baseturf) //nar sie eats this shit
 
-/turf/simulated/floor/vines/singularity_pull(S, current_size)
+/turf/open/floor/vines/singularity_pull(S, current_size)
 	if(current_size >= STAGE_FIVE)
 		if(prob(50))
 			ChangeTurf(baseturf)
 
-/turf/simulated/floor/vines/ChangeTurf(turf/simulated/floor/T, defer_change = FALSE, keep_icon = TRUE, ignore_air = FALSE)
+/turf/open/floor/vines/ChangeTurf(turf/open/floor/T, defer_change = FALSE, keep_icon = TRUE, ignore_air = FALSE)
 	. = ..()
 	//Do this *after* the turf has changed as qdel in spacevines will call changeturf again if it hasn't
 	for(var/obj/structure/spacevine/SV in src)
@@ -168,12 +168,12 @@
 	var/turf/T = get_turf(holder)
 	if(is_type_in_typecache(T, coverable_turfs))
 		var/currtype = T.type
-		T.ChangeTurf(/turf/simulated/floor/vines)
+		T.ChangeTurf(/turf/open/floor/vines)
 		T.baseturf = currtype
 
 /datum/spacevine_mutation/space_covering/on_deletion(obj/structure/spacevine/holder)
 	var/turf/T = get_turf(holder)
-	if(istype(T, /turf/simulated/floor/vines))
+	if(istype(T, /turf/open/floor/vines))
 		T.ChangeTurf(T.baseturf)
 
 /datum/spacevine_mutation/bluespace

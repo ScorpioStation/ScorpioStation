@@ -324,41 +324,41 @@
 	active = 0
 
 // Holographic Items!
-/turf/simulated/floor/holofloor/
+/turf/open/floor/holofloor/
 	thermal_conductivity = 0
 	icon_state = "plating"
-/turf/simulated/floor/holofloor/grass
+/turf/open/floor/holofloor/grass
 	name = "Lush Grass"
 	icon_state = "grass1"
 	floor_tile = /obj/item/stack/tile/grass
 
-/turf/simulated/floor/holofloor/grass/New()
+/turf/open/floor/holofloor/grass/New()
 	..()
 	spawn(1)
 		update_icon()
 
-/turf/simulated/floor/holofloor/grass/update_icon()
+/turf/open/floor/holofloor/grass/update_icon()
 	..()
 	if(!(icon_state in list("grass1", "grass2", "grass3", "grass4", "sand")))
 		icon_state = "grass[pick("1","2","3","4")]"
 
-/turf/simulated/floor/holofloor/attackby(obj/item/W as obj, mob/user as mob, params)
+/turf/open/floor/holofloor/attackby(obj/item/W as obj, mob/user as mob, params)
 	return
 	// HOLOFLOOR DOES NOT GIVE A FUCK
 
 /* ONLY RE-ENABLE IF HOLODECK IS IN VERTICAL POSITION
 
-/turf/simulated/floor/holofloor/space
+/turf/open/floor/holofloor/space
 	name = "\proper space"
 	icon = 'icons/turf/space.dmi'
 	icon_state = "0"
 	plane = PLANE_SPACE
 
-/turf/simulated/floor/holofloor/space/Initialize(mapload)
+/turf/open/floor/holofloor/space/Initialize(mapload)
 	icon_state = SPACE_ICON_STATE // so realistic
 	. = ..()
 
-/turf/simulated/floor/holofloor/space/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
+/turf/open/floor/holofloor/space/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
 	underlay_appearance.icon = 'icons/turf/space.dmi'
 	underlay_appearance.icon_state = SPACE_ICON_STATE
 	underlay_appearance.plane = PLANE_SPACE

@@ -1,9 +1,9 @@
-/turf/simulated/floor/mech_bay_recharge_floor
+/turf/open/floor/mech_bay_recharge_floor
 	name = "Mech Bay Recharge Station"
 	icon = 'icons/mecha/mech_bay.dmi'
 	icon_state = "recharge_floor"
 
-/turf/simulated/floor/mech_bay_recharge_floor/airless
+/turf/open/floor/mech_bay_recharge_floor/airless
 	icon_state = "recharge_floor_asteroid"
 	oxygen = 0
 	nitrogen = 0

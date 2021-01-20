@@ -43,11 +43,11 @@
 			show_to(M)
 			return
 
-		if((istype(over_object, /obj/structure/table) || istype(over_object, /turf/simulated/floor)) \
+		if((istype(over_object, /obj/structure/table) || istype(over_object, /turf/open/floor)) \
 			&& contents.len && loc == usr && !usr.stat && !usr.restrained() && usr.canmove && over_object.Adjacent(usr) \
 			&& !istype(src, /obj/item/storage/lockbox))
 			var/turf/T = get_turf(over_object)
-			if(istype(over_object, /turf/simulated/floor))
+			if(istype(over_object, /turf/open/floor))
 				if(get_turf(usr) != T)
 					return // Can only empty containers onto the floor under you
 				if("Yes" != alert(usr,"Empty \the [src] onto \the [T]?","Confirm","Yes","No"))

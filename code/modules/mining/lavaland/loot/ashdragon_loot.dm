@@ -169,9 +169,9 @@
 	hitsound = 'sound/weapons/sear.ogg'
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	needs_permit = TRUE
-	var/turf_type = /turf/simulated/floor/plating/lava/smooth
+	var/turf_type = /turf/open/floor/plating/lava/smooth
 	var/transform_string = "lava"
-	var/reset_turf_type = /turf/simulated/floor/plating/asteroid/basalt
+	var/reset_turf_type = /turf/open/floor/plating/asteroid/basalt
 	var/reset_string = "basalt"
 	var/create_cooldown = 100
 	var/create_delay = 30

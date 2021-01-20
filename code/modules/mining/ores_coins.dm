@@ -34,7 +34,7 @@
 
 /obj/item/stack/ore/Crossed(atom/movable/AM, oldloc)
 	var/obj/item/storage/bag/ore/OB
-	var/turf/simulated/floor/F = get_turf(src)
+	var/turf/open/floor/F = get_turf(src)
 	if(loc != F)
 		return ..()
 	if(ishuman(AM))
@@ -49,7 +49,7 @@
 			if(istype(thing, /obj/item/storage/bag/ore))
 				OB = thing
 				break
-	if(OB && istype(F, /turf/simulated/floor/plating/asteroid))
+	if(OB && istype(F, /turf/open/floor/plating/asteroid))
 		F.attackby(OB, AM)
 		// Then, if the user is dragging an ore box, empty the satchel
 		// into the box.

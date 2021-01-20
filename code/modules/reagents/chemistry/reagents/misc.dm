@@ -244,9 +244,9 @@
 	taste_description = "a carpet...what?"
 
 /datum/reagent/carpet/reaction_turf(turf/simulated/T, volume)
-	if(istype(T, /turf/simulated/floor/plating) || istype(T, /turf/simulated/floor/plasteel))
-		var/turf/simulated/floor/F = T
-		F.ChangeTurf(/turf/simulated/floor/carpet)
+	if(istype(T, /turf/open/floor/plating) || istype(T, /turf/open/floor/plasteel))
+		var/turf/open/floor/F = T
+		F.ChangeTurf(/turf/open/floor/carpet)
 	..()
 
 /datum/reagent/bromine

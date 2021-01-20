@@ -33,7 +33,7 @@ GLOBAL_LIST_INIT(possibleShadowlingNames, list("U'ruan", "Y`shej", "Nex", "Hel-u
 					H.unEquip(I)
 
 				sleep(50)
-				var/turf/simulated/floor/F
+				var/turf/open/floor/F
 				var/turf/shadowturf = get_turf(user)
 				for(F in orange(1, user))
 					new /obj/structure/alien/resin/wall/shadowling(F)

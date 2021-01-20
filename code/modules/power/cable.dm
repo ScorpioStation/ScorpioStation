@@ -636,7 +636,7 @@ GLOBAL_LIST_INIT(cable_coil_recipes, list (new/datum/stack_recipe("cable restrai
 
 	return C
 
-// called when cable_coil is clicked on a turf/simulated/floor
+// called when cable_coil is clicked on a turf/open/floor
 /obj/item/stack/cable_coil/proc/place_turf(turf/T, mob/user, dirnew)
 	if(!isturf(user.loc))
 		return

@@ -353,7 +353,7 @@
 			to_chat(user, "Building Floor...")
 			playsound(loc, usesound, 50, 1)
 			var/turf/AT = get_turf(A)
-			AT.ChangeTurf(/turf/simulated/floor/plating)
+			AT.ChangeTurf(/turf/open/floor/plating)
 			return TRUE
 		to_chat(user, "<span class='warning'>ERROR! Not enough matter in unit to construct this floor!</span>")
 		playsound(loc, 'sound/machines/click.ogg', 50, 1)
@@ -436,7 +436,7 @@
 					return FALSE
 				playsound(loc, usesound, 50, 1)
 				var/turf/AT = A
-				AT.ChangeTurf(/turf/simulated/floor/plating)
+				AT.ChangeTurf(/turf/open/floor/plating)
 				return TRUE
 			return FALSE
 		to_chat(user, "<span class='warning'>ERROR! Not enough matter in unit to deconstruct this wall!</span>")
@@ -545,7 +545,7 @@
 				var/obj/structure/window/reinforced/W = new(A)
 				W.dir = cdir
 		var/turf/AT = A
-		AT.ChangeTurf(/turf/simulated/floor/plating) // Platings go under windows.
+		AT.ChangeTurf(/turf/open/floor/plating) // Platings go under windows.
 		return TRUE
 	to_chat(user, "<span class='warning'>ERROR! Location unsuitable for window construction!</span>")
 	playsound(loc, 'sound/machines/click.ogg', 50, 1)

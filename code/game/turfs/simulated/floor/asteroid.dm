@@ -1,54 +1,54 @@
 
 /**********************Asteroid**************************/
 
-/turf/simulated/floor/plating/asteroid
+/turf/open/floor/plating/asteroid
 	gender = PLURAL
 	name = "asteroid sand"
-	baseturf = /turf/simulated/floor/plating/asteroid
+	baseturf = /turf/open/floor/plating/asteroid
 	icon_state = "asteroid"
 	icon_plating = "asteroid"
 	footstep_sounds = list()
 	var/environment_type = "asteroid"
-	var/turf_type = /turf/simulated/floor/plating/asteroid //Because caves do whacky shit to revert to normal
+	var/turf_type = /turf/open/floor/plating/asteroid //Because caves do whacky shit to revert to normal
 	var/floor_variance = 20 //probability floor has a different icon state
 	var/obj/item/stack/digResult = /obj/item/stack/ore/glass/basalt
 	var/dug
 
-/turf/simulated/floor/plating/asteroid/Initialize(mapload)
+/turf/open/floor/plating/asteroid/Initialize(mapload)
 	var/proper_name = name
 	. = ..()
 	name = proper_name
 	if(prob(floor_variance))
 		icon_state = "[environment_type][rand(0,12)]"
 
-/turf/simulated/floor/plating/asteroid/proc/getDug()
+/turf/open/floor/plating/asteroid/proc/getDug()
 	new digResult(src, 5)
 	icon_plating = "[environment_type]_dug"
 	icon_state = "[environment_type]_dug"
 	dug = TRUE
 
-/turf/simulated/floor/plating/asteroid/proc/can_dig(mob/user)
+/turf/open/floor/plating/asteroid/proc/can_dig(mob/user)
 	if(!dug)
 		return TRUE
 	if(user)
 		to_chat(user, "<span class='notice'>Looks like someone has dug here already.</span>")
 
-/turf/simulated/floor/plating/asteroid/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
+/turf/open/floor/plating/asteroid/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
 	return
 
-/turf/simulated/floor/plating/asteroid/burn_tile()
+/turf/open/floor/plating/asteroid/burn_tile()
 	return
 
-/turf/simulated/floor/plating/asteroid/MakeSlippery(wet_setting)
+/turf/open/floor/plating/asteroid/MakeSlippery(wet_setting)
 	return
 
-/turf/simulated/floor/plating/asteroid/MakeDry(wet_setting)
+/turf/open/floor/plating/asteroid/MakeDry(wet_setting)
 	return
 
-/turf/simulated/floor/plating/asteroid/remove_plating()
+/turf/open/floor/plating/asteroid/remove_plating()
 	return
 
-/turf/simulated/floor/plating/asteroid/ex_act(severity)
+/turf/open/floor/plating/asteroid/ex_act(severity)
 	if(!can_dig())
 		return
 	switch(severity)
@@ -60,7 +60,7 @@
 		if(1)
 			getDug()
 
-/turf/simulated/floor/plating/asteroid/attackby(obj/item/I, mob/user, params)
+/turf/open/floor/plating/asteroid/attackby(obj/item/I, mob/user, params)
 	//note that this proc does not call ..()
 	if(!I|| !user)
 		return FALSE
@@ -95,40 +95,40 @@
 		if(!Z.use(1))
 			return
 		if(istype(Z, /obj/item/stack/tile/plasteel)) // Turn asteroid floors into plating by default
-			ChangeTurf(/turf/simulated/floor/plating, keep_icon = FALSE)
+			ChangeTurf(/turf/open/floor/plating, keep_icon = FALSE)
 		else
 			ChangeTurf(Z.turf_type, keep_icon = FALSE)
 		playsound(src, 'sound/weapons/Genhit.ogg', 50, 1)
 
-/turf/simulated/floor/plating/asteroid/welder_act(mob/user, obj/item/I)
+/turf/open/floor/plating/asteroid/welder_act(mob/user, obj/item/I)
 	return
 
-/turf/simulated/floor/plating/asteroid/basalt
+/turf/open/floor/plating/asteroid/basalt
 	name = "volcanic floor"
-	baseturf = /turf/simulated/floor/plating/asteroid/basalt
+	baseturf = /turf/open/floor/plating/asteroid/basalt
 	icon_state = "basalt"
 	icon_plating = "basalt"
 	environment_type = "basalt"
 	floor_variance = 15
 	digResult = /obj/item/stack/ore/glass/basalt
 
-/turf/simulated/floor/plating/asteroid/basalt/lava //lava underneath
-	baseturf = /turf/simulated/floor/plating/lava/smooth
+/turf/open/floor/plating/asteroid/basalt/lava //lava underneath
+	baseturf = /turf/open/floor/plating/lava/smooth
 
-/turf/simulated/floor/plating/asteroid/basalt/airless
+/turf/open/floor/plating/asteroid/basalt/airless
 	temperature = TCMB
 	oxygen = 0
 	nitrogen = 0
 
-/turf/simulated/floor/plating/asteroid/basalt/Initialize(mapload)
+/turf/open/floor/plating/asteroid/basalt/Initialize(mapload)
 	. = ..()
 	set_basalt_light(src)
 
-/turf/simulated/floor/plating/asteroid/basalt/getDug()
+/turf/open/floor/plating/asteroid/basalt/getDug()
 	set_light(0)
 	return ..()
 
-/proc/set_basalt_light(turf/simulated/floor/B)
+/proc/set_basalt_light(turf/open/floor/B)
 	switch(B.icon_state)
 		if("basalt1", "basalt2", "basalt3")
 			B.set_light(2, 0.6, LIGHT_COLOR_LAVA) //more light
@@ -137,25 +137,25 @@
 
 ///////Surface. The surface is warm, but survivable without a suit. Internals are required. The floors break to chasms, which drop you into the underground.
 
-/turf/simulated/floor/plating/asteroid/basalt/lava_land_surface
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
 	planetary_atmos = TRUE
-	baseturf = /turf/simulated/floor/plating/lava/smooth/lava_land_surface
+	baseturf = /turf/open/floor/plating/lava/smooth/lava_land_surface
 
-/turf/simulated/floor/plating/asteroid/airless
+/turf/open/floor/plating/asteroid/airless
 	temperature = TCMB
 	oxygen = 0
 	nitrogen = 0
-	turf_type = /turf/simulated/floor/plating/asteroid/airless
+	turf_type = /turf/open/floor/plating/asteroid/airless
 
 #define SPAWN_MEGAFAUNA "bluh bluh huge boss"
 #define SPAWN_BUBBLEGUM 6
 
 GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/megafauna/dragon = 4, /mob/living/simple_animal/hostile/megafauna/colossus = 2, /mob/living/simple_animal/hostile/megafauna/bubblegum = SPAWN_BUBBLEGUM))
 
-/turf/simulated/floor/plating/asteroid/airless/cave
+/turf/open/floor/plating/asteroid/airless/cave
 	var/length = 100
 	var/list/mob_spawn_list
 	var/list/megafauna_spawn_list
@@ -165,28 +165,28 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 	var/backward_cave_dir = 2
 	var/going_backwards = TRUE
 	var/has_data = FALSE
-	var/data_having_type = /turf/simulated/floor/plating/asteroid/airless/cave/has_data
-	turf_type = /turf/simulated/floor/plating/asteroid/airless
+	var/data_having_type = /turf/open/floor/plating/asteroid/airless/cave/has_data
+	turf_type = /turf/open/floor/plating/asteroid/airless
 
-/turf/simulated/floor/plating/asteroid/airless/cave/has_data //subtype for producing a tunnel with given data
+/turf/open/floor/plating/asteroid/airless/cave/has_data //subtype for producing a tunnel with given data
 	has_data = TRUE
 
-/turf/simulated/floor/plating/asteroid/airless/cave/volcanic
+/turf/open/floor/plating/asteroid/airless/cave/volcanic
 	mob_spawn_list = list(/mob/living/simple_animal/hostile/asteroid/goliath/beast/random = 50, /obj/structure/spawner/lavaland/goliath = 3,
 		/mob/living/simple_animal/hostile/asteroid/basilisk/watcher/random = 40, /obj/structure/spawner/lavaland = 2,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/random = 30, /obj/structure/spawner/lavaland/legion = 3,
 		SPAWN_MEGAFAUNA = 6, /mob/living/simple_animal/hostile/asteroid/goldgrub = 10)
 
-	data_having_type = /turf/simulated/floor/plating/asteroid/airless/cave/volcanic/has_data
-	turf_type = /turf/simulated/floor/plating/asteroid/basalt/lava_land_surface
+	data_having_type = /turf/open/floor/plating/asteroid/airless/cave/volcanic/has_data
+	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
 
-/turf/simulated/floor/plating/asteroid/airless/cave/volcanic/has_data //subtype for producing a tunnel with given data
+/turf/open/floor/plating/asteroid/airless/cave/volcanic/has_data //subtype for producing a tunnel with given data
 	has_data = TRUE
 
-/turf/simulated/floor/plating/asteroid/airless/cave/Initialize(mapload)
+/turf/open/floor/plating/asteroid/airless/cave/Initialize(mapload)
 	if (!mob_spawn_list)
 		mob_spawn_list = list(/mob/living/simple_animal/hostile/asteroid/goldgrub = 1, /mob/living/simple_animal/hostile/asteroid/goliath = 5, /mob/living/simple_animal/hostile/asteroid/basilisk = 4, /mob/living/simple_animal/hostile/asteroid/hivelord = 3)
 	if (!megafauna_spawn_list)
@@ -197,7 +197,7 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 	if(!has_data)
 		produce_tunnel_from_data()
 
-/turf/simulated/floor/plating/asteroid/airless/cave/proc/get_cave_data(set_length, exclude_dir = -1)
+/turf/open/floor/plating/asteroid/airless/cave/proc/get_cave_data(set_length, exclude_dir = -1)
 	// If set_length (arg1) isn't defined, get a random length; otherwise assign our length to the length arg.
 	if(!set_length)
 		length = rand(25, 50)
@@ -209,7 +209,7 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 	// Get the opposite direction of our facing direction
 	backward_cave_dir = angle2dir(dir2angle(forward_cave_dir) + 180)
 
-/turf/simulated/floor/plating/asteroid/airless/cave/proc/produce_tunnel_from_data(tunnel_length, excluded_dir = -1)
+/turf/open/floor/plating/asteroid/airless/cave/proc/produce_tunnel_from_data(tunnel_length, excluded_dir = -1)
 	get_cave_data(tunnel_length, excluded_dir)
 	// Make our tunnels
 	make_tunnel(forward_cave_dir)
@@ -218,7 +218,7 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 	// Kill ourselves by replacing ourselves with a normal floor.
 	SpawnFloor(src)
 
-/turf/simulated/floor/plating/asteroid/airless/cave/proc/make_tunnel(dir)
+/turf/open/floor/plating/asteroid/airless/cave/proc/make_tunnel(dir)
 	var/turf/simulated/mineral/tunnel = src
 	var/next_angle = pick(45, -45)
 
@@ -245,7 +245,7 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 		if(istype(tunnel))
 			// Small chance to have forks in our tunnel; otherwise dig our tunnel.
 			if(i > 3 && prob(20))
-				var/turf/simulated/floor/plating/asteroid/airless/cave/C = tunnel.ChangeTurf(data_having_type, FALSE, TRUE)
+				var/turf/open/floor/plating/asteroid/airless/cave/C = tunnel.ChangeTurf(data_having_type, FALSE, TRUE)
 				C.going_backwards = FALSE
 				C.produce_tunnel_from_data(rand(10, 15), dir)
 			else
@@ -260,7 +260,7 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 			setDir(angle2dir(dir2angle(dir) )+ next_angle)
 
 
-/turf/simulated/floor/plating/asteroid/airless/cave/proc/SpawnFloor(turf/T)
+/turf/open/floor/plating/asteroid/airless/cave/proc/SpawnFloor(turf/T)
 	for(var/S in RANGE_TURFS(1, src))
 		var/turf/NT = S
 		if(!NT || isspaceturf(NT) || istype(NT.loc, /area/mine/explored) || istype(NT.loc, /area/lavaland/surface/outdoors/explored))
@@ -273,7 +273,7 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 	SpawnMonster(T)
 	T.ChangeTurf(turf_type, FALSE, FALSE, TRUE)
 
-/turf/simulated/floor/plating/asteroid/airless/cave/proc/SpawnMonster(turf/T)
+/turf/open/floor/plating/asteroid/airless/cave/proc/SpawnMonster(turf/T)
 	if(prob(30))
 		if(istype(loc, /area/mine/explored) || !istype(loc, /area/lavaland/surface/outdoors/unexplored))
 			return
@@ -304,7 +304,7 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 #undef SPAWN_MEGAFAUNA
 #undef SPAWN_BUBBLEGUM
 
-/turf/simulated/floor/plating/asteroid/airless/cave/proc/SpawnFlora(turf/T)
+/turf/open/floor/plating/asteroid/airless/cave/proc/SpawnFlora(turf/T)
 	if(prob(12))
 		if(istype(loc, /area/mine/explored) || istype(loc, /area/lavaland/surface/outdoors/explored))
 			return
@@ -316,12 +316,12 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 
 
 
-/turf/simulated/floor/plating/asteroid/snow
+/turf/open/floor/plating/asteroid/snow
 	gender = PLURAL
 	name = "snow"
 	desc = "Looks cold."
 	icon = 'icons/turf/snow.dmi'
-	baseturf = /turf/simulated/floor/plating/asteroid/snow
+	baseturf = /turf/open/floor/plating/asteroid/snow
 	icon_state = "snow"
 	icon_plating = "snow"
 	temperature = 180
@@ -331,7 +331,7 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 	burnt_states = list("snow_dug")
 	digResult = /obj/item/stack/sheet/mineral/snow
 
-/turf/simulated/floor/plating/asteroid/snow/burn_tile()
+/turf/open/floor/plating/asteroid/snow/burn_tile()
 	if(!burnt)
 		visible_message("<span class='danger'>[src] melts away!.</span>")
 		slowdown = 0
@@ -340,15 +340,15 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 		return TRUE
 	return FALSE
 
-/turf/simulated/floor/plating/asteroid/snow/airless
+/turf/open/floor/plating/asteroid/snow/airless
 	temperature = TCMB
 	oxygen = 0
 	nitrogen = 0
 
-/turf/simulated/floor/plating/asteroid/snow/temperature
+/turf/open/floor/plating/asteroid/snow/temperature
 	temperature = 255.37
 
-/turf/simulated/floor/plating/asteroid/snow/atmosphere
+/turf/open/floor/plating/asteroid/snow/atmosphere
 	oxygen = 22
 	nitrogen = 82
 	temperature = 180

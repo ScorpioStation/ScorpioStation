@@ -1,7 +1,7 @@
 /obj/effect/spawner/random_barrier
 	name = "random tile"
 	var/list/result = list(
-	/turf/simulated/floor/plasteel = 1,
+	/turf/open/floor/plasteel = 1,
 	/turf/simulated/wall = 1,
 	/obj/structure/falsewall = 1,
 	/obj/effect/spawner/window/reinforced = 1,
@@ -33,7 +33,7 @@
 /obj/effect/spawner/random_barrier/floor_probably
 	name = "probably a floor"
 	result = list(
-	/turf/simulated/floor/plasteel = 3,
+	/turf/open/floor/plasteel = 3,
 	/turf/simulated/wall = 1)
 
 /obj/effect/spawner/random_barrier/obstruction
@@ -55,11 +55,11 @@
 	result = list(
 	/obj/structure/grille = 8,
 	/obj/structure/grille/broken = 4,
-	/turf/simulated/floor/plating = 2)
+	/turf/open/floor/plating = 2)
 
 /obj/effect/spawner/random_spawners/grille_maybe
 	name = "grille maybe"
 	result = list(
 	/obj/structure/grille = 2,
 	/obj/structure/grille/broken = 2,
-	/turf/simulated/floor/plating = 5)
+	/turf/open/floor/plating = 5)

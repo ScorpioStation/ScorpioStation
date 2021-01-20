@@ -30,8 +30,8 @@
 		if(metal)
 			var/turf/T = get_turf(src)
 			if(istype(T, /turf/space) && !istype(T, /turf/space/transit))
-				T.ChangeTurf(/turf/simulated/floor/plating/metalfoam)
-				var/turf/simulated/floor/plating/metalfoam/MF = get_turf(src)
+				T.ChangeTurf(/turf/open/floor/plating/metalfoam)
+				var/turf/open/floor/plating/metalfoam/MF = get_turf(src)
 				MF.metal = metal
 				MF.update_icon()
 

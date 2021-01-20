@@ -30,7 +30,7 @@
 	area_whitelist = list(/area/maintenance/turbine,
 						/area/maintenance/incinerator,
 						/area/crew_quarters/kitchen)
-	turf_blacklist = list(/turf/simulated/floor/beach/water)
+	turf_blacklist = list(/turf/open/floor/beach/water)
 
 /datum/mob_type/water
 	name = "Water"
@@ -47,7 +47,7 @@
 						/area/crew_quarters/sleep_male/toilet_male,
 						/area/crew_quarters/sleep_female/toilet_female,
 						/area/crew_quarters/locker/locker_toilet)
-	turf_whitelist = list(/turf/simulated/floor/beach/water)
+	turf_whitelist = list(/turf/open/floor/beach/water)
 
 /datum/mob_type/grass
 	name = "Grass"
@@ -63,7 +63,7 @@
 	area_blacklist = list(/area/toxins)
 	area_whitelist = list(/area/hydroponics,
 						/area/hallway/secondary/construction)
-	turf_whitelist = list(/turf/simulated/floor/grass)
+	turf_whitelist = list(/turf/open/floor/grass)
 
 /datum/mob_type/electric
 	name = "Electric"
@@ -79,7 +79,7 @@
 						/area/turret_protected/aisat_interior,
 						/area/aisat,
 						/area/assembly)
-	turf_whitelist = list(/turf/simulated/floor/bluegrid)
+	turf_whitelist = list(/turf/open/floor/bluegrid)
 
 /datum/mob_type/ground
 	name = "Ground"
@@ -104,7 +104,7 @@
 	area_whitelist = list(/area/quartermaster,
 						/area/maintenance/disposal)
 	turf_whitelist = list(/turf/simulated/wall,
-						/turf/simulated/floor/mineral)
+						/turf/open/floor/mineral)
 
 /datum/mob_type/bug
 	name = "Bug"
@@ -117,7 +117,7 @@
 	area_blacklist = list(/area/toxins)
 	area_whitelist = list(/area/hydroponics,
 						/area/hallway/secondary/construction)
-	turf_whitelist = list(/turf/simulated/floor/grass)
+	turf_whitelist = list(/turf/open/floor/grass)
 
 /datum/mob_type/poison
 	name = "Poison"
@@ -153,7 +153,7 @@
 	area_whitelist = list(/area/crew_quarters/bar,
 						/area/crew_quarters/fitness,
 						/area/security)
-	turf_whitelist = list(/turf/simulated/floor/wood)
+	turf_whitelist = list(/turf/open/floor/wood)
 
 /datum/mob_type/psychic
 	name = "Psychic"
@@ -237,7 +237,7 @@
 	area_whitelist = list(/area/maintenance,
 						/area/assembly/assembly_line,
 						/area/mimeoffice)
-	turf_blacklist = list(/turf/simulated/floor/light)
+	turf_blacklist = list(/turf/open/floor/light)
 
 /datum/mob_type/steel
 	name = "Steel"

@@ -79,11 +79,11 @@
 /turf/space,
 /area/space)
 "y" = (
-/turf/simulated/floor/plating/burnt,
+/turf/open/floor/plating/burnt,
 /area/space)
 "z" = (
 /obj/item/stack/sheet/metal,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/space)
 "B" = (
 /obj/structure/lattice,
@@ -104,18 +104,18 @@
 	pixel_y = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plating/burnt,
+/turf/open/floor/plating/burnt,
 /area/space)
 "E" = (
 /obj/item/stack/rods,
 /turf/space,
 /area/space)
 "F" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/space)
 "G" = (
 /obj/random/toolbox,
-/turf/simulated/floor/plating/burnt,
+/turf/open/floor/plating/burnt,
 /area/space)
 "I" = (
 /obj/structure/grille/broken,
@@ -140,18 +140,18 @@
 	pixel_y = -24
 	},
 /obj/structure/cable,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/space)
 "Q" = (
 /obj/effect/decal/cleanable/shreds{
 	pixel_x = 4;
 	pixel_y = 3
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/space)
 "T" = (
 /obj/structure/girder,
-/turf/simulated/floor/plating/burnt,
+/turf/open/floor/plating/burnt,
 /area/space)
 "U" = (
 /obj/effect/spawner/random_barrier/wall_probably,
@@ -165,7 +165,7 @@
 /area/space)
 "Y" = (
 /obj/item/shard,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/space)
 "Z" = (
 /obj/item/stack/sheet/metal,

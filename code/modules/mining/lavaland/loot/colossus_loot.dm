@@ -115,18 +115,18 @@
 	terrain_theme = pick("lavaland","winter","jungle","alien")
 	switch(terrain_theme)
 		if("lavaland")//Depressurizes the place... and free cult metal, I guess.
-			NewTerrainFloors = /turf/simulated/floor/plating/asteroid/basalt // Needs to be updated after turf update
+			NewTerrainFloors = /turf/open/floor/plating/asteroid/basalt // Needs to be updated after turf update
 			NewTerrainWalls = /turf/simulated/wall/cult
 			NewFlora = list(/mob/living/simple_animal/hostile/asteroid/goldgrub)
 			florachance = 1
 		if("winter") //Snow terrain is slow to move in and cold! Get the assistants to shovel your driveway.
-			NewTerrainFloors = /turf/simulated/floor/snow // Needs to be updated after turf update
+			NewTerrainFloors = /turf/open/floor/snow // Needs to be updated after turf update
 			NewTerrainWalls = /turf/simulated/wall/mineral/wood
 			NewTerrainChairs = /obj/structure/chair/wood
 			NewTerrainTables = /obj/structure/table/glass
 			NewFlora = list(/obj/structure/flora/grass/green, /obj/structure/flora/grass/brown, /obj/structure/flora/grass/both)
 		if("jungle") //Beneficial due to actually having breathable air. Plus, monkeys and bows and arrows.
-			NewTerrainFloors = /turf/simulated/floor/grass
+			NewTerrainFloors = /turf/open/floor/grass
 			NewTerrainWalls = /turf/simulated/wall/mineral/sandstone
 			NewTerrainChairs = /obj/structure/chair/wood
 			NewTerrainTables = /obj/structure/table/wood
@@ -135,7 +135,7 @@
 							/obj/item/gun/projectile/bow, /obj/item/storage/backpack/quiver/full)
 			florachance = 20
 		if("alien") //Beneficial, turns stuff into alien alloy which is useful to cargo and research. Also repairs atmos.
-			NewTerrainFloors = /turf/simulated/floor/mineral/abductor
+			NewTerrainFloors = /turf/open/floor/mineral/abductor
 			NewTerrainWalls = /turf/simulated/wall/mineral/abductor
 			NewTerrainChairs = /obj/structure/bed/abductor //ayys apparently don't have chairs. An entire species of people who only recline.
 			NewTerrainTables = /obj/structure/table/abductor

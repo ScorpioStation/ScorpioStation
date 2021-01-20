@@ -5,7 +5,7 @@
 	invisibility = INVISIBILITY_ABSTRACT
 	anchored = TRUE
 	var/list/elements
-	var/floor_type = /turf/simulated/floor/vault
+	var/floor_type = /turf/open/floor/vault
 	var/finished = FALSE
 	var/reward_type = /obj/item/reagent_containers/food/snacks/cookie
 	var/element_type = /obj/structure/puzzle_element
@@ -48,7 +48,7 @@
 		var/turf/T = get_turf_for_id(id)
 		if(!T)
 			return FALSE
-		if(istype(T, /turf/simulated/wall/indestructible) || istype(T, /turf/simulated/floor/indestructible))
+		if(istype(T, /turf/simulated/wall/indestructible) || istype(T, /turf/open/floor/indestructible))
 			return FALSE
 	return TRUE
 

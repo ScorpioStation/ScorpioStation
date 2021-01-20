@@ -15,7 +15,7 @@
 	..()
 
 /datum/mapGeneratorModule/river
-	var/river_type = /turf/simulated/floor/plating/lava/smooth
+	var/river_type = /turf/open/floor/plating/lava/smooth
 	var/river_nodes = 4
 
 /datum/mapGeneratorModule/river/generate()

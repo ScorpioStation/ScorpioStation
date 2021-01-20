@@ -10,7 +10,7 @@
 #define LIGHTFLOOR_CYCLEA 9
 #define LIGHTFLOOR_CYCLEB 10
 
-/turf/simulated/floor/light
+/turf/open/floor/light
 	name = "\improper light floor"
 	light_range = 5
 	icon_state = "light_on"
@@ -20,11 +20,11 @@
 	var/state = LIGHTFLOOR_ON
 	var/can_modify_colour = TRUE
 
-/turf/simulated/floor/light/Initialize(mapload)
+/turf/open/floor/light/Initialize(mapload)
 	. = ..()
 	update_icon()
 
-/turf/simulated/floor/light/update_icon()
+/turf/open/floor/light/update_icon()
 	..()
 	if(on)
 		switch(state)
@@ -65,16 +65,16 @@
 		set_light(0)
 		icon_state = "light_off"
 
-/turf/simulated/floor/light/BeforeChange()
+/turf/open/floor/light/BeforeChange()
 	set_light(0)
 	..()
 
-/turf/simulated/floor/light/attack_hand(mob/user)
+/turf/open/floor/light/attack_hand(mob/user)
 	if(!can_modify_colour)
 		return
 	toggle_light(!on)
 
-/turf/simulated/floor/light/attackby(obj/item/C, mob/user, params)
+/turf/open/floor/light/attackby(obj/item/C, mob/user, params)
 	if(istype(C, /obj/item/light/bulb)) //only for light tiles
 		if(!state)
 			qdel(C)
@@ -86,7 +86,7 @@
 	else
 		return ..()
 
-/turf/simulated/floor/light/multitool_act(mob/user, obj/item/I)
+/turf/open/floor/light/multitool_act(mob/user, obj/item/I)
 	. = TRUE
 	if(!can_modify_colour)
 		return
@@ -102,29 +102,29 @@
 	else
 		to_chat(user, "<span class='warning'>[src]'s light bulb appears to have burned out.</span>")
 
-/turf/simulated/floor/light/proc/toggle_light(light)
+/turf/open/floor/light/proc/toggle_light(light)
 	// 0 = OFF
 	// 1 = ON
 	on = light
 	update_icon()
 
-/turf/simulated/floor/light/extinguish_light()
+/turf/open/floor/light/extinguish_light()
 	toggle_light(FALSE)
 	visible_message("<span class='danger'>[src] flickers and falls dark.</span>")
 
 //Cycles through all of the colours
-/turf/simulated/floor/light/colour_cycle
+/turf/open/floor/light/colour_cycle
 	state = LIGHTFLOOR_GENERICCYCLE
 	can_modify_colour = FALSE
 
 //Two different "dancefloor" types so that you can have a checkered pattern
 // (also has a longer delay than colour_cycle between cycling colours)
-/turf/simulated/floor/light/colour_cycle/dancefloor_a
+/turf/open/floor/light/colour_cycle/dancefloor_a
 	name = "dancefloor"
 	desc = "Funky floor."
 	state = LIGHTFLOOR_CYCLEA
 
-/turf/simulated/floor/light/colour_cycle/dancefloor_b
+/turf/open/floor/light/colour_cycle/dancefloor_b
 	name = "dancefloor"
 	desc = "Funky floor."
 	state = LIGHTFLOOR_CYCLEB

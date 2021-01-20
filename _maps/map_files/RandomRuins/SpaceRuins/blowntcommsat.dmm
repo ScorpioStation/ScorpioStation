@@ -7,7 +7,7 @@
 /turf/template_noop,
 /area/space/nearstation)
 "ac" = (
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/space/nearstation)
 "ad" = (
 /obj/structure/lattice,
@@ -21,24 +21,24 @@
 /area/space/nearstation)
 "af" = (
 /obj/structure/grille,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/space/nearstation)
 "ag" = (
 /turf/simulated/wall/r_wall,
 /area/space/nearstation)
 "ah" = (
 /obj/structure/girder,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/space/nearstation)
 "ai" = (
 /turf/simulated/wall/r_wall,
 /area/ruin/tcommsat)
 "aj" = (
 /obj/structure/girder,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "ak" = (
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "al" = (
 /obj/structure/window/reinforced{
@@ -50,7 +50,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "an" = (
 /obj/machinery/power/apc{
@@ -64,7 +64,7 @@
 	icon_state = "0-4";
 	d2 = 4
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "ao" = (
 /obj/machinery/light/small{
@@ -75,33 +75,33 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "ap" = (
 /obj/item/stock_parts/cell,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aq" = (
 /obj/machinery/portable_atmospherics/canister/air,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "ar" = (
 /obj/item/coin/clown,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "as" = (
 /obj/structure/bed,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "at" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "au" = (
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "av" = (
 /obj/structure/lattice,
@@ -117,18 +117,18 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "ax" = (
 /obj/item/wrench,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "ay" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/machinery/portable_atmospherics/canister/air,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "az" = (
 /obj/structure/lattice,
@@ -140,7 +140,7 @@
 "aA" = (
 /obj/structure/table,
 /obj/item/paper,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aB" = (
 /obj/structure/table,
@@ -149,46 +149,46 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aC" = (
 /obj/structure/computerframe,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aD" = (
 /obj/structure/table,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aE" = (
 /obj/item/reagent_containers/food/snacks/meat/syntiflesh{
 	name = "Cuban Pete-Meat"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "aF" = (
 /obj/structure/grille,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aG" = (
 /obj/structure/grille/broken,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aH" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aI" = (
 /obj/structure/window/reinforced,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aJ" = (
 /obj/item/stack/cable_coil/cut{
 	amount = 1
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aK" = (
 /obj/structure/window/reinforced,
@@ -196,7 +196,7 @@
 	dir = 4
 	},
 /obj/structure/closet,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aL" = (
 /obj/structure/window/reinforced{
@@ -206,12 +206,12 @@
 /area/space/nearstation)
 "aM" = (
 /obj/item/folder/yellow,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aN" = (
 /obj/structure/bed,
 /obj/effect/decal/remains/human,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aO" = (
 /turf/template_noop,
@@ -242,7 +242,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aS" = (
 /obj/structure/window/reinforced,
@@ -270,28 +270,28 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aX" = (
 /obj/item/paper/crumpled,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aY" = (
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "aZ" = (
 /obj/structure/table,
 /obj/item/storage/fancy/cigarettes,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "ba" = (
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bb" = (
 /obj/structure/window/reinforced{
@@ -300,14 +300,14 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bc" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bd" = (
 /obj/structure/window/reinforced,
@@ -315,36 +315,36 @@
 	dir = 1
 	},
 /obj/item/airlock_electronics,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "be" = (
 /obj/structure/door_assembly/door_assembly_hatch,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bf" = (
 /obj/item/cigbutt,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bg" = (
 /obj/machinery/vending/snack,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bh" = (
 /obj/machinery/vending/cola,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bi" = (
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bj" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bk" = (
 /obj/structure/disposalpipe/segment{
@@ -363,13 +363,13 @@
 	dir = 4
 	},
 /obj/structure/grille/broken,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/space/nearstation)
 "bn" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/space/nearstation)
 "bo" = (
 /obj/structure/disposaloutlet{
@@ -378,7 +378,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/space/nearstation)
 "bp" = (
 /obj/structure/window/reinforced{
@@ -405,15 +405,15 @@
 "bs" = (
 /obj/structure/table,
 /obj/item/radio/off,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bt" = (
 /obj/structure/chair,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bv" = (
 /obj/machinery/door/airlock/hatch,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bw" = (
 /obj/structure/window/reinforced{
@@ -429,7 +429,7 @@
 /obj/item/shard{
 	icon_state = "medium"
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "by" = (
 /obj/structure/grille,
@@ -440,14 +440,14 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bz" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bA" = (
 /obj/structure/grille,
@@ -455,7 +455,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bB" = (
 /obj/structure/grille,
@@ -466,11 +466,11 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bC" = (
 /obj/machinery/door/airlock/maintenance_hatch,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bD" = (
 /obj/structure/window/reinforced{
@@ -479,7 +479,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bE" = (
 /obj/structure/window/reinforced{
@@ -496,33 +496,33 @@
 	dir = 8
 	},
 /obj/item/stack/rods,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bG" = (
 /obj/item/stack/rods,
 /obj/item/shard{
 	icon_state = "medium"
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bH" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bI" = (
 /obj/effect/spawner/window/reinforced{
 	useFull = 0
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/tcommsat)
 "bJ" = (
 /obj/effect/decal/cleanable/blood,
 /obj/item/scalpel{
 	pixel_y = 12
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bK" = (
 /obj/structure/window/reinforced{
@@ -531,20 +531,20 @@
 /obj/item/shard{
 	icon_state = "medium"
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bL" = (
 /obj/structure/rack,
 /obj/item/circuitboard/teleporter,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bM" = (
 /obj/item/radio/off,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bN" = (
 /obj/effect/decal/cleanable/blood/oil,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bO" = (
 /obj/effect/decal/cleanable/blood,
@@ -552,60 +552,60 @@
 /obj/item/clothing/under/rank/centcom_officer,
 /obj/item/restraints/handcuffs,
 /obj/effect/decal/remains/human,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bP" = (
 /obj/structure/table,
 /obj/item/flashlight/lamp,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bQ" = (
 /obj/structure/window/reinforced{
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bR" = (
 /obj/structure/door_assembly/door_assembly_mhatch,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bS" = (
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bT" = (
 /obj/effect/decal/cleanable/blood,
 /obj/item/assembly/signaler,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bU" = (
 /obj/structure/table,
 /obj/item/reagent_containers/syringe/lethal{
 	pixel_y = 4
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bV" = (
 /obj/item/storage/toolbox/syndicate,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bW" = (
 /obj/structure/table,
 /obj/item/radio/electropack,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bX" = (
 /obj/structure/table,
 /obj/item/hemostat,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bY" = (
 /obj/structure/table,
 /obj/item/circular_saw,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "bZ" = (
 /obj/structure/window/reinforced{
@@ -615,7 +615,7 @@
 	dir = 4
 	},
 /obj/item/stack/rods,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "ca" = (
 /obj/structure/window/reinforced{
@@ -631,19 +631,19 @@
 /area/space/nearstation)
 "cc" = (
 /obj/effect/decal/warning_stripes/northwest,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "cd" = (
 /obj/effect/decal/warning_stripes/northwestcorner,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "ce" = (
 /obj/effect/decal/warning_stripes/north,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "cf" = (
 /obj/effect/decal/warning_stripes/northeast,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "cg" = (
 /obj/structure/window/reinforced{
@@ -655,36 +655,36 @@
 "ch" = (
 /obj/item/paper/crumpled,
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "ci" = (
 /obj/item/stack/rods,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "cj" = (
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "ck" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "cl" = (
 /obj/effect/decal/warning_stripes/southwest,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "cm" = (
 /obj/machinery/light/small,
 /obj/item/paper,
 /obj/effect/decal/warning_stripes/southwestcorner,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "cn" = (
 /obj/effect/decal/warning_stripes/southeast,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "co" = (
 /obj/item/shard{
@@ -706,7 +706,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "cr" = (
 /obj/structure/grille/broken,
@@ -714,36 +714,36 @@
 /area/space/nearstation)
 "cs" = (
 /obj/machinery/door/airlock/hatch,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "ct" = (
 /obj/effect/decal/warning_stripes/northwest,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "cu" = (
 /obj/effect/decal/warning_stripes/north,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "cv" = (
 /obj/effect/decal/warning_stripes/northeast,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "cw" = (
 /obj/effect/decal/warning_stripes/northwestcorner,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "cx" = (
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "cy" = (
 /obj/effect/decal/warning_stripes/northeastcorner,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "cz" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "cA" = (
 /obj/structure/sign/vacuum,
@@ -752,41 +752,41 @@
 "cB" = (
 /obj/structure/closet/emcloset,
 /obj/effect/decal/warning_stripes/northwest,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "cC" = (
 /obj/item/paper/crumpled,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "cD" = (
 /obj/structure/closet/malf/suits,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "cE" = (
 /obj/structure/door_assembly/door_assembly_ext,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/tcommsat)
 "cF" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/tcommsat)
 "cG" = (
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "cH" = (
 /obj/item/crowbar,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/space/nearstation)
 "cI" = (
 /obj/structure/closet/crate,
 /obj/item/clothing/glasses/night,
 /obj/effect/decal/warning_stripes/southwest,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "cJ" = (
 /obj/effect/decal/warning_stripes/southwestcorner,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "cK" = (
 /obj/item/storage/toolbox/electrical{
@@ -794,30 +794,30 @@
 	pixel_y = -1
 	},
 /obj/effect/decal/warning_stripes/southwest,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "cL" = (
 /obj/effect/decal/warning_stripes/south,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "cM" = (
 /obj/machinery/light/small{
 	dir = 4
 	},
 /obj/effect/decal/warning_stripes/southeast,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/tcommsat)
 "cN" = (
 /obj/structure/computerframe,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/tcommsat)
 "cO" = (
 /obj/machinery/teleport/station,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/tcommsat)
 "cP" = (
 /obj/machinery/teleport/hub,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/tcommsat)
 "cQ" = (
 /obj/item/gps/ruin{

@@ -60,7 +60,7 @@
 	icon_state = "wall"
 	canSmoothWith = list(/turf/simulated/wall/indestructible/boss, /turf/simulated/wall/indestructible/boss/see_through)
 	explosion_block = 50
-	baseturf = /turf/simulated/floor/plating/asteroid/basalt
+	baseturf = /turf/open/floor/plating/asteroid/basalt
 	smooth = SMOOTH_TRUE
 
 /turf/simulated/wall/indestructible/boss/see_through

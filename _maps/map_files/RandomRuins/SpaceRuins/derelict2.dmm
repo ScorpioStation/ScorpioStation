@@ -12,7 +12,7 @@
 /area/space/nearstation)
 "c" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "d" = (
 /obj/structure/window/reinforced{
@@ -33,7 +33,7 @@
 	icon_state = "rwindow";
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "f" = (
 /turf/simulated/wall,
@@ -41,7 +41,7 @@
 "g" = (
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "h" = (
 /obj/machinery/light/small{
@@ -49,10 +49,10 @@
 	icon_state = "bulb1";
 	dir = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered)
 "i" = (
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered)
 "j" = (
 /obj/machinery/light/small{
@@ -60,7 +60,7 @@
 	icon_state = "bulb1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered)
 "k" = (
 /obj/structure/window/reinforced,
@@ -73,7 +73,7 @@
 	icon_state = "rwindow";
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "m" = (
 /obj/structure/chair{
@@ -82,7 +82,7 @@
 	dir = 4
 	},
 /obj/effect/decal/remains/human,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered)
 "n" = (
 /obj/structure/table,
@@ -95,7 +95,7 @@
 /obj/item/trash/plate{
 	pixel_x = -10
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered)
 "o" = (
 /obj/structure/chair{
@@ -104,7 +104,7 @@
 	dir = 8
 	},
 /obj/effect/decal/remains/human,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered)
 "p" = (
 /obj/structure/window/reinforced{
@@ -120,11 +120,11 @@
 	icon_state = "bulb1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered)
 "r" = (
 /obj/machinery/light/small,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered)
 
 (1,1,1) = {"

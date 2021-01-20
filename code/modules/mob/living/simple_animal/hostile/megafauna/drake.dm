@@ -190,10 +190,10 @@ Difficulty: Medium
 		drakewalls += new /obj/effect/temp_visual/drakewall(T) // no people with lava immunity can just run away from the attack for free
 	var/list/indestructible_turfs = list()
 	for(var/turf/T in RANGE_TURFS(2, center))
-		if(istype(T, /turf/simulated/floor/indestructible))
+		if(istype(T, /turf/open/floor/indestructible))
 			continue
 		if(!istype(T, /turf/simulated/wall/indestructible))
-			T.ChangeTurf(/turf/simulated/floor/plating/asteroid/basalt/lava_land_surface)
+			T.ChangeTurf(/turf/open/floor/plating/asteroid/basalt/lava_land_surface)
 		else
 			indestructible_turfs += T
 	SLEEP_CHECK_DEATH(10) // give them a bit of time to realize what attack is actually happening
@@ -449,8 +449,8 @@ Difficulty: Medium
 		M.take_damage(45, BRUTE, "melee", 1)
 
 	// changes turf to lava temporarily
-	if(!T.density && !istype(T, /turf/simulated/floor/plating/lava))
-		var/lava_turf = /turf/simulated/floor/plating/lava/smooth
+	if(!T.density && !istype(T, /turf/open/floor/plating/lava))
+		var/lava_turf = /turf/open/floor/plating/lava/smooth
 		var/reset_turf = T.type
 		T.ChangeTurf(lava_turf)
 		sleep(reset_time)

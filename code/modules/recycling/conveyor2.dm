@@ -421,7 +421,7 @@ GLOBAL_LIST_INIT(conveyor_switches, list())
 		return
 	if(user.incapacitated())
 		return
-	if(!istype(T, /turf/simulated/floor))
+	if(!istype(T, /turf/open/floor))
 		return
 	if(T == get_turf(user))
 		to_chat(user, "<span class='notice'>You cannot place [src] under yourself.</span>")
@@ -456,7 +456,7 @@ GLOBAL_LIST_INIT(conveyor_switches, list())
 		return
 	if(user.incapacitated())
 		return
-	if(!istype(T, /turf/simulated/floor))
+	if(!istype(T, /turf/open/floor))
 		return
 	var/found = FALSE
 	for(var/obj/machinery/conveyor/C in view())

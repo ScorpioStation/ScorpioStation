@@ -1,11 +1,11 @@
-/turf/simulated/floor/chasm
+/turf/open/floor/chasm
 	name = "chasm"
 	desc = "Watch your step."
-	baseturf = /turf/simulated/floor/chasm
+	baseturf = /turf/open/floor/chasm
 	smooth = SMOOTH_TRUE | SMOOTH_BORDER | SMOOTH_MORE
 	icon = 'icons/turf/floors/Chasms.dmi'
 	icon_state = "smooth"
-	canSmoothWith = list(/turf/simulated/floor/chasm)
+	canSmoothWith = list(/turf/open/floor/chasm)
 	density = TRUE //This will prevent hostile mobs from pathing into chasms, while the canpass override will still let it function like an open turf
 	var/static/list/falling_atoms = list() //Atoms currently falling into the chasm
 	var/static/list/forbidden_types = typecacheof(list(
@@ -26,21 +26,21 @@
 	var/drop_y = 1
 	var/drop_z = 1
 
-/turf/simulated/floor/chasm/Entered(atom/movable/AM)
+/turf/open/floor/chasm/Entered(atom/movable/AM)
 	..()
 	START_PROCESSING(SSprocessing, src)
 	drop_stuff(AM)
 
-/turf/simulated/floor/chasm/process()
+/turf/open/floor/chasm/process()
 	if(!drop_stuff())
 		STOP_PROCESSING(SSprocessing, src)
 
-/turf/simulated/floor/chasm/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
+/turf/open/floor/chasm/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
 	underlay_appearance.icon = 'icons/turf/floors.dmi'
 	underlay_appearance.icon_state = "basalt"
 	return TRUE
 
-/turf/simulated/floor/chasm/attackby(obj/item/C, mob/user, params, area/area_restriction)
+/turf/open/floor/chasm/attackby(obj/item/C, mob/user, params, area/area_restriction)
 	..()
 	if(istype(C, /obj/item/stack/rods))
 		var/obj/item/stack/rods/R = C
@@ -61,13 +61,13 @@
 				qdel(L)
 				playsound(src, 'sound/weapons/genhit.ogg', 50, 1)
 				to_chat(user, "<span class='notice'>You build a floor.</span>")
-				ChangeTurf(/turf/simulated/floor/plating)
+				ChangeTurf(/turf/open/floor/plating)
 			else
 				to_chat(user, "<span class='warning'>You need one floor tile to build a floor!</span>")
 		else
 			to_chat(user, "<span class='warning'>The plating is going to need some support! Place metal rods first.</span>")
 
-/turf/simulated/floor/chasm/proc/is_safe()
+/turf/open/floor/chasm/proc/is_safe()
 	//if anything matching this typecache is found in the chasm, we don't drop things
 	var/static/list/chasm_safeties_typecache = typecacheof(list(/obj/structure/lattice/catwalk, /obj/structure/stone_tile))
 	var/list/found_safeties = typecache_filter_list(contents, chasm_safeties_typecache)
@@ -76,7 +76,7 @@
 			LAZYREMOVE(found_safeties, S)
 	return LAZYLEN(found_safeties)
 
-/turf/simulated/floor/chasm/proc/drop_stuff(AM)
+/turf/open/floor/chasm/proc/drop_stuff(AM)
 	. = 0
 	if(is_safe())
 		return FALSE
@@ -88,7 +88,7 @@
 			. = 1
 			INVOKE_ASYNC(src, .proc/drop, thing)
 
-/turf/simulated/floor/chasm/proc/droppable(atom/movable/AM)
+/turf/open/floor/chasm/proc/droppable(atom/movable/AM)
 	if(falling_atoms[AM])
 		return FALSE
 	if(!isliving(AM) && !isobj(AM))
@@ -110,7 +110,7 @@
 			return FALSE
 	return TRUE
 
-/turf/simulated/floor/chasm/proc/drop(atom/movable/AM)
+/turf/open/floor/chasm/proc/drop(atom/movable/AM)
 	//Make sure the item is still there after our sleep
 	if(!AM || QDELETED(AM))
 		return
@@ -126,7 +126,7 @@
 			L.adjustBruteLoss(30)
 	falling_atoms -= AM
 
-/turf/simulated/floor/chasm/straight_down/Initialize()
+/turf/open/floor/chasm/straight_down/Initialize()
 	. = ..()
 	drop_x = x
 	drop_y = y
@@ -136,17 +136,17 @@
 		T.visible_message("<span class='boldwarning'>The ceiling gives way!</span>")
 		playsound(T, 'sound/effects/break_stone.ogg', 50, 1)
 
-/turf/simulated/floor/chasm/straight_down/lava_land_surface
+/turf/open/floor/chasm/straight_down/lava_land_surface
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
 	planetary_atmos = TRUE
-	baseturf = /turf/simulated/floor/chasm/straight_down/lava_land_surface
+	baseturf = /turf/open/floor/chasm/straight_down/lava_land_surface
 	light_range = 1.9 //slightly less range than lava
 	light_power = 0.65 //less bright, too
 	light_color = LIGHT_COLOR_LAVA //let's just say you're falling into lava, that makes sense right
 
-/turf/simulated/floor/chasm/straight_down/lava_land_surface/drop(atom/movable/AM)
+/turf/open/floor/chasm/straight_down/lava_land_surface/drop(atom/movable/AM)
 	//Make sure the item is still there after our sleep
 	if(!AM || QDELETED(AM))
 		return
@@ -188,10 +188,10 @@
 		AM.transform = oldtransform
 		AM.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1, 10),rand(1, 10))
 
-/turf/simulated/floor/chasm/straight_down/lava_land_surface/normal_air
+/turf/open/floor/chasm/straight_down/lava_land_surface/normal_air
 	oxygen = MOLES_O2STANDARD
 	nitrogen = MOLES_N2STANDARD
 	temperature = T20C
 
-/turf/simulated/floor/chasm/CanPass(atom/movable/mover, turf/target)
+/turf/open/floor/chasm/CanPass(atom/movable/mover, turf/target)
 	return 1

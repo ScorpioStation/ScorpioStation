@@ -4,7 +4,7 @@
 /area/template_noop)
 "b" = (
 /obj/item/stack/rods,
-/turf/simulated/floor/plating/damaged,
+/turf/open/floor/plating/damaged,
 /area/template_noop)
 "c" = (
 /obj/item/trash/popcorn,
@@ -63,7 +63,7 @@
 /area/template_noop)
 "t" = (
 /obj/machinery/computer/arcade/battle,
-/turf/simulated/floor/plasteel/airless,
+/turf/open/floor/plasteel/airless,
 /area/template_noop)
 "u" = (
 /obj/random/tool,
@@ -79,14 +79,14 @@
 /area/template_noop)
 "x" = (
 /obj/structure/bookcase/random/fiction,
-/turf/simulated/floor/plating/damaged,
+/turf/open/floor/plating/damaged,
 /area/template_noop)
 "y" = (
 /obj/item/storage/pill_bottle/random_meds/labelled,
 /turf/space,
 /area/template_noop)
 "z" = (
-/turf/simulated/floor/plating/damaged,
+/turf/open/floor/plating/damaged,
 /area/template_noop)
 "A" = (
 /turf/space,
@@ -102,7 +102,7 @@
 /area/template_noop)
 "F" = (
 /obj/random/tool,
-/turf/simulated/floor/plating/damaged,
+/turf/open/floor/plating/damaged,
 /area/template_noop)
 "G" = (
 /obj/item/poster/random_official,

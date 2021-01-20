@@ -150,7 +150,7 @@
 		else
 			O.forceMove(src)
 
-	ChangeTurf(/turf/simulated/floor/plating)
+	ChangeTurf(/turf/open/floor/plating)
 	return TRUE
 
 /turf/simulated/wall/proc/break_wall()
@@ -224,7 +224,7 @@
 /turf/simulated/wall/burn_down()
 	if(istype(sheet_type, /obj/item/stack/sheet/mineral/diamond))
 		return
-	ChangeTurf(/turf/simulated/floor)
+	ChangeTurf(/turf/open/floor)
 
 /turf/simulated/wall/proc/thermitemelt(mob/user as mob, speed)
 	var/wait = 100
@@ -242,9 +242,9 @@
 	O.density = 1
 	O.layer = 5
 
-	src.ChangeTurf(/turf/simulated/floor/plating)
+	src.ChangeTurf(/turf/open/floor/plating)
 
-	var/turf/simulated/floor/F = src
+	var/turf/open/floor/F = src
 	F.burn_tile()
 	F.icon_state = "plating"
 	if(user)

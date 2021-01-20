@@ -1,7 +1,7 @@
 /datum/holiday/xmas/celebrate()
 	for(var/obj/structure/flora/tree/pine/xmas in world)
 		if(!is_station_level(xmas.z))	continue
-		for(var/turf/simulated/floor/T in orange(1,xmas))
+		for(var/turf/open/floor/T in orange(1,xmas))
 			for(var/i=1,i<=rand(1,5),i++)
 				new /obj/item/a_gift(T)
 	for(var/mob/living/simple_animal/pet/dog/corgi/Ian/Ian in GLOB.mob_list)

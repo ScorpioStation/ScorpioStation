@@ -51,7 +51,7 @@
 /obj/structure/sign/poster/official/nanotrasen_logo
 
 // from: code/game/machinery/computer/HolodeckControl.dm
-/turf/simulated/floor/holofloor/space
+/turf/open/floor/holofloor/space
 
 //------------------------------------------------------------------------------
 // upstream_shim.dm
