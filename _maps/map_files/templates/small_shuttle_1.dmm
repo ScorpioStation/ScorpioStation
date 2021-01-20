@@ -35,7 +35,7 @@
 "g" = (
 /obj/structure/grille,
 /obj/structure/shuttle/window,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/powered)
 "h" = (
 /turf/simulated/shuttle/floor,

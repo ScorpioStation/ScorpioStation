@@ -230,7 +230,7 @@
 				A.fire_act(null, H.temperature, H.volume)
 
 		if(isfloorturf(T))
-			var/turf/simulated/floor/F = T
+			var/turf/open/floor/F = T
 			F.burn_tile()
 
 		for(var/mob/living/L in T)
@@ -294,7 +294,7 @@
 				if(A != existing_hotspot)
 					A.fire_act(null, expose_temp, existing_hotspot.volume)
 		if(isfloorturf(T))
-			var/turf/simulated/floor/F = T
+			var/turf/open/floor/F = T
 			F.burn_tile()
 		for(var/mob/living/L in T)
 			L.adjust_fire_stacks(3)

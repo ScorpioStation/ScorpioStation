@@ -12,15 +12,15 @@
 /area/survivalpod)
 "c" = (
 /obj/structure/fans,
-/turf/simulated/floor/pod,
+/turf/open/floor/pod,
 /area/survivalpod)
 "d" = (
 /obj/machinery/smartfridge/survival_pod,
-/turf/simulated/floor/pod,
+/turf/open/floor/pod,
 /area/survivalpod)
 "e" = (
 /obj/item/gps/computer,
-/turf/simulated/floor/pod,
+/turf/open/floor/pod,
 /area/survivalpod)
 "f" = (
 /obj/structure/sign/mining/survival{
@@ -33,15 +33,15 @@
 /obj/machinery/vending/wallmed/survival_pod{
 	pixel_x = -24
 	},
-/turf/simulated/floor/pod,
+/turf/open/floor/pod,
 /area/survivalpod)
 "h" = (
-/turf/simulated/floor/pod,
+/turf/open/floor/pod,
 /area/survivalpod)
 "i" = (
 /obj/structure/bed/pod,
 /obj/item/bedsheet/brown,
-/turf/simulated/floor/pod,
+/turf/open/floor/pod,
 /area/survivalpod)
 "j" = (
 /obj/structure/sign/mining/survival{
@@ -53,14 +53,14 @@
 /area/survivalpod)
 "k" = (
 /obj/structure/table/survival_pod,
-/turf/simulated/floor/pod,
+/turf/open/floor/pod,
 /area/survivalpod)
 "l" = (
 /obj/structure/tubes,
 /obj/structure/chair/comfy/black{
 	dir = 8
 	},
-/turf/simulated/floor/pod,
+/turf/open/floor/pod,
 /area/survivalpod)
 "m" = (
 /obj/structure/sign/mining/survival,
@@ -69,7 +69,7 @@
 "n" = (
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/survival_pod/glass,
-/turf/simulated/floor/pod,
+/turf/open/floor/pod,
 /area/survivalpod)
 "o" = (
 /obj/structure/sign/mining,

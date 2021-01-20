@@ -12,7 +12,7 @@
 "ac" = (
 /obj/structure/grille,
 /obj/structure/window/full/shuttle,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/escape)
 "ad" = (
 /turf/space,
@@ -29,7 +29,7 @@
 /area/shuttle/escape)
 "af" = (
 /obj/machinery/computer/emergency_shuttle,
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "ag" = (
 /turf/simulated/shuttle/wall{
@@ -40,27 +40,27 @@
 /obj/machinery/computer/security{
 	network = list("SS13","Telecomms","Research Outpost","Mining Outpost")
 	},
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "ai" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/shuttle/escape)
 "aj" = (
 /obj/machinery/computer/communications,
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "ak" = (
 /obj/machinery/computer/station_alert,
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "am" = (
 /obj/item/toy/snappop/phoenix,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/shuttle/escape)
@@ -69,7 +69,7 @@
 /obj/machinery/status_display{
 	pixel_y = 30
 	},
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "ao" = (
 /obj/structure/closet/walllocker/emerglocker{
@@ -78,11 +78,11 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "ap" = (
 /obj/item/toy/snappop,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/shuttle/escape)
@@ -93,7 +93,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "ar" = (
 /turf/simulated/shuttle/wall{
@@ -103,20 +103,20 @@
 /area/shuttle/escape)
 "as" = (
 /obj/machinery/computer/robotics,
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "at" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/shuttle/escape)
 "au" = (
 /obj/item/toy/snappop/phoenix,
 /obj/machinery/light/spot,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/shuttle/escape)
@@ -124,12 +124,12 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/shuttle/escape)
 "aw" = (
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "ax" = (
 /turf/simulated/shuttle/wall{
@@ -145,7 +145,7 @@
 /area/shuttle/escape)
 "az" = (
 /obj/machinery/door/airlock/public/glass,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/shuttle/escape)
@@ -156,7 +156,7 @@
 	},
 /area/shuttle/escape)
 "aB" = (
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/shuttle/escape)
 "aC" = (
 /obj/machinery/status_display{
@@ -167,19 +167,19 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/shuttle/escape)
 "aD" = (
 /obj/structure/bed,
 /obj/item/bedsheet/rainbow,
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "aE" = (
 /obj/structure/grille,
 /obj/structure/window/full/shuttle{
 	icon_state = "16"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/escape)
 "aF" = (
 /obj/machinery/status_display{
@@ -191,7 +191,7 @@
 	dir = 1
 	},
 /obj/item/toy/snappop/phoenix,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/shuttle/escape)
@@ -199,7 +199,7 @@
 /obj/structure/closet/walllocker/emerglocker{
 	pixel_x = -28
 	},
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/shuttle/escape)
 "aH" = (
 /obj/item/storage/bible{
@@ -215,14 +215,14 @@
 	name = "Escape Shuttle Cell";
 	req_access_txt = "2"
 	},
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "aJ" = (
 /obj/structure/grille,
 /obj/structure/window/full/shuttle{
 	icon_state = "8"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/escape)
 "aK" = (
 /obj/structure/closet/walllocker/emerglocker{
@@ -230,7 +230,7 @@
 	},
 /obj/structure/bed,
 /obj/item/bedsheet/rainbow,
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "aL" = (
 /obj/item/radio/intercom{
@@ -238,14 +238,14 @@
 	name = "station intercom (General)";
 	pixel_x = 28
 	},
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/shuttle/escape)
 "aM" = (
 /obj/structure/grille,
 /obj/structure/window/full/shuttle{
 	icon_state = "16"
 	},
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "aN" = (
 /turf/simulated/shuttle/wall{
@@ -259,7 +259,7 @@
 /obj/structure/window/full/shuttle{
 	icon_state = "15"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/escape)
 "aP" = (
 /obj/docking_port/mobile/emergency{
@@ -291,13 +291,13 @@
 	},
 /obj/structure/bed,
 /obj/item/bedsheet/rainbow,
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "aR" = (
 /obj/structure/bed,
 /obj/structure/bed,
 /obj/item/bedsheet/rainbow,
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "aS" = (
 /obj/structure/table,
@@ -314,7 +314,7 @@
 	dir = 8
 	},
 /obj/item/multitool/ai_detect,
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "aT" = (
 /obj/machinery/door/airlock/shuttle{
@@ -331,7 +331,7 @@
 	},
 /obj/machinery/light/spot,
 /obj/item/toy/snappop/phoenix,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/shuttle/escape)
@@ -367,21 +367,21 @@
 	id_tag = "s_docking_airlock";
 	name = "Shuttle Hatch"
 	},
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "aZ" = (
 /obj/structure/grille,
 /obj/structure/window/full/shuttle{
 	icon_state = "14"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/escape)
 "ba" = (
 /obj/structure/grille,
 /obj/structure/window/full/shuttle{
 	icon_state = "17"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/escape)
 "bb" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -389,13 +389,13 @@
 	name = "Escape Shuttle Infirmary";
 	req_access_txt = "0"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/shuttle/escape)
 "bc" = (
 /obj/machinery/vending/clothing,
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "bd" = (
 /obj/structure/table,
@@ -415,7 +415,7 @@
 /obj/item/bodybag{
 	pixel_x = 5
 	},
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "be" = (
 /obj/machinery/vending/wallmed{
@@ -426,11 +426,11 @@
 	req_access_txt = "0"
 	},
 /obj/structure/bed/roller,
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "bf" = (
 /obj/structure/closet/cardboard,
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "bg" = (
 /obj/machinery/light/spot{
@@ -438,7 +438,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "bh" = (
 /obj/machinery/status_display{
@@ -450,7 +450,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "bi" = (
 /obj/item/radio/intercom{
@@ -459,20 +459,20 @@
 	pixel_x = 28
 	},
 /obj/structure/bed/roller,
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "bj" = (
 /obj/structure/closet/crate/trashcart,
 /obj/item/toy/sword,
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "bk" = (
 /obj/machinery/vending/autodrobe,
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "bl" = (
 /obj/machinery/recharge_station,
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "bm" = (
 /obj/machinery/sleeper{
@@ -480,7 +480,7 @@
 	icon_state = "sleeper";
 	dir = 1
 	},
-/turf/simulated/floor/noslip,
+/turf/open/floor/noslip,
 /area/shuttle/escape)
 "bn" = (
 /turf/space,

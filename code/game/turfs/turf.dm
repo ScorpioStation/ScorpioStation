@@ -322,7 +322,7 @@
 			if(istype(T, /turf/space))//Counted as no air
 				turf_count++//Considered a valid turf for air calcs
 				continue
-			else if(istype(T, /turf/simulated/floor))
+			else if(istype(T, /turf/open/floor))
 				var/turf/simulated/S = T
 				if(S.air)//Add the air's contents to the holders
 					aoxy += S.air.oxygen
@@ -379,7 +379,7 @@
 		if(wet_overlay)
 			overlays -= wet_overlay
 			wet_overlay = null
-		var/turf/simulated/floor/F = src
+		var/turf/open/floor/F = src
 		if(istype(F))
 			if(wet_setting >= TURF_WET_ICE)
 				wet_overlay = image('icons/effects/water.dmi', src, "ice_floor")

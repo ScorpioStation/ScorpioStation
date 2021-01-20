@@ -12,7 +12,7 @@
 "ac" = (
 /obj/structure/grille,
 /obj/structure/window/full/shuttle,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/escape)
 "ad" = (
 /turf/space,
@@ -25,7 +25,7 @@
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
 /obj/item/pen,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "vault"
 	},
@@ -35,34 +35,34 @@
 /obj/item/folder/red,
 /obj/item/restraints/handcuffs,
 /obj/item/flash,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/shuttle/escape)
 "ag" = (
 /obj/machinery/computer/robotics,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 9;
 	icon_state = "darkblue"
 	},
 /area/shuttle/escape)
 "ah" = (
 /obj/machinery/computer/crew,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "darkblue"
 	},
 /area/shuttle/escape)
 "ai" = (
 /obj/machinery/computer/emergency_shuttle,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "darkblue"
 	},
 /area/shuttle/escape)
 "aj" = (
 /obj/machinery/computer/communications,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 5;
 	icon_state = "darkblue"
 	},
@@ -70,7 +70,7 @@
 "ak" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/fancy/donut_box,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/shuttle/escape)
@@ -78,7 +78,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/cell_charger,
 /obj/item/stock_parts/cell/high,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "vault"
 	},
@@ -86,13 +86,13 @@
 "am" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "vault"
 	},
 /area/shuttle/escape)
 "an" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/shuttle/escape)
@@ -100,14 +100,14 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/shuttle/escape)
 "ap" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/mechanical,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "vault"
 	},
@@ -126,7 +126,7 @@
 	pixel_x = -32;
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 9;
 	icon_state = "darkred"
 	},
@@ -135,7 +135,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/shuttle/escape)
@@ -146,7 +146,7 @@
 	pixel_x = 29;
 	pixel_y = -60
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/shuttle/escape)
@@ -154,7 +154,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/shuttle/escape)
@@ -176,14 +176,14 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 5;
 	icon_state = "darkyellow"
 	},
 /area/shuttle/escape)
 "ay" = (
 /obj/machinery/computer/secure_data,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 10;
 	icon_state = "darkred"
 	},
@@ -199,7 +199,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/shuttle/escape)
@@ -208,13 +208,13 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/shuttle/escape)
 "aC" = (
 /obj/machinery/computer/atmos_alert,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 6;
 	icon_state = "darkyellow"
 	},
@@ -232,7 +232,7 @@
 	normalspeed = 0;
 	req_access_txt = "19"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/shuttle/escape)
@@ -240,7 +240,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "cmo"
 	},
@@ -261,7 +261,7 @@
 	name = "Escape Shuttle Infirmary";
 	req_access_txt = "0"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "cmo"
 	},
@@ -279,7 +279,7 @@
 	normalspeed = 0;
 	req_access_txt = "5"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "cmo"
 	},
@@ -292,7 +292,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "cmo"
 	},
@@ -309,7 +309,7 @@
 /area/shuttle/escape)
 "aO" = (
 /mob/living/simple_animal/bot/secbot,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -328,28 +328,28 @@
 /turf/simulated/shuttle/floor4,
 /area/shuttle/escape)
 "aS" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "cafeteria";
 	dir = 2
 	},
 /area/shuttle/escape)
 "aT" = (
 /obj/item/twohanded/required/kirbyplants,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "neutralfull"
 	},
 /area/shuttle/escape)
 "aU" = (
 /obj/structure/chair/stool/bar,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "cafeteria";
 	dir = 2
 	},
 /area/shuttle/escape)
 "aV" = (
 /obj/structure/table/wood,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -376,7 +376,7 @@
 	},
 /area/shuttle/escape)
 "ba" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "neutralfull"
 	},
@@ -394,7 +394,7 @@
 	dir = 1;
 	on = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "cmo"
 	},
@@ -407,7 +407,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -415,7 +415,7 @@
 "be" = (
 /obj/machinery/chem_dispenser/beer,
 /obj/structure/table/wood,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -431,7 +431,7 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-whiteblue (NORTHEAST)";
 	icon_state = "whiteblue";
 	dir = 5
@@ -449,14 +449,14 @@
 	pixel_x = 5;
 	pixel_y = -28
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/shuttle/escape)
 "bi" = (
 /obj/machinery/chem_dispenser/soda,
 /obj/structure/table/wood,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -475,7 +475,7 @@
 	normalspeed = 0;
 	req_access_txt = "50"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "neutralfull"
 	},
@@ -494,7 +494,7 @@
 /obj/machinery/sleeper/upgraded{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "cmo"
 	},
@@ -512,7 +512,7 @@
 	id_tag = "s_docking_airlock";
 	name = "Shuttle Hatch"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bp" = (
 /obj/structure/chair/comfy/shuttle{
@@ -573,7 +573,7 @@
 /obj/structure/bed/roller,
 /obj/machinery/iv_drip,
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-whiteblue (EAST)";
 	icon_state = "whiteblue";
 	dir = 4
@@ -627,7 +627,7 @@
 	timid = 1;
 	width = 29
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bE" = (
 /obj/structure/chair/comfy/shuttle{
@@ -641,7 +641,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "cmo"
 	},
@@ -662,7 +662,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "cmo"
 	},
@@ -720,7 +720,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bot";
 	dir = 1
 	},
@@ -729,7 +729,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bot";
 	dir = 1
 	},
@@ -738,7 +738,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bot";
 	dir = 1
 	},
@@ -749,7 +749,7 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/sunnybush,
 /obj/structure/window/full/shuttle,
-/turf/simulated/floor/grass,
+/turf/open/floor/grass,
 /area/shuttle/escape)
 "bS" = (
 /obj/structure/chair/comfy/shuttle{
@@ -811,18 +811,18 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/fernybush,
 /obj/structure/window/full/shuttle,
-/turf/simulated/floor/grass,
+/turf/open/floor/grass,
 /area/shuttle/escape)
 "bZ" = (
 /obj/machinery/recharge_station/upgraded,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "neutralfull"
 	},
 /area/shuttle/escape)
 "ca" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "neutralfull"
 	},
@@ -868,13 +868,13 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bot";
 	dir = 1
 	},
 /area/shuttle/escape)
 "cp" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "cmo"
 	},
@@ -882,7 +882,7 @@
 "cw" = (
 /obj/structure/bed/roller,
 /obj/machinery/iv_drip,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-whiteblue (EAST)";
 	icon_state = "whiteblue";
 	dir = 4
@@ -896,7 +896,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bot";
 	dir = 1
 	},
@@ -905,14 +905,14 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/backpack/medic,
 /obj/item/storage/belt/medical,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "cmo"
 	},
 /area/shuttle/escape)
 "cE" = (
 /obj/structure/bed/roller,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "cmo"
 	},
@@ -921,7 +921,7 @@
 /obj/structure/table/reinforced,
 /obj/item/clothing/gloves/color/latex/nitrile,
 /obj/item/clothing/mask/breath,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "cmo"
 	},
@@ -938,7 +938,7 @@
 	normalspeed = 0;
 	req_access_txt = "5"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "cmo"
 	},
@@ -951,7 +951,7 @@
 /obj/item/reagent_containers/iv_bag/blood/random,
 /obj/item/reagent_containers/iv_bag/blood/random,
 /obj/item/reagent_containers/iv_bag/blood/random,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-whiteblue (EAST)";
 	icon_state = "whiteblue";
 	dir = 4
@@ -968,7 +968,7 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "cmo"
 	},

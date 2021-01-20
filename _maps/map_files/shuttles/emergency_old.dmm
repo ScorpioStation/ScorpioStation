@@ -12,7 +12,7 @@
 "ac" = (
 /obj/structure/grille,
 /obj/structure/window/full/shuttle,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/escape)
 "ad" = (
 /turf/space,
@@ -183,7 +183,7 @@
 /obj/structure/window/full/shuttle{
 	icon_state = "16"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/escape)
 "aE" = (
 /obj/structure/closet/walllocker/emerglocker{
@@ -199,7 +199,7 @@
 /obj/structure/window/full/shuttle{
 	icon_state = "8"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/escape)
 "aG" = (
 /obj/structure/closet/walllocker/emerglocker{
@@ -222,7 +222,7 @@
 /obj/structure/window/full/shuttle{
 	icon_state = "15"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/escape)
 "aK" = (
 /turf/simulated/shuttle/wall{
@@ -303,14 +303,14 @@
 /obj/structure/window/full/shuttle{
 	icon_state = "14"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/escape)
 "aS" = (
 /obj/structure/grille,
 /obj/structure/window/full/shuttle{
 	icon_state = "17"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/escape)
 "aT" = (
 /obj/machinery/door/airlock/shuttle{
@@ -345,7 +345,7 @@
 	id_tag = "s_docking_airlock";
 	name = "Shuttle Hatch"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/escape)
 "aX" = (
 /obj/structure/closet/crate,
@@ -456,7 +456,7 @@
 	name = "Escape Shuttle Cell";
 	req_access_txt = "2"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/escape)
 "ev" = (
 /obj/machinery/sleeper{
@@ -567,7 +567,7 @@
 	},
 /area/shuttle/escape)
 "XL" = (
-/turf/simulated/floor/mech_bay_recharge_floor,
+/turf/open/floor/mech_bay_recharge_floor,
 /area/shuttle/escape)
 
 (1,1,1) = {"

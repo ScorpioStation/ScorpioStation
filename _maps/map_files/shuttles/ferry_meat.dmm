@@ -38,7 +38,7 @@
 	},
 /area/shuttle/transport)
 "g" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /turf/simulated/shuttle/wall/interior{
@@ -55,13 +55,13 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/shuttle/transport)
 "i" = (
 /obj/machinery/computer/shuttle/ferry/request,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/shuttle/transport)
@@ -76,12 +76,12 @@
 /obj/item/reagent_containers/food/snacks/meat/pug,
 /obj/item/reagent_containers/food/snacks/meat/slab/meatproduct,
 /obj/item/reagent_containers/food/snacks/meat/syntiflesh,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/shuttle/transport)
 "k" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/shuttle/transport)
@@ -92,19 +92,19 @@
 	dir = 1
 	},
 /obj/machinery/gibber,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/shuttle/transport)
 "m" = (
 /obj/structure/table/reinforced,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/shuttle/transport)
 "n" = (
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/shuttle/transport)
@@ -115,7 +115,7 @@
 	dir = 1
 	},
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/shuttle/transport)
@@ -132,7 +132,7 @@
 /obj/item/stack/sheet/animalhide/lizard,
 /obj/item/stack/sheet/animalhide/monkey,
 /obj/item/stack/sheet/animalhide/xeno,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/shuttle/transport)
@@ -165,7 +165,7 @@
 	},
 /area/shuttle/transport)
 "t" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /turf/simulated/shuttle/wall/interior{
@@ -176,19 +176,19 @@
 "u" = (
 /obj/machinery/light/spot,
 /obj/structure/closet/chefcloset,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/shuttle/transport)
 "v" = (
 /obj/structure/kitchenspike,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/shuttle/transport)
 "w" = (
 /obj/machinery/light/spot,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/shuttle/transport)
@@ -197,7 +197,7 @@
 	name = "Meat tadeship backroom";
 	req_access = "28"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/shuttle/transport)

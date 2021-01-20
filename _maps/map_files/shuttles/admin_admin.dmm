@@ -381,7 +381,7 @@
 	icon_state = "window5_end";
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/administration)
 "aV" = (
 /obj/machinery/light/spot{
@@ -450,7 +450,7 @@
 	icon_state = "window5_mid";
 	tag = "icon-window5 (EAST)"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/administration)
 "aZ" = (
 /obj/machinery/dna_scannernew/upgraded,
@@ -516,7 +516,7 @@
 	icon_state = "window5_end";
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/administration)
 "bg" = (
 /turf/simulated/shuttle/floor{
