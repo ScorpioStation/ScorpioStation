@@ -123,7 +123,7 @@
 /obj/machinery/door/airlock/shuttle{
 	id_tag = "s_docking_airlock"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/transport)
 "q" = (
 /obj/item/stack/sheet/animalhide/cat,
@@ -150,7 +150,7 @@
 	timid = 1;
 	width = 5
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/transport)
 "s" = (
 /obj/structure/shuttle/engine/propulsion{

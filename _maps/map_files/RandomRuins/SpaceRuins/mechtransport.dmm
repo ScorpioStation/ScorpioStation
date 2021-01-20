@@ -27,43 +27,43 @@
 /area/ruin/powered)
 "f" = (
 /obj/structure/closet/crate/secure/loot,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "g" = (
 /obj/structure/table,
 /obj/machinery/door_control{
 	id = "mecha cargo"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "h" = (
 /obj/structure/table,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "i" = (
 /obj/machinery/computer/shuttle,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "j" = (
 /obj/effect/decal/cleanable/vomit,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "k" = (
 /obj/effect/decal/remains/human,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "l" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "m" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "n" = (
 /obj/machinery/computer/mecha,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "o" = (
 /turf/simulated/shuttle/wall{
@@ -73,7 +73,7 @@
 /area/ruin/powered)
 "p" = (
 /obj/machinery/door/airlock/hatch,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor3";
 	icon_state = "floor3"
 	},
@@ -85,48 +85,48 @@
 	},
 /area/ruin/powered)
 "r" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor3";
 	icon_state = "floor3"
 	},
 /area/ruin/powered)
 "s" = (
 /obj/structure/mecha_wreckage/phazon,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
 /area/ruin/powered)
 "t" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
 /area/ruin/powered)
 "u" = (
 /obj/structure/mecha_wreckage/ripley/firefighter,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
 /area/ruin/powered)
 "v" = (
 /obj/structure/mecha_wreckage/ripley,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
 /area/ruin/powered)
 "w" = (
 /obj/effect/decal/cleanable/blood/oil,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
 /area/ruin/powered)
 "x" = (
 /obj/effect/decal/cleanable/blood/gibs/robot/up,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
@@ -137,21 +137,21 @@
 	name = "Cargo Bay Door";
 	tag = ""
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor3";
 	icon_state = "floor3"
 	},
 /area/ruin/powered)
 "z" = (
 /obj/effect/decal/cleanable/blood/gibs/robot,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
 /area/ruin/powered)
 "A" = (
 /obj/structure/mecha_wreckage/durand,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
@@ -184,7 +184,7 @@
 	pixel_y = 8
 	},
 /obj/effect/decal/cleanable/blood/gibs/robot,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
@@ -195,7 +195,7 @@
 /area/ruin/powered)
 "J" = (
 /obj/structure/mecha_wreckage/odysseus,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
@@ -206,7 +206,7 @@
 /area/space/nearstation)
 "L" = (
 /obj/structure/mecha_wreckage/gygax,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor3";
 	icon_state = "floor3"
 	},

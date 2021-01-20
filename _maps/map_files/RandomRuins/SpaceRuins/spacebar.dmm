@@ -67,7 +67,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "ap" = (
 /obj/structure/table,
@@ -124,7 +124,7 @@
 	name = "Space Bar"
 	})
 "ax" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "ay" = (
 /obj/machinery/door/airlock{
@@ -154,7 +154,7 @@
 /obj/machinery/door/airlock/shuttle{
 	name = "Escape Pod Airlock"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "aC" = (
 /obj/structure/shuttle/engine/propulsion/burst,

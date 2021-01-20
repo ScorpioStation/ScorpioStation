@@ -16,7 +16,22 @@ What are the archived variables for?
 #define MINIMUM_HEAT_CAPACITY	0.0003
 #define QUANTIZE(variable)		(round(variable, 0.0001))
 
+GLOBAL_LIST_INIT(meta_gas_info, meta_gas_list()) //see ATMOSPHERICS/gas_types.dm
+GLOBAL_LIST_INIT(gaslist_cache, init_gaslist_cache())
+
+/proc/init_gaslist_cache()
+	. = list()			//THANKS /TG/ THIS MAKES SO MANY THINGS SO MUCH EASIER <3
+	for(var/id in GLOB.meta_gas_info)
+		var/list/cached_gas = new(3)
+
+		.[id] = cached_gas
+
+		cached_gas[MOLES] = 0
+		cached_gas[ARCHIVE] = 0
+		cached_gas[GAS_META] = GLOB.meta_gas_info[id]
+
 /datum/gas_mixture
+	var/list/gases
 	var/oxygen = 0
 	var/carbon_dioxide = 0
 	var/nitrogen = 0
@@ -41,7 +56,51 @@ What are the archived variables for?
 
 	var/tmp/fuel_burnt = 0
 
-	//PV=nRT - related procedures
+
+/datum/gas_mixture/New(volume)
+	gases = new
+	if(!isnull(volume))
+		src.volume = volume
+	reaction_results = new
+
+//listmos procs
+//use the macros in performance intensive areas. for their definitions, refer to code/__DEFINES/atmospherics.dm (on /tg/, heck)
+
+///assert_gas(gas_id) - used to guarantee that the gas list for this id exists in gas_mixture.gases.
+//Must be used before adding to a gas. May be used before reading from a gas.
+/datum/gas_mixture/proc/assert_gas(gas_id)
+	ASSERT_GAS(gas_id, src)
+
+///assert_gases(args) - shorthand for calling ASSERT_GAS() once for each gas type.
+/datum/gas_mixture/proc/assert_gases(...)
+	for(var/id in args)
+		ASSERT_GAS(id, src)
+
+///add_gas(gas_id) - similar to assert_gas(), but does not check for an existing gas list for this id. This can clobber existing gases.
+///Used instead of assert_gas() when you know the gas does not exist. Faster than assert_gas().
+/datum/gas_mixture/proc/add_gas(gas_id)
+	ADD_GAS(gas_id, gases)
+
+///add_gases(args) - shorthand for calling add_gas() once for each gas_type.
+/datum/gas_mixture/proc/add_gases(...)
+	var/cached_gases = gases
+	for(var/id in args)
+		ADD_GAS(id, cached_gases)
+
+/* 
+garbage_collect() - removes any gas list which is empty.
+If called with a list as an argument, only removes gas lists with IDs from that list.
+Must be used after subtracting from a gas. Must be used after assert_gas()
+	///if assert_gas() was called only to read from the gas.
+By removing empty gases, processing speed is increased.
+*/
+/datum/gas_mixture/proc/garbage_collect(list/tocheck)
+	var/list/cached_gases = gases
+	for(var/id in (tocheck || cached_gases))
+		if(QUANTIZE(cached_gases[id][MOLES]) <= 0)
+			cached_gases -= id
+
+//PV=nRT - related procedures
 /datum/gas_mixture/proc/heat_capacity()
 	return HEAT_CAPACITY_CALCULATION(oxygen, carbon_dioxide, nitrogen, toxins, sleeping_agent, agent_b)
 
@@ -61,8 +120,7 @@ What are the archived variables for?
 /datum/gas_mixture/proc/return_pressure()
 	if(volume > 0)
 		return total_moles() * R_IDEAL_GAS_EQUATION * temperature / volume
-	return 0
-
+	return FALSE
 
 /datum/gas_mixture/proc/return_temperature()
 	return temperature
@@ -190,11 +248,11 @@ What are the archived variables for?
 
 	temperature_archived = temperature
 
-	return 1
+	return TRUE
 
 /datum/gas_mixture/merge(datum/gas_mixture/giver)
 	if(!giver)
-		return 0
+		return FALSE
 
 	if(abs(temperature - giver.temperature) > MINIMUM_TEMPERATURE_DELTA_TO_CONSIDER)
 		var/self_heat_capacity = heat_capacity()
@@ -210,7 +268,7 @@ What are the archived variables for?
 	sleeping_agent += giver.sleeping_agent
 	agent_b += giver.agent_b
 
-	return 1
+	return TRUE
 
 /datum/gas_mixture/remove(amount)
 
@@ -277,7 +335,7 @@ What are the archived variables for?
 
 	temperature = sample.temperature
 
-	return 1
+	return TRUE
 
 /datum/gas_mixture/copy_from_turf(turf/model)
 	oxygen = model.oxygen
@@ -292,7 +350,7 @@ What are the archived variables for?
 	if(model.temperature != initial(model.temperature) || model.temperature != initial(model_parent.temperature))
 		temperature = model.temperature
 
-	return 1
+	return TRUE
 
 /datum/gas_mixture/check_turf(turf/model, atmos_adjacent_turfs = 4)
 	var/delta_oxygen = (oxygen_archived - model.oxygen) / (atmos_adjacent_turfs + 1)
@@ -310,11 +368,11 @@ What are the archived variables for?
 		|| ((abs(delta_toxins) > MINIMUM_AIR_TO_SUSPEND) && (abs(delta_toxins) >= toxins_archived * MINIMUM_AIR_RATIO_TO_SUSPEND)) \
 		|| ((abs(delta_sleeping_agent) > MINIMUM_AIR_TO_SUSPEND) && (abs(delta_sleeping_agent) >= sleeping_agent_archived * MINIMUM_AIR_RATIO_TO_SUSPEND)) \
 		|| ((abs(delta_agent_b) > MINIMUM_AIR_TO_SUSPEND) && (abs(delta_agent_b) >= agent_b_archived * MINIMUM_AIR_RATIO_TO_SUSPEND)))
-		return 0
+		return FALSE
 	if(abs(delta_temperature) > MINIMUM_TEMPERATURE_DELTA_TO_SUSPEND)
-		return 0
+		return FALSE
 
-	return 1
+	return TRUE
 
 /datum/gas_mixture/proc/check_turf_total(turf/model) //I want this proc to die a painful death
 	var/delta_oxygen = (oxygen - model.oxygen)
@@ -332,15 +390,15 @@ What are the archived variables for?
 		|| ((abs(delta_toxins) > MINIMUM_AIR_TO_SUSPEND) && (abs(delta_toxins) >= toxins * MINIMUM_AIR_RATIO_TO_SUSPEND)) \
 		|| ((abs(delta_sleeping_agent) > MINIMUM_AIR_TO_SUSPEND) && (abs(delta_sleeping_agent) >= sleeping_agent * MINIMUM_AIR_RATIO_TO_SUSPEND)) \
 		|| ((abs(delta_agent_b) > MINIMUM_AIR_TO_SUSPEND) && (abs(delta_agent_b) >= agent_b * MINIMUM_AIR_RATIO_TO_SUSPEND)))
-		return 0
+		return FALSE
 	if(abs(delta_temperature) > MINIMUM_TEMPERATURE_DELTA_TO_SUSPEND)
-		return 0
+		return FALSE
 
-	return 1
+	return TRUE
 
 /datum/gas_mixture/share(datum/gas_mixture/sharer, atmos_adjacent_turfs = 4)
 	if(!sharer)
-		return 0
+		return FALSE
 	var/delta_oxygen = QUANTIZE(oxygen_archived - sharer.oxygen_archived) / (atmos_adjacent_turfs + 1)
 	var/delta_carbon_dioxide = QUANTIZE(carbon_dioxide_archived - sharer.carbon_dioxide_archived) / (atmos_adjacent_turfs + 1)
 	var/delta_nitrogen = QUANTIZE(nitrogen_archived - sharer.nitrogen_archived) / (atmos_adjacent_turfs + 1)
@@ -501,7 +559,7 @@ What are the archived variables for?
 		var/delta_pressure = temperature_archived * (total_moles() + moved_moles) - model.temperature * (model.oxygen + model.carbon_dioxide + model.nitrogen + model.toxins + model.sleeping_agent + model.agent_b)
 		return delta_pressure * R_IDEAL_GAS_EQUATION / volume
 	else
-		return 0
+		return FALSE
 
 /datum/gas_mixture/temperature_share(datum/gas_mixture/sharer, conduction_coefficient)
 
@@ -543,28 +601,28 @@ What are the archived variables for?
 /datum/gas_mixture/compare(datum/gas_mixture/sample)
 	if((abs(oxygen - sample.oxygen) > MINIMUM_AIR_TO_SUSPEND) && \
 		((oxygen < (1 - MINIMUM_AIR_RATIO_TO_SUSPEND) * sample.oxygen) || (oxygen > (1 + MINIMUM_AIR_RATIO_TO_SUSPEND) * sample.oxygen)))
-		return 0
+		return FALSE
 	if((abs(nitrogen - sample.nitrogen) > MINIMUM_AIR_TO_SUSPEND) && \
 		((nitrogen < (1 - MINIMUM_AIR_RATIO_TO_SUSPEND) * sample.nitrogen) || (nitrogen > (1 + MINIMUM_AIR_RATIO_TO_SUSPEND) * sample.nitrogen)))
-		return 0
+		return FALSE
 	if((abs(carbon_dioxide - sample.carbon_dioxide) > MINIMUM_AIR_TO_SUSPEND) && \
 		((carbon_dioxide < (1 - MINIMUM_AIR_RATIO_TO_SUSPEND) * sample.carbon_dioxide) || (carbon_dioxide > (1 + MINIMUM_AIR_RATIO_TO_SUSPEND) * sample.carbon_dioxide)))
-		return 0
+		return FALSE
 	if((abs(toxins - sample.toxins) > MINIMUM_AIR_TO_SUSPEND) && \
 		((toxins < (1 - MINIMUM_AIR_RATIO_TO_SUSPEND) * sample.toxins) || (toxins > (1 + MINIMUM_AIR_RATIO_TO_SUSPEND) * sample.toxins)))
-		return 0
+		return FALSE
 	if((abs(sleeping_agent - sample.sleeping_agent) > MINIMUM_AIR_TO_SUSPEND) && \
 		((sleeping_agent < (1 - MINIMUM_AIR_RATIO_TO_SUSPEND) * sample.sleeping_agent) || (sleeping_agent > (1 + MINIMUM_AIR_RATIO_TO_SUSPEND) * sample.sleeping_agent)))
-		return 0
+		return FALSE
 	if((abs(agent_b - sample.agent_b) > MINIMUM_AIR_TO_SUSPEND) && \
 		((agent_b < (1 - MINIMUM_AIR_RATIO_TO_SUSPEND) * sample.agent_b) || (agent_b > (1 + MINIMUM_AIR_RATIO_TO_SUSPEND) * sample.agent_b)))
-		return 0
+		return FALSE
 
 	if(total_moles() > MINIMUM_AIR_TO_SUSPEND)
 		if((abs(temperature - sample.temperature) > MINIMUM_TEMPERATURE_DELTA_TO_SUSPEND) && \
 			((temperature < (1 - MINIMUM_TEMPERATURE_RATIO_TO_SUSPEND) * sample.temperature) || (temperature > (1 + MINIMUM_TEMPERATURE_RATIO_TO_SUSPEND) * sample.temperature)))
-			return 0
-	return 1
+			return FALSE
+	return TRUE
 
 
 

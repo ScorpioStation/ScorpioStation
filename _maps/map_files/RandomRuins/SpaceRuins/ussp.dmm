@@ -4303,7 +4303,7 @@
 /area/derelict/arrival)
 "iP" = (
 /obj/structure/computerframe,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/derelict/arrival)
@@ -4316,7 +4316,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/derelict/arrival)
@@ -4326,7 +4326,7 @@
 	dir = 4
 	},
 /obj/item/clothing/head/soft/solgov,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/derelict/arrival)
@@ -4501,7 +4501,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/derelict/arrival)
@@ -4510,12 +4510,12 @@
 	info = "Fuck. Fuckfuckfuck. I knew this mission was a mistake, that idiot Thomas got himself killed by some angry Russian security bot in the armoury, and the Lt. ran into the annex like a moron and got himself trapped. Now I'm just sitting on my god damn hands because this shuttle won't bloody move. Stupid USSP piece of shit docking arm must be jammed and I don't have the kit to go out and fix it.<br><br>Who the hell attacks a space station without EVA gear anyways? It's not like you can just bloody well waltz out into space with a hot coffee and shrug it off.";
 	name = "unknown report"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/derelict/arrival)
 "jk" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/derelict/arrival)
@@ -4526,7 +4526,7 @@
 	name = "Shuttle Airlock";
 	req_access_txt = "150"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/derelict/arrival)
@@ -4839,7 +4839,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/derelict/arrival)
@@ -4847,7 +4847,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/derelict/arrival)
@@ -5739,7 +5739,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/derelict/arrival)
@@ -5889,7 +5889,7 @@
 /area/derelict/solar_control)
 "lI" = (
 /obj/structure/window/reinforced/tinted,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/derelict/arrival)
@@ -5898,7 +5898,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/derelict/arrival)

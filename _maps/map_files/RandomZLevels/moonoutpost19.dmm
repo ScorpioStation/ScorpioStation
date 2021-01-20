@@ -8338,7 +8338,7 @@
 	name = "MO19 Arrivals"
 	})
 "lW" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /turf/simulated/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
@@ -8350,7 +8350,7 @@
 "lX" = (
 /obj/structure/table,
 /obj/item/storage/lockbox,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8358,7 +8358,7 @@
 "lY" = (
 /obj/structure/table,
 /obj/item/radio/off,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor2"
 	},
 /area/awaycontent/a1{
@@ -8379,7 +8379,7 @@
 	pixel_x = -32;
 	pixel_y = 0
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor2"
 	},
 /area/awaycontent/a1{
@@ -8393,13 +8393,13 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "mc" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8408,7 +8408,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8421,14 +8421,14 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "mf" = (
 /obj/structure/closet/emcloset,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8560,7 +8560,7 @@
 "mq" = (
 /obj/structure/table,
 /obj/item/storage/box/donkpockets,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8572,7 +8572,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor2"
 	},
 /area/awaycontent/a1{
@@ -8580,7 +8580,7 @@
 	name = "MO19 Arrivals"
 	})
 "ms" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor2"
 	},
 /area/awaycontent/a1{
@@ -8591,7 +8591,7 @@
 /obj/effect/landmark{
 	name = "awaystart"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8603,7 +8603,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8615,7 +8615,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor2"
 	},
 /area/awaycontent/a1{
@@ -8764,7 +8764,7 @@
 	})
 "mH" = (
 /obj/machinery/computer/shuttle,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8773,7 +8773,7 @@
 /obj/machinery/door/airlock/shuttle{
 	name = "Shuttle Cockpit"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor2"
 	},
 /area/awaycontent/a1{
@@ -8784,7 +8784,7 @@
 /obj/effect/landmark{
 	name = "awaystart"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor2"
 	},
 /area/awaycontent/a1{
@@ -8801,7 +8801,7 @@
 /obj/effect/landmark{
 	name = "awaystart"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor2"
 	},
 /area/awaycontent/a1{
@@ -8812,7 +8812,7 @@
 /obj/machinery/door/airlock/shuttle{
 	name = "Shuttle Airlock"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8933,7 +8933,7 @@
 /obj/structure/table,
 /obj/item/clipboard,
 /obj/item/pen,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8943,7 +8943,7 @@
 	dir = 4
 	},
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor2"
 	},
 /area/awaycontent/a1{
@@ -8964,7 +8964,7 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor2"
 	},
 /area/awaycontent/a1{
@@ -9027,7 +9027,7 @@
 	name = "MO19 Arrivals"
 	})
 "nf" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /turf/simulated/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
@@ -9038,7 +9038,7 @@
 	})
 "ng" = (
 /obj/structure/filingcabinet,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9048,7 +9048,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9059,7 +9059,7 @@
 	pixel_y = -30
 	},
 /obj/machinery/light/small,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"

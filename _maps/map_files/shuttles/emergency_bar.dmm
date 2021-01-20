@@ -117,7 +117,7 @@
 	name = "Escape Shuttle Cockpit";
 	req_access_txt = "19"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aw" = (
 /obj/structure/chair{
@@ -126,7 +126,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor4,
+/turf/open/shuttle/floor4,
 /area/shuttle/escape)
 "ax" = (
 /obj/machinery/status_display{
@@ -139,7 +139,7 @@
 	},
 /obj/structure/chair,
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor4,
+/turf/open/shuttle/floor4,
 /area/shuttle/escape)
 "ay" = (
 /obj/machinery/door/airlock/shuttle{
@@ -201,10 +201,10 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor4,
+/turf/open/shuttle/floor4,
 /area/shuttle/escape)
 "aF" = (
-/turf/simulated/shuttle/floor4,
+/turf/open/shuttle/floor4,
 /area/shuttle/escape)
 "aG" = (
 /obj/machinery/door/airlock/security/glass{
@@ -234,12 +234,12 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor4,
+/turf/open/shuttle/floor4,
 /area/shuttle/escape)
 "aK" = (
 /obj/structure/chair,
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor4,
+/turf/open/shuttle/floor4,
 /area/shuttle/escape)
 "aL" = (
 /obj/structure/grille,
@@ -280,7 +280,7 @@
 /obj/item/bodybag{
 	pixel_x = 5
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -332,7 +332,7 @@
 	id_tag = "s_docking_airlock";
 	name = "Shuttle Hatch"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aU" = (
 /obj/structure/table,
@@ -442,7 +442,7 @@
 	id_tag = "s_docking_airlock";
 	name = "Shuttle Hatch"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bh" = (
 /obj/machinery/status_display{
@@ -459,7 +459,7 @@
 	name = "Toilet";
 	req_access_txt = "0"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -475,7 +475,7 @@
 /obj/structure/window/full/shuttle{
 	icon_state = "15"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -499,7 +499,7 @@
 	name = "Escape Shuttle Infirmary";
 	req_access_txt = "0"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -529,7 +529,7 @@
 	},
 /area/shuttle/escape)
 "br" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -542,7 +542,7 @@
 	req_access_txt = "0"
 	},
 /obj/structure/bed/roller,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -583,7 +583,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -594,7 +594,7 @@
 	pixel_x = 28
 	},
 /obj/structure/bed/roller,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -625,13 +625,13 @@
 	icon_state = "sleeper";
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
 "bD" = (
 /obj/machinery/light/spot,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)

@@ -308,7 +308,7 @@
 /area/shuttle/escape)
 "aT" = (
 /obj/machinery/door/airlock/cult/friendly,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)

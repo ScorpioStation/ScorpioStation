@@ -1488,7 +1488,7 @@
 /area/awaymission/northblock)
 "eh" = (
 /obj/machinery/sleeper,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4";
 	nitrogen = 0.01;
 	oxygen = 0.01;
@@ -1497,7 +1497,7 @@
 /area/awaymission/syndishuttle)
 "ei" = (
 /obj/machinery/vending/snack,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4";
 	nitrogen = 0.01;
 	oxygen = 0.01;
@@ -1555,7 +1555,7 @@
 /area/awaymission/northblock)
 "ep" = (
 /obj/machinery/vending/cigarette,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4";
 	nitrogen = 0.01;
 	oxygen = 0.01;
@@ -1571,7 +1571,7 @@
 /area/awaymission/northblock)
 "er" = (
 /obj/machinery/vending/cola,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4";
 	nitrogen = 0.01;
 	oxygen = 0.01;
@@ -1638,7 +1638,7 @@
 /area/awaymission/northblock)
 "ex" = (
 /obj/machinery/vending/coffee,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4";
 	nitrogen = 0.01;
 	oxygen = 0.01;
@@ -1731,7 +1731,7 @@
 /area/awaymission/northblock)
 "eJ" = (
 /obj/structure/closet/syndicate,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4";
 	nitrogen = 0.01;
 	oxygen = 0.01;
@@ -1739,7 +1739,7 @@
 	},
 /area/awaymission/syndishuttle)
 "eK" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4";
 	nitrogen = 0.01;
 	oxygen = 0.01;
@@ -1748,7 +1748,7 @@
 /area/awaymission/syndishuttle)
 "eL" = (
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4";
 	nitrogen = 0.01;
 	oxygen = 0.01;
@@ -1859,7 +1859,7 @@
 	desc = "A dark little medical robot. She looks somewhat underwhelmed.";
 	name = "Nightingale"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4";
 	nitrogen = 0.01;
 	oxygen = 0.01;
@@ -1868,7 +1868,7 @@
 /area/awaymission/syndishuttle)
 "eX" = (
 /obj/structure/table,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4";
 	nitrogen = 0.01;
 	oxygen = 0.01;
@@ -1944,7 +1944,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4";
 	nitrogen = 0.01;
 	oxygen = 0.01;
@@ -1955,7 +1955,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4";
 	nitrogen = 0.01;
 	oxygen = 0.01;
@@ -1965,7 +1965,7 @@
 "fh" = (
 /obj/structure/table,
 /obj/item/paper/sc_safehint_paper_shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4";
 	nitrogen = 0.01;
 	oxygen = 0.01;
@@ -1976,7 +1976,7 @@
 /obj/machinery/sleeper{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4";
 	nitrogen = 0.01;
 	oxygen = 0.01;
@@ -2376,7 +2376,7 @@
 	},
 /area/awaymission/arrivalblock)
 "gb" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/awaymission/arrivalblock)
@@ -2384,7 +2384,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/awaymission/arrivalblock)
@@ -2534,7 +2534,7 @@
 /obj/machinery/status_display{
 	pixel_y = 32
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/awaymission/arrivalblock)
@@ -2677,7 +2677,7 @@
 /obj/machinery/door/unpowered/shuttle{
 	name = "Shuttle Airlock"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/awaymission/arrivalblock)
@@ -4199,13 +4199,13 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/awaymission/arrivalblock)
 "kP" = (
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/awaymission/arrivalblock)
@@ -4213,7 +4213,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/awaymission/arrivalblock)

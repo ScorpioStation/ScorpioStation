@@ -96,7 +96,7 @@
 	name = "Blast Door";
 	opacity = 0
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -120,7 +120,7 @@
 	name = "Blast Door";
 	opacity = 0
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -187,13 +187,13 @@
 /area/shuttle/administration)
 "ap" = (
 /obj/machinery/chem_master,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "aq" = (
 /obj/machinery/chem_dispenser,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -204,7 +204,7 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -212,13 +212,13 @@
 /obj/structure/closet/secure_closet/reagents,
 /obj/item/storage/bag/chemistry,
 /obj/item/storage/bag/chemistry,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "at" = (
 /obj/structure/closet/secure_closet/chemical,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -240,12 +240,12 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "aw" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -262,14 +262,14 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "ay" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/glass/beaker/cryoxadone,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -277,7 +277,7 @@
 /obj/machinery/clonepod{
 	biomass = 300
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -288,19 +288,19 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "aB" = (
 /obj/machinery/dna_scannernew,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "aC" = (
 /obj/machinery/atmospherics/unary/cryo_cell,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -320,7 +320,7 @@
 /obj/structure/reagent_dispensers/fueltank/chem{
 	pixel_x = -32
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -328,7 +328,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -342,7 +342,7 @@
 	layer = 2.9
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -351,7 +351,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -365,7 +365,7 @@
 /area/shuttle/administration)
 "aK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -397,20 +397,20 @@
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/reagent_containers/glass/bucket,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "aO" = (
 /obj/structure/closet/crate/can,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "aP" = (
 /obj/structure/shuttle/window,
 /obj/structure/grille,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -421,7 +421,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -432,7 +432,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -447,7 +447,7 @@
 	name = "NHV Asclepius Chemistry";
 	network = list("NHV Asclepius")
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -456,13 +456,13 @@
 	name = "Chemistry";
 	req_access_txt = "33"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "aU" = (
 /obj/machinery/door/airlock/shuttle/glass,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -474,7 +474,7 @@
 	network = list("NHV Asclepius")
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -490,13 +490,13 @@
 /obj/structure/reagent_dispensers/fueltank/chem{
 	pixel_x = -32
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "aY" = (
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -504,14 +504,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 6
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "ba" = (
 /obj/machinery/chem_heater,
 /obj/machinery/light,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -524,13 +524,13 @@
 /area/shuttle/administration)
 "bc" = (
 /obj/structure/reagent_dispensers/water_cooler,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "bd" = (
 /obj/machinery/vending/coffee,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -539,7 +539,7 @@
 /obj/item/reagent_containers/spray/cleaner,
 /obj/item/storage/box/gloves,
 /obj/item/storage/box/masks,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -547,7 +547,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -557,7 +557,7 @@
 /obj/item/storage/firstaid,
 /obj/item/storage/firstaid/adv,
 /obj/item/storage/firstaid/adv,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -570,7 +570,7 @@
 /obj/item/clothing/glasses/hud/health,
 /obj/item/clothing/glasses/hud/health,
 /obj/machinery/light,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -578,13 +578,13 @@
 /obj/machinery/atmospherics/unary/cold_sink/freezer{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "bj" = (
 /obj/machinery/smartfridge/medbay,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -640,7 +640,7 @@
 /area/shuttle/administration)
 "bp" = (
 /obj/machinery/computer/pandemic,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -679,7 +679,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -690,7 +690,7 @@
 /obj/machinery/recharger/wallcharger{
 	pixel_y = 35
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -708,7 +708,7 @@
 	pixel_x = -12;
 	pixel_y = 2
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -721,7 +721,7 @@
 /obj/structure/closet/walllocker/emerglocker{
 	pixel_y = 32
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -732,7 +732,7 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -749,13 +749,13 @@
 /obj/item/FixOVein,
 /obj/item/surgicaldrill,
 /obj/item/storage/backpack/duffel/medical,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "bx" = (
 /obj/machinery/optable,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -766,19 +766,19 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "bz" = (
 /obj/structure/closet/secure_closet/medical3,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "bA" = (
 /obj/structure/closet/secure_closet/medical2,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -804,7 +804,7 @@
 /obj/machinery/computer/shuttle/admin{
 	name = "NHV Asclepius shuttle console"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -814,7 +814,7 @@
 	req_access = null;
 	req_access_txt = "19"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -824,7 +824,7 @@
 /obj/item/reagent_containers/iv_bag/blood/OMinus,
 /obj/item/reagent_containers/iv_bag/blood/OMinus,
 /obj/item/reagent_containers/iv_bag/blood/OMinus,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -841,7 +841,7 @@
 	name = "NHV Asclepius OR 1";
 	network = list("NHV Asclepius")
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -849,7 +849,7 @@
 /obj/machinery/computer/camera_advanced/shuttle_docker/admin{
 	name = "NHV Asclepius navigation computer"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -859,7 +859,7 @@
 	req_access = null;
 	req_access_txt = "45"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -870,7 +870,7 @@
 	pixel_x = 11;
 	pixel_y = 0
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -896,7 +896,7 @@
 /obj/machinery/computer/communications{
 	name = "NHV Asclepius Communications Console"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -908,7 +908,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -921,7 +921,7 @@
 /area/shuttle/administration)
 "bO" = (
 /obj/machinery/sleeper,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -929,7 +929,7 @@
 /obj/machinery/sleeper{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -937,20 +937,20 @@
 /obj/structure/bed{
 	name = "Triage: High Priority"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "bR" = (
 /obj/machinery/bodyscanner,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "bT" = (
 /obj/machinery/light,
 /obj/structure/closet/crate/can,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -960,7 +960,7 @@
 	name = "Surgery Cleaner"
 	},
 /obj/structure/table/glass,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -969,7 +969,7 @@
 /obj/item/reagent_containers/iv_bag/blood/OMinus,
 /obj/item/reagent_containers/iv_bag/blood/OMinus,
 /obj/machinery/iv_drip,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -1011,7 +1011,7 @@
 	name = "NHV Asclepius Central";
 	network = list("NHV Asclepius")
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -1024,7 +1024,7 @@
 	name = "Triage: High Priority"
 	},
 /obj/machinery/iv_drip,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -1048,7 +1048,7 @@
 /obj/machinery/atmospherics/unary/portables_connector{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -1056,7 +1056,7 @@
 /obj/structure/table/glass,
 /obj/item/reagent_containers/glass/beaker/cryoxadone,
 /obj/item/reagent_containers/glass/beaker/cryoxadone,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -1076,7 +1076,7 @@
 	network = list("NHV Asclepius")
 	},
 /obj/machinery/atmospherics/unary/portables_connector,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -1087,7 +1087,7 @@
 	name = "Surgery Cleaner"
 	},
 /obj/machinery/cell_charger,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -1096,13 +1096,13 @@
 	name = "Triage: High Priority"
 	},
 /obj/machinery/iv_drip,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "cj" = (
 /obj/machinery/atmospherics/unary/cold_sink/freezer,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -1113,7 +1113,7 @@
 	name = "NHV Asclepius OR 2";
 	network = list("NHV Asclepius")
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -1125,7 +1125,7 @@
 /obj/item/clothing/suit/radiation,
 /obj/item/clothing/suit/radiation,
 /obj/item/clothing/suit/radiation,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -1137,45 +1137,45 @@
 /obj/item/clothing/suit/bio_suit,
 /obj/item/clothing/suit/bio_suit,
 /obj/item/clothing/suit/bio_suit,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "cn" = (
 /obj/structure/closet/secure_closet/medical1,
 /obj/item/clothing/head/beret/med,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "co" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "cp" = (
 /obj/machinery/suit_storage_unit/cmo/secure/sec_storage,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "cq" = (
 /obj/machinery/light,
 /obj/machinery/suit_storage_unit/cmo/secure/sec_storage,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "cr" = (
 /obj/structure/dispenser/oxygen,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "cs" = (
 /obj/machinery/vending/medical,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -1190,13 +1190,13 @@
 	dir = 5;
 	icon_state = "intact"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "cv" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -1205,7 +1205,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -1214,7 +1214,7 @@
 	dir = 9;
 	icon_state = "intact"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)

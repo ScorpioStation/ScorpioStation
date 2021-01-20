@@ -208,7 +208,7 @@
 	name = "greentext"
 	},
 /obj/item/reagent_containers/food/condiment/saltshaker,
-/turf/simulated/shuttle/floor4,
+/turf/open/shuttle/floor4,
 /area/shuttle/escape)
 "aI" = (
 /obj/machinery/door/airlock/security/glass{
@@ -276,7 +276,7 @@
 	id_tag = "s_docking_airlock";
 	name = "Shuttle Hatch"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aQ" = (
 /obj/item/radio/intercom{
@@ -323,7 +323,7 @@
 	id_tag = "s_docking_airlock";
 	name = "Shuttle Hatch"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aU" = (
 /obj/machinery/status_display{
@@ -349,7 +349,7 @@
 	id_tag = null;
 	name = "Shuttle Cargo Hatch"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)

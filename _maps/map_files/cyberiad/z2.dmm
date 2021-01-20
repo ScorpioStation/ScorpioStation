@@ -2032,7 +2032,7 @@
 	pixel_x = -32;
 	pixel_y = 0
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/gamma/space)
@@ -3028,7 +3028,7 @@
 	},
 /area/syndicate_mothership)
 "iS" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/assault_pod)
@@ -3230,7 +3230,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/assault_pod)
@@ -3251,7 +3251,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/assault_pod)
@@ -4635,7 +4635,7 @@
 /obj/machinery/sleeper{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/centcom/evac)
@@ -5007,7 +5007,7 @@
 	},
 /area/shuttle/gamma/space)
 "og" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
@@ -5073,7 +5073,7 @@
 /area/centcom/specops)
 "op" = (
 /obj/machinery/light/spot,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
@@ -5211,7 +5211,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/gamma/space)
@@ -5228,7 +5228,7 @@
 /obj/machinery/ai_status_display{
 	pixel_y = 32
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/gamma/space)
@@ -5291,7 +5291,7 @@
 /obj/item/gun/projectile/automatic/pistol{
 	name = "pistol"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/gamma/space)
@@ -5405,7 +5405,7 @@
 /obj/item/gun/energy/gun/nuclear,
 /obj/item/gun/energy/gun/nuclear,
 /obj/item/gun/energy/gun/nuclear,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/gamma/space)
@@ -5442,7 +5442,7 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/gamma/space)
@@ -5500,7 +5500,7 @@
 	},
 /area/centcom/specops)
 "pf" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/gamma/space)
@@ -5508,7 +5508,7 @@
 /obj/machinery/recharger/wallcharger{
 	pixel_x = 32
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/gamma/space)
@@ -5528,7 +5528,7 @@
 /obj/item/ammo_casing/rocket,
 /obj/item/ammo_casing/rocket,
 /obj/item/gun/rocketlauncher,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/gamma/space)
@@ -5554,7 +5554,7 @@
 /area/centcom/specops)
 "pn" = (
 /obj/machinery/door/airlock/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/gamma/space)
@@ -5567,7 +5567,7 @@
 /obj/item/kitchen/knife/combat,
 /obj/item/kitchen/knife/combat,
 /obj/item/kitchen/knife/combat,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/gamma/space)
@@ -5583,7 +5583,7 @@
 	pixel_x = 0
 	},
 /obj/machinery/mech_bay_recharge_port/upgraded,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/gamma/space)
@@ -5593,7 +5593,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/computer/mech_bay_power_console,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/gamma/space)
@@ -5601,7 +5601,7 @@
 /obj/machinery/door/airlock/shuttle{
 	req_access_txt = "0"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/gamma/space)
@@ -6714,7 +6714,7 @@
 /turf/space,
 /area/space)
 "rX" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /turf/simulated/shuttle/wall{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
@@ -6730,7 +6730,7 @@
 	},
 /area/centcom/evac)
 "rZ" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
@@ -6742,7 +6742,7 @@
 	pixel_x = -2;
 	pixel_y = 4
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "sb" = (
 /obj/structure/table,
@@ -6751,7 +6751,7 @@
 	pixel_y = 4
 	},
 /obj/item/storage/firstaid/toxin,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "sc" = (
 /obj/structure/table,
@@ -6763,10 +6763,10 @@
 	pixel_x = -2;
 	pixel_y = 4
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "sd" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /turf/simulated/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
@@ -6800,7 +6800,7 @@
 	pixel_y = 0;
 	req_access_txt = "0"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "sh" = (
 /turf/simulated/shuttle/wall{
@@ -6816,7 +6816,7 @@
 	pixel_y = 0;
 	req_access_txt = "0"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "sj" = (
 /turf/unsimulated/floor{
@@ -6849,7 +6849,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "so" = (
 /obj/machinery/vending/boozeomat,
@@ -6928,7 +6928,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/centcom/evac)
@@ -6961,7 +6961,7 @@
 	name = "Security Desk";
 	req_access_txt = "104"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/centcom/evac)
@@ -7003,7 +7003,7 @@
 	pixel_y = 4
 	},
 /obj/structure/table/reinforced,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/centcom/evac)
@@ -7037,7 +7037,7 @@
 	name = "Infirmary";
 	req_access_txt = "0"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
@@ -7107,7 +7107,7 @@
 	pixel_y = 0;
 	req_access_txt = "0"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/centcom/evac)
@@ -7262,7 +7262,7 @@
 	req_access_txt = "0"
 	},
 /obj/machinery/vending/snack,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "tl" = (
 /obj/structure/chair,
@@ -7327,7 +7327,7 @@
 	name = "Cockpit";
 	req_access_txt = "106"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
@@ -7481,7 +7481,7 @@
 	req_access = null;
 	req_access_txt = "106"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "tG" = (
 /obj/machinery/door/poddoor{
@@ -10170,7 +10170,7 @@
 /area/trader_station/sol)
 "yy" = (
 /obj/structure/closet/emcloset,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "yz" = (
 /obj/structure/chair/comfy/black{
@@ -10271,7 +10271,7 @@
 	},
 /area/admin)
 "yM" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "yN" = (
 /turf/unsimulated/floor{
@@ -10350,7 +10350,7 @@
 "yW" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/centcom/evac)
@@ -10359,20 +10359,20 @@
 /obj/machinery/recharger{
 	pixel_y = 0
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/centcom/evac)
 "yY" = (
 /obj/structure/table/reinforced,
 /obj/item/pen,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/centcom/evac)
 "yZ" = (
 /obj/structure/table/reinforced,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/centcom/evac)
@@ -10397,7 +10397,7 @@
 /area/admin)
 "zc" = (
 /obj/machinery/computer/arcade,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "zd" = (
 /obj/machinery/door/airlock/hatch{
@@ -10429,7 +10429,7 @@
 /area/admin)
 "zh" = (
 /obj/machinery/computer/card,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/centcom/evac)
@@ -10458,7 +10458,7 @@
 /obj/structure/table/reinforced,
 /obj/item/clipboard,
 /obj/item/stamp/granted,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/centcom/evac)
@@ -10501,7 +10501,7 @@
 	},
 /area/trader_station/sol)
 "zr" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/centcom/evac)
@@ -10553,7 +10553,7 @@
 /obj/structure/table,
 /obj/item/storage/box/handcuffs,
 /obj/item/flash,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/centcom/evac)
@@ -10630,7 +10630,7 @@
 /area/trader_station/sol)
 "zH" = (
 /obj/machinery/vending/cola,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "zI" = (
 /obj/effect/decal/cleanable/blood,
@@ -10688,7 +10688,7 @@
 /area/syndicate_mothership)
 "zO" = (
 /obj/structure/closet/secure_closet/personal/patient,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/centcom/evac)
@@ -10711,7 +10711,7 @@
 /area/centcom/evac)
 "zR" = (
 /obj/machinery/vending/coffee,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "zS" = (
 /obj/machinery/light{
@@ -10749,7 +10749,7 @@
 /turf/open/floor/plating,
 /area/centcom/evac)
 "zW" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/centcom/evac)
@@ -11116,12 +11116,12 @@
 /area/admin)
 "AM" = (
 /obj/structure/table,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "AN" = (
 /obj/structure/table,
 /obj/item/hand_labeler,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "AO" = (
 /obj/structure/table,
@@ -11244,11 +11244,11 @@
 /area/syndicate_mothership)
 "Bb" = (
 /obj/machinery/computer/crew,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "Bc" = (
 /obj/machinery/computer/communications,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "Bd" = (
 /obj/machinery/vending/coffee/free,
@@ -11267,7 +11267,7 @@
 "Bf" = (
 /obj/structure/table,
 /obj/item/radio,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "Bg" = (
 /obj/structure/table/wood,
@@ -11288,24 +11288,24 @@
 "Bi" = (
 /obj/structure/table,
 /obj/item/stamp/captain,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "Bj" = (
 /obj/machinery/computer{
 	name = "EMERGENCY SHUTTLE COMPUTER"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "Bk" = (
 /obj/structure/table,
 /obj/item/clipboard,
 /obj/item/pen,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "Bl" = (
 /obj/structure/table,
 /obj/item/paper_bin,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "Bm" = (
 /obj/structure/table,
@@ -12148,7 +12148,7 @@
 /area/vox_station)
 "KA" = (
 /obj/structure/chair/sofa/left,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
@@ -12170,7 +12170,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/assault_pod)
@@ -12179,7 +12179,7 @@
 	dir = 1
 	},
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/assault_pod)
@@ -12187,7 +12187,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/assault_pod)
@@ -12195,7 +12195,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/assault_pod)
@@ -12447,13 +12447,13 @@
 /area/holodeck/source_boxingcourt)
 "QE" = (
 /obj/structure/chair/sofa/right,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
 "QI" = (
 /obj/structure/chair/sofa,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
@@ -12779,13 +12779,13 @@
 /area/centcom/evac)
 "Wf" = (
 /obj/structure/chair/stool,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "Wk" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/centcom/evac)
@@ -12793,7 +12793,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/centcom/evac)
@@ -12806,7 +12806,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "WP" = (
 /obj/structure/table/holotable,
@@ -12818,7 +12818,7 @@
 /area/holodeck/source_knightarena)
 "WU" = (
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/centcom/evac)
 "WW" = (
 /obj/structure/flora/ausbushes/pointybush,

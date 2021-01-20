@@ -63,15 +63,15 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "al" = (
 /obj/machinery/computer/crew,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "am" = (
 /obj/structure/table,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "an" = (
 /obj/machinery/computer/security{
@@ -82,11 +82,11 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "ao" = (
 /obj/machinery/computer/emergency_shuttle,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "ap" = (
 /turf/simulated/shuttle/wall{
@@ -109,20 +109,20 @@
 /area/shuttle/escape)
 "as" = (
 /obj/machinery/computer/station_alert,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "at" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "au" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "ay" = (
 /obj/machinery/computer/robotics,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aB" = (
 /turf/simulated/shuttle/wall{
@@ -142,7 +142,7 @@
 	name = "Escape Shuttle Cockpit";
 	req_access_txt = "19"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aE" = (
 /turf/simulated/shuttle/wall{
@@ -152,7 +152,7 @@
 /area/shuttle/escape)
 "aF" = (
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor4,
+/turf/open/shuttle/floor4,
 /area/shuttle/escape)
 "aG" = (
 /obj/machinery/status_display{
@@ -164,7 +164,7 @@
 	dir = 1
 	},
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor4,
+/turf/open/shuttle/floor4,
 /area/shuttle/escape)
 "aH" = (
 /obj/structure/grille,
@@ -223,10 +223,10 @@
 /obj/structure/closet/walllocker/emerglocker{
 	pixel_x = -28
 	},
-/turf/simulated/shuttle/floor4,
+/turf/open/shuttle/floor4,
 /area/shuttle/escape)
 "aO" = (
-/turf/simulated/shuttle/floor4,
+/turf/open/shuttle/floor4,
 /area/shuttle/escape)
 "aP" = (
 /obj/structure/grille,
@@ -308,7 +308,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor4,
+/turf/open/shuttle/floor4,
 /area/shuttle/escape)
 "aY" = (
 /obj/machinery/atmospherics/unary/cold_sink/freezer{
@@ -420,7 +420,7 @@
 	id_tag = "s_docking_airlock";
 	name = "Shuttle Hatch"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bi" = (
 /obj/structure/closet/walllocker/emerglocker{
@@ -485,7 +485,7 @@
 	id_tag = "s_docking_airlock";
 	name = "Shuttle Hatch"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bq" = (
 /obj/machinery/door/airlock/shuttle{
@@ -494,7 +494,7 @@
 	id_tag = "s_docking_airlock";
 	name = "Shuttle Hatch"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor2"
 	},
 /area/shuttle/escape)

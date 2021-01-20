@@ -17,7 +17,7 @@
 	},
 /area/shuttle/abandoned)
 "ad" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /turf/simulated/shuttle/wall/interior{
@@ -26,7 +26,7 @@
 	},
 /area/shuttle/abandoned)
 "ae" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -38,12 +38,12 @@
 	dir = 1
 	},
 /obj/effect/decal/remains/human,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
 "ag" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /turf/simulated/shuttle/wall/interior{
@@ -89,7 +89,7 @@
 /area/shuttle/abandoned)
 "am" = (
 /obj/machinery/computer/med_data,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -99,7 +99,7 @@
 	pixel_x = 6;
 	pixel_y = -5
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -137,7 +137,7 @@
 /turf/simulated/shuttle/plating,
 /area/shuttle/abandoned)
 "as" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /turf/simulated/shuttle/wall/interior{
@@ -147,7 +147,7 @@
 /area/shuttle/abandoned)
 "at" = (
 /obj/item/scalpel,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -165,7 +165,7 @@
 /obj/structure/computerframe{
 	anchored = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -195,7 +195,7 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Hibernation Pods"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -209,13 +209,13 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
 "aD" = (
 /obj/structure/table,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -228,7 +228,7 @@
 /area/shuttle/abandoned)
 "aF" = (
 /obj/item/multitool,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -237,7 +237,7 @@
 	charge = 100;
 	maxcharge = 15000
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -277,7 +277,7 @@
 	id = "whiteship_away";
 	name = "Deep Space"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -293,12 +293,12 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
 "aN" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /turf/simulated/shuttle/wall/interior{
@@ -308,7 +308,7 @@
 /area/shuttle/abandoned)
 "aO" = (
 /obj/machinery/door/airlock/public/glass,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -316,13 +316,13 @@
 /obj/machinery/light_switch{
 	pixel_x = 27
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
 "aQ" = (
 /obj/machinery/portable_atmospherics/scrubber,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -336,7 +336,7 @@
 "aS" = (
 /obj/structure/bed,
 /obj/item/bedsheet,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -344,20 +344,20 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
 "aU" = (
 /obj/structure/table,
 /obj/item/gun/energy/laser/retro,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
 "aV" = (
 /obj/machinery/computer/shuttle/white_ship,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -370,14 +370,14 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
 "aY" = (
 /obj/structure/table,
 /obj/item/tank/oxygen,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -390,14 +390,14 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
 "bb" = (
 /obj/structure/table,
 /obj/item/analyzer,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -406,7 +406,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -414,13 +414,13 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Living Module"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
 "be" = (
 /obj/machinery/door/unpowered/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -428,7 +428,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -437,13 +437,13 @@
 /area/shuttle/abandoned)
 "bh" = (
 /obj/effect/decal/remains/human,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
 "bi" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -475,7 +475,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -484,20 +484,20 @@
 	gpstag = "NT Medical Ship";
 	pixel_x = -32
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
 "bo" = (
 /obj/item/shard,
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
 "bp" = (
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -506,7 +506,7 @@
 	anchored = 1
 	},
 /obj/item/stack/cable_coil/cut,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -517,7 +517,7 @@
 /obj/item/tank/emergency_oxygen,
 /obj/item/tank/emergency_oxygen,
 /obj/item/storage/toolbox/mechanical,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -525,7 +525,7 @@
 /obj/structure/rack,
 /obj/item/clothing/suit/space/hardsuit/medical,
 /obj/item/clothing/mask/breath,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -533,13 +533,13 @@
 /obj/structure/rack,
 /obj/item/clothing/suit/space/syndicate/black/med,
 /obj/item/clothing/head/helmet/space/syndicate/black/med,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
 "bu" = (
 /obj/machinery/light/small,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -570,7 +570,7 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Pod Bay"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -598,7 +598,7 @@
 	name = "Pod Door Control";
 	pixel_y = -24
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
@@ -606,14 +606,14 @@
 /obj/structure/table,
 /obj/item/screwdriver,
 /obj/machinery/light,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)
 "bF" = (
 /obj/structure/table,
 /obj/item/radio,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/abandoned)

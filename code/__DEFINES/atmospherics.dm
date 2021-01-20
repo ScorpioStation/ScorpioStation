@@ -133,3 +133,16 @@
 
 //LAVALAND
 #define LAVALAND_EQUIPMENT_EFFECT_PRESSURE 50 //what pressure you have to be under to increase the effect of equipment meant for lavaland
+
+/* Thank you, /tg/! <3 */
+#define ADD_GAS(gas_id, out_list)\
+	var/list/tmp_gaslist = GLOB.gaslist_cache[gas_id]; out_list[gas_id] = tmp_gaslist.Copy();
+
+#define ASSERT_GAS(gas_id, gas_mixture) if (!gas_mixture.gases[gas_id]) { ADD_GAS(gas_id, gas_mixture.gases) };
+
+//prefer this to gas_mixture/total_moles in performance critical areas
+#define TOTAL_MOLES(cached_gases, out_var)\
+	out_var = 0;\
+	for(var/total_moles_id in cached_gases){\
+		out_var += cached_gases[total_moles_id][MOLES];\
+	}

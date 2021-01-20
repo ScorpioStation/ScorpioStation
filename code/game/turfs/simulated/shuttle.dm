@@ -49,7 +49,7 @@
 	M.Turn(rotation)
 	transform = M
 
-/turf/simulated/shuttle/floor
+/turf/open/shuttle/floor
 	name = "floor"
 	icon_state = "floor"
 
@@ -62,11 +62,11 @@
 	oxygen = 0
 	nitrogen = MOLES_N2STANDARD + MOLES_O2STANDARD
 
-/turf/simulated/shuttle/floor4 // Added this floor tile so that I have a seperate turf to check in the shuttle -- Polymorph
+/turf/open/shuttle/floor4 // Added this floor tile so that I have a seperate turf to check in the shuttle -- Polymorph
 	name = "brig floor"        // Also added it into the 2x3 brig area of the shuttle.
 	icon_state = "floor4"
 
-/turf/simulated/shuttle/floor4/vox	//Vox skipjack floors
+/turf/open/shuttle/floor4/vox	//Vox skipjack floors
 	name = "skipjack floor"
 	oxygen = 0
 	nitrogen = MOLES_N2STANDARD + MOLES_O2STANDARD

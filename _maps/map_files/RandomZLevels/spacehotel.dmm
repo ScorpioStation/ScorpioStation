@@ -2533,7 +2533,7 @@
 	},
 /area/awaymission/spacehotel)
 "eY" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission/spacehotel)
 "eZ" = (
 /obj/machinery/light{
@@ -2851,7 +2851,7 @@
 /area/awaymission/spacehotel)
 "fV" = (
 /obj/item/beach_ball,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission/spacehotel)
 "fW" = (
 /turf/unsimulated/wall/metal,
@@ -4649,29 +4649,29 @@
 /area/awaymission)
 "kP" = (
 /obj/effect/decal/remains/human,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "kQ" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "kR" = (
 /obj/item/paper/hotel_scrap_4,
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "kS" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "kT" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "kU" = (
 /obj/structure/shuttle/engine/heater{
@@ -4714,11 +4714,11 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "lb" = (
 /obj/machinery/door/airlock/public/glass,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "lc" = (
 /obj/structure/window/reinforced{
@@ -4726,7 +4726,7 @@
 	},
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "ld" = (
 /turf/simulated/shuttle/wall{
@@ -4745,14 +4745,14 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "lg" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "lh" = (
 /turf/simulated/shuttle/wall{

@@ -58,38 +58,38 @@
 /turf/simulated/shuttle/plating,
 /area/awaymission/spacebattle/syndicate2)
 "aj" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
 "ak" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
 "al" = (
 /mob/living/simple_animal/hostile/syndicate/ranged,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
 "am" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/suit/space/hardsuit/syndi,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
 "an" = (
 /obj/structure/table/reinforced,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
 "ao" = (
 /obj/machinery/sleeper,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
@@ -97,40 +97,40 @@
 /obj/effect/landmark{
 	name = "awaystart"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
 "aq" = (
 /mob/living/simple_animal/hostile/syndicate/melee,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
 "ar" = (
 /obj/machinery/door/unpowered/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
 "as" = (
 /obj/structure/table/reinforced,
 /obj/item/grenade/empgrenade,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
 "at" = (
 /obj/structure/table/reinforced,
 /obj/item/ammo_casing/c10mm,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
 "au" = (
 /obj/structure/table/reinforced,
 /obj/item/gun/projectile/automatic/c20r,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
@@ -175,7 +175,7 @@
 "aA" = (
 /obj/structure/table/reinforced,
 /obj/item/gun/projectile/automatic/pistol,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
@@ -194,13 +194,13 @@
 /turf/simulated/shuttle/plating,
 /area/awaymission/spacebattle/syndicate3)
 "aD" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate3)
 "aE" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate3)
@@ -208,7 +208,7 @@
 /obj/effect/landmark{
 	name = "awaystart"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate3)
@@ -221,7 +221,7 @@
 "aH" = (
 /obj/structure/chair/comfy/shuttle,
 /mob/living/simple_animal/hostile/syndicate,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
@@ -234,25 +234,25 @@
 /area/awaymission/spacebattle/syndicate2)
 "aJ" = (
 /obj/structure/table/reinforced,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate3)
 "aK" = (
 /obj/structure/table/reinforced,
 /obj/item/gun/projectile/automatic/pistol/deagle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate3)
 "aL" = (
 /obj/machinery/computer/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
 "aM" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /turf/simulated/shuttle/wall{
@@ -261,7 +261,7 @@
 	},
 /area/awaymission/spacebattle/syndicate2)
 "aN" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /turf/simulated/shuttle/wall{
@@ -313,7 +313,7 @@
 /area/awaymission/spacebattle/syndicate2)
 "aU" = (
 /obj/machinery/sleeper,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate3)
@@ -356,7 +356,7 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/spacebattle/syndicate2)
 "aZ" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate1)
@@ -364,7 +364,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
@@ -372,13 +372,13 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
 "bc" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate1)
@@ -386,7 +386,7 @@
 /obj/effect/landmark{
 	name = "awaystart"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate1)
@@ -400,33 +400,33 @@
 /area/awaymission/spacebattle/syndicate2)
 "bf" = (
 /obj/machinery/door/unpowered/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate3)
 "bg" = (
 /obj/structure/table/reinforced,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate1)
 "bi" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/gloves/combat,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate1)
 "bj" = (
 /obj/machinery/sleeper,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate1)
 "bk" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/head/helmet/swat,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate3)
@@ -435,7 +435,7 @@
 	id_tags = list("spacebattlepod3");
 	name = "Hull Door Control"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate2)
@@ -450,14 +450,14 @@
 /area/awaymission/spacebattle/syndicate2)
 "bn" = (
 /obj/machinery/door/unpowered/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate1)
 "bo" = (
 /obj/structure/table/reinforced,
 /obj/item/grenade/spawnergrenade/manhacks,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate1)
@@ -470,7 +470,7 @@
 "bq" = (
 /obj/structure/chair/comfy/shuttle,
 /mob/living/simple_animal/hostile/syndicate,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate3)
@@ -483,12 +483,12 @@
 /area/awaymission/spacebattle/syndicate3)
 "bs" = (
 /obj/machinery/computer/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate3)
 "bt" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /turf/simulated/shuttle/wall{
@@ -497,7 +497,7 @@
 	},
 /area/awaymission/spacebattle/syndicate3)
 "bu" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /turf/simulated/shuttle/wall{
@@ -508,7 +508,7 @@
 "bv" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/head/helmet/swat,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate1)
@@ -529,7 +529,7 @@
 "by" = (
 /obj/structure/chair/comfy/shuttle,
 /mob/living/simple_animal/hostile/syndicate,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate1)
@@ -542,12 +542,12 @@
 /area/awaymission/spacebattle/syndicate1)
 "bA" = (
 /obj/machinery/computer/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate1)
 "bB" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /turf/simulated/shuttle/wall{
@@ -556,7 +556,7 @@
 	},
 /area/awaymission/spacebattle/syndicate1)
 "bC" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /turf/simulated/shuttle/wall{
@@ -624,7 +624,7 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/spacebattle/cruiser)
 "bL" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/cruiser)
@@ -644,7 +644,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/cruiser)
@@ -652,7 +652,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/cruiser)
@@ -723,7 +723,7 @@
 	id_tags = list("spacebattlepod");
 	name = "Hull Door Control"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/cruiser)
@@ -1039,7 +1039,7 @@
 	id_tags = list("spacebattlepod2");
 	name = "Hull Door Control"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/cruiser)
@@ -1579,13 +1579,13 @@
 	},
 /area/awaymission/spacebattle/cruiser)
 "eI" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate4)
 "eJ" = (
 /obj/machinery/computer/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate4)
@@ -1624,7 +1624,7 @@
 /area/awaymission/spacebattle/cruiser)
 "eP" = (
 /obj/machinery/sleeper,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate4)
@@ -1633,7 +1633,7 @@
 	dir = 1
 	},
 /mob/living/simple_animal/hostile/syndicate,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate4)
@@ -1741,7 +1741,7 @@
 /area/awaymission/spacebattle/cruiser)
 "fj" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate4)
@@ -2205,12 +2205,12 @@
 /area/awaymission/spacebattle/syndicate7)
 "he" = (
 /obj/structure/table/reinforced,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate7)
 "hf" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate7)
@@ -2404,7 +2404,7 @@
 /area/awaymission/spacebattle/cruiser)
 "hL" = (
 /obj/machinery/computer/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate7)
@@ -2413,13 +2413,13 @@
 	dir = 8
 	},
 /mob/living/simple_animal/hostile/syndicate,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate7)
 "hN" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate7)
@@ -2687,13 +2687,13 @@
 /turf/open/floor/plasteel/airless,
 /area/space/nearstation)
 "iD" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate5)
 "iE" = (
 /obj/machinery/computer/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate5)
@@ -2712,7 +2712,7 @@
 /area/space/nearstation)
 "iH" = (
 /obj/machinery/sleeper,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate5)
@@ -2721,7 +2721,7 @@
 	dir = 1
 	},
 /mob/living/simple_animal/hostile/syndicate,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate5)
@@ -2738,7 +2738,7 @@
 /area/space/nearstation)
 "iL" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate5)
@@ -2786,19 +2786,19 @@
 	},
 /area/awaymission/spacebattle/syndicate6)
 "iT" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate6)
 "iU" = (
 /obj/machinery/computer/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate6)
 "iV" = (
 /obj/machinery/sleeper,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate6)
@@ -2807,13 +2807,13 @@
 	dir = 1
 	},
 /mob/living/simple_animal/hostile/syndicate,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate6)
 "iX" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/awaymission/spacebattle/syndicate6)

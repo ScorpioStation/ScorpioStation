@@ -39,7 +39,7 @@
 	name = "Emergency Shuttle Airlock";
 	req_access_txt = "2"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "ah" = (
 /obj/structure/sign/nosmoking_2,
@@ -54,7 +54,7 @@
 	name = "Emergency Shuttle Airlock";
 	req_access_txt = "0"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aj" = (
 /turf/simulated/shuttle/wall{
@@ -106,20 +106,20 @@
 	pixel_x = 5;
 	pixel_y = -1
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "ap" = (
 /obj/machinery/computer/crew,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aq" = (
 /obj/machinery/computer/security,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "ar" = (
 /obj/structure/table,
 /obj/item/storage/firstaid/regular,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "as" = (
 /turf/simulated/shuttle/wall{
@@ -130,16 +130,16 @@
 /area/shuttle/escape)
 "at" = (
 /obj/structure/closet/emcloset,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
 "au" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "av" = (
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -149,7 +149,7 @@
 	on = 1
 	},
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -161,7 +161,7 @@
 	pixel_y = 27
 	},
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -204,7 +204,7 @@
 /obj/item/clothing/head/hardhat,
 /obj/item/clothing/head/hardhat,
 /obj/item/clothing/head/hardhat,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -236,18 +236,18 @@
 "aC" = (
 /obj/structure/table,
 /obj/item/storage/fancy,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aD" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aE" = (
 /obj/structure/table,
 /obj/item/restraints/handcuffs,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aF" = (
 /obj/machinery/status_display,
@@ -263,7 +263,7 @@
 	pixel_x = -1;
 	pixel_y = 2
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -292,17 +292,17 @@
 /area/shuttle/escape)
 "aJ" = (
 /obj/machinery/computer/communications,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aK" = (
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aL" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -311,7 +311,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -358,7 +358,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -374,20 +374,20 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aQ" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aR" = (
 /obj/machinery/door/airlock/command/glass{
 	name = "Cockpit";
 	req_access_txt = "19"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aS" = (
 /obj/machinery/vending/wallmed{
@@ -411,7 +411,7 @@
 /area/shuttle/escape)
 "aU" = (
 /obj/machinery/computer/atmos_alert,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aV" = (
 /turf/simulated/shuttle/wall{
@@ -424,7 +424,7 @@
 	dir = 1
 	},
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -436,18 +436,18 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aY" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/emergency,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aZ" = (
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "ba" = (
 /obj/structure/table,
@@ -456,7 +456,7 @@
 	idle_power_usage = 0;
 	use_power = 0
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bb" = (
 /obj/structure/table,
@@ -470,7 +470,7 @@
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bc" = (
 /obj/structure/table,
@@ -479,7 +479,7 @@
 	pixel_x = 0;
 	pixel_y = -30
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bd" = (
 /obj/item/radio/intercom{
@@ -492,7 +492,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -509,7 +509,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/escape)
@@ -534,7 +534,7 @@
 	req_access = null;
 	req_access_txt = "19"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bi" = (
 /turf/simulated/shuttle/wall{
@@ -548,7 +548,7 @@
 	name = "Brig";
 	req_access_txt = "2"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
@@ -565,7 +565,7 @@
 	name = "Escape Shuttle Infirmary";
 	req_access_txt = "0"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bm" = (
 /obj/structure/sign/redcross,
@@ -578,7 +578,7 @@
 /obj/machinery/door/airlock/shuttle{
 	name = "Emergency Shuttle Cargo Bay Airlock"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bo" = (
 /obj/structure/chair/comfy/shuttle{
@@ -602,7 +602,7 @@
 	},
 /area/shuttle/escape)
 "br" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
@@ -610,24 +610,24 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
 "bt" = (
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
 "bu" = (
 /obj/structure/table,
 /obj/item/defibrillator,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bv" = (
 /obj/machinery/shower,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bw" = (
 /obj/machinery/sleeper,
@@ -635,7 +635,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bx" = (
 /obj/structure/rack,
@@ -699,7 +699,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
@@ -736,11 +736,11 @@
 	pixel_x = 2;
 	pixel_y = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bG" = (
 /obj/machinery/sleeper,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bH" = (
 /obj/structure/rack,
@@ -785,7 +785,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
@@ -793,7 +793,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
@@ -802,7 +802,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bN" = (
 /turf/simulated/shuttle/plating{
@@ -848,7 +848,7 @@
 	name = "Station Intercom (General)";
 	pixel_y = -28
 	},
-/turf/simulated/shuttle/floor4,
+/turf/open/shuttle/floor4,
 /area/shuttle/escape)
 "bR" = (
 /obj/structure/table,
@@ -857,21 +857,21 @@
 	idle_power_usage = 0;
 	use_power = 0
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
 "bS" = (
 /obj/structure/table,
 /obj/item/restraints/handcuffs,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
 "bT" = (
 /obj/structure/table,
 /obj/item/storage/box/handcuffs,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/escape)
@@ -895,11 +895,11 @@
 	pixel_x = 0;
 	pixel_y = -27
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bV" = (
 /obj/structure/sink,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bW" = (
 /obj/structure/table,
@@ -908,7 +908,7 @@
 	pixel_x = 2;
 	pixel_y = 3
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bX" = (
 /obj/structure/table,
@@ -917,7 +917,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bY" = (
 /obj/structure/sign/redcross,
@@ -1057,7 +1057,7 @@
 	name = "Emergency Shuttle Airlock";
 	req_access_txt = "0"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/escape)
 
 (1,1,1) = {"

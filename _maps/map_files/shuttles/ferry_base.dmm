@@ -38,7 +38,7 @@
 	},
 /area/shuttle/transport)
 "g" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /turf/simulated/shuttle/wall/interior{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9"
@@ -53,15 +53,15 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/transport)
 "i" = (
 /obj/machinery/computer/shuttle/ferry/request,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/transport)
 "j" = (
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/transport)
 "k" = (
 /obj/machinery/light/spot{
@@ -70,16 +70,16 @@
 	dir = 1
 	},
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/transport)
 "l" = (
 /obj/machinery/door/airlock/shuttle{
 	id_tag = "s_docking_airlock"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/transport)
 "m" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/transport)
 "n" = (
 /obj/machinery/door/airlock/shuttle{
@@ -95,7 +95,7 @@
 	timid = 1;
 	width = 5
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/transport)
 "o" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -110,7 +110,7 @@
 	},
 /area/shuttle/transport)
 "p" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /turf/simulated/shuttle/wall/interior{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10"
@@ -119,24 +119,24 @@
 "q" = (
 /obj/structure/closet/crate,
 /obj/machinery/light/spot,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/transport)
 "r" = (
 /obj/structure/closet/crate,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/transport)
 "s" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/transport)
 "t" = (
 /obj/machinery/light/spot,
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/shuttle/transport)
 "u" = (
 /turf/space,

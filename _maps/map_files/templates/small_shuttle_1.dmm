@@ -17,7 +17,7 @@
 /area/ruin/powered)
 "d" = (
 /obj/machinery/door/unpowered/shuttle,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "e" = (
 /turf/space,
@@ -38,11 +38,11 @@
 /turf/open/floor/plating/airless,
 /area/ruin/powered)
 "h" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "i" = (
 /obj/machinery/light,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "j" = (
 /obj/structure/shuttle/engine/heater,
@@ -62,14 +62,14 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "n" = (
 /obj/machinery/light{
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "o" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -85,13 +85,13 @@
 /area/ruin/powered)
 "q" = (
 /obj/machinery/computer,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "r" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "s" = (
 /turf/space,
@@ -111,14 +111,14 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "v" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "w" = (
 /obj/structure/shuttle/engine/propulsion{

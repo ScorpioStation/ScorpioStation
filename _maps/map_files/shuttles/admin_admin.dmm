@@ -21,7 +21,7 @@
 	req_access_txt = "101"
 	},
 /obj/structure/fans/tiny,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -42,7 +42,7 @@
 	width = 18
 	},
 /obj/structure/fans/tiny,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -62,21 +62,21 @@
 "ah" = (
 /obj/structure/table/reinforced,
 /obj/machinery/chem_dispenser/beer,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "ai" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/drinkingglasses,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "aj" = (
 /obj/structure/table/reinforced,
 /obj/machinery/chem_dispenser/soda,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -97,19 +97,19 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "am" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "an" = (
 /obj/machinery/cell_charger,
 /obj/structure/table,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -117,7 +117,7 @@
 /obj/item/storage/toolbox/mechanical,
 /obj/item/multitool,
 /obj/structure/table,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -126,7 +126,7 @@
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -136,7 +136,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -152,7 +152,7 @@
 	opacity = 1;
 	req_access_txt = "101"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -162,7 +162,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -173,20 +173,20 @@
 	pixel_x = 4;
 	pixel_y = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "au" = (
 /obj/machinery/mecha_part_fabricator/upgraded,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "av" = (
 /obj/machinery/kitchen_machine/microwave/upgraded,
 /obj/structure/table,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -194,20 +194,20 @@
 /obj/machinery/door/window/northright{
 	name = "bar"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "ax" = (
 /obj/structure/table,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "ay" = (
 /obj/item/ashtray/glass,
 /obj/structure/table,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -217,7 +217,7 @@
 	pixel_x = 5
 	},
 /obj/structure/table,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -228,7 +228,7 @@
 	pixel_x = -30;
 	req_access_txt = "101"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -239,7 +239,7 @@
 	opacity = 1;
 	req_access_txt = "101"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -265,25 +265,25 @@
 /area/shuttle/administration)
 "aE" = (
 /obj/structure/chair/stool/bar,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "aF" = (
 /obj/structure/reagent_dispensers/fueltank,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "aG" = (
 /obj/structure/reagent_dispensers/watertank,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "aH" = (
 /obj/machinery/recharge_station/upgraded,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -291,13 +291,13 @@
 /obj/machinery/autolathe/upgraded{
 	hacked = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "aJ" = (
 /obj/structure/dispenser,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -311,7 +311,7 @@
 /area/shuttle/administration)
 "aL" = (
 /obj/machinery/door/airlock/public/glass,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -330,38 +330,38 @@
 /area/shuttle/administration)
 "aO" = (
 /obj/machinery/vending/snack,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "aP" = (
 /obj/machinery/vending/cola,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "aQ" = (
 /obj/machinery/vending/coffee,
 /obj/machinery/light/spot,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "aR" = (
 /obj/machinery/vending/cigarette,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "aS" = (
 /obj/machinery/computer/card,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "aT" = (
 /obj/machinery/computer/communications,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -411,7 +411,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -422,7 +422,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -430,7 +430,7 @@
 /obj/machinery/computer/shuttle/admin{
 	name = "NTV Argos shuttle console"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -454,13 +454,13 @@
 /area/shuttle/administration)
 "aZ" = (
 /obj/machinery/dna_scannernew/upgraded,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "ba" = (
 /obj/machinery/computer/cloning,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -471,13 +471,13 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "bc" = (
 /obj/machinery/computer/scan_consolenew,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -488,7 +488,7 @@
 	opacity = 1;
 	req_access_txt = "101"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -496,7 +496,7 @@
 /obj/machinery/computer/camera_advanced/shuttle_docker/admin{
 	name = "NTV Argos shuttle navigation computer"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -519,7 +519,7 @@
 /turf/open/floor/plating,
 /area/shuttle/administration)
 "bg" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -530,13 +530,13 @@
 	opacity = 1;
 	req_access_txt = "101"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "bi" = (
 /obj/machinery/bodyscanner,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -545,7 +545,7 @@
 	color = "#FF0000";
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -558,7 +558,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -566,19 +566,19 @@
 /obj/machinery/sleeper/upgraded{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "bn" = (
 /obj/machinery/chem_master,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "bo" = (
 /obj/machinery/chem_dispenser,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -589,7 +589,7 @@
 	opacity = 1;
 	req_access_txt = "104"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -598,7 +598,7 @@
 	color = "#d70000";
 	req_access_txt = "104"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -606,13 +606,13 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "bs" = (
 /obj/machinery/iv_drip,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -622,7 +622,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
@@ -634,7 +634,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -646,7 +646,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -654,7 +654,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -669,32 +669,32 @@
 /obj/item/scalpel,
 /obj/item/retractor,
 /obj/item/FixOVein,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "by" = (
 /obj/machinery/optable,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "bz" = (
 /obj/machinery/vending/medical,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
 /area/shuttle/administration)
 "bA" = (
 /obj/machinery/light,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
 "bB" = (
 /obj/structure/table,
 /obj/item/storage/lockbox/mindshield,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
@@ -705,7 +705,7 @@
 	pixel_y = 3
 	},
 /obj/item/storage/box/trackimp,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
