@@ -15,14 +15,14 @@ SUBSYSTEM_DEF(idlenpcpool)
 	..("IdleNPCS:[length(idlelist)]|Z:[length(zlist)]")
 
 /datum/controller/subsystem/idlenpcpool/proc/MaxZChanged()
-	if (!islist(idle_mobs_by_zlevel))
-		idle_mobs_by_zlevel = new /list(world.maxz,0)
-	while (SSidlenpcpool.idle_mobs_by_zlevel.len < world.maxz)
+	if(!islist(idle_mobs_by_zlevel))
+		idle_mobs_by_zlevel = new /list(world.maxz, 0)
+	while (length(SSidlenpcpool.idle_mobs_by_zlevel) < world.maxz)
 		SSidlenpcpool.idle_mobs_by_zlevel.len++
-		SSidlenpcpool.idle_mobs_by_zlevel[idle_mobs_by_zlevel.len] = list()
+		SSidlenpcpool.idle_mobs_by_zlevel[length(idle_mobs_by_zlevel)] = list()
 
 /datum/controller/subsystem/idlenpcpool/Initialize(start_timeofday)
-	idle_mobs_by_zlevel = new /list(world.maxz,0)
+	idle_mobs_by_zlevel = new /list(world.maxz, 0)
 	return ..()
 
 /datum/controller/subsystem/idlenpcpool/fire(resumed = FALSE)

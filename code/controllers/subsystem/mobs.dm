@@ -22,11 +22,11 @@ SUBSYSTEM_DEF(mobs)
 	if (!islist(clients_by_zlevel))
 		clients_by_zlevel = new /list(world.maxz,0)
 		dead_players_by_zlevel = new /list(world.maxz,0)
-	while (clients_by_zlevel.len < world.maxz)
+	while(length(clients_by_zlevel) < world.maxz)
 		clients_by_zlevel.len++
-		clients_by_zlevel[clients_by_zlevel.len] = list()
+		clients_by_zlevel[length(clients_by_zlevel)] = list()
 		dead_players_by_zlevel.len++
-		dead_players_by_zlevel[dead_players_by_zlevel.len] = list()
+		dead_players_by_zlevel[length(dead_players_by_zlevel)] = list()
 
 /datum/controller/subsystem/mobs/fire(resumed = 0)
 	var/seconds = wait * 0.1

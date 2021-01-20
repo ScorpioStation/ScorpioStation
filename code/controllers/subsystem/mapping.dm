@@ -184,7 +184,7 @@ SUBSYSTEM_DEF(mapping)
 
 /datum/controller/subsystem/mapping/proc/add_new_zlevel(name, traits = list(), z_type = /datum/space_level)
 	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_NEW_Z, args)
-	var/new_z = z_list.len + 1
+	var/new_z = length(z_list) + 1
 	if(world.maxz < new_z)
 		world.incrementMaxZ()
 		CHECK_TICK
@@ -194,6 +194,6 @@ SUBSYSTEM_DEF(mapping)
 	return S
 
 /datum/controller/subsystem/mapping/proc/get_level(z)
-	if(z_list && z >= 1 && z <= z_list.len)
+	if(z_list && z >= 1 && z <= length(z_list))
 		return z_list[z]
-	CRASH("Unmanaged z-level [z]! maxz = [world.maxz], z_list.len = [z_list ? z_list.len : "null"]")
+	CRASH("Unmanaged z-level [z]! maxz = [world.maxz], length(z_list) = [z_list ? length(z_list) : "null"]")
