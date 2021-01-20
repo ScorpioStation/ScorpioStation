@@ -149,7 +149,7 @@
 	},
 /area/shuttle/freegolem)
 "aA" = (
-/turf/simulated/floor/plating/asteroid/basalt/lava_land_surface,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/powered/golem_ship)
 "aB" = (
 /obj/structure/window/full/shuttle{
@@ -200,7 +200,7 @@
 	height = 20;
 	id = "freegolem_lavaland";
 	name = "Lavaland Surface";
-	turf_type = /turf/simulated/floor/plating/asteroid/basalt/lava_land_surface;
+	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface;
 	width = 16
 	},
 /obj/docking_port/mobile{
@@ -287,7 +287,7 @@
 /area/shuttle/freegolem)
 "aP" = (
 /obj/machinery/computer/shuttle/golem_ship/recall,
-/turf/simulated/floor/plating/asteroid/basalt/lava_land_surface,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/powered/golem_ship)
 "aQ" = (
 /obj/structure/table/wood,

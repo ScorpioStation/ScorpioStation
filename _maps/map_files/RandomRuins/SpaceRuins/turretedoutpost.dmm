@@ -8,7 +8,7 @@
 /area/space/nearstation)
 "c" = (
 /obj/structure/grille,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "d" = (
 /turf/simulated/wall/r_wall,
@@ -16,42 +16,42 @@
 "e" = (
 /obj/structure/table/reinforced,
 /obj/item/stock_parts/cell/hyper,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "f" = (
 /obj/structure/computerframe,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "g" = (
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "h" = (
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "i" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "j" = (
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "k" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "l" = (
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/unpowered)
 "m" = (
 /obj/structure/table/reinforced,
 /obj/item/folder,
 /obj/item/radio,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "n" = (
 /obj/structure/chair{
@@ -59,30 +59,30 @@
 	icon_state = "chair";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "o" = (
 /obj/machinery/porta_turret,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/unpowered)
 "p" = (
 /obj/structure/filingcabinet,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "q" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "r" = (
 /obj/structure/rack,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 8
 	},
 /area/ruin/unpowered)
 "s" = (
 /obj/item/rack_parts,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 8
 	},
@@ -92,18 +92,18 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 8
 	},
 /area/ruin/unpowered)
 "u" = (
 /obj/machinery/door/airlock/public/glass,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "v" = (
 /obj/machinery/door/airlock,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "w" = (
 /obj/machinery/power/apc/noalarm{
@@ -112,23 +112,23 @@
 	keep_preset_name = 1;
 	pixel_y = -24
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "x" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/ruin/unpowered)
 "y" = (
 /obj/structure/dispenser/oxygen,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/ruin/unpowered)
 "z" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/head/ushanka,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "darkredfull"
 	},
@@ -138,7 +138,7 @@
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_y = 32
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "B" = (
 /obj/structure/table/reinforced,
@@ -147,16 +147,16 @@
 	dir = 1
 	},
 /obj/item/radio,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "C" = (
 /obj/machinery/vending/clothing,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "D" = (
 /obj/structure/rack,
 /obj/item/ammo_box/c9mm,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 8
 	},
@@ -168,12 +168,12 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "F" = (
 /obj/structure/rack,
 /obj/item/clothing/head/helmet/swat,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 8
 	},
@@ -182,37 +182,37 @@
 /obj/structure/rack,
 /obj/item/crowbar/red,
 /obj/item/paper/crumpled,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 8
 	},
 /area/ruin/unpowered)
 "H" = (
 /obj/structure/chair,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "I" = (
 /obj/structure/chair/comfy/beige{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "J" = (
 /obj/structure/bed,
 /obj/item/bedsheet/orange,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "K" = (
 /obj/structure/rack,
 /obj/item/grenade/chem_grenade/teargas,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/ruin/unpowered)
 "L" = (
 /obj/structure/table/reinforced,
 /obj/item/paper/crumpled,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "darkredfull"
 	},
@@ -221,17 +221,17 @@
 /obj/structure/table/reinforced,
 /obj/machinery/light,
 /obj/item/camera_bug,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "N" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "O" = (
 /obj/structure/table/reinforced,
 /obj/item/pen/blue,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "P" = (
 /obj/structure/table/wood,
@@ -242,13 +242,13 @@
 /obj/item/reagent_containers/food/drinks/bottle/vodka{
 	pixel_x = 3
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Q" = (
 /obj/structure/rack,
 /obj/item/storage/belt/military,
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 8
 	},
@@ -256,7 +256,7 @@
 "R" = (
 /obj/structure/rack,
 /obj/item/clothing/head/helmet/riot,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 8
 	},
@@ -268,7 +268,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 
 (1,1,1) = {"

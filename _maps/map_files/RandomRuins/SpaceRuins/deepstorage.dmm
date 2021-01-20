@@ -16,7 +16,7 @@
 /obj/item/stack/sheet/mineral/silver,
 /obj/item/stack/sheet/mineral/gold,
 /obj/item/stack/sheet/mineral/gold,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "ae" = (
 /obj/structure/closet/cardboard,
@@ -25,7 +25,7 @@
 /obj/item/storage/box/monkeycubes,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/storage/toolbox/mechanical,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "af" = (
 /obj/structure/closet/cardboard,
@@ -33,7 +33,7 @@
 /obj/item/stack/cable_coil,
 /obj/item/stack/sheet/wood,
 /obj/item/stack/packageWrap,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "ag" = (
 /obj/structure/closet/cardboard,
@@ -42,7 +42,7 @@
 /obj/item/storage/box/drinkingglasses,
 /obj/item/storage/box/zipties,
 /obj/item/kitchen/knife/combat,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "ah" = (
 /obj/structure/closet/cardboard,
@@ -78,7 +78,7 @@
 /obj/item/stack/rods{
 	amount = 50
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "ai" = (
 /obj/structure/closet/cardboard,
@@ -108,7 +108,7 @@
 	},
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/shoes/combat,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aj" = (
 /obj/structure/closet/cardboard,
@@ -126,7 +126,7 @@
 /obj/item/flashlight,
 /obj/item/flashlight,
 /obj/item/shovel,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "ak" = (
 /obj/structure/closet/cardboard,
@@ -141,7 +141,7 @@
 /obj/item/extinguisher,
 /obj/item/clothing/glasses/night,
 /obj/item/clothing/glasses/night,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "al" = (
 /obj/structure/closet/cardboard,
@@ -153,7 +153,7 @@
 /obj/item/storage/box/bodybags,
 /obj/item/clothing/glasses/meson,
 /obj/item/clothing/glasses/meson,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "am" = (
 /obj/structure/closet/cardboard,
@@ -162,13 +162,13 @@
 /obj/item/hatchet,
 /obj/item/kitchen/rollingpin,
 /obj/item/cultivator,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "an" = (
 /obj/structure/closet/cardboard,
 /obj/item/defibrillator,
 /obj/item/storage/box/autoinjectors,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "ao" = (
 /obj/structure/closet/cardboard,
@@ -182,7 +182,7 @@
 /obj/item/ammo_box/c9mm,
 /obj/item/ammo_box/c9mm,
 /obj/item/ammo_box/c9mm,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "ap" = (
 /obj/structure/closet/crate/freezer,
@@ -197,34 +197,34 @@
 /obj/item/reagent_containers/iv_bag/blood/random,
 /obj/item/reagent_containers/iv_bag/blood/random,
 /obj/item/reagent_containers/iv_bag/blood/random,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aq" = (
 /obj/machinery/iv_drip,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "ar" = (
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "as" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "at" = (
 /obj/machinery/portable_atmospherics/canister/air,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "au" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "Bunker"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "av" = (
 /obj/structure/toilet{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/ruin/unpowered)
@@ -238,7 +238,7 @@
 	pixel_x = 11;
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/ruin/unpowered)
@@ -247,7 +247,7 @@
 /obj/item/storage/toolbox/mechanical,
 /obj/item/flashlight,
 /obj/item/flashlight,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "ay" = (
 /obj/structure/table,
@@ -262,14 +262,14 @@
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_y = 30
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "az" = (
 /obj/structure/table,
 /obj/item/storage/backpack/duffel/security{
 	pixel_y = 6
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aA" = (
 /obj/structure/table,
@@ -280,7 +280,7 @@
 /obj/item/radio{
 	pixel_x = 4
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aB" = (
 /obj/structure/table,
@@ -294,7 +294,7 @@
 	},
 /obj/item/stack/cable_coil,
 /obj/item/stack/cable_coil,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aC" = (
 /obj/structure/table,
@@ -303,7 +303,7 @@
 	pixel_y = 4
 	},
 /obj/item/storage/firstaid/brute,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aD" = (
 /obj/structure/table,
@@ -315,11 +315,11 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aE" = (
 /obj/structure/closet/crate/radiation,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aF" = (
 /obj/structure/closet/cardboard,
@@ -328,7 +328,7 @@
 /obj/item/reagent_containers/food/snacks/beans,
 /obj/item/reagent_containers/food/snacks/beans,
 /obj/item/reagent_containers/food/snacks/beans,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aG" = (
 /obj/structure/closet/cardboard,
@@ -337,27 +337,27 @@
 /obj/item/reagent_containers/food/drinks/cans/cola,
 /obj/item/reagent_containers/food/drinks/cans/cola,
 /obj/item/reagent_containers/food/drinks/cans/cola,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aH" = (
 /obj/machinery/vending/clothing,
-/turf/simulated/floor/wood{
+/turf/open/floor/wood{
 	tag = "icon-wood-broken";
 	icon_state = "wood-broken"
 	},
 /area/ruin/unpowered)
 "aI" = (
-/turf/simulated/floor/wood{
+/turf/open/floor/wood{
 	tag = "icon-wood-broken2";
 	icon_state = "wood-broken2"
 	},
 /area/ruin/unpowered)
 "aJ" = (
 /obj/structure/bed,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/unpowered)
 "aK" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/ruin/unpowered)
@@ -366,7 +366,7 @@
 	dir = 4;
 	pixel_y = -8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/ruin/unpowered)
@@ -377,7 +377,7 @@
 /obj/item/clothing/mask/gas,
 /obj/item/clothing/mask/gas,
 /obj/item/clothing/mask/gas,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aN" = (
 /obj/structure/table,
@@ -386,7 +386,7 @@
 /obj/item/healthanalyzer,
 /obj/item/stack/medical/bruise_pack,
 /obj/item/stack/medical/bruise_pack,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aO" = (
 /obj/structure/closet/radiation,
@@ -394,7 +394,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aP" = (
 /obj/structure/closet/cardboard,
@@ -407,21 +407,21 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aQ" = (
 /obj/structure/closet/wardrobe/pink,
-/turf/simulated/floor/wood{
+/turf/open/floor/wood{
 	tag = "icon-wood-broken2";
 	icon_state = "wood-broken2"
 	},
 /area/ruin/unpowered)
 "aR" = (
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/unpowered)
 "aS" = (
 /obj/structure/bed,
-/turf/simulated/floor/wood{
+/turf/open/floor/wood{
 	tag = "icon-wood-broken";
 	icon_state = "wood-broken"
 	},
@@ -430,7 +430,7 @@
 /obj/machinery/shower{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/ruin/unpowered)
@@ -438,7 +438,7 @@
 /obj/machinery/shower{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/ruin/unpowered)
@@ -450,7 +450,7 @@
 /obj/item/storage/firstaid/toxin,
 /obj/item/storage/firstaid/toxin,
 /obj/item/storage/pill_bottle/charcoal,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aW" = (
 /obj/structure/table,
@@ -460,28 +460,28 @@
 /obj/item/flashlight/flare,
 /obj/item/flashlight/flare,
 /obj/item/crowbar/red,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aX" = (
 /obj/machinery/suit_storage_unit,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "aY" = (
 /obj/structure/closet/wardrobe/pink,
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/unpowered)
 "aZ" = (
-/turf/simulated/floor/wood{
+/turf/open/floor/wood{
 	tag = "icon-wood-broken";
 	icon_state = "wood-broken"
 	},
 /area/ruin/unpowered)
 "ba" = (
 /obj/structure/bed,
-/turf/simulated/floor/wood{
+/turf/open/floor/wood{
 	tag = "icon-wood-broken2";
 	icon_state = "wood-broken2"
 	},
@@ -491,14 +491,14 @@
 	dir = 4
 	},
 /obj/item/soap,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/ruin/unpowered)
 "bc" = (
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bd" = (
 /obj/structure/closet/cardboard,
@@ -507,13 +507,13 @@
 /obj/item/storage/box/donkpockets,
 /obj/item/storage/box/donkpockets,
 /obj/item/storage/box/donkpockets,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "be" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "Bunker"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/ruin/unpowered)
@@ -523,7 +523,7 @@
 	icon_state = "fireaxe0130";
 	pixel_y = 28
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bg" = (
 /obj/machinery/sleeper{
@@ -533,54 +533,54 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bh" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bi" = (
 /obj/machinery/light/small{
 	dir = 4;
 	pixel_y = -8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bj" = (
 /obj/machinery/sleeper{
 	icon_state = "sleeper-open";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bk" = (
 /obj/machinery/processor{
 	name = "processor"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bl" = (
 /obj/structure/table,
 /obj/item/storage/box/matches,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bm" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bn" = (
 /obj/structure/table,
 /obj/machinery/recharger,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bo" = (
 /obj/machinery/hydroponics/constructable{
 	pixel_y = 9
 	},
-/turf/simulated/floor/light,
+/turf/open/floor/light,
 /area/ruin/unpowered)
 "bp" = (
 /obj/machinery/hydroponics/constructable{
@@ -589,7 +589,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/light,
+/turf/open/floor/light,
 /area/ruin/unpowered)
 "br" = (
 /obj/structure/cable{
@@ -597,7 +597,7 @@
 	d2 = 4
 	},
 /obj/machinery/power/port_gen/pacman,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bs" = (
 /obj/structure/cable{
@@ -606,29 +606,29 @@
 	icon_state = "2-8"
 	},
 /obj/machinery/power/smes,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bu" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
 /obj/structure/dispenser/oxygen,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bv" = (
 /obj/machinery/biogenerator,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bw" = (
 /obj/machinery/light,
 /obj/machinery/hydroponics/constructable{
 	pixel_y = 9
 	},
-/turf/simulated/floor/light,
+/turf/open/floor/light,
 /area/ruin/unpowered)
 "bx" = (
 /obj/machinery/autolathe,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "by" = (
 /obj/structure/cable{
@@ -640,22 +640,22 @@
 	icon_state = "term";
 	dir = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bz" = (
 /obj/structure/reagent_dispensers/fueltank,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bA" = (
 /obj/structure/table,
 /obj/machinery/kitchen_machine/microwave,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-bar";
 	icon_state = "bar"
 	},
 /area/ruin/unpowered)
 "bB" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-bar";
 	icon_state = "bar"
 	},
@@ -663,7 +663,7 @@
 "bC" = (
 /obj/structure/table,
 /obj/item/storage/box/donkpockets,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-bar";
 	icon_state = "bar"
 	},
@@ -671,7 +671,7 @@
 "bD" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/snacks/beans,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-bar";
 	icon_state = "bar"
 	},
@@ -680,14 +680,14 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-bar";
 	icon_state = "bar"
 	},
 /area/ruin/unpowered)
 "bF" = (
 /obj/machinery/seed_extractor,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bG" = (
 /obj/machinery/power/apc/noalarm{
@@ -701,7 +701,7 @@
 	icon_state = "0-4";
 	d2 = 4
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bH" = (
 /obj/structure/cable{
@@ -711,7 +711,7 @@
 	pixel_y = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bI" = (
 /obj/structure/cable{
@@ -720,23 +720,23 @@
 	icon_state = "1-8";
 	tag = ""
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bJ" = (
 /obj/structure/reagent_dispensers/watertank,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bK" = (
 /obj/structure/table,
 /obj/item/kitchen/knife,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-bar";
 	icon_state = "bar"
 	},
 /area/ruin/unpowered)
 "bL" = (
 /obj/structure/table,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-bar";
 	icon_state = "bar"
 	},
@@ -744,18 +744,18 @@
 "bM" = (
 /obj/structure/table,
 /obj/item/kitchen/utensil/fork,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-bar";
 	icon_state = "bar"
 	},
 /area/ruin/unpowered)
 "bN" = (
 /obj/machinery/vending/hydronutrients,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bO" = (
 /obj/machinery/space_heater,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bP" = (
 /obj/structure/chair/office/dark{
@@ -763,22 +763,22 @@
 	icon_state = "officechair_dark";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bQ" = (
 /obj/structure/table/reinforced,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bR" = (
 /obj/machinery/smartfridge,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-bar";
 	icon_state = "bar"
 	},
 /area/ruin/unpowered)
 "bS" = (
 /obj/machinery/light/small,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-bar";
 	icon_state = "bar"
 	},
@@ -787,21 +787,21 @@
 /obj/machinery/vending/hydroseeds{
 	slogan_delay = 700
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bU" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bV" = (
 /obj/structure/chair/office/dark,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bW" = (
 /obj/structure/computerframe,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bX" = (
 /obj/structure/table/reinforced,
@@ -812,7 +812,7 @@
 	pixel_x = 0;
 	pixel_y = 2
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bY" = (
 /obj/structure/table/reinforced,
@@ -826,7 +826,7 @@
 	name = "Outer Doors";
 	pixel_y = -4
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bZ" = (
 /obj/machinery/door/poddoor{
@@ -834,22 +834,22 @@
 	name = "Bunker Door";
 	tag = "inner"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "ca" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "cb" = (
 /obj/machinery/camera{
 	network = list("Bunker1")
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "cc" = (
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "cd" = (
 /obj/machinery/door/poddoor{
@@ -857,16 +857,16 @@
 	name = "Bunker Door";
 	tag = "outer"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "ce" = (
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/ruin/unpowered)
 "mL" = (
 /obj/machinery/tcomms/relay/ruskie{
 	network_id = "STORAGE-RELAY"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 
 (1,1,1) = {"

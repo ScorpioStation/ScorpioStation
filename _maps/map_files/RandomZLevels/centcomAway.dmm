@@ -17,7 +17,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "ae" = (
 /obj/structure/grille,
@@ -25,7 +25,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "af" = (
 /obj/structure/grille,
@@ -36,29 +36,29 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "ag" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "ah" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	req_access_txt = "101"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/awaymission/centcomAway/maint)
 "ai" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/awaymission/centcomAway/cafe)
 "aj" = (
 /obj/machinery/vending/cigarette,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -68,7 +68,7 @@
 /area/awaymission/centcomAway/cafe)
 "al" = (
 /obj/structure/closet/chefcloset,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -76,7 +76,7 @@
 /area/awaymission/centcomAway/cafe)
 "am" = (
 /obj/machinery/vending/dinnerware,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -85,7 +85,7 @@
 "an" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -95,7 +95,7 @@
 /obj/structure/table,
 /obj/item/reagent_containers/food/condiment/peppermill,
 /obj/item/reagent_containers/food/condiment/saltshaker,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -104,7 +104,7 @@
 "ap" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -116,7 +116,7 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -126,7 +126,7 @@
 /obj/structure/table,
 /obj/item/reagent_containers/glass/beaker,
 /obj/item/reagent_containers/food/condiment/enzyme,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -139,7 +139,7 @@
 	pixel_y = 3
 	},
 /obj/item/kitchen/rollingpin,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -156,17 +156,17 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "au" = (
 /obj/machinery/hydroponics/constructable,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/cafe)
 "av" = (
 /obj/item/reagent_containers/glass/bucket,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/cafe)
@@ -175,18 +175,18 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/awaymission/centcomAway/cafe)
 "ax" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/centcomAway/cafe)
 "ay" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -194,14 +194,14 @@
 /area/awaymission/centcomAway/cafe)
 "az" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/centcomAway/cafe)
 "aA" = (
 /obj/structure/table,
 /obj/item/kitchen/knife/butcher,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/centcomAway/cafe)
@@ -213,39 +213,39 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "aC" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
 	},
 /area/awaymission/centcomAway/cafe)
 "aD" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 5;
 	icon_state = "green"
 	},
 /area/awaymission/centcomAway/cafe)
 "aE" = (
 /obj/machinery/portable_atmospherics/canister/air,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "aF" = (
 /obj/structure/table,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/cafe)
 "aG" = (
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/cafe)
 "aH" = (
 /obj/structure/closet/secure_closet/personal,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/cafe)
 "aI" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 9;
 	icon_state = "green"
 	},
@@ -255,7 +255,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -272,11 +272,11 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "aL" = (
 /obj/structure/table,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull";
 	icon_state = "redyellowfull"
 	},
@@ -285,7 +285,7 @@
 /obj/structure/chair/stool{
 	pixel_y = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -293,7 +293,7 @@
 "aN" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/shaker,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/centcomAway/cafe)
@@ -303,7 +303,7 @@
 	pixel_x = -3;
 	pixel_y = 6
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -311,20 +311,20 @@
 /area/awaymission/centcomAway/cafe)
 "aP" = (
 /obj/machinery/portable_atmospherics/pump,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "aQ" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 4
 	},
 /area/awaymission/centcomAway/cafe)
 "aR" = (
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/cafe)
 "aS" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 8
 	},
@@ -368,7 +368,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/cafe)
@@ -379,11 +379,11 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/cafe)
 "aZ" = (
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -394,7 +394,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "bb" = (
 /obj/structure/grille,
@@ -405,21 +405,21 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "bc" = (
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "bd" = (
 /obj/item/radio,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "be" = (
 /obj/structure/table/reinforced,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -427,7 +427,7 @@
 /area/awaymission/centcomAway/cafe)
 "bf" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -435,7 +435,7 @@
 /area/awaymission/centcomAway/cafe)
 "bg" = (
 /obj/structure/sink,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -443,7 +443,7 @@
 /area/awaymission/centcomAway/cafe)
 "bh" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -455,7 +455,7 @@
 	pixel_x = 0;
 	pixel_y = 10
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -466,47 +466,47 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 5
 	},
 /area/awaymission/centcomAway/hangar)
 "bk" = (
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "bl" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/fire,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "bm" = (
 /obj/structure/lattice,
 /turf/space,
 /area/space/nearstation)
 "bn" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 5
 	},
 /area/awaymission/centcomAway/hangar)
 "bo" = (
 /obj/effect/decal/cleanable/blood/oil,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 5
 	},
 /area/awaymission/centcomAway/hangar)
 "bp" = (
 /obj/structure/table/reinforced,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/awaymission/centcomAway/cafe)
 "bq" = (
 /obj/machinery/door/airlock/freezer,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -514,7 +514,7 @@
 "br" = (
 /obj/machinery/chem_dispenser,
 /obj/item/storage/box/beakers,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -526,7 +526,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -538,12 +538,12 @@
 	name = "XCC Main Hangar"
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/hangar)
 "bu" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHWEST)";
 	icon_state = "vault";
 	dir = 9
@@ -560,10 +560,10 @@
 	icon_state = "propulsion_r";
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "bx" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 5
 	},
@@ -577,19 +577,19 @@
 	icon_state = "propulsion_l";
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "bz" = (
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/disposal,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "bA" = (
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/centcomAway/cafe)
 "bB" = (
 /obj/structure/closet/secure_closet/hydroponics,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/cafe)
@@ -598,10 +598,10 @@
 	icon_state = "propulsion";
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "bD" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 5
 	},
@@ -612,14 +612,14 @@
 /area/awaymission/centcomAway/hangar)
 "bE" = (
 /obj/structure/closet/crate,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 5
 	},
 /area/awaymission/centcomAway/hangar)
 "bF" = (
 /obj/structure/closet/secure_closet/freezer/meat,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -632,7 +632,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -641,10 +641,10 @@
 /obj/machinery/door/airlock/external{
 	name = "Salvage Shuttle Dock"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "bI" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -654,7 +654,7 @@
 /obj/item/extinguisher/mini,
 /obj/item/clothing/head/hardhat/red,
 /obj/item/clothing/gloves/color/black,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "bK" = (
 /obj/structure/window/reinforced,
@@ -662,7 +662,7 @@
 	icon_state = "heater";
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "bL" = (
 /turf/simulated/shuttle/wall{
@@ -697,7 +697,7 @@
 "bQ" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/reagent_dispensers/watertank,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "bR" = (
 /turf/simulated/shuttle/wall{
@@ -707,14 +707,14 @@
 /area/awaymission/centcomAway/hangar)
 "bS" = (
 /obj/structure/chair/comfy/brown,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/awaymission/centcomAway/cafe)
 "bT" = (
 /obj/structure/reagent_dispensers/beerkeg,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -725,7 +725,7 @@
 /area/awaymission/centcomAway/hangar)
 "bV" = (
 /obj/structure/table,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
@@ -733,7 +733,7 @@
 /area/awaymission/centcomAway/cafe)
 "bW" = (
 /obj/structure/kitchenspike,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -749,19 +749,19 @@
 /area/awaymission/centcomAway/hangar)
 "bZ" = (
 /obj/machinery/gibber,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/awaymission/centcomAway/cafe)
 "ca" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 6
 	},
 /area/awaymission/centcomAway/cafe)
 "cb" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "green"
 	},
@@ -775,7 +775,7 @@
 	id = "centcomawaysolar";
 	name = "Starboard Solar Array"
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "solarpanel"
 	},
 /area/awaymission/centcomAway/maint)
@@ -827,7 +827,7 @@
 	dir = 8
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "ci" = (
 /obj/structure/table,
@@ -865,11 +865,11 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "cm" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "cn" = (
 /turf/simulated/shuttle/floor,
@@ -881,7 +881,7 @@
 "co" = (
 /obj/item/paper_bin,
 /obj/structure/table,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull";
 	icon_state = "redyellowfull"
 	},
@@ -889,7 +889,7 @@
 "cp" = (
 /obj/item/clipboard,
 /obj/structure/table,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull";
 	icon_state = "redyellowfull"
 	},
@@ -900,19 +900,19 @@
 "cr" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/window/southright,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-greenfull (NORTH)";
 	icon_state = "greenfull";
 	dir = 1
 	},
 /area/awaymission/centcomAway/cafe)
 "cs" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/cafe)
 "ct" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 8
 	},
@@ -921,7 +921,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/cafe)
@@ -931,12 +931,12 @@
 	pixel_x = 0;
 	pixel_y = 3
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "hydrofloor"
 	},
 /area/awaymission/centcomAway/cafe)
 "cw" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "hydrofloor"
 	},
 /area/awaymission/centcomAway/cafe)
@@ -948,7 +948,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "cy" = (
 /obj/structure/sign/vacuum,
@@ -963,7 +963,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "cA" = (
 /obj/machinery/door/airlock/maintenance_hatch{
@@ -978,7 +978,7 @@
 	icon_state = "2-4";
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "cC" = (
 /turf/simulated/wall,
@@ -990,23 +990,23 @@
 /obj/machinery/door/airlock/maintenance_hatch{
 	req_access_txt = "101"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "cF" = (
 /obj/machinery/door/window/westleft,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/cafe)
 "cG" = (
 /obj/structure/table/reinforced,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/cafe)
 "cH" = (
 /obj/machinery/seed_extractor,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "hydrofloor"
 	},
 /area/awaymission/centcomAway/cafe)
@@ -1014,19 +1014,19 @@
 /obj/machinery/vending/hydroseeds{
 	slogan_delay = 700
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "hydrofloor"
 	},
 /area/awaymission/centcomAway/cafe)
 "cJ" = (
 /obj/machinery/vending/hydronutrients,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "hydrofloor"
 	},
 /area/awaymission/centcomAway/cafe)
 "cK" = (
 /obj/machinery/biogenerator,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "hydrofloor"
 	},
 /area/awaymission/centcomAway/cafe)
@@ -1039,7 +1039,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/awaymission/centcomAway/maint)
 "cM" = (
 /obj/structure/cable{
@@ -1049,7 +1049,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "cN" = (
 /obj/structure/cable{
@@ -1118,12 +1118,12 @@
 /turf/simulated/shuttle/plating,
 /area/awaymission/centcomAway/hangar)
 "cU" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "cV" = (
 /obj/item/pen,
 /obj/structure/table,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull";
 	icon_state = "redyellowfull"
 	},
@@ -1133,7 +1133,7 @@
 	dir = 1;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/cafe)
@@ -1145,7 +1145,7 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/cafe)
@@ -1160,7 +1160,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 8
 	},
@@ -1178,7 +1178,7 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "hydrofloor"
 	},
 /area/awaymission/centcomAway/cafe)
@@ -1189,7 +1189,7 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "dd" = (
 /obj/structure/grille,
@@ -1200,7 +1200,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "de" = (
 /obj/structure/table,
@@ -1221,7 +1221,7 @@
 /turf/simulated/shuttle/floor,
 /area/awaymission/centcomAway/hangar)
 "dh" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 5
 	},
@@ -1231,7 +1231,7 @@
 	},
 /area/awaymission/centcomAway/hangar)
 "di" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 5
 	},
@@ -1245,7 +1245,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 5
 	},
@@ -1263,7 +1263,7 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "dl" = (
 /turf/simulated/shuttle/wall{
@@ -1324,18 +1324,18 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "dt" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/awaymission/centcomAway/maint)
 "du" = (
 /obj/structure/dresser,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/cafe)
 "dv" = (
 /obj/machinery/vending/boozeomat{
@@ -1348,14 +1348,14 @@
 	dir = 1
 	},
 /obj/machinery/disposal,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "dx" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/cafe)
@@ -1364,7 +1364,7 @@
 	dir = 2;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 8
 	},
@@ -1374,7 +1374,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHWEST)";
 	icon_state = "vault";
 	dir = 9
@@ -1391,21 +1391,21 @@
 "dB" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/window/northright,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
 /area/awaymission/centcomAway/cafe)
 "dC" = (
 /obj/structure/reagent_dispensers/fueltank,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 5
 	},
 /area/awaymission/centcomAway/hangar)
 "dD" = (
 /obj/structure/closet/firecloset/full,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "dE" = (
 /obj/structure/bed,
@@ -1426,7 +1426,7 @@
 /turf/simulated/shuttle/plating,
 /area/awaymission/centcomAway/hangar)
 "dG" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (EAST)";
 	icon_state = "vault";
 	dir = 4
@@ -1434,27 +1434,27 @@
 /area/awaymission/centcomAway/hangar)
 "dH" = (
 /obj/structure/reagent_dispensers/beerkeg,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
 /area/awaymission/centcomAway/cafe)
 "dI" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
 /area/awaymission/centcomAway/cafe)
 "dJ" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
 /area/awaymission/centcomAway/cafe)
 "dK" = (
 /obj/structure/table,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
@@ -1463,13 +1463,13 @@
 /mob/living/simple_animal/hostile/russian/ranged{
 	loot = list(/obj/effect/mob_spawn/human/corpse/russian/ranged)
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/centcomAway/cafe)
 "dM" = (
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/centcomAway/cafe)
@@ -1479,19 +1479,19 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/awaymission/centcomAway/cafe)
 "dO" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 5
 	},
 /area/awaymission/centcomAway/cafe)
 "dP" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 1
 	},
@@ -1509,11 +1509,11 @@
 	icon_state = "1-4";
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "dR" = (
 /obj/structure/chair/stool/bar,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -1557,20 +1557,20 @@
 "dV" = (
 /obj/structure/closet/crate,
 /obj/effect/decal/warning_stripes/northwest,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "dW" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "dX" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	req_access_txt = "101"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "dY" = (
 /obj/effect/decal/warning_stripes/north,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "dZ" = (
 /obj/structure/grille,
@@ -1581,7 +1581,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "ea" = (
 /obj/structure/grille,
@@ -1592,7 +1592,7 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "eb" = (
 /obj/structure/grille,
@@ -1600,19 +1600,19 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "ec" = (
 /obj/machinery/chem_master/condimaster{
 	name = "CondiMaster Neo"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/awaymission/centcomAway/cafe)
 "ed" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 4
 	},
@@ -1623,14 +1623,14 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/cafe)
 "ef" = (
 /obj/structure/largecrate,
 /obj/effect/decal/warning_stripes/northeast,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "eg" = (
 /turf/simulated/shuttle/wall{
@@ -1660,7 +1660,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
@@ -1668,20 +1668,20 @@
 "ek" = (
 /obj/machinery/chem_dispenser,
 /obj/item/storage/box/beakers,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
 /area/awaymission/centcomAway/cafe)
 "el" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 8
 	},
 /area/awaymission/centcomAway/cafe)
 "em" = (
 /obj/machinery/chem_master,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
@@ -1689,7 +1689,7 @@
 "en" = (
 /obj/structure/closet/crate,
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "eo" = (
 /obj/structure/cable,
@@ -1700,7 +1700,7 @@
 "ep" = (
 /obj/structure/table,
 /obj/item/storage/fancy/donut_box,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull";
 	icon_state = "redyellowfull"
 	},
@@ -1710,14 +1710,14 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
 /area/awaymission/centcomAway/cafe)
 "er" = (
 /obj/structure/table/reinforced,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
@@ -1734,13 +1734,13 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "et" = (
 /obj/structure/sink/kitchen{
 	pixel_y = 28
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
@@ -1751,7 +1751,7 @@
 	pixel_x = 0;
 	pixel_y = 10
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
@@ -1762,7 +1762,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "ew" = (
 /obj/structure/bed,
@@ -1789,7 +1789,7 @@
 	pixel_x = -3;
 	pixel_y = 6
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
@@ -1797,17 +1797,17 @@
 "ez" = (
 /obj/structure/ore_box,
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "eA" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/effect/decal/warning_stripes/northwest,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "eB" = (
 /obj/machinery/shieldgen,
 /obj/effect/decal/warning_stripes/north,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "eC" = (
 /obj/machinery/power/apc/noalarm{
@@ -1826,7 +1826,7 @@
 	pixel_y = 0
 	},
 /obj/structure/cable,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "eD" = (
 /obj/machinery/door/airlock/hatch{
@@ -1839,7 +1839,7 @@
 /area/awaymission/centcomAway/hangar)
 "eE" = (
 /obj/effect/decal/warning_stripes/northeast,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "eF" = (
 /turf/simulated/wall/r_wall,
@@ -1847,22 +1847,22 @@
 "eG" = (
 /obj/structure/largecrate,
 /obj/effect/decal/warning_stripes/southwest,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "eH" = (
 /obj/machinery/space_heater,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "eI" = (
 /obj/structure/closet/emcloset,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "eJ" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "eK" = (
 /obj/structure/table,
@@ -1872,7 +1872,7 @@
 "eL" = (
 /obj/structure/closet/crate,
 /obj/effect/decal/warning_stripes/south,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "eM" = (
 /obj/structure/filingcabinet,
@@ -1880,10 +1880,10 @@
 /area/awaymission/centcomAway/hangar)
 "eN" = (
 /obj/effect/decal/warning_stripes/southeast,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "eO" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -1908,38 +1908,38 @@
 	pixel_y = 1;
 	d2 = 2
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/awaymission/centcomAway/cafe)
 "eS" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
 /area/awaymission/centcomAway/cafe)
 "eT" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 6
 	},
 /area/awaymission/centcomAway/cafe)
 "eU" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/general)
 "eV" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 10
 	},
 /area/awaymission/centcomAway/cafe)
 "eW" = (
 /obj/machinery/implantchair,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/general)
@@ -1950,16 +1950,16 @@
 	dir = 8
 	},
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "eY" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /obj/effect/decal/warning_stripes/southwest,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "eZ" = (
 /obj/effect/decal/warning_stripes/south,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "fa" = (
 /obj/structure/table,
@@ -1978,11 +1978,11 @@
 "fd" = (
 /obj/machinery/portable_atmospherics/pump,
 /obj/effect/decal/warning_stripes/southeast,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "fe" = (
 /obj/structure/flora/ausbushes,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-asteroid11";
 	name = "plating";
 	icon_state = "asteroid11"
@@ -1990,7 +1990,7 @@
 /area/awaymission/centcomAway/cafe)
 "ff" = (
 /obj/structure/flora/ausbushes,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-asteroid2";
 	name = "plating";
 	icon_state = "asteroid2"
@@ -2008,19 +2008,19 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "fh" = (
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/general)
 "fi" = (
 /obj/structure/flora/ausbushes,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-asteroid";
 	name = "plating";
 	icon_state = "asteroid"
@@ -2031,7 +2031,7 @@
 /area/awaymission/centcomAway/courtroom)
 "fk" = (
 /obj/structure/flora/ausbushes,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-asteroid3";
 	name = "plating";
 	icon_state = "asteroid3"
@@ -2047,7 +2047,7 @@
 /area/awaymission/centcomAway/hangar)
 "fn" = (
 /obj/structure/flora/ausbushes,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-asteroid10";
 	name = "plating";
 	icon_state = "asteroid10"
@@ -2055,7 +2055,7 @@
 /area/awaymission/centcomAway/cafe)
 "fo" = (
 /obj/structure/flora/ausbushes,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-asteroid9";
 	name = "plating";
 	icon_state = "asteroid9"
@@ -2063,7 +2063,7 @@
 /area/awaymission/centcomAway/cafe)
 "fp" = (
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -2076,7 +2076,7 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -2092,14 +2092,14 @@
 /area/awaymission/centcomAway/hangar)
 "fs" = (
 /obj/structure/closet/chefcloset,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
 /area/awaymission/centcomAway/cafe)
 "ft" = (
 /obj/machinery/vending/dinnerware,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
@@ -2109,7 +2109,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
@@ -2118,7 +2118,7 @@
 /obj/structure/table,
 /obj/item/reagent_containers/food/condiment/peppermill,
 /obj/item/reagent_containers/food/condiment/saltshaker,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
@@ -2126,17 +2126,17 @@
 "fw" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
 /area/awaymission/centcomAway/cafe)
 "fx" = (
 /obj/structure/closet/secure_closet/security,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/courtroom)
 "fy" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -2173,19 +2173,19 @@
 "fC" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
 /area/awaymission/centcomAway/cafe)
 "fD" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "fE" = (
 /obj/structure/table,
 /obj/item/reagent_containers/glass/beaker,
 /obj/item/reagent_containers/food/condiment/enzyme,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
@@ -2203,7 +2203,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "fH" = (
 /obj/structure/grille,
@@ -2211,7 +2211,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "fI" = (
 /obj/structure/grille,
@@ -2222,7 +2222,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "fJ" = (
 /obj/structure/grille,
@@ -2233,7 +2233,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "fL" = (
 /obj/structure/table,
@@ -2242,13 +2242,13 @@
 	pixel_y = 3
 	},
 /obj/item/kitchen/rollingpin,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redfull";
 	icon_state = "redfull"
 	},
 /area/awaymission/centcomAway/cafe)
 "fM" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /turf/simulated/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
@@ -2261,7 +2261,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -2278,7 +2278,7 @@
 	},
 /area/awaymission/centcomAway/hangar)
 "fQ" = (
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/courtroom)
 "fR" = (
 /obj/machinery/door/airlock/hatch{
@@ -2291,19 +2291,19 @@
 /area/awaymission/centcomAway/hangar)
 "fS" = (
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/courtroom)
 "fT" = (
 /obj/structure/table/wood,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/courtroom)
 "fU" = (
 /obj/structure/chair,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/courtroom)
 "fV" = (
 /obj/structure/table/wood,
@@ -2313,21 +2313,21 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaymission/centcomAway/courtroom)
 "fW" = (
 /obj/structure/table/wood,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaymission/centcomAway/courtroom)
 "fX" = (
 /obj/machinery/door/window/northleft,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaymission/centcomAway/courtroom)
 "fY" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -2338,7 +2338,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -2355,14 +2355,14 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
 	},
 /area/awaymission/centcomAway/general)
 "gc" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 9;
 	icon_state = "yellow"
 	},
@@ -2372,12 +2372,12 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "ge" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 5;
 	icon_state = "yellow"
 	},
@@ -2388,7 +2388,7 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "yellow"
 	},
@@ -2399,21 +2399,21 @@
 /area/awaymission/centcomAway/general)
 "gh" = (
 /obj/machinery/door/window/eastright,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "gi" = (
 /obj/machinery/door/window/northleft,
 /obj/structure/chair,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/courtroom)
 "gj" = (
 /obj/structure/table/wood,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -2422,7 +2422,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -2431,27 +2431,27 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaymission/centcomAway/courtroom)
 "gm" = (
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaymission/centcomAway/courtroom)
 "gn" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "greencorner"
 	},
 /area/awaymission/centcomAway/general)
 "go" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green"
 	},
 /area/awaymission/centcomAway/general)
 "gp" = (
 /obj/machinery/suit_storage_unit/standard_unit,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "yellow"
 	},
@@ -2460,21 +2460,21 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/courtroom)
 "gr" = (
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaymission/centcomAway/courtroom)
 "gs" = (
 /obj/structure/grille,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "gt" = (
 /obj/machinery/autolathe,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "yellow"
 	},
@@ -2486,7 +2486,7 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -2500,7 +2500,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "gw" = (
 /obj/structure/grille,
@@ -2511,7 +2511,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "gx" = (
 /obj/structure/grille,
@@ -2522,7 +2522,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "gy" = (
 /obj/structure/grille,
@@ -2530,7 +2530,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "gz" = (
 /obj/structure/grille,
@@ -2540,14 +2540,14 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "gA" = (
 /obj/machinery/sleeper{
 	icon_state = "sleeper-open";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/general)
@@ -2555,20 +2555,20 @@
 /obj/structure/table/reinforced,
 /obj/item/tank/anesthetic,
 /obj/item/clothing/mask/breath/medical,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/general)
 "gC" = (
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaymission/centcomAway/courtroom)
 "gD" = (
 /obj/structure/table,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaymission/centcomAway/courtroom)
 "gE" = (
 /obj/structure/table/wood,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaymission/centcomAway/courtroom)
 "gF" = (
 /obj/structure/table/reinforced,
@@ -2577,7 +2577,7 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/general)
@@ -2586,7 +2586,7 @@
 /obj/item/clothing/accessory/stethoscope,
 /obj/item/storage/firstaid,
 /obj/item/storage/firstaid,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "whitepurple"
 	},
@@ -2594,18 +2594,18 @@
 "gH" = (
 /obj/structure/table/reinforced,
 /obj/item/extinguisher/mini,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "whitepurple"
 	},
 /area/awaymission/centcomAway/general)
 "gI" = (
 /obj/machinery/shieldgen,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "gJ" = (
 /obj/machinery/computer/cloning,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "whitepurple"
 	},
@@ -2619,11 +2619,11 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "gL" = (
 /obj/machinery/pdapainter,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -2633,7 +2633,7 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "whitepurple"
 	},
@@ -2643,13 +2643,13 @@
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "gO" = (
 /obj/machinery/dna_scannernew,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "whitepurple"
 	},
@@ -2666,17 +2666,17 @@
 	icon_state = "1-4";
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "gQ" = (
 /obj/structure/filingcabinet,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "gR" = (
 /obj/structure/filingcabinet/chestdrawer,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -2689,33 +2689,33 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "gT" = (
 /turf/simulated/wall/r_wall,
 /area/awaymission/centcomAway/courtroom)
 "gU" = (
 /obj/structure/reagent_dispensers/fueltank,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/courtroom)
 "gV" = (
 /obj/structure/closet/secure_closet/courtroom,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaymission/centcomAway/courtroom)
 "gW" = (
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaymission/centcomAway/courtroom)
 "gX" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/hangar)
 "gY" = (
 /obj/structure/closet/secure_closet/engineering_welding,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "gZ" = (
 /obj/structure/cable{
@@ -2724,7 +2724,7 @@
 	icon_state = "2-8";
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "ha" = (
 /obj/structure/table,
@@ -2738,17 +2738,17 @@
 "hb" = (
 /obj/structure/table/reinforced,
 /obj/item/t_scanner,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "yellow"
 	},
 /area/awaymission/centcomAway/general)
 "hc" = (
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "hd" = (
 /obj/structure/crematorium,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "engine"
 	},
 /area/awaymission/centcomAway/general)
@@ -2764,15 +2764,15 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "hf" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "engine"
 	},
 /area/awaymission/centcomAway/general)
 "hg" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
@@ -2782,7 +2782,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -2793,13 +2793,13 @@
 	icon_state = "2-8";
 	tag = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "hj" = (
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -2816,11 +2816,11 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "hl" = (
 /obj/machinery/computer/robotics,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -2828,7 +2828,7 @@
 /obj/structure/chair/office/dark{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -2836,13 +2836,13 @@
 /obj/structure/chair/office/dark{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "ho" = (
 /obj/machinery/computer/med_data,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -2854,7 +2854,7 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -2864,20 +2864,20 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/courtroom)
 "hr" = (
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/courtroom)
 "hs" = (
 /obj/effect/decal/cleanable/blood/oil,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/hangar)
 "ht" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "whitepurple"
 	},
@@ -2895,11 +2895,11 @@
 /mob/living/simple_animal/hostile/russian/ranged{
 	loot = list(/obj/effect/mob_spawn/human/corpse/russian/ranged)
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/cafe)
 "hw" = (
 /obj/item/xenos_claw,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "engine"
 	},
 /area/awaymission/centcomAway/general)
@@ -2916,29 +2916,29 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "hz" = (
 /obj/machinery/computer/card,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "hA" = (
 /obj/structure/chair/office/dark,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "hB" = (
 /obj/machinery/computer/crew,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "hC" = (
 /obj/machinery/vending/cigarette,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -2974,7 +2974,7 @@
 /area/awaymission/centcomAway/hangar)
 "hG" = (
 /obj/structure/reagent_dispensers/fueltank,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "hH" = (
 /obj/structure/table,
@@ -2984,13 +2984,13 @@
 /area/awaymission/centcomAway/hangar)
 "hI" = (
 /obj/structure/morgue,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "engine"
 	},
 /area/awaymission/centcomAway/general)
 "hJ" = (
 /obj/structure/closet/body_bag,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "engine"
 	},
 /area/awaymission/centcomAway/general)
@@ -3010,13 +3010,13 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "hN" = (
 /obj/machinery/computer/secure_data,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -3026,13 +3026,13 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/computer/monitor,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "yellow"
 	},
 /area/awaymission/centcomAway/general)
 "hP" = (
 /obj/machinery/computer/security,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -3049,7 +3049,7 @@
 	icon_state = "1-4";
 	tag = "90Curve"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "yellow";
 	dir = 10
 	},
@@ -3057,7 +3057,7 @@
 "hR" = (
 /obj/structure/table/reinforced,
 /obj/item/taperecorder,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -3081,18 +3081,18 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/courtroom)
 "hU" = (
 /obj/structure/dispenser,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 6;
 	icon_state = "yellow"
 	},
 /area/awaymission/centcomAway/general)
 "hV" = (
 /obj/structure/chair,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -3107,7 +3107,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/courtroom)
 "hX" = (
 /obj/structure/grille,
@@ -3121,10 +3121,10 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "hY" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-blackcorner (NORTH)";
 	icon_state = "blackcorner";
 	dir = 1
@@ -3137,7 +3137,7 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-blackcorner (EAST)";
 	icon_state = "blackcorner";
 	dir = 4
@@ -3146,7 +3146,7 @@
 "ia" = (
 /obj/structure/table,
 /obj/item/storage/box/prisoner,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/courtroom)
 "ib" = (
 /obj/structure/sign/securearea,
@@ -3158,18 +3158,18 @@
 "id" = (
 /obj/structure/bed,
 /obj/item/bedsheet,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/courtroom)
 "ie" = (
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/courtroom)
 "if" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -3177,7 +3177,7 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -3185,7 +3185,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -3197,7 +3197,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/courtroom)
 "ij" = (
 /obj/machinery/power/apc/noalarm{
@@ -3210,7 +3210,7 @@
 	start_charge = 100
 	},
 /obj/structure/cable,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -3222,7 +3222,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -3232,13 +3232,13 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "im" = (
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/general)
@@ -3246,7 +3246,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/general)
@@ -3263,13 +3263,13 @@
 	icon_state = "1-2";
 	tag = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "ip" = (
 /obj/structure/reagent_dispensers/watertank,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/hangar)
@@ -3284,7 +3284,7 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -3309,54 +3309,54 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "is" = (
 /obj/structure/closet,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "it" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Med-Sci";
 	req_access_txt = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/general)
 "iu" = (
 /obj/structure/table,
 /obj/item/clothing/glasses/welding,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "iv" = (
 /obj/structure/window/reinforced{
 	dir = 1
 	},
 /obj/item/storage/box/monkeycubes,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "iw" = (
 /obj/machinery/computer/scan_consolenew,
 /obj/item/dnainjector/telemut/darkbundle,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/general)
 "ix" = (
 /obj/machinery/dna_scannernew,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "whitepurple"
 	},
 /area/awaymission/centcomAway/general)
 "iy" = (
 /obj/structure/closet/secure_closet/medical2,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -3365,7 +3365,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/courtroom)
 "iA" = (
 /obj/structure/sign/vacuum,
@@ -3373,7 +3373,7 @@
 /area/awaymission/centcomAway/hangar)
 "iB" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/hangar)
@@ -3383,29 +3383,29 @@
 	opacity = 1;
 	req_access_txt = "101"
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/courtroom)
 "iD" = (
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "iE" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "yellow";
 	dir = 10
 	},
 /area/awaymission/centcomAway/general)
 "iF" = (
 /obj/structure/closet/secure_closet/injection,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/courtroom)
 "iG" = (
 /obj/structure/bed,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -3418,11 +3418,11 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/courtroom)
 "iI" = (
 /obj/machinery/vending/snack,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -3430,13 +3430,13 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/courtroom)
 "iK" = (
 /obj/machinery/vending/coffee,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -3452,16 +3452,16 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "iM" = (
-/turf/simulated/floor/mech_bay_recharge_floor,
+/turf/open/floor/mech_bay_recharge_floor,
 /area/awaymission/centcomAway/hangar)
 "iN" = (
 /obj/machinery/computer/mech_bay_power_console,
-/turf/simulated/floor/bluegrid,
+/turf/open/floor/bluegrid,
 /area/awaymission/centcomAway/hangar)
 "iO" = (
 /obj/structure/cable{
@@ -3470,14 +3470,14 @@
 	icon_state = "1-8";
 	tag = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 6;
 	icon_state = "yellow"
 	},
 /area/awaymission/centcomAway/general)
 "iP" = (
 /obj/structure/mecha_wreckage/ripley,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/hangar)
@@ -3489,7 +3489,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "yellow"
 	},
@@ -3497,16 +3497,16 @@
 "iR" = (
 /obj/structure/rack,
 /obj/item/clothing/glasses/night,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "iS" = (
 /obj/structure/closet/emcloset,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "iT" = (
 /obj/structure/bookcase,
 /obj/effect/decal/cleanable/cobweb,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/general)
@@ -3523,7 +3523,7 @@
 	icon_state = "1-4";
 	tag = "90Curve"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -3539,7 +3539,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "yellow"
 	},
@@ -3547,7 +3547,7 @@
 "iW" = (
 /obj/structure/bookcase,
 /obj/effect/decal/cleanable/cobweb2,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/general)
@@ -3559,7 +3559,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "yellowcorner"
 	},
@@ -3572,7 +3572,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-purplecorner (EAST)";
 	icon_state = "purplecorner";
 	dir = 4
@@ -3611,7 +3611,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -3633,7 +3633,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-purple (NORTH)";
 	icon_state = "purple";
 	dir = 1
@@ -3647,7 +3647,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-purple (NORTH)";
 	icon_state = "purple";
 	dir = 1
@@ -3658,7 +3658,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -3671,7 +3671,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "ji" = (
 /obj/structure/chair{
@@ -3681,16 +3681,16 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaymission/centcomAway/courtroom)
 "jj" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/general)
 "jk" = (
 /obj/machinery/recharge_station,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/hangar)
@@ -3709,13 +3709,13 @@
 	pixel_y = 1;
 	d2 = 2
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 5
 	},
 /area/awaymission/centcomAway/hangar)
 "jm" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "greencorner";
 	dir = 8
 	},
@@ -3728,14 +3728,14 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaymission/centcomAway/courtroom)
 "jo" = (
 /obj/machinery/light{
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 5
 	},
@@ -3744,7 +3744,7 @@
 /mob/living/simple_animal/hostile/russian/ranged{
 	loot = list(/obj/effect/mob_spawn/human/corpse/russian/ranged)
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 5
 	},
@@ -3756,7 +3756,7 @@
 	icon_state = "1-4";
 	tag = "90Curve"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "vault";
 	dir = 5
 	},
@@ -3782,7 +3782,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "jt" = (
 /obj/structure/cable{
@@ -3792,18 +3792,18 @@
 	pixel_y = 0
 	},
 /obj/effect/decal/warning_stripes/southwestcorner,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "ju" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 4
 	},
 /area/awaymission/centcomAway/general)
 "jv" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 8
 	},
@@ -3816,13 +3816,13 @@
 	pixel_y = 0
 	},
 /obj/effect/decal/warning_stripes/southeastcorner,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "jx" = (
 /obj/structure/table/reinforced,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
@@ -3834,10 +3834,10 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/courtroom)
 "jz" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "vault"
 	},
@@ -3849,7 +3849,7 @@
 	icon_state = "1-8"
 	},
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -3867,12 +3867,12 @@
 	tag = ""
 	},
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "jC" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "greencorner";
 	dir = 4
 	},
@@ -3880,26 +3880,26 @@
 "jD" = (
 /obj/machinery/photocopier,
 /obj/item/paper/ccaMemo,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "jE" = (
 /obj/structure/table/reinforced,
 /obj/item/hand_labeler,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "jF" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "jG" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "greencorner";
 	dir = 1
 	},
@@ -3909,23 +3909,23 @@
 	name = "Bridge";
 	req_access_txt = "19"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "jI" = (
 /obj/machinery/mecha_part_fabricator,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/hangar)
 "jJ" = (
 /obj/effect/decal/warning_stripes/northwest,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "jK" = (
 /obj/structure/table/wood{
 	dir = 10
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/general)
@@ -3933,13 +3933,13 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/general)
 "jM" = (
 /obj/structure/computerframe,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/general)
@@ -3949,7 +3949,7 @@
 	opacity = 1;
 	req_access_txt = "101"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -3958,13 +3958,13 @@
 	pixel_x = 0;
 	pixel_y = 25
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "engine"
 	},
 /area/awaymission/centcomAway/general)
 "jP" = (
 /obj/item/reagent_containers/glass/rag,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
@@ -3972,7 +3972,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
@@ -3980,7 +3980,7 @@
 /obj/structure/closet/crate/trashcart,
 /obj/item/reagent_containers/spray/cleaner,
 /obj/item/reagent_containers/glass/bucket,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
@@ -3989,7 +3989,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-blackcorner (WEST)";
 	icon_state = "blackcorner";
 	dir = 8
@@ -4000,13 +4000,13 @@
 	dir = 4
 	},
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/cafe)
 "jU" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "hydrofloor"
 	},
 /area/awaymission/centcomAway/cafe)
@@ -4021,14 +4021,14 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-blackcorner";
 	icon_state = "blackcorner"
 	},
 /area/awaymission/centcomAway/general)
 "jW" = (
 /obj/machinery/computer/secure_data,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
@@ -4037,7 +4037,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaymission/centcomAway/courtroom)
 "jY" = (
 /obj/structure/table,
@@ -4046,10 +4046,10 @@
 	dir = 4
 	},
 /obj/effect/decal/warning_stripes/north,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "jZ" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /turf/simulated/shuttle/wall{
@@ -4062,7 +4062,7 @@
 /obj/item/paper/ccaMemo,
 /obj/item/rcd_ammo,
 /obj/item/rcd_ammo,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "kb" = (
 /obj/structure/chair/comfy/shuttle{
@@ -4081,7 +4081,7 @@
 	opacity = 1;
 	req_access_txt = "103"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
@@ -4089,18 +4089,18 @@
 /obj/structure/table,
 /obj/item/stack/cable_coil,
 /obj/item/rcd,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "ke" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	req_access_txt = "101"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "kf" = (
 /obj/machinery/door/window/northright,
 /obj/machinery/door/window/southleft,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -4109,28 +4109,28 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
 "kh" = (
 /obj/structure/table/reinforced,
 /obj/item/folder/red,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "ki" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/PDAs,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "kj" = (
 /obj/structure/table/reinforced,
 /obj/item/folder/blue,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -4140,18 +4140,18 @@
 	opacity = 1;
 	req_access_txt = "101"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/courtroom)
 "kl" = (
 /obj/effect/decal/warning_stripes/northwestcorner,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "km" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /turf/simulated/shuttle/wall{
@@ -4165,7 +4165,7 @@
 /obj/item/storage/toolbox/electrical{
 	pixel_y = 5
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "ko" = (
 /obj/structure/sink{
@@ -4177,7 +4177,7 @@
 /obj/structure/mirror{
 	pixel_x = -28
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/general)
@@ -4190,7 +4190,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	name = "plating"
 	},
 /area/awaymission/centcomAway/general)
@@ -4200,7 +4200,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	name = "plating"
 	},
 /area/awaymission/centcomAway/general)
@@ -4213,7 +4213,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	name = "plating"
 	},
 /area/awaymission/centcomAway/general)
@@ -4226,28 +4226,28 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "kt" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/mechanical,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "ku" = (
 /obj/structure/chair,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "kv" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/bodybags,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "engine"
 	},
 /area/awaymission/centcomAway/general)
 "kw" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 1
 	},
@@ -4256,11 +4256,11 @@
 /obj/machinery/door/airlock/external{
 	name = "Arrival Airlock"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "ky" = (
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/hangar)
@@ -4269,7 +4269,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -4281,7 +4281,7 @@
 	pixel_y = 0
 	},
 /obj/effect/decal/warning_stripes/northeastcorner,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -4291,7 +4291,7 @@
 	pixel_x = -3;
 	pixel_y = -2
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "kC" = (
 /obj/structure/grille,
@@ -4302,13 +4302,13 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "kD" = (
 /obj/effect/landmark{
 	name = "awaystart"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/hangar)
@@ -4320,12 +4320,12 @@
 /obj/structure/chair/comfy/beige{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "kG" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "greencorner"
 	},
@@ -4334,7 +4334,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -4342,19 +4342,19 @@
 /obj/machinery/gateway{
 	dir = 9
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "kJ" = (
 /obj/machinery/gateway{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "kK" = (
 /obj/machinery/gateway{
 	dir = 5
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "kL" = (
 /obj/structure/grille,
@@ -4365,26 +4365,26 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "kM" = (
 /obj/machinery/gateway{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "kN" = (
 /obj/machinery/gateway/centeraway,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "kO" = (
 /obj/machinery/gateway{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "kP" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "green"
 	},
@@ -4393,17 +4393,17 @@
 /obj/machinery/gateway{
 	dir = 10
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "kR" = (
 /obj/machinery/gateway,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "kS" = (
 /obj/machinery/gateway{
 	dir = 6
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "kT" = (
 /obj/structure/cable{
@@ -4413,7 +4413,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "greencorner"
 	},
@@ -4430,7 +4430,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "kV" = (
 /obj/structure/grille,
@@ -4444,7 +4444,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "kW" = (
 /obj/structure/grille,
@@ -4455,13 +4455,13 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "kX" = (
 /obj/structure/table,
 /obj/item/flash,
 /obj/item/flash,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault";
 	icon_state = "vault"
 	},
@@ -4469,7 +4469,7 @@
 "kY" = (
 /obj/structure/table,
 /obj/item/mmi,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault";
 	icon_state = "vault"
 	},
@@ -4481,7 +4481,7 @@
 	icon_state = "2-4";
 	tag = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "green"
 	},
@@ -4495,7 +4495,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-blackcorner";
 	icon_state = "blackcorner"
 	},
@@ -4508,7 +4508,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-blackcorner (WEST)";
 	icon_state = "blackcorner";
 	dir = 8
@@ -4518,7 +4518,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
@@ -4528,20 +4528,20 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "le" = (
 /obj/structure/table/reinforced,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "lf" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaymission/centcomAway/courtroom)
 "lg" = (
 /obj/structure/grille,
@@ -4552,11 +4552,11 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "lh" = (
 /obj/item/twohanded/required/kirbyplants,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -4577,7 +4577,7 @@
 	opacity = 1;
 	req_access_txt = "101"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
@@ -4585,7 +4585,7 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -4593,7 +4593,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -4601,7 +4601,7 @@
 /mob/living/simple_animal/hostile/russian/ranged{
 	loot = list(/obj/effect/mob_spawn/human/corpse/russian/ranged)
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "ln" = (
 /obj/machinery/mech_bay_recharge_port,
@@ -4609,14 +4609,14 @@
 	icon_state = "0-2";
 	d2 = 2
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "lo" = (
 /obj/machinery/light{
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (WEST)";
 	icon_state = "vault";
 	dir = 8
@@ -4624,7 +4624,7 @@
 /area/awaymission/centcomAway/hangar)
 "lp" = (
 /obj/structure/closet/secure_closet/personal,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (EAST)";
 	icon_state = "vault";
 	dir = 4
@@ -4635,7 +4635,7 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/general)
@@ -4643,7 +4643,7 @@
 /obj/structure/rack,
 /obj/item/storage/secure/briefcase,
 /obj/item/storage/belt/utility/full,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/general)
@@ -4651,7 +4651,7 @@
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /turf/simulated/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
@@ -4661,7 +4661,7 @@
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /turf/simulated/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
@@ -4672,7 +4672,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "asteroid6";
 	name = "sand";
 	tag = "icon-asteroid6"
@@ -4687,7 +4687,7 @@
 	req_access_txt = "2"
 	},
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "lw" = (
 /obj/structure/rack,
@@ -4696,7 +4696,7 @@
 	pixel_y = -2
 	},
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "lx" = (
 /obj/structure/grille,
@@ -4709,19 +4709,19 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "ly" = (
 /obj/structure/table/wood,
 /obj/item/clothing/accessory/medal,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/general)
 "lz" = (
 /obj/structure/table/wood,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/general)
 "lA" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (WEST)";
 	icon_state = "vault";
 	dir = 8
@@ -4730,11 +4730,11 @@
 "lB" = (
 /obj/structure/table/wood,
 /obj/item/clothing/accessory/medal/gold,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/general)
 "lC" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "lD" = (
 /turf/simulated/wall/r_wall,
@@ -4746,13 +4746,13 @@
 	name = "XCC Main Access Shutters"
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "lF" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -4760,7 +4760,7 @@
 /area/awaymission/centcomAway/hangar)
 "lG" = (
 /obj/structure/window/reinforced,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -4771,7 +4771,7 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
@@ -4793,30 +4793,30 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "lJ" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/thunderdome)
 "lK" = (
 /obj/machinery/light{
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/hangar)
 "lL" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
 	},
 /area/awaymission/centcomAway/hangar)
 "lM" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-ironsand3 (WEST)";
 	icon_state = "ironsand3";
 	dir = 8;
@@ -4827,7 +4827,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -4837,7 +4837,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -4849,14 +4849,14 @@
 	opacity = 1;
 	req_access_txt = "102"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "lQ" = (
 /obj/machinery/light{
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 9
 	},
@@ -4873,14 +4873,14 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/thunderdome)
 "lS" = (
 /obj/machinery/light{
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 5
 	},
@@ -4892,7 +4892,7 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "greencorner";
 	dir = 4
 	},
@@ -4902,7 +4902,7 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTH)";
 	icon_state = "vault";
 	dir = 1
@@ -4910,7 +4910,7 @@
 /area/awaymission/centcomAway/general)
 "lV" = (
 /obj/structure/closet/wardrobe/red,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (EAST)";
 	icon_state = "vault";
 	dir = 4
@@ -4918,7 +4918,7 @@
 /area/awaymission/centcomAway/general)
 "lW" = (
 /obj/structure/mecha_wreckage/seraph,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -4926,7 +4926,7 @@
 /area/awaymission/centcomAway/hangar)
 "lX" = (
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -4936,14 +4936,14 @@
 /mob/living/simple_animal/hostile/russian/ranged{
 	loot = list(/obj/effect/mob_spawn/human/corpse/russian/ranged)
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
 	},
 /area/awaymission/centcomAway/general)
 "lZ" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-ironsand11 (WEST)";
 	icon_state = "ironsand11";
 	dir = 8;
@@ -4951,27 +4951,27 @@
 	},
 /area/awaymission/centcomAway/general)
 "ma" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 9
 	},
 /area/awaymission/centcomAway/general)
 "mb" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 5
 	},
 /area/awaymission/centcomAway/general)
 "mc" = (
 /obj/structure/closet/secure_closet/security,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (EAST)";
 	icon_state = "vault";
 	dir = 4
 	},
 /area/awaymission/centcomAway/general)
 "md" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-ironsand9 (WEST)";
 	icon_state = "ironsand9";
 	dir = 8;
@@ -4983,7 +4983,7 @@
 	dir = 5
 	},
 /obj/item/lighter/zippo,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/general)
@@ -4993,7 +4993,7 @@
 	},
 /obj/item/clothing/mask/cigarette/cigar/havana,
 /obj/item/reagent_containers/food/drinks/sillycup,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/general)
@@ -5002,7 +5002,7 @@
 	dir = 5
 	},
 /obj/item/storage/backpack/satchel,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/general)
@@ -5012,7 +5012,7 @@
 	id = "XCCsec3";
 	name = "XCC Shutter 3 Control"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
@@ -5025,7 +5025,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/thunderdome)
 "mj" = (
 /obj/structure/grille,
@@ -5033,7 +5033,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/thunderdome)
 "mk" = (
 /obj/structure/grille,
@@ -5044,17 +5044,17 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/thunderdome)
 "ml" = (
 /obj/structure/table/reinforced,
 /obj/item/folder/red,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
 "mm" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (EAST)";
 	icon_state = "vault";
 	dir = 4
@@ -5066,14 +5066,14 @@
 	name = "XCC Mechbay Mass Driver";
 	pixel_x = 25
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTH)";
 	icon_state = "vault";
 	dir = 1
 	},
 /area/awaymission/centcomAway/hangar)
 "mo" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-ironsand4 (WEST)";
 	icon_state = "ironsand4";
 	dir = 8;
@@ -5081,32 +5081,32 @@
 	},
 /area/awaymission/centcomAway/general)
 "mp" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 10
 	},
 /area/awaymission/centcomAway/general)
 "mq" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 6
 	},
 /area/awaymission/centcomAway/general)
 "mr" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "ms" = (
 /obj/structure/table/reinforced,
 /obj/item/pen,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
 "mt" = (
 /obj/structure/closet/secure_closet/personal,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTH)";
 	icon_state = "vault";
 	dir = 1
@@ -5116,14 +5116,14 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
 	},
 /area/awaymission/centcomAway/general)
 "mv" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "greencorner"
 	},
@@ -5135,31 +5135,31 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "greencorner"
 	},
 /area/awaymission/centcomAway/general)
 "mx" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "my" = (
 /obj/structure/closet/secure_closet/personal,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "mz" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
 "mA" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/thunderdome)
@@ -5167,15 +5167,15 @@
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/thunderdome)
 "mC" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/thunderdome)
 "mD" = (
 /obj/item/stamp/granted,
 /obj/structure/table/reinforced,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (EAST)";
 	icon_state = "vault";
 	dir = 4
@@ -5183,13 +5183,13 @@
 /area/awaymission/centcomAway/general)
 "mE" = (
 /obj/machinery/igniter/on,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "mF" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (WEST)";
 	icon_state = "vault";
 	dir = 8
@@ -5197,24 +5197,24 @@
 /area/awaymission/centcomAway/hangar)
 "mG" = (
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "mH" = (
 /obj/structure/table,
 /obj/item/flashlight/flare,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "mI" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "mJ" = (
 /obj/structure/table,
 /obj/item/firstaid_arm_assembly,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault";
 	icon_state = "vault"
 	},
@@ -5222,7 +5222,7 @@
 "mK" = (
 /obj/structure/table,
 /obj/item/flashlight/flare,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/hangar)
@@ -5235,7 +5235,7 @@
 	amount = 50
 	},
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault";
 	icon_state = "vault"
 	},
@@ -5243,7 +5243,7 @@
 "mM" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/mechanical,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault";
 	icon_state = "vault"
 	},
@@ -5263,11 +5263,11 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "mO" = (
 /obj/structure/flora/ausbushes,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "asteroid6";
 	name = "sand";
 	tag = "icon-asteroid6"
@@ -5275,7 +5275,7 @@
 /area/awaymission/centcomAway/general)
 "mP" = (
 /obj/structure/flora/ausbushes,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-asteroid10";
 	name = "plating";
 	icon_state = "asteroid10"
@@ -5283,7 +5283,7 @@
 /area/awaymission/centcomAway/general)
 "mQ" = (
 /obj/structure/sink/puddle,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "asteroid6";
 	name = "sand";
 	tag = "icon-asteroid6"
@@ -5291,7 +5291,7 @@
 /area/awaymission/centcomAway/general)
 "mR" = (
 /obj/structure/flora/ausbushes,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-asteroid4";
 	name = "plating";
 	icon_state = "asteroid4"
@@ -5301,7 +5301,7 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 8
 	},
@@ -5310,7 +5310,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 4
 	},
@@ -5319,7 +5319,7 @@
 /obj/structure/urinal{
 	pixel_y = 32
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/thunderdome)
@@ -5327,13 +5327,13 @@
 /obj/machinery/shower{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "mW" = (
 /obj/structure/flora/ausbushes,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-asteroid";
 	name = "plating";
 	icon_state = "asteroid"
@@ -5341,7 +5341,7 @@
 /area/awaymission/centcomAway/general)
 "mX" = (
 /obj/structure/flora/ausbushes,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-asteroid9";
 	name = "plating";
 	icon_state = "asteroid9"
@@ -5351,13 +5351,13 @@
 /obj/machinery/shower{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "mZ" = (
 /obj/structure/flora/ausbushes,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-asteroid11";
 	name = "plating";
 	icon_state = "asteroid11"
@@ -5365,7 +5365,7 @@
 /area/awaymission/centcomAway/general)
 "na" = (
 /obj/structure/flora/ausbushes,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-asteroid8";
 	name = "plating";
 	icon_state = "asteroid8"
@@ -5376,7 +5376,7 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "nc" = (
 /obj/machinery/door/poddoor/shutters{
@@ -5391,7 +5391,7 @@
 	pixel_y = 0
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -5401,7 +5401,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 8
 	},
@@ -5412,7 +5412,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 4
 	},
@@ -5420,7 +5420,7 @@
 "nf" = (
 /obj/structure/table,
 /obj/item/paper/pamphlet/ccaInfo,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -5430,24 +5430,24 @@
 	name = "XCC Mech Bay"
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/centcomAway/hangar)
 "nh" = (
 /obj/effect/decal/warning_stripes/yellow/hollow,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/centcomAway/hangar)
 "ni" = (
 /obj/machinery/light{
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/hangar)
 "nj" = (
 /obj/structure/flora/ausbushes,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 6;
 	icon_state = "asteroid8";
 	name = "sand";
@@ -5460,7 +5460,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "asteroid6";
 	name = "sand";
 	tag = "icon-asteroid6"
@@ -5472,7 +5472,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-asteroid";
 	name = "plating";
 	icon_state = "asteroid"
@@ -5480,7 +5480,7 @@
 /area/awaymission/centcomAway/general)
 "nm" = (
 /obj/structure/flora/ausbushes,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-asteroid5";
 	name = "plating";
 	icon_state = "asteroid5"
@@ -5491,7 +5491,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -5500,7 +5500,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -5512,7 +5512,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 8
 	},
@@ -5525,7 +5525,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 4
 	},
@@ -5537,7 +5537,7 @@
 	name = "gravpult"
 	},
 /obj/effect/decal/warning_stripes/yellow/hollow,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/centcomAway/hangar)
 "ns" = (
 /obj/effect/decal/warning_stripes/yellow/partial{
@@ -5546,7 +5546,7 @@
 /obj/effect/decal/warning_stripes/arrow{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/centcomAway/hangar)
 "nt" = (
 /obj/structure/cable{
@@ -5555,14 +5555,14 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green"
 	},
 /area/awaymission/centcomAway/general)
 "nu" = (
 /obj/structure/table/reinforced,
 /obj/item/paper/pamphlet/ccaInfo,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (EAST)";
 	icon_state = "vault";
 	dir = 4
@@ -5574,13 +5574,13 @@
 	id = "XCCsec1";
 	name = "XCC Shutter 1 Control"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
 "nw" = (
 /obj/machinery/computer/secure_data,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTH)";
 	icon_state = "vault";
 	dir = 1
@@ -5593,18 +5593,18 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "ny" = (
 /obj/structure/chair/comfy/teal,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "nz" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "neutral";
 	dir = 8
 	},
@@ -5616,14 +5616,14 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "neutral";
 	dir = 4
 	},
 /area/awaymission/centcomAway/general)
 "nB" = (
 /obj/machinery/computer/card,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTH)";
 	icon_state = "vault";
 	dir = 1
@@ -5631,7 +5631,7 @@
 /area/awaymission/centcomAway/general)
 "nC" = (
 /obj/machinery/light,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "nD" = (
 /obj/machinery/photocopier,
@@ -5639,7 +5639,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (EAST)";
 	icon_state = "vault";
 	dir = 4
@@ -5649,14 +5649,14 @@
 /obj/structure/table,
 /obj/item/multitool,
 /obj/machinery/light,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "nF" = (
 /obj/machinery/door/window/northright{
 	icon_state = "right";
 	dir = 2
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -5666,51 +5666,51 @@
 	id = "XCCsec2";
 	name = "XCC Shutter 2 Control"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
 "nH" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTH)";
 	icon_state = "vault";
 	dir = 1
 	},
 /area/awaymission/centcomAway/general)
 "nI" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "red"
 	},
 /area/awaymission/centcomAway/general)
 "nJ" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 10
 	},
 /area/awaymission/centcomAway/general)
 "nK" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 2
 	},
 /area/awaymission/centcomAway/general)
 "nL" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 2
 	},
 /area/awaymission/centcomAway/general)
 "nM" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "redcorner"
 	},
 /area/awaymission/centcomAway/general)
 "nN" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTH)";
 	icon_state = "vault";
 	dir = 1
@@ -5720,7 +5720,7 @@
 /obj/structure/table,
 /obj/item/storage/box/handcuffs,
 /obj/item/stamp/granted,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTH)";
 	icon_state = "vault";
 	dir = 1
@@ -5728,7 +5728,7 @@
 /area/awaymission/centcomAway/general)
 "nP" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 10
 	},
@@ -5741,7 +5741,7 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 6
 	},
@@ -5749,11 +5749,11 @@
 "nR" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/trophy/gold_cup,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaymission/centcomAway/general)
 "nS" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -5767,7 +5767,7 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "nU" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -5778,7 +5778,7 @@
 /area/awaymission/centcomAway/thunderdome)
 "nV" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/courtroom)
@@ -5798,13 +5798,13 @@
 /area/awaymission/centcomAway/thunderdome)
 "nY" = (
 /obj/structure/computerframe,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "nZ" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "engine"
 	},
 /area/awaymission/centcomAway/general)
@@ -5812,7 +5812,7 @@
 /mob/living/simple_animal/hostile/russian/ranged{
 	loot = list(/obj/effect/mob_spawn/human/corpse/russian/ranged)
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -5823,11 +5823,11 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "oc" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/hangar)
@@ -5837,11 +5837,11 @@
 	amount = 50
 	},
 /obj/machinery/light,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "oe" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -5850,7 +5850,7 @@
 /obj/structure/table,
 /obj/item/taperecorder,
 /obj/item/stamp/granted,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTH)";
 	icon_state = "vault";
 	dir = 1
@@ -5858,14 +5858,14 @@
 /area/awaymission/centcomAway/general)
 "og" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/general)
 "oh" = (
 /obj/structure/table,
 /obj/item/paicard,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -5879,11 +5879,11 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/thunderdome)
 "oj" = (
 /obj/machinery/vending/coffee,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -5891,7 +5891,7 @@
 /area/awaymission/centcomAway/thunderdome)
 "ok" = (
 /obj/machinery/vending/cigarette,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -5899,14 +5899,14 @@
 /area/awaymission/centcomAway/thunderdome)
 "ol" = (
 /obj/structure/table,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
 	},
 /area/awaymission/centcomAway/thunderdome)
 "om" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -5923,7 +5923,7 @@
 	start_charge = 100
 	},
 /obj/structure/cable,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -5934,7 +5934,7 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -5942,34 +5942,34 @@
 /area/awaymission/centcomAway/thunderdome)
 "op" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
 "oq" = (
 /obj/structure/safe/floor,
 /obj/item/clothing/suit/storage/det_suit,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/general)
 "or" = (
 /obj/effect/decal/cleanable/cobweb2,
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "grimy"
 	},
 /area/awaymission/centcomAway/general)
 "os" = (
 /obj/machinery/computer/card,
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/general)
 "ot" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -5977,7 +5977,7 @@
 /area/awaymission/centcomAway/thunderdome)
 "ou" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -5985,7 +5985,7 @@
 /area/awaymission/centcomAway/thunderdome)
 "ov" = (
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-barber (WEST)";
 	icon_state = "barber";
 	dir = 8;
@@ -5994,7 +5994,7 @@
 /area/awaymission/centcomAway/thunderdome)
 "ow" = (
 /obj/machinery/door/window/southleft,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -6002,7 +6002,7 @@
 /area/awaymission/centcomAway/thunderdome)
 "ox" = (
 /obj/machinery/door/window/southright,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -6010,7 +6010,7 @@
 /area/awaymission/centcomAway/thunderdome)
 "oy" = (
 /obj/structure/chair,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -6021,7 +6021,7 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-barber (WEST)";
 	icon_state = "barber";
 	dir = 8;
@@ -6029,7 +6029,7 @@
 	},
 /area/awaymission/centcomAway/thunderdome)
 "oA" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-barber (WEST)";
 	icon_state = "barber";
 	dir = 8;
@@ -6039,7 +6039,7 @@
 "oB" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/food/snacks/popcorn,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-barber (WEST)";
 	icon_state = "barber";
 	dir = 8;
@@ -6047,7 +6047,7 @@
 	},
 /area/awaymission/centcomAway/thunderdome)
 "oC" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
@@ -6058,7 +6058,7 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
@@ -6066,11 +6066,11 @@
 /area/awaymission/centcomAway/thunderdome)
 "oE" = (
 /obj/machinery/light,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "oF" = (
 /obj/structure/reagent_dispensers/beerkeg,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
@@ -6078,7 +6078,7 @@
 /area/awaymission/centcomAway/thunderdome)
 "oG" = (
 /obj/structure/closet/crate/trashcart,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
@@ -6090,7 +6090,7 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
@@ -6098,13 +6098,13 @@
 /area/awaymission/centcomAway/thunderdome)
 "oI" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green"
 	},
 /area/awaymission/centcomAway/general)
 "oJ" = (
 /obj/machinery/vending/snack,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
@@ -6114,7 +6114,7 @@
 /mob/living/simple_animal/hostile/russian/ranged{
 	loot = list(/obj/effect/mob_spawn/human/corpse/russian/ranged)
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -6123,7 +6123,7 @@
 "oL" = (
 /obj/structure/table,
 /obj/item/lipstick,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -6134,7 +6134,7 @@
 /obj/item/reagent_containers/food/condiment/sugar,
 /obj/item/reagent_containers/food/condiment/milk,
 /obj/item/reagent_containers/food/drinks/ice,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-barber (WEST)";
 	icon_state = "barber";
 	dir = 8;
@@ -6143,7 +6143,7 @@
 /area/awaymission/centcomAway/thunderdome)
 "oN" = (
 /obj/machinery/icemachine,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-barber (WEST)";
 	icon_state = "barber";
 	dir = 8;
@@ -6154,7 +6154,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -6162,14 +6162,14 @@
 /area/awaymission/centcomAway/thunderdome)
 "oP" = (
 /obj/structure/chair,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
 	},
 /area/awaymission/centcomAway/thunderdome)
 "oQ" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "red"
 	},
@@ -6178,7 +6178,7 @@
 /obj/structure/rack,
 /obj/item/restraints/legcuffs/beartrap,
 /obj/item/twohanded/fireaxe,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/thunderdome)
@@ -6189,12 +6189,12 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "oT" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 4
 	},
@@ -6204,7 +6204,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -6217,66 +6217,66 @@
 /obj/effect/decal/warning_stripes/yellow/partial{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/centcomAway/hangar)
 "oW" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 1
 	},
 /area/awaymission/centcomAway/thunderdome)
 "oX" = (
 /obj/machinery/portable_atmospherics/scrubber/huge,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 9
 	},
 /area/awaymission/centcomAway/thunderdome)
 "oY" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 5
 	},
 /area/awaymission/centcomAway/thunderdome)
 "oZ" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "redcorner";
 	dir = 1
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pa" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pb" = (
 /obj/structure/rack,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pc" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "green"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pd" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "greencorner"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pe" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 9;
 	icon_state = "green"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pf" = (
 /obj/machinery/portable_atmospherics/scrubber/huge,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 5;
 	icon_state = "green"
 	},
@@ -6291,7 +6291,7 @@
 /obj/structure/mirror{
 	pixel_x = -28
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/thunderdome)
@@ -6300,7 +6300,7 @@
 /obj/item/clothing/under/color/red,
 /obj/item/clothing/shoes/brown,
 /obj/item/hatchet,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/thunderdome)
@@ -6309,14 +6309,14 @@
 	dir = 1;
 	in_use = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pj" = (
 /obj/structure/table,
 /obj/item/camera,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -6328,7 +6328,7 @@
 	name = "XCC Ferry Hangar"
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/hangar)
@@ -6337,7 +6337,7 @@
 /obj/item/clothing/under/color/green,
 /obj/item/clothing/shoes/brown,
 /obj/item/hatchet,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/thunderdome)
@@ -6346,7 +6346,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTHEAST)";
 	icon_state = "vault";
 	dir = 5
@@ -6357,7 +6357,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/thunderdome)
@@ -6366,18 +6366,18 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pp" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "redcorner"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pq" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "greencorner"
 	},
@@ -6392,12 +6392,12 @@
 	pixel_x = 11;
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "ps" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 4
 	},
@@ -6407,12 +6407,12 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pu" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-plaque";
 	icon_state = "plaque"
 	},
@@ -6422,61 +6422,61 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pw" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 8
 	},
 /area/awaymission/centcomAway/thunderdome)
 "px" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "whitered"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "py" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "redcorner";
 	dir = 4
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pz" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "redcorner"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pA" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "greencorner"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pB" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "greencorner"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pC" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "whitegreen"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pD" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (EAST)";
 	icon_state = "vault";
 	dir = 4
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pE" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-vault (NORTH)";
 	icon_state = "vault";
 	dir = 1
@@ -6488,7 +6488,7 @@
 	opacity = 1;
 	req_access_txt = "101"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/thunderdome)
@@ -6498,50 +6498,50 @@
 	name = "XCC Checkpoint 1 Shutters"
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
 "pH" = (
 /obj/machinery/portable_atmospherics/scrubber/huge,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 10
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pI" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 6
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pJ" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "green"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pK" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 10;
 	icon_state = "green"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pL" = (
 /obj/machinery/portable_atmospherics/scrubber/huge,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 6
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pM" = (
 /obj/item/soap/nanotrasen,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "pN" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6551,7 +6551,7 @@
 /obj/structure/chair/office/dark{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6560,7 +6560,7 @@
 "pP" = (
 /obj/structure/table/wood,
 /obj/item/radio/off,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6570,7 +6570,7 @@
 /obj/structure/chair/comfy/black{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6582,7 +6582,7 @@
 	opacity = 1;
 	req_access_txt = "102"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6592,7 +6592,7 @@
 /obj/structure/chair/stool{
 	pixel_y = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6602,13 +6602,13 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "pU" = (
 /mob/living/simple_animal/hostile/russian/ranged{
 	loot = list(/obj/effect/mob_spawn/human/corpse/russian/ranged)
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6617,7 +6617,7 @@
 "pV" = (
 /obj/structure/table,
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6628,7 +6628,7 @@
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6636,7 +6636,7 @@
 /area/awaymission/centcomAway/thunderdome)
 "pX" = (
 /obj/structure/computerframe,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6644,7 +6644,7 @@
 /area/awaymission/centcomAway/thunderdome)
 "pY" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6652,7 +6652,7 @@
 /area/awaymission/centcomAway/thunderdome)
 "pZ" = (
 /obj/machinery/computer/area_atmos,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6662,12 +6662,12 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/general)
 "qb" = (
 /obj/structure/table,
 /obj/item/storage/box/handcuffs,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6675,7 +6675,7 @@
 /area/awaymission/centcomAway/thunderdome)
 "qc" = (
 /obj/structure/closet/secure_closet/bar,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6684,7 +6684,7 @@
 "qd" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/electrical,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6694,7 +6694,7 @@
 /obj/structure/table,
 /obj/item/reagent_containers/food/snacks/popcorn,
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6703,7 +6703,7 @@
 "qf" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/mechanical,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -6715,7 +6715,7 @@
 	name = "XCC Thunderdome Melee!"
 	},
 /obj/structure/table/reinforced,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/thunderdome)
@@ -6725,7 +6725,7 @@
 	name = "XCC Thunderdome Guns!"
 	},
 /obj/structure/table/reinforced,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/thunderdome)
@@ -6735,14 +6735,14 @@
 	name = "XCC Thunderdome Go!"
 	},
 /obj/structure/table/reinforced,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/thunderdome)
 "qj" = (
 /obj/structure/rack,
 /obj/machinery/light/small,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/thunderdome)
@@ -6752,7 +6752,7 @@
 	name = "XCC Checkpoint 2 Shutters"
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -6765,11 +6765,11 @@
 	req_access_txt = "2"
 	},
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "qm" = (
 /obj/effect/decal/warning_stripes/yellow,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)
@@ -6779,7 +6779,7 @@
 	name = "XCC Thunderdome Melee"
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/thunderdome)
@@ -6789,7 +6789,7 @@
 	name = "XCC Thunderdome"
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/thunderdome)
@@ -6799,7 +6799,7 @@
 	name = "XCC Thunderdome Guns"
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaymission/centcomAway/thunderdome)
@@ -6817,7 +6817,7 @@
 /obj/machinery/tcomms/relay/ruskie{
 	network_id = "XCC-P5831-RELAY"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "floor"
 	},
 /area/awaymission/centcomAway/general)

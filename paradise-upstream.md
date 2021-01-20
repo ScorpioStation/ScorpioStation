@@ -430,7 +430,7 @@ Changelog for changes we incorporate from upstream (Paradise Station).
     * Fixes runtime with changelog system
     * Makes changelog entries open in external browser
 * Paradise #[13432](https://github.com/ParadiseSS13/Paradise/pull/13432): Unscrewing Lava
-    * Adds no-op `/turf/simulated/floor/plating/lava/screwdriver_act()` to prevent unscrewing lava
+    * Adds no-op `/turf/open/floor/plating/lava/screwdriver_act()` to prevent unscrewing lava
 * Paradise #[13205](https://github.com/ParadiseSS13/Paradise/pull/13205): Add wizard loadouts, misc wiz features/fixes
     * Extensive changes to the wizard loadout system, including new sprites
 * Paradise #[13454](https://github.com/ParadiseSS13/Paradise/pull/13454): Fixes Meatball in-hand icons

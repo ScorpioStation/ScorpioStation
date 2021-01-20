@@ -54,7 +54,7 @@
 /obj/structure/rack/holorack,
 /obj/item/clothing/under/dress/dress_saloon,
 /obj/item/clothing/head/hairflower,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-cult";
 	icon_state = "cult";
 	dir = 2
@@ -72,7 +72,7 @@
 "al" = (
 /obj/effect/landmark/costume/random,
 /obj/structure/rack/holorack,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-cult";
 	icon_state = "cult";
 	dir = 2
@@ -80,8 +80,8 @@
 /area/holodeck/source_theatre)
 "am" = (
 /obj/structure/flora/ausbushes/brflowers,
-/turf/simulated/floor/holofloor/grass,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor/grass,
+/turf/open/floor/holofloor{
 	tag = "icon-wood_siding2 (EAST)";
 	icon_state = "wood_siding2";
 	dir = 4
@@ -102,7 +102,7 @@
 "ao" = (
 /obj/structure/chair/stool/holostool,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid";
 	icon_state = "asteroid";
 	dir = 2
@@ -119,7 +119,7 @@
 	},
 /area/space)
 "ar" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid";
 	icon_state = "asteroid";
 	dir = 2
@@ -128,7 +128,7 @@
 "as" = (
 /obj/structure/table/holotable,
 /obj/machinery/readybutton,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 9;
 	icon_state = "red"
 	},
@@ -142,7 +142,7 @@
 "av" = (
 /obj/structure/table/holotable/wood,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid";
 	icon_state = "asteroid";
 	dir = 2
@@ -150,15 +150,15 @@
 /area/holodeck/source_picnicarea)
 "aw" = (
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/holofloor/grass,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor/grass,
+/turf/open/floor/holofloor{
 	tag = "icon-wood_siding2 (EAST)";
 	icon_state = "wood_siding2";
 	dir = 4
 	},
 /area/holodeck/source_picnicarea)
 "ax" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	icon_state = "engine";
 	name = "Holodeck Projector Floor"
 	},
@@ -170,13 +170,13 @@
 	},
 /area/vox_station)
 "az" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	icon_state = "engine";
 	name = "Holodeck Projector Floor"
 	},
 /area/holodeck/source_plating)
 "aA" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	icon_state = "engine";
 	name = "Burn-Mix Floor";
 	nitrogen = 0;
@@ -190,13 +190,13 @@
 /turf/simulated/shuttle/plating,
 /area/centcom/evac)
 "aC" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 1;
 	icon_state = "red"
 	},
 /area/holodeck/source_emptycourt)
 "aD" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 9;
 	icon_state = "red"
 	},
@@ -212,8 +212,8 @@
 /area/space)
 "aF" = (
 /obj/structure/flora/ausbushes/grassybush,
-/turf/simulated/floor/holofloor/grass,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor/grass,
+/turf/open/floor/holofloor{
 	tag = "icon-wood_siding5";
 	icon_state = "wood_siding5";
 	dir = 2
@@ -221,8 +221,8 @@
 /area/holodeck/source_picnicarea)
 "aG" = (
 /obj/structure/flora/ausbushes/grassybush,
-/turf/simulated/floor/holofloor/grass,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor/grass,
+/turf/open/floor/holofloor{
 	tag = "icon-wood_siding9";
 	icon_state = "wood_siding9";
 	dir = 2
@@ -230,7 +230,7 @@
 /area/holodeck/source_picnicarea)
 "aH" = (
 /obj/structure/chair/stool/holostool,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet7-3 (EAST)";
 	icon_state = "carpet7-3";
 	dir = 4
@@ -250,7 +250,7 @@
 /area/vox_station)
 "aL" = (
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid";
 	icon_state = "asteroid";
 	dir = 2
@@ -258,7 +258,7 @@
 /area/holodeck/source_desert)
 "aM" = (
 /obj/structure/chair/stool/holostool,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet15-15 (EAST)";
 	icon_state = "carpet15-15";
 	dir = 4
@@ -268,7 +268,7 @@
 /turf/space,
 /area/space)
 "aO" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-cult";
 	icon_state = "cult";
 	dir = 2
@@ -278,7 +278,7 @@
 /obj/effect/landmark{
 	name = "Holocarp Spawn"
 	},
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	icon_state = "engine";
 	name = "Holodeck Projector Floor"
 	},
@@ -287,7 +287,7 @@
 /obj/effect/landmark{
 	name = "Atmospheric Test Start"
 	},
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	icon_state = "engine";
 	name = "Burn-Mix Floor";
 	nitrogen = 0;
@@ -297,14 +297,14 @@
 	},
 /area/holodeck/source_burntest)
 "aR" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 8;
 	icon_state = "red"
 	},
 /area/holodeck/source_emptycourt)
 "aS" = (
 /obj/structure/chair/stool/holostool,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet11-12 (EAST)";
 	icon_state = "carpet11-12";
 	dir = 4
@@ -312,8 +312,8 @@
 /area/holodeck/source_theatre)
 "aT" = (
 /obj/structure/flora/ausbushes/grassybush,
-/turf/simulated/floor/holofloor/grass,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor/grass,
+/turf/open/floor/holofloor{
 	tag = "icon-wood_siding6";
 	icon_state = "wood_siding6";
 	dir = 2
@@ -321,8 +321,8 @@
 /area/holodeck/source_picnicarea)
 "aU" = (
 /obj/structure/flora/ausbushes/grassybush,
-/turf/simulated/floor/holofloor/grass,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor/grass,
+/turf/open/floor/holofloor{
 	tag = "icon-wood_siding10";
 	icon_state = "wood_siding10";
 	dir = 2
@@ -330,21 +330,21 @@
 /area/holodeck/source_picnicarea)
 "aV" = (
 /obj/structure/chair/stool/holostool,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet5-1 (EAST)";
 	icon_state = "carpet5-1";
 	dir = 4
 	},
 /area/holodeck/source_theatre)
 "aW" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 5;
 	icon_state = "red"
 	},
 /area/holodeck/source_emptycourt)
 "aX" = (
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid";
 	icon_state = "asteroid";
 	dir = 2
@@ -352,7 +352,7 @@
 /area/holodeck/source_desert)
 "aY" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid";
 	icon_state = "asteroid";
 	dir = 2
@@ -360,7 +360,7 @@
 /area/holodeck/source_picnicarea)
 "aZ" = (
 /obj/structure/chair/stool/holostool,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet13-5 (EAST)";
 	icon_state = "carpet13-5";
 	dir = 4
@@ -368,7 +368,7 @@
 /area/holodeck/source_theatre)
 "ba" = (
 /obj/structure/chair/stool/holostool,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet9-4 (EAST)";
 	icon_state = "carpet9-4";
 	dir = 4
@@ -376,7 +376,7 @@
 /area/holodeck/source_theatre)
 "bb" = (
 /obj/structure/table/holotable/wood,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-grimy";
 	icon_state = "grimy";
 	dir = 2
@@ -384,14 +384,14 @@
 /area/holodeck/source_meetinghall)
 "bc" = (
 /obj/structure/chair/stool/holostool,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet6-0 (EAST)";
 	icon_state = "carpet6-0";
 	dir = 4
 	},
 /area/holodeck/source_meetinghall)
 "bd" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid7";
 	icon_state = "asteroid7";
 	dir = 2
@@ -405,7 +405,7 @@
 /area/centcom/specops)
 "bf" = (
 /obj/structure/chair/stool/holostool,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet14-0 (EAST)";
 	icon_state = "carpet14-0";
 	dir = 4
@@ -413,7 +413,7 @@
 /area/holodeck/source_meetinghall)
 "bg" = (
 /obj/structure/chair/stool/holostool,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet10-0 (EAST)";
 	icon_state = "carpet10-0";
 	dir = 4
@@ -429,7 +429,7 @@
 /area/vox_station)
 "bj" = (
 /obj/structure/chair/stool/holostool,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet7-0 (EAST)";
 	icon_state = "carpet7-0";
 	dir = 4
@@ -446,21 +446,21 @@
 /area/vox_station)
 "bm" = (
 /obj/structure/chair/stool/holostool,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet15-0 (EAST)";
 	icon_state = "carpet15-0";
 	dir = 4
 	},
 /area/holodeck/source_meetinghall)
 "bn" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet6-2 (EAST)";
 	icon_state = "carpet6-2";
 	dir = 4
 	},
 /area/holodeck/source_theatre)
 "bo" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-wood (EAST)";
 	icon_state = "wood";
 	dir = 4
@@ -468,14 +468,14 @@
 /area/holodeck/source_theatre)
 "bp" = (
 /obj/structure/chair/stool/holostool,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet11-0 (EAST)";
 	icon_state = "carpet11-0";
 	dir = 4
 	},
 /area/holodeck/source_meetinghall)
 "bq" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet14-10 (EAST)";
 	icon_state = "carpet14-10";
 	dir = 4
@@ -483,7 +483,7 @@
 /area/holodeck/source_theatre)
 "br" = (
 /obj/structure/chair/stool/holostool,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet5-0 (EAST)";
 	icon_state = "carpet5-0";
 	dir = 4
@@ -491,7 +491,7 @@
 /area/holodeck/source_meetinghall)
 "bs" = (
 /obj/structure/chair/stool/holostool,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet13-0 (EAST)";
 	icon_state = "carpet13-0";
 	dir = 4
@@ -499,17 +499,17 @@
 /area/holodeck/source_meetinghall)
 "bt" = (
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/simulated/floor/holofloor/grass,
+/turf/open/floor/holofloor/grass,
 /area/holodeck/source_picnicarea)
 "bu" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 4;
 	icon_state = "red"
 	},
 /area/holodeck/source_emptycourt)
 "bv" = (
 /obj/structure/chair/stool/holostool,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet9-0 (EAST)";
 	icon_state = "carpet9-0";
 	dir = 4
@@ -517,8 +517,8 @@
 /area/holodeck/source_meetinghall)
 "bw" = (
 /obj/structure/flora/ausbushes/brflowers,
-/turf/simulated/floor/holofloor/grass,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor/grass,
+/turf/open/floor/holofloor{
 	tag = "icon-wood_siding1";
 	icon_state = "wood_siding1";
 	dir = 2
@@ -526,8 +526,8 @@
 /area/holodeck/source_picnicarea)
 "bx" = (
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/holofloor/grass,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor/grass,
+/turf/open/floor/holofloor{
 	tag = "icon-wood_siding1";
 	icon_state = "wood_siding1";
 	dir = 2
@@ -572,14 +572,14 @@
 	},
 /area/syndicate_mothership)
 "bC" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 4;
 	icon_state = "green"
 	},
 /area/holodeck/source_emptycourt)
 "bD" = (
 /obj/machinery/porta_turret/syndicate/pod,
-/turf/simulated/floor/pod,
+/turf/open/floor/pod,
 /turf/space,
 /turf/simulated/shuttle/wall{
 	dir = 8;
@@ -588,7 +588,7 @@
 /area/shuttle/assault_pod)
 "bE" = (
 /obj/machinery/porta_turret/syndicate/pod,
-/turf/simulated/floor/pod,
+/turf/open/floor/pod,
 /turf/space,
 /turf/simulated/shuttle/wall{
 	dir = 1;
@@ -597,7 +597,7 @@
 /area/shuttle/assault_pod)
 "bF" = (
 /obj/machinery/porta_turret/syndicate/pod,
-/turf/simulated/floor/pod,
+/turf/open/floor/pod,
 /turf/space,
 /turf/simulated/shuttle/wall{
 	tag = "icon-diagonalWall3";
@@ -607,7 +607,7 @@
 /area/shuttle/assault_pod)
 "bG" = (
 /obj/machinery/porta_turret/syndicate/pod,
-/turf/simulated/floor/pod,
+/turf/open/floor/pod,
 /turf/space,
 /turf/simulated/shuttle/wall{
 	dir = 4;
@@ -616,11 +616,11 @@
 /area/shuttle/assault_pod)
 "bH" = (
 /obj/structure/flora/ausbushes/brflowers,
-/turf/simulated/floor/holofloor/grass,
+/turf/open/floor/holofloor/grass,
 /area/holodeck/source_picnicarea)
 "bI" = (
 /obj/structure/holowindow,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 8;
 	icon_state = "red"
 	},
@@ -655,7 +655,7 @@
 	},
 /area/space)
 "bM" = (
-/turf/simulated/floor/holofloor,
+/turf/open/floor/holofloor,
 /area/holodeck/source_emptycourt)
 "bN" = (
 /obj/structure/flora/grass/brown,
@@ -694,7 +694,7 @@
 /obj/structure/holowindow{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 4;
 	icon_state = "blue"
 	},
@@ -703,7 +703,7 @@
 /turf/space/transit/horizontal,
 /area/space)
 "bX" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 2;
 	icon_state = "green"
 	},
@@ -712,7 +712,7 @@
 /turf/unsimulated/wall,
 /area/space)
 "ca" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 6;
 	icon_state = "green"
 	},
@@ -759,7 +759,7 @@
 	},
 /area/space)
 "ch" = (
-/turf/simulated/floor/holofloor/space,
+/turf/open/floor/holofloor/space,
 /area/holodeck/source_space)
 "cj" = (
 /turf/unsimulated/wall,
@@ -768,20 +768,20 @@
 /turf/space/transit,
 /area/space)
 "cl" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-snow";
 	icon_state = "snow"
 	},
 /area/holodeck/source_snowfield)
 "cm" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-grimy";
 	icon_state = "grimy";
 	dir = 2
 	},
 /area/holodeck/source_meetinghall)
 "cn" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 9;
 	icon_state = "red"
 	},
@@ -800,7 +800,7 @@
 	},
 /area/centcom/ferry)
 "cq" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 5;
 	icon_state = "red"
 	},
@@ -811,13 +811,13 @@
 	},
 /area/space)
 "cu" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 8;
 	icon_state = "red"
 	},
 /area/holodeck/source_thunderdomecourt)
 "cw" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 1;
 	icon_state = "red"
 	},
@@ -825,7 +825,7 @@
 "cx" = (
 /obj/structure/table/holotable,
 /obj/item/clothing/gloves/boxing/hologlove,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 9;
 	icon_state = "red"
 	},
@@ -843,33 +843,33 @@
 /area/space)
 "cA" = (
 /obj/structure/flora/grass/both,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-snow";
 	icon_state = "snow"
 	},
 /area/holodeck/source_snowfield)
 "cB" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid3 (EAST)";
 	icon_state = "asteroid3";
 	dir = 4
 	},
 /area/holodeck/source_desert)
 "cD" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpetsymbol (SOUTHEAST)";
 	icon_state = "carpetsymbol";
 	dir = 6
 	},
 /area/holodeck/source_meetinghall)
 "cE" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 8;
 	icon_state = "red"
 	},
 /area/holodeck/source_basketball)
 "cF" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 4;
 	icon_state = "red"
 	},
@@ -890,7 +890,7 @@
 	},
 /area/centcom/evac)
 "cL" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 8;
 	icon_state = "red"
 	},
@@ -910,13 +910,13 @@
 /area/space)
 "cO" = (
 /obj/structure/flora/tree/pine,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-snow";
 	icon_state = "snow"
 	},
 /area/holodeck/source_snowfield)
 "cQ" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 1;
 	icon_state = "red"
 	},
@@ -1085,32 +1085,32 @@
 /turf/unsimulated/beach/sand,
 /area/ninja/holding)
 "dj" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 8;
 	icon_state = "red"
 	},
 /area/holodeck/source_knightarena)
 "dk" = (
 /obj/structure/flora/grass/green,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-snow";
 	icon_state = "snow"
 	},
 /area/holodeck/source_snowfield)
 "dp" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 2;
 	icon_state = "red"
 	},
 /area/holodeck/source_basketball)
 "dq" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 10;
 	icon_state = "red"
 	},
 /area/holodeck/source_basketball)
 "dr" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 6;
 	icon_state = "red"
 	},
@@ -1160,7 +1160,7 @@
 /area/ninja/holding)
 "dA" = (
 /obj/structure/flora/tree/dead,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-snow";
 	icon_state = "snow"
 	},
@@ -1190,7 +1190,7 @@
 	},
 /area/tdome/arena_source)
 "dG" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 1;
 	icon_state = "green"
 	},
@@ -1220,25 +1220,25 @@
 	},
 /area/tdome/arena)
 "dJ" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 9;
 	icon_state = "green"
 	},
 /area/holodeck/source_basketball)
 "dK" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 5;
 	icon_state = "green"
 	},
 /area/holodeck/source_basketball)
 "dL" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 4;
 	icon_state = "red"
 	},
 /area/holodeck/source_boxingcourt)
 "dO" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 4;
 	icon_state = "green"
 	},
@@ -1321,13 +1321,13 @@
 /turf/space/transit,
 /area/space)
 "dY" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 8;
 	icon_state = "green"
 	},
 /area/holodeck/source_basketball)
 "dZ" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 4;
 	icon_state = "green"
 	},
@@ -1394,13 +1394,13 @@
 	},
 /area/syndicate_mothership)
 "el" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 2;
 	icon_state = "green"
 	},
 /area/holodeck/source_basketball)
 "em" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	icon_state = "sand";
 	name = "Soft sand"
 	},
@@ -1457,7 +1457,7 @@
 	},
 /area/ninja/holding)
 "ev" = (
-/turf/simulated/floor/beach/sand,
+/turf/open/floor/beach/sand,
 /area/holodeck/source_beach)
 "ew" = (
 /obj/machinery/vending/snack,
@@ -1497,41 +1497,41 @@
 	},
 /area/syndicate_mothership)
 "eB" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 10;
 	icon_state = "green"
 	},
 /area/holodeck/source_basketball)
 "eC" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 6;
 	icon_state = "green"
 	},
 /area/holodeck/source_basketball)
 "eH" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 2;
 	icon_state = "green"
 	},
 /area/holodeck/source_boxingcourt)
 "eI" = (
-/turf/simulated/floor/holofloor,
+/turf/open/floor/holofloor,
 /area/holodeck/source_basketball)
 "eJ" = (
 /obj/structure/holowindow{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor,
+/turf/open/floor/holofloor,
 /area/holodeck/source_thunderdomecourt)
 "eK" = (
 /obj/effect/overlay/palmtree_r,
-/turf/simulated/floor/beach/sand,
+/turf/open/floor/beach/sand,
 /area/holodeck/source_beach)
 "eL" = (
 /obj/structure/holowindow{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 4;
 	icon_state = "green"
 	},
@@ -1542,13 +1542,13 @@
 	icon_state = "boxinggreen";
 	item_state = "boxinggreen"
 	},
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 6;
 	icon_state = "green"
 	},
 /area/holodeck/source_boxingcourt)
 "eN" = (
-/turf/simulated/floor/holofloor,
+/turf/open/floor/holofloor,
 /area/holodeck/source_thunderdomecourt)
 "eO" = (
 /obj/machinery/vending/cigarette,
@@ -1565,7 +1565,7 @@
 	},
 /area/ninja/holding)
 "eQ" = (
-/turf/simulated/floor/holofloor,
+/turf/open/floor/holofloor,
 /area/holodeck/source_boxingcourt)
 "eR" = (
 /obj/structure/chair/stool,
@@ -1957,7 +1957,7 @@
 	},
 /area/tdome/arena_source)
 "fN" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 8
 	},
@@ -1972,7 +1972,7 @@
 	},
 /area/tdome/arena_source)
 "fP" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 4
 	},
@@ -2003,7 +2003,7 @@
 	},
 /area/wizard_station)
 "fT" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 4;
 	icon_state = "green"
 	},
@@ -2141,17 +2141,17 @@
 /area/syndicate_mothership)
 "gi" = (
 /obj/effect/decal/warning_stripes/southeastcorner,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "gj" = (
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "gk" = (
 /obj/machinery/flasher{
 	id = "flash";
 	name = "Thunderdome Flash"
 	},
-/turf/simulated/floor/bluegrid,
+/turf/open/floor/bluegrid,
 /area/tdome/arena_source)
 "gl" = (
 /obj/item/flag/wiz,
@@ -2176,7 +2176,7 @@
 	network = list("Thunderdome");
 	c_tag = "Thunderdome Arena"
 	},
-/turf/simulated/floor/bluegrid,
+/turf/open/floor/bluegrid,
 /area/tdome/arena_source)
 "go" = (
 /turf/unsimulated/wall/fakeglass{
@@ -2201,7 +2201,7 @@
 /area/wizard_station)
 "gr" = (
 /obj/item/beach_ball,
-/turf/simulated/floor/beach/sand,
+/turf/open/floor/beach/sand,
 /area/holodeck/source_beach)
 "gs" = (
 /turf/unsimulated/wall/fakeglass{
@@ -2243,7 +2243,7 @@
 /area/wizard_station)
 "gx" = (
 /obj/effect/decal/warning_stripes/south,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "gy" = (
 /obj/effect/decal/cleanable/cobweb2,
@@ -2338,7 +2338,7 @@
 /area/tdome/arena_source)
 "gK" = (
 /obj/item/beach_ball/holoball,
-/turf/simulated/floor/holofloor,
+/turf/open/floor/holofloor,
 /area/holodeck/source_basketball)
 "gL" = (
 /mob/living/simple_animal/hostile/creature{
@@ -2509,7 +2509,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "hh" = (
 /obj/docking_port/stationary/transit{
@@ -2611,7 +2611,7 @@
 /area/ninja/holding)
 "hx" = (
 /obj/effect/decal/warning_stripes/southwestcorner,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "hy" = (
 /turf/unsimulated/wall/fakeglass{
@@ -2683,7 +2683,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "hI" = (
 /turf/unsimulated/floor/snow,
@@ -2847,7 +2847,7 @@
 /area/syndicate_mothership)
 "iu" = (
 /obj/effect/decal/warning_stripes/southeast,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "iv" = (
 /turf/simulated/shuttle/wall{
@@ -2958,18 +2958,18 @@
 /area/syndicate_mothership)
 "iG" = (
 /obj/effect/decal/warning_stripes/southwest,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "iI" = (
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "iJ" = (
 /obj/machinery/light{
 	dir = 1;
 	on = 1
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "iK" = (
 /turf/unsimulated/wall/fakeglass{
@@ -3018,7 +3018,7 @@
 	opacity = 1;
 	req_one_access_txt = "150"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/assault_pod)
 "iR" = (
 /turf/unsimulated/wall/fakeglass{
@@ -3034,7 +3034,7 @@
 /area/shuttle/assault_pod)
 "iT" = (
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "iU" = (
 /obj/machinery/door/poddoor{
@@ -3046,17 +3046,17 @@
 	},
 /area/syndicate_mothership)
 "iV" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/syndicate_mothership)
 "iW" = (
 /obj/machinery/door/airlock/external{
 	req_access_txt = "150"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/syndicate_mothership)
 "iX" = (
 /obj/machinery/light,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/syndicate_mothership)
 "iY" = (
 /mob/living/simple_animal/pet/cat/Syndi,
@@ -3079,10 +3079,10 @@
 /area/tdome/arena)
 "jb" = (
 /obj/machinery/igniter/on,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/tdome/arena)
 "jc" = (
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/tdome/arena)
 "jd" = (
 /turf/unsimulated/wall/fakeglass{
@@ -3190,7 +3190,7 @@
 	},
 /area/syndicate_mothership)
 "jp" = (
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/tdome/arena_source)
 "jq" = (
 /obj/machinery/light/spot{
@@ -3236,11 +3236,11 @@
 /area/shuttle/assault_pod)
 "ju" = (
 /obj/effect/decal/warning_stripes/northeast,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "jv" = (
 /obj/effect/decal/warning_stripes/northeastcorner,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "jw" = (
 /obj/machinery/light/small{
@@ -3257,15 +3257,15 @@
 /area/shuttle/assault_pod)
 "jx" = (
 /obj/effect/decal/warning_stripes/northwest,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "jy" = (
 /obj/effect/decal/warning_stripes/northwestcorner,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "jz" = (
 /obj/machinery/light,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "jA" = (
 /obj/docking_port/stationary/transit{
@@ -3357,12 +3357,12 @@
 /area/adminconstruction)
 "jJ" = (
 /obj/effect/decal/warning_stripes/north,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "jK" = (
 /obj/effect/decal/warning_stripes/north,
 /obj/machinery/light,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "jM" = (
 /obj/machinery/door/window{
@@ -3508,7 +3508,7 @@
 	req_one_access_txt = "150"
 	},
 /obj/docking_port/mobile/assault_pod,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/assault_pod)
 "kn" = (
 /obj/machinery/sleeper/syndie{
@@ -3596,7 +3596,7 @@
 /turf/unsimulated/floor/abductor,
 /area/abductor_ship)
 "kB" = (
-/turf/simulated/floor/bluegrid,
+/turf/open/floor/bluegrid,
 /area/tdome/arena_source)
 "kC" = (
 /obj/structure/chair/stool,
@@ -3967,11 +3967,11 @@
 /area/tdome/arena_source)
 "lD" = (
 /obj/machinery/igniter/on,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/tdome/arena_source)
 "lE" = (
 /obj/machinery/light/spot,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/tdome/arena_source)
 "lF" = (
 /turf/unsimulated/wall/abductor{
@@ -4542,7 +4542,7 @@
 	id_tag = "CCGAMMA";
 	name = "Gamma Security"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/centcom/gamma)
@@ -5026,14 +5026,14 @@
 /area/shuttle/gamma/space)
 "oj" = (
 /obj/effect/spawner/window/reinforced,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 1
 	},
 /area/centcom/gamma)
 "ok" = (
 /obj/machinery/porta_turret/centcom/pulse,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 9
 	},
@@ -5046,7 +5046,7 @@
 	},
 /obj/structure/table/reinforced,
 /obj/item/paper,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 1
 	},
@@ -5055,7 +5055,7 @@
 /obj/structure/chair/office/dark{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 1
 	},
@@ -5081,7 +5081,7 @@
 /obj/structure/chair/office/dark{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 1
 	},
@@ -5095,14 +5095,14 @@
 	pixel_x = 0;
 	req_access = list(114)
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 1
 	},
 /area/centcom/gamma)
 "os" = (
 /obj/machinery/porta_turret/centcom/pulse,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 5
 	},
@@ -5234,7 +5234,7 @@
 /area/shuttle/gamma/space)
 "oD" = (
 /obj/effect/spawner/window/reinforced,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 8
 	},
@@ -5265,7 +5265,7 @@
 	},
 /area/centcom/specops)
 "oH" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 8
 	},
@@ -5337,18 +5337,18 @@
 	opacity = 1;
 	req_access_txt = "114"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/centcom/gamma)
 "oP" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 10
 	},
 /area/centcom/gamma)
 "oQ" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 6
 	},
@@ -5375,7 +5375,7 @@
 	},
 /area/centcom/specops)
 "oT" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red"
 	},
 /area/centcom/gamma)
@@ -5615,7 +5615,7 @@
 	icon_state = "4-8";
 	pixel_x = 0
 	},
-/turf/simulated/floor/mech_bay_recharge_floor,
+/turf/open/floor/mech_bay_recharge_floor,
 /area/shuttle/gamma/space)
 "pv" = (
 /obj/machinery/door/poddoor/impassable{
@@ -5962,7 +5962,7 @@
 /area/centcom/specops)
 "qh" = (
 /obj/structure/holowindow,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 8;
 	icon_state = "red"
 	},
@@ -6017,7 +6017,7 @@
 	},
 /area/centcom/specops)
 "qo" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/centcom/evac)
@@ -6037,7 +6037,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/centcom/evac)
@@ -6056,7 +6056,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/centcom/evac)
@@ -6159,7 +6159,7 @@
 	},
 /area/centcom/bathroom)
 "qF" = (
-/turf/simulated/floor/mech_bay_recharge_floor,
+/turf/open/floor/mech_bay_recharge_floor,
 /area/syndicate_mothership)
 "qG" = (
 /obj/machinery/computer/mech_bay_power_console,
@@ -7213,14 +7213,14 @@
 /area/centcom/ferry)
 "te" = (
 /obj/machinery/atmospherics/unary/cryo_cell,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-whiteblue (NORTHWEST)";
 	icon_state = "whiteblue";
 	dir = 9
 	},
 /area/centcom/evac)
 "tf" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-whiteblue (NORTH)";
 	icon_state = "whiteblue";
 	dir = 1
@@ -7228,7 +7228,7 @@
 /area/centcom/evac)
 "tg" = (
 /obj/machinery/atmospherics/unary/cryo_cell,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-whiteblue (NORTH)";
 	icon_state = "whiteblue";
 	dir = 1
@@ -7248,7 +7248,7 @@
 	},
 /area/centcom/specops)
 "tj" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-whiteblue (NORTHEAST)";
 	icon_state = "whiteblue";
 	dir = 5
@@ -7293,7 +7293,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-whiteblue (WEST)";
 	icon_state = "whiteblue";
 	dir = 8
@@ -7304,12 +7304,12 @@
 	dir = 9;
 	icon_state = "intact"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/centcom/evac)
 "tq" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-whiteblue (EAST)";
 	icon_state = "whiteblue";
 	dir = 4
@@ -7370,7 +7370,7 @@
 	dir = 10;
 	initialize_directions = 10
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-whiteblue (EAST)";
 	icon_state = "whiteblue";
 	dir = 4
@@ -7384,7 +7384,7 @@
 /obj/machinery/portable_atmospherics/canister/oxygen{
 	name = "Canister: \[O2] (CRYO)"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-whiteblue (SOUTHWEST)";
 	icon_state = "whiteblue";
 	dir = 10
@@ -7400,7 +7400,7 @@
 	pixel_x = 0;
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whiteblue";
 	tag = "icon-whitehall (WEST)"
@@ -7414,7 +7414,7 @@
 /obj/machinery/portable_atmospherics/canister/oxygen{
 	name = "Canister: \[O2] (CRYO)"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whiteblue";
 	tag = "icon-whitehall (WEST)"
@@ -7424,7 +7424,7 @@
 /obj/machinery/atmospherics/unary/cold_sink/freezer{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-whiteblue (SOUTHEAST)";
 	icon_state = "whiteblue";
 	dir = 6
@@ -7437,7 +7437,7 @@
 /obj/item/storage/firstaid/regular,
 /obj/item/storage/firstaid/adv,
 /obj/item/storage/firstaid/brute,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whiteblue";
 	tag = "icon-whitehall (WEST)"
@@ -7510,7 +7510,7 @@
 	dir = 10;
 	icon_state = "9"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/centcom/evac)
 "tJ" = (
 /obj/machinery/door/poddoor{
@@ -7522,7 +7522,7 @@
 	},
 /area/tdome/arena)
 "tK" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red";
 	dir = 8
 	},
@@ -7537,7 +7537,7 @@
 	},
 /area/tdome/arena)
 "tM" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "green";
 	dir = 4
 	},
@@ -7561,7 +7561,7 @@
 	id = "flash";
 	name = "Thunderdome Flash"
 	},
-/turf/simulated/floor/bluegrid,
+/turf/open/floor/bluegrid,
 /area/tdome/arena)
 "tP" = (
 /obj/machinery/camera{
@@ -7600,7 +7600,7 @@
 	network = list("Thunderdome");
 	c_tag = "Thunderdome Arena"
 	},
-/turf/simulated/floor/bluegrid,
+/turf/open/floor/bluegrid,
 /area/tdome/arena)
 "tT" = (
 /obj/machinery/door/poddoor{
@@ -9834,7 +9834,7 @@
 	},
 /area/admin)
 "xL" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "neutralfull"
 	},
@@ -10439,7 +10439,7 @@
 	icon_state = "boxinggreen";
 	item_state = "boxinggreen"
 	},
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 10;
 	icon_state = "green"
 	},
@@ -10707,7 +10707,7 @@
 /obj/structure/window/full/shuttle{
 	icon_state = "16"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/centcom/evac)
 "zR" = (
 /obj/machinery/vending/coffee,
@@ -10746,7 +10746,7 @@
 "zV" = (
 /obj/structure/grille,
 /obj/structure/window/full/shuttle,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/centcom/evac)
 "zW" = (
 /turf/simulated/shuttle/floor{
@@ -10758,7 +10758,7 @@
 /obj/structure/window/full/shuttle{
 	icon_state = "15"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/centcom/evac)
 "zY" = (
 /obj/structure/window/reinforced,
@@ -11343,7 +11343,7 @@
 /obj/structure/window/full/shuttle{
 	icon_state = "window4"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/centcom/evac)
 "Br" = (
 /obj/structure/chair/office/dark,
@@ -11356,7 +11356,7 @@
 /obj/structure/window/full/shuttle{
 	icon_state = "17"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/centcom/evac)
 "Bt" = (
 /obj/structure/chair/comfy/red{
@@ -11689,7 +11689,7 @@
 /area/syndicate_mothership/jail)
 "Cm" = (
 /obj/structure/table/holotable,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 5;
 	icon_state = "red"
 	},
@@ -11701,13 +11701,13 @@
 	},
 /area/syndicate_mothership/jail)
 "CF" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 4;
 	icon_state = "blue"
 	},
 /area/holodeck/source_knightarena)
 "CR" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 8;
 	icon_state = "green"
 	},
@@ -11718,7 +11718,7 @@
 /obj/item/clothing/suit/armor/tdome/red,
 /obj/item/clothing/under/color/red,
 /obj/item/holo/esword/red,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 1;
 	icon_state = "red"
 	},
@@ -11749,7 +11749,7 @@
 	},
 /area/syndicate_mothership/jail)
 "DX" = (
-/turf/simulated/floor/mech_bay_recharge_floor,
+/turf/open/floor/mech_bay_recharge_floor,
 /area/admin)
 "DY" = (
 /obj/machinery/door/airlock/hatch/syndicate{
@@ -11763,20 +11763,20 @@
 /obj/structure/holohoop{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 2;
 	icon_state = "green"
 	},
 /area/holodeck/source_basketball)
 "Ew" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet2-0 (EAST)";
 	icon_state = "carpet2-0";
 	dir = 4
 	},
 /area/holodeck/source_theatre)
 "Ez" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet8-0 (EAST)";
 	icon_state = "carpet8-0";
 	dir = 4
@@ -11792,21 +11792,21 @@
 /area/syndicate_mothership/jail)
 "Fe" = (
 /obj/structure/table/holotable,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 10;
 	icon_state = "blue"
 	},
 /area/holodeck/source_knightarena)
 "Fx" = (
 /obj/structure/table/holotable,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 5;
 	icon_state = "red"
 	},
 /area/holodeck/source_knightarena)
 "FF" = (
 /obj/structure/table/holotable,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 10;
 	icon_state = "green"
 	},
@@ -11821,7 +11821,7 @@
 	},
 /area/centcom/specops)
 "Gg" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid11 (EAST)";
 	icon_state = "asteroid11";
 	dir = 4
@@ -11834,12 +11834,12 @@
 	},
 /area/syndicate_mothership/jail)
 "Gx" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-wood (EAST)";
 	icon_state = "wood";
 	dir = 4
 	},
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-siding1";
 	icon_state = "siding1";
 	dir = 2
@@ -11900,7 +11900,7 @@
 /turf/unsimulated/wall,
 /area/tdome)
 "Hp" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-rampbottom";
 	icon_state = "rampbottom";
 	dir = 2
@@ -11947,7 +11947,7 @@
 /obj/item/clothing/suit/armor/riot/knight/red,
 /obj/item/clothing/head/helmet/riot/knight/red,
 /obj/item/holo/claymore/red,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 1;
 	icon_state = "red"
 	},
@@ -12046,7 +12046,7 @@
 	},
 /area/tdome/tdome1)
 "Iw" = (
-/turf/simulated/floor/bluegrid,
+/turf/open/floor/bluegrid,
 /area/tdome/arena)
 "Iz" = (
 /obj/structure/chair/stool,
@@ -12082,7 +12082,7 @@
 /obj/structure/holowindow{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid7";
 	icon_state = "asteroid7";
 	dir = 2
@@ -12094,7 +12094,7 @@
 /obj/item/clothing/suit/armor/tdome/green,
 /obj/item/clothing/under/color/green,
 /obj/item/holo/esword/green,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 2;
 	icon_state = "green"
 	},
@@ -12105,7 +12105,7 @@
 	},
 /area/tdome/tdomeadmin)
 "IU" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet10-8 (EAST)";
 	icon_state = "carpet10-8";
 	dir = 4
@@ -12127,7 +12127,7 @@
 /obj/structure/holowindow{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 8;
 	icon_state = "blue"
 	},
@@ -12200,14 +12200,14 @@
 	},
 /area/shuttle/assault_pod)
 "Lf" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid8 (EAST)";
 	icon_state = "asteroid8";
 	dir = 4
 	},
 /area/holodeck/source_desert)
 "Ll" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 8;
 	icon_state = "green"
 	},
@@ -12216,13 +12216,13 @@
 /obj/structure/holowindow{
 	dir = 1
 	},
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 8;
 	icon_state = "green"
 	},
 /area/holodeck/source_thunderdomecourt)
 "LG" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet1-0 (EAST)";
 	icon_state = "carpet1-0";
 	dir = 4
@@ -12230,7 +12230,7 @@
 /area/holodeck/source_theatre)
 "LL" = (
 /obj/structure/holowindow,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 4;
 	icon_state = "red"
 	},
@@ -12261,7 +12261,7 @@
 	},
 /area/syndicate_mothership/jail)
 "MR" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid1 (EAST)";
 	icon_state = "asteroid1";
 	dir = 4
@@ -12325,7 +12325,7 @@
 /area/centcom/control)
 "Ol" = (
 /obj/structure/holohoop,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 1;
 	icon_state = "red"
 	},
@@ -12385,7 +12385,7 @@
 	},
 /area/centcom/specops)
 "OT" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid2 (EAST)";
 	icon_state = "asteroid2";
 	dir = 4
@@ -12440,7 +12440,7 @@
 "QB" = (
 /obj/structure/table/holotable,
 /obj/item/clothing/gloves/boxing/hologlove,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 5;
 	icon_state = "red"
 	},
@@ -12469,7 +12469,7 @@
 	},
 /area/syndicate_mothership/jail)
 "QQ" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid6";
 	icon_state = "asteroid6";
 	dir = 2
@@ -12477,12 +12477,12 @@
 /area/holodeck/source_desert)
 "QT" = (
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/holofloor/grass,
+/turf/open/floor/holofloor/grass,
 /area/holodeck/source_picnicarea)
 "QV" = (
 /obj/item/clothing/under/rainbow,
 /obj/item/clothing/glasses/sunglasses_fake,
-/turf/simulated/floor/beach/sand,
+/turf/open/floor/beach/sand,
 /area/holodeck/source_beach)
 "Rf" = (
 /obj/structure/chair{
@@ -12501,7 +12501,7 @@
 /area/syndicate_mothership/jail)
 "Rj" = (
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/simulated/floor/holofloor/grass,
+/turf/open/floor/holofloor/grass,
 /area/holodeck/source_picnicarea)
 "RD" = (
 /obj/effect/decal/warning_stripes/south,
@@ -12512,7 +12512,7 @@
 "RU" = (
 /obj/effect/overlay/palmtree_l,
 /obj/effect/overlay/coconut,
-/turf/simulated/floor/beach/sand,
+/turf/open/floor/beach/sand,
 /area/holodeck/source_beach)
 "RX" = (
 /turf/unsimulated/wall{
@@ -12527,7 +12527,7 @@
 	},
 /area/centcom/specops)
 "Ss" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 4;
 	icon_state = "red"
 	},
@@ -12548,7 +12548,7 @@
 /obj/item/clothing/suit/armor/riot/knight/blue,
 /obj/item/clothing/head/helmet/riot/knight/blue,
 /obj/item/holo/claymore/blue,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 2;
 	icon_state = "blue"
 	},
@@ -12588,7 +12588,7 @@
 /area/centcom/control)
 "Tk" = (
 /obj/structure/holowindow,
-/turf/simulated/floor/holofloor,
+/turf/open/floor/holofloor,
 /area/holodeck/source_thunderdomecourt)
 "Tl" = (
 /obj/structure/chair/office/dark,
@@ -12605,21 +12605,21 @@
 	},
 /area/centcom/control)
 "Tz" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 4;
 	icon_state = "red"
 	},
 /area/holodeck/source_thunderdomecourt)
 "TQ" = (
 /obj/structure/holowindow,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid7";
 	icon_state = "asteroid7";
 	dir = 2
 	},
 /area/holodeck/source_knightarena)
 "TX" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 8;
 	icon_state = "green"
 	},
@@ -12633,7 +12633,7 @@
 	},
 /area/centcom/specops)
 "Uv" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid5";
 	icon_state = "asteroid5";
 	dir = 2
@@ -12644,7 +12644,7 @@
 /obj/machinery/readybutton{
 	pixel_y = 0
 	},
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 6;
 	icon_state = "green"
 	},
@@ -12658,13 +12658,13 @@
 	},
 /area/centcom/specops)
 "UI" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 8;
 	icon_state = "blue"
 	},
 /area/holodeck/source_knightarena)
 "UK" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet3-0 (EAST)";
 	icon_state = "carpet3-0";
 	dir = 4
@@ -12672,14 +12672,14 @@
 /area/holodeck/source_theatre)
 "UM" = (
 /obj/structure/flora/grass/brown,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-snow";
 	icon_state = "snow"
 	},
 /area/holodeck/source_snowfield)
 "UV" = (
 /obj/structure/holowindow,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 4;
 	icon_state = "red"
 	},
@@ -12749,7 +12749,7 @@
 	},
 /area/wizard_station)
 "VZ" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-asteroid7";
 	icon_state = "asteroid7";
 	dir = 2
@@ -12811,7 +12811,7 @@
 "WP" = (
 /obj/structure/table/holotable,
 /obj/machinery/readybutton,
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 6;
 	icon_state = "blue"
 	},
@@ -12892,7 +12892,7 @@
 /turf/unsimulated/floor/abductor,
 /area/abductor_ship)
 "XT" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	tag = "icon-carpet4-0 (EAST)";
 	icon_state = "carpet4-0";
 	dir = 4
@@ -12903,13 +12903,13 @@
 /obj/machinery/readybutton{
 	pixel_y = 0
 	},
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 9;
 	icon_state = "red"
 	},
 /area/holodeck/source_thunderdomecourt)
 "Yp" = (
-/turf/simulated/floor/beach/water,
+/turf/open/floor/beach/water,
 /area/holodeck/source_beach)
 "Yx" = (
 /obj/machinery/door/airlock/hatch/syndicate{
@@ -12923,13 +12923,13 @@
 	},
 /area/syndicate_mothership/jail)
 "Zv" = (
-/turf/simulated/floor/beach/coastline,
+/turf/open/floor/beach/coastline,
 /area/holodeck/source_beach)
 "ZE" = (
 /turf/unsimulated/wall/fakeglass,
 /area/syndicate_mothership/jail)
 "ZR" = (
-/turf/simulated/floor/holofloor{
+/turf/open/floor/holofloor{
 	dir = 10;
 	icon_state = "green"
 	},

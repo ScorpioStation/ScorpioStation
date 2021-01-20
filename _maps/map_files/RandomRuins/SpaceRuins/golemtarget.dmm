@@ -6,7 +6,7 @@
 /turf/simulated/mineral/random/high_chance,
 /area/ruin/unpowered)
 "H" = (
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/ruin/unpowered)
 "S" = (
 /obj/docking_port/stationary{

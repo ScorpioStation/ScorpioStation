@@ -29,7 +29,7 @@
 "ac" = (
 /obj/structure/alien/weeds,
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -44,7 +44,7 @@
 	icon_state = "weeds1"
 	},
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -61,7 +61,7 @@
 	icon_state = "egg_hatched";
 	name = "egg"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -76,7 +76,7 @@
 	icon_state = "weeds2"
 	},
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -95,7 +95,7 @@
 	icon_state = "egg_hatched";
 	name = "egg"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -107,7 +107,7 @@
 	})
 "ah" = (
 /obj/structure/alien/weeds,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -122,7 +122,7 @@
 	icon_state = "weeds2"
 	},
 /mob/living/simple_animal/hostile/alien,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -135,7 +135,7 @@
 "aj" = (
 /obj/structure/alien/weeds,
 /obj/structure/bed/nest,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -154,7 +154,7 @@
 	icon_state = "egg_hatched";
 	name = "egg"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -169,7 +169,7 @@
 	icon_state = "weeds1"
 	},
 /obj/structure/bed/nest,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -181,7 +181,7 @@
 	})
 "am" = (
 /obj/structure/alien/weeds/node,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -196,7 +196,7 @@
 	icon_state = "weeds2"
 	},
 /obj/structure/bed/nest,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -210,7 +210,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds1"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -233,7 +233,7 @@
 	color = "red";
 	icon_state = "gib1_flesh"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -247,7 +247,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds2"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -263,7 +263,7 @@
 	},
 /obj/structure/alien/resin/wall,
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -287,7 +287,7 @@
 	color = "red";
 	icon_state = "gib1_flesh"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -302,7 +302,7 @@
 	icon_state = "weeds2"
 	},
 /mob/living/simple_animal/hostile/alien/sentinel,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -318,7 +318,7 @@
 	color = "red";
 	icon_state = "gib2_flesh"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -333,7 +333,7 @@
 /obj/effect/decal/cleanable/blood{
 	color = "red"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -344,7 +344,7 @@
 	poweralm = 0
 	})
 "ax" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 9;
 	icon_state = "darkred";
 	tag = "icon-darkred (NORTHWEST)"
@@ -354,7 +354,7 @@
 	name = "Syndicate Outpost"
 	})
 "ay" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a4{
@@ -362,7 +362,7 @@
 	name = "Syndicate Outpost"
 	})
 "az" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "darkredcorners";
 	tag = "icon-darkredcorners (NORTH)"
@@ -373,7 +373,7 @@
 	})
 "aA" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 5;
 	icon_state = "darkred";
 	tag = "icon-darkred (NORTHEAST)"
@@ -383,7 +383,7 @@
 	name = "Syndicate Outpost"
 	})
 "aB" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "darkredcorners";
 	tag = "icon-darkredcorners (EAST)"
@@ -395,7 +395,7 @@
 "aC" = (
 /obj/structure/alien/weeds/node,
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -423,7 +423,7 @@
 	color = "red";
 	icon_state = "gibdown1_flesh"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -435,7 +435,7 @@
 	})
 "aE" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "darkredcorners";
 	tag = "icon-darkredcorners (NORTH)"
@@ -448,7 +448,7 @@
 /obj/machinery/gateway{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "vault"
 	},
@@ -460,7 +460,7 @@
 /obj/machinery/gateway{
 	dir = 9
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "vault"
 	},
@@ -472,7 +472,7 @@
 /obj/machinery/gateway{
 	dir = 5
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "vault"
 	},
@@ -493,7 +493,7 @@
 	color = "red";
 	icon_state = "gib1_flesh"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -511,7 +511,7 @@
 	color = "red";
 	icon_state = "gib2_flesh"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -531,7 +531,7 @@
 /obj/effect/decal/cleanable/blood{
 	color = "red"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -546,7 +546,7 @@
 /mob/living/simple_animal/hostile/alien/drone{
 	plants_off = 1
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -560,7 +560,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a4{
@@ -571,7 +571,7 @@
 /obj/machinery/gateway/centeraway{
 	calibrated = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a4{
@@ -582,7 +582,7 @@
 /obj/machinery/gateway{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "vault"
 	},
@@ -595,7 +595,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a4{
@@ -606,7 +606,7 @@
 /obj/machinery/gateway{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "vault"
 	},
@@ -619,7 +619,7 @@
 	pixel_x = 7;
 	pixel_y = -6
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -638,7 +638,7 @@
 	pixel_x = -16;
 	plants_off = 1
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -655,7 +655,7 @@
 	name = "Syndicate Outpost"
 	})
 "aU" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "darkredcorners";
 	tag = "icon-darkredcorners (WEST)"
@@ -670,7 +670,7 @@
 	icon_state = "0-2";
 	d2 = 2
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "vault"
 	},
@@ -682,7 +682,7 @@
 /obj/machinery/gateway{
 	dir = 10
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "vault"
 	},
@@ -691,7 +691,7 @@
 	name = "Syndicate Outpost"
 	})
 "aX" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "darkredcorners";
 	tag = "icon-darkredcorners"
@@ -705,7 +705,7 @@
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "vault"
 	},
@@ -714,7 +714,7 @@
 	name = "Syndicate Outpost"
 	})
 "aZ" = (
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -732,7 +732,7 @@
 /mob/living/simple_animal/hostile/alien/drone{
 	plants_off = 1
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -747,7 +747,7 @@
 /obj/effect/decal/cleanable/blood{
 	color = "red"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -759,7 +759,7 @@
 	})
 "bc" = (
 /obj/machinery/vending/cola,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a4{
@@ -771,7 +771,7 @@
 /obj/structure/sign/poster/contraband/smoke{
 	pixel_y = 32
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a4{
@@ -780,7 +780,7 @@
 	})
 "be" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 10;
 	icon_state = "darkred";
 	tag = "icon-darkred (SOUTHWEST)"
@@ -797,7 +797,7 @@
 	pixel_y = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a4{
@@ -805,7 +805,7 @@
 	name = "Syndicate Outpost"
 	})
 "bg" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 6;
 	icon_state = "darkred";
 	tag = "icon-darkred (SOUTHEAST)"
@@ -816,7 +816,7 @@
 	})
 "bh" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "darkredcorners";
 	tag = "icon-darkredcorners"
@@ -838,7 +838,7 @@
 /obj/effect/decal/cleanable/blood{
 	color = "red"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -851,7 +851,7 @@
 "bj" = (
 /obj/structure/alien/weeds,
 /mob/living/simple_animal/hostile/alien/sentinel,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -869,7 +869,7 @@
 	color = "red";
 	icon_state = "gib2_flesh"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -892,7 +892,7 @@
 	})
 "bm" = (
 /obj/item/cigbutt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a4{
@@ -907,7 +907,7 @@
 	pixel_x = -32
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a4{
@@ -923,7 +923,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a4{
@@ -937,7 +937,7 @@
 	pixel_y = 23;
 	req_access = "150"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a4{
@@ -957,7 +957,7 @@
 	pixel_x = 2
 	},
 /obj/effect/decal/warning_stripes/south,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -977,7 +977,7 @@
 	name = "Personal Log"
 	},
 /obj/effect/decal/warning_stripes/southeast,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -996,7 +996,7 @@
 	tag = ""
 	},
 /obj/effect/decal/warning_stripes/north,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1009,7 +1009,7 @@
 /obj/item/storage/firstaid/regular,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes/southwest,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1024,7 +1024,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes/south,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1034,7 +1034,7 @@
 	name = "Unisex Restrooms";
 	req_access_txt = "0"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a4{
@@ -1049,7 +1049,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a4{
@@ -1057,7 +1057,7 @@
 	name = "Syndicate Outpost"
 	})
 "bx" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a4{
@@ -1072,7 +1072,7 @@
 	},
 /obj/item/trash/plate,
 /obj/item/cigbutt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a4{
@@ -1082,7 +1082,7 @@
 "bz" = (
 /obj/structure/chair/stool,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a4{
@@ -1094,7 +1094,7 @@
 	dir = 8
 	},
 /obj/structure/chair/stool,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1108,14 +1108,14 @@
 	tag = ""
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
 	})
 "bC" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1134,13 +1134,13 @@
 	req_access = "150"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
 	})
 "bE" = (
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1149,7 +1149,7 @@
 /obj/structure/toilet{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a4{
@@ -1158,7 +1158,7 @@
 	})
 "bG" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a4{
@@ -1169,7 +1169,7 @@
 /obj/structure/closet/crate/can,
 /obj/item/trash/syndi_cakes,
 /obj/item/trash/sosjerky,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a4{
@@ -1179,7 +1179,7 @@
 "bI" = (
 /obj/structure/table,
 /obj/item/storage/box/donkpockets,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a4{
@@ -1188,7 +1188,7 @@
 	})
 "bJ" = (
 /obj/structure/chair/stool,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a4{
@@ -1196,7 +1196,7 @@
 	name = "Syndicate Outpost"
 	})
 "bK" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red"
 	},
 /area/awaycontent/a4{
@@ -1205,7 +1205,7 @@
 	})
 "bL" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red"
 	},
 /area/awaycontent/a4{
@@ -1214,7 +1214,7 @@
 	})
 "bM" = (
 /obj/structure/closet/l3closet/general,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red"
 	},
 /area/awaycontent/a4{
@@ -1226,7 +1226,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red"
 	},
 /area/awaycontent/a4{
@@ -1237,7 +1237,7 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Break Room"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1245,7 +1245,7 @@
 "bP" = (
 /obj/structure/grille,
 /obj/structure/window/full/basic,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1264,7 +1264,7 @@
 	name = "Gateway";
 	req_access_txt = "150"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1284,7 +1284,7 @@
 /obj/item/clothing/gloves/color/yellow,
 /obj/item/multitool,
 /obj/effect/decal/warning_stripes/northwest,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1301,7 +1301,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1320,7 +1320,7 @@
 	tag = ""
 	},
 /obj/effect/decal/warning_stripes/northeast,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1334,7 +1334,7 @@
 	req_access = "150"
 	},
 /obj/effect/decal/warning_stripes/northwest,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1342,7 +1342,7 @@
 "bV" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /obj/effect/decal/warning_stripes/northeast,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1350,7 +1350,7 @@
 "bW" = (
 /obj/structure/alien/weeds/node,
 /mob/living/simple_animal/hostile/alien,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -1370,7 +1370,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds1"
 	},
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a4{
@@ -1383,7 +1383,7 @@
 	id = "awaysyndie"
 	},
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1401,7 +1401,7 @@
 /obj/effect/decal/warning_stripes/arrow{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -1410,7 +1410,7 @@
 	})
 "ca" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -1422,7 +1422,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds1"
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 4;
 	icon_state = "red";
 	name = "floor"
@@ -1438,7 +1438,7 @@
 	pixel_y = 23;
 	req_access = "150"
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "floorscorched2";
 	name = "floor"
 	},
@@ -1448,7 +1448,7 @@
 	})
 "cd" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "red";
 	name = "floor"
@@ -1463,7 +1463,7 @@
 	},
 /obj/structure/alien/weeds/node,
 /obj/effect/decal/warning_stripes/northeastcorner,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -1480,7 +1480,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes/north,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -1495,7 +1495,7 @@
 	status = 2
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 4;
 	icon_state = "red";
 	name = "floor"
@@ -1510,7 +1510,7 @@
 	pixel_y = 32
 	},
 /obj/effect/decal/warning_stripes/northwestcorner,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -1536,7 +1536,7 @@
 	name = "Engineering Instructions"
 	},
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1551,7 +1551,7 @@
 	d2 = 2
 	},
 /obj/effect/decal/warning_stripes/north,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1559,7 +1559,7 @@
 "ck" = (
 /obj/structure/chair/stool,
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1567,7 +1567,7 @@
 "cl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes/northwestcorner,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1580,7 +1580,7 @@
 	pixel_x = 32
 	},
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1588,13 +1588,13 @@
 "cn" = (
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
 	})
 "co" = (
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -1603,7 +1603,7 @@
 	})
 "cp" = (
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -1622,7 +1622,7 @@
 /obj/item/shard{
 	icon_state = "small"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	carbon_dioxide = 0;
 	nitrogen = 0;
 	oxygen = 0;
@@ -1633,7 +1633,7 @@
 	name = "Syndicate Outpost"
 	})
 "cr" = (
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 4;
 	icon_state = "red";
 	name = "floor"
@@ -1643,7 +1643,7 @@
 	name = "Syndicate Outpost"
 	})
 "cs" = (
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "red";
 	name = "floor"
@@ -1666,7 +1666,7 @@
 	pixel_y = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -1681,7 +1681,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 4;
 	icon_state = "red";
 	name = "floor"
@@ -1699,7 +1699,7 @@
 	tag = ""
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -1713,7 +1713,7 @@
 	icon_state = "1-8";
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1730,7 +1730,7 @@
 	name = "Power Maintenance";
 	req_access_txt = "150"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1756,7 +1756,7 @@
 	tag = ""
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1768,7 +1768,7 @@
 	icon_state = "2-4";
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1777,7 +1777,7 @@
 /obj/machinery/space_heater,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1790,7 +1790,7 @@
 	tag = ""
 	},
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1801,7 +1801,7 @@
 	output_dir = 2
 	},
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1818,7 +1818,7 @@
 "cE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -1833,7 +1833,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds1"
 	},
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a4{
@@ -1842,7 +1842,7 @@
 	})
 "cG" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 4;
 	icon_state = "red";
 	name = "floor"
@@ -1853,7 +1853,7 @@
 	})
 "cH" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 2;
 	icon_state = "red";
 	name = "floor"
@@ -1863,7 +1863,7 @@
 	name = "Syndicate Outpost"
 	})
 "cI" = (
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 10;
 	icon_state = "red";
 	name = "floor"
@@ -1884,7 +1884,7 @@
 	req_access = "150";
 	start_charge = 0
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 2;
 	icon_state = "red";
 	name = "floor"
@@ -1894,7 +1894,7 @@
 	name = "Syndicate Outpost"
 	})
 "cK" = (
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 2;
 	icon_state = "red";
 	name = "floor"
@@ -1907,7 +1907,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds2"
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 6;
 	icon_state = "red";
 	name = "floor"
@@ -1920,7 +1920,7 @@
 /obj/item/storage/box/lights/mixed,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes/southwest,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1932,7 +1932,7 @@
 	name = "P.A.C.M.A.N.-type portable generator"
 	},
 /obj/effect/decal/warning_stripes/south,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1945,7 +1945,7 @@
 	name = "S.U.P.E.R.P.A.C.M.A.N.-type portable generator"
 	},
 /obj/effect/decal/warning_stripes/south,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1953,7 +1953,7 @@
 "cP" = (
 /obj/machinery/portable_atmospherics/scrubber,
 /obj/effect/decal/warning_stripes/southeast,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1965,7 +1965,7 @@
 	name = "mining conveyor"
 	},
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -1975,7 +1975,7 @@
 "cR" = (
 /obj/effect/landmark/damageturf,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -1997,7 +1997,7 @@
 	icon_state = "tube-broken";
 	status = 2
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 4;
 	icon_state = "red";
 	name = "floor"
@@ -2017,7 +2017,7 @@
 	opacity = 0
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "wood";
 	name = "floor";
@@ -2032,14 +2032,14 @@
 	id_tag = "awaydorm5";
 	name = "Dorm 2"
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
 	})
 "cV" = (
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 4;
 	icon_state = "red";
 	name = "floor"
@@ -2051,7 +2051,7 @@
 "cW" = (
 /obj/structure/alien/weeds/node,
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -2068,7 +2068,7 @@
 	icon_state = "weeds2"
 	},
 /obj/effect/decal/warning_stripes/yellow/hollow,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -2083,7 +2083,7 @@
 /obj/item/shovel,
 /obj/item/pickaxe,
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -2100,7 +2100,7 @@
 	},
 /obj/structure/bed,
 /obj/item/bedsheet/syndie,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "wood";
 	name = "floor";
@@ -2112,7 +2112,7 @@
 	})
 "da" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "wood";
 	name = "floor";
@@ -2134,13 +2134,13 @@
 	},
 /obj/structure/dresser,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
 	})
 "dc" = (
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -2150,7 +2150,7 @@
 /mob/living/simple_animal/hostile/alien/drone{
 	plants_off = 1
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -2167,7 +2167,7 @@
 	output_dir = 2
 	},
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -2187,7 +2187,7 @@
 	dir = 8
 	},
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -2205,7 +2205,7 @@
 	req_access = "150"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "wood";
 	name = "floor";
@@ -2219,7 +2219,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "wood";
 	name = "floor";
@@ -2238,7 +2238,7 @@
 	pixel_y = 0;
 	req_access = "150"
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -2247,7 +2247,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -2259,7 +2259,7 @@
 	},
 /obj/structure/alien/weeds,
 /obj/effect/decal/warning_stripes/yellow/hollow,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -2274,7 +2274,7 @@
 /obj/effect/decal/warning_stripes/yellow/partial,
 /obj/effect/decal/warning_stripes/arrow,
 /obj/effect/decal/warning_stripes/northeastcorner,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -2284,7 +2284,7 @@
 "dn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes/north,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -2293,7 +2293,7 @@
 	})
 "do" = (
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a4{
@@ -2310,7 +2310,7 @@
 	d2 = 2
 	},
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "dq" = (
 /obj/structure/table/wood,
@@ -2322,7 +2322,7 @@
 	info = "Log 1:<br>While mining today I noticed the NT station was finished with its renovations. They placed some huge reinforced tumor on the station &ndash; looks so ugly. I wouldn't be surprised if those pigs decided to turn that little astronomy outpost into a prison with that thing, it'd be pretty typical of them.<br><br>Log 2:<br>Really dumb of me, but I just waved at an engineer in the outpost, and he waved back. I hope to god he was too dumb or drunk to recognize the suit, because if he isn't, then we might have to pull out before they come looking for us.<br><br>Log 3:<br>That huge reinforced tumor in their science section has been making a lot of noise lately. I've been hearing some banging and scratching from the other side and I'm kind of glad now that they reinforced this thing so much. I'll be sleeping with my gun under my pillow from now on.";
 	name = "Personal Log"
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "wood";
 	name = "floor";
@@ -2348,7 +2348,7 @@
 /obj/item/ammo_box/magazine/m10mm,
 /obj/item/ammo_box/magazine/m10mm,
 /obj/item/suppressor,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "wood";
 	name = "floor";
@@ -2372,7 +2372,7 @@
 	req_access_txt = "150"
 	},
 /obj/item/stack/spacecash/c50,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -2381,14 +2381,14 @@
 /obj/structure/bed,
 /obj/item/bedsheet/syndie,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
 	})
 "du" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a4{
@@ -2401,7 +2401,7 @@
 	pixel_x = -7;
 	pixel_y = -4
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -2414,7 +2414,7 @@
 	})
 "dw" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a4{
@@ -2423,7 +2423,7 @@
 	})
 "dx" = (
 /obj/effect/decal/warning_stripes/northwestcorner,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	name = "floor"
 	},
 /area/awaycontent/a4{
@@ -2441,7 +2441,7 @@
 	status = 2
 	},
 /obj/effect/decal/warning_stripes/northwest,
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a4{
@@ -2453,7 +2453,7 @@
 	pixel_x = -3;
 	pixel_y = 9
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -2485,7 +2485,7 @@
 	tag = ""
 	},
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "dC" = (
 /obj/structure/rack,
@@ -2494,7 +2494,7 @@
 /obj/item/pickaxe/drill,
 /obj/item/clothing/head/helmet/space/syndicate/orange,
 /obj/effect/decal/warning_stripes/northeast,
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a4{
@@ -2510,7 +2510,7 @@
 	},
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/effect/decal/warning_stripes/southwest,
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a4{
@@ -2525,7 +2525,7 @@
 	icon = 'icons/effects/blood.dmi';
 	icon_state = "tracks"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -2542,7 +2542,7 @@
 	on = 1
 	},
 /obj/effect/decal/cleanable/blood/splatter,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -2562,7 +2562,7 @@
 	icon = 'icons/effects/blood.dmi';
 	icon_state = "tracks"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -2575,7 +2575,7 @@
 	})
 "dH" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_plating = "asteroidplating";
 	icon_state = "asteroidplating";
 	name = "plating"
@@ -2586,7 +2586,7 @@
 	})
 "dI" = (
 /obj/item/storage/bag/ore,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -2599,7 +2599,7 @@
 	})
 "dJ" = (
 /obj/item/pickaxe/drill,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -2611,7 +2611,7 @@
 	poweralm = 0
 	})
 "dK" = (
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_plating = "asteroidplating";
 	icon_state = "asteroidplating";
 	name = "plating"
@@ -2630,7 +2630,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_plating = "asteroidplating";
 	icon_state = "asteroidplating";
 	name = "plating"
@@ -2644,7 +2644,7 @@
 	pixel_x = -7;
 	pixel_y = -4
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -2676,7 +2676,7 @@
 	icon = 'icons/effects/blood.dmi';
 	icon_state = "tracks"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -2697,7 +2697,7 @@
 	icon = 'icons/effects/blood.dmi';
 	icon_state = "tracks"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -2709,7 +2709,7 @@
 	})
 "dP" = (
 /obj/structure/alien/weeds/node,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -2723,7 +2723,7 @@
 "dQ" = (
 /obj/structure/alien/weeds,
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -2739,7 +2739,7 @@
 	icon_state = "weeds2"
 	},
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -2760,7 +2760,7 @@
 /mob/living/simple_animal/hostile/alien/drone{
 	plants_off = 1
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a5{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -2772,7 +2772,7 @@
 	})
 "dT" = (
 /obj/structure/alien/weeds,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -2786,7 +2786,7 @@
 "dU" = (
 /obj/structure/alien/weeds/node,
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -2801,7 +2801,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds2"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -2817,7 +2817,7 @@
 	icon_state = "weeds1"
 	},
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -2832,7 +2832,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds1"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -2845,7 +2845,7 @@
 	})
 "dY" = (
 /obj/machinery/light/small,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -2866,7 +2866,7 @@
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes/southeast,
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a4{
@@ -2882,7 +2882,7 @@
 	})
 "ed" = (
 /obj/machinery/vending/snack,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a2{
@@ -2891,7 +2891,7 @@
 	})
 "ee" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -2900,7 +2900,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -2909,7 +2909,7 @@
 /obj/machinery/atmospherics/binary/pump{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "whitehall"
 	},
@@ -2923,7 +2923,7 @@
 	},
 /obj/machinery/portable_atmospherics/canister,
 /obj/structure/alien/weeds,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -2941,7 +2941,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds1"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -2960,7 +2960,7 @@
 	icon_state = "weeds2"
 	},
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -2980,7 +2980,7 @@
 	icon_state = "0-2";
 	d2 = 2
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -2997,7 +2997,7 @@
 	icon = 'icons/effects/blood.dmi';
 	icon_state = "tracks"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3013,14 +3013,14 @@
 	icon = 'icons/effects/blood.dmi';
 	icon_state = "tracks"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
 	})
 "en" = (
 /obj/structure/alien/weeds,
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3042,7 +3042,7 @@
 	c_tag = "Xenobiology Containment North";
 	network = list("MO19X")
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3059,7 +3059,7 @@
 	icon_state = "weeds1"
 	},
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3067,7 +3067,7 @@
 "eq" = (
 /obj/structure/alien/weeds,
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3080,7 +3080,7 @@
 	item_state = "facehugger_impregnated";
 	stat = 2
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3097,14 +3097,14 @@
 	icon = 'icons/effects/blood.dmi';
 	icon_state = "tracks"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
 	})
 "et" = (
 /obj/machinery/vending/coffee,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a2{
@@ -3112,7 +3112,7 @@
 	name = "MO19 Research"
 	})
 "eu" = (
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3125,7 +3125,7 @@
 	status = 2
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3138,7 +3138,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds1"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3156,7 +3156,7 @@
 	initialize_directions = 11;
 	level = 2
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -3173,7 +3173,7 @@
 	network = list("MO19X")
 	},
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -3193,7 +3193,7 @@
 /obj/structure/cable,
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3221,14 +3221,14 @@
 	color = "red";
 	icon_state = "gib2_flesh"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
 	})
 "eC" = (
 /obj/structure/alien/weeds/node,
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3237,7 +3237,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds2"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3247,7 +3247,7 @@
 	icon_state = "weeds1"
 	},
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3257,7 +3257,7 @@
 	icon_state = "weeds2"
 	},
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3265,7 +3265,7 @@
 "eG" = (
 /obj/structure/alien/weeds,
 /obj/structure/bed/nest,
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3280,7 +3280,7 @@
 	icon = 'icons/effects/blood.dmi';
 	icon_state = "tracks"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3292,7 +3292,7 @@
 	icon_state = "egg_hatched";
 	name = "egg"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3310,7 +3310,7 @@
 	name = "MO19 Research"
 	})
 "eL" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whitehall"
 	},
@@ -3326,7 +3326,7 @@
 	name = "Acid-Proof biohazard containment door"
 	},
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3343,7 +3343,7 @@
 	dir = 4;
 	network = list("MO19","MO19R")
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 6;
 	icon_state = "whitehall"
 	},
@@ -3363,7 +3363,7 @@
 /obj/structure/chair/office/light{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -3388,7 +3388,7 @@
 	icon_state = "weeds2"
 	},
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -3404,7 +3404,7 @@
 	icon_state = "egg_hatched";
 	name = "egg"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3416,7 +3416,7 @@
 /obj/effect/decal/cleanable/blood{
 	color = "red"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3425,7 +3425,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds1"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3445,7 +3445,7 @@
 	layer = 2.4;
 	on = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whitehall"
 	},
@@ -3460,7 +3460,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whitehall"
 	},
@@ -3477,7 +3477,7 @@
 	icon_state = "0-2";
 	d2 = 2
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "eZ" = (
 /obj/machinery/space_heater,
@@ -3487,7 +3487,7 @@
 /obj/structure/sign/poster/official/build{
 	pixel_y = 32
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "fa" = (
 /obj/structure/cable{
@@ -3498,7 +3498,7 @@
 	tag = ""
 	},
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "fb" = (
 /obj/structure/cable{
@@ -3512,7 +3512,7 @@
 	output_level = 200000;
 	outputting = 0
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "fc" = (
 /obj/machinery/power/terminal{
@@ -3528,7 +3528,7 @@
 	pixel_y = 23;
 	req_access = null
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "fd" = (
 /obj/structure/cable{
@@ -3543,7 +3543,7 @@
 	dir = 5;
 	icon_state = "ltrails_1"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "whitepurplecorner"
 	},
@@ -3558,11 +3558,11 @@
 	icon_state = "2-4";
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "ff" = (
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "fg" = (
 /obj/structure/cable{
@@ -3573,7 +3573,7 @@
 	tag = ""
 	},
 /obj/item/newspaper,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "fh" = (
 /obj/structure/table,
@@ -3582,7 +3582,7 @@
 	icon_state = "weeds2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3599,7 +3599,7 @@
 	},
 /obj/item/xenos_claw,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3616,7 +3616,7 @@
 	},
 /obj/item/storage/box/syringes,
 /obj/structure/alien/weeds,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3625,13 +3625,13 @@
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
 	})
 "fl" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -3647,7 +3647,7 @@
 	tag = ""
 	},
 /obj/machinery/atmospherics/pipe/simple/visible,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -3661,7 +3661,7 @@
 	icon_state = "weeds1"
 	},
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -3681,7 +3681,7 @@
 	},
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3695,7 +3695,7 @@
 	icon_state = "egg_hatched";
 	name = "egg"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3710,7 +3710,7 @@
 	item_state = "facehugger_impregnated";
 	stat = 2
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3723,7 +3723,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "fs" = (
 /obj/effect/decal/cleanable/blood/tracks{
@@ -3731,7 +3731,7 @@
 	dir = 8;
 	icon_state = "ltrails_1"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "ft" = (
 /obj/structure/cable{
@@ -3750,7 +3750,7 @@
 	dir = 8;
 	icon_state = "ltrails_1"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "fu" = (
 /obj/structure/sign/securearea{
@@ -3766,7 +3766,7 @@
 	icon_state = "weeds1"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whitepurplecorner"
 	},
@@ -3795,7 +3795,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds2"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3811,7 +3811,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds2"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "whitepurplecorner"
 	},
@@ -3826,7 +3826,7 @@
 	icon_state = "1-4";
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "fy" = (
 /obj/structure/cable{
@@ -3844,7 +3844,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "fz" = (
 /obj/structure/cable{
@@ -3855,7 +3855,7 @@
 	tag = ""
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3868,7 +3868,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3883,7 +3883,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3897,7 +3897,7 @@
 	tag = ""
 	},
 /obj/structure/alien/weeds/node,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -3914,7 +3914,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -3935,7 +3935,7 @@
 	icon_state = "small"
 	},
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -3967,7 +3967,7 @@
 	pixel_y = 0;
 	tag = ""
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3981,7 +3981,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds1"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3998,7 +3998,7 @@
 /obj/effect/decal/cleanable/blood{
 	color = "red"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4013,7 +4013,7 @@
 	icon_state = "weeds1"
 	},
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4026,7 +4026,7 @@
 	},
 /obj/structure/alien/weeds,
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4040,7 +4040,7 @@
 	on = 1
 	},
 /obj/structure/alien/weeds,
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4060,7 +4060,7 @@
 	dir = 8;
 	network = list("MO19X")
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4073,7 +4073,7 @@
 	},
 /obj/item/pickaxe,
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "fN" = (
 /obj/structure/cable{
@@ -4082,7 +4082,7 @@
 	icon_state = "1-8";
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "fO" = (
 /obj/structure/cable{
@@ -4092,7 +4092,7 @@
 	pixel_y = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "fP" = (
 /turf/simulated/wall/r_wall/rust,
@@ -4115,7 +4115,7 @@
 	opacity = 0;
 	req_access_txt = "271"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4136,7 +4136,7 @@
 	},
 /obj/structure/alien/weeds,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whitepurplecorner"
 	},
@@ -4147,7 +4147,7 @@
 "fS" = (
 /obj/structure/table,
 /obj/item/clothing/gloves/color/yellow,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "fT" = (
 /obj/structure/filingcabinet,
@@ -4155,7 +4155,7 @@
 	info = "Entry One &mdash; 27/05/2554:<br>I just arrived, and already I hate my job. I'm stuck on this shithole of an outpost, trying to avoid these damn eggheads running all over the place preparing for god knows what. There's no crimes to stop, no syndies to kill, and I'm not even allowed to beat the fuckin' assistant senseless! They said I was transferred from Space Station 13 for 'good behavior', but this feels more like a punishment than a reward. All I know is that if I don't get some action soon, I'm going to go insane.<br><br>Entry Two &mdash; 03/06/2554:<br>Okay, so get this: we got a fuckin' deathsquad coming in today! I thought the day I saw one of them would be the day my employment was 'terminated', if you get my drift. They're escorting some sort of weird alien creature for the eggheads to study. I heard one of the docs telling the chef that this thing killed a whole security force before it was captured. I sure as hell hope that I don't have to fight it.<br><br>Entry Three &mdash; 08/06/2554:<br>My first real bit of 'action' today, if you could call it that. Crazy Ivan got in a fight with Kuester today about his Booze-O-Mat. Apparently one of the crewmembers had stolen a couple bottles of booze from the machine after Ivan disabled the ID lock. Tell you the truth, I don't blame the thief. Everyone is going a little stir-crazy in here, and the bartender is being damn stingy with the alcohol. Either way, once they started to pick a fight, I had to take them down. It's a damn shame that we don't have a brig, though. I had to lock Ivan in a fuckin' freezer, for god's sake. Let's hope that we can keep our sanity together, at least for a while.<br><br>Entry Four &mdash; 10/06/2554:<br>Jesus fucking Christ riding on a motorbike. These things the scientists are studying are terrifying! Fucking great huge purple bug things as tall as the ceiling, with blades for arms and drooling at the mouth. I don't think my taser will do jack shit against these damn things, but the eggheads say that they're safely contained. If they do, I have a feeling that it's only a matter of time before we're all screwed. These bastards look like walking death.<br><br>Entry Five &mdash; 18/06/2554:<br>Finally caught who stole the booze from Kuester. It was that fuckin' loser assistant Steve! He was in the dorms, chugging his worries away. I took one of the bottles back to the barkeep, but no one has to know about this second one. I think I'm gonna enjoy this while watching tomorrow's Thunderdome match.<br><br>Entry Six &mdash; 19/06/2554:<br>Oh, great. The chef is still sleeping, so we get Ivan's gruel for breakfast today. I overheard Sano and Douglas saying something about the aliens being restless, so we might get some action today. As long as it happens after the big game, I'm fine with it. I still got one beer to drink before I'm ready to die.";
 	name = "Personal Log &mdash; Kenneth Cunningham"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 9;
 	icon_state = "red"
 	},
@@ -4171,7 +4171,7 @@
 /obj/item/screwdriver{
 	pixel_y = 10
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 5;
 	icon_state = "red"
 	},
@@ -4181,13 +4181,13 @@
 	})
 "fV" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "fW" = (
 /obj/structure/alien/weeds{
 	icon_state = "weeds1"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "whitepurplecorner"
 	},
@@ -4198,14 +4198,14 @@
 "fX" = (
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
 	})
 "fY" = (
 /obj/item/cigbutt,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "fZ" = (
 /obj/structure/cable{
@@ -4221,10 +4221,10 @@
 	pixel_y = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "ga" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "gb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -4232,7 +4232,7 @@
 	level = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4253,7 +4253,7 @@
 	icon_state = "coil_red1";
 	item_state = "coil_red1"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4269,7 +4269,7 @@
 /obj/item/shard{
 	icon_state = "small"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4285,7 +4285,7 @@
 	icon = 'icons/effects/blood.dmi';
 	icon_state = "tracks"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4300,7 +4300,7 @@
 	icon = 'icons/effects/blood.dmi';
 	icon_state = "tracks"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4317,7 +4317,7 @@
 	color = "red";
 	icon_state = "gibdown1_flesh"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4339,7 +4339,7 @@
 /obj/effect/decal/cleanable/blood/oil{
 	color = "black"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "gi" = (
 /obj/machinery/door/airlock/maintenance{
@@ -4353,7 +4353,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "gj" = (
 /obj/structure/closet/secure_closet{
@@ -4381,7 +4381,7 @@
 	pixel_y = 23;
 	req_access = null
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "red"
 	},
@@ -4394,7 +4394,7 @@
 	pixel_x = -30;
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "red"
 	},
@@ -4403,7 +4403,7 @@
 	name = "MO19 Research"
 	})
 "gl" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "red"
 	},
@@ -4418,7 +4418,7 @@
 	icon = 'icons/effects/blood.dmi';
 	icon_state = "tracks"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "whitepurplecorner"
 	},
@@ -4455,7 +4455,7 @@
 	initialize_directions = 11;
 	level = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whitepurplecorner"
 	},
@@ -4474,7 +4474,7 @@
 	level = 1
 	},
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4486,7 +4486,7 @@
 /obj/structure/closet/l3closet/scientist,
 /obj/structure/alien/weeds,
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -4506,7 +4506,7 @@
 	icon_state = "weeds2"
 	},
 /obj/effect/decal/warning_stripes/north,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -4516,7 +4516,7 @@
 "gs" = (
 /obj/structure/alien/weeds/node,
 /obj/effect/decal/warning_stripes/north,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -4530,7 +4530,7 @@
 	pixel_x = -12;
 	pixel_y = 2
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -4539,7 +4539,7 @@
 	})
 "gu" = (
 /obj/effect/decal/warning_stripes/north,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -4564,7 +4564,7 @@
 /obj/structure/cable,
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4577,7 +4577,7 @@
 	},
 /obj/structure/alien/weeds,
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4592,7 +4592,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds2"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4602,7 +4602,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4620,7 +4620,7 @@
 /obj/item/mmi,
 /obj/structure/alien/weeds,
 /obj/effect/decal/warning_stripes/north,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -4633,7 +4633,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4643,7 +4643,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -4659,7 +4659,7 @@
 	},
 /obj/structure/alien/weeds,
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -4674,7 +4674,7 @@
 	pixel_x = -30;
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "red"
 	},
@@ -4692,7 +4692,7 @@
 	dir = 8;
 	icon_state = "ltrails_1"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "red"
 	},
@@ -4704,7 +4704,7 @@
 /obj/effect/decal/cleanable/blood/splatter{
 	color = "red"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4714,7 +4714,7 @@
 /obj/item/stack/rods,
 /obj/item/stack/rods,
 /obj/item/shard,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4724,7 +4724,7 @@
 	dir = 8;
 	on = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -4742,7 +4742,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds1"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -4780,7 +4780,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds1"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -4789,7 +4789,7 @@
 	})
 "gL" = (
 /obj/structure/chair/stool,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "gM" = (
 /obj/structure/table/reinforced,
@@ -4803,7 +4803,7 @@
 /obj/item/pen,
 /obj/item/radio/off,
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -4818,7 +4818,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds1"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4836,7 +4836,7 @@
 	},
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -4862,7 +4862,7 @@
 	start_charge = 100
 	},
 /obj/structure/cable,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "gQ" = (
 /obj/structure/cable{
@@ -4874,14 +4874,14 @@
 	},
 /obj/item/stack/rods,
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "gR" = (
 /obj/structure/table,
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "red"
 	},
@@ -4891,13 +4891,13 @@
 	})
 "gS" = (
 /obj/structure/chair/office/dark,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
 	})
 "gT" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "whitepurplecorner"
 	},
@@ -4910,7 +4910,7 @@
 	name = "Security Post";
 	req_access_txt = "271"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -4922,7 +4922,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds2"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "whitehall"
 	},
@@ -4937,7 +4937,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds2"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "whitehall"
 	},
@@ -4964,7 +4964,7 @@
 	name = "Larva Xenomorph Autopsy Report"
 	},
 /obj/structure/alien/weeds,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -4975,7 +4975,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds1"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -4985,7 +4985,7 @@
 "gZ" = (
 /obj/machinery/computer/operating,
 /obj/structure/alien/weeds,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "whitehall"
 	},
@@ -4999,7 +4999,7 @@
 	icon_state = "weeds2"
 	},
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -5020,7 +5020,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds1"
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -5040,7 +5040,7 @@
 	dir = 1;
 	network = list("MO19X")
 	},
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -5057,7 +5057,7 @@
 	icon_state = "weeds2"
 	},
 /obj/structure/alien/resin/wall,
-/turf/simulated/floor/engine,
+/turf/open/floor/engine,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -5068,7 +5068,7 @@
 	req_access = null
 	},
 /obj/structure/cable,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -5087,7 +5087,7 @@
 	},
 /obj/structure/alien/weeds,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whitepurplecorner"
 	},
@@ -5101,12 +5101,12 @@
 /obj/machinery/cell_charger,
 /obj/item/stock_parts/cell/high,
 /obj/item/radio/off,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "hh" = (
 /obj/machinery/light/small,
 /obj/structure/closet/toolcloset,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "hi" = (
 /obj/structure/table,
@@ -5115,7 +5115,7 @@
 	pixel_x = -32;
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 10;
 	icon_state = "red"
 	},
@@ -5130,7 +5130,7 @@
 	pixel_y = 9
 	},
 /obj/item/pen,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 6;
 	icon_state = "red"
 	},
@@ -5141,7 +5141,7 @@
 "hk" = (
 /obj/structure/table,
 /obj/item/folder/red,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "red"
 	},
 /area/awaycontent/a2{
@@ -5160,16 +5160,16 @@
 	color = "black"
 	},
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "hm" = (
 /obj/machinery/computer/monitor,
 /obj/structure/cable,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "hn" = (
 /obj/machinery/portable_atmospherics/canister/air,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "ho" = (
 /obj/structure/closet/crate/can,
@@ -5182,7 +5182,7 @@
 	icon_state = "bulb-broken";
 	status = 2
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whitehall"
 	},
@@ -5196,7 +5196,7 @@
 	pixel_x = 0;
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "whitecorner"
 	},
@@ -5216,7 +5216,7 @@
 	start_charge = 0
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whitepurplecorner"
 	},
@@ -5230,7 +5230,7 @@
 /obj/item/hemostat,
 /obj/structure/alien/weeds,
 /obj/item/stack/cable_coil,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -5248,7 +5248,7 @@
 	dir = 2;
 	pixel_y = 24
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -5275,7 +5275,7 @@
 	info = "Personal Log for Research Director Gerald Rosswell<br><br>Entry One &mdash; 17/05/2554:<br>You know, I can't believe I took this position so suddenly. I saw that corporate needed a research director for one of its outposts and thought it would be a cakewalk; there isn't going to be a lot of research to be done on a tiny outpost. Mainly just running scans on the gas giant we are orbiting or some basic RnD. However, they conveniently forgot to tell me that I and my science staff would have to pull double duty as medical staff, and that there is no one higher up on the chain of command here, so I get to pull triple duty as acting captain as well! This shit is probably allowed in some 3pt. fine print buried underneath the literally thousands of pages of contracts. Well, at least the research will be easy work.<br><br>Entry Two &mdash; 25/05/2554:<br>Well, we all expected it at the outpost: CentComm has decided to completely change what research we are doing. They've decided that we should be researching the species known as 'xenomorphs'. They announced this change 4 days ago, and along with it, sadly, the termination of our current science staff, barring me. Not to mention the constant noise made by the construction detail they sent, to staple on a xenobiology lab, ensuring no one has been able to sleep decently ever since they announced the shift. To make matters worse, our current security guard actually died of a heart attack today. Just goes to show, that 75 year old men shouldn't be security guards. Still can't believe that they decided to do this major change less than a month after the outpost was established.<br><br>Entry Three &mdash; 27/05/2554:<br>The new security guard arrived today. Apparently transferred here from the research station that also is orbiting the gas giant. He seems to be rather angry about his transfer. Considering the rumors I've heard about the research station, he's probably caught off guard by the fact that Steve hasn't tried to force an IED down his throat.<br><br>Entry Four &mdash; 06/06/2554:<br>My requests for additional security and containment measures for the 'xenomorph' has been denied. Does Central Command not notice how dangerous these creatures are? The only thing keeping them in is a force field: a minor problem with the power grid and the entire hive is loose. What would stop them then, the lone security guard with a dinky little taser? Kenneth can barely handle a short-tempered engineer. We are under-equipped and under-staffed, we are inevitably going to be destroyed, unless we get the equipment and staff we need.<br><br>Entry Five &mdash; 10/06/2554:<br>Cunningham got a good look at the xenomorph in containment. He was frightened for the rest of the day, rather amusing if it wasn't for the fact that we are all trapped on this scrap heap, with naught but a force field keeping those xenomorphs in.<br><br>Entry Six &mdash; 17/06/2554:<br>The reactions from the specimens today have shown that they possess strange mental properties. Mark hypothesizes that they possibly have a sort of hive mind; while nothing is certain, this would explain how xenomorphs seem to have vastly increased intellect when a 'queen' is present. Of course, testing this hypothesis would require many complicated procedures which we will not be able to undertake. Although we do not know the full extend of the xenomorph mind, it may or may not be able to find a way to circumvent our containment system. I will resubmit my request for additional security measures, along with this newfound information.";
 	name = "Personal Log &mdash; Gerald Rosswell"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -5289,7 +5289,7 @@
 /obj/item/storage/box/lights/mixed,
 /obj/item/poster/random_contraband,
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "hv" = (
 /obj/machinery/door_control{
@@ -5306,7 +5306,7 @@
 	desc = "Used to access the various cameras on the outpost.";
 	network = list("MO19R","MO19")
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "red"
 	},
@@ -5315,7 +5315,7 @@
 	name = "MO19 Research"
 	})
 "hw" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whitepurplecorner"
 	},
@@ -5330,7 +5330,7 @@
 	name = "privacy shutter"
 	},
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -5340,7 +5340,7 @@
 /obj/item/shard{
 	icon_state = "small"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -5365,7 +5365,7 @@
 	pixel_y = -2
 	},
 /obj/item/robot_parts/l_arm,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -5379,7 +5379,7 @@
 /obj/item/shard{
 	icon_state = "medium"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -5394,7 +5394,7 @@
 	dir = 4;
 	pixel_x = 28
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "whitehall"
 	},
@@ -5403,7 +5403,7 @@
 	name = "MO19 Research"
 	})
 "hC" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -5414,7 +5414,7 @@
 	})
 "hD" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -5439,7 +5439,7 @@
 	req_access = null
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whitepurplecorner"
 	},
@@ -5467,7 +5467,7 @@
 	dir = 1;
 	network = list("MO19","MO19R")
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "whitepurplecorner"
 	},
@@ -5477,7 +5477,7 @@
 	})
 "hG" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -5492,7 +5492,7 @@
 	tag = ""
 	},
 /obj/effect/decal/cleanable/cobweb,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "hI" = (
 /obj/structure/table,
@@ -5509,7 +5509,7 @@
 	pixel_y = 0;
 	req_access = null
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "whitehall"
 	},
@@ -5538,7 +5538,7 @@
 	tag = ""
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "hM" = (
 /obj/structure/cable{
@@ -5548,11 +5548,11 @@
 	tag = ""
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "hN" = (
 /obj/structure/chair,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -5569,7 +5569,7 @@
 	name = "Acid-Proof biohazard containment door"
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "whitepurplecorner"
 	},
@@ -5579,7 +5579,7 @@
 	})
 "hP" = (
 /obj/structure/table,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "whitehall"
 	},
@@ -5595,7 +5595,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -5606,7 +5606,7 @@
 /obj/structure/urinal{
 	pixel_y = 29
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -5617,7 +5617,7 @@
 /obj/machinery/door/airlock{
 	name = "Unit 2"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -5638,7 +5638,7 @@
 	pixel_x = 28
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -5650,7 +5650,7 @@
 	pixel_y = 16
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -5661,7 +5661,7 @@
 /obj/machinery/shower{
 	pixel_y = 16
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -5670,7 +5670,7 @@
 	})
 "hW" = (
 /obj/machinery/light/small,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -5688,7 +5688,7 @@
 	req_access_txt = "271"
 	},
 /obj/item/clothing/suit/storage/labcoat,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -5706,7 +5706,7 @@
 	pixel_x = 3;
 	pixel_y = -2
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -5721,7 +5721,7 @@
 	pixel_x = 1;
 	pixel_y = 9
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -5740,7 +5740,7 @@
 	name = "research monitor";
 	network = list("MO19X","MO19R")
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -5754,7 +5754,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -5772,7 +5772,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/warning_stripes/yellow,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -5787,7 +5787,7 @@
 	name = "Acid-Proof biohazard containment door"
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whitepurplecorner"
 	},
@@ -5802,7 +5802,7 @@
 	},
 /obj/item/circuitboard/teleporter,
 /obj/effect/decal/warning_stripes/northwest,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -5811,7 +5811,7 @@
 	})
 "if" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -5821,7 +5821,7 @@
 "ig" = (
 /obj/structure/closet/l3closet/general,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "whitehall"
 	},
@@ -5837,7 +5837,7 @@
 	pixel_x = 0;
 	pixel_y = -30
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "whitehall"
 	},
@@ -5853,7 +5853,7 @@
 	icon_state = "bulb-broken";
 	status = 2
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "whitehall"
 	},
@@ -5863,7 +5863,7 @@
 	})
 "ij" = (
 /obj/structure/table,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "whitecorner"
 	},
@@ -5883,7 +5883,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -5903,7 +5903,7 @@
 	pixel_x = 28;
 	broken = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -5911,7 +5911,7 @@
 	name = "MO19 Arrivals"
 	})
 "im" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -5923,7 +5923,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -5934,7 +5934,7 @@
 /obj/machinery/shower{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -5947,7 +5947,7 @@
 	pixel_x = 4
 	},
 /obj/effect/decal/warning_stripes/north,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -5971,7 +5971,7 @@
 /obj/item/tank/air,
 /obj/item/clothing/mask/gas,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -5981,7 +5981,7 @@
 	dir = 1;
 	pixel_y = 3
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -5993,7 +5993,7 @@
 "is" = (
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6001,7 +6001,7 @@
 "it" = (
 /obj/structure/rack,
 /obj/effect/decal/warning_stripes/northeast,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -6012,7 +6012,7 @@
 /obj/effect/decal/cleanable/blood/splatter{
 	color = "red"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -6021,7 +6021,7 @@
 	})
 "iv" = (
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -6040,7 +6040,7 @@
 	name = "Hastily Written Note"
 	},
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -6054,7 +6054,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -6065,7 +6065,7 @@
 /obj/machinery/door/airlock{
 	name = "Unit 1"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -6076,7 +6076,7 @@
 /obj/machinery/door/airlock{
 	name = "Unisex Showers"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -6085,7 +6085,7 @@
 	})
 "iA" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -6097,7 +6097,7 @@
 	dir = 8
 	},
 /obj/item/bikehorn/rubberducky,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -6107,7 +6107,7 @@
 "iC" = (
 /obj/structure/table,
 /obj/item/cigbutt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -6117,7 +6117,7 @@
 "iD" = (
 /obj/structure/table,
 /obj/item/trash/plate,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -6127,7 +6127,7 @@
 "iE" = (
 /obj/structure/table,
 /obj/item/trash/raisins,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -6138,7 +6138,7 @@
 /obj/machinery/door/airlock{
 	name = "Private Restroom"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a2{
@@ -6149,7 +6149,7 @@
 /obj/machinery/vending/medical{
 	req_access_txt = "271"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whitehall"
 	},
@@ -6164,7 +6164,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a2{
@@ -6187,7 +6187,7 @@
 	dir = 1;
 	network = list("MO19","MO19R")
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -6201,7 +6201,7 @@
 	pixel_x = 0;
 	pixel_y = -30
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -6214,7 +6214,7 @@
 /obj/structure/table,
 /obj/item/radio/off,
 /obj/item/laser_pointer,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -6232,7 +6232,7 @@
 	tag = ""
 	},
 /obj/effect/landmark/burnturf,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "iM" = (
 /obj/structure/sign/securearea{
@@ -6245,7 +6245,7 @@
 	tag = "icon-shower (EAST)"
 	},
 /obj/effect/decal/warning_stripes/northwest,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -6255,7 +6255,7 @@
 "iN" = (
 /obj/structure/closet/firecloset,
 /obj/effect/decal/warning_stripes/northeast,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -6269,7 +6269,7 @@
 /obj/structure/table,
 /obj/machinery/computer/id_upgrader,
 /obj/effect/decal/warning_stripes/southwest,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -6279,7 +6279,7 @@
 "iP" = (
 /obj/machinery/light/small,
 /obj/effect/decal/warning_stripes/south,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -6291,7 +6291,7 @@
 	dir = 1;
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -6303,7 +6303,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -6314,7 +6314,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -6328,7 +6328,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -6349,7 +6349,7 @@
 /obj/machinery/vending/boozeomat{
 	req_access_txt = "0"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -6364,7 +6364,7 @@
 	pixel_x = -3;
 	pixel_y = 6
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6376,13 +6376,13 @@
 	pixel_y = 6
 	},
 /obj/effect/landmark/burnturf,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "iY" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -6394,7 +6394,7 @@
 "iZ" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -6407,7 +6407,7 @@
 /obj/structure/toilet{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a2{
@@ -6417,7 +6417,7 @@
 "jb" = (
 /obj/item/stack/rods,
 /obj/item/shard,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -6435,7 +6435,7 @@
 	pixel_x = -3
 	},
 /obj/effect/decal/warning_stripes/southeast,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -6451,7 +6451,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes/southwest,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -6463,7 +6463,7 @@
 /obj/structure/sign/poster/official/ue_no{
 	pixel_y = 32
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6473,7 +6473,7 @@
 	name = "Unisex Restrooms";
 	req_access_txt = "0"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
 /area/awaycontent/a1{
@@ -6482,7 +6482,7 @@
 	})
 "jg" = (
 /obj/machinery/vending/cola,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a1{
@@ -6491,7 +6491,7 @@
 	})
 "jh" = (
 /obj/machinery/vending/coffee,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a1{
@@ -6502,7 +6502,7 @@
 /obj/structure/chair/comfy/black{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6514,7 +6514,7 @@
 	},
 /obj/item/trash/cheesie,
 /obj/item/trash/can,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -6523,7 +6523,7 @@
 	})
 "jk" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -6531,7 +6531,7 @@
 	name = "MO19 Arrivals"
 	})
 "jl" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -6540,7 +6540,7 @@
 	})
 "jm" = (
 /obj/structure/chair/stool,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6549,7 +6549,7 @@
 /obj/structure/closet/emcloset,
 /obj/machinery/light/small,
 /obj/effect/decal/warning_stripes/southeast,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -6558,7 +6558,7 @@
 	})
 "jo" = (
 /obj/effect/decal/cleanable/flour,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -6574,7 +6574,7 @@
 	},
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -6598,7 +6598,7 @@
 	id_tag = "awaykitchen";
 	name = "Serving Hatch"
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6617,7 +6617,7 @@
 	},
 /obj/item/storage/backpack/satchel_tox,
 /obj/item/clothing/gloves/color/latex,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -6631,7 +6631,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6641,7 +6641,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -6662,7 +6662,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6670,14 +6670,14 @@
 "jv" = (
 /obj/structure/chair,
 /obj/effect/decal/cleanable/generic,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "jw" = (
 /obj/structure/chair,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6686,7 +6686,7 @@
 /obj/structure/table,
 /obj/item/book/manual/detective,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6697,7 +6697,7 @@
 	pixel_y = 32
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 9;
 	icon_state = "purple";
 	tag = "icon-purple (NORTHWEST)"
@@ -6707,7 +6707,7 @@
 	name = "MO19 Arrivals"
 	})
 "jz" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 5;
 	icon_state = "purple";
 	tag = "icon-purple (NORTHEAST)"
@@ -6721,7 +6721,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "whitepurplecorner"
 	},
@@ -6736,7 +6736,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds2"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -6752,7 +6752,7 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds2"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -6768,7 +6768,7 @@
 	icon_state = "weeds2"
 	},
 /obj/structure/alien/weeds/node,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -6787,14 +6787,14 @@
 	},
 /obj/effect/landmark/burnturf,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "jF" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6803,13 +6803,13 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "jH" = (
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6817,7 +6817,7 @@
 "jI" = (
 /obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6827,7 +6827,7 @@
 	dir = 8;
 	on = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "whitepurplecorner"
 	},
@@ -6844,7 +6844,7 @@
 	name = "Specials This Week"
 	},
 /obj/effect/landmark/burnturf,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6856,7 +6856,7 @@
 	pixel_y = 23;
 	req_access = null
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6869,14 +6869,14 @@
 	},
 /obj/item/newspaper,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "jN" = (
 /obj/item/cigbutt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -6886,14 +6886,14 @@
 "jO" = (
 /obj/structure/grille,
 /obj/structure/window/full/basic,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "jP" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -6906,7 +6906,7 @@
 	pixel_y = 5
 	},
 /obj/item/reagent_containers/food/drinks/shaker,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -6921,7 +6921,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -6932,7 +6932,7 @@
 	})
 "jS" = (
 /obj/machinery/vending/dinnerware,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -6949,7 +6949,7 @@
 	id_tag = "awaykitchen";
 	name = "Serving Hatch"
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6961,7 +6961,7 @@
 	},
 /obj/effect/landmark/burnturf,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6972,7 +6972,7 @@
 	pixel_y = 30
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6985,7 +6985,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6993,7 +6993,7 @@
 "jX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -7014,7 +7014,7 @@
 	req_access_txt = "271";
 	req_one_access_txt = "0"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -7026,7 +7026,7 @@
 "jZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -7038,7 +7038,7 @@
 	name = "Research Storage";
 	req_access_txt = "271"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -7047,7 +7047,7 @@
 	})
 "kb" = (
 /obj/structure/reagent_dispensers/fueltank,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "kc" = (
 /obj/structure/cable{
@@ -7057,12 +7057,12 @@
 	tag = "90Curve"
 	},
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "kd" = (
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a1{
@@ -7071,7 +7071,7 @@
 	})
 "ke" = (
 /obj/structure/grille,
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a1{
@@ -7084,7 +7084,7 @@
 	on = 1;
 	pressure_checks = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -7098,7 +7098,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7115,7 +7115,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7128,7 +7128,7 @@
 	req_one_access_txt = "0"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaycontent/a2{
@@ -7154,7 +7154,7 @@
 	pixel_y = -2;
 	req_access_txt = "271"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -7172,7 +7172,7 @@
 	tag = ""
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "kl" = (
 /obj/structure/cable{
@@ -7183,7 +7183,7 @@
 	tag = ""
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7192,7 +7192,7 @@
 /obj/structure/closet/crate/can,
 /obj/item/trash/candy,
 /obj/item/trash/can,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "arrival"
 	},
@@ -7211,21 +7211,21 @@
 /obj/effect/decal/cleanable/blood/oil{
 	color = "black"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a7)
 "ko" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass{
 	name = "Diner"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "kp" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -7238,7 +7238,7 @@
 /obj/structure/table,
 /obj/item/kitchen/rollingpin,
 /obj/item/kitchen/knife,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -7254,7 +7254,7 @@
 	pixel_y = 6
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -7265,7 +7265,7 @@
 	})
 "ks" = (
 /obj/effect/decal/cleanable/plant_smudge,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -7288,7 +7288,7 @@
 	pixel_y = 0;
 	req_access = null
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -7311,14 +7311,14 @@
 	on = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "kv" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "arrival"
 	},
@@ -7327,7 +7327,7 @@
 	name = "MO19 Arrivals"
 	})
 "kw" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "arrival"
 	},
@@ -7346,7 +7346,7 @@
 	dir = 1;
 	network = list("MO19")
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "arrival"
 	},
@@ -7355,7 +7355,7 @@
 	name = "MO19 Arrivals"
 	})
 "ky" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "whitecorner"
 	},
@@ -7367,7 +7367,7 @@
 /obj/structure/sign/poster/official/arksoft_logo{
 	pixel_y = -32
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "arrival"
 	},
@@ -7388,7 +7388,7 @@
 	level = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7400,7 +7400,7 @@
 	opacity = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7408,7 +7408,7 @@
 "kC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "purple";
 	tag = "icon-purple (NORTH)"
@@ -7432,13 +7432,13 @@
 	req_access = null;
 	start_charge = 100
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "kE" = (
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a1{
@@ -7459,7 +7459,7 @@
 	level = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7478,7 +7478,7 @@
 	},
 /obj/effect/landmark/damageturf,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7496,7 +7496,7 @@
 	level = 1
 	},
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a1{
@@ -7517,7 +7517,7 @@
 	level = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7528,7 +7528,7 @@
 	icon_state = "door_closed";
 	opacity = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7539,7 +7539,7 @@
 	pixel_y = -24
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7549,7 +7549,7 @@
 	color = "green"
 	},
 /obj/effect/decal/cleanable/blood/gibs/xeno,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -7563,7 +7563,7 @@
 /obj/effect/decal/remains/xeno{
 	desc = "They look like the remains of something... alien. The front of skull appears to have been completely obliterated."
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -7574,7 +7574,7 @@
 /obj/structure/closet/crate/can,
 /obj/item/trash/plate,
 /obj/item/reagent_containers/food/snacks/badrecipe,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -7584,7 +7584,7 @@
 	name = "MO19 Arrivals"
 	})
 "kO" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "arrival"
 	},
@@ -7608,7 +7608,7 @@
 	level = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7627,7 +7627,7 @@
 	},
 /obj/effect/landmark/burnturf,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7651,7 +7651,7 @@
 	level = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7662,7 +7662,7 @@
 	icon_state = "door_closed";
 	opacity = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 2;
 	icon_state = "neutralcorner"
 	},
@@ -7676,7 +7676,7 @@
 	desc = "They look like human remains. The skeleton is curled up in fetal position with the hands placed near the throat."
 	},
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a1{
@@ -7697,7 +7697,7 @@
 	level = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7712,7 +7712,7 @@
 	req_access_txt = "0";
 	specialfunctions = 4
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7730,7 +7730,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7740,14 +7740,14 @@
 	req_access_txt = "0";
 	req_one_access_txt = "0"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "kY" = (
 /obj/structure/closet/emcloset,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 0;
 	icon_state = "blue"
 	},
@@ -7757,7 +7757,7 @@
 	})
 "kZ" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 0;
 	icon_state = "blue"
 	},
@@ -7772,7 +7772,7 @@
 	charge = 100;
 	maxcharge = 15000
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 0;
 	icon_state = "blue"
 	},
@@ -7783,7 +7783,7 @@
 "lb" = (
 /obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -7800,7 +7800,7 @@
 	dir = 8;
 	network = list("MO19")
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -7810,7 +7810,7 @@
 	name = "MO19 Arrivals"
 	})
 "ld" = (
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /turf/simulated/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
@@ -7830,7 +7830,7 @@
 	name = "MO19 Arrivals"
 	})
 "lf" = (
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /turf/simulated/shuttle/wall{
 	dir = 3;
 	icon_state = "swall_f10";
@@ -7842,7 +7842,7 @@
 	})
 "lg" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "arrival"
 	},
@@ -7856,7 +7856,7 @@
 	level = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7873,7 +7873,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7882,7 +7882,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7892,7 +7892,7 @@
 /obj/item/shard{
 	icon_state = "small"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -7910,7 +7910,7 @@
 /obj/item/shard{
 	icon_state = "medium"
 	},
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a1{
@@ -7921,7 +7921,7 @@
 /obj/structure/grille/broken,
 /obj/item/stack/rods,
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a1{
@@ -7930,13 +7930,13 @@
 	})
 "ln" = (
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "lo" = (
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7946,7 +7946,7 @@
 	id_tag = "awaydorm1";
 	name = "Dorm 1"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7964,7 +7964,7 @@
 	pixel_y = 0;
 	req_access = null
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7983,7 +7983,7 @@
 	pixel_y = 0;
 	req_access = null
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -7994,7 +7994,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -8012,7 +8012,7 @@
 	dir = 8;
 	network = list("MO19")
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -8028,7 +8028,7 @@
 	req_access_txt = "0"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -8040,7 +8040,7 @@
 "lv" = (
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8051,7 +8051,7 @@
 	name = "old sink";
 	pixel_y = 28
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "showroomfloor";
 	temperature = 273.15
 	},
@@ -8060,7 +8060,7 @@
 	name = "MO19 Arrivals"
 	})
 "lx" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "showroomfloor";
 	temperature = 273.15
 	},
@@ -8075,7 +8075,7 @@
 	},
 /obj/item/storage/box/mousetraps,
 /obj/item/clothing/under/waiter,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "showroomfloor";
 	temperature = 273.15
 	},
@@ -8129,7 +8129,7 @@
 	})
 "lE" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 4;
 	icon_state = "neutral";
 	name = "floor"
@@ -8152,7 +8152,7 @@
 "lG" = (
 /obj/effect/landmark/damageturf,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8164,7 +8164,7 @@
 	pressure_checks = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8172,7 +8172,7 @@
 "lI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8189,7 +8189,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "purplecorner";
 	tag = "icon-purplecorner (NORTH)"
@@ -8214,7 +8214,7 @@
 	})
 "lL" = (
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "neutralcorner";
 	name = "floor"
 	},
@@ -8225,7 +8225,7 @@
 "lM" = (
 /obj/structure/bed,
 /obj/item/bedsheet,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8237,20 +8237,20 @@
 	pixel_x = 30;
 	pixel_y = 0
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "lO" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "lP" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8259,7 +8259,7 @@
 /obj/effect/decal/cleanable/blood/oil{
 	color = "black"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8285,7 +8285,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "purplecorner"
 	},
@@ -8294,7 +8294,7 @@
 	name = "MO19 Arrivals"
 	})
 "lS" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a1{
@@ -8303,7 +8303,7 @@
 	})
 "lT" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a1{
@@ -8314,7 +8314,7 @@
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/suit/chaplain_hoodie,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a1{
@@ -8329,7 +8329,7 @@
 	desc = "They look like human remains. The skeleton is sitting upright with its legs tucked in and hands still holding onto its arms."
 	},
 /obj/item/gun/projectile/shotgun/sc_pump,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "showroomfloor";
 	temperature = 273.15
 	},
@@ -8447,13 +8447,13 @@
 "mh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "mi" = (
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "neutralcorner";
 	name = "floor"
 	},
@@ -8463,7 +8463,7 @@
 	})
 "mj" = (
 /obj/structure/chair/stool,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -8476,14 +8476,14 @@
 /obj/structure/window/basic{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "ml" = (
 /obj/machinery/light/small,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -8493,7 +8493,7 @@
 "mm" = (
 /obj/structure/table,
 /obj/item/storage/backpack/satchel/withwallet,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a1{
@@ -8513,7 +8513,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "purplecorner"
 	},
@@ -8530,7 +8530,7 @@
 	tag = ""
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8552,7 +8552,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8628,7 +8628,7 @@
 	pixel_x = 24
 	},
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "neutralcorner";
 	name = "floor"
 	},
@@ -8644,7 +8644,7 @@
 	pixel_x = 0
 	},
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8657,7 +8657,7 @@
 	icon = 'icons/effects/blood.dmi';
 	icon_state = "tracks"
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8665,7 +8665,7 @@
 "mz" = (
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8685,7 +8685,7 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8694,14 +8694,14 @@
 /obj/structure/chair/wood{
 	dir = 8
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "mC" = (
 /obj/machinery/computer/arcade,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a1{
@@ -8713,7 +8713,7 @@
 /obj/structure/sign/poster/contraband/smoke{
 	pixel_y = -32
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a1{
@@ -8725,7 +8725,7 @@
 	dir = 8
 	},
 /obj/structure/chair/comfy/beige,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a1{
@@ -8746,7 +8746,7 @@
 	pixel_x = 3;
 	pixel_y = 0
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a1{
@@ -8755,7 +8755,7 @@
 	})
 "mG" = (
 /obj/structure/chair/comfy/beige,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a1{
@@ -8820,7 +8820,7 @@
 "mM" = (
 /obj/structure/closet/emcloset,
 /obj/structure/window/basic,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8828,14 +8828,14 @@
 "mN" = (
 /obj/machinery/door/airlock/external,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "mO" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8844,14 +8844,14 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "mQ" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "neutralcorner";
 	name = "floor"
 	},
@@ -8866,7 +8866,7 @@
 	dir = 4;
 	network = list("MO19")
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8877,7 +8877,7 @@
 	pixel_x = 24
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8890,7 +8890,7 @@
 	icon = 'icons/effects/blood.dmi';
 	icon_state = "tracks"
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8907,7 +8907,7 @@
 	icon = 'icons/effects/blood.dmi';
 	icon_state = "tracks"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8924,7 +8924,7 @@
 	pixel_y = 0;
 	req_access = null
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8975,14 +8975,14 @@
 /obj/item/cigbutt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "nb" = (
 /obj/machinery/portable_atmospherics/scrubber,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -8993,7 +8993,7 @@
 /obj/effect/decal/cleanable/blood{
 	color = "red"
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9007,7 +9007,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "neutralcorner";
 	name = "floor"
@@ -9017,7 +9017,7 @@
 	name = "MO19 Arrivals"
 	})
 "ne" = (
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /turf/simulated/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
@@ -9076,7 +9076,7 @@
 	icon_state = "tracks"
 	},
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a1{
@@ -9092,7 +9092,7 @@
 	icon_state = "tracks"
 	},
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating/airless{
+/turf/open/floor/plating/airless{
 	name = "plating"
 	},
 /area/awaycontent/a1{
@@ -9103,14 +9103,14 @@
 /obj/machinery/space_heater,
 /obj/effect/decal/cleanable/generic,
 /obj/structure/window/basic,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "nm" = (
 /obj/item/cigbutt,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9118,7 +9118,7 @@
 "nn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/trash/candy,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9139,7 +9139,7 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9147,7 +9147,7 @@
 "nq" = (
 /obj/effect/decal/cleanable/cobweb2,
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9157,7 +9157,7 @@
 	dir = 8
 	},
 /obj/effect/decal/warning_stripes/southeastcorner,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9166,7 +9166,7 @@
 /obj/structure/table,
 /obj/item/deck/cards,
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "neutralcorner";
 	name = "floor"
@@ -9177,7 +9177,7 @@
 	})
 "nt" = (
 /obj/structure/grille,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9185,20 +9185,20 @@
 "nu" = (
 /obj/structure/grille/broken,
 /obj/item/stack/rods,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "nv" = (
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "nw" = (
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /turf/simulated/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
@@ -9211,7 +9211,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_plating = "asteroidplating";
 	icon_state = "asteroidplating";
 	name = "plating"
@@ -9232,7 +9232,7 @@
 /obj/structure/bedsheetbin,
 /obj/item/clothing/accessory/black,
 /obj/item/clothing/under/lawyer/black,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "barber";
 	name = "floor"
 	},
@@ -9242,7 +9242,7 @@
 	})
 "nz" = (
 /obj/machinery/washing_machine,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "barber";
 	name = "floor"
 	},
@@ -9262,7 +9262,7 @@
 	dir = 1;
 	level = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9271,14 +9271,14 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "nC" = (
 /obj/structure/closet/emcloset,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9295,7 +9295,7 @@
 	icon = 'icons/effects/blood.dmi';
 	icon_state = "tracks"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -9315,7 +9315,7 @@
 	pixel_y = 0;
 	req_access = null
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "neutralcorner";
 	name = "floor"
 	},
@@ -9326,7 +9326,7 @@
 "nF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/warning_stripes/southeastcorner,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9335,7 +9335,7 @@
 /obj/structure/table,
 /obj/item/storage/fancy/cigarettes/dromedaryco,
 /obj/effect/decal/warning_stripes/southeast,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9343,7 +9343,7 @@
 "nH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9364,7 +9364,7 @@
 	desc = "They look like human remains. The skeleton is laid out on its side and there seems to have been no sign of struggle.";
 	layer = 4.1
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9375,7 +9375,7 @@
 	info = "<i>Bugs break out. I run to here and lock door. I hear door next to me break open and screams. All nice people here dead now. I no want to be eaten, and bottle always said to be coward way out, but person who say that is stupid. Mira, there is no escape for me, tell Alexis and Elena that father will never come home, and that I love you all.</i>";
 	name = "Note"
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9384,7 +9384,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9395,14 +9395,14 @@
 	name = "\improper HOSTILE ATMOSPHERE AHEAD";
 	pixel_x = -32
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "nM" = (
 /obj/machinery/suit_storage_unit/standard_unit,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9412,7 +9412,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9422,7 +9422,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "neutralcorner";
 	name = "floor"
@@ -9436,7 +9436,7 @@
 /obj/item/storage/pill_bottle{
 	pixel_y = 6
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9448,7 +9448,7 @@
 	locked = 1;
 	name = "Dorm 3"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9456,7 +9456,7 @@
 "nR" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9464,13 +9464,13 @@
 "nS" = (
 /obj/structure/closet,
 /obj/item/storage/box/lights/mixed,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "nT" = (
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 4;
 	icon_state = "neutral";
 	name = "floor"
@@ -9491,7 +9491,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9501,7 +9501,7 @@
 	pixel_x = 30;
 	pixel_y = 0
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9510,7 +9510,7 @@
 /obj/structure/grille,
 /obj/structure/disposalpipe/segment,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9536,13 +9536,13 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "nY" = (
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 4;
 	icon_state = "neutralcorner";
 	name = "floor"
@@ -9555,7 +9555,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_plating = "asteroidplating";
 	icon_state = "asteroidplating";
 	name = "plating"
@@ -9565,7 +9565,7 @@
 	name = "MO19 Arrivals"
 	})
 "oa" = (
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9574,7 +9574,7 @@
 /obj/structure/chair/comfy/black{
 	dir = 8
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9584,7 +9584,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/generic,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "neutralcorner";
 	name = "floor"
 	},
@@ -9594,7 +9594,7 @@
 	})
 "od" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_plating = "asteroidplating";
 	icon_state = "asteroidplating";
 	name = "plating"
@@ -9613,7 +9613,7 @@
 /obj/item/shard{
 	icon_state = "small"
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -9626,7 +9626,7 @@
 	})
 "of" = (
 /obj/item/trash/candy,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -9643,7 +9643,7 @@
 	layer = 4.1;
 	pixel_y = 3
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "neutral";
 	name = "floor"
 	},
@@ -9653,7 +9653,7 @@
 	})
 "oh" = (
 /obj/item/pickaxe,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -9666,7 +9666,7 @@
 	})
 "oi" = (
 /obj/structure/chair/comfy/black,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9676,7 +9676,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_plating = "asteroidplating";
 	icon_state = "asteroidplating";
 	name = "plating"
@@ -9696,7 +9696,7 @@
 	dir = 1;
 	level = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9711,7 +9711,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -9726,7 +9726,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/awaycontent/a3{
 	always_unpowered = 1;
 	ambientsounds = list('sound/ambience/ambimine.ogg');
@@ -9744,7 +9744,7 @@
 	pressure_checks = 1
 	},
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9754,7 +9754,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaycontent/a1{
@@ -9770,7 +9770,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9781,7 +9781,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9792,7 +9792,7 @@
 	dir = 8;
 	on = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-cafeteria (NORTHEAST)";
 	icon_state = "cafeteria";
 	dir = 5
@@ -9816,7 +9816,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9824,14 +9824,14 @@
 "ou" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "ov" = (
 /obj/effect/decal/warning_stripes/east,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9839,7 +9839,7 @@
 "ow" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes/west,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9850,14 +9850,14 @@
 	on = 1;
 	pressure_checks = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "oy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9869,7 +9869,7 @@
 	opacity = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "neutralcorner"
 	},
@@ -9891,7 +9891,7 @@
 	req_access_txt = "271"
 	},
 /obj/item/clothing/under/suit_jacket/navy,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9899,7 +9899,7 @@
 "oB" = (
 /obj/structure/table,
 /obj/item/multitool,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 0;
 	icon_state = "blue"
 	},
@@ -9911,7 +9911,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -9921,7 +9921,7 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "neutralcorner";
 	name = "floor"
@@ -9935,7 +9935,7 @@
 	name = "Kitchen Cold Room";
 	req_access_txt = "271"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "showroomfloor"
 	},
 /area/awaycontent/a1{
@@ -9951,14 +9951,14 @@
 	icon_state = "tracks"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "oG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "neutralcorner";
 	name = "floor"
@@ -9973,7 +9973,7 @@
 	name = "Kitchen";
 	req_access_txt = "271"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
 /area/awaycontent/a1{
@@ -9990,7 +9990,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -10007,7 +10007,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -10028,7 +10028,7 @@
 /obj/item/reagent_containers/food/snacks/meat/monkey,
 /obj/item/reagent_containers/food/snacks/meat/monkey,
 /obj/item/reagent_containers/food/snacks/meat/monkey,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "showroomfloor";
 	temperature = 273.15
 	},
@@ -10047,7 +10047,7 @@
 /obj/item/reagent_containers/food/condiment/flour,
 /obj/item/reagent_containers/food/condiment/sugar,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "showroomfloor";
 	temperature = 273.15
 	},
@@ -10071,7 +10071,7 @@
 /obj/item/reagent_containers/food/condiment/milk,
 /obj/item/reagent_containers/food/condiment/milk,
 /obj/item/storage/fancy/egg_box,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "showroomfloor";
 	temperature = 273.15
 	},
@@ -10085,7 +10085,7 @@
 	level = 1
 	},
 /obj/machinery/meter,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -10103,7 +10103,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/universal{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -10114,7 +10114,7 @@
 	initialize_directions = 11;
 	level = 1
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "neutralcorner";
 	name = "floor"
@@ -10125,7 +10125,7 @@
 	})
 "oT" = (
 /obj/machinery/atmospherics/binary/valve,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -10142,7 +10142,7 @@
 	icon_state = "tracks"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "neutralcorner";
 	name = "floor"
@@ -10158,7 +10158,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -10167,7 +10167,7 @@
 /obj/machinery/atmospherics/unary/tank/air{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -10180,7 +10180,7 @@
 	icon_state = "tracks"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "neutralcorner";
 	name = "floor"
@@ -10203,7 +10203,7 @@
 	req_access_txt = "271"
 	},
 /obj/item/clothing/under/assistantformal,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -10212,7 +10212,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -10222,7 +10222,7 @@
 	req_access_txt = "271";
 	req_one_access_txt = "0"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -10241,7 +10241,7 @@
 	req_access_txt = "271"
 	},
 /obj/item/clothing/under/suit_jacket/burgundy,
-/turf/simulated/floor/carpet,
+/turf/open/floor/carpet,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"

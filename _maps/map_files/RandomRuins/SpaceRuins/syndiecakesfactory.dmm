@@ -8,7 +8,7 @@
 /obj/structure/table/reinforced,
 /obj/item/stack/sheet/mineral/plasma,
 /obj/item/stack/sheet/mineral/plasma,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "bk" = (
 /obj/structure/grille/broken,
@@ -18,7 +18,7 @@
 /obj/item/reagent_containers/food/snacks/syndicake,
 /obj/item/reagent_containers/food/snacks/syndicake,
 /obj/item/reagent_containers/food/snacks/syndicake,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/space)
 "dy" = (
 /obj/structure/lattice,
@@ -30,21 +30,21 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "eY" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin)
 "fq" = (
 /obj/machinery/autolathe,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "fU" = (
 /obj/machinery/door/airlock/mining/glass{
 	locked = 1;
 	name = "Egg processing"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "fY" = (
 /obj/item/stack/sheet/metal,
@@ -56,7 +56,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "ho" = (
 /turf/space,
@@ -82,7 +82,7 @@
 "jR" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/fancy/cigarettes/cigpack_random,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "ke" = (
 /obj/structure/lattice,
@@ -123,7 +123,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "mc" = (
 /obj/structure/grille/broken,
@@ -137,7 +137,7 @@
 /obj/machinery/conveyor/east{
 	id = null
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/space)
 "ob" = (
 /obj/structure/lattice,
@@ -150,7 +150,7 @@
 /obj/item/reagent_containers/food/snacks/syndicake,
 /obj/item/reagent_containers/food/snacks/syndicake,
 /obj/item/reagent_containers/food/snacks/syndicake,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/space)
 "oJ" = (
 /obj/item/stack/rods,
@@ -160,7 +160,7 @@
 /obj/machinery/door/airlock/mining/glass{
 	name = "Nexus"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "pb" = (
 /obj/structure/lattice/catwalk,
@@ -176,7 +176,7 @@
 /obj/machinery/conveyor/northeast{
 	id = null
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "qS" = (
 /obj/machinery/door/airlock/mining/glass{
@@ -189,7 +189,7 @@
 	pixel_y = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "rJ" = (
 /obj/structure/lattice,
@@ -197,17 +197,17 @@
 /area/ruin/space)
 "rL" = (
 /obj/item/reagent_containers/food/snacks/syndicake,
-/turf/simulated/floor/plasteel/airless,
+/turf/open/floor/plasteel/airless,
 /area/ruin)
 "rU" = (
 /obj/machinery/space_heater,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "sd" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/space)
 "sN" = (
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "ub" = (
 /obj/item/stack/rods,
@@ -216,7 +216,7 @@
 "uA" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/food/snacks/syndicake,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "uF" = (
 /obj/machinery/conveyor/east{
@@ -226,11 +226,11 @@
 /obj/structure/plasticflaps{
 	canmove = 0
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "wB" = (
 /obj/item/trash/syndi_cakes,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "xT" = (
 /turf/unsimulated/floor/plating/airless,
@@ -254,7 +254,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "zo" = (
 /turf/simulated/wall,
@@ -273,12 +273,12 @@
 	dir = 4
 	},
 /obj/random/tool,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "zY" = (
 /obj/structure/table/reinforced,
 /obj/machinery/light,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "AH" = (
 /obj/structure/lattice,
@@ -294,11 +294,11 @@
 	locked = 1;
 	name = "Manufacturing Control Room"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "BI" = (
 /obj/structure/reagent_dispensers/fueltank,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Cp" = (
 /obj/structure/cable{
@@ -307,7 +307,7 @@
 	icon_state = "1-2";
 	tag = ""
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "CY" = (
 /obj/item/stack/rods,
@@ -321,11 +321,11 @@
 /obj/machinery/conveyor/east{
 	id = null
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Ej" = (
 /obj/structure/closet/emcloset,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "EJ" = (
 /turf/simulated/wall,
@@ -336,7 +336,7 @@
 /area/template_noop)
 "FO" = (
 /obj/machinery/suit_storage_unit/syndicate,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Gm" = (
 /obj/structure/cable{
@@ -346,11 +346,11 @@
 	pixel_y = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "GB" = (
 /mob/living/simple_animal/pet/dog/corgi,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Hx" = (
 /mob/living/simple_animal/pet/dog/corgi,
@@ -358,21 +358,21 @@
 /obj/machinery/conveyor/east{
 	id = null
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Hy" = (
 /turf/template_noop,
 /area/template_noop)
 "HQ" = (
 /obj/structure/table/reinforced,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Ic" = (
-/turf/simulated/floor/plating/burnt,
+/turf/open/floor/plating/burnt,
 /area/ruin)
 "Id" = (
 /obj/effect/spawner/random_spawners/oil_maybe,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "IB" = (
 /obj/structure/lattice,
@@ -380,7 +380,7 @@
 /area/ruin/unpowered)
 "JI" = (
 /obj/effect/spawner/random_spawners/syndicate/loot,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Ki" = (
 /obj/structure/lattice,
@@ -388,10 +388,10 @@
 /area/template_noop)
 "Kr" = (
 /obj/structure/girder,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "KD" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "KS" = (
 /turf/unsimulated/floor/plating/airless,
@@ -402,13 +402,13 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/port_gen/pacman,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Mi" = (
 /turf/unsimulated,
 /area/template_noop)
 "Mz" = (
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin)
 "Nw" = (
 /obj/machinery/power/smes,
@@ -416,7 +416,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "NQ" = (
 /obj/structure/lattice,
@@ -424,28 +424,28 @@
 /area/space)
 "OA" = (
 /obj/structure/computerframe,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "OK" = (
 /obj/item/reagent_containers/food/snacks/syndicake,
 /turf/space,
 /area/space)
 "OU" = (
-/turf/simulated/floor/plasteel/airless,
+/turf/open/floor/plasteel/airless,
 /area/ruin)
 "Qv" = (
 /obj/machinery/light{
 	dir = 8
 	},
 /obj/item/trash/syndi_cakes,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "QF" = (
 /obj/machinery/conveyor/east{
 	dir = 2;
 	id = null
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin)
 "QI" = (
 /obj/effect/spawner/random_spawners/wall_rusted_probably,
@@ -459,7 +459,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Rg" = (
 /obj/machinery/door/airlock/mining/glass{
@@ -468,11 +468,11 @@
 	name = "Corgi processing";
 	normal_integrity = 300000
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Ry" = (
 /obj/item/stack/cable_coil/random,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "RB" = (
 /mob/living/simple_animal/hostile/alien/sentinel{
@@ -489,16 +489,16 @@
 	name = "angry corgi";
 	retreat_distance = 2
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Tj" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/syndicate,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Tt" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "TM" = (
 /obj/structure/chair/office/dark{
@@ -506,7 +506,7 @@
 	icon_state = "officechair_dark";
 	tag = "icon-officechair_dark (EAST)"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "TT" = (
 /obj/structure/cable{
@@ -521,19 +521,19 @@
 	icon_state = "1-4";
 	tag = "90Curve"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Uq" = (
 /obj/machinery/conveyor/east{
 	id = null
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin)
 "UC" = (
 /obj/machinery/tcomms/relay/ruskie{
 	network_id = "SYNDICAKES-FACTORY"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "UR" = (
 /obj/item/trash/syndi_cakes,
@@ -543,13 +543,13 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Vt" = (
 /obj/machinery/conveyor/north/ccw{
 	id = null
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "VH" = (
 /obj/structure/lattice,
@@ -569,37 +569,37 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "XZ" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
 /obj/structure/dispenser/oxygen,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "YR" = (
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "YU" = (
 /obj/structure/chair/office/dark,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Zs" = (
 /obj/machinery/conveyor/east{
 	id = null
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "Zt" = (
 /obj/machinery/conveyor/east{
 	dir = 2;
 	id = null
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/space)
 
 (1,1,1) = {"

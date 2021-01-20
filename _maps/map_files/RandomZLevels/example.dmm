@@ -6,13 +6,13 @@
 /turf/simulated/wall,
 /area/awaymission/example)
 "ac" = (
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "ad" = (
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "ae" = (
 /obj/machinery/power/smes{
@@ -23,7 +23,7 @@
 	pixel_y = 1;
 	d2 = 2
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "af" = (
 /obj/machinery/power/terminal{
@@ -34,7 +34,7 @@
 	pixel_y = 1;
 	d2 = 2
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "ag" = (
 /obj/machinery/power/apc/noalarm{
@@ -48,25 +48,25 @@
 	pixel_y = 1;
 	d2 = 2
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "ah" = (
 /obj/machinery/gateway{
 	dir = 9
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "ai" = (
 /obj/machinery/gateway{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "aj" = (
 /obj/machinery/gateway{
 	dir = 5
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "ak" = (
 /obj/structure/cable{
@@ -87,7 +87,7 @@
 	icon_state = "2-4";
 	tag = ""
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "al" = (
 /obj/structure/cable{
@@ -103,7 +103,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "am" = (
 /obj/structure/cable{
@@ -112,13 +112,13 @@
 	icon_state = "1-8";
 	tag = ""
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "an" = (
 /obj/machinery/gateway{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "ao" = (
 /obj/structure/cable{
@@ -127,13 +127,13 @@
 	d2 = 2
 	},
 /obj/machinery/gateway/centeraway,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "ap" = (
 /obj/machinery/gateway{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "aq" = (
 /obj/structure/cable{
@@ -142,18 +142,18 @@
 	icon_state = "1-2";
 	tag = ""
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "ar" = (
 /obj/item/cigbutt,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "as" = (
 /obj/machinery/gateway{
 	dir = 10
 	},
 /obj/effect/decal/cleanable/blood/oil,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "at" = (
 /obj/machinery/gateway,
@@ -163,7 +163,7 @@
 	icon_state = "1-4";
 	tag = ""
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "au" = (
 /obj/machinery/gateway{
@@ -176,24 +176,24 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "av" = (
 /obj/structure/cable{
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/example)
 "aw" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/example)
 "ax" = (
 /obj/structure/cable{
 	icon_state = "0-4";
 	d2 = 4
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/example)
 "ay" = (
 /obj/machinery/light/small,
@@ -204,7 +204,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/example)
 "az" = (
 /obj/structure/cable{
@@ -214,7 +214,7 @@
 	pixel_x = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "aA" = (
 /obj/structure/cable{
@@ -224,7 +224,7 @@
 	tag = ""
 	},
 /obj/effect/decal/cleanable/blood/oil,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "aB" = (
 /obj/machinery/light{
@@ -233,89 +233,89 @@
 	},
 /obj/structure/table,
 /obj/item/paper/pamphlet,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "aC" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "aD" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "aE" = (
 /obj/structure/table,
 /obj/item/flashlight,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "aF" = (
 /obj/structure/table,
 /obj/item/crowbar,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "aG" = (
 /obj/effect/decal/cleanable/vomit,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "aH" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
 	id = "example"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/example)
 "aI" = (
 /obj/structure/table,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "aJ" = (
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/example)
 "aK" = (
 /obj/machinery/door/airlock/command,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "aL" = (
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "aM" = (
 /obj/machinery/door/airlock/maintenance_hatch,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "aN" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "yellowcorner"
 	},
 /area/awaymission/example)
 "aO" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "yellow"
 	},
 /area/awaymission/example)
 "aP" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "yellowcorner"
 	},
 /area/awaymission/example)
 "aQ" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-yellowfull (WEST)";
 	icon_state = "yellowfull";
 	dir = 8
 	},
 /area/awaymission/example)
 "aR" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "whitehall";
 	dir = 2
 	},
@@ -324,12 +324,12 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/example)
 "aT" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/example)
@@ -337,25 +337,25 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/example)
 "aV" = (
 /obj/machinery/vending/cola,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/example)
 "aW" = (
 /obj/machinery/vending/coffee,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/example)
 "aX" = (
 /obj/machinery/door/airlock/medical,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/example)
@@ -375,7 +375,7 @@
 	name = "Privacy Shutters";
 	opacity = 0
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/example)
 "aZ" = (
 /obj/structure/window/reinforced,
@@ -393,7 +393,7 @@
 	name = "Privacy Shutters";
 	opacity = 0
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/example)
 "ba" = (
 /obj/machinery/door_control{
@@ -401,40 +401,40 @@
 	name = "Privacy Shutters";
 	pixel_y = 25
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/example)
 "bb" = (
 /obj/structure/table,
 /obj/item/healthanalyzer,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/example)
 "bc" = (
 /obj/structure/bed,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/example)
 "bd" = (
 /obj/structure/chair/stool,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/example)
 "be" = (
 /obj/structure/table,
 /obj/item/reagent_scanner/adv,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/example)
 "bf" = (
 /obj/structure/table,
 /obj/item/reagent_containers/glass/beaker,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/example)
@@ -442,13 +442,13 @@
 /obj/structure/table,
 /obj/item/folder/white,
 /obj/item/pen/red,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/example)
 "bh" = (
 /obj/machinery/light,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/example)
@@ -456,7 +456,7 @@
 /obj/structure/table,
 /obj/item/clipboard,
 /obj/item/reagent_containers/syringe/antiviral,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "white"
 	},
 /area/awaymission/example)
@@ -465,22 +465,22 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "bk" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "yellowcorner"
 	},
 /area/awaymission/example)
 "bl" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "yellow"
 	},
 /area/awaymission/example)
 "bm" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "yellowcorner"
 	},
@@ -497,10 +497,10 @@
 	dir = 4
 	},
 /obj/structure/grille,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/example)
 "bo" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-stage_stairs (WEST)";
 	icon_state = "stage_stairs";
 	dir = 8
@@ -515,7 +515,7 @@
 	dir = 8
 	},
 /obj/structure/grille,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/example)
 "bq" = (
 /obj/structure/window/reinforced,
@@ -523,7 +523,7 @@
 	dir = 1
 	},
 /obj/structure/grille,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/example)
 "br" = (
 /obj/structure/window/reinforced,
@@ -534,7 +534,7 @@
 	dir = 4
 	},
 /obj/structure/grille,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/example)
 "bs" = (
 /obj/structure/toilet{
@@ -543,12 +543,12 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "showroomfloor"
 	},
 /area/awaymission/example)
 "bt" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
@@ -556,7 +556,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
@@ -564,7 +564,7 @@
 /obj/machinery/door/airlock{
 	name = "Unit 1"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "showroomfloor"
 	},
 /area/awaymission/example)
@@ -572,19 +572,19 @@
 /obj/machinery/door/airlock{
 	name = "Unit 2"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "showroomfloor"
 	},
 /area/awaymission/example)
 "bx" = (
 /obj/structure/table,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
 "by" = (
 /obj/structure/chair/stool,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
@@ -592,7 +592,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
@@ -600,13 +600,13 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
 "bB" = (
 /obj/structure/chair/wood,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
@@ -617,12 +617,12 @@
 	pixel_x = -12;
 	pixel_y = 2
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "showroomfloor"
 	},
 /area/awaymission/example)
 "bD" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "showroomfloor"
 	},
 /area/awaymission/example)
@@ -630,7 +630,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "showroomfloor"
 	},
 /area/awaymission/example)
@@ -639,21 +639,21 @@
 	name = "Unisex Restrooms";
 	req_access_txt = "0"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "bG" = (
 /obj/machinery/vending/boozeomat{
 	density = 0;
 	pixel_x = -32
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
 "bH" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/cans/sodawater,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
@@ -665,7 +665,7 @@
 /obj/item/book/manual/barman_recipes,
 /obj/item/book/manual/chef_recipes,
 /obj/item/book/manual/ripley_build_and_repair,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
@@ -675,7 +675,7 @@
 	icon_state = "wooden_chair";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
@@ -685,7 +685,7 @@
 	icon_state = "wooden_chair";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
@@ -694,14 +694,14 @@
 	density = 0;
 	pixel_y = 32
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
 "bM" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/bottle/wine,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
@@ -711,13 +711,13 @@
 	icon_state = "wooden_chair";
 	dir = 1
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
 "bO" = (
 /obj/machinery/vending/snack,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "bP" = (
 /obj/structure/table,
@@ -725,67 +725,67 @@
 /obj/item/paper{
 	info = "X X O<br>X O X<br>O X"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
 "bQ" = (
 /obj/structure/piano,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
 "bR" = (
 /obj/machinery/light/small,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
 "bS" = (
 /obj/item/reagent_containers/food/snacks/validsalad,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "bar"
 	},
 /area/awaymission/example)
 "bT" = (
 /obj/machinery/vending/cigarette,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "bU" = (
 /obj/structure/table,
 /obj/item/analyzer,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "bV" = (
 /obj/structure/table,
 /obj/item/rack_parts,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "bW" = (
 /obj/structure/table,
 /obj/item/toner,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "bX" = (
 /obj/structure/table,
 /obj/item/wirecutters,
 /obj/item/stack/cable_coil/yellow,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "bY" = (
 /obj/structure/table,
 /obj/item/wrench,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "bZ" = (
 /obj/machinery/vending/assist,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "ca" = (
 /obj/structure/ladder/unbreakable{
 	id = "example"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/awaymission/example)
 "cb" = (
 /obj/structure/filingcabinet,
@@ -793,17 +793,17 @@
 	info = "Todo: write up a lawsuit for Ted, fuck what the pamphlets say, nothing good is gonna come out of that gate. Ted'll thank me later, I'll bet.";
 	name = "documents"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "cc" = (
 /obj/structure/table,
 /obj/item/paper_bin,
 /obj/item/pen/blue,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "cd" = (
 /obj/machinery/photocopier,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "ce" = (
 /obj/structure/table,
@@ -813,25 +813,25 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "cf" = (
 /obj/structure/chair/office/dark{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "cg" = (
 /obj/structure/table,
 /obj/item/paper/pamphlet,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "ch" = (
 /obj/machinery/door/airlock,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "ci" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "yellow"
 	},
@@ -841,11 +841,11 @@
 	info = "Hey Ted, remind me to take Angeline out some time before I ship out. You know how bad my memory is, so don't get all high and mighty with me. READ THIS.";
 	name = "note"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "ck" = (
 /obj/machinery/door/airlock/public/glass,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "cl" = (
 /obj/structure/noticeboard{
@@ -856,30 +856,30 @@
 	name = "friday night"
 	},
 /obj/item/cigbutt,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "yellowcorner"
 	},
 /area/awaymission/example)
 "cm" = (
 /obj/item/trash/pistachios,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "cn" = (
 /obj/effect/landmark{
 	name = "awaystart"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "co" = (
 /obj/effect/landmark{
 	name = "awaystart"
 	},
 /obj/item/assembly/mousetrap/armed,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "cp" = (
 /obj/structure/reagent_dispensers/watertank,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "cq" = (
 /obj/effect/landmark{
@@ -890,32 +890,32 @@
 	icon_state = "bulb-construct-stage1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "cr" = (
 /obj/effect/landmark{
 	name = "awaystart"
 	},
 /obj/item/mop,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "cs" = (
 /obj/structure/closet,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "ct" = (
 /obj/structure/chair/stool,
 /obj/effect/landmark{
 	name = "awaystart"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 "cu" = (
 /obj/structure/mopbucket,
 /obj/machinery/light_construct/small{
 	dir = 4
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/awaymission/example)
 
 (1,1,1) = {"

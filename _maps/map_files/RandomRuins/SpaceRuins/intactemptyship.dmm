@@ -114,12 +114,12 @@
 "p" = (
 /obj/structure/window/full/reinforced,
 /obj/structure/grille,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "q" = (
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "r" = (
 /obj/structure/table,

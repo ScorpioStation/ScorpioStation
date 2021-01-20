@@ -10,30 +10,30 @@
 /turf/simulated/wall/r_wall,
 /area/ruin/unpowered)
 "d" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "e" = (
 /obj/effect/spawner/lootdrop/crate_spawner,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "f" = (
 /obj/item/ammo_box/magazine/sniper_rounds,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "g" = (
 /obj/item/stack/rods,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "h" = (
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/unpowered)
 "i" = (
 /obj/machinery/door/airlock,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "j" = (
 /obj/item/stack/cable_coil,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 
 (1,1,1) = {"

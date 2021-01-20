@@ -3,32 +3,32 @@
 /turf/simulated/wall/indestructible/hierophant,
 /area/ruin/unpowered/hierophant)
 "b" = (
-/turf/simulated/floor/indestructible/hierophant,
+/turf/open/floor/indestructible/hierophant,
 /area/ruin/unpowered/hierophant)
 "c" = (
 /obj/effect/light_emitter{
 	light_range = 3;
 	light_power = 5
 	},
-/turf/simulated/floor/indestructible/hierophant,
+/turf/open/floor/indestructible/hierophant,
 /area/ruin/unpowered/hierophant)
 "d" = (
 /mob/living/simple_animal/hostile/megafauna/hierophant,
-/turf/simulated/floor/indestructible/hierophant/two,
+/turf/open/floor/indestructible/hierophant/two,
 /area/ruin/unpowered/hierophant)
 "e" = (
-/turf/simulated/floor/indestructible/hierophant/two,
+/turf/open/floor/indestructible/hierophant/two,
 /area/ruin/unpowered/hierophant)
 "f" = (
 /obj/effect/light_emitter{
 	light_range = 3;
 	light_power = 5
 	},
-/turf/simulated/floor/indestructible/hierophant/two,
+/turf/open/floor/indestructible/hierophant/two,
 /area/ruin/unpowered/hierophant)
 "g" = (
 /obj/effect/baseturf_helper/lava_land/surface,
-/turf/simulated/floor/indestructible/hierophant/two,
+/turf/open/floor/indestructible/hierophant/two,
 /area/ruin/unpowered/hierophant)
 
 (1,1,1) = {"

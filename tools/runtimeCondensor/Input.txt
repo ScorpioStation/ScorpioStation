@@ -93,8 +93,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Reese Marcotte (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=21;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=21;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=21;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=21;left=1;scr...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -102,8 +102,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Reese Marcotte (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=19;icon-y=15;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=19;icon-y=15;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=19;icon-y=15;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=19;icon-y=15;left=1;scr...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -111,8 +111,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Reese Marcotte (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=12;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=12;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=12;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=12;left=1;scr...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -120,8 +120,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Reese Marcotte (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=12;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=12;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=12;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=12;left=1;scr...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -129,8 +129,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Reese Marcotte (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=20;icon-y=15;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=20;icon-y=15;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=20;icon-y=15;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=20;icon-y=15;left=1;scr...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -138,8 +138,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Reese Marcotte (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=19;icon-y=19;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=19;icon-y=19;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=19;icon-y=19;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=19;icon-y=19;left=1;scr...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -147,8 +147,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Reese Marcotte (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=19;icon-y=18;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=19;icon-y=18;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=19;icon-y=18;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=19;icon-y=18;left=1;scr...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -156,8 +156,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Reese Marcotte (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=16;icon-y=19;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=16;icon-y=19;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=16;icon-y=19;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=16;icon-y=19;left=1;scr...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -165,8 +165,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Reese Marcotte (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=17;icon-y=19;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=17;icon-y=19;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=17;icon-y=19;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=17;icon-y=19;left=1;scr...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -174,8 +174,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Reese Marcotte (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=13;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=13;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=13;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=13;left=1;scr...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -183,8 +183,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Reese Marcotte (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=17;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=17;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=17;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (169,125,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=17;left=1;scr...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -289,8 +289,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Ellen Quinn (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=16;icon-y=21;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=16;icon-y=21;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=16;icon-y=21;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=16;icon-y=21;left=1;scr...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -298,8 +298,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Ellen Quinn (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=17;icon-y=14;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=17;icon-y=14;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=17;icon-y=14;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=17;icon-y=14;left=1;scr...")
 Fri Jul 13 20:36:29 2012
 runtime error: Cannot read null.slot_flags
 proc name: db click (/mob/living/carbon/human/db_click)
@@ -666,8 +666,8 @@ Engineering Cyborg -133 (/mob/living/silicon/robot): Stat()
 Borg module reset board (/obj/item/borg/upgrade/reset): action(Engineering Cyborg -133 (/mob/living/silicon/robot))
 Borg module reset board (/obj/item/borg/upgrade/reset): action(Engineering Cyborg -133 (/mob/living/silicon/robot))
 Engineering Cyborg -133 (/mob/living/silicon/robot): attackby(Borg module reset board (/obj/item/borg/upgrade/reset), Michigan Slim (/mob/living/carbon/human))
-Engineering Cyborg -133 (/mob/living/silicon/robot): DblClick(the floor (95,85,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=14;icon-y=18;left=1;scr...")
-Engineering Cyborg -133 (/mob/living/silicon/robot): Click(the floor (95,85,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=14;icon-y=18;left=1;scr...")
+Engineering Cyborg -133 (/mob/living/silicon/robot): DblClick(the floor (95,85,1) (/turf/open/floor), "mapwindow.map", "icon-x=14;icon-y=18;left=1;scr...")
+Engineering Cyborg -133 (/mob/living/silicon/robot): Click(the floor (95,85,1) (/turf/open/floor), "mapwindow.map", "icon-x=14;icon-y=18;left=1;scr...")
 runtime error: undefined proc or verb /obj/machinery/portable_atmospherics/canister/toxins/attack().
 
 proc name: attackby (/mob/attackby)
@@ -694,8 +694,8 @@ Miner Cyborg 133 (/mob/living/silicon/robot): Stat()
 Borg module reset board (/obj/item/borg/upgrade/reset): action(Miner Cyborg 133 (/mob/living/silicon/robot))
 Borg module reset board (/obj/item/borg/upgrade/reset): action(Miner Cyborg 133 (/mob/living/silicon/robot))
 Miner Cyborg 133 (/mob/living/silicon/robot): attackby(Borg module reset board (/obj/item/borg/upgrade/reset), Kingston Sommer (/mob/living/carbon/human))
-Miner Cyborg 133 (/mob/living/silicon/robot): DblClick(the floor (97,87,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=14;icon-y=9;left=1;scre...")
-Miner Cyborg 133 (/mob/living/silicon/robot): Click(the floor (97,87,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=14;icon-y=9;left=1;scre...")
+Miner Cyborg 133 (/mob/living/silicon/robot): DblClick(the floor (97,87,1) (/turf/open/floor), "mapwindow.map", "icon-x=14;icon-y=9;left=1;scre...")
+Miner Cyborg 133 (/mob/living/silicon/robot): Click(the floor (97,87,1) (/turf/open/floor), "mapwindow.map", "icon-x=14;icon-y=9;left=1;scre...")
 runtime error: Cannot read null.slot_flags
 proc name: db click (/mob/living/carbon/human/db_click)
   source file: inventory.dm,1142
@@ -736,16 +736,16 @@ Nick Cave (/mob/living/carbon/human): db click("belt", null)
 the belt (/obj/screen): attack hand(Nick Cave (/mob/living/carbon/human), null)
 the belt (/obj/screen): DblClick(null, null, null)
 the belt (/obj/screen): Click(null, "mapwindow.map", "icon-x=23;icon-y=14;left=1;scr...")
-runtime error: undefined variable /turf/simulated/floor/plating/var/mineral
+runtime error: undefined variable /turf/open/floor/plating/var/mineral
 proc name: attackby (/turf/simulated/wall/attackby)
   source file: turf.dm,600
   usr: Monte Smail (/mob/living/carbon/human)
-  src: the plating (176,172,5) (/turf/simulated/floor/plating)
+  src: the plating (176,172,5) (/turf/open/floor/plating)
   call stack:
-the plating (176,172,5) (/turf/simulated/floor/plating): attackby(Diamond Mining Drill (/obj/item/pickaxe/diamonddrill), Monte Smail (/mob/living/carbon/human))
-the plating (176,172,5) (/turf/simulated/floor/plating): DblClick(the plating (176,172,5) (/turf/simulated/floor/plating), "mapwindow.map", "icon-x=15;icon-y=6;left=1;scre...")
-the plating (176,172,5) (/turf/simulated/floor/plating): DblClick(the plating (176,172,5) (/turf/simulated/floor/plating), "mapwindow.map", "icon-x=15;icon-y=6;left=1;scre...")
-the plating (176,172,5) (/turf/simulated/floor/plating): Click(the plating (176,172,5) (/turf/simulated/floor/plating), "mapwindow.map", "icon-x=15;icon-y=6;left=1;scre...")
+the plating (176,172,5) (/turf/open/floor/plating): attackby(Diamond Mining Drill (/obj/item/pickaxe/diamonddrill), Monte Smail (/mob/living/carbon/human))
+the plating (176,172,5) (/turf/open/floor/plating): DblClick(the plating (176,172,5) (/turf/open/floor/plating), "mapwindow.map", "icon-x=15;icon-y=6;left=1;scre...")
+the plating (176,172,5) (/turf/open/floor/plating): DblClick(the plating (176,172,5) (/turf/open/floor/plating), "mapwindow.map", "icon-x=15;icon-y=6;left=1;scre...")
+the plating (176,172,5) (/turf/open/floor/plating): Click(the plating (176,172,5) (/turf/open/floor/plating), "mapwindow.map", "icon-x=15;icon-y=6;left=1;scre...")
 Rebooted server.
 Running TG Revision Number: 4060.
 Fri Jul 13 22:48:12 2012
@@ -846,8 +846,8 @@ Engineering Cyborg -952 (/mob/living/silicon/robot): Stat()
 Borg VTEC Module (/obj/item/borg/upgrade/vtec): action(Engineering Cyborg -952 (/mob/living/silicon/robot))
 Borg VTEC Module (/obj/item/borg/upgrade/vtec): action(Engineering Cyborg -952 (/mob/living/silicon/robot))
 Engineering Cyborg -952 (/mob/living/silicon/robot): attackby(Borg VTEC Module (/obj/item/borg/upgrade/vtec), Sprigg Spooly as (Matthew Hoff... (/mob/living/carbon/human))
-Engineering Cyborg -952 (/mob/living/silicon/robot): DblClick(the floor (101,86,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=17;icon-y=17;left=1;scr...")
-Engineering Cyborg -952 (/mob/living/silicon/robot): Click(the floor (101,86,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=17;icon-y=17;left=1;scr...")
+Engineering Cyborg -952 (/mob/living/silicon/robot): DblClick(the floor (101,86,1) (/turf/open/floor), "mapwindow.map", "icon-x=17;icon-y=17;left=1;scr...")
+Engineering Cyborg -952 (/mob/living/silicon/robot): Click(the floor (101,86,1) (/turf/open/floor), "mapwindow.map", "icon-x=17;icon-y=17;left=1;scr...")
 runtime error: Cannot read null.slot_flags
 proc name: db click (/mob/living/carbon/human/db_click)
   source file: inventory.dm,1083
@@ -1410,7 +1410,7 @@ proc name: throw at (/atom/movable/proc/throw_at)
   usr: Reese Marcotte (/mob/living/carbon/human)
   src: Reese Marcotte (/mob/living/carbon/human)
   call stack:
-Reese Marcotte (/mob/living/carbon/human): throw at(Asteroid (174,85,5) (/turf/simulated/floor/plating/asteroid/airless), 5, 1)
+Reese Marcotte (/mob/living/carbon/human): throw at(Asteroid (174,85,5) (/turf/open/floor/plating/asteroid/airless), 5, 1)
 Delivery chute (/obj/machinery/disposal/deliveryChute): expel(null)
 Rebooted server.
 Running TG Revision Number: 4060.
@@ -2051,152 +2051,152 @@ proc name: throw at (/atom/movable/proc/throw_at)
   usr: Hugh Jazz (/mob/living/carbon/human)
   src: Hugh Jazz (/mob/living/carbon/human)
   call stack:
-Hugh Jazz (/mob/living/carbon/human): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Hugh Jazz (/mob/living/carbon/human): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: Hugh Jazz (/mob/living/carbon/human)
   src: Hugh Jazz (/mob/living/carbon/human)
   call stack:
-Hugh Jazz (/mob/living/carbon/human): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Hugh Jazz (/mob/living/carbon/human): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: Hugh Jazz (/mob/living/carbon/human)
   src: Hugh Jazz (/mob/living/carbon/human)
   call stack:
-Hugh Jazz (/mob/living/carbon/human): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Hugh Jazz (/mob/living/carbon/human): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: Hugh Jazz (/mob/living/carbon/human)
   src: Hugh Jazz (/mob/living/carbon/human)
   call stack:
-Hugh Jazz (/mob/living/carbon/human): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Hugh Jazz (/mob/living/carbon/human): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: Hugh Jazz (/mob/living/carbon/human)
   src: Hugh Jazz (/mob/living/carbon/human)
   call stack:
-Hugh Jazz (/mob/living/carbon/human): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Hugh Jazz (/mob/living/carbon/human): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: Hugh Jazz (/mob/living/carbon/human)
   src: Hugh Jazz (/mob/living/carbon/human)
   call stack:
-Hugh Jazz (/mob/living/carbon/human): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Hugh Jazz (/mob/living/carbon/human): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air)
   call stack:
-Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: Paul Wolfe (/mob/living/carbon/human)
   src: Paul Wolfe (/mob/living/carbon/human)
   call stack:
-Paul Wolfe (/mob/living/carbon/human): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Paul Wolfe (/mob/living/carbon/human): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air)
   call stack:
-Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air)
   call stack:
-Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air)
   call stack:
-Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air)
   call stack:
-Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air)
   call stack:
-Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: Canister: \[O2] (/obj/machinery/portable_atmospherics/canister/oxygen)
   call stack:
-Canister: \[O2] (/obj/machinery/portable_atmospherics/canister/oxygen): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Canister: \[O2] (/obj/machinery/portable_atmospherics/canister/oxygen): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air)
   call stack:
-Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: Canister: \[O2] (/obj/machinery/portable_atmospherics/canister/oxygen)
   call stack:
-Canister: \[O2] (/obj/machinery/portable_atmospherics/canister/oxygen): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Canister: \[O2] (/obj/machinery/portable_atmospherics/canister/oxygen): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air)
   call stack:
-Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: Canister: \[O2] (/obj/machinery/portable_atmospherics/canister/oxygen)
   call stack:
-Canister: \[O2] (/obj/machinery/portable_atmospherics/canister/oxygen): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Canister: \[O2] (/obj/machinery/portable_atmospherics/canister/oxygen): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air)
   call stack:
-Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/simulated/floor), 8)
+Canister \[Air] (/obj/machinery/portable_atmospherics/canister/air): throw at(the floor (112,99,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (122,99,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
@@ -2458,11 +2458,11 @@ proc name: mergeConnectedNetworksOnTurf (/obj/structure/cable/proc/mergeConnecte
   src: the power cable (/obj/structure/cable)
   call stack:
 the power cable (/obj/structure/cable): mergeConnectedNetworksOnTurf()
-the cable coil (/obj/item/cable_coil/orange): turf place(the plating (87,80,1) (/turf/simulated/floor/plating), Josue Sandford (/mob/living/carbon/human))
-the plating (87,80,1) (/turf/simulated/floor/plating): attackby(the cable coil (/obj/item/cable_coil/orange), Josue Sandford (/mob/living/carbon/human))
-the plating (87,80,1) (/turf/simulated/floor/plating): DblClick(the plating (87,80,1) (/turf/simulated/floor/plating), "mapwindow.map", "icon-x=17;icon-y=28;left=1;scr...")
-the plating (87,80,1) (/turf/simulated/floor/plating): DblClick(the plating (87,80,1) (/turf/simulated/floor/plating), "mapwindow.map", "icon-x=17;icon-y=28;left=1;scr...")
-the plating (87,80,1) (/turf/simulated/floor/plating): Click(the plating (87,80,1) (/turf/simulated/floor/plating), "mapwindow.map", "icon-x=17;icon-y=28;left=1;scr...")
+the cable coil (/obj/item/cable_coil/orange): turf place(the plating (87,80,1) (/turf/open/floor/plating), Josue Sandford (/mob/living/carbon/human))
+the plating (87,80,1) (/turf/open/floor/plating): attackby(the cable coil (/obj/item/cable_coil/orange), Josue Sandford (/mob/living/carbon/human))
+the plating (87,80,1) (/turf/open/floor/plating): DblClick(the plating (87,80,1) (/turf/open/floor/plating), "mapwindow.map", "icon-x=17;icon-y=28;left=1;scr...")
+the plating (87,80,1) (/turf/open/floor/plating): DblClick(the plating (87,80,1) (/turf/open/floor/plating), "mapwindow.map", "icon-x=17;icon-y=28;left=1;scr...")
+the plating (87,80,1) (/turf/open/floor/plating): Click(the plating (87,80,1) (/turf/open/floor/plating), "mapwindow.map", "icon-x=17;icon-y=28;left=1;scr...")
 runtime error: Cannot read null.nodes
 proc name: merge powernets (/datum/powernet/proc/merge_powernets)
   source file: power.dm,401
@@ -2473,8 +2473,8 @@ proc name: merge powernets (/datum/powernet/proc/merge_powernets)
 the power cable (/obj/structure/cable): mergeConnectedNetworksOnTurf()
 the cable piece (/obj/item/cable_coil): cable join(the power cable (/obj/structure/cable), Darin Keppel (/mob/living/carbon/human))
 the power cable (/obj/structure/cable): attackby(the cable piece (/obj/item/cable_coil), Darin Keppel (/mob/living/carbon/human))
-the power cable (/obj/structure/cable): DblClick(the floor (105,80,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=29;icon-y=17;left=1;scr...")
-the power cable (/obj/structure/cable): Click(the floor (105,80,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=29;icon-y=17;left=1;scr...")
+the power cable (/obj/structure/cable): DblClick(the floor (105,80,1) (/turf/open/floor), "mapwindow.map", "icon-x=29;icon-y=17;left=1;scr...")
+the power cable (/obj/structure/cable): Click(the floor (105,80,1) (/turf/open/floor), "mapwindow.map", "icon-x=29;icon-y=17;left=1;scr...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -2482,8 +2482,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Jace Johnson (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=19;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=19;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=19;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=19;left=1;scr...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -2491,8 +2491,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Jace Johnson (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=19;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=19;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=19;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=19;left=1;scr...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -2500,8 +2500,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Jace Johnson (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=12;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=12;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=12;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=12;left=1;scr...")
 runtime error: Cannot read null.slot_flags
 proc name: db click (/mob/living/carbon/human/db_click)
   source file: inventory.dm,1083
@@ -2519,8 +2519,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Jace Johnson (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=17;icon-y=16;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=17;icon-y=16;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=17;icon-y=16;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=17;icon-y=16;left=1;scr...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -2528,8 +2528,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Jace Johnson (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=18;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=18;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=18;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=18;left=1;scr...")
 Sat Jul 14 14:26:55 2012
 runtime error: Cannot read null.viruses
 proc name: cure (/datum/disease/proc/cure)
@@ -2821,8 +2821,8 @@ proc name: mergeConnectedNetworksOnTurf (/obj/structure/cable/proc/mergeConnecte
 the power cable (/obj/structure/cable): mergeConnectedNetworksOnTurf()
 the cable piece (/obj/item/cable_coil): cable join(the power cable (/obj/structure/cable), Tyrion Lannister (/mob/living/carbon/human))
 the power cable (/obj/structure/cable): attackby(the cable piece (/obj/item/cable_coil), Tyrion Lannister (/mob/living/carbon/human))
-the power cable (/obj/structure/cable): DblClick(the floor (174,138,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=16;icon-y=17;left=1;scr...")
-the power cable (/obj/structure/cable): Click(the floor (174,138,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=16;icon-y=17;left=1;scr...")
+the power cable (/obj/structure/cable): DblClick(the floor (174,138,1) (/turf/open/floor), "mapwindow.map", "icon-x=16;icon-y=17;left=1;scr...")
+the power cable (/obj/structure/cable): Click(the floor (174,138,1) (/turf/open/floor), "mapwindow.map", "icon-x=16;icon-y=17;left=1;scr...")
 runtime error: Cannot read null.slot_flags
 proc name: db click (/mob/living/carbon/human/db_click)
   source file: inventory.dm,1083
@@ -3383,8 +3383,8 @@ Miner Cyborg -770 (/mob/living/silicon/robot): Stat()
 Borg module reset board (/obj/item/borg/upgrade/reset): action(Miner Cyborg -770 (/mob/living/silicon/robot))
 Borg module reset board (/obj/item/borg/upgrade/reset): action(Miner Cyborg -770 (/mob/living/silicon/robot))
 Miner Cyborg -770 (/mob/living/silicon/robot): attackby(Borg module reset board (/obj/item/borg/upgrade/reset), Iroquois Pliskin (/mob/living/carbon/human))
-Miner Cyborg -770 (/mob/living/silicon/robot): DblClick(the floor (98,88,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=16;icon-y=10;left=1;scr...")
-Miner Cyborg -770 (/mob/living/silicon/robot): Click(the floor (98,88,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=16;icon-y=10;left=1;scr...")
+Miner Cyborg -770 (/mob/living/silicon/robot): DblClick(the floor (98,88,1) (/turf/open/floor), "mapwindow.map", "icon-x=16;icon-y=10;left=1;scr...")
+Miner Cyborg -770 (/mob/living/silicon/robot): Click(the floor (98,88,1) (/turf/open/floor), "mapwindow.map", "icon-x=16;icon-y=10;left=1;scr...")
 runtime error: unexpected stat
 proc name: Stat (/mob/living/silicon/robot/Stat)
   source file: robot.dm,227
@@ -3395,8 +3395,8 @@ Engineering Cyborg 770 (/mob/living/silicon/robot): Stat()
 Borg VTEC Module (/obj/item/borg/upgrade/vtec): action(Engineering Cyborg 770 (/mob/living/silicon/robot))
 Borg VTEC Module (/obj/item/borg/upgrade/vtec): action(Engineering Cyborg 770 (/mob/living/silicon/robot))
 Engineering Cyborg 770 (/mob/living/silicon/robot): attackby(Borg VTEC Module (/obj/item/borg/upgrade/vtec), Iroquois Pliskin (/mob/living/carbon/human))
-Engineering Cyborg 770 (/mob/living/silicon/robot): DblClick(the floor (98,87,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=17;icon-y=12;left=1;scr...")
-Engineering Cyborg 770 (/mob/living/silicon/robot): Click(the floor (98,87,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=17;icon-y=12;left=1;scr...")
+Engineering Cyborg 770 (/mob/living/silicon/robot): DblClick(the floor (98,87,1) (/turf/open/floor), "mapwindow.map", "icon-x=17;icon-y=12;left=1;scr...")
+Engineering Cyborg 770 (/mob/living/silicon/robot): Click(the floor (98,87,1) (/turf/open/floor), "mapwindow.map", "icon-x=17;icon-y=12;left=1;scr...")
 runtime error: Cannot read null.slot_flags
 proc name: db click (/mob/living/carbon/human/db_click)
   source file: inventory.dm,1083
@@ -3454,8 +3454,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Dutch Hargrave (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=11;left=1;scr...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=18;icon-y=11;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=11;left=1;scr...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=18;icon-y=11;left=1;scr...")
 runtime error: Cannot read null.reagents
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,748
@@ -3463,8 +3463,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Dutch Hargrave (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=17;icon-y=6;left=1;scre...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=17;icon-y=6;left=1;scre...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=17;icon-y=6;left=1;scre...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=17;icon-y=6;left=1;scre...")
 runtime error: Cannot read null.total_volume
 proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   source file: Chemistry-Machinery.dm,751
@@ -3472,8 +3472,8 @@ proc name: attackby (/obj/machinery/reagentgrinder/attackby)
   src: All-In-One Grinder (/obj/machinery/reagentgrinder)
   call stack:
 All-In-One Grinder (/obj/machinery/reagentgrinder): attackby(Plant Bag (/obj/item/plantbag), Dutch Hargrave (/mob/living/carbon/human))
-All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=20;icon-y=6;left=1;scre...")
-All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=20;icon-y=6;left=1;scre...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): DblClick(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=20;icon-y=6;left=1;scre...")
+All-In-One Grinder (/obj/machinery/reagentgrinder): Click(the floor (154,134,1) (/turf/open/floor), "mapwindow.map", "icon-x=20;icon-y=6;left=1;scre...")
 Rebooted server.
 Running TG Revision Number: 4060.
 Sun Jul 15 01:27:07 2012
@@ -3483,152 +3483,152 @@ proc name: throw at (/atom/movable/proc/throw_at)
   usr: 0
   src: the emergency closet (/obj/structure/closet/emcloset)
   call stack:
-the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: the emergency closet (/obj/structure/closet/emcloset)
   call stack:
-the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: the emergency closet (/obj/structure/closet/emcloset)
   call stack:
-the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: the emergency closet (/obj/structure/closet/emcloset)
   call stack:
-the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: the emergency closet (/obj/structure/closet/emcloset)
   call stack:
-the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: the emergency closet (/obj/structure/closet/emcloset)
   call stack:
-the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: the emergency closet (/obj/structure/closet/emcloset)
   call stack:
-the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: the emergency closet (/obj/structure/closet/emcloset)
   call stack:
-the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: the emergency closet (/obj/structure/closet/emcloset)
   call stack:
-the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: the emergency closet (/obj/structure/closet/emcloset)
   call stack:
-the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: the emergency closet (/obj/structure/closet/emcloset)
   call stack:
-the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: the emergency closet (/obj/structure/closet/emcloset)
   call stack:
-the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: Crate (/obj/structure/closet/crate)
   call stack:
-Crate (/obj/structure/closet/crate): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+Crate (/obj/structure/closet/crate): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: the emergency closet (/obj/structure/closet/emcloset)
   call stack:
-the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: the emergency closet (/obj/structure/closet/emcloset)
   call stack:
-the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: Crate (/obj/structure/closet/crate)
   call stack:
-Crate (/obj/structure/closet/crate): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+Crate (/obj/structure/closet/crate): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: the emergency closet (/obj/structure/closet/emcloset)
   call stack:
-the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: the emergency closet (/obj/structure/closet/emcloset)
   call stack:
-the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+the emergency closet (/obj/structure/closet/emcloset): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
   usr: 0
   src: Crate (/obj/structure/closet/crate)
   call stack:
-Crate (/obj/structure/closet/crate): throw at(the floor (172,138,1) (/turf/simulated/floor), 100, 1)
-the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/simulated/floor), 8)
+Crate (/obj/structure/closet/crate): throw at(the floor (172,138,1) (/turf/open/floor), 100, 1)
+the disposal pipe (/obj/structure/disposalpipe/trunk): expel(null, the floor (182,138,1) (/turf/open/floor), 8)
 runtime error: Cannot read null.has_gravity
 proc name: throw at (/atom/movable/proc/throw_at)
   source file: throwing.dm,194
@@ -4096,11 +4096,11 @@ proc name: merge powernets (/datum/powernet/proc/merge_powernets)
   call stack:
 /datum/powernet (/datum/powernet): merge powernets(null)
 the power cable (/obj/structure/cable): mergeConnectedNetworksOnTurf()
-the cable coil (/obj/item/cable_coil): turf place(the floor (87,115,1) (/turf/simulated/floor), Stephen Cox (/mob/living/carbon/human))
-the floor (87,115,1) (/turf/simulated/floor): attackby(the cable coil (/obj/item/cable_coil), Stephen Cox (/mob/living/carbon/human))
-the floor (87,115,1) (/turf/simulated/floor): DblClick(the floor (87,115,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=26;icon-y=18;left=1;scr...")
-the floor (87,115,1) (/turf/simulated/floor): DblClick(the floor (87,115,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=26;icon-y=18;left=1;scr...")
-the floor (87,115,1) (/turf/simulated/floor): Click(the floor (87,115,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=26;icon-y=18;left=1;scr...")
+the cable coil (/obj/item/cable_coil): turf place(the floor (87,115,1) (/turf/open/floor), Stephen Cox (/mob/living/carbon/human))
+the floor (87,115,1) (/turf/open/floor): attackby(the cable coil (/obj/item/cable_coil), Stephen Cox (/mob/living/carbon/human))
+the floor (87,115,1) (/turf/open/floor): DblClick(the floor (87,115,1) (/turf/open/floor), "mapwindow.map", "icon-x=26;icon-y=18;left=1;scr...")
+the floor (87,115,1) (/turf/open/floor): DblClick(the floor (87,115,1) (/turf/open/floor), "mapwindow.map", "icon-x=26;icon-y=18;left=1;scr...")
+the floor (87,115,1) (/turf/open/floor): Click(the floor (87,115,1) (/turf/open/floor), "mapwindow.map", "icon-x=26;icon-y=18;left=1;scr...")
 runtime error: Cannot read null.nodes
 proc name: merge powernets (/datum/powernet/proc/merge_powernets)
   source file: power.dm,401
@@ -4109,11 +4109,11 @@ proc name: merge powernets (/datum/powernet/proc/merge_powernets)
   call stack:
 /datum/powernet (/datum/powernet): merge powernets(null)
 the power cable (/obj/structure/cable): mergeConnectedNetworksOnTurf()
-the cable coil (/obj/item/cable_coil): turf place(the floor (87,115,1) (/turf/simulated/floor), Stephen Cox (/mob/living/carbon/human))
-the floor (87,115,1) (/turf/simulated/floor): attackby(the cable coil (/obj/item/cable_coil), Stephen Cox (/mob/living/carbon/human))
-the floor (87,115,1) (/turf/simulated/floor): DblClick(the floor (87,115,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=26;icon-y=18;left=1;scr...")
-the floor (87,115,1) (/turf/simulated/floor): DblClick(the floor (87,115,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=26;icon-y=18;left=1;scr...")
-the floor (87,115,1) (/turf/simulated/floor): Click(the floor (87,115,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=26;icon-y=18;left=1;scr...")
+the cable coil (/obj/item/cable_coil): turf place(the floor (87,115,1) (/turf/open/floor), Stephen Cox (/mob/living/carbon/human))
+the floor (87,115,1) (/turf/open/floor): attackby(the cable coil (/obj/item/cable_coil), Stephen Cox (/mob/living/carbon/human))
+the floor (87,115,1) (/turf/open/floor): DblClick(the floor (87,115,1) (/turf/open/floor), "mapwindow.map", "icon-x=26;icon-y=18;left=1;scr...")
+the floor (87,115,1) (/turf/open/floor): DblClick(the floor (87,115,1) (/turf/open/floor), "mapwindow.map", "icon-x=26;icon-y=18;left=1;scr...")
+the floor (87,115,1) (/turf/open/floor): Click(the floor (87,115,1) (/turf/open/floor), "mapwindow.map", "icon-x=26;icon-y=18;left=1;scr...")
 Rebooted server.
 Running TG Revision Number: 4060.
 runtime error: Cannot read null.slot_flags
@@ -4159,8 +4159,8 @@ proc name: attackby (/obj/machinery/constructable_frame/machine_frame/attackby)
   src: the machine frame (/obj/machinery/constructable_frame/machine_frame)
   call stack:
 the machine frame (/obj/machinery/constructable_frame/machine_frame): attackby(null, Quinton Bould (/mob/living/carbon/human))
-the machine frame (/obj/machinery/constructable_frame/machine_frame): DblClick(the floor (98,69,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=23;icon-y=16;left=1;scr...")
-the machine frame (/obj/machinery/constructable_frame/machine_frame): Click(the floor (98,69,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=23;icon-y=16;left=1;scr...")
+the machine frame (/obj/machinery/constructable_frame/machine_frame): DblClick(the floor (98,69,1) (/turf/open/floor), "mapwindow.map", "icon-x=23;icon-y=16;left=1;scr...")
+the machine frame (/obj/machinery/constructable_frame/machine_frame): Click(the floor (98,69,1) (/turf/open/floor), "mapwindow.map", "icon-x=23;icon-y=16;left=1;scr...")
 runtime error: Cannot read null.slot_flags
 proc name: db click (/mob/living/carbon/human/db_click)
   source file: inventory.dm,1103
@@ -4391,8 +4391,8 @@ Miner Cyborg -734 (/mob/living/silicon/robot): Stat()
 Mining Borg Jetpack (/obj/item/borg/upgrade/jetpack): action(Miner Cyborg -734 (/mob/living/silicon/robot))
 Mining Borg Jetpack (/obj/item/borg/upgrade/jetpack): action(Miner Cyborg -734 (/mob/living/silicon/robot))
 Miner Cyborg -734 (/mob/living/silicon/robot): attackby(Mining Borg Jetpack (/obj/item/borg/upgrade/jetpack), Bill Kerman (/mob/living/carbon/human))
-Miner Cyborg -734 (/mob/living/silicon/robot): DblClick(the floor (100,87,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=16;icon-y=16;left=1;scr...")
-Miner Cyborg -734 (/mob/living/silicon/robot): Click(the floor (100,87,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=16;icon-y=16;left=1;scr...")
+Miner Cyborg -734 (/mob/living/silicon/robot): DblClick(the floor (100,87,1) (/turf/open/floor), "mapwindow.map", "icon-x=16;icon-y=16;left=1;scr...")
+Miner Cyborg -734 (/mob/living/silicon/robot): Click(the floor (100,87,1) (/turf/open/floor), "mapwindow.map", "icon-x=16;icon-y=16;left=1;scr...")
 runtime error: unexpected stat
 proc name: Stat (/mob/living/silicon/robot/Stat)
   source file: robot.dm,227
@@ -4403,8 +4403,8 @@ Miner Cyborg -734 (/mob/living/silicon/robot): Stat()
 Borg VTEC Module (/obj/item/borg/upgrade/vtec): action(Miner Cyborg -734 (/mob/living/silicon/robot))
 Borg VTEC Module (/obj/item/borg/upgrade/vtec): action(Miner Cyborg -734 (/mob/living/silicon/robot))
 Miner Cyborg -734 (/mob/living/silicon/robot): attackby(Borg VTEC Module (/obj/item/borg/upgrade/vtec), Bill Kerman (/mob/living/carbon/human))
-Miner Cyborg -734 (/mob/living/silicon/robot): DblClick(the floor (99,87,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=16;icon-y=19;left=1;scr...")
-Miner Cyborg -734 (/mob/living/silicon/robot): Click(the floor (99,87,1) (/turf/simulated/floor), "mapwindow.map", "icon-x=16;icon-y=19;left=1;scr...")
+Miner Cyborg -734 (/mob/living/silicon/robot): DblClick(the floor (99,87,1) (/turf/open/floor), "mapwindow.map", "icon-x=16;icon-y=19;left=1;scr...")
+Miner Cyborg -734 (/mob/living/silicon/robot): Click(the floor (99,87,1) (/turf/open/floor), "mapwindow.map", "icon-x=16;icon-y=19;left=1;scr...")
 runtime error: Cannot read null.slot_flags
 proc name: db click (/mob/living/carbon/human/db_click)
   source file: inventory.dm,1142

@@ -20,7 +20,7 @@
 	},
 /area/awaymission/beach)
 "ad" = (
-/turf/simulated/floor/plating/lava/smooth,
+/turf/open/floor/plating/lava/smooth,
 /area/awaymission)
 "ae" = (
 /turf/unsimulated/wall/metal,
@@ -1584,7 +1584,7 @@
 /turf/unsimulated/beach/coastline/dense,
 /area/awaymission/beach)
 "cO" = (
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/awaymission)
 "cP" = (
 /obj/effect/decal/snow/sand/edge{
@@ -1825,7 +1825,7 @@
 	requires_power = 0
 	})
 "dk" = (
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1876,7 +1876,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1887,7 +1887,7 @@
 	light_color = "#ffffc0";
 	light_power = 2
 	},
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1903,7 +1903,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1946,7 +1946,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1962,7 +1962,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1978,7 +1978,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -2046,7 +2046,7 @@
 	},
 /area/awaymission)
 "dF" = (
-/turf/simulated/floor/plating/lava/smooth,
+/turf/open/floor/plating/lava/smooth,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0

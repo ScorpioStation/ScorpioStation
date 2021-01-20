@@ -1192,7 +1192,7 @@
 "dU" = (
 /obj/structure/grille,
 /obj/structure/shuttle/window,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/awaymission/beach)
 "dV" = (
 /obj/structure/flora/rock,
@@ -1327,7 +1327,7 @@
 /area/awaymission/beach)
 "et" = (
 /obj/structure/shuttle/engine/heater,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/awaymission/beach)
 "eu" = (
 /obj/structure/table/wood,
@@ -1349,7 +1349,7 @@
 /obj/structure/shuttle/engine/propulsion{
 	icon_state = "propulsion_l"
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/awaymission/beach)
 "ey" = (
 /obj/effect/waterfall{
@@ -1362,11 +1362,11 @@
 /obj/structure/shuttle/engine/propulsion{
 	icon_state = "propulsion_r"
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/awaymission/beach)
 "eA" = (
 /obj/structure/shuttle/engine/propulsion,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/awaymission/beach)
 "eB" = (
 /obj/effect/waterfall{

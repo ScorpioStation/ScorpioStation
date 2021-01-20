@@ -24,7 +24,7 @@
 /turf/template_noop,
 /area/space/nearstation)
 "f" = (
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/derelict/teleporter)
 "g" = (
 /turf/simulated/wall,
@@ -35,28 +35,28 @@
 	dir = 5;
 	max_integrity = 1e+007
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/derelict/teleporter)
 "i" = (
 /obj/structure/grille{
 	density = 0;
 	icon_state = "brokengrille"
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/derelict/teleporter)
 "j" = (
 /turf/simulated/wall/rust,
 /area/derelict/teleporter)
 "k" = (
 /obj/structure/girder,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/derelict/teleporter)
 "l" = (
 /obj/item/rack_parts,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/derelict/teleporter)
 "m" = (
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "floorgrime"
 	},
 /area/derelict/teleporter)
@@ -65,7 +65,7 @@
 /obj/item/shard{
 	icon_state = "small"
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "floorgrime"
 	},
 /area/derelict/teleporter)
@@ -75,7 +75,7 @@
 	},
 /obj/effect/landmark/damageturf,
 /obj/structure/filingcabinet/chestdrawer,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "green"
 	},
@@ -87,33 +87,33 @@
 /obj/machinery/atmospherics/unary/portables_connector{
 	layer = 2
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "floorgrime"
 	},
 /area/derelict/teleporter)
 "q" = (
 /obj/structure/table,
 /obj/item/clipboard,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "green"
 	},
 /area/derelict/teleporter)
 "r" = (
 /obj/machinery/computer/teleporter,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "dark"
 	},
 /area/derelict/teleporter)
 "s" = (
 /obj/machinery/teleport/station,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "floorgrime"
 	},
 /area/derelict/teleporter)
 "t" = (
 /obj/machinery/teleport/hub,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "floorgrime"
 	},
 /area/derelict/teleporter)
@@ -121,13 +121,13 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/derelict/teleporter)
 "v" = (
 /obj/structure/door_assembly/door_assembly_ext{
 	name = "Broken External Airlock"
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/derelict/teleporter)
 "w" = (
 /obj/structure/lattice/catwalk,
@@ -139,14 +139,14 @@
 	charge = 100;
 	maxcharge = 15000
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 8;
 	icon_state = "green"
 	},
 /area/derelict/teleporter)
 "y" = (
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "floorgrime"
 	},
 /area/derelict/teleporter)
@@ -157,7 +157,7 @@
 	item_state = "plant-dead";
 	name = "potted plant"
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	dir = 6;
 	icon_state = "green"
 	},
@@ -172,7 +172,7 @@
 	name = "Worn-out APC";
 	pixel_y = -24
 	},
-/turf/simulated/floor/plasteel/airless{
+/turf/open/floor/plasteel/airless{
 	icon_state = "floorgrime"
 	},
 /area/derelict/teleporter)

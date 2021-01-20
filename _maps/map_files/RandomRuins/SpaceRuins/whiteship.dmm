@@ -243,7 +243,7 @@
 /area/shuttle/abandoned)
 "aH" = (
 /obj/machinery/door/unpowered/shuttle,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/shuttle/abandoned)
 "aI" = (
 /turf/simulated/shuttle/plating,

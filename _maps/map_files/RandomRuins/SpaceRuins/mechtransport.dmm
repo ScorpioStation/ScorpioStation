@@ -11,7 +11,7 @@
 "c" = (
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/powered)
 "d" = (
 /turf/simulated/shuttle/wall{
@@ -161,10 +161,10 @@
 	pixel_x = 7;
 	pixel_y = 8
 	},
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/powered)
 "C" = (
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/powered)
 "D" = (
 /obj/structure/lattice,
@@ -172,11 +172,11 @@
 /area/space/nearstation)
 "E" = (
 /obj/item/stack/rods,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/powered)
 "F" = (
 /obj/effect/decal/cleanable/blood/gibs/robot,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/powered)
 "G" = (
 /obj/item/stack/tile/plasteel{
@@ -191,7 +191,7 @@
 /area/ruin/powered)
 "H" = (
 /obj/effect/landmark/damageturf,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/powered)
 "J" = (
 /obj/structure/mecha_wreckage/odysseus,

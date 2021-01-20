@@ -9,7 +9,7 @@
 /turf/simulated/wall/mineral/plastitanium,
 /area/ruin/unpowered/misc_lavaruin)
 "d" = (
-/turf/simulated/floor/mineral/plastitanium/red{
+/turf/open/floor/mineral/plastitanium/red{
 	oxygen = 14;
 	nitrogen = 23;
 	temperature = 300
@@ -23,7 +23,7 @@
 /area/ruin/unpowered/misc_lavaruin)
 "f" = (
 /mob/living/simple_animal/hostile/megafauna/swarmer_swarm_beacon,
-/turf/simulated/floor/mineral/plastitanium/red{
+/turf/open/floor/mineral/plastitanium/red{
 	oxygen = 14;
 	nitrogen = 23;
 	temperature = 300
@@ -31,7 +31,7 @@
 /area/ruin/unpowered/misc_lavaruin)
 "g" = (
 /obj/effect/baseturf_helper/lava_land/surface,
-/turf/simulated/floor/mineral/plastitanium/red{
+/turf/open/floor/mineral/plastitanium/red{
 	oxygen = 14;
 	nitrogen = 23;
 	temperature = 300
