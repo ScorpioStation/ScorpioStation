@@ -39,10 +39,10 @@ GLOBAL_LIST_INIT(potentialRandomZlevels, generateMapList(filename = "config/away
 		T.ChangeTurf(T.baseturf)
 
 /proc/createRandomZlevel()
-	if(GLOB.awaydestinations.len)	//crude, but it saves another var!
+	if(length(GLOB.awaydestinations))	//crude, but it saves another var!
 		return
 
-	if(GLOB.potentialRandomZlevels && GLOB.potentialRandomZlevels.len)
+	if(GLOB.potentialRandomZlevels && length(GLOB.potentialRandomZlevels))
 		var/watch = start_watch()
 		log_startup_progress("Loading away mission...")
 
@@ -70,10 +70,10 @@ GLOBAL_LIST_INIT(potentialRandomZlevels, generateMapList(filename = "config/away
 
 
 /proc/createALLZlevels()
-	if(GLOB.awaydestinations.len)	//crude, but it saves another var!
+	if(length(GLOB.awaydestinations))	//crude, but it saves another var!
 		return
 
-	if(GLOB.potentialRandomZlevels && GLOB.potentialRandomZlevels.len)
+	if(GLOB.potentialRandomZlevels && length(GLOB.potentialRandomZlevels))
 		var/watch = start_watch()
 		log_startup_progress("Loading away missions...")
 
@@ -107,7 +107,7 @@ GLOBAL_LIST_INIT(potentialRandomZlevels, generateMapList(filename = "config/away
 	var/list/potentialMaps = list()
 	var/list/Lines = file2list(filename)
 
-	if(!Lines.len)
+	if(!length(Lines))
 		return
 	for(var/t in Lines)
 		if(!t)

@@ -24,9 +24,9 @@ GLOBAL_DATUM_INIT(space_manager, /datum/zlev_manager, new())
 	for(var/list/features in GLOB.map_transition_config)
 		if(k > world.maxz)
 			CRASH("More map attributes pre-defined than existent z levels - [num_official_z_levels]")
-		var/name = features["name"]
-		var/linking = features["linkage"]
-		var/list/attributes = features["attributes"]
+		var/name = features[DL_NAME]
+		var/linking = features[DL_LINKS]
+		var/list/attributes = features[DL_TRAITS]
 		attributes = attributes.Copy() // Clone the list so it can't be changed on accident
 
 		var/datum/space_level/S = new /datum/space_level(k, name, transition_type = linking, traits = attributes)

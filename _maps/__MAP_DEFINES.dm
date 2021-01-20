@@ -62,7 +62,7 @@ require only minor tweaks.
 // traits
 // boolean - marks a level as having that property if present
 #define ZTRAIT_CENTCOM "CentCom"
-#define ZTRAIT_STATION "Station"
+#define ZTRAIT_MAINSTATION "Main Station"
 #define ZTRAIT_MINING "Mining"
 #define ZTRAIT_RESERVED "Transit/Reserved"
 #define ZTRAIT_AWAY "Away Mission"
@@ -84,27 +84,31 @@ require only minor tweaks.
 
 // default trait definitions, used by SSmapping
 #define ZTRAITS_CENTCOM list(ZTRAIT_CENTCOM = TRUE)
-#define ZTRAITS_STATION list(ZTRAIT_LINKAGE = CROSSLINKED, ZTRAIT_STATION = TRUE)
+#define ZTRAITS_MAINSTATION list(ZTRAIT_LINKAGE = CROSSLINKED, ZTRAIT_MAINSTATION = TRUE)
 #define ZTRAITS_SPACE list(ZTRAIT_LINKAGE = CROSSLINKED, ZTRAIT_SPACE_RUINS = TRUE)
 #define ZTRAITS_LAVALAND list(\
 	ZTRAIT_MINING = TRUE, \
 	ZTRAIT_ASHSTORM = TRUE, \
 	ZTRAIT_LAVA_RUINS = TRUE, \
-	ZTRAIT_BOMBCAP_MULTIPLIER = 2, \
-	ZTRAIT_BASETURF = /turf/open/lava/smooth/lava_land_surface)
+	ZTRAIT_BASETURF = /turf/simulated/floor/plating/lava/smooth/lava_land_surface)
 
 // Convenience define
 #define DL_NAME "name"
-#define DL_TRAITS "traits"
+#define DL_TRAITS "attributes"
 #define DL_LINKS "linkage"
 
 #define DECLARE_LEVEL(NAME,LINKS,TRAITS) list(DL_NAME = NAME, DL_LINKS, DL_TRAITS = TRAITS)
-#define AWAY_MISSION_LIST list(DECLARE_LEVEL(AWAY_MISSION,UNAFFECTED,list(BLOCK_TELEPORT, AWAY_LEVEL)))
+#define AWAY_MISSION_LIST list(\
+	DECLARE_LEVEL(AWAY_MISSION,UNAFFECTED, list(BLOCK_TELEPORT, AWAY_LEVEL)))
 
-// must correspond to _basemap.dm for things to work correctly
+// This must match emerald.dm for things to work correctly
 #define DEFAULT_MAP_TRAITS list(\
-	DECLARE_LEVEL("CentCom", ZTRAIT_LINKAGE, ZTRAITS_CENTCOM),\
-)
+	ZTRAIT_LINKAGE = CROSSLINKED,\
+	ZTRAIT_MAIN_STATION = TRUE, \
+	ZTRAIT_GRAVITY = TRUE, \
+	ZTRAIT_UP = FALSE, \
+	ZTRAIT_DOWN = FALSE)
+
 
 //Reserved/Transit turf type
 #define RESERVED_TURF_TYPE /turf/space/openspace/basic			//What the turf is when not being used
