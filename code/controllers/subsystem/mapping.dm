@@ -15,8 +15,7 @@ SUBSYSTEM_DEF(mapping)
 		// load in extra levels of space ruins
 		var/load_zlevels_timer = start_watch()
 		log_startup_progress("Creating random space levels...")
-		var/num_extra_space = rand(config.extra_space_ruin_levels_min, config.extra_space_ruin_levels_max)
-		for(var/i = 1, i <= num_extra_space, i++)
+		for(var/i in 1 to length(SPACE_RUINS_NUMBER))
 			GLOB.space_manager.add_new_zlevel("Ruin Area #[i]", linkage = CROSSLINKED, traits = list(REACHABLE, SPAWN_RUINS))
 		log_startup_progress("Loaded random space levels in [stop_watch(load_zlevels_timer)]s.")
 
@@ -30,7 +29,6 @@ SUBSYSTEM_DEF(mapping)
 
 	// Makes a blank space level for the sake of randomness
 	GLOB.space_manager.add_new_zlevel("Empty Area", linkage = CROSSLINKED, traits = list(REACHABLE))
-
 
 	// Setup the Z-level linkage
 	GLOB.space_manager.do_transition_setup()
@@ -168,18 +166,18 @@ SUBSYSTEM_DEF(mapping)
 
 // Populate the space level list and prepare space transitions
 /datum/controller/subsystem/mapping/proc/InitializeDefaultZLevels()
-	if (z_list)  // subsystem/Recover or badminnery, no need
+	if(z_list)  // subsystem/Recover or badminnery, no need
 		return
 
 	z_list = list()
 	var/list/default_map_traits = DEFAULT_MAP_TRAITS
 
-	if (default_map_traits.len != world.maxz)
-		WARNING("More or less map attributes pre-defined ([default_map_traits.len]) than existent z-levels ([world.maxz]). Ignoring the larger.")
-		if (default_map_traits.len > world.maxz)
+	if(default_map_traits.len != world.maxz)
+		WARNING("More or less map attributes pre-defined ([length(default_map_traits)]) than existent z-levels ([world.maxz]). Ignoring the larger.")
+		if(length(default_map_traits) > world.maxz)
 			default_map_traits.Cut(world.maxz + 1)
 
-	for (var/I in 1 to default_map_traits.len)
+	for(var/I in 1 to length(default_map_traits))
 		var/list/features = default_map_traits[I]
 		var/datum/space_level/S = new(I, features[DL_NAME], features[DL_TRAITS])
 		z_list += S
@@ -187,7 +185,7 @@ SUBSYSTEM_DEF(mapping)
 /datum/controller/subsystem/mapping/proc/add_new_zlevel(name, traits = list(), z_type = /datum/space_level)
 	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_NEW_Z, args)
 	var/new_z = z_list.len + 1
-	if (world.maxz < new_z)
+	if(world.maxz < new_z)
 		world.incrementMaxZ()
 		CHECK_TICK
 	// TODO: sleep here if the Z level needs to be cleared
@@ -196,6 +194,6 @@ SUBSYSTEM_DEF(mapping)
 	return S
 
 /datum/controller/subsystem/mapping/proc/get_level(z)
-	if (z_list && z >= 1 && z <= z_list.len)
+	if(z_list && z >= 1 && z <= z_list.len)
 		return z_list[z]
 	CRASH("Unmanaged z-level [z]! maxz = [world.maxz], z_list.len = [z_list ? z_list.len : "null"]")

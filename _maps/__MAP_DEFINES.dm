@@ -101,14 +101,16 @@ require only minor tweaks.
 #define AWAY_MISSION_LIST list(\
 	DECLARE_LEVEL(AWAY_MISSION,UNAFFECTED, list(BLOCK_TELEPORT, AWAY_LEVEL)))
 
-// This must match emerald.dm for things to work correctly
+// This must match emerald.dm, plus the Away Mission map, plus the Empty Area created in the mapping subsystem, plus the Ruin Area #[i] maps, for things to work correctly
 #define DEFAULT_MAP_TRAITS list(\
-	ZTRAIT_LINKAGE = CROSSLINKED,\
-	ZTRAIT_MAIN_STATION = TRUE, \
-	ZTRAIT_GRAVITY = TRUE, \
-	ZTRAIT_UP = FALSE, \
-	ZTRAIT_DOWN = FALSE)
+	DECLARE_LEVEL(MAIN_STATION, CROSSLINKED, list(STATION_LEVEL, STATION_CONTACT, REACHABLE, AI_OK)), \
+	DECLARE_LEVEL(CENTCOMM, SELFLOOPING, list(ADMIN_LEVEL, BLOCK_TELEPORT, IMPEDES_MAGIC)), \
+	DECLARE_LEVEL(CONSTRUCTION, CROSSLINKED, list(REACHABLE)), \
+	DECLARE_LEVEL(MINING, SELFLOOPING, list(ORE_LEVEL, REACHABLE, STATION_CONTACT, HAS_WEATHER, AI_OK)), \
+	DECLARE_LEVEL(AWAY_MISSION, UNAFFECTED, list(AWAY_LEVEL, BLOCK_TELEPORT)), \
+	DECLARE_LEVEL("Empty Area", CROSSLINKED, list(REACHABLE)))
 
+#define SPACE_RUINS_NUMBER rand(config.extra_space_ruin_levels_min, config.extra_space_ruin_levels_max)
 
 //Reserved/Transit turf type
 #define RESERVED_TURF_TYPE /turf/space/openspace/basic			//What the turf is when not being used

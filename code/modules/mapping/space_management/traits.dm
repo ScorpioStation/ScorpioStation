@@ -1,9 +1,9 @@
 // Look up levels[z].flags[trait]
 /datum/controller/subsystem/mapping/proc/level_trait(z, trait)
-	if (!isnum(z) || z < 1)
+	if(!isnum(z) || z < 1)
 		return null
 	if(z_list)
-		if (z > length(z_list))
+		if(z > length(z_list))
 			stack_trace("Unmanaged z-level [z]! maxz = [world.maxz], length(z_list) = [length(z_list)]")
 			return list()
 		var/datum/space_level/S = get_level(z)
@@ -11,8 +11,9 @@
 	else
 		var/list/default = DEFAULT_MAP_TRAITS
 		if(z > length(default))
-			stack_trace("Unmanaged z-level [z]! maxz = [world.maxz], length(default) = [length(default)]")
-			return list()
+			if(z > (length(default) + SPACE_RUINS_NUMBER))
+				stack_trace("Unmanaged z-level [z]! maxz = [world.maxz], length(default) = [length(default)]")
+				return list()
 		return default[z][DL_TRAITS][trait]
 
 // Check if levels[z] has any of the specified flags
