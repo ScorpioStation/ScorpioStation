@@ -11,6 +11,7 @@
 	pushdirection = SOUTH  // south because the space tile is scrolling south
 
 	//IF ANYONE KNOWS A MORE EFFICIENT WAY OF MANAGING THESE SPRITES, BE MY GUEST.
+	//I DO NOT KNOW. I AM SORRY. - GUEST
 /turf/space/transit/north/shuttlespace_ns1
 	icon_state = "speedspace_ns_1"
 
@@ -111,6 +112,10 @@
 
 /turf/space/transit/horizontal
 	dir = WEST
+
+/turf/space/transit/New()
+	..()
+	update_icon()
 
 /turf/space/transit/Entered(atom/movable/AM, atom/OldLoc, ignoreRest = 0)
 	if(!AM)

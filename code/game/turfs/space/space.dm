@@ -1,7 +1,7 @@
 /turf/space
 	icon = 'icons/turf/space.dmi'
 	name = "\proper space"
-	icon_state = "0"
+	icon_state = SPACE_ICON_STATE
 
 	temperature = TCMB
 	thermal_conductivity = OPEN_HEAT_TRANSFER_COEFFICIENT
@@ -16,7 +16,21 @@
 	var/destination_z
 	var/destination_x
 	var/destination_y
-	plane = PLANE_SPACE
+	var/global/datum/gas_mixture/space/space_gas = new
+
+/turf/space/New()
+	air = space_gas
+
+/turf/space/Destroy()
+	return QDEL_HINT_LETMELIVE
+
+/turf/space/proc/update_starlight()
+	if(config)
+		if(config.starlight)
+			for(var/turf/simulated/T in RANGE_TURFS(1,src)) //RANGE_TURFS is in code\__HELPERS\game.dm
+				SetLuminosity(4,1)
+				return
+			SetLuminosity(0)
 
 /turf/space/Initialize(mapload)
 	SHOULD_CALL_PARENT(FALSE)
@@ -119,6 +133,12 @@
 		//now we're on the new z_level, proceed the space drifting
 		sleep(0)//Let a diagonal move finish, if necessary
 		A.newtonian_move(A.inertia_dir)
+
+// override for space turfs, since they should never hide anything
+/turf/space/levelupdate()
+	for(var/obj/O in src)
+		if(O.level == 1)
+			O.hide(FALSE)
 
 /turf/space/proc/Sandbox_Spacemove(atom/movable/A as mob|obj)
 	var/cur_x

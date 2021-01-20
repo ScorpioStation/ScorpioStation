@@ -1,3 +1,6 @@
+#define WATER_STUN_TIME     2	//Stun time for water, to edit/find easier
+#define WATER_WEAKEN_TIME   1	//Weaken time for water, to edit/find easier
+
 /turf
 	icon = 'icons/turf/floors.dmi'
 	level = 1
@@ -22,14 +25,18 @@
 
 	//Properties for both
 	var/temperature = T20C
-
-	var/blocks_air = 0
+	var/max_fire_temperature_sustained = 0	//The max temperature of the fire which it was subjected to
+	var/to_be_destroyed = FALSE	//Used for fire, if a melting temperature was reached, it will be destroyed
+	var/blocks_air = FALSE
 
 	var/datum/pathnode/PNode = null //associated PathNode in the A* algorithm
 
 	flags = 0
 
+	var/wet = FALSE
+	var/image/wet_overlay = null
 	var/image/obscured	//camerachunks
+	var/termite = 0
 
 	var/changing_turf = FALSE
 
@@ -67,6 +74,10 @@
 		has_opaque_atom = TRUE
 
 	return INITIALIZE_HINT_NORMAL
+
+/turf/New()
+	..()
+	for(var/atom/movable/AM in src)
 
 /turf/Destroy(force)
 	. = QDEL_HINT_IWILLGC
@@ -166,7 +177,32 @@
 		var/mob/O = M
 		if(!O.lastarea)
 			O.lastarea = get_area(O.loc)
-
+	//slipping
+	if(!ignoreRest)
+		if(ishuman(A))
+			var/mob/living/carbon/human/M = A
+			if(M.lying)
+				return TRUE
+			if(M.flying)
+				return ..()
+			switch(wet)
+				if(TURF_WET_WATER)
+					if(!(M.slip("the wet floor", WATER_STUN_TIME, WATER_WEAKEN_TIME, tilesSlipped = 0, walkSafely = TRUE)))
+						M.inertia_dir = 0
+						return
+				if(TURF_WET_LUBE) //lube
+					M.slip("the floor", 0, 5, tilesSlipped = 3, walkSafely = FALSE, slipAny = TRUE)
+				if(TURF_WET_ICE) // Ice
+					if(M.slip("the icy floor", 4, 2, tilesSlipped = 0, walkSafely = FALSE))
+						M.inertia_dir = 0
+						if(prob(5))
+							var/obj/item/organ/external/affected = M.get_organ("head")
+							if(affected)
+								M.apply_damage(5, BRUTE, "head")
+								M.visible_message("<span class='warning'><b>[M]</b> hits their head on the ice!</span>")
+								playsound(src, 'sound/weapons/genhit1.ogg', 50, 1)
+				if(TURF_WET_PERMAFROST) // Permafrost
+					M.slip("the frosted floor", 0, 5, tilesSlipped = 1, walkSafely = FALSE, slipAny = TRUE)
 	// If an opaque movable atom moves around we need to potentially update visibility.
 	if(M.opacity)
 		has_opaque_atom = TRUE // Make sure to do this before reconsider_lights(), incase we're on instant updates. Guaranteed to be on in this case.
@@ -176,12 +212,6 @@
 	for(var/obj/O in src)
 		if(O.level == 1)
 			O.hide(src.intact)
-
-// override for space turfs, since they should never hide anything
-/turf/space/levelupdate()
-	for(var/obj/O in src)
-		if(O.level == 1)
-			O.hide(FALSE)
 
 // Removes all signs of lattice on the pos of the turf -Donkieyo
 /turf/proc/RemoveLattice()
@@ -251,6 +281,11 @@
 
 // I'm including `ignore_air` because BYOND lacks positional-only arguments
 /turf/proc/AfterChange(ignore_air = FALSE, keep_cabling = FALSE) //called after a turf has been replaced in ChangeTurf()
+	if(istype(src, /turf/simulated))
+		RemoveLattice()
+		if(!ignore_air)
+			Assimilate_Air()
+
 	levelupdate()
 	CalculateAdjacentTurfs()
 
@@ -267,15 +302,11 @@
 	if(!keep_cabling && !can_have_cabling())
 		for(var/obj/structure/cable/C in contents)
 			qdel(C)
-
-/turf/simulated/AfterChange(ignore_air = FALSE, keep_cabling = FALSE)
-	..()
-	RemoveLattice()
-	if(!ignore_air)
-		Assimilate_Air()
+	if(istype(src, /turf/simulated))
+		queue_smooth_neighbors(src)
 
 //////Assimilate Air//////
-/turf/simulated/proc/Assimilate_Air()
+/turf/proc/Assimilate_Air()
 	if(air)
 		var/aoxy = 0 //Holders to assimilate air from nearby turfs
 		var/anitro = 0
@@ -312,6 +343,70 @@
 		if(SSair)
 			SSair.add_to_active(src)
 
+/turf/proc/break_tile()
+	return
+
+/turf/proc/burn_tile()
+	return
+
+/turf/proc/burn_down()
+	return
+
+/turf/proc/water_act(volume, temperature, source)
+	. = ..()
+
+	if(volume >= 3)
+		MakeSlippery()
+
+	var/hotspot = (locate(/obj/effect/hotspot) in src)
+	if(hotspot)
+		var/datum/gas_mixture/lowertemp = remove_air(air.total_moles())
+		lowertemp.temperature = max(min(lowertemp.temperature-2000,lowertemp.temperature / 2), 0)
+		lowertemp.react()
+		assume_air(lowertemp)
+		qdel(hotspot)
+
+/*
+ * Makes a turf slippery using the given parameters
+ * @param wet_setting The type of slipperyness used
+ * @param time Time the turf is slippery. If null it will pick a random time between 790 and 820 ticks. If INFINITY then it won't dry up ever
+*/
+/turf/proc/MakeSlippery(wet_setting = TURF_WET_WATER, time = null) // 1 = Water, 2 = Lube, 3 = Ice, 4 = Permafrost
+	if(wet >= wet_setting)
+		return
+	wet = wet_setting
+	if(wet_setting != TURF_DRY)
+		if(wet_overlay)
+			overlays -= wet_overlay
+			wet_overlay = null
+		var/turf/simulated/floor/F = src
+		if(istype(F))
+			if(wet_setting >= TURF_WET_ICE)
+				wet_overlay = image('icons/effects/water.dmi', src, "ice_floor")
+			else
+				wet_overlay = image('icons/effects/water.dmi', src, "wet_floor_static")
+		else
+			if(wet_setting >= TURF_WET_ICE)
+				wet_overlay = image('icons/effects/water.dmi', src, "ice_floor")
+			else
+				wet_overlay = image('icons/effects/water.dmi', src, "wet_static")
+		wet_overlay.plane = FLOOR_OVERLAY_PLANE
+		overlays += wet_overlay
+	if(time == INFINITY)
+		return
+	if(!time)
+		time =	rand(790, 820)
+	addtimer(CALLBACK(src, .proc/MakeDry, wet_setting), time)
+
+/turf/proc/MakeDry(wet_setting = TURF_WET_WATER)
+	if(wet > wet_setting)
+		return
+	wet = TURF_DRY
+	if(wet_overlay)
+		overlays -= wet_overlay
+
+/turf/proc/is_shielded()
+
 /turf/proc/ReplaceWithLattice()
 	ChangeTurf(baseturf)
 	new /obj/structure/lattice(locate(x, y, z))
@@ -335,8 +430,7 @@
 /turf/proc/MakeDry(wet_setting = TURF_WET_WATER)
 	return
 
-/turf/proc/burn_down()
-	return
+
 
 /////////////////////////////////////////////////////////////////////////
 // Navigation procs
@@ -562,4 +656,7 @@
 	return TRUE
 
 /turf/proc/water_act(volume, temperature, source)
- 	return FALSE
+	return FALSE
+
+#undef WATER_STUN_TIME
+#undef WATER_WEAKEN_TIME
