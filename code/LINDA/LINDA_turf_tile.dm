@@ -18,8 +18,6 @@
 	var/recently_active = FALSE
 	var/planetary_atmos = FALSE			//air will revert to its initial mix over time - Or so one would hope. At this point, we're honestly afraid of Paracode Atmos.
 
-	var/datum/gas_mixture/air
-
 	var/excited = FALSE
 	var/datum/excited_group/excited_group
 
@@ -238,10 +236,10 @@
 	if(temperature > heat_capacity)
 		to_be_destroyed = TRUE
 
-/turf/open/proc/archive()
+/turf/proc/archive()
 	temperature_archived = temperature
 
-/turf/open/proc/archive()
+/turf/open/archive()
 	air.archive()
 	archived_cycle = SSair.times_fired
 	..()

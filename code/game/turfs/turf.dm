@@ -3,6 +3,7 @@
 	level = 1
 	luminosity = 1
 
+	var/datum/gas_mixture/air
 	var/oxygen = 0
 	var/carbon_dioxide = 0
 	var/nitrogen = 0
