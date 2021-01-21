@@ -11,7 +11,6 @@
 // END_PREFERENCES
 // BEGIN_INCLUDE
 #include "_maps\__MAP_DEFINES.dm"
-#include "_maps\cyberiad.dm"
 #include "_maps\emerald.dm"
 #include "code\_compile_options.dm"
 #include "code\hub.dm"
@@ -2508,4 +2507,8 @@
 #include "goon\code\datums\browserOutput.dm"
 #include "interface\interface.dm"
 #include "interface\skin.dmf"
+#include "code\controllers\subsystem\discord.dm"
+#include "code\controllers\subsystem\http.dm"
+#include "code\datums\components\spooky.dm"
+#include "code\modules\mob\dead\observer\orbit.dm"
 // END_INCLUDE
