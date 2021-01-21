@@ -182,7 +182,7 @@
 			to_chat(usr, "<span class='warning'>There is another [R.title] here!</span>")
 			return FALSE
 
-		if(R.on_floor && !isopenturf(usr.droplocation()))
+		if(R.on_floor && !isopenturf(usr.drop_location()))
 			to_chat(usr, "<span class='warning'>\The [R.title] must be constructed on the floor!</span>")
 			return FALSE
 

@@ -40,7 +40,7 @@
 	blocks_air = 1
 
 
-/turf/simulated/smatter/New()
+/turf/closed/smatter/New()
 	..()
 
 	name = "supermatter"
@@ -59,7 +59,7 @@
 			if(istype(turf_to_check,/turf/space) || istype(turf_to_check,/turf/open/floor))
 				turf_to_check.overlays += image('icons/turf/walls.dmi', "smatter_side_[direction]")
 
-/turf/simulated/smatter/Destroy()
+/turf/closed/smatter/Destroy()
 	. = ..()
 
 	var/list/step_overlays = list("n" = NORTH, "s" = SOUTH, "e" = EAST, "w" = WEST)

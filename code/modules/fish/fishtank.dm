@@ -366,10 +366,10 @@
 		if("tank")										//Fishtank: Wets it's own tile and the 4 adjacent tiles (cardinal directions)
 			if(istype(T))
 				T.MakeSlippery()
-				for(var/turf/simulated/ST in T.CardinalTurfs())
+				for(var/turf/open/ST in T.CardinalTurfs())
 					ST.MakeSlippery()
 		if("wall")										//Wall-tank: Wets it's own tile and the surrounding 8 tiles (3x3 square)
-			for(var/turf/simulated/ST in spiral_range_turfs(1, loc))
+			for(var/turf/open/ST in spiral_range_turfs(1, loc))
 				ST.MakeSlippery()
 
 /obj/machinery/fishtank/proc/breed_fish()

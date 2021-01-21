@@ -194,6 +194,10 @@
 			pixel_y = pixel_south
 			pixel_x = pixel_west
 
+/// Returns true or false to allow the mover to move through src
+/atom/proc/CanAllowThrough(atom/movable/mover, turf/target)
+	return !density
+
 ///Handle melee attack by a mech
 /atom/proc/mech_melee_attack(obj/mecha/M)
 	return

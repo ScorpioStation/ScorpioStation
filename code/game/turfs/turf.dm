@@ -19,8 +19,6 @@
 	var/heat_capacity = 1
 	//Properties for both
 	var/temperature = T20C
-	var/max_fire_temperature_sustained = 0	//The max temperature of the fire which it was subjected to
-	var/to_be_destroyed = FALSE	//Used for fire, if a melting temperature was reached, it will be destroyed
 	var/blocks_air = FALSE
 	var/datum/pathnode/PNode = null //associated PathNode in the A* algorithm
 

@@ -148,7 +148,7 @@
 				if(isturf(Stuff))
 					var/turf/T = Stuff
 					if((isspaceturf(T) || isfloorturf(T)) && NewTerrainFloors)
-						var/turf/simulated/O = T.ChangeTurf(NewTerrainFloors)
+						var/turf/open/O = T.ChangeTurf(NewTerrainFloors)
 						if(O.air)
 							var/datum/gas_mixture/G = O.air
 							G.copy_from(O.air)

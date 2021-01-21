@@ -8,7 +8,7 @@
 	var/thermite = 0
 	oxygen = MOLES_O2STANDARD
 	nitrogen = MOLES_N2STANDARD
-	var/to_be_destroyed = 0 //Used for fire, if a melting temperature was reached, it will be destroyed
+	var/to_be_destroyed = FALSE //Used for fire, if a melting temperature was reached, it will be destroyed
 	var/max_fire_temperature_sustained = 0 //The max temperature of the fire which it was subjected to
 	var/wet = FALSE
 	var/image/wet_overlay = null
@@ -20,7 +20,7 @@
 	if(has_gravity(src))
 		playsound(src, "bodyfall", 50, TRUE)
 
-/turf/open/Entered(atom/movable/M, atom/OL, ignoreRest = FALSE)
+/turf/open/Entered(atom/movable/A, atom/OL, ignoreRest = FALSE)
 	//slipping
 	if(!ignoreRest)
 		if(ishuman(A))

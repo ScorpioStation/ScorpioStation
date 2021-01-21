@@ -85,7 +85,7 @@
 		if(!(curloc.atmos_adjacent_turfs & direction))
 			continue
 
-		var/turf/simulated/S = get_step(curloc, direction)
+		var/turf/open/S = get_step(curloc, direction)
 		if(istype(S))
 			adjacent_turfs += S
 	if(!alldir)
@@ -93,7 +93,7 @@
 
 	for(var/direction in GLOB.diagonals)
 		var/matchingDirections = 0
-		var/turf/simulated/S = get_step(curloc, direction)
+		var/turf/open/S = get_step(curloc, direction)
 
 		for(var/checkDirection in GLOB.cardinal)
 			if(!(S.atmos_adjacent_turfs & checkDirection))
