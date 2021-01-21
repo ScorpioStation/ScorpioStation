@@ -148,7 +148,7 @@
 	return
 
 /obj/machinery/power/supermatter_shard/process_atmos()
-	var/turf/L = loc
+	var/turf/open/L = loc
 
 	if(isnull(L))		// We have a null turf...something is wrong, stop processing this entity.
 		return PROCESS_KILL
@@ -181,7 +181,7 @@
 
 		if(damage > explosion_point)
 			if(get_turf(src))
-				var/turf/position = get_turf(src)
+				var/turf/open/position = get_turf(src)
 				for(var/mob/living/mob in GLOB.alive_mob_list)
 					var/turf/mob_pos = get_turf(mob)
 					if(mob_pos && mob_pos.z == position.z)
@@ -278,8 +278,8 @@
 
 /obj/machinery/power/supermatter_shard
 
-/obj/machinery/power/supermatter_shard/bullet_act(var/obj/item/projectile/Proj)
-	var/turf/L = loc
+/obj/machinery/power/supermatter_shard/bullet_act(obj/item/projectile/Proj)
+	var/turf/open/L = loc
 	if(!istype(L))		// We don't run process() when we are in space
 		return 0	// This stops people from being able to really power up the supermatter
 				// Then bring it inside to explode instantly upon landing on a valid turf.
@@ -390,7 +390,7 @@
 			L.show_message("<span class='italics'>You hear an uneartly ringing and notice your skin is covered in fresh radiation burns.</span>", 2)
 
 /obj/machinery/power/supermatter_shard/proc/get_status()
-	var/turf/T = get_turf(src)
+	var/turf/open/T = get_turf(src)
 	if(!T)
 		return SUPERMATTER_ERROR
 	var/datum/gas_mixture/air = T.return_air()

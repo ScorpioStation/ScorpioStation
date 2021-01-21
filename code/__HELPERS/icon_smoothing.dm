@@ -165,7 +165,7 @@
 				underlay_appearance.icon_state = fixed_underlay["icon_state"]
 		else
 			var/turned_adjacency = turn(adjacencies, 180)
-			var/turf/T = get_step(src, turned_adjacency)
+			var/turf/closed/T = get_step(src, turned_adjacency)
 			if(!T.get_smooth_underlay_icon(underlay_appearance, src, turned_adjacency))
 				T = get_step(src, turn(adjacencies, 135))
 				if(!T.get_smooth_underlay_icon(underlay_appearance, src, turned_adjacency))
