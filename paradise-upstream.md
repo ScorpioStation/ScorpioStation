@@ -430,7 +430,7 @@ Changelog for changes we incorporate from upstream (Paradise Station).
     * Fixes runtime with changelog system
     * Makes changelog entries open in external browser
 * Paradise #[13432](https://github.com/ParadiseSS13/Paradise/pull/13432): Unscrewing Lava
-    * Adds no-op `/turf/open/floor/plating/lava/screwdriver_act()` to prevent unscrewing lava
+    * Adds no-op `/turf/simulated/floor/plating/lava/screwdriver_act()` to prevent unscrewing lava
 * Paradise #[13205](https://github.com/ParadiseSS13/Paradise/pull/13205): Add wizard loadouts, misc wiz features/fixes
     * Extensive changes to the wizard loadout system, including new sprites
 * Paradise #[13454](https://github.com/ParadiseSS13/Paradise/pull/13454): Fixes Meatball in-hand icons
@@ -508,7 +508,7 @@ Changelog for changes we incorporate from upstream (Paradise Station).
 * Paradise #[13343](https://github.com/ParadiseSS13/Paradise/pull/13343): Makes ai_monitored load the cams on LateInitialize
     * Moves some camera initialization code from a `spawn(20)` to the `LateInitalize` hook
 * Paradise #[13335](https://github.com/ParadiseSS13/Paradise/pull/13335): Makes 'nodecon' walls on derelict russian station immune to welders
-    * Implements `/turf/closed/wall/mineral/titanium/nodecon/welder_act` as a No-Op
+    * Implements `/turf/simulated/wall/mineral/titanium/nodecon/welder_act` as a No-Op
 * Paradise #[13313](https://github.com/ParadiseSS13/Paradise/pull/13313): Fixes unexpected gibbing in TS away mission
     * Fixes code that gibs you if bring terror spider eggs back to the main station
         * During `on_life` the check would be triggered by entering a container; it now checks your turf instead
