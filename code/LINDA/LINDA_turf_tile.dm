@@ -26,7 +26,7 @@
 	var/icy = FALSE
 	var/icyoverlay
 	var/list/atmos_overlay_types = list() //gas IDs of current active gas overl
-	
+
 /turf/open/New()
 	..()
 	if(!blocks_air)
@@ -244,31 +244,54 @@
 	..()
 /////////////////////////GAS OVERLAYS////////////////////////////// i'm scared
 /turf/open/proc/update_visuals()
-	if(!air)
+	var/list/atmos_overlay_types = src.atmos_overlay_types // Cache for free performance
+	var/static/list/nonoverlaying_gases = typecache_of_gases_with_no_overlays()
+
+	if(!air) // 2019-05-14: was not able to get this path to fire in testing. Consider removing/looking at callers -Naksu
+		if(atmos_overlay_types)
+			for(var/overlay in atmos_overlay_types)
+				vis_contents -= overlay
+			src.atmos_overlay_types = null
 		return
-	var/new_overlay_types = tile_graphic()
-	for(var/overlay in atmos_overlay_types-new_overlay_types)	//doesn't remove overlays that would only be added
-		overlays -= overlay
-		atmos_overlay_types -= overlay
-	for(var/overlay in new_overlay_types-atmos_overlay_types)	//doesn't add overlays that already exist
-		overlays += overlay
-	atmos_overlay_types = new_overlay_types
 
-/turf/open/proc/tile_graphic()
-	. = new /list
-	if(air.toxins > MOLES_PLASMA_VISIBLE)
-		. += "plasma"
-	if(air.sleeping_agent > 1)
-		. += "sleeping_agent"
-	return null
+	var/list/gases = air.gases
 
-/turf/open/proc/get_atmos_overlay_by_name(name)
-	switch(name)
-		if("plasma")
-			return GLOB.plmaster
-		if("sleeping_agent")
-			return GLOB.slmaster
-	return null
+	for(var/gid in gases)
+		if(nonoverlaying_gases[gid])
+			continue
+
+	var/list/new_overlay_types = get_atmos_overlays(gases)
+
+	if(atmos_overlay_types)
+		for(var/overlay in atmos_overlay_types-new_overlay_types) //doesn't remove overlays that would only be added
+			vis_contents -= overlay
+	if(length(new_overlay_types))
+		if(atmos_overlay_types)
+			vis_contents += new_overlay_types - atmos_overlay_types //don't add overlays that already exist
+		else
+			vis_contents += new_overlay_types
+
+	UNSETEMPTY(new_overlay_types)
+	src.atmos_overlay_types = new_overlay_types
+
+/proc/typecache_of_gases_with_no_overlays()
+	. = list()
+	for(var/gastype in subtypesof(/datum/gas))
+		var/datum/gas/gasvar = gastype
+		if(!initial(gasvar.gas_overlay))
+			.[gastype] = TRUE
+
+/turf/open/proc/get_atmos_overlays(gases)
+	. = list()
+	for(var/G in gases)
+		var/gas = gases[G]
+		var/gas_meta = gas[GAS_META]
+		var/gas_overlay = gas_meta[META_GAS_OVERLAY]
+		switch(gas_overlay)
+			if("plasma")
+				. += GLOB.plmaster
+			if("sleeping_agent")
+				. += GLOB.slmaster
 
 /turf/open/proc/share_air(turf/open/T, fire_count, adjacent_turfs_length)
 	if(T.current_cycle < fire_count)

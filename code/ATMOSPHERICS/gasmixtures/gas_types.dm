@@ -1,6 +1,3 @@
-GLOBAL_LIST_INIT(hardcoded_gases, list(/datum/gas/oxygen, /datum/gas/nitrogen, /datum/gas/carbon_dioxide, /datum/gas/toxin)) //the main four gases, which were at one time hardcoded
-GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/gas/nitrogen, /datum/gas/carbon_dioxide))) //unable to react amongst themselves
-
 /proc/meta_gas_list()
 	. = subtypesof(/datum/gas)
 	for(var/gas_path in .)
@@ -43,10 +40,10 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	specific_heat = SPECIFIC_HEAT_AIR
 	name = "Oxygen"
 
-/datum/gas/nitrogen
-	gas_id = "n2o"
+/datum/gas/sleeping_agent
+	gas_id = "sleeping_agent"
 	specific_heat = SPECIFIC_HEAT_N2O
-	name = "Nitrogen"
+	name = "Sleeping Agent"
 
 /datum/gas/carbon_dioxide
 	gas_id = "cdo"
@@ -54,7 +51,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	name = "Carbon Dioxide"
 
 /datum/gas/toxin
-	gas_id = "toxin"
+	gas_id = "plasma"
 	specific_heat = SPECIFIC_HEAT_TOXIN
 	name = "Plasma"
 	gas_overlay = "plasma"
