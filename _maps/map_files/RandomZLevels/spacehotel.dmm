@@ -47,7 +47,7 @@
 /turf/template_noop,
 /area/template_noop)
 "ai" = (
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -59,7 +59,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -78,7 +78,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "al" = (
 /obj/effect/decal{
@@ -91,7 +91,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "am" = (
 /turf/unsimulated/floor{
@@ -175,10 +175,10 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "at" = (
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "au" = (
 /obj/machinery/light{
@@ -231,7 +231,7 @@
 	})
 "ay" = (
 /mob/living/simple_animal/hostile/retaliate/carp,
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -306,15 +306,15 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "aF" = (
 /obj/item/paper/hotel_scrap_5,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "aG" = (
 /mob/living/simple_animal/hostile/pirate,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "aH" = (
 /obj/effect/decal{
@@ -322,7 +322,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "aI" = (
 /obj/structure/bed,
@@ -377,13 +377,13 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "aM" = (
 /obj/effect/decal/snow/sand/edge{
 	name = "rough sand"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "aN" = (
 /obj/effect/view_portal/visual{
@@ -531,7 +531,7 @@
 	dir = 8
 	},
 /mob/living/simple_animal/hostile/retaliate/carp,
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -544,7 +544,7 @@
 	id = "weirddive";
 	layer = 4.5
 	},
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -557,7 +557,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -572,7 +572,7 @@
 	dir = 4
 	},
 /obj/structure/closet/athletic_mixed,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bc" = (
 /turf/unsimulated/wall{
@@ -595,7 +595,7 @@
 	icon_state = "gravsnow_corner";
 	dir = 8
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bg" = (
 /obj/effect/decal{
@@ -608,7 +608,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bh" = (
 /obj/effect/decal/snow/sand/edge{
@@ -711,7 +711,7 @@
 /obj/item/clothing/shoes/sandal,
 /obj/item/clothing/shoes/sandal,
 /obj/structure/closet/crate,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bo" = (
 /turf/unsimulated/wall{
@@ -726,7 +726,7 @@
 /area/awaymission/beach)
 "bq" = (
 /obj/item/beach_ball,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "br" = (
 /obj/effect/view_portal/visual{
@@ -829,7 +829,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bz" = (
 /obj/effect/decal/snow/sand/edge{
@@ -837,7 +837,7 @@
 	icon_state = "gravsnow_corner";
 	dir = 4
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bA" = (
 /turf/unsimulated/wall{
@@ -857,7 +857,7 @@
 /mob/living/simple_animal/crab{
 	faction = list("neutral","pirate")
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bE" = (
 /obj/effect/decal{
@@ -952,7 +952,7 @@
 	icon_state = "gravsnow_corner";
 	dir = 1
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bK" = (
 /obj/effect/decal/snow/sand/edge{
@@ -963,7 +963,7 @@
 /obj/effect/view_portal{
 	id = "beach"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bL" = (
 /obj/effect/decal/snow/sand/edge{
@@ -1169,7 +1169,7 @@
 	})
 "cc" = (
 /obj/structure/window/reinforced/tinted,
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -1179,7 +1179,7 @@
 	})
 "cd" = (
 /obj/machinery/door/window/southright,
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -1190,7 +1190,7 @@
 "ce" = (
 /obj/structure/window/reinforced/tinted,
 /obj/machinery/light,
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -1494,7 +1494,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "cE" = (
 /obj/effect/decal/snow/sand/edge{
@@ -1542,38 +1542,38 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/beach/coastline,
+/turf/open/beach/coastline,
 /area/awaymission/beach)
 "cI" = (
 /obj/effect/waterfall{
 	dir = 1;
 	water_frequency = 104
 	},
-/turf/unsimulated/beach/coastline,
+/turf/open/beach/coastline,
 /area/awaymission/beach)
 "cJ" = (
-/turf/unsimulated/beach/coastline,
+/turf/open/beach/coastline,
 /area/awaymission/beach)
 "cK" = (
 /obj/effect/waterfall{
 	dir = 1;
 	water_frequency = 97
 	},
-/turf/unsimulated/beach/coastline,
+/turf/open/beach/coastline,
 /area/awaymission/beach)
 "cL" = (
 /obj/effect/waterfall{
 	dir = 1;
 	water_frequency = 94
 	},
-/turf/unsimulated/beach/coastline,
+/turf/open/beach/coastline,
 /area/awaymission/beach)
 "cM" = (
 /obj/effect/waterfall{
 	dir = 1;
 	water_frequency = 192
 	},
-/turf/unsimulated/beach/coastline,
+/turf/open/beach/coastline,
 /area/awaymission/beach)
 "cN" = (
 /obj/effect/decal{
@@ -1581,7 +1581,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/unsimulated/beach/coastline/dense,
+/turf/open/beach/coastline/dense,
 /area/awaymission/beach)
 "cO" = (
 /turf/open/floor/chasm,
@@ -1627,10 +1627,10 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/beach)
 "cT" = (
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/beach)
 "cU" = (
 /obj/effect/decal{
@@ -1643,7 +1643,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/water/dense,
+/turf/open/beach/water/dense,
 /area/awaymission/beach)
 "cV" = (
 /obj/effect/decal/snow/sand/edge{
@@ -1692,7 +1692,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/beach)
 "cZ" = (
 /obj/effect/decal{
@@ -1700,7 +1700,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/beach)
 "da" = (
 /obj/effect/decal{
@@ -1713,7 +1713,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/beach)
 "db" = (
 /obj/effect/decal{
@@ -1726,7 +1726,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/beach)
 "dc" = (
 /obj/effect/decal{
@@ -1734,7 +1734,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/beach)
 "dd" = (
 /obj/effect/decal/snow/sand/edge{
@@ -1770,7 +1770,7 @@
 	})
 "df" = (
 /obj/item/mop,
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -1789,7 +1789,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/beach)
 "dh" = (
 /obj/effect/decal/snow/sand/edge,
@@ -1800,7 +1800,7 @@
 	})
 "di" = (
 /obj/structure/mopbucket,
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -1852,10 +1852,10 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/beach/water/edge_drop,
+/turf/open/beach/water/edge_drop,
 /area/awaymission/beach)
 "dn" = (
-/turf/unsimulated/beach/water/drop,
+/turf/open/beach/water/drop,
 /area/awaymission/beach)
 "do" = (
 /obj/effect/decal{
@@ -1863,7 +1863,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/unsimulated/beach/water/edge_drop,
+/turf/open/beach/water/edge_drop,
 /area/awaymission/beach)
 "dp" = (
 /obj/effect/light_emitter{
@@ -1919,7 +1919,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/water/deep/dense,
+/turf/open/beach/water/deep/dense,
 /area/awaymission/beach)
 "dt" = (
 /obj/effect/decal{
@@ -1927,10 +1927,10 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/water/deep/dense,
+/turf/open/beach/water/deep/dense,
 /area/awaymission/beach)
 "du" = (
-/turf/unsimulated/beach/water/deep/dense,
+/turf/open/beach/water/deep/dense,
 /area/awaymission/beach)
 "dv" = (
 /obj/effect/decal{
@@ -1938,7 +1938,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/unsimulated/beach/water/deep/dense,
+/turf/open/beach/water/deep/dense,
 /area/awaymission/beach)
 "dw" = (
 /obj/effect/decal{
@@ -1987,7 +1987,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -1999,7 +1999,7 @@
 /obj/structure/ladder/unbreakable/dive_point/anchor{
 	layer = 4.5
 	},
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -2013,10 +2013,10 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/beach/water/deep/dense,
+/turf/open/beach/water/deep/dense,
 /area/awaymission/beach)
 "dC" = (
-/turf/unsimulated/beach/water/drop/dense,
+/turf/open/beach/water/drop/dense,
 /area/awaymission/beach)
 "dD" = (
 /obj/effect/decal{
@@ -2029,7 +2029,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/water/deep/dense,
+/turf/open/beach/water/deep/dense,
 /area/awaymission/beach)
 "dE" = (
 /obj/effect/decal/snow/sand/edge{
@@ -2057,11 +2057,11 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/beach/water/drop/dense,
+/turf/open/beach/water/drop/dense,
 /area/awaymission/beach)
 "dI" = (
 /obj/machinery/light,
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -2607,16 +2607,16 @@
 /turf/unsimulated/floor/carpet,
 /area/awaymission/spacehotel)
 "fj" = (
-/turf/unsimulated/beach/water/drop,
+/turf/open/beach/water/drop,
 /area/awaymission/spacehotel)
 "fk" = (
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/unsimulated/beach/water/drop,
+/turf/open/beach/water/drop,
 /area/awaymission/spacehotel)
 "fl" = (
-/turf/unsimulated/beach/water/deep,
+/turf/open/beach/water/deep,
 /area/awaymission/spacehotel)
 "fm" = (
 /turf/unsimulated/floor{
@@ -2656,7 +2656,7 @@
 /turf/unsimulated/floor/carpet,
 /area/awaymission/spacehotel)
 "fr" = (
-/turf/unsimulated/beach/water{
+/turf/open/beach/water{
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "light_on"
 	},
@@ -2669,7 +2669,7 @@
 /turf/unsimulated/floor/carpet,
 /area/awaymission/spacehotel)
 "ft" = (
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/spacehotel)
 "fu" = (
 /turf/unsimulated/wall/fakeglass{
@@ -2684,7 +2684,7 @@
 /area/awaymission/spacehotel)
 "fw" = (
 /mob/living/simple_animal/hostile/retaliate/carp,
-/turf/unsimulated/beach/water{
+/turf/open/beach/water{
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "light_on"
 	},
@@ -2718,7 +2718,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/unsimulated/beach/water/drop,
+/turf/open/beach/water/drop,
 /area/awaymission/spacehotel)
 "fC" = (
 /obj/structure/ladder/unbreakable/dive_point/buoy,
@@ -2726,14 +2726,14 @@
 	id = "weirddive";
 	invisibility = 101
 	},
-/turf/unsimulated/beach/water/deep,
+/turf/open/beach/water/deep,
 /area/awaymission/spacehotel)
 "fD" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/beach/water/deep,
+/turf/open/beach/water/deep,
 /area/awaymission/spacehotel)
 "fE" = (
 /obj/machinery/light,
@@ -2759,7 +2759,7 @@
 /obj/effect/landmark{
 	name = "awaystart"
 	},
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/spacehotel)
 "fI" = (
 /obj/machinery/door/unpowered/hotel_door{
@@ -2823,7 +2823,7 @@
 /area/awaymission/spacehotel)
 "fR" = (
 /obj/machinery/light,
-/turf/unsimulated/beach/water/drop,
+/turf/open/beach/water/drop,
 /area/awaymission/spacehotel)
 "fS" = (
 /obj/machinery/camera{
@@ -4812,7 +4812,7 @@
 	icon_state = "rock_side_w"
 	},
 /obj/machinery/poolcontroller/invisible,
-/turf/unsimulated/beach/water/deep/dense,
+/turf/open/beach/water/deep/dense,
 /area/awaymission/beach)
 
 (1,1,1) = {"

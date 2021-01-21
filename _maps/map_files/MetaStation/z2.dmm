@@ -6011,20 +6011,20 @@
 	},
 /area/centcom/holding)
 "tu" = (
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/centcom/holding)
 "tv" = (
 /obj/effect/overlay/palmtree_r,
 /obj/effect/overlay/coconut,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/centcom/holding)
 "tw" = (
 /obj/effect/overlay/palmtree_l,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/centcom/holding)
 "tA" = (
 /obj/item/camera,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/centcom/holding)
 "tK" = (
 /obj/structure/rack,
@@ -6037,7 +6037,7 @@
 /area/centcom/holding)
 "tL" = (
 /obj/item/beach_ball,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/centcom/holding)
 "tN" = (
 /obj/structure/rack,
@@ -6059,11 +6059,11 @@
 /turf/open/shuttle/plating,
 /area/space)
 "tQ" = (
-/turf/unsimulated/beach/coastline,
+/turf/open/beach/coastline,
 /area/centcom/holding)
 "tR" = (
 /obj/item/clothing/head/collectable/paper,
-/turf/unsimulated/beach/coastline,
+/turf/open/beach/coastline,
 /area/centcom/holding)
 "tT" = (
 /obj/structure/table,
@@ -6072,7 +6072,7 @@
 	},
 /area/centcom/holding)
 "tU" = (
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/centcom/holding)
 "tV" = (
 /obj/structure/grille,
@@ -6348,13 +6348,13 @@
 	pixel_y = -10
 	},
 /obj/item/clothing/glasses/sunglasses,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/centcom/holding)
 "IH" = (
 /obj/structure/chair/stool{
 	pixel_y = 8
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/centcom/holding)
 "IP" = (
 /obj/structure/chair/stool{
@@ -6370,7 +6370,7 @@
 /area/abductor_ship)
 "Ur" = (
 /obj/machinery/poolcontroller/invisible,
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/centcom/holding)
 
 (1,1,1) = {"

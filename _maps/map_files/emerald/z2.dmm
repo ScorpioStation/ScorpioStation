@@ -1187,7 +1187,7 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/ninja/holding)
 "dj" = (
 /turf/open/floor/holofloor,
@@ -2200,12 +2200,12 @@
 	},
 /area/tdome/arena_source)
 "fH" = (
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/ninja/holding)
 "fI" = (
 /obj/effect/overlay/palmtree_r,
 /obj/effect/overlay/coconut,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/ninja/holding)
 "fJ" = (
 /obj/structure/chair,
@@ -2216,7 +2216,7 @@
 /area/wizard_station)
 "fK" = (
 /obj/effect/overlay/palmtree_l,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/ninja/holding)
 "fL" = (
 /obj/machinery/computer/cryopod{
@@ -2395,7 +2395,7 @@
 /area/syndicate_mothership)
 "gf" = (
 /obj/item/camera,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/ninja/holding)
 "gg" = (
 /obj/machinery/light/spot{
@@ -2676,7 +2676,7 @@
 /area/tdome/arena_source)
 "gS" = (
 /obj/item/beach_ball,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/ninja/holding)
 "gT" = (
 /obj/structure/rack,
@@ -2789,11 +2789,11 @@
 /turf/space/transit,
 /area/space)
 "he" = (
-/turf/unsimulated/beach/coastline,
+/turf/open/beach/coastline,
 /area/ninja/holding)
 "hf" = (
 /obj/item/clothing/head/collectable/paper,
-/turf/unsimulated/beach/coastline,
+/turf/open/beach/coastline,
 /area/ninja/holding)
 "hg" = (
 /obj/effect/decal/warning_stripes/south,
@@ -2920,11 +2920,11 @@
 	},
 /area/syndicate_mothership)
 "hv" = (
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/ninja/holding)
 "hw" = (
 /obj/machinery/light/spot,
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/ninja/holding)
 "hx" = (
 /obj/effect/decal/warning_stripes/southwestcorner,
@@ -12243,11 +12243,11 @@
 	pixel_y = -10
 	},
 /obj/item/clothing/glasses/sunglasses,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/ninja/holding)
 "JD" = (
 /obj/structure/chair/stool,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/ninja/holding)
 "Kc" = (
 /obj/structure/chair/comfy/brown{
@@ -12433,7 +12433,7 @@
 /area/ai_multicam_room)
 "Qt" = (
 /obj/machinery/poolcontroller/invisible,
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/ninja/holding)
 "QE" = (
 /obj/structure/chair/sofa/right,
