@@ -284,7 +284,7 @@
 /turf/open/floor/carpet,
 /area/awaymission/academy/headmaster)
 "aS" = (
-/turf/simulated/mineral/random/high_chance,
+/turf/closed/mineral/random/high_chance,
 /area/awaymission/academy)
 "aT" = (
 /obj/structure/noticeboard,
@@ -4068,7 +4068,7 @@
 /mob/living/simple_animal/hostile/carp/megacarp{
 	name = "Elmo"
 	},
-/turf/simulated/mineral/random/high_chance,
+/turf/closed/mineral/random/high_chance,
 /area/awaymission/academy)
 "kD" = (
 /obj/effect/landmark{

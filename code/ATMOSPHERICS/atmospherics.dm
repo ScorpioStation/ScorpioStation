@@ -9,7 +9,7 @@ Pipes -> Pipelines
 Pipelines + Other Objects -> Pipe network
 */
 /obj/machinery/atmospherics
-	anchored = 1
+	anchored = TRUE
 	layer = GAS_PIPE_HIDDEN_LAYER  //under wires
 	resistance_flags = FIRE_PROOF
 	max_integrity = 200
@@ -19,7 +19,7 @@ Pipelines + Other Objects -> Pipe network
 	power_channel = ENVIRON
 	on_blueprints = TRUE
 	var/nodealert = 0
-	var/can_unwrench = 0
+	var/can_unwrench = FALSE
 
 	var/connect_types[] = list(1) //1=regular, 2=supply, 3=scrubber
 	var/connected_to = 1 //same as above, currently not used for anything

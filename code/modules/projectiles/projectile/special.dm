@@ -252,7 +252,7 @@
 	. = ..()
 	if(ismineralturf(target))
 		forcedodge = 1
-		var/turf/simulated/mineral/M = target
+		var/turf/closed/mineral/M = target
 		M.gets_drilled(firer)
 	else
 		forcedodge = 0

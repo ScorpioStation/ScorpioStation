@@ -77,7 +77,7 @@
 	},
 /area/space/nearstation)
 "m" = (
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/space/nearstation)
 "n" = (
 /turf/open/floor/plating/asteroid/airless,
@@ -255,7 +255,7 @@
 /turf/open/floor/plasteel/airless,
 /area/space/nearstation)
 "M" = (
-/turf/simulated/mineral/random/labormineral,
+/turf/closed/mineral/random/labormineral,
 /turf/simulated/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";

@@ -3787,7 +3787,7 @@
 /turf/open/floor/plating/airless,
 /area/constructionsite/engineering)
 "jh" = (
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/space/nearstation)
 "ji" = (
 /obj/structure/cable{

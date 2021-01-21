@@ -3,7 +3,7 @@
 /turf/template_noop,
 /area/template_noop)
 "ab" = (
-/turf/simulated/mineral/random/low_chance,
+/turf/closed/mineral/random/low_chance,
 /area/ruin/unpowered)
 "ac" = (
 /turf/simulated/wall/mineral/iron,

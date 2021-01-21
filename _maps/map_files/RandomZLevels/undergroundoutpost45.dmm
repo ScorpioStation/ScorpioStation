@@ -14,7 +14,7 @@
 	poweralm = 0
 	})
 "ac" = (
-/turf/simulated/mineral/random/labormineral,
+/turf/closed/mineral/random/labormineral,
 /area/awaycontent/a7{
 	always_unpowered = 1;
 	has_gravity = 1;
@@ -14212,7 +14212,7 @@
 	name = "UO45 Engineering"
 	})
 "uw" = (
-/turf/simulated/mineral/random/labormineral,
+/turf/closed/mineral/random/labormineral,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"

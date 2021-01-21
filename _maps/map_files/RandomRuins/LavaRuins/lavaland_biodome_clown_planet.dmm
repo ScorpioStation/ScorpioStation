@@ -720,7 +720,7 @@
 	},
 /area/ruin/powered/clownplanet)
 "bf" = (
-/turf/simulated/mineral/clown/volcanic,
+/turf/closed/mineral/clown/volcanic,
 /area/ruin/powered/clownplanet)
 "bg" = (
 /obj/item/pickaxe,

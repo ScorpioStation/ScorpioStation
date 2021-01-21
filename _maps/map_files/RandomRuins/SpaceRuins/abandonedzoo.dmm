@@ -78,7 +78,7 @@
 /turf/open/floor/plating,
 /area/ruin/unpowered)
 "ah" = (
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/ruin/unpowered)
 "ai" = (
 /turf/open/floor/plating/asteroid/airless,

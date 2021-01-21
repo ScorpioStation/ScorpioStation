@@ -16,7 +16,7 @@ What are the archived variables for?
 #define MINIMUM_HEAT_CAPACITY	0.0003
 #define QUANTIZE(variable)		(round(variable, 0.0001))
 
-GLOBAL_LIST_INIT(meta_gas_info, meta_gas_list()) //see ATMOSPHERICS/gas_types.dm
+GLOBAL_LIST_INIT(meta_gas_info, meta_gas_list())	//see ATMOSPHERICS/gas_types.dm
 GLOBAL_LIST_INIT(gaslist_cache, init_gaslist_cache())
 
 /proc/init_gaslist_cache()
@@ -61,7 +61,6 @@ GLOBAL_LIST_INIT(gaslist_cache, init_gaslist_cache())
 	gases = new
 	if(!isnull(volume))
 		src.volume = volume
-	reaction_results = new
 
 //listmos procs
 //use the macros in performance intensive areas. for their definitions, refer to code/__DEFINES/atmospherics.dm (on /tg/, heck)

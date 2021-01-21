@@ -6,7 +6,7 @@
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/unpowered)
 "ac" = (
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/ruin/unpowered)
 "ad" = (
 /obj/structure/grille{

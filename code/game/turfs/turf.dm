@@ -1,37 +1,34 @@
-#define WATER_STUN_TIME     2	//Stun time for water, to edit/find easier
-#define WATER_WEAKEN_TIME   1	//Weaken time for water, to edit/find easier
-
 /turf
 	icon = 'icons/turf/open/floors.dmi'
 	level = 1
 	luminosity = 1
 
+	var/oxygen = 0
+	var/carbon_dioxide = 0
+	var/nitrogen = 0
+	var/toxins = 0
+	var/sleeping_agent = 0
+	var/agent_b = 0
+
 	var/intact = TRUE
 	var/turf/baseturf = /turf/space
 	var/slowdown = 0 //negative for faster, positive for slower
+
 	//Properties for airtight tiles (/wall)
 	var/thermal_conductivity = 0.05
 	var/heat_capacity = 1
-
 	//Properties for both
 	var/temperature = T20C
 	var/max_fire_temperature_sustained = 0	//The max temperature of the fire which it was subjected to
 	var/to_be_destroyed = FALSE	//Used for fire, if a melting temperature was reached, it will be destroyed
 	var/blocks_air = FALSE
-
 	var/datum/pathnode/PNode = null //associated PathNode in the A* algorithm
 
 	flags = 0
 
-	var/wet = FALSE
-	var/image/wet_overlay = null
 	var/image/obscured	//camerachunks
-	var/termite = 0
-
 	var/changing_turf = FALSE
-
 	var/list/blueprint_data //for the station blueprints, images of objects eg: pipes
-
 	var/list/footstep_sounds
 	var/shoe_running_volume = 50
 	var/shoe_walking_volume = 20
@@ -252,8 +249,6 @@
 	if(!keep_cabling && !can_have_cabling())
 		for(var/obj/structure/cable/C in contents)
 			qdel(C)
-	if(istype(src, /turf/simulated))
-		queue_smooth_neighbors(src)
 
 /turf/proc/break_tile()
 	return

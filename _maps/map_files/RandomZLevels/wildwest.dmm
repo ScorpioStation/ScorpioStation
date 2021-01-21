@@ -203,7 +203,7 @@
 /turf/open/floor/engine/cult,
 /area/awaymission/wwvaultdoors)
 "aG" = (
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/space/nearstation)
 "aH" = (
 /obj/structure/cable{
@@ -247,10 +247,10 @@
 	},
 /area/awaymission/wwmines)
 "aM" = (
-/turf/simulated/mineral/random,
+/turf/closed/mineral/random,
 /area/awaymission/wwmines)
 "aN" = (
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/awaymission/wwmines)
 "aO" = (
 /obj/machinery/power/terminal{
@@ -275,7 +275,7 @@
 	layer = 1;
 	name = "Blocker"
 	},
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/space/nearstation)
 "aR" = (
 /obj/effect/forcefield{
@@ -283,7 +283,7 @@
 	layer = 1;
 	name = "Blocker"
 	},
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/awaymission/wwmines)
 "aS" = (
 /obj/effect/mob_spawn/human/corpse/syndicatecommando,
@@ -295,7 +295,7 @@
 	layer = 1;
 	name = "Blocker"
 	},
-/turf/simulated/mineral/random,
+/turf/closed/mineral/random,
 /area/awaymission/wwmines)
 "aU" = (
 /turf/simulated/wall/mineral/sandstone,
@@ -319,7 +319,7 @@
 	layer = 1;
 	name = "Blocker"
 	},
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/awaymission/wwrefine)
 "aZ" = (
 /obj/effect/decal/cleanable/cobweb,
@@ -2503,7 +2503,7 @@
 	layer = 1;
 	name = "Blocker"
 	},
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/awaymission/wwmines)
 "gO" = (
 /obj/item/pickaxe/gold,
@@ -2562,7 +2562,7 @@
 	layer = 1;
 	name = "Blocker"
 	},
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/awaymission/wwmines)
 "hh" = (
 /turf/simulated/shuttle/wall{

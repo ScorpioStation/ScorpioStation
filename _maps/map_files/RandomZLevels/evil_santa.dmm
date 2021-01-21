@@ -5,7 +5,7 @@
 	},
 /area/space)
 "ab" = (
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/awaymission/challenge/main)
 "ac" = (
 /turf/open/floor/snow{

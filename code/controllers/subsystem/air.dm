@@ -200,7 +200,7 @@ SUBSYSTEM_DEF(air)
 	//cache for sanic speed (lists are references anyways)
 	var/list/currentrun = src.currentrun
 	while(currentrun.len)
-		var/turf/simulated/T = currentrun[currentrun.len]
+		var/turf/open/T = currentrun[currentrun.len]
 		currentrun.len--
 		T.super_conduct()
 		if(MC_TICK_CHECK)
@@ -223,7 +223,7 @@ SUBSYSTEM_DEF(air)
 
 /datum/controller/subsystem/air/proc/process_high_pressure_delta(resumed = 0)
 	while(high_pressure_delta.len)
-		var/turf/simulated/T = high_pressure_delta[high_pressure_delta.len]
+		var/turf/open/T = high_pressure_delta[high_pressure_delta.len]
 		high_pressure_delta.len--
 		T.high_pressure_movements()
 		T.pressure_difference = 0
@@ -238,7 +238,7 @@ SUBSYSTEM_DEF(air)
 	//cache for sanic speed (lists are references anyways)
 	var/list/currentrun = src.currentrun
 	while(currentrun.len)
-		var/turf/simulated/T = currentrun[currentrun.len]
+		var/turf/open/T = currentrun[currentrun.len]
 		currentrun.len--
 		if(T)
 			T.process_cell(fire_count)
@@ -261,7 +261,7 @@ SUBSYSTEM_DEF(air)
 		if(MC_TICK_CHECK)
 			return
 
-/datum/controller/subsystem/air/proc/remove_from_active(turf/simulated/T)
+/datum/controller/subsystem/air/proc/remove_from_active(turf/open/T)
 	active_turfs -= T
 	active_super_conductivity -= T // bug: if a turf is hit by ex_act 1 while processing, it can end up in super conductivity as /turf/space and cause runtimes
 	if(currentpart == SSAIR_ACTIVETURFS || currentpart == SSAIR_SUPERCONDUCTIVITY)
@@ -271,9 +271,9 @@ SUBSYSTEM_DEF(air)
 		if(T.excited_group)
 			T.excited_group.garbage_collect()
 
-/datum/controller/subsystem/air/proc/add_to_active(turf/simulated/T, blockchanges = 1)
+/datum/controller/subsystem/air/proc/add_to_active(turf/open/T, blockchanges = TRUE)
 	if(istype(T) && T.air)
-		T.excited = 1
+		T.excited = TRUE
 		active_turfs |= T
 		if(currentpart == SSAIR_ACTIVETURFS)
 			currentrun |= T
@@ -283,25 +283,24 @@ SUBSYSTEM_DEF(air)
 		for(var/direction in GLOB.cardinal)
 			if(!(T.atmos_adjacent_turfs & direction))
 				continue
-			var/turf/simulated/S = get_step(T, direction)
+			var/turf/open/S = get_step(T, direction)
 			if(istype(S))
 				add_to_active(S)
 
-/datum/controller/subsystem/air/proc/setup_allturfs(var/list/turfs_to_init = block(locate(1, 1, 1), locate(world.maxx, world.maxy, world.maxz)))
+/datum/controller/subsystem/air/proc/setup_allturfs(turfs_to_init = block(locate(1, 1, 1), locate(world.maxx, world.maxy, world.maxz)))
 	var/list/active_turfs = src.active_turfs
 
 	// Clear active turfs - faster than removing every single turf in the world
 	// one-by-one, and Initalize_Atmos only ever adds `src` back in.
 	active_turfs.Cut()
-
 	for(var/thing in turfs_to_init)
-		var/turf/T = thing
+		var/turf/open/T = thing
 		if(T.blocks_air)
 			continue
 		T.Initialize_Atmos(times_fired)
 		CHECK_TICK
 
-/turf/simulated/proc/resolve_active_graph()
+/turf/open/proc/resolve_active_graph()
 	. = list()
 	var/datum/excited_group/EG = excited_group
 	if(blocks_air || !air)
@@ -310,7 +309,7 @@ SUBSYSTEM_DEF(air)
 		EG = new
 		EG.add_turf(src)
 
-	for(var/turf/simulated/ET in atmos_adjacent_turfs)
+	for(var/turf/open/ET in atmos_adjacent_turfs)
 		if(ET.blocks_air || !ET.air)
 			continue
 
@@ -322,10 +321,10 @@ SUBSYSTEM_DEF(air)
 		else
 			EG.add_turf(ET)
 		if(!ET.excited)
-			ET.excited = 1
+			ET.excited = TRUE
 			. += ET
 
-/datum/controller/subsystem/air/proc/setup_atmos_machinery(var/list/machines_to_init)
+/datum/controller/subsystem/air/proc/setup_atmos_machinery(machines_to_init)
 	var/watch = start_watch()
 	log_startup_progress("Initializing atmospherics machinery...")
 	var/count = _setup_atmos_machinery(machines_to_init)

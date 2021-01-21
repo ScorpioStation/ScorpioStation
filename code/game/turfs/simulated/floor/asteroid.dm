@@ -219,7 +219,7 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 	SpawnFloor(src)
 
 /turf/open/floor/plating/asteroid/airless/cave/proc/make_tunnel(dir)
-	var/turf/simulated/mineral/tunnel = src
+	var/turf/closed/mineral/tunnel = src
 	var/next_angle = pick(45, -45)
 
 	for(var/i = 0; i < length; i++)
@@ -232,7 +232,7 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 
 		// Expand the edges of our tunnel
 		for(var/edge_angle in L)
-			var/turf/simulated/mineral/edge = get_step(tunnel, angle2dir(dir2angle(dir) + edge_angle))
+			var/turf/closed/mineral/edge = get_step(tunnel, angle2dir(dir2angle(dir) + edge_angle))
 			if(istype(edge))
 				SpawnFloor(edge)
 

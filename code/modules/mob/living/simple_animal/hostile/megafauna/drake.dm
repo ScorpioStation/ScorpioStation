@@ -558,7 +558,7 @@ Difficulty: Medium
 	new /obj/effect/temp_visual/fireball(T)
 	sleep(duration)
 	if(ismineralturf(T))
-		var/turf/simulated/mineral/M = T
+		var/turf/closed/mineral/M = T
 		M.gets_drilled()
 	playsound(T, "explosion", 80, TRUE)
 	new /obj/effect/hotspot(T)

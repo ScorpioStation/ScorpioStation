@@ -1,14 +1,15 @@
+#define WATER_STUN_TIME 2 //Stun time for water, to edit/find easier
+#define WATER_WEAKEN_TIME 1 //Weaken time for water, to edit/find easier
+
 /turf/open
-	
+	name = "station"
 	///Properties for open tiles (/floor)
 	/// All the gas vars, on the turf, are meant to be utilized for initializing a gas datum and setting its first gas values; the turf vars are never further modified at runtime; it is never directly used for calculations by the atmospherics system.
-	var/oxygen = 0
-	var/carbon_dioxide = 0
-	var/nitrogen = 0
-	var/toxins = 0
-	var/sleeping_agent = 0
-	var/agent_b = 0
-	
+	var/thermite = 0
+	oxygen = MOLES_O2STANDARD
+	nitrogen = MOLES_N2STANDARD
+	var/to_be_destroyed = 0 //Used for fire, if a melting temperature was reached, it will be destroyed
+	var/max_fire_temperature_sustained = 0 //The max temperature of the fire which it was subjected to
 	var/wet = FALSE
 	var/image/wet_overlay = null
 
@@ -98,6 +99,10 @@
 	if(wet_overlay)
 		overlays -= wet_overlay
 
+/turf/ppen/ChangeTurf(path, defer_change = FALSE, keep_icon = TRUE, ignore_air = FALSE)
+	. = ..()
+	queue_smooth_neighbors(src)
+
 /turf/open/AfterChange(ignore_air = FALSE, keep_cabling = FALSE)
 	..()
 	RemoveLattice()
@@ -139,3 +144,6 @@
 		air.temperature = (atemp / max(turf_count, 1))
 		if(SSair)
 			SSair.add_to_active(src)
+
+#undef WATER_STUN_TIME
+#undef WATER_WEAKEN_TIME

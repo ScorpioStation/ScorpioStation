@@ -3,7 +3,7 @@
 /turf/template_noop,
 /area/template_noop)
 "ab" = (
-/turf/simulated/mineral/random,
+/turf/closed/mineral/random,
 /area/ruin/unpowered)
 "ac" = (
 /turf/simulated/wall/r_wall,
@@ -4684,7 +4684,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/ancientstation)
 "kH" = (
-/turf/simulated/mineral/random/high_chance,
+/turf/closed/mineral/random/high_chance,
 /area/ruin/unpowered)
 "kI" = (
 /obj/effect/decal/warning_stripes/southeast,

@@ -15,7 +15,7 @@
 /turf/open/floor/indestructible/boss,
 /area/lavaland/surface/outdoors)
 "ad" = (
-/turf/simulated/mineral/random/high_chance/volcanic,
+/turf/closed/mineral/random/high_chance/volcanic,
 /area/lavaland/surface/outdoors)
 "ae" = (
 /obj/structure/stone_tile/block,
@@ -59,22 +59,22 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ai" = (
-/turf/simulated/mineral/random/volcanic,
+/turf/closed/mineral/random/volcanic,
 /area/lavaland/surface/outdoors)
 "aj" = (
 /turf/open/floor/plating/lava/smooth/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ak" = (
-/turf/simulated/mineral/random/volcanic,
+/turf/closed/mineral/random/volcanic,
 /area/lavaland/surface/outdoors/unexplored/danger)
 "al" = (
-/turf/simulated/mineral/random/high_chance/volcanic,
+/turf/closed/mineral/random/high_chance/volcanic,
 /area/lavaland/surface/outdoors/unexplored/danger)
 "am" = (
-/turf/simulated/mineral/random/volcanic,
+/turf/closed/mineral/random/volcanic,
 /area/lavaland/surface/outdoors/unexplored)
 "an" = (
-/turf/simulated/mineral/random/labormineral/volcanic,
+/turf/closed/mineral/random/labormineral/volcanic,
 /area/lavaland/surface/outdoors)
 "ao" = (
 /obj/machinery/computer/shuttle/labor/one_way{
@@ -2764,7 +2764,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors/unexplored/danger)
 "fR" = (
-/turf/simulated/mineral/random/high_chance/volcanic,
+/turf/closed/mineral/random/high_chance/volcanic,
 /area/lavaland/surface/outdoors/unexplored)
 "fS" = (
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,

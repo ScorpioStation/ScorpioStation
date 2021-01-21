@@ -3,7 +3,7 @@
 /turf/template_noop,
 /area/template_noop)
 "ab" = (
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/space/nearstation)
 "ac" = (
 /turf/open/floor/plating/asteroid/airless,
@@ -30,7 +30,7 @@
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/powered)
 "ai" = (
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/ruin/powered)
 "aj" = (
 /turf/open/floor/plating/asteroid/airless,

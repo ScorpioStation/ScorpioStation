@@ -146,3 +146,13 @@
 	for(var/total_moles_id in cached_gases){\
 		out_var += cached_gases[total_moles_id][MOLES];\
 	}
+
+//LISTMOS
+//indices of values in gas lists.
+#define MOLES			1
+#define ARCHIVE			2
+#define GAS_META			3
+#define META_GAS_SPECIFIC_HEAT	1
+#define META_GAS_NAME			2
+#define META_GAS_OVERLAY		3
+#define META_GAS_ID				4

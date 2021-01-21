@@ -34,7 +34,7 @@ GLOBAL_LIST_INIT(tendrils, list())
 /obj/structure/spawner/lavaland/LateInitialize()
 	for(var/F in RANGE_TURFS(1, src))
 		if(ismineralturf(F))
-			var/turf/simulated/mineral/M = F
+			var/turf/closed/mineral/M = F
 			M.ChangeTurf(M.turf_type, FALSE, FALSE, TRUE)
 
 /obj/structure/spawner/lavaland/deconstruct(disassembled)

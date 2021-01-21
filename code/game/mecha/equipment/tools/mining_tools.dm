@@ -66,8 +66,8 @@
 	else
 		drill.occupant_message("<span class='danger'>[src] is too durable to drill through.</span>")
 
-/turf/simulated/mineral/drill_act(obj/item/mecha_parts/mecha_equipment/drill/drill)
-	for(var/turf/simulated/mineral/M in range(drill.chassis, 1))
+/turf/closed/mineral/drill_act(obj/item/mecha_parts/mecha_equipment/drill/drill)
+	for(var/turf/closed/mineral/M in range(drill.chassis, 1))
 		if(get_dir(drill.chassis, M) & drill.chassis.dir)
 			M.gets_drilled()
 	drill.log_message("Drilled through [src]")

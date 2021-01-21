@@ -12,7 +12,7 @@
 /turf/template_noop,
 /area/syndicate_depot/outer)
 "ad" = (
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/syndicate_depot/outer)
 "ae" = (
 /obj/structure/mineral_door/wood,

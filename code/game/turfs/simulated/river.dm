@@ -79,7 +79,7 @@
 			continue
 
 		if(!logged_turf_type && ismineralturf(T))
-			var/turf/simulated/mineral/M = T
+			var/turf/closed/mineral/M = T
 			logged_turf_type = M.turf_type
 
 		if(get_dir(src, F) in GLOB.cardinal)
@@ -97,7 +97,7 @@
 		if(!istype(T, logged_turf_type) && prob(probability) && T.ChangeTurf(type, ignore_air = TRUE))
 			T.Spread(probability - prob_loss, prob_loss, whitelisted_area)
 		else if(ismineralturf(T))
-			var/turf/simulated/mineral/M = T
+			var/turf/closed/mineral/M = T
 			M.ChangeTurf(M.turf_type, ignore_air = TRUE)
 
 

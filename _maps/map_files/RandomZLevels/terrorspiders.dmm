@@ -6,7 +6,7 @@
 	},
 /area/awaymission/UO71/outside)
 "ab" = (
-/turf/simulated/mineral/random/labormineral,
+/turf/closed/mineral/random/labormineral,
 /area/awaymission/UO71/outside)
 "ac" = (
 /turf/simulated/wall,
@@ -3608,7 +3608,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/mineral/random/labormineral,
+/turf/closed/mineral/random/labormineral,
 /area/awaymission/UO71/outside)
 "iE" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
@@ -12385,7 +12385,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/UO71/queen)
 "zg" = (
-/turf/simulated/mineral/random/labormineral,
+/turf/closed/mineral/random/labormineral,
 /area/awaymission/UO71/queen)
 "zh" = (
 /turf/simulated/wall/rust,
@@ -12502,7 +12502,7 @@
 /area/awaymission/UO71/queen)
 "zM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/mineral/random/labormineral,
+/turf/closed/mineral/random/labormineral,
 /area/awaymission/UO71/queen)
 "zO" = (
 /obj/effect/decal/cleanable/dirt,
@@ -12864,7 +12864,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/mineral/random/labormineral,
+/turf/closed/mineral/random/labormineral,
 /area/awaymission/UO71/outside)
 "ZV" = (
 /obj/structure/grille,

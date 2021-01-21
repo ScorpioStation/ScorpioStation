@@ -3,7 +3,7 @@
 /turf/space,
 /area/space)
 "ab" = (
-/turf/simulated/mineral/random/high_chance,
+/turf/closed/mineral/random/high_chance,
 /area/awaymission)
 "ac" = (
 /turf/open/floor/plating/asteroid/airless,
@@ -2882,7 +2882,7 @@
 	},
 /area/awaymission/BMPship/Fore)
 "hj" = (
-/turf/simulated/mineral/random,
+/turf/closed/mineral/random,
 /area/awaymission)
 "hk" = (
 /obj/structure/cable{
@@ -2922,7 +2922,7 @@
 /turf/simulated/shuttle/wall,
 /area/awaymission/BMPship/Midship)
 "hq" = (
-/turf/simulated/mineral/random,
+/turf/closed/mineral/random,
 /area/awaymission/BMPship/Midship)
 "hr" = (
 /obj/structure/table,
@@ -3412,7 +3412,7 @@
 /turf/open/floor/plating,
 /area/awaymission)
 "iM" = (
-/turf/simulated/mineral/random/high_chance/clown,
+/turf/closed/mineral/random/high_chance/clown,
 /area/awaymission)
 "iN" = (
 /obj/effect/decal/cleanable/blood,

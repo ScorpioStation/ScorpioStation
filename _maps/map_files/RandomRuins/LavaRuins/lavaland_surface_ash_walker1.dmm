@@ -6,13 +6,13 @@
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 4
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ac" = (
 /obj/structure/stone_tile/block{
 	dir = 1
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ad" = (
 /obj/structure/stone_tile/block{
@@ -21,13 +21,13 @@
 /obj/structure/stone_tile/cracked{
 	dir = 8
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ae" = (
 /obj/structure/stone_tile/block/cracked{
 	dir = 1
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "af" = (
 /obj/structure/stone_tile/block{
@@ -36,26 +36,26 @@
 /obj/structure/stone_tile{
 	dir = 8
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ag" = (
 /obj/structure/stone_tile/surrounding_tile/cracked{
 	dir = 1
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ah" = (
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ai" = (
 /obj/structure/stone_tile/surrounding_tile/cracked{
 	dir = 4
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "aj" = (
 /obj/structure/stone_tile/slab,
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ak" = (
 /turf/simulated/wall/indestructible/boss,
@@ -64,7 +64,7 @@
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 1
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "am" = (
 /obj/effect/baseturf_helper/lava_land/surface,
@@ -77,7 +77,7 @@
 /obj/structure/stone_tile/surrounding_tile/cracked{
 	dir = 1
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ar" = (
 /obj/structure/stone_tile/block/cracked{
@@ -86,7 +86,7 @@
 /obj/structure/stone_tile{
 	dir = 4
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "as" = (
 /turf/simulated/wall/mineral/wood,
@@ -98,7 +98,7 @@
 /obj/structure/stone_tile/block{
 	dir = 4
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "au" = (
 /obj/structure/stone_tile,
@@ -163,7 +163,7 @@
 /obj/structure/stone_tile/block{
 	dir = 4
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "aA" = (
 /obj/structure/stone_tile/cracked{
@@ -202,7 +202,7 @@
 /obj/structure/stone_tile/block{
 	dir = 8
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "aG" = (
 /obj/structure/stone_tile/block/cracked{
@@ -294,7 +294,7 @@
 /obj/structure/stone_tile/block/cracked{
 	dir = 4
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "aS" = (
 /obj/structure/stone_tile/block{
@@ -430,13 +430,13 @@
 /obj/structure/stone_tile{
 	dir = 8
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "bi" = (
 /obj/structure/stone_tile/block/cracked{
 	dir = 8
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "bj" = (
 /obj/structure/stone_tile/block/cracked{
@@ -638,7 +638,7 @@
 /obj/structure/stone_tile/block/cracked{
 	dir = 4
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "bD" = (
 /obj/structure/stone_tile/block{
@@ -676,11 +676,11 @@
 /area/ruin/unpowered/ash_walkers)
 "bI" = (
 /obj/structure/stone_tile/slab/cracked,
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "bJ" = (
 /obj/structure/stone_tile/surrounding_tile,
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "bL" = (
 /obj/structure/stone_tile{
@@ -923,7 +923,7 @@
 /obj/structure/stone_tile/block{
 	dir = 1
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "cq" = (
 /obj/structure/stone_tile/cracked{
@@ -1118,33 +1118,33 @@
 /obj/structure/stone_tile/surrounding_tile/cracked{
 	dir = 8
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "cP" = (
 /obj/structure/stone_tile/block,
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "cQ" = (
 /obj/structure/stone_tile/block/cracked,
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "cR" = (
 /obj/structure/stone_tile/surrounding_tile/cracked,
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "cT" = (
 /obj/structure/stone_tile,
 /obj/structure/stone_tile/block{
 	dir = 1
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "cV" = (
 /obj/structure/stone_tile/cracked,
 /obj/structure/stone_tile/block{
 	dir = 8
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "cW" = (
 /obj/machinery/optable,
@@ -1314,7 +1314,7 @@
 /obj/structure/stone_tile/cracked{
 	dir = 1
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "dv" = (
 /obj/structure/stone_tile/cracked{
@@ -1354,7 +1354,7 @@
 	dir = 1
 	},
 /obj/structure/stone_tile/cracked,
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "dA" = (
 /obj/machinery/hydroponics/soil,
@@ -1380,24 +1380,24 @@
 	dir = 8
 	},
 /obj/structure/stone_tile/center/cracked,
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "dC" = (
 /obj/structure/stone_tile,
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "dD" = (
 /obj/structure/stone_tile/cracked{
 	dir = 8
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "dE" = (
 /obj/structure/stone_tile,
 /obj/structure/stone_tile/cracked{
 	dir = 8
 	},
-/turf/simulated/mineral/volcanic/lava_land_surface,
+/turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 
 (1,1,1) = {"

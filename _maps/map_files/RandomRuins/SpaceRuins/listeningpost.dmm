@@ -3,10 +3,10 @@
 /turf/template_noop,
 /area/template_noop)
 "b" = (
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/ruin/powered)
 "c" = (
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/ruin/unpowered)
 "d" = (
 /turf/open/floor/plating/asteroid/airless,
@@ -121,13 +121,13 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/ruin/powered)
 "A" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/ruin/powered)
 "B" = (
 /obj/structure/disposaloutlet{
@@ -160,7 +160,7 @@
 /area/ruin/powered)
 "G" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/ruin/powered)
 "H" = (
 /obj/machinery/vending/cola,
@@ -233,7 +233,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/ruin/powered)
 "O" = (
 /obj/machinery/door/airlock{
