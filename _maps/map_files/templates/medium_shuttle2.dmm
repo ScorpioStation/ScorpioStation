@@ -8,7 +8,7 @@
 	icon_state = "burst_l";
 	tag = "icon-burst_l (EAST)"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
@@ -23,12 +23,12 @@
 	icon_state = "rwindow";
 	dir = 4
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
 "d" = (
-/turf/simulated/shuttle{
+/turf/open/shuttle{
 	tag = "icon-wall3 (EAST)";
 	icon_state = "wall3";
 	dir = 4
@@ -38,7 +38,7 @@
 	})
 "e" = (
 /turf/space,
-/turf/simulated/shuttle{
+/turf/open/shuttle{
 	tag = "icon-wall3 (NORTHEAST)";
 	icon_state = "wall3";
 	dir = 5
@@ -52,13 +52,13 @@
 	icon_state = "burst_r";
 	tag = "icon-burst_r (EAST)"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
 "g" = (
 /turf/closed/shuttle/wall,
-/turf/simulated/shuttle{
+/turf/open/shuttle{
 	tag = "icon-wall3 (SOUTHEAST)";
 	icon_state = "wall3";
 	dir = 6
@@ -81,7 +81,7 @@
 	})
 "j" = (
 /turf/space,
-/turf/simulated/shuttle{
+/turf/open/shuttle{
 	tag = "icon-wall3 (NORTHWEST)";
 	icon_state = "wall3";
 	dir = 9
@@ -150,7 +150,7 @@
 	})
 "s" = (
 /turf/space,
-/turf/simulated/shuttle{
+/turf/open/shuttle{
 	tag = "icon-wall3 (SOUTHWEST)";
 	icon_state = "wall3";
 	dir = 10
@@ -234,7 +234,7 @@
 	})
 "C" = (
 /turf/closed/shuttle/wall,
-/turf/simulated/shuttle{
+/turf/open/shuttle{
 	tag = "icon-wall3 (NORTHEAST)";
 	icon_state = "wall3";
 	dir = 5
@@ -264,7 +264,7 @@
 	})
 "F" = (
 /turf/space,
-/turf/simulated/shuttle{
+/turf/open/shuttle{
 	tag = "icon-wall3 (SOUTHEAST)";
 	icon_state = "wall3";
 	dir = 6

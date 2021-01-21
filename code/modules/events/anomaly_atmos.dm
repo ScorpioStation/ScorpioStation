@@ -26,7 +26,7 @@
 	var/gas_type = A.gas_type
 	var/area/t_area = get_area(A)
 	for(var/turf/T in t_area)
-		if(istype(T, /turf/simulated))	//should not occur on unsimulated turfs without admemery
+		if(isopenturf(T)	//should not occur on unsimulated turfs without admemery
 			var/turf/simulated/S = T
 			fill_with_gas(gas_type, S)
 	explosion(get_turf(newAnomaly), -1, 0, 2)	// a small boom so people know something happened.

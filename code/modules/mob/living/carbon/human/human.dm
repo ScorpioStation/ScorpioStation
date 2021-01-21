@@ -1444,7 +1444,7 @@
 		to_chat(src, "<span class='warning'>[gloves] are preventing you from writing anything down!</span>")
 		return
 
-	var/turf/simulated/T = loc
+	var/turf/open/T = loc
 	if(!istype(T)) //to prevent doodling out of mechs and lockers
 		to_chat(src, "<span class='warning'>You cannot reach the floor.</span>")
 		return

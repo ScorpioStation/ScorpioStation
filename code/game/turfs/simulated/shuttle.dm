@@ -1,4 +1,4 @@
-/turf/simulated/shuttle
+/turf/open/shuttle
 	name = "shuttle"
 	icon = 'icons/turf/shuttle.dmi'
 	thermal_conductivity = 0.05
@@ -12,11 +12,11 @@
 	density = 1
 	blocks_air = 1
 
-/turf/simulated/shuttle/rpd_act(mob/user, obj/item/rpd/our_rpd)
+/turf/open/shuttle/rpd_act(mob/user, obj/item/rpd/our_rpd)
 	if(our_rpd.mode == RPD_DELETE_MODE)//No pipes on shuttles
 		our_rpd.delete_all_pipes(user, src)
 
-/turf/simulated/shuttle/narsie_act()
+/turf/open/shuttle/narsie_act()
 	if(prob(20))
 		ChangeTurf(/turf/closed/wall/cult)
 
@@ -43,7 +43,7 @@
 	T.transform = transform
 
 //why don't shuttle walls habe smoothwall? now i gotta do rotation the dirty way
-/turf/simulated/shuttle/shuttleRotate(rotation)
+/turf/open/shuttle/shuttleRotate(rotation)
 	..()
 	var/matrix/M = transform
 	M.Turn(rotation)
@@ -53,12 +53,12 @@
 	name = "floor"
 	icon_state = "floor"
 
-/turf/simulated/shuttle/plating
+/turf/open/shuttle/plating
 	name = "plating"
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "plating"
 
-/turf/simulated/shuttle/plating/vox	//Vox skipjack plating
+/turf/open/shuttle/plating/vox	//Vox skipjack plating
 	oxygen = 0
 	nitrogen = MOLES_N2STANDARD + MOLES_O2STANDARD
 

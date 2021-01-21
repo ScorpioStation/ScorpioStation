@@ -40,7 +40,7 @@
 		to_chat(user, "<span class='warning'>Your mop is dry!</span>")
 		return
 
-	var/turf/simulated/T = get_turf(A)
+	var/turf/open/T = get_turf(A)
 
 	if(istype(A, /obj/item/reagent_containers/glass/bucket) || istype(A, /obj/structure/janitorialcart))
 		return

@@ -177,7 +177,7 @@
 
 		if(has_buckled_mobs())
 			if(isopenturf(loc))
-				var/turf/simulated/T = loc
+				var/turf/open/T = loc
 				if(T.wet == TURF_WET_LUBE)	//Lube! Fall off!
 					playsound(src, 'sound/misc/slip.ogg', 50, 1, -3)
 					for(var/m in buckled_mobs)

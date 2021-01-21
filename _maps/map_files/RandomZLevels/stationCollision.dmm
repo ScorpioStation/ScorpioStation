@@ -177,7 +177,7 @@
 	icon_state = "burst_l";
 	tag = "icon-burst_l (EAST)"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/syndishuttle)
 "aJ" = (
 /turf/open/floor/plating/airless,
@@ -244,10 +244,10 @@
 /obj/machinery/portable_atmospherics/canister/toxins{
 	destroyed = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/syndishuttle)
 "aY" = (
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /turf/closed/shuttle/wall{
 	icon_state = "diagonalWall3"
 	},
@@ -272,10 +272,10 @@
 /area/awaymission/northblock)
 "be" = (
 /obj/structure/shuttle/engine/heater,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/syndishuttle)
 "bf" = (
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/syndishuttle)
 "bg" = (
 /turf/open/floor/plasteel/airless{
@@ -333,7 +333,7 @@
 /area/awaymission/northblock)
 "bp" = (
 /obj/structure/shuttle/engine/router,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/syndishuttle)
 "bq" = (
 /obj/structure/shuttle/engine/heater{
@@ -341,11 +341,11 @@
 	icon_state = "heater";
 	dir = 8
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/syndishuttle)
 "br" = (
 /obj/item/storage/toolbox/syndicate,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/syndishuttle)
 "bs" = (
 /obj/structure/lattice,
@@ -353,7 +353,7 @@
 /area/awaymission/syndishuttle)
 "bt" = (
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/syndishuttle)
 "bu" = (
 /turf/open/floor/plasteel/airless{
@@ -376,7 +376,7 @@
 /area/awaymission/research)
 "by" = (
 /obj/machinery/portable_atmospherics/canister/toxins,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/syndishuttle)
 "bz" = (
 /obj/structure/table,
@@ -532,10 +532,10 @@
 	icon_state = "heater";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/syndishuttle)
 "bW" = (
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
@@ -741,7 +741,7 @@
 	icon_state = "burst_l";
 	tag = "icon-burst_l (EAST)"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/research)
 "cz" = (
 /obj/structure/shuttle/engine/heater{
@@ -756,7 +756,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/research)
 "cA" = (
 /turf/open/floor/plasteel{
@@ -839,7 +839,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/research)
 "cL" = (
 /obj/effect/decal/remains/human{
@@ -1717,7 +1717,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/research)
 "eI" = (
 /obj/structure/window/reinforced{
@@ -2270,7 +2270,7 @@
 	dir = 1
 	},
 /obj/structure/grille,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "fO" = (
 /obj/structure/window/reinforced,
@@ -2278,7 +2278,7 @@
 	dir = 1
 	},
 /obj/structure/grille,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "fP" = (
 /obj/structure/window/reinforced,
@@ -2289,7 +2289,7 @@
 	dir = 1
 	},
 /obj/structure/grille,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "fQ" = (
 /turf/space,
@@ -2528,7 +2528,7 @@
 	dir = 1
 	},
 /obj/structure/grille,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "gx" = (
 /obj/machinery/status_display{
@@ -2550,7 +2550,7 @@
 	},
 /obj/structure/grille,
 /obj/structure/window/reinforced,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "gz" = (
 /turf/closed/wall,
@@ -2671,7 +2671,7 @@
 	dir = 4
 	},
 /obj/structure/grille,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "gR" = (
 /obj/machinery/door/unpowered/shuttle{
@@ -2855,7 +2855,7 @@
 	dir = 4
 	},
 /obj/structure/grille,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "ho" = (
 /obj/structure/window/reinforced,
@@ -2869,7 +2869,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "hp" = (
 /obj/structure/window/reinforced{
@@ -2993,7 +2993,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "hF" = (
 /turf/open/floor/plasteel{
@@ -3410,7 +3410,7 @@
 	},
 /obj/structure/grille,
 /obj/item/shard,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "iL" = (
 /obj/item/shard{
@@ -3535,14 +3535,14 @@
 	icon_state = "propulsion_r"
 	},
 /obj/structure/shuttle/engine/propulsion,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "je" = (
 /turf/space,
 /area/awaymission/arrivalblock)
 "jf" = (
 /obj/structure/shuttle/engine/propulsion,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "jg" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -3558,7 +3558,7 @@
 	icon_state = "propulsion_l"
 	},
 /obj/structure/shuttle/engine/propulsion,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "jh" = (
 /obj/structure/cable{
@@ -3992,7 +3992,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "km" = (
 /obj/structure/window/reinforced,
@@ -4092,7 +4092,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "kB" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -4101,7 +4101,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "kC" = (
 /obj/machinery/suit_storage_unit/standard_unit,
@@ -4387,7 +4387,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/arrivalblock)
 "lt" = (
 /obj/structure/closet/crate/hydroponics,

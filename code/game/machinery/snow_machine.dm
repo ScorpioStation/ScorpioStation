@@ -77,7 +77,7 @@
 		return
 	for(var/turf/TF in range(1, src))
 		if(isopenturf(TF))
-			var/turf/simulated/S = TF
+			var/turf/open/S = TF
 			affect_turf_temperature(S, cooling_speed)
 		if(prob(50))
 			continue

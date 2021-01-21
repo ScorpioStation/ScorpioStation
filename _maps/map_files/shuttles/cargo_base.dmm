@@ -46,7 +46,7 @@
 	id = "QMLoad2"
 	},
 /obj/structure/plasticflaps/mining,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/supply)
 "h" = (
 /obj/machinery/door/airlock/external{
@@ -105,7 +105,7 @@
 	id = "QMLoad"
 	},
 /obj/structure/plasticflaps/mining,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/supply)
 "m" = (
 /turf/closed/shuttle/wall{
@@ -159,7 +159,7 @@
 	dir = 1
 	},
 /obj/structure/shuttle/engine/heater,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/supply)
 "u" = (
 /turf/space,
@@ -177,18 +177,18 @@
 	tag = "icon-burst_l";
 	icon_state = "burst_l"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/supply)
 "x" = (
 /obj/structure/shuttle/engine/propulsion,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/supply)
 "y" = (
 /obj/structure/shuttle/engine/propulsion{
 	tag = "icon-burst_r";
 	icon_state = "burst_r"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/supply)
 
 (1,1,1) = {"

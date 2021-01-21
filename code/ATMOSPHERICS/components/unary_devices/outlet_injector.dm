@@ -151,11 +151,11 @@
 	/*hide(var/i) //to make the little pipe section invisible, the icon changes.
 		if(node)
 			if(on)
-				icon_state = "[i == 1 && istype(loc, /turf/simulated) ? "h" : "" ]on"
+				icon_state = "[i == 1 && istype(loc, /turf/open) ? "h" : "" ]on"
 			else
-				icon_state = "[i == 1 && istype(loc, /turf/simulated) ? "h" : "" ]off"
+				icon_state = "[i == 1 && istype(loc, /turf/open) ? "h" : "" ]off"
 		else
-			icon_state = "[i == 1 && istype(loc, /turf/simulated) ? "h" : "" ]exposed"
+			icon_state = "[i == 1 && istype(loc, /turf/open) ? "h" : "" ]exposed"
 			on = 0
 		return*/
 

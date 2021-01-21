@@ -654,7 +654,7 @@
 	pixel_y = 0;
 	tag = ""
 	},
-/turf/simulated,
+/turf/open,
 /area/awaymission/BMPship/Gate)
 "cc" = (
 /obj/structure/cable{
@@ -1499,7 +1499,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/BMPship/Aft)
 "ec" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -1507,7 +1507,7 @@
 	icon_state = "propulsion";
 	tag = "icon-propulsion (WEST)"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/BMPship/Aft)
 "ed" = (
 /obj/item/multitool,
@@ -1792,7 +1792,7 @@
 	dir = 4;
 	id = "meatConvey1"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/BMPship/Midship)
 "eH" = (
 /obj/structure/closet/crate,
@@ -1807,7 +1807,7 @@
 	id = "meatConvey1"
 	},
 /obj/structure/plasticflaps,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/BMPship/Midship)
 "eJ" = (
 /obj/structure/disposalpipe/segment{
@@ -1846,7 +1846,7 @@
 /obj/machinery/disposal/deliveryChute{
 	dir = 8
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/BMPship/Midship)
 "eN" = (
 /obj/structure/disposalpipe/segment{
@@ -2086,7 +2086,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Aft)
 "fo" = (
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/BMPship/Aft)
 "fp" = (
 /obj/structure/window/reinforced{
@@ -2538,7 +2538,7 @@
 	id = "meatConvey2"
 	},
 /obj/item/kitchen/knife,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/BMPship/Midship)
 "gm" = (
 /obj/structure/kitchenspike,
@@ -2561,7 +2561,7 @@
 	dir = 4;
 	id = "meatConvey2"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/BMPship/Midship)
 "gp" = (
 /obj/machinery/conveyor{
@@ -2569,7 +2569,7 @@
 	id = "meatConvey2"
 	},
 /obj/structure/plasticflaps,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/BMPship/Midship)
 "gq" = (
 /obj/structure/disposalpipe/segment{
@@ -3138,14 +3138,14 @@
 /area/awaymission/BMPship/Midship)
 "hW" = (
 /obj/machinery/door/unpowered/shuttle,
-/turf/simulated,
+/turf/open,
 /area/awaymission/BMPship/Fore)
 "hX" = (
 /turf/open/floor/plating/airless,
 /area/awaymission/BMPship/Fore)
 "hY" = (
 /obj/effect/gibspawner/robot,
-/turf/simulated,
+/turf/open,
 /area/awaymission/BMPship/Fore)
 "hZ" = (
 /obj/structure/rack,

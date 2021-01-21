@@ -423,7 +423,7 @@
 
 	if(busy)
 		return
-	busy = 1
+	busy = TRUE
 
 	if(href_list["continue"]) //Continue your travels
 		if(turns >= ORION_TRAIL_WINTURN)
@@ -468,7 +468,7 @@
 						playsound(loc, 'sound/effects/splat.ogg', 50, 1)
 						M.adjust_nutrition(-50) //lose a lot of food
 						var/turf/location = usr.loc
-						if(istype(location, /turf/simulated))
+						if(isopenturf(location))
 							location.add_vomit_floor(TRUE)
 				if(ORION_TRAIL_FLUX)
 					if(prob(75))

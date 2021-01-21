@@ -139,7 +139,7 @@
 					if(istype(W))
 						W.adjacent_fire_act(W, radiated_temperature)
 					continue
-				var/turf/simulated/T = get_step(src, direction)
+				var/turf/open/T = get_step(src, direction)
 				if(istype(T) && !T.active_hotspot)
 					T.hotspot_expose(radiated_temperature, CELL_VOLUME/4)
 
@@ -167,7 +167,7 @@
 	if(!fake)
 		DestroyTurf()
 	if(istype(loc, /turf/simulated))
-		var/turf/simulated/T = loc
+		var/turf/open/T = loc
 		if(T.active_hotspot == src)
 			T.active_hotspot = null
 	return ..()
@@ -175,7 +175,7 @@
 /obj/effect/hotspot/proc/DestroyTurf()
 
 	if(istype(loc, /turf/simulated))
-		var/turf/simulated/T = loc
+		var/turf/open/T = loc
 		if(T.to_be_destroyed && !T.changing_turf)
 			var/chance_of_deletion
 			if(T.heat_capacity) //beware of division by zero
@@ -327,7 +327,7 @@
 
 /proc/fireflash_sm(atom/center, radius, temp, falloff, capped = TRUE, bypass_rng = FALSE)
 	var/list/affected = fireflash_s(center, radius, temp, falloff)
-	for(var/turf/simulated/T in affected)
+	for(var/turf/open/T in affected)
 		var/mytemp = affected[T]
 		var/melt = 1643.15 // default steel melting point
 		var/divisor = melt

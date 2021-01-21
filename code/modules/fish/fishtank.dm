@@ -358,7 +358,7 @@
 		kill_fish(fish_to_scoop)						//Kill the caught fish from the tank
 
 /obj/machinery/fishtank/proc/spill_water()
-	var/turf/simulated/T = get_turf(src)
+	var/turf/open/T = get_turf(src)
 	switch(tank_type)
 		if("bowl")										//Fishbowl: Wets it's own tile
 			if(istype(T))

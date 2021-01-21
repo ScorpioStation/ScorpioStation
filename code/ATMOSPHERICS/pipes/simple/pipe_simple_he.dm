@@ -20,7 +20,7 @@
 	if(!pipe_air)
 		return
 
-	var/turf/simulated/T = loc
+	var/turf/open/T = loc
 	if(istype(T))
 		if(T.blocks_air)
 			environment_temperature = T.temperature

@@ -390,7 +390,7 @@
 	color = "#302000" // rgb: 48, 32, 0
 	taste_description = "oil"
 
-/datum/reagent/consumable/cornoil/reaction_turf(turf/simulated/T, volume)
+/datum/reagent/consumable/cornoil/reaction_turf(turf/open/T, volume)
 	if(!istype(T))
 		return
 	if(volume >= 3)

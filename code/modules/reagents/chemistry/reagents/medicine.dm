@@ -1126,7 +1126,7 @@
 				M.reagents.remove_reagent(R.id,1)
 	return ..() | update_flags
 
-/datum/reagent/medicine/degreaser/reaction_turf(turf/simulated/T, volume)
+/datum/reagent/medicine/degreaser/reaction_turf(turf/open/T, volume)
 	if(volume >= 1 && istype(T))
 		if(T.wet)
 			T.MakeDry(TURF_WET_LUBE)

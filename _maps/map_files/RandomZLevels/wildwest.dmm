@@ -13,7 +13,7 @@
 /turf/open/floor/engine/cult,
 /area/awaymission/wwvault)
 "ae" = (
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-cultdamage5";
 	icon_state = "cultdamage5"
 	},
@@ -23,7 +23,7 @@
 /turf/open/floor/engine/cult,
 /area/awaymission/wwvault)
 "ag" = (
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-bcircuitoff";
 	icon_state = "bcircuitoff"
 	},
@@ -40,13 +40,13 @@
 /turf/closed/wall/cult,
 /area/awaymission/wwvault)
 "aj" = (
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-cultdamage3";
 	icon_state = "cultdamage3"
 	},
 /area/awaymission/wwvault)
 "ak" = (
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-cultdamage6";
 	icon_state = "cultdamage6"
 	},
@@ -57,7 +57,7 @@
 /area/awaymission/wwvault)
 "am" = (
 /mob/living/simple_animal/hostile/faithless,
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-bcircuitoff";
 	icon_state = "bcircuitoff"
 	},
@@ -71,21 +71,21 @@
 /turf/closed/shuttle/wall,
 /area/awaymission/wwvault)
 "ao" = (
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-gcircuitoff";
 	icon_state = "gcircuitoff"
 	},
 /area/awaymission/wwvault)
 "ap" = (
 /obj/machinery/wish_granter_dark,
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-gcircuitoff";
 	icon_state = "gcircuitoff"
 	},
 /area/awaymission/wwvault)
 "aq" = (
 /obj/structure/cult/pylon,
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-gcircuitoff";
 	icon_state = "gcircuitoff"
 	},
@@ -94,7 +94,7 @@
 /obj/machinery/gateway{
 	dir = 9
 	},
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-gcircuitoff";
 	icon_state = "gcircuitoff"
 	},
@@ -103,7 +103,7 @@
 /obj/machinery/gateway{
 	dir = 5
 	},
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-gcircuitoff";
 	icon_state = "gcircuitoff"
 	},
@@ -112,7 +112,7 @@
 /obj/machinery/gateway{
 	dir = 1
 	},
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-gcircuitoff";
 	icon_state = "gcircuitoff"
 	},
@@ -121,7 +121,7 @@
 /obj/machinery/gateway{
 	dir = 8
 	},
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-gcircuitoff";
 	icon_state = "gcircuitoff"
 	},
@@ -130,7 +130,7 @@
 /obj/machinery/gateway{
 	dir = 4
 	},
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-gcircuitoff";
 	icon_state = "gcircuitoff"
 	},
@@ -139,7 +139,7 @@
 /obj/machinery/gateway/centeraway{
 	calibrated = 0
 	},
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-gcircuitoff";
 	icon_state = "gcircuitoff"
 	},
@@ -148,7 +148,7 @@
 /obj/machinery/gateway{
 	dir = 10
 	},
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-gcircuitoff";
 	icon_state = "gcircuitoff"
 	},
@@ -157,34 +157,34 @@
 /obj/machinery/gateway{
 	dir = 6
 	},
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-gcircuitoff";
 	icon_state = "gcircuitoff"
 	},
 /area/awaymission/wwvault)
 "az" = (
 /obj/machinery/gateway,
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-gcircuitoff";
 	icon_state = "gcircuitoff"
 	},
 /area/awaymission/wwvault)
 "aA" = (
 /obj/effect/meatgrinder,
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-gcircuitoff";
 	icon_state = "gcircuitoff"
 	},
 /area/awaymission/wwvault)
 "aB" = (
 /obj/structure/cult/pylon,
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-bcircuitoff";
 	icon_state = "bcircuitoff"
 	},
 /area/awaymission/wwvault)
 "aC" = (
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	tag = "icon-cultdamage2";
 	icon_state = "cultdamage2"
 	},
@@ -2580,7 +2580,7 @@
 /area/awaymission/wwrefine)
 "hj" = (
 /obj/machinery/door/unpowered/shuttle,
-/turf/simulated/shuttle{
+/turf/open/shuttle{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
@@ -2613,7 +2613,7 @@
 /area/awaymission/wwrefine)
 "ho" = (
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle{
+/turf/open/shuttle{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
@@ -2630,7 +2630,7 @@
 	},
 /area/awaymission/wwrefine)
 "hr" = (
-/turf/simulated/shuttle{
+/turf/open/shuttle{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
@@ -2651,7 +2651,7 @@
 /area/awaymission/wwrefine)
 "hu" = (
 /obj/effect/mob_spawn/human/miner,
-/turf/simulated/shuttle{
+/turf/open/shuttle{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
@@ -2677,7 +2677,7 @@
 /obj/item/clothing/mask/gas/syndicate,
 /obj/item/tank/oxygen,
 /obj/item/clothing/shoes/magboots,
-/turf/simulated/shuttle{
+/turf/open/shuttle{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},
@@ -2697,7 +2697,7 @@
 	tag = "icon-fwindow";
 	icon_state = "fwindow"
 	},
-/turf/simulated/shuttle{
+/turf/open/shuttle{
 	tag = "icon-floor2";
 	icon_state = "floor2"
 	},

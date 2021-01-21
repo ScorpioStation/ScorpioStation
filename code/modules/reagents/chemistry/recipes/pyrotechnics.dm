@@ -130,7 +130,7 @@
 	mix_message = "The mixture implodes suddenly."
 
 /datum/chemical_reaction/ldm_implosion/on_reaction(datum/reagents/holder, created_volume)
-	var/turf/simulated/T = get_turf(holder.my_atom)
+	var/turf/open/T = get_turf(holder.my_atom)
 	if(!T)
 		return
 	goonchem_vortex(T, 1, created_volume)

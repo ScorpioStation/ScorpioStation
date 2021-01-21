@@ -113,8 +113,8 @@
 				if(flame_dist && prob(40) && !istype(T, /turf/space) && !T.density)
 					new /obj/effect/hotspot(T) //Mostly for ambience!
 				if(dist > 0)
-					if(istype(T, /turf/simulated))
-						var/turf/simulated/S = T
+					if(isopenturf(T)
+						var/turf/open/S = T
 						var/affecting_level
 						if(dist == 1)
 							affecting_level = 1

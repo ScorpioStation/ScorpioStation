@@ -299,7 +299,7 @@
 // Including through doors openable with the ID
 /turf/proc/CardinalTurfsWithAccess(var/obj/item/card/id/ID)
 	var/list/L = new()
-	var/turf/simulated/T
+	var/turf/open/T
 
 	for(var/dir in GLOB.cardinal)
 		T = get_step(src, dir)
@@ -312,7 +312,7 @@
 // Don't check for ID, doors passable only if open
 /turf/proc/CardinalTurfs()
 	var/list/L = new()
-	var/turf/simulated/T
+	var/turf/open/T
 
 	for(var/dir in GLOB.cardinal)
 		T = get_step(src, dir)
@@ -329,7 +329,7 @@
 // Including through doors openable with the ID
 /turf/proc/AdjacentTurfsWithAccess(obj/item/card/id/ID = null, list/closed)//check access if one is passed
 	var/list/L = new()
-	var/turf/simulated/T
+	var/turf/open/T
 	for(var/dir in GLOB.alldirs2) //arbitrarily ordered list to favor non-diagonal moves in case of ties
 		T = get_step(src, dir)
 		if(T in closed) //turf already proceeded in A*
@@ -342,7 +342,7 @@
 //Idem, but don't check for ID and goes through open doors
 /turf/proc/AdjacentTurfs(list/closed)
 	var/list/L = new()
-	var/turf/simulated/T
+	var/turf/open/T
 	for(var/dir in GLOB.alldirs2) //arbitrarily ordered list to favor non-diagonal moves in case of ties
 		T = get_step(src, dir)
 		if(T in closed) //turf already proceeded by A*

@@ -47,7 +47,7 @@
 		return 2
 
 	var/list/emptyTurfs = list()
-	for(var/turf/simulated/T in areaInstance)
+	for(var/turf/open/T in areaInstance)
 		if(T.density)
 			continue
 

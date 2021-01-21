@@ -238,7 +238,7 @@
 /area/ruin/powered)
 "R" = (
 /obj/structure/shuttle/engine/propulsion,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/ruin/powered)
 "U" = (
 /obj/item/gps/ruin,

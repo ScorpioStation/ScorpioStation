@@ -2132,7 +2132,7 @@
 				logmsg = "a lightning bolt."
 			if("Fire Death")
 				to_chat(M,"<span class='userdanger'>You feel hotter than usual. Maybe you should lowe-wait, is that your hand melting?</span>")
-				var/turf/simulated/T = get_turf(M)
+				var/turf/open/T = get_turf(M)
 				new /obj/effect/hotspot(T)
 				M.adjustFireLoss(150)
 				logmsg = "a firey death."

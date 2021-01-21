@@ -305,7 +305,7 @@
 	TU.visible_message("<span class='danger'>The slime extract begins to vibrate adorably !</span>")
 	spawn(50)
 		if(holder && holder.my_atom)
-			var/turf/simulated/T = get_turf(holder.my_atom)
+			var/turf/open/T = get_turf(holder.my_atom)
 			if(istype(T))
 				T.atmos_spawn_air(LINDA_SPAWN_HEAT | LINDA_SPAWN_TOXINS, 50)
 

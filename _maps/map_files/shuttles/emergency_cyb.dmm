@@ -523,7 +523,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/escape)
 "bv" = (
 /turf/space,
@@ -534,7 +534,7 @@
 /area/shuttle/escape)
 "bw" = (
 /obj/structure/shuttle/engine/propulsion,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/escape)
 "bx" = (
 /obj/item/twohanded/required/kirbyplants,

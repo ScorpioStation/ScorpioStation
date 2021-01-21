@@ -54,7 +54,7 @@
 
 /mob/living/simple_animal/hostile/poison/terror_spider/gray/spider_special_action()
 	if(prob(prob_ai_massweb))
-		for(var/turf/simulated/T in oview(2,get_turf(src)))
+		for(var/turf/open/T in oview(2,get_turf(src)))
 			if(T.density == 0)
 				var/obj/structure/spider/terrorweb/W = locate() in T
 				if(!W)

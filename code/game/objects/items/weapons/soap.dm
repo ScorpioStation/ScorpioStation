@@ -49,7 +49,7 @@
 			qdel(C)
 			target.clean_blood()
 
-/obj/item/soap/proc/clean_turf(turf/simulated/T)
+/obj/item/soap/proc/clean_turf(turf/T)
 	T.clean_blood()
 	for(var/obj/effect/O in T)
 		if(is_cleanable(O))

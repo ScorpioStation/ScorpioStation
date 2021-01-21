@@ -446,7 +446,7 @@ You are weak to holy things and starlight. Don't go into space and avoid the Cha
 	if(!ishuman(owner))
 		owner.alpha = 255
 		return
-	var/turf/simulated/T = get_turf(owner)
+	var/turf/open/T = get_turf(owner)
 	var/light_available = T.get_lumcount(0.5) * 10
 
 	if(!istype(T))

@@ -497,7 +497,7 @@
 /obj/structure/window/reinforced,
 /obj/item/stack/sheet/mineral/bananium,
 /obj/item/bikehorn/rubberducky,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/escape)
 "bp" = (
 /turf/closed/shuttle/wall{
@@ -519,7 +519,7 @@
 /obj/structure/window/reinforced,
 /obj/item/stack/sheet/mineral/bananium,
 /obj/item/bikehorn/rubberducky,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/escape)
 "bs" = (
 /turf/space,
@@ -530,7 +530,7 @@
 /area/shuttle/escape)
 "bt" = (
 /obj/structure/shuttle/engine/propulsion,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/escape)
 
 (1,1,1) = {"

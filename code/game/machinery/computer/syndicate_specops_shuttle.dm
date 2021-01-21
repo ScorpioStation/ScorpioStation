@@ -159,7 +159,7 @@ GLOBAL_VAR_INIT(syndicate_elite_shuttle_timeleft, 0)
 					//var/turf/E = get_step(D, SOUTH)
 		for(var/atom/movable/AM as mob|obj in T)
 			AM.Move(D)
-		if(istype(T, /turf/simulated))
+		if(isopenturf(T))
 			qdel(T)
 
 	for(var/mob/living/carbon/bug in end_location) // If someone somehow is still in the shuttle's docking area...

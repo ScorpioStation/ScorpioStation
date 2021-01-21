@@ -2211,7 +2211,7 @@
 	icon_state = "propulsion_l";
 	tag = "icon-propulsion_l (EAST)"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/constructionsite)
 "afy" = (
 /turf/closed/shuttle/wall,
@@ -2370,7 +2370,7 @@
 "afV" = (
 /obj/structure/grille,
 /obj/structure/window/full/shuttle,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/pod_3)
 "afW" = (
 /obj/effect/spawner/window/reinforced,
@@ -2970,7 +2970,7 @@
 	req_one_access = null;
 	req_one_access_txt = "0"
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "aht" = (
 /obj/structure/chair/office/dark,
@@ -3071,7 +3071,7 @@
 	name = "northeast of SS13";
 	width = 19
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "ahz" = (
 /obj/structure/lattice/catwalk,
@@ -3202,7 +3202,7 @@
 /turf/open/floor/plasteel/dark,
 /area/turret_protected/ai)
 "ahN" = (
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "ahO" = (
 /obj/machinery/airlock_sensor{
@@ -3216,7 +3216,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "ahP" = (
 /turf/open/floor/plasteel{
@@ -3245,7 +3245,7 @@
 	icon_state = "window5_end";
 	dir = 2
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "ahT" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
@@ -3291,7 +3291,7 @@
 	icon_state = "window5_mid";
 	dir = 2
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "ahX" = (
 /obj/effect/decal/warning_stripes/east,
@@ -3325,7 +3325,7 @@
 	icon_state = "window5_end";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "aib" = (
 /obj/machinery/airlock_sensor{
@@ -3339,7 +3339,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "aic" = (
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
@@ -3352,7 +3352,7 @@
 	tag_exterior_door = "vox_northwest_lock";
 	tag_interior_door = "vox_southwest_lock"
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "aid" = (
 /turf/closed/shuttle/wall{
@@ -3420,7 +3420,7 @@
 	tag_exterior_door = "vox_northeast_lock";
 	tag_interior_door = "vox_southeast_lock"
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "ain" = (
 /obj/machinery/door/airlock/hatch{
@@ -3432,7 +3432,7 @@
 	req_one_access = null;
 	req_one_access_txt = "0"
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "aio" = (
 /obj/machinery/access_button{
@@ -3488,7 +3488,7 @@
 	icon_state = "window5_end";
 	dir = 8
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "ait" = (
 /obj/structure/chair/comfy/shuttle{
@@ -3524,7 +3524,7 @@
 	icon_state = "window5_end";
 	dir = 8
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "aix" = (
 /obj/machinery/atmospherics/unary/portables_connector,
@@ -3568,7 +3568,7 @@
 	req_one_access = null;
 	req_one_access_txt = "0"
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "aiC" = (
 /obj/machinery/door/poddoor/shutters{
@@ -3586,7 +3586,7 @@
 	icon_state = "window5_end";
 	dir = 4
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "aiD" = (
 /obj/machinery/light/spot,
@@ -4636,20 +4636,20 @@
 	icon_state = "window5_end";
 	dir = 4
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "akW" = (
 /obj/machinery/door/airlock/hatch{
 	req_access_txt = "152"
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "akX" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "akY" = (
 /obj/machinery/door/poddoor/shutters{
@@ -4667,7 +4667,7 @@
 	icon_state = "window5_mid";
 	tag = "icon-window5 (EAST)"
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "akZ" = (
 /obj/structure/window/reinforced{
@@ -6449,7 +6449,7 @@
 	icon_state = "window5_mid";
 	tag = "icon-window5 (EAST)"
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "aoQ" = (
 /obj/item/storage/toolbox/syndicate,
@@ -6546,7 +6546,7 @@
 	icon_state = "propulsion_r";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate_elite)
 "apg" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -6554,7 +6554,7 @@
 	icon_state = "propulsion";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate_elite)
 "aph" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -6562,7 +6562,7 @@
 	icon_state = "propulsion_l";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate_elite)
 "api" = (
 /turf/space,
@@ -6576,7 +6576,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/vox)
 "apk" = (
 /obj/structure/rack,
@@ -6631,14 +6631,14 @@
 	icon_state = "heater";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate_elite)
 "apr" = (
 /obj/structure/shuttle/engine/propulsion{
 	tag = "icon-propulsion_l";
 	icon_state = "propulsion_l"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/vox)
 "aps" = (
 /obj/structure/rack,
@@ -6764,7 +6764,7 @@
 	icon_state = "window5_end";
 	dir = 2
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "apI" = (
 /obj/machinery/cryopod,
@@ -6781,7 +6781,7 @@
 	icon_state = "window5_end";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating/vox,
+/turf/open/shuttle/plating/vox,
 /area/shuttle/vox)
 "apK" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
@@ -7371,7 +7371,7 @@
 	width = 11
 	},
 /obj/structure/fans/tiny,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate_elite)
 "arb" = (
 /obj/structure/chair/comfy/shuttle,
@@ -7424,7 +7424,7 @@
 	req_access_txt = "150"
 	},
 /obj/structure/fans/tiny,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate_elite)
 "arh" = (
 /turf/space,
@@ -7464,7 +7464,7 @@
 	icon_state = "window5_end";
 	dir = 2
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate)
 "arn" = (
 /obj/machinery/door/poddoor/shutters{
@@ -7482,7 +7482,7 @@
 	icon_state = "window5_mid";
 	dir = 2
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate)
 "aro" = (
 /turf/open/floor/carpet/arcade,
@@ -7959,7 +7959,7 @@
 	icon_state = "window5_end";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate)
 "ast" = (
 /obj/machinery/power/apc{
@@ -8101,7 +8101,7 @@
 	icon_state = "propulsion_r";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate_sit)
 "asL" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -8109,7 +8109,7 @@
 	icon_state = "propulsion";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate_sit)
 "asM" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -8117,7 +8117,7 @@
 	icon_state = "propulsion_l";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate_sit)
 "asN" = (
 /turf/space,
@@ -8197,7 +8197,7 @@
 	icon_state = "heater";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate_sit)
 "asZ" = (
 /obj/structure/table,
@@ -8271,7 +8271,7 @@
 /obj/machinery/conveyor/east{
 	id = "QMLoad2"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/supply)
 "atk" = (
 /obj/machinery/light/spot{
@@ -8457,7 +8457,7 @@
 /obj/machinery/conveyor/west{
 	id = "QMLoad"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/supply)
 "atE" = (
 /obj/machinery/light/spot{
@@ -8508,7 +8508,7 @@
 	pixel_y = -23;
 	req_access_txt = "150"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate_sit)
 "atG" = (
 /obj/structure/chair/stool,
@@ -8566,7 +8566,7 @@
 	name = "northwest of station";
 	width = 18
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate)
 "atJ" = (
 /obj/structure/sign/securearea{
@@ -8795,7 +8795,7 @@
 	dir = 1
 	},
 /obj/structure/shuttle/engine/heater,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/supply)
 "aui" = (
 /turf/space,
@@ -8833,7 +8833,7 @@
 	opacity = 0;
 	req_access_txt = "150"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate_sit)
 "aul" = (
 /turf/space,
@@ -8888,18 +8888,18 @@
 	tag = "icon-burst_l";
 	icon_state = "burst_l"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/supply)
 "aur" = (
 /obj/structure/shuttle/engine/propulsion,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/supply)
 "aus" = (
 /obj/structure/shuttle/engine/propulsion{
 	tag = "icon-burst_r";
 	icon_state = "burst_r"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/supply)
 "aut" = (
 /obj/item/radio/intercom/syndicate{
@@ -9498,7 +9498,7 @@
 "avF" = (
 /obj/structure/window/full/shuttle,
 /obj/structure/grille,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/mining)
 "avG" = (
 /turf/space,
@@ -9794,7 +9794,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate)
 "awk" = (
 /obj/structure/computerframe,
@@ -9820,18 +9820,18 @@
 	tag = "icon-propulsion_l";
 	icon_state = "propulsion_l"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate)
 "awo" = (
 /obj/structure/shuttle/engine/propulsion,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate)
 "awp" = (
 /obj/structure/shuttle/engine/propulsion{
 	tag = "icon-propulsion_r";
 	icon_state = "propulsion_r"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/syndicate)
 "awq" = (
 /obj/structure/closet/crate,
@@ -9851,7 +9851,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/mining)
 "aws" = (
 /obj/structure/ore_box,
@@ -10560,7 +10560,7 @@
 /area/shuttle/mining)
 "ayc" = (
 /obj/structure/shuttle/engine/propulsion/burst,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/mining)
 "ayd" = (
 /turf/space,
@@ -11968,14 +11968,14 @@
 	icon_state = "window4"
 	},
 /obj/structure/grille,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/arrival/station)
 "aBj" = (
 /obj/structure/window/full/shuttle{
 	icon_state = "window8"
 	},
 /obj/structure/grille,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/arrival/station)
 "aBk" = (
 /turf/closed/shuttle/wall{
@@ -12070,7 +12070,7 @@
 	dir = 4;
 	icon_state = "burst_r"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/arrival/station)
 "aBA" = (
 /turf/open/shuttle/floor,
@@ -12112,19 +12112,19 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/arrival/station)
 "aBF" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 4;
 	icon_state = "propulsion"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/arrival/station)
 "aBG" = (
 /obj/structure/window/full/shuttle,
 /obj/structure/grille,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/arrival/station)
 "aBH" = (
 /obj/effect/landmark{
@@ -12204,7 +12204,7 @@
 	dir = 4;
 	icon_state = "burst_l"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/arrival/station)
 "aBT" = (
 /obj/machinery/door/airlock/shuttle{
@@ -12673,7 +12673,7 @@
 	dir = 1
 	},
 /obj/structure/shuttle/engine/heater,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/escape)
 "aCX" = (
 /turf/space,
@@ -12685,7 +12685,7 @@
 /area/shuttle/escape)
 "aCY" = (
 /obj/structure/shuttle/engine/propulsion,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/escape)
 "aCZ" = (
 /turf/space,
@@ -12718,12 +12718,12 @@
 "aDd" = (
 /obj/structure/shuttle/window,
 /obj/structure/grille,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/transport)
 "aDe" = (
 /obj/structure/grille,
 /obj/structure/shuttle/window,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/transport)
 "aDf" = (
 /turf/space,
@@ -12848,7 +12848,7 @@
 	dir = 8;
 	icon_state = "burst_l"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/specops)
 "aDx" = (
 /turf/closed/shuttle/wall{
@@ -12878,7 +12878,7 @@
 	dir = 8;
 	icon_state = "propulsion"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/specops)
 "aDB" = (
 /obj/structure/window/reinforced{
@@ -12983,7 +12983,7 @@
 	width = 5
 	},
 /obj/structure/fans/tiny,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/specops)
 "aDK" = (
 /obj/machinery/computer/communications,
@@ -13022,7 +13022,7 @@
 	dir = 8;
 	icon_state = "burst_r"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/specops)
 "aDP" = (
 /turf/space,
@@ -13667,7 +13667,7 @@
 /obj/structure/shuttle/engine/propulsion{
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/siberia)
 "aFi" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -13676,7 +13676,7 @@
 /obj/structure/shuttle/engine/propulsion{
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/siberia)
 "aFj" = (
 /turf/space,
@@ -13713,7 +13713,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/siberia)
 "aFo" = (
 /obj/machinery/bodyscanner,
@@ -14141,7 +14141,7 @@
 "aGk" = (
 /obj/structure/grille,
 /obj/structure/window/full/shuttle,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/pod_4)
 "aGl" = (
 /obj/machinery/atmospherics/unary/outlet_injector/on{
@@ -42982,7 +42982,7 @@
 "bJb" = (
 /obj/structure/window/full/shuttle,
 /obj/structure/grille,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/pod_1)
 "bJc" = (
 /obj/effect/landmark/start{
@@ -43684,7 +43684,7 @@
 "bKp" = (
 /obj/structure/window/full/shuttle,
 /obj/structure/grille,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/pod_2)
 "bKq" = (
 /turf/space,
@@ -78303,7 +78303,7 @@
 	name = "Privacy Shutters";
 	opacity = 0
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/trade/sol)
 "cQW" = (
 /obj/machinery/space_heater,
@@ -84840,7 +84840,7 @@
 	dir = 8;
 	icon_state = "burst_l"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/trade/sol)
 "dcc" = (
 /turf/closed/shuttle/wall{
@@ -85074,7 +85074,7 @@
 	dir = 8;
 	icon_state = "propulsion"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/trade/sol)
 "dcy" = (
 /obj/machinery/door_control{
@@ -85318,7 +85318,7 @@
 "dcU" = (
 /obj/structure/shuttle/window,
 /obj/structure/grille,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/trade/sol)
 "dcV" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
@@ -85462,7 +85462,7 @@
 	dir = 8;
 	icon_state = "burst_r"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/trade/sol)
 "ddg" = (
 /obj/effect/spawner/lootdrop/trade_sol/sec,

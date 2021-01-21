@@ -185,7 +185,7 @@
 		return
 	operating = TRUE
 	var/turf/previousturf = get_turf(src)
-	for(var/turf/simulated/T in turflist)
+	for(var/turf/open/T in turflist)
 		if(!T.air)
 			break
 		if(T == previousturf)

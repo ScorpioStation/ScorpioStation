@@ -243,7 +243,7 @@
 	color = "#701345"
 	taste_description = "a carpet...what?"
 
-/datum/reagent/carpet/reaction_turf(turf/simulated/T, volume)
+/datum/reagent/carpet/reaction_turf(turf/open/T, volume)
 	if(istype(T, /turf/open/floor/plating) || istype(T, /turf/open/floor/plasteel))
 		var/turf/open/floor/F = T
 		F.ChangeTurf(/turf/open/floor/carpet)

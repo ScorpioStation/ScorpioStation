@@ -125,7 +125,7 @@
 	air_update_turf(TRUE)
 
 /atom/movable/proc/atmos_spawn_air(text, amount) //because a lot of people loves to copy paste awful code lets just make a easy proc to spawn your plasma fires
-	var/turf/simulated/T = get_turf(src)
+	var/turf/open/T = get_turf(src)
 	if(!istype(T))
 		return
 	T.atmos_spawn_air(text, amount)

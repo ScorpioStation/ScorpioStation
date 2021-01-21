@@ -492,7 +492,7 @@
 /area/ruin/unpowered)
 "bG" = (
 /obj/structure/shuttle/engine/propulsion,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/ruin/unpowered)
 "bH" = (
 /turf/closed/wall/mineral/titanium,

@@ -250,7 +250,7 @@
 					human.adjustToxLoss(toxdamage)
 					human.AdjustConfused(confusion, bound_lower = 0, bound_upper = maxconfusion)
 					new/obj/effect/temp_visual/revenant(human.loc)
-				if(!istype(T, /turf/simulated/shuttle) && !istype(T, /turf/closed/wall/rust) && !istype(T, /turf/closed/wall/r_wall) && istype(T, /turf/closed/wall) && prob(15))
+				if(!istype(T, /turf/open/shuttle) && !istype(T, /turf/closed/wall/rust) && !istype(T, /turf/closed/wall/r_wall) && istype(T, /turf/closed/wall) && prob(15))
 					new/obj/effect/temp_visual/revenant(T)
 					T.ChangeTurf(/turf/closed/wall/rust)
 				if(!istype(T, /turf/closed/wall/r_wall/rust) && istype(T, /turf/closed/wall/r_wall) && prob(15))

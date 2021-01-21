@@ -721,7 +721,7 @@
 	},
 /area/awaymission/centcomAway/cafe)
 "bU" = (
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/centcomAway/hangar)
 "bV" = (
 /obj/structure/table,
@@ -780,7 +780,7 @@
 	},
 /area/awaymission/centcomAway/maint)
 "cd" = (
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
@@ -847,7 +847,7 @@
 /turf/closed/wall/r_wall,
 /area/awaymission/centcomAway/cafe)
 "ck" = (
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /turf/closed/shuttle/wall{
 	dir = 2;
 	icon_state = "swall_f10";
@@ -969,7 +969,7 @@
 /obj/machinery/door/airlock/maintenance_hatch{
 	req_access_txt = "101"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/centcomAway/hangar)
 "cB" = (
 /obj/structure/cable{
@@ -1096,7 +1096,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/centcomAway/hangar)
 "cR" = (
 /turf/closed/shuttle/wall{
@@ -1115,7 +1115,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/centcomAway/hangar)
 "cU" = (
 /turf/open/floor/plating,
@@ -1423,7 +1423,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/centcomAway/hangar)
 "dG" = (
 /turf/open/floor/plasteel{
@@ -2149,7 +2149,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/centcomAway/hangar)
 "fA" = (
 /obj/structure/grille,
@@ -2157,7 +2157,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/centcomAway/hangar)
 "fB" = (
 /obj/structure/grille,
@@ -2168,7 +2168,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/centcomAway/hangar)
 "fC" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
@@ -2970,7 +2970,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/centcomAway/hangar)
 "hG" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -5774,7 +5774,7 @@
 	icon_state = "propulsion_r";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/centcomAway/thunderdome)
 "nV" = (
 /obj/machinery/light,
@@ -5787,14 +5787,14 @@
 	icon_state = "propulsion_l";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/centcomAway/thunderdome)
 "nX" = (
 /obj/structure/shuttle/engine/propulsion{
 	icon_state = "propulsion";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission/centcomAway/thunderdome)
 "nY" = (
 /obj/structure/computerframe,

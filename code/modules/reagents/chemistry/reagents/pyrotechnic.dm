@@ -363,7 +363,7 @@
 	if(method == REAGENT_TOUCH)
 		M.ExtinguishMob()
 
-/datum/reagent/cryostylane/reaction_turf(turf/simulated/T, volume)
+/datum/reagent/cryostylane/reaction_turf(turf/open/T, volume)
 	if(!istype(T))
 		return
 	if(volume >= 3)
@@ -418,7 +418,7 @@
 /datum/reagent/firefighting_foam/reaction_obj(obj/O, volume)
 	O.extinguish()
 
-/datum/reagent/firefighting_foam/reaction_turf(turf/simulated/T, volume)
+/datum/reagent/firefighting_foam/reaction_turf(turf/open/T, volume)
 	if(!istype(T))
 		return
 	var/CT = cooling_temperature

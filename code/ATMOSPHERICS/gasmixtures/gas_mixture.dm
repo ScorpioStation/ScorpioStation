@@ -232,7 +232,7 @@ By removing empty gases, processing speed is increased.
 
 /datum/gas_mixture/proc/temperature_share(datum/gas_mixture/sharer, conduction_coefficient)
 
-/datum/gas_mixture/proc/temperature_turf_share(turf/simulated/sharer, conduction_coefficient)
+/datum/gas_mixture/proc/temperature_turf_share(turf/open/sharer, conduction_coefficient)
 
 /datum/gas_mixture/proc/compare(datum/gas_mixture/sample)
 	//Compares sample to self to see if within acceptable ranges that group processing may be enabled
@@ -585,7 +585,7 @@ By removing empty gases, processing speed is increased.
 
 			temperature -= heat / self_heat_capacity
 
-/datum/gas_mixture/temperature_turf_share(turf/simulated/sharer, conduction_coefficient)
+/datum/gas_mixture/temperature_turf_share(turf/open/sharer, conduction_coefficient)
 	var/delta_temperature = (temperature_archived - sharer.temperature)
 	if(abs(delta_temperature) > MINIMUM_TEMPERATURE_DELTA_TO_CONSIDER)
 		var/self_heat_capacity = heat_capacity()

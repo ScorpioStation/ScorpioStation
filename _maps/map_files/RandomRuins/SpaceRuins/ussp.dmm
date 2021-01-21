@@ -6086,7 +6086,7 @@
 	dir = 1
 	},
 /obj/structure/shuttle/engine/propulsion,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/derelict/arrival)
 "md" = (
 /turf/template_noop,

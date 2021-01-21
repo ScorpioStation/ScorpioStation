@@ -13,7 +13,7 @@
 "ac" = (
 /obj/structure/grille,
 /obj/structure/shuttle/window,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/escape)
 "ad" = (
 /turf/closed/shuttle/wall{
@@ -220,7 +220,7 @@
 	icon_state = "propulsion";
 	tag = "icon-propulsion (EAST)"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/escape)
 "aB" = (
 /obj/structure/shuttle/engine/heater{
@@ -231,7 +231,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/escape)
 "aC" = (
 /obj/structure/table,
@@ -273,7 +273,7 @@
 	icon_state = "propulsion_r";
 	tag = "icon-propulsion_r (EAST)"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/escape)
 "aI" = (
 /obj/structure/shuttle/engine/heater{
@@ -288,7 +288,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/escape)
 "aJ" = (
 /obj/machinery/computer/communications,
@@ -367,7 +367,7 @@
 	dir = 8;
 	icon_state = "burst_l"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/escape)
 "aP" = (
 /obj/machinery/computer/emergency_shuttle,
@@ -584,12 +584,12 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	icon_state = "floorgrime"
 	},
 /area/shuttle/escape)
 "bp" = (
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	icon_state = "floorgrime"
 	},
 /area/shuttle/escape)
@@ -597,7 +597,7 @@
 /obj/machinery/door/airlock/external{
 	name = "Emergency Recovery Airlock"
 	},
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	icon_state = "floorgrime"
 	},
 /area/shuttle/escape)
@@ -644,14 +644,14 @@
 /obj/item/weldingtool,
 /obj/item/wirecutters,
 /obj/item/stack/cable_coil,
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	dir = 4;
 	icon_state = "warning"
 	},
 /area/shuttle/escape)
 "by" = (
 /obj/structure/reagent_dispensers/watertank,
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	dir = 1;
 	icon_state = "delivery"
 	},
@@ -662,20 +662,20 @@
 	dir = 1;
 	on = 1
 	},
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	dir = 1;
 	icon_state = "delivery"
 	},
 /area/shuttle/escape)
 "bA" = (
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	dir = 1;
 	icon_state = "delivery"
 	},
 /area/shuttle/escape)
 "bB" = (
 /obj/machinery/recharge_station,
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	dir = 1;
 	icon_state = "delivery"
 	},
@@ -756,7 +756,7 @@
 	pixel_x = 3;
 	pixel_y = -5
 	},
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	dir = 4;
 	icon_state = "warning"
 	},
@@ -768,13 +768,13 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	icon_state = "floorgrime"
 	},
 /area/shuttle/escape)
 "bJ" = (
 /obj/machinery/suit_storage_unit/standard_unit,
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	icon_state = "floorgrime"
 	},
 /area/shuttle/escape)
@@ -805,7 +805,7 @@
 /turf/open/shuttle/floor,
 /area/shuttle/escape)
 "bN" = (
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	dir = 4;
 	icon_state = "warning"
 	},
@@ -825,7 +825,7 @@
 /area/shuttle/escape)
 "bP" = (
 /obj/structure/reagent_dispensers/watertank,
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	icon_state = "floorgrime"
 	},
 /area/shuttle/escape)
@@ -935,7 +935,7 @@
 /obj/item/clothing/suit/fire/firefighter,
 /obj/item/clothing/mask/gas,
 /obj/item/clothing/head/hardhat/red,
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	dir = 4;
 	icon_state = "warning"
 	},
@@ -946,7 +946,7 @@
 	pixel_y = -30
 	},
 /obj/machinery/space_heater,
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	icon_state = "bot"
 	},
 /area/shuttle/escape)
@@ -967,7 +967,7 @@
 /obj/item/crowbar,
 /obj/item/wrench,
 /obj/item/radio,
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	icon_state = "bot"
 	},
 /area/shuttle/escape)
@@ -994,7 +994,7 @@
 	pixel_x = -3;
 	pixel_y = 2
 	},
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	icon_state = "bot"
 	},
 /area/shuttle/escape)
@@ -1007,7 +1007,7 @@
 	},
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/machinery/light,
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	icon_state = "bot"
 	},
 /area/shuttle/escape)
@@ -1016,7 +1016,7 @@
 /obj/item/clipboard,
 /obj/item/folder/yellow,
 /obj/item/pen,
-/turf/simulated/shuttle/plating{
+/turf/open/shuttle/plating{
 	icon_state = "bot"
 	},
 /area/shuttle/escape)

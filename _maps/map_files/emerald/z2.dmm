@@ -181,7 +181,7 @@
 /area/holodeck/source_burntest)
 "aB" = (
 /obj/machinery/door/airlock/shuttle,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/centcom/evac)
 "aC" = (
 /turf/open/floor/holofloor{
@@ -7104,7 +7104,7 @@
 	icon_state = "propulsion";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/centcom/evac)
 "rK" = (
 /turf/unsimulated/wall/splashscreen,
@@ -7115,7 +7115,7 @@
 	icon_state = "propulsion_r";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/centcom/evac)
 "rM" = (
 /turf/closed/shuttle/wall{
@@ -7130,7 +7130,7 @@
 	icon_state = "propulsion_l";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/centcom/evac)
 "rO" = (
 /obj/docking_port/stationary{
@@ -7168,7 +7168,7 @@
 	icon_state = "heater";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/centcom/evac)
 "rS" = (
 /turf/closed/shuttle/wall{
@@ -7210,7 +7210,7 @@
 	},
 /area/centcom/evac)
 "rY" = (
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
@@ -7262,7 +7262,7 @@
 	},
 /area/centcom/evac)
 "se" = (
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /turf/closed/shuttle/wall{
 	dir = 3;
 	icon_state = "swall_f10";
@@ -10549,7 +10549,7 @@
 	},
 /area/admin)
 "yv" = (
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/centcom/evac)
 "yw" = (
 /obj/machinery/light{
@@ -10722,7 +10722,7 @@
 /obj/machinery/door/airlock/maintenance_hatch{
 	req_access_txt = "106"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/centcom/evac)
 "yU" = (
 /obj/machinery/computer/secure_data,

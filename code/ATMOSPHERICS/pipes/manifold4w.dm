@@ -131,8 +131,8 @@
 	// 1: 1-4 nodes exist, we continue existing
 	return 1
 
-/obj/machinery/atmospherics/pipe/manifold4w/hide(var/i)
-	if(level == 1 && istype(loc, /turf/simulated))
+/obj/machinery/atmospherics/pipe/manifold4w/hide(i)
+	if(level == 1 && isopenturf(loc))
 		invisibility = i ? 101 : 0
 
 /obj/machinery/atmospherics/pipe/manifold4w/atmos_init()

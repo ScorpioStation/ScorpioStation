@@ -4609,7 +4609,7 @@
 /area/awaymission)
 "kI" = (
 /obj/machinery/door/unpowered/shuttle,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission)
 "kJ" = (
 /turf/closed/shuttle/wall{
@@ -4678,14 +4678,14 @@
 	icon_state = "heater";
 	dir = 4
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission)
 "kV" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 4;
 	icon_state = "propulsion"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission)
 "kW" = (
 /turf/closed/shuttle/wall{
@@ -4706,7 +4706,7 @@
 	dir = 4;
 	icon_state = "propulsion"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/space/nearstation)
 "la" = (
 /obj/effect/decal/remains/human,

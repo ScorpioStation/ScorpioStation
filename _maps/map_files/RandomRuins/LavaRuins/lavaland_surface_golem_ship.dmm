@@ -8,23 +8,23 @@
 "ac" = (
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/shuttle,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/freegolem)
 "ad" = (
 /obj/structure/closet/crate/golemgear,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/freegolem)
 "ae" = (
 /obj/item/storage/toolbox/mechanical,
 /obj/item/reagent_containers/spray/cleaner,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/freegolem)
 "af" = (
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/freegolem)
 "ag" = (
 /obj/structure/reagent_dispensers/watertank/high,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/freegolem)
 "ah" = (
 /obj/structure/shuttle/engine/heater{
@@ -34,22 +34,22 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/freegolem)
 "ai" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 4;
 	icon_state = "burst_l"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/freegolem)
 "aj" = (
 /obj/machinery/light/small,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/freegolem)
 "ak" = (
 /obj/structure/reagent_dispensers/watertank,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/freegolem)
 "al" = (
 /obj/structure/table/wood,
@@ -156,7 +156,7 @@
 	icon_state = "16"
 	},
 /obj/structure/grille,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/freegolem)
 "aC" = (
 /obj/structure/window/reinforced{
@@ -220,7 +220,7 @@
 	icon_state = "15"
 	},
 /obj/structure/grille,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/freegolem)
 "aI" = (
 /obj/structure/window/reinforced{
@@ -357,15 +357,15 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/freegolem)
 "bb" = (
 /obj/structure/reagent_dispensers/fueltank,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/freegolem)
 "bc" = (
 /obj/structure/ore_box,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/shuttle/freegolem)
 "be" = (
 /obj/structure/extinguisher_cabinet{

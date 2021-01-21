@@ -123,7 +123,7 @@
 
 /obj/effect/anomaly/pyro/anomalyEffect()
 	..()
-	var/turf/simulated/T = get_turf(src)
+	var/turf/open/T = get_turf(src)
 	if(istype(T))
 		T.atmos_spawn_air(LINDA_SPAWN_HEAT | LINDA_SPAWN_TOXINS, 3)
 
@@ -181,7 +181,7 @@
 			step_towards(M,src)
 
 	//Damaging the turf
-	if( T && istype(T,/turf/simulated) && prob(turf_removal_chance) )
+	if( T && isopenturf(T) && prob(turf_removal_chance) )
 		T.ex_act(ex_act_force)
 	return
 
@@ -200,7 +200,7 @@
 
 /obj/effect/anomaly/atmos/anomalyEffect()
 	..()
-	var/turf/simulated/T = get_turf(src)
+	var/turf/open/T = get_turf(src)
 	if(istype(T))
 		var/flag
 		switch(gas_type)

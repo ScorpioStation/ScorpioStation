@@ -199,7 +199,7 @@
 
 	if(target in view(user.client.view, get_turf(user)))
 
-		var/turf/simulated/T = get_turf(target)
+		var/turf/open/T = get_turf(target)
 		if(!istype(T))
 			return
 		if(!istype(T, turf_type))
