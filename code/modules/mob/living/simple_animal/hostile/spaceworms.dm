@@ -145,16 +145,16 @@
 	currentlyEating = noms
 
 	var/nomDelay = 25
-	var/turf/simulated/wall/W
+	var/turf/closed/wall/W
 
 	if(noms in totalWormSegments)
 		return //Trying to eat part of self.
 
 	if(istype(noms, /turf))
-		if(istype(noms, /turf/simulated/wall))
+		if(istype(noms, /turf/closed/wall))
 			W = noms
 			nomDelay *= 2
-			if(istype(W, /turf/simulated/wall/r_wall))
+			if(istype(W, /turf/closed/wall/r_wall))
 				nomDelay *= 2
 		else
 			return

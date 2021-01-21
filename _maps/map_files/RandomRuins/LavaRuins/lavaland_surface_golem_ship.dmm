@@ -3,7 +3,7 @@
 /turf/template_noop,
 /area/template_noop)
 "ab" = (
-/turf/simulated/wall/mineral/titanium,
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/freegolem)
 "ac" = (
 /obj/structure/fans/tiny,
@@ -86,7 +86,7 @@
 	},
 /area/shuttle/freegolem)
 "aq" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc2";
 	dir = 2
 	},
@@ -117,7 +117,7 @@
 	},
 /area/shuttle/freegolem)
 "av" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -143,7 +143,7 @@
 	},
 /area/shuttle/freegolem)
 "az" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc1";
 	dir = 2
 	},
@@ -177,7 +177,7 @@
 	},
 /area/shuttle/freegolem)
 "aE" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -253,7 +253,7 @@
 	},
 /area/shuttle/freegolem)
 "aK" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall13";
 	icon_state = "swall13";
 	dir = 2
@@ -267,7 +267,7 @@
 	},
 /area/shuttle/freegolem)
 "aM" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall11";
 	icon_state = "swall11";
 	dir = 2
@@ -297,12 +297,12 @@
 	},
 /area/shuttle/freegolem)
 "aR" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc4"
 	},
 /area/shuttle/freegolem)
 "aS" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall4";
 	dir = 2
 	},
@@ -377,13 +377,13 @@
 	},
 /area/shuttle/freegolem)
 "bf" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc3";
 	dir = 2
 	},
 /area/shuttle/freegolem)
 "bh" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall14";
 	dir = 2

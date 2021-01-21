@@ -288,8 +288,8 @@ Gunshots/explosions/opening doors/less rare audio (done)
 	set waitfor = FALSE
 	..()
 	target = C
-	var/turf/simulated/wall/wall
-	for(var/turf/simulated/wall/W in range(7, target))
+	var/turf/closed/wall/wall
+	for(var/turf/closed/wall/W in range(7, target))
 		wall = W
 		break
 	if(!wall)

@@ -36,7 +36,7 @@
 /turf/space,
 /area/awaymission/northblock)
 "aj" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/northblock)
 "ak" = (
 /obj/structure/lattice,
@@ -142,13 +142,13 @@
 /turf/open/floor/plasteel,
 /area/awaymission/northblock)
 "aC" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/awaymission/syndishuttle)
 "aD" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -207,7 +207,7 @@
 /area/awaymission/syndishuttle)
 "aQ" = (
 /turf/open/floor/plating/airless,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "diagonalWall3"
 	},
 /area/awaymission/syndishuttle)
@@ -248,17 +248,17 @@
 /area/awaymission/syndishuttle)
 "aY" = (
 /turf/simulated/shuttle/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "diagonalWall3"
 	},
 /area/awaymission/syndishuttle)
 "aZ" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/space/nearstation)
 "ba" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/space/nearstation)
 "bb" = (
 /obj/machinery/door/airlock/engineering,
@@ -372,7 +372,7 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/research)
 "bx" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaymission/research)
 "by" = (
 /obj/machinery/portable_atmospherics/canister/toxins,
@@ -417,7 +417,7 @@
 /area/awaymission/northblock)
 "bE" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -536,7 +536,7 @@
 /area/awaymission/syndishuttle)
 "bW" = (
 /turf/simulated/shuttle/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
@@ -771,7 +771,7 @@
 /area/awaymission/research)
 "cD" = (
 /turf/open/floor/plating/airless,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
@@ -1433,7 +1433,7 @@
 	},
 /area/awaymission/research)
 "ea" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/research)
 "eb" = (
 /obj/structure/window/reinforced{
@@ -2223,7 +2223,7 @@
 	},
 /area/awaymission/arrivalblock)
 "fI" = (
-/turf/simulated/wall/cult,
+/turf/closed/wall/cult,
 /area/awaymission/midblock)
 "fJ" = (
 /obj/structure/window/reinforced,
@@ -2248,14 +2248,14 @@
 /area/awaymission/midblock)
 "fL" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
 	},
 /area/awaymission/arrivalblock)
 "fM" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall14";
 	dir = 2
@@ -2293,7 +2293,7 @@
 /area/awaymission/arrivalblock)
 "fQ" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 3;
 	icon_state = "swall_f10";
 	layer = 2;
@@ -2330,7 +2330,7 @@
 /turf/open/floor/plasteel/airless,
 /area/awaymission/midblock)
 "fU" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/midblock)
 "fV" = (
 /obj/structure/chair{
@@ -2362,14 +2362,14 @@
 /turf/open/floor/plating,
 /area/awaymission/midblock)
 "fZ" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
 	},
 /area/awaymission/arrivalblock)
 "ga" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall1";
 	icon_state = "swall1";
 	dir = 2
@@ -2553,7 +2553,7 @@
 /turf/simulated/shuttle/plating,
 /area/awaymission/arrivalblock)
 "gz" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/arrivalblock)
 "gA" = (
 /obj/machinery/light/small{
@@ -2911,7 +2911,7 @@
 /area/awaymission/arrivalblock)
 "hv" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -3068,7 +3068,7 @@
 /area/awaymission/midblock)
 "hR" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
@@ -3500,7 +3500,7 @@
 /turf/open/floor/plasteel/airless,
 /area/awaymission/southblock)
 "iY" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/southblock)
 "iZ" = (
 /obj/structure/window/reinforced{
@@ -3679,7 +3679,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/southblock)
 "ju" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/gateroom)
 "jv" = (
 /obj/structure/window/reinforced{
@@ -4369,7 +4369,7 @@
 /turf/open/floor/plating,
 /area/awaymission/southblock)
 "lq" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2

@@ -22,7 +22,7 @@
 	},
 /area/ruin/unpowered)
 "ae" = (
-/turf/simulated/wall/mineral/titanium,
+/turf/closed/wall/mineral/titanium,
 /area/ruin/unpowered)
 "af" = (
 /obj/structure/computerframe,
@@ -495,7 +495,7 @@
 /turf/simulated/shuttle/plating,
 /area/ruin/unpowered)
 "bH" = (
-/turf/simulated/wall/mineral/titanium,
+/turf/closed/wall/mineral/titanium,
 /area/space/nearstation)
 "bI" = (
 /obj/structure/window/reinforced,

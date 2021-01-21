@@ -7,7 +7,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 		var/list/gas_info = new(7)
 		var/datum/gas/gas = gas_path
 
-		gas_info[META_GAS_SPECIFIC_HEAT] = initIal(gas.specific_heat)
+		gas_info[META_GAS_SPECIFIC_HEAT] = initial(gas.specific_heat)
 		gas_info[META_GAS_NAME] = initial(gas.name)
 		gas_info[META_GAS_OVERLAY] = initial(gas.gas_overlay)
 		gas_info[META_GAS_ID] = initial(gas.id)

@@ -27,7 +27,7 @@
 /turf/open/floor/plating/airless,
 /area/derelict/teleporter)
 "g" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/derelict/teleporter)
 "h" = (
 /obj/structure/grille,
@@ -45,7 +45,7 @@
 /turf/open/floor/plating/airless,
 /area/derelict/teleporter)
 "j" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/derelict/teleporter)
 "k" = (
 /obj/structure/girder,
@@ -164,7 +164,7 @@
 /area/derelict/teleporter)
 "A" = (
 /obj/structure/sign/vacuum,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/derelict/teleporter)
 "B" = (
 /obj/machinery/power/apc/noalarm{

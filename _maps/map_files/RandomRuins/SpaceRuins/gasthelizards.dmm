@@ -7,7 +7,7 @@
 /turf/template_noop,
 /area/template_noop)
 "c" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/unpowered)
 "d" = (
 /obj/machinery/light{

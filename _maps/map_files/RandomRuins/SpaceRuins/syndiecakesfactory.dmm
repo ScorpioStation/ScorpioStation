@@ -100,7 +100,7 @@
 	icon_state = "1-2";
 	tag = ""
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/unpowered)
 "ls" = (
 /obj/structure/lattice,
@@ -257,7 +257,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "zo" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/space)
 "zt" = (
 /obj/item/stack/sheet/metal,
@@ -287,7 +287,7 @@
 /area/template_noop)
 "AJ" = (
 /obj/effect/spawner/random_spawners/wall_rusted_probably,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/space)
 "BG" = (
 /obj/machinery/door/airlock/mining/glass{
@@ -328,7 +328,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "EJ" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/unpowered)
 "Fw" = (
 /obj/item/stack/cable_coil/cut,
@@ -449,7 +449,7 @@
 /area/ruin)
 "QI" = (
 /obj/effect/spawner/random_spawners/wall_rusted_probably,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin)
 "Ra" = (
 /obj/machinery/power/terminal{

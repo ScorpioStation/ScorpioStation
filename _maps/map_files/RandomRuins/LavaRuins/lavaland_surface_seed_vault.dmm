@@ -277,7 +277,7 @@
 /turf/open/floor/plasteel/freezer,
 /area/ruin/powered/seedvault)
 "Q" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/powered/seedvault)
 "R" = (
 /obj/machinery/light{
@@ -309,7 +309,7 @@
 /area/ruin/powered/seedvault)
 "V" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/powered/seedvault)
 "W" = (
 /obj/structure/disposalpipe/segment{

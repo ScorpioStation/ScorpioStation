@@ -133,7 +133,7 @@
 				brass_floor = TRUE
 			if(W.use(2 - brass_floor))
 				if(anchored)
-					T.ChangeTurf(/turf/simulated/wall/clockwork)
+					T.ChangeTurf(/turf/closed/wall/clockwork)
 				else
 					T.ChangeTurf(/turf/open/floor/clockwork)
 					new /obj/structure/falsewall/brass(T)

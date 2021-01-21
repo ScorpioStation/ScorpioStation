@@ -7,14 +7,14 @@
 /turf/space,
 /area/space/nearstation)
 "ac" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/hallway/port)
 "ad" = (
 /obj/structure/lattice,
 /turf/space,
 /area/constructionsite/hallway/port)
 "ae" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/hallway/starboard)
 "af" = (
 /turf/space,
@@ -48,7 +48,7 @@
 /turf/open/floor/plating/airless,
 /area/constructionsite/hallway/starboard)
 "am" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/bridge)
 "an" = (
 /turf/space,
@@ -109,7 +109,7 @@
 /turf/open/floor/plating/airless,
 /area/constructionsite/bridge)
 "ax" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/hallway/fore)
 "ay" = (
 /obj/machinery/light{
@@ -352,7 +352,7 @@
 /turf/open/floor/plasteel/airless,
 /area/constructionsite/hallway/starboard)
 "bb" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/science)
 "bc" = (
 /obj/machinery/door/airlock/maintenance_hatch,
@@ -441,7 +441,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/science)
 "bp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -553,7 +553,7 @@
 /turf/open/floor/plasteel/airless,
 /area/constructionsite/hallway/starboard)
 "bC" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/space/nearstation)
 "bD" = (
 /turf/open/floor/plating/airless,
@@ -708,7 +708,7 @@
 /turf/open/floor/plasteel/airless,
 /area/constructionsite/hallway/port)
 "bT" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/hallway/center)
 "bU" = (
 /obj/structure/lattice,
@@ -958,10 +958,10 @@
 /turf/open/floor/plating/airless,
 /area/engiestation/solars)
 "cC" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engiestation)
 "cD" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/ai)
 "cE" = (
 /obj/machinery/door/airlock/highsecurity{
@@ -1049,7 +1049,7 @@
 /turf/open/floor/plating/airless,
 /area/constructionsite/ai)
 "cW" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engiestation/solars)
 "cX" = (
 /obj/effect/spawner/window/reinforced,
@@ -1065,10 +1065,10 @@
 /turf/open/floor/plating,
 /area/engiestation/solars)
 "cZ" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/engiestation/solars)
 "da" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/engiestation)
 "db" = (
 /obj/machinery/door/airlock/engineering{
@@ -1080,7 +1080,7 @@
 	},
 /area/engiestation)
 "dc" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/space/nearstation)
 "dd" = (
 /obj/machinery/power/solar,
@@ -2128,14 +2128,14 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engiestation)
 "fs" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/engiestation)
 "ft" = (
 /obj/machinery/door/airlock{
@@ -2218,7 +2218,7 @@
 /area/constructionsite/ai)
 "fB" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engiestation)
 "fC" = (
 /obj/structure/toilet{
@@ -2322,7 +2322,7 @@
 /area/engiestation)
 "fL" = (
 /obj/structure/mirror,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/engiestation)
 "fM" = (
 /obj/machinery/computer/station_alert,
@@ -2581,7 +2581,7 @@
 /turf/open/floor/plating,
 /area/engiestation)
 "gt" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/hallway/engcore)
 "gu" = (
 /turf/open/floor/plating/airless,
@@ -2673,7 +2673,7 @@
 	},
 /area/constructionsite/medical)
 "gG" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/medical)
 "gH" = (
 /obj/machinery/sleeper{
@@ -2699,7 +2699,7 @@
 /turf/open/floor/plasteel/airless,
 /area/constructionsite/atmospherics)
 "gL" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/hallway/aft)
 "gM" = (
 /obj/structure/lattice,
@@ -2751,7 +2751,7 @@
 /turf/open/floor/plasteel/airless,
 /area/constructionsite/hallway/engcore)
 "gR" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/atmospherics)
 "gS" = (
 /turf/open/floor/plasteel/airless,
@@ -2848,7 +2848,7 @@
 	icon_state = "4-8";
 	pixel_x = 0
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/medical)
 "hc" = (
 /obj/structure/cable{
@@ -2902,7 +2902,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/medical)
 "hj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3023,7 +3023,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/atmospherics)
 "hB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3163,7 +3163,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/atmospherics)
 "hQ" = (
 /obj/machinery/atmospherics/unary/outlet_injector{
@@ -3500,7 +3500,7 @@
 /turf/space,
 /area/constructionsite/storage)
 "iz" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/storage)
 "iA" = (
 /obj/machinery/alarm/monitor{
@@ -3667,7 +3667,7 @@
 /area/constructionsite/hallway/aft)
 "iR" = (
 /obj/structure/sign/vacuum,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/hallway/aft)
 "iS" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -3691,7 +3691,7 @@
 /turf/open/floor/plating/airless,
 /area/constructionsite/hallway/aft)
 "iU" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/engineering)
 "iV" = (
 /obj/effect/spawner/window/reinforced,
@@ -3998,7 +3998,7 @@
 /area/solar/constructionsite)
 "jM" = (
 /obj/structure/sign/vacuum,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/constructionsite/engineering)
 "jN" = (
 /obj/machinery/power/smes{

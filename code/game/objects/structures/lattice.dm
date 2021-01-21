@@ -12,7 +12,7 @@
 	var/number_of_rods = 1
 	canSmoothWith = list(/obj/structure/lattice,
 						/turf/open/floor,
-						/turf/simulated/wall,
+						/turf/closed/wall,
 						/obj/structure/falsewall)
 	smooth = SMOOTH_MORE
 
@@ -103,7 +103,7 @@
 	icon = 'icons/obj/smooth_structures/catwalk_clockwork.dmi'
 	canSmoothWith = list(/obj/structure/lattice,
 	/turf/open/floor,
-	/turf/simulated/wall,
+	/turf/closed/wall,
 	/obj/structure/falsewall)
 	smooth = SMOOTH_MORE
 

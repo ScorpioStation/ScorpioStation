@@ -103,7 +103,7 @@
 					TYPE_NORMAL)
 	area_whitelist = list(/area/quartermaster,
 						/area/maintenance/disposal)
-	turf_whitelist = list(/turf/simulated/wall,
+	turf_whitelist = list(/turf/closed/wall,
 						/turf/open/floor/mineral)
 
 /datum/mob_type/bug

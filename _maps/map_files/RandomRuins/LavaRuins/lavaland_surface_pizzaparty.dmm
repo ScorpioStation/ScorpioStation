@@ -10,7 +10,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "d" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/unpowered/misc_lavaruin)
 "e" = (
 /obj/effect/decal/cleanable/dirt,

@@ -581,7 +581,7 @@
 /obj/machinery/porta_turret/syndicate/pod,
 /turf/open/floor/pod,
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
@@ -590,7 +590,7 @@
 /obj/machinery/porta_turret/syndicate/pod,
 /turf/open/floor/pod,
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -599,7 +599,7 @@
 /obj/machinery/porta_turret/syndicate/pod,
 /turf/open/floor/pod,
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-diagonalWall3";
 	icon_state = "diagonalWall3";
 	dir = 2
@@ -609,7 +609,7 @@
 /obj/machinery/porta_turret/syndicate/pod,
 /turf/open/floor/pod,
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -1365,14 +1365,14 @@
 /area/ninja/holding)
 "ef" = (
 /turf/unsimulated/floor/snow,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
 /area/syndicate_mothership)
 "eg" = (
 /turf/unsimulated/floor/snow,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -2112,7 +2112,7 @@
 /area/wizard_station)
 "ge" = (
 /turf/unsimulated/floor/snow,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "diagonalWall3"
 	},
 /area/syndicate_mothership)
@@ -2134,7 +2134,7 @@
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -2164,7 +2164,7 @@
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-diagonalWall3";
 	icon_state = "diagonalWall3";
 	dir = 2
@@ -2272,7 +2272,7 @@
 /area/ninja/outpost)
 "gB" = (
 /turf/unsimulated/floor/snow,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -2841,7 +2841,7 @@
 	},
 /area/syndicate_mothership)
 "it" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/syndicate_mothership)
@@ -2850,7 +2850,7 @@
 /turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "iv" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/assault_pod)
@@ -3142,7 +3142,7 @@
 /area/syndicate_mothership)
 "jj" = (
 /obj/machinery/computer/shuttle/syndicate/drop_pod,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/assault_pod)
@@ -4963,7 +4963,7 @@
 	},
 /area/centcom/control)
 "nV" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
@@ -4989,19 +4989,19 @@
 /turf/space,
 /area/space)
 "od" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s6";
 	dir = 2
 	},
 /area/shuttle/escape)
 "oe" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s10";
 	dir = 2
 	},
 /area/shuttle/escape)
 "of" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s6";
 	dir = 2
 	},
@@ -5012,14 +5012,14 @@
 	},
 /area/shuttle/escape)
 "oh" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/shuttle/gamma/space)
 "oi" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s10";
 	dir = 2
 	},
@@ -5159,14 +5159,14 @@
 	},
 /area/centcom/specops)
 "ox" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
 	},
 /area/shuttle/escape)
 "oy" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -5639,13 +5639,13 @@
 	},
 /area/centcom/specops)
 "px" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s5";
 	dir = 2
 	},
 /area/shuttle/gamma/space)
 "py" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s9";
 	dir = 2
 	},
@@ -5825,13 +5825,13 @@
 	},
 /area/centcom/control)
 "pT" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s5";
 	dir = 2
 	},
 /area/shuttle/escape)
 "pU" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s9";
 	dir = 2
 	},
@@ -6593,7 +6593,7 @@
 /turf/unsimulated/floor,
 /area/start)
 "rI" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_s6";
 	icon_state = "swall_s6";
 	dir = 2
@@ -6619,7 +6619,7 @@
 /turf/simulated/shuttle/plating,
 /area/centcom/evac)
 "rM" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_s10";
 	icon_state = "swall_s10";
 	dir = 2
@@ -6656,7 +6656,7 @@
 /turf/space,
 /area/space)
 "rQ" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -6672,21 +6672,21 @@
 /turf/simulated/shuttle/plating,
 /area/centcom/evac)
 "rS" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall7";
 	icon_state = "swall7";
 	dir = 2
 	},
 /area/centcom/evac)
 "rT" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/centcom/evac)
 "rU" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall11";
 	icon_state = "swall11";
 	dir = 2
@@ -6715,7 +6715,7 @@
 /area/space)
 "rX" = (
 /turf/open/shuttle/floor,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
@@ -6723,7 +6723,7 @@
 /area/centcom/evac)
 "rY" = (
 /turf/simulated/shuttle/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -6767,7 +6767,7 @@
 /area/centcom/evac)
 "sd" = (
 /turf/open/shuttle/floor,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -6775,7 +6775,7 @@
 /area/centcom/evac)
 "se" = (
 /turf/simulated/shuttle/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 3;
 	icon_state = "swall_f10";
 	layer = 2;
@@ -6803,7 +6803,7 @@
 /turf/open/shuttle/floor,
 /area/centcom/evac)
 "sh" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall1";
 	icon_state = "swall1";
 	dir = 2
@@ -6825,14 +6825,14 @@
 	},
 /area/centcom/evac)
 "sk" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_s5";
 	icon_state = "swall_s5";
 	dir = 2
 	},
 /area/centcom/evac)
 "sl" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_s9";
 	icon_state = "swall_s9";
 	dir = 2
@@ -7316,7 +7316,7 @@
 	},
 /area/centcom/evac)
 "tr" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall14";
 	dir = 2
@@ -8771,7 +8771,7 @@
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-diagonalWall3 (EAST)";
 	icon_state = "diagonalWall3";
 	dir = 4
@@ -8782,7 +8782,7 @@
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-diagonalWall3";
 	icon_state = "diagonalWall3";
 	dir = 2
@@ -11812,7 +11812,7 @@
 	},
 /area/holodeck/source_thunderdomecourt)
 "FL" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/adminconstruction)
 "Ga" = (
 /obj/machinery/computer/shuttle/ert,

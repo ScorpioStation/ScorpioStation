@@ -3,7 +3,7 @@
 /turf/space,
 /area/space)
 "ab" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/example)
 "ac" = (
 /turf/open/floor/plasteel,

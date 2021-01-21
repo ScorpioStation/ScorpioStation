@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/simulated/wall/mineral/titanium/survival,
+/turf/closed/wall/mineral/titanium/survival,
 /area/survivalpod)
 "b" = (
 /obj/structure/sign/mining/survival{
@@ -8,7 +8,7 @@
 	icon_state = "survival";
 	dir = 1
 	},
-/turf/simulated/wall/mineral/titanium/survival,
+/turf/closed/wall/mineral/titanium/survival,
 /area/survivalpod)
 "c" = (
 /obj/structure/fans,
@@ -26,7 +26,7 @@
 /obj/structure/sign/mining/survival{
 	dir = 8
 	},
-/turf/simulated/wall/mineral/titanium/survival,
+/turf/closed/wall/mineral/titanium/survival,
 /area/survivalpod)
 "g" = (
 /obj/machinery/sleeper/survival_pod,
@@ -49,7 +49,7 @@
 	icon_state = "survival";
 	dir = 4
 	},
-/turf/simulated/wall/mineral/titanium/survival,
+/turf/closed/wall/mineral/titanium/survival,
 /area/survivalpod)
 "k" = (
 /obj/structure/table/survival_pod,
@@ -64,7 +64,7 @@
 /area/survivalpod)
 "m" = (
 /obj/structure/sign/mining/survival,
-/turf/simulated/wall/mineral/titanium/survival,
+/turf/closed/wall/mineral/titanium/survival,
 /area/survivalpod)
 "n" = (
 /obj/structure/fans/tiny,
@@ -73,7 +73,7 @@
 /area/survivalpod)
 "o" = (
 /obj/structure/sign/mining,
-/turf/simulated/wall/mineral/titanium/survival,
+/turf/closed/wall/mineral/titanium/survival,
 /area/survivalpod)
 
 (1,1,1) = {"

@@ -3,7 +3,7 @@
 	icon_state = "rockvault"
 	smooth = SMOOTH_FALSE
 
-/turf/simulated/wall/vault
+/turf/closed/wall/vault
 	icon = 'icons/turf/walls.dmi'
 	icon_state = "rockvault"
 	smooth = SMOOTH_FALSE

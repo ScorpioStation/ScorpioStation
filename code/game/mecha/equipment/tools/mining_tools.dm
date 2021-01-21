@@ -53,12 +53,12 @@
 /turf/proc/drill_act(obj/item/mecha_parts/mecha_equipment/drill/drill)
 	return
 
-/turf/simulated/wall/drill_act(obj/item/mecha_parts/mecha_equipment/drill/drill)
+/turf/closed/wall/drill_act(obj/item/mecha_parts/mecha_equipment/drill/drill)
 	if(drill.do_after_mecha(src, 60 / drill.drill_level))
 		drill.log_message("Drilled through [src]")
 		dismantle_wall(TRUE, FALSE)
 
-/turf/simulated/wall/r_wall/drill_act(obj/item/mecha_parts/mecha_equipment/drill/drill)
+/turf/closed/wall/r_wall/drill_act(obj/item/mecha_parts/mecha_equipment/drill/drill)
 	if(drill.drill_level >= DRILL_HARDENED)
 		if(drill.do_after_mecha(src, 120 / drill.drill_level))
 			drill.log_message("Drilled through [src]")

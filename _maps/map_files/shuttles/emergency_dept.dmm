@@ -4,7 +4,7 @@
 /area/space)
 "ab" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -16,7 +16,7 @@
 /area/shuttle/escape)
 "ad" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -113,7 +113,7 @@
 	},
 /area/shuttle/escape)
 "aq" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -159,13 +159,13 @@
 	},
 /area/shuttle/escape)
 "av" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/shuttle/escape)
 "aw" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall13";
 	dir = 2
 	},
@@ -221,7 +221,7 @@
 /area/shuttle/escape)
 "aD" = (
 /obj/machinery/status_display,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -302,7 +302,7 @@
 	dir = 1;
 	pixel_y = 7
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -315,7 +315,7 @@
 	},
 /area/shuttle/escape)
 "aP" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall7";
 	icon_state = "swall7";
 	dir = 2
@@ -369,7 +369,7 @@
 /turf/open/shuttle/floor4,
 /area/shuttle/escape)
 "aZ" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall14";
 	dir = 2
@@ -383,7 +383,7 @@
 /area/shuttle/escape)
 "bb" = (
 /obj/structure/sign/greencross,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 2;
 	icon_state = "swallc3"
 	},
@@ -526,7 +526,7 @@
 /area/shuttle/escape)
 "bq" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -540,13 +540,13 @@
 	},
 /area/shuttle/escape)
 "bs" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall11";
 	dir = 2
 	},
 /area/shuttle/escape)
 "bt" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall7";
 	dir = 2
 	},
@@ -560,7 +560,7 @@
 /area/shuttle/escape)
 "bv" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -608,7 +608,7 @@
 /area/shuttle/escape)
 "bC" = (
 /obj/structure/sign/directions/engineering,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -648,7 +648,7 @@
 /area/shuttle/escape)
 "bG" = (
 /obj/machinery/status_display,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall14";
 	dir = 2
@@ -777,14 +777,14 @@
 /area/shuttle/escape)
 "bU" = (
 /obj/structure/sign/directions/science,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/shuttle/escape)
 "bV" = (
 /obj/structure/sign/directions/cargo,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -800,7 +800,7 @@
 /area/shuttle/escape)
 "bX" = (
 /obj/machinery/ai_status_display,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -840,7 +840,7 @@
 /area/shuttle/escape)
 "cc" = (
 /obj/structure/extinguisher_cabinet,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -856,7 +856,7 @@
 	},
 /area/shuttle/escape)
 "cf" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc4"
 	},
 /area/shuttle/escape)
@@ -927,7 +927,7 @@
 	},
 /area/shuttle/escape)
 "cH" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/escape)
@@ -975,7 +975,7 @@
 /area/shuttle/escape)
 "Qf" = (
 /obj/machinery/defibrillator_mount/loaded,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},

@@ -11,7 +11,7 @@
 /turf/open/floor/plating,
 /area/ruin/unpowered)
 "d" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/unpowered)
 "e" = (
 /obj/structure/table/reinforced,

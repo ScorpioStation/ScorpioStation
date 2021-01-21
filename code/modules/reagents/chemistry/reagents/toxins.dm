@@ -1023,7 +1023,7 @@
 	update_flags |= M.adjustToxLoss(lethality, FALSE)
 	return ..() | update_flags
 
-/datum/reagent/glyphosate/reaction_turf(turf/simulated/wall/W, volume) // Clear off wallrot fungi
+/datum/reagent/glyphosate/reaction_turf(turf/closed/wall/W, volume) // Clear off wallrot fungi
 	if(istype(W) && W.rotting)
 		for(var/obj/effect/overlay/wall_rot/WR in W)
 			qdel(WR)

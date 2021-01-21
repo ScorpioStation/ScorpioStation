@@ -236,7 +236,7 @@
 	desc = "A metallic container containing tasty paint."
 	var/capped = 1
 	instant = 1
-	validSurfaces = list(/turf/open/floor,/turf/simulated/wall)
+	validSurfaces = list(/turf/open/floor,/turf/closed/wall)
 
 /obj/item/toy/crayon/spraycan/New()
 	..()

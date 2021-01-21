@@ -368,7 +368,7 @@
 					return FALSE
 				playsound(loc, usesound, 50, 1)
 				var/turf/AT = A
-				AT.ChangeTurf(/turf/simulated/wall)
+				AT.ChangeTurf(/turf/closed/wall)
 				return TRUE
 			return FALSE
 		to_chat(user, "<span class='warning'>ERROR! Not enough matter in unit to construct this wall!</span>")
@@ -426,7 +426,7 @@
  */
 /obj/item/rcd/proc/mode_decon(atom/A, mob/user)
 	if(iswallturf(A))
-		if(istype(A, /turf/simulated/wall/r_wall) && !canRwall)
+		if(istype(A, /turf/closed/wall/r_wall) && !canRwall)
 			return FALSE
 		if(checkResource(5, user))
 			to_chat(user, "Deconstructing Wall...")

@@ -9,10 +9,10 @@
 /turf/closed/mineral/random/labormineral,
 /area/awaymission/UO71/outside)
 "ac" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/plaza)
 "ad" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/plaza)
 "ae" = (
 /obj/effect/decal/cleanable/dirt,
@@ -700,11 +700,11 @@
 /area/awaymission/UO71/plaza)
 "bV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/plaza)
 "bW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/plaza)
 "bX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -2079,14 +2079,14 @@
 /turf/open/floor/plasteel,
 /area/awaymission/UO71/plaza)
 "fa" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/outside)
 "fb" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/centralhall)
 "fc" = (
 /obj/machinery/smartfridge,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/centralhall)
 "fd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -2095,7 +2095,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/UO71/plaza)
 "fe" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/centralhall)
 "ff" = (
 /obj/structure/disposalpipe/segment{
@@ -2120,7 +2120,7 @@
 /area/awaymission/UO71/plaza)
 "fh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/centralhall)
 "fi" = (
 /obj/structure/table/reinforced,
@@ -2376,19 +2376,19 @@
 /turf/open/floor/plating,
 /area/awaymission/UO71/centralhall)
 "fL" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/gateway)
 "fM" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/gateway)
 "fN" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/science)
 "fO" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/science)
 "fP" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaymission/UO71/prince)
 "fQ" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
@@ -2451,7 +2451,7 @@
 /area/awaymission/UO71/centralhall)
 "fX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/centralhall)
 "fY" = (
 /obj/structure/sink/kitchen{
@@ -3579,7 +3579,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/gateway)
 "iy" = (
 /obj/structure/grille,
@@ -3601,7 +3601,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/gateway)
 "iB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -3997,7 +3997,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/UO71/gateway)
 "jG" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaymission/UO71/science)
 "jH" = (
 /turf/open/floor/plasteel,
@@ -4288,7 +4288,7 @@
 	desc = "A warning sign which reads 'DANGER - LETHAL BIOHAZARDS WITHIN'";
 	name = "CONTAINMENT AREA"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/science)
 "ki" = (
 /obj/structure/dispenser/oxygen,
@@ -4307,14 +4307,14 @@
 /area/awaymission/UO71/gateway)
 "km" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/science)
 "kn" = (
 /obj/structure/sign/securearea{
 	desc = "A warning sign which reads 'DANGER - LETHAL BIOHAZARDS WITHIN'";
 	name = "CONTAINMENT AREA"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaymission/UO71/science)
 "ko" = (
 /obj/effect/decal/cleanable/dirt,
@@ -4874,7 +4874,7 @@
 	},
 /area/awaymission/UO71/centralhall)
 "lt" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaymission/UO71/eng)
 "lu" = (
 /obj/structure/disposalpipe/segment{
@@ -5745,7 +5745,7 @@
 /area/awaymission/UO71/gateway)
 "mR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/science)
 "mS" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -5988,7 +5988,7 @@
 	},
 /area/awaymission/UO71/centralhall)
 "np" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/eng)
 "nq" = (
 /obj/structure/table/wood,
@@ -5998,7 +5998,7 @@
 	},
 /area/awaymission/UO71/centralhall)
 "nr" = (
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/awaymission/UO71/eng)
 "ns" = (
 /obj/structure/chair/comfy/black{
@@ -6303,7 +6303,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/UO71/centralhall)
 "nT" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/eng)
 "nU" = (
 /obj/machinery/door/firedoor,
@@ -7388,7 +7388,7 @@
 /area/awaymission/UO71/eng)
 "pB" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/science)
 "pD" = (
 /obj/structure/cable{
@@ -7554,7 +7554,7 @@
 /turf/open/floor/plating,
 /area/awaymission/UO71/eng)
 "pT" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -7574,10 +7574,10 @@
 /area/awaymission/UO71/eng)
 "pV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/medical)
 "pX" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/medical)
 "pY" = (
 /obj/structure/cable{
@@ -7597,7 +7597,7 @@
 /turf/open/floor/plating,
 /area/awaymission/UO71/eng)
 "qa" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/medical)
 "qb" = (
 /obj/structure/cable{
@@ -7663,7 +7663,7 @@
 /area/awaymission/UO71/science)
 "qh" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/centralhall)
 "qi" = (
 /obj/structure/cable{
@@ -7781,7 +7781,7 @@
 	name = "Mixed Air Tank Out"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/eng)
 "qs" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
@@ -7791,7 +7791,7 @@
 	layer = 3.3;
 	name = "Mixed Air Tank In"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/eng)
 "qt" = (
 /obj/machinery/door/airlock{
@@ -7917,7 +7917,7 @@
 /area/awaymission/UO71/eng)
 "qE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/centralhall)
 "qF" = (
 /turf/open/floor/plasteel{
@@ -8290,7 +8290,7 @@
 /area/awaymission/UO71/science)
 "rn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -8439,7 +8439,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/eng)
 "rH" = (
 /obj/machinery/firealarm{
@@ -8661,7 +8661,7 @@
 	},
 /area/awaymission/UO71/medical)
 "sa" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -8699,7 +8699,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -9132,7 +9132,7 @@
 /obj/machinery/meter{
 	layer = 3.3
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/eng)
 "sL" = (
 /obj/machinery/atmospherics/unary/vent_pump{
@@ -9164,7 +9164,7 @@
 /area/awaymission/UO71/eng)
 "sN" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -9542,7 +9542,7 @@
 	dir = 4;
 	level = 2
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/eng)
 "tx" = (
 /obj/machinery/atmospherics/unary/outlet_injector/on{
@@ -9599,7 +9599,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/science)
 "tJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -10005,10 +10005,10 @@
 	desc = "A warning sign which reads 'DANGER - LETHAL BIOHAZARDS WITHIN'";
 	name = "CONTAINMENT AREA"
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/mining)
 "ut" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/outside)
 "uu" = (
 /obj/machinery/door/firedoor,
@@ -10081,12 +10081,12 @@
 "uB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/meter,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/eng)
 "uC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/meter,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/eng)
 "uD" = (
 /obj/machinery/shower{
@@ -10305,7 +10305,7 @@
 /area/awaymission/UO71/eng)
 "uV" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/medical)
 "uW" = (
 /turf/open/floor/plating/asteroid/airless,
@@ -10383,21 +10383,21 @@
 /area/awaymission/UO71/eng)
 "vf" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/eng)
 "vg" = (
 /obj/machinery/meter{
 	layer = 3.3
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/green,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/eng)
 "vh" = (
 /obj/machinery/meter{
 	layer = 3.3
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/eng)
 "vi" = (
 /obj/structure/cable{
@@ -10440,7 +10440,7 @@
 	desc = "A warning sign which reads 'DANGER - LETHAL BIOHAZARDS WITHIN'";
 	name = "CONTAINMENT AREA"
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/mining)
 "vm" = (
 /obj/machinery/atmospherics/binary/valve{
@@ -10557,7 +10557,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/eng)
 "vB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -10709,7 +10709,7 @@
 /area/awaymission/UO71/mining)
 "vO" = (
 /obj/structure/sign/deathsposal,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/medical)
 "vP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -11026,10 +11026,10 @@
 	},
 /area/awaymission/UO71/medical)
 "wu" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/mining)
 "wv" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/mining)
 "ww" = (
 /obj/machinery/atmospherics/unary/cold_sink/freezer{
@@ -11277,7 +11277,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/mining)
 "wX" = (
 /obj/machinery/firealarm{
@@ -12047,7 +12047,7 @@
 /obj/machinery/mineral/processing_unit_console{
 	machinedir = 8
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/mining)
 "yo" = (
 /obj/structure/closet/emcloset,
@@ -12167,7 +12167,7 @@
 /obj/machinery/mineral/stacking_unit_console{
 	machinedir = 2
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/mining)
 "yD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -12344,26 +12344,26 @@
 /area/awaymission/UO71/queen)
 "yY" = (
 /obj/structure/sign/biohazard,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
 /area/awaymission/UO71/prince)
 "yZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/mining)
 "za" = (
 /obj/structure/sign/biohazard,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/mining)
 "zb" = (
 /obj/structure/sign/biohazard,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/mining)
 "zc" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -12388,11 +12388,11 @@
 /turf/closed/mineral/random/labormineral,
 /area/awaymission/UO71/queen)
 "zh" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/queen)
 "zi" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/queen)
 "zj" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -12494,11 +12494,11 @@
 /turf/open/floor/carpet,
 /area/awaymission/UO71/loot)
 "zy" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/queen)
 "zz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/queen)
 "zM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -12519,7 +12519,7 @@
 	},
 /area/awaymission/UO71/loot)
 "zP" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/bridge)
 "zQ" = (
 /obj/machinery/door/poddoor{
@@ -12722,7 +12722,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaymission/UO71/science)
 "IU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -12738,7 +12738,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaymission/UO71/prince)
 "KE" = (
 /obj/structure/spider/cocoon{
@@ -12833,7 +12833,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -12842,7 +12842,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/UO71/centralhall)
 "VA" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,

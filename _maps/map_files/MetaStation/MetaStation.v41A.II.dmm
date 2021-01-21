@@ -17,13 +17,13 @@
 "aac" = (
 /obj/machinery/porta_turret/syndicate,
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/syndicate)
 "aad" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/syndicate)
@@ -84,13 +84,13 @@
 "aah" = (
 /obj/machinery/porta_turret/syndicate,
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/syndicate)
 "aai" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -197,7 +197,7 @@
 /area/shuttle/syndicate)
 "aaw" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/syndicate)
@@ -213,7 +213,7 @@
 /area/shuttle/syndicate)
 "aay" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -257,14 +257,14 @@
 /area/space)
 "aaE" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/syndicate)
 "aaF" = (
 /obj/machinery/porta_turret/syndicate,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -348,13 +348,13 @@
 	layer = 4;
 	name = "EXTERNAL AIRLOCK"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/syndicate)
 "aaM" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -394,7 +394,7 @@
 /obj/machinery/atmospherics/unary/tank/air{
 	dir = 1
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -769,7 +769,7 @@
 /turf/space,
 /area/solar/auxport)
 "abB" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/permabrig)
 "abC" = (
 /obj/structure/table,
@@ -861,7 +861,7 @@
 "abK" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -1229,7 +1229,7 @@
 /area/security/permabrig)
 "acu" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -1241,7 +1241,7 @@
 /area/shuttle/pod_2)
 "acw" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -1321,13 +1321,13 @@
 /area/security/permabrig)
 "acG" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
 /area/space/nearstation)
 "acH" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -1349,7 +1349,7 @@
 /area/shuttle/pod_2)
 "acJ" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -1381,7 +1381,7 @@
 /turf/open/floor/plating,
 /area/security/permabrig)
 "acN" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/permabrig)
 "acO" = (
 /obj/machinery/door/poddoor{
@@ -1522,7 +1522,7 @@
 "acY" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
@@ -1917,7 +1917,7 @@
 /area/security/permabrig)
 "adJ" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
@@ -1929,7 +1929,7 @@
 	master_tag = "vox_west_control";
 	req_one_access_txt = "152"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/vox)
@@ -1947,7 +1947,7 @@
 /area/shuttle/vox)
 "adM" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -1988,7 +1988,7 @@
 	master_tag = "vox_east_control";
 	req_access_txt = "152"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/vox)
@@ -2145,7 +2145,7 @@
 /turf/space,
 /area/solar/auxstarboard)
 "aeh" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -2477,7 +2477,7 @@
 /turf/simulated/shuttle/plating/vox,
 /area/shuttle/vox)
 "aeF" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/vox)
@@ -2761,7 +2761,7 @@
 	},
 /area/security/permabrig)
 "afb" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/fitness{
 	name = "\improper Recreation Area"
 	})
@@ -2769,7 +2769,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/permabrig)
 "afd" = (
 /obj/machinery/door/poddoor{
@@ -2807,13 +2807,13 @@
 	master_tag = "vox_west_control";
 	req_one_access_txt = "152"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/vox)
 "afg" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -2868,7 +2868,7 @@
 /area/shuttle/vox)
 "afl" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/vox)
@@ -2879,7 +2879,7 @@
 	master_tag = "vox_east_control";
 	req_one_access_txt = "152"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/vox)
@@ -2941,7 +2941,7 @@
 /area/security/podbay)
 "aft" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/permabrig)
 "afu" = (
 /obj/machinery/door/poddoor{
@@ -3136,14 +3136,14 @@
 /turf/space,
 /area/solar/auxstarboard)
 "afH" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/shuttle/pod_3)
 "afI" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -3220,7 +3220,7 @@
 /area/security/permabrig)
 "afQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/permabrig)
 "afR" = (
 /obj/effect/decal/warning_stripes/north,
@@ -3538,7 +3538,7 @@
 	dir = 4;
 	initialize_directions = 11
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/permabrig)
 "agu" = (
 /obj/structure/table,
@@ -3617,17 +3617,17 @@
 	},
 /area/security/permabrig)
 "agA" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/armoury)
 "agB" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/warden)
 "agC" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/hos)
 "agD" = (
 /obj/item/radio/intercom/department/security,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/hos)
 "agE" = (
 /obj/machinery/light{
@@ -3677,7 +3677,7 @@
 /area/solar/auxstarboard)
 "agI" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -3786,7 +3786,7 @@
 /area/security/permabrig)
 "agR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/permabrig)
 "agS" = (
 /obj/machinery/door/airlock/security/glass{
@@ -3982,7 +3982,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/fitness{
 	name = "\improper Recreation Area"
 	})
@@ -4314,7 +4314,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -4679,7 +4679,7 @@
 	},
 /area/security/permabrig)
 "aid" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/podbay)
 "aie" = (
 /obj/effect/decal/warning_stripes/northwest,
@@ -4690,7 +4690,7 @@
 /area/security/podbay)
 "aif" = (
 /obj/machinery/ai_status_display,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/podbay)
 "aig" = (
 /obj/machinery/shower{
@@ -4752,7 +4752,7 @@
 	name = "\improper Arcade"
 	})
 "aik" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/fitness{
 	name = "\improper Arcade"
 	})
@@ -5296,7 +5296,7 @@
 /turf/open/floor/plasteel,
 /area/security/permabrig)
 "ajg" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fore)
 "ajh" = (
 /obj/machinery/firealarm{
@@ -5406,7 +5406,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -5520,13 +5520,13 @@
 	icon_state = "vault";
 	dir = 5
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
 /area/shuttle/pod_4)
 "ajB" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/auxsolarport)
 "ajC" = (
 /obj/machinery/power/solar_control{
@@ -5567,7 +5567,7 @@
 /area/maintenance/auxsolarport)
 "ajF" = (
 /obj/structure/sign/securearea,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/permabrig)
 "ajG" = (
 /obj/machinery/door/firedoor,
@@ -5587,7 +5587,7 @@
 	desc = "A warning sign which reads 'WARNING: Dangerous Inmates'.";
 	name = "\improper WARNING: Dangerous Inmates"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/permabrig)
 "ajJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -5733,7 +5733,7 @@
 	},
 /area/security/permabrig)
 "ajV" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/armoury)
 "ajW" = (
 /obj/structure/rack,
@@ -5909,7 +5909,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	req_access_txt = "0"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/fitness{
 	name = "\improper Recreation Area"
 	})
@@ -5940,7 +5940,7 @@
 	},
 /area/security/main)
 "akt" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/disposal)
 "aku" = (
 /obj/structure/rack,
@@ -6000,7 +6000,7 @@
 /turf/open/floor/plating,
 /area/maintenance/auxsolarport)
 "aky" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/fpmaint2{
 	name = "Port Maintenance"
 	})
@@ -6056,7 +6056,7 @@
 	},
 /area/security/podbay)
 "akD" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/brig)
 "akE" = (
 /obj/structure/cable/yellow{
@@ -7005,7 +7005,7 @@
 	name = "\improper Recreation Area"
 	})
 "amk" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/gravitygenerator)
 "aml" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
@@ -7154,7 +7154,7 @@
 /turf/open/floor/plasteel,
 /area/security/main)
 "amx" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/brig)
 "amy" = (
 /obj/structure/cable/yellow{
@@ -7427,7 +7427,7 @@
 	name = "\improper Recreation Area"
 	})
 "amO" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/main)
 "amP" = (
 /obj/machinery/atmospherics/unary/vent_pump{
@@ -7700,7 +7700,7 @@
 /turf/open/shuttle/floor4/vox,
 /area/shuttle/vox)
 "anq" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/mechanic_workshop)
 "anr" = (
 /obj/structure/rack,
@@ -7712,7 +7712,7 @@
 /turf/open/shuttle/floor4/vox,
 /area/shuttle/vox)
 "ans" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/auxsolarstarboard)
 "ant" = (
 /obj/structure/grille,
@@ -7999,7 +7999,7 @@
 	name = "\improper Recreation Area"
 	})
 "anQ" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/sleep)
 "anR" = (
 /obj/machinery/vending/security,
@@ -8236,7 +8236,7 @@
 	},
 /area/security/brig)
 "aoq" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/evidence)
 "aor" = (
 /obj/structure/window/reinforced{
@@ -8430,7 +8430,7 @@
 	name = "\improper Recreation Area"
 	})
 "aoG" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/starboard)
 "aoH" = (
 /obj/machinery/hologram/holopad,
@@ -8642,7 +8642,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "apf" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fpmaint2{
 	name = "Port Maintenance"
 	})
@@ -8907,7 +8907,7 @@
 /area/security/main)
 "apF" = (
 /obj/structure/sign/securearea,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/main)
 "apG" = (
 /obj/machinery/camera{
@@ -8929,11 +8929,11 @@
 	icon_state = "shock";
 	name = "HIGH VOLTAGE"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/auxsolarport)
 "apI" = (
 /obj/structure/sign/securearea,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/sleep)
 "apJ" = (
 /obj/structure/sign/securearea{
@@ -9134,7 +9134,7 @@
 /area/security/brig)
 "aqb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/fitness{
 	name = "\improper Recreation Area"
 	})
@@ -10808,7 +10808,7 @@
 	name = "KEEP CLEAR: DOCKING AREA";
 	pixel_y = 32
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/auxsolarstarboard)
 "asU" = (
 /obj/machinery/power/solar_control{
@@ -11207,7 +11207,7 @@
 /turf/open/floor/plasteel,
 /area/security/main)
 "atF" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/fore)
 "atG" = (
 /obj/structure/table,
@@ -11239,7 +11239,7 @@
 	icon_state = "vault";
 	dir = 5
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -11256,7 +11256,7 @@
 /turf/open/floor/plasteel,
 /area/storage/primary)
 "atK" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/main)
 "atL" = (
 /obj/structure/mirror{
@@ -11410,7 +11410,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/fitness{
 	name = "\improper Recreation Area"
 	})
@@ -11418,7 +11418,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/fitness{
 	name = "\improper Recreation Area"
 	})
@@ -11426,7 +11426,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/fitness{
 	name = "\improper Recreation Area"
 	})
@@ -11496,7 +11496,7 @@
 /obj/structure/sign/securearea{
 	name = "\improper STAY CLEAR HEAVY MACHINERY"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/disposal)
 "auh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -11857,7 +11857,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/warden)
 "auR" = (
 /obj/structure/cable/yellow{
@@ -12177,7 +12177,7 @@
 	},
 /area/crew_quarters/sleep)
 "avr" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/mrchangs)
 "avs" = (
 /obj/structure/table,
@@ -12207,7 +12207,7 @@
 	},
 /area/security/processing)
 "avv" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/sleep)
 "avw" = (
 /obj/item/storage/box/evidence,
@@ -12274,7 +12274,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/gravitygenerator)
 "avF" = (
 /obj/machinery/atmospherics/unary/vent_pump{
@@ -12392,14 +12392,14 @@
 /turf/open/floor/plating,
 /area/maintenance/auxsolarstarboard)
 "avN" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/shuttle/pod_4)
 "avO" = (
 /obj/item/radio/intercom/department/security,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/podbay)
 "avP" = (
 /obj/machinery/computer/podtracker,
@@ -12549,7 +12549,7 @@
 	name = "Port Maintenance"
 	})
 "awd" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/processing)
 "awe" = (
 /obj/effect/decal/warning_stripes/east,
@@ -13034,7 +13034,7 @@
 /area/maintenance/fore)
 "awY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/gravitygenerator)
 "awZ" = (
 /obj/structure/cable/yellow{
@@ -13134,7 +13134,7 @@
 /turf/open/floor/plasteel,
 /area/storage/primary)
 "axh" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/starboard)
 "axi" = (
 /obj/structure/table,
@@ -13455,7 +13455,7 @@
 /area/security/main)
 "axD" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -13467,7 +13467,7 @@
 /area/shuttle/siberia)
 "axF" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 2;
 	icon_state = "swall_f10";
 	layer = 2
@@ -13514,7 +13514,7 @@
 /area/security/brig)
 "axK" = (
 /obj/structure/sign/pods,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/warden)
 "axL" = (
 /obj/effect/spawner/window/reinforced,
@@ -13951,7 +13951,7 @@
 	icon_state = "shock";
 	name = "HIGH VOLTAGE"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/auxsolarstarboard)
 "ayB" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -14048,7 +14048,7 @@
 /turf/open/floor/plating,
 /area/security/brig)
 "ayM" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -14335,7 +14335,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/sleep)
 "azn" = (
 /obj/structure/cable/yellow{
@@ -14855,7 +14855,7 @@
 /area/hallway/primary/fore)
 "aAg" = (
 /obj/effect/spawner/window/reinforced,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fpmaint2{
 	name = "Port Maintenance"
 	})
@@ -15072,7 +15072,7 @@
 /area/security/brig)
 "aAA" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fpmaint2{
 	name = "Port Maintenance"
 	})
@@ -15246,13 +15246,13 @@
 	})
 "aAQ" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
 /area/shuttle/mining)
 "aAR" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -15264,7 +15264,7 @@
 /area/shuttle/mining)
 "aAT" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 2;
 	icon_state = "swall_f10";
 	layer = 2
@@ -15328,7 +15328,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "aBb" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/nuke_storage)
 "aBc" = (
 /obj/machinery/door/airlock/shuttle{
@@ -15341,7 +15341,7 @@
 	},
 /area/shuttle/siberia)
 "aBd" = (
-/turf/simulated/shuttle/wall,
+/turf/closed/shuttle/wall,
 /area/shuttle/siberia)
 "aBe" = (
 /obj/machinery/mineral/stacking_machine/laborstacker,
@@ -15637,7 +15637,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/brig)
 "aBD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -15700,7 +15700,7 @@
 	},
 /area/security/brig)
 "aBI" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/locker/locker_toilet{
 	name = "\improper Restrooms"
 	})
@@ -16001,7 +16001,7 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "aCg" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/engineering)
 "aCh" = (
 /obj/structure/closet/emcloset,
@@ -16021,7 +16021,7 @@
 	icon_state = "radiation";
 	name = "RADIOACTIVE AREA"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/starboard)
 "aCk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -16074,7 +16074,7 @@
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
 "aCo" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -16100,7 +16100,7 @@
 /turf/open/floor/plating,
 /area/security/brig)
 "aCs" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/miningdock{
 	name = "\improper Mining Office"
 	})
@@ -16121,7 +16121,7 @@
 	name = "\improper Mining Office"
 	})
 "aCu" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/sorting{
 	name = "\improper Warehouse"
 	})
@@ -16399,7 +16399,7 @@
 	name = "\improper Warehouse"
 	})
 "aCO" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/detectives_office)
 "aCP" = (
 /obj/structure/grille,
@@ -16446,7 +16446,7 @@
 /turf/open/floor/plating,
 /area/security/detectives_office)
 "aCS" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/detectives_office)
 "aCT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -16678,7 +16678,7 @@
 	icon_state = "shock";
 	name = "HIGH VOLTAGE"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/engineering)
 "aDo" = (
 /obj/structure/grille,
@@ -18289,7 +18289,7 @@
 	name = "\improper Warehouse"
 	})
 "aFR" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/engine/engineering)
 "aFS" = (
 /obj/effect/decal/warning_stripes/north,
@@ -18780,7 +18780,7 @@
 	})
 "aGK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/locker/locker_toilet{
 	name = "\improper Restrooms"
 	})
@@ -19032,7 +19032,7 @@
 	name = "Storage Wing"
 	})
 "aHk" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/construction)
 "aHl" = (
 /obj/structure/table,
@@ -19193,14 +19193,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/nuke_storage)
 "aHA" = (
 /obj/structure/sign/securearea,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/nuke_storage)
 "aHB" = (
 /obj/machinery/door/airlock/vault{
@@ -19221,11 +19221,11 @@
 /area/security/nuke_storage)
 "aHC" = (
 /obj/structure/sign/securearea,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/nuke_storage)
 "aHD" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -19236,13 +19236,13 @@
 /area/shuttle/siberia)
 "aHF" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
 /area/shuttle/siberia)
 "aHG" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/primary/fore)
 "aHH" = (
 /obj/effect/decal/cleanable/cobweb,
@@ -19613,7 +19613,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/locker/locker_toilet{
 	name = "\improper Restrooms"
 	})
@@ -19685,7 +19685,7 @@
 	dir = 4;
 	pixel_x = 28
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/sleep)
 "aIs" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -19750,7 +19750,7 @@
 	layer = 4;
 	name = "EXTERNAL AIRLOCK"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/miningdock{
 	name = "\improper Mining Office"
 	})
@@ -19894,7 +19894,7 @@
 	})
 "aIK" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -19909,7 +19909,7 @@
 /area/shuttle/mining)
 "aIM" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -20747,7 +20747,7 @@
 	})
 "aKh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/sorting{
 	name = "\improper Warehouse"
 	})
@@ -20766,7 +20766,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "aKj" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/construction/Storage{
 	name = "Storage Wing"
 	})
@@ -21638,21 +21638,21 @@
 /area/construction)
 "aLH" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
 	},
 /area/shuttle/supply)
 "aLI" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/shuttle/supply)
 "aLJ" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10";
 	dir = 2
@@ -21879,7 +21879,7 @@
 	},
 /area/hallway/primary/fore)
 "aMf" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/primary/fore)
 "aMg" = (
 /obj/effect/spawner/window/reinforced,
@@ -21914,10 +21914,10 @@
 	},
 /area/hallway/primary/fore)
 "aMk" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/courtroom)
 "aMl" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/courtroom)
 "aMm" = (
 /obj/machinery/door/firedoor,
@@ -21931,7 +21931,7 @@
 	},
 /area/crew_quarters/courtroom)
 "aMn" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/lawoffice)
 "aMo" = (
 /obj/structure/disposalpipe/segment,
@@ -22228,7 +22228,7 @@
 /turf/open/floor/plasteel,
 /area/construction)
 "aMN" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -22437,7 +22437,7 @@
 	icon_state = "radiation";
 	name = "RADIOACTIVE AREA"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/engineering)
 "aNe" = (
 /obj/structure/cable/yellow{
@@ -22602,7 +22602,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "aNo" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/processing)
 "aNp" = (
 /obj/effect/spawner/window/reinforced,
@@ -22894,7 +22894,7 @@
 	},
 /area/crew_quarters/sleep)
 "aNQ" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/secondary/construction{
 	name = "\improper Garden"
 	})
@@ -23249,7 +23249,7 @@
 	name = "Port Maintenance"
 	})
 "aOA" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/storage/primary)
 "aOB" = (
 /obj/machinery/cryopod,
@@ -23282,10 +23282,10 @@
 	name = "\improper Secure Lab"
 	})
 "aOF" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/storage/primary)
 "aOG" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/ai_upload)
 "aOH" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -24082,7 +24082,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/storage/primary)
 "aQf" = (
 /obj/structure/lattice,
@@ -24095,7 +24095,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/ai_upload)
 "aQh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -24154,7 +24154,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/ai_upload)
 "aQn" = (
 /obj/structure/lattice,
@@ -24167,7 +24167,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/primary/fore)
 "aQp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -25235,7 +25235,7 @@
 /area/space/nearstation)
 "aSq" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -25247,7 +25247,7 @@
 /area/shuttle/pod_1)
 "aSs" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -26061,7 +26061,7 @@
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
 "aTN" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -26863,7 +26863,7 @@
 	name = "Port Maintenance"
 	})
 "aVl" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/qm)
 "aVm" = (
 /obj/machinery/atmospherics/unary/portables_connector,
@@ -27668,7 +27668,7 @@
 /area/storage/primary)
 "aWv" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fore)
 "aWw" = (
 /obj/item/radio/intercom{
@@ -27740,7 +27740,7 @@
 /turf/space,
 /area/space/nearstation)
 "aWD" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/secondary/entry{
 	name = "Arrivals"
 	})
@@ -27767,7 +27767,7 @@
 "aWG" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -28280,7 +28280,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/brig)
 "aXE" = (
 /obj/structure/table,
@@ -28372,13 +28372,13 @@
 	name = "\improper MiniSat Exterior"
 	})
 "aXL" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/construction/hallway{
 	name = "\improper MiniSat Exterior"
 	})
 "aXM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/construction/hallway{
 	name = "\improper MiniSat Exterior"
 	})
@@ -28517,27 +28517,27 @@
 	name = "Port Maintenance"
 	})
 "aYc" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall7";
 	dir = 2
 	},
 /area/shuttle/supply)
 "aYd" = (
 /turf/open/shuttle/floor,
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10"
 	},
 /area/shuttle/supply)
 "aYe" = (
 /turf/open/shuttle/floor,
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6"
 	},
 /area/shuttle/supply)
 "aYf" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall11";
 	dir = 2
 	},
@@ -29218,7 +29218,7 @@
 /area/engine/engineering)
 "aZi" = (
 /obj/structure/sign/pods,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/secondary/entry{
 	name = "Arrivals"
 	})
@@ -29291,14 +29291,14 @@
 /area/engine/break_room)
 "aZp" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
 	},
 /area/shuttle/supply)
 "aZq" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall15";
 	dir = 2
 	},
@@ -29312,14 +29312,14 @@
 /area/shuttle/supply)
 "aZs" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
 	},
 /area/shuttle/supply)
 "aZt" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/storage)
 "aZu" = (
 /obj/machinery/light{
@@ -29376,7 +29376,7 @@
 "aZz" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
@@ -29482,14 +29482,14 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "aZJ" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/primary/central)
 "aZK" = (
 /obj/effect/spawner/window/reinforced,
 /turf/open/floor/plating,
 /area/storage/tech)
 "aZL" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/ai_upload_foyer)
 "aZM" = (
 /obj/machinery/door/firedoor,
@@ -29566,7 +29566,7 @@
 	dir = 1;
 	pixel_y = 8
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/courtroom)
 "aZT" = (
 /obj/machinery/power/apc{
@@ -29660,7 +29660,7 @@
 	},
 /area/crew_quarters/locker)
 "aZZ" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/locker)
 "baa" = (
 /obj/structure/closet/wardrobe/black,
@@ -29756,7 +29756,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "bam" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/chiefs_office)
 "ban" = (
 /obj/structure/window/reinforced,
@@ -29861,7 +29861,7 @@
 /area/quartermaster/storage)
 "bat" = (
 /obj/machinery/light_switch,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/engine/engineering)
 "bau" = (
 /obj/item/clothing/head/fedora,
@@ -30237,7 +30237,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/office{
 	name = "\improper Cargo Office"
 	})
@@ -30328,7 +30328,7 @@
 /area/hallway/primary/central)
 "bbj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/ai_upload_foyer)
 "bbk" = (
 /obj/machinery/door/airlock/highsecurity{
@@ -30347,7 +30347,7 @@
 /area/turret_protected/ai_upload_foyer)
 "bbl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/ai_upload_foyer)
 "bbm" = (
 /obj/machinery/alarm{
@@ -30501,7 +30501,7 @@
 /area/crew_quarters/locker)
 "bbA" = (
 /obj/structure/sign/pods,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/locker)
 "bbB" = (
 /obj/machinery/vending/snack,
@@ -30566,7 +30566,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "bbH" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/storage/tech)
 "bbI" = (
 /obj/structure/cable{
@@ -30583,7 +30583,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/ai)
 "bbK" = (
 /obj/machinery/ai_status_display{
@@ -30612,7 +30612,7 @@
 /area/engine/engineering)
 "bbN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/engine/engineering)
 "bbO" = (
 /obj/structure/table,
@@ -31039,7 +31039,7 @@
 	departmentType = 4;
 	name = "Engineering RC"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/engine/engineering)
 "bcs" = (
 /obj/machinery/hologram/holopad,
@@ -31873,7 +31873,7 @@
 	name = "Arrivals"
 	})
 "bdI" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/ai)
 "bdJ" = (
 /obj/structure/window/reinforced,
@@ -31983,7 +31983,7 @@
 /obj/machinery/status_display{
 	density = 0
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/storage)
 "bdU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -32352,7 +32352,7 @@
 	},
 /area/hallway/primary/central)
 "bez" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/storage/tools)
 "beA" = (
 /obj/machinery/door/airlock/maintenance{
@@ -32376,7 +32376,7 @@
 	},
 /area/storage/primary)
 "beC" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/storage/tech)
 "beD" = (
 /obj/machinery/status_display{
@@ -32654,7 +32654,7 @@
 	dir = 5;
 	level = 1
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/construction/hallway{
 	name = "\improper MiniSat Exterior"
 	})
@@ -32938,7 +32938,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "bfw" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/office{
 	name = "\improper Cargo Office"
 	})
@@ -33051,7 +33051,7 @@
 /turf/open/floor/plasteel,
 /area/security/brig)
 "bfG" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/primary/port)
 "bfH" = (
 /obj/machinery/status_display{
@@ -33904,7 +33904,7 @@
 	name = "Arrivals"
 	})
 "bgX" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/checkpoint2{
 	name = "Customs"
 	})
@@ -33951,7 +33951,7 @@
 	})
 "bhc" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/office{
 	name = "\improper Cargo Office"
 	})
@@ -34117,7 +34117,7 @@
 	},
 /area/hallway/primary/central)
 "bhq" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/janitor)
 "bhr" = (
 /obj/machinery/door/firedoor,
@@ -34129,10 +34129,10 @@
 /area/janitor)
 "bhs" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/janitor)
 "bht" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/maintcentral{
 	name = "Central Maintenance"
 	})
@@ -34167,13 +34167,13 @@
 	},
 /area/maintenance/incinerator)
 "bhw" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/captain{
 	name = "\improper Captain's Quarters"
 	})
 "bhx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/captain{
 	name = "\improper Captain's Quarters"
 	})
@@ -34385,7 +34385,7 @@
 	desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'.";
 	name = "KEEP CLEAR: DOCKING AREA"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/secondary/entry{
 	name = "Arrivals"
 	})
@@ -34634,14 +34634,14 @@
 /area/turret_protected/ai)
 "bin" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
 	},
 /area/shuttle/arrival/station)
 "bio" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
@@ -34659,7 +34659,7 @@
 /turf/simulated/shuttle/plating,
 /area/shuttle/arrival/station)
 "bir" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall14";
 	dir = 2
@@ -34667,7 +34667,7 @@
 /area/shuttle/arrival/station)
 "bis" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10";
 	dir = 2
@@ -34701,7 +34701,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/checkpoint2{
 	name = "Customs"
 	})
@@ -34824,7 +34824,7 @@
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/office{
 	name = "\improper Cargo Office"
 	})
@@ -35132,7 +35132,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "bje" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/maintcentral{
 	name = "Central Maintenance"
 	})
@@ -35553,7 +35553,7 @@
 /turf/open/floor/plating,
 /area/engine/break_room)
 "bjN" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/engine/break_room)
 "bjO" = (
 /obj/machinery/firealarm{
@@ -35686,7 +35686,7 @@
 /turf/open/floor/bluegrid,
 /area/turret_protected/ai)
 "bjZ" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall11";
 	icon_state = "swall11";
 	dir = 2
@@ -35754,7 +35754,7 @@
 /turf/open/shuttle/floor,
 /area/shuttle/arrival/station)
 "bki" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall7";
 	icon_state = "swall7";
 	dir = 2
@@ -36238,7 +36238,7 @@
 /turf/open/floor/engine,
 /area/engine/mechanic_workshop)
 "bkW" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/bridge)
 "bkX" = (
 /obj/effect/decal/cleanable/dirt,
@@ -36407,11 +36407,11 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "blo" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/primary/starboard)
 "blp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/storage/tech)
 "blq" = (
 /obj/machinery/door/firedoor,
@@ -36443,7 +36443,7 @@
 	tag = "icon-propulsion (EAST)"
 	},
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -36483,7 +36483,7 @@
 	tag = "icon-propulsion (EAST)"
 	},
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -36507,7 +36507,7 @@
 /area/engine/break_room)
 "blz" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 2;
 	icon_state = "swall_f10";
 	layer = 2
@@ -36590,7 +36590,7 @@
 /area/turret_protected/ai)
 "blH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/ai)
 "blI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -36704,7 +36704,7 @@
 	name = "\improper MiniSat Exterior"
 	})
 "blO" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -36722,7 +36722,7 @@
 /turf/open/shuttle/floor,
 /area/shuttle/arrival/station)
 "blR" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -36890,7 +36890,7 @@
 	icon_state = "pipe-j2";
 	tag = "icon-pipe-j1 (WEST)"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/office{
 	name = "\improper Cargo Office"
 	})
@@ -37717,7 +37717,7 @@
 	},
 /area/hallway/primary/starboard)
 "bnt" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/break_room)
 "bnu" = (
 /obj/machinery/alarm{
@@ -37895,7 +37895,7 @@
 /area/shuttle/pod_4)
 "bnH" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -38075,7 +38075,7 @@
 	})
 "bnY" = (
 /obj/structure/sign/pods,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/checkpoint2{
 	name = "Customs"
 	})
@@ -38083,7 +38083,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/checkpoint2{
 	name = "Customs"
 	})
@@ -38147,7 +38147,7 @@
 "boe" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fpmaint2{
 	name = "Port Maintenance"
 	})
@@ -38262,7 +38262,7 @@
 	layer = 4;
 	name = "EXTERNAL AIRLOCK"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/space/nearstation)
 "bop" = (
 /obj/machinery/computer/med_data,
@@ -38438,7 +38438,7 @@
 	},
 /area/turret_protected/ai)
 "boI" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/captain{
 	name = "\improper Captain's Quarters"
 	})
@@ -38884,7 +38884,7 @@
 /area/engine/break_room)
 "bpl" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -38960,7 +38960,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/construction/hallway{
 	name = "\improper MiniSat Exterior"
 	})
@@ -39396,7 +39396,7 @@
 	},
 /area/hallway/primary/central)
 "bqc" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/heads)
 "bqd" = (
 /obj/structure/cable/yellow{
@@ -39846,7 +39846,7 @@
 /area/hallway/primary/starboard)
 "bqN" = (
 /obj/structure/sign/clown,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/starboard)
 "bqO" = (
 /obj/structure/cable/yellow{
@@ -40016,7 +40016,7 @@
 /turf/space,
 /area/space/nearstation)
 "bre" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/space/nearstation)
 "brf" = (
 /obj/structure/window/reinforced{
@@ -40049,7 +40049,7 @@
 	name = "\improper MiniSat Exterior"
 	})
 "bri" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/aisat_interior{
 	name = "\improper MiniSat Central Foyer"
 	})
@@ -40066,7 +40066,7 @@
 	name = "\improper MiniSat Exterior"
 	})
 "brk" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/tcomeast{
 	name = "\improper MiniSat East Wing"
 	})
@@ -40103,7 +40103,7 @@
 /area/turret_protected/ai)
 "bro" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -40388,7 +40388,7 @@
 	dir = 8;
 	pixel_y = 8
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/captain{
 	name = "\improper Captain's Quarters"
 	})
@@ -40696,7 +40696,7 @@
 	},
 /area/hallway/primary/central)
 "bsm" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/civilian/barber)
 "bsn" = (
 /obj/machinery/atmospherics/pipe/simple/visible,
@@ -40718,7 +40718,7 @@
 /turf/open/floor/plasteel,
 /area/civilian/barber)
 "bsp" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/bar)
 "bsq" = (
 /obj/machinery/door/airlock/maintenance{
@@ -40729,7 +40729,7 @@
 /area/maintenance/starboard)
 "bsr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/starboard)
 "bss" = (
 /obj/machinery/disposal,
@@ -40962,7 +40962,7 @@
 /turf/space,
 /area/space/nearstation)
 "bsM" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/tcomfoyer{
 	name = "\improper MiniSat Teleporter Foyer"
 	})
@@ -41232,7 +41232,7 @@
 /turf/simulated/shuttle/plating,
 /area/shuttle/arrival/station)
 "bti" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall13";
 	icon_state = "swall13";
 	dir = 2
@@ -41240,7 +41240,7 @@
 /area/shuttle/arrival/station)
 "btj" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
@@ -42072,7 +42072,7 @@
 	})
 "buC" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/starboard)
 "buD" = (
 /obj/machinery/firealarm{
@@ -42396,7 +42396,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/tcomeast{
 	name = "\improper MiniSat East Wing"
 	})
@@ -43191,7 +43191,7 @@
 /turf/open/floor/wood,
 /area/crew_quarters/heads)
 "bwd" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/heads)
 "bwe" = (
 /obj/structure/window/reinforced,
@@ -43287,7 +43287,7 @@
 	dir = 1;
 	pixel_y = 8
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/storage/tools)
 "bwm" = (
 /obj/machinery/status_display{
@@ -44588,7 +44588,7 @@
 	},
 /area/bridge)
 "byq" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/bridge)
 "byr" = (
 /obj/structure/window/reinforced{
@@ -45462,7 +45462,7 @@
 	name = "Port Maintenance"
 	})
 "bzK" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/library)
 "bzL" = (
 /obj/effect/spawner/window/reinforced,
@@ -45499,7 +45499,7 @@
 	dir = 1;
 	pixel_y = 8
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/primary/port)
 "bzP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -45696,7 +45696,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/bridge)
 "bAe" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -45713,7 +45713,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/bridge)
 "bAg" = (
 /obj/machinery/door/airlock/command{
@@ -45728,7 +45728,7 @@
 /area/bridge)
 "bAh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/bridge)
 "bAi" = (
 /obj/structure/bookcase,
@@ -45865,7 +45865,7 @@
 /area/space/nearstation)
 "bAu" = (
 /obj/machinery/vending/boozeomat,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/bar)
 "bAv" = (
 /obj/machinery/door/airlock{
@@ -46088,7 +46088,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/break_room)
 "bAT" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
@@ -46267,7 +46267,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/construction/hallway{
 	name = "\improper MiniSat Exterior"
 	})
@@ -46302,7 +46302,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/construction/hallway{
 	name = "\improper MiniSat Exterior"
 	})
@@ -46379,7 +46379,7 @@
 	name = "\improper MiniSat Central Foyer"
 	})
 "bBl" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/tcommsat/computer{
 	name = "\improper Telecoms Control Room"
 	})
@@ -46423,7 +46423,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/aisat_interior{
 	name = "\improper MiniSat Central Foyer"
 	})
@@ -46669,13 +46669,13 @@
 	},
 /area/hallway/primary/port)
 "bBK" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/toilet{
 	name = "\improper Auxiliary Restrooms"
 	})
 "bBL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/toilet{
 	name = "\improper Auxiliary Restrooms"
 	})
@@ -47284,10 +47284,10 @@
 	},
 /area/engine/break_room)
 "bCM" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bCN" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/atmos)
 "bCO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -47307,14 +47307,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/atmos)
 "bCQ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal{
 	dir = 4;
 	layer = 4.4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bCR" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/purple{
@@ -47322,7 +47322,7 @@
 	icon_state = "map";
 	dir = 1
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bCS" = (
 /obj/machinery/atmospherics/pipe/simple/visible/purple{
@@ -47330,26 +47330,26 @@
 	icon_state = "intact";
 	dir = 10
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bCT" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal{
 	layer = 4.4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bCU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5;
 	level = 1
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bCV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bCW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -47454,7 +47454,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/tcomeast{
 	name = "\improper MiniSat East Wing"
 	})
@@ -48441,7 +48441,7 @@
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "bEG" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/theatre)
 "bEH" = (
 /obj/structure/cable/yellow{
@@ -48722,12 +48722,12 @@
 "bFb" = (
 /obj/structure/lattice,
 /obj/structure/grille,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/space/nearstation)
 "bFc" = (
 /obj/structure/grille,
 /obj/structure/lattice,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/space/nearstation)
 "bFd" = (
 /obj/machinery/power/apc{
@@ -48901,11 +48901,11 @@
 	name = "Port Maintenance"
 	})
 "bFp" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/vacantoffice)
 "bFq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/vacantoffice)
 "bFr" = (
 /obj/machinery/door/firedoor,
@@ -49030,7 +49030,7 @@
 	},
 /area/hallway/primary/central)
 "bFB" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/bridge/meeting_room{
 	name = "\improper Command Hallway"
 	})
@@ -49108,7 +49108,7 @@
 	name = "\improper Command Hallway"
 	})
 "bFI" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/bridge/meeting_room{
 	name = "\improper Command Hallway"
 	})
@@ -49386,7 +49386,7 @@
 /area/crew_quarters/theatre)
 "bGi" = (
 /obj/machinery/smartfridge,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/bar)
 "bGj" = (
 /obj/effect/spawner/window/reinforced,
@@ -49710,7 +49710,7 @@
 /area/atmos)
 "bGL" = (
 /obj/structure/grille,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bGM" = (
 /obj/structure/transit_tube{
@@ -49859,7 +49859,7 @@
 	name = "\improper Secure Lab"
 	})
 "bGX" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -49876,7 +49876,7 @@
 /area/shuttle/transport)
 "bHa" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -50556,7 +50556,7 @@
 	dir = 4
 	},
 /obj/structure/grille,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bIw" = (
 /obj/machinery/atmospherics/unary/vent_pump{
@@ -50629,7 +50629,7 @@
 	})
 "bIC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/aisat_interior{
 	name = "\improper MiniSat Central Foyer"
 	})
@@ -50656,13 +50656,13 @@
 	},
 /area/crew_quarters/bar)
 "bIF" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/construction/hallway{
 	name = "\improper MiniSat Exterior"
 	})
 "bIG" = (
 /turf/open/shuttle/floor,
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9"
 	},
@@ -51552,7 +51552,7 @@
 	name = "\improper MiniSat Exterior"
 	})
 "bKl" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/tcommsat/server)
 "bKm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -52971,7 +52971,7 @@
 	dir = 4
 	},
 /obj/structure/grille,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bMl" = (
 /obj/machinery/atmospherics/unary/outlet_injector/on{
@@ -53128,7 +53128,7 @@
 	})
 "bMw" = (
 /turf/open/shuttle/floor,
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10"
 	},
@@ -53345,7 +53345,7 @@
 	},
 /area/hallway/primary/central)
 "bMS" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ai_monitored/storage/eva{
 	name = "E.V.A. Storage"
 	})
@@ -53358,7 +53358,7 @@
 	})
 "bMU" = (
 /obj/structure/sign/securearea,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ai_monitored/storage/eva{
 	name = "E.V.A. Storage"
 	})
@@ -53386,7 +53386,7 @@
 	name = "\improper Command Hallway"
 	})
 "bMW" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/teleporter{
 	name = "\improper Teleporter Room"
 	})
@@ -53415,12 +53415,12 @@
 "bMY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/sign/securearea,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/teleporter{
 	name = "\improper Teleporter Room"
 	})
 "bMZ" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/blueshield)
 "bNa" = (
 /obj/effect/spawner/window/reinforced,
@@ -53446,7 +53446,7 @@
 /turf/open/floor/plating,
 /area/atmos)
 "bNd" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ntrep)
 "bNe" = (
 /obj/effect/spawner/window/reinforced,
@@ -53473,11 +53473,11 @@
 /turf/open/floor/plating,
 /area/atmos)
 "bNh" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/gateway)
 "bNi" = (
 /obj/structure/sign/securearea,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/gateway)
 "bNj" = (
 /obj/structure/table/reinforced,
@@ -53513,7 +53513,7 @@
 /area/atmos)
 "bNk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/gateway)
 "bNl" = (
 /obj/machinery/vending/coffee,
@@ -53817,7 +53817,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bNK" = (
 /obj/structure/disposalpipe/segment{
@@ -53890,14 +53890,14 @@
 /obj/machinery/atmospherics/pipe/simple/visible/universal{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bNP" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 10;
 	initialize_directions = 10
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bNQ" = (
 /obj/machinery/light{
@@ -54005,7 +54005,7 @@
 	})
 "bOd" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -54262,7 +54262,7 @@
 	name = "E.V.A. Storage"
 	})
 "bOB" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ai_monitored/storage/eva{
 	name = "E.V.A. Storage"
 	})
@@ -54687,7 +54687,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bPn" = (
 /obj/structure/ore_box,
@@ -54750,7 +54750,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bPs" = (
 /obj/structure/cable/yellow{
@@ -54876,13 +54876,13 @@
 /obj/structure/grille,
 /obj/structure/lattice,
 /obj/structure/lattice,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/space/nearstation)
 "bPG" = (
 /obj/structure/lattice,
 /obj/structure/grille,
 /obj/structure/lattice,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/space/nearstation)
 "bPH" = (
 /obj/structure/window/reinforced{
@@ -55262,7 +55262,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ntrep)
 "bQr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -55433,7 +55433,7 @@
 	},
 /area/hallway/primary/central)
 "bQI" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/kitchen)
 "bQJ" = (
 /obj/structure/table/reinforced,
@@ -55478,7 +55478,7 @@
 /area/crew_quarters/kitchen)
 "bQL" = (
 /obj/machinery/computer/security/telescreen/entertainment,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/kitchen)
 "bQM" = (
 /obj/structure/cable/yellow{
@@ -55622,7 +55622,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bQZ" = (
 /obj/structure/cable/yellow{
@@ -55721,7 +55721,7 @@
 /obj/structure/grille,
 /obj/structure/lattice,
 /obj/structure/lattice,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/space/nearstation)
 "bRn" = (
 /obj/machinery/door/firedoor,
@@ -58577,7 +58577,7 @@
 	name = "Port Maintenance"
 	})
 "bWl" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/maintenance/aft{
 	name = "Aft Maintenance"
 	})
@@ -58829,7 +58829,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ntrep)
 "bWM" = (
 /obj/item/flag/nt,
@@ -59267,7 +59267,7 @@
 /area/engine/engineering)
 "bXv" = (
 /obj/structure/sign/nosmoking_2,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/atmos)
 "bXw" = (
 /obj/machinery/atmospherics/pipe/manifold/visible{
@@ -60237,7 +60237,7 @@
 /obj/structure/sign/directions/science{
 	pixel_y = -8
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/civilian/barber)
 "bZj" = (
 /obj/structure/extinguisher_cabinet{
@@ -60261,7 +60261,7 @@
 /turf/open/floor/plasteel,
 /area/gateway)
 "bZl" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/blueshield)
 "bZm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -60272,7 +60272,7 @@
 /turf/open/floor/wood,
 /area/blueshield)
 "bZn" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ntrep)
 "bZo" = (
 /obj/machinery/door/airlock/command{
@@ -60283,7 +60283,7 @@
 /area/ntrep)
 "bZp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ntrep)
 "bZq" = (
 /obj/structure/closet/fireaxecabinet{
@@ -60334,10 +60334,10 @@
 	},
 /area/hallway/primary/central)
 "bZu" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/primary/central)
 "bZv" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hydroponics)
 "bZw" = (
 /obj/machinery/teleport/hub,
@@ -60360,7 +60360,7 @@
 	})
 "bZy" = (
 /obj/machinery/smartfridge,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hydroponics)
 "bZz" = (
 /obj/effect/decal/warning_stripes/south,
@@ -60519,12 +60519,12 @@
 /area/atmos)
 "bZO" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/aft{
 	name = "Aft Maintenance"
 	})
 "bZP" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/portsolar)
 "bZQ" = (
 /obj/machinery/door/airlock/engineering{
@@ -60553,7 +60553,7 @@
 	name = "Port Maintenance"
 	})
 "bZS" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/portsolar)
 "bZT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -60566,13 +60566,13 @@
 	name = "Port Maintenance"
 	})
 "bZU" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/aft{
 	name = "Aft Maintenance"
 	})
 "bZV" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/starboard)
 "bZW" = (
 /obj/machinery/newscaster{
@@ -60868,7 +60868,7 @@
 	icon_state = "shock";
 	name = "HIGH VOLTAGE"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/portsolar)
 "cax" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -61300,7 +61300,7 @@
 /area/hallway/primary/central)
 "cbc" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/engineering)
 "cbd" = (
 /obj/item/storage/box/syringes,
@@ -61822,7 +61822,7 @@
 /area/medical/paramedic)
 "ccc" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/locker/locker_toilet{
 	name = "\improper Restrooms"
 	})
@@ -62935,7 +62935,7 @@
 /turf/open/floor/engine/co2,
 /area/atmos)
 "cdT" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/medbay2{
 	name = "Medbay Storage"
 	})
@@ -63179,7 +63179,7 @@
 /area/hydroponics)
 "cep" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/tcommsat/server)
 "ceq" = (
 /obj/machinery/door/airlock/medical{
@@ -63805,7 +63805,7 @@
 /obj/structure/sign/directions/evac{
 	pixel_y = 6
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/research{
 	name = "Research Division"
 	})
@@ -63823,7 +63823,7 @@
 	})
 "cft" = (
 /obj/structure/sign/science,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/research{
 	name = "Research Division"
 	})
@@ -63856,7 +63856,7 @@
 	name = "Research Division"
 	})
 "cfw" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/research{
 	name = "Research Division"
 	})
@@ -63994,7 +63994,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "cfK" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/incinerator)
 "cfL" = (
 /obj/machinery/door/airlock/maintenance{
@@ -65171,7 +65171,7 @@
 	name = "Medbay Storage"
 	})
 "chM" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/paramedic)
 "chN" = (
 /obj/machinery/door/poddoor/shutters{
@@ -66129,7 +66129,7 @@
 /obj/structure/sign/directions/evac{
 	pixel_y = 6
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/reception)
 "cjn" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -67572,13 +67572,13 @@
 	},
 /area/maintenance/incinerator)
 "clA" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/incinerator)
 "clB" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 2
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/incinerator)
 "clC" = (
 /obj/effect/spawner/window/reinforced,
@@ -67588,7 +67588,7 @@
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 10
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/incinerator)
 "clE" = (
 /obj/structure/cable/yellow{
@@ -67971,10 +67971,10 @@
 /area/hallway/primary/aft)
 "cmn" = (
 /obj/structure/sign/science,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/lab)
 "cmo" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/lab)
 "cmp" = (
 /obj/machinery/atmospherics/unary/vent_pump{
@@ -67994,7 +67994,7 @@
 /obj/structure/sign/directions/science{
 	pixel_y = -8
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/lab)
 "cms" = (
 /obj/machinery/door/firedoor,
@@ -68011,7 +68011,7 @@
 /obj/machinery/ai_status_display{
 	pixel_y = 0
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/reception)
 "cmu" = (
 /obj/machinery/atmospherics/unary/vent_pump,
@@ -68071,7 +68071,7 @@
 	name = "Aft Maintenance"
 	})
 "cmz" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/research{
 	name = "Research Division"
 	})
@@ -68089,7 +68089,7 @@
 	name = "Research Division"
 	})
 "cmB" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/explab)
 "cmC" = (
 /obj/structure/cable/yellow{
@@ -68333,7 +68333,7 @@
 	name = "Aft Maintenance"
 	})
 "cmX" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/exam_room)
 "cmY" = (
 /obj/structure/cable/yellow{
@@ -68981,13 +68981,13 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 2
 	},
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/maintenance/incinerator)
 "cnY" = (
 /obj/machinery/atmospherics/pipe/simple,
 /obj/machinery/meter,
 /obj/structure/grille,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "cnZ" = (
 /obj/machinery/atmospherics/pipe/simple,
@@ -68997,7 +68997,7 @@
 	name = "Mixed Air Tank In"
 	},
 /obj/structure/grille,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "coa" = (
 /obj/machinery/atmospherics/pipe/simple,
@@ -69007,7 +69007,7 @@
 	name = "Mixed Air Tank Out"
 	},
 /obj/structure/grille,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "cob" = (
 /obj/structure/window/reinforced{
@@ -69158,7 +69158,7 @@
 /turf/open/floor/plating,
 /area/lawoffice)
 "coo" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/reception)
 "cop" = (
 /obj/item/storage/firstaid/regular{
@@ -69362,7 +69362,7 @@
 /turf/open/floor/plating,
 /area/toxins/lab)
 "coC" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/surgery1)
 "coD" = (
 /obj/structure/girder,
@@ -69393,7 +69393,7 @@
 /obj/machinery/light_switch{
 	pixel_x = 23
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/primary/aft)
 "coH" = (
 /obj/structure/table,
@@ -69742,7 +69742,7 @@
 /obj/machinery/atmospherics/binary/pump{
 	dir = 2
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "cpr" = (
 /obj/machinery/door/airlock/atmos/glass{
@@ -69755,7 +69755,7 @@
 /obj/machinery/atmospherics/binary/pump{
 	dir = 1
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "cpt" = (
 /obj/structure/girder/reinforced,
@@ -71090,7 +71090,7 @@
 	},
 /area/toxins/lab)
 "crU" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/aft{
 	name = "Aft Maintenance"
 	})
@@ -71205,7 +71205,7 @@
 	icon_state = "shock";
 	name = "HIGH VOLTAGE"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/explab)
 "csd" = (
 /obj/effect/spawner/window/reinforced,
@@ -71636,7 +71636,7 @@
 	},
 /area/medical/exam_room)
 "csJ" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/cmo)
 "csK" = (
 /obj/machinery/door/window/northleft{
@@ -71941,7 +71941,7 @@
 	name = "Research Division"
 	})
 "cte" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/toxins/explab)
 "ctf" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -72108,7 +72108,7 @@
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
 "ctu" = (
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/maintenance/incinerator)
 "ctv" = (
 /obj/machinery/door/poddoor{
@@ -73026,7 +73026,7 @@
 /area/medical/exam_room)
 "cvg" = (
 /obj/machinery/status_display,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/medbay3)
 "cvh" = (
 /obj/machinery/door/firedoor,
@@ -73048,7 +73048,7 @@
 	},
 /area/medical/medbay3)
 "cvj" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/chemistry)
 "cvk" = (
 /obj/machinery/door/firedoor,
@@ -73887,7 +73887,7 @@
 /area/medical/reception)
 "cwy" = (
 /obj/machinery/status_display,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/reception)
 "cwz" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -74209,7 +74209,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/toxins/explab)
 "cwY" = (
 /obj/machinery/door/firedoor,
@@ -74742,14 +74742,14 @@
 	name = "\improper Secure Lab"
 	})
 "cxU" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/hor)
 "cxV" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/storage)
 "cxW" = (
 /obj/structure/sign/biohazard,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/storage)
 "cxX" = (
 /obj/item/stack/packageWrap,
@@ -74895,7 +74895,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/aft{
 	name = "Aft Maintenance"
 	})
@@ -75011,7 +75011,7 @@
 /obj/structure/sign/fire{
 	pixel_y = 0
 	},
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/maintenance/incinerator)
 "cyv" = (
 /obj/structure/disposalpipe/segment{
@@ -75578,7 +75578,7 @@
 	},
 /area/medical/surgeryobs)
 "czp" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/surgeryobs)
 "czq" = (
 /obj/machinery/camera{
@@ -75742,7 +75742,7 @@
 	},
 /area/medical/cmo)
 "czC" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/genetics)
 "czD" = (
 /obj/structure/disposalpipe/junction{
@@ -75797,7 +75797,7 @@
 /obj/structure/sign/directions/evac{
 	pixel_y = 0
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/aft{
 	name = "Aft Maintenance"
 	})
@@ -75831,7 +75831,7 @@
 	name = "Aft Maintenance"
 	})
 "czM" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/misc_lab{
 	name = "\improper Research Testing Range"
 	})
@@ -76913,7 +76913,7 @@
 	},
 /area/medical/cmo)
 "cBv" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/genetics_cloning)
 "cBw" = (
 /obj/machinery/shower{
@@ -77019,7 +77019,7 @@
 /area/medical/genetics)
 "cBE" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/toilet{
 	name = "\improper Auxiliary Restrooms"
 	})
@@ -77041,7 +77041,7 @@
 /turf/open/floor/plasteel,
 /area/toxins/storage)
 "cBJ" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/assembly/chargebay)
 "cBK" = (
 /obj/machinery/door/airlock/maintenance{
@@ -77088,7 +77088,7 @@
 	density = 0;
 	layer = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/surgeryobs)
 "cBN" = (
 /obj/effect/spawner/window/reinforced,
@@ -77934,16 +77934,16 @@
 	},
 /area/medical/medbay3)
 "cDf" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/cryo)
 "cDg" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/genetics_cloning)
 "cDh" = (
 /obj/structure/sign/directions/medical{
 	pixel_y = -7
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/genetics_cloning)
 "cDi" = (
 /obj/machinery/atmospherics/pipe/simple/visible/purple{
@@ -78355,7 +78355,7 @@
 	icon_state = "lifestar";
 	name = "Medbay"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/reception)
 "cDT" = (
 /obj/structure/disposalpipe/segment{
@@ -78375,7 +78375,7 @@
 	name = "Aft Maintenance"
 	})
 "cDU" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/medbay3{
 	name = "Medbay Aft"
 	})
@@ -78704,7 +78704,7 @@
 	})
 "cEy" = (
 /obj/structure/sign/biohazard,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/toxins/mixing{
 	name = "\improper Toxins Lab"
 	})
@@ -78787,7 +78787,7 @@
 /turf/open/floor/plasteel,
 /area/toxins/storage)
 "cEK" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/mixing{
 	name = "\improper Toxins Lab"
 	})
@@ -78938,7 +78938,7 @@
 	},
 /area/hallway/primary/aft)
 "cEY" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/surgery2)
 "cEZ" = (
 /obj/effect/spawner/window/reinforced,
@@ -79006,7 +79006,7 @@
 	name = "Aft Maintenance"
 	})
 "cFd" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/medbreak)
 "cFe" = (
 /obj/machinery/light/small{
@@ -79329,7 +79329,7 @@
 	name = "Aft Maintenance"
 	})
 "cFH" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/toxins/mixing{
 	name = "\improper Toxins Lab"
 	})
@@ -79404,12 +79404,12 @@
 	desc = "A warning sign which reads 'BOMB RANGE";
 	name = "BOMB RANGE"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/toxins/mixing{
 	name = "\improper Toxins Lab"
 	})
 "cFN" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/toxins/test_area)
 "cFO" = (
 /obj/effect/spawner/window/reinforced,
@@ -80079,7 +80079,7 @@
 /area/medical/surgery2)
 "cGP" = (
 /obj/structure/sign/biohazard,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/mixing{
 	name = "\improper Toxins Lab"
 	})
@@ -80127,7 +80127,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/toxins/mixing{
 	name = "\improper Toxins Lab"
 	})
@@ -80426,7 +80426,7 @@
 /obj/structure/sign/directions/evac{
 	pixel_y = 0
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/assembly/chargebay)
 "cHo" = (
 /obj/machinery/recharge_station,
@@ -80813,7 +80813,7 @@
 	desc = "A warning sign which reads 'BOMB RANGE";
 	name = "BOMB RANGE"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/toxins/test_area)
 "cHV" = (
 /obj/effect/decal/warning_stripes/northwestcorner,
@@ -80847,7 +80847,7 @@
 	name = "\improper Toxins Lab"
 	})
 "cHZ" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/virology)
 "cIa" = (
 /obj/effect/spawner/window/reinforced,
@@ -81011,7 +81011,7 @@
 	},
 /area/medical/genetics)
 "cIm" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/morgue)
 "cIn" = (
 /obj/structure/morgue,
@@ -81066,7 +81066,7 @@
 	},
 /area/hallway/primary/aft)
 "cIu" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/assembly/chargebay)
 "cIv" = (
 /obj/structure/cable/yellow{
@@ -81099,7 +81099,7 @@
 /turf/open/floor/plasteel,
 /area/assembly/chargebay)
 "cIx" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/assembly/robotics)
 "cIy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -81450,7 +81450,7 @@
 /area/assembly/chargebay)
 "cJc" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "cJd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -81587,7 +81587,7 @@
 	name = "\improper Toxins Lab"
 	})
 "cJp" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/assembly/robotics)
 "cJq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -81603,13 +81603,13 @@
 	})
 "cJr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/mixing{
 	name = "\improper Toxins Lab"
 	})
 "cJs" = (
 /obj/structure/sign/securearea,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/mixing{
 	name = "\improper Toxins Lab"
 	})
@@ -81757,7 +81757,7 @@
 	name = "\improper Toxins Lab"
 	})
 "cJG" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/toxins/test_area)
@@ -82245,7 +82245,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/mixing{
 	name = "\improper Toxins Lab"
 	})
@@ -82305,7 +82305,7 @@
 	},
 /area/medical/surgery2)
 "cKI" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/space/nearstation)
 "cKJ" = (
 /obj/effect/decal/warning_stripes/west,
@@ -82346,7 +82346,7 @@
 	},
 /area/medical/surgery2)
 "cKM" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/virology)
 "cKN" = (
 /obj/effect/spawner/window/reinforced,
@@ -82486,7 +82486,7 @@
 	},
 /area/medical/medbay3)
 "cKZ" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/patient_a)
 "cLa" = (
 /obj/structure/bed,
@@ -82551,7 +82551,7 @@
 	},
 /area/medical/patient_b)
 "cLd" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/patient_b)
 "cLe" = (
 /obj/structure/closet/secure_closet/personal/patient,
@@ -82999,7 +82999,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/virology)
 "cLS" = (
 /obj/effect/spawner/window/reinforced,
@@ -83989,13 +83989,13 @@
 	})
 "cNm" = (
 /obj/machinery/atmospherics/pipe/simple/insulated,
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/maintenance/incinerator)
 "cNn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/server{
 	name = "\improper Research Division Server Room"
 	})
@@ -84004,7 +84004,7 @@
 	dir = 2;
 	initialize_directions = 11
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/server{
 	name = "\improper Research Division Server Room"
 	})
@@ -84012,7 +84012,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/mixing{
 	name = "\improper Toxins Lab"
 	})
@@ -84044,7 +84044,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/mixing{
 	name = "\improper Toxins Lab"
 	})
@@ -84586,7 +84586,7 @@
 	desc = "A warning sign which reads 'SERVER ROOM'.";
 	name = "SERVER ROOM"
 	},
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/toxins/server{
 	name = "\improper Research Division Server Room"
 	})
@@ -84637,7 +84637,7 @@
 	name = "\improper Research Division Server Room"
 	})
 "cOp" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/server{
 	name = "\improper Research Division Server Room"
 	})
@@ -84792,7 +84792,7 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/virology)
 "cOC" = (
 /obj/structure/closet/crate/freezer,
@@ -85102,7 +85102,7 @@
 	name = "Research Division"
 	})
 "cPc" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/toxins/server{
 	name = "\improper Research Division Server Room"
 	})
@@ -85265,7 +85265,7 @@
 "cPs" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/virology)
 "cPt" = (
 /obj/machinery/door/firedoor,
@@ -85305,7 +85305,7 @@
 	name = "Aft Maintenance"
 	})
 "cPy" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/medbay3)
 "cPz" = (
 /obj/item/radio/intercom{
@@ -85589,7 +85589,7 @@
 /area/assembly/robotics)
 "cPT" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/aft{
 	name = "Aft Maintenance"
 	})
@@ -86251,7 +86251,7 @@
 	name = "Aft Maintenance"
 	})
 "cQW" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/starboardsolar)
 "cQX" = (
 /obj/machinery/door/airlock/engineering{
@@ -86297,7 +86297,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/virology)
 "cRc" = (
 /obj/structure/table/glass,
@@ -86352,7 +86352,7 @@
 	},
 /area/medical/virology)
 "cRh" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/chapel/office)
 "cRi" = (
 /obj/machinery/door/airlock/centcom{
@@ -86849,7 +86849,7 @@
 /turf/space,
 /area/space)
 "cRU" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/psych)
 "cRV" = (
 /obj/structure/sign/biohazard{
@@ -87333,7 +87333,7 @@
 	name = "\improper Departure Lounge"
 	})
 "cSO" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/chapel/main)
 "cSP" = (
 /obj/structure/cable/yellow{
@@ -87351,7 +87351,7 @@
 	icon_state = "shock";
 	name = "HIGH VOLTAGE"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/starboardsolar)
 "cSR" = (
 /obj/structure/table/wood,
@@ -87617,7 +87617,7 @@
 	})
 "cTk" = (
 /obj/structure/sign/biohazard,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/toxins/xenobiology{
 	name = "\improper Secure Lab"
 	})
@@ -87642,7 +87642,7 @@
 	})
 "cTm" = (
 /obj/structure/sign/securearea,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/toxins/xenobiology{
 	name = "\improper Secure Lab"
 	})
@@ -88388,7 +88388,7 @@
 	density = 0;
 	layer = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/secondary/exit{
 	name = "\improper Departure Lounge"
 	})
@@ -88791,7 +88791,7 @@
 	name = "Aft Maintenance"
 	})
 "cVk" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/secondary/exit{
 	name = "\improper Departure Lounge"
 	})
@@ -88985,12 +88985,12 @@
 	})
 "cVF" = (
 /obj/structure/sign/biohazard,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/xenobiology{
 	name = "\improper Secure Lab"
 	})
 "cVG" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/xenobiology{
 	name = "\improper Secure Lab"
 	})
@@ -89026,7 +89026,7 @@
 	})
 "cVI" = (
 /obj/structure/sign/securearea,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/xenobiology{
 	name = "\improper Secure Lab"
 	})
@@ -89104,7 +89104,7 @@
 /area/chapel/main)
 "cVQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/chapel/main)
 "cVR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -89956,7 +89956,7 @@
 /obj/machinery/ai_status_display{
 	pixel_y = 0
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/secondary/exit{
 	name = "\improper Departure Lounge"
 	})
@@ -89978,7 +89978,7 @@
 	})
 "cXu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/xenobiology{
 	name = "\improper Secure Lab"
 	})
@@ -90652,14 +90652,14 @@
 /area/medical/psych)
 "cYD" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
 	},
 /area/shuttle/escape)
 "cYE" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
@@ -90671,7 +90671,7 @@
 	icon_state = "lifestar";
 	name = "Medbay"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/genetics)
 "cYG" = (
 /obj/structure/cable/yellow{
@@ -90688,7 +90688,7 @@
 	name = "\improper Recreation Area"
 	})
 "cYH" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall14";
 	dir = 2
@@ -90712,7 +90712,7 @@
 /area/medical/morgue)
 "cYJ" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10";
 	dir = 2
@@ -90943,7 +90943,7 @@
 /turf/space,
 /area/solar/starboard)
 "cZe" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -90994,7 +90994,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/chapel/main)
 "cZl" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -91082,7 +91082,7 @@
 	name = "Aft Maintenance"
 	})
 "cZr" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/toxins/xenobiology{
 	name = "\improper Secure Lab"
 	})
@@ -91501,20 +91501,20 @@
 /turf/open/floor/plating,
 /area/chapel/main)
 "dah" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc2";
 	dir = 2
 	},
 /area/shuttle/escape)
 "dai" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall0";
 	dir = 2
 	},
 /area/shuttle/escape)
 "daj" = (
 /obj/structure/sign/nosmoking_2,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall0";
 	dir = 2
 	},
@@ -91529,7 +91529,7 @@
 /turf/open/floor/wood,
 /area/medical/psych)
 "dal" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall4";
 	dir = 2
 	},
@@ -91729,12 +91729,12 @@
 	})
 "daz" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
@@ -91800,7 +91800,7 @@
 	icon_state = "shock";
 	name = "HIGH VOLTAGE"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/toxins/xenobiology{
 	name = "\improper Secure Lab"
 	})
@@ -91851,7 +91851,7 @@
 	name = "\improper Secure Lab"
 	})
 "daJ" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall1";
 	dir = 2
 	},
@@ -92021,14 +92021,14 @@
 /turf/open/floor/carpet,
 /area/medical/psych)
 "daW" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall7";
 	icon_state = "swall7";
 	dir = 2
 	},
 /area/shuttle/escape)
 "daX" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall8";
 	dir = 2
 	},
@@ -92053,7 +92053,7 @@
 /turf/simulated/shuttle/plating,
 /area/shuttle/escape)
 "dba" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall11";
 	icon_state = "swall11";
 	dir = 2
@@ -92124,7 +92124,7 @@
 /area/shuttle/escape)
 "dbh" = (
 /obj/machinery/status_display,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -92272,7 +92272,7 @@
 	icon_state = "lifestar";
 	name = "Medbay"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/surgeryobs)
 "dbv" = (
 /obj/structure/sign/biohazard{
@@ -92938,7 +92938,7 @@
 	})
 "dcm" = (
 /obj/structure/extinguisher_cabinet,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall0";
 	dir = 2
 	},
@@ -92950,7 +92950,7 @@
 	},
 /area/shuttle/escape)
 "dco" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall2";
 	dir = 2
 	},
@@ -93168,7 +93168,7 @@
 /turf/open/shuttle/floor,
 /area/shuttle/escape)
 "dcG" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall15";
 	icon_state = "swall15";
 	dir = 2
@@ -93270,7 +93270,7 @@
 /area/shuttle/escape)
 "dcS" = (
 /obj/structure/extinguisher_cabinet,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
@@ -93291,7 +93291,7 @@
 /area/shuttle/escape)
 "dcV" = (
 /obj/structure/sign/redcross,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "swallc2"
 	},
@@ -93308,7 +93308,7 @@
 	icon_state = "shock";
 	name = "HIGH VOLTAGE"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/xenobiology{
 	name = "\improper Secure Lab"
 	})
@@ -93435,7 +93435,7 @@
 /turf/space,
 /area/solar/starboard)
 "ddx" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall13";
 	icon_state = "swall13";
 	dir = 2
@@ -93443,7 +93443,7 @@
 /area/shuttle/escape)
 "ddy" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
@@ -93458,13 +93458,13 @@
 /turf/space,
 /area/solar/starboard)
 "ddE" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/shuttle/escape)
 "ddF" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall11";
 	dir = 2
 	},
@@ -93535,7 +93535,7 @@
 	})
 "ddN" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/xenobiology{
 	name = "\improper Secure Lab"
 	})
@@ -93710,7 +93710,7 @@
 	req_access_txt = "0";
 	use_power = 0
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall0";
 	dir = 2
 	},
@@ -93739,7 +93739,7 @@
 	icon_state = "lifestar";
 	name = "Medbay"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/medbay3{
 	name = "Medbay Aft"
 	})
@@ -93769,7 +93769,7 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/aft{
 	name = "Aft Maintenance"
 	})
@@ -93897,7 +93897,7 @@
 "deu" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/virology)
 "dev" = (
 /obj/structure/chair/comfy/shuttle{
@@ -93952,7 +93952,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/xenobiology{
 	name = "\improper Secure Lab"
 	})
@@ -93983,7 +93983,7 @@
 /obj/structure/sign/directions/science{
 	pixel_y = -8
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/library)
 "deE" = (
 /obj/structure/sign/directions/medical{
@@ -93997,7 +93997,7 @@
 	dir = 4;
 	pixel_y = -8
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ai_monitored/storage/eva{
 	name = "E.V.A. Storage"
 	})
@@ -94013,7 +94013,7 @@
 	dir = 8;
 	pixel_y = -8
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/maintcentral{
 	name = "Central Maintenance"
 	})
@@ -94202,7 +94202,7 @@
 /area/shuttle/escape)
 "deW" = (
 /obj/machinery/light_switch,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/mechanic_workshop)
 "deX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -94397,12 +94397,12 @@
 /area/chapel/main)
 "dfp" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-diagonalWall3";
 	icon_state = "diagonalWall3";
 	dir = 2
@@ -94693,7 +94693,7 @@
 /area/shuttle/escape)
 "dfN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/secondary/entry{
 	name = "Arrivals"
 	})
@@ -94703,7 +94703,7 @@
 	icon_state = "lifestar";
 	name = "Medbay"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/psych)
 "dfP" = (
 /obj/structure/cable/yellow{
@@ -95102,7 +95102,7 @@
 	name = "Arrivals"
 	})
 "dgr" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/secondary/entry{
 	name = "Arrivals"
 	})
@@ -95165,7 +95165,7 @@
 	})
 "dgy" = (
 /obj/structure/extinguisher_cabinet,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/secondary/entry{
 	name = "Arrivals"
 	})
@@ -95176,7 +95176,7 @@
 	})
 "dgA" = (
 /obj/machinery/firealarm,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/secondary/entry{
 	name = "Arrivals"
 	})
@@ -95296,7 +95296,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/break_room)
 "dgO" = (
 /obj/structure/sign/pods,
@@ -95304,13 +95304,13 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/engine/break_room)
 "dgP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/break_room)
 "dgQ" = (
 /obj/structure/table,
@@ -95321,12 +95321,12 @@
 /area/shuttle/escape)
 "dgR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/secondary/entry{
 	name = "Arrivals"
 	})
 "dgS" = (
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/toxins/mixing{
 	name = "\improper Toxins Lab"
 	})
@@ -95334,7 +95334,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/toxins/mixing{
 	name = "\improper Toxins Lab"
 	})
@@ -95342,7 +95342,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/toxins/server{
 	name = "\improper Research Division Server Room"
 	})
@@ -95406,7 +95406,7 @@
 	})
 "dhe" = (
 /obj/structure/sign/redcross,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "swall2";
 	tag = "icon-swall2"
@@ -95424,7 +95424,7 @@
 	})
 "dhh" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -95737,7 +95737,7 @@
 /area/tcommsat/server)
 "elK" = (
 /obj/effect/spawner/airlock/w_to_e,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/permabrig)
 "eSt" = (
 /obj/structure/window/reinforced{
@@ -95802,7 +95802,7 @@
 /area/tcommsat/server)
 "hLL" = (
 /obj/structure/lattice,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/space/nearstation)
 "iDw" = (
 /obj/machinery/atmospherics/unary/portables_connector,
@@ -95886,7 +95886,7 @@
 	})
 "nbO" = (
 /obj/effect/spawner/airlock/s_to_n,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/construction)
 "nig" = (
 /obj/effect/decal/warning_stripes/south,
@@ -95906,11 +95906,11 @@
 /area/maintenance/auxsolarport)
 "oAG" = (
 /obj/effect/spawner/airlock/w_to_e,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/engine/engineering)
 "pep" = (
 /obj/effect/spawner/airlock/s_to_n,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/starboard)
 "ptc" = (
 /turf/open/floor/plasteel{
@@ -95920,7 +95920,7 @@
 /area/medical/paramedic)
 "pMx" = (
 /obj/effect/spawner/airlock/w_to_e,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/aft{
 	name = "Aft Maintenance"
 	})
@@ -95961,7 +95961,7 @@
 /area/quartermaster/storage)
 "qbl" = (
 /obj/effect/spawner/airlock,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/aft{
 	name = "Aft Maintenance"
 	})
@@ -95971,7 +95971,7 @@
 /area/construction)
 "qhx" = (
 /obj/effect/spawner/airlock/w_to_e,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "qFg" = (
 /obj/machinery/space_heater,
@@ -96111,11 +96111,11 @@
 	})
 "uJn" = (
 /obj/effect/spawner/airlock/w_to_e,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/starboard)
 "uKm" = (
 /obj/effect/spawner/airlock/e_to_w,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fpmaint2{
 	name = "Port Maintenance"
 	})

@@ -86,7 +86,7 @@
 				if(!W.use(5))
 					return
 				var/turf/T = get_turf(src)
-				T.ChangeTurf(/turf/simulated/wall/mineral/wood/nonmetal)
+				T.ChangeTurf(/turf/closed/wall/mineral/wood/nonmetal)
 				qdel(src)
 				return
 	return ..()
@@ -115,7 +115,7 @@
 	bar_material = SAND
 	climbable = TRUE
 	smooth = SMOOTH_TRUE
-	canSmoothWith = list(/obj/structure/barricade/sandbags, /turf/simulated/wall, /turf/simulated/wall/r_wall, /obj/structure/falsewall, /obj/structure/falsewall/reinforced, /turf/simulated/wall/rust, /turf/simulated/wall/r_wall/rust, /obj/structure/barricade/security)
+	canSmoothWith = list(/obj/structure/barricade/sandbags, /turf/closed/wall, /turf/closed/wall/r_wall, /obj/structure/falsewall, /obj/structure/falsewall/reinforced, /turf/closed/wall/rust, /turf/closed/wall/r_wall/rust, /obj/structure/barricade/security)
 	stacktype = null
 
 /obj/structure/barricade/security

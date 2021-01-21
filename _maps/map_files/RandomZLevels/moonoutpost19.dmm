@@ -274,7 +274,7 @@
 	poweralm = 0
 	})
 "as" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -649,7 +649,7 @@
 	poweralm = 0
 	})
 "aT" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -1810,7 +1810,7 @@
 /obj/machinery/mineral/processing_unit_console{
 	machinedir = 8
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -2176,7 +2176,7 @@
 /obj/machinery/mineral/stacking_unit_console{
 	machinedir = 8
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "Syndicate Outpost"
@@ -2851,13 +2851,13 @@
 	name = "MO19 Research"
 	})
 "dZ" = (
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
 	})
 "ea" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -2875,7 +2875,7 @@
 	})
 "ec" = (
 /obj/structure/sign/biohazard,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3204,7 +3204,7 @@
 	icon_state = "shock";
 	name = "HIGH VOLTAGE"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3298,13 +3298,13 @@
 	name = "MO19 Research"
 	})
 "eJ" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
 	})
 "eK" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -3431,13 +3431,13 @@
 	name = "MO19 Research"
 	})
 "eT" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a7)
 "eU" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a7)
 "eV" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a7)
 "eW" = (
 /obj/machinery/atmospherics/unary/vent_pump{
@@ -4095,7 +4095,7 @@
 /turf/open/floor/plating,
 /area/awaycontent/a7)
 "fP" = (
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/awaycontent/a7)
 "fQ" = (
 /obj/structure/cable{
@@ -4431,7 +4431,7 @@
 	dir = 4;
 	level = 1
 	},
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "MO19 Research"
@@ -5518,13 +5518,13 @@
 	name = "MO19 Research"
 	})
 "hJ" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
 	})
 "hK" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -6340,7 +6340,7 @@
 	pixel_x = 0;
 	pixel_y = 0
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"
@@ -7811,7 +7811,7 @@
 	})
 "ld" = (
 /turf/open/floor/plating/asteroid/airless,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -7821,7 +7821,7 @@
 	name = "MO19 Arrivals"
 	})
 "le" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -7831,7 +7831,7 @@
 	})
 "lf" = (
 /turf/open/floor/plating/asteroid/airless,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 3;
 	icon_state = "swall_f10";
 	layer = 2
@@ -8084,7 +8084,7 @@
 	name = "MO19 Arrivals"
 	})
 "lz" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall14";
 	dir = 2
 	},
@@ -8093,7 +8093,7 @@
 	name = "MO19 Arrivals"
 	})
 "lA" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall8";
 	dir = 2
 	},
@@ -8110,7 +8110,7 @@
 	name = "MO19 Arrivals"
 	})
 "lC" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall4";
 	dir = 2
 	},
@@ -8119,7 +8119,7 @@
 	name = "MO19 Arrivals"
 	})
 "lD" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall1";
 	dir = 2
 	},
@@ -8339,7 +8339,7 @@
 	})
 "lW" = (
 /turf/open/shuttle/floor,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -8366,7 +8366,7 @@
 	name = "MO19 Arrivals"
 	})
 "lZ" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -8951,7 +8951,7 @@
 	name = "MO19 Arrivals"
 	})
 "mY" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall2";
 	dir = 2
 	},
@@ -9018,7 +9018,7 @@
 	})
 "ne" = (
 /turf/open/floor/plating/asteroid/airless,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -9028,7 +9028,7 @@
 	})
 "nf" = (
 /turf/open/shuttle/floor,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -9124,7 +9124,7 @@
 	name = "MO19 Arrivals"
 	})
 "no" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall13";
 	dir = 2
 	},
@@ -9199,7 +9199,7 @@
 	})
 "nw" = (
 /turf/open/floor/plating/asteroid/airless,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -10094,7 +10094,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "MO19 Arrivals"

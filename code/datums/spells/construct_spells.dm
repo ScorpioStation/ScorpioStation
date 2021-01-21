@@ -30,7 +30,7 @@
 	invocation = "none"
 	invocation_type = "none"
 	range = 0
-	summon_type = list(/turf/simulated/wall/cult/artificer) //we don't want artificer-based runed metal farms
+	summon_type = list(/turf/closed/wall/cult/artificer) //we don't want artificer-based runed metal farms
 	centcom_cancast = FALSE //Stop crashing the server by spawning turfs on transit tiles
 
 /obj/effect/proc_holder/spell/aoe_turf/conjure/wall/reinforced
@@ -45,7 +45,7 @@
 	centcom_cancast = FALSE //Stop crashing the server by spawning turfs on transit tiles
 	delay = 50
 
-	summon_type = list(/turf/simulated/wall/r_wall)
+	summon_type = list(/turf/closed/wall/r_wall)
 
 /obj/effect/proc_holder/spell/aoe_turf/conjure/soulstone
 	name = "Summon Soulstone"

@@ -69,11 +69,11 @@
 /turf/open/floor/mineral/silver,
 /area/ruin/powered/pride)
 "G" = (
-/turf/simulated/wall/mineral/diamond,
+/turf/closed/wall/mineral/diamond,
 /area/ruin/powered/pride)
 "O" = (
 /obj/structure/mirror/magic/pride,
-/turf/simulated/wall/mineral/diamond,
+/turf/closed/wall/mineral/diamond,
 /area/ruin/powered/pride)
 "Y" = (
 /obj/machinery/door/airlock/diamond,

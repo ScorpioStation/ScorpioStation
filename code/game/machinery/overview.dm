@@ -64,10 +64,10 @@
 					if("/turf/open/floor/engine")
 						colour = rgb(128,128,128)
 
-					if("/turf/simulated/wall")
+					if("/turf/closed/wall")
 						colour = rgb(96,96,96)
 
-					if("/turf/simulated/wall/r_wall")
+					if("/turf/closed/wall/r_wall")
 						colour = rgb(128,96,96)
 
 					if("/turf/unsimulated/floor")
@@ -220,10 +220,10 @@
 							t1 = min(100, t1-100)
 							colour = rgb( t1*2.55, t1*2.55, 255)
 
-					if("/turf/simulated/wall")
+					if("/turf/closed/wall")
 						colour = rgb(96,96,96)
 
-					if("/turf/simulated/wall/r_wall")
+					if("/turf/closed/wall/r_wall")
 						colour = rgb(128,96,96)
 
 					if("/turf/unsimulated/floor")

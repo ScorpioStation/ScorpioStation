@@ -51,7 +51,7 @@
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "aj" = (
-/turf/simulated/wall/mineral/sandstone,
+/turf/closed/wall/mineral/sandstone,
 /area/ruin/powered/beach)
 "ak" = (
 /obj/machinery/door/airlock/sandstone{
@@ -384,7 +384,7 @@
 /turf/open/floor/beach/water,
 /area/ruin/powered/beach)
 "bW" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/powered/beach)
 "cs" = (
 /obj/effect/overlay/palmtree_l,
@@ -489,7 +489,7 @@
 /area/ruin/powered/beach)
 "Ds" = (
 /obj/structure/sign/barsign,
-/turf/simulated/wall/mineral/sandstone,
+/turf/closed/wall/mineral/sandstone,
 /area/ruin/powered/beach)
 "Ec" = (
 /obj/machinery/door/airlock/sandstone{

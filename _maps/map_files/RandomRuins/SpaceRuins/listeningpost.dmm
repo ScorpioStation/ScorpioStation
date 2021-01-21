@@ -15,7 +15,7 @@
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/powered)
 "f" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/powered)
 "g" = (
 /turf/open/floor/plating,
@@ -32,7 +32,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/powered)
 "j" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/powered)
 "k" = (
 /obj/structure/table,
@@ -226,7 +226,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/powered)
 "N" = (
 /obj/structure/disposalpipe/segment{
@@ -276,7 +276,7 @@
 /area/ruin/powered)
 "Y" = (
 /obj/item/gps/ruin,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/powered)
 
 (1,1,1) = {"

@@ -58,7 +58,7 @@
 /turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ak" = (
-/turf/simulated/wall/indestructible/boss,
+/turf/closed/wall/indestructible/boss,
 /area/ruin/unpowered/ash_walkers)
 "al" = (
 /obj/structure/stone_tile/surrounding_tile{
@@ -68,7 +68,7 @@
 /area/lavaland/surface/outdoors)
 "am" = (
 /obj/effect/baseturf_helper/lava_land/surface,
-/turf/simulated/wall/indestructible/boss,
+/turf/closed/wall/indestructible/boss,
 /area/ruin/unpowered/ash_walkers)
 "aq" = (
 /obj/structure/stone_tile/block/cracked{
@@ -89,7 +89,7 @@
 /turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "as" = (
-/turf/simulated/wall/mineral/wood,
+/turf/closed/wall/mineral/wood,
 /area/ruin/unpowered/ash_walkers)
 "at" = (
 /obj/structure/stone_tile/block{
@@ -660,7 +660,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "bG" = (
-/turf/simulated/wall/indestructible/boss/see_through,
+/turf/closed/wall/indestructible/boss/see_through,
 /area/ruin/unpowered/ash_walkers)
 "bH" = (
 /obj/structure/necropolis_gate,

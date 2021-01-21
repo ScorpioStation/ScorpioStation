@@ -14,7 +14,7 @@
 /turf/open/floor/plating,
 /area/ruin/unpowered)
 "ae" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/unpowered)
 "af" = (
 /obj/structure/grille,
@@ -34,7 +34,7 @@
 /area/ruin/powered)
 "aj" = (
 /turf/open/floor/plating/asteroid/airless,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -46,19 +46,19 @@
 /area/ruin/powered)
 "al" = (
 /turf/open/floor/plating/asteroid/airless,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 2;
 	icon_state = "swall_f10";
 	layer = 2
 	},
 /area/ruin/powered)
 "am" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "an" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -145,7 +145,7 @@
 "aA" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -159,7 +159,7 @@
 "aC" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -210,7 +210,7 @@
 	name = "Space Bar"
 	})
 "aJ" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/powered)
 "aK" = (
 /obj/structure/table,
@@ -266,7 +266,7 @@
 "aR" = (
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -444,7 +444,7 @@
 "bp" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/plating/asteroid/airless,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -466,7 +466,7 @@
 "bs" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/plating/asteroid/airless,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},

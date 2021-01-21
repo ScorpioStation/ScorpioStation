@@ -132,7 +132,7 @@
 /turf/open/floor/engine/cult,
 /area/ruin/powered/greed)
 "W" = (
-/turf/simulated/wall/cult,
+/turf/closed/wall/cult,
 /area/ruin/powered/greed)
 
 (1,1,1) = {"

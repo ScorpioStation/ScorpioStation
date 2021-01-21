@@ -3,7 +3,7 @@
 /turf/space,
 /area/space)
 "ab" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaymission/academy/headmaster)
 "ac" = (
 /obj/structure/grille,
@@ -114,7 +114,7 @@
 /turf/open/floor/carpet,
 /area/awaymission/academy/headmaster)
 "as" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/academy/headmaster)
 "at" = (
 /obj/structure/mineral_door/wood,
@@ -288,7 +288,7 @@
 /area/awaymission/academy)
 "aT" = (
 /obj/structure/noticeboard,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/academy/headmaster)
 "aU" = (
 /obj/structure/cable{
@@ -317,7 +317,7 @@
 /area/awaymission/academy/headmaster)
 "aZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaymission/academy/headmaster)
 "ba" = (
 /obj/structure/table/wood,
@@ -427,7 +427,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/academy/headmaster)
 "bs" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaymission/academy/classrooms)
 "bt" = (
 /obj/machinery/door/poddoor/shutters{
@@ -502,23 +502,23 @@
 /turf/open/floor/plasteel,
 /area/awaymission/academy/classrooms)
 "bE" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/academy/classrooms)
 "bF" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc2";
 	icon_state = "swallc2"
 	},
 /area/awaymission/academy/classrooms)
 "bG" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/awaymission/academy/classrooms)
 "bH" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc1";
 	icon_state = "swallc1"
 	},
@@ -639,7 +639,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/academy/classrooms)
 "bW" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -783,7 +783,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/academy/classrooms)
 "cs" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall1";
 	icon_state = "swall1"
 	},
@@ -887,7 +887,7 @@
 /area/awaymission/academy/headmaster)
 "cH" = (
 /obj/structure/sign/nosmoking_1,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/academy/headmaster)
 "cI" = (
 /obj/structure/cable{
@@ -1999,7 +1999,7 @@
 	},
 /area/awaymission/academy/classrooms)
 "fB" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/academy/academyaft)
 "fC" = (
 /obj/structure/cable{
@@ -2601,7 +2601,7 @@
 	},
 /area/awaymission/academy/classrooms)
 "gZ" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaymission/academy/academyaft)
 "ha" = (
 /obj/structure/cable{
@@ -3524,7 +3524,7 @@
 /area/awaymission/academy/academyaft)
 "ji" = (
 /obj/structure/noticeboard,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/academy/academyaft)
 "jj" = (
 /obj/machinery/light{
@@ -3762,7 +3762,7 @@
 /turf/open/floor/carpet,
 /area/awaymission/academy/academyaft)
 "jP" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaymission/academy/academygate)
 "jQ" = (
 /obj/machinery/light/small{
@@ -4140,7 +4140,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/academy/classrooms)
 "kN" = (
 /obj/machinery/light{
@@ -4202,7 +4202,7 @@
 /area/awaymission/academy/academyaft)
 "kT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaymission/academy/academyaft)
 "kU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -4473,7 +4473,7 @@
 /area/awaymission/academy/academyaft)
 "lB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaymission/academy/academyaft)
 "lC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,

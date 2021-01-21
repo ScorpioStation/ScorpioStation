@@ -737,7 +737,7 @@ the belt (/obj/screen): attack hand(Nick Cave (/mob/living/carbon/human), null)
 the belt (/obj/screen): DblClick(null, null, null)
 the belt (/obj/screen): Click(null, "mapwindow.map", "icon-x=23;icon-y=14;left=1;scr...")
 runtime error: undefined variable /turf/open/floor/plating/var/mineral
-proc name: attackby (/turf/simulated/wall/attackby)
+proc name: attackby (/turf/closed/wall/attackby)
   source file: turf.dm,600
   usr: Monte Smail (/mob/living/carbon/human)
   src: the plating (176,172,5) (/turf/open/floor/plating)

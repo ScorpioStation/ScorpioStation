@@ -138,7 +138,7 @@
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/unpowered)
 "at" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/unpowered)
 "au" = (
 /obj/structure/flora/ausbushes/leafybush,
@@ -249,7 +249,7 @@
 	icon_state = "4-8";
 	pixel_y = 0
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/unpowered)
 "aG" = (
 /obj/structure/table/reinforced,
@@ -328,7 +328,7 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/unpowered)
 "aN" = (
 /obj/structure/table/reinforced,
@@ -683,7 +683,7 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/unpowered)
 "bz" = (
 /obj/machinery/space_heater,
@@ -730,7 +730,7 @@
 /area/ruin/unpowered)
 "bF" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/unpowered)
 "bG" = (
 /obj/machinery/door/airlock/external,
@@ -834,7 +834,7 @@
 /area/space/nearstation)
 "Hv" = (
 /obj/item/gps/ruin,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/unpowered)
 
 (1,1,1) = {"

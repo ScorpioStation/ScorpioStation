@@ -51,7 +51,7 @@
 /turf/template_noop,
 /area/space/nearstation)
 "ag" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/onehalf/dorms_med)
 "ah" = (
 /obj/structure/grille,
@@ -71,7 +71,7 @@
 /turf/unsimulated/floor/plating/airless,
 /area/ruin/onehalf/hallway)
 "ak" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/onehalf/hallway)
 "al" = (
 /obj/machinery/sleeper{
@@ -118,7 +118,7 @@
 /turf/open/floor/plating,
 /area/ruin/onehalf/drone_bay)
 "ar" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/onehalf/drone_bay)
 "as" = (
 /obj/machinery/door/poddoor{
@@ -296,7 +296,7 @@
 	pixel_x = 7;
 	pixel_y = 6
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/onehalf/drone_bay)
 "aO" = (
 /obj/structure/disposalpipe/segment,
@@ -339,7 +339,7 @@
 	pixel_x = 7;
 	pixel_y = 6
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/onehalf/drone_bay)
 "aR" = (
 /obj/structure/disposalpipe/segment,
@@ -801,7 +801,7 @@
 /turf/open/floor/plasteel/airless,
 /area/ruin/onehalf/hallway)
 "bT" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/onehalf/bridge)
 "bU" = (
 /obj/item/stack/sheet/metal,
@@ -818,7 +818,7 @@
 /turf/unsimulated/floor/plating/airless,
 /area/ruin/onehalf/hallway)
 "bX" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/onehalf/hallway)
 "bY" = (
 /turf/open/floor/plating/airless,

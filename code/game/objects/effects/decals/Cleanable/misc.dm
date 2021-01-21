@@ -27,7 +27,7 @@
 	layer = TURF_LAYER
 	icon = 'icons/effects/dirt.dmi'
 	icon_state = "dirt"
-	canSmoothWith = list(/obj/effect/decal/cleanable/dirt, /turf/simulated/wall, /obj/structure/falsewall)
+	canSmoothWith = list(/obj/effect/decal/cleanable/dirt, /turf/closed/wall, /obj/structure/falsewall)
 	smooth = SMOOTH_MORE
 	mouse_opacity = FALSE
 

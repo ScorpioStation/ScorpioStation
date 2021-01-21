@@ -135,7 +135,7 @@
 			var/radiated_temperature = location.air.temperature*FIRE_SPREAD_RADIOSITY_SCALE
 			for(var/direction in GLOB.cardinal)
 				if(!(location.atmos_adjacent_turfs & direction))
-					var/turf/simulated/wall/W = get_step(src, direction)
+					var/turf/closed/wall/W = get_step(src, direction)
 					if(istype(W))
 						W.adjacent_fire_act(W, radiated_temperature)
 					continue

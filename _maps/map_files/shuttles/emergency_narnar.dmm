@@ -3,7 +3,7 @@
 /turf/space,
 /area/space)
 "ab" = (
-/turf/simulated/wall/cult,
+/turf/closed/wall/cult,
 /area/shuttle/escape)
 "ac" = (
 /obj/effect/spawner/window/reinforced{
@@ -200,7 +200,7 @@
 /obj/effect/spawner/window/reinforced{
 	color = "red"
 	},
-/turf/simulated/wall/cult,
+/turf/closed/wall/cult,
 /area/shuttle/escape)
 "aE" = (
 /obj/docking_port/mobile/emergency{
@@ -293,11 +293,11 @@
 /obj/effect/spawner/window/reinforced{
 	color = "red"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
-/turf/simulated/wall/cult,
+/turf/closed/wall/cult,
 /area/shuttle/escape)
 "aS" = (
 /obj/machinery/status_display{
@@ -316,7 +316,7 @@
 /obj/effect/spawner/window/reinforced{
 	color = "red"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall14";
 	dir = 2

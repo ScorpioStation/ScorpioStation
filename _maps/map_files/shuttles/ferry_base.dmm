@@ -9,13 +9,13 @@
 	tag = "icon-propulsion (EAST)"
 	},
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
 /area/shuttle/transport)
 "c" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -32,14 +32,14 @@
 /area/shuttle/transport)
 "f" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
 /area/shuttle/transport)
 "g" = (
 /turf/open/shuttle/floor,
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9"
 	},
@@ -104,14 +104,14 @@
 	tag = "icon-propulsion (EAST)"
 	},
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
 /area/shuttle/transport)
 "p" = (
 /turf/open/shuttle/floor,
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10"
 	},
@@ -140,7 +140,7 @@
 /area/shuttle/transport)
 "u" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},

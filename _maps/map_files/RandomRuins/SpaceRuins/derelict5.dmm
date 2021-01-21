@@ -12,10 +12,10 @@
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/unpowered)
 "e" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/unpowered)
 "f" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/unpowered)
 "g" = (
 /turf/open/floor/plating,

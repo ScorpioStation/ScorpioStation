@@ -10,7 +10,7 @@
 /turf/unsimulated/floor/abductor,
 /area/ruin/unpowered/misc_lavaruin)
 "d" = (
-/turf/simulated/wall/mineral/abductor,
+/turf/closed/wall/mineral/abductor,
 /area/ruin/unpowered/misc_lavaruin)
 "e" = (
 /turf/unsimulated/floor/abductor,

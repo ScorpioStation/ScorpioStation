@@ -4,13 +4,13 @@
 /area/template_noop)
 "ab" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
 /area/shuttle/abandoned)
 "ac" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
@@ -20,7 +20,7 @@
 /turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9"
 	},
@@ -46,20 +46,20 @@
 /turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5"
 	},
 /area/shuttle/abandoned)
 "ah" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall13";
 	icon_state = "swall13";
 	dir = 2
 	},
 /area/shuttle/abandoned)
 "ai" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall14";
 	dir = 2
@@ -67,7 +67,7 @@
 /area/shuttle/abandoned)
 "aj" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -81,7 +81,7 @@
 /turf/simulated/shuttle/plating,
 /area/shuttle/abandoned)
 "al" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall11";
 	icon_state = "swall11";
 	dir = 2
@@ -104,7 +104,7 @@
 	},
 /area/shuttle/abandoned)
 "ao" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall15";
 	icon_state = "swall15";
 	dir = 2
@@ -112,7 +112,7 @@
 /area/shuttle/abandoned)
 "ap" = (
 /turf/simulated/shuttle/plating,
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9"
 	},
@@ -140,7 +140,7 @@
 /turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10"
 	},
@@ -152,7 +152,7 @@
 	},
 /area/shuttle/abandoned)
 "au" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall7";
 	icon_state = "swall7";
 	dir = 2
@@ -220,7 +220,7 @@
 	},
 /area/shuttle/abandoned)
 "aE" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -247,7 +247,7 @@
 /area/shuttle/abandoned)
 "aI" = (
 /turf/simulated/shuttle/plating,
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6"
 	},
@@ -301,7 +301,7 @@
 /turf/open/shuttle/floor{
 	icon_state = "floor3"
 	},
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6"
 	},
@@ -449,14 +449,14 @@
 /area/shuttle/abandoned)
 "bj" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
 /area/shuttle/abandoned)
 "bk" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -545,13 +545,13 @@
 /area/shuttle/abandoned)
 "bv" = (
 /turf/simulated/shuttle/plating,
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5"
 	},
 /area/shuttle/abandoned)
 "bw" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall14";
 	dir = 2
 	},
@@ -576,7 +576,7 @@
 /area/shuttle/abandoned)
 "bA" = (
 /turf/simulated/shuttle/plating,
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10"
 	},

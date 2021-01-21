@@ -5,7 +5,7 @@
 	dir = 2;
 	icon_state = "cautionfull"
 	},
-/turf/simulated/wall/mineral/titanium/nodecon/tileblend{
+/turf/closed/wall/mineral/titanium/nodecon/tileblend{
 	fixed_underlay = list("icon" = 'icons/turf/floors.dmi', "icon_state" = "cautionfull");
 	icon_state = "4-i"
 	},
@@ -61,10 +61,10 @@
 /turf/template_noop,
 /area/space/nearstation)
 "al" = (
-/turf/simulated/wall/mineral/titanium/nodecon,
+/turf/closed/wall/mineral/titanium/nodecon,
 /area/derelict/bridge)
 "am" = (
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/bridge)
 "an" = (
 /obj/structure/grille,
@@ -79,14 +79,14 @@
 /area/derelict/bridge)
 "ao" = (
 /obj/effect/landmark/damageturf,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/bridge)
 "ap" = (
 /obj/effect/landmark/damageturf{
 	layer = 3
 	},
 /obj/effect/landmark/burnturf,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/bridge)
 "aq" = (
 /obj/effect/landmark/burnturf,
@@ -230,7 +230,7 @@
 /area/derelict/bridge)
 "aE" = (
 /obj/structure/sign/nuke,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/bridge)
 "aF" = (
 /obj/item/twohanded/required/kirbyplants,
@@ -391,10 +391,10 @@
 	},
 /area/derelict/bridge)
 "aV" = (
-/turf/simulated/wall/mineral/titanium/nodecon,
+/turf/closed/wall/mineral/titanium/nodecon,
 /area/derelict/crew_quarters)
 "aW" = (
-/turf/simulated/wall/mineral/titanium/nodecon,
+/turf/closed/wall/mineral/titanium/nodecon,
 /area/derelict/arrival)
 "aX" = (
 /obj/structure/closet{
@@ -531,10 +531,10 @@
 	},
 /area/derelict/bridge)
 "bm" = (
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/crew_quarters)
 "bn" = (
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/arrival)
 "bo" = (
 /obj/structure/cable{
@@ -721,7 +721,7 @@
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
-/turf/simulated/wall/mineral/titanium/nodecon/tileblend{
+/turf/closed/wall/mineral/titanium/nodecon/tileblend{
 	fixed_underlay = list("icon" = 'icons/turf/floors.dmi', "icon_state" = "dark");
 	icon_state = "4-i"
 	},
@@ -1233,11 +1233,11 @@
 /area/derelict/crew_quarters)
 "cL" = (
 /obj/structure/sign/mech,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/arrival)
 "cM" = (
 /obj/structure/sign/securearea,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/arrival)
 "cN" = (
 /obj/machinery/door/airlock/hatch{
@@ -1453,7 +1453,7 @@
 /area/derelict/crew_quarters)
 "dl" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/crew_quarters)
 "dm" = (
 /obj/machinery/computer/security,
@@ -1720,7 +1720,7 @@
 	dir = 2;
 	icon_state = "darkredfull"
 	},
-/turf/simulated/wall/mineral/titanium/nodecon/tileblend{
+/turf/closed/wall/mineral/titanium/nodecon/tileblend{
 	icon_state = "4-i"
 	},
 /area/derelict/arrival)
@@ -1766,7 +1766,7 @@
 	},
 /area/derelict/arrival)
 "dS" = (
-/turf/simulated/wall/mineral/titanium/interior,
+/turf/closed/wall/mineral/titanium/interior,
 /area/derelict/arrival)
 "dT" = (
 /obj/structure/closet,
@@ -1805,13 +1805,13 @@
 	},
 /area/derelict/arrival)
 "dW" = (
-/turf/simulated/wall/mineral/titanium/nodecon,
+/turf/closed/wall/mineral/titanium/nodecon,
 /area/derelict/eva{
 	name = "Derelict Annex"
 	})
 "dX" = (
 /obj/structure/sign/securearea,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/eva{
 	name = "Derelict Annex"
 	})
@@ -1881,7 +1881,7 @@
 	},
 /area/derelict/arrival)
 "eg" = (
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/eva{
 	name = "Derelict Annex"
 	})
@@ -2028,7 +2028,7 @@
 	})
 "et" = (
 /obj/structure/sign/science,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/eva{
 	name = "Derelict Annex"
 	})
@@ -2100,7 +2100,7 @@
 	})
 "ez" = (
 /obj/structure/noticeboard,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/eva{
 	name = "Derelict Annex"
 	})
@@ -2178,7 +2178,7 @@
 "eI" = (
 /obj/structure/sign/securearea,
 /obj/effect/decal/cleanable/blood/splatter,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/arrival)
 "eJ" = (
 /obj/machinery/door/poddoor/impassable{
@@ -2228,7 +2228,7 @@
 	dir = 2;
 	icon_state = "purplefull"
 	},
-/turf/simulated/wall/mineral/titanium/nodecon/tileblend{
+/turf/closed/wall/mineral/titanium/nodecon/tileblend{
 	fixed_underlay = list("icon" = 'icons/turf/floors.dmi', "icon_state" = "purplefull");
 	icon_state = "4-i"
 	},
@@ -2372,7 +2372,7 @@
 	dir = 2;
 	icon_state = "cautionfull"
 	},
-/turf/simulated/wall/mineral/titanium/nodecon/tileblend{
+/turf/closed/wall/mineral/titanium/nodecon/tileblend{
 	fixed_underlay = list("icon" = 'icons/turf/floors.dmi', "icon_state" = "cautionfull");
 	icon_state = "4-i"
 	},
@@ -2788,7 +2788,7 @@
 	})
 "fL" = (
 /obj/structure/sign/nosmoking_1,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/eva{
 	name = "Derelict Annex"
 	})
@@ -2981,7 +2981,7 @@
 	})
 "ge" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/eva{
 	name = "Derelict Annex"
 	})
@@ -3048,7 +3048,7 @@
 	})
 "gk" = (
 /obj/structure/sign/poster/contraband/random,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/eva{
 	name = "Derelict Annex"
 	})
@@ -3170,7 +3170,7 @@
 	})
 "gy" = (
 /obj/effect/landmark/burnturf,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/eva{
 	name = "Derelict Annex"
 	})
@@ -3281,7 +3281,7 @@
 /area/derelict/crew_quarters)
 "gJ" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/arrival)
 "gK" = (
 /obj/structure/chair{
@@ -3505,7 +3505,7 @@
 	dir = 1;
 	icon_state = "whiteredfull"
 	},
-/turf/simulated/wall/mineral/titanium/nodecon/tileblend{
+/turf/closed/wall/mineral/titanium/nodecon/tileblend{
 	fixed_underlay = list("icon" = 'icons/turf/floors.dmi', "icon_state" = "whiteredfull");
 	icon_state = "4-i"
 	},
@@ -3624,7 +3624,7 @@
 	dir = 1;
 	pixel_y = 7
 	},
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/arrival)
 "hu" = (
 /obj/machinery/door/airlock/security/glass{
@@ -3688,7 +3688,7 @@
 	})
 "hz" = (
 /obj/effect/landmark/damageturf,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/eva{
 	name = "Derelict Annex"
 	})
@@ -3744,13 +3744,13 @@
 /area/derelict/crew_quarters)
 "hF" = (
 /obj/structure/sign/barsign,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall4";
 	dir = 2
 	},
 /area/derelict/crew_quarters)
 "hG" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 2;
 	icon_state = "swall8";
 	tag = "icon-swall12"
@@ -4040,7 +4040,7 @@
 	})
 "il" = (
 /obj/structure/sign/poster/contraband/communist_state,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/crew_quarters)
 "im" = (
 /obj/structure/cable{
@@ -4114,7 +4114,7 @@
 /area/derelict/arrival)
 "iu" = (
 /turf/template_noop,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
@@ -4208,7 +4208,7 @@
 	nitrogen = 0.01;
 	oxygen = 0.01
 	},
-/turf/simulated/wall/mineral/titanium/nodecon/tileblend{
+/turf/closed/wall/mineral/titanium/nodecon/tileblend{
 	fixed_underlay = list("icon" = 'icons/turf/floors.dmi', "icon_state" = "engine");
 	icon_state = "4-i"
 	},
@@ -4226,7 +4226,7 @@
 	})
 "iF" = (
 /turf/template_noop,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -4296,7 +4296,7 @@
 	},
 /area/derelict/crew_quarters)
 "iO" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -4491,7 +4491,7 @@
 /area/derelict/crew_quarters)
 "jh" = (
 /turf/template_noop,
-/turf/simulated/wall/mineral/titanium/nodecon/nosmooth{
+/turf/closed/wall/mineral/titanium/nodecon/nosmooth{
 	icon_state = "swall_f10"
 	},
 /area/derelict/eva{
@@ -4663,7 +4663,7 @@
 	nitrogen = 0.01;
 	oxygen = 0.01
 	},
-/turf/simulated/wall/mineral/titanium/nodecon/nosmooth{
+/turf/closed/wall/mineral/titanium/nodecon/nosmooth{
 	icon_state = "swall_f5"
 	},
 /area/derelict/eva{
@@ -5335,7 +5335,7 @@
 /area/derelict/crew_quarters)
 "kG" = (
 /obj/structure/sign/vacuum,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/crew_quarters)
 "kH" = (
 /obj/structure/cable{
@@ -5521,7 +5521,7 @@
 	name = "Derelict Annex"
 	})
 "lc" = (
-/turf/simulated/wall/mineral/titanium/nodecon/nosmooth{
+/turf/closed/wall/mineral/titanium/nodecon/nosmooth{
 	icon_state = "swallc2"
 	},
 /area/derelict/eva{
@@ -5777,7 +5777,7 @@
 /area/derelict/arrival)
 "lz" = (
 /obj/structure/sign/botany,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/eva{
 	name = "Derelict Annex"
 	})
@@ -6090,7 +6090,7 @@
 /area/derelict/arrival)
 "md" = (
 /turf/template_noop,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "diagonalWall3"
 	},
 /area/derelict/arrival)
@@ -6156,7 +6156,7 @@
 	})
 "mm" = (
 /turf/template_noop,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -6306,7 +6306,7 @@
 	},
 /area/derelict/crew_quarters)
 "mG" = (
-/turf/simulated/wall/mineral/titanium/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodiagonal,
 /area/derelict/arrival)
 "mH" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -6321,7 +6321,7 @@
 /area/derelict/arrival)
 "mI" = (
 /obj/structure/sign/greencross,
-/turf/simulated/shuttle/wall,
+/turf/closed/shuttle/wall,
 /area/derelict/arrival)
 "mJ" = (
 /obj/structure/cable{
@@ -6341,7 +6341,7 @@
 /area/derelict/arrival)
 "mK" = (
 /obj/structure/sign/directions/medical,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/arrival)
 "mL" = (
 /obj/effect/landmark/damageturf,
@@ -6704,7 +6704,7 @@
 	dir = 1;
 	icon_state = "whiteredfull"
 	},
-/turf/simulated/wall/mineral/titanium/nodecon/tileblend{
+/turf/closed/wall/mineral/titanium/nodecon/tileblend{
 	fixed_underlay = list("icon" = 'icons/turf/floors.dmi', "icon_state" = "whiteredfull");
 	icon_state = "4-i"
 	},
@@ -6813,7 +6813,7 @@
 /area/derelict/arrival)
 "nL" = (
 /turf/template_noop,
-/turf/simulated/wall/mineral/titanium/nodecon/nosmooth{
+/turf/closed/wall/mineral/titanium/nodecon/nosmooth{
 	icon_state = "swall_f10"
 	},
 /area/space/nearstation)
@@ -6915,7 +6915,7 @@
 /turf/open/floor/plasteel{
 	icon_state = "hydrofloor"
 	},
-/turf/simulated/wall/mineral/titanium/nodecon/tileblend{
+/turf/closed/wall/mineral/titanium/nodecon/tileblend{
 	fixed_underlay = list("icon" = 'icons/turf/floors.dmi', "icon_state" = "hydrofloor");
 	icon_state = "4-i"
 	},
@@ -7071,7 +7071,7 @@
 	dir = 5;
 	icon_state = "green"
 	},
-/turf/simulated/wall/mineral/titanium/nodecon/nosmooth{
+/turf/closed/wall/mineral/titanium/nodecon/nosmooth{
 	icon_state = "swall_f10"
 	},
 /area/derelict/eva{
@@ -7257,7 +7257,7 @@
 /area/derelict/arrival)
 "oG" = (
 /turf/template_noop,
-/turf/simulated/wall/mineral/titanium/nodecon/nosmooth{
+/turf/closed/wall/mineral/titanium/nodecon/nosmooth{
 	icon_state = "swall_f5"
 	},
 /area/derelict/arrival)
@@ -7342,7 +7342,7 @@
 	})
 "oQ" = (
 /turf/template_noop,
-/turf/simulated/wall/mineral/titanium/nodecon/nosmooth{
+/turf/closed/wall/mineral/titanium/nodecon/nosmooth{
 	icon_state = "swall_f5"
 	},
 /area/derelict/eva{
@@ -7523,13 +7523,13 @@
 	dir = 2;
 	icon_state = "orangefull"
 	},
-/turf/simulated/wall/mineral/titanium/nodecon/tileblend{
+/turf/closed/wall/mineral/titanium/nodecon/tileblend{
 	fixed_underlay = list("icon" = 'icons/turf/floors.dmi', "icon_state" = "orangefull");
 	icon_state = "4-i"
 	},
 /area/derelict/crew_quarters)
 "pk" = (
-/turf/simulated/wall/mineral/titanium/nodecon,
+/turf/closed/wall/mineral/titanium/nodecon,
 /area/space/nearstation)
 "pl" = (
 /obj/structure/cable{
@@ -7547,7 +7547,7 @@
 	})
 "pm" = (
 /obj/structure/sign/poster/contraband/random,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/crew_quarters)
 "pn" = (
 /obj/machinery/door/airlock/hatch{
@@ -7704,7 +7704,7 @@
 /area/derelict/crew_quarters)
 "pG" = (
 /turf/template_noop,
-/turf/simulated/wall/mineral/titanium/nodecon/nosmooth{
+/turf/closed/wall/mineral/titanium/nodecon/nosmooth{
 	icon_state = "swall_f10"
 	},
 /area/derelict/arrival)
@@ -7728,7 +7728,7 @@
 /area/derelict/arrival)
 "pJ" = (
 /obj/effect/landmark/damageturf,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/arrival)
 "pK" = (
 /obj/structure/window/reinforced,
@@ -7931,7 +7931,7 @@
 /area/derelict/arrival)
 "qh" = (
 /obj/structure/sign/examroom,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/arrival)
 "qi" = (
 /obj/machinery/computer/arcade,
@@ -7955,7 +7955,7 @@
 	icon_state = "redfull";
 	tag = "icon-redfull (NORTHWEST)"
 	},
-/turf/simulated/wall/mineral/titanium/nodecon/tileblend{
+/turf/closed/wall/mineral/titanium/nodecon/tileblend{
 	fixed_underlay = list("icon" = 'icons/turf/floors.dmi', "icon_state" = "redfull");
 	icon_state = "4-i"
 	},
@@ -8002,11 +8002,11 @@
 /area/derelict/crew_quarters)
 "qp" = (
 /obj/effect/landmark/burnturf,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/arrival)
 "qq" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/arrival)
 "qr" = (
 /obj/structure/cable{
@@ -8020,7 +8020,7 @@
 /area/derelict/arrival)
 "qs" = (
 /obj/structure/sign/nosmoking_2,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/arrival)
 "qt" = (
 /turf/open/floor/plasteel{
@@ -8430,11 +8430,11 @@
 /area/derelict/crew_quarters)
 "rn" = (
 /obj/structure/closet/medical_wall,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/arrival)
 "ro" = (
 /obj/structure/sign/greencross,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/arrival)
 "rp" = (
 /obj/structure/table,
@@ -8846,7 +8846,7 @@
 /area/derelict/arrival)
 "rZ" = (
 /obj/structure/sign/vacuum,
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/arrival)
 "sa" = (
 /obj/machinery/door/airlock/external{
@@ -9131,7 +9131,7 @@
 /obj/item/gps/ruin{
 	gpstag = "Russian Distress Signal"
 	},
-/turf/simulated/wall/mineral/titanium/nodecon/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodecon/nodiagonal,
 /area/derelict/arrival)
 
 (1,1,1) = {"

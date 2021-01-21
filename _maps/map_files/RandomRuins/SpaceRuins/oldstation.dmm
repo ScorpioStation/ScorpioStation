@@ -6,7 +6,7 @@
 /turf/closed/mineral/random,
 /area/ruin/unpowered)
 "ac" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/space/ancientstation/hivebot)
 "ad" = (
 /obj/structure/closet/crate,
@@ -25,7 +25,7 @@
 /turf/open/floor/plating/airless,
 /area/template_noop)
 "af" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/template_noop)
 "ag" = (
 /obj/structure/lattice,
@@ -37,7 +37,7 @@
 	},
 /area/ruin/space/ancientstation/hivebot)
 "ai" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/space/ancientstation/hivebot)
 "aj" = (
 /obj/effect/decal/remains/robot,
@@ -61,11 +61,11 @@
 	},
 /area/ruin/space/ancientstation/hivebot)
 "al" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation/comm)
 "am" = (
 /obj/structure/sign/poster/official/arksoft_logo,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation/comm)
 "an" = (
 /obj/effect/spawner/window/reinforced,
@@ -148,10 +148,10 @@
 	icon_state = "large_engine";
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/space/ancientstation/hivebot)
 "az" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation)
 "aA" = (
 /obj/structure/table,
@@ -230,7 +230,7 @@
 /area/ruin/space/ancientstation)
 "aK" = (
 /obj/structure/sign/poster/contraband/random,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation)
 "aL" = (
 /obj/structure/cable{
@@ -392,7 +392,7 @@
 /turf/open/floor/plasteel/airless,
 /area/ruin/space/ancientstation/betanorth)
 "bf" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation/betanorth)
 "bg" = (
 /obj/effect/decal/cleanable/dirt,
@@ -495,7 +495,7 @@
 /area/ruin/space/ancientstation/comm)
 "bs" = (
 /obj/structure/sign/poster/official/cleanliness,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation)
 "bt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -509,10 +509,10 @@
 /turf/open/floor/plating/airless,
 /area/template_noop)
 "bu" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation/thetacorridor)
 "bv" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/space/ancientstation/thetacorridor)
 "bw" = (
 /obj/effect/decal/cleanable/dirt,
@@ -552,7 +552,7 @@
 /obj/structure/sign/redcross{
 	icon_state = "greencross"
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation)
 "bE" = (
 /obj/structure/cable{
@@ -610,7 +610,7 @@
 /area/ruin/space/ancientstation)
 "bL" = (
 /obj/structure/sign/science,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation)
 "bM" = (
 /obj/effect/spawner/window/reinforced,
@@ -631,10 +631,10 @@
 /area/ruin/space/ancientstation/thetacorridor)
 "bP" = (
 /obj/structure/sign/poster/official/science,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation/thetacorridor)
 "bQ" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation/hivebot)
 "bR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -908,7 +908,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/ancientstation)
 "cA" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation/hydroponics)
 "cB" = (
 /obj/effect/spawner/window/reinforced,
@@ -1045,7 +1045,7 @@
 /area/ruin/space/ancientstation/betanorth)
 "cS" = (
 /obj/structure/sign/poster/official/nanomichi_ad,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation/betanorth)
 "cT" = (
 /obj/machinery/light/small{
@@ -1055,7 +1055,7 @@
 /turf/open/floor/plasteel/airless,
 /area/ruin/space/ancientstation/betanorth)
 "cU" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation/engi)
 "cV" = (
 /obj/structure/cable{
@@ -1148,7 +1148,7 @@
 /turf/open/floor/plating/airless,
 /area/template_noop)
 "dg" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation/sec)
 "dh" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -1175,7 +1175,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/ancientstation/thetacorridor)
 "dj" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation/rnd)
 "dk" = (
 /obj/structure/transit_tube_pod{
@@ -1298,7 +1298,7 @@
 /area/ruin/space/ancientstation)
 "dA" = (
 /obj/structure/sign/poster/contraband/donut_corp,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation/sec)
 "dB" = (
 /obj/machinery/alarm/all_access{
@@ -1848,7 +1848,7 @@
 /area/ruin/space/ancientstation)
 "eN" = (
 /obj/structure/sign/poster/official/here_for_your_safety,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation/sec)
 "eO" = (
 /obj/structure/table,
@@ -2696,7 +2696,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/ancientstation/engi)
 "gs" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation/kitchen)
 "gt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -3612,7 +3612,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/ancientstation/atmo)
 "ip" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation/atmo)
 "iq" = (
 /obj/effect/decal/cleanable/cobweb,
@@ -3650,7 +3650,7 @@
 	icon_state = "radiation";
 	name = "\improper HAZARDOUS RADIATION"
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/ruin/space/ancientstation/engi)
 "iu" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -4099,7 +4099,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/ancientstation)
 "jt" = (
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/ruin/space/ancientstation/proto)
 "ju" = (
 /obj/structure/cable{

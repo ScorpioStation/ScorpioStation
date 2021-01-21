@@ -6,7 +6,7 @@
 /turf/closed/mineral/volcanic/lava_land_surface,
 /area/ruin/powered)
 "c" = (
-/turf/simulated/wall/mineral/iron,
+/turf/closed/wall/mineral/iron,
 /area/ruin/powered)
 "d" = (
 /obj/item/clothing/head/helmet/space/syndicate/orange,
@@ -91,7 +91,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "t" = (
-/turf/simulated/wall/mineral/titanium/survival/pod,
+/turf/closed/wall/mineral/titanium/survival/pod,
 /area/ruin/powered)
 "u" = (
 /obj/structure/bed/pod,
@@ -147,13 +147,13 @@
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 8
 	},
-/turf/simulated/wall/mineral/titanium/interior,
+/turf/closed/wall/mineral/titanium/interior,
 /area/ruin/powered)
 "F" = (
-/turf/simulated/wall/mineral/titanium,
+/turf/closed/wall/mineral/titanium,
 /area/ruin/powered)
 "G" = (
-/turf/simulated/wall/mineral/titanium/interior,
+/turf/closed/wall/mineral/titanium/interior,
 /area/ruin/powered)
 "H" = (
 /obj/machinery/door/airlock/titanium{

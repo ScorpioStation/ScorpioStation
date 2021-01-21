@@ -158,7 +158,7 @@
 /turf/space,
 /area/space)
 "V" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/space)
 "X" = (
 /turf/space,

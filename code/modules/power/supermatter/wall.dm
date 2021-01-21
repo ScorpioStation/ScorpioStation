@@ -29,7 +29,7 @@
 				if(istype(get_step(T, step_overlays[next_direction]),/turf/open/floor/plating/smatter))
 					T.overlays += image('icons/turf/floors.dmi', "smatter_side_[next_direction]")
 
-/turf/simulated/wall/smatter
+/turf/closed/wall/smatter
 	name = "supermatter"
 	desc = "thats a wall of supermatter"
 	icon = 'icons/turf/walls.dmi'
@@ -69,6 +69,6 @@
 		if(istype(T))
 			T.overlays.Cut()
 			for(var/next_direction in step_overlays)
-				if(istype(get_step(T, step_overlays[next_direction]),/turf/simulated/wall/smatter))
+				if(istype(get_step(T, step_overlays[next_direction]),/turf/closed/wall/smatter))
 					T.overlays += image('icons/turf/walls.dmi', "smatter_side_[next_direction]")
 

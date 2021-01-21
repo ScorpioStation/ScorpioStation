@@ -3,7 +3,7 @@
 /turf/space,
 /area/space)
 "ab" = (
-/turf/simulated/shuttle/wall,
+/turf/closed/shuttle/wall,
 /area/awaymission/wwvault)
 "ac" = (
 /turf/open/floor/engine/cult,
@@ -29,7 +29,7 @@
 	},
 /area/awaymission/wwvault)
 "ah" = (
-/turf/simulated/wall/cult,
+/turf/closed/wall/cult,
 /area/awaymission/wwvault)
 "ai" = (
 /obj/effect/forcefield{
@@ -37,7 +37,7 @@
 	layer = 1;
 	name = "Blocker"
 	},
-/turf/simulated/wall/cult,
+/turf/closed/wall/cult,
 /area/awaymission/wwvault)
 "aj" = (
 /turf/simulated/shuttle/plating{
@@ -68,7 +68,7 @@
 	layer = 1;
 	name = "Blocker"
 	},
-/turf/simulated/shuttle/wall,
+/turf/closed/shuttle/wall,
 /area/awaymission/wwvault)
 "ao" = (
 /turf/simulated/shuttle/plating{
@@ -298,7 +298,7 @@
 /turf/closed/mineral/random,
 /area/awaymission/wwmines)
 "aU" = (
-/turf/simulated/wall/mineral/sandstone,
+/turf/closed/wall/mineral/sandstone,
 /area/awaymission/wwrefine)
 "aV" = (
 /obj/structure/ore_box,
@@ -338,7 +338,7 @@
 	layer = 1;
 	name = "Blocker"
 	},
-/turf/simulated/wall/mineral/sandstone,
+/turf/closed/wall/mineral/sandstone,
 /area/awaymission/wwmines)
 "bd" = (
 /obj/effect/decal/cleanable/blood/gibs/body{
@@ -348,7 +348,7 @@
 /turf/open/floor/plating/ironsand,
 /area/awaymission/wwmines)
 "be" = (
-/turf/simulated/wall/mineral/sandstone,
+/turf/closed/wall/mineral/sandstone,
 /area/space/nearstation)
 "bf" = (
 /obj/structure/largecrate,
@@ -531,7 +531,7 @@
 /turf/open/floor/wood,
 /area/awaymission/wwmines)
 "bM" = (
-/turf/simulated/wall/mineral/sandstone,
+/turf/closed/wall/mineral/sandstone,
 /area/awaymission/wwgov)
 "bN" = (
 /obj/structure/table/wood,
@@ -1289,7 +1289,7 @@
 /area/awaymission/wwgov)
 "dH" = (
 /obj/machinery/computer/security/telescreen/entertainment,
-/turf/simulated/wall/mineral/sandstone,
+/turf/closed/wall/mineral/sandstone,
 /area/awaymission/wwmines)
 "dI" = (
 /obj/machinery/light/small{
@@ -1516,7 +1516,7 @@
 	},
 /area/awaymission/wwmines)
 "ej" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaymission/wwrefine)
 "ek" = (
 /turf/open/floor/plasteel,
@@ -1629,7 +1629,7 @@
 /area/awaymission/wwmines)
 "ez" = (
 /obj/structure/sign/vacuum,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaymission/wwrefine)
 "eA" = (
 /obj/effect/mine/dnascramble,
@@ -1638,7 +1638,7 @@
 /area/awaymission/wwmines)
 "eB" = (
 /obj/effect/decal/cleanable/blood/splatter,
-/turf/simulated/wall/mineral/sandstone,
+/turf/closed/wall/mineral/sandstone,
 /area/awaymission/wwmines)
 "eC" = (
 /obj/item/soap/syndie,
@@ -1813,7 +1813,7 @@
 /turf/open/floor/wood,
 /area/awaymission/wwmines)
 "eX" = (
-/turf/simulated/wall/mineral/sandstone,
+/turf/closed/wall/mineral/sandstone,
 /area/awaymission/wwmines)
 "eY" = (
 /obj/structure/chair/comfy/brown{
@@ -1842,7 +1842,7 @@
 /area/awaymission/wwmines)
 "fc" = (
 /obj/effect/decal/cleanable/blood,
-/turf/simulated/wall/mineral/sandstone,
+/turf/closed/wall/mineral/sandstone,
 /area/awaymission/wwmines)
 "fd" = (
 /obj/structure/window/reinforced{
@@ -2300,7 +2300,7 @@
 	tag = "icon-gibdown1";
 	icon_state = "gibdown1"
 	},
-/turf/simulated/wall/mineral/sandstone,
+/turf/closed/wall/mineral/sandstone,
 /area/awaymission/wwmines)
 "gm" = (
 /obj/structure/chair/wood{
@@ -2565,14 +2565,14 @@
 /turf/closed/mineral,
 /area/awaymission/wwmines)
 "hh" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12"
 	},
 /area/awaymission/wwrefine)
 "hi" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -2591,20 +2591,20 @@
 /turf/open/floor/wood,
 /area/awaymission/wwmines)
 "hl" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall8";
 	icon_state = "swall8"
 	},
 /area/awaymission/wwrefine)
 "hm" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall4";
 	icon_state = "swall4"
 	},
 /area/awaymission/wwrefine)
 "hn" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 3;
 	icon_state = "swall_f10";
 	layer = 2;
@@ -2624,7 +2624,7 @@
 /turf/open/floor/wood,
 /area/awaymission/wwmines)
 "hq" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3"
 	},
@@ -2636,14 +2636,14 @@
 	},
 /area/awaymission/wwrefine)
 "hs" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc1";
 	icon_state = "swallc1"
 	},
 /area/awaymission/wwrefine)
 "ht" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -2657,14 +2657,14 @@
 	},
 /area/awaymission/wwrefine)
 "hv" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc2";
 	icon_state = "swallc2"
 	},
 /area/awaymission/wwrefine)
 "hw" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2

@@ -3,7 +3,7 @@
 /turf/space,
 /area/space)
 "b" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s6";
 	dir = 2
 	},
@@ -14,13 +14,13 @@
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "d" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s10";
 	dir = 2
 	},
 /area/shuttle/escape)
 "e" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc4"
 	},
 /area/shuttle/escape)
@@ -29,12 +29,12 @@
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "g" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc3"
 	},
 /area/shuttle/escape)
 "h" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -165,7 +165,7 @@
 /turf/simulated/shuttle/plating,
 /area/shuttle/escape)
 "A" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s5";
 	dir = 2
 	},
@@ -185,7 +185,7 @@
 /turf/simulated/shuttle/plating,
 /area/shuttle/escape)
 "D" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_s9";
 	icon_state = "swall_s9";
 	dir = 2

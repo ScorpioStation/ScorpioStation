@@ -192,7 +192,7 @@ Difficulty: Medium
 	for(var/turf/T in RANGE_TURFS(2, center))
 		if(istype(T, /turf/open/floor/indestructible))
 			continue
-		if(!istype(T, /turf/simulated/wall/indestructible))
+		if(!istype(T, /turf/closed/wall/indestructible))
 			T.ChangeTurf(/turf/open/floor/plating/asteroid/basalt/lava_land_surface)
 		else
 			indestructible_turfs += T
@@ -217,7 +217,7 @@ Difficulty: Medium
 		for(var/turf/T in turfs)
 			if(!(T in empty))
 				new /obj/effect/temp_visual/lava_warning(T)
-			else if(!istype(T, /turf/simulated/wall/indestructible))
+			else if(!istype(T, /turf/closed/wall/indestructible))
 				new /obj/effect/temp_visual/lava_safe(T)
 		amount--
 		SLEEP_CHECK_DEATH(24)

@@ -5,7 +5,7 @@
 	heat_capacity = 0
 	layer = 2
 
-/turf/simulated/shuttle/wall
+/turf/closed/shuttle/wall
 	name = "wall"
 	icon_state = "wall1"
 	opacity = 1
@@ -18,11 +18,11 @@
 
 /turf/simulated/shuttle/narsie_act()
 	if(prob(20))
-		ChangeTurf(/turf/simulated/wall/cult)
+		ChangeTurf(/turf/closed/wall/cult)
 
 //sub-type to be used for interior shuttle walls
 //won't get an underlay of the destination turf on shuttle move
-/turf/simulated/shuttle/wall/interior/copyTurf(turf/T)
+/turf/closed/shuttle/wall/interior/copyTurf(turf/T)
 	if(T.type != type)
 		T.ChangeTurf(type)
 		if(underlays.len)
@@ -38,7 +38,7 @@
 	T.transform = transform
 	return T
 
-/turf/simulated/shuttle/wall/copyTurf(turf/T)
+/turf/closed/shuttle/wall/copyTurf(turf/T)
 	. = ..()
 	T.transform = transform
 

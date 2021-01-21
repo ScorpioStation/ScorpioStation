@@ -262,7 +262,7 @@
 		smoke.set_up(8,0, location, aim_dir)
 		if(target && target.density)
 			var/turf/T = get_step(location, aim_dir)
-			for(var/turf/simulated/wall/W in range(1, location))
+			for(var/turf/closed/wall/W in range(1, location))
 				W.thermitemelt(speed = 30)
 			addtimer(CALLBACK(null, .proc/explosion, T, 0, 0, 2), 3)
 			addtimer(CALLBACK(smoke, /datum/effect_system/smoke_spread/.proc/start), 3)

@@ -4570,14 +4570,14 @@
 	},
 /area/space/nearstation)
 "kC" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s6";
 	dir = 2
 	},
 /area/awaymission)
 "kD" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -4602,7 +4602,7 @@
 	},
 /area/awaymission)
 "kH" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -4612,25 +4612,25 @@
 /turf/simulated/shuttle/plating,
 /area/awaymission)
 "kJ" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s10";
 	dir = 2
 	},
 /area/awaymission)
 "kK" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s6";
 	dir = 2
 	},
 /area/space/nearstation)
 "kL" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/space/nearstation)
 "kM" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s10";
 	dir = 2
 	},
@@ -4642,7 +4642,7 @@
 /area/awaymission)
 "kO" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc4";
 	dir = 2
 	},
@@ -4688,16 +4688,16 @@
 /turf/simulated/shuttle/plating,
 /area/awaymission)
 "kW" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc4";
 	dir = 2
 	},
 /area/space/nearstation)
 "kX" = (
-/turf/simulated/shuttle/wall/interior,
+/turf/closed/shuttle/wall/interior,
 /area/space/nearstation)
 "kY" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3"
 	},
 /area/space/nearstation)
@@ -4729,13 +4729,13 @@
 /turf/open/shuttle/floor,
 /area/awaymission)
 "ld" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s5";
 	dir = 2
 	},
 /area/awaymission)
 "le" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc1";
 	dir = 2
 	},
@@ -4755,25 +4755,25 @@
 /turf/open/shuttle/floor,
 /area/awaymission)
 "lh" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s5";
 	dir = 2
 	},
 /area/space/nearstation)
 "li" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc1";
 	dir = 2
 	},
 /area/space/nearstation)
 "lj" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s9";
 	dir = 2
 	},
 /area/awaymission)
 "lk" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s9";
 	dir = 2
 	},

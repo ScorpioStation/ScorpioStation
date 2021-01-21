@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/simulated/wall/indestructible/boss,
+/turf/closed/wall/indestructible/boss,
 /area/lavaland/surface/outdoors)
 "ab" = (
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
@@ -89,7 +89,7 @@
 /turf/open/floor/plating,
 /area/mine/laborcamp)
 "aq" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/mine/laborcamp)
 "ar" = (
 /obj/machinery/camera{
@@ -411,7 +411,7 @@
 	},
 /area/mine/laborcamp)
 "bf" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/mine/eva)
 "bg" = (
 /obj/effect/spawner/window/reinforced,
@@ -521,7 +521,7 @@
 /turf/open/floor/plasteel,
 /area/mine/eva)
 "bq" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/mine/production)
 "br" = (
 /obj/machinery/light/small{
@@ -1279,7 +1279,7 @@
 /turf/open/floor/plating,
 /area/mine/production)
 "cM" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/mine/living_quarters)
 "cN" = (
 /obj/machinery/mineral/equipment_vendor,
@@ -1315,7 +1315,7 @@
 /turf/open/floor/plasteel,
 /area/mine/production)
 "cQ" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/mine/maintenance)
 "cR" = (
 /obj/effect/spawner/window/reinforced,
@@ -1986,7 +1986,7 @@
 /area/mine/production)
 "en" = (
 /obj/machinery/mineral/processing_unit_console,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/mine/production)
 "eo" = (
 /obj/effect/turf_decal/tile/purple{
@@ -2787,7 +2787,7 @@
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "fV" = (
-/turf/simulated/wall/indestructible/boss/see_through,
+/turf/closed/wall/indestructible/boss/see_through,
 /area/lavaland/surface/outdoors)
 "fW" = (
 /obj/structure/necropolis_gate/locked,
@@ -4320,7 +4320,7 @@
 	},
 /area/mine/laborcamp)
 "qT" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/mine/laborcamp)
 "rj" = (
 /obj/structure/chair{
@@ -4459,7 +4459,7 @@
 /area/mine/laborcamp)
 "tZ" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/mine/laborcamp)
 "uf" = (
 /obj/machinery/light/small{
@@ -4625,7 +4625,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/mine/living_quarters)
 "BT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -4700,7 +4700,7 @@
 /area/mine/living_quarters)
 "El" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/mine/living_quarters)
 "Eq" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -4765,11 +4765,11 @@
 /area/mine/laborcamp)
 "Gp" = (
 /obj/structure/sign/poster/contraband/clown,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/mine/laborcamp)
 "GD" = (
 /obj/structure/sign/poster/contraband/lusty_xenomorph,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/mine/laborcamp)
 "GF" = (
 /obj/item/clothing/shoes/orange,
@@ -5112,7 +5112,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 1
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/mine/maintenance)
 "Uh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,

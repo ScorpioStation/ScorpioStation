@@ -46,7 +46,7 @@
 /turf/space,
 /area/template_noop)
 "m" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/template_noop)
 "n" = (
 /obj/item/stack/sheet/glass,

@@ -4,7 +4,7 @@
 /area/space)
 "ab" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -16,14 +16,14 @@
 /area/shuttle/escape)
 "ad" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10";
 	dir = 2
 	},
 /area/shuttle/escape)
 "ae" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc4"
 	},
 /area/shuttle/escape)
@@ -32,7 +32,7 @@
 /turf/open/floor/carpet,
 /area/shuttle/escape)
 "ag" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc3"
 	},
 /area/shuttle/escape)
@@ -81,7 +81,7 @@
 /turf/open/floor/carpet,
 /area/shuttle/escape)
 "ap" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -101,13 +101,13 @@
 /turf/open/floor/carpet,
 /area/shuttle/escape)
 "at" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/shuttle/escape)
 "au" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall13";
 	dir = 2
 	},
@@ -293,7 +293,7 @@
 	},
 /area/shuttle/escape)
 "aQ" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall7";
 	icon_state = "swall7";
 	dir = 2
@@ -464,7 +464,7 @@
 	},
 /area/shuttle/escape)
 "bj" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall14";
 	dir = 2
@@ -555,7 +555,7 @@
 	},
 /area/shuttle/escape)
 "bu" = (
-/turf/simulated/shuttle/wall,
+/turf/closed/shuttle/wall,
 /area/shuttle/escape)
 "bv" = (
 /obj/machinery/door/airlock{
@@ -637,13 +637,13 @@
 /area/shuttle/escape)
 "bE" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
 /area/shuttle/escape)
 "bF" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall14";
 	dir = 2
 	},
@@ -656,13 +656,13 @@
 /turf/simulated/shuttle/plating,
 /area/shuttle/escape)
 "bH" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall11";
 	dir = 2
 	},
 /area/shuttle/escape)
 "bI" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall7";
 	dir = 2
 	},
@@ -676,7 +676,7 @@
 /area/shuttle/escape)
 "bK" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},

@@ -20,7 +20,7 @@
 	A non null 'fixed_underlay' list var will skip copying the previous turf appearance and always use the list. If the list is
 	not set properly, the underlay will default to regular floor plating.
 
-	To see an example of a diagonal wall, see '/turf/simulated/wall/shuttle' and its subtypes.
+	To see an example of a diagonal wall, see '/turf/closed/wall/shuttle' and its subtypes.
 */
 
 //Redefinitions of the diagonal directions so they can be stored in one var without conflicts
@@ -150,7 +150,7 @@
 	return adjacencies
 
 //only walls should have a need to handle underlays
-/turf/simulated/wall/diagonal_smooth(adjacencies)
+/turf/closed/wall/diagonal_smooth(adjacencies)
 	adjacencies = reverse_ndir(..())
 	if(adjacencies)
 		var/mutable_appearance/underlay_appearance = mutable_appearance(layer = TURF_LAYER, plane = FLOOR_PLANE)
@@ -382,7 +382,7 @@
 		smooth_icon(A)
 
 //Example smooth wall
-/turf/simulated/wall/smooth
+/turf/closed/wall/smooth
 	name = "smooth wall"
 	icon = 'icons/turf/smooth_wall.dmi'
 	icon_state = "smooth"

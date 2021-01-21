@@ -25,13 +25,13 @@
 	poweralm = 0
 	})
 "ad" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
 	})
 "ae" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc2";
 	icon_state = "swallc2";
 	dir = 2
@@ -41,7 +41,7 @@
 	name = "UO45 Central Hall"
 	})
 "af" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -50,7 +50,7 @@
 	name = "UO45 Central Hall"
 	})
 "ag" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc1";
 	icon_state = "swallc1";
 	dir = 2
@@ -60,7 +60,7 @@
 	name = "UO45 Central Hall"
 	})
 "ah" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -131,7 +131,7 @@
 	name = "UO45 Central Hall"
 	})
 "am" = (
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -219,7 +219,7 @@
 	name = "UO45 Central Hall"
 	})
 "av" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc3";
 	icon_state = "swallc3";
 	dir = 2
@@ -229,7 +229,7 @@
 	name = "UO45 Central Hall"
 	})
 "aw" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall8";
 	dir = 2
 	},
@@ -253,7 +253,7 @@
 	name = "UO45 Central Hall"
 	})
 "az" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall4";
 	dir = 2
 	},
@@ -262,7 +262,7 @@
 	name = "UO45 Central Hall"
 	})
 "aA" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc4";
 	icon_state = "swallc4";
 	dir = 2
@@ -272,13 +272,13 @@
 	name = "UO45 Central Hall"
 	})
 "aB" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
 	})
 "aC" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -1002,7 +1002,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -1011,7 +1011,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -1020,7 +1020,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -1031,7 +1031,7 @@
 	initialize_directions = 14;
 	tag = "icon-manifold-r-f (NORTH)"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -1059,7 +1059,7 @@
 	initialize_directions = 14;
 	tag = "icon-manifold-r-f (NORTH)"
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -1069,7 +1069,7 @@
 	dir = 10;
 	level = 1
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -1262,14 +1262,14 @@
 	})
 "cp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
 	})
 "cq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -1284,7 +1284,7 @@
 	})
 "cs" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -1666,7 +1666,7 @@
 	dir = 10;
 	level = 1
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -1758,7 +1758,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -1767,7 +1767,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -1867,7 +1867,7 @@
 	})
 "dq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -1934,7 +1934,7 @@
 	})
 "dw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -2562,7 +2562,7 @@
 	initialize_directions = 7;
 	tag = "icon-manifold-r-f (WEST)"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -3165,7 +3165,7 @@
 	})
 "fn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -3183,7 +3183,7 @@
 	})
 "fp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -3475,14 +3475,14 @@
 	poweralm = 0
 	})
 "fL" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "UO45 Crew Quarters"
 	})
 "fM" = (
 /obj/machinery/smartfridge,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "UO45 Crew Quarters"
@@ -3503,13 +3503,13 @@
 	name = "UO45 Crew Quarters"
 	})
 "fO" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "UO45 Crew Quarters"
 	})
 "fP" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "UO45 Crew Quarters"
@@ -3680,7 +3680,7 @@
 	dir = 5;
 	level = 1
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -3690,7 +3690,7 @@
 	dir = 10;
 	level = 1
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -3719,7 +3719,7 @@
 	poweralm = 0
 	})
 "gh" = (
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "UO45 Crew Quarters"
@@ -3888,31 +3888,31 @@
 	name = "UO45 Crew Quarters"
 	})
 "gw" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a6{
 	has_gravity = 1;
 	name = "UO45 Gateway"
 	})
 "gx" = (
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/awaycontent/a6{
 	has_gravity = 1;
 	name = "UO45 Gateway"
 	})
 "gy" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
 	})
 "gz" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
 	})
 "gA" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -4040,13 +4040,13 @@
 	name = "UO45 Gateway"
 	})
 "gL" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a6{
 	has_gravity = 1;
 	name = "UO45 Gateway"
 	})
 "gM" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a6{
 	has_gravity = 1;
 	name = "UO45 Gateway"
@@ -4270,7 +4270,7 @@
 	name = "UO45 Research"
 	})
 "hd" = (
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -5498,7 +5498,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a6{
 	has_gravity = 1;
 	name = "UO45 Gateway"
@@ -5908,7 +5908,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "UO45 Crew Quarters"
@@ -5917,7 +5917,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "UO45 Crew Quarters"
@@ -5933,7 +5933,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a1{
 	has_gravity = 1;
 	name = "UO45 Central Hall"
@@ -7160,7 +7160,7 @@
 	name = "UO45 Crew Quarters"
 	})
 "lo" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a3{
 	has_gravity = 1;
 	name = "UO45 Engineering"
@@ -8329,7 +8329,7 @@
 	})
 "mK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -8665,7 +8665,7 @@
 	name = "UO45 Engineering"
 	})
 "nj" = (
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/awaycontent/a3{
 	has_gravity = 1;
 	name = "UO45 Engineering"
@@ -8923,7 +8923,7 @@
 	})
 "nB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "UO45 Crew Quarters"
@@ -9088,7 +9088,7 @@
 	})
 "nN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -9256,7 +9256,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -9265,7 +9265,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -9274,7 +9274,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -10423,7 +10423,7 @@
 	})
 "pq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "UO45 Crew Quarters"
@@ -10514,7 +10514,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/purple{
 	dir = 4
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a3{
 	has_gravity = 1;
 	name = "UO45 Engineering"
@@ -10523,7 +10523,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/purple{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a3{
 	has_gravity = 1;
 	name = "UO45 Engineering"
@@ -10638,7 +10638,7 @@
 	})
 "pI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -10668,14 +10668,14 @@
 	})
 "pL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
 	})
 "pM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -10758,7 +10758,7 @@
 	})
 "pT" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a2{
 	has_gravity = 1;
 	name = "UO45 Crew Quarters"
@@ -10944,7 +10944,7 @@
 	})
 "qh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -11823,7 +11823,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a3{
 	has_gravity = 1;
 	name = "UO45 Engineering"
@@ -13373,7 +13373,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -13383,7 +13383,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -13392,7 +13392,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -13403,7 +13403,7 @@
 	initialize_directions = 14;
 	tag = "icon-manifold-b-f (NORTH)"
 	},
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -13685,7 +13685,7 @@
 	dir = 5;
 	level = 1
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -13708,7 +13708,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -13717,7 +13717,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -13858,7 +13858,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -13953,7 +13953,7 @@
 "ud" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/meter,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a3{
 	has_gravity = 1;
 	name = "UO45 Engineering"
@@ -13961,7 +13961,7 @@
 "ue" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/meter,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a3{
 	has_gravity = 1;
 	name = "UO45 Engineering"
@@ -14227,7 +14227,7 @@
 	})
 "uy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a5{
 	has_gravity = 1;
 	name = "UO45 Research"
@@ -14315,7 +14315,7 @@
 	name = "UO45 Engineering"
 	})
 "uF" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a3{
 	has_gravity = 1;
 	name = "UO45 Engineering"
@@ -14351,7 +14351,7 @@
 	})
 "uI" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a3{
 	has_gravity = 1;
 	name = "UO45 Engineering"
@@ -14587,7 +14587,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a3{
 	has_gravity = 1;
 	name = "UO45 Engineering"
@@ -15048,25 +15048,25 @@
 	name = "UO45 Engineering"
 	})
 "vJ" = (
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "UO45 Mining"
 	})
 "vK" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "UO45 Mining"
 	})
 "vL" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "UO45 Mining"
 	})
 "vM" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "UO45 Mining"
@@ -15230,7 +15230,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a3{
 	has_gravity = 1;
 	name = "UO45 Engineering"
@@ -15316,7 +15316,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "UO45 Mining"
@@ -15452,7 +15452,7 @@
 	name = "UO45 Engineering"
 	})
 "wo" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a3{
 	has_gravity = 1;
 	name = "UO45 Engineering"
@@ -16343,7 +16343,7 @@
 /obj/machinery/mineral/processing_unit_console{
 	machinedir = 8
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "UO45 Mining"
@@ -16522,7 +16522,7 @@
 /obj/machinery/mineral/stacking_unit_console{
 	machinedir = 2
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/awaycontent/a4{
 	has_gravity = 1;
 	name = "UO45 Mining"

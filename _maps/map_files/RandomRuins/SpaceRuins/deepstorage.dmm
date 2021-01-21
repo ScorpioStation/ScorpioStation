@@ -6,7 +6,7 @@
 /turf/closed/mineral/random/low_chance,
 /area/ruin/unpowered)
 "ac" = (
-/turf/simulated/wall/mineral/iron,
+/turf/closed/wall/mineral/iron,
 /area/ruin/unpowered)
 "ad" = (
 /obj/structure/closet/cardboard,

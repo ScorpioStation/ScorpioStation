@@ -9,14 +9,14 @@
 /turf/open/floor/plasteel,
 /area/centcom)
 "d" = (
-/turf/simulated/wall/mineral/alien,
+/turf/closed/wall/mineral/alien,
 /area/centcom)
 "e" = (
 /obj/structure/falsewall/alien,
 /turf/open/floor/plating,
 /area/centcom)
 "f" = (
-/turf/simulated/wall/mineral/diamond,
+/turf/closed/wall/mineral/diamond,
 /area/centcom)
 "g" = (
 /obj/structure/falsewall/diamond,
@@ -36,14 +36,14 @@
 /turf/open/floor/plating,
 /area/centcom)
 "k" = (
-/turf/simulated/wall/mineral/bananium,
+/turf/closed/wall/mineral/bananium,
 /area/centcom)
 "l" = (
 /obj/structure/falsewall/bananium,
 /turf/open/floor/plating,
 /area/centcom)
 "m" = (
-/turf/simulated/wall/mineral/gold,
+/turf/closed/wall/mineral/gold,
 /area/centcom)
 "n" = (
 /obj/structure/falsewall/gold,
@@ -57,14 +57,14 @@
 /turf/open/floor/snow,
 /area/centcom)
 "q" = (
-/turf/simulated/wall/mineral/iron,
+/turf/closed/wall/mineral/iron,
 /area/centcom)
 "r" = (
 /obj/structure/falsewall/iron,
 /turf/open/floor/snow,
 /area/centcom)
 "s" = (
-/turf/simulated/wall/mineral/plasma,
+/turf/closed/wall/mineral/plasma,
 /area/centcom)
 "t" = (
 /obj/structure/falsewall/plasma,
@@ -75,52 +75,52 @@
 /turf/open/floor/snow,
 /area/centcom)
 "v" = (
-/turf/simulated/wall/mineral/sandstone,
+/turf/closed/wall/mineral/sandstone,
 /area/centcom)
 "w" = (
 /obj/structure/falsewall/sandstone,
 /turf/open/floor/plating,
 /area/centcom)
 "x" = (
-/turf/simulated/wall/mineral/silver,
+/turf/closed/wall/mineral/silver,
 /area/centcom)
 "y" = (
 /obj/structure/falsewall/silver,
 /turf/open/floor/plating,
 /area/centcom)
 "z" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/centcom)
 "A" = (
 /obj/structure/falsewall,
 /turf/open/floor/snow,
 /area/centcom)
 "B" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/centcom)
 "C" = (
-/turf/simulated/wall/mineral/uranium,
+/turf/closed/wall/mineral/uranium,
 /area/centcom)
 "D" = (
 /obj/structure/falsewall/uranium,
 /turf/open/floor/plating,
 /area/centcom)
 "E" = (
-/turf/simulated/wall/mineral/wood,
+/turf/closed/wall/mineral/wood,
 /area/centcom)
 "F" = (
 /obj/structure/falsewall/wood,
 /turf/open/floor/plating,
 /area/centcom)
 "G" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/centcom)
 "H" = (
 /obj/structure/falsewall/reinforced,
 /turf/open/floor/snow,
 /area/centcom)
 "I" = (
-/turf/simulated/wall/r_wall/rust,
+/turf/closed/wall/r_wall/rust,
 /area/centcom)
 
 (1,1,1) = {"

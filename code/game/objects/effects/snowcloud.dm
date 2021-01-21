@@ -25,7 +25,7 @@
 		qdel(src)
 		return
 	var/turf_hotness
-	if(issimulatedturf(T))
+	if(isopenturf(T))
 		var/turf/simulated/S = T
 		turf_hotness = S.air.temperature
 	if(turf_hotness > T0C && prob(10 * (turf_hotness - T0C))) //Cloud disappears if it's too warm
@@ -43,7 +43,7 @@
 	var/turf/T = get_turf(src)
 	if(locate(/obj/effect/snow, T))
 		return
-	if(issimulatedturf(T))
+	if(isopenturf(T))
 		var/turf/simulated/S = T
 		if(prob(75 + S.air.temperature - T0C)) //Colder turf = more chance of snow
 			return
@@ -86,7 +86,7 @@
 	if(isspaceturf(T))
 		qdel(src)
 		return
-	else if(issimulatedturf(T))
+	else if(isopenturf(T))
 		var/turf/simulated/S = T
 		if(S.air.temperature <= T0C)
 			return

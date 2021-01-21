@@ -32,11 +32,11 @@
 		user.visible_message("<span class='warning'>[user] begins to scrub \the [target.name] out with [src].</span>")
 		if(do_after(user, cleanspeed, target = target) && target)
 			to_chat(user, "<span class='notice'>You scrub \the [target.name] out.</span>")
-			if(issimulatedturf(target.loc))
+			if(isopenturf(target.loc))
 				clean_turf(target.loc)
 				return
 			qdel(target)
-	else if(issimulatedturf(target))
+	else if(isopenturf(target))
 		user.visible_message("<span class='warning'>[user] begins to clean \the [target.name] with [src].</span>")
 		if(do_after(user, cleanspeed, target = target))
 			to_chat(user, "<span class='notice'>You clean \the [target.name].</span>")

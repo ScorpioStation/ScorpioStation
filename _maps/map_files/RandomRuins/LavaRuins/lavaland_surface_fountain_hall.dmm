@@ -3,7 +3,7 @@
 /turf/template_noop,
 /area/template_noop)
 "b" = (
-/turf/simulated/wall/cult,
+/turf/closed/wall/cult,
 /area/ruin/unpowered/misc_lavaruin)
 "c" = (
 /obj/structure/healingfountain,

@@ -189,7 +189,7 @@
 /obj/effect/mob_spawn/swarmer/IntegrateAmount()
 	return 50
 
-/turf/simulated/wall/indestructible/swarmer_act()
+/turf/closed/wall/indestructible/swarmer_act()
 	return FALSE
 
 /obj/swarmer_act(mob/living/simple_animal/hostile/swarmer/S)
@@ -368,7 +368,7 @@
 	to_chat(S, "<span class='warning'>Disrupting this energy field would overload us. Aborting.</span>")
 	return FALSE
 
-/turf/simulated/wall/swarmer_act(mob/living/simple_animal/hostile/swarmer/S)
+/turf/closed/wall/swarmer_act(mob/living/simple_animal/hostile/swarmer/S)
 	var/isonshuttle = istype(loc, /area/shuttle)
 	for(var/turf/T in range(1, src))
 		var/area/A = get_area(T)

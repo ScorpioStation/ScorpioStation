@@ -75,7 +75,7 @@
 /turf/open/floor/plating/asteroid/snow/atmosphere,
 /area/ruin/powered/snow_biodome)
 "aq" = (
-/turf/simulated/wall/mineral/wood,
+/turf/closed/wall/mineral/wood,
 /area/ruin/powered/snow_cabin)
 "ar" = (
 /obj/machinery/door/airlock/wood,
@@ -83,7 +83,7 @@
 /area/ruin/powered/snow_cabin)
 "as" = (
 /obj/structure/fans,
-/turf/simulated/wall/mineral/wood,
+/turf/closed/wall/mineral/wood,
 /area/ruin/powered/snow_cabin)
 "at" = (
 /turf/open/floor/wood,
@@ -136,7 +136,7 @@
 /area/ruin/powered/snow_cabin)
 "aE" = (
 /obj/structure/extinguisher_cabinet,
-/turf/simulated/wall/mineral/wood,
+/turf/closed/wall/mineral/wood,
 /area/ruin/powered/snow_cabin)
 "aF" = (
 /obj/structure/table/wood,
@@ -393,7 +393,7 @@
 /turf/open/floor/pod/dark,
 /area/ruin/powered/snow_biodome)
 "Wg" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/powered/snow_biodome)
 
 (1,1,1) = {"

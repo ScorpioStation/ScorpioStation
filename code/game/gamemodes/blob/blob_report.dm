@@ -62,15 +62,15 @@
 			else
 				src.floor += 1
 
-		if(istype(T, /turf/simulated/wall))
-			var/turf/simulated/wall/W = T
+		if(istype(T, /turf/closed/wall))
+			var/turf/closed/wall/W = T
 			if(W.intact)
 				src.wall += 2
 			else
 				src.wall += 1
 
-		if(istype(T, /turf/simulated/wall/r_wall))
-			var/turf/simulated/wall/r_wall/R = T
+		if(istype(T, /turf/closed/wall/r_wall))
+			var/turf/closed/wall/r_wall/R = T
 			if(R.intact)
 				src.r_wall += 2
 			else

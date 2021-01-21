@@ -18,26 +18,26 @@
 /turf/space,
 /area/space/nearstation)
 "af" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12"
 	},
 /area/awaymission/BMPship/Aft)
 "ag" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall4";
 	icon_state = "swall4"
 	},
 /area/awaymission/BMPship/Aft)
 "ah" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall14"
 	},
 /area/awaymission/BMPship/Aft)
 "ai" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10";
 	dir = 2
@@ -48,7 +48,7 @@
 /turf/space,
 /area/space/nearstation)
 "ak" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12"
 	},
@@ -57,13 +57,13 @@
 /turf/open/floor/engine,
 /area/awaymission/BMPship/Fore)
 "am" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall4";
 	icon_state = "swall4"
 	},
 /area/awaymission/BMPship/Gate)
 "an" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -86,7 +86,7 @@
 /turf/open/floor/engine,
 /area/awaymission/BMPship/Aft)
 "aq" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall14"
 	},
@@ -100,7 +100,7 @@
 /area/space/nearstation)
 "at" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10";
 	dir = 2
@@ -121,7 +121,7 @@
 	},
 /area/awaymission/BMPship/Midship)
 "aw" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall7";
 	icon_state = "swall7"
 	},
@@ -140,20 +140,20 @@
 /turf/open/floor/engine,
 /area/awaymission/BMPship/Gate)
 "ay" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall13";
 	icon_state = "swall13"
 	},
 /area/awaymission/BMPship/Aft)
 "az" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
 	},
 /area/awaymission/BMPship/Gate)
 "aA" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall8";
 	icon_state = "swall8"
 	},
@@ -163,7 +163,7 @@
 /area/awaymission/BMPship/Gate)
 "aC" = (
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -208,27 +208,27 @@
 /turf/open/floor/engine,
 /area/awaymission/BMPship/Gate)
 "aJ" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall7";
 	icon_state = "swall7"
 	},
 /area/awaymission/BMPship/Gate)
 "aK" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
 	},
 /area/awaymission/BMPship/Gate)
 "aL" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3"
 	},
 /area/awaymission/BMPship/Aft)
 "aM" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall13";
 	icon_state = "swall13"
 	},
@@ -241,20 +241,20 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/BMPship/Gate)
 "aO" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall8";
 	icon_state = "swall8"
 	},
 /area/awaymission/BMPship/Gate)
 "aP" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/awaymission/BMPship/Gate)
 "aQ" = (
-/turf/simulated/shuttle/wall,
+/turf/closed/shuttle/wall,
 /area/awaymission/BMPship/Gate)
 "aR" = (
 /turf/open/floor/plating/airless,
@@ -270,25 +270,25 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/BMPship/Gate)
 "aU" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall4";
 	icon_state = "swall4"
 	},
 /area/awaymission/BMPship/Fore)
 "aV" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12"
 	},
 /area/awaymission/BMPship/Fore)
 "aW" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall14"
 	},
 /area/awaymission/BMPship/Fore)
 "aX" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_s10";
 	icon_state = "swall_s10";
 	dir = 2
@@ -318,7 +318,7 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/BMPship/Gate)
 "bc" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall1";
 	icon_state = "swall1"
 	},
@@ -336,7 +336,7 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/BMPship/Gate)
 "bf" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3"
 	},
@@ -404,7 +404,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Gate)
 "bp" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3"
 	},
@@ -437,7 +437,7 @@
 /area/awaymission/BMPship/Gate)
 "bt" = (
 /obj/structure/sign/vacuum,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall1";
 	icon_state = "swall1"
 	},
@@ -482,7 +482,7 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/BMPship/Gate)
 "bC" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall1";
 	icon_state = "swall1"
 	},
@@ -530,7 +530,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Gate)
 "bK" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall2";
 	icon_state = "swall2"
 	},
@@ -599,7 +599,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Fore)
 "bV" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall2";
 	icon_state = "swall2"
 	},
@@ -615,7 +615,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Gate)
 "bX" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall11";
 	icon_state = "swall11"
 	},
@@ -674,7 +674,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Gate)
 "cf" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc2";
 	icon_state = "swallc2"
 	},
@@ -688,7 +688,7 @@
 	},
 /area/awaymission/BMPship/Fore)
 "ch" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall8";
 	icon_state = "swall8"
 	},
@@ -702,31 +702,31 @@
 	},
 /area/awaymission/BMPship/Fore)
 "cj" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall1";
 	icon_state = "swall1"
 	},
 /area/awaymission/BMPship/Fore)
 "ck" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12"
 	},
 /area/awaymission/BMPship/Midship)
 "cl" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc2";
 	icon_state = "swallc2"
 	},
 /area/awaymission/BMPship/Midship)
 "cm" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall13";
 	icon_state = "swall13"
 	},
 /area/awaymission/BMPship/Midship)
 "cn" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall15";
 	icon_state = "swall15"
 	},
@@ -777,7 +777,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Gate)
 "ct" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall2";
 	icon_state = "swall2"
 	},
@@ -803,7 +803,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Gate)
 "cy" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall11";
 	icon_state = "swall11"
 	},
@@ -813,7 +813,7 @@
 	tag = "icon-carpet";
 	icon_state = "carpet"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
@@ -821,7 +821,7 @@
 /area/awaymission/BMPship/Fore)
 "cA" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -866,7 +866,7 @@
 	},
 /area/awaymission/BMPship/Midship)
 "cE" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -920,7 +920,7 @@
 	},
 /area/awaymission/BMPship/Midship)
 "cL" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3"
 	},
@@ -1036,7 +1036,7 @@
 	},
 /area/awaymission/BMPship/Midship)
 "da" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall1";
 	icon_state = "swall1"
 	},
@@ -1069,7 +1069,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/BMPship/Aft)
 "df" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc3";
 	icon_state = "swallc3"
 	},
@@ -1353,7 +1353,7 @@
 	},
 /area/awaymission/BMPship/Midship)
 "dQ" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall2";
 	icon_state = "swall2"
 	},
@@ -1635,7 +1635,7 @@
 	},
 /area/awaymission/BMPship/Midship)
 "er" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaymission/BMPship/Midship)
 "es" = (
 /obj/structure/cable{
@@ -1852,7 +1852,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/awaymission/BMPship/Midship)
 "eO" = (
 /obj/structure/cable{
@@ -2075,7 +2075,7 @@
 /area/awaymission/BMPship/Aft)
 "fm" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
@@ -2491,7 +2491,7 @@
 /area/awaymission/BMPship/Aft)
 "gg" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -2519,7 +2519,7 @@
 	},
 /area/awaymission/BMPship/Fore)
 "gj" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall11";
 	icon_state = "swall11";
 	dir = 2
@@ -2799,7 +2799,7 @@
 	},
 /area/awaymission/BMPship/Aft)
 "gW" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc2";
 	icon_state = "swallc2"
 	},
@@ -2876,7 +2876,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/BMPship/Aft)
 "hi" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc3";
 	icon_state = "swallc3"
 	},
@@ -2895,31 +2895,31 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/BMPship/Fore)
 "hl" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc1";
 	icon_state = "swallc1"
 	},
 /area/awaymission/BMPship/Fore)
 "hm" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc3";
 	icon_state = "swallc3"
 	},
 /area/awaymission/BMPship/Midship)
 "hn" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall15";
 	icon_state = "swall15"
 	},
 /area/awaymission/BMPship/Midship)
 "ho" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall4";
 	icon_state = "swall4"
 	},
 /area/awaymission/BMPship/Midship)
 "hp" = (
-/turf/simulated/shuttle/wall,
+/turf/closed/shuttle/wall,
 /area/awaymission/BMPship/Midship)
 "hq" = (
 /turf/closed/mineral/random,
@@ -2984,7 +2984,7 @@
 /turf/open/floor/engine,
 /area/awaymission/BMPship/Fore)
 "hA" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall1";
 	icon_state = "swall1"
 	},
@@ -3009,7 +3009,7 @@
 /turf/open/floor/plating/asteroid/airless,
 /area/awaymission/BMPship/Fore)
 "hF" = (
-/turf/simulated/shuttle/wall,
+/turf/closed/shuttle/wall,
 /area/awaymission)
 "hG" = (
 /obj/structure/cable{
@@ -3267,7 +3267,7 @@
 /turf/space,
 /area/space/nearstation)
 "ip" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall13";
 	icon_state = "swall13"
 	},
@@ -3278,7 +3278,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/BMPship/Aft)
 "ir" = (
-/turf/simulated/shuttle/wall,
+/turf/closed/shuttle/wall,
 /area/awaymission/BMPship/Fore)
 "is" = (
 /obj/structure/bed,
@@ -3326,7 +3326,7 @@
 	icon_state = "cafeteria";
 	dir = 2
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -3351,7 +3351,7 @@
 	},
 /area/awaymission/BMPship/Aft)
 "iC" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall4";
 	icon_state = "swall4"
 	},
@@ -3361,7 +3361,7 @@
 /turf/space,
 /area/awaymission)
 "iE" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12"
 	},
@@ -3448,7 +3448,7 @@
 /area/awaymission)
 "iT" = (
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -3590,7 +3590,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Gate)
 "jp" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall15";
 	icon_state = "swall15"
 	},

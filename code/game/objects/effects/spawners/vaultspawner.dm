@@ -20,7 +20,7 @@
 	for(var/i = lowBoundX,i<=hiBoundX,i++)
 		for(var/j = lowBoundY,j<=hiBoundY,j++)
 			if(i == lowBoundX || i == hiBoundX || j == lowBoundY || j == hiBoundY)
-				new /turf/simulated/wall/vault(locate(i,j,z),type)
+				new /turf/closed/wall/vault(locate(i,j,z),type)
 			else
 				var/turf/T = new /turf/open/floor/vault(locate(i, j, z))
 				T.icon_state = "[type]vault"

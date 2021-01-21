@@ -57,7 +57,7 @@
 	name = "Shuttle"
 	})
 "g" = (
-/turf/simulated/shuttle/wall,
+/turf/closed/shuttle/wall,
 /turf/simulated/shuttle{
 	tag = "icon-wall3 (SOUTHEAST)";
 	icon_state = "wall3";
@@ -67,7 +67,7 @@
 	name = "Shuttle"
 	})
 "h" = (
-/turf/simulated/shuttle/wall,
+/turf/closed/shuttle/wall,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
@@ -233,7 +233,7 @@
 	name = "Shuttle"
 	})
 "C" = (
-/turf/simulated/shuttle/wall,
+/turf/closed/shuttle/wall,
 /turf/simulated/shuttle{
 	tag = "icon-wall3 (NORTHEAST)";
 	icon_state = "wall3";
@@ -292,7 +292,7 @@
 	})
 "I" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-diagonalWall (SOUTHEAST)";
 	icon_state = "diagonalWall";
 	dir = 6
@@ -321,7 +321,7 @@
 	})
 "L" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-diagonalWall (NORTHWEST)";
 	icon_state = "diagonalWall";
 	dir = 9
@@ -369,7 +369,7 @@
 	})
 "Q" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-diagonalWall (SOUTHEAST)";
 	icon_state = "diagonalWall";
 	dir = 6
@@ -379,7 +379,7 @@
 	})
 "R" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-diagonalWall (NORTHWEST)";
 	icon_state = "diagonalWall";
 	dir = 9

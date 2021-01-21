@@ -89,7 +89,7 @@
 /turf/open/floor/plasteel/freezer,
 /area/ruin/powered/gluttony)
 "R" = (
-/turf/simulated/wall/indestructible/uranium,
+/turf/closed/wall/indestructible/uranium,
 /area/ruin/powered/gluttony)
 "S" = (
 /obj/machinery/door/airlock/uranium,

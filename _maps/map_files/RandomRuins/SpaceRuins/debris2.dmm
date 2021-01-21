@@ -9,7 +9,7 @@
 /turf/open/floor/plasteel/airless,
 /area/space)
 "d" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/space)
 "e" = (
 /obj/item/stack/cable_coil/cut,
@@ -161,7 +161,7 @@
 /turf/space,
 /area/template_noop)
 "T" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/space)
 "U" = (
 /obj/effect/landmark/burnturf,

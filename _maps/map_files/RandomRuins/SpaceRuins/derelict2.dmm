@@ -36,7 +36,7 @@
 /turf/open/floor/plating,
 /area/ruin/powered)
 "f" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/powered)
 "g" = (
 /obj/structure/grille,

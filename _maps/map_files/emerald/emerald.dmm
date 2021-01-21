@@ -30,7 +30,7 @@
 /turf/space,
 /area/space/nearstation)
 "aae" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fsmaint)
 "aaf" = (
 /obj/effect/spawner/window/reinforced,
@@ -44,13 +44,13 @@
 /turf/space,
 /area/space/nearstation)
 "aai" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/ai)
 "aaj" = (
 /turf/open/floor/greengrid,
 /area/turret_protected/ai)
 "aak" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/storage/secure)
 "aal" = (
 /obj/structure/particle_accelerator/particle_emitter/left,
@@ -82,7 +82,7 @@
 /turf/open/floor/plasteel/dark,
 /area/storage/secure)
 "aar" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/engi_shuttle)
 "aas" = (
 /turf/open/floor/plasteel/dark,
@@ -200,7 +200,7 @@
 /turf/open/floor/plasteel/dark,
 /area/storage/secure)
 "aaL" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/tcommsat/server)
 "aaM" = (
 /obj/structure/closet/crate/internals,
@@ -330,7 +330,7 @@
 /area/maintenance/turbine)
 "abc" = (
 /obj/structure/sign/fire,
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/maintenance/turbine)
 "abd" = (
 /obj/machinery/door/poddoor{
@@ -343,7 +343,7 @@
 /turf/space,
 /area/engine/engineering)
 "abf" = (
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/maintenance/turbine)
 "abg" = (
 /obj/machinery/power/turbine{
@@ -394,7 +394,7 @@
 /area/maintenance/turbine)
 "abm" = (
 /obj/machinery/atmospherics/pipe/simple/visible,
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/maintenance/turbine)
 "abn" = (
 /obj/machinery/door/airlock/public/glass{
@@ -449,7 +449,7 @@
 /turf/open/floor/engine/insulated,
 /area/maintenance/turbine)
 "abr" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/turbine)
 "abs" = (
 /turf/open/floor/plasteel{
@@ -583,7 +583,7 @@
 	},
 /area/maintenance/turbine)
 "abE" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/storage)
 "abF" = (
 /obj/structure/cable{
@@ -620,7 +620,7 @@
 /turf/open/floor/plating,
 /area/maintenance/auxsolarport)
 "abK" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/auxsolarport)
 "abL" = (
 /obj/machinery/light{
@@ -833,7 +833,7 @@
 /turf/space,
 /area/solar/auxport)
 "aci" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/virology)
 "acj" = (
 /obj/effect/spawner/window/reinforced,
@@ -866,7 +866,7 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "acm" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/fsmaint)
 "acn" = (
 /obj/structure/grille,
@@ -992,7 +992,7 @@
 	},
 /area/medical/virology)
 "acD" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/virology)
 "acE" = (
 /obj/structure/closet/firecloset,
@@ -1040,7 +1040,7 @@
 /turf/open/floor/plating,
 /area/maintenance/auxsolarport)
 "acH" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/aisat{
 	name = "\improper AI Satellite Hallway"
 	})
@@ -1104,10 +1104,10 @@
 /turf/open/floor/plating,
 /area/maintenance/fsmaint)
 "acR" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/civilian/pet_store)
 "acS" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/civilian/pet_store)
 "acT" = (
 /obj/machinery/conveyor_switch/oneway{
@@ -1200,7 +1200,7 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/ai)
 "add" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1269,13 +1269,13 @@
 /turf/open/floor/plasteel,
 /area/medical/virology)
 "adn" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/storage/tech)
 "ado" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/storage/tech)
 "adp" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/sorting)
 "adq" = (
 /obj/structure/cable{
@@ -1342,7 +1342,7 @@
 /turf/open/floor/greengrid,
 /area/turret_protected/ai)
 "adu" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/incinerator)
 "adv" = (
 /turf/open/floor/plasteel/dark,
@@ -1363,10 +1363,10 @@
 /turf/space,
 /area/space/nearstation)
 "ady" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/engineering)
 "adz" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/aisat{
 	name = "\improper AI Satellite Hallway"
 	})
@@ -1428,7 +1428,7 @@
 /turf/open/floor/plating/airless,
 /area/engine/engineering)
 "adH" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/storage)
 "adI" = (
 /obj/machinery/field/generator,
@@ -1444,7 +1444,7 @@
 /turf/open/floor/plating/airless,
 /area/engine/engineering)
 "adL" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/aisat_interior)
 "adM" = (
 /obj/effect/decal/warning_stripes/north,
@@ -1637,7 +1637,7 @@
 /area/turret_protected/ai)
 "aek" = (
 /obj/structure/lattice,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/ai)
 "ael" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1842,7 +1842,7 @@
 /turf/open/floor/engine,
 /area/engine/engineering)
 "aeI" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/aisat/maintenance{
 	name = "\improper AI Satellite Service"
 	})
@@ -1892,7 +1892,7 @@
 /area/maintenance/storage)
 "aeP" = (
 /obj/structure/grille,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "aeQ" = (
 /obj/structure/grille,
@@ -2071,7 +2071,7 @@
 /turf/open/floor/plating,
 /area/atmos)
 "afi" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/secondary/construction)
 "afj" = (
 /obj/structure/cable{
@@ -2134,13 +2134,13 @@
 /area/hallway/secondary/construction)
 "afr" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
 /area/shuttle/constructionsite)
 "afs" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -2175,7 +2175,7 @@
 /area/shuttle/constructionsite)
 "afu" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -2214,10 +2214,10 @@
 /turf/simulated/shuttle/plating,
 /area/shuttle/constructionsite)
 "afy" = (
-/turf/simulated/shuttle/wall,
+/turf/closed/shuttle/wall,
 /area/shuttle/constructionsite)
 "afz" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "afA" = (
 /obj/structure/chair/comfy/shuttle{
@@ -2239,7 +2239,7 @@
 	},
 /area/shuttle/constructionsite)
 "afD" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall1";
 	dir = 2
 	},
@@ -2256,7 +2256,7 @@
 /turf/open/floor/plating,
 /area/shuttle/constructionsite)
 "afG" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/gravitygenerator)
 "afH" = (
 /obj/machinery/light,
@@ -2274,7 +2274,7 @@
 	},
 /area/shuttle/constructionsite)
 "afK" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall2";
 	icon_state = "swall2";
 	dir = 2
@@ -2282,7 +2282,7 @@
 /area/shuttle/constructionsite)
 "afL" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -2301,7 +2301,7 @@
 /area/shuttle/constructionsite)
 "afN" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -2310,7 +2310,7 @@
 /turf/open/floor/plasteel,
 /area/atmos)
 "afP" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
@@ -2318,7 +2318,7 @@
 /area/shuttle/pod_3)
 "afQ" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -2384,14 +2384,14 @@
 /area/engine/engineering)
 "afX" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
 /area/shuttle/pod_3)
 "afY" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
@@ -2439,7 +2439,7 @@
 /turf/open/floor/plating/airless,
 /area/engine/engineering)
 "agd" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/hardsuitstorage)
 "age" = (
 /obj/machinery/suit_storage_unit/engine,
@@ -2612,7 +2612,7 @@
 /turf/open/floor/engine/plasma,
 /area/atmos)
 "agF" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/chiefs_office)
 "agG" = (
 /obj/structure/rack,
@@ -2644,7 +2644,7 @@
 /area/engine/engineering)
 "agJ" = (
 /obj/structure/lattice,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/space/nearstation)
 "agK" = (
 /obj/machinery/door/airlock/maintenance_hatch{
@@ -2729,7 +2729,7 @@
 /turf/open/floor/plating,
 /area/engine/engineering)
 "agS" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/server)
 "agT" = (
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
@@ -2793,13 +2793,13 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "agZ" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/break_room)
 "aha" = (
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "ahb" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/engine/break_room)
 "ahc" = (
 /obj/structure/closet/crate,
@@ -2920,7 +2920,7 @@
 	name = "\improper AI Satellite Hallway"
 	})
 "ahm" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/controlroom)
 "ahn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
@@ -2937,7 +2937,7 @@
 "ahp" = (
 /obj/structure/lattice,
 /obj/structure/lattice,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/tcommsat/server)
 "ahq" = (
 /obj/machinery/igniter{
@@ -2956,7 +2956,7 @@
 	master_tag = "vox_west_control";
 	req_one_access_txt = "152"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/vox)
@@ -3039,7 +3039,7 @@
 /area/maintenance/engi_shuttle)
 "ahx" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -3105,14 +3105,14 @@
 	pixel_x = 0;
 	pixel_y = 0
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/engineering)
 "ahC" = (
 /obj/machinery/computer/drone_control,
 /turf/open/floor/plasteel,
 /area/engine/controlroom)
 "ahD" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/assembly/assembly_line)
 "ahE" = (
 /obj/structure/cable{
@@ -3154,7 +3154,7 @@
 	master_tag = "vox_east_control";
 	req_access_txt = "152"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/vox)
@@ -3176,7 +3176,7 @@
 /turf/open/floor/plating,
 /area/storage/tech)
 "ahK" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -3355,7 +3355,7 @@
 /turf/simulated/shuttle/plating/vox,
 /area/shuttle/vox)
 "aid" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/vox)
@@ -3390,7 +3390,7 @@
 	},
 /area/turret_protected/ai)
 "aii" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/qm)
 "aij" = (
 /obj/machinery/computer/camera_advanced/shuttle_docker/vox,
@@ -3441,7 +3441,7 @@
 	master_tag = "vox_west_control";
 	req_one_access_txt = "152"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/vox)
@@ -3467,7 +3467,7 @@
 /area/quartermaster/qm)
 "air" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -3539,7 +3539,7 @@
 /area/maintenance/incinerator)
 "aiy" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/vox)
@@ -3550,7 +3550,7 @@
 	master_tag = "vox_east_control";
 	req_one_access_txt = "152"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/vox)
@@ -3607,7 +3607,7 @@
 /turf/open/floor/plating,
 /area/quartermaster/sorting)
 "aiG" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/disposal)
 "aiH" = (
 /turf/open/floor/plasteel,
@@ -3655,10 +3655,10 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "aiM" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/library)
 "aiN" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/genetics)
 "aiO" = (
 /obj/structure/table,
@@ -3678,7 +3678,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/incinerator)
 "aiQ" = (
 /obj/machinery/power/tesla_coil,
@@ -3879,7 +3879,7 @@
 	},
 /area/atmos)
 "ajj" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/morgue)
 "ajk" = (
 /obj/structure/table,
@@ -3930,7 +3930,7 @@
 /area/medical/genetics)
 "ajr" = (
 /obj/structure/sign/poster/contraband/random,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/engi_shuttle)
 "ajs" = (
 /obj/structure/window/reinforced{
@@ -3974,7 +3974,7 @@
 /area/storage/tech)
 "ajx" = (
 /obj/structure/lattice,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/tcommsat/server)
 "ajy" = (
 /obj/structure/rack{
@@ -3998,7 +3998,7 @@
 	},
 /area/assembly/assembly_line)
 "ajA" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/engine/engineering)
 "ajB" = (
 /obj/machinery/light_switch{
@@ -4008,7 +4008,7 @@
 /turf/open/floor/plasteel/dark,
 /area/turret_protected/aisat_interior)
 "ajC" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/office)
 "ajD" = (
 /obj/machinery/door_control{
@@ -4064,7 +4064,7 @@
 /turf/open/floor/wood,
 /area/library)
 "ajK" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/medbreak)
 "ajL" = (
 /obj/structure/morgue{
@@ -4079,7 +4079,7 @@
 /turf/open/floor/plating,
 /area/assembly/assembly_line)
 "ajN" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/storage/primary)
 "ajO" = (
 /obj/structure/lattice/catwalk,
@@ -4292,7 +4292,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/assembly/assembly_line)
 "akn" = (
 /obj/machinery/airlock_sensor{
@@ -4451,13 +4451,13 @@
 /turf/space,
 /area/space/nearstation)
 "akB" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/janitor)
 "akC" = (
 /turf/open/floor/plasteel,
 /area/janitor)
 "akD" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/blueshield)
 "akE" = (
 /obj/machinery/access_button{
@@ -4478,7 +4478,7 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "akF" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/arkrep)
 "akG" = (
 /obj/machinery/light{
@@ -4491,16 +4491,16 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "akH" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/secondary/exit/podbay)
 "akI" = (
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/podbay)
 "akJ" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/miningdock)
 "akK" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/secondary/exit/podbay)
 "akL" = (
 /obj/effect/spawner/window/reinforced,
@@ -5608,7 +5608,7 @@
 /turf/open/floor/plating,
 /area/maintenance/auxsolarport)
 "amM" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/surgery2)
 "amN" = (
 /obj/machinery/camera{
@@ -5836,7 +5836,7 @@
 /turf/open/floor/plating,
 /area/engine/engineering)
 "anl" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/mrchangs)
 "anm" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -5856,7 +5856,7 @@
 /turf/open/floor/engine,
 /area/hallway/secondary/exit/podbay)
 "anq" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/courtroom)
 "anr" = (
 /turf/open/floor/wood,
@@ -5914,7 +5914,7 @@
 /turf/open/floor/plasteel,
 /area/storage/primary)
 "any" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hydroponics)
 "anz" = (
 /obj/structure/bookcase{
@@ -6005,7 +6005,7 @@
 /turf/open/floor/plating,
 /area/maintenance/engi_shuttle)
 "anH" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/genetics_cloning)
 "anI" = (
 /turf/open/floor/plasteel{
@@ -6041,10 +6041,10 @@
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "anO" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/kitchen)
 "anP" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/surgery1)
 "anQ" = (
 /obj/machinery/atmospherics/unary/cryo_cell,
@@ -6177,7 +6177,7 @@
 	},
 /area/medical/medbreak)
 "aoe" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/space)
 "aof" = (
 /obj/effect/landmark/start{
@@ -6217,7 +6217,7 @@
 	width = 12
 	},
 /obj/docking_port/mobile/supply,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -6249,7 +6249,7 @@
 	},
 /area/maintenance/turbine)
 "aok" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/theatre)
 "aol" = (
 /turf/open/floor/plasteel{
@@ -6259,7 +6259,7 @@
 	},
 /area/hydroponics)
 "aom" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/sleep)
 "aon" = (
 /obj/machinery/light/small,
@@ -6282,13 +6282,13 @@
 /turf/open/floor/plasteel,
 /area/engine/equipmentstorage)
 "aop" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/cmostore)
 "aoq" = (
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/theatre)
 "aor" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/cmostore)
 "aos" = (
 /obj/structure/closet/firecloset,
@@ -6331,7 +6331,7 @@
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
 "aoy" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/mimeoffice)
 "aoz" = (
 /turf/open/floor/mineral/tranquillite,
@@ -6383,7 +6383,7 @@
 /area/crew_quarters/theatre)
 "aoG" = (
 /obj/effect/spawner/random_spawners/fungus_maybe,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/engi_shuttle)
 "aoH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -6415,16 +6415,16 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aoK" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/teleporter)
 "aoL" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/heads/hop)
 "aoM" = (
 /turf/open/floor/plasteel,
 /area/crew_quarters/heads/hop)
 "aoN" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/maintcentral)
 "aoO" = (
 /obj/structure/table,
@@ -6456,7 +6456,7 @@
 /turf/open/shuttle/floor4/vox,
 /area/shuttle/vox)
 "aoR" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/clownoffice)
 "aoS" = (
 /obj/structure/chair{
@@ -6535,7 +6535,7 @@
 /area/shuttle/vox)
 "ape" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
@@ -6566,7 +6566,7 @@
 /area/shuttle/syndicate_elite)
 "api" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -6619,7 +6619,7 @@
 /turf/open/shuttle/floor4/vox,
 /area/shuttle/vox)
 "app" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -6927,7 +6927,7 @@
 /turf/open/floor/plasteel,
 /area/engine/hardsuitstorage)
 "apX" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/maintcentral)
 "apY" = (
 /obj/effect/spawner/window/reinforced,
@@ -6942,10 +6942,10 @@
 	},
 /area/hydroponics)
 "aqb" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/secondary/entry)
 "aqc" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/secondary/entry)
 "aqd" = (
 /obj/structure/cable{
@@ -7160,7 +7160,7 @@
 	},
 /area/medical/medbreak)
 "aqz" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/paramedic)
 "aqA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -7239,7 +7239,7 @@
 /turf/space,
 /area/space/nearstation)
 "aqJ" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/bridge/meeting_room)
 "aqK" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
@@ -7255,7 +7255,7 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "aqL" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/bridge/meeting_room)
 "aqM" = (
 /turf/open/floor/plasteel{
@@ -7393,12 +7393,12 @@
 /area/shuttle/syndicate_elite)
 "are" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/syndicate_elite)
 "arf" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/syndicate_elite)
@@ -7428,7 +7428,7 @@
 /area/shuttle/syndicate_elite)
 "arh" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -7437,14 +7437,14 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/syndicate_elite)
 "arj" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/arcade)
 "ark" = (
 /obj/effect/spawner/window/reinforced,
 /turf/open/floor/plating,
 /area/crew_quarters/arcade)
 "arl" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/syndicate)
@@ -7679,14 +7679,14 @@
 /area/hallway/secondary/entry)
 "arI" = (
 /obj/structure/sign/pods,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/secondary/entry)
 "arJ" = (
 /obj/structure/chair/comfy/teal,
 /turf/open/floor/carpet/arcade,
 /area/crew_quarters/arcade)
 "arK" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/civilian/barber)
 "arL" = (
 /obj/structure/chair/wood{
@@ -7754,7 +7754,7 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "arR" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/cryo)
 "arS" = (
 /obj/structure/lattice/catwalk,
@@ -7781,7 +7781,7 @@
 /turf/open/floor/plasteel/dark,
 /area/storage/eva)
 "arV" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/chapel/main)
 "arW" = (
 /obj/structure/lattice/catwalk,
@@ -7789,7 +7789,7 @@
 /turf/space,
 /area/space/nearstation)
 "arX" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/dorms)
 "arY" = (
 /obj/effect/spawner/window/reinforced,
@@ -7884,7 +7884,7 @@
 /turf/open/floor/carpet,
 /area/chapel/main)
 "ask" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/chapel/office)
 "asl" = (
 /turf/open/floor/plasteel{
@@ -7992,7 +7992,7 @@
 	},
 /area/civilian/barber)
 "asw" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -8060,7 +8060,7 @@
 /area/shuttle/syndicate)
 "asF" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -8074,7 +8074,7 @@
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "asH" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
@@ -8082,7 +8082,7 @@
 /area/shuttle/supply)
 "asI" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10";
 	dir = 2
@@ -8090,7 +8090,7 @@
 /area/shuttle/supply)
 "asJ" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
@@ -8121,7 +8121,7 @@
 /area/shuttle/syndicate_sit)
 "asN" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -8152,7 +8152,7 @@
 	},
 /area/shuttle/syndicate)
 "asR" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -8174,7 +8174,7 @@
 /turf/open/shuttle/floor,
 /area/shuttle/supply)
 "asV" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -8241,11 +8241,11 @@
 	},
 /area/shuttle/syndicate_sit)
 "atf" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/psych)
 "atg" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/syndicate)
@@ -8261,7 +8261,7 @@
 /area/shuttle/syndicate)
 "ati" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -8415,14 +8415,14 @@
 /area/shuttle/syndicate_sit)
 "aty" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/syndicate)
 "atz" = (
 /obj/machinery/porta_turret/syndicate,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -8576,13 +8576,13 @@
 	name = "EXTERNAL AIRLOCK";
 	pixel_x = 0
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/syndicate)
 "atK" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -8628,7 +8628,7 @@
 /obj/machinery/atmospherics/unary/tank/air{
 	dir = 2
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -8644,7 +8644,7 @@
 	},
 /area/shuttle/syndicate)
 "atR" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall7";
 	icon_state = "swall7";
 	dir = 2
@@ -8652,7 +8652,7 @@
 /area/shuttle/supply)
 "atS" = (
 /turf/open/shuttle/floor,
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10"
 	},
@@ -8663,20 +8663,20 @@
 /area/shuttle/supply)
 "atU" = (
 /turf/open/shuttle/floor,
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6"
 	},
 /area/shuttle/supply)
 "atV" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall11";
 	icon_state = "swall11";
 	dir = 2
 	},
 /area/shuttle/supply)
 "atW" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/syndicate_sit)
@@ -8777,14 +8777,14 @@
 /area/engine/mechanic_workshop)
 "auf" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
 	},
 /area/shuttle/supply)
 "aug" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall15";
 	icon_state = "swall15";
 	dir = 2
@@ -8799,7 +8799,7 @@
 /area/shuttle/supply)
 "aui" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
@@ -8807,7 +8807,7 @@
 /area/shuttle/supply)
 "auj" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/syndicate_sit)
@@ -8837,7 +8837,7 @@
 /area/shuttle/syndicate_sit)
 "aul" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -8951,10 +8951,10 @@
 /turf/open/floor/plating,
 /area/medical/cryo)
 "auA" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/reception)
 "auB" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/captain/bedroom)
 "auC" = (
 /obj/machinery/turretid/stun{
@@ -8970,10 +8970,10 @@
 	},
 /area/turret_protected/aisat_interior)
 "auD" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/captain/bedroom)
 "auE" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/captain)
 "auF" = (
 /obj/structure/cable/yellow{
@@ -8999,15 +8999,15 @@
 	},
 /area/hallway/primary/fore/fore_starboard)
 "auH" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/gym)
 "auI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/engineering)
 "auJ" = (
 /obj/structure/lattice/catwalk,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/storage)
 "auK" = (
 /obj/machinery/status_display{
@@ -9322,7 +9322,7 @@
 /turf/open/floor/plasteel,
 /area/engine/equipmentstorage)
 "avm" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/equipmentstorage)
 "avn" = (
 /obj/structure/table,
@@ -9358,7 +9358,7 @@
 /turf/open/floor/plating,
 /area/engine/controlroom)
 "avq" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/mechanic_workshop)
 "avr" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -9484,13 +9484,13 @@
 /area/shuttle/syndicate)
 "avD" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
 /area/shuttle/mining)
 "avE" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -9502,7 +9502,7 @@
 /area/shuttle/mining)
 "avG" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10";
 	dir = 2
@@ -9560,7 +9560,7 @@
 	},
 /area/shuttle/syndicate)
 "avL" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -9958,7 +9958,7 @@
 /turf/open/floor/plating,
 /area/crew_quarters/mrchangs)
 "awG" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/engine/mechanic_workshop)
 "awH" = (
 /obj/structure/table,
@@ -10077,7 +10077,7 @@
 	},
 /area/engine/chiefs_office)
 "awX" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/magistrateoffice)
 "awY" = (
 /obj/item/storage/toolbox/mechanical{
@@ -10112,7 +10112,7 @@
 	icon_state = "1-4";
 	tag = "90Curve"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/engineering)
 "axc" = (
 /obj/structure/chair/office/dark{
@@ -10121,7 +10121,7 @@
 /turf/open/floor/plasteel,
 /area/atmos/control)
 "axd" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos/control)
 "axe" = (
 /obj/structure/closet/secure_closet/atmos_personal,
@@ -10149,10 +10149,10 @@
 /turf/space,
 /area/space/nearstation)
 "axj" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/incinerator)
 "axk" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fsmaint3)
 "axl" = (
 /obj/structure/cable{
@@ -10206,7 +10206,7 @@
 /area/crew_quarters/mrchangs)
 "axr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "axs" = (
 /obj/structure/closet,
@@ -10373,7 +10373,7 @@
 /turf/open/floor/plating,
 /area/engine/chiefs_office)
 "axH" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/fpmaint2)
 "axI" = (
 /obj/effect/spawner/window/reinforced,
@@ -10475,7 +10475,7 @@
 	},
 /area/turret_protected/aisat_interior)
 "axS" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/storage/office)
 "axT" = (
 /obj/structure/cable{
@@ -10492,7 +10492,7 @@
 	name = "\improper AI Satellite Hallway"
 	})
 "axU" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/vacantoffice2)
 "axV" = (
 /obj/structure/cable{
@@ -10553,7 +10553,7 @@
 /area/space/nearstation)
 "ayb" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -10564,14 +10564,14 @@
 /area/shuttle/mining)
 "ayd" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
 /area/shuttle/mining)
 "aye" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -10600,7 +10600,7 @@
 /area/engine/engineering)
 "ayg" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10";
 	dir = 2
@@ -10659,7 +10659,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fsmaint)
 "aym" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc4"
 	},
 /area/shuttle/escape)
@@ -10678,7 +10678,7 @@
 /turf/open/shuttle/floor,
 /area/shuttle/escape)
 "ayq" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc3"
 	},
 /area/shuttle/escape)
@@ -10874,10 +10874,10 @@
 /turf/open/floor/plating,
 /area/storage/secure)
 "ayI" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/apmaint3)
 "ayJ" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/apmaint3)
 "ayK" = (
 /turf/open/floor/plating,
@@ -10967,13 +10967,13 @@
 	},
 /area/maintenance/incinerator)
 "ayY" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
 /area/shuttle/escape)
 "ayZ" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/asmaint)
 "aza" = (
 /obj/structure/chair/comfy/shuttle{
@@ -11027,21 +11027,21 @@
 /turf/open/floor/engine/insulated,
 /area/maintenance/incinerator)
 "aze" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/shuttle/escape)
 "azf" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall13";
 	icon_state = "swall13";
 	dir = 2
 	},
 /area/shuttle/escape)
 "azg" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall14";
 	dir = 2
@@ -11261,14 +11261,14 @@
 	},
 /area/turret_protected/aisat_interior)
 "azF" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/ai_upload)
 "azG" = (
 /obj/effect/spawner/random_spawners/wall_rusted_maybe,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fsmaint)
 "azH" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -11290,7 +11290,7 @@
 /turf/open/shuttle/floor,
 /area/shuttle/pod_1)
 "azJ" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -11384,7 +11384,7 @@
 	pixel_y = 0;
 	tag = ""
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/engineering)
 "azT" = (
 /obj/structure/disposalpipe/segment{
@@ -11427,7 +11427,7 @@
 /turf/open/floor/plating,
 /area/maintenance/incinerator)
 "azX" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/vacantoffice)
 "azY" = (
 /obj/structure/lattice/catwalk,
@@ -11483,7 +11483,7 @@
 /turf/open/floor/plating/airless,
 /area/engine/engineering)
 "aAf" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/dorms)
 "aAg" = (
 /obj/structure/cable{
@@ -11495,7 +11495,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fsmaint)
 "aAh" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fsmaint2)
 "aAi" = (
 /obj/effect/spawner/window/reinforced,
@@ -11585,7 +11585,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/universal{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/aisat_interior)
 "aAu" = (
 /obj/structure/disposalpipe/segment{
@@ -11747,7 +11747,7 @@
 	},
 /area/shuttle/escape)
 "aAN" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall7";
 	icon_state = "swall7";
 	dir = 2
@@ -11773,14 +11773,14 @@
 /turf/open/floor/plasteel/dark,
 /area/storage/secure)
 "aAQ" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall11";
 	icon_state = "swall11";
 	dir = 2
 	},
 /area/shuttle/escape)
 "aAR" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -11826,7 +11826,7 @@
 	},
 /area/shuttle/escape)
 "aAV" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/fpmaint)
 "aAW" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
@@ -11930,7 +11930,7 @@
 /area/shuttle/escape)
 "aBe" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -11954,7 +11954,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fpmaint2)
 "aBg" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -11978,14 +11978,14 @@
 /turf/simulated/shuttle/plating,
 /area/shuttle/arrival/station)
 "aBk" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall14";
 	dir = 2
 	},
 /area/shuttle/arrival/station)
 "aBl" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10";
 	dir = 2
@@ -12005,7 +12005,7 @@
 	},
 /area/shuttle/escape)
 "aBn" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall11";
 	dir = 2
 	},
@@ -12060,7 +12060,7 @@
 /turf/open/shuttle/floor,
 /area/shuttle/arrival/station)
 "aBy" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall7";
 	dir = 2
 	},
@@ -12074,7 +12074,7 @@
 /area/shuttle/arrival/station)
 "aBA" = (
 /turf/open/shuttle/floor,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -12090,7 +12090,7 @@
 /turf/open/shuttle/floor,
 /area/shuttle/arrival/station)
 "aBC" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -12154,7 +12154,7 @@
 /area/shuttle/escape)
 "aBL" = (
 /turf/open/shuttle/floor,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -12168,14 +12168,14 @@
 /area/shuttle/arrival/station)
 "aBN" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
 	},
 /area/shuttle/arrival/station)
 "aBO" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall13";
 	dir = 2
 	},
@@ -12302,7 +12302,7 @@
 /area/shuttle/escape)
 "aCc" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
@@ -12347,7 +12347,7 @@
 	},
 /area/shuttle/escape)
 "aCi" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/asmaint2)
 "aCj" = (
 /obj/machinery/door/airlock/external{
@@ -12367,7 +12367,7 @@
 /turf/open/floor/plating,
 /area/engine/engineering)
 "aCk" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/apmaint2)
 "aCl" = (
 /obj/effect/spawner/window/reinforced,
@@ -12392,7 +12392,7 @@
 /turf/open/floor/plating,
 /area/maintenance/apmaint2)
 "aCo" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/apmaint2)
 "aCp" = (
 /obj/structure/rack,
@@ -12412,7 +12412,7 @@
 /area/atmos)
 "aCr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/asmaint)
 "aCs" = (
 /obj/item/twohanded/required/kirbyplants,
@@ -12452,7 +12452,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fpmaint2)
 "aCx" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/maintenance/fpmaint2)
 "aCy" = (
 /obj/structure/table,
@@ -12566,7 +12566,7 @@
 	},
 /area/crew_quarters/vacantoffice)
 "aCM" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/turbine)
 "aCN" = (
 /obj/structure/cable{
@@ -12677,7 +12677,7 @@
 /area/shuttle/escape)
 "aCX" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -12689,7 +12689,7 @@
 /area/shuttle/escape)
 "aCZ" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
@@ -12710,7 +12710,7 @@
 /turf/open/floor/plasteel,
 /area/engine/hardsuitstorage)
 "aDc" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -12727,14 +12727,14 @@
 /area/shuttle/transport)
 "aDf" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
 /area/shuttle/transport)
 "aDg" = (
 /turf/open/shuttle/floor,
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9"
 	},
@@ -12809,7 +12809,7 @@
 /area/crew_quarters/captain)
 "aDq" = (
 /turf/open/shuttle/floor,
-/turf/simulated/shuttle/wall/interior{
+/turf/closed/shuttle/wall/interior{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10"
 	},
@@ -12838,7 +12838,7 @@
 /area/shuttle/transport)
 "aDv" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -12851,7 +12851,7 @@
 /turf/simulated/shuttle/plating,
 /area/shuttle/specops)
 "aDx" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/specops)
@@ -12868,7 +12868,7 @@
 /area/shuttle/specops)
 "aDz" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -13012,7 +13012,7 @@
 /area/shuttle/specops)
 "aDN" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -13026,13 +13026,13 @@
 /area/shuttle/specops)
 "aDP" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/administration)
 "aDQ" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/administration)
@@ -13078,14 +13078,14 @@
 /area/shuttle/administration)
 "aDT" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/administration)
 "aDU" = (
 /obj/machinery/vending/boozeomat,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/administration)
@@ -13111,7 +13111,7 @@
 	},
 /area/shuttle/administration)
 "aDY" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -13281,7 +13281,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/sorting)
 "aEr" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/bar)
 "aEs" = (
 /obj/structure/cable{
@@ -13366,7 +13366,7 @@
 	color = "#FF0000";
 	dir = 4
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/administration)
@@ -13443,14 +13443,14 @@
 /area/shuttle/administration)
 "aEM" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/administration)
 "aEN" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/administration)
@@ -13658,7 +13658,7 @@
 /area/shuttle/administration)
 "aFg" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -13680,7 +13680,7 @@
 /area/shuttle/siberia)
 "aFj" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10";
 	dir = 2
@@ -13703,7 +13703,7 @@
 	},
 /area/shuttle/administration)
 "aFm" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -13952,7 +13952,7 @@
 	},
 /area/shuttle/siberia)
 "aFQ" = (
-/turf/simulated/shuttle/wall,
+/turf/closed/shuttle/wall,
 /area/shuttle/siberia)
 "aFR" = (
 /obj/machinery/mineral/stacking_machine/laborstacker{
@@ -14045,7 +14045,7 @@
 /area/shuttle/siberia)
 "aFZ" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -14074,7 +14074,7 @@
 /area/shuttle/siberia)
 "aGd" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -14088,7 +14088,7 @@
 /turf/open/floor/plasteel,
 /area/atmos)
 "aGf" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
@@ -14096,7 +14096,7 @@
 /area/shuttle/pod_4)
 "aGg" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -14153,7 +14153,7 @@
 /area/maintenance/turbine)
 "aGm" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -15016,23 +15016,23 @@
 /area/crew_quarters/vacantoffice)
 "aHV" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/fpmaint2)
 "aHW" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/sleeper)
 "aHX" = (
 /obj/effect/landmark/burnturf,
 /turf/open/floor/plating,
 /area/maintenance/fpmaint2)
 "aHY" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/locker)
 "aHZ" = (
 /turf/open/floor/plasteel,
 /area/crew_quarters/locker)
 "aIa" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/secondary/construction{
 	name = "\improper Garden"
 	})
@@ -15081,7 +15081,7 @@
 	dir = 1;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/fsmaint)
 "aIj" = (
 /obj/machinery/disposal,
@@ -15188,7 +15188,7 @@
 	},
 /area/engine/hardsuitstorage)
 "aIu" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/nuke_storage)
 "aIv" = (
 /turf/open/floor/plasteel/dark,
@@ -15199,7 +15199,7 @@
 	name = "KEEP CLEAR: DOCKING AREA";
 	pixel_y = 0
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/secondary/entry)
 "aIx" = (
 /obj/machinery/vending/snack,
@@ -15543,7 +15543,7 @@
 /turf/open/floor/plasteel,
 /area/crew_quarters/locker)
 "aJo" = (
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/maintenance/incinerator)
 "aJp" = (
 /obj/machinery/camera{
@@ -15713,7 +15713,7 @@
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "aJD" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fpmaint2)
 "aJE" = (
 /obj/structure/lattice,
@@ -15744,7 +15744,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fsmaint3)
 "aJG" = (
 /obj/structure/table,
@@ -15763,7 +15763,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "aJI" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fpmaint)
 "aJJ" = (
 /obj/machinery/door/poddoor{
@@ -15849,7 +15849,7 @@
 /turf/open/floor/wood,
 /area/crew_quarters/vacantoffice)
 "aJV" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/secondary/exit)
 "aJW" = (
 /obj/effect/spawner/window/reinforced,
@@ -16081,7 +16081,7 @@
 /turf/open/floor/wood,
 /area/crew_quarters/vacantoffice)
 "aKv" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/secondary/exit)
 "aKw" = (
 /obj/machinery/light{
@@ -16106,7 +16106,7 @@
 /turf/open/floor/plasteel,
 /area/engine/equipmentstorage)
 "aKx" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/biostorage)
 "aKy" = (
 /obj/effect/spawner/window/reinforced,
@@ -16155,7 +16155,7 @@
 "aKD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/engineering)
 "aKE" = (
 /obj/structure/closet/secure_closet/engineering_personal,
@@ -16452,7 +16452,7 @@
 /turf/open/floor/plasteel/dark,
 /area/hallway/secondary/exit)
 "aLf" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/checkpoint2)
 "aLg" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
@@ -16502,7 +16502,7 @@
 	},
 /area/hallway/primary/fore/fore_starboard)
 "aLi" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/cmo)
 "aLj" = (
 /obj/machinery/door/window/northleft{
@@ -16559,7 +16559,7 @@
 /turf/open/floor/plasteel,
 /area/bridge)
 "aLq" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/bridge)
 "aLr" = (
 /obj/structure/table/wood,
@@ -16575,7 +16575,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/fsmaint)
 "aLt" = (
 /obj/structure/disposalpipe/segment{
@@ -16598,7 +16598,7 @@
 /area/crew_quarters/vacantoffice)
 "aLv" = (
 /obj/effect/spawner/random_spawners/wall_rusted_probably,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fsmaint)
 "aLw" = (
 /obj/machinery/computer/station_alert,
@@ -16650,7 +16650,7 @@
 /turf/space,
 /area/space/nearstation)
 "aLC" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/chemistry)
 "aLD" = (
 /obj/effect/spawner/window/reinforced,
@@ -16873,7 +16873,7 @@
 /area/medical/medbreak)
 "aMb" = (
 /obj/structure/sign/cargo,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/office)
 "aMc" = (
 /obj/effect/landmark/damageturf,
@@ -16894,10 +16894,10 @@
 /turf/open/floor/plating/airless,
 /area/engine/engineering)
 "aMg" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/storage/tools)
 "aMh" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/cmo)
 "aMi" = (
 /obj/structure/cable{
@@ -17136,7 +17136,7 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/engineering)
 "aMG" = (
 /obj/machinery/atmospherics/pipe/manifold4w/visible/purple,
@@ -17334,7 +17334,7 @@
 /turf/open/floor/plasteel,
 /area/engine/hardsuitstorage)
 "aMU" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/cafeteria)
 "aMV" = (
 /obj/effect/spawner/window/reinforced,
@@ -17373,16 +17373,16 @@
 /turf/open/floor/plating,
 /area/hallway/secondary/exit)
 "aNb" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/storage/emergency2)
 "aNc" = (
 /turf/open/floor/plating,
 /area/storage/emergency2)
 "aNd" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/lab)
 "aNe" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/assembly/robotics)
 "aNf" = (
 /obj/structure/chair{
@@ -17434,7 +17434,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fsmaint)
 "aNk" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/research{
 	name = "Research Division"
 	})
@@ -17482,7 +17482,7 @@
 /turf/open/floor/engine/insulated,
 /area/maintenance/turbine)
 "aNp" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/detectives_office)
 "aNq" = (
 /obj/structure/cable/yellow{
@@ -17535,17 +17535,17 @@
 	},
 /area/medical/genetics)
 "aNu" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/server_coldroom)
 "aNv" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/server)
 "aNw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
 	},
 /obj/machinery/status_display,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/controlroom)
 "aNx" = (
 /turf/open/floor/plasteel/dark,
@@ -17718,10 +17718,10 @@
 /turf/open/floor/plating,
 /area/engine/engineering)
 "aNQ" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/assembly/chargebay)
 "aNR" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/xenobiology)
 "aNS" = (
 /obj/structure/table/reinforced,
@@ -17901,7 +17901,7 @@
 /turf/open/floor/plating,
 /area/storage/tech)
 "aOk" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/explab)
 "aOl" = (
 /turf/open/floor/plasteel{
@@ -17910,7 +17910,7 @@
 	},
 /area/toxins/explab)
 "aOm" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/storage)
 "aOn" = (
 /turf/open/floor/plating,
@@ -17971,7 +17971,7 @@
 /turf/open/floor/plasteel,
 /area/maintenance/turbine)
 "aOt" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/heads/hor)
 "aOu" = (
 /obj/effect/spawner/window/reinforced,
@@ -18019,7 +18019,7 @@
 /turf/open/floor/engine,
 /area/toxins/explab_chamber)
 "aOz" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/explab_chamber)
 "aOA" = (
 /turf/open/floor/wood,
@@ -18029,13 +18029,13 @@
 /turf/open/floor/engine,
 /area/toxins/explab_chamber)
 "aOC" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/mixing)
 "aOD" = (
 /turf/open/floor/plasteel,
 /area/toxins/mixing)
 "aOE" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/misc_lab)
 "aOF" = (
 /turf/open/floor/plasteel{
@@ -18087,13 +18087,13 @@
 /turf/open/floor/plating,
 /area/maintenance/fsmaint)
 "aON" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/test_chamber)
 "aOO" = (
 /turf/open/floor/engine,
 /area/toxins/test_chamber)
 "aOP" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/launch)
 "aOQ" = (
 /obj/machinery/light_switch{
@@ -18132,7 +18132,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aOU" = (
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/toxins/mixing)
 "aOV" = (
 /obj/structure/cable{
@@ -18238,7 +18238,7 @@
 /turf/open/floor/engine,
 /area/toxins/mixing)
 "aPf" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/portsolar)
 "aPg" = (
 /obj/machinery/atmospherics/pipe/simple/visible,
@@ -18256,7 +18256,7 @@
 	name = "HIGH VOLTAGE";
 	pixel_y = 0
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/portsolar)
 "aPi" = (
 /obj/structure/cable{
@@ -18493,7 +18493,7 @@
 	icon_state = "shock";
 	name = "HIGH VOLTAGE"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/solar/port)
 "aPA" = (
 /obj/structure/lattice/catwalk,
@@ -18689,7 +18689,7 @@
 /turf/open/floor/plasteel/airless,
 /area/toxins/test_area)
 "aPQ" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/test_area)
 "aPR" = (
 /obj/machinery/atmospherics/binary/valve/digital{
@@ -18725,7 +18725,7 @@
 /turf/open/floor/plasteel/airless,
 /area/toxins/test_area)
 "aPX" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -18870,7 +18870,7 @@
 /turf/open/floor/carpet,
 /area/security/detectives_office)
 "aQm" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/prison/cell_block/A)
 "aQn" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -18893,7 +18893,7 @@
 /turf/space,
 /area/space/nearstation)
 "aQq" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/courtroom)
 "aQr" = (
 /obj/machinery/door_control{
@@ -19020,19 +19020,19 @@
 /turf/open/floor/plasteel/dark,
 /area/hallway/secondary/construction)
 "aQA" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/evidence)
 "aQB" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/interrogation)
 "aQC" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/securehallway)
 "aQD" = (
 /turf/open/floor/plasteel/dark,
 /area/security/securehallway)
 "aQE" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/lawoffice)
 "aQF" = (
 /turf/open/floor/plasteel{
@@ -19042,7 +19042,7 @@
 	},
 /area/lawoffice)
 "aQG" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/lawoffice)
 "aQH" = (
 /obj/structure/table,
@@ -19102,10 +19102,10 @@
 /turf/open/floor/plasteel/dark,
 /area/security/interrogation)
 "aQN" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/interrogation)
 "aQO" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/execution)
 "aQP" = (
 /obj/machinery/light{
@@ -19213,13 +19213,13 @@
 	},
 /area/hallway/primary/fore/fore_starboard)
 "aRc" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/prisonlockers)
 "aRd" = (
 /turf/open/floor/plasteel,
 /area/security/lobby)
 "aRe" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/lobby)
 "aRf" = (
 /obj/machinery/door/firedoor,
@@ -19253,7 +19253,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fpmaint)
 "aRi" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/processing)
 "aRj" = (
 /obj/structure/table/wood,
@@ -19281,7 +19281,7 @@
 /turf/open/floor/plasteel,
 /area/security/prisonlockers)
 "aRm" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/permabrig)
 "aRn" = (
 /obj/structure/cable/yellow{
@@ -19327,7 +19327,7 @@
 /area/security/processing)
 "aRs" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/turret_protected/aisat_interior)
 "aRt" = (
 /obj/structure/table,
@@ -19363,7 +19363,7 @@
 /turf/open/floor/plasteel,
 /area/security/permabrig)
 "aRx" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/range)
 "aRy" = (
 /obj/structure/table,
@@ -19483,7 +19483,7 @@
 /turf/open/floor/plasteel,
 /area/security/range)
 "aRJ" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/range)
 "aRK" = (
 /obj/item/radio/beacon,
@@ -19534,7 +19534,7 @@
 	},
 /area/medical/medbay2)
 "aRS" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/lobby)
 "aRT" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
@@ -19619,7 +19619,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/sorting)
 "aSf" = (
 /obj/machinery/atmospherics/binary/pump{
@@ -19726,7 +19726,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aSp" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/main)
 "aSq" = (
 /turf/open/floor/plasteel,
@@ -19750,13 +19750,13 @@
 	},
 /area/crew_quarters/kitchen)
 "aSs" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/security/seceqstorage)
 "aSt" = (
 /turf/open/floor/plasteel,
 /area/security/seceqstorage)
 "aSu" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/warden)
 "aSv" = (
 /obj/machinery/door/firedoor,
@@ -19837,7 +19837,7 @@
 	},
 /area/medical/surgery2)
 "aSC" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/podbay)
 "aSD" = (
 /turf/open/floor/plasteel{
@@ -19940,7 +19940,7 @@
 /turf/open/floor/engine,
 /area/security/podbay)
 "aSO" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/main)
 "aSP" = (
 /obj/structure/cable{
@@ -20074,7 +20074,7 @@
 	},
 /area/medical/surgery2)
 "aTc" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/securearmoury)
 "aTd" = (
 /turf/open/floor/plasteel/dark,
@@ -20148,7 +20148,7 @@
 	},
 /area/medical/medbay2)
 "aTj" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/armoury)
 "aTk" = (
 /obj/machinery/light{
@@ -20177,7 +20177,7 @@
 /turf/open/floor/plasteel,
 /area/crew_quarters/heads/hop)
 "aTm" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/medbay)
 "aTn" = (
 /obj/structure/cable{
@@ -20200,10 +20200,10 @@
 /turf/open/floor/plating,
 /area/maintenance/fsmaint)
 "aTo" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/starboardsolar)
 "aTp" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/heads/hos)
 "aTq" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
@@ -20548,7 +20548,7 @@
 	name = "HIGH VOLTAGE";
 	pixel_y = 0
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/starboardsolar)
 "aTZ" = (
 /obj/structure/cable{
@@ -20695,7 +20695,7 @@
 /turf/space,
 /area/solar/starboard)
 "aUo" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/barracks)
 "aUp" = (
 /turf/open/floor/plasteel,
@@ -20845,7 +20845,7 @@
 /turf/space,
 /area/solar/starboard)
 "aUB" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/prisonershuttle)
 "aUC" = (
 /turf/open/floor/plasteel/dark,
@@ -21167,7 +21167,7 @@
 /turf/open/floor/plating,
 /area/hallway/primary/central/se)
 "aVo" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/primary/central/se)
 "aVp" = (
 /obj/machinery/light,
@@ -21286,7 +21286,7 @@
 	},
 /area/hallway/primary/central/north)
 "aVI" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/apmaint)
 "aVJ" = (
 /turf/open/floor/plating,
@@ -21298,7 +21298,7 @@
 	},
 /area/hallway/primary/central/north)
 "aVL" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/primary/port/east)
 "aVM" = (
 /obj/effect/spawner/window/reinforced,
@@ -21381,7 +21381,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fpmaint3)
 "aVU" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/apmaint)
 "aVV" = (
 /obj/item/radio/intercom{
@@ -21888,7 +21888,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/controlroom)
 "aWQ" = (
 /obj/structure/chair{
@@ -22175,7 +22175,7 @@
 	icon_state = "1-2";
 	tag = ""
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/engine/hardsuitstorage)
 "aXt" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -23114,7 +23114,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
 "aYY" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos/distribution)
 "aYZ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
@@ -23276,7 +23276,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aZq" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/fsmaint3)
 "aZr" = (
 /obj/effect/decal/warning_stripes/yellow,
@@ -24278,7 +24278,7 @@
 	dir = 9;
 	level = 2
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos/distribution)
 "bbg" = (
 /obj/structure/cable{
@@ -24501,7 +24501,7 @@
 /area/hallway/primary/fore/fore_starboard)
 "bbA" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/maintenance/fpmaint2)
 "bbB" = (
 /obj/structure/closet/crate,
@@ -25534,7 +25534,7 @@
 	},
 /area/maintenance/turbine)
 "bdn" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/genetics_cloning)
 "bdo" = (
 /obj/machinery/atmospherics/pipe/manifold/visible{
@@ -25965,7 +25965,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -27838,7 +27838,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/disposal)
 "bhv" = (
 /obj/structure/table,
@@ -28900,7 +28900,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "bjl" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/library)
 "bjm" = (
 /obj/structure/cable{
@@ -28942,7 +28942,7 @@
 /area/maintenance/fpmaint3)
 "bjq" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bjr" = (
 /obj/effect/spawner/window/reinforced,
@@ -29119,7 +29119,7 @@
 /area/atmos/control)
 "bjI" = (
 /obj/effect/spawner/random_spawners/fungus_maybe,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fsmaint)
 "bjJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -29208,7 +29208,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "bjT" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/space/nearstation)
 "bjU" = (
 /obj/structure/table,
@@ -29271,7 +29271,7 @@
 	dir = 4;
 	level = 2
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos/control)
 "bkc" = (
 /obj/effect/spawner/window/reinforced,
@@ -29996,7 +29996,7 @@
 	},
 /area/medical/surgery1)
 "blv" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/gateway)
 "blw" = (
 /obj/structure/cable{
@@ -30207,11 +30207,11 @@
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "blS" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/maintenance/fpmaint)
 "blT" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fpmaint)
 "blU" = (
 /obj/structure/cable{
@@ -30283,7 +30283,7 @@
 	},
 /area/medical/virology)
 "bmb" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/locker/locker_toilet)
 "bmc" = (
 /obj/structure/table/reinforced,
@@ -30374,10 +30374,10 @@
 /area/crew_quarters/locker)
 "bmk" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/office)
 "bml" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fpmaint3)
 "bmm" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -30668,7 +30668,7 @@
 /area/medical/genetics)
 "bmK" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/fpmaint2)
 "bmL" = (
 /obj/machinery/power/apc{
@@ -30858,7 +30858,7 @@
 /area/storage/eva)
 "bnb" = (
 /obj/machinery/status_display/supply_display,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/storage)
 "bnc" = (
 /obj/effect/spawner/window/reinforced,
@@ -31078,11 +31078,11 @@
 /turf/open/floor/plating,
 /area/storage/tech)
 "bny" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/bridge/lounge)
 "bnz" = (
 /obj/machinery/status_display/supply_display,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/sorting)
 "bnA" = (
 /obj/machinery/power/apc{
@@ -31188,7 +31188,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "bnI" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/fpmaint3)
 "bnJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -31414,7 +31414,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/maintenance/incinerator)
 "boc" = (
 /obj/structure/closet/secure_closet/medical2,
@@ -32067,7 +32067,7 @@
 "bpn" = (
 /obj/machinery/light,
 /obj/machinery/status_display/supply_display,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/office)
 "bpo" = (
 /obj/machinery/alarm{
@@ -32662,7 +32662,7 @@
 /area/hallway/primary/fore)
 "bqq" = (
 /obj/machinery/status_display,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/surgery1)
 "bqr" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -33617,7 +33617,7 @@
 "brW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/fpmaint)
 "brX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -33677,7 +33677,7 @@
 /area/medical/medbay2)
 "bsd" = (
 /obj/structure/sign/biohazard,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fsmaint2)
 "bse" = (
 /obj/structure/cable{
@@ -33792,7 +33792,7 @@
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "bsp" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/maintenance/fpmaint3)
 "bsq" = (
 /obj/machinery/light,
@@ -33837,7 +33837,7 @@
 /area/crew_quarters/vacantoffice)
 "bsu" = (
 /obj/structure/sign/greencross,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/reception)
 "bsv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -33908,7 +33908,7 @@
 /area/storage/secure)
 "bsC" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/quartermaster/miningdock)
 "bsD" = (
 /mob/living/simple_animal/pet/dog/corgi/borgi,
@@ -33951,7 +33951,7 @@
 /turf/open/floor/plating,
 /area/maintenance/apmaint3)
 "bsH" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/primary/fore)
 "bsI" = (
 /obj/structure/cable{
@@ -35227,13 +35227,13 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fsmaint2)
 "buZ" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/maintenance/fsmaint2)
 "bva" = (
 /obj/machinery/light,
@@ -35883,7 +35883,7 @@
 /area/maintenance/fpmaint2)
 "bwj" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/virology)
 "bwk" = (
 /obj/structure/cable{
@@ -36593,7 +36593,7 @@
 /area/hallway/primary/central/west)
 "bxD" = (
 /obj/machinery/status_display,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/genetics_cloning)
 "bxE" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -36949,7 +36949,7 @@
 /area/hallway/secondary/entry)
 "byk" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/virology)
 "byl" = (
 /obj/structure/cable{
@@ -37016,7 +37016,7 @@
 /area/crew_quarters/kitchen)
 "byr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/virology)
 "bys" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -37460,7 +37460,7 @@
 	dir = 1;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/virology)
 "bzh" = (
 /obj/structure/disposalpipe/segment,
@@ -38050,7 +38050,7 @@
 /area/maintenance/fpmaint)
 "bAl" = (
 /obj/structure/sign/nosmoking_2,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/sleeper)
 "bAm" = (
 /obj/structure/disposalpipe/segment{
@@ -38702,7 +38702,7 @@
 "bBw" = (
 /obj/structure/grille,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bBx" = (
 /obj/machinery/light/small,
@@ -38947,7 +38947,7 @@
 "bBR" = (
 /obj/structure/grille,
 /obj/machinery/atmospherics/pipe/simple/visible/green,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bBS" = (
 /obj/structure/sign/securearea{
@@ -39396,7 +39396,7 @@
 /area/blueshield)
 "bCD" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/maintenance/fpmaint)
 "bCE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -41930,7 +41930,7 @@
 	dir = 4;
 	level = 2
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bHg" = (
 /obj/item/trash/liquidfood,
@@ -42104,7 +42104,7 @@
 	dir = 4;
 	level = 2
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/atmos)
 "bHy" = (
 /obj/structure/chair/wood/wings{
@@ -42918,7 +42918,7 @@
 /area/medical/paramedic)
 "bIV" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -43036,7 +43036,7 @@
 /area/medical/sleeper)
 "bJi" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -43128,7 +43128,7 @@
 /area/teleporter)
 "bJs" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -43688,7 +43688,7 @@
 /area/shuttle/pod_2)
 "bKq" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -44659,7 +44659,7 @@
 /area/bridge/meeting_room)
 "bMa" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fpmaint2)
 "bMb" = (
 /obj/machinery/cooker/deepfryer,
@@ -44925,7 +44925,7 @@
 /area/crew_quarters/dorms)
 "bMx" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fpmaint)
 "bMy" = (
 /obj/machinery/autolathe,
@@ -46297,7 +46297,7 @@
 /area/storage/primary)
 "bOP" = (
 /obj/structure/sign/greencross,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/chemistry)
 "bOQ" = (
 /obj/machinery/door/airlock/mining/glass{
@@ -47014,7 +47014,7 @@
 /area/arkrep)
 "bQj" = (
 /obj/structure/sign/barsign,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/cafeteria)
 "bQk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -48873,7 +48873,7 @@
 /area/medical/virology)
 "bTB" = (
 /obj/machinery/status_display,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/sleeper)
 "bTC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -50233,7 +50233,7 @@
 /area/medical/virology)
 "bVR" = (
 /obj/structure/sign/securearea,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/gateway)
 "bVS" = (
 /obj/structure/disposalpipe/segment,
@@ -50704,7 +50704,7 @@
 /turf/open/floor/plating,
 /area/maintenance/apmaint)
 "bWK" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/maintenance/fsmaint3)
 "bWL" = (
 /obj/structure/table/wood,
@@ -50820,7 +50820,7 @@
 /area/maintenance/apmaint2)
 "bWV" = (
 /obj/structure/sign/holy,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/chapel/main)
 "bWW" = (
 /obj/structure/rack,
@@ -51426,7 +51426,7 @@
 /area/hallway/primary/central/sw)
 "bYd" = (
 /obj/structure/sign/chinese,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/mrchangs)
 "bYe" = (
 /obj/structure/table/glass,
@@ -51742,7 +51742,7 @@
 /area/engine/hardsuitstorage)
 "bYL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/evidence)
 "bYM" = (
 /obj/structure/disposalpipe/segment,
@@ -51922,7 +51922,7 @@
 /area/blueshield)
 "bZc" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fsmaint3)
 "bZd" = (
 /obj/structure/cable{
@@ -52241,7 +52241,7 @@
 /turf/open/floor/plating,
 /area/maintenance/apmaint3)
 "bZF" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/asmaint2)
 "bZG" = (
 /obj/machinery/photocopier,
@@ -53770,7 +53770,7 @@
 /turf/open/floor/plasteel,
 /area/security/permabrig)
 "cco" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/electrical)
 "ccp" = (
 /turf/open/floor/plasteel{
@@ -53797,7 +53797,7 @@
 /turf/open/floor/plasteel/dark,
 /area/security/permabrig)
 "ccs" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/electrical)
 "cct" = (
 /obj/machinery/light/small{
@@ -53815,7 +53815,7 @@
 /area/hallway/primary/central/sw)
 "ccv" = (
 /obj/structure/sign/science,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/heads/hor)
 "ccw" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -54252,7 +54252,7 @@
 /area/crew_quarters/locker/locker_toilet)
 "cdg" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fpmaint3)
 "cdh" = (
 /obj/machinery/light,
@@ -54536,7 +54536,7 @@
 /area/maintenance/asmaint2)
 "cdJ" = (
 /obj/structure/sign/explosives,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/explab)
 "cdK" = (
 /obj/structure/cable{
@@ -54785,7 +54785,7 @@
 	},
 /area/toxins/misc_lab)
 "cee" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/chapel/Funeral)
 "cef" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -56460,7 +56460,7 @@
 /turf/open/floor/plating,
 /area/hallway/primary/central/sw)
 "cgY" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/primary/central/sw)
 "cgZ" = (
 /obj/machinery/alarm{
@@ -57581,7 +57581,7 @@
 /area/toxins/xenobiology)
 "ciT" = (
 /obj/structure/lattice,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/xenobiology)
 "ciU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -58299,7 +58299,7 @@
 /turf/open/floor/plasteel/dark,
 /area/security/permabrig)
 "ckh" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/toxins/xenobiology)
 "cki" = (
 /obj/structure/cable{
@@ -58927,7 +58927,7 @@
 	},
 /area/security/execution)
 "clk" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/chapel/Funeral)
 "cll" = (
 /obj/machinery/blackbox_recorder,
@@ -59421,7 +59421,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central/ne)
 "cma" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/asmaint)
 "cmb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -60526,7 +60526,7 @@
 /area/hallway/primary/aft)
 "cnK" = (
 /obj/structure/sign/security,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/lobby)
 "cnL" = (
 /obj/structure/table/wood,
@@ -60540,7 +60540,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/xenobiology)
 "cnN" = (
 /obj/machinery/light{
@@ -60946,7 +60946,7 @@
 /area/security/securehallway)
 "coq" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/apmaint)
 "cor" = (
 /obj/structure/cable,
@@ -61805,7 +61805,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/portsolar)
 "cpG" = (
 /obj/structure/cable{
@@ -63625,7 +63625,7 @@
 /area/hallway/secondary/entry)
 "csH" = (
 /obj/effect/spawner/random_spawners/fungus_maybe,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/engine/mechanic_workshop)
 "csI" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -63819,7 +63819,7 @@
 /turf/open/floor/wood,
 /area/crew_quarters/vacantoffice)
 "ctb" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/maintenance/fsmaint2)
 "ctc" = (
 /obj/machinery/alarm{
@@ -64771,7 +64771,7 @@
 /area/medical/cryo)
 "cuD" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fsmaint2)
 "cuE" = (
 /obj/machinery/firealarm{
@@ -65376,7 +65376,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -65698,7 +65698,7 @@
 "cvV" = (
 /obj/machinery/porta_turret/syndicate,
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
@@ -65744,7 +65744,7 @@
 "cwa" = (
 /obj/machinery/porta_turret/syndicate,
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -66502,7 +66502,7 @@
 /area/hallway/primary/aft)
 "cxp" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/vacantoffice)
 "cxq" = (
 /obj/structure/table/glass,
@@ -69442,7 +69442,7 @@
 /area/toxins/xenobiology)
 "cBR" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -70150,7 +70150,7 @@
 /turf/open/floor/engine,
 /area/toxins/launch)
 "cDb" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/maintenance/apmaint3)
 "cDc" = (
 /obj/structure/cable{
@@ -70545,7 +70545,7 @@
 "cDE" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -71493,7 +71493,7 @@
 /area/security/permabrig)
 "cFh" = (
 /obj/effect/spawner/random_spawners/fungus_maybe,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fpmaint2)
 "cFi" = (
 /obj/structure/cable{
@@ -71620,7 +71620,7 @@
 "cFs" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -71901,7 +71901,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/security/permabrig)
 "cFR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -72647,7 +72647,7 @@
 "cGZ" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -72777,7 +72777,7 @@
 "cHh" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -73558,7 +73558,7 @@
 	tag = "icon-propulsion (EAST)"
 	},
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -73934,7 +73934,7 @@
 	tag = "icon-propulsion (EAST)"
 	},
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -74141,7 +74141,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -74152,7 +74152,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -74883,7 +74883,7 @@
 /area/hallway/secondary/exit)
 "cLe" = (
 /obj/structure/sign/poster/official/random,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/hallway/secondary/exit)
 "cLf" = (
 /obj/structure/chair{
@@ -76489,13 +76489,13 @@
 	},
 /area/security/medbay)
 "cOc" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall14";
 	dir = 2
 	},
 /area/shuttle/trade/sol)
 "cOd" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -76750,7 +76750,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fpmaint2)
 "cOA" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/maintenance/asmaint2)
 "cOB" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -78261,7 +78261,7 @@
 /area/maintenance/asmaint)
 "cQR" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/chapel/main)
 "cQS" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -78445,7 +78445,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fpmaint)
 "cRk" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/space)
 "cRl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -78841,7 +78841,7 @@
 /turf/open/floor/plating,
 /area/chapel/Funeral)
 "cRY" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/maintenance/asmaint)
 "cSa" = (
 /obj/effect/landmark/damageturf,
@@ -79281,7 +79281,7 @@
 	pixel_x = 25;
 	pixel_y = 0
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/toxins/xenobiology)
 "cSW" = (
 /obj/structure/cable{
@@ -79684,7 +79684,7 @@
 	})
 "cTD" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -81882,7 +81882,7 @@
 /area/crew_quarters/heads/hos)
 "cXA" = (
 /obj/machinery/status_display,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/hallway/secondary/entry)
 "cXB" = (
 /turf/open/floor/plasteel{
@@ -82342,7 +82342,7 @@
 /area/maintenance/apmaint)
 "cYj" = (
 /obj/structure/sign/poster/official/random,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/assembly/robotics)
 "cYk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -83559,7 +83559,7 @@
 /turf/open/floor/plasteel,
 /area/security/processing)
 "daa" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/maintenance/apmaint)
 "dab" = (
 /obj/structure/cable{
@@ -83947,10 +83947,10 @@
 /turf/open/floor/engine/insulated/vacuum,
 /area/toxins/mixing)
 "daD" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/locker)
 "daE" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/crew_quarters/locker/locker_toilet)
 "daF" = (
 /obj/structure/cable{
@@ -84085,7 +84085,7 @@
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 6
 	},
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/toxins/mixing)
 "daT" = (
 /obj/machinery/light/small{
@@ -84368,7 +84368,7 @@
 /turf/open/floor/plating,
 /area/maintenance/apmaint)
 "dbp" = (
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/maintenance/electrical)
 "dbq" = (
 /obj/machinery/door/airlock/research{
@@ -84683,7 +84683,7 @@
 /area/security/podbay)
 "dbO" = (
 /obj/effect/spawner/random_spawners/fungus_maybe,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/maintenance/fpmaint2)
 "dbP" = (
 /obj/item/radio/intercom{
@@ -84843,7 +84843,7 @@
 /turf/simulated/shuttle/plating,
 /area/shuttle/trade/sol)
 "dcc" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -85180,7 +85180,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fsmaint3)
 "dcF" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc2"
 	},
 /area/shuttle/trade/sol)
@@ -85189,7 +85189,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fsmaint3)
 "dcH" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 2;
 	icon_state = "swall8";
 	tag = "icon-swall12"
@@ -85528,7 +85528,7 @@
 /turf/open/shuttle/floor,
 /area/shuttle/trade/sol)
 "ddn" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc3"
 	},
 /area/shuttle/trade/sol)
@@ -85580,14 +85580,14 @@
 /area/shuttle/trade/sol)
 "ddu" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
 	},
 /area/shuttle/trade/sol)
 "ddv" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall13";
 	dir = 2
 	},
@@ -85603,7 +85603,7 @@
 /area/hallway/secondary/entry)
 "ddx" = (
 /turf/space,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -85619,7 +85619,7 @@
 	},
 /area/hallway/primary/central/south)
 "ddA" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/storage/eva)
 "ddB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -86427,7 +86427,7 @@
 /area/maintenance/fpmaint)
 "dfv" = (
 /obj/effect/spawner/random_spawners/fungus_maybe,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fpmaint3)
 "dfw" = (
 /obj/item/instrument/saxophone,
@@ -86718,7 +86718,7 @@
 /area/medical/virology)
 "dgh" = (
 /obj/structure/sign/poster/ripped,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fsmaint2)
 "dgi" = (
 /obj/machinery/light/small{
@@ -86760,7 +86760,7 @@
 /area/maintenance/fsmaint2)
 "dgm" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fpmaint3)
 "dgn" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -87725,7 +87725,7 @@
 /area/maintenance/fpmaint3)
 "diy" = (
 /obj/effect/spawner/random_spawners/wall_rusted_maybe,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/asmaint2)
 "diz" = (
 /obj/structure/falsewall,
@@ -88187,7 +88187,7 @@
 "djR" = (
 /obj/structure/disposalpipe/junction,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/fsmaint3)
 "djS" = (
 /obj/structure/table,
@@ -88377,7 +88377,7 @@
 /area/maintenance/apmaint2)
 "dko" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/apmaint)
 "dkp" = (
 /obj/machinery/computer/communications,
@@ -88932,7 +88932,7 @@
 /area/toxins/test_chamber)
 "dlM" = (
 /obj/effect/spawner/random_spawners/fungus_maybe,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/theatre)
 "dlN" = (
 /obj/machinery/light/small{
@@ -89535,7 +89535,7 @@
 /area/toxins/xenobiology)
 "dmQ" = (
 /obj/effect/spawner/random_spawners/fungus_maybe,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/apmaint3)
 "dmR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -89721,7 +89721,7 @@
 /area/maintenance/asmaint)
 "dns" = (
 /obj/machinery/status_display,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/medical/reception)
 "dnt" = (
 /obj/effect/spawner/lootdrop/maintenance,
@@ -89954,7 +89954,7 @@
 /area/maintenance/asmaint)
 "dnS" = (
 /obj/effect/spawner/random_spawners/fungus_maybe,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/asmaint)
 "dnT" = (
 /obj/effect/decal/cleanable/dirt,
@@ -90236,7 +90236,7 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/insulated,
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/toxins/mixing)
 "doB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -90302,7 +90302,7 @@
 /area/maintenance/apmaint)
 "doI" = (
 /obj/effect/spawner/random_spawners/fungus_maybe,
-/turf/simulated/wall/rust,
+/turf/closed/wall/rust,
 /area/maintenance/apmaint)
 "doL" = (
 /obj/machinery/slot_machine,
@@ -90395,7 +90395,7 @@
 /area/maintenance/apmaint)
 "doV" = (
 /obj/effect/spawner/random_spawners/fungus_maybe,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/electrical)
 "doW" = (
 /obj/structure/chair/stool,
@@ -90426,7 +90426,7 @@
 /area/maintenance/apmaint2)
 "dpb" = (
 /obj/effect/spawner/random_spawners/fungus_maybe,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/apmaint2)
 "dpc" = (
 /obj/structure/rack,
@@ -91751,7 +91751,7 @@
 /area/security/permabrig)
 "drc" = (
 /obj/machinery/status_display,
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/medical/cmo)
 "drd" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -91906,11 +91906,11 @@
 /area/toxins/mixing)
 "drt" = (
 /obj/machinery/status_display,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/crew_quarters/cafeteria)
 "dru" = (
 /obj/machinery/status_display,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/chapel/main)
 "drv" = (
 /obj/structure/table,
@@ -93053,7 +93053,7 @@
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 9
 	},
-/turf/simulated/wall/r_wall/coated,
+/turf/closed/wall/r_wall/coated,
 /area/toxins/mixing)
 "dtq" = (
 /obj/effect/spawner/random_spawners/blood_maybe,
@@ -93493,7 +93493,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/apmaint)
 "duj" = (
 /obj/machinery/power/solar{
@@ -94963,7 +94963,7 @@
 /area/maintenance/apmaint3)
 "dxA" = (
 /obj/effect/spawner/random_spawners/wall_rusted_maybe,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/maintenance/apmaint3)
 "dxB" = (
 /obj/machinery/door/airlock{

@@ -7,14 +7,14 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/powered/clownplanet)
 "ac" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/powered/clownplanet)
 "ad" = (
 /obj/structure/disposalpipe/segment{
@@ -85,7 +85,7 @@
 /obj/structure/disposalpipe/sortjunction{
 	dir = 1
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/powered/clownplanet)
 "aj" = (
 /obj/effect/decal/cleanable/pie_smudge,
@@ -333,7 +333,7 @@
 	dir = 1;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/powered/clownplanet)
 "aB" = (
 /obj/structure/disposalpipe/segment{
@@ -510,7 +510,7 @@
 	dir = 4;
 	invisibility = 101
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/powered/clownplanet)
 "aM" = (
 /obj/effect/decal/cleanable/pie_smudge,
@@ -1050,13 +1050,13 @@
 /turf/open/floor/mineral/bananium/lubed,
 /area/ruin/powered/clownplanet)
 "cc" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/powered/clownplanet)
 "ch" = (
 /obj/structure/disposalpipe/segment{
 	invisibility = 101
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/powered/clownplanet)
 "cu" = (
 /turf/open/floor/plating,
@@ -1158,7 +1158,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/ruin/powered/clownplanet)
 "Xm" = (
 /obj/item/clothing/head/cone,
