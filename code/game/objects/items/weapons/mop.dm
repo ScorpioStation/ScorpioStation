@@ -24,7 +24,7 @@
 	GLOB.janitorial_equipment -= src
 	return ..()
 
-/obj/item/mop/proc/clean(turf/simulated/A)
+/obj/item/mop/proc/clean(turf/A)
 	if(reagents.has_reagent("water", 1) || reagents.has_reagent("cleaner", 1) || reagents.has_reagent("holywater", 1))
 		A.clean_blood()
 		for(var/obj/effect/O in A)

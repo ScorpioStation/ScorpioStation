@@ -501,7 +501,7 @@
 				if(next == loc)
 					increment_path()
 					return
-				if(istype(next, /turf/simulated))
+				if(istype(next, /turf/open))
 //					to_chat(world, "at ([x],[y]) moving to ([next.x],[next.y])")
 
 					var/oldloc = loc
@@ -646,7 +646,7 @@
 
 	return
 
-/mob/living/simple_animal/bot/mulebot/Move(turf/simulated/next)
+/mob/living/simple_animal/bot/mulebot/Move(turf/open/next)
 	. = ..()
 
 	if(. && istype(next))

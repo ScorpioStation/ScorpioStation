@@ -31,6 +31,8 @@
 	var/shoe_running_volume = 50
 	var/shoe_walking_volume = 20
 
+	var/thermite = 0
+
 /turf/Initialize(mapload)
 	SHOULD_CALL_PARENT(FALSE)
 	if(initialized)

@@ -1167,7 +1167,7 @@ GLOBAL_LIST_INIT(slot_equipment_priority, list( \
 	if(stat==DEAD)
 		return
 	var/turf/location = loc
-	if(istype(location, /turf/simulated))
+	if(isopenturf(location))
 		if(green)
 			if(!no_text)
 				visible_message("<span class='warning'>[src] vomits up some green goo!</span>","<span class='warning'>You vomit up some green goo!</span>")

@@ -9,12 +9,13 @@
 	var/R = FALSE
 	if(blocks_air || T.blocks_air)
 		R = TRUE
-
-	for(var/J in contents+T.contents)
-		var/turf/other = J
-		if(!O.CanAtmosPass(T))
+	if(T == src)
+		return !R
+	for(var/obj/J in contents+T.contents)
+		var/turf/O = (J.loc == src ? T : src)
+		if(!J.CanAtmosPass(O))
 			R = TRUE
-			if(O.BlockSuperconductivity()) 	//the direction and open/closed are already checked on CanAtmosPass() so there are no arguments
+			if(J.BlockSuperconductivity()) 	//the direction and open/closed are already checked on CanAtmosPass() so there are no arguments
 				var/D = get_dir(src, T)
 				atmos_supeconductivity |= D
 				D = get_dir(T, src)
@@ -26,6 +27,9 @@
 	D = get_dir(T, src)
 	T.atmos_supeconductivity &= ~D
 	return !R
+
+/atom/movable/proc/BlockSuperconductivity() // objects that block air and don't let superconductivity act. Only firelocks atm.
+	return FALSE
 
 /atom/movable/proc/CanAtmosPass()
 	return TRUE
@@ -52,9 +56,6 @@
 
 		return TRUE
 
-/atom/movable/proc/BlockSuperconductivity() // objects that block air and don't let superconductivity act. Only firelocks atm.
-	return FALSE
-
 /turf/proc/CalculateAdjacentTurfs()
 	atmos_adjacent_turfs_amount = 0
 	for(var/direction in GLOB.cardinal)
@@ -79,7 +80,7 @@
 //	air with both of the related adjacent cardinal tiles
 /turf/proc/GetAtmosAdjacentTurfs(alldir = FALSE)
 	var/adjacent_turfs = list()
-	var/turf/simulated/curloc = src
+	var/turf/open/curloc = src
 
 	for(var/direction in GLOB.cardinal)
 		if(!(curloc.atmos_adjacent_turfs & direction))
@@ -98,7 +99,7 @@
 		for(var/checkDirection in GLOB.cardinal)
 			if(!(S.atmos_adjacent_turfs & checkDirection))
 				continue
-			var/turf/simulated/checkTurf = get_step(S, checkDirection)
+			var/turf/open/checkTurf = get_step(S, checkDirection)
 
 			if(checkTurf in adjacent_turfs)
 				matchingDirections++

@@ -110,7 +110,7 @@
 
 /obj/machinery/r_n_d/server/proc/produce_heat(heat_amt)
 	if(!(stat & (NOPOWER|BROKEN))) // Blatantly stolen from space heater.
-		var/turf/simulated/L = loc
+		var/turf/open/L = loc
 		if(istype(L))
 			var/datum/gas_mixture/env = L.return_air()
 			if(env.temperature < (heat_amt+T0C))

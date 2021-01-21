@@ -45,7 +45,7 @@
 	playsound(loc, 'sound/effects/empulse.ogg', 50, 1)
 	for(var/turf/T in view(range, loc))
 		if(isfloorturf(T))
-			var/turf/simulated/F = T
+			var/turf/open/F = T
 			F.MakeSlippery(TURF_WET_PERMAFROST)
 			for(var/mob/living/carbon/L in T)
 				L.adjustStaminaLoss(stamina_damage)

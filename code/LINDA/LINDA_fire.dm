@@ -10,7 +10,7 @@
 	return
 
 
-/turf/simulated/hotspot_expose(exposed_temperature, exposed_volume, soh)
+/turf/open/hotspot_expose(exposed_temperature, exposed_volume, soh)
 	var/datum/gas_mixture/air_contents = return_air()
 	if(reagents)
 		reagents.temperature_reagents(exposed_temperature, 10, 300)
@@ -70,7 +70,7 @@
 	air_update_turf()
 
 /obj/effect/hotspot/proc/perform_exposure()
-	var/turf/simulated/location = loc
+	var/turf/open/location = loc
 	if(!istype(location) || !(location.air))
 		return FALSE
 
@@ -106,7 +106,7 @@
 		just_spawned = 0
 		return 0
 
-	var/turf/simulated/location = loc
+	var/turf/open/location = loc
 	if(!istype(location))
 		qdel(src)
 		return
@@ -166,15 +166,14 @@
 	SSair.hotspots -= src
 	if(!fake)
 		DestroyTurf()
-	if(istype(loc, /turf/simulated))
+	if(isopenturf(loc))
 		var/turf/open/T = loc
 		if(T.active_hotspot == src)
 			T.active_hotspot = null
 	return ..()
 
 /obj/effect/hotspot/proc/DestroyTurf()
-
-	if(istype(loc, /turf/simulated))
+	if(isopenturf(loc))
 		var/turf/open/T = loc
 		if(T.to_be_destroyed && !T.changing_turf)
 			var/chance_of_deletion
