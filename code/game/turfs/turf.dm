@@ -1,5 +1,5 @@
 /turf
-	icon = 'icons/turf/open/floors.dmi'
+	icon = 'icons/turf/floors.dmi'
 	level = 1
 	luminosity = 1
 
@@ -505,6 +505,3 @@
 
 /turf/proc/water_act(volume, temperature, source)
 	return FALSE
-
-#undef WATER_STUN_TIME
-#undef WATER_WEAKEN_TIME

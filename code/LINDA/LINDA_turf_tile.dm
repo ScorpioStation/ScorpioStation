@@ -9,7 +9,7 @@
 
 	//used for mapping and for breathing while in walls (because that's a thing that needs to be accounted for...)
 	//string parsed by /datum/gas/proc/copy_from_turf
-	var/initial_gas_mix = "o2=[MOLES_O2STANDARD];n2o=[MOLES_N2STANDARD];TEMP=[T20C]"
+	var/temperature_archived = FALSE	//USED ONLY FOR SOLIDS
 
 /turf/open
 
@@ -21,7 +21,6 @@
 	var/excited = FALSE
 	var/datum/excited_group/excited_group
 
-	var/temperature_archived = FALSE	//USED ONLY FOR SOLIDS
 	var/obj/effect/hotspot/active_hotspot
 
 	var/icy = FALSE
@@ -226,7 +225,7 @@
 		temperature_expose(air, air.temperature, CELL_VOLUME)
 
 	if(air.temperature > MINIMUM_TEMPERATURE_START_SUPERCONDUCTION)
-		if(consider_superconductivity(starting = ))
+		if(consider_superconductivity(starting = TRUE))
 			remove = FALSE
 
 	if(!excited_group && remove == TRUE)
@@ -389,7 +388,7 @@
 	turf_list.Cut()
 	SSair.excited_groups -= src
 
-/turf/proc/super_conduct()
+/turf/open/proc/super_conduct()
 	var/conductivity_directions = 0
 	if(blocks_air)
 		//Does not participate in air exchange, so will conduct heat across all four borders at this time

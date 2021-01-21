@@ -16,21 +16,6 @@
 	var/destination_z
 	var/destination_x
 	var/destination_y
-	var/global/datum/gas_mixture/space/space_gas = new
-
-/turf/space/New()
-	air = space_gas
-
-/turf/space/Destroy()
-	return QDEL_HINT_LETMELIVE
-
-/turf/space/proc/update_starlight()
-	if(config)
-		if(config.starlight)
-			for(var/turf/open/T in RANGE_TURFS(1,src)) //RANGE_TURFS is in code\__HELPERS\game.dm
-				SetLuminosity(4,1)
-				return
-			SetLuminosity(0)
 
 /turf/space/Initialize(mapload)
 	SHOULD_CALL_PARENT(FALSE)
@@ -69,7 +54,7 @@
 
 /turf/space/proc/update_starlight()
 	if(config.starlight)
-		for(var/t in RANGE_TURFS(1,src)) //RANGE_TURFS is in code\__HELPERS\game.dm
+		for(var/t in RANGE_TURFS(1, src)) //RANGE_TURFS is in code\__HELPERS\game.dm
 			if(isspaceturf(t))
 				//let's NOT update this that much pls
 				continue

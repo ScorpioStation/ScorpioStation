@@ -70,16 +70,3 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	specific_heat = SPECIFIC_HEAT_N2O
 	name = "Nitrous Oxide"
 	gas_overlay = "nitrous_oxide"
-
-/obj/effect/overlay/gas
-	icon = 'icons/effects/atmospherics.dmi'
-	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-	anchored = TRUE  // should only appear in vis_contents, but to be safe
-	layer = FLY_LAYER
-	appearance_flags = TILE_BOUND
-	vis_flags = NONE
-
-/obj/effect/overlay/gas/New(state, alph)
-	. = ..()
-	icon_state = state
-	alpha = alph

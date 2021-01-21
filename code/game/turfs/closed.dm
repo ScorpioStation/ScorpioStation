@@ -4,7 +4,7 @@
 	density = TRUE
 	blocks_air = TRUE
 
-/turf/closed/AfterChange()
+/turf/closed/AfterChange(ignore_air = FALSE, keep_cabling = FALSE)
 	. = ..()
 	SSair.high_pressure_delta -= src
 

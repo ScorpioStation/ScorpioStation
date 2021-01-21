@@ -47,7 +47,7 @@
 				if(TURF_WET_PERMAFROST) // Permafrost
 					M.slip("the frosted floor", 0, 5, tilesSlipped = 1, walkSafely = FALSE, slipAny = TRUE)
 
-/turf/open/proc/water_act(volume, temperature, source)
+/turf/open/water_act(volume, temperature, source)
 	. = ..()
 	if(volume >= 3)
 		MakeSlippery()
@@ -91,7 +91,7 @@
 		time =	rand(790, 820)
 	addtimer(CALLBACK(src, .proc/MakeDry, wet_setting), time)
 
-/turf/open/proc/MakeDry(wet_setting = TURF_WET_WATER)
+/turf/open/MakeDry(wet_setting = TURF_WET_WATER)
 	if(wet > wet_setting)
 		return
 	wet = TURF_DRY
