@@ -11,7 +11,6 @@
 	var/list/hiddensigns = list()
 	var/panel_open = FALSE
 	var/emagged = TRUE
-	var/bolted = FALSE
 	var/prev_sign = ""
 	var/state = 0
 
@@ -102,6 +101,64 @@
 		to_chat(user, "<span class='notice'>You close the maintenance panel.</span>")
 		panel_open = FALSE
 	return
+
+/obj/structure/sign/barsign/wrench_act(mob/user)
+	if(!panel_open)
+		to_chat(user, "<span_class='notice>You must first open the maintenance panel before trying to unbolt the barsign.</span>")
+		return
+	else
+		var/obj/item/sign/barsign/S = new(user.loc)
+		S.name = name
+		S.desc = desc
+		S.icon_state = icon_state	//The only sprite direction that exists is South.
+		S.broken = broken
+		S.emagged = emagged
+		S.req_access = req_access
+		S.panel_open = !panel_open
+		qdel(src)
+
+/obj/item/sign/barsign
+	name = "barsign"
+	desc = ""
+	icon = 'icons/obj/barsigns.dmi'
+	w_class = WEIGHT_CLASS_NORMAL
+	resistance_flags = FLAMMABLE
+	var/panel_open
+	var/broken
+	var/emagged
+
+/obj/item/sign/barsign/wrench_act(mob/user)	//construction
+	if(isturf(user.loc))
+		var/direction = input("In which direction?", "Select direction.") in list("North", "East", "South", "West", "Cancel")
+		//The only sprite that exists is South, but we forced this in when we dismantled the barsign.
+		if(direction == "Cancel")
+			return
+		if(QDELETED(src))
+			return
+		var/obj/structure/sign/barsign/S = new(user.loc)
+		switch(direction)
+			if("North")
+				S.pixel_y = 32
+			if("East")
+				S.pixel_x = 32
+			if("South")
+				S.pixel_y = -32
+			if("West")
+				S.pixel_x = -32
+			else
+				return
+		S.name = name
+		S.desc = desc
+		S.icon_state = icon_state
+		S.broken = broken
+		S.emagged = emagged
+		S.req_access = req_access
+
+		S.panel_open = panel_open
+		to_chat(user, "You bolt \the [S] with your wrench, closing the maintenance panel in the process.")
+		qdel(src)
+	else
+		return
 
 /obj/structure/sign/barsign/proc/pick_sign()
 	var/list/signs = barsigns.Copy()
