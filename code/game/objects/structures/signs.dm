@@ -24,7 +24,7 @@
 	if(!I.use_tool(src, user, 0, volume = I.tool_volume))
 		return
 	to_chat(user, "You unfasten the sign with [I].")
-	var/obj/item/sign/S = new(src.loc)
+	var/obj/item/sign/S = new(loc)
 	S.name = name
 	S.desc = desc
 	S.icon_state = icon_state
@@ -42,8 +42,9 @@
 	resistance_flags = FLAMMABLE
 	var/sign_state = ""
 
-/obj/item/sign/attackby(obj/item/tool as obj, mob/user as mob)	//construction
-	if(istype(tool, /obj/item/screwdriver) && isturf(user.loc))
+/obj/item/sign/screwdriver_act(mob/user)	//construction
+	if(isturf(user.loc) && !(istype(src, /obj/item/sign/barsign)))
+	// Please don't use a screwdriver on the sign/barsign.
 		var/direction = input("In which direction?", "Select direction.") in list("North", "East", "South", "West", "Cancel")
 		if(direction == "Cancel")
 			return
@@ -64,7 +65,7 @@
 		S.name = name
 		S.desc = desc
 		S.icon_state = sign_state
-		to_chat(user, "You fasten \the [S] with your [tool].")
+		to_chat(user, "You fasten \the [S] with your screwdriver.")
 		qdel(src)
 	else
 		return ..()
