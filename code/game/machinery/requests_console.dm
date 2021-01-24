@@ -325,7 +325,7 @@ GLOBAL_LIST_EMPTY(allRequestConsoles)
 	if(mainmenu)
 		screen = RCS_MAINMENU
 
-/obj/machinery/requests_console/proc/createMessage(source, title, message, priority, orm = list())
+/obj/machinery/requests_console/proc/createMessage(source, title, message, priority, list/orm = list())
 	var/linkedSender
 	if(istype(source, /obj/machinery/requests_console))
 		var/obj/machinery/requests_console/sender = source
