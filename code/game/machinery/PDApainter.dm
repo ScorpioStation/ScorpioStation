@@ -1,7 +1,7 @@
 /obj/machinery/pdapainter
 	name = "PDA painter"
 	desc = "A PDA painting machine. To use, simply insert your PDA and choose the desired preset paint scheme."
-	icon = 'icons/obj/pda.dmi'
+	icon = 'icons/obj/pda/pda.dmi'
 	icon_state = "pdapainter"
 	density = 1
 	anchored = 1

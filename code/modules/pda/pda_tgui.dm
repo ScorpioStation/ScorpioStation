@@ -74,7 +74,9 @@
 			if(params["program"])
 				var/datum/data/pda/app/A = locateUID(params["program"])
 				if(A)
-					start_program(A)
+					if(A.icon_state != null)
+						overlays += image('icons/obj/pda/pda_app_overlay.dmi', A.icon_state)
+				start_program(A)
 		if("Eject")//Ejects the cart, only done from hub.
 			if(!isnull(cartridge))
 				var/turf/T = loc

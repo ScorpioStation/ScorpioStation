@@ -6,6 +6,7 @@
 	var/hidden = 0				// program not displayed in main menu
 	var/category = "General"	// the category to list it in on the main menu
 	var/obj/item/pda/pda	// if this is null, and the app is running code, something's gone wrong
+	var/icon_state = null
 
 /datum/data/pda/Destroy()
 	pda = null
@@ -41,14 +42,14 @@
 		pda.play_ringtone()
 
 	if(blink && !(src in pda.notifying_programs))
-		pda.overlays += image('icons/obj/pda.dmi', "pda-r")
+		pda.overlays += image('icons/obj/pda/pda.dmi', "pda-r")
 		pda.notifying_programs |= src
 
 /datum/data/pda/proc/unnotify()
 	if(src in pda.notifying_programs)
 		pda.notifying_programs -= src
 		if(!pda.notifying_programs.len)
-			pda.overlays -= image('icons/obj/pda.dmi', "pda-r")
+			pda.overlays -= image('icons/obj/pda/pda.dmi', "pda-r")
 
 // An app has a button on the home screen and its own UI
 /datum/data/pda/app

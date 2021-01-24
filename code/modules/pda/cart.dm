@@ -1,7 +1,7 @@
 /obj/item/cartridge
 	name = "generic cartridge"
 	desc = "A data cartridge for portable microcomputers."
-	icon = 'icons/obj/pda.dmi'
+	icon = 'icons/obj/pda/pda.dmi'
 	icon_state = "cart"
 	item_state = "electronic"
 	w_class = WEIGHT_CLASS_TINY
