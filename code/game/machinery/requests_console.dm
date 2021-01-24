@@ -325,7 +325,7 @@ GLOBAL_LIST_EMPTY(allRequestConsoles)
 	if(mainmenu)
 		screen = RCS_MAINMENU
 
-/obj/machinery/requests_console/proc/createMessage(source, title, message, priority)
+/obj/machinery/requests_console/proc/createMessage(source, title, message, priority, orm)
 	var/linkedSender
 	if(istype(source, /obj/machinery/requests_console))
 		var/obj/machinery/requests_console/sender = source
@@ -346,6 +346,11 @@ GLOBAL_LIST_EMPTY(allRequestConsoles)
 			message_log += "High Priority - From: [linkedSender] - [message]"
 		else // Normal
 			message_log += "From: [linkedSender] - [message]"
+			if(length(orm))	// For the ORM
+				var/h	//Holder for ORM materials message
+				for(var/i in 1 to length(orm))
+					h = orm[i]
+					message_log += "[h]"
 	set_light(2)
 
 /obj/machinery/requests_console/proc/print_label(tag_name, tag_index)
