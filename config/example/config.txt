@@ -263,6 +263,9 @@ CHECK_RANDOMIZER
 ## Discord Webhook for Cryo notification
 # DISCORD_WEBHOOK_CRYO_URL https://discord.com/api/webhooks/7444...
 
+## Discord Role for @Robust Security Reserve
+# ROBUST_SECURITY_RESERVE_ROLE_ID 803125646...
+
 ## Donations address
 # DONATIONSURL http://example.org
 

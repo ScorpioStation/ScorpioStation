@@ -29,6 +29,13 @@ export const KeycardAuth = (props, context) => {
                     { 'triggerevent': 'Red Alert' })}
                   content="Red Alert" />
               </LabeledList.Item>
+              <LabeledList.Item label="Request Additional Security">
+                <Button
+                  icon="users"
+                  onClick={() => act('triggerevent',
+                    { 'triggerevent': 'Robust Security Reserve' })}
+                  content="Call Robust Security Reserve" />
+              </LabeledList.Item>
               <LabeledList.Item label="ERT">
                 <Button
                   icon="broadcast-tower"
@@ -82,6 +89,13 @@ export const KeycardAuth = (props, context) => {
           Fill out the reason for your ERT request.
         </Box>
       );
+    } else if (!data.hasSwiped && !data.rsrreason
+      && data.event === "Robust Security Reserve") {
+      swipeInfo = (
+        <Box color="red">
+          Fill out the reason for your Robust Security Reserve request.
+        </Box>
+      );
     } else if (data.hasConfirm) {
       swipeInfo = (
         <Box color="green">
@@ -120,6 +134,25 @@ export const KeycardAuth = (props, context) => {
                     : "-----"}
                   disabled={data.busy}
                   onClick={() => act('ert')}
+                />
+              </Box>
+            </Section>
+          )}
+          {data.event === 'Robust Security Reserve' && (
+            <Section title="Reason for Robust Security Reserve Call">
+              <Box>
+                <Button
+                  color={data.rsrreason
+                    ? ""
+                    : "red"}
+                  icon={data.rsrreason
+                    ? "check"
+                    : "pencil-alt"}
+                  content={data.rsrreason
+                    ? data.rsrreason
+                    : "-----"}
+                  disabled={data.busy}
+                  onClick={() => act('rsr')}
                 />
               </Box>
             </Section>
