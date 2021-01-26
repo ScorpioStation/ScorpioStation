@@ -28,12 +28,12 @@ SUBSYSTEM_DEF(retirement)
 			a.ckey,
 			a.rank,
 			p.lastseen,
-			datediff(now(), p.lastseen) as days_ago
-		FROM [format_table_name("admin")] as a
-		INNER JOIN [format_table_name("player")] as p
-			on p.ckey = a.ckey
+			DATEDIFF(NOW(), p.lastseen) AS days_ago
+		FROM [format_table_name("admin")] AS a
+		INNER JOIN [format_table_name("player")] AS p
+			ON p.ckey = a.ckey
 		WHERE a.rank <> 'Removed'
-		order by days_ago desc"})
+		ORDER BY days_ago desc"})
 
 	// if the query didn't work, better luck next time
 	if(!query.warn_execute())
