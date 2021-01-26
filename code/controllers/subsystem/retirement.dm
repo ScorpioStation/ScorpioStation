@@ -17,9 +17,8 @@
 
 SUBSYSTEM_DEF(retirement)
 	flags = SS_NO_FIRE            // no need to fire this after initialization
-	init_order = INIT_ORDER_LAST  // as long as it's after INIT_ORDER_DBCORE...
+	init_order = INIT_ORDER_LAST  // messages are more visible at the end
 	name = "Retirement"
-	offline_implications = "No immediate action is needed."
 
 /datum/controller/subsystem/retirement/Initialize()
 	// ask the database about our staff
@@ -33,7 +32,7 @@ SUBSYSTEM_DEF(retirement)
 		INNER JOIN [format_table_name("player")] AS p
 			ON p.ckey = a.ckey
 		WHERE a.rank <> 'Removed'
-		ORDER BY days_ago desc"})
+		ORDER BY days_ago DESC"})
 
 	// if the query didn't work, better luck next time
 	if(!query.warn_execute())
