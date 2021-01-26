@@ -111,6 +111,9 @@
 	var/discord_webhook_announcement_url = null
 	var/robust_security_reserve_role_id = null
 
+	var/staff_retirement_warning_days = 30
+	var/staff_retirement_critical_days = 45
+
 	var/overflow_server_url
 	var/forbid_singulo_possession = 0
 
@@ -556,6 +559,12 @@
 
 				if("robust_security_reserve_role_id")
 					config.robust_security_reserve_role_id = value
+
+				if("staff_retirement_warning_days")
+					config.staff_retirement_warning_days = text2num(value)
+
+				if("staff_retirement_critical_days")
+					config.staff_retirement_critical_days = text2num(value)
 
 				if("donationsurl")
 					config.donationsurl = value
