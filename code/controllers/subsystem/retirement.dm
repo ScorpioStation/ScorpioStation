@@ -37,7 +37,7 @@ SUBSYSTEM_DEF(retirement)
 	// if the query didn't work, better luck next time
 	if(!query.warn_execute())
 		qdel(query)
-		return
+		return ..()
 
 	// while we still have rows to process
 	while(query.NextRow())
