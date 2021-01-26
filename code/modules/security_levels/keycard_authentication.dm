@@ -15,6 +15,7 @@
 	var/mob/event_triggered_by
 	var/mob/event_confirmed_by
 	var/ert_reason
+	var/rsr_reason
 
 	anchored = 1
 	use_power = IDLE_POWER_USE
@@ -45,6 +46,9 @@
 			else if(swiping)
 				if(event == "Emergency Response Team" && !ert_reason)
 					to_chat(user, "<span class='warning'>Supply a reason for calling the ERT first!</span>")
+					return
+				if(event == "Robust Security Reserve" && !rsr_reason)
+					to_chat(user, "<span class='warning'>Supply a reason for calling the Robust Security Reserve first!</span>")
 					return
 				event_triggered_by = usr
 				SStgui.update_uis(src)
@@ -83,6 +87,7 @@
 	data["busy"] = busy
 	data["event"] = active && event_source && event_source.event ? event_source.event : event
 	data["ertreason"] = active && event_source && event_source.ert_reason ? event_source.ert_reason : ert_reason
+	data["rsrreason"] = active && event_source && event_source.rsr_reason ? event_source.rsr_reason : rsr_reason
 	data["isRemote"] = active ? TRUE : FALSE
 	data["hasSwiped"] = event_triggered_by ? TRUE : FALSE
 	data["hasConfirm"] = event_confirmed_by || (active && event_source && event_source.event_confirmed_by) ? TRUE : FALSE
@@ -103,6 +108,8 @@
 			ert_reason = stripped_input(usr, "Reason for ERT Call:", "", "")
 		if("reset")
 			reset()
+		if("rsr")
+			rsr_reason = stripped_input(usr, "Reason for Robust Security Reserve Call:", "", "")
 		if("triggerevent")
 			event = params["triggerevent"]
 			swiping = TRUE
@@ -163,6 +170,17 @@
 			make_station_all_access()
 		if("Deactivate Station-Wide Emergency Access")
 			revoke_station_all_access()
+		if("Robust Security Reserve")
+			if(!config.robust_security_reserve_role_id)
+				atom_say("Robust Security Reserve unit is currently on strike!")
+				return
+			if(GLOB.robust_security_reserve_activated)
+				atom_say("Robust Security Reserve unit has already been called!")
+				return
+			GLOB.robust_security_reserve_activated = TRUE
+			atom_say("Robust Security Reserve request transmitted!")
+			GLOB.command_announcer.autosay("Robust Security Reserve requested. Reason: [rsr_reason]", name)
+			request_robust_security_reserve()
 		if("Emergency Response Team")
 			if(is_ert_blocked())
 				atom_say("All Emergency Response Teams are dispatched and can not be called at this time.")
@@ -191,6 +209,7 @@
 
 GLOBAL_VAR_INIT(maint_all_access, 0)
 GLOBAL_VAR_INIT(station_all_access, 0)
+GLOBAL_VAR_INIT(robust_security_reserve_activated, FALSE)
 
 // Why are these global procs?
 /proc/make_maint_all_access()
@@ -228,3 +247,13 @@ GLOBAL_VAR_INIT(station_all_access, 0)
 	GLOB.minor_announcement.Announce("Access restrictions on all station airlocks have been re-added. Seek station AI or a colleague's assistance if you are stuck.")
 	GLOB.station_all_access = 0
 	SSblackbox.record_feedback("nested tally", "keycard_auths", 1, list("emergency station access", "disabled"))
+
+/proc/request_robust_security_reserve()
+	// no role configured? Robust Security Reserve has gone on strike
+	if(!config.robust_security_reserve_role_id)
+		return
+	// ping Discord to request additional security personnel
+	var/datum/discord/webhook/sa = new(config.discord_webhook_announcement_url)
+	var/message = "<@&[config.robust_security_reserve_role_id]> your help is requested at the [GLOB.map_name]!"
+	sa.post_message(message)
+	SSblackbox.record_feedback("nested tally", "keycard_auths", 1, list("rsr", "called"))
