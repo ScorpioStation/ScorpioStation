@@ -21,6 +21,10 @@ SUBSYSTEM_DEF(retirement)
 	name = "Retirement"
 
 /datum/controller/subsystem/retirement/Initialize()
+	// if we don't have a database, just bail
+	if(!SSdbcore.IsConnected())
+		return ..()
+
 	// ask the database about our staff
 	var/datum/db_query/query = SSdbcore.NewQuery({"
 		SELECT
