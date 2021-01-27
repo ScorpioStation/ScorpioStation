@@ -144,3 +144,15 @@
 		hardness = initial(hardness)
 		slicing_duration = initial(slicing_duration)
 		animate(realappearance, color = initial(realappearance.color), time = 25)
+
+/* Map Specific */
+
+//Beach.dmm
+/turf/closed/beach/water/deep/rock_wall
+	name = "Reef Stone"
+	icon_state = "desert7"
+	density = TRUE
+	opacity = TRUE
+	explosion_block = 2
+	mouse_opacity = MOUSE_OPACITY_ICON
+	static_turf = TRUE

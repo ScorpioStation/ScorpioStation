@@ -118,3 +118,12 @@
 /turf/open/beach/water/deep/sand_floor
 	name = "Sea Floor"
 	icon_state = "sand"
+
+/turf/closed/beach/water/deep/rock_wall
+	name = "Reef Stone"
+	icon_state = "desert7"
+	density = TRUE
+	opacity = TRUE
+	explosion_block = 2
+	mouse_opacity = MOUSE_OPACITY_ICON
+	static_turf = TRUE

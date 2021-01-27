@@ -7,24 +7,19 @@
 	desc = "A huge chunk of metal used to seperate rooms."
 	icon = 'icons/turf/walls/wall.dmi'
 	icon_state = "wall"
-	var/rotting = 0
-
-	var/damage = 0
-	var/damage_cap = 100 //Wall will break down to girders if damage reaches this point
-
-	var/damage_overlay
-	var/global/damage_overlays[8]
-
-	var/max_temperature = 1800 //K, walls will take damage if they're next to a fire hotter than this
-
-	opacity = 1
-	density = 1
-	blocks_air = 1
+	opacity = TRUE
+	density = TRUE
+	blocks_air = TRUE
 	explosion_block = 1
-
 	thermal_conductivity = WALL_HEAT_TRANSFER_COEFFICIENT
 	heat_capacity = 312500 //a little over 5 cm thick , 312500 for 1 m by 2.5 m by 0.25 m plasteel wall
 
+	var/rotting = FALSE
+	var/damage = 0
+	var/damage_cap = 100 //Wall will break down to girders if damage reaches this point
+	var/damage_overlay
+	var/global/damage_overlays[8]
+	var/max_temperature = 1800 //K, walls will take damage if they're next to a fire hotter than this
 	var/can_dismantle_with_welder = TRUE
 	var/hardness = 40 //lower numbers are harder. Used to determine the probability of a hulk smashing through.
 	var/slicing_duration = 100
@@ -36,13 +31,13 @@
 	var/girder_type = /obj/structure/girder
 
 	canSmoothWith = list(
-	/turf/closed/wall,
-	/turf/closed/wall/r_wall,
-	/obj/structure/falsewall,
-	/obj/structure/falsewall/reinforced,
-	/turf/closed/wall/rust,
-	/turf/closed/wall/r_wall/rust,
-	/turf/closed/wall/r_wall/coated)
+		/turf/closed/wall,
+		/turf/closed/wall/r_wall,
+		/obj/structure/falsewall,
+		/obj/structure/falsewall/reinforced,
+		/turf/closed/wall/rust,
+		/turf/closed/wall/r_wall/rust,
+		/turf/closed/wall/r_wall/coated)
 	smooth = SMOOTH_TRUE
 
 /turf/closed/wall/BeforeChange()
