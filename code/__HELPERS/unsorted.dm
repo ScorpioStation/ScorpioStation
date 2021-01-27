@@ -742,7 +742,7 @@ Returns 1 if the chain up to the area contains the given typepath
 					X.icon_state = old_icon_state1
 					X.icon = old_icon1 //Shuttle floors are in shuttle.dmi while the defaults are floors.dmi
 
-					// Give the new turf our air, if simulated
+					// Give the new turf our air, if open
 					if(isopenturf(X) && isopenturf(T))
 						var/turf/open/sim = X
 						sim.copy_air_with_tile(T)
@@ -1397,7 +1397,7 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 	move_force = 0
 	pull_force = 0
 	move_resist = INFINITY
-	simulated = 0
+	open = FALSE
 	canmove = FALSE
 	see_in_dark = 1e6
 
@@ -1651,7 +1651,7 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 
 /proc/turf_clear(turf/T)
 	for(var/atom/A in T)
-		if(A.simulated)
+		if(A.open)
 			return FALSE
 	return TRUE
 

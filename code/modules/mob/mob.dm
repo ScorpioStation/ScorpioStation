@@ -1023,7 +1023,7 @@ GLOBAL_LIST_INIT(slot_equipment_priority, list( \
 				var/atom/A = foo
 				if(A.invisibility > see_invisible)
 					continue
-				if(is_type_in_list(A, shouldnt_see) || !A.simulated)
+				if(is_type_in_list(A, shouldnt_see) || !A.open)
 					continue
 				statpanel_things += A
 			statpanel(listed_turf.name, null, statpanel_things)

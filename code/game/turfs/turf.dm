@@ -33,6 +33,7 @@
 	var/shoe_walking_volume = 20
 
 	var/thermite = 0
+	var/static_turf = FALSE
 
 /turf/Initialize(mapload)
 	SHOULD_CALL_PARENT(FALSE)
@@ -97,20 +98,23 @@
 	return FALSE
 
 /turf/rpd_act(mob/user, obj/item/rpd/our_rpd) //This is the default turf behaviour for the RPD; override it as required
-	if(our_rpd.mode == RPD_ATMOS_MODE)
-		our_rpd.create_atmos_pipe(user, src)
-	else if(our_rpd.mode == RPD_DISPOSALS_MODE)
-		for(var/obj/machinery/door/airlock/A in src)
-			if(A.density)
-				to_chat(user, "<span class='warning'>That type of pipe won't fit under [A]!</span>")
-				return
-		our_rpd.create_disposals_pipe(user, src)
-	else if(our_rpd.mode == RPD_ROTATE_MODE)
-		our_rpd.rotate_all_pipes(user, src)
-	else if(our_rpd.mode == RPD_FLIP_MODE)
-		our_rpd.flip_all_pipes(user, src)
-	else if(our_rpd.mode == RPD_DELETE_MODE)
-		our_rpd.delete_all_pipes(user, src)
+	if(!static_turf)
+		if(our_rpd.mode == RPD_ATMOS_MODE)
+			our_rpd.create_atmos_pipe(user, src)
+		else if(our_rpd.mode == RPD_DISPOSALS_MODE)
+			for(var/obj/machinery/door/airlock/A in src)
+				if(A.density)
+					to_chat(user, "<span class='warning'>That type of pipe won't fit under [A]!</span>")
+					return
+			our_rpd.create_disposals_pipe(user, src)
+		else if(our_rpd.mode == RPD_ROTATE_MODE)
+			our_rpd.rotate_all_pipes(user, src)
+		else if(our_rpd.mode == RPD_FLIP_MODE)
+			our_rpd.flip_all_pipes(user, src)
+		else if(our_rpd.mode == RPD_DELETE_MODE)
+			our_rpd.delete_all_pipes(user, src)
+	else
+		return
 
 /turf/bullet_act(obj/item/projectile/Proj)
 	if(istype(Proj, /obj/item/projectile/beam/pulse))
@@ -326,7 +330,7 @@
 //All directions movements
 ///////////////////////////
 
-// Returns the surrounding simulated turfs with open links
+// Returns the surrounding open turfs with open links
 // Including through doors openable with the ID
 /turf/proc/AdjacentTurfsWithAccess(obj/item/card/id/ID = null, list/closed)//check access if one is passed
 	var/list/L = new()
@@ -389,22 +393,25 @@
 ////////////////////////////////////////////////////
 
 /turf/acid_act(acidpwr, acid_volume)
-	. = TRUE
-	var/acid_type = /obj/effect/acid
-	if(acidpwr >= 200) //alien acid power
-		acid_type = /obj/effect/acid/alien
-	var/has_acid_effect = FALSE
-	for(var/obj/O in src)
-		if(intact && O.level == 1) //hidden under the floor
-			continue
-		if(istype(O, acid_type))
-			var/obj/effect/acid/A = O
-			A.acid_level = min(A.level + acid_volume * acidpwr, 12000)//capping acid level to limit power of the acid
-			has_acid_effect = 1
-			continue
-		O.acid_act(acidpwr, acid_volume)
-	if(!has_acid_effect)
-		new acid_type(src, acidpwr, acid_volume)
+	if(!static_turf)
+		. = TRUE
+		var/acid_type = /obj/effect/acid
+		if(acidpwr >= 200) //alien acid power
+			acid_type = /obj/effect/acid/alien
+		var/has_acid_effect = FALSE
+		for(var/obj/O in src)
+			if(intact && O.level == 1) //hidden under the floor
+				continue
+			if(istype(O, acid_type))
+				var/obj/effect/acid/A = O
+				A.acid_level = min(A.level + acid_volume * acidpwr, 12000)//capping acid level to limit power of the acid
+				has_acid_effect = 1
+				continue
+			O.acid_act(acidpwr, acid_volume)
+		if(!has_acid_effect)
+			new acid_type(src, acidpwr, acid_volume)
+	else
+		return FALSE
 
 /turf/proc/acid_melt()
 	return
@@ -449,7 +456,10 @@
 	return TRUE
 
 /turf/proc/can_lay_cable()
-	return can_have_cabling() & !intact
+	if(!static_turf)
+		return can_have_cabling() & !intact
+	else
+		return FALSE
 
 /turf/ratvar_act(force, ignore_mobs, probability = 40)
 	. = (prob(probability) || force)
@@ -484,7 +494,7 @@
 	var/turf/T0 = src
 	for(var/X in T0.GetAllContents())
 		var/atom/A = X
-		if(!A.simulated)
+		if(!A.open)
 			continue
 		if(istype(A, /mob/dead))
 			continue

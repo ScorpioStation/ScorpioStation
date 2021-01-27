@@ -11,6 +11,7 @@
 	var/max_fire_temperature_sustained = 0 //The max temperature of the fire which it was subjected to
 	var/wet = FALSE
 	var/image/wet_overlay = null
+	var/static_turf = FALSE
 
 /turf/open/handle_fall(mob/faller, forced)
 	faller.lying = pick(90, 270)

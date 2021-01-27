@@ -133,7 +133,7 @@
 	if(archived_cycle < SSair.times_fired)	//archive self if not already done
 		archive()
 	current_cycle = SSair.times_fired
-	var/remove = TRUE						//set by non simulated turfs who are sharing with this turf
+	var/remove = TRUE						//set by non open turfs who are sharing with this turf
 	var/planet_atmos = planetary_atmos
 
 	if (planet_atmos)

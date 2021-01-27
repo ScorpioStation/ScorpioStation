@@ -10,6 +10,7 @@
 	light_range = 2
 	light_color = "#FFC040"
 	intact = TRUE
+	static_turf = TRUE
 
 /turf/open/lava/Entered(mob/living/M, atom/OL, ignoreRest = 0)
 	if(istype(M))
@@ -29,17 +30,9 @@
 /turf/open/lava/MakeDry(wet_setting = TURF_WET_WATER)
 	return
 
-/turf/open/lava/acid_act(acidpwr, acid_volume)
-	return FALSE
-
 /turf/open/lava/singularity_act()
 	return
 
 /turf/open/lava/singularity_pull(S, current_size)
 	return
 
-/turf/open/lava/can_lay_cable()
-	return FALSE
-
-/turf/open/lava/rpd_act()
-	return

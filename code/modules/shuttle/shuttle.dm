@@ -622,7 +622,7 @@
 			if(!AM.anchored)
 				step(AM, dir)
 			else
-				if(AM.simulated) // Don't qdel lighting overlays, they are static
+				if(AM.open) // Don't qdel lighting overlays, they are static
 					qdel(AM)
 
 //used by shuttle subsystem to check timers

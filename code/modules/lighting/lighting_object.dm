@@ -10,7 +10,7 @@
 	mouse_opacity 	 = MOUSE_OPACITY_TRANSPARENT
 	layer            = LIGHTING_LAYER
 	invisibility     = INVISIBILITY_LIGHTING
-	simulated 		 = FALSE
+	open			 = FALSE
 
 	var/needs_update = FALSE
 	var/turf/myturf

@@ -33,7 +33,7 @@
 	..()
 
 /**
-  * Replaces all oxygen and nitrogen on the simulated turf S with the gas type specified in gas, taking N2, N20, CO2 and agent B
+  * Replaces all oxygen and nitrogen on the open turf S with the gas type specified in gas, taking N2, N20, CO2 and agent B
   */
 /datum/event/anomaly/anomaly_atmos/proc/fill_with_gas(gas, turf/open/S)
 	if(!S.air)//no air to transform

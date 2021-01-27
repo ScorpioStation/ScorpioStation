@@ -414,7 +414,7 @@
 /atom/movable/overlay
 	var/atom/master = null
 	anchored = TRUE
-	simulated = FALSE
+	open = FALSE
 
 /atom/movable/overlay/New()
 	. = ..()

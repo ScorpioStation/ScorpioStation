@@ -178,7 +178,7 @@
 	return TRUE //return TRUE/FALSE whether or not an AI swarmer should try this swarmer_act() again, NOT whether it succeeded.
 
 /atom/movable/swarmer_act()
-	if(!simulated)
+	if(!open)
 		return FALSE
 	return ..()
 
