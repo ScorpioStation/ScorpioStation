@@ -6,13 +6,14 @@
 	floor_tile = null
 	broken_states = list("damaged1", "damaged2", "damaged3", "damaged4", "damaged5")
 	burnt_states = list("floorscorched1", "floorscorched2")
-
-	var/unfastened = FALSE
+	static_turf = FALSE
 
 	footstep_sounds = list(
 	"human" = list('sound/effects/footstep/plating_human.ogg'),
 	"xeno"  = list('sound/effects/footstep/plating_xeno.ogg')
 	)
+
+	var/unfastened = FALSE
 
 /turf/open/floor/plating/Initialize(mapload)
 	. = ..()
@@ -35,14 +36,14 @@
 
 /turf/open/floor/plating/examine(mob/user)
 	. = ..()
-
 	if(unfastened)
 		. += "<span class='warning'>It has been unfastened.</span>"
 
 /turf/open/floor/plating/attackby(obj/item/C, mob/user, params)
+	if(static_turf)
+		return FALSE
 	if(..())
 		return TRUE
-
 	if(istype(C, /obj/item/stack/rods))
 		if(broken || burnt)
 			to_chat(user, "<span class='warning'>Repair the plating first!</span>")
@@ -73,6 +74,8 @@
 		return TRUE
 
 /turf/open/floor/plating/screwdriver_act(mob/user, obj/item/I)
+	if(static_turf)
+		return
 	. = TRUE
 	if(!I.tool_use_check(user, 0))
 		return
@@ -84,6 +87,8 @@
 	unfastened = !unfastened
 
 /turf/open/floor/plating/welder_act(mob/user, obj/item/I)
+	if(static_turf)
+		return
 	if(!broken && !burnt && !unfastened)
 		return
 	. = TRUE
@@ -105,11 +110,14 @@
 		update_icon()
 
 /turf/open/floor/plating/remove_plating(mob/user)
+	if(static_turf)
+		return
 	if(baseturf == /turf/space)
 		ReplaceWithLattice()
 	else
 		TerraformTurf(baseturf)
 
+//Airless Plating
 /turf/open/floor/plating/airless
 	icon_state = "plating"
 	name = "airless plating"
@@ -121,155 +129,7 @@
 	. = ..()
 	name = "plating"
 
-/turf/open/floor/engine
-	name = "reinforced floor"
-	icon_state = "engine"
-	thermal_conductivity = 0.025
-	var/insulated
-	heat_capacity = 325000
-	floor_tile = /obj/item/stack/rods
-
-/turf/open/floor/engine/break_tile()
-	return //unbreakable
-
-/turf/open/floor/engine/burn_tile()
-	return //unburnable
-
-/turf/open/floor/engine/make_plating(force = 0)
-	if(force)
-		..()
-	return //unplateable
-
-/turf/open/floor/engine/attack_hand(mob/user as mob)
-	user.Move_Pulled(src)
-
-/turf/open/floor/engine/pry_tile(obj/item/C, mob/user, silent = FALSE)
-	return
-
-/turf/open/floor/engine/acid_act(acidpwr, acid_volume)
-	acidpwr = min(acidpwr, 50) //we reduce the power so reinf floor never get melted.
-	. = ..()
-
-/turf/open/floor/engine/attackby(obj/item/C as obj, mob/user as mob, params)
-	if(!C || !user)
-		return
-	if(istype(C, /obj/item/wrench))
-		to_chat(user, "<span class='notice'>You begin removing rods...</span>")
-		playsound(src, C.usesound, 80, 1)
-		if(do_after(user, 30 * C.toolspeed, target = src))
-			if(!istype(src, /turf/open/floor/engine))
-				return
-			new /obj/item/stack/rods(src, 2)
-			ChangeTurf(/turf/open/floor/plating)
-			return
-
-	if(istype(C, /obj/item/stack/sheet/plasteel) && !insulated) //Insulating the floor
-		to_chat(user, "<span class='notice'>You begin insulating [src]...</span>")
-		if(do_after(user, 40, target = src) && !insulated) //You finish insulating the insulated insulated insulated insulated insulated insulated insulated insulated vacuum floor
-			to_chat(user, "<span class='notice'>You finish insulating [src].</span>")
-			var/obj/item/stack/sheet/plasteel/W = C
-			W.use(1)
-			thermal_conductivity = 0
-			insulated = 1
-			name = "insulated " + name
-			return
-
-/turf/open/floor/engine/ex_act(severity)
-	switch(severity)
-		if(1)
-			ChangeTurf(baseturf)
-		if(2)
-			if(prob(50))
-				ChangeTurf(baseturf)
-
-/turf/open/floor/engine/blob_act(obj/structure/blob/B)
-	if(prob(25))
-		ChangeTurf(baseturf)
-
-/turf/open/floor/engine/cult
-	name = "engraved floor"
-	icon_state = "cult"
-
-/turf/open/floor/engine/cult/Initialize(mapload)
-	. = ..()
-	if(SSticker.mode)//only do this if the round is going..otherwise..fucking asteroid..
-		icon_state = SSticker.cultdat.cult_floor_icon_state
-
-/turf/open/floor/engine/cult/narsie_act()
-	return
-
-/turf/open/floor/engine/cult/ratvar_act()
-	. = ..()
-	if(istype(src, /turf/open/floor/engine/cult)) //if we haven't changed type
-		var/previouscolor = color
-		color = "#FAE48C"
-		animate(src, color = previouscolor, time = 8)
-
-//air filled floors; used in atmos pressure chambers
-
-/turf/open/floor/engine/n20
-	name = "\improper N2O floor"
-	sleeping_agent = 6000
-	oxygen = 0
-	nitrogen = 0
-
-/turf/open/floor/engine/co2
-	name = "\improper CO2 floor"
-	carbon_dioxide = 50000
-	oxygen = 0
-	nitrogen = 0
-
-/turf/open/floor/engine/plasma
-	name = "plasma floor"
-	toxins = 70000
-	oxygen = 0
-	nitrogen = 0
-
-/turf/open/floor/engine/o2
-	name = "\improper O2 floor"
-	oxygen = 100000
-	nitrogen = 0
-
-/turf/open/floor/engine/n2
-	name = "\improper N2 floor"
-	nitrogen = 100000
-	oxygen = 0
-
-/turf/open/floor/engine/air
-	name = "air floor"
-	oxygen = 2644
-	nitrogen = 10580
-
-
-/turf/open/floor/engine/singularity_pull(S, current_size)
-	..()
-	if(current_size >= STAGE_FIVE)
-		if(floor_tile)
-			if(prob(30))
-				new floor_tile(src)
-				make_plating()
-		else if(prob(30))
-			ReplaceWithLattice()
-
-/turf/open/floor/engine/vacuum
-	name = "vacuum floor"
-	icon_state = "engine"
-	oxygen = 0
-	nitrogen = 0
-	temperature = TCMB
-
-/turf/open/floor/engine/insulated
-	name = "insulated reinforced floor"
-	icon_state = "engine"
-	insulated = 1
-	thermal_conductivity = 0
-
-/turf/open/floor/engine/insulated/vacuum
-	name = "insulated vacuum floor"
-	icon_state = "engine"
-	oxygen = 0
-	nitrogen = 0
-
+//Iron Sand
 /turf/open/floor/plating/ironsand
 	name = "Iron Sand"
 	icon = 'icons/turf/floors/ironsand.dmi'
@@ -282,28 +142,7 @@
 /turf/open/floor/plating/ironsand/remove_plating()
 	return
 
-/turf/open/floor/plating/snow
-	name = "snow"
-	icon = 'icons/turf/snow.dmi'
-	icon_state = "snow"
-
-/turf/open/floor/plating/snow/ex_act(severity)
-	return
-
-/turf/open/floor/plating/snow/remove_plating()
-	return
-
-/turf/open/floor/snow
-	name = "snow"
-	icon = 'icons/turf/snow.dmi'
-	icon_state = "snow"
-
-/turf/open/floor/snow/ex_act(severity)
-	return
-
-/turf/open/floor/snow/pry_tile(obj/item/C, mob/user, silent = FALSE)
-	return
-
+//Metal Foam
 /turf/open/floor/plating/metalfoam
 	name = "foamed metal plating"
 	icon_state = "metalfoam"
@@ -323,7 +162,6 @@
 /turf/open/floor/plating/metalfoam/attackby(var/obj/item/C, mob/user, params)
 	if(..())
 		return TRUE
-
 	if(istype(C) && C.force)
 		user.changeNext_move(CLICK_CD_MELEE)
 		user.do_attack_animation(src)
@@ -355,6 +193,7 @@
 /turf/open/floor/plating/metalfoam/proc/smash()
 	ChangeTurf(baseturf)
 
+//Abductor Plating
 /turf/open/floor/plating/abductor
 	name = "alien floor"
 	icon_state = "alienpod1"
@@ -363,6 +202,21 @@
 	. = ..()
 	icon_state = "alienpod[rand(1,9)]"
 
+//Snow Plating
+/turf/open/floor/plating/snow
+	name = "snow"
+	icon = 'icons/turf/snow.dmi'
+	icon_state = "snow"
+	temperature = T0C
+	static_turf = TRUE
+
+/turf/open/floor/plating/snow/concrete
+	name = "concrete"
+	icon = 'icons/turf/floors.dmi'
+	icon_state = "concrete"
+	//Inherits static_turf = TRUE from parent /snow
+
+//Ice Plating
 /turf/open/floor/plating/ice
 	name = "ice sheet"
 	desc = "A sheet of solid ice. Looks slippery."

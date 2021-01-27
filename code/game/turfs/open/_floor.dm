@@ -44,9 +44,9 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 		icon_regular_floor = icon_state
 
 //turf/open/floor/CanPass(atom/movable/mover, turf/target, height=0)
-//	if((istype(mover, /obj/machinery/vehicle) && !(src.burnt)))
+//	if((istype(mover, /obj/machinery/vehicle) && !(burnt)))
 //		if(!( locate(/obj/machinery/mass_driver, src) ))
-//			return 0
+//			return FALSE
 //	return ..()
 
 /turf/open/floor/ex_act(severity)
@@ -177,7 +177,9 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	return FALSE
 
 /turf/open/floor/crowbar_act(mob/user, obj/item/I)
-	if(!intact || static_turf)
+	if(static_turf)
+		return
+	if(!intact)
 		return
 	. = TRUE
 	if(!I.use_tool(src, user, 0, volume = I.tool_volume))

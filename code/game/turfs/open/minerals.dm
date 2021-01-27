@@ -13,15 +13,17 @@
 	blocks_air = TRUE
 	layer = EDGED_TURF_LAYER
 	temperature = TCMB
+	static_turf = FALSE
+
 	var/environment_type = "asteroid"
 	var/turf/open/floor/plating/turf_type = /turf/open/floor/plating/asteroid/airless
 	var/mineralType = null
 	var/mineralAmt = 3
-	var/spread = 0 //will the seam spread?
+	var/spread = FALSE //will the seam spread?
 	var/spreadChance = 0 //the percentual chance of an ore spreading to the neighbouring tiles
 	var/last_act = 0
 	var/scan_state = "" //Holder for the image we display when we're pinged by a mining scanner
-	var/defer_change = 0
+	var/defer_change = FALSE
 
 /turf/closed/mineral/Initialize(mapload)
 	if(!canSmoothWith)
@@ -183,7 +185,7 @@
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
-	defer_change = 1
+	defer_change = TRUE
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium/volcanic = 35, /turf/closed/mineral/diamond/volcanic = 30, /turf/closed/mineral/gold/volcanic = 45, /turf/closed/mineral/titanium/volcanic = 45,
 		/turf/closed/mineral/silver/volcanic = 50, /turf/closed/mineral/plasma/volcanic = 50, /turf/closed/mineral/bscrystal/volcanic = 20)
@@ -203,7 +205,7 @@
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
-	defer_change = 1
+	defer_change = TRUE
 
 	mineralChance = 10
 	mineralSpawnChanceList = list(
@@ -225,7 +227,7 @@
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
-	defer_change = 1
+	defer_change = TRUE
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium/volcanic = 3, /turf/closed/mineral/diamond/volcanic = 1, /turf/closed/mineral/gold/volcanic = 8, /turf/closed/mineral/titanium/volcanic = 8,
 		/turf/closed/mineral/silver/volcanic = 20, /turf/closed/mineral/plasma/volcanic = 30, /turf/closed/mineral/bscrystal/volcanic = 1, /turf/closed/mineral/gibtonite/volcanic = 2,
@@ -235,7 +237,7 @@
 /turf/closed/mineral/iron
 	mineralType = /obj/item/stack/ore/iron
 	spreadChance = 20
-	spread = 1
+	spread = TRUE
 	scan_state = "rock_Iron"
 
 /turf/closed/mineral/iron/volcanic
@@ -245,12 +247,12 @@
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
-	defer_change = 1
+	defer_change = TRUE
 
 /turf/closed/mineral/uranium
 	mineralType = /obj/item/stack/ore/uranium
 	spreadChance = 5
-	spread = 1
+	spread = TRUE
 	scan_state = "rock_Uranium"
 
 /turf/closed/mineral/uranium/volcanic
@@ -260,12 +262,12 @@
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
-	defer_change = 1
+	defer_change = TRUE
 
 /turf/closed/mineral/diamond
 	mineralType = /obj/item/stack/ore/diamond
 	spreadChance = 0
-	spread = 1
+	spread = TRUE
 	scan_state = "rock_Diamond"
 
 /turf/closed/mineral/diamond/volcanic
@@ -275,12 +277,12 @@
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
-	defer_change = 1
+	defer_change = TRUE
 
 /turf/closed/mineral/gold
 	mineralType = /obj/item/stack/ore/gold
 	spreadChance = 5
-	spread = 1
+	spread = TRUE
 	scan_state = "rock_Gold"
 
 /turf/closed/mineral/gold/volcanic
@@ -290,12 +292,12 @@
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
-	defer_change = 1
+	defer_change = TRUE
 
 /turf/closed/mineral/silver
 	mineralType = /obj/item/stack/ore/silver
 	spreadChance = 5
-	spread = 1
+	spread = TRUE
 	scan_state = "rock_Silver"
 
 /turf/closed/mineral/silver/volcanic
@@ -305,12 +307,12 @@
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
-	defer_change = 1
+	defer_change = TRUE
 
 /turf/closed/mineral/titanium
 	mineralType = /obj/item/stack/ore/titanium
 	spreadChance = 5
-	spread = 1
+	spread = TRUE
 	scan_state = "rock_Titanium"
 
 /turf/closed/mineral/titanium/volcanic
@@ -320,12 +322,12 @@
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
-	defer_change = 1
+	defer_change = TRUE
 
 /turf/closed/mineral/plasma
 	mineralType = /obj/item/stack/ore/plasma
 	spreadChance = 8
-	spread = 1
+	spread = TRUE
 	scan_state = "rock_Plasma"
 
 /turf/closed/mineral/plasma/volcanic
@@ -335,13 +337,13 @@
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
-	defer_change = 1
+	defer_change = TRUE
 
 /turf/closed/mineral/clown
 	mineralType = /obj/item/stack/ore/bananium
 	mineralAmt = 3
 	spreadChance = 0
-	spread = 0
+	spread = FALSE
 	scan_state = "rock_Clown"
 
 /turf/closed/mineral/clown/volcanic
@@ -351,13 +353,13 @@
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
-	defer_change = 1
+	defer_change = TRUE
 
 /turf/closed/mineral/mime
 	mineralType = /obj/item/stack/ore/tranquillite
 	mineralAmt = 3
 	spreadChance = 0
-	spread = 0
+	spread = FALSE
 
 /turf/closed/mineral/mime/volcanic
 	environment_type = "basalt"
@@ -366,13 +368,13 @@
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
-	defer_change = 1
+	defer_change = TRUE
 
 /turf/closed/mineral/bscrystal
 	mineralType = /obj/item/stack/ore/bluespace_crystal
 	mineralAmt = 1
 	spreadChance = 0
-	spread = 0
+	spread = FALSE
 	scan_state = "rock_BScrystal"
 
 /turf/closed/mineral/bscrystal/volcanic
@@ -382,7 +384,7 @@
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
-	defer_change = 1
+	defer_change = TRUE
 
 /turf/closed/mineral/volcanic
 	environment_type = "basalt"
@@ -396,7 +398,7 @@
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturf = /turf/open/floor/plating/lava/smooth/lava_land_surface
-	defer_change = 1
+	defer_change = TRUE
 
 //gibtonite state defines
 #define GIBTONITE_UNSTRUCK 0
@@ -408,7 +410,7 @@
 /turf/closed/mineral/gibtonite
 	mineralAmt = 1
 	spreadChance = 0
-	spread = 0
+	spread = FALSE
 	scan_state = "rock_Gibtonite"
 	var/det_time = 8 //Countdown till explosion, but also rewards the player for how close you were to detonation when you defuse it
 	var/stage = GIBTONITE_UNSTRUCK //How far into the lifecycle of gibtonite we are
@@ -506,7 +508,7 @@
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
-	defer_change = 1
+	defer_change = TRUE
 
 #undef GIBTONITE_UNSTRUCK
 #undef GIBTONITE_ACTIVE

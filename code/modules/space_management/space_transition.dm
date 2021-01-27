@@ -414,7 +414,7 @@
 			our_spot = locate(center.x + i, center.y + j, center.z)
 			grid_desc = "([i],[j])"
 			if(!isnull(P))
-				our_spot = our_spot.ChangeTurf(/turf/open/floor/plating/snow)
+				our_spot = our_spot.ChangeTurf(/turf/open/floor/snow)
 				grid_desc += ": Z level [P.spl.zpos]. "
 				var/datum/space_level/up = P.spl.get_connection(Z_LEVEL_NORTH)
 				var/datum/space_level/down = P.spl.get_connection(Z_LEVEL_SOUTH)
