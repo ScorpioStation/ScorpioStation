@@ -18,18 +18,20 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "dont_use_this_floor"
 	plane = FLOOR_PLANE
-	var/icon_regular_floor = "floor" //used to remember what icon the tile should have by default
-	var/icon_plating = "plating"
 	thermal_conductivity = 0.040
 	heat_capacity = 10000
-	var/lava = 0
-	var/broken = 0
-	var/burnt = 0
+	static_turf = FALSE
+	var/icon_regular_floor = "floor" //used to remember what icon the tile should have by default
+	var/icon_plating = "plating"
+	var/lava = FALSE
+	var/broken = FALSE
+	var/burnt = FALSE
 	var/current_overlay = null
 	var/floor_tile = null //tile that this floor drops
 	var/list/broken_states = list("damaged1", "damaged2", "damaged3", "damaged4", "damaged5")
 	var/list/burnt_states = list("floorscorched1", "floorscorched2")
 	var/list/prying_tool_list = list(TOOL_CROWBAR) //What tool/s can we use to pry up the tile?
+
 
 	oxygen = MOLES_O2STANDARD
 	nitrogen = MOLES_N2STANDARD
@@ -48,7 +50,7 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 //	return ..()
 
 /turf/open/floor/ex_act(severity)
-	if(is_shielded())
+	if(is_shielded() || static_turf)
 		return
 	switch(severity)
 		if(1.0)
@@ -75,12 +77,14 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	return
 
 /turf/open/floor/burn_down()
+	if(static_turf)
+		return
 	ex_act(2)
 
 /turf/open/floor/is_shielded()
 	for(var/obj/structure/A in contents)
 		if(A.level == 3)
-			return 1
+			return TRUE
 
 /turf/open/floor/blob_act(obj/structure/blob/B)
 	return
@@ -90,13 +94,15 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	overlays -= current_overlay
 	if(current_overlay)
 		overlays.Add(current_overlay)
-	return 1
+	return TRUE
 
 /turf/open/floor/proc/break_tile_to_plating()
 	var/turf/open/floor/plating/T = make_plating()
 	T.break_tile()
 
 /turf/open/floor/break_tile()
+	if(static_turf)
+		return
 	if(broken)
 		return
 	current_overlay = pick(broken_states)
@@ -104,6 +110,8 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	update_icon()
 
 /turf/open/floor/burn_tile()
+	if(static_turf)
+		return
 	if(burnt)
 		return
 	current_overlay = pick(burnt_states)
@@ -134,15 +142,14 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	return W
 
 /turf/open/floor/attackby(obj/item/C as obj, mob/user as mob, params)
+	if(static_turf)
+		return TRUE
 	if(!C || !user)
 		return TRUE
-
 	if(..())
 		return TRUE
-
 	if(intact && istype(C, /obj/item/stack/tile))
 		try_replace_tile(C, user, params)
-
 	if(istype(C, /obj/item/pipe))
 		var/obj/item/pipe/P = C
 		if(P.pipe_type != -1) // ANY PIPE
@@ -162,7 +169,6 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 					P.dir = 10
 			else
 				P.setDir(user.dir)
-
 			P.x = src.x
 			P.y = src.y
 			P.z = src.z
@@ -171,7 +177,7 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	return FALSE
 
 /turf/open/floor/crowbar_act(mob/user, obj/item/I)
-	if(!intact)
+	if(!intact || static_turf)
 		return
 	. = TRUE
 	if(!I.use_tool(src, user, 0, volume = I.tool_volume))
@@ -179,6 +185,8 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	pry_tile(I, user, TRUE)
 
 /turf/open/floor/proc/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
+	if(static_turf)
+		return
 	if(T.turf_type == type)
 		return
 	var/obj/item/thing = user.get_inactive_hand()
@@ -190,11 +198,15 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	P.attackby(T, user, params)
 
 /turf/open/floor/proc/pry_tile(obj/item/C, mob/user, silent = FALSE)
+	if(static_turf)
+		return
 	if(!silent)
 		playsound(src, C.usesound, 80, 1)
 	return remove_tile(user, silent)
 
 /turf/open/floor/proc/remove_tile(mob/user, silent = FALSE, make_tile = TRUE)
+	if(static_turf)
+		return
 	if(broken || burnt)
 		broken = 0
 		burnt = 0
@@ -209,6 +221,8 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	return make_plating()
 
 /turf/open/floor/singularity_pull(S, current_size)
+	if(static_turf)
+		return
 	..()
 	if(current_size == STAGE_THREE)
 		if(prob(30))
@@ -238,7 +252,11 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 		ChangeTurf(/turf/open/floor/clockwork)
 
 /turf/open/floor/acid_melt()
+	if(static_turf)
+		return
 	ChangeTurf(baseturf)
 
 /turf/open/floor/can_have_cabling()
+	if(static_turf)
+		return FALSE
 	return !burnt && !broken

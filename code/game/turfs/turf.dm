@@ -98,7 +98,9 @@
 	return FALSE
 
 /turf/rpd_act(mob/user, obj/item/rpd/our_rpd) //This is the default turf behaviour for the RPD; override it as required
-	if(!static_turf)
+	if(static_turf)
+		return
+	else
 		if(our_rpd.mode == RPD_ATMOS_MODE)
 			our_rpd.create_atmos_pipe(user, src)
 		else if(our_rpd.mode == RPD_DISPOSALS_MODE)
@@ -113,8 +115,6 @@
 			our_rpd.flip_all_pipes(user, src)
 		else if(our_rpd.mode == RPD_DELETE_MODE)
 			our_rpd.delete_all_pipes(user, src)
-	else
-		return
 
 /turf/bullet_act(obj/item/projectile/Proj)
 	if(istype(Proj, /obj/item/projectile/beam/pulse))
@@ -289,8 +289,6 @@
 /turf/proc/MakeDry(wet_setting = TURF_WET_WATER)
 	return
 
-
-
 /////////////////////////////////////////////////////////////////////////
 // Navigation procs
 // Used for A-star pathfinding
@@ -393,7 +391,9 @@
 ////////////////////////////////////////////////////
 
 /turf/acid_act(acidpwr, acid_volume)
-	if(!static_turf)
+	if(static_turf)
+		return FALSE
+	else
 		. = TRUE
 		var/acid_type = /obj/effect/acid
 		if(acidpwr >= 200) //alien acid power
@@ -410,8 +410,6 @@
 			O.acid_act(acidpwr, acid_volume)
 		if(!has_acid_effect)
 			new acid_type(src, acidpwr, acid_volume)
-	else
-		return FALSE
 
 /turf/proc/acid_melt()
 	return
@@ -456,10 +454,11 @@
 	return TRUE
 
 /turf/proc/can_lay_cable()
-	if(!static_turf)
-		return can_have_cabling() & !intact
-	else
+	if(static_turf)
 		return FALSE
+	else
+		return can_have_cabling() & !intact
+
 
 /turf/ratvar_act(force, ignore_mobs, probability = 40)
 	. = (prob(probability) || force)

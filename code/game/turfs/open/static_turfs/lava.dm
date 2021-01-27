@@ -30,9 +30,4 @@
 /turf/open/lava/MakeDry(wet_setting = TURF_WET_WATER)
 	return
 
-/turf/open/lava/singularity_act()
-	return
-
-/turf/open/lava/singularity_pull(S, current_size)
-	return
 

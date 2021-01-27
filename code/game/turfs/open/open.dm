@@ -145,5 +145,17 @@
 		if(SSair)
 			SSair.add_to_active(src)
 
+/turf/open/singularity_act()
+	if(static_turf)
+		return
+	else
+		return ..()
+
+/turf/open/singularity_pull(S, current_size)
+	if(static_turf)
+		return
+	else
+		return ..()
+
 #undef WATER_STUN_TIME
 #undef WATER_WEAKEN_TIME
