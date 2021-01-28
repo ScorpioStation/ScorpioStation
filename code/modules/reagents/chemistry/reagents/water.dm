@@ -62,7 +62,7 @@
 		if(!(istype(B) && B.off_floor))
 			qdel(O)
 	else
-		if(O.open)
+		if(O.simulated)
 			O.color = initial(O.color)
 		O.clean_blood()
 

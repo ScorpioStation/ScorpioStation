@@ -270,7 +270,7 @@
 /mob/camera/aiEye/remote/shuttle_docker
 	visible_icon = FALSE
 	use_static = FALSE
-	open = FALSE
+	simulated = FALSE
 	var/list/placement_images = list()
 	var/list/placed_images = list()
 

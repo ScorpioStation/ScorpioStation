@@ -85,7 +85,7 @@
 	if(!istype(M))
 		. = FALSE
 
-	if(!M.open || iseffect(M))
+	if(!M.simulated || iseffect(M))
 		. = FALSE
 
 /obj/effect/portal/proc/teleport(atom/movable/M)

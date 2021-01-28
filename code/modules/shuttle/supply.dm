@@ -53,7 +53,7 @@
 
 		var/contcount
 		for(var/atom/A in T.contents)
-			if(!A.open)
+			if(!A.simulated)
 				continue
 			if(istype(A, /obj/machinery/light))
 				continue //hacky but whatever, shuttles need three spots each for this shit

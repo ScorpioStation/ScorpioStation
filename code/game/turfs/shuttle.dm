@@ -45,16 +45,15 @@
 	transform = M
 
 //Smooth Shuttle Walls
-/// Look, I made 'em :O!
-/turf/closed/shuttle/wall
+/// Look, I made 'em :O! - Notice the type path difference.
+/turf/closed/ind_wall/shuttle
 	name = "wall"
 	icon = 'icons/turf/shuttle2.dmi'
 	icon_state = "swall"
 	opacity = TRUE
 	density = TRUE
 	blocks_air = TRUE
-	indesctructible_turf = TRUE		// I guess? I don't want people using RPDs and welders on this, okay?
-	canSmoothWith = list(/turf/closed/wall/shuttle, /obj/machinery/door/airlock/shuttle, /obj/machinery/door/airlock, /obj/structure/window/full/shuttle, /obj/structure/shuttle/engine/heater)
+	canSmoothWith = list(/turf/closed/ind_wall/shuttle, /obj/machinery/door/airlock/shuttle, /obj/machinery/door/airlock, /obj/structure/window/full/shuttle, /obj/structure/shuttle/engine/heater)
 	smooth = SMOOTH_TRUE | SMOOTH_DIAGONAL	//Yes, SMOOTH_TRUE, not SMOOTH_MORE
 
 // Shuttle Floors and Plating

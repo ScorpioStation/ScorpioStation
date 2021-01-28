@@ -1397,7 +1397,7 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 	move_force = 0
 	pull_force = 0
 	move_resist = INFINITY
-	open = FALSE
+	simulated = FALSE
 	canmove = FALSE
 	see_in_dark = 1e6
 
@@ -1651,7 +1651,7 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 
 /proc/turf_clear(turf/T)
 	for(var/atom/A in T)
-		if(A.open)
+		if(A.simulated)
 			return FALSE
 	return TRUE
 

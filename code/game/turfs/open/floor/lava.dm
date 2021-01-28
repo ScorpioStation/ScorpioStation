@@ -98,7 +98,7 @@
 	for(var/thing in thing_to_check)
 		if(isobj(thing))
 			var/obj/O = thing
-			if(!O.open)
+			if(!O.simulated)
 				continue
 			if((O.resistance_flags & (LAVA_PROOF|INDESTRUCTIBLE)) || O.throwing)
 				continue

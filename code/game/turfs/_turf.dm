@@ -20,7 +20,7 @@
 	var/heat_capacity = 1
 	//Properties for both
 	var/temperature = T20C
-	var/blocks_air = FALSE
+
 	var/datum/pathnode/PNode = null //associated PathNode in the A* algorithm
 
 	flags = 0
@@ -500,7 +500,7 @@
 	var/turf/T0 = src
 	for(var/X in T0.GetAllContents())
 		var/atom/A = X
-		if(!A.open)
+		if(!A.simulated)
 			continue
 		if(istype(A, /mob/dead))
 			continue

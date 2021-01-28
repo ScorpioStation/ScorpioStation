@@ -116,7 +116,7 @@
 		var/turf/T = loc
 		for(var/thing in T.contents)
 			var/atom/AM = thing
-			if(AM && AM.open)
+			if(AM && AM.simulated)
 				AM.ex_act(amount_destruction)
 				CHECK_TICK
 		T.ex_act(amount_destruction)

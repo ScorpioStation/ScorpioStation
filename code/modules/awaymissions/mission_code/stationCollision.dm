@@ -177,7 +177,7 @@ GLOBAL_VAR_INIT(sc_safecode5, "[rand(0,9)]")
 		mezzer()
 
 /obj/singularity/narsie/sc_Narsie/consume(var/atom/A)
-	if(!A.open)
+	if(!A.simulated)
 		return FALSE
 	if(is_type_in_list(A, uneatable))
 		return FALSE
