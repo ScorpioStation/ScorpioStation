@@ -33,7 +33,7 @@
 	var/shoe_walking_volume = 20
 
 	var/thermite = 0
-	var/static_turf = FALSE
+	var/locked_turf = FALSE
 
 /turf/Initialize(mapload)
 	SHOULD_CALL_PARENT(FALSE)
@@ -98,7 +98,7 @@
 	return FALSE
 
 /turf/rpd_act(mob/user, obj/item/rpd/our_rpd) //This is the default turf behaviour for the RPD; override it as required
-	if(static_turf)
+	if(locked_turf)
 		return
 	else
 		if(our_rpd.mode == RPD_ATMOS_MODE)
@@ -391,7 +391,7 @@
 ////////////////////////////////////////////////////
 
 /turf/acid_act(acidpwr, acid_volume)
-	if(static_turf)
+	if(locked_turf)
 		return FALSE
 	else
 		. = TRUE
@@ -454,7 +454,7 @@
 	return TRUE
 
 /turf/proc/can_lay_cable()
-	if(static_turf)
+	if(locked_turf)
 		return FALSE
 	else
 		return can_have_cabling() & !intact

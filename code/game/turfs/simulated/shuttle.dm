@@ -4,7 +4,7 @@
 	thermal_conductivity = 0.05
 	heat_capacity = 0
 	layer = 2
-	static_turf = FALSE	// Not Static, but it does have unique RPD and Narsie Acts...wait.
+	locked_turf = FALSE	// Not Static, but it does have unique RPD and Narsie Acts...wait.
 
 /turf/open/shuttle/rpd_act(mob/user, obj/item/rpd/our_rpd)
 	if(our_rpd.mode == RPD_DELETE_MODE)//No pipes on shuttles
@@ -53,7 +53,7 @@
 	opacity = TRUE
 	density = TRUE
 	blocks_air = TRUE
-	static_turf = TRUE		// I guess? I don't want people using RPDs and welders on this, okay?
+	locked_turf = TRUE		// I guess? I don't want people using RPDs and welders on this, okay?
 	canSmoothWith = list(/turf/closed/wall/shuttle, /obj/machinery/door/airlock/shuttle, /obj/machinery/door/airlock, /obj/structure/window/full/shuttle, /obj/structure/shuttle/engine/heater)
 	smooth = SMOOTH_TRUE | SMOOTH_DIAGONAL	//Yes, SMOOTH_TRUE, not SMOOTH_MORE
 

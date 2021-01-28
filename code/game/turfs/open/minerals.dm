@@ -13,7 +13,7 @@
 	blocks_air = TRUE
 	layer = EDGED_TURF_LAYER
 	temperature = TCMB
-	static_turf = FALSE
+	locked_turf = FALSE
 
 	var/environment_type = "asteroid"
 	var/turf/open/floor/plating/turf_type = /turf/open/floor/plating/asteroid/airless

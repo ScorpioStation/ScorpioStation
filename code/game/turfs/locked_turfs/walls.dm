@@ -5,7 +5,7 @@
 	opacity = TRUE
 	density = TRUE
 	explosion_block = 2
-	static_turf = TRUE
+	locked_turf = TRUE
 
 /turf/closed/locked/wall/fakeglass
 	name = "window"

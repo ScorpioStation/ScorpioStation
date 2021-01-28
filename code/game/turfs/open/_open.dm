@@ -11,7 +11,7 @@
 	var/max_fire_temperature_sustained = 0 //The max temperature of the fire which it was subjected to
 	var/wet = FALSE
 	var/image/wet_overlay = null
-	var/static_turf = FALSE
+	var/locked_turf = FALSE
 
 /turf/open/handle_fall(mob/faller, forced)
 	faller.lying = pick(90, 270)
@@ -146,13 +146,13 @@
 			SSair.add_to_active(src)
 
 /turf/open/singularity_act()
-	if(static_turf)
+	if(locked_turf)
 		return
 	else
 		return ..()
 
 /turf/open/singularity_pull(S, current_size)
-	if(static_turf)
+	if(locked_turf)
 		return
 	else
 		return ..()
