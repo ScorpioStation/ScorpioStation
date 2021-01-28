@@ -42,14 +42,14 @@
 	},
 /area/template_noop)
 "g" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows";
 	opacity = 1
 	},
 /area/template_noop)
 "h" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 4
 	},
@@ -61,20 +61,20 @@
 /turf/space,
 /area/template_noop)
 "j" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/template_noop)
 "k" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 4;
 	icon_state = "fakewindows";
 	opacity = 1
 	},
 /area/template_noop)
 "l" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dynamic_lighting = 0;
 	icon = null
 	},

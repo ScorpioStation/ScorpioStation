@@ -4,7 +4,7 @@
 	thermal_conductivity = 0.05
 	heat_capacity = 0
 	layer = 2
-	static_turf = TRUE
+	static_turf = FALSE	// Not Static, but it does have unique RPD and Narsie Acts...wait.
 
 /turf/open/shuttle/rpd_act(mob/user, obj/item/rpd/our_rpd)
 	if(our_rpd.mode == RPD_DELETE_MODE)//No pipes on shuttles
@@ -37,12 +37,27 @@
 	T.transform = transform
 
 //why don't shuttle walls habe smoothwall? now i gotta do rotation the dirty way
+/// 'cause you didn't make them!
 /turf/open/shuttle/shuttleRotate(rotation)
 	..()
 	var/matrix/M = transform
 	M.Turn(rotation)
 	transform = M
 
+//Smooth Shuttle Walls
+/// Look, I made 'em :O!
+/turf/closed/shuttle/wall
+	name = "wall"
+	icon = 'icons/turf/shuttle2.dmi'
+	icon_state = "swall"
+	opacity = TRUE
+	density = TRUE
+	blocks_air = TRUE
+	static_turf = TRUE		// I guess? I don't want people using RPDs and welders on this, okay?
+	canSmoothWith = list(/turf/closed/wall/shuttle, /obj/machinery/door/airlock/shuttle, /obj/machinery/door/airlock, /obj/structure/window/full/shuttle, /obj/structure/shuttle/engine/heater)
+	smooth = SMOOTH_TRUE | SMOOTH_DIAGONAL	//Yes, SMOOTH_TRUE, not SMOOTH_MORE
+
+// Shuttle Floors and Plating
 /turf/open/shuttle/floor
 	name = "floor"
 	icon_state = "floor"
@@ -56,26 +71,11 @@
 	oxygen = 0
 	nitrogen = MOLES_N2STANDARD + MOLES_O2STANDARD
 
-/turf/open/shuttle/floor4 // Added this floor tile so that I have a seperate turf to check in the shuttle -- Polymorph
-	name = "brig floor"        // Also added it into the 2x3 brig area of the shuttle.
+/turf/open/shuttle/floor4	// Added this floor tile so that I have a seperate turf to check in the shuttle -- Polymorph
+	name = "brig floor"		// Also added it into the 2x3 brig area of the shuttle.
 	icon_state = "floor4"
 
 /turf/open/shuttle/floor4/vox	//Vox skipjack floors
 	name = "skipjack floor"
 	oxygen = 0
 	nitrogen = MOLES_N2STANDARD + MOLES_O2STANDARD
-
-//The ~Freaking~ Shuttle Walls
-/turf/closed/shuttle/wall
-	name = "wall"
-	icon = 'icons/turf/shuttle.dmi'
-	icon_state = "wall1"
-	opacity = TRUE
-	density = TRUE
-	blocks_air = TRUE
-	static_turf = TRUE		// I guess? I don't want people using RPDs and welders on this, okay?
-	canSmoothWith = list(
-		/turf/closed/shuttle/wall,	//It smooths with itself	In this case, I assume it will use swall12, swall13, and etc for this purpose
-		/obj/structure/shuttle/window)	//Possibly a bad idea
-	smooth = SMOOTH_TRUE | SMOOTH_DIAGONAL
-

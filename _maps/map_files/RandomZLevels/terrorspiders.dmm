@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon_state = "rock";
 	name = "rock"
 	},
@@ -12369,14 +12369,14 @@
 	},
 /area/awaymission/UO71/outside)
 "zd" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon_state = "rock";
 	name = "rock"
 	},
 /area/awaymission/UO71/queen)
 "ze" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon_state = "rock";
 	name = "rock"
 	},
@@ -12750,7 +12750,7 @@
 /turf/open/floor/vault,
 /area/awaymission/UO71/prince)
 "Lf" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon_state = "rock";
 	name = "rock"
 	},

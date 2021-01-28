@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-iron6";
 	icon_state = "iron6"
 	},
@@ -24,7 +24,7 @@
 /area/syndicate_mothership)
 "af" = (
 /obj/structure/window/reinforced,
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-iron12";
 	icon_state = "iron12"
 	},
@@ -36,7 +36,7 @@
 	},
 /area/syndicate_mothership)
 "ah" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-iron14";
 	icon_state = "iron14"
 	},
@@ -64,7 +64,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-iron3";
 	icon_state = "iron3"
 	},
@@ -94,7 +94,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-iron3";
 	icon_state = "iron3"
 	},
@@ -134,7 +134,7 @@
 	},
 /area/holodeck/source_knightarena)
 "at" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/vox_station)
 "au" = (
 /turf/unsimulated/floor/vox,
@@ -205,7 +205,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-iron3";
 	icon_state = "iron3"
 	},
@@ -671,7 +671,7 @@
 /turf/unsimulated/floor{
 	icon_state = "engine"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -684,7 +684,7 @@
 /turf/unsimulated/floor{
 	icon_state = "engine"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -709,7 +709,7 @@
 	},
 /area/holodeck/source_emptycourt)
 "bZ" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/space)
 "ca" = (
 /turf/open/floor/holofloor{
@@ -718,7 +718,7 @@
 	},
 /area/holodeck/source_emptycourt)
 "cb" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-iron5";
 	icon_state = "iron5"
 	},
@@ -727,7 +727,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-iron12";
 	icon_state = "iron12"
 	},
@@ -737,7 +737,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-iron12";
 	icon_state = "iron12"
 	},
@@ -747,13 +747,13 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-iron12";
 	icon_state = "iron12"
 	},
 /area/space)
 "cf" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-iron11";
 	icon_state = "iron11"
 	},
@@ -762,7 +762,7 @@
 /turf/open/floor/holofloor/space,
 /area/holodeck/source_space)
 "cj" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/centcom/ferry)
 "ck" = (
 /turf/space/transit,
@@ -881,7 +881,7 @@
 	},
 /area/centcom/evac)
 "cJ" = (
-/turf/unsimulated/wall/fakeglass,
+/turf/closed/staticwall/fakeglass,
 /area/centcom/ferry)
 "cK" = (
 /obj/machinery/computer/shuttle/admin,
@@ -922,28 +922,28 @@
 	},
 /area/holodeck/source_basketball)
 "cR" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows2 (WEST)";
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/ninja/holding)
 "cS" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (WEST)";
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/ninja/holding)
 "cT" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (EAST)";
 	icon_state = "fakewindows";
 	dir = 4
 	},
 /area/ninja/holding)
 "cU" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	desc = "The door appears to be locked tightly.";
 	icon = 'icons/obj/doors/airlocks/hatch/centcom.dmi';
 	icon_state = "closed";
@@ -951,7 +951,7 @@
 	},
 /area/ninja/holding)
 "cV" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	desc = "The door appears to be locked tightly.";
 	icon = 'icons/obj/doors/airlocks/hatch/centcom.dmi';
 	icon_state = "closed";
@@ -1244,7 +1244,7 @@
 	},
 /area/holodeck/source_boxingcourt)
 "dP" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 1;
 	icon_state = "fakewindows";
 	tag = "icon-fakewindows (WEST)"
@@ -1597,7 +1597,7 @@
 	},
 /area/syndicate_mothership)
 "eU" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 1;
 	icon_state = "fakewindows";
 	tag = "icon-fakewindows (WEST)"
@@ -1617,13 +1617,13 @@
 	},
 /area/syndicate_mothership)
 "eW" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-iron13";
 	icon_state = "iron13"
 	},
 /area/space)
 "eX" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-iron9";
 	icon_state = "iron9"
 	},
@@ -1693,10 +1693,10 @@
 	},
 /area/centcom/specops)
 "ff" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/ninja/outpost)
 "fg" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/ninja/holding)
 "fh" = (
 /obj/structure/sign/double/map/left{
@@ -1743,7 +1743,7 @@
 	},
 /area/centcom/specops)
 "fm" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/centcom/gamma)
 "fn" = (
 /obj/machinery/computer/library/checkout,
@@ -2179,14 +2179,14 @@
 /turf/open/floor/bluegrid,
 /area/tdome/arena_source)
 "go" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows2 (WEST)";
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/wizard_station)
 "gp" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (WEST)";
 	icon_state = "fakewindows";
 	dir = 8
@@ -2204,7 +2204,7 @@
 /turf/open/floor/beach/sand,
 /area/holodeck/source_beach)
 "gs" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (NORTHEAST)";
 	icon_state = "fakewindows";
 	dir = 5
@@ -2291,7 +2291,7 @@
 	},
 /area/wizard_station)
 "gE" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows2 (NORTH)";
 	icon_state = "fakewindows2";
 	dir = 1
@@ -2362,7 +2362,7 @@
 	},
 /area/wizard_station)
 "gO" = (
-/turf/unsimulated/wall/fakeglass,
+/turf/closed/staticwall/fakeglass,
 /area/ninja/outpost)
 "gP" = (
 /obj/effect/landmark{
@@ -2568,7 +2568,7 @@
 	},
 /area/syndicate_mothership)
 "ho" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 1
 	},
@@ -2582,7 +2582,7 @@
 	},
 /area/syndicate_mothership)
 "hr" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 0;
 	icon_state = "fakewindows";
 	tag = "icon-fakewindows (EAST)"
@@ -2597,7 +2597,7 @@
 	},
 /area/syndicate_mothership)
 "hu" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 8
 	},
@@ -2614,14 +2614,14 @@
 /turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "hy" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (EAST)";
 	icon_state = "fakewindows";
 	dir = 4
 	},
 /area/syndicate_mothership)
 "hz" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows2 (WEST)";
 	icon_state = "fakewindows2";
 	dir = 8
@@ -2702,7 +2702,7 @@
 	},
 /area/syndicate_mothership)
 "hM" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -2752,7 +2752,7 @@
 	},
 /area/syndicate_mothership)
 "ih" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/wizard_station)
 "ii" = (
 /obj/machinery/computer/shuttle/syndicate/recall,
@@ -2972,7 +2972,7 @@
 /turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "iK" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (NORTHWEST)";
 	icon_state = "fakewindows";
 	dir = 9
@@ -3021,7 +3021,7 @@
 /turf/open/floor/plating,
 /area/shuttle/assault_pod)
 "iR" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows2 (NORTH)";
 	icon_state = "fakewindows2";
 	dir = 1
@@ -3075,7 +3075,7 @@
 	},
 /area/syndicate_mothership)
 "ja" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/tdome/arena)
 "jb" = (
 /obj/machinery/igniter/on,
@@ -3085,7 +3085,7 @@
 /turf/open/floor/plasteel,
 /area/tdome/arena)
 "jd" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (WEST)";
 	icon_state = "fakewindows";
 	dir = 8
@@ -3387,32 +3387,32 @@
 	},
 /area/syndicate_mothership)
 "jP" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien21"
 	},
 /area/abductor_ship)
 "jQ" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien20"
 	},
 /area/abductor_ship)
 "jR" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien23"
 	},
 /area/abductor_ship)
 "jS" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien22"
 	},
 /area/abductor_ship)
 "jT" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien24"
 	},
 /area/abductor_ship)
 "jU" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien16"
 	},
 /area/abductor_ship)
@@ -3423,7 +3423,7 @@
 /turf/unsimulated/floor/abductor,
 /area/abductor_ship)
 "jW" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien17"
 	},
 /area/abductor_ship)
@@ -3440,12 +3440,12 @@
 /turf/unsimulated/floor/abductor,
 /area/abductor_ship)
 "jZ" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien19"
 	},
 /area/abductor_ship)
 "ka" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien18"
 	},
 /area/abductor_ship)
@@ -3573,7 +3573,7 @@
 /turf/unsimulated/floor/abductor,
 /area/abductor_ship)
 "kw" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien14"
 	},
 /area/abductor_ship)
@@ -3587,7 +3587,7 @@
 /turf/unsimulated/floor/abductor,
 /area/abductor_ship)
 "kz" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien15"
 	},
 /area/abductor_ship)
@@ -3612,7 +3612,7 @@
 /turf/unsimulated/floor/abductor,
 /area/abductor_ship)
 "kE" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien12"
 	},
 /area/abductor_ship)
@@ -3662,7 +3662,7 @@
 	},
 /area/syndicate_mothership)
 "kM" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien13"
 	},
 /area/abductor_ship)
@@ -3684,7 +3684,7 @@
 /turf/unsimulated/floor/abductor,
 /area/abductor_ship)
 "kQ" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien10"
 	},
 /area/abductor_ship)
@@ -3696,7 +3696,7 @@
 /turf/unsimulated/floor/abductor,
 /area/abductor_ship)
 "kS" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien11"
 	},
 /area/abductor_ship)
@@ -3713,7 +3713,7 @@
 	},
 /area/syndicate_mothership)
 "kU" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien6"
 	},
 /area/abductor_ship)
@@ -3824,7 +3824,7 @@
 	},
 /area/centcom/control)
 "li" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien7"
 	},
 /area/abductor_ship)
@@ -3845,17 +3845,17 @@
 /turf/unsimulated/floor/abductor,
 /area/abductor_ship)
 "ll" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien9"
 	},
 /area/abductor_ship)
 "lm" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien8"
 	},
 /area/abductor_ship)
 "ln" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien2"
 	},
 /area/abductor_ship)
@@ -3943,15 +3943,15 @@
 	},
 /area/centcom/control)
 "ly" = (
-/turf/unsimulated/wall/abductor,
+/turf/closed/staticwall/abductor,
 /area/abductor_ship)
 "lz" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien4"
 	},
 /area/abductor_ship)
 "lA" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien3"
 	},
 /area/abductor_ship)
@@ -3963,7 +3963,7 @@
 	},
 /area/centcom/control)
 "lC" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/tdome/arena_source)
 "lD" = (
 /obj/machinery/igniter/on,
@@ -3974,7 +3974,7 @@
 /turf/open/floor/plasteel,
 /area/tdome/arena_source)
 "lF" = (
-/turf/unsimulated/wall/abductor{
+/turf/closed/staticwall/abductor{
 	icon_state = "alien5"
 	},
 /area/abductor_ship)
@@ -4121,14 +4121,14 @@
 /area/centcom/control)
 "ma" = (
 /turf/space,
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
 /area/centcom/control)
 "mb" = (
-/turf/unsimulated/wall/fakeglass,
+/turf/closed/staticwall/fakeglass,
 /area/wizard_station)
 "mc" = (
 /obj/structure/chair/stool,
@@ -4139,7 +4139,7 @@
 /area/centcom/control)
 "md" = (
 /obj/structure/extinguisher_cabinet,
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/centcom/gamma)
 "me" = (
 /obj/structure/table,
@@ -4267,7 +4267,7 @@
 	},
 /area/centcom/control)
 "mr" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/trader_station/sol)
 "ms" = (
 /obj/item/reagent_containers/food/condiment/saltshaker{
@@ -4594,7 +4594,7 @@
 	},
 /area/centcom/control)
 "nj" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/syndicate_mothership)
 "nk" = (
 /obj/machinery/door/poddoor{
@@ -4737,21 +4737,21 @@
 /area/syndicate_mothership)
 "ny" = (
 /turf/space,
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
 /area/centcom/control)
 "nz" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (EAST)";
 	icon_state = "fakewindows";
 	dir = 4
 	},
 /area/centcom/control)
 "nA" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (WEST)";
 	icon_state = "fakewindows";
 	dir = 8
@@ -4763,7 +4763,7 @@
 	id_tag = "commandcenter";
 	name = "Privacy Shutters"
 	},
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -5152,7 +5152,7 @@
 	},
 /area/centcom/specops)
 "ow" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -5186,7 +5186,7 @@
 	id_tag = "commandcenter";
 	name = "Privacy Shutters"
 	},
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -5296,21 +5296,21 @@
 	},
 /area/shuttle/gamma/space)
 "oK" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows2 (WEST)";
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/centcom/specops)
 "oL" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (WEST)";
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/centcom/specops)
 "oM" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (EAST)";
 	icon_state = "fakewindows";
 	dir = 4
@@ -5467,7 +5467,7 @@
 	id_tag = "specopsoffice";
 	name = "Privacy Shutters"
 	},
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -5632,7 +5632,7 @@
 	id_tag = "specopsoffice";
 	name = "Privacy Shutters"
 	},
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 1;
 	icon_state = "fakewindows";
 	tag = "icon-fakewindows (WEST)"
@@ -5680,7 +5680,7 @@
 	id_tag = "specopsoffice";
 	name = "Privacy Shutters"
 	},
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows2 (NORTH)";
 	icon_state = "fakewindows2";
 	dir = 1
@@ -5699,7 +5699,7 @@
 	},
 /area/centcom/specops)
 "pF" = (
-/turf/unsimulated/wall/fakeglass,
+/turf/closed/staticwall/fakeglass,
 /area/syndicate_mothership)
 "pG" = (
 /turf/unsimulated/floor{
@@ -5752,7 +5752,7 @@
 	id_tag = "specopsoffice";
 	name = "Privacy Shutters"
 	},
-/turf/unsimulated/wall/fakeglass,
+/turf/closed/staticwall/fakeglass,
 /area/centcom/specops)
 "pN" = (
 /obj/machinery/door_control{
@@ -5968,7 +5968,7 @@
 	},
 /area/holodeck/source_thunderdomecourt)
 "qj" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 1;
 	icon_state = "fakewindows";
 	tag = "icon-fakewindows (WEST)"
@@ -6003,14 +6003,14 @@
 	},
 /area/centcom/specops)
 "ql" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon = 'icons/obj/library.dmi';
 	icon_state = "book-5";
 	name = "bookcase (Tactics)"
 	},
 /area/centcom/specops)
 "qm" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon = 'icons/obj/library.dmi';
 	icon_state = "book-5";
 	name = "bookcase (Reports)"
@@ -6076,7 +6076,7 @@
 	layer = 1;
 	name = "Blocker"
 	},
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -6172,7 +6172,7 @@
 	},
 /area/centcom/evac)
 "qI" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/centcom/suppy)
 "qJ" = (
 /turf/unsimulated/floor{
@@ -6563,7 +6563,7 @@
 	},
 /area/centcom/bathroom)
 "rE" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/start)
 "rF" = (
 /obj/structure/flora/ausbushes/leafybush,
@@ -6608,7 +6608,7 @@
 /turf/open/shuttle/plating,
 /area/centcom/evac)
 "rK" = (
-/turf/unsimulated/wall/splashscreen,
+/turf/closed/staticwall/splashscreen,
 /area/start)
 "rL" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -6700,7 +6700,7 @@
 	name = "EXTERNAL AIRLOCK";
 	pixel_x = 0
 	},
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/centcom/evac)
 "rW" = (
 /obj/docking_port/stationary{
@@ -6867,7 +6867,7 @@
 	},
 /area/centcom/evac)
 "sq" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/centcom/control)
 "sr" = (
 /turf/unsimulated/floor{
@@ -7008,7 +7008,7 @@
 	},
 /area/centcom/evac)
 "sH" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 1
 	},
@@ -7017,10 +7017,10 @@
 /obj/machinery/vending/boozeomat{
 	req_access_txt = "102"
 	},
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/centcom/control)
 "sJ" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows2";
 	dir = 1
 	},
@@ -7063,7 +7063,7 @@
 	},
 /area/tdome)
 "sO" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	desc = "The door appears to be locked tightly.";
 	icon = 'icons/obj/doors/airlocks/hatch/centcom.dmi';
 	icon_state = "closed";
@@ -7071,7 +7071,7 @@
 	},
 /area/tdome)
 "sP" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (SOUTHEAST)";
 	icon_state = "fakewindows";
 	dir = 6
@@ -7085,7 +7085,7 @@
 	name = "EXTERNAL AIRLOCK";
 	pixel_x = 0
 	},
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 8
 	},
@@ -7153,7 +7153,7 @@
 	},
 /area/tdome/tdomeobserve)
 "sX" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/centcom/specops)
 "sY" = (
 /turf/unsimulated/floor{
@@ -7284,7 +7284,7 @@
 	},
 /area/tdome/tdomeobserve)
 "tn" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 5
 	},
@@ -7444,21 +7444,21 @@
 	},
 /area/centcom/evac)
 "tB" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (WEST)";
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/tdome)
 "tC" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows2 (WEST)";
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/tdome)
 "tD" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (EAST)";
 	icon_state = "fakewindows";
 	dir = 4
@@ -7829,7 +7829,7 @@
 /turf/space/transit/horizontal,
 /area/space)
 "uo" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	desc = "The door appears to be locked tightly.";
 	icon = 'icons/obj/doors/airlocks/hatch/centcom.dmi';
 	icon_state = "closed";
@@ -7842,7 +7842,7 @@
 	layer = 1;
 	name = "Blocker"
 	},
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -7860,7 +7860,7 @@
 /area/centcom)
 "ur" = (
 /turf/space,
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -7868,7 +7868,7 @@
 /area/admin)
 "us" = (
 /turf/space,
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -7885,7 +7885,7 @@
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_end";
@@ -7920,7 +7920,7 @@
 	},
 /area/centcom/control)
 "uA" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-wall3 (NORTH)";
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "wall3";
@@ -7932,7 +7932,7 @@
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_mid";
@@ -7946,7 +7946,7 @@
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_end";
@@ -7957,14 +7957,14 @@
 /area/admin)
 "uD" = (
 /turf/space,
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
 /area/space)
 "uE" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-wall3 (EAST)";
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "wall3";
@@ -8120,7 +8120,7 @@
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	desc = "This window appears to be reinforced, it looks nearly impossible to break.";
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
@@ -8166,14 +8166,14 @@
 /area/admin)
 "uW" = (
 /obj/structure/urinal,
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/centcom/specops)
 "uX" = (
 /turf/unsimulated/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_mid";
@@ -8299,7 +8299,7 @@
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
@@ -8394,7 +8394,7 @@
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	desc = "This window appears to be reinforced, it looks nearly impossible to break.";
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
@@ -8539,7 +8539,7 @@
 /area/admin)
 "vC" = (
 /turf/space,
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -8710,7 +8710,7 @@
 /area/admin)
 "vP" = (
 /turf/space,
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -8721,7 +8721,7 @@
 	icon_state = "freezerfloor";
 	dir = 2
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_mid";
@@ -8735,7 +8735,7 @@
 	icon_state = "freezerfloor";
 	dir = 2
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_end";
@@ -8757,7 +8757,7 @@
 	icon_state = "freezerfloor";
 	dir = 2
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_end";
@@ -8872,7 +8872,7 @@
 	icon_state = "freezerfloor";
 	dir = 2
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	desc = "This window appears to be reinforced, it looks nearly impossible to break.";
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
@@ -8929,7 +8929,7 @@
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -8947,7 +8947,7 @@
 	icon_state = "freezerfloor";
 	dir = 2
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	desc = "This window appears to be reinforced, it looks nearly impossible to break.";
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
@@ -8988,14 +8988,14 @@
 /area/admin)
 "wq" = (
 /turf/space,
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
 /area/admin)
 "wr" = (
-/turf/unsimulated/wall/fakeglass,
+/turf/closed/staticwall/fakeglass,
 /area/centcom/specops)
 "ws" = (
 /obj/structure/rack,
@@ -9161,7 +9161,7 @@
 	},
 /area/admin)
 "wC" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/centcom/bathroom)
 "wD" = (
 /obj/structure/table,
@@ -9200,7 +9200,7 @@
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
@@ -9214,7 +9214,7 @@
 	icon_state = "freezerfloor";
 	dir = 2
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
@@ -9279,7 +9279,7 @@
 	},
 /area/admin)
 "wK" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/centcom/evac)
 "wL" = (
 /obj/structure/rack,
@@ -9374,7 +9374,7 @@
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -9635,7 +9635,7 @@
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_mid";
@@ -9649,7 +9649,7 @@
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_end";
@@ -9663,7 +9663,7 @@
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_end";
@@ -9810,7 +9810,7 @@
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -9827,7 +9827,7 @@
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -9844,7 +9844,7 @@
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -9855,7 +9855,7 @@
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -9873,35 +9873,35 @@
 	},
 /area/admin)
 "xP" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (EAST)";
 	icon_state = "fakewindows";
 	dir = 4
 	},
 /area/trader_station/sol)
 "xQ" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (WEST)";
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/trader_station/sol)
 "xR" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (WEST)";
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/vox_station)
 "xS" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows2 (WEST)";
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/vox_station)
 "xT" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (EAST)";
 	icon_state = "fakewindows";
 	dir = 4
@@ -9993,7 +9993,7 @@
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
@@ -10139,7 +10139,7 @@
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	desc = "This window appears to be reinforced, it looks nearly impossible to break.";
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
@@ -10202,7 +10202,7 @@
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	desc = "This window appears to be reinforced, it looks nearly impossible to break.";
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
@@ -10264,7 +10264,7 @@
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -10278,7 +10278,7 @@
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -10495,7 +10495,7 @@
 	},
 /area/admin)
 "zn" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows2";
 	dir = 1
 	},
@@ -10604,7 +10604,7 @@
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -10615,14 +10615,14 @@
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
 /area/admin)
 "zF" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 0;
 	icon_state = "fakewindows";
 	tag = "icon-fakewindows (EAST)"
@@ -10651,7 +10651,7 @@
 /area/admin)
 "zK" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-wall3 (EAST)";
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "wall3";
@@ -10680,7 +10680,7 @@
 	id_tag = "commandcenter";
 	name = "Privacy Shutters"
 	},
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -10824,7 +10824,7 @@
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -10835,7 +10835,7 @@
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -10870,7 +10870,7 @@
 /turf/unsimulated/floor{
 	icon_state = "engine"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
@@ -10901,13 +10901,13 @@
 	},
 /area/trader_station/sol)
 "An" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/trader_station/sol)
 "Ao" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows2 (WEST)";
 	icon_state = "fakewindows2";
 	dir = 8
@@ -10918,7 +10918,7 @@
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
@@ -10951,7 +10951,7 @@
 /turf/unsimulated/floor{
 	icon_state = "engine"
 	},
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
@@ -10979,7 +10979,7 @@
 	},
 /area/trader_station/sol)
 "Aw" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/centcom)
 "Ay" = (
 /obj/structure/table/reinforced,
@@ -11742,7 +11742,7 @@
 	},
 /area/syndicate_mothership)
 "DL" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -11897,7 +11897,7 @@
 	},
 /area/admin)
 "Hj" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/tdome)
 "Hp" = (
 /turf/open/floor/holofloor{
@@ -11907,7 +11907,7 @@
 	},
 /area/holodeck/source_theatre)
 "Hr" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/syndicate_mothership/jail)
 "Hu" = (
 /obj/structure/rack,
@@ -12312,7 +12312,7 @@
 	},
 /area/centcom/control)
 "NW" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 1
 	},
@@ -12411,7 +12411,7 @@
 	},
 /area/centcom/specops)
 "Qc" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (SOUTHEAST)";
 	icon_state = "fakewindows";
 	dir = 6
@@ -12493,7 +12493,7 @@
 	},
 /area/centcom/specops)
 "Ri" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	tag = "icon-fakewindows (NORTHEAST)";
 	icon_state = "fakewindows";
 	dir = 5
@@ -12515,7 +12515,7 @@
 /turf/open/floor/beach/sand,
 /area/holodeck/source_beach)
 "RX" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-iron10";
 	icon_state = "iron10"
 	},
@@ -12685,7 +12685,7 @@
 	},
 /area/holodeck/source_thunderdomecourt)
 "UZ" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 8
 	},
@@ -12701,7 +12701,7 @@
 	},
 /area/syndicate_mothership/jail)
 "Vz" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/ai_multicam_room)
 "VA" = (
 /obj/effect/decal/warning_stripes/northwest,
@@ -12926,7 +12926,7 @@
 /turf/open/floor/beach/coastline,
 /area/holodeck/source_beach)
 "ZE" = (
-/turf/unsimulated/wall/fakeglass,
+/turf/closed/staticwall/fakeglass,
 /area/syndicate_mothership/jail)
 "ZR" = (
 /turf/open/floor/holofloor{

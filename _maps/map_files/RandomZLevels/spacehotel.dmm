@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock"
 	},
@@ -9,12 +9,12 @@
 	requires_power = 0
 	})
 "ab" = (
-/turf/unsimulated/wall/metal,
+/turf/closed/staticwall/metal,
 /area/awaymission/undersea{
 	requires_power = 0
 	})
 "ac" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock"
 	},
@@ -23,13 +23,13 @@
 /turf/open/floor/plating/lava/smooth,
 /area/awaymission)
 "ae" = (
-/turf/unsimulated/wall/metal,
+/turf/closed/staticwall/metal,
 /area/awaymission{
 	name = "Amazing Place";
 	requires_power = 0
 	})
 "af" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dynamic_lighting = 0;
 	icon = null
 	},
@@ -276,13 +276,13 @@
 	requires_power = 0
 	})
 "aC" = (
-/turf/unsimulated/wall/metal,
+/turf/closed/staticwall/metal,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
 	})
 "aD" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dynamic_lighting = 0;
 	icon = null
 	},
@@ -436,7 +436,7 @@
 	requires_power = 0
 	})
 "aR" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows";
 	opacity = 1
@@ -446,7 +446,7 @@
 	requires_power = 0
 	})
 "aS" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 4;
 	icon_state = "fakewindows";
 	opacity = 0
@@ -469,7 +469,7 @@
 	requires_power = 0
 	})
 "aU" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows";
 	opacity = 0
@@ -479,7 +479,7 @@
 	requires_power = 0
 	})
 "aV" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 4;
 	icon_state = "fakewindows";
 	opacity = 1
@@ -575,17 +575,17 @@
 /turf/open/beach/sand,
 /area/awaymission/beach)
 "bc" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon_state = "sandstone6"
 	},
 /area/awaymission/beach)
 "bd" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon_state = "sandstone12"
 	},
 /area/awaymission/beach)
 "be" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon_state = "sandstone10"
 	},
 /area/awaymission/beach)
@@ -714,12 +714,12 @@
 /turf/open/beach/sand,
 /area/awaymission/beach)
 "bo" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon_state = "sandstone3"
 	},
 /area/awaymission/beach)
 "bp" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dynamic_lighting = 0;
 	icon = null
 	},
@@ -840,7 +840,7 @@
 /turf/open/beach/sand,
 /area/awaymission/beach)
 "bA" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon_state = "sandstone1"
 	},
 /area/awaymission/beach)
@@ -1271,7 +1271,7 @@
 	requires_power = 0
 	})
 "cl" = (
-/turf/unsimulated/wall/metal,
+/turf/closed/staticwall/metal,
 /area/awaymission/spacehotel)
 "cm" = (
 /obj/structure/sink{
@@ -1617,7 +1617,7 @@
 	})
 "cR" = (
 /obj/machinery/poolcontroller/invisible/sea,
-/turf/unsimulated/wall/metal,
+/turf/closed/staticwall/metal,
 /area/awaymission/undersea{
 	requires_power = 0
 	})
@@ -2070,7 +2070,7 @@
 	requires_power = 0
 	})
 "dJ" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon_state = "sandstone2"
 	},
 /area/awaymission)
@@ -2082,17 +2082,17 @@
 /turf/template_noop,
 /area/awaymission)
 "dL" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon_state = "sandstone5"
 	},
 /area/awaymission)
 "dM" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon_state = "sandstone12"
 	},
 /area/awaymission)
 "dN" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon_state = "sandstone9"
 	},
 /area/awaymission)
@@ -2106,43 +2106,43 @@
 /turf/space,
 /area/space/nearstation)
 "dQ" = (
-/turf/unsimulated/wall,
+/turf/closed/staticwall,
 /area/space/nearstation)
 "dR" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows";
 	opacity = 0
 	},
 /area/space/nearstation)
 "dS" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/space/nearstation)
 "dT" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 4;
 	icon_state = "fakewindows";
 	opacity = 0
 	},
 /area/space/nearstation)
 "dU" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows";
 	opacity = 0
 	},
 /area/awaymission/spacehotel)
 "dV" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/awaymission/spacehotel)
 "dW" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 4;
 	icon_state = "fakewindows";
 	opacity = 0
@@ -2396,7 +2396,7 @@
 /turf/unsimulated/floor/carpet,
 /area/awaymission/spacehotel)
 "eB" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 1
 	},
@@ -2412,7 +2412,7 @@
 /turf/unsimulated/floor/carpet,
 /area/awaymission/spacehotel)
 "eE" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows2";
 	dir = 1
 	},
@@ -2453,7 +2453,7 @@
 /turf/unsimulated/floor/carpet,
 /area/awaymission/spacehotel)
 "eL" = (
-/turf/unsimulated/wall/fakeglass,
+/turf/closed/staticwall/fakeglass,
 /area/space/nearstation)
 "eM" = (
 /turf/unsimulated/floor{
@@ -2672,7 +2672,7 @@
 /turf/open/beach/water,
 /area/awaymission/spacehotel)
 "fu" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows3"
 	},
 /area/space/nearstation)
@@ -2704,7 +2704,7 @@
 /area/awaymission/spacehotel)
 "fz" = (
 /obj/structure/mirror,
-/turf/unsimulated/wall/metal,
+/turf/closed/staticwall/metal,
 /area/awaymission/spacehotel)
 "fA" = (
 /obj/effect/decal{
@@ -2854,7 +2854,7 @@
 /turf/open/shuttle/floor,
 /area/awaymission/spacehotel)
 "fW" = (
-/turf/unsimulated/wall/metal,
+/turf/closed/staticwall/metal,
 /area/awaymission)
 "fX" = (
 /obj/effect/levelref{
@@ -3149,7 +3149,7 @@
 /turf/template_noop,
 /area/awaymission/spacehotel)
 "gK" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 1
 	},
@@ -3190,7 +3190,7 @@
 	},
 /area/awaymission/spacehotel)
 "gQ" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows2";
 	dir = 1
 	},
@@ -3263,7 +3263,7 @@
 	},
 /area/awaymission/spacehotel)
 "hb" = (
-/turf/unsimulated/wall/fakeglass,
+/turf/closed/staticwall/fakeglass,
 /area/awaymission/spacehotel)
 "hc" = (
 /obj/machinery/vending/dinnerware,
@@ -3395,7 +3395,7 @@
 /turf/unsimulated/floor,
 /area/awaymission/spacehotel)
 "hw" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dynamic_lighting = 0;
 	icon = null
 	},
@@ -3428,7 +3428,7 @@
 	},
 /area/awaymission/spacehotel)
 "hA" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows3"
 	},
 /area/awaymission/spacehotel)
@@ -3660,7 +3660,7 @@
 	},
 /area/awaymission/spacehotel)
 "ie" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 1;
 	icon_state = "fakewindows2"
 	},
@@ -3733,7 +3733,7 @@
 /area/awaymission/spacehotel)
 "in" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/unsimulated/wall/metal,
+/turf/closed/staticwall/metal,
 /area/awaymission/spacehotel)
 "io" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -3830,7 +3830,7 @@
 /turf/unsimulated/floor/grass,
 /area/awaymission/spacehotel)
 "iD" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	icon = 'icons/turf/walls/cult_wall.dmi';
 	icon_state = "cult";
 	desc = "The patterns engraved on the wall seem to shift as you try to focus on them. You feel sick"
@@ -4539,13 +4539,13 @@
 /turf/unsimulated/floor/carpet,
 /area/awaymission/spacehotel/reception)
 "kx" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 10;
 	icon_state = "fakewindows"
 	},
 /area/space/nearstation)
 "ky" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 4;
 	icon_state = "fakewindows";
 	opacity = 1
@@ -4558,13 +4558,13 @@
 /turf/unsimulated/floor/plating,
 /area/awaymission/spacehotel)
 "kA" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/space/nearstation)
 "kB" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 6
 	},
@@ -4583,19 +4583,19 @@
 	},
 /area/awaymission)
 "kE" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/awaymission)
 "kF" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/awaymission)
 "kG" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 4;
 	icon_state = "fakewindows";
 	opacity = 1
@@ -4636,7 +4636,7 @@
 	},
 /area/space/nearstation)
 "kN" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	icon_state = "fakewindows3"
 	},
 /area/awaymission)

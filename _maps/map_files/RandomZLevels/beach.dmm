@@ -750,19 +750,19 @@
 /turf/open/beach/sand/dense,
 /area/awaymission/beach)
 "cD" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-sandstone12";
 	icon_state = "sandstone12"
 	},
 /area/awaymission/beach)
 "cE" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-sandstone6";
 	icon_state = "sandstone6"
 	},
 /area/awaymission/beach)
 "cF" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-sandstone10";
 	icon_state = "sandstone10"
 	},
@@ -778,13 +778,13 @@
 /turf/open/beach/sand,
 /area/awaymission/beach)
 "cH" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-sandstone3";
 	icon_state = "sandstone3"
 	},
 /area/awaymission/beach)
 "cI" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-sandstone1";
 	icon_state = "sandstone1"
 	},
@@ -1067,7 +1067,7 @@
 	},
 /area/awaymission/beach)
 "dD" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	tag = "icon-sandstone0";
 	icon_state = "sandstone0"
 	},

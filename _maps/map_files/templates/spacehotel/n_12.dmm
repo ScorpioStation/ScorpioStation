@@ -97,7 +97,7 @@
 	},
 /area/template_noop)
 "o" = (
-/turf/unsimulated/wall/metal,
+/turf/closed/staticwall/metal,
 /area/template_noop)
 "p" = (
 /obj/effect/view_portal/visual{

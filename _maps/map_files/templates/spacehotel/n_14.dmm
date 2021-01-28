@@ -93,7 +93,7 @@
 	},
 /area/template_noop)
 "p" = (
-/turf/unsimulated/wall/metal,
+/turf/closed/staticwall/metal,
 /area/template_noop)
 
 (1,1,1) = {"

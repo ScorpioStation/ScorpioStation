@@ -41,14 +41,14 @@
 /turf/unsimulated/floor/carpet,
 /area/template_noop)
 "i" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows";
 	opacity = 1
 	},
 /area/template_noop)
 "j" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 4;
 	icon_state = "fakewindows";
 	opacity = 0
@@ -64,21 +64,21 @@
 /turf/unsimulated/floor,
 /area/template_noop)
 "l" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows";
 	opacity = 0
 	},
 /area/template_noop)
 "m" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/staticwall/fakeglass{
 	dir = 4;
 	icon_state = "fakewindows";
 	opacity = 1
 	},
 /area/template_noop)
 "n" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dynamic_lighting = 0;
 	icon = null
 	},

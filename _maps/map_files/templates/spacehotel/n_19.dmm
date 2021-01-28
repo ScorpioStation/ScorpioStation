@@ -3,7 +3,7 @@
 /turf/template_noop,
 /area/template_noop)
 "b" = (
-/turf/unsimulated/wall/metal,
+/turf/closed/staticwall/metal,
 /area/template_noop)
 "c" = (
 /obj/effect/view_portal{
@@ -28,7 +28,7 @@
 	},
 /area/template_noop)
 "e" = (
-/turf/unsimulated/wall{
+/turf/closed/staticwall{
 	dynamic_lighting = 0;
 	icon = null
 	},
