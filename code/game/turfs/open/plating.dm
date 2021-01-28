@@ -6,7 +6,7 @@
 	floor_tile = null
 	broken_states = list("damaged1", "damaged2", "damaged3", "damaged4", "damaged5")
 	burnt_states = list("floorscorched1", "floorscorched2")
-	locked_turf = FALSE
+	indesctructible_turf = FALSE
 
 	footstep_sounds = list(
 	"human" = list('sound/effects/footstep/plating_human.ogg'),
@@ -40,7 +40,7 @@
 		. += "<span class='warning'>It has been unfastened.</span>"
 
 /turf/open/floor/plating/attackby(obj/item/C, mob/user, params)
-	if(locked_turf)
+	if(indesctructible_turf)
 		return FALSE
 	if(..())
 		return TRUE
@@ -74,7 +74,7 @@
 		return TRUE
 
 /turf/open/floor/plating/screwdriver_act(mob/user, obj/item/I)
-	if(locked_turf)
+	if(indesctructible_turf)
 		return
 	. = TRUE
 	if(!I.tool_use_check(user, 0))
@@ -87,7 +87,7 @@
 	unfastened = !unfastened
 
 /turf/open/floor/plating/welder_act(mob/user, obj/item/I)
-	if(locked_turf)
+	if(indesctructible_turf)
 		return
 	if(!broken && !burnt && !unfastened)
 		return
@@ -110,7 +110,7 @@
 		update_icon()
 
 /turf/open/floor/plating/remove_plating(mob/user)
-	if(locked_turf)
+	if(indesctructible_turf)
 		return
 	if(baseturf == /turf/space)
 		ReplaceWithLattice()
@@ -124,7 +124,7 @@
 	oxygen = 0
 	nitrogen = 0
 	temperature = TCMB
-	locked_turf = FALSE
+	indesctructible_turf = FALSE
 
 /turf/open/floor/plating/airless/Initialize(mapload)
 	. = ..()
@@ -136,7 +136,7 @@
 	oxygen = 0
 	nitrogen = 0
 	temperature = TCMB
-	locked_turf = TRUE
+	indesctructible_turf = TRUE
 
 /turf/open/floor/plating/staticairless/Initialize(mapload)
 	. = ..()

@@ -13,20 +13,20 @@
 	dir = 4;
 	id = "room_s"
 	},
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	dir = 8;
 	icon_state = "whiteblue"
 	},
 /area/template_noop)
 "d" = (
-/turf/open/locked/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/template_noop)
 "e" = (
 /obj/structure/rack,
 /obj/item/twohanded/dualsaber/toy,
 /obj/item/twohanded/toy/chainsaw,
 /obj/item/toy/foamblade,
-/turf/open/locked/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/template_noop)
 "f" = (
 /obj/structure/rack,
@@ -35,41 +35,41 @@
 	},
 /obj/item/toy/snappop,
 /obj/item/toy/redbutton,
-/turf/open/locked/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/template_noop)
 "g" = (
 /obj/structure/rack,
 /obj/item/deck/cards,
 /obj/item/toy/figure/secofficer,
-/turf/open/locked/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/template_noop)
 "h" = (
 /obj/structure/dresser,
-/turf/open/locked/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/template_noop)
 "i" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green,
-/turf/open/locked/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/template_noop)
 "j" = (
 /obj/structure/window/reinforced/polarized{
 	dir = 4;
 	id = "room_s"
 	},
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	dir = 8;
 	icon_state = "whiteblue"
 	},
 /area/template_noop)
 "k" = (
 /obj/item/toy/snappop,
-/turf/open/locked/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/template_noop)
 "l" = (
 /obj/structure/bed,
 /obj/item/bedsheet/patriot,
-/turf/open/locked/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/template_noop)
 "m" = (
 /obj/machinery/light{
@@ -82,13 +82,13 @@
 	range = 5
 	},
 /obj/item/soap/nanotrasen,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	dir = 1;
 	icon_state = "whiteblue"
 	},
 /area/template_noop)
 "n" = (
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	dir = 1;
 	icon_state = "whiteblue"
 	},
@@ -98,7 +98,7 @@
 	dir = 4;
 	id = "room_s"
 	},
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	dir = 1;
 	icon_state = "whitebluecorner"
 	},
@@ -113,7 +113,7 @@
 /obj/structure/mirror{
 	pixel_x = -28
 	},
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
@@ -121,13 +121,13 @@
 /obj/structure/toilet{
 	dir = 1
 	},
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
 "r" = (
 /obj/machinery/door/window/eastleft,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)

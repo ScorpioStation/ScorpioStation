@@ -20,7 +20,7 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	plane = FLOOR_PLANE
 	thermal_conductivity = 0.040
 	heat_capacity = 10000
-	locked_turf = FALSE
+	indesctructible_turf = FALSE
 	var/icon_regular_floor = "floor" //used to remember what icon the tile should have by default
 	var/icon_plating = "plating"
 	var/lava = FALSE
@@ -50,7 +50,7 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 //	return ..()
 
 /turf/open/floor/ex_act(severity)
-	if(is_shielded() || locked_turf)
+	if(is_shielded() || indesctructible_turf)
 		return
 	switch(severity)
 		if(1.0)
@@ -77,7 +77,7 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	return
 
 /turf/open/floor/burn_down()
-	if(locked_turf)
+	if(indesctructible_turf)
 		return
 	ex_act(2)
 
@@ -101,7 +101,7 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	T.break_tile()
 
 /turf/open/floor/break_tile()
-	if(locked_turf)
+	if(indesctructible_turf)
 		return
 	if(broken)
 		return
@@ -110,7 +110,7 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	update_icon()
 
 /turf/open/floor/burn_tile()
-	if(locked_turf)
+	if(indesctructible_turf)
 		return
 	if(burnt)
 		return
@@ -142,7 +142,7 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	return W
 
 /turf/open/floor/attackby(obj/item/C as obj, mob/user as mob, params)
-	if(locked_turf)
+	if(indesctructible_turf)
 		return TRUE
 	if(!C || !user)
 		return TRUE
@@ -177,7 +177,7 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	return FALSE
 
 /turf/open/floor/crowbar_act(mob/user, obj/item/I)
-	if(locked_turf)
+	if(indesctructible_turf)
 		return
 	if(!intact)
 		return
@@ -187,7 +187,7 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	pry_tile(I, user, TRUE)
 
 /turf/open/floor/proc/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
-	if(locked_turf)
+	if(indesctructible_turf)
 		return
 	if(T.turf_type == type)
 		return
@@ -200,14 +200,14 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	P.attackby(T, user, params)
 
 /turf/open/floor/proc/pry_tile(obj/item/C, mob/user, silent = FALSE)
-	if(locked_turf)
+	if(indesctructible_turf)
 		return
 	if(!silent)
 		playsound(src, C.usesound, 80, 1)
 	return remove_tile(user, silent)
 
 /turf/open/floor/proc/remove_tile(mob/user, silent = FALSE, make_tile = TRUE)
-	if(locked_turf)
+	if(indesctructible_turf)
 		return
 	if(broken || burnt)
 		broken = 0
@@ -223,7 +223,7 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	return make_plating()
 
 /turf/open/floor/singularity_pull(S, current_size)
-	if(locked_turf)
+	if(indesctructible_turf)
 		return
 	..()
 	if(current_size == STAGE_THREE)
@@ -254,12 +254,12 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 		ChangeTurf(/turf/open/floor/clockwork)
 
 /turf/open/floor/acid_melt()
-	if(locked_turf)
+	if(indesctructible_turf)
 		return
 	ChangeTurf(baseturf)
 
 /turf/open/floor/can_have_cabling()
-	if(locked_turf)
+	if(indesctructible_turf)
 		return FALSE
 	return !burnt && !broken
 
@@ -424,4 +424,4 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	name = "snow"
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "snow"
-	locked_turf = FALSE
+	indesctructible_turf = FALSE

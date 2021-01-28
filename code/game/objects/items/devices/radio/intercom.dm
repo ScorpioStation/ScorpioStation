@@ -252,18 +252,18 @@
 /obj/item/radio/intercom/locked
 	freqlock = TRUE
 
-/obj/item/radio/intercom/locked/ai_private
+/obj/item/radio/intercom/indestructible/ai_private
 	name = "\improper AI intercom"
 	frequency = AI_FREQ
 
-/obj/item/radio/intercom/locked/confessional
+/obj/item/radio/intercom/indestructible/confessional
 	name = "confessional intercom"
 	frequency = 1480
 
-/obj/item/radio/intercom/locked/prison
+/obj/item/radio/intercom/indestructible/prison
 	name = "\improper prison intercom"
 	desc = "Talk through this. It looks like it has been modified to not broadcast."
 
-/obj/item/radio/intercom/locked/prison/New()
+/obj/item/radio/intercom/indestructible/prison/New()
 	..()
 	wires.cut(WIRE_RADIO_TRANSMIT)

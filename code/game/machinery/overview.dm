@@ -55,7 +55,7 @@
 						sense = FALSE
 
 					if("/turf/open/floor")
-						if(T.locked_turf)
+						if(T.indesctructible_turf)
 							colour = rgb(150,150,150)
 							var/turf/open/floor/TF = T
 							if(TF.burnt)
@@ -73,7 +73,7 @@
 					if("/turf/closed/wall/r_wall")
 						colour = rgb(128,96,96)
 
-					if("/turf/closed/locked/wall", "/turf/closed/locked/wall/other")
+					if("/turf/closed/ind_wall", "/turf/closed/ind_wall/other")
 						colour  = rgb(140,140,140)
 					else
 						colour = rgb(0,40,0)
@@ -209,7 +209,7 @@
 						sense = FALSE
 
 					if("/turf/open/floor", "/turf/open/floor/engine")
-						if(T.locked_turf)
+						if(T.indesctructible_turf)
 							colour  = rgb(240,240,240)
 						else
 							var/datum/gas_mixture/environment = T.return_air()
@@ -228,7 +228,7 @@
 					if("/turf/closed/wall/r_wall")
 						colour = rgb(128,96,96)
 
-					if("/turf/closed/locked/wall", "/turf/closed/locked/wall/other")
+					if("/turf/closed/ind_wall", "/turf/closed/ind_wall/other")
 						colour  = rgb(140,140,140)
 
 					else

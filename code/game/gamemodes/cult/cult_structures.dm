@@ -199,7 +199,7 @@ GLOBAL_LIST_INIT(blacklisted_pylon_turfs, typecacheof(list(
 	/turf/open/floor/chasm,
 	/turf/closed/wall/cult,
 	/turf/closed/wall/cult/artificer,
-	/turf/closed/locked/wall
+	/turf/closed/ind_wall
 	)))
 
 /obj/structure/cult/functional/pylon

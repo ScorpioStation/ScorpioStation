@@ -12888,7 +12888,7 @@
 	icon_state = "heater";
 	dir = 8
 	},
-/turf/open/locked/floor,
+/turf/open/ind_floor,
 /area/shuttle/specops)
 "aDC" = (
 /obj/machinery/computer/security/telescreen{
@@ -83649,7 +83649,7 @@
 /obj/item/plant_analyzer,
 /obj/item/cultivator,
 /obj/item/reagent_containers/spray/plantbgone,
-/obj/item/radio/intercom/locked/prison{
+/obj/item/radio/intercom/indestructible/prison{
 	pixel_x = 0;
 	pixel_y = -29
 	},
@@ -84428,7 +84428,7 @@
 /obj/item/plant_analyzer,
 /obj/item/cultivator,
 /obj/item/reagent_containers/spray/plantbgone,
-/obj/item/radio/intercom/locked/prison{
+/obj/item/radio/intercom/indestructible/prison{
 	pixel_x = 0;
 	pixel_y = 25
 	},

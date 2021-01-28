@@ -4506,7 +4506,7 @@
 	pixel_y = 7
 	},
 /obj/item/pen,
-/obj/item/radio/intercom/locked/prison{
+/obj/item/radio/intercom/indestructible/prison{
 	pixel_x = 0;
 	pixel_y = 25
 	},
@@ -6513,7 +6513,7 @@
 	},
 /area/security/main)
 "ams" = (
-/obj/item/radio/intercom/locked/prison{
+/obj/item/radio/intercom/indestructible/prison{
 	pixel_x = -25;
 	pixel_y = 0
 	},
@@ -7085,7 +7085,7 @@
 	dir = 6;
 	network = list("Prison","SS13")
 	},
-/obj/item/radio/intercom/locked/prison{
+/obj/item/radio/intercom/indestructible/prison{
 	pixel_x = -25;
 	pixel_y = 0
 	},
@@ -33730,7 +33730,7 @@
 /area/crew_quarters/bar)
 "bjL" = (
 /obj/structure/chair,
-/obj/item/radio/intercom/locked/confessional{
+/obj/item/radio/intercom/indestructible/confessional{
 	pixel_x = 28
 	},
 /turf/open/floor/plasteel{
@@ -34766,7 +34766,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/item/radio/intercom/locked/confessional{
+/obj/item/radio/intercom/indestructible/confessional{
 	pixel_x = 28
 	},
 /turf/open/floor/plasteel{
@@ -43013,7 +43013,7 @@
 	dir = 8;
 	icon_state = "heater"
 	},
-/turf/open/locked/floor,
+/turf/open/ind_floor,
 /area/shuttle/specops)
 "bCe" = (
 /obj/machinery/camera{
@@ -94405,7 +94405,7 @@
 	icon_state = "1-2";
 	tag = ""
 	},
-/obj/item/radio/intercom/locked/ai_private{
+/obj/item/radio/intercom/indestructible/ai_private{
 	broadcasting = 1;
 	listening = 0;
 	pixel_x = -29;
@@ -95882,7 +95882,7 @@
 /obj/machinery/porta_turret{
 	dir = 1
 	},
-/obj/item/radio/intercom/locked/ai_private{
+/obj/item/radio/intercom/indestructible/ai_private{
 	broadcasting = 1;
 	listening = 0;
 	pixel_y = -29

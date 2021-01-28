@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/closed/locked/wall{
+/turf/closed/ind_wall{
 	icon_state = "rock";
 	name = "rock"
 	},

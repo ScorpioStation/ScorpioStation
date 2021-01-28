@@ -339,7 +339,7 @@
 /obj/effect/decal/snow/sand/edge{
 	name = "rough sand"
 	},
-/turf/open/locked/floor/grass,
+/turf/open/ind_floor/grass,
 /area/awaymission/beach)
 "bo" = (
 /obj/effect/decal/snow/sand/edge{
@@ -348,13 +348,13 @@
 	icon_state = "gravsnow_corner";
 	dir = 10
 	},
-/turf/open/locked/floor/grass,
+/turf/open/ind_floor/grass,
 /area/awaymission/beach)
 "bp" = (
 /obj/effect/decal/snow/sand/surround{
 	name = "rough sand"
 	},
-/turf/open/locked/floor/grass,
+/turf/open/ind_floor/grass,
 /area/awaymission/beach)
 "bq" = (
 /obj/effect/decal/snow/sand/edge{
@@ -363,7 +363,7 @@
 	icon_state = "gravsnow_corner";
 	dir = 6
 	},
-/turf/open/locked/floor/grass,
+/turf/open/ind_floor/grass,
 /area/awaymission/beach)
 "br" = (
 /obj/effect/decal/snow/sand/edge{
@@ -750,19 +750,19 @@
 /turf/open/beach/sand/dense,
 /area/awaymission/beach)
 "cD" = (
-/turf/closed/locked/wall{
+/turf/closed/ind_wall{
 	tag = "icon-sandstone12";
 	icon_state = "sandstone12"
 	},
 /area/awaymission/beach)
 "cE" = (
-/turf/closed/locked/wall{
+/turf/closed/ind_wall{
 	tag = "icon-sandstone6";
 	icon_state = "sandstone6"
 	},
 /area/awaymission/beach)
 "cF" = (
-/turf/closed/locked/wall{
+/turf/closed/ind_wall{
 	tag = "icon-sandstone10";
 	icon_state = "sandstone10"
 	},
@@ -778,13 +778,13 @@
 /turf/open/beach/sand,
 /area/awaymission/beach)
 "cH" = (
-/turf/closed/locked/wall{
+/turf/closed/ind_wall{
 	tag = "icon-sandstone3";
 	icon_state = "sandstone3"
 	},
 /area/awaymission/beach)
 "cI" = (
-/turf/closed/locked/wall{
+/turf/closed/ind_wall{
 	tag = "icon-sandstone1";
 	icon_state = "sandstone1"
 	},
@@ -831,7 +831,7 @@
 /area/awaymission/beach)
 "cO" = (
 /obj/structure/chair/stool,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	tag = "icon-wood";
 	icon_state = "wood"
 	},
@@ -862,7 +862,7 @@
 	icon_state = "black";
 	name = "formal wardrobe"
 	},
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	tag = "icon-wood";
 	icon_state = "wood"
 	},
@@ -875,14 +875,14 @@
 /area/awaymission/beach)
 "cU" = (
 /obj/structure/closet/secure_closet/bar,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	tag = "icon-wood";
 	icon_state = "wood"
 	},
 /area/awaymission/beach)
 "cV" = (
 /obj/structure/table/wood,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	tag = "icon-wood";
 	icon_state = "wood"
 	},
@@ -890,7 +890,7 @@
 "cW" = (
 /obj/structure/table/wood,
 /obj/item/book/manual/barman_recipes,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	tag = "icon-wood";
 	icon_state = "wood"
 	},
@@ -898,7 +898,7 @@
 "cX" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/shaker,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	tag = "icon-wood";
 	icon_state = "wood"
 	},
@@ -911,7 +911,7 @@
 /obj/machinery/vending/boozeomat{
 	emagged = 1
 	},
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	tag = "icon-wood";
 	icon_state = "wood"
 	},
@@ -919,14 +919,14 @@
 "da" = (
 /obj/structure/table/wood,
 /obj/item/clothing/glasses/sunglasses,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	tag = "icon-wood";
 	icon_state = "wood"
 	},
 /area/awaymission/beach)
 "db" = (
 /obj/machinery/vending/cola,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	tag = "icon-wood";
 	icon_state = "wood"
 	},
@@ -968,21 +968,21 @@
 /area/awaymission/beach)
 "dl" = (
 /obj/machinery/vending/cigarette,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	tag = "icon-wood";
 	icon_state = "wood"
 	},
 /area/awaymission/beach)
 "dm" = (
 /obj/machinery/vending/snack,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	tag = "icon-wood";
 	icon_state = "wood"
 	},
 /area/awaymission/beach)
 "dn" = (
 /obj/structure/curtain/open,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	tag = "icon-wood";
 	icon_state = "wood"
 	},
@@ -1004,7 +1004,7 @@
 	},
 /area/awaymission/beach)
 "dq" = (
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	tag = "icon-wood";
 	icon_state = "wood"
 	},
@@ -1049,7 +1049,7 @@
 	tag = "icon-wood";
 	icon_state = "wood"
 	},
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	tag = "icon-wood";
 	icon_state = "wood"
 	},
@@ -1061,13 +1061,13 @@
 "dC" = (
 /obj/structure/table/wood,
 /obj/machinery/chem_dispenser/soda,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	tag = "icon-wood";
 	icon_state = "wood"
 	},
 /area/awaymission/beach)
 "dD" = (
-/turf/closed/locked/wall{
+/turf/closed/ind_wall{
 	tag = "icon-sandstone0";
 	icon_state = "sandstone0"
 	},
@@ -1082,7 +1082,7 @@
 "dF" = (
 /obj/structure/table/wood,
 /obj/machinery/chem_dispenser/beer,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	tag = "icon-wood";
 	icon_state = "wood"
 	},

@@ -188,7 +188,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors/explored)
 "aE" = (
-/obj/item/radio/intercom/locked/prison{
+/obj/item/radio/intercom/indestructible/prison{
 	dir = 2;
 	pixel_y = 24
 	},

@@ -10,7 +10,7 @@
 	light_range = 2
 	light_color = "#FFC040"
 	intact = TRUE
-	locked_turf = TRUE
+	indesctructible_turf = TRUE
 
 /turf/open/lava/Entered(mob/living/M, atom/OL, ignoreRest = 0)
 	if(istype(M))

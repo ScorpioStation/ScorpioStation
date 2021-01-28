@@ -511,7 +511,7 @@
 /area/shuttle/syndicate)
 "aaZ" = (
 /obj/effect/spawner/window/reinforced,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/syndicate)
@@ -818,7 +818,7 @@
 	pixel_y = 5
 	},
 /obj/item/radio/beacon/syndicate/bomb,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	icon_state = "floor4"
 	},
 /area/shuttle/syndicate)
@@ -1484,7 +1484,7 @@
 	c_tag = "Prison Chamber";
 	network = list("SS13","Prison")
 	},
-/obj/item/radio/intercom/locked/prison{
+/obj/item/radio/intercom/indestructible/prison{
 	dir = 2;
 	name = "Prison Intercom (General)";
 	pixel_y = 24
@@ -1851,7 +1851,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/obj/item/radio/intercom/locked/prison{
+/obj/item/radio/intercom/indestructible/prison{
 	dir = 2;
 	name = "Prison Intercom (General)";
 	pixel_y = -28

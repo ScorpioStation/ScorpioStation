@@ -453,7 +453,7 @@
 	req_access_txt = "150"
 	},
 /obj/structure/fans/tiny,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	name = "plating"
 	},
 /area/syndicate_depot/core)
@@ -463,7 +463,7 @@
 	req_access_txt = "150"
 	},
 /obj/structure/fans/tiny,
-/turf/open/locked/floor{
+/turf/open/ind_floor{
 	name = "plating"
 	},
 /area/syndicate_depot/outer)

@@ -3,7 +3,7 @@
 	icon = 'icons/misc/beach.dmi'
 	var/water_overlay_image = null
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-	locked_turf = TRUE
+	indesctructible_turf = TRUE
 
 /turf/open/beach/Initialize(mapload)
 	. = ..()
@@ -126,4 +126,4 @@
 	opacity = TRUE
 	explosion_block = 2
 	mouse_opacity = MOUSE_OPACITY_ICON
-	locked_turf = TRUE
+	indesctructible_turf = TRUE

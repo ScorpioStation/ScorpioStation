@@ -1,41 +1,41 @@
-/turf/open/locked/floor
+/turf/open/ind_floor	// Indestructible Floor
 	name = "floor"
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "Floor3"
-	locked_turf = TRUE
+	indesctructible_turf = TRUE
 
 //Grass
-/turf/open/locked/floor/grass
+/turf/open/ind_floor/grass
 	name = "grass patch"
 	icon_state = "grass1"
 
-/turf/open/locked/floor/grass/Initialize(mapload)
+/turf/open/ind_floor/grass/Initialize(mapload)
 	. = ..()
 	icon_state = "grass[rand(1,4)]"
 
 //Snow
-/turf/open/locked/floor/snow
+/turf/open/ind_floor/snow
 	name = "snow"
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "snow"
 
 //Abductor
-/turf/open/locked/floor/abductor
+/turf/open/ind_floor/abductor
 	name = "alien floor"
 	icon_state = "alienpod1"
 
-/turf/open/locked/floor/abductor/Initialize(mapload)
+/turf/open/ind_floor/abductor/Initialize(mapload)
 	. = ..()
 	icon_state = "alienpod[rand(1,9)]"
 
 //Vox
-/turf/open/locked/floor/vox
+/turf/open/ind_floor/vox
 	icon_state = "dark"
 	nitrogen = 100
 	oxygen = 0
 
 //Carpet
-/turf/open/locked/floor/carpet
+/turf/open/ind_floor/carpet
 	name = "Carpet"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "carpet"
@@ -48,7 +48,7 @@
 	)
 
 //Wood
-/turf/open/locked/floor/wood
+/turf/open/ind_floor/wood
 	icon_state = "wood"
 
 	footstep_sounds = list(
