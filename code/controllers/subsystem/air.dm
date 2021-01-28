@@ -293,8 +293,7 @@ SUBSYSTEM_DEF(air)
 	// Clear active turfs - faster than removing every single turf in the world
 	// one-by-one, and Initalize_Atmos only ever adds `src` back in.
 	active_turfs.Cut()
-	for(var/thing in turfs_to_init)
-		var/turf/open/T = thing
+	for(var/turf/open/T in turfs_to_init) //Required typed list.
 		if(T.blocks_air)
 			continue
 		T.Initialize_Atmos(times_fired)
