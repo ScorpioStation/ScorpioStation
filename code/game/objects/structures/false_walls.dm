@@ -24,13 +24,13 @@
 	max_integrity = 100
 
 	canSmoothWith = list(
-	/turf/closed/wall,
-	/turf/closed/wall/r_wall,
-	/obj/structure/falsewall,
-	/obj/structure/falsewall/brass,
-	/obj/structure/falsewall/reinforced,  // WHY DO WE SMOOTH WITH FALSE R-WALLS WHEN WE DON'T SMOOTH WITH REAL R-WALLS. //because we do smooth with real r-walls now
-	/turf/closed/wall/rust,
-	/turf/closed/wall/r_wall/rust)
+		/turf/closed/wall,
+		/turf/closed/wall/r_wall,
+		/obj/structure/falsewall,
+		/obj/structure/falsewall/brass,
+		/obj/structure/falsewall/reinforced,  // WHY DO WE SMOOTH WITH FALSE R-WALLS WHEN WE DON'T SMOOTH WITH REAL R-WALLS. //because we do smooth with real r-walls now
+		/turf/closed/wall/rust,
+		/turf/closed/wall/r_wall/rust)
 	smooth = SMOOTH_TRUE
 
 /obj/structure/falsewall/New(loc)

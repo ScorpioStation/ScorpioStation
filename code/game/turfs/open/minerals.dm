@@ -1,6 +1,6 @@
 /**********************Mineral deposits**************************/
 
-/turf/closed/mineral //wall piece
+/turf/closed/mineral	//wall piece
 	name = "rock"
 	icon = 'icons/turf/mining.dmi'
 	icon_state = "rock"
@@ -8,7 +8,7 @@
 	smooth = SMOOTH_MORE | SMOOTH_BORDER
 	canSmoothWith = null
 	baseturf = /turf/open/floor/plating/asteroid/airless
-	opacity = 1
+	opacity = TRUE
 	density = TRUE
 	blocks_air = TRUE
 	layer = EDGED_TURF_LAYER

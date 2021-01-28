@@ -364,7 +364,7 @@
 		if(N_SOUTH|N_EAST|N_SOUTHEAST)
 			return SOUTHEAST
 		else
-			return 0
+			return FALSE
 
 //SSicon_smooth
 /proc/queue_smooth_neighbors(atom/A)
@@ -377,7 +377,7 @@
 /proc/queue_smooth(atom/A)
 	if(SSicon_smooth)
 		SSicon_smooth.smooth_queue[A] = A
-		SSicon_smooth.can_fire = 1
+		SSicon_smooth.can_fire = TRUE
 	else
 		smooth_icon(A)
 

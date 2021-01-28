@@ -4,13 +4,7 @@
 	thermal_conductivity = 0.05
 	heat_capacity = 0
 	layer = 2
-
-/turf/closed/shuttle/wall
-	name = "wall"
-	icon_state = "wall1"
-	opacity = 1
-	density = 1
-	blocks_air = 1
+	static_turf = TRUE
 
 /turf/open/shuttle/rpd_act(mob/user, obj/item/rpd/our_rpd)
 	if(our_rpd.mode == RPD_DELETE_MODE)//No pipes on shuttles
@@ -70,3 +64,18 @@
 	name = "skipjack floor"
 	oxygen = 0
 	nitrogen = MOLES_N2STANDARD + MOLES_O2STANDARD
+
+//The ~Freaking~ Shuttle Walls
+/turf/closed/shuttle/wall
+	name = "wall"
+	icon = 'icons/turf/shuttle.dmi'
+	icon_state = "wall1"
+	opacity = TRUE
+	density = TRUE
+	blocks_air = TRUE
+	static_turf = TRUE		// I guess? I don't want people using RPDs and welders on this, okay?
+	canSmoothWith = list(
+		/turf/closed/shuttle/wall,	//It smooths with itself	In this case, I assume it will use swall12, swall13, and etc for this purpose
+		/obj/structure/shuttle/window)	//Possibly a bad idea
+	smooth = SMOOTH_TRUE | SMOOTH_DIAGONAL
+

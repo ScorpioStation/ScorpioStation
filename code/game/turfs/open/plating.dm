@@ -99,7 +99,7 @@
 		if(!I.use_tool(src, user, 50, volume = I.tool_volume * 2)) //extra loud to let people know something's going down
 			return
 		new /obj/item/stack/tile/plasteel(get_turf(src))
-		remove_plating(user)
+		remove_plating(user)	// Heh heh heh.
 		return
 	if(I.use_tool(src, user, volume = I.tool_volume)) //If we got this far, something needs fixing
 		to_chat(user, "<span class='notice'>You fix some dents on the broken plating.</span>")
@@ -124,8 +124,20 @@
 	oxygen = 0
 	nitrogen = 0
 	temperature = TCMB
+	static_turf = FALSE
 
 /turf/open/floor/plating/airless/Initialize(mapload)
+	. = ..()
+	name = "plating"
+/turf/open/floor/plating/staticairless
+	icon_state = "plating"
+	name = "airless plating"
+	oxygen = 0
+	nitrogen = 0
+	temperature = TCMB
+	static_turf = TRUE
+
+/turf/open/floor/plating/staticairless/Initialize(mapload)
 	. = ..()
 	name = "plating"
 
@@ -202,20 +214,17 @@
 	. = ..()
 	icon_state = "alienpod[rand(1,9)]"
 
-//Snow Plating
+//Snow Plating - 'unsimulated' snow plating was not used
 /turf/open/floor/plating/snow
 	name = "snow"
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "snow"
 	temperature = T0C
-	static_turf = TRUE
 
-/turf/open/floor/plating/snow/concrete
+/turf/open/floor/plating/snow/concrete	// Is this even used?
 	name = "concrete"
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "concrete"
-	//Inherits static_turf = TRUE from parent /snow
-
 //Ice Plating
 /turf/open/floor/plating/ice
 	name = "ice sheet"

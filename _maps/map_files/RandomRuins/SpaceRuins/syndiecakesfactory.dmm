@@ -233,7 +233,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "xT" = (
-/turf/unsimulated/floor/plating/airless,
+/turf/open/floor/plating/staticairless,
 /area/space)
 "yU" = (
 /obj/item/stack/sheet/metal,
@@ -394,7 +394,7 @@
 /turf/open/floor/plating,
 /area/ruin/unpowered)
 "KS" = (
-/turf/unsimulated/floor/plating/airless,
+/turf/open/floor/plating/staticairless,
 /area/ruin)
 "Le" = (
 /obj/structure/cable{

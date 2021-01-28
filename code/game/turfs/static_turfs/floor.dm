@@ -4,6 +4,7 @@
 	icon_state = "Floor3"
 	static_turf = TRUE
 
+//Grass
 /turf/open/floor/grass
 	name = "grass patch"
 	icon_state = "grass1"
@@ -12,11 +13,13 @@
 	. = ..()
 	icon_state = "grass[rand(1,4)]"
 
+//Snow
 /turf/open/floor/snow
 	name = "snow"
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "snow"
 
+//Abductor
 /turf/open/floor/abductor
 	name = "alien floor"
 	icon_state = "alienpod1"
@@ -25,11 +28,13 @@
 	. = ..()
 	icon_state = "alienpod[rand(1,9)]"
 
+//Vox
 /turf/open/floor/vox
 	icon_state = "dark"
 	nitrogen = 100
 	oxygen = 0
 
+//Carpet
 /turf/open/floor/carpet
 	name = "Carpet"
 	icon = 'icons/turf/floors/carpet.dmi'
@@ -42,6 +47,7 @@
 		"xeno"  = list('sound/effects/footstep/carpet_xeno.ogg')
 	)
 
+//Wood
 /turf/open/floor/wood
 	icon_state = "wood"
 

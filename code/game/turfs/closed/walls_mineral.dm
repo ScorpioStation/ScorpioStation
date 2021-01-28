@@ -182,7 +182,7 @@
 	desc = "A wall with alien alloy plating."
 	icon = 'icons/turf/walls/abductor_wall.dmi'
 	icon_state = "abductor"
-	smooth = SMOOTH_TRUE|SMOOTH_DIAGONAL
+	smooth = SMOOTH_TRUE | SMOOTH_DIAGONAL
 	sheet_type = /obj/item/stack/sheet/mineral/abductor
 	explosion_block = 3
 	canSmoothWith = list(/turf/closed/wall/mineral/abductor, /obj/structure/falsewall/abductor)
@@ -197,7 +197,7 @@
 	explosion_block = 3
 	flags_2 = CHECK_RICOCHET_2
 	sheet_type = /obj/item/stack/sheet/mineral/titanium
-	smooth = SMOOTH_MORE|SMOOTH_DIAGONAL
+	smooth = SMOOTH_MORE | SMOOTH_DIAGONAL
 	canSmoothWith = list(/turf/closed/wall/mineral/titanium, /obj/machinery/door/airlock/shuttle, /obj/machinery/door/airlock, /obj/structure/window/full/shuttle, /obj/structure/shuttle/engine/heater, /obj/structure/falsewall/titanium)
 
 /turf/closed/wall/mineral/titanium/nodiagonal
@@ -240,7 +240,7 @@
 	desc = "An easily-compressable wall used for temporary shelter."
 	icon = 'icons/turf/walls/survival_pod_walls.dmi'
 	icon_state = "smooth"
-	smooth = SMOOTH_MORE|SMOOTH_DIAGONAL
+	smooth = SMOOTH_MORE | SMOOTH_DIAGONAL
 	canSmoothWith = list(/turf/closed/wall/mineral/titanium/survival, /obj/machinery/door/airlock, /obj/structure/window/full, /obj/structure/window/full/reinforced, /obj/structure/window/full/reinforced/tinted, /obj/structure/window/full/shuttle, /obj/structure/shuttle/engine)
 
 /turf/closed/wall/mineral/titanium/survival/nodiagonal
@@ -289,7 +289,7 @@
 	icon_state = "map-shuttle"
 	explosion_block = 4
 	sheet_type = /obj/item/stack/sheet/mineral/plastitanium
-	smooth = SMOOTH_MORE|SMOOTH_DIAGONAL
+	smooth = SMOOTH_MORE | SMOOTH_DIAGONAL
 	canSmoothWith = list(/turf/closed/wall/mineral/plastitanium, /obj/machinery/door/airlock/shuttle, /obj/machinery/door/airlock, /obj/structure/shuttle/engine, /obj/structure/falsewall/plastitanium)
 
 /turf/closed/wall/mineral/plastitanium/nodiagonal
