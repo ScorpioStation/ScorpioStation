@@ -22,19 +22,19 @@
 	dir = 8;
 	pixel_x = -32
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "e" = (
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "f" = (
 /obj/effect/decal/cleanable/pie_smudge,
 /obj/effect/decal/cleanable/flour,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "g" = (
 /obj/structure/dresser,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "h" = (
 /obj/structure/bed,
@@ -42,7 +42,7 @@
 /obj/effect/decal/cleanable/pie_smudge,
 /obj/effect/decal/cleanable/flour,
 /obj/item/grown/bananapeel/clownfish,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "i" = (
 /obj/structure/bed,
@@ -52,19 +52,19 @@
 	},
 /obj/effect/decal/cleanable/pie_smudge,
 /obj/item/grown/bananapeel/clownfish,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "j" = (
 /obj/structure/window/reinforced/polarized{
 	id = "room_n"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "k" = (
 /obj/machinery/door/window/southright,
 /obj/effect/decal/cleanable/pie_smudge,
 /obj/effect/decal/cleanable/flour,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "l" = (
 /obj/effect/decal/cleanable/pie_smudge,
@@ -72,12 +72,12 @@
 /obj/structure/window/reinforced/polarized{
 	id = "room_n"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "m" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/bananalamp,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "n" = (
 /obj/structure/sink{

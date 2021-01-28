@@ -225,6 +225,7 @@
 	name = "concrete"
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "concrete"
+
 //Ice Plating
 /turf/open/floor/plating/ice
 	name = "ice sheet"

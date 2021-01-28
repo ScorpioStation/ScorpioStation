@@ -21,7 +21,7 @@
 	},
 /area/template_noop)
 "d" = (
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "e" = (
 /obj/structure/rack,
@@ -29,7 +29,7 @@
 /obj/item/gun/magic/staff{
 	pixel_y = -4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "f" = (
 /obj/structure/rack,
@@ -50,7 +50,7 @@
 	pixel_x = 8;
 	pixel_y = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "g" = (
 /obj/structure/rack,
@@ -71,16 +71,16 @@
 	pixel_x = -8;
 	pixel_y = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "h" = (
 /obj/structure/dresser,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "i" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "j" = (
 /obj/effect/levelref{
@@ -104,7 +104,7 @@
 "l" = (
 /obj/structure/bed,
 /obj/item/bedsheet/wiz,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "m" = (
 /obj/machinery/light{

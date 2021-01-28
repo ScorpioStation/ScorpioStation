@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "b" = (
 /turf/unsimulated/floor{

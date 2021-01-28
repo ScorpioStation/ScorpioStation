@@ -7,38 +7,38 @@
 	dir = 8;
 	pixel_x = -32
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "c" = (
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "d" = (
 /obj/structure/dresser,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "e" = (
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "f" = (
 /obj/structure/bed,
 /obj/item/bedsheet,
 /obj/item/toy/plushie/deer,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "g" = (
 /obj/effect/decal/snow/sand/edge,
 /obj/effect/view_portal{
 	id = "snowland_room"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "h" = (
 /obj/structure/bed,
 /obj/item/bedsheet,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "i" = (
 /turf/closed/staticwall/fakeglass{

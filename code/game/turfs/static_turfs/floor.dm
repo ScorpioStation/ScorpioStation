@@ -1,41 +1,41 @@
-/turf/open/floor
+/turf/open/locked/floor
 	name = "floor"
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "Floor3"
 	static_turf = TRUE
 
 //Grass
-/turf/open/floor/grass
+/turf/open/locked/floor/grass
 	name = "grass patch"
 	icon_state = "grass1"
 
-/turf/open/floor/grass/Initialize(mapload)
+/turf/open/locked/floor/grass/Initialize(mapload)
 	. = ..()
 	icon_state = "grass[rand(1,4)]"
 
 //Snow
-/turf/open/floor/snow
+/turf/open/locked/floor/snow
 	name = "snow"
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "snow"
 
 //Abductor
-/turf/open/floor/abductor
+/turf/open/locked/floor/abductor
 	name = "alien floor"
 	icon_state = "alienpod1"
 
-/turf/open/floor/abductor/Initialize(mapload)
+/turf/open/locked/floor/abductor/Initialize(mapload)
 	. = ..()
 	icon_state = "alienpod[rand(1,9)]"
 
 //Vox
-/turf/open/floor/vox
+/turf/open/locked/floor/vox
 	icon_state = "dark"
 	nitrogen = 100
 	oxygen = 0
 
 //Carpet
-/turf/open/floor/carpet
+/turf/open/locked/floor/carpet
 	name = "Carpet"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "carpet"
@@ -48,7 +48,7 @@
 	)
 
 //Wood
-/turf/open/floor/wood
+/turf/open/locked/floor/wood
 	icon_state = "wood"
 
 	footstep_sounds = list(
@@ -59,7 +59,7 @@
 /* Map Specific */
 // Space Hotel
 /// for second floor showing floor below
-/turf/open/floor/upperlevel
+/turf/open/locked/floor/upperlevel
 	icon = 'icons/turf/areas.dmi'
 	icon_state = "dark128"
 	layer = AREA_LAYER + 0.5
@@ -67,22 +67,22 @@
 	var/turf/lower_turf
 	var/obj/effect/portal_sensor/sensor
 
-/turf/open/floor/upperlevel/New()
+/turf/open/locked/floor/upperlevel/New()
 	..()
 	var/obj/effect/levelref/R = locate() in get_area(src)
 	if(R && R.other)
 		init(R)
 
-/turf/open/floor/upperlevel/Destroy()
+/turf/open/locked/floor/upperlevel/Destroy()
 	QDEL_NULL(sensor)
 	return ..()
 
-/turf/open/floor/upperlevel/proc/init(var/obj/effect/levelref/R)
+/turf/open/locked/floor/upperlevel/proc/init(var/obj/effect/levelref/R)
 	lower_turf = locate(x + R.offset_x, y + R.offset_y, z + R.offset_z)
 	if(lower_turf)
 		sensor = new(lower_turf, src)
 
-/turf/open/floor/upperlevel/Entered(atom/movable/AM, atom/OL, ignoreRest = 0)
+/turf/open/locked/floor/upperlevel/Entered(atom/movable/AM, atom/OL, ignoreRest = 0)
 	if(isliving(AM) || istype(AM, /obj))
 		if(isliving(AM))
 			var/mob/living/M = AM
@@ -90,10 +90,10 @@
 			M.SpinAnimation(5, 1)
 		AM.forceMove(lower_turf)
 
-/turf/open/floor/upperlevel/attack_ghost(mob/user)
+/turf/open/locked/floor/upperlevel/attack_ghost(mob/user)
 	user.forceMove(lower_turf)
 
-/turf/open/floor/upperlevel/proc/trigger()
+/turf/open/locked/floor/upperlevel/proc/trigger()
 	name = lower_turf.name
 	desc = lower_turf.desc
 

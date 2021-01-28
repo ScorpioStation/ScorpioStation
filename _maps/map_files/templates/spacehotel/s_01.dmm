@@ -19,7 +19,7 @@
 	},
 /area/template_noop)
 "d" = (
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "e" = (
 /obj/structure/rack,
@@ -33,7 +33,7 @@
 /obj/item/clothing/suit/wizrobe/fake,
 /obj/item/clothing/suit/wizrobe/marisa/fake,
 /obj/effect/decal/cleanable/greenglow,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "f" = (
 /obj/structure/rack,
@@ -45,7 +45,7 @@
 /obj/item/clothing/head/powdered_wig,
 /obj/item/clothing/head/wizard/marisa/fake,
 /obj/item/clothing/mask/gas/clown_hat/sexy,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "g" = (
 /obj/structure/rack,
@@ -55,16 +55,16 @@
 /obj/item/clothing/head/rabbitears,
 /obj/item/clothing/mask/muzzle,
 /obj/item/clothing/accessory/stethoscope,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "h" = (
 /obj/structure/dresser,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "i" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "j" = (
 /obj/structure/window/reinforced/polarized{
@@ -79,7 +79,7 @@
 "k" = (
 /obj/structure/bed,
 /obj/item/bedsheet/captain,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/template_noop)
 "l" = (
 /obj/machinery/light{

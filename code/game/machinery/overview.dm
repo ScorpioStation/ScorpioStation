@@ -33,9 +33,9 @@
 //	to_chat(world, "[icount] images in list")
 
 
-	for(var/wx = 1 ; wx <= world.maxx; wx++)
+	for(var/wx in 1 to world.maxx)
 
-		for(var/wy = 1; wy <= world.maxy; wy++)
+		for(var/wy in 1 to world.maxy)
 
 			var/turf/T = locate(wx, wy, z)
 
@@ -48,18 +48,21 @@
 				colour = rgb(0,0,0)
 
 			else
-				var/sense = 1
+				var/sense = TRUE
 				switch("[T.type]")
 					if("/turf/space")
 						colour = rgb(10,10,10)
-						sense = 0
+						sense = FALSE
 
 					if("/turf/open/floor")
-						colour = rgb(150,150,150)
-						var/turf/open/floor/TF = T
-						if(TF.burnt == 1)
-							sense = 0
-							colour = rgb(130,130,130)
+						if(T.static_turf)
+							colour = rgb(150,150,150)
+							var/turf/open/floor/TF = T
+							if(TF.burnt)
+								sense = FALSE
+								colour = rgb(130,130,130)
+						else
+							colour  = rgb(240,240,240
 
 					if("/turf/open/floor/engine")
 						colour = rgb(128,128,128)
@@ -70,12 +73,8 @@
 					if("/turf/closed/wall/r_wall")
 						colour = rgb(128,96,96)
 
-					if("/turf/unsimulated/floor")
-						colour  = rgb(240,240,240)
-
 					if("/turf/closed/staticwall", "/turf/closed/staticwall/other")
 						colour  = rgb(140,140,140)
-
 					else
 						colour = rgb(0,40,0)
 
@@ -191,9 +190,9 @@
 	for(var/i = 0; i<icount; i++)
 		imap += icon('icons/misc/imap.dmi', "blank")
 
-	for(var/wx = 1 ; wx <= world.maxx; wx++)
+	for(var/wx in 1 to world.maxx)
 
-		for(var/wy = 1; wy <= world.maxy; wy++)
+		for(var/wy in 1 to world.maxy)
 
 			var/turf/T = locate(wx, wy, z)
 
@@ -203,31 +202,31 @@
 				colour = rgb(0,0,0)
 
 			else
-				var/sense = 1
+				var/sense = TRUE
 				switch("[T.type]")
 					if("/turf/space")
 						colour = rgb(10,10,10)
-						sense = 0
+						sense = FALSE
 
 					if("/turf/open/floor", "/turf/open/floor/engine")
-						var/datum/gas_mixture/environment = T.return_air()
-						var/turf_total = environment.total_moles()
-						var/t1 = turf_total / MOLES_CELLSTANDARD * 175
-
-						if(t1<=100)
-							colour = rgb(0,0,t1*2.55)
+						if(T.static_turf)
+							colour  = rgb(240,240,240)
 						else
-							t1 = min(100, t1-100)
-							colour = rgb( t1*2.55, t1*2.55, 255)
+							var/datum/gas_mixture/environment = T.return_air()
+							var/turf_total = environment.total_moles()
+							var/t1 = turf_total / MOLES_CELLSTANDARD * 175
+
+							if(t1<=100)
+								colour = rgb(0,0,t1*2.55)
+							else
+								t1 = min(100, t1-100)
+								colour = rgb( t1*2.55, t1*2.55, 255)
 
 					if("/turf/closed/wall")
 						colour = rgb(96,96,96)
 
 					if("/turf/closed/wall/r_wall")
 						colour = rgb(128,96,96)
-
-					if("/turf/unsimulated/floor")
-						colour  = rgb(240,240,240)
 
 					if("/turf/closed/staticwall", "/turf/closed/staticwall/other")
 						colour  = rgb(140,140,140)

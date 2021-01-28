@@ -2176,7 +2176,7 @@
 /turf/template_noop,
 /area/awaymission/spacehotel)
 "eb" = (
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "ec" = (
 /obj/structure/toilet,
@@ -2358,42 +2358,42 @@
 	icon = 'icons/obj/doors/doorgold.dmi';
 	id = 110
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "ew" = (
 /obj/machinery/door/unpowered/hotel_door{
 	icon = 'icons/obj/doors/doorgold.dmi';
 	id = 111
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "ex" = (
 /obj/machinery/door/unpowered/hotel_door{
 	icon = 'icons/obj/doors/doorgold.dmi';
 	id = 112
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "ey" = (
 /obj/machinery/door/unpowered/hotel_door{
 	icon = 'icons/obj/doors/doorgold.dmi';
 	id = 210
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "ez" = (
 /obj/machinery/door/unpowered/hotel_door{
 	icon = 'icons/obj/doors/doorgold.dmi';
 	id = 211
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "eA" = (
 /obj/machinery/door/unpowered/hotel_door{
 	icon = 'icons/obj/doors/doorgold.dmi';
 	id = 212
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "eB" = (
 /turf/closed/staticwall/fakeglass{
@@ -2405,11 +2405,11 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "eD" = (
 /obj/machinery/light,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "eE" = (
 /turf/closed/staticwall/fakeglass{
@@ -2419,14 +2419,14 @@
 /area/space/nearstation)
 "eF" = (
 /obj/structure/closet/crate/can,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "eG" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "eH" = (
 /obj/machinery/light{
@@ -2436,21 +2436,21 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "eI" = (
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "eJ" = (
 /obj/structure/chair/comfy,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "eK" = (
 /obj/structure/window/reinforced,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "eL" = (
 /turf/closed/staticwall/fakeglass,
@@ -2482,13 +2482,13 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "eQ" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "eR" = (
 /turf/unsimulated/floor/upperlevel,
@@ -2504,19 +2504,19 @@
 /obj/machinery/door/unpowered/hotel_door{
 	id = 107
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "eU" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 108
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "eV" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 109
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "eW" = (
 /obj/effect/decal{
@@ -2549,26 +2549,26 @@
 /obj/machinery/door/unpowered/hotel_door{
 	id = 207
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fb" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 208
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fc" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 209
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fd" = (
 /obj/structure/window/reinforced{
 	icon_state = "rwindow";
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fe" = (
 /obj/machinery/camera{
@@ -2604,7 +2604,7 @@
 /area/awaymission/spacehotel)
 "fi" = (
 /obj/structure/window/plasmabasic,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fj" = (
 /turf/open/beach/water/drop,
@@ -2653,7 +2653,7 @@
 	icon_state = "plasmawindow";
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fr" = (
 /turf/open/beach/water{
@@ -2666,7 +2666,7 @@
 	icon_state = "plasmawindow";
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "ft" = (
 /turf/open/beach/water,
@@ -2693,14 +2693,14 @@
 /obj/effect/landmark{
 	name = "awaystart"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fy" = (
 /obj/structure/window/plasmabasic{
 	icon_state = "plasmawindow";
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fz" = (
 /obj/structure/mirror,
@@ -2741,19 +2741,19 @@
 	icon_state = "rwindow";
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fF" = (
 /obj/structure/window/reinforced{
 	icon_state = "rwindow";
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fG" = (
 /obj/structure/closet/crate/can,
 /obj/item/paper/crumpled/hotel_scrap_1,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fH" = (
 /obj/effect/landmark{
@@ -2765,37 +2765,37 @@
 /obj/machinery/door/unpowered/hotel_door{
 	id = 104
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fJ" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 105
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fK" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 106
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fL" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 204
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fM" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 205
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fN" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 206
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "fO" = (
 /obj/machinery/camera{
@@ -2897,7 +2897,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gc" = (
 /obj/structure/window/reinforced{
@@ -2912,7 +2912,7 @@
 	icon_state = "rwindow";
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gd" = (
 /obj/structure/window/reinforced{
@@ -2923,7 +2923,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "ge" = (
 /obj/structure/window/reinforced{
@@ -2937,7 +2937,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gf" = (
 /obj/structure/window/reinforced{
@@ -2949,23 +2949,23 @@
 	dir = 1
 	},
 /obj/item/paper/hotel_scrap_3,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gg" = (
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gh" = (
 /obj/structure/table,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gi" = (
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gj" = (
 /obj/structure/chair/sofa{
@@ -2976,11 +2976,11 @@
 	icon_state = "rwindow";
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gk" = (
 /obj/structure/table/wood,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gl" = (
 /obj/structure/chair/sofa{
@@ -2990,7 +2990,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gm" = (
 /obj/structure/chair/sofa/right{
@@ -3001,7 +3001,7 @@
 	icon_state = "rwindow";
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gn" = (
 /obj/structure/chair/sofa/left{
@@ -3011,7 +3011,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "go" = (
 /obj/machinery/light{
@@ -3021,7 +3021,7 @@
 /area/awaymission/spacehotel)
 "gp" = (
 /obj/structure/chair/stool,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gq" = (
 /obj/machinery/light{
@@ -3029,7 +3029,7 @@
 	icon_state = "tube1"
 	},
 /obj/structure/closet/crate/can,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gr" = (
 /obj/effect/landmark/map_loader/random{
@@ -3048,19 +3048,19 @@
 /obj/machinery/door/unpowered/hotel_door{
 	id = 101
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gu" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 102
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gv" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 103
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gw" = (
 /obj/structure/table/reinforced,
@@ -3072,19 +3072,19 @@
 /obj/machinery/door/unpowered/hotel_door{
 	id = 201
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gy" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 202
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gz" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 203
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "gA" = (
 /obj/machinery/camera{
@@ -3703,14 +3703,14 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Mail Room"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "ik" = (
 /obj/machinery/door/airlock{
 	name = "Security";
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "il" = (
 /obj/machinery/door/airlock{
@@ -3729,7 +3729,7 @@
 	name = "Employees Only";
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "in" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -3762,11 +3762,11 @@
 /area/awaymission/spacehotel)
 "is" = (
 /obj/machinery/vending/cigarette,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "it" = (
 /obj/machinery/vending/sovietsoda,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "iu" = (
 /obj/structure/table,
@@ -3777,7 +3777,7 @@
 	network = list("Hotel");
 	use_power = 0
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "iv" = (
 /obj/structure/chair{
@@ -3787,7 +3787,7 @@
 	desc = "Probably."
 	},
 /obj/effect/decal/cleanable/pie_smudge,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "iw" = (
 /obj/structure/table,
@@ -3797,7 +3797,7 @@
 	network = list("Hotel");
 	use_power = 0
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "ix" = (
 /turf/unsimulated/floor/plating,
@@ -3851,7 +3851,7 @@
 /area/awaymission/spacehotel)
 "iG" = (
 /obj/machinery/vending/snack,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "iH" = (
 /obj/structure/chair{
@@ -3861,13 +3861,13 @@
 	desc = "Probably."
 	},
 /obj/effect/decal/cleanable/pie_smudge,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "iI" = (
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "iJ" = (
 /obj/structure{
@@ -3943,11 +3943,11 @@
 "iS" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "iT" = (
 /obj/machinery/vending/cola,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "iU" = (
 /obj/structure/table,
@@ -3961,7 +3961,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "iV" = (
 /obj/machinery/light/small{
@@ -4111,7 +4111,7 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Lobby"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "jn" = (
 /obj/structure{
@@ -4126,28 +4126,28 @@
 "jo" = (
 /obj/effect/decal/remains/human,
 /obj/item/clothing/head/soft/red,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "jp" = (
 /obj/item/toy/prize/honk,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "jq" = (
 /obj/item/toy/spinningtoy,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "jr" = (
 /obj/item/grown/bananapeel,
 /obj/item/toy/spinningtoy,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "js" = (
 /obj/structure/barricade/wooden,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "jt" = (
 /obj/machinery/door/airlock/public/glass,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "ju" = (
 /obj/machinery/gateway{
@@ -4222,11 +4222,11 @@
 /obj/machinery/atm{
 	pixel_y = 32
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "jD" = (
 /obj/effect/decal/warning_stripes/white/hollow,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "jE" = (
 /obj/item/paper/pamphlet{
@@ -4253,13 +4253,13 @@
 	pixel_x = 8;
 	pixel_y = -8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel/reception)
 "jF" = (
 /obj/item/latexballon,
 /obj/item/latexballon,
 /obj/structure/table/glass,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel/reception)
 "jG" = (
 /obj/structure/rack,
@@ -4268,7 +4268,7 @@
 /obj/item/key,
 /obj/item/key,
 /obj/item/key,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel/reception)
 "jH" = (
 /obj/structure/chair/comfy,
@@ -4276,7 +4276,7 @@
 	desc = "Probably."
 	},
 /obj/effect/decal/cleanable/pie_smudge,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "jI" = (
 /obj/structure/chair/comfy,
@@ -4287,7 +4287,7 @@
 	desc = "Probably."
 	},
 /obj/effect/decal/cleanable/pie_smudge,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "jJ" = (
 /obj/structure/cable/heavyduty{
@@ -4320,13 +4320,13 @@
 /area/awaymission/spacehotel)
 "jM" = (
 /obj/effect/decal/remains/human,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "jN" = (
 /obj/item/trash/candle,
 /obj/item/trash/candle,
 /obj/item/trash/candle,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "jO" = (
 /obj/structure/window/basic{
@@ -4358,10 +4358,10 @@
 /area/awaymission/spacehotel)
 "jS" = (
 /obj/structure/table/reinforced,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel/reception)
 "jT" = (
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel/reception)
 "jU" = (
 /obj/structure/table,
@@ -4373,7 +4373,7 @@
 	use_power = 0
 	},
 /obj/machinery/light,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "jV" = (
 /obj/structure/table,
@@ -4384,7 +4384,7 @@
 	network = list("Hotel");
 	use_power = 0
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "jW" = (
 /obj/machinery/light/small,
@@ -4392,35 +4392,35 @@
 /area/awaymission/spacehotel)
 "jX" = (
 /obj/item/toy/sword,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "jY" = (
 /obj/item/target/syndicate,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "jZ" = (
 /obj/item/trash/sosjerky,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "ka" = (
 /obj/item/gun/projectile/shotgun/toy/crossbow,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "kb" = (
 /obj/machinery/space_heater,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "kc" = (
 /obj/machinery/door/airlock{
 	name = "Supply Closet"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "kd" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Gateway"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "ke" = (
 /obj/item/melee/cultblade,
@@ -4447,42 +4447,42 @@
 	icon_state = "sofaend_left";
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "kh" = (
 /obj/effect/hotel_controller,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "ki" = (
 /obj/item/pen,
 /obj/structure/table/reinforced,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel/reception)
 "kj" = (
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel/reception)
 "kk" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel/reception)
 "kl" = (
 /obj/structure/chair/sofa{
 	icon_state = "sofamiddle";
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "km" = (
 /obj/item/clipboard,
 /obj/item/paper,
 /obj/structure/table/reinforced,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel/reception)
 "ko" = (
 /obj/structure/filingcabinet/filingcabinet,
@@ -4490,53 +4490,53 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel/reception)
 "kp" = (
 /obj/structure/filingcabinet/filingcabinet,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel/reception)
 "kq" = (
 /obj/structure/chair/sofa/corner{
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "kr" = (
 /obj/structure/chair/sofa{
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "ks" = (
 /obj/machinery/light,
 /obj/structure/chair/sofa/left{
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "kt" = (
 /obj/machinery/light,
 /obj/structure/chair/sofa/right{
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "ku" = (
 /obj/structure/chair/sofa/left{
 	dir = 1
 	},
 /obj/effect/decal/warning_stripes/white/hollow,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel)
 "kv" = (
 /obj/item/paper_bin,
 /obj/structure/table/glass,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel/reception)
 "kw" = (
 /obj/structure/table/glass,
-/turf/unsimulated/floor/carpet,
+/turf/open/locked/floor/carpet,
 /area/awaymission/spacehotel/reception)
 "kx" = (
 /turf/closed/staticwall/fakeglass{
