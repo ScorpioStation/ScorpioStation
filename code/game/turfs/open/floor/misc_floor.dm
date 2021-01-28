@@ -143,3 +143,10 @@
 	name = "rubber floor"
 	icon = 'icons/misc/wrestling_ring.dmi'
 	icon_state = "rubber_carpet"
+
+//Snow
+/turf/open/floor/snow
+	name = "snow"
+	icon = 'icons/turf/snow.dmi'
+	icon_state = "snow"
+	indesctructible_turf = FALSE

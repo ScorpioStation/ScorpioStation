@@ -284,7 +284,7 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 		..()
 	return //unplateable
 
-/turf/open/floor/engine/attack_hand(mob/user as mob)
+/turf/open/floor/engine/attack_hand(mob/user)
 	user.Move_Pulled(src)
 
 /turf/open/floor/engine/pry_tile(obj/item/C, mob/user, silent = FALSE)
@@ -294,7 +294,7 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	acidpwr = min(acidpwr, 50) //we reduce the power so reinf floor never get melted.
 	. = ..()
 
-/turf/open/floor/engine/attackby(obj/item/C as obj, mob/user as mob, params)
+/turf/open/floor/engine/attackby(obj/item/C, mob/user, params)
 	if(!C || !user)
 		return
 	if(istype(C, /obj/item/wrench))
@@ -314,7 +314,7 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 			var/obj/item/stack/sheet/plasteel/W = C
 			W.use(1)
 			thermal_conductivity = 0
-			insulated = 1
+			insulated = TRUE
 			name = "insulated " + name
 			return
 
@@ -419,7 +419,6 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 /* End Engine Floors */
 
 //Snow
-
 /turf/open/floor/snow
 	name = "snow"
 	icon = 'icons/turf/snow.dmi'

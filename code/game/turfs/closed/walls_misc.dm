@@ -1,3 +1,9 @@
+
+/turf/closed/wall/vault
+	icon = 'icons/turf/walls.dmi'
+	icon_state = "rockvault"
+	smooth = SMOOTH_FALSE
+
 /turf/closed/wall/cult
 	name = "runed metal wall"
 	desc = "A cold metal wall engraved with indecipherable symbols. Studying them causes your head to pound."

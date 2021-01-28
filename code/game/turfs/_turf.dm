@@ -95,6 +95,8 @@
 	user.Move_Pulled(src)
 
 /turf/ex_act(severity)
+	if(indesctructible_turf)
+		return
 	return FALSE
 
 /turf/rpd_act(mob/user, obj/item/rpd/our_rpd) //This is the default turf behaviour for the RPD; override it as required
@@ -462,7 +464,6 @@
 		return FALSE
 	else
 		return can_have_cabling() & !intact
-
 
 /turf/ratvar_act(force, ignore_mobs, probability = 40)
 	if(indesctructible_turf)
