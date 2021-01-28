@@ -137,7 +137,7 @@ GLOBAL_VAR_INIT(pipenetwarnings, 10)
 		member.air_temporary.temperature = air.temperature
 
 /datum/pipeline/proc/temperature_interact(turf/target, share_volume, thermal_conductivity)
-	var/total_heat_capacity = air.heat_turfcapacity()
+	var/total_heat_capacity = air.heat_capacity()
 	var/partial_heat_capacity = total_heat_capacity*(share_volume/air.volume)
 
 	if(isopenturf(target))

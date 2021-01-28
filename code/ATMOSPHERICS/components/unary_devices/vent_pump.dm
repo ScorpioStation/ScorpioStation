@@ -12,8 +12,8 @@
 
 	layer = GAS_SCRUBBER_LAYER
 
-	can_unwrench = 1
-	var/open = 0
+	can_unwrench = TRUE
+	var/open = FALSE
 
 	var/area/initial_loc
 	var/area_uid
