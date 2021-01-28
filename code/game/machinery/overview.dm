@@ -73,7 +73,7 @@
 					if("/turf/closed/wall/r_wall")
 						colour = rgb(128,96,96)
 
-					if("/turf/closed/staticwall", "/turf/closed/staticwall/other")
+					if("/turf/closed/locked/wall", "/turf/closed/locked/wall/other")
 						colour  = rgb(140,140,140)
 					else
 						colour = rgb(0,40,0)
@@ -228,7 +228,7 @@
 					if("/turf/closed/wall/r_wall")
 						colour = rgb(128,96,96)
 
-					if("/turf/closed/staticwall", "/turf/closed/staticwall/other")
+					if("/turf/closed/locked/wall", "/turf/closed/locked/wall/other")
 						colour  = rgb(140,140,140)
 
 					else

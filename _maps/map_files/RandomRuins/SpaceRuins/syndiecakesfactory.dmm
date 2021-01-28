@@ -62,7 +62,7 @@
 /turf/space,
 /area/ruin/space)
 "hs" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 4
 	},
 /area/ruin/unpowered)
@@ -264,7 +264,7 @@
 /turf/template_noop,
 /area/space)
 "zF" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 8
 	},
 /area/ruin/unpowered)

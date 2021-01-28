@@ -10,7 +10,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "d" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/lavaland/surface/outdoors)
 "e" = (
 /obj/machinery/wish_granter,

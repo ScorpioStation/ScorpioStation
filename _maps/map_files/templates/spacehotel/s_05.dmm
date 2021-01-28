@@ -13,13 +13,13 @@
 	dir = 4;
 	id = "room_s"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "whitehall"
 	},
 /area/template_noop)
 "d" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "white"
 	},
 /area/template_noop)
@@ -29,20 +29,20 @@
 /obj/item/instrument/violin{
 	pixel_x = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "white"
 	},
 /area/template_noop)
 "f" = (
 /obj/structure/dresser,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "white"
 	},
 /area/template_noop)
 "g" = (
 /obj/item/flashlight/lamp/green,
 /obj/structure/table,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "white"
 	},
 /area/template_noop)
@@ -51,21 +51,21 @@
 	dir = 4;
 	id = "room_s"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "whitehall"
 	},
 /area/template_noop)
 "i" = (
 /obj/structure/piano,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "white"
 	},
 /area/template_noop)
 "j" = (
 /obj/structure/bed,
 /obj/item/bedsheet/mime,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "white"
 	},
 /area/template_noop)
@@ -80,13 +80,13 @@
 	range = 5
 	},
 /obj/item/soap,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 1;
 	icon_state = "whitehall"
 	},
 /area/template_noop)
 "l" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 1;
 	icon_state = "whitehall"
 	},
@@ -96,7 +96,7 @@
 	dir = 4;
 	id = "room_s"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 1;
 	icon_state = "whitecorner"
 	},
@@ -111,7 +111,7 @@
 /obj/structure/mirror{
 	pixel_x = -28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
@@ -119,13 +119,13 @@
 /obj/structure/toilet{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
 "p" = (
 /obj/machinery/door/window/eastleft,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)

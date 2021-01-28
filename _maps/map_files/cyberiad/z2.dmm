@@ -1,42 +1,42 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-iron6";
 	icon_state = "iron6"
 	},
 /area/space)
 "ab" = (
-/turf/unsimulated/floor/snow,
+/turf/open/locked/floor/snow,
 /area/syndicate_mothership)
 "ac" = (
 /obj/structure/flora/grass/brown,
-/turf/unsimulated/floor/snow,
+/turf/open/locked/floor/snow,
 /area/syndicate_mothership)
 "ad" = (
 /obj/structure/flora/bush,
-/turf/unsimulated/floor/snow,
+/turf/open/locked/floor/snow,
 /area/syndicate_mothership)
 "ae" = (
 /obj/structure/flora/tree/pine{
 	pixel_x = 1
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/locked/floor/snow,
 /area/syndicate_mothership)
 "af" = (
 /obj/structure/window/reinforced,
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-iron12";
 	icon_state = "iron12"
 	},
 /area/space)
 "ag" = (
-/turf/unsimulated/floor/snow,
-/turf/unsimulated/floor/snow{
+/turf/open/locked/floor/snow,
+/turf/open/locked/floor/snow{
 	icon_state = "gravsnow_corner"
 	},
 /area/syndicate_mothership)
 "ah" = (
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-iron14";
 	icon_state = "iron14"
 	},
@@ -46,7 +46,7 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -64,7 +64,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-iron3";
 	icon_state = "iron3"
 	},
@@ -94,7 +94,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-iron3";
 	icon_state = "iron3"
 	},
@@ -134,10 +134,10 @@
 	},
 /area/holodeck/source_knightarena)
 "at" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/vox_station)
 "au" = (
-/turf/unsimulated/floor/vox,
+/turf/open/locked/floor/vox,
 /area/vox_station)
 "av" = (
 /obj/structure/table/holotable/wood,
@@ -165,7 +165,7 @@
 /area/holodeck/source_wildlife)
 "ay" = (
 /obj/machinery/vox_win_button,
-/turf/unsimulated/floor/vox{
+/turf/open/locked/floor/vox{
 	icon_state = "light_on"
 	},
 /area/vox_station)
@@ -205,7 +205,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-iron3";
 	icon_state = "iron3"
 	},
@@ -238,15 +238,15 @@
 /area/holodeck/source_theatre)
 "aI" = (
 /obj/machinery/door/airlock/centcom,
-/turf/unsimulated/floor/vox,
+/turf/open/locked/floor/vox,
 /area/vox_station)
 "aJ" = (
 /obj/structure/girder/displaced,
-/turf/unsimulated/floor/vox,
+/turf/open/locked/floor/vox,
 /area/vox_station)
 "aK" = (
 /obj/structure/closet/crate,
-/turf/unsimulated/floor/vox,
+/turf/open/locked/floor/vox,
 /area/vox_station)
 "aL" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -399,7 +399,7 @@
 /area/holodeck/source_desert)
 "be" = (
 /obj/machinery/computer/shuttle/ert,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/centcom/specops)
@@ -421,11 +421,11 @@
 /area/holodeck/source_meetinghall)
 "bh" = (
 /obj/structure/kitchenspike,
-/turf/unsimulated/floor/vox,
+/turf/open/locked/floor/vox,
 /area/vox_station)
 "bi" = (
 /obj/structure/table/wood,
-/turf/unsimulated/floor/vox,
+/turf/open/locked/floor/vox,
 /area/vox_station)
 "bj" = (
 /obj/structure/chair/stool/holostool,
@@ -439,10 +439,10 @@
 /obj/machinery/door/airlock/centcom{
 	opacity = 1
 	},
-/turf/unsimulated/floor/vox,
+/turf/open/locked/floor/vox,
 /area/vox_station)
 "bl" = (
-/turf/unsimulated/floor/plating/vox,
+/turf/open/locked/floor/plating/vox,
 /area/vox_station)
 "bm" = (
 /obj/structure/chair/stool/holostool,
@@ -537,8 +537,8 @@
 /obj/structure/flora/tree/pine{
 	pixel_x = 1
 	},
-/turf/unsimulated/floor/snow,
-/turf/unsimulated/floor/snow{
+/turf/open/locked/floor/snow,
+/turf/open/locked/floor/snow{
 	tag = "icon-gravsnow_corner (SOUTHWEST)";
 	icon_state = "gravsnow_corner";
 	dir = 10
@@ -546,8 +546,8 @@
 /area/syndicate_mothership)
 "bz" = (
 /obj/structure/flora/grass/brown,
-/turf/unsimulated/floor/snow,
-/turf/unsimulated/floor/snow{
+/turf/open/locked/floor/snow,
+/turf/open/locked/floor/snow{
 	tag = "icon-gravsnow_corner (EAST)";
 	icon_state = "gravsnow_corner";
 	dir = 4
@@ -555,8 +555,8 @@
 /area/syndicate_mothership)
 "bA" = (
 /obj/structure/flora/grass/brown,
-/turf/unsimulated/floor/snow,
-/turf/unsimulated/floor/snow{
+/turf/open/locked/floor/snow,
+/turf/open/locked/floor/snow{
 	tag = "icon-gravsnow_corner (SOUTHWEST)";
 	icon_state = "gravsnow_corner";
 	dir = 10
@@ -566,8 +566,8 @@
 /obj/structure/flora/tree/pine{
 	pixel_x = 1
 	},
-/turf/unsimulated/floor/snow,
-/turf/unsimulated/floor/snow{
+/turf/open/locked/floor/snow,
+/turf/open/locked/floor/snow{
 	icon_state = "gravsnow_corner"
 	},
 /area/syndicate_mothership)
@@ -627,8 +627,8 @@
 /area/holodeck/source_knightarena)
 "bJ" = (
 /obj/structure/flora/bush,
-/turf/unsimulated/floor/snow,
-/turf/unsimulated/floor/snow{
+/turf/open/locked/floor/snow,
+/turf/open/locked/floor/snow{
 	tag = "icon-gravsnow_corner (NORTH)";
 	icon_state = "gravsnow_corner";
 	dir = 1
@@ -636,8 +636,8 @@
 /area/syndicate_mothership)
 "bK" = (
 /obj/structure/flora/tree/pine,
-/turf/unsimulated/floor/snow,
-/turf/unsimulated/floor/snow{
+/turf/open/locked/floor/snow,
+/turf/open/locked/floor/snow{
 	icon_state = "gravsnow_corner"
 	},
 /area/syndicate_mothership)
@@ -659,8 +659,8 @@
 /area/holodeck/source_emptycourt)
 "bN" = (
 /obj/structure/flora/grass/brown,
-/turf/unsimulated/floor/snow,
-/turf/unsimulated/floor/snow{
+/turf/open/locked/floor/snow,
+/turf/open/locked/floor/snow{
 	icon_state = "gravsnow_corner"
 	},
 /area/syndicate_mothership)
@@ -668,10 +668,10 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "engine"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -681,10 +681,10 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "engine"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -709,7 +709,7 @@
 	},
 /area/holodeck/source_emptycourt)
 "bZ" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/space)
 "ca" = (
 /turf/open/floor/holofloor{
@@ -718,7 +718,7 @@
 	},
 /area/holodeck/source_emptycourt)
 "cb" = (
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-iron5";
 	icon_state = "iron5"
 	},
@@ -727,7 +727,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-iron12";
 	icon_state = "iron12"
 	},
@@ -737,7 +737,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-iron12";
 	icon_state = "iron12"
 	},
@@ -747,13 +747,13 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-iron12";
 	icon_state = "iron12"
 	},
 /area/space)
 "cf" = (
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-iron11";
 	icon_state = "iron11"
 	},
@@ -762,7 +762,7 @@
 /turf/open/floor/holofloor/space,
 /area/holodeck/source_space)
 "cj" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/centcom/ferry)
 "ck" = (
 /turf/space/transit,
@@ -790,12 +790,12 @@
 /obj/machinery/computer/cryopod{
 	pixel_y = 32
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "cp" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/ferry)
@@ -806,7 +806,7 @@
 	},
 /area/holodeck/source_basketball)
 "cr" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/space)
@@ -876,16 +876,16 @@
 /area/holodeck/source_basketball)
 "cH" = (
 /obj/machinery/computer/shuttle/ferry,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/evac)
 "cJ" = (
-/turf/closed/staticwall/fakeglass,
+/turf/closed/locked/wall/fakeglass,
 /area/centcom/ferry)
 "cK" = (
 /obj/machinery/computer/shuttle/admin,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/evac)
@@ -922,28 +922,28 @@
 	},
 /area/holodeck/source_basketball)
 "cR" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows2 (WEST)";
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/ninja/holding)
 "cS" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (WEST)";
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/ninja/holding)
 "cT" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (EAST)";
 	icon_state = "fakewindows";
 	dir = 4
 	},
 /area/ninja/holding)
 "cU" = (
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	desc = "The door appears to be locked tightly.";
 	icon = 'icons/obj/doors/airlocks/hatch/centcom.dmi';
 	icon_state = "closed";
@@ -951,7 +951,7 @@
 	},
 /area/ninja/holding)
 "cV" = (
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	desc = "The door appears to be locked tightly.";
 	icon = 'icons/obj/doors/airlocks/hatch/centcom.dmi';
 	icon_state = "closed";
@@ -964,7 +964,7 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/ninja/outpost)
@@ -976,7 +976,7 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -985,20 +985,20 @@
 /obj/structure/closet/secure_closet/bar{
 	req_access_txt = "25"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/ninja/holding)
 "cZ" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/ninja/holding)
 "da" = (
 /obj/structure/reagent_dispensers/beerkeg,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -1021,14 +1021,14 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/ninja/holding)
 "dc" = (
 /obj/machinery/vending/boozeomat,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -1036,7 +1036,7 @@
 "dd" = (
 /obj/structure/rack,
 /obj/item/kitchen/knife/ritual,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "chapel"
 	},
 /area/wizard_station)
@@ -1044,7 +1044,7 @@
 /obj/structure/rack,
 /obj/item/toy/sword,
 /obj/item/gun/projectile/revolver/capgun,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -1057,21 +1057,21 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
 /area/ninja/holding)
 "dg" = (
 /obj/machinery/computer/arcade,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
 /area/ninja/holding)
 "dh" = (
 /obj/machinery/prize_counter,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -1129,7 +1129,7 @@
 "dw" = (
 /obj/structure/table,
 /obj/machinery/kitchen_machine/microwave/upgraded,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -1140,20 +1140,20 @@
 	pixel_x = 4;
 	pixel_y = 6
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/ninja/holding)
 "dy" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
 /area/ninja/holding)
 "dz" = (
 /obj/structure/chair/stool,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -1173,7 +1173,7 @@
 /obj/item/restraints/legcuffs/beartrap,
 /obj/item/sleeping_carp_scroll,
 /obj/item/twohanded/bostaff,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena_source)
@@ -1185,7 +1185,7 @@
 /obj/item/restraints/legcuffs/beartrap,
 /obj/item/sleeping_carp_scroll,
 /obj/item/twohanded/bostaff,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena_source)
@@ -1203,7 +1203,7 @@
 /obj/item/restraints/legcuffs/beartrap,
 /obj/item/sleeping_carp_scroll,
 /obj/item/twohanded/bostaff,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena)
@@ -1215,7 +1215,7 @@
 /obj/item/restraints/legcuffs/beartrap,
 /obj/item/sleeping_carp_scroll,
 /obj/item/twohanded/bostaff,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena)
@@ -1244,7 +1244,7 @@
 	},
 /area/holodeck/source_boxingcourt)
 "dP" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 1;
 	icon_state = "fakewindows";
 	tag = "icon-fakewindows (WEST)"
@@ -1256,7 +1256,7 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/ninja/outpost)
@@ -1265,7 +1265,7 @@
 /obj/machinery/recharger{
 	pixel_y = 0
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -1273,7 +1273,7 @@
 "dS" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/shaker,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -1281,14 +1281,14 @@
 "dT" = (
 /obj/structure/table,
 /obj/item/lighter/zippo,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/ninja/holding)
 "dU" = (
 /obj/structure/table,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -1296,7 +1296,7 @@
 "dV" = (
 /obj/structure/table,
 /obj/item/dice/d20,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -1304,7 +1304,7 @@
 "dW" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/cans/cola,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -1351,27 +1351,27 @@
 	},
 /obj/item/clothing/under/suit_jacket,
 /obj/item/clothing/suit/wcoat,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
 /area/ninja/holding)
 "ee" = (
 /obj/structure/chair/stool/bar,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
 /area/ninja/holding)
 "ef" = (
-/turf/unsimulated/floor/snow,
+/turf/open/locked/floor/snow,
 /turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
 /area/syndicate_mothership)
 "eg" = (
-/turf/unsimulated/floor/snow,
+/turf/open/locked/floor/snow,
 /turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
@@ -1379,7 +1379,7 @@
 /area/syndicate_mothership)
 "eh" = (
 /obj/structure/flora/tree/pine,
-/turf/unsimulated/floor/snow,
+/turf/open/locked/floor/snow,
 /area/syndicate_mothership)
 "ei" = (
 /turf/space,
@@ -1389,7 +1389,7 @@
 	id_tag = "sit_away";
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -1410,7 +1410,7 @@
 /obj/effect/landmark{
 	name = "Syndicate-Spawn"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -1418,7 +1418,7 @@
 "eo" = (
 /obj/structure/rack,
 /obj/item/storage/fancy/crayons,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -1428,7 +1428,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -1438,7 +1438,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -1451,7 +1451,7 @@
 	icon_state = "entertainment";
 	pixel_y = -30
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -1464,20 +1464,20 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
 /area/ninja/holding)
 "ex" = (
 /obj/item/flag/syndi,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/syndicate_mothership)
 "ey" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "wood"
 	},
@@ -1486,13 +1486,13 @@
 /obj/item/radio/intercom/syndicate{
 	pixel_x = -28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
 "eA" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/syndicate_mothership)
@@ -1552,14 +1552,14 @@
 /area/holodeck/source_thunderdomecourt)
 "eO" = (
 /obj/machinery/vending/cigarette,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
 /area/ninja/holding)
 "eP" = (
 /obj/structure/table,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -1570,7 +1570,7 @@
 "eR" = (
 /obj/structure/chair/stool,
 /obj/machinery/light/spot,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -1580,7 +1580,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -1592,12 +1592,12 @@
 	dir = 1
 	},
 /obj/machinery/computer/syndicate_depot/teleporter,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "eU" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 1;
 	icon_state = "fakewindows";
 	tag = "icon-fakewindows (WEST)"
@@ -1612,25 +1612,25 @@
 	name = "Syndicate Base";
 	width = 11
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/syndicate_mothership)
 "eW" = (
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-iron13";
 	icon_state = "iron13"
 	},
 /area/space)
 "eX" = (
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-iron9";
 	icon_state = "iron9"
 	},
 /area/space)
 "eY" = (
 /obj/effect/decal/warning_stripes/yellow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -1640,7 +1640,7 @@
 	id_tag = "sst_away";
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/syndicate_mothership)
@@ -1648,7 +1648,7 @@
 /obj/effect/landmark{
 	name = "Syndicate-Spawn"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "wood"
 	},
@@ -1662,7 +1662,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "engine"
 	},
 /area/ninja/holding)
@@ -1675,28 +1675,28 @@
 	name = "Syndicate Base";
 	width = 11
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/syndicate_mothership)
 "fd" = (
 /obj/item/flag/syndi,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
 "fe" = (
 /obj/machinery/cryopod/right,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "ff" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/ninja/outpost)
 "fg" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/ninja/holding)
 "fh" = (
 /obj/structure/sign/double/map/left{
@@ -1705,14 +1705,14 @@
 /obj/machinery/light,
 /obj/structure/rack/skeletal_bar/left,
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
 "fi" = (
 /obj/machinery/computer/shuttle/syndicate/recall,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "wood"
 	},
@@ -1721,7 +1721,7 @@
 /obj/structure/bookcase{
 	name = "Forbidden Knowledge"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -1731,37 +1731,37 @@
 	name = "Forbidden Knowledge"
 	},
 /obj/effect/decal/cleanable/cobweb,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/wizard_station)
 "fl" = (
 /obj/machinery/cryopod,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "fm" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/centcom/gamma)
 "fn" = (
 /obj/machinery/computer/library/checkout,
 /obj/structure/table/wood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/wizard_station)
 "fo" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/wizard_station)
 "fp" = (
 /obj/machinery/vending/snack/free,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -1773,7 +1773,7 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -1794,7 +1794,7 @@
 /obj/item/clothing/suit/wizrobe,
 /obj/item/clothing/shoes/sandal,
 /obj/item/clothing/shoes/sandal,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 9;
 	icon_state = "carpetside"
 	},
@@ -1802,7 +1802,7 @@
 "fs" = (
 /obj/structure/bed,
 /obj/item/bedsheet/wiz,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 5;
 	icon_state = "carpetside"
 	},
@@ -1811,13 +1811,13 @@
 /obj/structure/mirror/magic{
 	pixel_y = 28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 1;
 	icon_state = "carpetside"
 	},
 /area/wizard_station)
 "fu" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/ninja/outpost)
@@ -1825,7 +1825,7 @@
 /obj/structure/ninjatele{
 	pixel_y = 25
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/ninja/outpost)
@@ -1841,13 +1841,13 @@
 /turf/space,
 /area/space)
 "fx" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "carpetside"
 	},
 /area/wizard_station)
 "fy" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 4;
 	icon_state = "carpetside"
 	},
@@ -1856,7 +1856,7 @@
 /obj/effect/landmark/start{
 	name = "wizard"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "carpet";
 	dir = 2
 	},
@@ -1865,7 +1865,7 @@
 /obj/structure/bookcase{
 	name = "bookcase (Tactics)"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -1874,14 +1874,14 @@
 /obj/item/radio/intercom/syndicate{
 	pixel_x = 28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/wizard_station)
 "fC" = (
 /obj/structure/table/wood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 10;
 	icon_state = "carpetside"
 	},
@@ -1891,20 +1891,20 @@
 /obj/effect/landmark{
 	name = "Teleport-Scroll"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 6;
 	icon_state = "carpetside"
 	},
 /area/wizard_station)
 "fE" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "carpetside"
 	},
 /area/wizard_station)
 "fF" = (
 /obj/effect/spawner/window/reinforced,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/gamma)
@@ -1913,7 +1913,7 @@
 	id_tag = "thunderdomeaxe";
 	name = "Axe Supply"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena_source)
@@ -1927,7 +1927,7 @@
 /area/ninja/holding)
 "fJ" = (
 /obj/structure/chair/comfy/purp,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -1942,7 +1942,7 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -1952,7 +1952,7 @@
 	id_tag = "thunderdomegen";
 	name = "General Supply"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena_source)
@@ -1967,7 +1967,7 @@
 	id_tag = "thunderdome";
 	name = "Thunderdome Blast Door"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/tdome/arena_source)
@@ -1979,7 +1979,7 @@
 /area/tdome/arena_source)
 "fQ" = (
 /obj/structure/bookcase,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -1988,7 +1988,7 @@
 /obj/structure/chair/comfy/purp{
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -1997,7 +1997,7 @@
 /obj/structure/table/wood,
 /obj/item/dice/d20,
 /obj/item/dice,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -2013,7 +2013,7 @@
 /obj/machinery/recharger{
 	pixel_y = 0
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -2042,7 +2042,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -2050,7 +2050,7 @@
 "fX" = (
 /obj/structure/table/wood,
 /obj/item/stack/spacecash,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -2058,14 +2058,14 @@
 "fY" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/mugwort,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/wizard_station)
 "fZ" = (
 /obj/machinery/cryopod/right,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -2076,7 +2076,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -2086,14 +2086,14 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "gc" = (
 /obj/machinery/light,
 /obj/machinery/cryopod/right,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -2106,12 +2106,12 @@
 /obj/item/clothing/suit/wizrobe/magusred,
 /obj/item/clothing/head/wizard/magus,
 /obj/item/twohanded/staff,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/wizard_station)
 "ge" = (
-/turf/unsimulated/floor/snow,
+/turf/open/locked/floor/snow,
 /turf/closed/shuttle/wall{
 	icon_state = "diagonalWall3"
 	},
@@ -2126,12 +2126,12 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "gh" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /turf/closed/shuttle/wall{
@@ -2155,13 +2155,13 @@
 /area/tdome/arena_source)
 "gl" = (
 /obj/item/flag/wiz,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/wizard_station)
 "gm" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /turf/closed/shuttle/wall{
@@ -2179,14 +2179,14 @@
 /turf/open/floor/bluegrid,
 /area/tdome/arena_source)
 "go" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows2 (WEST)";
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/wizard_station)
 "gp" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (WEST)";
 	icon_state = "fakewindows";
 	dir = 8
@@ -2194,7 +2194,7 @@
 /area/wizard_station)
 "gq" = (
 /obj/item/trash/raisins,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -2204,7 +2204,7 @@
 /turf/open/floor/beach/sand,
 /area/holodeck/source_beach)
 "gs" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (NORTHEAST)";
 	icon_state = "fakewindows";
 	dir = 5
@@ -2226,7 +2226,7 @@
 "gv" = (
 /obj/structure/table/reinforced,
 /obj/structure/kitchenspike,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 4;
 	icon_state = "chapel"
 	},
@@ -2236,7 +2236,7 @@
 /obj/structure/window/reinforced/clockwork{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 1;
 	icon_state = "chapel"
 	},
@@ -2248,7 +2248,7 @@
 "gy" = (
 /obj/effect/decal/cleanable/cobweb2,
 /obj/structure/showcase,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 4;
 	icon_state = "chapel"
 	},
@@ -2256,7 +2256,7 @@
 "gz" = (
 /obj/structure/table/reinforced,
 /obj/structure/kitchenspike,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 1;
 	icon_state = "chapel"
 	},
@@ -2266,46 +2266,46 @@
 	dir = 4
 	},
 /obj/machinery/sleeper/upgraded,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/ninja/outpost)
 "gB" = (
-/turf/unsimulated/floor/snow,
+/turf/open/locked/floor/snow,
 /turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
 /area/syndicate_mothership)
 "gC" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/wizard_station)
 "gD" = (
 /obj/effect/decal/remains/human,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/wizard_station)
 "gE" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows2 (NORTH)";
 	icon_state = "fakewindows2";
 	dir = 1
 	},
 /area/wizard_station)
 "gF" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "chapel"
 	},
 /area/wizard_station)
 "gG" = (
 /mob/living/carbon/human/monkey,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "chapel"
 	},
@@ -2323,7 +2323,7 @@
 /area/space)
 "gI" = (
 /obj/machinery/vending/syndisnack,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -2332,7 +2332,7 @@
 	id_tag = "thunderdomehea";
 	name = "Heavy Supply"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena_source)
@@ -2344,36 +2344,36 @@
 /mob/living/simple_animal/hostile/creature{
 	name = "Experiment 35b"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/wizard_station)
 "gM" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 4;
 	icon_state = "chapel"
 	},
 /area/wizard_station)
 "gN" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 1;
 	icon_state = "chapel"
 	},
 /area/wizard_station)
 "gO" = (
-/turf/closed/staticwall/fakeglass,
+/turf/closed/locked/wall/fakeglass,
 /area/ninja/outpost)
 "gP" = (
 /obj/effect/landmark{
 	name = "ninjastart"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/ninja/outpost)
 "gQ" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/ninja/outpost)
@@ -2389,7 +2389,7 @@
 	pixel_x = 3;
 	pixel_y = -30
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena_source)
@@ -2409,13 +2409,13 @@
 	pixel_x = 3;
 	pixel_y = -30
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena_source)
 "gU" = (
 /obj/effect/decal/cleanable/molten_object,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -2423,7 +2423,7 @@
 "gV" = (
 /obj/item/trash/chips,
 /obj/machinery/light/spot,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -2434,21 +2434,21 @@
 /obj/structure/window/reinforced/clockwork{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "chapel"
 	},
 /area/wizard_station)
 "gX" = (
 /obj/effect/decal/cleanable/blood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "chapel"
 	},
 /area/wizard_station)
 "gY" = (
 /obj/machinery/vending/syndicigs,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -2530,14 +2530,14 @@
 	height = 18;
 	id = "emergency_syndicate";
 	name = "404 Not Found";
-	turf_type = /turf/unsimulated/floor/snow;
+	turf_type = /turf/open/locked/floor/snow;
 	width = 29
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/locked/floor/snow,
 /area/syndicate_mothership)
 "hj" = (
-/turf/unsimulated/floor/snow,
-/turf/unsimulated/floor/snow{
+/turf/open/locked/floor/snow,
+/turf/open/locked/floor/snow{
 	tag = "icon-gravsnow_corner (EAST)";
 	icon_state = "gravsnow_corner";
 	dir = 4
@@ -2548,56 +2548,56 @@
 	id_tag = "syndicate_away";
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/syndicate_mothership)
 "hm" = (
-/turf/unsimulated/floor/snow,
-/turf/unsimulated/floor/snow{
+/turf/open/locked/floor/snow,
+/turf/open/locked/floor/snow{
 	tag = "icon-gravsnow_corner (WEST)";
 	icon_state = "gravsnow_corner";
 	dir = 8
 	},
 /area/syndicate_mothership)
 "hn" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/syndicate_mothership)
 "ho" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 1
 	},
 /area/syndicate_mothership)
 "hq" = (
-/turf/unsimulated/floor/snow,
-/turf/unsimulated/floor/snow{
+/turf/open/locked/floor/snow,
+/turf/open/locked/floor/snow{
 	tag = "icon-gravsnow_corner (SOUTHEAST)";
 	icon_state = "gravsnow_corner";
 	dir = 6
 	},
 /area/syndicate_mothership)
 "hr" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 0;
 	icon_state = "fakewindows";
 	tag = "icon-fakewindows (EAST)"
 	},
 /area/syndicate_mothership)
 "hs" = (
-/turf/unsimulated/floor/snow,
-/turf/unsimulated/floor/snow{
+/turf/open/locked/floor/snow,
+/turf/open/locked/floor/snow{
 	tag = "icon-gravsnow_corner (SOUTHWEST)";
 	icon_state = "gravsnow_corner";
 	dir = 10
 	},
 /area/syndicate_mothership)
 "hu" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 8
 	},
@@ -2614,14 +2614,14 @@
 /turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "hy" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (EAST)";
 	icon_state = "fakewindows";
 	dir = 4
 	},
 /area/syndicate_mothership)
 "hz" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows2 (WEST)";
 	icon_state = "fakewindows2";
 	dir = 8
@@ -2631,7 +2631,7 @@
 /obj/machinery/door/airlock/hatch/syndicate{
 	name = "Shuttle Dock"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -2640,14 +2640,14 @@
 	dir = 1;
 	on = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/syndicate_mothership)
 "hC" = (
 /obj/effect/spawner/window/reinforced,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/ninja/holding)
@@ -2655,17 +2655,17 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/syndicate_mothership)
 "hE" = (
-/turf/unsimulated/floor/snow,
-/turf/unsimulated/floor/snow{
+/turf/open/locked/floor/snow,
+/turf/open/locked/floor/snow{
 	icon_state = "gravsnow_corner"
 	},
-/turf/unsimulated/floor/snow{
+/turf/open/locked/floor/snow{
 	tag = "icon-gravsnow_corner (NORTH)";
 	icon_state = "gravsnow_corner";
 	dir = 1
@@ -2675,7 +2675,7 @@
 /obj/effect/landmark{
 	name = "Holding Facility"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "engine"
 	},
 /area/ninja/holding)
@@ -2686,23 +2686,23 @@
 /turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "hI" = (
-/turf/unsimulated/floor/snow,
-/turf/unsimulated/floor/snow{
+/turf/open/locked/floor/snow,
+/turf/open/locked/floor/snow{
 	tag = "icon-gravsnow_corner (NORTH)";
 	icon_state = "gravsnow_corner";
 	dir = 1
 	},
 /area/syndicate_mothership)
 "hK" = (
-/turf/unsimulated/floor/snow,
-/turf/unsimulated/floor/snow{
+/turf/open/locked/floor/snow,
+/turf/open/locked/floor/snow{
 	tag = "icon-gravsnow_corner (NORTHEAST)";
 	icon_state = "gravsnow_corner";
 	dir = 5
 	},
 /area/syndicate_mothership)
 "hM" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -2712,13 +2712,13 @@
 /obj/structure/sign/double/map/left{
 	pixel_y = 32
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "hO" = (
 /obj/machinery/washing_machine,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -2726,7 +2726,7 @@
 /obj/structure/table,
 /obj/item/storage/fancy/crayons,
 /obj/item/storage/fancy/crayons,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -2739,24 +2739,24 @@
 	},
 /obj/structure/table,
 /obj/item/storage/fancy/crayons,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/syndicate_mothership)
 "ie" = (
 /obj/machinery/washing_machine,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/syndicate_mothership)
 "ih" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/wizard_station)
 "ii" = (
 /obj/machinery/computer/shuttle/syndicate/recall,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -2767,21 +2767,21 @@
 	pixel_y = 25
 	},
 /obj/item/twohanded/required/kirbyplants,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/syndicate_mothership)
 "ik" = (
 /obj/machinery/vending/syndicigs,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/syndicate_mothership)
 "il" = (
 /obj/machinery/vending/syndisnack,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -2790,7 +2790,7 @@
 /obj/structure/urinal{
 	pixel_y = 28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -2801,7 +2801,7 @@
 	pixel_x = 28
 	},
 /obj/item/twohanded/required/kirbyplants,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -2812,14 +2812,14 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/syndicate_mothership)
 "ip" = (
 /obj/machinery/light/spot,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -2828,14 +2828,14 @@
 	pixel_x = -32
 	},
 /obj/item/paper/syndimemo,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/syndicate_mothership)
 "is" = (
 /mob/living/simple_animal/pet/dog/fox/Syndifox,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -2860,18 +2860,18 @@
 /obj/item/clothing/head/helmet/space/plasmaman/wizard,
 /obj/item/clothing/mask/breath,
 /obj/item/tank/plasma/plasmaman/belt/full,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/wizard_station)
 "ix" = (
 /obj/machinery/sleeper/syndie,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "iy" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -2882,7 +2882,7 @@
 	opacity = 1;
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -2897,7 +2897,7 @@
 	pixel_x = 11;
 	pixel_y = 0
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -2907,7 +2907,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -2916,7 +2916,7 @@
 /obj/structure/table/wood,
 /obj/item/pizzabox,
 /obj/item/paicard/syndicate,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -2927,14 +2927,14 @@
 	pixel_x = -2;
 	pixel_y = 5
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/syndicate_mothership)
 "iE" = (
 /obj/structure/closet/syndicate/sst,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -2951,7 +2951,7 @@
 	opacity = 1;
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -2972,7 +2972,7 @@
 /turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "iK" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (NORTHWEST)";
 	icon_state = "fakewindows";
 	dir = 9
@@ -2980,7 +2980,7 @@
 /area/syndicate_mothership)
 "iL" = (
 /obj/item/twohanded/required/kirbyplants,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -2995,7 +2995,7 @@
 	pixel_x = -6;
 	pixel_y = 6
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -3006,7 +3006,7 @@
 	pixel_x = -5;
 	pixel_y = 5
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -3021,7 +3021,7 @@
 /turf/open/floor/plating,
 /area/shuttle/assault_pod)
 "iR" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows2 (NORTH)";
 	icon_state = "fakewindows2";
 	dir = 1
@@ -3041,7 +3041,7 @@
 	id_tag = "nukeop_ready";
 	name = "Shuttle Dock Door"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -3060,7 +3060,7 @@
 /area/syndicate_mothership)
 "iY" = (
 /mob/living/simple_animal/pet/cat/Syndi,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -3070,12 +3070,12 @@
 	id_tag = "syndicate_away";
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "ja" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/tdome/arena)
 "jb" = (
 /obj/machinery/igniter/on,
@@ -3085,14 +3085,14 @@
 /turf/open/floor/plasteel,
 /area/tdome/arena)
 "jd" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (WEST)";
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/syndicate_mothership)
 "je" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/wizard_station)
@@ -3101,7 +3101,7 @@
 /obj/effect/landmark{
 	name = "Syndicate-Spawn"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -3115,7 +3115,7 @@
 	req_access_txt = "151"
 	},
 /obj/item/twohanded/required/kirbyplants,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -3124,7 +3124,7 @@
 /obj/structure/sign/double/map/right{
 	pixel_y = 32
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -3136,7 +3136,7 @@
 	pixel_y = -2;
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -3148,7 +3148,7 @@
 /area/shuttle/assault_pod)
 "jk" = (
 /obj/structure/table/wood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "wood"
 	},
@@ -3160,7 +3160,7 @@
 /obj/item/clothing/suit/armor/tdome/red,
 /obj/item/clothing/head/helmet/thunderdome,
 /obj/item/melee/energy/sword/saber/red,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena_source)
@@ -3168,7 +3168,7 @@
 /obj/structure/table/wood,
 /obj/item/storage/box/drinkingglasses,
 /obj/item/reagent_containers/food/drinks/bottle/rum,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "wood"
 	},
@@ -3176,7 +3176,7 @@
 "jn" = (
 /obj/structure/table/wood,
 /obj/item/syndicatedetonator,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "wood"
 	},
@@ -3184,7 +3184,7 @@
 "jo" = (
 /obj/structure/table/wood,
 /obj/item/toy/nuke,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "wood"
 	},
@@ -3199,7 +3199,7 @@
 	dir = 4
 	},
 /obj/structure/closet/syndicate/sst,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -3210,14 +3210,14 @@
 /obj/item/clothing/suit/armor/tdome/green,
 /obj/item/clothing/head/helmet/thunderdome,
 /obj/item/melee/energy/sword/saber/green,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena_source)
 "js" = (
 /obj/structure/table/reinforced,
 /obj/item/syndicatedetonator,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -3286,14 +3286,14 @@
 	name = "\improper FOURTH WALL";
 	pixel_x = -32
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/locked/floor/snow,
 /area/syndicate_mothership)
 "jC" = (
 /obj/machinery/door/poddoor/impassable{
 	id_tag = "sit_tele";
 	name = "Teleporter"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -3310,7 +3310,7 @@
 /obj/item/healthupgrade{
 	pixel_x = 6
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -3320,7 +3320,7 @@
 /obj/item/clothing/shoes/sandal/marisa,
 /obj/item/clothing/head/wizard/marisa,
 /obj/item/twohanded/staff/broom,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/wizard_station)
@@ -3334,7 +3334,7 @@
 	pixel_y = -1
 	},
 /obj/item/multitool,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -3348,7 +3348,7 @@
 	pixel_y = 4
 	},
 /obj/item/radio/beacon/syndicate/bomb,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -3370,7 +3370,7 @@
 	name = "Uplink Management Control";
 	req_access_txt = "151"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "wood"
 	},
@@ -3381,38 +3381,38 @@
 	},
 /obj/structure/rack/skeletal_bar/right,
 /obj/item/reagent_containers/food/drinks/bottle/gin,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "wood"
 	},
 /area/syndicate_mothership)
 "jP" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien21"
 	},
 /area/abductor_ship)
 "jQ" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien20"
 	},
 /area/abductor_ship)
 "jR" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien23"
 	},
 /area/abductor_ship)
 "jS" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien22"
 	},
 /area/abductor_ship)
 "jT" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien24"
 	},
 /area/abductor_ship)
 "jU" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien16"
 	},
 /area/abductor_ship)
@@ -3420,10 +3420,10 @@
 /obj/machinery/abductor/experiment{
 	team = 1
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "jW" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien17"
 	},
 /area/abductor_ship)
@@ -3431,21 +3431,21 @@
 /obj/machinery/abductor/pad{
 	team = 1
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "jY" = (
 /obj/machinery/abductor/console{
 	team = 1
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "jZ" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien19"
 	},
 /area/abductor_ship)
 "ka" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien18"
 	},
 /area/abductor_ship)
@@ -3454,13 +3454,13 @@
 	name = "Equipment Room";
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/syndicate_mothership)
 "kd" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/gamma)
@@ -3468,18 +3468,18 @@
 /obj/structure/rack,
 /obj/item/tank/emergency_oxygen/vox,
 /obj/item/clothing/mask/breath/vox,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/wizard_station)
 "kf" = (
 /obj/machinery/light/spot,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/wizard_station)
 "kj" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "stage_stairs"
 	},
@@ -3489,13 +3489,13 @@
 	id_tag = "sst_tele";
 	name = "Teleporter"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "kl" = (
 /obj/machinery/vending/tool,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -3515,7 +3515,7 @@
 	icon_state = "sleeper_s-open";
 	dir = 2
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -3529,18 +3529,18 @@
 	icon_state = "sleeper_s-open";
 	dir = 2
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "kq" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "kr" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -3549,7 +3549,7 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -3558,49 +3558,49 @@
 /obj/machinery/abductor/experiment{
 	team = 4
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "ku" = (
 /obj/machinery/abductor/pad{
 	team = 4
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "kv" = (
 /obj/machinery/abductor/console{
 	team = 4
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "kw" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien14"
 	},
 /area/abductor_ship)
 "kx" = (
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "ky" = (
 /obj/machinery/computer/camera_advanced/abductor{
 	team = 1
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "kz" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien15"
 	},
 /area/abductor_ship)
 "kA" = (
 /obj/structure/closet/abductor,
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "kB" = (
 /turf/open/floor/bluegrid,
 /area/tdome/arena_source)
 "kC" = (
 /obj/structure/chair/stool,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -3609,34 +3609,34 @@
 /obj/machinery/computer/camera_advanced/abductor{
 	team = 4
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "kE" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien12"
 	},
 /area/abductor_ship)
 "kF" = (
 /obj/effect/landmark/abductor/scientist,
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "kG" = (
 /obj/structure/table/abductor,
 /obj/item/retractor/alien,
 /obj/item/hemostat/alien,
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "kH" = (
 /obj/effect/landmark/abductor/agent,
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "kI" = (
 /obj/machinery/optable/abductor,
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "kJ" = (
 /obj/structure/closet/syndicate/personal,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 8
 	},
@@ -3649,42 +3649,42 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "kL" = (
 /obj/structure/table,
 /obj/item/gun/energy/ionrifle,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "kM" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien13"
 	},
 /area/abductor_ship)
 "kN" = (
 /obj/structure/table/abductor,
 /obj/item/storage/box/alienhandcuffs,
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "kO" = (
 /obj/effect/landmark/abductor/scientist{
 	team = 4
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "kP" = (
 /obj/effect/landmark/abductor/agent{
 	team = 4
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "kQ" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien10"
 	},
 /area/abductor_ship)
@@ -3693,10 +3693,10 @@
 /obj/item/paper/abductor,
 /obj/item/scalpel/alien,
 /obj/item/cautery/alien,
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "kS" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien11"
 	},
 /area/abductor_ship)
@@ -3708,22 +3708,22 @@
 /obj/structure/mirror{
 	pixel_x = -28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "kU" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien6"
 	},
 /area/abductor_ship)
 "kV" = (
 /obj/machinery/abductor/gland_dispenser,
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "kW" = (
 /obj/structure/table,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "carpet";
 	dir = 2
 	},
@@ -3735,13 +3735,13 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "carpet";
 	dir = 2
 	},
 /area/centcom/control)
 "kY" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "carpet";
 	dir = 2
 	},
@@ -3749,13 +3749,13 @@
 "kZ" = (
 /obj/structure/bed,
 /obj/item/bedsheet,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "carpet";
 	dir = 2
 	},
 /area/centcom/control)
 "la" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redyellowfull";
 	icon_state = "redyellowfull"
 	},
@@ -3766,7 +3766,7 @@
 	opacity = 1;
 	req_access_txt = "102"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -3776,7 +3776,7 @@
 /obj/structure/sign/poster/random{
 	pixel_y = 32
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -3785,7 +3785,7 @@
 /obj/machinery/atm{
 	pixel_y = 24
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -3793,7 +3793,7 @@
 "le" = (
 /obj/item/reagent_containers/food/drinks/cans/cola,
 /obj/structure/table,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redyellowfull";
 	icon_state = "redyellowfull"
 	},
@@ -3804,7 +3804,7 @@
 	pixel_y = 6
 	},
 /obj/structure/table,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redyellowfull";
 	icon_state = "redyellowfull"
 	},
@@ -3813,24 +3813,24 @@
 /obj/structure/mirror{
 	pixel_x = 28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "lh" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/centcom/control)
 "li" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien7"
 	},
 /area/abductor_ship)
 "lj" = (
 /obj/structure/chair/stool,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -3842,26 +3842,26 @@
 /obj/item/FixOVein/alien,
 /obj/item/bonesetter/alien,
 /obj/item/bonegel/alien,
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "ll" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien9"
 	},
 /area/abductor_ship)
 "lm" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien8"
 	},
 /area/abductor_ship)
 "ln" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien2"
 	},
 /area/abductor_ship)
 "lo" = (
 /obj/structure/reagent_dispensers/beerkeg,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -3871,7 +3871,7 @@
 	req_access = null;
 	req_access_txt = "102"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -3883,33 +3883,33 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
 /area/centcom/control)
 "lr" = (
 /obj/structure/kitchenspike,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/centcom/control)
 "ls" = (
 /obj/effect/decal/cleanable/blood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "chapel"
 	},
 /area/wizard_station)
 "lt" = (
 /obj/machinery/gibber,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/centcom/control)
 "lu" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "chapel"
 	},
 /area/wizard_station)
@@ -3919,7 +3919,7 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -3929,7 +3929,7 @@
 /obj/machinery/juicer{
 	pixel_y = 6
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redyellowfull";
 	icon_state = "redyellowfull"
 	},
@@ -3937,33 +3937,33 @@
 "lx" = (
 /obj/item/reagent_containers/food/drinks/cans/beer,
 /obj/structure/table,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redyellowfull";
 	icon_state = "redyellowfull"
 	},
 /area/centcom/control)
 "ly" = (
-/turf/closed/staticwall/abductor,
+/turf/closed/locked/wall/abductor,
 /area/abductor_ship)
 "lz" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien4"
 	},
 /area/abductor_ship)
 "lA" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien3"
 	},
 /area/abductor_ship)
 "lB" = (
 /obj/structure/piano,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redyellowfull";
 	icon_state = "redyellowfull"
 	},
 /area/centcom/control)
 "lC" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/tdome/arena_source)
 "lD" = (
 /obj/machinery/igniter/on,
@@ -3974,7 +3974,7 @@
 /turf/open/floor/plasteel,
 /area/tdome/arena_source)
 "lF" = (
-/turf/closed/staticwall/abductor{
+/turf/closed/locked/wall/abductor{
 	icon_state = "alien5"
 	},
 /area/abductor_ship)
@@ -3985,13 +3985,13 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redyellowfull";
 	icon_state = "redyellowfull"
 	},
 /area/centcom/control)
 "lH" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -4000,7 +4000,7 @@
 /obj/structure/closet/secure_closet/freezer/meat{
 	req_access_txt = "102"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -4010,13 +4010,13 @@
 	name = "CondiMaster Neo";
 	pixel_x = -5
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/centcom/control)
 "lK" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -4025,79 +4025,79 @@
 /obj/machinery/abductor/experiment{
 	team = 2
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "lM" = (
 /obj/machinery/abductor/pad{
 	team = 2
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "lN" = (
 /obj/machinery/abductor/console{
 	team = 2
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "lO" = (
 /obj/machinery/abductor/experiment{
 	team = 3
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "lP" = (
 /obj/machinery/abductor/pad{
 	team = 3
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "lQ" = (
 /obj/machinery/abductor/console{
 	team = 3
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "lR" = (
 /obj/machinery/computer/camera_advanced/abductor{
 	team = 2
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "lS" = (
 /obj/machinery/computer/camera_advanced/abductor{
 	team = 3
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "lT" = (
 /obj/effect/landmark/abductor/scientist{
 	team = 2
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "lU" = (
 /obj/effect/landmark/abductor/agent{
 	team = 2
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "lV" = (
 /obj/effect/landmark/abductor/scientist{
 	team = 3
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "lW" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/shaker,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
 /area/centcom/control)
 "lX" = (
 /obj/structure/table,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -4106,7 +4106,7 @@
 /obj/effect/landmark/abductor/agent{
 	team = 3
 	},
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "lZ" = (
 /obj/machinery/door/airlock/centcom{
@@ -4114,32 +4114,32 @@
 	opacity = 1;
 	req_access_txt = "102"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/centcom/control)
 "ma" = (
 /turf/space,
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
 /area/centcom/control)
 "mb" = (
-/turf/closed/staticwall/fakeglass,
+/turf/closed/locked/wall/fakeglass,
 /area/wizard_station)
 "mc" = (
 /obj/structure/chair/stool,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
 /area/centcom/control)
 "md" = (
 /obj/structure/extinguisher_cabinet,
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/centcom/gamma)
 "me" = (
 /obj/structure/table,
@@ -4147,7 +4147,7 @@
 	pixel_x = 0;
 	pixel_y = 10
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -4158,13 +4158,13 @@
 	dir = 2;
 	network = list("ERT","CentComm")
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 1
 	},
 /area/centcom/specops)
 "mg" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 1
 	},
@@ -4173,14 +4173,14 @@
 /obj/item/radio/intercom/specops{
 	pixel_y = 25
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 1
 	},
 /area/centcom/specops)
 "mi" = (
 /obj/machinery/recharge_station/upgraded,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 1
 	},
@@ -4191,7 +4191,7 @@
 	dir = 2;
 	network = list("ERT","CentComm")
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 1
 	},
@@ -4203,7 +4203,7 @@
 	pixel_y = 3
 	},
 /obj/item/kitchen/rollingpin,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -4215,7 +4215,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -4225,7 +4225,7 @@
 	id_tag = "ASSAULT3";
 	name = "Launch Bay #3"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/specops)
@@ -4237,12 +4237,12 @@
 	name = "gravpult"
 	},
 /obj/effect/decal/warning_stripes/yellow/hollow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "mo" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 5
 	},
@@ -4252,7 +4252,7 @@
 	id_tag = "ASSAULT";
 	name = "Assault Armor"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 1
 	},
@@ -4261,20 +4261,20 @@
 /obj/structure/sign/poster/random{
 	pixel_x = -32
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/centcom/control)
 "mr" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/trader_station/sol)
 "ms" = (
 /obj/item/reagent_containers/food/condiment/saltshaker{
 	pixel_x = -6
 	},
 /obj/structure/table,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redyellowfull";
 	icon_state = "redyellowfull"
 	},
@@ -4284,7 +4284,7 @@
 	name = "Syndicate-Infiltrator";
 	tag = "Commando"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -4292,14 +4292,14 @@
 /obj/machinery/vending/dinnerware{
 	req_access_txt = "102"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
 /area/centcom/control)
 "mv" = (
 /obj/machinery/light/spot,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -4307,7 +4307,7 @@
 /obj/structure/table,
 /obj/item/reagent_containers/glass/beaker,
 /obj/item/reagent_containers/food/condiment/enzyme,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
@@ -4315,21 +4315,21 @@
 "mx" = (
 /obj/structure/table,
 /obj/machinery/kitchen_machine/microwave/upgraded,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "cafeteria";
 	dir = 2
 	},
 /area/centcom/control)
 "my" = (
 /obj/structure/filingcabinet/filingcabinet,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 9;
 	icon_state = "carpetside"
 	},
 /area/centcom/control)
 "mz" = (
 /obj/structure/filingcabinet/filingcabinet,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 5;
 	icon_state = "carpetside"
 	},
@@ -4339,7 +4339,7 @@
 	id_tag = "ASSAULT2";
 	name = "Launch Bay #2"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/specops)
@@ -4351,7 +4351,7 @@
 	name = "gravpult"
 	},
 /obj/effect/decal/warning_stripes/yellow/hollow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -4361,14 +4361,14 @@
 	opacity = 1;
 	req_access_txt = "114"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/centcom/control)
 "mD" = (
 /obj/machinery/vending/cigarette,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -4378,7 +4378,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -4391,26 +4391,26 @@
 	pixel_y = 24;
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "mI" = (
 /obj/structure/flora/ausbushes/brflowers,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
 /area/centcom/control)
 "mK" = (
 /obj/structure/flora/ausbushes/reedbush,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
 /area/centcom/control)
 "mL" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 1;
 	icon_state = "carpet15-11"
 	},
@@ -4421,14 +4421,14 @@
 	pixel_y = 5
 	},
 /obj/item/pen/multi,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 9;
 	icon_state = "carpetside"
 	},
 /area/centcom/control)
 "mN" = (
 /obj/machinery/computer/bsa_control/admin,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 5;
 	icon_state = "carpetside"
 	},
@@ -4437,7 +4437,7 @@
 /obj/structure/chair/office/dark{
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "carpet15-14";
 	tag = "icon-carpet (WEST)"
@@ -4445,14 +4445,14 @@
 /area/centcom/control)
 "mP" = (
 /obj/machinery/computer/pod/deathsquad,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 1
 	},
 /area/centcom/specops)
 "mQ" = (
 /obj/structure/table,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 9;
 	icon_state = "carpetside"
 	},
@@ -4464,13 +4464,13 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 5;
 	icon_state = "carpetside"
 	},
 /area/centcom/control)
 "mS" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 1;
 	icon_state = "carpetside"
 	},
@@ -4479,55 +4479,55 @@
 /obj/structure/mirror{
 	pixel_y = 28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/centcom/control)
 "mU" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/centcom/control)
 "mV" = (
 /obj/machinery/computer/card/centcom,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/centcom/control)
 "mW" = (
 /obj/machinery/vending/cola,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
 /area/centcom/control)
 "mX" = (
 /obj/structure/flora/ausbushes/fernybush,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
 /area/centcom/control)
 "mY" = (
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
 /area/centcom/control)
 "mZ" = (
 /obj/structure/flora/ausbushes/stalkybush,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
 /area/centcom/control)
 "na" = (
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
@@ -4548,20 +4548,20 @@
 /area/centcom/gamma)
 "nd" = (
 /obj/structure/flora/ausbushes/lavendergrass,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
 /area/centcom/control)
 "ne" = (
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
 /area/centcom/control)
 "nf" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "carpet15-5"
 	},
@@ -4575,33 +4575,33 @@
 /obj/item/photo{
 	name = "butts"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 10;
 	icon_state = "carpetside"
 	},
 /area/centcom/control)
 "nh" = (
 /obj/machinery/computer/communications,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 6;
 	icon_state = "carpetside"
 	},
 /area/centcom/control)
 "ni" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "carpetside"
 	},
 /area/centcom/control)
 "nj" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/syndicate_mothership)
 "nk" = (
 /obj/machinery/door/poddoor{
 	id_tag = "ASSAULT1";
 	name = "Launch Bay #1"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/specops)
@@ -4613,20 +4613,20 @@
 	name = "gravpult"
 	},
 /obj/effect/decal/warning_stripes/yellow/hollow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "nm" = (
 /obj/structure/bed,
 /obj/item/bedsheet,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 10;
 	icon_state = "carpetside"
 	},
 /area/centcom/control)
 "nn" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 6;
 	icon_state = "carpetside"
 	},
@@ -4645,14 +4645,14 @@
 	opacity = 1;
 	req_access_txt = "102"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "carpetsymbol"
 	},
 /area/centcom/control)
 "nq" = (
 /obj/structure/table/wood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -4661,7 +4661,7 @@
 	pixel_x = -32;
 	pixel_y = 0
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -4673,7 +4673,7 @@
 	pixel_y = -2;
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -4685,7 +4685,7 @@
 	name = "Syndicate-Infiltrator";
 	tag = "Commando"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -4698,7 +4698,7 @@
 	dir = 4
 	},
 /obj/item/door_remote/centcomm,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -4712,7 +4712,7 @@
 	pixel_x = -9;
 	pixel_y = 10
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -4722,7 +4722,7 @@
 	opacity = 1;
 	req_access_txt = "107"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "carpet1-0"
 	},
 /area/centcom/control)
@@ -4731,27 +4731,27 @@
 /obj/machinery/door/poddoor/impassable{
 	id_tag = "commandcenter"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "ny" = (
 /turf/space,
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
 /area/centcom/control)
 "nz" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (EAST)";
 	icon_state = "fakewindows";
 	dir = 4
 	},
 /area/centcom/control)
 "nA" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (WEST)";
 	icon_state = "fakewindows";
 	dir = 8
@@ -4763,44 +4763,44 @@
 	id_tag = "commandcenter";
 	name = "Privacy Shutters"
 	},
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
 	},
 /area/syndicate_mothership)
 "nC" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green";
 	dir = 8
 	},
 /area/centcom/control)
 "nD" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green";
 	dir = 1
 	},
 /area/centcom/control)
 "nE" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "greencorner";
 	dir = 4
 	},
 /area/centcom/control)
 "nF" = (
 /obj/machinery/computer/shuttle/sit,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "nG" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "greencorner";
 	dir = 1
 	},
 /area/centcom/control)
 "nH" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green";
 	dir = 4
 	},
@@ -4821,7 +4821,7 @@
 	pixel_y = 6;
 	req_access_txt = "153"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -4830,7 +4830,7 @@
 	id_tag = "ASSAULT0";
 	name = "Launch Bay #0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/specops)
@@ -4846,13 +4846,13 @@
 /obj/effect/decal/warning_stripes/arrow{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "nL" = (
 /obj/machinery/computer/shuttle/sst,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -4886,7 +4886,7 @@
 	pixel_y = -4;
 	req_access_txt = "153"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -4898,7 +4898,7 @@
 	name = "gravpult"
 	},
 /obj/effect/decal/warning_stripes/yellow/hollow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -4906,7 +4906,7 @@
 /obj/item/radio/intercom/specops{
 	pixel_y = -28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 1
 	},
@@ -4916,7 +4916,7 @@
 	icon_state = "recharge_port";
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/syndicate_mothership)
@@ -4925,7 +4925,7 @@
 	id_tag = "GRAVPULTS";
 	name = "Gravity Catapults"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 1
 	},
@@ -4935,7 +4935,7 @@
 	id_tag = "GRAVPULTS";
 	name = "Gravity Catapults"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 5
 	},
@@ -4943,7 +4943,7 @@
 "nS" = (
 /obj/mecha/combat/marauder/mauler/loaded,
 /obj/effect/decal/warning_stripes/red/hollow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -4952,12 +4952,12 @@
 	id_tag = "ASSAULT";
 	name = "Assault Armor"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "nU" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "greencorner";
 	dir = 8
 	},
@@ -4971,7 +4971,7 @@
 /area/shuttle/escape)
 "nW" = (
 /obj/effect/decal/warning_stripes/blue,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -4980,7 +4980,7 @@
 	name = "Syndicate-Infiltrator-Leader";
 	tag = "Commando"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -5061,13 +5061,13 @@
 	},
 /area/centcom/gamma)
 "on" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "light_on"
 	},
 /area/centcom/specops)
 "oo" = (
 /obj/machinery/shuttle_manipulator,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "light_on"
 	},
 /area/centcom/specops)
@@ -5118,7 +5118,7 @@
 	dir = 2;
 	network = list("ERT","CentComm")
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -5129,7 +5129,7 @@
 /obj/effect/landmark{
 	name = "Commando"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 1
 	},
@@ -5146,13 +5146,13 @@
 	dir = 2;
 	network = list("ERT","CentComm")
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 1
 	},
 /area/centcom/specops)
 "ow" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -5176,7 +5176,7 @@
 /obj/structure/chair/office/dark{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -5186,7 +5186,7 @@
 	id_tag = "commandcenter";
 	name = "Privacy Shutters"
 	},
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -5241,7 +5241,7 @@
 /area/centcom/gamma)
 "oE" = (
 /obj/effect/spawner/window/reinforced,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-red (EAST)";
 	icon_state = "red";
 	dir = 4
@@ -5253,13 +5253,13 @@
 	opacity = 1;
 	req_access_txt = "109"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 8
 	},
 /area/centcom/specops)
 "oG" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 8
 	},
@@ -5271,7 +5271,7 @@
 	},
 /area/centcom/gamma)
 "oI" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-red (EAST)";
 	icon_state = "red";
 	dir = 4
@@ -5296,21 +5296,21 @@
 	},
 /area/shuttle/gamma/space)
 "oK" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows2 (WEST)";
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/centcom/specops)
 "oL" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (WEST)";
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/centcom/specops)
 "oM" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (EAST)";
 	icon_state = "fakewindows";
 	dir = 4
@@ -5323,7 +5323,7 @@
 	req_access_txt = "109"
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -5358,7 +5358,7 @@
 	id_tag = "SPECOPS";
 	name = "Ready Room"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 8
 	},
@@ -5370,7 +5370,7 @@
 	req_access_txt = "109"
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -5386,7 +5386,7 @@
 	req_access_txt = "109"
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/control)
@@ -5396,7 +5396,7 @@
 	opacity = 1;
 	req_access_txt = "113"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
@@ -5415,7 +5415,7 @@
 	name = "Shuttle Hatch";
 	req_access_txt = "109"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
@@ -5433,7 +5433,7 @@
 	name = "Backup Shuttle Dock";
 	width = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/shuttle/escape)
@@ -5452,7 +5452,7 @@
 	dir = 8;
 	network = list("ERT","CentComm")
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -5467,7 +5467,7 @@
 	id_tag = "specopsoffice";
 	name = "Privacy Shutters"
 	},
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -5483,7 +5483,7 @@
 	id_tag = "specopsoffice";
 	name = "Super Privacy Shutters"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 8
 	},
@@ -5495,7 +5495,7 @@
 	req_access_txt = "104"
 	},
 /obj/effect/decal/warning_stripes/yellow/hollow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -5517,7 +5517,7 @@
 	dir = 1
 	},
 /obj/structure/flora/ausbushes,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
@@ -5537,7 +5537,7 @@
 	dir = 1
 	},
 /obj/structure/flora/ausbushes/fernybush,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
@@ -5547,7 +5547,7 @@
 	dir = 1
 	},
 /obj/structure/flora/ausbushes/leafybush,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
@@ -5622,7 +5622,7 @@
 	id_tag = "CCTELE";
 	name = "Specops Teleporter"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -5632,7 +5632,7 @@
 	id_tag = "specopsoffice";
 	name = "Privacy Shutters"
 	},
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 1;
 	icon_state = "fakewindows";
 	tag = "icon-fakewindows (WEST)"
@@ -5651,13 +5651,13 @@
 	},
 /area/shuttle/gamma/space)
 "pz" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/syndicate_mothership)
 "pA" = (
 /obj/machinery/light,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/syndicate_mothership)
@@ -5670,7 +5670,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -5680,47 +5680,47 @@
 	id_tag = "specopsoffice";
 	name = "Privacy Shutters"
 	},
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows2 (NORTH)";
 	icon_state = "fakewindows2";
 	dir = 1
 	},
 /area/centcom/specops)
 "pD" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 9;
 	icon_state = "carpetside"
 	},
 /area/centcom/specops)
 "pE" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 5;
 	icon_state = "carpetside"
 	},
 /area/centcom/specops)
 "pF" = (
-/turf/closed/staticwall/fakeglass,
+/turf/closed/locked/wall/fakeglass,
 /area/syndicate_mothership)
 "pG" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 1;
 	icon_state = "carpetside"
 	},
 /area/centcom/specops)
 "pH" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green";
 	dir = 9
 	},
 /area/centcom/control)
 "pI" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green";
 	dir = 5
 	},
 /area/centcom/control)
 "pJ" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -5731,7 +5731,7 @@
 	dir = 2;
 	network = list("ERT","CentComm")
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -5742,7 +5742,7 @@
 	opacity = 1;
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -5752,7 +5752,7 @@
 	id_tag = "specopsoffice";
 	name = "Privacy Shutters"
 	},
-/turf/closed/staticwall/fakeglass,
+/turf/closed/locked/wall/fakeglass,
 /area/centcom/specops)
 "pN" = (
 /obj/machinery/door_control{
@@ -5783,7 +5783,7 @@
 	req_access_txt = "114"
 	},
 /obj/structure/table/wood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "carpetside"
 	},
@@ -5791,7 +5791,7 @@
 "pO" = (
 /obj/item/radio/intercom/specops,
 /obj/structure/table/wood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 4;
 	icon_state = "carpetside"
 	},
@@ -5803,14 +5803,14 @@
 	network = list("ERT")
 	},
 /obj/structure/table/wood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "carpet";
 	dir = 2
 	},
 /area/centcom/specops)
 "pQ" = (
 /obj/structure/closet/secure_closet/brig,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -5820,7 +5820,7 @@
 	opacity = 1;
 	req_access_txt = "107"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
@@ -5842,7 +5842,7 @@
 	dir = 1;
 	network = list("ERT","CentComm")
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -5852,7 +5852,7 @@
 	pixel_x = 0;
 	pixel_y = -27
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -5885,13 +5885,13 @@
 	req_access_txt = "114"
 	},
 /obj/structure/table/wood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "carpetside"
 	},
 /area/centcom/specops)
 "pY" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 4;
 	icon_state = "carpetside"
 	},
@@ -5903,7 +5903,7 @@
 /obj/effect/landmark{
 	name = "ERT Director"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "carpet";
 	dir = 2
 	},
@@ -5920,14 +5920,14 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/centcom/specops)
 "qc" = (
 /obj/effect/spawner/window/reinforced,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/evac)
@@ -5937,25 +5937,25 @@
 	name = "Shuttle Hatch";
 	req_access_txt = "109"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "vault";
 	dir = 5
 	},
 /area/centcom/specops)
 "qe" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 10;
 	icon_state = "carpetside"
 	},
 /area/centcom/specops)
 "qf" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 6;
 	icon_state = "carpetside"
 	},
 /area/centcom/specops)
 "qg" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "carpetside"
 	},
@@ -5968,7 +5968,7 @@
 	},
 /area/holodeck/source_thunderdomecourt)
 "qj" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 1;
 	icon_state = "fakewindows";
 	tag = "icon-fakewindows (WEST)"
@@ -5998,19 +5998,19 @@
 	pixel_x = 6;
 	pixel_y = -6
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/centcom/specops)
 "ql" = (
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	icon = 'icons/obj/library.dmi';
 	icon_state = "book-5";
 	name = "bookcase (Tactics)"
 	},
 /area/centcom/specops)
 "qm" = (
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	icon = 'icons/obj/library.dmi';
 	icon_state = "book-5";
 	name = "bookcase (Reports)"
@@ -6022,13 +6022,13 @@
 	},
 /area/centcom/evac)
 "qq" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green";
 	dir = 10
 	},
 /area/centcom/control)
 "qr" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green";
 	dir = 6
 	},
@@ -6047,7 +6047,7 @@
 	opacity = 1;
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -6066,7 +6066,7 @@
 	opacity = 1;
 	req_access_txt = "101"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
@@ -6076,7 +6076,7 @@
 	layer = 1;
 	name = "Blocker"
 	},
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -6088,7 +6088,7 @@
 	opacity = 1;
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -6097,7 +6097,7 @@
 /obj/structure/toilet{
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -6109,7 +6109,7 @@
 /obj/structure/sink{
 	pixel_y = 15
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -6121,7 +6121,7 @@
 /obj/structure/mirror{
 	pixel_y = 32
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -6134,7 +6134,7 @@
 	tag = "icon-shower (EAST)"
 	},
 /obj/structure/curtain/open/shower/centcom,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -6147,13 +6147,13 @@
 	tag = "icon-shower (WEST)"
 	},
 /obj/structure/curtain/open/shower/centcom,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/centcom/bathroom)
 "qE" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -6163,19 +6163,19 @@
 /area/syndicate_mothership)
 "qG" = (
 /obj/machinery/computer/mech_bay_power_console,
-/turf/unsimulated/floor,
+/turf/open/locked/floor,
 /area/syndicate_mothership)
 "qH" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green";
 	dir = 9
 	},
 /area/centcom/evac)
 "qI" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/centcom/suppy)
 "qJ" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "greencorner";
 	dir = 1
 	},
@@ -6184,18 +6184,18 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "platingdmg3"
 	},
 /area/centcom)
 "qL" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green";
 	dir = 5
 	},
 /area/centcom/evac)
 "qM" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "greencorner";
 	dir = 4
 	},
@@ -6204,7 +6204,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom)
@@ -6213,7 +6213,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom)
@@ -6222,7 +6222,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom)
@@ -6230,7 +6230,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -6239,7 +6239,7 @@
 /obj/effect/landmark{
 	name = "prisonwarp"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom)
@@ -6250,28 +6250,28 @@
 	req_access_txt = "104"
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "qT" = (
 /obj/effect/decal/cleanable/blood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom)
 "qU" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "panelscorched"
 	},
 /area/centcom)
 "qV" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom)
 "qW" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "platingdmg3"
 	},
 /area/centcom)
@@ -6283,7 +6283,7 @@
 	name = "Security Doors";
 	opacity = 0
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green";
 	dir = 8
 	},
@@ -6303,18 +6303,18 @@
 	name = "security checkpoint";
 	req_access_txt = "104"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/evac)
 "qZ" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green";
 	dir = 4
 	},
 /area/centcom/evac)
 "ra" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom)
@@ -6331,7 +6331,7 @@
 /area/space)
 "rc" = (
 /obj/effect/decal/cleanable/blood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom)
@@ -6339,7 +6339,7 @@
 /obj/effect/landmark{
 	name = "prisonwarp"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "panelscorched"
 	},
 /area/centcom)
@@ -6349,13 +6349,13 @@
 	opacity = 1;
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/centcom/bathroom)
 "rf" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green";
 	dir = 8
 	},
@@ -6365,7 +6365,7 @@
 /obj/effect/landmark{
 	name = "prisonwarp"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom)
@@ -6373,7 +6373,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "platingdmg1"
 	},
 /area/centcom)
@@ -6381,7 +6381,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floorscorched2"
 	},
 /area/centcom)
@@ -6391,7 +6391,7 @@
 	req_access_txt = "104"
 	},
 /obj/structure/table,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/evac)
@@ -6400,7 +6400,7 @@
 	name = "security checkpoint";
 	req_access_txt = "104"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/evac)
@@ -6414,13 +6414,13 @@
 /obj/structure/mirror{
 	pixel_x = 32
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/centcom/bathroom)
 "rm" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green";
 	dir = 10
 	},
@@ -6442,7 +6442,7 @@
 	opacity = 1;
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -6452,7 +6452,7 @@
 	id_tag = "CentComPort";
 	name = "Security Doors"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green";
 	dir = 8
 	},
@@ -6463,48 +6463,48 @@
 	name = "security checkpoint";
 	req_access_txt = "104"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/evac)
 "rr" = (
 /obj/structure/flora/ausbushes/lavendergrass,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
 /area/centcom/evac)
 "rs" = (
 /obj/structure/flora/ausbushes/stalkybush,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
 /area/centcom/evac)
 "rt" = (
 /obj/structure/flora/ausbushes/pointybush,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
 /area/centcom/evac)
 "ru" = (
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
 /area/centcom/evac)
 "rv" = (
 /obj/structure/flora/ausbushes/brflowers,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
 /area/centcom/evac)
 "rw" = (
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
@@ -6515,38 +6515,38 @@
 	opacity = 1;
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/centcom/evac)
 "ry" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green";
 	dir = 1
 	},
 /area/centcom/evac)
 "rz" = (
 /obj/machinery/computer/communications,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "rA" = (
 /obj/machinery/teleport/station,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "rB" = (
 /obj/machinery/computer/teleporter,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "rC" = (
 /obj/structure/flora/ausbushes,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
@@ -6557,17 +6557,17 @@
 	opacity = 1;
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/centcom/bathroom)
 "rE" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/start)
 "rF" = (
 /obj/structure/flora/ausbushes/leafybush,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
@@ -6584,13 +6584,13 @@
 	req_access = null;
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/evac)
 "rH" = (
 /obj/effect/landmark/start,
-/turf/unsimulated/floor,
+/turf/open/locked/floor,
 /area/start)
 "rI" = (
 /turf/closed/shuttle/wall{
@@ -6608,7 +6608,7 @@
 /turf/open/shuttle/plating,
 /area/centcom/evac)
 "rK" = (
-/turf/closed/staticwall/splashscreen,
+/turf/closed/locked/wall/splashscreen,
 /area/start)
 "rL" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -6700,7 +6700,7 @@
 	name = "EXTERNAL AIRLOCK";
 	pixel_x = 0
 	},
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/centcom/evac)
 "rW" = (
 /obj/docking_port/stationary{
@@ -6789,7 +6789,7 @@
 	dir = 8;
 	network = list("ERT","CentComm")
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -6819,7 +6819,7 @@
 /turf/open/shuttle/floor,
 /area/centcom/evac)
 "sj" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "greencorner";
 	dir = 8
 	},
@@ -6840,7 +6840,7 @@
 /area/centcom/evac)
 "sm" = (
 /obj/structure/flora/ausbushes/grassybush,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
@@ -6853,7 +6853,7 @@
 /area/centcom/evac)
 "so" = (
 /obj/machinery/vending/boozeomat,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -6861,23 +6861,23 @@
 "sp" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/cans/cola,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/centcom/evac)
 "sq" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/centcom/control)
 "sr" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/centcom/evac)
 "ss" = (
 /obj/structure/chair/stool/bar,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -6887,25 +6887,25 @@
 	req_access = null;
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/centcom/evac)
 "su" = (
 /obj/effect/spawner/window/reinforced,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/control)
 "sv" = (
 /obj/effect/spawner/window/reinforced,
-/turf/unsimulated/floor,
+/turf/open/locked/floor,
 /area/centcom/control)
 "sw" = (
 /obj/structure/table,
 /obj/item/lighter/zippo,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -6916,7 +6916,7 @@
 	opacity = 1;
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -6934,7 +6934,7 @@
 /area/centcom/evac)
 "sz" = (
 /obj/structure/reagent_dispensers/beerkeg,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -6942,13 +6942,13 @@
 "sA" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/shaker,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/centcom/evac)
 "sB" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green";
 	dir = 6
 	},
@@ -6982,13 +6982,13 @@
 	opacity = 1;
 	req_access_txt = "106"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/evac)
 "sF" = (
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
@@ -7008,7 +7008,7 @@
 	},
 /area/centcom/evac)
 "sH" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 1
 	},
@@ -7017,17 +7017,17 @@
 /obj/machinery/vending/boozeomat{
 	req_access_txt = "102"
 	},
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/centcom/control)
 "sJ" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	icon_state = "fakewindows2";
 	dir = 1
 	},
 /area/centcom/ferry)
 "sK" = (
 /obj/structure/flora/ausbushes/fernybush,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
@@ -7058,12 +7058,12 @@
 	req_access = null;
 	req_access_txt = "112"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "white"
 	},
 /area/tdome)
 "sO" = (
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	desc = "The door appears to be locked tightly.";
 	icon = 'icons/obj/doors/airlocks/hatch/centcom.dmi';
 	icon_state = "closed";
@@ -7071,7 +7071,7 @@
 	},
 /area/tdome)
 "sP" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (SOUTHEAST)";
 	icon_state = "fakewindows";
 	dir = 6
@@ -7085,7 +7085,7 @@
 	name = "EXTERNAL AIRLOCK";
 	pixel_x = 0
 	},
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 8
 	},
@@ -7096,7 +7096,7 @@
 	opacity = 1;
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/evac)
@@ -7113,7 +7113,7 @@
 /area/centcom/evac)
 "sT" = (
 /obj/machinery/vending/cigarette,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
@@ -7125,7 +7125,7 @@
 	dir = 2
 	},
 /obj/item/reagent_containers/food/drinks/cans/cola,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
@@ -7138,7 +7138,7 @@
 /obj/item/reagent_containers/food/drinks/cans/beer,
 /obj/item/lighter/zippo,
 /obj/item/storage/fancy/cigarettes,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
@@ -7146,17 +7146,17 @@
 /area/tdome/tdomeobserve)
 "sW" = (
 /obj/structure/reagent_dispensers/beerkeg,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
 	},
 /area/tdome/tdomeobserve)
 "sX" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/centcom/specops)
 "sY" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
@@ -7169,7 +7169,7 @@
 	network = list("Thunderdome");
 	pixel_y = 30
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
@@ -7177,7 +7177,7 @@
 /area/tdome/tdomeobserve)
 "ta" = (
 /obj/machinery/vending/coffee,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
@@ -7195,7 +7195,7 @@
 /turf/space,
 /area/space)
 "tc" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-warndark (EAST)";
 	icon_state = "warndark";
 	dir = 4
@@ -7207,7 +7207,7 @@
 	name = "Ferry Airlock";
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/ferry)
@@ -7238,12 +7238,12 @@
 /obj/effect/landmark{
 	name = "Marauder Exit"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/specops)
 "ti" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/specops)
@@ -7269,7 +7269,7 @@
 /obj/effect/landmark{
 	name = "tdomeobserve"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
@@ -7277,14 +7277,14 @@
 /area/tdome/tdomeobserve)
 "tm" = (
 /obj/machinery/vending/snack,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
 	},
 /area/tdome/tdomeobserve)
 "tn" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 5
 	},
@@ -7353,13 +7353,13 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "white"
 	},
 /area/tdome)
 "tu" = (
 /obj/item/camera,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redbluefull (WEST)";
 	icon_state = "redbluefull";
 	dir = 8
@@ -7444,21 +7444,21 @@
 	},
 /area/centcom/evac)
 "tB" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (WEST)";
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/tdome)
 "tC" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows2 (WEST)";
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/tdome)
 "tD" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (EAST)";
 	icon_state = "fakewindows";
 	dir = 4
@@ -7471,7 +7471,7 @@
 	opacity = 0;
 	req_access_txt = "106"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/evac)
@@ -7488,7 +7488,7 @@
 	id_tag = "thunderdomeaxe";
 	name = "Axe Supply"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena)
@@ -7517,7 +7517,7 @@
 	id_tag = "thunderdomegen";
 	name = "General Supply"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena)
@@ -7532,7 +7532,7 @@
 	id_tag = "thunderdome";
 	name = "Thunderdome Blast Door"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/tdome/arena)
@@ -7552,7 +7552,7 @@
 /obj/effect/landmark{
 	name = "tdome2"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/tdome/tdome2)
@@ -7573,7 +7573,7 @@
 /obj/effect/landmark{
 	name = "tdome1"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/tdome/tdome1)
@@ -7590,7 +7590,7 @@
 /turf/space/transit/horizontal,
 /area/space)
 "tR" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
@@ -7607,7 +7607,7 @@
 	id_tag = "thunderdomehea";
 	name = "Heavy Supply"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena)
@@ -7623,7 +7623,7 @@
 	pixel_x = 3;
 	pixel_y = -30
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena)
@@ -7639,7 +7639,7 @@
 	pixel_x = 3;
 	pixel_y = -30
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena)
@@ -7655,7 +7655,7 @@
 /turf/space,
 /area/space)
 "tX" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -7668,7 +7668,7 @@
 /obj/effect/landmark{
 	name = "tdomeadmin"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -7677,7 +7677,7 @@
 "tZ" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/drinkingglass/devilskiss,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -7694,7 +7694,7 @@
 	pixel_y = 0;
 	req_access_txt = "104"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -7704,19 +7704,19 @@
 /obj/structure/chair/comfy/black{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
 	},
 /area/tdome/tdomeadmin)
 "uc" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "greencorner"
 	},
 /area/centcom/control)
 "ud" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green"
 	},
 /area/centcom/control)
@@ -7727,7 +7727,7 @@
 	network = list("Thunderdome");
 	pixel_y = -30
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-redyellowfull (NORTHEAST)";
 	icon_state = "redyellowfull";
 	dir = 5
@@ -7735,13 +7735,13 @@
 /area/tdome/tdomeadmin)
 "uf" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "ug" = (
 /obj/machinery/portable_atmospherics/canister/air,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -7750,7 +7750,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -7765,12 +7765,12 @@
 	pixel_y = 5;
 	req_access_txt = "104"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/tdome/tdomeadmin)
 "uj" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -7785,7 +7785,7 @@
 	pixel_y = 5;
 	req_access_txt = "104"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/tdome/tdomeadmin)
@@ -7800,7 +7800,7 @@
 	pixel_y = 5;
 	req_access_txt = "104"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/tdome/tdomeadmin)
@@ -7812,7 +7812,7 @@
 /obj/item/radio/intercom/specops{
 	pixel_y = 25
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -7829,7 +7829,7 @@
 /turf/space/transit/horizontal,
 /area/space)
 "uo" = (
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	desc = "The door appears to be locked tightly.";
 	icon = 'icons/obj/doors/airlocks/hatch/centcom.dmi';
 	icon_state = "closed";
@@ -7842,7 +7842,7 @@
 	layer = 1;
 	name = "Blocker"
 	},
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -7854,13 +7854,13 @@
 	dir = 2;
 	network = list("ERT","CentComm")
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom)
 "ur" = (
 /turf/space,
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -7868,7 +7868,7 @@
 /area/admin)
 "us" = (
 /turf/space,
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -7876,16 +7876,16 @@
 /area/admin)
 "ut" = (
 /obj/machinery/computer/message_monitor,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
 "uu" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_end";
@@ -7895,7 +7895,7 @@
 	},
 /area/admin)
 "uv" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "gcircuit"
 	},
 /area/centcom/control)
@@ -7903,24 +7903,24 @@
 /mob/living/silicon/decoy{
 	name = "A.L.I.C.E."
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "gcircuit"
 	},
 /area/centcom/control)
 "uy" = (
 /obj/machinery/computer/card/centcom,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
 "uz" = (
 /obj/machinery/computer/card,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
 "uA" = (
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-wall3 (NORTH)";
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "wall3";
@@ -7928,11 +7928,11 @@
 	},
 /area/admin)
 "uB" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_mid";
@@ -7942,11 +7942,11 @@
 	},
 /area/admin)
 "uC" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_end";
@@ -7957,14 +7957,14 @@
 /area/admin)
 "uD" = (
 /turf/space,
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
 /area/space)
 "uE" = (
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-wall3 (EAST)";
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "wall3";
@@ -7974,7 +7974,7 @@
 "uF" = (
 /obj/structure/table/reinforced,
 /obj/item/radio/intercom/specops,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
@@ -7982,7 +7982,7 @@
 /obj/item/radio/intercom/specops{
 	pixel_y = 25
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
@@ -7991,7 +7991,7 @@
 /obj/item/clothing/head/bandana,
 /obj/item/clothing/head/ushanka,
 /obj/item/clothing/head/helmet/roman/legionaire,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8008,7 +8008,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8019,7 +8019,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8035,7 +8035,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8051,7 +8051,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8067,7 +8067,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8080,7 +8080,7 @@
 /obj/item/storage/backpack/duffel/science,
 /obj/item/storage/backpack/duffel/syndie/ammo,
 /obj/item/storage/backpack/duffel/syndie/med,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8088,7 +8088,7 @@
 "uO" = (
 /obj/structure/table/reinforced,
 /obj/item/radio/intercom/specops,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -8097,7 +8097,7 @@
 /obj/effect/landmark{
 	name = "nukecode"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -8105,22 +8105,22 @@
 /obj/structure/table/reinforced,
 /obj/item/paper,
 /obj/item/pen,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "uR" = (
 /obj/structure/table/reinforced,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "uS" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	desc = "This window appears to be reinforced, it looks nearly impossible to break.";
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
@@ -8131,7 +8131,7 @@
 	},
 /area/admin)
 "uT" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8147,7 +8147,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8159,21 +8159,21 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "uW" = (
 /obj/structure/urinal,
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/centcom/specops)
 "uX" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_mid";
@@ -8193,7 +8193,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8206,7 +8206,7 @@
 	},
 /obj/item/clothing/glasses/hud/health/sunglasses,
 /obj/item/clothing/glasses/hud/security/sunglasses,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8216,7 +8216,7 @@
 /obj/effect/landmark{
 	name = "Commando_Manual"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -8231,7 +8231,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8256,25 +8256,25 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "vd" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/centcom/specops)
 "ve" = (
 /obj/machinery/photocopier,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/centcom/specops)
 "vf" = (
 /obj/machinery/computer/secure_data,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
@@ -8289,17 +8289,17 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "vh" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
@@ -8310,7 +8310,7 @@
 /area/admin)
 "vi" = (
 /obj/machinery/computer/med_data,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
@@ -8325,7 +8325,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8341,21 +8341,21 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "vl" = (
 /obj/mecha/combat/marauder/loaded,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "vm" = (
 /obj/mecha/combat/marauder/seraph/loaded,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8366,14 +8366,14 @@
 	d2 = 2
 	},
 /obj/machinery/mech_bay_recharge_port/upgraded,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "vo" = (
 /obj/mecha/combat/honker/loaded,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8384,17 +8384,17 @@
 	icon_state = "0-2";
 	d2 = 2
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "vq" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	desc = "This window appears to be reinforced, it looks nearly impossible to break.";
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
@@ -8415,7 +8415,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8424,31 +8424,31 @@
 /obj/machinery/computer/security{
 	network = list("SS13","Telecomms","Research Outpost","Mining Outpost","ERT","CentComm","Thunderdome")
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
 "vt" = (
 /obj/machinery/computer/station_alert,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
 "vu" = (
 /obj/machinery/computer/communications,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
 "vv" = (
 /obj/machinery/computer/robotics,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
 "vw" = (
 /obj/machinery/computer/crew,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
@@ -8463,7 +8463,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8479,7 +8479,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8504,7 +8504,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8520,7 +8520,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8532,14 +8532,14 @@
 /obj/item/mecha_parts/mecha_equipment/rcd,
 /obj/item/mecha_parts/mecha_equipment/extinguisher,
 /obj/structure/closet/crate,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "vC" = (
 /turf/space,
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -8560,7 +8560,7 @@
 	pixel_x = 6;
 	pixel_y = -6
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8577,28 +8577,28 @@
 	pixel_y = -3
 	},
 /obj/item/storage/belt/champion/wrestling,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "vF" = (
 /obj/mecha/combat/marauder/mauler/loaded,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "vG" = (
 /obj/mecha/combat/gygax/dark/loaded,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "vH" = (
 /obj/structure/mecha_wreckage/phazon,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8607,7 +8607,7 @@
 /obj/structure/mirror{
 	pixel_y = -30
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8623,7 +8623,7 @@
 	pixel_x = -6;
 	pixel_y = 6
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8659,7 +8659,7 @@
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8668,7 +8668,7 @@
 /obj/item/radio/intercom/specops{
 	pixel_y = -28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -8683,7 +8683,7 @@
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flashbang/clusterbang,
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot,
 /obj/structure/closet/crate,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8693,7 +8693,7 @@
 	name = "Clothing Storage";
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8703,25 +8703,25 @@
 	name = "Mecha Room";
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "vP" = (
 /turf/space,
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
 /area/admin)
 "vQ" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_mid";
@@ -8731,11 +8731,11 @@
 	},
 /area/admin)
 "vR" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_end";
@@ -8748,16 +8748,16 @@
 /obj/machinery/newscaster/security_unit{
 	pixel_x = -32
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/centcom/specops)
 "vT" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_end";
@@ -8767,7 +8767,7 @@
 	},
 /area/admin)
 "vU" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8778,7 +8778,7 @@
 	},
 /area/admin)
 "vV" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8790,7 +8790,7 @@
 /area/admin)
 "vW" = (
 /obj/machinery/chem_master,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -8802,13 +8802,13 @@
 /obj/item/reagent_containers/glass/beaker/bluespace,
 /obj/item/reagent_containers/glass/beaker/bluespace,
 /obj/item/reagent_containers/glass/beaker/bluespace,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/admin)
 "vY" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -8816,7 +8816,7 @@
 "vZ" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -8825,7 +8825,7 @@
 /obj/structure/table,
 /obj/item/storage/pill_bottle/random_drug_bottle,
 /obj/item/reagent_containers/glass/bottle/adminordrazine,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -8839,7 +8839,7 @@
 	name = "Security Doors";
 	opacity = 0
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8849,7 +8849,7 @@
 	name = "External Airlock";
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -8859,7 +8859,7 @@
 	desc = "It appears Fox is doing more fruit chemistry today!";
 	hackedcheck = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -8868,11 +8868,11 @@
 /turf/space,
 /area/centcom/specops)
 "wf" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	desc = "This window appears to be reinforced, it looks nearly impossible to break.";
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
@@ -8884,20 +8884,20 @@
 /area/admin)
 "wh" = (
 /obj/machinery/recharge_station/upgraded,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/centcom/specops)
 "wi" = (
 /obj/structure/chair/stool,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/admin)
 "wj" = (
 /obj/structure/reagent_dispensers/fueltank,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -8919,17 +8919,17 @@
 	name = "Armory";
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "wm" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -8937,17 +8937,17 @@
 /area/admin)
 "wn" = (
 /obj/machinery/chem_heater,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/admin)
 "wo" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	desc = "This window appears to be reinforced, it looks nearly impossible to break.";
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
@@ -8981,21 +8981,21 @@
 /obj/item/ammo_casing/shotgun/dart,
 /obj/item/ammo_casing/shotgun/dart,
 /obj/item/ammo_casing/shotgun/dart,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/admin)
 "wq" = (
 /turf/space,
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
 /area/admin)
 "wr" = (
-/turf/closed/staticwall/fakeglass,
+/turf/closed/locked/wall/fakeglass,
 /area/centcom/specops)
 "ws" = (
 /obj/structure/rack,
@@ -9015,7 +9015,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9033,7 +9033,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9051,7 +9051,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9069,14 +9069,14 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "ww" = (
 /obj/machinery/vending/liberationstation,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9090,7 +9090,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9108,7 +9108,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9122,7 +9122,7 @@
 /obj/item/reagent_containers/food/snacks/grown/citrus/orange,
 /obj/item/reagent_containers/food/snacks/grown/corn,
 /obj/item/reagent_containers/food/snacks/grown/mushroom/amanita,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -9135,7 +9135,7 @@
 /obj/item/reagent_containers/glass/beaker/bluespace,
 /obj/item/reagent_containers/glass/beaker/bluespace,
 /obj/item/storage/box/autoinjectors,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -9155,13 +9155,13 @@
 /obj/item/grenade/chem_grenade/large,
 /obj/item/grenade/chem_grenade/large,
 /obj/item/grenade/chem_grenade/large,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/admin)
 "wC" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/centcom/bathroom)
 "wD" = (
 /obj/structure/table,
@@ -9180,7 +9180,7 @@
 /obj/item/assembly/prox_sensor,
 /obj/item/assembly/prox_sensor,
 /obj/item/assembly/prox_sensor,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -9196,11 +9196,11 @@
 /turf/space/transit/horizontal,
 /area/space)
 "wF" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
@@ -9210,11 +9210,11 @@
 	},
 /area/admin)
 "wG" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
@@ -9235,7 +9235,7 @@
 	name = "Chem Lab";
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -9251,7 +9251,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9273,13 +9273,13 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "wK" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/centcom/evac)
 "wL" = (
 /obj/structure/rack,
@@ -9288,7 +9288,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9299,19 +9299,19 @@
 	pixel_x = 0;
 	pixel_y = -32
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "wN" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/evac)
 "wO" = (
 /obj/machinery/optable,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -9322,13 +9322,13 @@
 /obj/item/shard,
 /obj/item/kitchen/knife,
 /obj/item/storage/firstaid/tactical,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/admin)
 "wQ" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 1;
 	icon_state = "carpetside"
 	},
@@ -9344,7 +9344,7 @@
 	pixel_y = 24;
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 9;
 	icon_state = "carpetside"
 	},
@@ -9352,7 +9352,7 @@
 "wS" = (
 /obj/machinery/computer/secure_data,
 /obj/item/paper/sop,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 5;
 	icon_state = "carpetside"
 	},
@@ -9364,17 +9364,17 @@
 	pixel_x = 6;
 	pixel_y = -6
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "wU" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -9382,7 +9382,7 @@
 /area/admin)
 "wV" = (
 /obj/effect/decal/cleanable/blood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -9392,28 +9392,28 @@
 /obj/item/stack/cable_coil,
 /obj/item/stack/rods,
 /obj/item/pen,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/admin)
 "wX" = (
 /obj/structure/chair/office/dark,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "carpet";
 	dir = 2
 	},
 /area/admin)
 "wY" = (
 /obj/machinery/computer/communications,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "carpetside"
 	},
 /area/admin)
 "wZ" = (
 /obj/machinery/computer/med_data,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 4;
 	icon_state = "carpetside"
 	},
@@ -9425,7 +9425,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9437,7 +9437,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9449,14 +9449,14 @@
 	pixel_y = -3
 	},
 /obj/item/katana,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "xd" = (
 /obj/effect/spawner/window/reinforced,
-/turf/unsimulated/floor,
+/turf/open/locked/floor,
 /area/centcom/evac)
 "xe" = (
 /obj/structure/rack,
@@ -9468,7 +9468,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9478,7 +9478,7 @@
 /obj/random/toolbox,
 /obj/random/bomb_supply,
 /obj/machinery/syndicatebomb/badmin/clown,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -9486,13 +9486,13 @@
 "xg" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/syndicate,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
 /area/admin)
 "xh" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -9503,7 +9503,7 @@
 /obj/item/rcd_ammo,
 /obj/item/rcd_ammo,
 /obj/item/storage/pill_bottle/random_drug_bottle,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -9513,7 +9513,7 @@
 /obj/item/scalpel,
 /obj/item/bonesetter,
 /obj/item/bonegel,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -9526,7 +9526,7 @@
 /obj/item/storage/box/mousetraps,
 /obj/item/storage/fancy/cigarettes,
 /obj/item/pen,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -9537,7 +9537,7 @@
 	name = "security checkpoint";
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "carpetside"
 	},
@@ -9547,7 +9547,7 @@
 /obj/structure/window/reinforced,
 /obj/item/paper_bin,
 /obj/item/pen,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 10;
 	icon_state = "carpetside"
 	},
@@ -9556,7 +9556,7 @@
 /obj/structure/table,
 /obj/structure/window/reinforced,
 /obj/machinery/recharger,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 6;
 	icon_state = "carpetside"
 	},
@@ -9571,7 +9571,7 @@
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9586,7 +9586,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9598,7 +9598,7 @@
 /obj/item/clothing/under/rebeloutfit,
 /obj/item/clothing/suit/poncho/ponchoshame,
 /obj/item/clothing/head/sombrero/shamebrero,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -9608,7 +9608,7 @@
 	name = "Tool Storage";
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -9618,24 +9618,24 @@
 /obj/item/FixOVein,
 /obj/item/retractor,
 /obj/item/cautery,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/admin)
 "xt" = (
 /obj/structure/kitchenspike,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/admin)
 "xu" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_mid";
@@ -9645,11 +9645,11 @@
 	},
 /area/admin)
 "xv" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_end";
@@ -9659,11 +9659,11 @@
 	},
 /area/admin)
 "xw" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5_end";
@@ -9679,7 +9679,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9691,14 +9691,14 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "xz" = (
 /obj/effect/spawner/window/reinforced,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/evac)
@@ -9713,7 +9713,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9728,7 +9728,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9738,7 +9738,7 @@
 /obj/random/tool,
 /obj/item/clothing/gloves/color/yellow,
 /obj/item/pinpointer/advpinpointer,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -9753,7 +9753,7 @@
 /obj/item/grenade/syndieminibomb{
 	pixel_x = -1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -9764,7 +9764,7 @@
 	pixel_y = 0
 	},
 /obj/item/toy/cards/deck/syndicate/black,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -9773,7 +9773,7 @@
 /obj/structure/table,
 /obj/item/surgicaldrill,
 /obj/item/stack/medical/bruise_pack/advanced,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -9782,7 +9782,7 @@
 /obj/structure/table,
 /obj/item/hemostat,
 /obj/item/circular_saw,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -9800,34 +9800,34 @@
 	name = "Operating Theater";
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/admin)
 "xI" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
 /area/admin)
 "xJ" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/admin)
 "xK" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -9840,22 +9840,22 @@
 	},
 /area/adminconstruction)
 "xM" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
 /area/admin)
 "xN" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -9867,41 +9867,41 @@
 	name = "Laboratory (DANGER!)";
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "xP" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (EAST)";
 	icon_state = "fakewindows";
 	dir = 4
 	},
 /area/trader_station/sol)
 "xQ" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (WEST)";
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/trader_station/sol)
 "xR" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (WEST)";
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/vox_station)
 "xS" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows2 (WEST)";
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/vox_station)
 "xT" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (EAST)";
 	icon_state = "fakewindows";
 	dir = 4
@@ -9909,14 +9909,14 @@
 /area/vox_station)
 "xU" = (
 /obj/machinery/computer/crew,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "xV" = (
 /obj/machinery/computer/supplycomp/public,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9926,7 +9926,7 @@
 	badmin = 1;
 	name = "Master R&amp;D Server Controller"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9935,7 +9935,7 @@
 /obj/machinery/computer/security{
 	network = list("SS13","Telecomms","Research Outpost","Mining Outpost","ERT","CentComm","Thunderdome")
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9951,20 +9951,20 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "xZ" = (
 /obj/structure/table,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/evac)
 "ya" = (
 /obj/machinery/r_n_d/server/centcom,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -9983,17 +9983,17 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "yc" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
@@ -10004,45 +10004,45 @@
 /area/admin)
 "yd" = (
 /obj/structure/chair/comfy/black,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/admin)
 "ye" = (
 /obj/machinery/computer/shuttle/trade/sol,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/trader_station/sol)
 "yf" = (
 /obj/effect/spawner/window/reinforced,
-/turf/unsimulated/floor,
+/turf/open/locked/floor,
 /area/centcom/bathroom)
 "yg" = (
 /obj/effect/decal/warning_stripes/southeastcorner,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/evac)
 "yh" = (
 /obj/machinery/vending/snack,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/trader_station/sol)
 "yi" = (
 /obj/machinery/computer/card/centcom,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "yj" = (
 /obj/machinery/computer/card,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10051,7 +10051,7 @@
 /obj/structure/chair/comfy/black{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10068,7 +10068,7 @@
 	name = "Security Doors";
 	opacity = 0
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10078,7 +10078,7 @@
 	name = "aroomwarp";
 	tag = ""
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10089,7 +10089,7 @@
 	name = "Gambling Den";
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -10097,49 +10097,49 @@
 "yo" = (
 /obj/structure/table/wood,
 /obj/item/toy/cards/deck/syndicate,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/admin)
 "yp" = (
 /obj/structure/table/wood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/admin)
 "yq" = (
 /obj/item/flag/nt,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/evac)
 "yr" = (
 /obj/effect/decal/warning_stripes/east,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/evac)
 "ys" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/drinkingglass/devilskiss,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/admin)
 "yt" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/evac)
 "yu" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	desc = "This window appears to be reinforced, it looks nearly impossible to break.";
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
@@ -10157,13 +10157,13 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/trader_station/sol)
 "yx" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "browncorner"
 	},
@@ -10176,14 +10176,14 @@
 /obj/structure/chair/comfy/black{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "yA" = (
 /obj/structure/chair/stool,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -10192,17 +10192,17 @@
 /obj/structure/table/wood,
 /obj/item/lighter/zippo/engraved,
 /obj/item/storage/fancy/cigarettes/dromedaryco,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
 /area/admin)
 "yC" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	desc = "This window appears to be reinforced, it looks nearly impossible to break.";
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
@@ -10217,10 +10217,10 @@
 	id_tag = "trade_sol_base";
 	name = "Docking Port"
 	},
-/turf/unsimulated/floor/plating,
+/turf/open/locked/floor/plating,
 /area/trader_station/sol)
 "yF" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10229,42 +10229,42 @@
 /obj/machinery/door/airlock/external{
 	name = "Arrival Airlock"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/evac)
 "yH" = (
 /obj/effect/decal/warning_stripes/northeastcorner,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/evac)
 "yI" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "brown"
 	},
 /area/trader_station/sol)
 "yJ" = (
 /obj/machinery/computer/communications,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "yK" = (
 /obj/structure/chair/comfy/black,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "yL" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -10274,38 +10274,38 @@
 /turf/open/shuttle/floor,
 /area/centcom/evac)
 "yN" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
 /area/admin)
 "yO" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 1;
 	icon_state = "browncorner"
 	},
 /area/trader_station/sol)
 "yP" = (
 /obj/machinery/computer/atmos_alert,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "yQ" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "green"
 	},
 /area/centcom/evac)
 "yR" = (
 /obj/machinery/computer/message_monitor,
 /obj/item/paper/monitorkey,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10314,7 +10314,7 @@
 /obj/machinery/computer/account_database{
 	name = "Admin Accounts Database"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10327,7 +10327,7 @@
 /area/centcom/evac)
 "yU" = (
 /obj/machinery/computer/secure_data,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10342,7 +10342,7 @@
 	pixel_y = 0;
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10379,7 +10379,7 @@
 "za" = (
 /obj/structure/table,
 /obj/item/gun/projectile/automatic/pistol,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10390,7 +10390,7 @@
 /obj/item/reagent_containers/food/drinks/cans/adminbooze,
 /obj/item/reagent_containers/food/drinks/cans/badminbrew,
 /obj/item/reagent_containers/food/drinks/cans/madminmalt,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10405,7 +10405,7 @@
 	name = "Dojo";
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -10415,14 +10415,14 @@
 	name = "Shuttle Bay";
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "zf" = (
 /obj/structure/showcase,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -10449,7 +10449,7 @@
 /obj/effect/landmark{
 	name = "traderstart_sol"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10475,7 +10475,7 @@
 	dir = 1
 	},
 /obj/structure/table/wood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -10489,13 +10489,13 @@
 	},
 /obj/item/grenade/clusterbuster/smoke,
 /obj/structure/table/wood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
 /area/admin)
 "zn" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	icon_state = "fakewindows2";
 	dir = 1
 	},
@@ -10508,7 +10508,7 @@
 "zt" = (
 /obj/structure/table/wood,
 /obj/item/dice/d20,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10520,7 +10520,7 @@
 /obj/effect/landmark{
 	name = "traderstart_sol"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10532,7 +10532,7 @@
 /obj/structure/window/reinforced,
 /obj/structure/table/wood,
 /obj/item/sleeping_carp_scroll,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -10544,7 +10544,7 @@
 /obj/structure/window/reinforced,
 /obj/structure/table/wood,
 /obj/item/twohanded/bostaff,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -10561,7 +10561,7 @@
 /obj/structure/table/wood,
 /obj/item/paper_bin,
 /obj/item/pen,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10570,7 +10570,7 @@
 /obj/structure/ninjatele{
 	pixel_x = -28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -10579,7 +10579,7 @@
 /obj/structure/ninjatele{
 	pixel_x = 28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -10594,35 +10594,35 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/trader_station/sol)
 "zD" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
 /area/admin)
 "zE" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
 /area/admin)
 "zF" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 0;
 	icon_state = "fakewindows";
 	tag = "icon-fakewindows (EAST)"
@@ -10637,21 +10637,21 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
 /area/admin)
 "zJ" = (
 /obj/structure/bed,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
 /area/admin)
 "zK" = (
 /obj/effect/decal/cleanable/fungus,
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-wall3 (EAST)";
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "wall3";
@@ -10660,7 +10660,7 @@
 /area/admin)
 "zL" = (
 /obj/item/flag/syndi,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -10670,7 +10670,7 @@
 	name = "Suit Storage";
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "engine"
 	},
 /area/admin)
@@ -10680,7 +10680,7 @@
 	id_tag = "commandcenter";
 	name = "Privacy Shutters"
 	},
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -10697,7 +10697,7 @@
 	name = "Toilet";
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10717,7 +10717,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -10738,7 +10738,7 @@
 	name = "Cell B";
 	req_access_txt = "101"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -10762,7 +10762,7 @@
 /area/centcom/evac)
 "zY" = (
 /obj/structure/window/reinforced,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -10771,7 +10771,7 @@
 /obj/structure/urinal{
 	pixel_y = 28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -10781,7 +10781,7 @@
 /obj/structure/mirror{
 	pixel_x = 28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -10792,21 +10792,21 @@
 	dir = 1
 	},
 /obj/item/soap,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/trader_station/sol)
 "Ac" = (
 /obj/machinery/iv_drip,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
 /area/admin)
 "Ad" = (
 /obj/machinery/vending/medical,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -10814,28 +10814,28 @@
 "Ae" = (
 /obj/structure/chair,
 /obj/effect/decal/cleanable/blood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
 /area/admin)
 "Af" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
 	},
 /area/admin)
 "Ag" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "diagonalWall3"
@@ -10844,7 +10844,7 @@
 "Ah" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/suit/straight_jacket,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -10852,7 +10852,7 @@
 "Ai" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/handcuffs,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -10861,16 +10861,16 @@
 /obj/structure/table/reinforced,
 /obj/item/clothing/glasses/sunglasses/blindfold,
 /obj/item/clothing/mask/muzzle,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
 /area/admin)
 "Ak" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "engine"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
@@ -10880,7 +10880,7 @@
 	},
 /area/admin)
 "Al" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
@@ -10895,30 +10895,30 @@
 	pixel_x = 11;
 	pixel_y = 0
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/trader_station/sol)
 "An" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/trader_station/sol)
 "Ao" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows2 (WEST)";
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/trader_station/sol)
 "Ar" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
@@ -10932,7 +10932,7 @@
 	desc = "Uh oh. You'd better hope you aren't going in here!";
 	name = "Prisoner Treatment"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -10942,16 +10942,16 @@
 	desc = "Uh oh. You'd better hope you aren't going in here!";
 	name = "Detainment"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
 /area/admin)
 "Au" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "engine"
 	},
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "window5";
@@ -10973,20 +10973,20 @@
 	opacity = 1;
 	req_access_txt = "0"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	dir = 2
 	},
 /area/trader_station/sol)
 "Aw" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/centcom)
 "Ay" = (
 /obj/structure/table/reinforced,
 /obj/item/melee/classic_baton/telescopic,
 /obj/item/paper/Court,
 /obj/item/pen,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -10995,7 +10995,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/box/mousetraps,
 /obj/item/storage/box/trackimp,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -11003,7 +11003,7 @@
 "AA" = (
 /obj/structure/table/reinforced,
 /obj/item/scalpel,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -11011,7 +11011,7 @@
 "AB" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/grenades,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -11020,7 +11020,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/box/flashbangs,
 /obj/item/storage/box/flashes,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -11028,7 +11028,7 @@
 "AD" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/teargas,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -11039,7 +11039,7 @@
 	name = "Cell A";
 	req_access_txt = "101"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -11049,7 +11049,7 @@
 	dir = 1;
 	layer = 2.9
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -11058,7 +11058,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -11075,7 +11075,7 @@
 	name = "Security Doors";
 	opacity = 0
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -11084,7 +11084,7 @@
 /obj/structure/rack,
 /obj/item/tank/jetpack/oxygen,
 /obj/item/tank/jetpack/oxygen,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -11097,7 +11097,7 @@
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/head/helmet/space,
 /obj/item/clothing/head/helmet/space,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -11109,7 +11109,7 @@
 	pixel_x = -6;
 	pixel_y = 6
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -11126,7 +11126,7 @@
 "AO" = (
 /obj/structure/table,
 /obj/random/powercell,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -11135,7 +11135,7 @@
 /obj/structure/table,
 /obj/random/tool,
 /obj/random/bomb_supply,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -11143,7 +11143,7 @@
 "AQ" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/mechanical,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -11152,14 +11152,14 @@
 /obj/structure/table,
 /obj/random/technology_scanner,
 /obj/random/tech_supply,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "AS" = (
 /obj/machinery/computer/teleporter,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -11168,7 +11168,7 @@
 /obj/structure/table,
 /obj/item/clothing/gloves/color/yellow,
 /obj/random/bomb_supply,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -11178,14 +11178,14 @@
 	admin_usage = 1
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
 /area/admin)
 "AV" = (
 /obj/machinery/teleport/station,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -11193,7 +11193,7 @@
 "AW" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/electrical,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
@@ -11203,7 +11203,7 @@
 	id_tag = "commandcenter"
 	},
 /obj/machinery/door/airlock/hatch/syndicate/command,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11214,7 +11214,7 @@
 	dir = 8
 	},
 /obj/machinery/pdapainter,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11227,7 +11227,7 @@
 	},
 /obj/item/storage/backpack/satchel,
 /obj/item/storage/backpack/satchel,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11238,7 +11238,7 @@
 	dir = 8
 	},
 /obj/machinery/vending/tool,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11252,7 +11252,7 @@
 /area/centcom/evac)
 "Bd" = (
 /obj/machinery/vending/coffee/free,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11260,7 +11260,7 @@
 /obj/structure/table,
 /obj/item/storage/backpack/industrial,
 /obj/item/storage/backpack/industrial,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11272,7 +11272,7 @@
 "Bg" = (
 /obj/structure/table/wood,
 /obj/item/syndicatedetonator,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 1;
 	icon_state = "carpetside"
 	},
@@ -11281,7 +11281,7 @@
 /obj/structure/table,
 /obj/item/storage/backpack/medic,
 /obj/item/storage/backpack/medic,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11311,13 +11311,13 @@
 /obj/structure/table,
 /obj/item/storage/backpack/science,
 /obj/item/storage/backpack/science,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "Bn" = (
 /obj/machinery/door/airlock/hatch/syndicate,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "bar";
 	dir = 2
 	},
@@ -11325,7 +11325,7 @@
 "Bo" = (
 /obj/structure/table/wood,
 /obj/item/radio/intercom/syndicate,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 9;
 	icon_state = "carpetside"
 	},
@@ -11333,7 +11333,7 @@
 "Bp" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/drinkingglass/devilskiss,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 5;
 	icon_state = "carpetside"
 	},
@@ -11347,7 +11347,7 @@
 /area/centcom/evac)
 "Br" = (
 /obj/structure/chair/office/dark,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11366,7 +11366,7 @@
 /obj/effect/landmark{
 	name = "Syndicate Officer"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 2;
 	icon_state = "carpetside"
 	},
@@ -11378,21 +11378,21 @@
 	name = "Privacy Shutters";
 	req_access_txt = "153"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 10;
 	icon_state = "carpetside"
 	},
 /area/syndicate_mothership)
 "Bv" = (
 /obj/machinery/computer/camera_advanced,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 6;
 	icon_state = "carpetside"
 	},
 /area/syndicate_mothership)
 "Bw" = (
 /obj/structure/table/reinforced,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11402,7 +11402,7 @@
 	name = "Syndicate-Commando";
 	tag = "Commando"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11410,7 +11410,7 @@
 /obj/machinery/computer/shuttle/syndicate{
 	name = "Nuclear Operatives Shuttle Console"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11430,19 +11430,19 @@
 	pixel_y = 6;
 	req_access_txt = "153"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "BA" = (
 /obj/structure/displaycase/stechkin,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "BB" = (
 /obj/structure/closet/secure_closet/syndicate_officer,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11451,7 +11451,7 @@
 	id_tag = "sst_mechbay";
 	name = "Mech Bay"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11459,7 +11459,7 @@
 /obj/machinery/door/airlock/hatch/syndicate{
 	name = "Holding Cell"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11469,7 +11469,7 @@
 /obj/item/storage/backpack/duffel/syndie/ammo/shotgun,
 /obj/item/gun/projectile/automatic/shotgun/bulldog,
 /obj/item/gun/projectile/automatic/shotgun/bulldog,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11478,14 +11478,14 @@
 	id_tag = "sst_armory";
 	name = "Armory"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "BG" = (
 /obj/mecha/combat/gygax/dark/loaded,
 /obj/effect/decal/warning_stripes/red/hollow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11501,7 +11501,7 @@
 /obj/item/ammo_box/magazine/smgm45,
 /obj/item/gun/projectile/automatic/c20r,
 /obj/item/gun/projectile/automatic/c20r,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11512,7 +11512,7 @@
 /obj/item/ammo_box/magazine/sniper_rounds/penetrator,
 /obj/item/ammo_box/magazine/sniper_rounds/haemorrhage,
 /obj/item/gun/projectile/automatic/sniper_rifle/syndicate,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11520,7 +11520,7 @@
 /obj/structure/rack,
 /obj/item/gun/medbeam,
 /obj/item/clothing/glasses/hud/health/night,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11532,13 +11532,13 @@
 /obj/item/ammo_casing/rocket,
 /obj/item/ammo_casing/rocket,
 /obj/item/gun/rocketlauncher,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "BL" = (
 /obj/structure/reagent_dispensers/fueltank,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11549,7 +11549,7 @@
 /obj/machinery/door/poddoor/impassable{
 	id_tag = "sit_ready"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11560,24 +11560,24 @@
 /obj/machinery/door/poddoor/impassable{
 	id_tag = "sst_ready"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "BO" = (
 /obj/machinery/bluespace_beacon/syndicate/infiltrator,
 /obj/effect/decal/warning_stripes/yellow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "BQ" = (
 /obj/machinery/mech_bay_recharge_port/upgraded/unsimulated,
-/turf/unsimulated/floor,
+/turf/open/locked/floor,
 /area/syndicate_mothership)
 "BR" = (
 /obj/machinery/mech_bay_recharge_port/upgraded/unsimulated,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -11585,7 +11585,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11594,7 +11594,7 @@
 	name = "cell door";
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11603,19 +11603,19 @@
 	dir = 1
 	},
 /obj/machinery/computer/arcade/orion_trail,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "BV" = (
 /obj/structure/chair,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "BW" = (
 /obj/structure/chair/stool,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11623,13 +11623,13 @@
 /obj/structure/table/wood,
 /obj/item/paper_bin,
 /obj/item/pen/red,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "BY" = (
 /obj/structure/bed,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11637,7 +11637,7 @@
 /obj/structure/closet/secure_closet{
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11646,7 +11646,7 @@
 	name = "Out";
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11655,7 +11655,7 @@
 	name = "In";
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11663,7 +11663,7 @@
 /obj/machinery/door/poddoor/impassable{
 	id_tag = "nukeop_base"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
@@ -11676,14 +11676,14 @@
 	height = 22;
 	id = "syndicate_away";
 	name = "syndicate base";
-	turf_type = /turf/unsimulated/floor/snow;
+	turf_type = /turf/open/locked/floor/snow;
 	width = 18
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/locked/floor/snow,
 /area/syndicate_mothership)
 "Cf" = (
 /obj/structure/kitchenspike,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -11696,7 +11696,7 @@
 /area/holodeck/source_thunderdomecourt)
 "CD" = (
 /obj/structure/table/wood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -11737,12 +11737,12 @@
 	tag_exterior_door = "syndicate_jail_airlock_external";
 	tag_interior_door = "syndicate_jail_airlock_internal"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "DL" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows3";
 	tag = "icon-fakewindows (WEST)"
@@ -11755,7 +11755,7 @@
 /obj/machinery/door/airlock/hatch/syndicate{
 	name = "Torture Room"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -11786,7 +11786,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -11816,7 +11816,7 @@
 /area/adminconstruction)
 "Ga" = (
 /obj/machinery/computer/shuttle/ert,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -11829,7 +11829,7 @@
 /area/holodeck/source_desert)
 "Gu" = (
 /obj/structure/bed,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -11846,7 +11846,7 @@
 	},
 /area/holodeck/source_theatre)
 "GP" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "gcircuit"
 	},
 /area/admin)
@@ -11865,7 +11865,7 @@
 	locked = 1;
 	name = "Syndicate Jail Internal Airlock"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -11873,31 +11873,31 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "engine"
 	},
 /area/admin)
 "Hg" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/space/space_ninja,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "engine"
 	},
 /area/admin)
 "Hh" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "engine"
 	},
 /area/admin)
 "Hi" = (
 /obj/structure/rack,
 /obj/item/clothing/head/helmet/space/space_ninja,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "engine"
 	},
 /area/admin)
 "Hj" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/tdome)
 "Hp" = (
 /turf/open/floor/holofloor{
@@ -11907,12 +11907,12 @@
 	},
 /area/holodeck/source_theatre)
 "Hr" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/syndicate_mothership/jail)
 "Hu" = (
 /obj/structure/rack,
 /obj/item/clothing/gloves/space_ninja,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "engine"
 	},
 /area/admin)
@@ -11920,25 +11920,25 @@
 /obj/structure/rack,
 /obj/item/katana/energy,
 /obj/item/clothing/mask/gas/space_ninja,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "engine"
 	},
 /area/admin)
 "Hw" = (
 /obj/structure/rack,
 /obj/item/clothing/shoes/space_ninja,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "engine"
 	},
 /area/admin)
 "Hy" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "white"
 	},
 /area/tdome)
 "Hz" = (
 /obj/machinery/gibber,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "white"
 	},
 /area/tdome)
@@ -11958,7 +11958,7 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -11966,7 +11966,7 @@
 /obj/structure/closet/secure_closet/freezer/meat{
 	req_access_txt = "112"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "white"
 	},
 /area/tdome)
@@ -11974,26 +11974,26 @@
 /obj/structure/closet/secure_closet/freezer/fridge{
 	req_access_txt = "112"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "white"
 	},
 /area/tdome)
 "HU" = (
 /obj/effect/decal/remains/human,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
 "HY" = (
 /obj/structure/table,
 /obj/machinery/kitchen_machine/microwave/upgraded,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "white"
 	},
 /area/tdome)
 "HZ" = (
 /obj/structure/table/reinforced,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "white"
 	},
 /area/tdome)
@@ -12004,17 +12004,17 @@
 /obj/item/clothing/suit/armor/tdome/red,
 /obj/item/clothing/head/helmet/thunderdome,
 /obj/item/melee/energy/sword/saber/red,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena)
 "Ik" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/tdome/tdome2)
 "Io" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/tdome/tdome1)
@@ -12025,7 +12025,7 @@
 /obj/item/clothing/suit/armor/tdome/green,
 /obj/item/clothing/head/helmet/thunderdome,
 /obj/item/melee/energy/sword/saber/green,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/tdome/arena)
@@ -12033,7 +12033,7 @@
 /obj/effect/landmark{
 	name = "tdome2"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/tdome/tdome2)
@@ -12041,7 +12041,7 @@
 /obj/effect/landmark{
 	name = "tdome1"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/tdome/tdome1)
@@ -12050,7 +12050,7 @@
 /area/tdome/arena)
 "Iz" = (
 /obj/structure/chair/stool,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -12074,7 +12074,7 @@
 	req_access_txt = "150";
 	specialfunctions = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -12100,7 +12100,7 @@
 	},
 /area/holodeck/source_thunderdomecourt)
 "IS" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/tdome/tdomeadmin)
@@ -12137,14 +12137,14 @@
 /obj/effect/landmark{
 	name = "voxstart"
 	},
-/turf/unsimulated/floor/vox,
+/turf/open/locked/floor/vox,
 /area/vox_station)
 "Kv" = (
 /obj/structure/chair/stool,
 /obj/effect/landmark{
 	name = "voxstart"
 	},
-/turf/unsimulated/floor/vox,
+/turf/open/locked/floor/vox,
 /area/vox_station)
 "KA" = (
 /obj/structure/chair/sofa/left,
@@ -12155,13 +12155,13 @@
 "KB" = (
 /obj/structure/table/wood,
 /obj/machinery/kitchen_machine/microwave,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
 "KK" = (
 /obj/machinery/tcomms/relay/cc,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
@@ -12238,7 +12238,7 @@
 "LZ" = (
 /obj/mecha/combat/marauder/seraph/loaded,
 /obj/effect/decal/warning_stripes/yellow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -12248,7 +12248,7 @@
 /obj/item/surgicaldrill{
 	pixel_y = 5
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -12256,7 +12256,7 @@
 /obj/effect/landmark{
 	name = "syndieprisonwarp"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -12273,20 +12273,20 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
 "Nz" = (
 /obj/effect/decal/warning_stripes/northwest,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/control)
 "NF" = (
 /obj/machinery/bsa/full/admin/east,
 /obj/effect/decal/warning_stripes/north,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/control)
@@ -12295,31 +12295,31 @@
 /obj/effect/landmark{
 	name = "syndieprisonwarp"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
 "NI" = (
 /obj/effect/decal/warning_stripes/north,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/control)
 "NJ" = (
 /obj/effect/decal/warning_stripes/northeast,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/control)
 "NW" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 1
 	},
 /area/syndicate_mothership/jail)
 "Oh" = (
 /obj/effect/decal/warning_stripes/southwest,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/control)
@@ -12338,19 +12338,19 @@
 	locked = 1;
 	name = "Syndicate Jail Internal Airlock"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
 "Oq" = (
 /obj/effect/decal/warning_stripes/south,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/control)
 "Or" = (
 /obj/effect/decal/warning_stripes/southeast,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/control)
@@ -12362,14 +12362,14 @@
 	locked = 1;
 	name = "Syndicate Jail External Airlock"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership)
 "Ov" = (
 /obj/structure/kitchenspike,
 /obj/effect/decal/cleanable/blood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -12380,7 +12380,7 @@
 /obj/effect/decal/warning_stripes/arrow{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -12394,24 +12394,24 @@
 "Pn" = (
 /obj/mecha/combat/marauder/loaded,
 /obj/effect/decal/warning_stripes/yellow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "Pr" = (
 /obj/structure/chair/office/dark,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
 "PJ" = (
 /obj/effect/decal/warning_stripes/west,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom/specops)
 "Qc" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (SOUTHEAST)";
 	icon_state = "fakewindows";
 	dir = 6
@@ -12427,13 +12427,13 @@
 /area/ninja/holding)
 "Qu" = (
 /obj/effect/decal/cleanable/blood,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
 "Qv" = (
 /obj/machinery/door/window/westleft,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -12464,7 +12464,7 @@
 /obj/item/clothing/mask/muzzle{
 	pixel_y = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -12488,12 +12488,12 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "Ri" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	tag = "icon-fakewindows (NORTHEAST)";
 	icon_state = "fakewindows";
 	dir = 5
@@ -12505,7 +12505,7 @@
 /area/holodeck/source_picnicarea)
 "RD" = (
 /obj/effect/decal/warning_stripes/south,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
@@ -12515,14 +12515,14 @@
 /turf/open/floor/beach/sand,
 /area/holodeck/source_beach)
 "RX" = (
-/turf/closed/staticwall{
+/turf/closed/locked/wall{
 	tag = "icon-iron10";
 	icon_state = "iron10"
 	},
 /area/space)
 "Sa" = (
 /obj/structure/chair/office/dark,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -12539,7 +12539,7 @@
 	locked = 1;
 	name = "Syndicate Jail"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -12558,7 +12558,7 @@
 	admin_usage = 1
 	},
 /obj/effect/decal/warning_stripes/yellow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -12566,7 +12566,7 @@
 /obj/structure/chair/comfy/black{
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -12574,7 +12574,7 @@
 /obj/structure/chair/office/dark{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -12582,7 +12582,7 @@
 /obj/structure/chair/office/dark{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
@@ -12592,7 +12592,7 @@
 /area/holodeck/source_thunderdomecourt)
 "Tl" = (
 /obj/structure/chair/office/dark,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
@@ -12600,7 +12600,7 @@
 /obj/structure/chair/office/dark{
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/control)
@@ -12628,7 +12628,7 @@
 /obj/structure/chair/office/dark{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -12653,7 +12653,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grimy"
 	},
 /area/centcom/specops)
@@ -12685,7 +12685,7 @@
 	},
 /area/holodeck/source_thunderdomecourt)
 "UZ" = (
-/turf/closed/staticwall/fakeglass{
+/turf/closed/locked/wall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 8
 	},
@@ -12696,46 +12696,46 @@
 "Vm" = (
 /obj/structure/table/wood,
 /obj/item/storage/box/donkpockets,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
 "Vz" = (
-/turf/closed/staticwall,
+/turf/closed/locked/wall,
 /area/ai_multicam_room)
 "VA" = (
 /obj/effect/decal/warning_stripes/northwest,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "VB" = (
 /obj/effect/decal/warning_stripes/northeast,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "VC" = (
 /obj/effect/decal/warning_stripes/yellow/hollow,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "VD" = (
 /obj/effect/decal/warning_stripes/southwest,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "VE" = (
 /obj/effect/decal/warning_stripes/southeast,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "VJ" = (
 /obj/structure/chair,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/evac)
@@ -12743,7 +12743,7 @@
 /obj/structure/chair/comfy/purp{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "wood"
 	},
@@ -12757,7 +12757,7 @@
 /area/holodeck/source_knightarena)
 "Wa" = (
 /obj/structure/bed,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
@@ -12765,7 +12765,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/evac)
@@ -12773,7 +12773,7 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom/evac)
@@ -12798,7 +12798,7 @@
 	},
 /area/centcom/evac)
 "WA" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -12822,20 +12822,20 @@
 /area/centcom/evac)
 "WW" = (
 /obj/structure/flora/ausbushes/pointybush,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "grass1";
 	name = "grass"
 	},
 /area/centcom/control)
 "Xj" = (
 /obj/structure/bed,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floorscorched2"
 	},
 /area/centcom)
 "Xm" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "floor"
 	},
 /area/centcom)
@@ -12849,13 +12849,13 @@
 	frequency = 1449;
 	pixel_x = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
 "Xr" = (
 /obj/structure/bed,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	name = "plating"
 	},
 /area/centcom)
@@ -12874,7 +12874,7 @@
 	pixel_y = -8;
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -12885,11 +12885,11 @@
 /obj/item/FixOVein/alien,
 /obj/item/surgicaldrill/alien,
 /obj/item/circular_saw/alien,
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "XM" = (
 /obj/structure/bed/abductor,
-/turf/unsimulated/floor/abductor,
+/turf/open/locked/floor/abductor,
 /area/abductor_ship)
 "XT" = (
 /turf/open/floor/holofloor{
@@ -12918,7 +12918,7 @@
 	locked = 1;
 	name = "Syndicate Jail Cell"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)
@@ -12926,7 +12926,7 @@
 /turf/open/floor/beach/coastline,
 /area/holodeck/source_beach)
 "ZE" = (
-/turf/closed/staticwall/fakeglass,
+/turf/closed/locked/wall/fakeglass,
 /area/syndicate_mothership/jail)
 "ZR" = (
 /turf/open/floor/holofloor{
@@ -12936,7 +12936,7 @@
 /area/holodeck/source_emptycourt)
 "ZZ" = (
 /obj/structure/closet/secure_closet/contractor,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "dark"
 	},
 /area/syndicate_mothership/jail)

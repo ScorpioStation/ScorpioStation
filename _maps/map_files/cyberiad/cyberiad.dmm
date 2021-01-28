@@ -43013,7 +43013,7 @@
 	dir = 8;
 	icon_state = "heater"
 	},
-/turf/unsimulated/floor,
+/turf/open/locked/floor,
 /area/shuttle/specops)
 "bCe" = (
 /obj/machinery/camera{

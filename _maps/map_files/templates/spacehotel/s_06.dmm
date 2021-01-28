@@ -13,7 +13,7 @@
 	dir = 4;
 	id = "room_s"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "whiteblue"
 	},
@@ -57,7 +57,7 @@
 	dir = 4;
 	id = "room_s"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 8;
 	icon_state = "whiteblue"
 	},
@@ -82,13 +82,13 @@
 	range = 5
 	},
 /obj/item/soap/nanotrasen,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 1;
 	icon_state = "whiteblue"
 	},
 /area/template_noop)
 "n" = (
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 1;
 	icon_state = "whiteblue"
 	},
@@ -98,7 +98,7 @@
 	dir = 4;
 	id = "room_s"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	dir = 1;
 	icon_state = "whitebluecorner"
 	},
@@ -113,7 +113,7 @@
 /obj/structure/mirror{
 	pixel_x = -28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
@@ -121,13 +121,13 @@
 /obj/structure/toilet{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
 "r" = (
 /obj/machinery/door/window/eastleft,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)

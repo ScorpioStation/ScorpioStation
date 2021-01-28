@@ -12888,7 +12888,7 @@
 	icon_state = "heater";
 	dir = 8
 	},
-/turf/unsimulated/floor,
+/turf/open/locked/floor,
 /area/shuttle/specops)
 "aDC" = (
 /obj/machinery/computer/security/telescreen{

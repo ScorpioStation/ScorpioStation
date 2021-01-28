@@ -89,7 +89,7 @@
 	dir = 8;
 	pixel_x = -28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
@@ -100,14 +100,14 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds2"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
 "r" = (
 /obj/machinery/door/window/eastleft,
 /obj/structure/alien/weeds,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
@@ -118,12 +118,12 @@
 /obj/structure/alien/weeds{
 	icon_state = "weeds1"
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
 "t" = (
-/turf/closed/staticwall/metal,
+/turf/closed/locked/wall/metal,
 /area/template_noop)
 
 (1,1,1) = {"

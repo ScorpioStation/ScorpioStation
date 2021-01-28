@@ -4,7 +4,7 @@
 	oxygen = MOLES_O2STANDARD
 	nitrogen = MOLES_N2STANDARD
 
-/turf/unsimulated/floor/plating/vox
+/turf/open/locked/floor/plating/vox
 	icon_state = "plating"
 	name = "plating"
 	nitrogen = 100

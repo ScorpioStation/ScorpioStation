@@ -81,7 +81,7 @@
 	dir = 8;
 	pixel_x = -28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
@@ -89,13 +89,13 @@
 /obj/structure/toilet{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
 "p" = (
 /obj/machinery/door/window/eastleft,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
@@ -103,12 +103,12 @@
 /obj/machinery/shower{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
 "r" = (
-/turf/closed/staticwall/metal,
+/turf/closed/locked/wall/metal,
 /area/template_noop)
 
 (1,1,1) = {"

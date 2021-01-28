@@ -60,7 +60,7 @@
 	pixel_x = -28
 	},
 /obj/effect/decal/cleanable/vomit,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
@@ -69,7 +69,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/vomit,
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
@@ -80,7 +80,7 @@
 	pixel_y = -24;
 	range = 2
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
@@ -88,12 +88,12 @@
 /obj/machinery/shower{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
 "o" = (
-/turf/closed/staticwall/metal,
+/turf/closed/locked/wall/metal,
 /area/template_noop)
 
 (1,1,1) = {"

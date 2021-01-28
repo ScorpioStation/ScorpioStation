@@ -4,8 +4,8 @@
 	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 	requires_power = FALSE
 
-// Used by /turf/unsimulated/floor/upperlevel as a reference for where the other floor is
-/// No more /turf/unsimulated/floor >__>;
+// Used by /turf/open/locked/floor/upperlevel as a reference for where the other floor is
+/// No more /turf/open/locked/floor >__>;
 /obj/effect/levelref
 	name = "level reference"
 	icon = 'icons/mob/screen_gen.dmi'
@@ -31,7 +31,7 @@
 			update_offset()
 			O.other = src
 			O.update_offset()
-			for(var/turf/unsimulated/floor/upperlevel/U in get_area(loc))
+			for(var/turf/open/locked/floor/upperlevel/U in get_area(loc))
 				U.init(src)
 			return
 
@@ -44,7 +44,7 @@
 	offset_y = other.y - y
 	offset_z = other.z - z
 
-// Used by /turf/unsimulated/floor/upperlevel and /obj/effect/view_portal/visual
+// Used by /turf/open/locked/floor/upperlevel and /obj/effect/view_portal/visual
 // to know if the world changed on the remote side
 /obj/effect/portal_sensor
 	invisibility = 101

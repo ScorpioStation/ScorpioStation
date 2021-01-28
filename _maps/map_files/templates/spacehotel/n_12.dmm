@@ -60,7 +60,7 @@
 	dir = 8;
 	pixel_x = -28
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
@@ -68,7 +68,7 @@
 /obj/structure/toilet{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
@@ -79,7 +79,7 @@
 	pixel_y = -24;
 	range = 2
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor"
 	},
 /area/template_noop)
@@ -91,13 +91,13 @@
 	anchored = 1;
 	opacity = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/locked/floor{
 	icon_state = "freezerfloor";
 	opacity = 1
 	},
 /area/template_noop)
 "o" = (
-/turf/closed/staticwall/metal,
+/turf/closed/locked/wall/metal,
 /area/template_noop)
 "p" = (
 /obj/effect/view_portal/visual{
