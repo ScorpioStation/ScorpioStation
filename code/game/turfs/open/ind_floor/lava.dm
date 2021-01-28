@@ -40,12 +40,6 @@
 	light_power = 0.75
 	light_color = LIGHT_COLOR_LAVA
 
-/turf/open/ind_floor/plating/lava/ex_act()
-	return
-
-/turf/open/ind_floor/plating/lava/acid_act(acidpwr, acid_volume)
-	return
-
 /turf/open/ind_floor/plating/lava/airless
 	temperature = TCMB
 
@@ -61,18 +55,6 @@
 	if(!burn_stuff())
 		STOP_PROCESSING(SSprocessing, src)
 
-/turf/open/ind_floor/plating/lava/singularity_act()
-	return
-
-/turf/open/ind_floor/plating/lava/singularity_pull(S, current_size)
-	return
-
-/turf/open/ind_floor/plating/lava/make_plating()
-	return
-
-/turf/open/ind_floor/plating/lava/remove_plating()
-	return
-
 /turf/open/ind_floor/plating/lava/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
 	underlay_appearance.icon = 'icons/turf/floors.dmi'
 	underlay_appearance.icon_state = "basalt"
@@ -87,7 +69,7 @@
 	return LAZYLEN(found_safeties)
 
 /turf/open/ind_floor/plating/lava/proc/burn_stuff(AM)
-	. = 0
+	. = FALSE
 
 	if(is_safe())
 		return FALSE
@@ -100,9 +82,9 @@
 			var/obj/O = thing
 			if(!O.simulated)
 				continue
-			if((O.resistance_flags & (LAVA_PROOF|INDESTRUCTIBLE)) || O.throwing)
+			if((O.resistance_flags & (LAVA_PROOF | INDESTRUCTIBLE)) || O.throwing)
 				continue
-			. = 1
+			. = TRUE
 			if((O.resistance_flags & (ON_FIRE)))
 				continue
 			if(!(O.resistance_flags & FLAMMABLE))
@@ -114,7 +96,7 @@
 			O.fire_act(10000, 1000)
 
 		else if(isliving(thing))
-			. = 1
+			. = TRUE
 			var/mob/living/L = thing
 			if(L.flying)
 				continue	//YOU'RE FLYING OVER IT
@@ -137,16 +119,6 @@
 			if(L) //mobs turning into object corpses could get deleted here.
 				L.adjust_fire_stacks(20)
 				L.IgniteMob()
-
-
-/turf/open/ind_floor/plating/lava/attackby(obj/item/C, mob/user, params) //Lava isn't a good foundation to build on
-	return
-
-/turf/open/ind_floor/plating/lava/screwdriver_act()
-	return
-
-/turf/open/ind_floor/plating/lava/welder_act()
-	return
 
 /turf/open/ind_floor/plating/lava/smooth
 	name = "lava"

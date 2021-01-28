@@ -66,6 +66,14 @@
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "plating"
 
+/turf/open/ind_floor/plating/vox	// Look, I really do NOT know when this is used compared to the one below.
+	name = "plating"
+	icon = 'icons/turf/floors.dmi'
+	thermal_conductivity = 0.05
+	heat_capacity = 0
+	layer = 2
+	oxygen = 0
+	nitrogen = MOLES_N2STANDARD + MOLES_O2STANDARD
 /turf/open/shuttle/plating/vox	//Vox skipjack plating
 	oxygen = 0
 	nitrogen = MOLES_N2STANDARD + MOLES_O2STANDARD

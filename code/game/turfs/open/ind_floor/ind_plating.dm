@@ -3,8 +3,9 @@
 	icon_state = "plating"
 	icon = 'icons/turf/floors/plating.dmi'
 	intact = FALSE
-	floor_tile = null
 	indesctructible_turf = TRUE
+
+	var/floor_tile = null
 
 	footstep_sounds = list(
 	"human" = list('sound/effects/footstep/plating_human.ogg'),
