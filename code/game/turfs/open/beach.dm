@@ -1,3 +1,4 @@
+// Beach.dmm turfs up here. See further down for station pool and holodeck turfs.
 /turf/open/beach
 	name = "Beach"
 	icon = 'icons/misc/beach.dmi'
@@ -127,3 +128,62 @@
 	explosion_block = 2
 	mouse_opacity = MOUSE_OPACITY_ICON
 	indesctructible_turf = TRUE
+
+// Separate from what is used on Beach.dmm
+/turf/open/floor/beach
+	name = "beach"
+	icon = 'icons/misc/beach.dmi'
+	indesctructible_turf = FALSE	//This DOES have singularity acts - this is the water used on station for the pool and holodeck.
+
+/turf/open/floor/beach/pry_tile(obj/item/C, mob/user, silent = FALSE)
+	return
+
+/turf/open/floor/beach/sand
+	name = "sand"
+	icon_state = "sand"
+
+/turf/open/floor/beach/coastline
+	name = "coastline"
+	icon = 'icons/misc/beach2.dmi'
+	icon_state = "sandwater"
+
+/turf/open/floor/beach/coastline_t
+	name = "coastline"
+	desc = "Tide's high tonight. Charge your batons."
+	icon_state = "sandwater_t"
+
+/turf/open/floor/beach/coastline_b
+	name = "coastline"
+	icon_state = "sandwater_b"
+
+/turf/open/floor/beach/water // TODO - Refactor water so they share the same parent type - Or alternatively component something like that
+	name = "water"
+	icon_state = "water"
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	var/obj/machinery/poolcontroller/linkedcontroller = null
+
+/turf/open/floor/beach/water/Initialize(mapload)
+	. = ..()
+	var/image/overlay_image = image('icons/misc/beach.dmi', icon_state = "water5", layer = ABOVE_MOB_LAYER)
+	overlay_image.plane = GAME_PLANE
+	overlays += overlay_image
+
+/turf/open/floor/beach/water/Entered(atom/movable/AM, atom/OldLoc)
+	. = ..()
+	if(!linkedcontroller)
+		return
+	if(ismob(AM))
+		linkedcontroller.mobinpool += AM
+
+/turf/open/floor/beach/water/Exited(atom/movable/AM, atom/newloc)
+	. = ..()
+	if(!linkedcontroller)
+		return
+	if(ismob(AM))
+		linkedcontroller.mobinpool -= AM
+
+/turf/open/floor/beach/water/InitializedOn(atom/A)
+	if(!linkedcontroller)
+		return
+	if(istype(A, /obj/effect/decal/cleanable)) // Better a typecheck than looping through thousands of turfs everyday
+		linkedcontroller.decalinpool += A

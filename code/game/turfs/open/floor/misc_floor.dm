@@ -39,63 +39,6 @@
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "rcircuit"
 
-/turf/open/floor/beach
-	name = "beach"
-	icon = 'icons/misc/beach.dmi'
-
-/turf/open/floor/beach/pry_tile(obj/item/C, mob/user, silent = FALSE)
-	return
-
-/turf/open/floor/beach/sand
-	name = "sand"
-	icon_state = "sand"
-
-/turf/open/floor/beach/coastline
-	name = "coastline"
-	icon = 'icons/misc/beach2.dmi'
-	icon_state = "sandwater"
-
-/turf/open/floor/beach/coastline_t
-	name = "coastline"
-	desc = "Tide's high tonight. Charge your batons."
-	icon_state = "sandwater_t"
-
-/turf/open/floor/beach/coastline_b
-	name = "coastline"
-	icon_state = "sandwater_b"
-
-/turf/open/floor/beach/water // TODO - Refactor water so they share the same parent type - Or alternatively component something like that
-	name = "water"
-	icon_state = "water"
-	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-	var/obj/machinery/poolcontroller/linkedcontroller = null
-
-/turf/open/floor/beach/water/Initialize(mapload)
-	. = ..()
-	var/image/overlay_image = image('icons/misc/beach.dmi', icon_state = "water5", layer = ABOVE_MOB_LAYER)
-	overlay_image.plane = GAME_PLANE
-	overlays += overlay_image
-
-/turf/open/floor/beach/water/Entered(atom/movable/AM, atom/OldLoc)
-	. = ..()
-	if(!linkedcontroller)
-		return
-	if(ismob(AM))
-		linkedcontroller.mobinpool += AM
-
-/turf/open/floor/beach/water/Exited(atom/movable/AM, atom/newloc)
-	. = ..()
-	if(!linkedcontroller)
-		return
-	if(ismob(AM))
-		linkedcontroller.mobinpool -= AM
-
-/turf/open/floor/beach/water/InitializedOn(atom/A)
-	if(!linkedcontroller)
-		return
-	if(istype(A, /obj/effect/decal/cleanable)) // Better a typecheck than looping through thousands of turfs everyday
-		linkedcontroller.decalinpool += A
-
 /turf/open/floor/noslip
 	name = "high-traction floor"
 	icon_state = "noslip"

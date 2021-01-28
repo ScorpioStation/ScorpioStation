@@ -3,6 +3,8 @@
 	var/atmos_adjacent_turfs_amount = 0
 	var/atmos_supeconductivity = 0
 
+	var/blocks_air = FALSE
+
 	//used to determine whether we should archive
 	var/archived_cycle = 0
 	var/current_cycle = 0
