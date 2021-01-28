@@ -128,6 +128,3 @@
 	return FALSE
 
 /turf/open/ind_floor/hierophant/two
-
-//aaaah why does this file exist? ;-;
-
