@@ -4,6 +4,28 @@
 	icon_state = "Floor3"
 	indesctructible_turf = TRUE
 
+/turf/open/ind_floor/blob_act(obj/structure/blob/B)
+	return
+
+/turf/open/ind_floor/narsie_act()
+	return
+
+/turf/open/ind_floor/attackby(obj/item/I, mob/user, params)
+	return
+
+/turf/open/ind_floor/attack_hand(mob/user)
+	return
+
+/turf/open/ind_floor/attack_hulk(mob/user, does_attack_animation = FALSE)
+	return
+
+/turf/open/ind_floor/attack_animal(mob/living/simple_animal/M)
+	return
+
+/turf/open/ind_floor/mech_melee_attack(obj/mecha/M)
+	return
+
+
 //Grass
 /turf/open/ind_floor/grass
 	name = "grass patch"
@@ -55,28 +77,6 @@
 		"human" = list('sound/effects/footstep/wood_all.ogg'), //@RonaldVanWonderen of Freesound.org
 		"xeno"  = list('sound/effects/footstep/wood_all.ogg')  //@RonaldVanWonderen of Freesound.org
 	)
-
-
-/turf/open/ind_floor/blob_act(obj/structure/blob/B)
-	return
-
-/turf/open/ind_floor/narsie_act()
-	return
-
-/turf/open/ind_floor/attackby(obj/item/I, mob/user, params)
-	return
-
-/turf/open/ind_floor/attack_hand(mob/user)
-	return
-
-/turf/open/ind_floor/attack_hulk(mob/user, does_attack_animation = FALSE)
-	return
-
-/turf/open/ind_floor/attack_animal(mob/living/simple_animal/M)
-	return
-
-/turf/open/ind_floor/mech_melee_attack(obj/mecha/M)
-	return
 
 /turf/open/ind_floor/necropolis
 	name = "necropolis floor"

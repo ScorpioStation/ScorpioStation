@@ -1107,7 +1107,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/powered/clownplanet)
 "ye" = (
-/turf/open/floor/plating/lava/smooth,
+/turf/open/ind_floor/plating/lava/smooth,
 /area/ruin/powered/clownplanet)
 "CB" = (
 /obj/item/paper/crumpled/bloody/ruins/lavaland/clown_planet/hope,

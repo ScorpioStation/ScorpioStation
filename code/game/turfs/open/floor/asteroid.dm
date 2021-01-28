@@ -113,7 +113,7 @@
 	digResult = /obj/item/stack/ore/glass/basalt
 
 /turf/open/floor/plating/asteroid/basalt/lava //lava underneath
-	baseturf = /turf/open/floor/plating/lava/smooth
+	baseturf = /turf/open/ind_floor/plating/lava/smooth
 
 /turf/open/floor/plating/asteroid/basalt/airless
 	temperature = TCMB
@@ -142,7 +142,7 @@
 	nitrogen = 23
 	temperature = 300
 	planetary_atmos = TRUE
-	baseturf = /turf/open/floor/plating/lava/smooth/lava_land_surface
+	baseturf = /turf/open/ind_floor/plating/lava/smooth/lava_land_surface
 
 /turf/open/floor/plating/asteroid/airless
 	temperature = TCMB
