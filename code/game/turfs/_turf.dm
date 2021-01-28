@@ -188,6 +188,8 @@
 	return
 
 /turf/proc/TerraformTurf(path, defer_change = FALSE, keep_icon = TRUE, ignore_air = FALSE)
+	if(indesctructible_turf)
+		return
 	return ChangeTurf(path, defer_change, keep_icon, ignore_air)
 
 //Creates a new turf
@@ -415,6 +417,8 @@
 	return
 
 /turf/singularity_act()
+	if(indesctructible_turf)
+		return
 	if(intact)
 		for(var/obj/O in contents) //this is for deleting things like wires contained in the turf
 			if(O.level != 1)
@@ -461,6 +465,8 @@
 
 
 /turf/ratvar_act(force, ignore_mobs, probability = 40)
+	if(indesctructible_turf)
+		return
 	. = (prob(probability) || force)
 	for(var/I in src)
 		var/atom/A = I

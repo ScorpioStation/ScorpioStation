@@ -189,7 +189,7 @@
 /obj/effect/mob_spawn/swarmer/IntegrateAmount()
 	return 50
 
-/turf/closed/wall/indestructible/swarmer_act()
+/turf/closed/ind_wall/swarmer_act()
 	return FALSE
 
 /obj/swarmer_act(mob/living/simple_animal/hostile/swarmer/S)

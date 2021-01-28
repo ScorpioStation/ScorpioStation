@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/closed/wall/indestructible/boss,
+/turf/closed/ind_wall/boss,
 /area/lavaland/surface/outdoors)
 "ab" = (
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
@@ -2787,7 +2787,7 @@
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "fV" = (
-/turf/closed/wall/indestructible/boss/see_through,
+/turf/closed/ind_wall/boss/see_through,
 /area/lavaland/surface/outdoors)
 "fW" = (
 /obj/structure/necropolis_gate/locked,
