@@ -93612,7 +93612,7 @@
 "dur" = (
 /obj/item/radio/beacon,
 /obj/effect/decal/warning_stripes/red/hollow,
-/turf/open/floor/plasteel/airless/indestructible,
+/turf/open/floor/plasteel/airless/bombtest,
 /area/toxins/test_area)
 "dus" = (
 /obj/machinery/newscaster{

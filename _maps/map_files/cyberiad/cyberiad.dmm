@@ -70662,7 +70662,7 @@
 "cvh" = (
 /obj/item/radio/beacon,
 /obj/effect/decal/warning_stripes/red/hollow,
-/turf/open/floor/plasteel/airless/indestructible,
+/turf/open/floor/plasteel/airless/ibombtest,
 /area/toxins/test_area)
 "cvi" = (
 /obj/machinery/atmospherics/binary/valve{

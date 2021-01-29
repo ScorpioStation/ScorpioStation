@@ -254,7 +254,7 @@ GLOBAL_DATUM_INIT(_preloader, /datum/dmm_suite/preloader, new())
 	// The next part of the code assumes there's ALWAYS an /area AND a /turf on a given tile
 
 	// first instance the /area and remove it from the members list
-	index = members.len
+	index = length(members)
 
 	var/turf/crds = locate(xcrd, ycrd, zcrd)
 	if(members[index] != /area/template_noop)
@@ -286,7 +286,7 @@ GLOBAL_DATUM_INIT(_preloader, /datum/dmm_suite/preloader, new())
 	if(T)
 		// if others /turf are presents, simulates the underlays piling effect
 		index = first_turf_index + 1
-		var/mlen = members.len - 1
+		var/mlen = length(members) - 1
 		while(index <= mlen) // Last item is an /area
 			var/underlay
 			if(istype(T, /turf)) // I blame this on the stupid clown who coded the BYOND map editor
