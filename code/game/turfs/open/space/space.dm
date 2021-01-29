@@ -12,6 +12,7 @@
 	light_power = 0.25
 	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 	intact = FALSE
+	no_wet = TRUE
 
 	var/destination_z
 	var/destination_x

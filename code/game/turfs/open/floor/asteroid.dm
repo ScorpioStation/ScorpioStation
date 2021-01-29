@@ -1,13 +1,15 @@
 
 /**********************Asteroid**************************/
 
-/turf/open/floor/plating/asteroid
+/turf/open/floor/plating/asteroid	// Not truly an Indestructible Turf
 	gender = PLURAL
 	name = "asteroid sand"
 	baseturf = /turf/open/floor/plating/asteroid
 	icon_state = "asteroid"
 	icon_plating = "asteroid"
+	no_wet = TRUE
 	footstep_sounds = list()
+
 	var/environment_type = "asteroid"
 	var/turf_type = /turf/open/floor/plating/asteroid //Because caves do whacky shit to revert to normal
 	var/floor_variance = 20 //probability floor has a different icon state
@@ -39,13 +41,10 @@
 /turf/open/floor/plating/asteroid/burn_tile()
 	return
 
-/turf/open/floor/plating/asteroid/MakeSlippery(wet_setting)
-	return
-
-/turf/open/floor/plating/asteroid/MakeDry(wet_setting)
-	return
-
 /turf/open/floor/plating/asteroid/remove_plating()
+	return
+
+/turf/open/floor/plating/asteroid/welder_act(mob/user, obj/item/I)
 	return
 
 /turf/open/floor/plating/asteroid/ex_act(severity)
@@ -100,8 +99,6 @@
 			ChangeTurf(Z.turf_type, keep_icon = FALSE)
 		playsound(src, 'sound/weapons/Genhit.ogg', 50, 1)
 
-/turf/open/floor/plating/asteroid/welder_act(mob/user, obj/item/I)
-	return
 
 /turf/open/floor/plating/asteroid/basalt
 	name = "volcanic floor"
@@ -269,11 +266,10 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 	if(!sanity)
 		return
 	SpawnFlora(T)
-
 	SpawnMonster(T)
 	T.ChangeTurf(turf_type, FALSE, FALSE, TRUE)
 
-/turf/open/floor/plating/asteroid/airless/cave/proc/SpawnMonster(turf/T)
+/turf/open/floor/plating/asteroid/airless/cave/proc/SpawnMonster(turf/T)	// What the Heck?
 	if(prob(30))
 		if(istype(loc, /area/mine/explored) || !istype(loc, /area/lavaland/surface/outdoors/unexplored))
 			return
@@ -313,8 +309,6 @@ GLOBAL_LIST_INIT(megafauna_spawn_list, list(/mob/living/simple_animal/hostile/me
 			if(!istype(F, randumb))
 				return
 		new randumb(T)
-
-
 
 /turf/open/floor/plating/asteroid/snow
 	gender = PLURAL

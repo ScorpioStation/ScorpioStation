@@ -347,8 +347,24 @@
  * * A - the location we're trying to build at.
  * * user - the mob using the RCD.
  */
+
 /obj/item/rcd/proc/mode_turf(atom/A, mob/user)
-	if(isspaceturf(A) || istype(A, /obj/structure/lattice))
+	if(isspaceturf(A))
+		if(space_check(A))
+			if(useResource(1, user))
+				to_chat(user, "Building Floor...")
+				playsound(loc, usesound, 50, 1)
+				var/turf/AT = get_turf(A)
+				AT.ChangeTurf(/turf/open/floor/plating)
+				return TRUE
+			to_chat(user, "<span class='warning'>ERROR! Not enough matter in unit to construct this floor!</span>")
+			playsound(loc, 'sound/machines/click.ogg', 50, 1)
+			return FALSE
+		to_chat(user, "<span class='warning'>ERROR! You cannot construct a turf in space without anything surrounding it!</span>")
+		playsound(loc, 'sound/machines/click.ogg', 50, 1)
+		return FALSE
+
+	if(istype(A, /obj/structure/lattice))
 		if(useResource(1, user))
 			to_chat(user, "Building Floor...")
 			playsound(loc, usesound, 50, 1)
@@ -376,6 +392,16 @@
 		return FALSE
 	to_chat(user, "<span class='warning'>ERROR! Location unsuitable for wall construction!</span>")
 	playsound(loc, 'sound/machines/click.ogg', 50, 1)
+	return FALSE
+
+/obj/item/rcd/proc/space_check(atom/center)
+	for(var/direction in GLOB.cardinal)
+		var/turf/T = get_ranged_target_turf(center, direction, 1)
+		if(!isspaceturf(T))
+			return TRUE
+		for(var/A in T.contents)
+			if(istype(A, /obj/structure/lattice))
+				return TRUE
 	return FALSE
 
 /**

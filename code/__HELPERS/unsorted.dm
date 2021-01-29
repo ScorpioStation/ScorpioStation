@@ -493,33 +493,6 @@ Returns 1 if the chain up to the area contains the given typepath
 
 	return target
 
-// returns turf relative to A in given direction at set range
-// result is bounded to map size
-// note range is non-pythagorean
-// used for disposal system
-/proc/get_ranged_target_turf(var/atom/A, var/direction, var/range)
-
-	var/x = A.x
-	var/y = A.y
-	if(direction & NORTH)
-		y = min(world.maxy, y + range)
-	if(direction & SOUTH)
-		y = max(1, y - range)
-	if(direction & EAST)
-		x = min(world.maxx, x + range)
-	if(direction & WEST)
-		x = max(1, x - range)
-
-	return locate(x,y,A.z)
-
-
-// returns turf relative to A offset in dx and dy tiles
-// bound to map limits
-/proc/get_offset_target_turf(var/atom/A, var/dx, var/dy)
-	var/x = min(world.maxx, max(1, A.x + dx))
-	var/y = min(world.maxy, max(1, A.y + dy))
-	return locate(x,y,A.z)
-
 //Makes sure MIDDLE is between LOW and HIGH. If not, it adjusts it. Returns the adjusted value.
 /proc/between(var/low, var/middle, var/high)
 	return max(min(middle, high), low)

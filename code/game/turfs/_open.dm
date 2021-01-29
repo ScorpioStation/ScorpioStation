@@ -8,12 +8,13 @@
 	oxygen = MOLES_O2STANDARD
 	nitrogen = MOLES_N2STANDARD
 	blocks_air = FALSE
+	indesctructible_turf = FALSE
 
 	var/to_be_destroyed = FALSE //Used for fire, if a melting temperature was reached, it will be destroyed
 	var/max_fire_temperature_sustained = 0 //The max temperature of the fire which it was subjected to
 	var/wet = FALSE
 	var/image/wet_overlay = null
-	indesctructible_turf = FALSE
+	var/no_wet = FALSE
 
 /turf/open/handle_fall(mob/faller, forced)
 	faller.lying = pick(90, 270)
@@ -51,6 +52,8 @@
 					M.slip("the frosted floor", 0, 5, tilesSlipped = 1, walkSafely = FALSE, slipAny = TRUE)
 
 /turf/open/water_act(volume, temperature, source)
+	if(no_wet)
+		return
 	. = ..()
 	if(volume >= 3)
 		MakeSlippery()
@@ -68,6 +71,8 @@
  * @param time Time the turf is slippery. If null it will pick a random time between 790 and 820 ticks. If INFINITY then it won't dry up ever
 */
 /turf/open/proc/MakeSlippery(wet_setting = TURF_WET_WATER, time = null) // 1 = Water, 2 = Lube, 3 = Ice, 4 = Permafrost
+	if(no_wet)
+		return
 	if(wet >= wet_setting)
 		return
 	wet = wet_setting
@@ -95,6 +100,8 @@
 	addtimer(CALLBACK(src, .proc/MakeDry, wet_setting), time)
 
 /turf/open/MakeDry(wet_setting = TURF_WET_WATER)
+	if(no_wet)
+		return
 	if(wet > wet_setting)
 		return
 	wet = TURF_DRY
