@@ -1,7 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ae" = (
 /obj/structure/sign/securearea,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall4";
 	tag = "icon-swall14"
@@ -250,7 +250,7 @@
 /area/shuttle/administration)
 "kf" = (
 /obj/structure/sign/securearea,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall8";
 	tag = "icon-swall12"
@@ -275,7 +275,7 @@
 /turf/open/shuttle/floor,
 /area/shuttle/administration)
 "mM" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall13"
 	},
@@ -306,7 +306,7 @@
 /turf/open/shuttle/floor,
 /area/shuttle/administration)
 "pa" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall11"
 	},
@@ -414,7 +414,7 @@
 	},
 /area/shuttle/administration)
 "uz" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall4";
 	tag = "icon-swall14"
@@ -436,7 +436,7 @@
 /turf/open/shuttle/floor,
 /area/shuttle/administration)
 "vk" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall_s6"
 	},
@@ -509,7 +509,7 @@
 	},
 /obj/structure/grille,
 /obj/structure/window/full/shuttle,
-/turf/space,
+/turf/open/space,
 /area/shuttle/administration)
 "xm" = (
 /obj/structure/table/reinforced,
@@ -548,7 +548,7 @@
 /area/shuttle/administration)
 "xK" = (
 /obj/structure/sign/nosmoking_2,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall3";
 	tag = "icon-swall3"
@@ -576,7 +576,7 @@
 	},
 /area/shuttle/administration)
 "xZ" = (
-/turf/space,
+/turf/open/space,
 /area/shuttle/administration)
 "yg" = (
 /obj/structure/table/reinforced,
@@ -609,13 +609,13 @@
 /area/shuttle/administration)
 "yF" = (
 /obj/machinery/status_display,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall3"
 	},
 /area/shuttle/administration)
 "zY" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall14"
 	},
@@ -680,7 +680,7 @@
 /area/shuttle/administration)
 "Bq" = (
 /obj/structure/sign/nosmoking_2,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall1";
 	tag = "icon-swall1"
@@ -732,7 +732,7 @@
 /area/shuttle/administration)
 "Eq" = (
 /obj/structure/sign/securearea,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall12"
 	},
@@ -775,7 +775,7 @@
 /area/shuttle/administration)
 "FF" = (
 /obj/structure/sign/poster/official/enlist,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall12"
 	},
@@ -864,7 +864,7 @@
 "HN" = (
 /obj/structure/sign/poster/official/do_not_question,
 /obj/item/tank/emergency_oxygen/engi,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall3"
 	},
@@ -878,7 +878,7 @@
 	},
 /area/shuttle/administration)
 "IC" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall3"
 	},
@@ -924,7 +924,7 @@
 	},
 /area/shuttle/administration)
 "KM" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall7"
 	},
@@ -954,7 +954,7 @@
 	},
 /area/shuttle/administration)
 "LP" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall_s9"
 	},
@@ -994,13 +994,13 @@
 	},
 /area/shuttle/administration)
 "MN" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall12"
 	},
 /area/shuttle/administration)
 "MZ" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall3";
 	tag = "icon-swall3"
@@ -1032,7 +1032,7 @@
 /area/shuttle/administration)
 "NF" = (
 /obj/structure/sign/poster/official/here_for_your_safety,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall3";
 	tag = "icon-swall3"
@@ -1092,7 +1092,7 @@
 	},
 /area/shuttle/administration)
 "PL" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall_s10"
 	},
@@ -1149,7 +1149,7 @@
 	},
 /area/shuttle/administration)
 "RM" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall8";
 	tag = "icon-swall12"
@@ -1218,7 +1218,7 @@
 /area/shuttle/administration)
 "UR" = (
 /obj/machinery/status_display,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall12"
 	},
@@ -1238,7 +1238,7 @@
 	},
 /area/shuttle/administration)
 "Vc" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall_s5"
 	},

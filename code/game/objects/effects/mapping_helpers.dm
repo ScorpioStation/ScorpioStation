@@ -20,7 +20,7 @@
 
 /obj/effect/baseturf_helper/space
 	name = "space baseturf editor"
-	baseturf = /turf/space
+	baseturf = /turf/open/space
 
 /obj/effect/baseturf_helper/asteroid
 	name = "asteroid baseturf editor"

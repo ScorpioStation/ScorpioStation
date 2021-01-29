@@ -34,7 +34,7 @@
 /area/ruin/powered)
 "aj" = (
 /turf/open/floor/plating/asteroid/airless,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -46,7 +46,7 @@
 /area/ruin/powered)
 "al" = (
 /turf/open/floor/plating/asteroid/airless,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall_f10";
 	layer = 2
@@ -58,7 +58,7 @@
 	name = "Space Bar"
 	})
 "an" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -145,7 +145,7 @@
 "aA" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/plating,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -159,7 +159,7 @@
 "aC" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/plating,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -444,7 +444,7 @@
 "bp" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/plating/asteroid/airless,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -466,7 +466,7 @@
 "bs" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/open/floor/plating/asteroid/airless,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f9";
 	dir = 2
 	},

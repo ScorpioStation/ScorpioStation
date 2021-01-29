@@ -7554,7 +7554,7 @@
 /turf/open/floor/plating,
 /area/awaymission/UO71/eng)
 "pT" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -8290,7 +8290,7 @@
 /area/awaymission/UO71/science)
 "rn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -8661,7 +8661,7 @@
 	},
 /area/awaymission/UO71/medical)
 "sa" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -8699,7 +8699,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -9164,7 +9164,7 @@
 /area/awaymission/UO71/eng)
 "sN" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -12344,7 +12344,7 @@
 /area/awaymission/UO71/queen)
 "yY" = (
 /obj/structure/sign/biohazard,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -12363,7 +12363,7 @@
 /turf/closed/wall/rust,
 /area/awaymission/UO71/mining)
 "zc" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -12833,7 +12833,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 4;
 	icon_state = "wall3"
 	},

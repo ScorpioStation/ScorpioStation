@@ -13,7 +13,7 @@
 		var/list/step_overlays = list("s" = NORTH, "n" = SOUTH, "w" = EAST, "e" = WEST)
 		for(var/direction in step_overlays)
 			var/turf/turf_to_check = get_step(src,step_overlays[direction])
-			if((istype(turf_to_check,/turf/space) || istype(turf_to_check,/turf/open/floor)) && !istype(turf_to_check,/turf/open/floor/plating/smatter))
+			if((istype(turf_to_check,/turf/open/space) || istype(turf_to_check,/turf/open/floor)) && !istype(turf_to_check,/turf/open/floor/plating/smatter))
 				turf_to_check.overlays += image('icons/turf/floors.dmi', "smatter_side_[direction]")
 
 
@@ -23,7 +23,7 @@
 	var/list/step_overlays = list("n" = NORTH, "s" = SOUTH, "e" = EAST, "w" = WEST)
 	// Kill and update the space overlays around us.
 	for(var/direction in step_overlays)
-		var/turf/space/T = get_step(src, step_overlays[direction])
+		var/turf/open/space/T = get_step(src, step_overlays[direction])
 		if(istype(T))
 			for(var/next_direction in step_overlays)
 				if(istype(get_step(T, step_overlays[next_direction]),/turf/open/floor/plating/smatter))
@@ -56,7 +56,7 @@
 		var/list/step_overlays = list("s" = NORTH, "n" = SOUTH, "w" = EAST, "e" = WEST)
 		for(var/direction in step_overlays)
 			var/turf/turf_to_check = get_step(src,step_overlays[direction])
-			if(istype(turf_to_check,/turf/space) || istype(turf_to_check,/turf/open/floor))
+			if(istype(turf_to_check,/turf/open/space) || istype(turf_to_check,/turf/open/floor))
 				turf_to_check.overlays += image('icons/turf/walls.dmi', "smatter_side_[direction]")
 
 /turf/closed/smatter/Destroy()
@@ -65,7 +65,7 @@
 	var/list/step_overlays = list("n" = NORTH, "s" = SOUTH, "e" = EAST, "w" = WEST)
 	// Kill and update the space overlays around us.
 	for(var/direction in step_overlays)
-		var/turf/space/T = get_step(src, step_overlays[direction])
+		var/turf/open/space/T = get_step(src, step_overlays[direction])
 		if(istype(T))
 			T.overlays.Cut()
 			for(var/next_direction in step_overlays)

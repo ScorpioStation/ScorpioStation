@@ -207,7 +207,7 @@
 	return ..()
 
 /obj/item/mecha_parts/mecha_equipment/rcd/action(atom/target)
-	if(istype(target, /turf/space/transit))//>implying these are ever made -Sieve
+	if(istype(target, /turf/open/space/transit))//>implying these are ever made -Sieve
 		return
 
 	if(!istype(target, /turf) && !istype(target, /obj/machinery/door/airlock))
@@ -243,8 +243,8 @@
 					qdel(target)
 					playsound(target, usesound, 50, 1)
 		if(1)
-			if(istype(target, /turf/space))
-				var/turf/space/S = target
+			if(istype(target, /turf/open/space))
+				var/turf/open/space/S = target
 				occupant_message("Building Floor...")
 				if(do_after_cooldown(S))
 					S.ChangeTurf(/turf/open/floor/plating)
@@ -300,7 +300,7 @@
 	return 0
 
 /obj/item/mecha_parts/mecha_equipment/mimercd/action(atom/target)
-	if(istype(target, /turf/space/transit))//>implying these are ever made -Sieve
+	if(istype(target, /turf/open/space/transit))//>implying these are ever made -Sieve
 		return
 	if(!istype(target, /turf))
 		target = get_turf(target)

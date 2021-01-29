@@ -7,7 +7,7 @@
 
 /datum/map_template/shelter/New()
 	. = ..()
-	blacklisted_turfs = typecacheof(list(/turf/closed/wall, /turf/closed/mineral, /turf/closed/shuttle/wall))
+	blacklisted_turfs = typecacheof(list(/turf/closed/wall, /turf/closed/mineral, /turf/closed/ind_wall/shuttle))
 	whitelisted_turfs = list()
 	banned_areas = typecacheof(/area/shuttle)
 

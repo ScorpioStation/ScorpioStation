@@ -1,13 +1,13 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "ab" = (
 /obj/machinery/light/spot,
-/turf/space,
+/turf/open/space,
 /area/shuttle/escape)
 "ac" = (
-/turf/space,
+/turf/open/space,
 /area/shuttle/escape)
 "ad" = (
 /obj/machinery/porta_turret{
@@ -20,14 +20,14 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/escape)
 "ae" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swallc2"
 	},
 /area/shuttle/escape)
 "af" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -38,21 +38,21 @@
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "ah" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swallc1"
 	},
 /area/shuttle/escape)
 "ai" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f6";
 	dir = 2
 	},
 /area/shuttle/escape)
 "aj" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swallc4"
 	},
 /area/shuttle/escape)
@@ -89,20 +89,20 @@
 /turf/open/shuttle/floor,
 /area/shuttle/escape)
 "ap" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swallc3"
 	},
 /area/shuttle/escape)
 "aq" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10";
 	dir = 2
 	},
 /area/shuttle/escape)
 "ar" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -125,14 +125,14 @@
 /turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aB" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall7";
 	icon_state = "swall7";
 	dir = 2
 	},
 /area/shuttle/escape)
 "aC" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall14";
 	dir = 2
 	},
@@ -145,7 +145,7 @@
 /turf/open/shuttle/floor,
 /area/shuttle/escape)
 "aE" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall11";
 	dir = 2
 	},
@@ -379,7 +379,7 @@
 /area/shuttle/escape)
 "bd" = (
 /obj/structure/noticeboard,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -507,8 +507,8 @@
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "bt" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -528,8 +528,8 @@
 /turf/open/shuttle/plating,
 /area/shuttle/escape)
 "bw" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f9";
 	dir = 2
 	},

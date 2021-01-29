@@ -194,7 +194,7 @@
 
 GLOBAL_LIST_INIT(blacklisted_pylon_turfs, typecacheof(list(
 	/turf/open/floor/engine/cult,
-	/turf/space,
+	/turf/open/space,
 	/turf/open/ind_floor/plating/lava,
 	/turf/open/floor/chasm,
 	/turf/closed/wall/cult,

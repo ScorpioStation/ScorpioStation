@@ -489,7 +489,7 @@
 							sleep(10)
 							atom_say("A new floor suddenly appears around [src]. What the hell?")
 							playsound(src.loc, 'sound/weapons/genhit.ogg', 100, 1)
-							var/turf/space/T
+							var/turf/open/space/T
 							for(T in orange(1, src))
 								T.ChangeTurf(/turf/open/floor/plating)
 					else

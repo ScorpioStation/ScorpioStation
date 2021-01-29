@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "b" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -13,7 +13,7 @@
 	name = "Shuttle"
 	})
 "c" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-wall3";
 	icon_state = "wall3"
 	},
@@ -31,7 +31,7 @@
 	name = "Shuttle"
 	})
 "e" = (
-/turf/space,
+/turf/open/space,
 /turf/open/shuttle{
 	tag = "icon-wall3 (NORTHWEST)";
 	icon_state = "wall3";
@@ -41,7 +41,7 @@
 	name = "Shuttle"
 	})
 "f" = (
-/turf/space,
+/turf/open/space,
 /turf/open/shuttle{
 	tag = "icon-wall3 (NORTHEAST)";
 	icon_state = "wall3";
@@ -51,7 +51,7 @@
 	name = "Shuttle"
 	})
 "g" = (
-/turf/closed/shuttle/wall,
+/turf/closed/ind_wall/shuttle,
 /turf/open/shuttle{
 	tag = "icon-wall3 (SOUTHEAST)";
 	icon_state = "wall3";
@@ -61,12 +61,12 @@
 	name = "Shuttle"
 	})
 "h" = (
-/turf/closed/shuttle/wall,
+/turf/closed/ind_wall/shuttle,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
 "i" = (
-/turf/closed/shuttle/wall,
+/turf/closed/ind_wall/shuttle,
 /turf/open/shuttle{
 	tag = "icon-wall3 (SOUTHWEST)";
 	icon_state = "wall3";
@@ -144,7 +144,7 @@
 	name = "Shuttle"
 	})
 "s" = (
-/turf/closed/shuttle/wall,
+/turf/closed/ind_wall/shuttle,
 /turf/open/shuttle{
 	tag = "icon-wall3 (NORTHEAST)";
 	icon_state = "wall3";
@@ -160,7 +160,7 @@
 	name = "Shuttle"
 	})
 "u" = (
-/turf/closed/shuttle/wall,
+/turf/closed/ind_wall/shuttle,
 /turf/open/shuttle{
 	tag = "icon-wall3 (NORTHWEST)";
 	icon_state = "wall3";
@@ -198,7 +198,7 @@
 	name = "Shuttle"
 	})
 "y" = (
-/turf/space,
+/turf/open/space,
 /turf/open/shuttle{
 	tag = "icon-wall3 (SOUTHWEST)";
 	icon_state = "wall3";
@@ -225,7 +225,7 @@
 	name = "Shuttle"
 	})
 "B" = (
-/turf/space,
+/turf/open/space,
 /turf/open/shuttle{
 	tag = "icon-wall3 (SOUTHEAST)";
 	icon_state = "wall3";

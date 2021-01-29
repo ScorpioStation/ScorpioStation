@@ -41,22 +41,22 @@
 /datum/space_level/proc/build_space_destination_arrays()
 	// We skip `add_to_transit` here because we want to skip the checks in order to save time
 	// Bottom border
-	for(var/turf/space/S in block(locate(1,1,zpos),locate(world.maxx,TRANSITION_BORDER_SOUTH,zpos)))
+	for(var/turf/open/space/S in block(locate(1,1,zpos),locate(world.maxx,TRANSITION_BORDER_SOUTH,zpos)))
 		transit_south |= S
 
 	// Top border
-	for(var/turf/space/S in block(locate(1,world.maxy,zpos),locate(world.maxx,TRANSITION_BORDER_NORTH,zpos)))
+	for(var/turf/open/space/S in block(locate(1,world.maxy,zpos),locate(world.maxx,TRANSITION_BORDER_NORTH,zpos)))
 		transit_north |= S
 
 	// Left border
-	for(var/turf/space/S in block(locate(1,TRANSITION_BORDER_SOUTH + 1,zpos),locate(TRANSITION_BORDER_WEST,TRANSITION_BORDER_NORTH - 1,zpos)))
+	for(var/turf/open/space/S in block(locate(1,TRANSITION_BORDER_SOUTH + 1,zpos),locate(TRANSITION_BORDER_WEST,TRANSITION_BORDER_NORTH - 1,zpos)))
 		transit_west |= S
 
 	// Right border
-	for(var/turf/space/S in block(locate(TRANSITION_BORDER_EAST,TRANSITION_BORDER_SOUTH + 1,zpos),locate(world.maxx,TRANSITION_BORDER_NORTH - 1,zpos)))
+	for(var/turf/open/space/S in block(locate(TRANSITION_BORDER_EAST,TRANSITION_BORDER_SOUTH + 1,zpos),locate(world.maxx,TRANSITION_BORDER_NORTH - 1,zpos)))
 		transit_east |= S
 
-/datum/space_level/proc/add_to_transit(turf/space/S)
+/datum/space_level/proc/add_to_transit(turf/open/space/S)
 	if(S.y <= TRANSITION_BORDER_SOUTH)
 		transit_south |= S
 		return
@@ -75,7 +75,7 @@
 	if(S.x >= TRANSITION_BORDER_EAST)
 		transit_east |= S
 
-/datum/space_level/proc/remove_from_transit(turf/space/S)
+/datum/space_level/proc/remove_from_transit(turf/open/space/S)
 	if(S.y <= TRANSITION_BORDER_SOUTH)
 		transit_south -= S
 		return
@@ -94,7 +94,7 @@
 	if(S.x >= TRANSITION_BORDER_EAST)
 		transit_east -= S
 
-/datum/space_level/proc/apply_transition(turf/space/S)
+/datum/space_level/proc/apply_transition(turf/open/space/S)
 	if(src in GLOB.space_manager.unbuilt_space_transitions)
 		return // Let the space manager handle this one
 	switch(linkage)

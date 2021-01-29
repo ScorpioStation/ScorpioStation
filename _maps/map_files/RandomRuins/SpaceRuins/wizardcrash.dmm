@@ -227,7 +227,7 @@
 /area/ruin/unpowered)
 "aM" = (
 /obj/machinery/door/airlock/external,
-/turf/space,
+/turf/open/space,
 /area/ruin/unpowered)
 "aN" = (
 /obj/structure/bookcase,
@@ -510,7 +510,7 @@
 /area/ruin/unpowered)
 "bK" = (
 /obj/singularity/academy,
-/turf/space,
+/turf/open/space,
 /area/ruin/unpowered)
 "bL" = (
 /obj/structure/window/reinforced{
@@ -536,7 +536,7 @@
 "bO" = (
 /obj/structure/shuttle/window,
 /obj/structure/grille,
-/turf/space,
+/turf/open/space,
 /area/ruin/unpowered)
 "bP" = (
 /obj/item/stack/sheet/mineral/plasma,

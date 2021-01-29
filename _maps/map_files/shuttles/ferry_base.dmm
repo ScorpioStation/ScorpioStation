@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "b" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -8,14 +8,14 @@
 	icon_state = "propulsion";
 	tag = "icon-propulsion (EAST)"
 	},
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f6";
 	dir = 2
 	},
 /area/shuttle/transport)
 "c" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -31,15 +31,15 @@
 /turf/open/shuttle/plating,
 /area/shuttle/transport)
 "f" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f10";
 	dir = 2
 	},
 /area/shuttle/transport)
 "g" = (
 /turf/open/shuttle/floor,
-/turf/closed/shuttle/wall/interior{
+/turf/closed/ind_wall/shuttle/interior{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9"
 	},
@@ -103,15 +103,15 @@
 	icon_state = "propulsion";
 	tag = "icon-propulsion (EAST)"
 	},
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f5";
 	dir = 2
 	},
 /area/shuttle/transport)
 "p" = (
 /turf/open/shuttle/floor,
-/turf/closed/shuttle/wall/interior{
+/turf/closed/ind_wall/shuttle/interior{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10"
 	},
@@ -139,8 +139,8 @@
 /turf/open/shuttle/floor,
 /area/shuttle/transport)
 "u" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f9";
 	dir = 2
 	},

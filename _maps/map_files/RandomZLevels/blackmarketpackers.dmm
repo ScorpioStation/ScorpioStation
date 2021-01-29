@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "ab" = (
 /turf/closed/mineral/random/high_chance,
@@ -15,29 +15,29 @@
 "ae" = (
 /obj/item/circular_saw,
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/space/nearstation)
 "af" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall12";
 	icon_state = "swall12"
 	},
 /area/awaymission/BMPship/Aft)
 "ag" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall4";
 	icon_state = "swall4"
 	},
 /area/awaymission/BMPship/Aft)
 "ah" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall14";
 	icon_state = "swall14"
 	},
 /area/awaymission/BMPship/Aft)
 "ai" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10";
 	dir = 2
@@ -45,10 +45,10 @@
 /area/awaymission/BMPship/Aft)
 "aj" = (
 /mob/living/simple_animal/hostile/carp,
-/turf/space,
+/turf/open/space,
 /area/space/nearstation)
 "ak" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall12";
 	icon_state = "swall12"
 	},
@@ -57,13 +57,13 @@
 /turf/open/floor/engine,
 /area/awaymission/BMPship/Fore)
 "am" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall4";
 	icon_state = "swall4"
 	},
 /area/awaymission/BMPship/Gate)
 "an" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -86,7 +86,7 @@
 /turf/open/floor/engine,
 /area/awaymission/BMPship/Aft)
 "aq" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall14";
 	icon_state = "swall14"
 	},
@@ -96,11 +96,11 @@
 /area/awaymission/BMPship/Fore)
 "as" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/space/nearstation)
 "at" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10";
 	dir = 2
@@ -121,7 +121,7 @@
 	},
 /area/awaymission/BMPship/Midship)
 "aw" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall7";
 	icon_state = "swall7"
 	},
@@ -140,20 +140,20 @@
 /turf/open/floor/engine,
 /area/awaymission/BMPship/Gate)
 "ay" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall13";
 	icon_state = "swall13"
 	},
 /area/awaymission/BMPship/Aft)
 "az" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
 	},
 /area/awaymission/BMPship/Gate)
 "aA" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall8";
 	icon_state = "swall8"
 	},
@@ -163,7 +163,7 @@
 /area/awaymission/BMPship/Gate)
 "aC" = (
 /turf/open/floor/plating,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -208,27 +208,27 @@
 /turf/open/floor/engine,
 /area/awaymission/BMPship/Gate)
 "aJ" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall7";
 	icon_state = "swall7"
 	},
 /area/awaymission/BMPship/Gate)
 "aK" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
 	},
 /area/awaymission/BMPship/Gate)
 "aL" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall3";
 	icon_state = "swall3"
 	},
 /area/awaymission/BMPship/Aft)
 "aM" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall13";
 	icon_state = "swall13"
 	},
@@ -241,20 +241,20 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/BMPship/Gate)
 "aO" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall8";
 	icon_state = "swall8"
 	},
 /area/awaymission/BMPship/Gate)
 "aP" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/awaymission/BMPship/Gate)
 "aQ" = (
-/turf/closed/shuttle/wall,
+/turf/closed/ind_wall/shuttle,
 /area/awaymission/BMPship/Gate)
 "aR" = (
 /turf/open/floor/plating/airless,
@@ -270,25 +270,25 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/BMPship/Gate)
 "aU" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall4";
 	icon_state = "swall4"
 	},
 /area/awaymission/BMPship/Fore)
 "aV" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall12";
 	icon_state = "swall12"
 	},
 /area/awaymission/BMPship/Fore)
 "aW" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall14";
 	icon_state = "swall14"
 	},
 /area/awaymission/BMPship/Fore)
 "aX" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_s10";
 	icon_state = "swall_s10";
 	dir = 2
@@ -318,7 +318,7 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/BMPship/Gate)
 "bc" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall1";
 	icon_state = "swall1"
 	},
@@ -336,7 +336,7 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/BMPship/Gate)
 "bf" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall3";
 	icon_state = "swall3"
 	},
@@ -404,7 +404,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Gate)
 "bp" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall3";
 	icon_state = "swall3"
 	},
@@ -437,7 +437,7 @@
 /area/awaymission/BMPship/Gate)
 "bt" = (
 /obj/structure/sign/vacuum,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall1";
 	icon_state = "swall1"
 	},
@@ -482,7 +482,7 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/BMPship/Gate)
 "bC" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall1";
 	icon_state = "swall1"
 	},
@@ -530,7 +530,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Gate)
 "bK" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall2";
 	icon_state = "swall2"
 	},
@@ -599,7 +599,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Fore)
 "bV" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall2";
 	icon_state = "swall2"
 	},
@@ -615,7 +615,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Gate)
 "bX" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall11";
 	icon_state = "swall11"
 	},
@@ -674,7 +674,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Gate)
 "cf" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swallc2";
 	icon_state = "swallc2"
 	},
@@ -688,7 +688,7 @@
 	},
 /area/awaymission/BMPship/Fore)
 "ch" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall8";
 	icon_state = "swall8"
 	},
@@ -702,31 +702,31 @@
 	},
 /area/awaymission/BMPship/Fore)
 "cj" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall1";
 	icon_state = "swall1"
 	},
 /area/awaymission/BMPship/Fore)
 "ck" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall12";
 	icon_state = "swall12"
 	},
 /area/awaymission/BMPship/Midship)
 "cl" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swallc2";
 	icon_state = "swallc2"
 	},
 /area/awaymission/BMPship/Midship)
 "cm" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall13";
 	icon_state = "swall13"
 	},
 /area/awaymission/BMPship/Midship)
 "cn" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall15";
 	icon_state = "swall15"
 	},
@@ -777,7 +777,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Gate)
 "ct" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall2";
 	icon_state = "swall2"
 	},
@@ -803,7 +803,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Gate)
 "cy" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall11";
 	icon_state = "swall11"
 	},
@@ -813,15 +813,15 @@
 	tag = "icon-carpet";
 	icon_state = "carpet"
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
 	},
 /area/awaymission/BMPship/Fore)
 "cA" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -866,7 +866,7 @@
 	},
 /area/awaymission/BMPship/Midship)
 "cE" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -920,7 +920,7 @@
 	},
 /area/awaymission/BMPship/Midship)
 "cL" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall3";
 	icon_state = "swall3"
 	},
@@ -1036,7 +1036,7 @@
 	},
 /area/awaymission/BMPship/Midship)
 "da" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall1";
 	icon_state = "swall1"
 	},
@@ -1069,7 +1069,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/BMPship/Aft)
 "df" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swallc3";
 	icon_state = "swallc3"
 	},
@@ -1353,7 +1353,7 @@
 	},
 /area/awaymission/BMPship/Midship)
 "dQ" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall2";
 	icon_state = "swall2"
 	},
@@ -2074,8 +2074,8 @@
 	},
 /area/awaymission/BMPship/Aft)
 "fm" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
@@ -2490,8 +2490,8 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Aft)
 "gg" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -2519,7 +2519,7 @@
 	},
 /area/awaymission/BMPship/Fore)
 "gj" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall11";
 	icon_state = "swall11";
 	dir = 2
@@ -2633,7 +2633,7 @@
 /area/awaymission/BMPship/Fore)
 "gA" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/awaymission/BMPship/Fore)
 "gB" = (
 /obj/item/shard{
@@ -2799,7 +2799,7 @@
 	},
 /area/awaymission/BMPship/Aft)
 "gW" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swallc2";
 	icon_state = "swallc2"
 	},
@@ -2876,7 +2876,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/BMPship/Aft)
 "hi" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swallc3";
 	icon_state = "swallc3"
 	},
@@ -2895,31 +2895,31 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/BMPship/Fore)
 "hl" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swallc1";
 	icon_state = "swallc1"
 	},
 /area/awaymission/BMPship/Fore)
 "hm" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swallc3";
 	icon_state = "swallc3"
 	},
 /area/awaymission/BMPship/Midship)
 "hn" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall15";
 	icon_state = "swall15"
 	},
 /area/awaymission/BMPship/Midship)
 "ho" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall4";
 	icon_state = "swall4"
 	},
 /area/awaymission/BMPship/Midship)
 "hp" = (
-/turf/closed/shuttle/wall,
+/turf/closed/ind_wall/shuttle,
 /area/awaymission/BMPship/Midship)
 "hq" = (
 /turf/closed/mineral/random,
@@ -2984,7 +2984,7 @@
 /turf/open/floor/engine,
 /area/awaymission/BMPship/Fore)
 "hA" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall1";
 	icon_state = "swall1"
 	},
@@ -3009,7 +3009,7 @@
 /turf/open/floor/plating/asteroid/airless,
 /area/awaymission/BMPship/Fore)
 "hF" = (
-/turf/closed/shuttle/wall,
+/turf/closed/ind_wall/shuttle,
 /area/awaymission)
 "hG" = (
 /obj/structure/cable{
@@ -3123,7 +3123,7 @@
 /obj/effect/decal/remains/human,
 /obj/item/clothing/head/helmet/space/syndicate/green/dark,
 /obj/effect/gibspawner/generic,
-/turf/space,
+/turf/open/space,
 /area/awaymission)
 "hV" = (
 /obj/effect/decal/warning_stripes/yellow/partial{
@@ -3203,7 +3203,7 @@
 /area/awaymission/BMPship/Aft)
 "ih" = (
 /obj/item/clothing/suit/space/syndicate/green/dark,
-/turf/space,
+/turf/open/space,
 /area/awaymission)
 "ii" = (
 /obj/structure/window/reinforced{
@@ -3264,10 +3264,10 @@
 /obj/item/shard{
 	icon_state = "medium"
 	},
-/turf/space,
+/turf/open/space,
 /area/space/nearstation)
 "ip" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall13";
 	icon_state = "swall13"
 	},
@@ -3278,7 +3278,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/BMPship/Aft)
 "ir" = (
-/turf/closed/shuttle/wall,
+/turf/closed/ind_wall/shuttle,
 /area/awaymission/BMPship/Fore)
 "is" = (
 /obj/structure/bed,
@@ -3326,7 +3326,7 @@
 	icon_state = "cafeteria";
 	dir = 2
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -3351,17 +3351,17 @@
 	},
 /area/awaymission/BMPship/Aft)
 "iC" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall4";
 	icon_state = "swall4"
 	},
 /area/awaymission)
 "iD" = (
 /obj/item/clothing/gloves/color/yellow,
-/turf/space,
+/turf/open/space,
 /area/awaymission)
 "iE" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall12";
 	icon_state = "swall12"
 	},
@@ -3448,7 +3448,7 @@
 /area/awaymission)
 "iT" = (
 /turf/open/floor/plating,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -3590,7 +3590,7 @@
 /turf/open/floor/plating,
 /area/awaymission/BMPship/Gate)
 "jp" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall15";
 	icon_state = "swall15"
 	},

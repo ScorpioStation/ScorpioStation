@@ -1,123 +1,123 @@
-/turf/space/transit
+/turf/open/space/transit
 	var/pushdirection // push things that get caught in the transit tile this direction
 	plane = PLANE_SPACE
 
 //Overwrite because we dont want people building rods in space.
-/turf/space/transit/attackby(obj/O as obj, mob/user as mob, params)
+/turf/open/space/transit/attackby(obj/O as obj, mob/user as mob, params)
 	return
 
-/turf/space/transit/north // moving to the north
+/turf/open/space/transit/north // moving to the north
 
 	pushdirection = SOUTH  // south because the space tile is scrolling south
 
 	//IF ANYONE KNOWS A MORE EFFICIENT WAY OF MANAGING THESE SPRITES, BE MY GUEST.
 	//I DO NOT KNOW. I AM SORRY. - GUEST
-/turf/space/transit/north/shuttlespace_ns1
+/turf/open/space/transit/north/shuttlespace_ns1
 	icon_state = "speedspace_ns_1"
 
-/turf/space/transit/north/shuttlespace_ns2
+/turf/open/space/transit/north/shuttlespace_ns2
 	icon_state = "speedspace_ns_2"
 
-/turf/space/transit/north/shuttlespace_ns3
+/turf/open/space/transit/north/shuttlespace_ns3
 	icon_state = "speedspace_ns_3"
 
-/turf/space/transit/north/shuttlespace_ns4
+/turf/open/space/transit/north/shuttlespace_ns4
 	icon_state = "speedspace_ns_4"
 
-/turf/space/transit/north/shuttlespace_ns5
+/turf/open/space/transit/north/shuttlespace_ns5
 	icon_state = "speedspace_ns_5"
 
-/turf/space/transit/north/shuttlespace_ns6
+/turf/open/space/transit/north/shuttlespace_ns6
 	icon_state = "speedspace_ns_6"
 
-/turf/space/transit/north/shuttlespace_ns7
+/turf/open/space/transit/north/shuttlespace_ns7
 	icon_state = "speedspace_ns_7"
 
-/turf/space/transit/north/shuttlespace_ns8
+/turf/open/space/transit/north/shuttlespace_ns8
 	icon_state = "speedspace_ns_8"
 
-/turf/space/transit/north/shuttlespace_ns9
+/turf/open/space/transit/north/shuttlespace_ns9
 	icon_state = "speedspace_ns_9"
 
-/turf/space/transit/north/shuttlespace_ns10
+/turf/open/space/transit/north/shuttlespace_ns10
 	icon_state = "speedspace_ns_10"
 
-/turf/space/transit/north/shuttlespace_ns11
+/turf/open/space/transit/north/shuttlespace_ns11
 	icon_state = "speedspace_ns_11"
 
-/turf/space/transit/north/shuttlespace_ns12
+/turf/open/space/transit/north/shuttlespace_ns12
 	icon_state = "speedspace_ns_12"
 
-/turf/space/transit/north/shuttlespace_ns13
+/turf/open/space/transit/north/shuttlespace_ns13
 	icon_state = "speedspace_ns_13"
 
-/turf/space/transit/north/shuttlespace_ns14
+/turf/open/space/transit/north/shuttlespace_ns14
 	icon_state = "speedspace_ns_14"
 
-/turf/space/transit/north/shuttlespace_ns15
+/turf/open/space/transit/north/shuttlespace_ns15
 	icon_state = "speedspace_ns_15"
 
-/turf/space/transit/east // moving to the east
+/turf/open/space/transit/east // moving to the east
 	pushdirection = WEST
 
-/turf/space/transit/east/shuttlespace_ew1
+/turf/open/space/transit/east/shuttlespace_ew1
 	icon_state = "speedspace_ew_1"
 
-/turf/space/transit/east/shuttlespace_ew2
+/turf/open/space/transit/east/shuttlespace_ew2
 	icon_state = "speedspace_ew_2"
 
-/turf/space/transit/east/shuttlespace_ew3
+/turf/open/space/transit/east/shuttlespace_ew3
 	icon_state = "speedspace_ew_3"
 
-/turf/space/transit/east/shuttlespace_ew4
+/turf/open/space/transit/east/shuttlespace_ew4
 	icon_state = "speedspace_ew_4"
 
-/turf/space/transit/east/shuttlespace_ew5
+/turf/open/space/transit/east/shuttlespace_ew5
 	icon_state = "speedspace_ew_5"
 
-/turf/space/transit/east/shuttlespace_ew6
+/turf/open/space/transit/east/shuttlespace_ew6
 	icon_state = "speedspace_ew_6"
 
-/turf/space/transit/east/shuttlespace_ew7
+/turf/open/space/transit/east/shuttlespace_ew7
 	icon_state = "speedspace_ew_7"
 
-/turf/space/transit/east/shuttlespace_ew8
+/turf/open/space/transit/east/shuttlespace_ew8
 	icon_state = "speedspace_ew_8"
 
-/turf/space/transit/east/shuttlespace_ew9
+/turf/open/space/transit/east/shuttlespace_ew9
 	icon_state = "speedspace_ew_9"
 
-/turf/space/transit/east/shuttlespace_ew10
+/turf/open/space/transit/east/shuttlespace_ew10
 	icon_state = "speedspace_ew_10"
 
-/turf/space/transit/east/shuttlespace_ew11
+/turf/open/space/transit/east/shuttlespace_ew11
 	icon_state = "speedspace_ew_11"
 
-/turf/space/transit/east/shuttlespace_ew12
+/turf/open/space/transit/east/shuttlespace_ew12
 	icon_state = "speedspace_ew_12"
 
-/turf/space/transit/east/shuttlespace_ew13
+/turf/open/space/transit/east/shuttlespace_ew13
 	icon_state = "speedspace_ew_13"
 
-/turf/space/transit/east/shuttlespace_ew14
+/turf/open/space/transit/east/shuttlespace_ew14
 	icon_state = "speedspace_ew_14"
 
-/turf/space/transit/east/shuttlespace_ew15
+/turf/open/space/transit/east/shuttlespace_ew15
 	icon_state = "speedspace_ew_15"
 //-tg- stuff
 
-/turf/space/transit
+/turf/open/space/transit
 	icon_state = "black"
 	dir = SOUTH
 
-/turf/space/transit/horizontal
+/turf/open/space/transit/horizontal
 	dir = WEST
 
-/turf/space/transit/New()
+/turf/open/space/transit/New()
 	..()
 	update_icon()
 
-/turf/space/transit/Entered(atom/movable/AM, atom/OldLoc, ignoreRest = 0)
+/turf/open/space/transit/Entered(atom/movable/AM, atom/OldLoc, ignoreRest = 0)
 	if(!AM)
 		return
 	if(!AM.simulated || istype(AM, /obj/docking_port))
@@ -148,18 +148,18 @@
 	AM.newtonian_move(dir)
 
 
-/turf/space/transit/rpd_act()
+/turf/open/space/transit/rpd_act()
 	return
 
 //Overwrite because we dont want people building rods in space.
-/turf/space/transit/attackby()
+/turf/open/space/transit/attackby()
 	return
 
-/turf/space/transit/Initialize(mapload)
+/turf/open/space/transit/Initialize(mapload)
 	. = ..()
 	update_icon()
 
-/turf/space/transit/proc/update_icon()
+/turf/open/space/transit/proc/update_icon()
 	var/p = 9
 	var/angle = 0
 	var/state = 1
@@ -183,7 +183,7 @@
 	icon_state = "speedspace_ns_[state]"
 	transform = turn(matrix(), angle)
 
-/turf/space/transit/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
+/turf/open/space/transit/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
 	underlay_appearance.icon = 'icons/turf/space.dmi'
 	underlay_appearance.icon_state = SPACE_ICON_STATE
 	underlay_appearance.plane = PLANE_SPACE

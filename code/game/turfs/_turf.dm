@@ -12,7 +12,7 @@
 	var/agent_b = 0
 
 	var/intact = TRUE
-	var/turf/baseturf = /turf/space
+	var/turf/baseturf = /turf/open/space
 	var/slowdown = 0 //negative for faster, positive for slower
 
 	//Properties for airtight tiles (/wall)
@@ -232,7 +232,7 @@
 				lighting_build_overlay()
 			else
 				lighting_clear_overlay()
-		for(var/turf/space/S in RANGE_TURFS(1, src)) //RANGE_TURFS is in code\__HELPERS\game.dm
+		for(var/turf/open/space/S in RANGE_TURFS(1, src)) //RANGE_TURFS is in code\__HELPERS\game.dm
 			S.update_starlight()
 	obscured = old_obscured
 	return W
@@ -495,7 +495,7 @@
 	if(!SSticker || SSticker.current_state != GAME_STATE_PLAYING)
 		add_blueprints(AM)
 
-/turf/proc/empty(turf_type = /turf/space)
+/turf/proc/empty(turf_type = /turf/open/space)
 	// Remove all atoms except observers, landmarks, docking ports, and (un)`simulated` atoms (lighting overlays)
 	var/turf/T0 = src
 	for(var/X in T0.GetAllContents())

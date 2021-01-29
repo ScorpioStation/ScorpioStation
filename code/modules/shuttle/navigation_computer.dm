@@ -234,7 +234,7 @@
 
 	if(space_turfs_only)
 		var/turf_type = hidden_turf_info ? hidden_turf_info[2] : T.type
-		if(!ispath(turf_type, /turf/space))
+		if(!ispath(turf_type, /turf/open/space))
 			return SHUTTLE_DOCKER_BLOCKED
 
 	if(istype(T.loc.type, /area/syndicate_depot))
@@ -279,7 +279,7 @@
 	return ..()
 
 /mob/camera/aiEye/remote/shuttle_docker/setLoc(T)
-	if(istype(get_turf(T), /turf/space) || istype(get_area(T), /area/space) || istype(get_area(T), /area/shuttle))
+	if(istype(get_turf(T), /turf/open/space) || istype(get_area(T), /area/space) || istype(get_area(T), /area/shuttle))
 		..()
 		var/obj/machinery/computer/camera_advanced/shuttle_docker/console = origin
 		console.checkLandingSpot()

@@ -32,7 +32,7 @@ SUBSYSTEM_DEF(title)
 
 		var/icon/icon = new(fcopy_rsc(file_path))
 
-		for(var/turf/closed/ind_wall/spashscreen/splash in world)
+		for(var/turf/closed/ind_wall/splashscreen/splash in world)
 			splash.icon = icon
 
 	return ..()

@@ -150,17 +150,17 @@
 	. = ..()
 	if(!coverable_turfs)
 		coverable_turfs = typecacheof(list(
-			/turf/space
+			/turf/open/space
 		))
 		coverable_turfs -= typecacheof(list(
-			/turf/space/transit
+			/turf/open/space/transit
 		))
 
 /datum/spacevine_mutation/space_covering/on_grow(obj/structure/spacevine/holder)
 	process_mutation(holder)
 
 /datum/spacevine_mutation/space_covering/on_spread(obj/structure/spacevine/holder, turf/target)
-	if(target.type == /turf/space && !locate(/obj/structure/spacevine) in target)
+	if(target.type == /turf/open/space && !locate(/obj/structure/spacevine) in target)
 		holder.master.spawn_spacevine_piece(target, holder)
 		. = TRUE
 
@@ -669,7 +669,7 @@
 			spread_success |= SM.on_spread(src, stepturf) // If this returns 1, spreading succeeded
 		if(!locate(/obj/structure/spacevine, stepturf))
 			// snowflake for space turf, but space turf is super common and a big deal
-			if(!istype(stepturf, /turf/space) && stepturf.Enter(src))
+			if(!istype(stepturf, /turf/open/space) && stepturf.Enter(src))
 				if(master)
 					master.spawn_spacevine_piece(stepturf, src)
 				spread_success = TRUE

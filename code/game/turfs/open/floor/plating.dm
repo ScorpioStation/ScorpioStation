@@ -112,7 +112,7 @@
 /turf/open/floor/plating/remove_plating(mob/user)
 	if(indesctructible_turf)
 		return
-	if(baseturf == /turf/space)
+	if(baseturf == /turf/open/space)
 		ReplaceWithLattice()
 	else
 		TerraformTurf(baseturf)

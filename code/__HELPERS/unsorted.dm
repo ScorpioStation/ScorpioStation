@@ -759,7 +759,7 @@ Returns 1 if the chain up to the area contains the given typepath
 						corner.name = "wall"
 						// Find a new turf to take on the property of
 						var/turf/nextturf = get_step(corner, direction)
-						if(!nextturf || !istype(nextturf, /turf/space))
+						if(!nextturf || !istype(nextturf, /turf/open/space))
 							nextturf = get_step(corner, turn(direction, 180))
 						// Take on the icon of a neighboring scrolling space icon
 						X.icon = nextturf.icon
@@ -899,7 +899,7 @@ Returns 1 if the chain up to the area contains the given typepath
 					var/old_icon1 = T.icon
 
 					if(platingRequired)
-						if(istype(B, /turf/space))
+						if(istype(B, /turf/open/space))
 							continue moving
 
 					var/turf/X = new T.type(B)

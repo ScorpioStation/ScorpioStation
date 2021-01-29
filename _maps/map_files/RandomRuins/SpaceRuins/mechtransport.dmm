@@ -3,7 +3,7 @@
 /turf/template_noop,
 /area/template_noop)
 "b" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_s6";
 	icon_state = "swall_s6"
 	},
@@ -14,13 +14,13 @@
 /turf/open/floor/plating/airless,
 /area/ruin/powered)
 "d" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_s10";
 	icon_state = "swall_s10"
 	},
 /area/ruin/powered)
 "e" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall3";
 	icon_state = "swall3"
 	},
@@ -66,7 +66,7 @@
 /turf/open/shuttle/floor,
 /area/ruin/powered)
 "o" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall13";
 	icon_state = "swall13"
 	},
@@ -79,7 +79,7 @@
 	},
 /area/ruin/powered)
 "q" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall12";
 	icon_state = "swall12"
 	},
@@ -215,13 +215,13 @@
 /turf/open/floor/plating/staticairless,
 /area/space/nearstation)
 "N" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall14";
 	icon_state = "swall14"
 	},
 /area/ruin/powered)
 "O" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_s9";
 	icon_state = "swall_s9"
 	},
@@ -231,7 +231,7 @@
 /turf/template_noop,
 /area/space/nearstation)
 "Q" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall15";
 	icon_state = "swall15"
 	},
@@ -242,7 +242,7 @@
 /area/ruin/powered)
 "U" = (
 /obj/item/gps/ruin,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall12";
 	icon_state = "swall12"
 	},

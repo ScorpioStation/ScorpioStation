@@ -157,7 +157,7 @@
 	anchored = 1
 
 	for(var/turf/target_tile in range(2, src))
-		if(istype(target_tile,/turf/space) && !(locate(/obj/machinery/shield) in target_tile))
+		if(istype(target_tile,/turf/open/space) && !(locate(/obj/machinery/shield) in target_tile))
 			if(malfunction && prob(33) || !malfunction)
 				deployed_shields += new /obj/machinery/shield(target_tile)
 
@@ -287,7 +287,7 @@
 			shields_down()
 		anchored = FALSE
 	else
-		if(istype(get_turf(src), /turf/space))
+		if(istype(get_turf(src), /turf/open/space))
 			return //No wrenching these in space!
 		WRENCH_ANCHOR_MESSAGE
 		anchored = TRUE

@@ -554,7 +554,7 @@
 /obj/item/rcd/afterattack(atom/A, mob/user, proximity)
 	if(!proximity)
 		return FALSE
-	if(istype(A, /turf/space/transit))
+	if(istype(A, /turf/open/space/transit))
 		return FALSE
 	if(!is_type_in_list(A, allowed_targets))
 		return FALSE

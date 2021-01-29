@@ -1,16 +1,16 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "ab" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/administration)
 "ac" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "wall3"
 	},
 /area/shuttle/administration)
@@ -47,15 +47,15 @@
 	},
 /area/shuttle/administration)
 "af" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/administration)
 "ag" = (
 /obj/machinery/vending/boozeomat,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "wall3"
 	},
 /area/shuttle/administration)
@@ -81,7 +81,7 @@
 	},
 /area/shuttle/administration)
 "ak" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -316,15 +316,15 @@
 	},
 /area/shuttle/administration)
 "aM" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/administration)
 "aN" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	icon_state = "diagonalWall3"
 	},
 /area/shuttle/administration)

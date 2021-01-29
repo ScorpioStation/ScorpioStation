@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "ab" = (
 /turf/closed/wall/r_wall,
@@ -264,7 +264,7 @@
 /area/awaymission/academy/headmaster)
 "aP" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/space/nearstation)
 "aQ" = (
 /obj/machinery/door/airlock/gold{
@@ -505,20 +505,20 @@
 /turf/closed/wall,
 /area/awaymission/academy/classrooms)
 "bF" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swallc2";
 	icon_state = "swallc2"
 	},
 /area/awaymission/academy/classrooms)
 "bG" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/awaymission/academy/classrooms)
 "bH" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swallc1";
 	icon_state = "swallc1"
 	},
@@ -639,7 +639,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/academy/classrooms)
 "bW" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -783,7 +783,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/academy/classrooms)
 "cs" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall1";
 	icon_state = "swall1"
 	},
@@ -1517,7 +1517,7 @@
 /area/awaymission/academy/classrooms)
 "et" = (
 /obj/singularity/academy,
-/turf/space,
+/turf/open/space,
 /area/space/nearstation)
 "eu" = (
 /obj/structure/window/reinforced{
@@ -3380,18 +3380,18 @@
 	tag = "icon-propulsion_l";
 	icon_state = "propulsion_l"
 	},
-/turf/space,
+/turf/open/space,
 /area/awaymission/academy/academyaft)
 "iW" = (
 /obj/structure/shuttle/engine/propulsion,
-/turf/space,
+/turf/open/space,
 /area/awaymission/academy/academyaft)
 "iX" = (
 /obj/structure/shuttle/engine/propulsion{
 	tag = "icon-propulsion_r";
 	icon_state = "propulsion_r"
 	},
-/turf/space,
+/turf/open/space,
 /area/awaymission/academy/academyaft)
 "iY" = (
 /obj/structure/grille,
@@ -3652,7 +3652,7 @@
 /obj/item/shard{
 	icon_state = "medium"
 	},
-/turf/space,
+/turf/open/space,
 /area/space/nearstation)
 "jz" = (
 /obj/machinery/igniter/on,

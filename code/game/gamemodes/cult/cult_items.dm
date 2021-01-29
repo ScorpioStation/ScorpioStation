@@ -341,7 +341,7 @@
 			continue
 		if(T == mobloc)
 			continue
-		if(istype(T, /turf/space))
+		if(istype(T, /turf/open/space))
 			continue
 		if(T.x > world.maxx-outer_tele_radius || T.x < outer_tele_radius)
 			continue	//putting them at the edge is dumb

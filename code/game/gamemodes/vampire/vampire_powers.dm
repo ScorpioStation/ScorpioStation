@@ -486,7 +486,7 @@
 	for(var/turf/T in range(user, outer_tele_radius))
 		if(T in range(user, inner_tele_radius))
 			continue
-		if(istype(T, /turf/space))
+		if(istype(T, /turf/open/space))
 			continue
 		if(T.density)
 			continue

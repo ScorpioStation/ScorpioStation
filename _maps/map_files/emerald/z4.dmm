@@ -1,23 +1,23 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "ab" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/space/nearstation)
 "ac" = (
 /turf/closed/wall,
 /area/constructionsite/hallway/port)
 "ad" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/constructionsite/hallway/port)
 "ae" = (
 /turf/closed/wall,
 /area/constructionsite/hallway/starboard)
 "af" = (
-/turf/space,
+/turf/open/space,
 /area/constructionsite/hallway/starboard)
 "ag" = (
 /obj/structure/grille,
@@ -51,11 +51,11 @@
 /turf/closed/wall,
 /area/constructionsite/bridge)
 "an" = (
-/turf/space,
+/turf/open/space,
 /area/constructionsite/bridge)
 "ao" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/constructionsite/bridge)
 "ap" = (
 /turf/open/floor/plasteel/airless,
@@ -259,7 +259,7 @@
 /turf/open/floor/plasteel/airless,
 /area/constructionsite/hallway/fore)
 "aN" = (
-/turf/space,
+/turf/open/space,
 /area/constructionsite/hallway/port)
 "aO" = (
 /obj/machinery/door/airlock/public/glass{
@@ -406,7 +406,7 @@
 /area/constructionsite/hallway/starboard)
 "bk" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/constructionsite/hallway/starboard)
 "bl" = (
 /obj/machinery/light{
@@ -712,7 +712,7 @@
 /area/constructionsite/hallway/center)
 "bU" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/constructionsite/hallway/center)
 "bV" = (
 /turf/open/floor/plating/airless,
@@ -762,7 +762,7 @@
 /turf/open/floor/plasteel/airless,
 /area/constructionsite/hallway/port)
 "cb" = (
-/turf/space,
+/turf/open/space,
 /area/constructionsite/hallway/center)
 "cc" = (
 /obj/machinery/power/apc/noalarm{
@@ -1040,7 +1040,7 @@
 /area/engiestation)
 "cU" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/constructionsite/ai)
 "cV" = (
 /obj/machinery/light/small{
@@ -2465,14 +2465,14 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/turf/space,
+/turf/open/space,
 /area/space/nearstation)
 "ge" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/space,
+/turf/open/space,
 /area/space/nearstation)
 "gf" = (
 /obj/structure/grille,
@@ -2644,7 +2644,7 @@
 	name = "engineering outpost dock";
 	width = 7
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "gD" = (
 /obj/structure/cable{
@@ -2703,7 +2703,7 @@
 /area/constructionsite/hallway/aft)
 "gM" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/constructionsite/hallway/aft)
 "gN" = (
 /turf/open/floor/plating/airless,
@@ -2783,7 +2783,7 @@
 	name = "east of engistation";
 	width = 21
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "gW" = (
 /obj/machinery/alarm/monitor{
@@ -2878,7 +2878,7 @@
 /area/constructionsite/hallway/engcore)
 "he" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/constructionsite/medical)
 "hf" = (
 /obj/structure/grille,
@@ -2940,24 +2940,24 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/space,
+/turf/open/space,
 /area/constructionsite/hallway/aft)
 "ho" = (
 /obj/machinery/light{
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/space,
+/turf/open/space,
 /area/constructionsite/medical)
 "hp" = (
-/turf/space,
+/turf/open/space,
 /area/constructionsite/medical)
 "hq" = (
 /obj/structure/lattice,
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/space,
+/turf/open/space,
 /area/constructionsite/medical)
 "hr" = (
 /obj/machinery/light{
@@ -2965,7 +2965,7 @@
 	dir = 8
 	},
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/constructionsite/medical)
 "hs" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -3487,17 +3487,17 @@
 /turf/open/floor/plasteel/airless,
 /area/constructionsite/hallway/aft)
 "iv" = (
-/turf/space,
+/turf/open/space,
 /area/constructionsite/hallway/aft)
 "iw" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/constructionsite/storage)
 "ix" = (
 /turf/open/floor/plating/airless,
 /area/constructionsite/storage)
 "iy" = (
-/turf/space,
+/turf/open/space,
 /area/constructionsite/storage)
 "iz" = (
 /turf/closed/wall,
@@ -3909,7 +3909,7 @@
 /turf/open/floor/plating,
 /area/exploration/methlab)
 "jC" = (
-/turf/space,
+/turf/open/space,
 /area/solar/constructionsite)
 "jD" = (
 /obj/structure/cable{
@@ -4541,7 +4541,7 @@
 /area/constructionsite/engineering)
 "kX" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/constructionsite/engineering)
 "kY" = (
 /obj/machinery/power/tesla_coil{
@@ -4645,7 +4645,7 @@
 /turf/open/floor/plating/airless,
 /area/constructionsite/engineering)
 "lk" = (
-/turf/space,
+/turf/open/space,
 /area/constructionsite/engineering)
 "ll" = (
 /obj/machinery/power/tesla_coil{
@@ -4872,7 +4872,7 @@
 	name = "Near Construction Site";
 	width = 16
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 
 (1,1,1) = {"

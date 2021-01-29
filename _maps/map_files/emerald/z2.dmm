@@ -104,12 +104,12 @@
 	},
 /area/holodeck/source_knightarena)
 "ap" = (
-/turf/space/transit/east{
+/turf/open/space/transit/east{
 	dir = 8
 	},
 /area/space)
 "aq" = (
-/turf/space/transit/horizontal{
+/turf/open/space/transit/horizontal{
 	dir = 4
 	},
 /area/space)
@@ -264,7 +264,7 @@
 	},
 /area/holodeck/source_thunderdomecourt)
 "aN" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "aO" = (
 /turf/open/floor/holofloor{
@@ -622,7 +622,7 @@
 	name = "pod 3 in transit";
 	width = 3
 	},
-/turf/space/transit/east{
+/turf/open/space/transit/east{
 	dir = 8
 	},
 /area/space)
@@ -704,7 +704,7 @@
 	},
 /area/holodeck/source_theatre)
 "bW" = (
-/turf/space/transit/horizontal,
+/turf/open/space/transit/horizontal,
 /area/space)
 "bX" = (
 /turf/open/floor/holofloor{
@@ -792,7 +792,7 @@
 /turf/closed/ind_wall,
 /area/centcom/ferry)
 "ck" = (
-/turf/space/transit,
+/turf/open/space/transit,
 /area/space)
 "cl" = (
 /turf/open/floor/holofloor{
@@ -903,7 +903,7 @@
 	name = "mining in transit";
 	width = 7
 	},
-/turf/space/transit,
+/turf/open/space/transit,
 /area/space)
 "cA" = (
 /obj/structure/flora/grass/both,
@@ -1001,7 +1001,7 @@
 	name = "pod 4 in transit";
 	width = 3
 	},
-/turf/space/transit/east{
+/turf/open/space/transit/east{
 	dir = 8
 	},
 /area/space)
@@ -1271,7 +1271,7 @@
 	name = "emergency in transit";
 	width = 24
 	},
-/turf/space/transit,
+/turf/open/space/transit,
 /area/space)
 "dv" = (
 /turf/open/floor/holofloor{
@@ -1520,7 +1520,7 @@
 	name = "sst in transit";
 	width = 11
 	},
-/turf/space/transit,
+/turf/open/space/transit,
 /area/space)
 "dY" = (
 /turf/open/floor/holofloor{
@@ -1558,7 +1558,7 @@
 	name = "supply in transit";
 	width = 12
 	},
-/turf/space/transit,
+/turf/open/space/transit,
 /area/space)
 "ed" = (
 /obj/structure/rack,
@@ -1582,14 +1582,14 @@
 /area/ninja/holding)
 "ef" = (
 /turf/open/ind_floor/snow,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
 /area/syndicate_mothership)
 "eg" = (
 /turf/open/ind_floor/snow,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -1599,7 +1599,7 @@
 /turf/open/ind_floor/snow,
 /area/syndicate_mothership)
 "ei" = (
-/turf/space,
+/turf/open/space,
 /area/centcom/control)
 "ej" = (
 /obj/machinery/door/airlock/external{
@@ -2117,7 +2117,7 @@
 	name = "docking bay 2 at Jupiter Station";
 	width = 9
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "fx" = (
 /turf/open/ind_floor{
@@ -2389,7 +2389,7 @@
 /area/wizard_station)
 "ge" = (
 /turf/open/ind_floor/snow,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "diagonalWall3"
 	},
 /area/syndicate_mothership)
@@ -2411,7 +2411,7 @@
 /turf/open/ind_floor{
 	icon_state = "dark"
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -2441,7 +2441,7 @@
 /turf/open/ind_floor{
 	icon_state = "dark"
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-diagonalWall3";
 	icon_state = "diagonalWall3";
 	dir = 2
@@ -2496,7 +2496,7 @@
 	name = "free golem in transit";
 	width = 16
 	},
-/turf/space/transit/horizontal{
+/turf/open/space/transit/horizontal{
 	dir = 4
 	},
 /area/space)
@@ -2553,7 +2553,7 @@
 /area/ninja/outpost)
 "gB" = (
 /turf/open/ind_floor/snow,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -2600,7 +2600,7 @@
 	name = "sit in transit";
 	width = 11
 	},
-/turf/space/transit,
+/turf/open/space/transit,
 /area/space)
 "gI" = (
 /obj/machinery/vending/syndisnack,
@@ -2739,7 +2739,7 @@
 	name = "skipjack in transit";
 	width = 19
 	},
-/turf/space/transit,
+/turf/open/space/transit,
 /area/space)
 "ha" = (
 /obj/docking_port/stationary/transit{
@@ -2751,7 +2751,7 @@
 	name = "syndicate in transit";
 	width = 18
 	},
-/turf/space/transit,
+/turf/open/space/transit,
 /area/space)
 "hb" = (
 /obj/docking_port/stationary{
@@ -2775,7 +2775,7 @@
 	name = "labor in transit";
 	width = 9
 	},
-/turf/space/transit,
+/turf/open/space/transit,
 /area/space)
 "hd" = (
 /obj/docking_port/stationary/transit{
@@ -2786,7 +2786,7 @@
 	name = "pod 1 in transit";
 	width = 3
 	},
-/turf/space/transit,
+/turf/open/space/transit,
 /area/space)
 "he" = (
 /turf/open/beach/coastline,
@@ -2811,13 +2811,13 @@
 	name = "pod 2 in transit";
 	width = 3
 	},
-/turf/space/transit,
+/turf/open/space/transit,
 /area/space)
 "hi" = (
 /obj/machinery/porta_turret/syndicate/pod,
 /turf/open/floor/pod,
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
@@ -2833,8 +2833,8 @@
 "hk" = (
 /obj/machinery/porta_turret/syndicate/pod,
 /turf/open/floor/pod,
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -2875,10 +2875,10 @@
 	height = 5;
 	id = "science_transit";
 	name = "science in transit";
-	turf_type = /turf/space/transit/horizontal;
+	turf_type = /turf/open/space/transit/horizontal;
 	width = 7
 	},
-/turf/space/transit/horizontal,
+/turf/open/space/transit/horizontal,
 /area/space)
 "hq" = (
 /turf/open/ind_floor/snow,
@@ -2906,8 +2906,8 @@
 "ht" = (
 /obj/machinery/porta_turret/syndicate/pod,
 /turf/open/floor/pod,
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-diagonalWall3";
 	icon_state = "diagonalWall3";
 	dir = 2
@@ -3061,8 +3061,8 @@
 "hP" = (
 /obj/machinery/porta_turret/syndicate/pod,
 /turf/open/floor/pod,
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -3262,7 +3262,7 @@
 	},
 /area/syndicate_mothership)
 "it" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "wall3"
 	},
 /area/syndicate_mothership)
@@ -3271,7 +3271,7 @@
 /turf/open/floor/plating/airless,
 /area/syndicate_mothership)
 "iv" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "wall3"
 	},
 /area/shuttle/assault_pod)
@@ -3583,7 +3583,7 @@
 /area/syndicate_mothership)
 "jj" = (
 /obj/machinery/computer/shuttle/syndicate/drop_pod,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "wall3"
 	},
 /area/shuttle/assault_pod)
@@ -3717,7 +3717,7 @@
 	name = "whiteship in transit";
 	width = 21
 	},
-/turf/space/transit/horizontal{
+/turf/open/space/transit/horizontal{
 	dir = 4
 	},
 /area/space)
@@ -3801,10 +3801,10 @@
 	name = "emergency centcom";
 	width = 31
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "jI" = (
-/turf/space,
+/turf/open/space,
 /area/adminconstruction)
 "jJ" = (
 /obj/effect/decal/warning_stripes/north,
@@ -3981,10 +3981,10 @@
 	height = 5;
 	id = "engineering_transit";
 	name = "engineering in transit";
-	turf_type = /turf/space/transit/horizontal;
+	turf_type = /turf/open/space/transit/horizontal;
 	width = 7
 	},
-/turf/space/transit/horizontal,
+/turf/open/space/transit/horizontal,
 /area/space)
 "kj" = (
 /turf/open/ind_floor{
@@ -4634,7 +4634,7 @@
 	},
 /area/centcom/control)
 "ma" = (
-/turf/space,
+/turf/open/space,
 /turf/closed/ind_wall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
@@ -5242,7 +5242,7 @@
 	},
 /area/syndicate_mothership)
 "ny" = (
-/turf/space,
+/turf/open/space,
 /turf/closed/ind_wall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
@@ -5469,7 +5469,7 @@
 	},
 /area/centcom/control)
 "nV" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
@@ -5496,7 +5496,7 @@
 	},
 /area/centcom/evac)
 "nY" = (
-/turf/space,
+/turf/open/space,
 /area/centcom/evac)
 "nZ" = (
 /obj/structure/table,
@@ -5538,22 +5538,22 @@
 /area/syndicate_mothership)
 "oc" = (
 /obj/effect/landmark/shuttle_import,
-/turf/space,
+/turf/open/space,
 /area/space)
 "od" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_s6";
 	dir = 2
 	},
 /area/shuttle/escape)
 "oe" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_s10";
 	dir = 2
 	},
 /area/shuttle/escape)
 "of" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_s6";
 	dir = 2
 	},
@@ -5564,14 +5564,14 @@
 	},
 /area/shuttle/escape)
 "oh" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/shuttle/gamma/space)
 "oi" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_s10";
 	dir = 2
 	},
@@ -5724,14 +5724,14 @@
 	},
 /area/centcom/specops)
 "ox" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
 	},
 /area/shuttle/escape)
 "oy" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -6174,13 +6174,13 @@
 	},
 /area/centcom/specops)
 "px" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_s5";
 	dir = 2
 	},
 /area/shuttle/gamma/space)
 "py" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_s9";
 	dir = 2
 	},
@@ -6360,13 +6360,13 @@
 	},
 /area/centcom/control)
 "pT" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_s5";
 	dir = 2
 	},
 /area/shuttle/escape)
 "pU" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_s9";
 	dir = 2
 	},
@@ -6833,7 +6833,7 @@
 	name = "centcom bay 3";
 	width = 5
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "rc" = (
 /obj/effect/decal/cleanable/blood,
@@ -6940,7 +6940,7 @@
 	name = "admin in transit";
 	width = 18
 	},
-/turf/space/transit/horizontal,
+/turf/open/space/transit/horizontal,
 /area/space)
 "ro" = (
 /obj/machinery/door/airlock/centcom{
@@ -7092,7 +7092,7 @@
 /turf/open/ind_floor,
 /area/start)
 "rI" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_s6";
 	icon_state = "swall_s6";
 	dir = 2
@@ -7118,7 +7118,7 @@
 /turf/open/shuttle/plating,
 /area/centcom/evac)
 "rM" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_s10";
 	icon_state = "swall_s10";
 	dir = 2
@@ -7141,7 +7141,7 @@
 	name = "recovery ship bay 1";
 	width = 3
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "rP" = (
 /obj/docking_port/stationary{
@@ -7152,10 +7152,10 @@
 	name = "recovery ship bay 2";
 	width = 3
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "rQ" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -7171,21 +7171,21 @@
 /turf/open/shuttle/plating,
 /area/centcom/evac)
 "rS" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall7";
 	icon_state = "swall7";
 	dir = 2
 	},
 /area/centcom/evac)
 "rT" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/centcom/evac)
 "rU" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall11";
 	icon_state = "swall11";
 	dir = 2
@@ -7203,7 +7203,7 @@
 /area/centcom/evac)
 "rX" = (
 /turf/open/shuttle/floor,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
@@ -7211,7 +7211,7 @@
 /area/centcom/evac)
 "rY" = (
 /turf/open/shuttle/plating,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -7255,7 +7255,7 @@
 /area/centcom/evac)
 "sd" = (
 /turf/open/shuttle/floor,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -7263,7 +7263,7 @@
 /area/centcom/evac)
 "se" = (
 /turf/open/shuttle/plating,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 3;
 	icon_state = "swall_f10";
 	layer = 2;
@@ -7291,7 +7291,7 @@
 /turf/open/shuttle/floor,
 /area/centcom/evac)
 "sh" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall1";
 	icon_state = "swall1";
 	dir = 2
@@ -7313,14 +7313,14 @@
 	},
 /area/centcom/evac)
 "sk" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_s5";
 	icon_state = "swall_s5";
 	dir = 2
 	},
 /area/centcom/evac)
 "sl" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_s9";
 	icon_state = "swall_s9";
 	dir = 2
@@ -7462,7 +7462,7 @@
 	name = "recovery ship bay 3";
 	width = 3
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "sE" = (
 /obj/machinery/door/airlock/centcom{
@@ -7539,7 +7539,7 @@
 	name = "recovery ship bay 4";
 	width = 3
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "sN" = (
 /obj/structure/closet/secure_closet/bar{
@@ -7680,7 +7680,7 @@
 	name = "centcom bay 2";
 	width = 5
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "tc" = (
 /turf/open/ind_floor{
@@ -7804,7 +7804,7 @@
 	},
 /area/centcom/evac)
 "tr" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall14";
 	icon_state = "swall14";
 	dir = 2
@@ -7901,7 +7901,7 @@
 	timid = 1;
 	width = 19
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "tI" = (
 /obj/structure/grille,
@@ -7983,10 +7983,10 @@
 	height = 11;
 	id = "specops_transit";
 	name = "specops in transit";
-	turf_type = /turf/space/transit/horizontal;
+	turf_type = /turf/open/space/transit/horizontal;
 	width = 5
 	},
-/turf/space/transit/horizontal,
+/turf/open/space/transit/horizontal,
 /area/space)
 "tR" = (
 /turf/open/ind_floor{
@@ -8051,7 +8051,7 @@
 	name = "supply centcom";
 	width = 12
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "tX" = (
 /turf/open/ind_floor{
@@ -8222,10 +8222,10 @@
 	height = 12;
 	id = "ferry_transit";
 	name = "ferry in transit";
-	turf_type = /turf/space/transit/horizontal;
+	turf_type = /turf/open/space/transit/horizontal;
 	width = 5
 	},
-/turf/space/transit/horizontal,
+/turf/open/space/transit/horizontal,
 /area/space)
 "uo" = (
 /turf/closed/ind_wall{
@@ -8258,7 +8258,7 @@
 	},
 /area/centcom)
 "ur" = (
-/turf/space,
+/turf/open/space,
 /turf/closed/ind_wall{
 	dir = 8;
 	icon = 'icons/turf/shuttle.dmi';
@@ -8266,7 +8266,7 @@
 	},
 /area/admin)
 "us" = (
-/turf/space,
+/turf/open/space,
 /turf/closed/ind_wall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
@@ -8355,7 +8355,7 @@
 	},
 /area/admin)
 "uD" = (
-/turf/space,
+/turf/open/space,
 /turf/closed/ind_wall{
 	dir = 1;
 	icon = 'icons/turf/shuttle.dmi';
@@ -8937,7 +8937,7 @@
 	},
 /area/admin)
 "vC" = (
-/turf/space,
+/turf/open/space,
 /turf/closed/ind_wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
@@ -9108,7 +9108,7 @@
 	},
 /area/admin)
 "vP" = (
-/turf/space,
+/turf/open/space,
 /turf/closed/ind_wall{
 	dir = 4;
 	icon = 'icons/turf/shuttle.dmi';
@@ -9170,7 +9170,7 @@
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-diagonalWall3 (EAST)";
 	icon_state = "diagonalWall3";
 	dir = 4
@@ -9181,7 +9181,7 @@
 	tag = "icon-floor";
 	icon_state = "floor"
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-diagonalWall3";
 	icon_state = "diagonalWall3";
 	dir = 2
@@ -9264,7 +9264,7 @@
 	},
 /area/admin)
 "we" = (
-/turf/space,
+/turf/open/space,
 /area/centcom/specops)
 "wf" = (
 /turf/open/ind_floor{
@@ -9308,10 +9308,10 @@
 	height = 11;
 	id = "trade_sol_transit";
 	name = "trade_sol in transit";
-	turf_type = /turf/space/transit/horizontal;
+	turf_type = /turf/open/space/transit/horizontal;
 	width = 5
 	},
-/turf/space/transit/horizontal,
+/turf/open/space/transit/horizontal,
 /area/space)
 "wl" = (
 /obj/machinery/door/airlock/hatch{
@@ -9386,7 +9386,7 @@
 	},
 /area/admin)
 "wq" = (
-/turf/space,
+/turf/open/space,
 /turf/closed/ind_wall{
 	dir = 2;
 	icon = 'icons/turf/shuttle.dmi';
@@ -9592,7 +9592,7 @@
 	name = "steel_rain in transit";
 	width = 7
 	},
-/turf/space/transit/horizontal,
+/turf/open/space/transit/horizontal,
 /area/space)
 "wF" = (
 /turf/open/ind_floor{
@@ -11119,7 +11119,7 @@
 	name = "vox bay 1";
 	width = 19
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "zU" = (
 /obj/machinery/door/window/southleft{
@@ -12070,7 +12070,7 @@
 /turf/open/ind_floor/snow,
 /area/syndicate_mothership)
 "Dv" = (
-/turf/space,
+/turf/open/space,
 /area/admin)
 "DX" = (
 /turf/open/floor/mech_bay_recharge_floor,

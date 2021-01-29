@@ -59,7 +59,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/unpowered)
 "ho" = (
-/turf/space,
+/turf/open/space,
 /area/ruin/space)
 "hs" = (
 /turf/closed/ind_wall/fakeglass{
@@ -69,7 +69,7 @@
 "iK" = (
 /obj/item/stack/sheet/metal,
 /obj/item/stack/sheet/metal,
-/turf/space,
+/turf/open/space,
 /area/ruin/space)
 "jf" = (
 /obj/item/trash/syndi_cakes,
@@ -86,7 +86,7 @@
 /area/ruin/unpowered)
 "ke" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/ruin)
 "kh" = (
 /obj/structure/lattice,
@@ -127,7 +127,7 @@
 /area/ruin/unpowered)
 "mc" = (
 /obj/structure/grille/broken,
-/turf/space,
+/turf/open/space,
 /area/ruin/space)
 "mx" = (
 /obj/item/trash/syndi_cakes,
@@ -193,7 +193,7 @@
 /area/ruin/unpowered)
 "rJ" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/ruin/space)
 "rL" = (
 /obj/item/reagent_containers/food/snacks/syndicake,
@@ -211,7 +211,7 @@
 /area/ruin/unpowered)
 "ub" = (
 /obj/item/stack/rods,
-/turf/space,
+/turf/open/space,
 /area/space)
 "uA" = (
 /obj/structure/table/reinforced,
@@ -238,7 +238,7 @@
 "yU" = (
 /obj/item/stack/sheet/metal,
 /obj/item/stack/sheet/metal,
-/turf/space,
+/turf/open/space,
 /area/space)
 "zd" = (
 /obj/machinery/power/apc/noalarm{
@@ -314,7 +314,7 @@
 /turf/template_noop,
 /area/template_noop)
 "Da" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "Dz" = (
 /mob/living/simple_animal/pet/dog/corgi,
@@ -376,7 +376,7 @@
 /area/ruin/unpowered)
 "IB" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/ruin/unpowered)
 "JI" = (
 /obj/effect/spawner/random_spawners/syndicate/loot,
@@ -420,7 +420,7 @@
 /area/ruin/unpowered)
 "NQ" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/space)
 "OA" = (
 /obj/structure/computerframe,
@@ -428,7 +428,7 @@
 /area/ruin/unpowered)
 "OK" = (
 /obj/item/reagent_containers/food/snacks/syndicake,
-/turf/space,
+/turf/open/space,
 /area/space)
 "OU" = (
 /turf/open/floor/plasteel/airless,
@@ -537,7 +537,7 @@
 /area/ruin/unpowered)
 "UR" = (
 /obj/item/trash/syndi_cakes,
-/turf/space,
+/turf/open/space,
 /area/space)
 "Vf" = (
 /obj/machinery/light{
@@ -554,14 +554,14 @@
 "VH" = (
 /obj/structure/lattice,
 /obj/random/tool,
-/turf/space,
+/turf/open/space,
 /area/space)
 "VR" = (
 /obj/structure/lattice,
 /turf/unsimulated,
 /area/space)
 "WL" = (
-/turf/space,
+/turf/open/space,
 /area/ruin/unpowered)
 "Xd" = (
 /obj/structure/cable{

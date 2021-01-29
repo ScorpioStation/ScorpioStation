@@ -50,7 +50,7 @@
 			else
 				var/sense = TRUE
 				switch("[T.type]")
-					if("/turf/space")
+					if("/turf/open/space")
 						colour = rgb(10,10,10)
 						sense = FALSE
 
@@ -204,7 +204,7 @@
 			else
 				var/sense = TRUE
 				switch("[T.type]")
-					if("/turf/space")
+					if("/turf/open/space")
 						colour = rgb(10,10,10)
 						sense = FALSE
 

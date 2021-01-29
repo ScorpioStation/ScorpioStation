@@ -16,7 +16,7 @@
 
 //sub-type to be used for interior shuttle walls
 //won't get an underlay of the destination turf on shuttle move
-/turf/closed/shuttle/wall/interior/copyTurf(turf/T)
+/turf/closed/ind_wall/shuttle/interior/copyTurf(turf/T)
 	if(T.type != type)
 		T.ChangeTurf(type)
 		if(underlays.len)
@@ -32,7 +32,7 @@
 	T.transform = transform
 	return T
 
-/turf/closed/shuttle/wall/copyTurf(turf/T)
+/turf/closed/ind_wall/shuttle/copyTurf(turf/T)
 	. = ..()
 	T.transform = transform
 
@@ -44,8 +44,17 @@
 	M.Turn(rotation)
 	transform = M
 
-//Smooth Shuttle Walls
-/// Look, I made 'em :O! - Notice the type path difference.
+//Notice the type path difference.
+/turf/closed/ind_wall/shuttle
+	name = "shuttle wall"
+	icon = 'icons/turf/shuttle.dmi'
+	icon_state = "wall1"
+	opacity = TRUE
+	density = TRUE
+	blocks_air = TRUE
+
+/* //Smooth Shuttle Walls
+/// Look, I made 'em :O! - secret smoothing shuttle walls for your selection
 /turf/closed/ind_wall/shuttle
 	name = "wall"
 	icon = 'icons/turf/shuttle2.dmi'
@@ -55,6 +64,7 @@
 	blocks_air = TRUE
 	canSmoothWith = list(/turf/closed/ind_wall/shuttle, /obj/machinery/door/airlock/shuttle, /obj/machinery/door/airlock, /obj/structure/window/full/shuttle, /obj/structure/shuttle/engine/heater)
 	smooth = SMOOTH_TRUE | SMOOTH_DIAGONAL	//Yes, SMOOTH_TRUE, not SMOOTH_MORE
+*/
 
 // Shuttle Floors and Plating
 /turf/open/shuttle/floor
@@ -74,6 +84,7 @@
 	layer = 2
 	oxygen = 0
 	nitrogen = MOLES_N2STANDARD + MOLES_O2STANDARD
+
 /turf/open/shuttle/plating/vox	//Vox skipjack plating
 	oxygen = 0
 	nitrogen = MOLES_N2STANDARD + MOLES_O2STANDARD

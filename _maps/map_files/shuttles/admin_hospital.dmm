@@ -1,15 +1,15 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "ab" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_s6";
 	dir = 2
 	},
 /area/shuttle/administration)
 "ac" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -30,7 +30,7 @@
 	opacity = 0
 	},
 /obj/structure/grille,
-/turf/space,
+/turf/open/space,
 /area/shuttle/administration)
 "ae" = (
 /obj/structure/shuttle/window{
@@ -48,7 +48,7 @@
 	opacity = 0
 	},
 /obj/structure/grille,
-/turf/space,
+/turf/open/space,
 /area/shuttle/administration)
 "af" = (
 /obj/structure/shuttle/window{
@@ -66,10 +66,10 @@
 	opacity = 0
 	},
 /obj/structure/grille,
-/turf/space,
+/turf/open/space,
 /area/shuttle/administration)
 "ag" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall14";
 	dir = 2
 	},
@@ -80,7 +80,7 @@
 	icon_state = "lifestar";
 	name = "NHV Asclepius"
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall8";
 	tag = "icon-swall12"
@@ -130,7 +130,7 @@
 	icon_state = "lifestar";
 	name = "NHV Asclepius"
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall14";
 	icon_state = "swall4";
 	dir = 2
@@ -152,7 +152,7 @@
 	icon_state = "window5_mid";
 	dir = 2
 	},
-/turf/space,
+/turf/open/space,
 /area/shuttle/administration)
 "am" = (
 /obj/machinery/door/poddoor/shutters{
@@ -170,16 +170,16 @@
 	icon_state = "window5_end";
 	dir = 1
 	},
-/turf/space,
+/turf/open/space,
 /area/shuttle/administration)
 "an" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_s10";
 	dir = 2
 	},
 /area/shuttle/administration)
 "ao" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -226,7 +226,7 @@
 /obj/structure/sign/chemistry{
 	pixel_y = 1
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -305,13 +305,13 @@
 	},
 /area/shuttle/administration)
 "aD" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall7";
 	dir = 2
 	},
 /area/shuttle/administration)
 "aE" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -357,7 +357,7 @@
 /area/shuttle/administration)
 "aJ" = (
 /obj/structure/sign/nosmoking_2,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall1";
 	icon_state = "swall1";
 	dir = 2
@@ -479,7 +479,7 @@
 	},
 /area/shuttle/administration)
 "aW" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_s9";
 	dir = 2
 	},
@@ -517,7 +517,7 @@
 /area/shuttle/administration)
 "bb" = (
 /obj/machinery/status_display,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -589,7 +589,7 @@
 	},
 /area/shuttle/administration)
 "bk" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall13";
 	icon_state = "swall13";
 	dir = 2
@@ -598,7 +598,7 @@
 "bl" = (
 /obj/structure/shuttle/window,
 /obj/structure/grille,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall8";
 	tag = "icon-swall12"
@@ -607,14 +607,14 @@
 "bm" = (
 /obj/structure/shuttle/window,
 /obj/structure/grille,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall14";
 	icon_state = "swall4";
 	dir = 2
 	},
 /area/shuttle/administration)
 "bn" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall15";
 	icon_state = "swall15";
 	dir = 2
@@ -636,7 +636,7 @@
 	opacity = 0
 	},
 /obj/structure/grille,
-/turf/space,
+/turf/open/space,
 /area/shuttle/administration)
 "bp" = (
 /obj/machinery/computer/pandemic,
@@ -695,7 +695,7 @@
 	},
 /area/shuttle/administration)
 "bs" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall1";
 	icon_state = "swall1";
 	dir = 2
@@ -798,7 +798,7 @@
 	opacity = 0
 	},
 /obj/structure/grille,
-/turf/space,
+/turf/open/space,
 /area/shuttle/administration)
 "bC" = (
 /obj/machinery/computer/shuttle/admin{
@@ -829,7 +829,7 @@
 	},
 /area/shuttle/administration)
 "bF" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall1";
 	dir = 2
 	},
@@ -890,7 +890,7 @@
 	opacity = 0
 	},
 /obj/structure/grille,
-/turf/space,
+/turf/open/space,
 /area/shuttle/administration)
 "bL" = (
 /obj/machinery/computer/communications{
@@ -913,7 +913,7 @@
 	},
 /area/shuttle/administration)
 "bN" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall2";
 	icon_state = "swall2";
 	dir = 2
@@ -975,27 +975,27 @@
 /area/shuttle/administration)
 "bW" = (
 /obj/machinery/status_display,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/shuttle/administration)
 "bX" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall13";
 	dir = 2
 	},
 /area/shuttle/administration)
 "bY" = (
 /obj/structure/sign/examroom,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/shuttle/administration)
 "bZ" = (
 /obj/machinery/defibrillator_mount/loaded,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall8";
 	tag = "icon-swall12"
@@ -1030,13 +1030,13 @@
 /area/shuttle/administration)
 "cc" = (
 /obj/structure/sign/nosmoking_2,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall7";
 	dir = 2
 	},
 /area/shuttle/administration)
 "cd" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall11";
 	dir = 2
 	},
@@ -1180,7 +1180,7 @@
 	},
 /area/shuttle/administration)
 "ct" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_s5";
 	dir = 2
 	},
@@ -1234,7 +1234,7 @@
 	name = "Blast Shutters";
 	opacity = 0
 	},
-/turf/space,
+/turf/open/space,
 /area/shuttle/administration)
 "qa" = (
 /obj/structure/shuttle/window{
@@ -1252,7 +1252,7 @@
 	opacity = 0
 	},
 /obj/structure/grille,
-/turf/space,
+/turf/open/space,
 /area/shuttle/administration)
 "Kq" = (
 /obj/structure/shuttle/window{
@@ -1270,7 +1270,7 @@
 	name = "Blast Shutters";
 	opacity = 0
 	},
-/turf/space,
+/turf/open/space,
 /area/shuttle/administration)
 "Vi" = (
 /obj/structure/shuttle/window{
@@ -1288,7 +1288,7 @@
 	name = "Blast Shutters";
 	opacity = 0
 	},
-/turf/space,
+/turf/open/space,
 /area/shuttle/administration)
 
 (1,1,1) = {"

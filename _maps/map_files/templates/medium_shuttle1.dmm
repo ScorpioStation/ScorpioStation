@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "b" = (
 /obj/structure/shuttle/engine/propulsion/burst/left{
@@ -28,7 +28,7 @@
 	name = "Shuttle"
 	})
 "d" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-wall3";
 	icon_state = "wall3"
 	},
@@ -36,7 +36,7 @@
 	name = "Shuttle"
 	})
 "e" = (
-/turf/space,
+/turf/open/space,
 /turf/open/shuttle{
 	tag = "icon-wall3 (NORTHEAST)";
 	icon_state = "wall3";
@@ -46,8 +46,8 @@
 	name = "Shuttle"
 	})
 "f" = (
-/turf/closed/shuttle/wall,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle,
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-wall3 (SOUTHEAST)";
 	icon_state = "wall3";
 	dir = 6
@@ -56,7 +56,7 @@
 	name = "Shuttle"
 	})
 "g" = (
-/turf/closed/shuttle/wall,
+/turf/closed/ind_wall/shuttle,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
@@ -176,7 +176,7 @@
 	})
 "v" = (
 /turf/open/floor/plating,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-window1";
 	icon_state = "window1"
 	},
@@ -195,8 +195,8 @@
 	name = "Shuttle"
 	})
 "x" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-diagonalWall (NORTHWEST)";
 	icon_state = "diagonalWall";
 	dir = 9
@@ -205,7 +205,7 @@
 	name = "Shuttle"
 	})
 "y" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-wall";
 	icon_state = "wall"
 	},
@@ -223,8 +223,8 @@
 	name = "Shuttle"
 	})
 "A" = (
-/turf/closed/shuttle/wall,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle,
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-wall3 (NORTHEAST)";
 	icon_state = "wall3";
 	dir = 5
@@ -233,7 +233,7 @@
 	name = "Shuttle"
 	})
 "B" = (
-/turf/space,
+/turf/open/space,
 /turf/open/shuttle{
 	tag = "icon-wall3 (SOUTHEAST)";
 	icon_state = "wall3";
@@ -282,8 +282,8 @@
 	name = "Shuttle"
 	})
 "G" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-diagonalWall (SOUTHEAST)";
 	icon_state = "diagonalWall";
 	dir = 6
@@ -405,8 +405,8 @@
 	name = "Shuttle"
 	})
 "T" = (
-/turf/space,
-/turf/closed/shuttle/wall{
+/turf/open/space,
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-diagonalWall (SOUTHEAST)";
 	icon_state = "diagonalWall";
 	dir = 6

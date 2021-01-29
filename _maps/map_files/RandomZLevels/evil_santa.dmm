@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "wall3"
 	},
 /area/space)
@@ -277,19 +277,19 @@
 	oxygen = 82.1472;
 	temperature = 73
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f6";
 	dir = 2
 	},
 /area/awaymission/challenge/main)
 "aQ" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/awaymission/challenge/main)
 "aR" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall8";
 	dir = 2
 	},
@@ -303,7 +303,7 @@
 	},
 /area/awaymission/challenge/main)
 "aT" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall4";
 	dir = 2
 	},
@@ -315,7 +315,7 @@
 	oxygen = 82.1472;
 	temperature = 73
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -336,7 +336,7 @@
 	},
 /area/awaymission/challenge/main)
 "aX" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -361,7 +361,7 @@
 	},
 /area/awaymission/challenge/main)
 "bb" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall1";
 	dir = 2
 	},
@@ -399,7 +399,7 @@
 	},
 /area/awaymission/challenge/main)
 "bg" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall2";
 	dir = 2
 	},
@@ -411,7 +411,7 @@
 	oxygen = 82.1472;
 	temperature = 73
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -423,7 +423,7 @@
 	oxygen = 82.1472;
 	temperature = 73
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -547,7 +547,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/challenge/main)
 "bD" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "wall3"
 	},
 /area/awaymission/challenge/start)
@@ -638,7 +638,7 @@
 /turf/open/floor/bluegrid,
 /area/awaymission/challenge/start)
 "bR" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "wall3"
 	},
 /area/awaymission/challenge/main)
@@ -824,7 +824,7 @@
 /area/awaymission/challenge/start)
 "cq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "wall3"
 	},
 /area/awaymission/challenge/start)
@@ -832,7 +832,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 6
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "wall3"
 	},
 /area/awaymission/challenge/start)
@@ -840,13 +840,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "wall3"
 	},
 /area/awaymission/challenge/start)
 "ct" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "wall3"
 	},
 /area/awaymission/challenge/start)
@@ -855,7 +855,7 @@
 	dir = 10;
 	initialize_directions = 10
 	},
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "wall3"
 	},
 /area/awaymission/challenge/start)
@@ -866,7 +866,7 @@
 /turf/open/floor/plating,
 /area/awaymission/challenge/start)
 "cw" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "cx" = (
 /obj/machinery/atmospherics/unary/outlet_injector/on{

@@ -58,7 +58,7 @@
 /obj/machinery/door/poddoor{
 	opacity = 0
 	},
-/turf/space,
+/turf/open/space,
 /area/template_noop)
 "j" = (
 /turf/closed/ind_wall/fakeglass{

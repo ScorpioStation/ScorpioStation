@@ -349,7 +349,7 @@
 	log_debug("Assigning space turf destinations...")
 	var/datum/space_level/D
 	var/datum/space_level/E
-	var/turf/space/S
+	var/turf/open/space/S
 	var/list/levels_to_rebuild = unbuilt_space_transitions
 
 	if(force_all_rebuilds)

@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "ab" = (
 /obj/machinery/shieldwallgen{
@@ -314,7 +314,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/space,
+/turf/open/space,
 /area/space/nearstation)
 "aL" = (
 /turf/open/floor/plasteel{
@@ -355,7 +355,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/space,
+/turf/open/space,
 /area/space/nearstation)
 "aR" = (
 /obj/machinery/light/small{
@@ -779,7 +779,7 @@
 /area/ruin/unpowered)
 "bP" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/space/nearstation)
 "bQ" = (
 /obj/machinery/shieldwallgen{
@@ -826,11 +826,11 @@
 /area/ruin/unpowered)
 "bV" = (
 /obj/machinery/shieldwallgen,
-/turf/space,
+/turf/open/space,
 /area/space/nearstation)
 "bW" = (
 /obj/item/shard,
-/turf/space,
+/turf/open/space,
 /area/space/nearstation)
 "Hv" = (
 /obj/item/gps/ruin,

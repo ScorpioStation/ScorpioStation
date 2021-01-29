@@ -317,7 +317,7 @@
 		owner.visible_message("<span class='danger'>The reactive teleport system flings [H] clear of [attack_text]!</span>")
 		var/list/turfs = new/list()
 		for(var/turf/T in orange(tele_range, H))
-			if(istype(T, /turf/space))
+			if(istype(T, /turf/open/space))
 				continue
 			if(T.density)
 				continue

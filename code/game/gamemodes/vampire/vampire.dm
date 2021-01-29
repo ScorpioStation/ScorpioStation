@@ -436,7 +436,7 @@ You are weak to holy things and starlight. Don't go into space and avoid the Cha
 			hud.show_hud(hud.hud_version)
 		hud.vampire_blood_display.maptext = "<div align='center' valign='middle' style='position:relative; top:0px; left:6px'><font color='#ce0202'>[bloodusable]</font></div>"
 	handle_vampire_cloak()
-	if(istype(owner.loc, /turf/space))
+	if(istype(owner.loc, /turf/open/space))
 		check_sun()
 	if(istype(owner.loc.loc, /area/chapel) && !get_ability(/datum/vampire_passive/full))
 		vamp_burn(7)

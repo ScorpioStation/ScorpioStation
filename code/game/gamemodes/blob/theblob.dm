@@ -113,7 +113,7 @@
 /obj/structure/blob/proc/expand(var/turf/T = null, var/prob = 1, var/a_color)
 	if(prob && !prob(obj_integrity))
 		return
-	if(istype(T, /turf/space) && prob(75)) 	return
+	if(istype(T, /turf/open/space) && prob(75)) 	return
 	if(!T)
 		var/list/dirs = list(1,2,4,8)
 		for(var/i = 1 to 4)

@@ -7,7 +7,7 @@
 	taste_description = "metal"
 
 /datum/reagent/lithium/on_mob_life(mob/living/M)
-	if(isturf(M.loc) && !istype(M.loc, /turf/space))
+	if(isturf(M.loc) && !istype(M.loc, /turf/open/space))
 		if(M.canmove && !M.restrained())
 			step(M, pick(GLOB.cardinal))
 	if(prob(5))
@@ -43,7 +43,7 @@
 /datum/reagent/space_drugs/on_mob_life(mob/living/M)
 	var/update_flags = STATUS_UPDATE_NONE
 	update_flags |= M.Druggy(15, FALSE)
-	if(isturf(M.loc) && !istype(M.loc, /turf/space))
+	if(isturf(M.loc) && !istype(M.loc, /turf/open/space))
 		if(M.canmove && !M.restrained())
 			step(M, pick(GLOB.cardinal))
 	if(prob(7))

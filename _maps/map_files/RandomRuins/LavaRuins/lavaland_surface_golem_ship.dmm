@@ -86,7 +86,7 @@
 	},
 /area/shuttle/freegolem)
 "aq" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swallc2";
 	dir = 2
 	},
@@ -117,7 +117,7 @@
 	},
 /area/shuttle/freegolem)
 "av" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -143,7 +143,7 @@
 	},
 /area/shuttle/freegolem)
 "az" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swallc1";
 	dir = 2
 	},
@@ -177,7 +177,7 @@
 	},
 /area/shuttle/freegolem)
 "aE" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -253,7 +253,7 @@
 	},
 /area/shuttle/freegolem)
 "aK" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall13";
 	icon_state = "swall13";
 	dir = 2
@@ -267,7 +267,7 @@
 	},
 /area/shuttle/freegolem)
 "aM" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall11";
 	icon_state = "swall11";
 	dir = 2
@@ -297,12 +297,12 @@
 	},
 /area/shuttle/freegolem)
 "aR" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swallc4"
 	},
 /area/shuttle/freegolem)
 "aS" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall4";
 	dir = 2
 	},
@@ -377,13 +377,13 @@
 	},
 /area/shuttle/freegolem)
 "bf" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swallc3";
 	dir = 2
 	},
 /area/shuttle/freegolem)
 "bh" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall14";
 	icon_state = "swall14";
 	dir = 2

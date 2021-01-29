@@ -181,7 +181,7 @@
 
 /obj/item/lava_staff/New()
 	. = ..()
-	banned_turfs = typecacheof(list(/turf/space/transit, /turf/unsimulated))
+	banned_turfs = typecacheof(list(/turf/open/space/transit, /turf/unsimulated))
 
 /obj/item/lava_staff/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
 	..()

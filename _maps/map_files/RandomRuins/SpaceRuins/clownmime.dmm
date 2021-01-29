@@ -4,7 +4,7 @@
 /area/template_noop)
 "b" = (
 /turf/template_noop,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	dir = 2;
 	icon_state = "swall_f6";
 	tag = "icon-swall_f6"
@@ -21,7 +21,7 @@
 /area/space/nearstation)
 "d" = (
 /turf/template_noop,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10";
 	dir = 2
@@ -49,7 +49,7 @@
 /turf/open/floor/plasteel/airless,
 /area/space/nearstation)
 "i" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall11";
 	icon_state = "swall11";
 	dir = 2
@@ -71,7 +71,7 @@
 /turf/open/floor/plasteel/airless,
 /area/space/nearstation)
 "l" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall7";
 	dir = 2
 	},
@@ -84,7 +84,7 @@
 /area/space/nearstation)
 "o" = (
 /turf/open/floor/plating/asteroid/airless,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -108,7 +108,7 @@
 /area/space/nearstation)
 "r" = (
 /turf/template_noop,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
@@ -125,13 +125,13 @@
 /turf/open/floor/plasteel/airless,
 /area/space/nearstation)
 "u" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	icon_state = "swall3";
 	dir = 2
 	},
 /area/space/nearstation)
 "v" = (
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
@@ -139,7 +139,7 @@
 /area/space/nearstation)
 "w" = (
 /turf/open/floor/plating/asteroid/airless,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2
@@ -256,7 +256,7 @@
 /area/space/nearstation)
 "M" = (
 /turf/closed/mineral/random/labormineral,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -264,7 +264,7 @@
 /area/space/nearstation)
 "N" = (
 /turf/open/floor/plasteel/airless,
-/turf/closed/shuttle/wall{
+/turf/closed/ind_wall/shuttle{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10";
 	dir = 2
