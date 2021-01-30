@@ -248,7 +248,7 @@ GLOBAL_DATUM_INIT(_preloader, /datum/dmm_suite/preloader, new())
 
 
 	////////////////
-	// Instanciation
+	// Instantiation
 	////////////////
 
 	// The next part of the code assumes there's ALWAYS an /area AND a /turf on a given tile
@@ -275,10 +275,10 @@ GLOBAL_DATUM_INIT(_preloader, /datum/dmm_suite/preloader, new())
 	// then instance the /turf and, if multiple tiles are presents, simulates the DMM underlays piling effect
 
 	var/first_turf_index = 1
-	while(!ispath(members[first_turf_index], /turf)) // find first /turf object in members
+	while(!ispath(members[first_turf_index], /turf)) // find first /turf in members
 		first_turf_index++
 
-	// instanciate the first /turf
+	// instantiate the first /turf
 	var/turf/T
 	if(members[first_turf_index] != /turf/template_noop)
 		T = instance_atom(members[first_turf_index], members_attributes[first_turf_index], xcrd, ycrd, zcrd)

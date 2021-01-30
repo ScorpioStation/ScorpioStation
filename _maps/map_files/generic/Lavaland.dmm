@@ -12,7 +12,7 @@
 /obj/structure/stone_tile/block{
 	dir = 8
 	},
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "ad" = (
 /turf/closed/mineral/random/high_chance/volcanic,
@@ -30,7 +30,7 @@
 	pixel_y = -40
 	},
 /obj/structure/stone_tile/slab,
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "ag" = (
 /obj/structure/stone_tile/cracked{
@@ -2792,7 +2792,7 @@
 "fW" = (
 /obj/structure/necropolis_gate/locked,
 /obj/structure/stone_tile/slab,
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "fX" = (
 /obj/structure/closet/secure_closet/miner,
@@ -2945,7 +2945,7 @@
 	},
 /obj/structure/stone_tile/surrounding_tile,
 /obj/structure/stone_tile/center,
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "gk" = (
 /obj/structure/stone_tile/surrounding_tile{
@@ -2958,7 +2958,7 @@
 	dir = 8
 	},
 /obj/structure/stone_tile/center,
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "gl" = (
 /obj/machinery/alarm{
@@ -3134,7 +3134,7 @@
 /obj/structure/stone_tile{
 	dir = 8
 	},
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "gD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3237,7 +3237,7 @@
 /obj/structure/stone_tile/surrounding,
 /obj/structure/stone_tile/center/cracked,
 /mob/living/simple_animal/hostile/megafauna/legion,
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "hs" = (
 /obj/structure/stone_tile/block{
@@ -3293,7 +3293,7 @@
 /obj/structure/stone_tile{
 	dir = 1
 	},
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "hQ" = (
 /obj/machinery/door/airlock/external{
@@ -3326,7 +3326,7 @@
 /obj/structure/stone_tile{
 	dir = 8
 	},
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "ir" = (
 /obj/structure/stone_tile/slab/cracked{
@@ -3931,7 +3931,7 @@
 /obj/structure/stone_tile{
 	dir = 4
 	},
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "mr" = (
 /obj/structure/stone_tile{
@@ -3944,7 +3944,7 @@
 	dir = 1
 	},
 /obj/structure/stone_tile,
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "ms" = (
 /obj/structure/stone_tile/block{
@@ -3954,7 +3954,7 @@
 /obj/structure/stone_tile/cracked{
 	dir = 1
 	},
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "mt" = (
 /obj/structure/stone_tile{
@@ -4141,7 +4141,7 @@
 /obj/structure/stone_tile/block{
 	dir = 4
 	},
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "mS" = (
 /obj/structure/stone_tile/cracked{
@@ -4154,7 +4154,7 @@
 /obj/structure/stone_tile{
 	dir = 8
 	},
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "mV" = (
 /obj/structure/stone_tile/block{
@@ -4166,7 +4166,7 @@
 /obj/structure/stone_tile{
 	dir = 8
 	},
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "mW" = (
 /obj/structure/stone_tile/block/cracked{
@@ -4175,7 +4175,7 @@
 /obj/structure/stone_tile/block{
 	dir = 8
 	},
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "mX" = (
 /obj/structure/stone_tile/cracked,
@@ -4188,7 +4188,7 @@
 /obj/structure/stone_tile/cracked{
 	dir = 4
 	},
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "mY" = (
 /obj/structure/stone_tile/block/cracked{
@@ -4198,7 +4198,7 @@
 	dir = 1
 	},
 /obj/structure/stone_tile,
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "mZ" = (
 /obj/structure/stone_tile{
@@ -4211,7 +4211,7 @@
 /obj/structure/stone_tile{
 	dir = 8
 	},
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "nb" = (
 /obj/structure/stone_tile/cracked{
@@ -4224,7 +4224,7 @@
 	dir = 4
 	},
 /obj/structure/stone_tile,
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "nc" = (
 /obj/structure/stone_tile/cracked{
@@ -4237,7 +4237,7 @@
 /obj/structure/stone_tile{
 	dir = 8
 	},
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "ne" = (
 /obj/structure/stone_tile/block{
@@ -4247,11 +4247,11 @@
 /obj/structure/stone_tile{
 	dir = 8
 	},
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "nf" = (
 /obj/structure/stone_tile/slab/cracked,
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "ng" = (
 /obj/structure/stone_tile,
@@ -4261,7 +4261,7 @@
 /obj/structure/stone_tile/block/cracked{
 	dir = 1
 	},
-/turf/open/floor/indestructible/boss,
+/turf/open/ind_floor/boss,
 /area/lavaland/surface/outdoors)
 "on" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{

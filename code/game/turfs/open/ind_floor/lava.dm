@@ -1,37 +1,15 @@
 
 //Lava
-/turf/open/ind_floor/lava
-	name = "lava"
-	desc = "That looks... a bit dangerous"
-	icon = 'icons/turf/floors/lava.dmi'
-	icon_state = "smooth"
-	light_range = 2
-	light_color = LIGHT_COLOR_LAVA
-	cannot_wet = TRUE
-
-	smooth = SMOOTH_MORE
-	canSmoothWith = list(/turf/open/ind_floor/lava, /turf/open/ind_floor/plating/lava/smooth)
-
-	var/lava_damage = 250
-	var/lava_fire = 20
-
-/turf/open/ind_floor/lava/Entered(mob/living/M, atom/OL, ignoreRest = 0)
-	if(istype(M))
-		M.apply_damage(lava_damage, BURN)
-		M.adjust_fire_stacks(lava_fire)
-		M.IgniteMob()
-
-/turf/open/ind_floor/lava/dense
-	density = TRUE
-
 /turf/open/ind_floor/plating/lava
 	name = "lava"
-	desc = "That boiling, bubbling lava looks ... a tad bit dangerous"
+	desc = "That boiling bubbling lava looks ... a tad bit dangerous"
 	icon_state = "lava"
 	gender = PLURAL //"That's some lava."
 	baseturf = /turf/open/ind_floor/plating/lava //lava all the way down
 	slowdown = 2
+	light_range = 2
 	light_power = 0.75
+	light_color = LIGHT_COLOR_LAVA
 	cannot_wet = TRUE
 
 /turf/open/ind_floor/plating/lava/smooth
@@ -40,7 +18,7 @@
 	icon = 'icons/turf/floors/lava.dmi'
 	icon_state = "unsmooth"
 	smooth = SMOOTH_MORE | SMOOTH_BORDER
-	canSmoothWith = list(/turf/open/ind_floor/lava, /turf/open/ind_floor/plating/lava/smooth)
+	canSmoothWith = list(/turf/open/ind_floor/plating/lava/smooth)
 
 /turf/open/ind_floor/plating/lava/smooth/lava_land_surface
 	temperature = 300

@@ -54,6 +54,7 @@
 /turf/open/ind_floor/burn_tile()
 	return
 
+/* Types */
 //Grass
 /turf/open/ind_floor/grass
 	name = "grass patch"
@@ -122,25 +123,15 @@
 	if(prob(12))
 		icon_state = "necro[rand(2,3)]"
 
-/turf/open/ind_floor/necropolis/air
-	oxygen = MOLES_O2STANDARD
-	nitrogen = MOLES_N2STANDARD
-	temperature = T20C
-
-/turf/open/floor/indestructible/boss //you put stone tiles on this and use it as a base
+/turf/open/ind_floor/boss //you put stone tiles on this and use it as a base
 	name = "necropolis floor"
 	icon = 'icons/turf/floors/boss_floors.dmi'
 	icon_state = "boss"
-	baseturf = /turf/open/floor/indestructible/boss
+	baseturf = /turf/open/ind_floor/boss
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
 	planetary_atmos = TRUE
-
-/turf/open/floor/indestructible/boss/air
-	oxygen = MOLES_O2STANDARD
-	nitrogen = MOLES_N2STANDARD
-	temperature = T20C
 
 /turf/open/ind_floor/hierophant
 	name = "floor"

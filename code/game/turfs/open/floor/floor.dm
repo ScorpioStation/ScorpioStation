@@ -135,7 +135,7 @@ GLOBAL_LIST_INIT(icons_to_ignore_at_floor_init, list("damaged1","damaged2","dama
 	W.update_icon()
 	return W
 
-/turf/open/floor/attackby(obj/item/C, mob/user params)
+/turf/open/floor/attackby(obj/item/C, mob/user, params)
 	if(!C || !user)
 		return TRUE
 	if(..())
