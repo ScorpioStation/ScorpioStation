@@ -266,6 +266,12 @@ CHECK_RANDOMIZER
 ## Discord Role for @Robust Security Reserve
 # ROBUST_SECURITY_RESERVE_ROLE_ID 803125646...
 
+## Retirement subsystem will recommend reaching out to staff absent for this many days
+# STAFF_RETIREMENT_WARNING_DAYS 30
+
+## Retirement subsystem will recommend retirement of staff absent for this many days
+# STAFF_RETIREMENT_CRITICAL_DAYS 45
+
 ## Donations address
 # DONATIONSURL http://example.org
 
