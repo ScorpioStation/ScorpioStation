@@ -1,7 +1,10 @@
 /turf/open/space
 	icon = 'icons/turf/space.dmi'
 	name = "\proper space"
-	icon_state = ""
+	icon_state = "0"
+
+	oxygen = 0
+	nitrogen = 0
 
 	temperature = TCMB
 	thermal_conductivity = OPEN_HEAT_TRANSFER_COEFFICIENT
@@ -12,7 +15,7 @@
 	light_power = 0.25
 	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 	intact = FALSE
-	no_wet = TRUE
+	cannot_wet = TRUE
 
 	var/destination_z
 	var/destination_x
@@ -39,6 +42,30 @@
 		has_opaque_atom = TRUE
 
 	return INITIALIZE_HINT_NORMAL
+
+// Space Turf overrides
+/turf/open/space/singularity_act()
+	return
+
+/turf/open/space/can_have_cabling()
+	if(locate(/obj/structure/lattice/catwalk, src))
+		return TRUE
+	return FALSE
+
+/turf/open/space/Assimilate_Air()
+	return
+
+/turf/open/space/acid_act(acidpwr, acid_volume)
+	return FALSE
+
+/turf/open/space/attack_ghost(mob/dead/observer/user)
+	if(destination_z)
+		var/turf/T = locate(destination_x, destination_y, destination_z)
+		user.forceMove(T)
+
+// /tg/ code is very insistent that this returns 'null'
+/turf/open/space/remove_air(amount)
+	return null
 
 /turf/open/space/BeforeChange()
 	..()
@@ -102,14 +129,13 @@
 		else
 			to_chat(user, "<span class='warning'>The plating is going to need some support! Place metal rods first.</span>")
 
-/turf/open/space/Entered(atom/movable/A as mob|obj, atom/OL, ignoreRest = FALSE)
+/turf/open/space/Entered(atom/movable/A, atom/OL, ignoreRest = FALSE)
 	..()
 	if((!(A) || !(src in A.locs)))
 		return
 
 	if(destination_z && destination_x && destination_y)
 		A.forceMove(locate(destination_x, destination_y, destination_z))
-
 		if(isliving(A))
 			var/mob/living/L = A
 			if(L.pulling)
@@ -235,13 +261,6 @@
 					A.loc.Entered(A)
 	return
 
-/turf/open/space/singularity_act()
-	return
-
-/turf/open/space/can_have_cabling()
-	if(locate(/obj/structure/lattice/catwalk, src))
-		return TRUE
-	return FALSE
 
 /turf/open/space/proc/set_transition_north(dest_z)
 	destination_x = x
@@ -265,14 +284,6 @@
 
 /turf/open/space/proc/remove_transitions()
 	destination_z = initial(destination_z)
-
-/turf/open/space/attack_ghost(mob/dead/observer/user)
-	if(destination_z)
-		var/turf/T = locate(destination_x, destination_y, destination_z)
-		user.forceMove(T)
-
-/turf/open/space/acid_act(acidpwr, acid_volume)
-	return FALSE
 
 /turf/open/space/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
 	underlay_appearance.icon = 'icons/turf/space.dmi'

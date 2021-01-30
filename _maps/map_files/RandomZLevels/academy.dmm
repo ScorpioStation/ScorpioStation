@@ -505,20 +505,20 @@
 /turf/closed/wall,
 /area/awaymission/academy/classrooms)
 "bF" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc2";
 	icon_state = "swallc2"
 	},
 /area/awaymission/academy/classrooms)
 "bG" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/awaymission/academy/classrooms)
 "bH" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc1";
 	icon_state = "swallc1"
 	},
@@ -639,7 +639,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/academy/classrooms)
 "bW" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -783,7 +783,7 @@
 /turf/open/floor/plasteel,
 /area/awaymission/academy/classrooms)
 "cs" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall1";
 	icon_state = "swall1"
 	},

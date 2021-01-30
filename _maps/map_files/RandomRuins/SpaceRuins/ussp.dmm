@@ -3744,13 +3744,13 @@
 /area/derelict/crew_quarters)
 "hF" = (
 /obj/structure/sign/barsign,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall4";
 	dir = 2
 	},
 /area/derelict/crew_quarters)
 "hG" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	dir = 2;
 	icon_state = "swall8";
 	tag = "icon-swall12"
@@ -4114,7 +4114,7 @@
 /area/derelict/arrival)
 "iu" = (
 /turf/template_noop,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
@@ -4226,7 +4226,7 @@
 	})
 "iF" = (
 /turf/template_noop,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -4296,7 +4296,7 @@
 	},
 /area/derelict/crew_quarters)
 "iO" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "wall3"
 	},
@@ -6090,7 +6090,7 @@
 /area/derelict/arrival)
 "md" = (
 /turf/template_noop,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "diagonalWall3"
 	},
 /area/derelict/arrival)
@@ -6156,7 +6156,7 @@
 	})
 "mm" = (
 /turf/template_noop,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -6321,7 +6321,7 @@
 /area/derelict/arrival)
 "mI" = (
 /obj/structure/sign/greencross,
-/turf/closed/ind_wall/shuttle,
+/turf/closed/shuttle/wall,
 /area/derelict/arrival)
 "mJ" = (
 /obj/structure/cable{

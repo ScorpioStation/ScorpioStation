@@ -8,7 +8,7 @@
 	light_color = "#FFC040"
 	intact = TRUE
 	indesctructible_turf = TRUE
-	no_wet = TRUE
+	cannot_wet = TRUE
 
 	smooth = SMOOTH_MORE
 	canSmoothWith = list(/turf/open/lava)

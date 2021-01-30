@@ -355,12 +355,12 @@
 				to_chat(user, "Building Floor...")
 				playsound(loc, usesound, 50, 1)
 				var/turf/AT = get_turf(A)
-				AT.ChangeTurf(/turf/open/floor/plating)
+				AT.ChangeTurf(/turf/open/floor/plating, ignore_air = TRUE)
 				return TRUE
 			to_chat(user, "<span class='warning'>ERROR! Not enough matter in unit to construct this floor!</span>")
 			playsound(loc, 'sound/machines/click.ogg', 50, 1)
 			return FALSE
-		to_chat(user, "<span class='warning'>ERROR! You cannot construct a turf in space without anything surrounding it!</span>")
+		to_chat(user, "<span class='warning'>ERROR! You cannot construct a floor in space without anything surrounding it!</span>")
 		playsound(loc, 'sound/machines/click.ogg', 50, 1)
 		return FALSE
 
@@ -369,7 +369,7 @@
 			to_chat(user, "Building Floor...")
 			playsound(loc, usesound, 50, 1)
 			var/turf/AT = get_turf(A)
-			AT.ChangeTurf(/turf/open/floor/plating)
+			AT.ChangeTurf(/turf/open/floor/plating, ignore_air = TRUE)
 			return TRUE
 		to_chat(user, "<span class='warning'>ERROR! Not enough matter in unit to construct this floor!</span>")
 		playsound(loc, 'sound/machines/click.ogg', 50, 1)
@@ -384,7 +384,7 @@
 					return FALSE
 				playsound(loc, usesound, 50, 1)
 				var/turf/AT = A
-				AT.ChangeTurf(/turf/closed/wall)
+				AT.ChangeTurf(/turf/closed/wall, ignore_air = TRUE)
 				return TRUE
 			return FALSE
 		to_chat(user, "<span class='warning'>ERROR! Not enough matter in unit to construct this wall!</span>")

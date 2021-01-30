@@ -293,7 +293,7 @@
 /obj/effect/spawner/window/reinforced{
 	color = "red"
 	},
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -316,7 +316,7 @@
 /obj/effect/spawner/window/reinforced{
 	color = "red"
 	},
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall14";
 	dir = 2

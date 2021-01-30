@@ -3,13 +3,13 @@
 /turf/open/space,
 /area/space)
 "ab" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s6";
 	dir = 2
 	},
 /area/shuttle/administration)
 "ac" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -69,7 +69,7 @@
 /turf/open/space,
 /area/shuttle/administration)
 "ag" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall14";
 	dir = 2
 	},
@@ -80,7 +80,7 @@
 	icon_state = "lifestar";
 	name = "NHV Asclepius"
 	},
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	dir = 2;
 	icon_state = "swall8";
 	tag = "icon-swall12"
@@ -130,7 +130,7 @@
 	icon_state = "lifestar";
 	name = "NHV Asclepius"
 	},
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall4";
 	dir = 2
@@ -173,13 +173,13 @@
 /turf/open/space,
 /area/shuttle/administration)
 "an" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s10";
 	dir = 2
 	},
 /area/shuttle/administration)
 "ao" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3";
 	dir = 2
@@ -226,7 +226,7 @@
 /obj/structure/sign/chemistry{
 	pixel_y = 1
 	},
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -305,13 +305,13 @@
 	},
 /area/shuttle/administration)
 "aD" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall7";
 	dir = 2
 	},
 /area/shuttle/administration)
 "aE" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -357,7 +357,7 @@
 /area/shuttle/administration)
 "aJ" = (
 /obj/structure/sign/nosmoking_2,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall1";
 	icon_state = "swall1";
 	dir = 2
@@ -479,7 +479,7 @@
 	},
 /area/shuttle/administration)
 "aW" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s9";
 	dir = 2
 	},
@@ -517,7 +517,7 @@
 /area/shuttle/administration)
 "bb" = (
 /obj/machinery/status_display,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -589,7 +589,7 @@
 	},
 /area/shuttle/administration)
 "bk" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall13";
 	icon_state = "swall13";
 	dir = 2
@@ -598,7 +598,7 @@
 "bl" = (
 /obj/structure/shuttle/window,
 /obj/structure/grille,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	dir = 2;
 	icon_state = "swall8";
 	tag = "icon-swall12"
@@ -607,14 +607,14 @@
 "bm" = (
 /obj/structure/shuttle/window,
 /obj/structure/grille,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall4";
 	dir = 2
 	},
 /area/shuttle/administration)
 "bn" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall15";
 	icon_state = "swall15";
 	dir = 2
@@ -695,7 +695,7 @@
 	},
 /area/shuttle/administration)
 "bs" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall1";
 	icon_state = "swall1";
 	dir = 2
@@ -829,7 +829,7 @@
 	},
 /area/shuttle/administration)
 "bF" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall1";
 	dir = 2
 	},
@@ -913,7 +913,7 @@
 	},
 /area/shuttle/administration)
 "bN" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall2";
 	icon_state = "swall2";
 	dir = 2
@@ -975,27 +975,27 @@
 /area/shuttle/administration)
 "bW" = (
 /obj/machinery/status_display,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/shuttle/administration)
 "bX" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall13";
 	dir = 2
 	},
 /area/shuttle/administration)
 "bY" = (
 /obj/structure/sign/examroom,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/shuttle/administration)
 "bZ" = (
 /obj/machinery/defibrillator_mount/loaded,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	dir = 2;
 	icon_state = "swall8";
 	tag = "icon-swall12"
@@ -1030,13 +1030,13 @@
 /area/shuttle/administration)
 "cc" = (
 /obj/structure/sign/nosmoking_2,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall7";
 	dir = 2
 	},
 /area/shuttle/administration)
 "cd" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall11";
 	dir = 2
 	},
@@ -1180,7 +1180,7 @@
 	},
 /area/shuttle/administration)
 "ct" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s5";
 	dir = 2
 	},

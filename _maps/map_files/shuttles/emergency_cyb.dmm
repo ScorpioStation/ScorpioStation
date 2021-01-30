@@ -4,7 +4,7 @@
 /area/space)
 "ab" = (
 /turf/open/space,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -16,7 +16,7 @@
 /area/shuttle/escape)
 "ad" = (
 /turf/open/space,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -113,7 +113,7 @@
 	},
 /area/shuttle/escape)
 "aq" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -159,13 +159,13 @@
 	},
 /area/shuttle/escape)
 "av" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/shuttle/escape)
 "aw" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall13";
 	dir = 2
 	},
@@ -221,7 +221,7 @@
 /area/shuttle/escape)
 "aD" = (
 /obj/machinery/status_display,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -296,7 +296,7 @@
 /turf/open/shuttle/floor4,
 /area/shuttle/escape)
 "aP" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall7";
 	icon_state = "swall7";
 	dir = 2
@@ -388,7 +388,7 @@
 	},
 /area/shuttle/escape)
 "aZ" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall14";
 	icon_state = "swall14";
 	dir = 2
@@ -494,7 +494,7 @@
 /area/shuttle/escape)
 "bq" = (
 /turf/open/space,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -507,13 +507,13 @@
 	},
 /area/shuttle/escape)
 "bs" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall11";
 	dir = 2
 	},
 /area/shuttle/escape)
 "bt" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall7";
 	dir = 2
 	},
@@ -527,7 +527,7 @@
 /area/shuttle/escape)
 "bv" = (
 /turf/open/space,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -747,14 +747,14 @@
 /area/shuttle/escape)
 "bW" = (
 /obj/machinery/status_display,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
 /area/shuttle/escape)
 "bX" = (
 /obj/machinery/ai_status_display,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -801,7 +801,7 @@
 /area/shuttle/escape)
 "cc" = (
 /obj/structure/extinguisher_cabinet,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -906,14 +906,14 @@
 /area/shuttle/escape)
 "cm" = (
 /obj/structure/sign/greencross,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/shuttle/escape)
 "cn" = (
 /obj/structure/sign/greencross,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -1097,7 +1097,7 @@
 	},
 /area/shuttle/escape)
 "cH" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/shuttle/escape)

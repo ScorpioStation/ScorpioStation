@@ -5,7 +5,7 @@
 	var/water_overlay_image = null
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	indesctructible_turf = TRUE
-	no_wet = TRUE
+	cannot_wet = TRUE
 
 /turf/open/beach/Initialize(mapload)
 	. = ..()

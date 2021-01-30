@@ -12,7 +12,7 @@
 /turf/closed/mineral/random/high_chance,
 /area/ruin/unpowered)
 "e" = (
-/turf/closed/ind_wall/shuttle,
+/turf/closed/shuttle/wall,
 /area/ruin/unpowered)
 "f" = (
 /obj/machinery/door/airlock/shuttle,

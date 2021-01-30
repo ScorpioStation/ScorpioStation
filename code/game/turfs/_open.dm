@@ -14,7 +14,7 @@
 	var/max_fire_temperature_sustained = 0 //The max temperature of the fire which it was subjected to
 	var/wet = FALSE
 	var/image/wet_overlay = null
-	var/no_wet = FALSE
+	var/cannot_wet = FALSE
 
 /turf/open/handle_fall(mob/faller, forced)
 	faller.lying = pick(90, 270)
@@ -52,7 +52,7 @@
 					M.slip("the frosted floor", 0, 5, tilesSlipped = 1, walkSafely = FALSE, slipAny = TRUE)
 
 /turf/open/water_act(volume, temperature, source)
-	if(no_wet)
+	if(cannot_wet)
 		return
 	. = ..()
 	if(volume >= 3)
@@ -71,7 +71,7 @@
  * @param time Time the turf is slippery. If null it will pick a random time between 790 and 820 ticks. If INFINITY then it won't dry up ever
 */
 /turf/open/proc/MakeSlippery(wet_setting = TURF_WET_WATER, time = null) // 1 = Water, 2 = Lube, 3 = Ice, 4 = Permafrost
-	if(no_wet)
+	if(cannot_wet)
 		return
 	if(wet >= wet_setting)
 		return
@@ -100,7 +100,7 @@
 	addtimer(CALLBACK(src, .proc/MakeDry, wet_setting), time)
 
 /turf/open/MakeDry(wet_setting = TURF_WET_WATER)
-	if(no_wet)
+	if(cannot_wet)
 		return
 	if(wet > wet_setting)
 		return
@@ -108,7 +108,7 @@
 	if(wet_overlay)
 		overlays -= wet_overlay
 
-/turf/ppen/ChangeTurf(path, defer_change = FALSE, keep_icon = TRUE, ignore_air = FALSE)
+/turf/open/ChangeTurf(path, defer_change = FALSE, keep_icon = TRUE, ignore_air = FALSE)
 	. = ..()
 	queue_smooth_neighbors(src)
 
@@ -155,16 +155,12 @@
 			SSair.add_to_active(src)
 
 /turf/open/singularity_act()
-	if(indesctructible_turf)
-		return
-	else
-		return ..()
+	return ..()
 
 /turf/open/singularity_pull(S, current_size)
-	if(indesctructible_turf)
+	if(indesctructible_turf)	// this proc is on /atom, not /turf
 		return
-	else
-		return ..()
+	return ..()
 
 #undef WATER_STUN_TIME
 #undef WATER_WEAKEN_TIME

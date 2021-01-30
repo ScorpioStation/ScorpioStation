@@ -567,7 +567,7 @@
 	icon_state = "vault";
 	dir = 5
 	},
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -605,7 +605,7 @@
 	icon_state = "vault";
 	dir = 5
 	},
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -665,31 +665,31 @@
 /turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "bL" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
 /area/awaymission/centcomAway/hangar)
 "bM" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall8";
 	dir = 2
 	},
 /area/awaymission/centcomAway/hangar)
 "bN" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall7";
 	dir = 2
 	},
 /area/awaymission/centcomAway/hangar)
 "bO" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall4";
 	dir = 2
 	},
 /area/awaymission/centcomAway/hangar)
 "bP" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -700,7 +700,7 @@
 /turf/open/floor/plating,
 /area/awaymission/centcomAway/cafe)
 "bR" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall11";
 	dir = 2
 	},
@@ -781,14 +781,14 @@
 /area/awaymission/centcomAway/maint)
 "cd" = (
 /turf/open/shuttle/plating,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
 /area/awaymission/centcomAway/hangar)
 "ce" = (
 /turf/open/shuttle/floor,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -848,7 +848,7 @@
 /area/awaymission/centcomAway/cafe)
 "ck" = (
 /turf/open/shuttle/plating,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	dir = 2;
 	icon_state = "swall_f10";
 	layer = 2
@@ -873,7 +873,7 @@
 /area/awaymission/centcomAway/maint)
 "cn" = (
 /turf/open/shuttle/floor,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -1099,7 +1099,7 @@
 /turf/open/shuttle/plating,
 /area/awaymission/centcomAway/hangar)
 "cR" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall1";
 	dir = 2
 	},
@@ -1225,7 +1225,7 @@
 	icon_state = "vault";
 	dir = 5
 	},
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -1235,7 +1235,7 @@
 	icon_state = "vault";
 	dir = 5
 	},
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -1266,7 +1266,7 @@
 /turf/open/floor/plating,
 /area/awaymission/centcomAway/maint)
 "dl" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc1";
 	dir = 2
 	},
@@ -1304,7 +1304,7 @@
 /turf/open/shuttle/floor,
 /area/awaymission/centcomAway/hangar)
 "dq" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc2";
 	dir = 2
 	},
@@ -1633,7 +1633,7 @@
 /turf/open/floor/plating,
 /area/awaymission/centcomAway/hangar)
 "eg" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall0";
 	dir = 2
 	},
@@ -1888,7 +1888,7 @@
 	},
 /area/awaymission/centcomAway/general)
 "eQ" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall2";
 	dir = 2
 	},
@@ -2249,7 +2249,7 @@
 /area/awaymission/centcomAway/cafe)
 "fM" = (
 /turf/open/floor/plating,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -2266,13 +2266,13 @@
 	},
 /area/awaymission/centcomAway/general)
 "fO" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall14";
 	dir = 2
 	},
 /area/awaymission/centcomAway/hangar)
 "fP" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc4";
 	dir = 2
 	},
@@ -4052,7 +4052,7 @@
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -4154,7 +4154,7 @@
 /turf/open/floor/plasteel{
 	icon_state = "dark"
 	},
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -4652,7 +4652,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -4662,7 +4662,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},

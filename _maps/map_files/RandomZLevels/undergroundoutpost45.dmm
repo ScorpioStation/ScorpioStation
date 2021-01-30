@@ -31,7 +31,7 @@
 	name = "UO45 Central Hall"
 	})
 "ae" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc2";
 	icon_state = "swallc2";
 	dir = 2
@@ -41,7 +41,7 @@
 	name = "UO45 Central Hall"
 	})
 "af" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -50,7 +50,7 @@
 	name = "UO45 Central Hall"
 	})
 "ag" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc1";
 	icon_state = "swallc1";
 	dir = 2
@@ -60,7 +60,7 @@
 	name = "UO45 Central Hall"
 	})
 "ah" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -219,7 +219,7 @@
 	name = "UO45 Central Hall"
 	})
 "av" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc3";
 	icon_state = "swallc3";
 	dir = 2
@@ -229,7 +229,7 @@
 	name = "UO45 Central Hall"
 	})
 "aw" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall8";
 	dir = 2
 	},
@@ -253,7 +253,7 @@
 	name = "UO45 Central Hall"
 	})
 "az" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall4";
 	dir = 2
 	},
@@ -262,7 +262,7 @@
 	name = "UO45 Central Hall"
 	})
 "aA" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc4";
 	icon_state = "swallc4";
 	dir = 2

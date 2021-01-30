@@ -13,7 +13,7 @@
 	name = "Shuttle"
 	})
 "c" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-wall3";
 	icon_state = "wall3"
 	},
@@ -51,7 +51,7 @@
 	name = "Shuttle"
 	})
 "g" = (
-/turf/closed/ind_wall/shuttle,
+/turf/closed/shuttle/wall,
 /turf/open/shuttle{
 	tag = "icon-wall3 (SOUTHEAST)";
 	icon_state = "wall3";
@@ -61,12 +61,12 @@
 	name = "Shuttle"
 	})
 "h" = (
-/turf/closed/ind_wall/shuttle,
+/turf/closed/shuttle/wall,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
 "i" = (
-/turf/closed/ind_wall/shuttle,
+/turf/closed/shuttle/wall,
 /turf/open/shuttle{
 	tag = "icon-wall3 (SOUTHWEST)";
 	icon_state = "wall3";
@@ -144,7 +144,7 @@
 	name = "Shuttle"
 	})
 "s" = (
-/turf/closed/ind_wall/shuttle,
+/turf/closed/shuttle/wall,
 /turf/open/shuttle{
 	tag = "icon-wall3 (NORTHEAST)";
 	icon_state = "wall3";
@@ -160,7 +160,7 @@
 	name = "Shuttle"
 	})
 "u" = (
-/turf/closed/ind_wall/shuttle,
+/turf/closed/shuttle/wall,
 /turf/open/shuttle{
 	tag = "icon-wall3 (NORTHWEST)";
 	icon_state = "wall3";

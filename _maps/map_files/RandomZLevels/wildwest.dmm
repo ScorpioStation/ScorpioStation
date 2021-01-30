@@ -3,7 +3,7 @@
 /turf/open/space,
 /area/space)
 "ab" = (
-/turf/closed/ind_wall/shuttle,
+/turf/closed/shuttle/wall,
 /area/awaymission/wwvault)
 "ac" = (
 /turf/open/floor/engine/cult,
@@ -68,7 +68,7 @@
 	layer = 1;
 	name = "Blocker"
 	},
-/turf/closed/ind_wall/shuttle,
+/turf/closed/shuttle/wall,
 /area/awaymission/wwvault)
 "ao" = (
 /turf/open/shuttle/plating{
@@ -2565,14 +2565,14 @@
 /turf/closed/mineral,
 /area/awaymission/wwmines)
 "hh" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall12";
 	icon_state = "swall12"
 	},
 /area/awaymission/wwrefine)
 "hi" = (
 /turf/open/space,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -2591,20 +2591,20 @@
 /turf/open/floor/wood,
 /area/awaymission/wwmines)
 "hl" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall8";
 	icon_state = "swall8"
 	},
 /area/awaymission/wwrefine)
 "hm" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall4";
 	icon_state = "swall4"
 	},
 /area/awaymission/wwrefine)
 "hn" = (
 /turf/open/space,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	dir = 3;
 	icon_state = "swall_f10";
 	layer = 2;
@@ -2624,7 +2624,7 @@
 /turf/open/floor/wood,
 /area/awaymission/wwmines)
 "hq" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3"
 	},
@@ -2636,14 +2636,14 @@
 	},
 /area/awaymission/wwrefine)
 "hs" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc1";
 	icon_state = "swallc1"
 	},
 /area/awaymission/wwrefine)
 "ht" = (
 /turf/open/space,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5";
 	dir = 2
@@ -2657,14 +2657,14 @@
 	},
 /area/awaymission/wwrefine)
 "hv" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swallc2";
 	icon_state = "swallc2"
 	},
 /area/awaymission/wwrefine)
 "hw" = (
 /turf/open/space,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9";
 	dir = 2

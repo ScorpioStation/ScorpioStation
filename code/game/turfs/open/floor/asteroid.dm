@@ -7,7 +7,7 @@
 	baseturf = /turf/open/floor/plating/asteroid
 	icon_state = "asteroid"
 	icon_plating = "asteroid"
-	no_wet = TRUE
+	cannot_wet = TRUE
 	footstep_sounds = list()
 
 	var/environment_type = "asteroid"

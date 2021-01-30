@@ -7811,7 +7811,7 @@
 	})
 "ld" = (
 /turf/open/floor/plating/asteroid/airless,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6";
 	dir = 2
@@ -7821,7 +7821,7 @@
 	name = "MO19 Arrivals"
 	})
 "le" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
@@ -7831,7 +7831,7 @@
 	})
 "lf" = (
 /turf/open/floor/plating/asteroid/airless,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	dir = 3;
 	icon_state = "swall_f10";
 	layer = 2
@@ -8084,7 +8084,7 @@
 	name = "MO19 Arrivals"
 	})
 "lz" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall14";
 	dir = 2
 	},
@@ -8093,7 +8093,7 @@
 	name = "MO19 Arrivals"
 	})
 "lA" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall8";
 	dir = 2
 	},
@@ -8110,7 +8110,7 @@
 	name = "MO19 Arrivals"
 	})
 "lC" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall4";
 	dir = 2
 	},
@@ -8119,7 +8119,7 @@
 	name = "MO19 Arrivals"
 	})
 "lD" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall1";
 	dir = 2
 	},
@@ -8339,7 +8339,7 @@
 	})
 "lW" = (
 /turf/open/shuttle/floor,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -8366,7 +8366,7 @@
 	name = "MO19 Arrivals"
 	})
 "lZ" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -8951,7 +8951,7 @@
 	name = "MO19 Arrivals"
 	})
 "mY" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall2";
 	dir = 2
 	},
@@ -9018,7 +9018,7 @@
 	})
 "ne" = (
 /turf/open/floor/plating/asteroid/airless,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -9028,7 +9028,7 @@
 	})
 "nf" = (
 /turf/open/shuttle/floor,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f10";
 	dir = 2
 	},
@@ -9124,7 +9124,7 @@
 	name = "MO19 Arrivals"
 	})
 "no" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall13";
 	dir = 2
 	},
@@ -9199,7 +9199,7 @@
 	})
 "nw" = (
 /turf/open/floor/plating/asteroid/airless,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},

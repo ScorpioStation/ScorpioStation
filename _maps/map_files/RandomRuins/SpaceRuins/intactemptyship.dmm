@@ -4,19 +4,19 @@
 /area/template_noop)
 "b" = (
 /turf/template_noop,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
 /area/ruin/powered)
 "c" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/ruin/powered)
 "d" = (
 /turf/template_noop,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	dir = 2;
 	icon_state = "diagonalWall3"
 	},
@@ -179,7 +179,7 @@
 	pixel_y = 0;
 	id = "strange ship"
 	},
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/ruin/powered)
@@ -199,7 +199,7 @@
 /area/ruin/powered)
 "A" = (
 /turf/template_noop,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
@@ -213,7 +213,7 @@
 /area/ruin/powered)
 "C" = (
 /turf/template_noop,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},

@@ -837,21 +837,21 @@
 	},
 /area/awaymission/beach)
 "cP" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall8";
 	icon_state = "swall8"
 	},
 /area/awaymission/beach)
 "cQ" = (
 /turf/open/beach/sand,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f6";
 	icon_state = "swall_f6"
 	},
 /area/awaymission/beach)
 "cR" = (
 /turf/open/beach/sand,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f10";
 	icon_state = "swall_f10"
 	},
@@ -998,7 +998,7 @@
 /turf/open/beach/sand,
 /area/awaymission/beach)
 "dp" = (
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall3";
 	icon_state = "swall3"
 	},
@@ -1211,7 +1211,7 @@
 /area/awaymission/beach)
 "dY" = (
 /turf/open/beach/sand,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f5";
 	icon_state = "swall_f5"
 	},
@@ -1224,7 +1224,7 @@
 /area/awaymission/beach)
 "ea" = (
 /turf/open/beach/sand,
-/turf/closed/ind_wall/shuttle{
+/turf/closed/shuttle/wall{
 	tag = "icon-swall_f9";
 	icon_state = "swall_f9"
 	},
