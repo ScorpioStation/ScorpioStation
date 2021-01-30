@@ -33,7 +33,7 @@
 	var/shoe_walking_volume = 20
 
 	var/thermite = 0
-	var/indesctructible_turf = FALSE
+	var/indestructible_turf = FALSE
 
 /turf/Initialize(mapload)
 	SHOULD_CALL_PARENT(FALSE)
@@ -95,12 +95,12 @@
 	user.Move_Pulled(src)
 
 /turf/ex_act(severity)
-	if(indesctructible_turf)
+	if(indestructible_turf)
 		return
 	return FALSE
 
 /turf/rpd_act(mob/user, obj/item/rpd/our_rpd) //This is the default turf behaviour for the RPD; override it as required
-	if(indesctructible_turf)
+	if(indestructible_turf)
 		return
 	else
 		if(our_rpd.mode == RPD_ATMOS_MODE)
@@ -190,7 +190,7 @@
 	return
 
 /turf/proc/TerraformTurf(path, defer_change = FALSE, keep_icon = TRUE, ignore_air = FALSE)
-	if(indesctructible_turf)
+	if(indestructible_turf)
 		return
 	return ChangeTurf(path, defer_change, keep_icon, ignore_air)
 
@@ -395,7 +395,7 @@
 ////////////////////////////////////////////////////
 
 /turf/acid_act(acidpwr, acid_volume)
-	if(indesctructible_turf)
+	if(indestructible_turf)
 		return FALSE
 	. = TRUE
 	var/acid_type = /obj/effect/acid
@@ -418,7 +418,7 @@
 	return
 
 /turf/singularity_act()
-	if(indesctructible_turf)
+	if(indestructible_turf)
 		return
 	if(intact)
 		for(var/obj/O in contents) //this is for deleting things like wires contained in the turf
@@ -459,12 +459,12 @@
 	return TRUE
 
 /turf/proc/can_lay_cable()
-	if(indesctructible_turf)
+	if(indestructible_turf)
 		return FALSE
 	return can_have_cabling() & !intact
 
 /turf/ratvar_act(force, ignore_mobs, probability = 40)
-	if(indesctructible_turf)
+	if(indestructible_turf)
 		return
 	. = (prob(probability) || force)
 	for(var/I in src)

@@ -5,8 +5,57 @@
 	opacity = TRUE
 	density = TRUE
 	explosion_block = 2
-	indesctructible_turf = TRUE
+	indestructible_turf = TRUE	//Establish as indestructible_turf
 
+//Turf Closed ind_wall overrides
+/turf/closed/ind_wall/dismantle_wall(devastated = FALSE, explode = FALSE)
+	return
+
+/turf/closed/ind_wall/ex_act(severity)
+	return
+
+/turf/closed/ind_wall/blob_act(obj/structure/blob/B)
+	return
+
+/turf/closed/ind_wall/rpd_act(mob/user, obj/item/rpd/our_rpd)
+	to_chat("<span class='notice'>For some reason you cannot determine, the drill bit on your [our_rpd] fails to penetrate [src].</span>")
+	return
+
+/turf/closed/ind_wall/mech_melee_attack(obj/mecha/M)
+	return
+
+/turf/closed/ind_wall/burn_down()
+	return
+
+/turf/closed/ind_wall/attack_animal(mob/living/simple_animal/M)
+	return
+
+/turf/closed/ind_wall/attack_hulk(mob/user, does_attack_animation = FALSE)
+	return
+
+/turf/closed/ind_wall/attack_hand(mob/user)
+	to_chat(user, "<span class='notice'>You push the wall but nothing happens!</span>")
+	playsound(src, 'sound/weapons/genhit.ogg', 25, 1)
+	add_fingerprint(user)
+	return ..()
+
+/turf/closed/ind_wall/attackby(obj/item/I, mob/user, params)
+	return
+
+/turf/closed/ind_wall/welder_act(mob/user, obj/item/I)
+	return
+
+/turf/closed/ind_wall/singularity_pull(S, current_size)
+	return
+
+/turf/closed/ind_wall/narsie_act()
+	return
+
+/turf/closed/ind_wall/acid_act(acidpwr, acid_volume)
+	return
+
+/turf/closed/ind_wall/acid_melt()
+	return
 /turf/closed/ind_wall/fakeglass
 	name = "window"
 	icon_state = "fakewindows"

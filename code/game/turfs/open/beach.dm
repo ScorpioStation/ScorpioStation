@@ -4,7 +4,7 @@
 	icon = 'icons/misc/beach.dmi'
 	var/water_overlay_image = null
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-	indesctructible_turf = TRUE
+	indestructible_turf = TRUE	// I...don't even know at this point. Floor? Wall? Plating?
 	cannot_wet = TRUE
 
 /turf/open/beach/Initialize(mapload)
@@ -128,13 +128,13 @@
 	opacity = TRUE
 	explosion_block = 2
 	mouse_opacity = MOUSE_OPACITY_ICON
-	indesctructible_turf = TRUE
+	indestructible_turf = TRUE	// This one's a wall, except the path file drives me nuts.
 
 // Separate from what is used on Beach.dmm
 /turf/open/floor/beach
 	name = "beach"
 	icon = 'icons/misc/beach.dmi'
-	indesctructible_turf = FALSE	//This DOES have singularity acts - this is the water used on station for the pool and holodeck.
+	indestructible_turf = FALSE	//This DOES have singularity acts - this is the water used on station for the pool and holodeck.
 
 /turf/open/floor/beach/pry_tile(obj/item/C, mob/user, silent = FALSE)
 	return

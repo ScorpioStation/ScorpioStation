@@ -92,8 +92,6 @@
 //Damage
 
 /turf/closed/wall/proc/take_damage(dam)
-	if(indesctructible_turf)
-		return
 	if(dam)
 		damage = max(0, damage + dam)
 		update_damage()
@@ -127,8 +125,6 @@
 	return TRUE
 
 /turf/closed/wall/dismantle_wall(devastated = FALSE, explode = FALSE)
-	if(indesctructible_turf)
-		return
 	if(devastated)
 		devastate_wall()
 	else
@@ -155,8 +151,6 @@
 	new /obj/item/stack/sheet/metal(src)
 
 /turf/closed/wall/ex_act(severity)
-	if(indesctructible_turf)
-		return
 	switch(severity)
 		if(1.0)
 			ChangeTurf(baseturf)
@@ -172,16 +166,12 @@
 	return
 
 /turf/closed/wall/blob_act(obj/structure/blob/B)
-	if(indesctructible_turf)
-		return
 	if(prob(50))
 		dismantle_wall()
 	else
 		add_dent(WALL_DENT_HIT)
 
 /turf/closed/wall/rpd_act(mob/user, obj/item/rpd/our_rpd)
-	if(indesctructible_turf)
-		return
 	if(our_rpd.mode == RPD_ATMOS_MODE)
 		if(!our_rpd.ranged)
 			playsound(src, "sound/weapons/circsawhit.ogg", 50, 1)
@@ -195,8 +185,6 @@
 		..()
 
 /turf/closed/wall/mech_melee_attack(obj/mecha/M)
-	if(indesctructible_turf)
-		return
 	M.do_attack_animation(src)
 	switch(M.damtype)
 		if(BRUTE)
@@ -215,8 +203,6 @@
 
 // Wall-rot effect, a nasty fungus that destroys walls.
 /turf/closed/wall/proc/rot()
-	if(indesctructible_turf)
-		return
 	if(!rotting)
 		rotting = TRUE
 
@@ -225,15 +211,11 @@
 			new /obj/effect/overlay/wall_rot(src)
 
 /turf/closed/wall/burn_down()
-	if(indesctructible_turf)
-		return
 	if(istype(sheet_type, /obj/item/stack/sheet/mineral/diamond))
 		return
 	ChangeTurf(/turf/open/floor)
 
 /turf/closed/wall/proc/thermitemelt(user, speed)
-	if(indesctructible_turf)
-		return
 	if(!ismob(user))
 		return
 	var/wait = 100
@@ -267,8 +249,6 @@
 //Interactions
 
 /turf/closed/wall/attack_animal(mob/living/simple_animal/M)
-	if(indesctructible_turf)
-		return
 	M.changeNext_move(CLICK_CD_MELEE)
 	M.do_attack_animation(src)
 	if((M.environment_smash & ENVIRONMENT_SMASH_WALLS) || (M.environment_smash & ENVIRONMENT_SMASH_RWALLS))
@@ -284,10 +264,7 @@
 	return
 
 /turf/closed/wall/attack_hulk(mob/user, does_attack_animation = FALSE)
-	if(indesctructible_turf)
-		return
 	..(user, TRUE)
-
 	if(prob(hardness) || rotting)
 		playsound(src, 'sound/effects/meteorimpact.ogg', 100, 1)
 		user.say(pick(";RAAAAAAAARGH!", ";HNNNNNNNNNGGGGGGH!", ";GWAAAAAAAARRRHHH!", "NNNNNNNNGGGGGGGGHH!", ";AAAAAAARRRGH!" ))
@@ -299,8 +276,6 @@
 	return TRUE
 
 /turf/closed/wall/attack_hand(mob/user)
-	if(indesctructible_turf)
-		return
 	user.changeNext_move(CLICK_CD_MELEE)
 	if(rotting)
 		if(hardness <= 10)
@@ -310,15 +285,12 @@
 			to_chat(user, "<span class='notice'>The wall crumbles under your touch.</span>")
 			dismantle_wall()
 			return
-
 	to_chat(user, "<span class='notice'>You push the wall but nothing happens!</span>")
 	playsound(src, 'sound/weapons/genhit.ogg', 25, 1)
 	add_fingerprint(user)
 	return ..()
 
 /turf/closed/wall/attackby(obj/item/I, mob/user, params)
-	if(indesctructible_turf)
-		return
 	user.changeNext_move(CLICK_CD_MELEE)
 	if(!isturf(user.loc))
 		return // No touching walls unless you're on a turf (pretty sure attackby can't be called anyways but whatever)
@@ -336,8 +308,6 @@
 	return ..()
 
 /turf/closed/wall/welder_act(mob/user, obj/item/I)
-	if(indesctructible_turf)
-		return
 	. = TRUE
 	if(thermite && I.use_tool(src, user, volume = I.tool_volume))
 		thermitemelt(user)
@@ -384,8 +354,6 @@
 			take_damage(-damage)
 
 /turf/closed/wall/proc/try_rot(obj/item/I, mob/user, params)
-	if(indesctructible_turf)
-		return FALSE
 	if((!is_sharp(I) && I.force >= 10) || I.force >= 20)
 		to_chat(user, "<span class='notice'>[src] crumbles away under the force of your [I.name].</span>")
 		dismantle_wall(TRUE)
@@ -393,8 +361,6 @@
 	return FALSE
 
 /turf/closed/wall/proc/try_decon(obj/item/I, mob/user, params)
-	if(indesctructible_turf)
-		return FALSE
 	if(istype(I, /obj/item/gun/energy/plasmacutter))
 		to_chat(user, "<span class='notice'>You begin slicing through the outer plating.</span>")
 		playsound(src, I.usesound, 100, 1)
@@ -408,8 +374,6 @@
 	return FALSE
 
 /turf/closed/wall/proc/try_destroy(obj/item/I, mob/user, params)
-	if(indesctructible_turf)
-		return FALSE
 	var/isdiamond = istype(sheet_type, /obj/item/stack/sheet/mineral/diamond) // snowflake bullshit
 	if(istype(I, /obj/item/pickaxe/drill/diamonddrill))
 		to_chat(user, "<span class='notice'>You begin to drill though the wall.</span>")
@@ -472,8 +436,6 @@
 	return FALSE
 
 /turf/closed/wall/singularity_pull(S, current_size)
-	if(indesctructible_turf)
-		return
 	..()
 	wall_singularity_pull(current_size)
 
@@ -487,21 +449,15 @@
 			dismantle_wall()
 
 /turf/closed/wall/narsie_act()
-	if(indesctructible_turf)
-		return
 	if(prob(20))
 		ChangeTurf(/turf/closed/wall/cult)
 
 /turf/closed/wall/acid_act(acidpwr, acid_volume)
-	if(indesctructible_turf)
-		return
 	if(explosion_block >= 2)
 		acidpwr = min(acidpwr, 50) //we reduce the power so strong walls never get melted.
 	. = ..()
 
 /turf/closed/wall/acid_melt()
-	if(indesctructible_turf)
-		return
 	dismantle_wall(TRUE)
 
 /turf/closed/wall/proc/add_dent(denttype, x=rand(-8, 8), y=rand(-8, 8))

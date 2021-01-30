@@ -1,39 +1,56 @@
-/turf/open/lava
+
+//Lava
+/turf/open/ind_floor/lava
 	name = "lava"
 	desc = "That looks... a bit dangerous"
 	icon = 'icons/turf/floors/lava.dmi'
 	icon_state = "smooth"
-
 	light_range = 2
-	light_color = "#FFC040"
-	intact = TRUE
-	indesctructible_turf = TRUE
+	light_color = LIGHT_COLOR_LAVA
 	cannot_wet = TRUE
 
 	smooth = SMOOTH_MORE
-	canSmoothWith = list(/turf/open/lava)
+	canSmoothWith = list(/turf/open/ind_floor/lava, /turf/open/ind_floor/plating/lava/smooth)
 
 	var/lava_damage = 250
 	var/lava_fire = 20
 
-/turf/open/lava/Entered(mob/living/M, atom/OL, ignoreRest = 0)
+/turf/open/ind_floor/lava/Entered(mob/living/M, atom/OL, ignoreRest = 0)
 	if(istype(M))
 		M.apply_damage(lava_damage, BURN)
 		M.adjust_fire_stacks(lava_fire)
 		M.IgniteMob()
 
-/turf/open/lava/dense
+/turf/open/ind_floor/lava/dense
 	density = TRUE
 
 /turf/open/ind_floor/plating/lava
 	name = "lava"
+	desc = "That boiling, bubbling lava looks ... a tad bit dangerous"
 	icon_state = "lava"
 	gender = PLURAL //"That's some lava."
 	baseturf = /turf/open/ind_floor/plating/lava //lava all the way down
 	slowdown = 2
-	light_range = 2
 	light_power = 0.75
-	light_color = LIGHT_COLOR_LAVA
+	cannot_wet = TRUE
+
+/turf/open/ind_floor/plating/lava/smooth
+	name = "lava"
+	baseturf = /turf/open/ind_floor/plating/lava/smooth
+	icon = 'icons/turf/floors/lava.dmi'
+	icon_state = "unsmooth"
+	smooth = SMOOTH_MORE | SMOOTH_BORDER
+	canSmoothWith = list(/turf/open/ind_floor/lava, /turf/open/ind_floor/plating/lava/smooth)
+
+/turf/open/ind_floor/plating/lava/smooth/lava_land_surface
+	temperature = 300
+	oxygen = 14
+	nitrogen = 23
+	planetary_atmos = TRUE
+	baseturf = /turf/open/floor/chasm/straight_down/lava_land_surface
+
+/turf/open/ind_floor/plating/lava/smooth/airless
+	temperature = TCMB
 
 /turf/open/ind_floor/plating/lava/airless
 	temperature = TCMB
@@ -65,10 +82,8 @@
 
 /turf/open/ind_floor/plating/lava/proc/burn_stuff(AM)
 	. = FALSE
-
 	if(is_safe())
 		return FALSE
-
 	var/thing_to_check = src
 	if(AM)
 		thing_to_check = list(AM)
@@ -114,21 +129,3 @@
 			if(L) //mobs turning into object corpses could get deleted here.
 				L.adjust_fire_stacks(20)
 				L.IgniteMob()
-
-/turf/open/ind_floor/plating/lava/smooth
-	name = "lava"
-	baseturf = /turf/open/ind_floor/plating/lava/smooth
-	icon = 'icons/turf/floors/lava.dmi'
-	icon_state = "unsmooth"
-	smooth = SMOOTH_MORE | SMOOTH_BORDER
-	canSmoothWith = list(/turf/open/ind_floor/plating/lava/smooth)
-
-/turf/open/ind_floor/plating/lava/smooth/lava_land_surface
-	temperature = 300
-	oxygen = 14
-	nitrogen = 23
-	planetary_atmos = TRUE
-	baseturf = /turf/open/floor/chasm/straight_down/lava_land_surface
-
-/turf/open/ind_floor/plating/lava/smooth/airless
-	temperature = TCMB

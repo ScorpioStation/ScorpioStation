@@ -1,13 +1,15 @@
-/turf/open/ind_floor	// Indestructible Floor
+/turf/open/ind_floor	// Indestructible Floors
 	name = "floor"
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "Floor3"
-	indesctructible_turf = TRUE
+	indestructible_turf = TRUE	//Establish as indestructible_turf
 
-/turf/open/ind_floor/blob_act(obj/structure/blob/B)
+//Turf ind_floor overrides
+
+/turf/open/ind_floor/ex_act(severity)
 	return
 
-/turf/open/ind_floor/narsie_act()
+/turf/open/ind_floor/blob_act(obj/structure/blob/B)
 	return
 
 /turf/open/ind_floor/attackby(obj/item/I, mob/user, params)
@@ -25,6 +27,32 @@
 /turf/open/ind_floor/mech_melee_attack(obj/mecha/M)
 	return
 
+/turf/open/floor/crowbar_act(mob/user, obj/item/I)
+	return
+
+/turf/open/ind_floor/singularity_act()
+	return
+
+/turf/open/ind_floor/singularity_pull(S, current_size)
+	return
+
+/turf/open/ind_floor/narsie_act()
+	return
+
+/turf/open/ind_floor/ratvar_act(force, ignore_mobs)
+	return
+
+/turf/open/ind_floor/acid_melt()
+	return
+
+/turf/open/ind_floor/can_have_cabling()
+	return FALSE
+
+/turf/open/ind_floor/burn_down()
+	return
+
+/turf/open/ind_floor/burn_tile()
+	return
 
 //Grass
 /turf/open/ind_floor/grass

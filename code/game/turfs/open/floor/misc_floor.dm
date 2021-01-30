@@ -132,12 +132,10 @@
 	baseturf = /turf/open/floor/clockwork/reebe
 	uses_overlay = FALSE
 
-
 /turf/open/floor/gym
 	name = "wrestling mat"
 	icon = 'icons/misc/wrestling_ring.dmi'
 	icon_state = "ring_9"
-
 
 /turf/open/floor/rubber
 	name = "rubber floor"
@@ -149,4 +147,3 @@
 	name = "snow"
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "snow"
-	indesctructible_turf = FALSE

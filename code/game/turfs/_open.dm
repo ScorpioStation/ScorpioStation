@@ -8,7 +8,7 @@
 	oxygen = MOLES_O2STANDARD
 	nitrogen = MOLES_N2STANDARD
 	blocks_air = FALSE
-	indesctructible_turf = FALSE
+	indestructible_turf = FALSE
 
 	var/to_be_destroyed = FALSE //Used for fire, if a melting temperature was reached, it will be destroyed
 	var/max_fire_temperature_sustained = 0 //The max temperature of the fire which it was subjected to
@@ -158,7 +158,7 @@
 	return ..()
 
 /turf/open/singularity_pull(S, current_size)
-	if(indesctructible_turf)	// this proc is on /atom, not /turf
+	if(indestructible_turf)	// this proc is on /atom, not /turf, so I put this check here.
 		return
 	return ..()
 

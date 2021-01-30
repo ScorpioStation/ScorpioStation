@@ -55,7 +55,7 @@
 						sense = FALSE
 
 					if("/turf/open/floor")
-						if(T.indesctructible_turf)
+						if(T.indestructible_turf)
 							colour = rgb(150,150,150)
 							var/turf/open/floor/TF = T
 							if(TF.burnt)
@@ -209,7 +209,7 @@
 						sense = FALSE
 
 					if("/turf/open/floor", "/turf/open/floor/engine")
-						if(T.indesctructible_turf)
+						if(T.indestructible_turf)
 							colour  = rgb(240,240,240)
 						else
 							var/datum/gas_mixture/environment = T.return_air()

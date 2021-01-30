@@ -4,7 +4,7 @@
 	thermal_conductivity = 0.05
 	heat_capacity = 0
 	layer = 2
-	indesctructible_turf = FALSE	// Not Indestructible, but it does have unique RPD and Narsie Acts
+	// Not Indestructible, but it does have unique RPD and Narsie Acts
 
 /turf/open/shuttle/rpd_act(mob/user, obj/item/rpd/our_rpd)
 	if(our_rpd.mode == RPD_DELETE_MODE)//No pipes on shuttles
