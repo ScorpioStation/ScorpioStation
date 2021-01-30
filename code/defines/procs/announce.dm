@@ -48,6 +48,9 @@ GLOBAL_DATUM_INIT(event_announcement, /datum/announcement/priority/command/event
 	if(!message)
 		return
 
+	if(check_for_troll(announcement_type, message, usr))
+		return
+
 	var/message_title = new_title ? new_title : title
 	var/message_sound = new_sound ? sound(new_sound) : sound
 

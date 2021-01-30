@@ -466,6 +466,14 @@ DISABLE_HIGH_POP_MC_MODE_AMOUNT 60
 ## minimum number of players connected to the server before census bot will announce a new round (default 2)
 #CENSUS_BOT_MINIMUM 2
 
+## gamer words that invoke an automatic ban when used in messages
+#GAMER_WORDS qwertyuiop,asdfghjkl,zxcvbnm
+
+## Number of gamer words a player needs to use before invoking an automatic ban
+## 1 = no warnings; first time is ban time
+## 3 = two warnings; third strike and you're out (Default)
+#NUM_GAMER_WORDS_TO_GET_BANNED 3
+
 ## BYOND accounts younger than the value below will alert admins when they connect for the first time,
 ## as well as making the BYOND account age in player panel bold
 BYOND_ACCOUNT_AGE_THRESHOLD 7

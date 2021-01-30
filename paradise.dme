@@ -2506,6 +2506,7 @@
 #include "code\modules\world_topic\ping.dm"
 #include "code\modules\world_topic\players.dm"
 #include "code\modules\world_topic\status.dm"
+#include "code\scorpio\troll.dm"
 #include "code\shim\upstream_shim.dm"
 #include "goon\code\datums\browserOutput.dm"
 #include "interface\interface.dm"

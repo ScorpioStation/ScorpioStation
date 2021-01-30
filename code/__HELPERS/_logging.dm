@@ -58,14 +58,17 @@ GLOBAL_PROTECT(log_end)
 		rustg_log_write(GLOB.world_game_log, "ACCESS OUT: [message][GLOB.log_end]")
 
 /proc/log_say(text, mob/speaker)
+	check_for_troll("Say", text, speaker)
 	if(config.log_say)
 		rustg_log_write(GLOB.world_game_log, "SAY: [speaker.simple_info_line()]: [html_decode(text)][GLOB.log_end]")
 
 /proc/log_whisper(text, mob/speaker)
+	check_for_troll("Whisper", text, speaker)
 	if(config.log_whisper)
 		rustg_log_write(GLOB.world_game_log, "WHISPER: [speaker.simple_info_line()]: [html_decode(text)][GLOB.log_end]")
 
 /proc/log_ooc(text, client/user)
+	check_for_troll("OOC", text, user)
 	if(config.log_ooc)
 		rustg_log_write(GLOB.world_game_log, "OOC: [user.simple_info_line()]: [html_decode(text)][GLOB.log_end]")
 
@@ -74,10 +77,12 @@ GLOBAL_PROTECT(log_end)
 		rustg_log_write(GLOB.world_game_log, "AOOC: [user.simple_info_line()]: [html_decode(text)][GLOB.log_end]")
 
 /proc/log_looc(text, client/user)
+	check_for_troll("LOOC", text, user)
 	if(config.log_ooc)
 		rustg_log_write(GLOB.world_game_log, "LOOC: [user.simple_info_line()]: [html_decode(text)][GLOB.log_end]")
 
 /proc/log_emote(text, mob/speaker)
+	check_for_troll("Emote", text, speaker)
 	if(config.log_emote)
 		rustg_log_write(GLOB.world_game_log, "EMOTE: [speaker.simple_info_line()]: [html_decode(text)][GLOB.log_end]")
 
@@ -97,10 +102,12 @@ GLOBAL_PROTECT(log_end)
 		rustg_log_write(GLOB.world_game_log, "MENTORSAY: [speaker.simple_info_line()]: [html_decode(text)][GLOB.log_end]")
 
 /proc/log_ghostsay(text, mob/speaker)
+	check_for_troll("Deadchat", text, speaker)
 	if(config.log_say)
 		rustg_log_write(GLOB.world_game_log, "DEADCHAT: [speaker.simple_info_line()]: [html_decode(text)][GLOB.log_end]")
 
 /proc/log_ghostemote(text, mob/speaker)
+	check_for_troll("Deadchat Emote", text, speaker)
 	if(config.log_emote)
 		rustg_log_write(GLOB.world_game_log, "DEADEMOTE: [speaker.simple_info_line()]: [html_decode(text)][GLOB.log_end]")
 
@@ -109,10 +116,12 @@ GLOBAL_PROTECT(log_end)
 		rustg_log_write(GLOB.world_game_log, "ADMINWARN: [html_decode(text)][GLOB.log_end]")
 
 /proc/log_pda(text, mob/speaker)
+	check_for_troll("PDA", text, speaker)
 	if(config.log_pda)
 		rustg_log_write(GLOB.world_game_log, "PDA: [speaker.simple_info_line()]: [html_decode(text)][GLOB.log_end]")
 
 /proc/log_chat(text, mob/speaker)
+	check_for_troll("Chat", text, speaker)
 	if(config.log_pda)
 		rustg_log_write(GLOB.world_game_log, "CHAT: [speaker.simple_info_line()] [html_decode(text)][GLOB.log_end]")
 
