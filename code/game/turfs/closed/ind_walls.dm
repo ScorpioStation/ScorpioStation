@@ -72,7 +72,7 @@
 	icon_state = ""
 	layer = FLY_LAYER
 
-/turf/closed/ind_wall/other
+/turf/closed/ind_wall/r_wall
 	icon_state = "r_wall"
 
 /turf/closed/ind_wall/metal

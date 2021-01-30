@@ -55,14 +55,11 @@
 						sense = FALSE
 
 					if("/turf/open/floor")
-						if(T.indestructible_turf)
-							colour = rgb(150,150,150)
-							var/turf/open/floor/TF = T
-							if(TF.burnt)
-								sense = FALSE
-								colour = rgb(130,130,130)
-						else
-							colour  = rgb(240,240,240
+						colour = rgb(150,150,150)
+						var/turf/simulated/floor/TF = T
+						if(TF.burnt == 1)
+							sense = 0
+							colour = rgb(130,130,130)
 
 					if("/turf/open/floor/engine")
 						colour = rgb(128,128,128)
@@ -73,7 +70,10 @@
 					if("/turf/closed/wall/r_wall")
 						colour = rgb(128,96,96)
 
-					if("/turf/closed/ind_wall", "/turf/closed/ind_wall/other")
+					if("/turf/open/ind_floor")
+						colour  = rgb(240,240,240)
+
+					if("/turf/closed/ind_wall", "/turf/closed/ind_wall/r_wall")
 						colour  = rgb(140,140,140)
 					else
 						colour = rgb(0,40,0)
@@ -209,18 +209,15 @@
 						sense = FALSE
 
 					if("/turf/open/floor", "/turf/open/floor/engine")
-						if(T.indestructible_turf)
-							colour  = rgb(240,240,240)
-						else
-							var/datum/gas_mixture/environment = T.return_air()
-							var/turf_total = environment.total_moles()
-							var/t1 = turf_total / MOLES_CELLSTANDARD * 175
+						var/datum/gas_mixture/environment = T.return_air()
+						var/turf_total = environment.total_moles()
+						var/t1 = turf_total / MOLES_CELLSTANDARD * 175
 
-							if(t1<=100)
-								colour = rgb(0,0,t1*2.55)
-							else
-								t1 = min(100, t1-100)
-								colour = rgb( t1*2.55, t1*2.55, 255)
+						if(t1<=100)
+							colour = rgb(0,0,t1*2.55)
+						else
+							t1 = min(100, t1-100)
+							colour = rgb( t1*2.55, t1*2.55, 255)
 
 					if("/turf/closed/wall")
 						colour = rgb(96,96,96)
@@ -228,7 +225,10 @@
 					if("/turf/closed/wall/r_wall")
 						colour = rgb(128,96,96)
 
-					if("/turf/closed/ind_wall", "/turf/closed/ind_wall/other")
+					if("/turf/open/ind_floor")
+						colour  = rgb(240,240,240)
+
+					if("/turf/closed/ind_wall", "/turf/closed/ind_wall/r_wall")
 						colour  = rgb(140,140,140)
 
 					else
