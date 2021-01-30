@@ -6000,7 +6000,7 @@
 	dir = 8
 	},
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/engi_shuttle)
@@ -14188,7 +14188,7 @@
 /area/maintenance/fsmaint)
 "aGr" = (
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/fsmaint)
@@ -18243,7 +18243,7 @@
 "aPg" = (
 /obj/machinery/atmospherics/pipe/simple/visible,
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plasteel{
 	icon_state = "floorgrime"
@@ -20111,7 +20111,7 @@
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/fsmaint)
@@ -20215,7 +20215,7 @@
 /area/atmos)
 "aTr" = (
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/fpmaint2)
@@ -29405,7 +29405,7 @@
 "bkn" = (
 /obj/machinery/light/small,
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/fpmaint2)
@@ -38044,7 +38044,7 @@
 /area/crew_quarters/locker)
 "bAk" = (
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/fpmaint)
@@ -41805,7 +41805,7 @@
 	dir = 6
 	},
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/fpmaint3)
@@ -51197,7 +51197,7 @@
 /area/maintenance/asmaint)
 "bXH" = (
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/wood{
 	tag = "icon-wood-broken6";
@@ -84117,7 +84117,7 @@
 	dir = 10
 	},
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/disposal)
@@ -86054,7 +86054,7 @@
 	level = 1
 	},
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/fsmaint2)
@@ -86293,7 +86293,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/fpmaint3)
@@ -86739,7 +86739,7 @@
 	dir = 8
 	},
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/fsmaint2)
@@ -87550,7 +87550,7 @@
 /area/maintenance/asmaint2)
 "did" = (
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/fsmaint2)
@@ -93072,7 +93072,7 @@
 /area/maintenance/apmaint)
 "dts" = (
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/wood,
 /area/maintenance/fsmaint3)
@@ -94391,7 +94391,7 @@
 /area/maintenance/portsolar)
 "dvT" = (
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/fsmaint3)
@@ -94421,14 +94421,14 @@
 /area/toxins/lab)
 "dvZ" = (
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/fpmaint3)
 "dwa" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/apmaint3)
@@ -94437,13 +94437,13 @@
 	icon_state = "4-8"
 	},
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/asmaint2)
 "dwd" = (
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/asmaint)
@@ -94461,20 +94461,20 @@
 /area/security/lobby)
 "dwf" = (
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/asmaint2)
 "dwg" = (
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/apmaint)
 "dwh" = (
 /obj/effect/landmark/damageturf,
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/asmaint2)
@@ -94483,13 +94483,13 @@
 /obj/item/poster/random_official,
 /obj/item/poster/random_official,
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/asmaint2)
 "dwj" = (
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/apmaint2)
@@ -94498,14 +94498,14 @@
 	dir = 1
 	},
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/apmaint3)
 "dwl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/asmaint)
@@ -94517,14 +94517,14 @@
 	pixel_y = 32
 	},
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/apmaint)
 "dwn" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/apmaint)
@@ -94535,14 +94535,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/electrical)
 "dwp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/apmaint)
@@ -94556,7 +94556,7 @@
 "dwr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark{
-	name = "blobspawn"
+	name = "blobstart"
 	},
 /turf/open/floor/plating,
 /area/maintenance/apmaint2)

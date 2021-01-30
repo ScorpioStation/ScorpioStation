@@ -211,8 +211,9 @@
 	return 0
 
 /obj/item/IntegrateAmount() //returns the amount of resources gained when eating this item
-	if(materials[MAT_METAL] || materials[MAT_GLASS])
-		return 1
+	if(length(materials))
+		if(materials[MAT_METAL] || materials[MAT_GLASS])
+			return TRUE
 	return ..()
 
 /obj/item/gun/swarmer_act() //Stops you from eating the entire armory

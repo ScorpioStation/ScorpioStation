@@ -91,7 +91,7 @@
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "carpet"
 	smooth = SMOOTH_TRUE
-	canSmoothWith = null
+	canSmoothWith = list(/turf/open/ind_floor/carpet)
 	footstep_sounds = list(
 		"human" = list('sound/effects/footstep/carpet_human.ogg'),
 		"xeno"  = list('sound/effects/footstep/carpet_xeno.ogg')
