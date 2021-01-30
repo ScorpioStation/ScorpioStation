@@ -227,7 +227,7 @@
 
 		if(extended_safety_checks)
 			if(islava(F)) //chasms aren't /floor, and so are pre-filtered
-				var/turf/open/ind_floor/plating/lava/L = F
+				var/turf/open/lava/L = F
 				if(!L.is_safe())
 					continue
 

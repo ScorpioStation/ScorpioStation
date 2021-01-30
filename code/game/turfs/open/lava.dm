@@ -1,56 +1,55 @@
 
 //Lava
-/turf/open/ind_floor/plating/lava
+/turf/open/lava
 	name = "lava"
-	desc = "That boiling bubbling lava looks ... a tad bit dangerous"
 	icon_state = "lava"
 	gender = PLURAL //"That's some lava."
-	baseturf = /turf/open/ind_floor/plating/lava //lava all the way down
 	slowdown = 2
 	light_range = 2
 	light_power = 0.75
 	light_color = LIGHT_COLOR_LAVA
 	cannot_wet = TRUE
+	indestructible_turf = TRUE // This lava is indestructible
 
-/turf/open/ind_floor/plating/lava/smooth
+/turf/open/lava/airless
+	temperature = TCMB
+
+/turf/open/lava/smooth
 	name = "lava"
-	baseturf = /turf/open/ind_floor/plating/lava/smooth
+	baseturf = /turf/open/lava/smooth
 	icon = 'icons/turf/floors/lava.dmi'
 	icon_state = "unsmooth"
 	smooth = SMOOTH_MORE | SMOOTH_BORDER
-	canSmoothWith = list(/turf/open/ind_floor/plating/lava/smooth)
+	canSmoothWith = list(/turf/open/lava/smooth)
 
-/turf/open/ind_floor/plating/lava/smooth/lava_land_surface
+/turf/open/lava/smooth/lava_land_surface
 	temperature = 300
 	oxygen = 14
 	nitrogen = 23
 	planetary_atmos = TRUE
 	baseturf = /turf/open/floor/chasm/straight_down/lava_land_surface
 
-/turf/open/ind_floor/plating/lava/smooth/airless
+/turf/open/lava/smooth/airless
 	temperature = TCMB
 
-/turf/open/ind_floor/plating/lava/airless
-	temperature = TCMB
-
-/turf/open/ind_floor/plating/lava/Entered(atom/movable/AM)
+/turf/open/lava/Entered(atom/movable/AM)
 	if(burn_stuff(AM))
 		START_PROCESSING(SSprocessing, src)
 
-/turf/open/ind_floor/plating/lava/hitby(atom/movable/AM, skipcatch, hitpush, blocked, datum/thrownthing/throwingdatum)
+/turf/open/lava/hitby(atom/movable/AM, skipcatch, hitpush, blocked, datum/thrownthing/throwingdatum)
 	if(burn_stuff(AM))
 		START_PROCESSING(SSprocessing, src)
 
-/turf/open/ind_floor/plating/lava/process()
+/turf/open/lava/process()
 	if(!burn_stuff())
 		STOP_PROCESSING(SSprocessing, src)
 
-/turf/open/ind_floor/plating/lava/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
+/turf/open/lava/get_smooth_underlay_icon(mutable_appearance/underlay_appearance, turf/asking_turf, adjacency_dir)
 	underlay_appearance.icon = 'icons/turf/floors.dmi'
 	underlay_appearance.icon_state = "basalt"
 	return TRUE
 
-/turf/open/ind_floor/plating/lava/proc/is_safe()
+/turf/open/lava/proc/is_safe()
 	var/static/list/lava_safeties_typecache = typecacheof(list(/obj/structure/lattice/catwalk, /obj/structure/stone_tile))
 	var/list/found_safeties = typecache_filter_list(contents, lava_safeties_typecache)
 	for(var/obj/structure/stone_tile/S in found_safeties)
@@ -58,7 +57,7 @@
 			LAZYREMOVE(found_safeties, S)
 	return LAZYLEN(found_safeties)
 
-/turf/open/ind_floor/plating/lava/proc/burn_stuff(AM)
+/turf/open/lava/proc/burn_stuff(AM)
 	. = FALSE
 	if(is_safe())
 		return FALSE

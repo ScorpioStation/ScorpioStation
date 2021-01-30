@@ -6,14 +6,14 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "c" = (
-/turf/open/ind_floor/plating/lava/smooth/lava_land_surface,
+/turf/open/lava/smooth/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "d" = (
 /obj/effect/baseturf_helper/lava_land/surface,
 /turf/open/floor/plasteel/freezer,
 /area/ruin/powered/gluttony)
 "e" = (
-/turf/open/ind_floor/plating/lava/smooth,
+/turf/open/lava/smooth,
 /area/ruin/powered/gluttony)
 "f" = (
 /obj/item/reagent_containers/syringe/gluttony,

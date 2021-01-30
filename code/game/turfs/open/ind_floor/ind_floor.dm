@@ -92,7 +92,6 @@
 	icon_state = "carpet"
 	smooth = SMOOTH_TRUE
 	canSmoothWith = null
-
 	footstep_sounds = list(
 		"human" = list('sound/effects/footstep/carpet_human.ogg'),
 		"xeno"  = list('sound/effects/footstep/carpet_xeno.ogg')
@@ -101,7 +100,6 @@
 //Wood
 /turf/open/ind_floor/wood
 	icon_state = "wood"
-
 	footstep_sounds = list(
 		"human" = list('sound/effects/footstep/wood_all.ogg'), //@RonaldVanWonderen of Freesound.org
 		"xeno"  = list('sound/effects/footstep/wood_all.ogg')  //@RonaldVanWonderen of Freesound.org
@@ -112,7 +110,6 @@
 	desc = "It's regarding you suspiciously."
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "necro1"
-	baseturf = /turf/open/ind_floor/necropolis
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300
@@ -127,7 +124,6 @@
 	name = "necropolis floor"
 	icon = 'icons/turf/floors/boss_floors.dmi'
 	icon_state = "boss"
-	baseturf = /turf/open/ind_floor/boss
 	oxygen = 14
 	nitrogen = 23
 	temperature = 300

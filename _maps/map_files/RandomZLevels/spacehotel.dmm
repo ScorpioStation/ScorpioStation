@@ -20,7 +20,7 @@
 	},
 /area/awaymission/beach)
 "ad" = (
-/turf/open/ind_floor/plating/lava/smooth,
+/turf/open/lava/smooth,
 /area/awaymission)
 "ae" = (
 /turf/closed/ind_wall/metal,
@@ -2046,7 +2046,7 @@
 	},
 /area/awaymission)
 "dF" = (
-/turf/open/ind_floor/plating/lava/smooth,
+/turf/open/lava/smooth,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0

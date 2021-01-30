@@ -51,7 +51,7 @@
 	},
 /area/lavaland/surface/outdoors/unexplored)
 "l" = (
-/turf/open/ind_floor/plating/lava/smooth/lava_land_surface,
+/turf/open/lava/smooth/lava_land_surface,
 /area/lavaland/surface/outdoors/unexplored)
 "m" = (
 /obj/item/clockwork/alloy_shards/medium,
@@ -75,7 +75,7 @@
 /area/lavaland/surface/outdoors/unexplored)
 "q" = (
 /obj/structure/lattice/catwalk/clockwork,
-/turf/open/ind_floor/plating/lava/smooth/lava_land_surface,
+/turf/open/lava/smooth/lava_land_surface,
 /area/lavaland/surface/outdoors/unexplored)
 "r" = (
 /obj/structure/lattice/clockwork,
