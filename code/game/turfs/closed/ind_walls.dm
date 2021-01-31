@@ -56,6 +56,9 @@
 
 /turf/closed/ind_wall/acid_melt()
 	return
+
+/turf/closed/ind_wall/swarmer_act()
+	return FALSE
 /turf/closed/ind_wall/fakeglass
 	name = "window"
 	icon_state = "fakewindows"

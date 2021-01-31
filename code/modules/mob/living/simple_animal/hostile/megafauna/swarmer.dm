@@ -142,10 +142,11 @@ GLOBAL_LIST_INIT(AISwarmerCapsByType, list(/mob/living/simple_animal/hostile/swa
 	if(newloc)
 		if(newloc.z == z) //so these actions are Z-specific
 			if(islava(newloc))
-				var/turf/open/ind_floor/plating/lava/L = newloc
+				var/turf/open/floor/plating/lava/L = newloc
 				if(!L.is_safe())
 					StartAction(20)
-					return L.swarmer_act()
+					new /obj/structure/lattice/catwalk/swarmer_catwalk(newloc)
+					return FALSE
 			if(ischasm(newloc) && !throwing)
 				throw_at(get_edge_target_turf(src, get_dir(src, newloc)), 7 , 3, src, FALSE) //my planet needs me
 				return FALSE
@@ -156,14 +157,14 @@ GLOBAL_LIST_INIT(AISwarmerCapsByType, list(/mob/living/simple_animal/hostile/swa
  * Used so they can survive lavaland better
  * Here so I don't have to keep switching between swarmer.dm and lattice.dm
  */
-/obj/structure/lattice/catwalk/swarmer
+/obj/structure/lattice/catwalk/swarmer_catwalk
 	name = "swarmer catwalk"
 	desc = "A catwalk-like mesh, produced by swarmers to allow them to navigate hostile terrain."
 	icon = 'icons/obj/smooth_structures/swarmer_catwalk.dmi'
 	icon_state = "swarmer_catwalk"
 	resistance_flags = FIRE_PROOF | LAVA_PROOF
 
-/obj/structure/lattice/catwalk/swarmer/swarmer_act(mob/living/simple_animal/hostile/swarmer/S)
+/obj/structure/lattice/catwalk/swarmer_catwalk/swarmer_act(mob/living/simple_animal/hostile/swarmer/S)
 	to_chat(S, "<span class='warning'>We have created these for our own benefit. Aborting.</span>")
 	return FALSE
 
