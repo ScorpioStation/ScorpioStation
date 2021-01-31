@@ -39,7 +39,7 @@
 	icon_state = "ratvarfloorglow"
 
 /obj/effect/temp_visual/ratvar/floor/catwalk
-	layer = LATTICE_LAYER
+	layer = CATWALK_LAYER
 
 /obj/effect/temp_visual/ratvar/window
 	icon_state = "ratvarwindowglow"

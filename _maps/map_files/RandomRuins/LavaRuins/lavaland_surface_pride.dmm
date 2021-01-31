@@ -6,7 +6,7 @@
 /turf/closed/mineral/volcanic/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "c" = (
-/turf/open/lava/smooth/lava_land_surface,
+/turf/open/ind_floor/plating/lava/smooth/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "d" = (
 /obj/effect/baseturf_helper/lava_land/surface,

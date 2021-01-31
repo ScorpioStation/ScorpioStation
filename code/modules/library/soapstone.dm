@@ -112,7 +112,7 @@
 	desc = "A message from a past traveler."
 	icon = 'icons/obj/stationobjs.dmi'
 	icon_state = "soapstone_message"
-	layer = LATTICE_LAYER
+	layer = MID_TURF_LAYER
 	density = FALSE
 	anchored = TRUE
 	max_integrity = 30

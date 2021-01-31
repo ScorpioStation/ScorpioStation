@@ -59,12 +59,12 @@ SUBSYSTEM_DEF(atoms)
 				++count
 				CHECK_TICK
 	if(noisy)
-		log_startup_progress("	Initialized [t_count] turfs")
 		log_startup_progress("	Initialized [a_count] non-turf atoms")
+		log_startup_progress("	Initialized [t_count] turf atoms")
 		log_startup_progress("	Initialized [count] total atoms in [stop_watch(watch)]s")
 	else
-		log_debug("	Initialized [t_count] turfs")
 		log_debug("	Initialized [a_count] non-turf atoms")
+		log_debug("	Initialized [t_count] turf atoms")
 		log_debug("	Initialized [count] total atoms in [stop_watch(watch)]s")
 	pass(count)
 

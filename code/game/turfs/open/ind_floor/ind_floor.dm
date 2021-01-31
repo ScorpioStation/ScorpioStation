@@ -2,6 +2,7 @@
 	name = "floor"
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "Floor3"
+	intact = TRUE
 	indestructible_turf = TRUE	//Establish as indestructible_turf
 
 //Turf ind_floor overrides
@@ -27,7 +28,7 @@
 /turf/open/ind_floor/mech_melee_attack(obj/mecha/M)
 	return
 
-/turf/open/floor/crowbar_act(mob/user, obj/item/I)
+/turf/open/ind_floor/crowbar_act(mob/user, obj/item/I)
 	return
 
 /turf/open/ind_floor/singularity_act()
@@ -91,7 +92,7 @@
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "carpet"
 	smooth = SMOOTH_TRUE
-	canSmoothWith = list(/turf/open/ind_floor/carpet)
+	canSmoothWith = null	// Smooths with itself
 	footstep_sounds = list(
 		"human" = list('sound/effects/footstep/carpet_human.ogg'),
 		"xeno"  = list('sound/effects/footstep/carpet_xeno.ogg')

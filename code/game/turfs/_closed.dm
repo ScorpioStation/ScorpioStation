@@ -4,6 +4,10 @@
 	density = TRUE
 	blocks_air = TRUE
 
+/turf/closed/ChangeTurf(path, defer_change = FALSE, keep_icon = TRUE, ignore_air = FALSE)
+	. = ..()
+	queue_smooth_neighbors(src)
+
 /turf/closed/AfterChange(ignore_air = FALSE, keep_cabling = FALSE)
 	. = ..()
 	SSair.high_pressure_delta -= src

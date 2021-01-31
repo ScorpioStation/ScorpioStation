@@ -24,7 +24,7 @@
 /turf/open/ind_floor/plating/screwdriver_act()
 	return
 
-/turf/open/lava/welder_act()
+/turf/open/ind_floor/plating/lava/welder_act()
 	return
 
 /turf/open/ind_floor/plating/break_tile()
