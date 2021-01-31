@@ -62,7 +62,7 @@ Would be classed by the values `width` = 6, `height` = 1.
 It is important to note that bounding boxes are *always* rectangular. However, shuttles
 are allowed to be any shape they so wish, as anything that matches the `turf_type` of
 stationary docking ports will not be moved with the shuttle- by default, this is equal to
-`/turf/space`.
+`/turf/open/space`.
 Another quick example of this:
 ```
   |||
@@ -84,9 +84,9 @@ The "bottom left corner" changes depending on the direction of the docking port 
 so a docking port **facing north** that looks something like this:
 
 ```
-|||  
-|||  
-|||D|  
+|||
+|||
+|||D|
 |||||
 ```
 

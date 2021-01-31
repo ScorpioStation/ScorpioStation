@@ -185,7 +185,7 @@
 			M.adjust_fire_stacks(20)
 
 /datum/reagent/thermite/reaction_temperature(exposed_temperature, exposed_volume)
-	var/turf/simulated/S = holder.my_atom
+	var/turf/open/S = holder.my_atom
 	if(!istype(S))
 		return
 
@@ -197,7 +197,7 @@
 		Holder.del_reagent(Id)
 		fireflash_sm(S, 0, rand(20000, 25000) + Volume * 2500, 0, 0, 1)
 
-/datum/reagent/thermite/reaction_turf(turf/simulated/S, volume)
+/datum/reagent/thermite/reaction_turf(turf/open/S, volume)
 	if(istype(S))
 		if(!S.reagents)
 			S.create_reagents(volume)
@@ -363,7 +363,7 @@
 	if(method == REAGENT_TOUCH)
 		M.ExtinguishMob()
 
-/datum/reagent/cryostylane/reaction_turf(turf/simulated/T, volume)
+/datum/reagent/cryostylane/reaction_turf(turf/open/T, volume)
 	if(!istype(T))
 		return
 	if(volume >= 3)
@@ -418,7 +418,7 @@
 /datum/reagent/firefighting_foam/reaction_obj(obj/O, volume)
 	O.extinguish()
 
-/datum/reagent/firefighting_foam/reaction_turf(turf/simulated/T, volume)
+/datum/reagent/firefighting_foam/reaction_turf(turf/open/T, volume)
 	if(!istype(T))
 		return
 	var/CT = cooling_temperature

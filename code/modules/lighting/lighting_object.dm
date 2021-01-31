@@ -7,10 +7,10 @@
 	icon_state       = "transparent"
 	color            = null //we manually set color in init instead
 	plane            = LIGHTING_PLANE
-	mouse_opacity 	 = MOUSE_OPACITY_TRANSPARENT
+	mouse_opacity	 = MOUSE_OPACITY_TRANSPARENT
 	layer            = LIGHTING_LAYER
 	invisibility     = INVISIBILITY_LIGHTING
-	simulated 		 = FALSE
+	simulated		 = FALSE
 
 	var/needs_update = FALSE
 	var/turf/myturf
@@ -28,7 +28,7 @@
 	myturf.lighting_object = src
 	myturf.luminosity = 0
 
-	for(var/turf/space/S in RANGE_TURFS(1, src)) //RANGE_TURFS is in code\__HELPERS\game.dm
+	for(var/turf/open/space/S in RANGE_TURFS(1, src)) //RANGE_TURFS is in code\__HELPERS\game.dm
 		S.update_starlight()
 
 	needs_update = TRUE

@@ -4,19 +4,19 @@
 /area/template_noop)
 "b" = (
 /turf/template_noop,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 8;
 	icon_state = "diagonalWall3"
 	},
 /area/ruin/powered)
 "c" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/ruin/powered)
 "d" = (
 /turf/template_noop,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 2;
 	icon_state = "diagonalWall3"
 	},
@@ -27,7 +27,7 @@
 	icon_state = "propulsion";
 	tag = "icon-propulsion (EAST)"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/ruin/powered)
 "f" = (
 /obj/structure/window/reinforced{
@@ -38,18 +38,18 @@
 	icon_state = "heater";
 	dir = 8
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/ruin/powered)
 "g" = (
 /obj/structure/table/wood,
 /obj/item/clothing/under/shorts/black,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
 /area/ruin/powered)
 "h" = (
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
@@ -60,21 +60,21 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
 /area/ruin/powered)
 "j" = (
 /obj/structure/closet,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
 /area/ruin/powered)
 "k" = (
 /obj/machinery/vending/assist,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
@@ -82,7 +82,7 @@
 "l" = (
 /obj/structure/table/wood,
 /obj/item/clothing/shoes/sandal,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
@@ -91,14 +91,14 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
 /area/ruin/powered)
 "n" = (
 /obj/structure/table/wood,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
@@ -106,7 +106,7 @@
 "o" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/library/checkout,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
@@ -114,18 +114,18 @@
 "p" = (
 /obj/structure/window/full/reinforced,
 /obj/structure/grille,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "q" = (
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "r" = (
 /obj/structure/table,
 /obj/item/paper_bin,
 /obj/item/pen,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
@@ -135,21 +135,21 @@
 	id_tag = "strange ship";
 	name = "Strange Ship Blast Door"
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
 /area/ruin/powered)
 "t" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
 /area/ruin/powered)
 "u" = (
 /obj/machinery/door/airlock/public/glass,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
@@ -158,7 +158,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
@@ -167,7 +167,7 @@
 /obj/structure/table,
 /obj/item/paper,
 /obj/item/pen,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
@@ -179,41 +179,41 @@
 	pixel_y = 0;
 	id = "strange ship"
 	},
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "wall3"
 	},
 /area/ruin/powered)
 "y" = (
 /obj/machinery/light,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
 /area/ruin/powered)
 "z" = (
 /mob/living/simple_animal/bot/medbot,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
 /area/ruin/powered)
 "A" = (
 /turf/template_noop,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 1;
 	icon_state = "diagonalWall3"
 	},
 /area/ruin/powered)
 "B" = (
 /obj/structure/chair/comfy/shuttle,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},
 /area/ruin/powered)
 "C" = (
 /turf/template_noop,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	dir = 4;
 	icon_state = "diagonalWall3"
 	},
@@ -221,7 +221,7 @@
 "D" = (
 /obj/machinery/light,
 /obj/structure/bed,
-/turf/simulated/shuttle/floor{
+/turf/open/shuttle/floor{
 	tag = "icon-floor5";
 	icon_state = "floor5"
 	},

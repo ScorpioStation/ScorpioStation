@@ -189,7 +189,7 @@
 /obj/effect/mob_spawn/swarmer/IntegrateAmount()
 	return 50
 
-/turf/simulated/wall/indestructible/swarmer_act()
+/turf/closed/ind_wall/swarmer_act()
 	return FALSE
 
 /obj/swarmer_act(mob/living/simple_animal/hostile/swarmer/S)
@@ -211,18 +211,12 @@
 	return 0
 
 /obj/item/IntegrateAmount() //returns the amount of resources gained when eating this item
-	if(materials[MAT_METAL] || materials[MAT_GLASS])
-		return 1
+	if(length(materials))
+		if(materials[MAT_METAL] || materials[MAT_GLASS])
+			return TRUE
 	return ..()
 
 /obj/item/gun/swarmer_act() //Stops you from eating the entire armory
-	return FALSE
-
-/turf/simulated/floor/swarmer_act() //ex_act() on turf calls it on its contents, this is to prevent attacking mobs by DisIntegrate()'ing the floor
-	return FALSE
-
-/obj/structure/lattice/catwalk/swarmer_catwalk/swarmer_act(mob/living/simple_animal/hostile/swarmer/S)
-	to_chat(S, "<span class='warning'>We have created these for our own benefit. Aborting.</span>")
 	return FALSE
 
 /obj/structure/swarmer/swarmer_act(mob/living/simple_animal/hostile/swarmer/S)
@@ -240,11 +234,6 @@
 	return TRUE
 
 /obj/structure/flora/swarmer_act()
-	return FALSE
-
-/turf/simulated/floor/plating/lava/swarmer_act()
-	if(!is_safe())
-		new /obj/structure/lattice/catwalk/swarmer_catwalk(src)
 	return FALSE
 
 /obj/machinery/atmospherics/swarmer_act()
@@ -368,7 +357,7 @@
 	to_chat(S, "<span class='warning'>Disrupting this energy field would overload us. Aborting.</span>")
 	return FALSE
 
-/turf/simulated/wall/swarmer_act(mob/living/simple_animal/hostile/swarmer/S)
+/turf/closed/wall/swarmer_act(mob/living/simple_animal/hostile/swarmer/S)
 	var/isonshuttle = istype(loc, /area/shuttle)
 	for(var/turf/T in range(1, src))
 		var/area/A = get_area(T)
@@ -501,7 +490,7 @@
 	if(!do_mob(src, target, 30))
 		return
 
-	var/turf/simulated/floor/F
+	var/turf/open/floor/F
 	F = find_safe_turf(zlevels = z, extended_safety_checks = TRUE)
 
 	if(!F)

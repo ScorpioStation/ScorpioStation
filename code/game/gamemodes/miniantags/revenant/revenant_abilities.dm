@@ -250,12 +250,12 @@
 					human.adjustToxLoss(toxdamage)
 					human.AdjustConfused(confusion, bound_lower = 0, bound_upper = maxconfusion)
 					new/obj/effect/temp_visual/revenant(human.loc)
-				if(!istype(T, /turf/simulated/shuttle) && !istype(T, /turf/simulated/wall/rust) && !istype(T, /turf/simulated/wall/r_wall) && istype(T, /turf/simulated/wall) && prob(15))
+				if(!istype(T, /turf/open/shuttle) && !istype(T, /turf/closed/wall/rust) && !istype(T, /turf/closed/wall/r_wall) && istype(T, /turf/closed/wall) && prob(15))
 					new/obj/effect/temp_visual/revenant(T)
-					T.ChangeTurf(/turf/simulated/wall/rust)
-				if(!istype(T, /turf/simulated/wall/r_wall/rust) && istype(T, /turf/simulated/wall/r_wall) && prob(15))
+					T.ChangeTurf(/turf/closed/wall/rust)
+				if(!istype(T, /turf/closed/wall/r_wall/rust) && istype(T, /turf/closed/wall/r_wall) && prob(15))
 					new/obj/effect/temp_visual/revenant(T)
-					T.ChangeTurf(/turf/simulated/wall/r_wall/rust)
+					T.ChangeTurf(/turf/closed/wall/r_wall/rust)
 				for(var/obj/structure/window/window in T.contents)
 					window.take_damage(rand(30,80))
 					if(window && window.fulltile)
@@ -263,8 +263,8 @@
 				for(var/obj/structure/closet/closet in T.contents)
 					closet.open()
 
-				if(!istype(T, /turf/simulated/floor/plating) && !istype(T, /turf/simulated/floor/engine/cult) && istype(T, /turf/simulated/floor) && prob(15))
-					var/turf/simulated/floor/floor = T
+				if(!istype(T, /turf/open/floor/plating) && !istype(T, /turf/open/floor/engine/cult) && istype(T, /turf/open/floor) && prob(15))
+					var/turf/open/floor/floor = T
 					if(floor.intact && floor.floor_tile)
 						new floor.floor_tile(floor)
 					floor.broken = 0

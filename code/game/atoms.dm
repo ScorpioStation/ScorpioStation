@@ -12,7 +12,7 @@
 	var/last_bumped = 0
 	var/pass_flags = 0
 	var/germ_level = GERM_LEVEL_AMBIENT // The higher the germ level, the more germ on the atom.
-	var/simulated = TRUE //filter for actions - used by lighting overlays
+	var/simulated = TRUE		//filter for actions - used by lighting overlays
 	var/atom_say_verb = "says"
 	var/bubble_icon = "default" ///what icon the mob uses for speechbubbles
 	var/dont_save = FALSE // For atoms that are temporary by necessity - like lighting overlays
@@ -193,6 +193,10 @@
 		if(SOUTHWEST)
 			pixel_y = pixel_south
 			pixel_x = pixel_west
+
+/// Returns true or false to allow the mover to move through src
+/atom/proc/CanAllowThrough(atom/movable/mover, turf/target)
+	return !density
 
 ///Handle melee attack by a mech
 /atom/proc/mech_melee_attack(obj/mecha/M)

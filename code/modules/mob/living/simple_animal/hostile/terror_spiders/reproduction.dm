@@ -163,7 +163,7 @@
 		var/list/nearby = oview(10, src)
 		if(nearby.len)
 			var/target_atom = pick(nearby)
-			if(!istype(get_turf(target_atom),/turf/space))
+			if(!istype(get_turf(target_atom),/turf/open/space))
 				walk_to(src, target_atom)
 	else if(immediate_ventcrawl || prob(ventcrawl_chance))
 		immediate_ventcrawl = FALSE

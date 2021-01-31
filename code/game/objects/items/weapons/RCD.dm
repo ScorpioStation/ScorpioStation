@@ -347,13 +347,29 @@
  * * A - the location we're trying to build at.
  * * user - the mob using the RCD.
  */
+
 /obj/item/rcd/proc/mode_turf(atom/A, mob/user)
-	if(isspaceturf(A) || istype(A, /obj/structure/lattice))
+	if(isspaceturf(A))
+		if(space_check(A))
+			if(useResource(1, user))
+				to_chat(user, "Building Floor...")
+				playsound(loc, usesound, 50, 1)
+				var/turf/AT = get_turf(A)
+				AT.ChangeTurf(/turf/open/floor/plating, ignore_air = TRUE)
+				return TRUE
+			to_chat(user, "<span class='warning'>ERROR! Not enough matter in unit to construct this floor!</span>")
+			playsound(loc, 'sound/machines/click.ogg', 50, 1)
+			return FALSE
+		to_chat(user, "<span class='warning'>ERROR! You cannot construct a floor in space without anything surrounding it!</span>")
+		playsound(loc, 'sound/machines/click.ogg', 50, 1)
+		return FALSE
+
+	if(istype(A, /obj/structure/lattice))
 		if(useResource(1, user))
 			to_chat(user, "Building Floor...")
 			playsound(loc, usesound, 50, 1)
 			var/turf/AT = get_turf(A)
-			AT.ChangeTurf(/turf/simulated/floor/plating)
+			AT.ChangeTurf(/turf/open/floor/plating, ignore_air = TRUE)
 			return TRUE
 		to_chat(user, "<span class='warning'>ERROR! Not enough matter in unit to construct this floor!</span>")
 		playsound(loc, 'sound/machines/click.ogg', 50, 1)
@@ -368,7 +384,7 @@
 					return FALSE
 				playsound(loc, usesound, 50, 1)
 				var/turf/AT = A
-				AT.ChangeTurf(/turf/simulated/wall)
+				AT.ChangeTurf(/turf/closed/wall, ignore_air = TRUE)
 				return TRUE
 			return FALSE
 		to_chat(user, "<span class='warning'>ERROR! Not enough matter in unit to construct this wall!</span>")
@@ -376,6 +392,16 @@
 		return FALSE
 	to_chat(user, "<span class='warning'>ERROR! Location unsuitable for wall construction!</span>")
 	playsound(loc, 'sound/machines/click.ogg', 50, 1)
+	return FALSE
+
+/obj/item/rcd/proc/space_check(atom/center)
+	for(var/direction in GLOB.cardinal)
+		var/turf/T = get_ranged_target_turf(center, direction, 1)
+		if(!isspaceturf(T))
+			return TRUE
+		for(var/A in T.contents)
+			if(istype(A, /obj/structure/lattice))
+				return TRUE
 	return FALSE
 
 /**
@@ -426,7 +452,7 @@
  */
 /obj/item/rcd/proc/mode_decon(atom/A, mob/user)
 	if(iswallturf(A))
-		if(istype(A, /turf/simulated/wall/r_wall) && !canRwall)
+		if(istype(A, /turf/closed/wall/r_wall) && !canRwall)
 			return FALSE
 		if(checkResource(5, user))
 			to_chat(user, "Deconstructing Wall...")
@@ -436,7 +462,7 @@
 					return FALSE
 				playsound(loc, usesound, 50, 1)
 				var/turf/AT = A
-				AT.ChangeTurf(/turf/simulated/floor/plating)
+				AT.ChangeTurf(/turf/open/floor/plating)
 				return TRUE
 			return FALSE
 		to_chat(user, "<span class='warning'>ERROR! Not enough matter in unit to deconstruct this wall!</span>")
@@ -545,7 +571,7 @@
 				var/obj/structure/window/reinforced/W = new(A)
 				W.dir = cdir
 		var/turf/AT = A
-		AT.ChangeTurf(/turf/simulated/floor/plating) // Platings go under windows.
+		AT.ChangeTurf(/turf/open/floor/plating) // Platings go under windows.
 		return TRUE
 	to_chat(user, "<span class='warning'>ERROR! Location unsuitable for window construction!</span>")
 	playsound(loc, 'sound/machines/click.ogg', 50, 1)
@@ -554,7 +580,7 @@
 /obj/item/rcd/afterattack(atom/A, mob/user, proximity)
 	if(!proximity)
 		return FALSE
-	if(istype(A, /turf/space/transit))
+	if(istype(A, /turf/open/space/transit))
 		return FALSE
 	if(!is_type_in_list(A, allowed_targets))
 		return FALSE

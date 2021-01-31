@@ -50,10 +50,10 @@
 	if(widenet)
 		var/turf/T = loc
 		if(istype(T))
-			for(var/turf/simulated/tile in T.GetAtmosAdjacentTurfs(alldir=1))
+			for(var/turf/open/tile in T.GetAtmosAdjacentTurfs(alldir=1))
 				scrub(tile)
 
-/obj/machinery/portable_atmospherics/scrubber/proc/scrub(turf/simulated/tile)
+/obj/machinery/portable_atmospherics/scrubber/proc/scrub(turf/open/tile)
 	var/datum/gas_mixture/environment
 	if(holding)
 		environment = holding.air_contents

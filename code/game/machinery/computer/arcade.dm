@@ -423,7 +423,7 @@
 
 	if(busy)
 		return
-	busy = 1
+	busy = TRUE
 
 	if(href_list["continue"]) //Continue your travels
 		if(turns >= ORION_TRAIL_WINTURN)
@@ -468,7 +468,7 @@
 						playsound(loc, 'sound/effects/splat.ogg', 50, 1)
 						M.adjust_nutrition(-50) //lose a lot of food
 						var/turf/location = usr.loc
-						if(istype(location, /turf/simulated))
+						if(isopenturf(location))
 							location.add_vomit_floor(TRUE)
 				if(ORION_TRAIL_FLUX)
 					if(prob(75))
@@ -481,7 +481,7 @@
 				if(ORION_TRAIL_COLLISION) //by far the most damaging event
 					if(prob(90))
 						playsound(src.loc, 'sound/effects/bang.ogg', 100, 1)
-						var/turf/simulated/floor/F
+						var/turf/open/floor/F
 						for(F in orange(1, src))
 							F.ChangeTurf(F.baseturf)
 						atom_say("Something slams into the floor around [src], exposing it to space!")
@@ -489,9 +489,9 @@
 							sleep(10)
 							atom_say("A new floor suddenly appears around [src]. What the hell?")
 							playsound(src.loc, 'sound/weapons/genhit.ogg', 100, 1)
-							var/turf/space/T
+							var/turf/open/space/T
 							for(T in orange(1, src))
-								T.ChangeTurf(/turf/simulated/floor/plating)
+								T.ChangeTurf(/turf/open/floor/plating)
 					else
 						atom_say("Something slams into the floor around [src] - luckily, it didn't get through!")
 						playsound(src.loc, 'sound/effects/bang.ogg', 20, 1)

@@ -467,7 +467,7 @@ Changelog for changes we incorporate from upstream (Paradise Station).
     * Adds a NO-OP `/obj/machinery/defibrillator_mount/attack_ai` to prevent borgs from using the wall defibs
 * Paradise #[13414](https://github.com/ParadiseSS13/Paradise/pull/13414): Fixes some runtimes
     * Adds some checks to avoid runtimes
-    * Moves a call to super in `/obj/structure/lattice/catwalk/swarmer_act`
+    * Moves a call to super in `/obj/structure/lattice/catwalk/swarmer_catwalk_act`
 * Paradise #[13408](https://github.com/ParadiseSS13/Paradise/pull/13408): Moves config loading to world/New not Master/New
     * Moves `load_configuration()` from `/datum/controller/master/New` to `/world/New`
 * Paradise #[13394](https://github.com/ParadiseSS13/Paradise/pull/13394): Fixes the sensory restoration symptom message

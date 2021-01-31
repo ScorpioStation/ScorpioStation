@@ -57,7 +57,7 @@
 	block = GLOB.shadowblock
 
 /datum/dna/gene/basic/stealth/darkcloak/OnMobLife(mob/M)
-	var/turf/simulated/T = get_turf(M)
+	var/turf/open/T = get_turf(M)
 	if(!istype(T))
 		return
 	var/light_available = T.get_lumcount() * 10

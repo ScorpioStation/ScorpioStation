@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "b" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -8,12 +8,12 @@
 	icon_state = "propulsion";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
 "c" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	tag = "icon-wall3";
 	icon_state = "wall3"
 	},
@@ -26,13 +26,13 @@
 	icon_state = "heater";
 	dir = 1
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
 "e" = (
-/turf/space,
-/turf/simulated/shuttle{
+/turf/open/space,
+/turf/open/shuttle{
 	tag = "icon-wall3 (NORTHWEST)";
 	icon_state = "wall3";
 	dir = 9
@@ -41,8 +41,8 @@
 	name = "Shuttle"
 	})
 "f" = (
-/turf/space,
-/turf/simulated/shuttle{
+/turf/open/space,
+/turf/open/shuttle{
 	tag = "icon-wall3 (NORTHEAST)";
 	icon_state = "wall3";
 	dir = 5
@@ -51,8 +51,8 @@
 	name = "Shuttle"
 	})
 "g" = (
-/turf/simulated/shuttle/wall,
-/turf/simulated/shuttle{
+/turf/closed/shuttle/wall,
+/turf/open/shuttle{
 	tag = "icon-wall3 (SOUTHEAST)";
 	icon_state = "wall3";
 	dir = 6
@@ -61,13 +61,13 @@
 	name = "Shuttle"
 	})
 "h" = (
-/turf/simulated/shuttle/wall,
+/turf/closed/shuttle/wall,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
 "i" = (
-/turf/simulated/shuttle/wall,
-/turf/simulated/shuttle{
+/turf/closed/shuttle/wall,
+/turf/open/shuttle{
 	tag = "icon-wall3 (SOUTHWEST)";
 	icon_state = "wall3";
 	dir = 10
@@ -77,23 +77,23 @@
 	})
 "j" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
 "k" = (
 /obj/machinery/power/smes/magical,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
 "l" = (
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
 "m" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
@@ -103,7 +103,7 @@
 	icon_state = "propulsion";
 	tag = "icon-propulsion (EAST)"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
@@ -113,13 +113,13 @@
 	icon_state = "heater";
 	dir = 8
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
 "p" = (
 /obj/machinery/door/airlock/public/glass,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
@@ -129,7 +129,7 @@
 	icon_state = "heater";
 	dir = 4
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
@@ -139,13 +139,13 @@
 	icon_state = "propulsion";
 	tag = "icon-propulsion (WEST)"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
 "s" = (
-/turf/simulated/shuttle/wall,
-/turf/simulated/shuttle{
+/turf/closed/shuttle/wall,
+/turf/open/shuttle{
 	tag = "icon-wall3 (NORTHEAST)";
 	icon_state = "wall3";
 	dir = 5
@@ -155,13 +155,13 @@
 	})
 "t" = (
 /obj/effect/spawner/window/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
 "u" = (
-/turf/simulated/shuttle/wall,
-/turf/simulated/shuttle{
+/turf/closed/shuttle/wall,
+/turf/open/shuttle{
 	tag = "icon-wall3 (NORTHWEST)";
 	icon_state = "wall3";
 	dir = 9
@@ -171,7 +171,7 @@
 	})
 "v" = (
 /obj/structure/table,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-whiteyellowfull";
 	icon_state = "whiteyellowfull"
 	},
@@ -179,7 +179,7 @@
 	name = "Shuttle"
 	})
 "w" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-whiteyellowfull";
 	icon_state = "whiteyellowfull"
 	},
@@ -190,7 +190,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-whiteyellowfull";
 	icon_state = "whiteyellowfull"
 	},
@@ -198,8 +198,8 @@
 	name = "Shuttle"
 	})
 "y" = (
-/turf/space,
-/turf/simulated/shuttle{
+/turf/open/space,
+/turf/open/shuttle{
 	tag = "icon-wall3 (SOUTHWEST)";
 	icon_state = "wall3";
 	dir = 10
@@ -209,7 +209,7 @@
 	})
 "z" = (
 /obj/machinery/sleeper,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-bluefull";
 	icon_state = "bluefull"
 	},
@@ -217,7 +217,7 @@
 	name = "Shuttle"
 	})
 "A" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-dark";
 	icon_state = "dark"
 	},
@@ -225,8 +225,8 @@
 	name = "Shuttle"
 	})
 "B" = (
-/turf/space,
-/turf/simulated/shuttle{
+/turf/open/space,
+/turf/open/shuttle{
 	tag = "icon-wall3 (SOUTHEAST)";
 	icon_state = "wall3";
 	dir = 6
@@ -236,12 +236,12 @@
 	})
 "C" = (
 /obj/machinery/door/airlock/public/glass,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
 "D" = (
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-bluefull";
 	icon_state = "bluefull"
 	},
@@ -251,7 +251,7 @@
 "E" = (
 /obj/structure/table,
 /obj/item/storage/firstaid,
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	tag = "icon-bluefull";
 	icon_state = "bluefull"
 	},
@@ -260,13 +260,13 @@
 	})
 "F" = (
 /obj/structure/shuttle/engine/heater,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/ruin/powered{
 	name = "Shuttle"
 	})
 "G" = (
 /obj/structure/shuttle/engine/propulsion,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/ruin/powered{
 	name = "Shuttle"
 	})

@@ -444,7 +444,7 @@ GLOBAL_LIST_INIT(lawlorify, list (
 				D.oldform.revive() // Heal the old body too, so the devil doesn't resurrect, then immediately regress into a dead body.
 		if(body.stat == DEAD) // Not sure why this would happen
 			create_new_body()
-		else if(GLOB.blobstart.len > 0)
+		else if(length(GLOB.blobstart))
 			// teleport the body so repeated beatdowns aren't an option)
 			body.forceMove(get_turf(pick(GLOB.blobstart)))
 			// give them the devil lawyer outfit in case they got stripped
@@ -456,7 +456,7 @@ GLOBAL_LIST_INIT(lawlorify, list (
 	check_regression()
 
 /datum/devilinfo/proc/create_new_body()
-	if(GLOB.blobstart.len > 0)
+	if(length(GLOB.blobstart))
 		var/turf/targetturf = get_turf(pick(GLOB.blobstart))
 		var/mob/currentMob = owner.current
 		if(QDELETED(currentMob))

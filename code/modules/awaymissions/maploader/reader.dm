@@ -13,7 +13,7 @@ GLOBAL_DATUM_INIT(_preloader, /datum/dmm_suite/preloader, new())
  * WORKING :
  *
  * 1) Makes an associative mapping of model_keys with model
- *		e.g aa = /turf/unsimulated/wall{icon_state = "rock"}
+ *		e.g aa = /turf/closed/ind_wall{icon_state = "rock"}
  * 2) Read the map line by line, parsing the result (using parse_grid)
  *
  * If `measureOnly` is set, then no atoms will be created, and all this will do
@@ -174,7 +174,7 @@ GLOBAL_DATUM_INIT(_preloader, /datum/dmm_suite/preloader, new())
 
 /**
  * Fill a given tile with its area/turf/objects/mobs
- * Variable model is one full map line (e.g /turf/unsimulated/wall{icon_state = "rock"},/area/mine/dangerous/explored)
+ * Variable model is one full map line (e.g /turf/closed/ind_wall{icon_state = "rock"},/area/mine/dangerous/explored)
  *
  * WORKING :
  *
@@ -195,7 +195,7 @@ GLOBAL_DATUM_INIT(_preloader, /datum/dmm_suite/preloader, new())
 		same construction as those contained in a .dmm file, and instantiates them.
 	*/
 
-	var/list/members // will contain all members (paths) in model (in our example : /turf/unsimulated/wall and /area/mine/dangerous/explored)
+	var/list/members // will contain all members (paths) in model (in our example : /turf/closed/ind_wall and /area/mine/dangerous/explored)
 	var/list/members_attributes // will contain lists filled with corresponding variables, if any (in our example : list(icon_state = "rock") and list())
 	var/list/cached = modelCache[model]
 	var/index
@@ -216,7 +216,7 @@ GLOBAL_DATUM_INIT(_preloader, /datum/dmm_suite/preloader, new())
 		var/dpos
 
 		do
-			// finding next member (e.g /turf/unsimulated/wall{icon_state = "rock"} or /area/mine/dangerous/explored)
+			// finding next member (e.g /turf/closed/ind_wall{icon_state = "rock"} or /area/mine/dangerous/explored)
 			dpos = find_next_delimiter_position(model, old_position, ",", "{", "}") // find next delimiter (comma here) that's not within {...}
 
 			var/full_def = trim_text(copytext(model, old_position, dpos)) // full definition, e.g : /obj/foo/bar{variables=derp}
@@ -248,13 +248,13 @@ GLOBAL_DATUM_INIT(_preloader, /datum/dmm_suite/preloader, new())
 
 
 	////////////////
-	// Instanciation
+	// Instantiation
 	////////////////
 
 	// The next part of the code assumes there's ALWAYS an /area AND a /turf on a given tile
 
 	// first instance the /area and remove it from the members list
-	index = members.len
+	index = length(members)
 
 	var/turf/crds = locate(xcrd, ycrd, zcrd)
 	if(members[index] != /area/template_noop)
@@ -275,10 +275,10 @@ GLOBAL_DATUM_INIT(_preloader, /datum/dmm_suite/preloader, new())
 	// then instance the /turf and, if multiple tiles are presents, simulates the DMM underlays piling effect
 
 	var/first_turf_index = 1
-	while(!ispath(members[first_turf_index], /turf)) // find first /turf object in members
+	while(!ispath(members[first_turf_index], /turf)) // find first /turf in members
 		first_turf_index++
 
-	// instanciate the first /turf
+	// instantiate the first /turf
 	var/turf/T
 	if(members[first_turf_index] != /turf/template_noop)
 		T = instance_atom(members[first_turf_index], members_attributes[first_turf_index], xcrd, ycrd, zcrd)
@@ -286,7 +286,7 @@ GLOBAL_DATUM_INIT(_preloader, /datum/dmm_suite/preloader, new())
 	if(T)
 		// if others /turf are presents, simulates the underlays piling effect
 		index = first_turf_index + 1
-		var/mlen = members.len - 1
+		var/mlen = length(members) - 1
 		while(index <= mlen) // Last item is an /area
 			var/underlay
 			if(istype(T, /turf)) // I blame this on the stupid clown who coded the BYOND map editor

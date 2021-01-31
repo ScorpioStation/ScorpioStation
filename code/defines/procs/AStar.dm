@@ -3,7 +3,7 @@ A Star pathfinding algorithm
 Returns a list of tiles forming a path from A to B, taking dense objects as well as walls, and the orientation of
 windows along the route into account.
 Use:
-your_list = AStar(start location, end location, moving atom, distance proc, max nodes, maximum node depth, minimum distance to target, adjacent proc, atom id, turfs to exclude, check only simulated)
+your_list = AStar(start location, end location, moving atom, distance proc, max nodes, maximum node depth, minimum distance to target, adjacent proc, atom id, turfs to exclude, check only open)
 
 Optional extras to add on (in order):
 Distance proc : the distance used in every A* calculation (length of path and heuristic)
@@ -12,13 +12,13 @@ Maxnodedepth: The maximum number of nodes to search (default: 30, 0 = infinite)
 Mintargetdist: Minimum distance to the target before path returns, could be used to get
 near a target, but not right to it - for an AI mob with a gun, for example.
 Adjacent proc : returns the turfs to consider around the actually processed node
-Simulated only : whether to consider unsimulated turfs or not (used by some Adjacent proc)
+Open only : whether to consider unsimulated turfs or not (used by some Adjacent proc)
 
 Also added 'exclude' turf to avoid travelling over; defaults to null
 
 Actual Adjacent procs :
 
-	/turf/proc/reachableAdjacentTurfs : returns reachable turfs in cardinal directions (uses simulated_only)
+	/turf/proc/reachableAdjacentTurfs : returns reachable turfs in cardinal directions (uses open_only)
 
 	/turf/proc/reachableAdjacentAtmosTurfs : returns turfs in cardinal directions reachable via atmos
 
@@ -150,14 +150,14 @@ Actual Adjacent procs :
 	return path
 
 //Returns adjacent turfs in cardinal directions that are reachable
-//simulated_only controls whether only simulated turfs are considered or not
-/turf/proc/reachableAdjacentTurfs(caller, ID, simulated_only)
+//open_only controls whether only open turfs are considered or not
+/turf/proc/reachableAdjacentTurfs(caller, ID, open_only)
 	var/list/L = new()
-	var/turf/simulated/T
+	var/turf/open/T
 
 	for(var/dir in GLOB.cardinal)
 		T = get_step(src,dir)
-		if(!T || (simulated_only && !istype(T)))
+		if(!T || (open_only && !istype(T)))
 			continue
 		if(!T.density && !LinkBlockedWithAccess(T,caller, ID))
 			L.Add(T)

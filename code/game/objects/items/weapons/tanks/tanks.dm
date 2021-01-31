@@ -248,7 +248,7 @@
 	else if(pressure > TANK_RUPTURE_PRESSURE)
 //		to_chat(world, "<span class='notice'>[x],[y] tank is rupturing: [pressure] kPa, integrity [integrity]</span>")
 		if(integrity <= 0)
-			var/turf/simulated/T = get_turf(src)
+			var/turf/open/T = get_turf(src)
 			if(!T)
 				return
 			T.assume_air(air_contents)
@@ -260,7 +260,7 @@
 	else if(pressure > TANK_LEAK_PRESSURE)
 //		to_chat(world, "<span class='notice'>[x],[y] tank is leaking: [pressure] kPa, integrity [integrity]</span>")
 		if(integrity <= 0)
-			var/turf/simulated/T = get_turf(src)
+			var/turf/open/T = get_turf(src)
 			if(!T)
 				return
 			var/datum/gas_mixture/leaked_gas = air_contents.remove_ratio(0.25)

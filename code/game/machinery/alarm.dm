@@ -262,7 +262,7 @@
 	if((stat & (NOPOWER|BROKEN)) || shorted || buildstage != 2)
 		return
 
-	var/turf/simulated/location = loc
+	var/turf/open/location = loc
 	if(!istype(location))
 		return 0
 
@@ -314,7 +314,7 @@
 		apply_mode()
 
 
-/obj/machinery/alarm/proc/handle_heating_cooling(datum/gas_mixture/environment, datum/tlv/cur_tlv, turf/simulated/location)
+/obj/machinery/alarm/proc/handle_heating_cooling(datum/gas_mixture/environment, datum/tlv/cur_tlv, turf/open/location)
 	cur_tlv = TLV["temperature"]
 	//Handle temperature adjustment here.
 	if(environment.temperature < target_temperature - 2 || environment.temperature > target_temperature + 2 || regulating_temperature)

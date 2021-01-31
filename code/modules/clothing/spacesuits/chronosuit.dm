@@ -200,7 +200,7 @@
 				user.client.eye = src
 			var/step = get_step(src, direction)
 			if(step)
-				if(istype(step, /turf/space))
+				if(istype(step, /turf/open/space))
 					if(!src.Move(step))
 						src.loc = step
 				else

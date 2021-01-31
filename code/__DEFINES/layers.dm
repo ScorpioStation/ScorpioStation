@@ -13,8 +13,8 @@
 
 #define SPACE_LAYER 1.8
 //#define TURF_LAYER 2 //For easy recordkeeping; this is a byond define
-#define MID_TURF_LAYER 2.02
-#define HIGH_TURF_LAYER 2.03
+#define MID_TURF_LAYER 2.02		// This should really be called MID_DECAL_LAYER
+#define HIGH_TURF_LAYER 2.03	// HIGH_DECAL_LAYER
 #define TURF_PLATING_DECAL_LAYER 2.031
 #define TURF_DECAL_LAYER 2.039 //Makes turf decals appear in DM how they will look inworld.
 #define ABOVE_OPEN_TURF_LAYER 2.04
@@ -23,6 +23,7 @@
 #define ABOVE_NORMAL_TURF_LAYER 2.08
 #define ABOVE_ICYOVERLAY_LAYER 2.11
 #define LATTICE_LAYER 2.2
+#define CATWALK_LAYER 2.25
 #define DISPOSAL_PIPE_LAYER 2.3
 #define GAS_PIPE_HIDDEN_LAYER 2.35
 #define WIRE_LAYER 2.4

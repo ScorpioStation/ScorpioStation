@@ -11,8 +11,8 @@
 	plane = FLOOR_PLANE
 	var/number_of_rods = 1
 	canSmoothWith = list(/obj/structure/lattice,
-						/turf/simulated/floor,
-						/turf/simulated/wall,
+						/turf/open/floor,
+						/turf/closed/wall,
 						/obj/structure/falsewall)
 	smooth = SMOOTH_MORE
 
@@ -74,11 +74,13 @@
 		pixel_y = 0
 	return TRUE
 
+/* Catwalk Type */
 /obj/structure/lattice/catwalk
 	name = "catwalk"
 	desc = "A catwalk for easier EVA maneuvering and cable placement."
 	icon = 'icons/obj/smooth_structures/catwalk.dmi'
 	icon_state = "catwalk"
+	layer = CATWALK_LAYER
 	number_of_rods = 2
 	smooth = SMOOTH_TRUE
 	canSmoothWith = null
@@ -102,9 +104,9 @@
 	name = "clockwork catwalk"
 	icon = 'icons/obj/smooth_structures/catwalk_clockwork.dmi'
 	canSmoothWith = list(/obj/structure/lattice,
-	/turf/simulated/floor,
-	/turf/simulated/wall,
-	/obj/structure/falsewall)
+		/turf/open/floor,
+		/turf/closed/wall,
+		/obj/structure/falsewall)		// This canSmoothWith list looks odd - Lil' Miss Turf Refactor
 	smooth = SMOOTH_MORE
 
 /obj/structure/lattice/catwalk/clockwork/Initialize(mapload)

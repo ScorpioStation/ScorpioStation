@@ -315,7 +315,7 @@
 	. = ..()
 	if(. && explosive_wall_group)
 		for(var/wall in GLOB.explosive_walls)
-			var/turf/simulated/wall/mineral/plastitanium/explosive/E = wall
+			var/turf/closed/wall/mineral/plastitanium/explosive/E = wall
 			if(E.explosive_wall_group == explosive_wall_group)
 				E.self_destruct()
 				sleep(5)

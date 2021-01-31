@@ -34,7 +34,7 @@ GLOBAL_LIST_INIT(tendrils, list())
 /obj/structure/spawner/lavaland/LateInitialize()
 	for(var/F in RANGE_TURFS(1, src))
 		if(ismineralturf(F))
-			var/turf/simulated/mineral/M = F
+			var/turf/closed/mineral/M = F
 			M.ChangeTurf(M.turf_type, FALSE, FALSE, TRUE)
 
 /obj/structure/spawner/lavaland/deconstruct(disassembled)
@@ -93,5 +93,5 @@ GLOBAL_LIST_INIT(tendrils, list())
 	visible_message("<span class='boldannounce'>The tendril falls inward, the ground around it widening into a yawning chasm!</span>")
 	for(var/turf/T in range(2,src))
 		if(!T.density)
-			T.TerraformTurf(/turf/simulated/floor/chasm/straight_down/lava_land_surface)
+			T.TerraformTurf(/turf/open/floor/chasm/straight_down/lava_land_surface)
 	qdel(src)

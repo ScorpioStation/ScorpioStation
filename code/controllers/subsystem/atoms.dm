@@ -37,9 +37,11 @@ SUBSYSTEM_DEF(atoms)
 	else
 		log_debug("Initializing atoms...")
 	var/count
+	var/t_count = 0
+	var/a_count = 0
 	var/list/mapload_arg = list(TRUE)
 	if(atoms)
-		count = atoms.len
+		count = length(atoms)
 		for(var/I in atoms)
 			var/atom/A = I
 			if(A && !A.initialized)
@@ -49,19 +51,26 @@ SUBSYSTEM_DEF(atoms)
 		count = 0
 		for(var/atom/A in world)
 			if(!A.initialized)
+				if(isturf(A))
+					++t_count
+				else
+					++a_count
 				InitAtom(A, mapload_arg)
 				++count
 				CHECK_TICK
-
 	if(noisy)
-		log_startup_progress("	Initialized [count] atoms in [stop_watch(watch)]s")
+		log_startup_progress("	Initialized [a_count] non-turf atoms")
+		log_startup_progress("	Initialized [t_count] turf atoms")
+		log_startup_progress("	Initialized [count] total atoms in [stop_watch(watch)]s")
 	else
-		log_debug("	Initialized [count] atoms in [stop_watch(watch)]s")
+		log_debug("	Initialized [a_count] non-turf atoms")
+		log_debug("	Initialized [t_count] turf atoms")
+		log_debug("	Initialized [count] total atoms in [stop_watch(watch)]s")
 	pass(count)
 
 	initialized = INITIALIZATION_INNEW_REGULAR
 
-	if(late_loaders.len)
+	if(length(late_loaders))
 		watch = start_watch()
 		if(noisy)
 			log_startup_progress("Late-initializing atoms...")
@@ -71,9 +80,9 @@ SUBSYSTEM_DEF(atoms)
 			var/atom/A = I
 			A.LateInitialize()
 		if(noisy)
-			log_startup_progress("	Late initialized [late_loaders.len] atoms in [stop_watch(watch)]s")
+			log_startup_progress("	Late initialized [length(late_loaders)] atoms in [stop_watch(watch)]s")
 		else
-			log_debug("	Late initialized [late_loaders.len] atoms in [stop_watch(watch)]s")
+			log_debug("	Late initialized [length(late_loaders)] atoms in [stop_watch(watch)]s")
 		late_loaders.Cut()
 
 /datum/controller/subsystem/atoms/proc/InitAtom(atom/A, list/arguments)

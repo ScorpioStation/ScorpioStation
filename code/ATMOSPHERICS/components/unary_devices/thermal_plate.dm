@@ -12,10 +12,9 @@
 
 /obj/machinery/atmospherics/unary/thermal_plate/update_icon()
 	..()
-
 	var/prefix = ""
 	//var/suffix="_idle" // Also available: _heat, _cool
-	if(level == 1 && istype(loc, /turf/simulated))
+	if(level == 1 && isopenturf(loc))
 		prefix = "h"
 	icon_state = "[prefix]off"
 

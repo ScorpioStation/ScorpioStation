@@ -185,7 +185,7 @@
 		return
 	operating = TRUE
 	var/turf/previousturf = get_turf(src)
-	for(var/turf/simulated/T in turflist)
+	for(var/turf/open/T in turflist)
 		if(!T.air)
 			break
 		if(T == previousturf)
@@ -246,8 +246,8 @@
 		QDEL_NULL(ptank)
 		return 1 //It hit the flamethrower, not them
 
-/obj/item/assembly/igniter/proc/flamethrower_process(turf/simulated/location)
+/obj/item/assembly/igniter/proc/flamethrower_process(turf/open/location)
 	location.hotspot_expose(700, 2)
 
-/obj/item/assembly/igniter/proc/ignite_turf(obj/item/flamethrower/F, turf/simulated/location, release_amount = 0.05)
+/obj/item/assembly/igniter/proc/ignite_turf(obj/item/flamethrower/F, turf/open/location, release_amount = 0.05)
 	F.default_ignite(location, release_amount)

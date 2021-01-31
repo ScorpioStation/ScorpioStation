@@ -56,21 +56,21 @@
 /datum/station_state/proc/count()
 	for(var/turf/T in block(locate(1,1,1), locate(world.maxx,world.maxy,1)))
 
-		if(istype(T,/turf/simulated/floor))
+		if(istype(T,/turf/open/floor))
 			if(!(T:burnt))
 				src.floor += 12
 			else
 				src.floor += 1
 
-		if(istype(T, /turf/simulated/wall))
-			var/turf/simulated/wall/W = T
+		if(istype(T, /turf/closed/wall))
+			var/turf/closed/wall/W = T
 			if(W.intact)
 				src.wall += 2
 			else
 				src.wall += 1
 
-		if(istype(T, /turf/simulated/wall/r_wall))
-			var/turf/simulated/wall/r_wall/R = T
+		if(istype(T, /turf/closed/wall/r_wall))
+			var/turf/closed/wall/r_wall/R = T
 			if(R.intact)
 				src.r_wall += 2
 			else

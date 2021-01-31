@@ -3,38 +3,38 @@
 /turf/template_noop,
 /area/template_noop)
 "ab" = (
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/space/nearstation)
 "ac" = (
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/space/nearstation)
 "ad" = (
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/unpowered)
 "ae" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/unpowered)
 "af" = (
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "ag" = (
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/ruin/powered)
 "ah" = (
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating/asteroid/airless,
+/turf/open/floor/plating/asteroid/airless,
 /area/ruin/powered)
 "ai" = (
-/turf/simulated/mineral,
+/turf/closed/mineral,
 /area/ruin/powered)
 "aj" = (
-/turf/simulated/floor/plating/asteroid/airless,
-/turf/simulated/shuttle/wall{
+/turf/open/floor/plating/asteroid/airless,
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f6";
 	dir = 2
 	},
@@ -42,23 +42,23 @@
 "ak" = (
 /obj/structure/grille,
 /obj/structure/window/full/shuttle,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "al" = (
-/turf/simulated/floor/plating/asteroid/airless,
-/turf/simulated/shuttle/wall{
+/turf/open/floor/plating/asteroid/airless,
+/turf/closed/shuttle/wall{
 	dir = 2;
 	icon_state = "swall_f10";
 	layer = 2
 	},
 /area/ruin/powered)
 "am" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "an" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3";
 	dir = 2
 	},
@@ -67,19 +67,19 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "ap" = (
 /obj/structure/table,
 /obj/structure/reagent_dispensers/beerkeg,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "aq" = (
 /obj/structure/table,
 /obj/machinery/vending/boozeomat,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -88,64 +88,64 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "as" = (
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "at" = (
 /obj/structure/table,
 /obj/item/toy/figure/bartender,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "au" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/shaker,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "av" = (
 /obj/effect/decal/remains/human,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "aw" = (
 /obj/structure/reagent_dispensers/beerkeg,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "ax" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "ay" = (
 /obj/machinery/door/airlock{
 	name = "Bar Storage";
 	req_access_txt = "25"
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "az" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "aA" = (
 /obj/structure/shuttle/engine/propulsion/burst,
-/turf/simulated/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/open/floor/plating,
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -154,12 +154,12 @@
 /obj/machinery/door/airlock/shuttle{
 	name = "Escape Pod Airlock"
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/ruin/powered)
 "aC" = (
 /obj/structure/shuttle/engine/propulsion/burst,
-/turf/simulated/floor/plating,
-/turf/simulated/shuttle/wall{
+/turf/open/floor/plating,
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
@@ -170,19 +170,19 @@
 	name = "pod door cycle";
 	pixel_x = -26
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "aE" = (
 /obj/machinery/vending/boozeomat,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "aF" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -190,13 +190,13 @@
 /obj/machinery/light/small,
 /obj/structure/table,
 /obj/machinery/kitchen_machine/microwave,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "aH" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -205,16 +205,16 @@
 /obj/item/stack/sheet/metal{
 	amount = 10
 	},
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "aJ" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/powered)
 "aK" = (
 /obj/structure/table,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -222,7 +222,7 @@
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/cans/beer,
 /obj/item/reagent_containers/glass/rag,
-/turf/simulated/floor/wood,
+/turf/open/floor/wood,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -231,7 +231,7 @@
 	name = "Bar Storage";
 	req_access_txt = "25"
 	},
-/turf/simulated/floor/plasteel{
+/turf/open/floor/plasteel{
 	icon_state = "wood"
 	},
 /area/ruin/powered{
@@ -239,12 +239,12 @@
 	})
 "aN" = (
 /obj/structure/chair/stool/bar,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "aO" = (
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -252,32 +252,32 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "aQ" = (
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "aR" = (
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "aS" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "aT" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -287,13 +287,13 @@
 	icon_state = "chair";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "aV" = (
 /obj/structure/table/wood,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -303,7 +303,7 @@
 	icon_state = "chair";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -312,44 +312,44 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "aY" = (
 /obj/structure/chair,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "aZ" = (
 /obj/item/radio/beacon,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "ba" = (
 /obj/machinery/vending/cola,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "bb" = (
 /obj/machinery/vending/cigarette,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "bc" = (
 /obj/machinery/vending/coffee,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "bd" = (
 /obj/machinery/vending/snack,
 /obj/machinery/light,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -357,7 +357,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -365,7 +365,7 @@
 /obj/machinery/door/airlock{
 	name = "Unisex Bathroom"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -373,7 +373,7 @@
 /obj/structure/urinal{
 	pixel_x = -32
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -387,7 +387,7 @@
 /obj/structure/mirror{
 	pixel_x = 28
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -397,7 +397,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -405,7 +405,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -416,7 +416,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
@@ -424,27 +424,27 @@
 /obj/machinery/door/airlock{
 	name = "Toilet"
 	},
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "bm" = (
 /obj/structure/glowshroom/single,
-/turf/simulated/floor/plasteel,
+/turf/open/floor/plasteel,
 /area/ruin/powered{
 	name = "Space Bar"
 	})
 "bn" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "bo" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "bp" = (
 /obj/structure/shuttle/engine/propulsion/burst,
-/turf/simulated/floor/plating/asteroid/airless,
-/turf/simulated/shuttle/wall{
+/turf/open/floor/plating/asteroid/airless,
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f5";
 	dir = 2
 	},
@@ -454,26 +454,26 @@
 	id_tag = "pod cycle";
 	name = "airlock dock"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "br" = (
 /obj/machinery/door/poddoor{
 	id_tag = "pod cycle";
 	name = "airlock dock"
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered)
 "bs" = (
 /obj/structure/shuttle/engine/propulsion/burst,
-/turf/simulated/floor/plating/asteroid/airless,
-/turf/simulated/shuttle/wall{
+/turf/open/floor/plating/asteroid/airless,
+/turf/closed/shuttle/wall{
 	icon_state = "swall_f9";
 	dir = 2
 	},
 /area/ruin/powered)
 "bt" = (
 /obj/effect/decal/warning_stripes/south,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/ruin/powered)
 
 (1,1,1) = {"

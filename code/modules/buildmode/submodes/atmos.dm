@@ -44,10 +44,10 @@
 	var/ctrl_click = pa.Find("ctrl")
 	if(left_click) //rectangular
 		for(var/turf/T in block(cornerA,cornerB))
-			if(istype(T, /turf/simulated))
+			if(isopenturf(T))
 				// fill the turf with the appropriate gasses
 				// this feels slightly icky
-				var/turf/simulated/S = T
+				var/turf/open/S = T
 				if(S.air)
 					S.air.temperature = temperature
 					S.air.oxygen = ppratio_to_moles(oxygen)

@@ -7,7 +7,7 @@
 
 /datum/map_template/shelter/New()
 	. = ..()
-	blacklisted_turfs = typecacheof(list(/turf/simulated/wall, /turf/simulated/mineral, /turf/simulated/shuttle/wall))
+	blacklisted_turfs = typecacheof(list(/turf/closed/wall, /turf/closed/mineral, /turf/closed/shuttle/wall))
 	whitelisted_turfs = list()
 	banned_areas = typecacheof(/area/shuttle)
 
@@ -39,7 +39,7 @@
 
 /datum/map_template/shelter/alpha/New()
 	. = ..()
-	whitelisted_turfs = typecacheof(/turf/simulated/mineral)
+	whitelisted_turfs = typecacheof(/turf/closed/mineral)
 
 /datum/map_template/shelter/beta
 	name = "Shelter Beta"
@@ -53,4 +53,4 @@
 
 /datum/map_template/shelter/beta/New()
 	. = ..()
-	whitelisted_turfs = typecacheof(/turf/simulated/mineral)
+	whitelisted_turfs = typecacheof(/turf/closed/mineral)

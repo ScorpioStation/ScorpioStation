@@ -147,7 +147,7 @@
 	deconstruct()
 
 /obj/structure/grille/screwdriver_act(mob/user, obj/item/I)
-	if(!(istype(loc, /turf/simulated) || anchored))
+	if(!(isopenturf(loc) || anchored))
 		return
 	. = TRUE
 	if(shock(user, 90))

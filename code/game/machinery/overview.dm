@@ -33,9 +33,9 @@
 //	to_chat(world, "[icount] images in list")
 
 
-	for(var/wx = 1 ; wx <= world.maxx; wx++)
+	for(var/wx in 1 to world.maxx)
 
-		for(var/wy = 1; wy <= world.maxy; wy++)
+		for(var/wy in 1 to world.maxy)
 
 			var/turf/T = locate(wx, wy, z)
 
@@ -48,34 +48,33 @@
 				colour = rgb(0,0,0)
 
 			else
-				var/sense = 1
+				var/sense = TRUE
 				switch("[T.type]")
-					if("/turf/space")
+					if("/turf/open/space")
 						colour = rgb(10,10,10)
-						sense = 0
+						sense = FALSE
 
-					if("/turf/simulated/floor")
+					if("/turf/open/floor")
 						colour = rgb(150,150,150)
 						var/turf/simulated/floor/TF = T
 						if(TF.burnt == 1)
 							sense = 0
 							colour = rgb(130,130,130)
 
-					if("/turf/simulated/floor/engine")
+					if("/turf/open/floor/engine")
 						colour = rgb(128,128,128)
 
-					if("/turf/simulated/wall")
+					if("/turf/closed/wall")
 						colour = rgb(96,96,96)
 
-					if("/turf/simulated/wall/r_wall")
+					if("/turf/closed/wall/r_wall")
 						colour = rgb(128,96,96)
 
-					if("/turf/unsimulated/floor")
+					if("/turf/open/ind_floor")
 						colour  = rgb(240,240,240)
 
-					if("/turf/unsimulated/wall", "/turf/unsimulated/wall/other")
+					if("/turf/closed/ind_wall", "/turf/closed/ind_wall/r_wall")
 						colour  = rgb(140,140,140)
-
 					else
 						colour = rgb(0,40,0)
 
@@ -191,9 +190,9 @@
 	for(var/i = 0; i<icount; i++)
 		imap += icon('icons/misc/imap.dmi', "blank")
 
-	for(var/wx = 1 ; wx <= world.maxx; wx++)
+	for(var/wx in 1 to world.maxx)
 
-		for(var/wy = 1; wy <= world.maxy; wy++)
+		for(var/wy in 1 to world.maxy)
 
 			var/turf/T = locate(wx, wy, z)
 
@@ -203,13 +202,13 @@
 				colour = rgb(0,0,0)
 
 			else
-				var/sense = 1
+				var/sense = TRUE
 				switch("[T.type]")
-					if("/turf/space")
+					if("/turf/open/space")
 						colour = rgb(10,10,10)
-						sense = 0
+						sense = FALSE
 
-					if("/turf/simulated/floor", "/turf/simulated/floor/engine")
+					if("/turf/open/floor", "/turf/open/floor/engine")
 						var/datum/gas_mixture/environment = T.return_air()
 						var/turf_total = environment.total_moles()
 						var/t1 = turf_total / MOLES_CELLSTANDARD * 175
@@ -220,16 +219,16 @@
 							t1 = min(100, t1-100)
 							colour = rgb( t1*2.55, t1*2.55, 255)
 
-					if("/turf/simulated/wall")
+					if("/turf/closed/wall")
 						colour = rgb(96,96,96)
 
-					if("/turf/simulated/wall/r_wall")
+					if("/turf/closed/wall/r_wall")
 						colour = rgb(128,96,96)
 
-					if("/turf/unsimulated/floor")
+					if("/turf/open/ind_floor")
 						colour  = rgb(240,240,240)
 
-					if("/turf/unsimulated/wall", "/turf/unsimulated/wall/other")
+					if("/turf/closed/ind_wall", "/turf/closed/ind_wall/r_wall")
 						colour  = rgb(140,140,140)
 
 					else

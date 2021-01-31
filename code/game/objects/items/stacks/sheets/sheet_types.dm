@@ -428,7 +428,7 @@ GLOBAL_LIST_INIT(brass_recipes, list (\
 	max_amount = 50
 	throw_speed = 1
 	throw_range = 3
-	turf_type = /turf/simulated/floor/clockwork
+	turf_type = /turf/open/floor/clockwork
 
 /obj/item/stack/tile/brass/narsie_act()
 	new /obj/item/stack/sheet/runed_metal(loc, amount)

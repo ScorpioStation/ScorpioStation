@@ -45,23 +45,16 @@ GLOBAL_LIST_INIT(glass_sheet_types, typecacheof(list(
 #define is_glass_sheet(O) (is_type_in_typecache(O, GLOB.glass_sheet_types))
 
 //Turfs
-#define issimulatedturf(A) istype(A, /turf/simulated)
-
-#define isspaceturf(A) istype(A, /turf/space)
-
-#define isfloorturf(A) istype(A, /turf/simulated/floor)
-
-#define isunsimulatedturf(A) istype(A, /turf/unsimulated)
-
-#define iswallturf(A) istype(A, /turf/simulated/wall)
-
-#define isreinforcedwallturf(A) istype(A, /turf/simulated/wall/r_wall)
-
-#define ismineralturf(A) istype(A, /turf/simulated/mineral)
-
-#define islava(A) (istype(A, /turf/simulated/floor/plating/lava))
-
-#define ischasm(A) (istype(A, /turf/simulated/floor/chasm))
+#define isopenturf(A) istype(A, /turf/open)
+#define isclosedturf(A) istype(A, /turf/closed)
+#define isspaceturf(A) istype(A, /turf/open/space)
+#define isfloorturf(A) istype(A, /turf/open/floor)
+#define isindestructibleturf(A) A.indestructible_turf
+#define iswallturf(A) istype(A, /turf/closed/wall)
+#define isreinforcedwallturf(A) istype(A, /turf/closed/wall/r_wall)
+#define ismineralturf(A) istype(A, /turf/closed/mineral)
+#define islava(A) (istype(A, /turf/open/floor/plating/lava))
+#define ischasm(A) (istype(A, /turf/open/floor/chasm))
 
 //Mobs
 #define isliving(A) (istype(A, /mob/living))

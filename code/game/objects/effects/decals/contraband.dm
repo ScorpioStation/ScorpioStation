@@ -122,7 +122,7 @@
 	return P
 
 //seperated to reduce code duplication. Moved here for ease of reference and to unclutter r_wall/attackby()
-/turf/simulated/wall/proc/place_poster(obj/item/poster/P, mob/user)
+/turf/closed/wall/proc/place_poster(obj/item/poster/P, mob/user)
 	if(!P.poster_structure)
 		return
 	var/stuff_on_wall = 0

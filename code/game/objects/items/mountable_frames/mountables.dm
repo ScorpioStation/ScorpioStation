@@ -1,11 +1,11 @@
 /obj/item/mounted
-	var/list/buildon_types = list(/turf/simulated/wall)
+	var/list/buildon_types = list(/turf/closed/wall)
 
 
-/obj/item/mounted/afterattack(var/atom/A, mob/user, proximity_flag)
+/obj/item/mounted/afterattack(atom/A, mob/user, proximity_flag)
 	var/found_type = 0
 	for(var/turf_type in src.buildon_types)
-		if(istype(A, turf_type))
+		if(isopenturf(A))
 			found_type = 1
 			break
 

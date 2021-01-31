@@ -58,8 +58,8 @@
 	hide(T.intact)
 	update_icon()
 
-/obj/machinery/atmospherics/pipe/manifold/hide(var/i)
-	if(level == 1 && istype(loc, /turf/simulated))
+/obj/machinery/atmospherics/pipe/manifold/hide(i)
+	if(level == 1 && isopenturf(loc))
 		invisibility = i ? 101 : 0
 
 /obj/machinery/atmospherics/pipe/manifold/pipeline_expansion()

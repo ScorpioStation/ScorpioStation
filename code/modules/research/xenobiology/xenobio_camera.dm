@@ -341,12 +341,12 @@
 	..()
 
 //Place slimes
-/turf/simulated/ShiftClick(mob/user)
+/turf/open/ShiftClick(mob/user)
 	SEND_SIGNAL(user, COMSIG_XENO_TURF_CLICK_SHIFT, src)
 	..()
 
 //Place monkey
-/turf/simulated/CtrlClick(mob/user)
+/turf/open/CtrlClick(mob/user)
 	SEND_SIGNAL(user, COMSIG_XENO_TURF_CLICK_CTRL, src)
 	..()
 

@@ -4,58 +4,58 @@
 /area/template_noop)
 "b" = (
 /obj/structure/disposalpipe/segment,
-/turf/space,
+/turf/open/space,
 /area/space)
 "c" = (
 /obj/structure/lattice,
 /obj/structure/disposalpipe/broken{
 	dir = 1
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "d" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/template_noop)
 "e" = (
 /obj/structure/grille/broken,
-/turf/space,
+/turf/open/space,
 /area/space)
 "g" = (
 /obj/structure/disposalpipe/broken{
 	dir = 4
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "h" = (
 /obj/structure/disposalpipe/broken{
 	dir = 8
 	},
 /obj/item/stack/cable_coil/cut,
-/turf/space,
+/turf/open/space,
 /area/space)
 "l" = (
 /obj/item/stack/cable_coil/cut,
-/turf/space,
+/turf/open/space,
 /area/space)
 "m" = (
 /obj/effect/spawner/random_spawners/grille_often,
-/turf/space,
+/turf/open/space,
 /area/space)
 "n" = (
 /obj/effect/spawner/random_spawners/grille_maybe,
-/turf/space,
+/turf/open/space,
 /area/space)
 "o" = (
 /obj/random/tool,
-/turf/space,
+/turf/open/space,
 /area/space)
 "p" = (
 /obj/structure/girder/displaced,
-/turf/space,
+/turf/open/space,
 /area/space)
 "r" = (
-/turf/space,
+/turf/open/space,
 /area/template_noop)
 "t" = (
 /obj/structure/cable{
@@ -63,38 +63,38 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "u" = (
 /obj/structure/door_assembly/door_assembly_sec,
 /obj/item/airlock_electronics,
-/turf/space,
+/turf/open/space,
 /area/space)
 "v" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/space)
 "x" = (
 /obj/structure/disposalpipe/junction,
-/turf/space,
+/turf/open/space,
 /area/space)
 "y" = (
-/turf/simulated/floor/plating/burnt,
+/turf/open/floor/plating/burnt,
 /area/space)
 "z" = (
 /obj/item/stack/sheet/metal,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/space)
 "B" = (
 /obj/structure/lattice,
 /obj/item/stack/sheet/metal,
-/turf/space,
+/turf/open/space,
 /area/space)
 "C" = (
 /obj/structure/disposalpipe/broken{
 	dir = 1
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "D" = (
 /obj/structure/cable{
@@ -104,72 +104,72 @@
 	pixel_y = 0;
 	tag = ""
 	},
-/turf/simulated/floor/plating/burnt,
+/turf/open/floor/plating/burnt,
 /area/space)
 "E" = (
 /obj/item/stack/rods,
-/turf/space,
+/turf/open/space,
 /area/space)
 "F" = (
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/space)
 "G" = (
 /obj/random/toolbox,
-/turf/simulated/floor/plating/burnt,
+/turf/open/floor/plating/burnt,
 /area/space)
 "I" = (
 /obj/structure/grille/broken,
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/space)
 "J" = (
 /obj/structure/disposalpipe/broken,
-/turf/space,
+/turf/open/space,
 /area/space)
 "K" = (
 /obj/item/shard,
-/turf/space,
+/turf/open/space,
 /area/space)
 "N" = (
 /obj/structure/lattice,
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/space)
 "O" = (
 /obj/machinery/power/apc/worn_out{
 	pixel_y = -24
 	},
 /obj/structure/cable,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/space)
 "Q" = (
 /obj/effect/decal/cleanable/shreds{
 	pixel_x = 4;
 	pixel_y = 3
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/space)
 "T" = (
 /obj/structure/girder,
-/turf/simulated/floor/plating/burnt,
+/turf/open/floor/plating/burnt,
 /area/space)
 "U" = (
 /obj/effect/spawner/random_barrier/wall_probably,
-/turf/space,
+/turf/open/space,
 /area/space)
 "V" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/space)
 "X" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "Y" = (
 /obj/item/shard,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/space)
 "Z" = (
 /obj/item/stack/sheet/metal,
-/turf/space,
+/turf/open/space,
 /area/space)
 
 (1,1,1) = {"

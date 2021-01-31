@@ -129,7 +129,7 @@
 			LAZYCLEARLIST(cached_tentacle_turfs)
 			last_location = loc
 			tentacle_recheck_cooldown = world.time + initial(tentacle_recheck_cooldown)
-			for(var/turf/simulated/floor/T in orange(4, loc))
+			for(var/turf/open/floor/T in orange(4, loc))
 				LAZYADD(cached_tentacle_turfs, T)
 		for(var/t in cached_tentacle_turfs)
 			if(isfloorturf(t))
@@ -157,7 +157,7 @@
 	if(!QDELETED(new_spawner))
 		spawner = new_spawner
 	if(ismineralturf(loc))
-		var/turf/simulated/mineral/M = loc
+		var/turf/closed/mineral/M = loc
 		M.gets_drilled()
 	deltimer(timerid)
 	timerid = addtimer(CALLBACK(src, .proc/tripanim), 7, TIMER_STOPPABLE)

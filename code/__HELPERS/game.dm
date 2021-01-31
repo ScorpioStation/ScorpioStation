@@ -31,6 +31,7 @@
 		areas |= T.loc
 	return areas
 
+// Turf Getting Procs
 /proc/get_open_turf_in_dir(atom/center, dir)
 	var/turf/T = get_ranged_target_turf(center, dir, 1)
 	if(T && !T.density)
@@ -48,6 +49,35 @@
 	var/list/adjacent_turfs = get_adjacent_open_turfs(center)
 	for(var/I in adjacent_turfs)
 		. |= get_area(I)
+
+// returns turf relative to A in given direction at set range
+// result is bounded to map size
+// note range is non-pythagorean
+// used for disposal system
+/proc/get_ranged_target_turf(var/atom/A, var/direction, var/range)
+
+	var/x = A.x
+	var/y = A.y
+	if(direction & NORTH)
+		y = min(world.maxy, y + range)
+	if(direction & SOUTH)
+		y = max(1, y - range)
+	if(direction & EAST)
+		x = min(world.maxx, x + range)
+	if(direction & WEST)
+		x = max(1, x - range)
+
+	return locate(x,y,A.z)
+
+
+// returns turf relative to A offset in dx and dy tiles
+// bound to map limits
+/proc/get_offset_target_turf(var/atom/A, var/dx, var/dy)
+	var/x = min(world.maxx, max(1, A.x + dx))
+	var/y = min(world.maxy, max(1, A.y + dy))
+	return locate(x,y,A.z)
+
+
 
 // Like view but bypasses luminosity check
 

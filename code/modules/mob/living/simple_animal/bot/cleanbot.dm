@@ -93,9 +93,9 @@
 		return
 
 	if(emagged == 2) //Emag functions
-		if(istype(loc,/turf/simulated))
+		if(isopenturf(loc))
 			if(prob(10)) //Wets floors randomly
-				var/turf/simulated/T = loc
+				var/turf/open/T = loc
 				T.MakeSlippery()
 
 			if(prob(5)) //Spawns foam!

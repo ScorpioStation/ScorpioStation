@@ -4,7 +4,7 @@
 	var/volume = 0
 	force = 20
 	use_power = NO_POWER_USE
-	can_unwrench = 1
+	can_unwrench = TRUE
 	damage_deflection = 12
 	var/alert_pressure = 80*ONE_ATMOSPHERE //minimum pressure before check_pressure(...) should be called
 
@@ -16,7 +16,7 @@
 /obj/machinery/atmospherics/pipe/New()
 	..()
 	//so pipes under walls are hidden
-	if(istype(get_turf(src), /turf/simulated/wall) || istype(get_turf(src), /turf/simulated/shuttle/wall) || istype(get_turf(src), /turf/unsimulated/wall))
+	if(isclosedturf(src))
 		level = 1
 
 /obj/machinery/atmospherics/pipe/Destroy()
@@ -53,7 +53,7 @@
 	//Return 1 if parent should continue checking other pipes
 	//Return null if parent should stop checking other pipes. Recall: qdel(src) will by default return null
 
-	return 1
+	return TRUE
 
 /obj/machinery/atmospherics/pipe/proc/releaseAirToTurf()
 	if(air_temporary)
@@ -63,7 +63,7 @@
 
 /obj/machinery/atmospherics/pipe/return_air()
 	if(!parent)
-		return 0
+		return FALSE
 	return parent.air
 
 /obj/machinery/atmospherics/pipe/build_network(remove_deferral = FALSE)

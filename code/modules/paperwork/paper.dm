@@ -685,7 +685,7 @@
 				target.ForceContractDisease(new /datum/disease/transformation/corgi(0))
 			else if(myeffect == "Death By Fire")
 				to_chat(target,"<span class='userdanger'>You feel hotter than usual. Maybe you should lowe-wait, is that your hand melting?</span>")
-				var/turf/simulated/T = get_turf(target)
+				var/turf/open/T = get_turf(target)
 				new /obj/effect/hotspot(T)
 				target.adjustFireLoss(150) // hard crit, the burning takes care of the rest.
 			else if(myeffect == "Total Brain Death")

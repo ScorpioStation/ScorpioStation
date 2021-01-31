@@ -25,7 +25,7 @@
 /obj/item/mining_scanner/admin
 
 /obj/item/mining_scanner/admin/attack_self(mob/user)
-	for(var/turf/simulated/mineral/M in world)
+	for(var/turf/closed/mineral/M in world)
 		if(M.scan_state)
 			M.icon_state = M.scan_state
 	qdel(src)
@@ -60,11 +60,11 @@
 
 /proc/mineral_scan_pulse(turf/T, range = world.view)
 	var/list/minerals = list()
-	for(var/turf/simulated/mineral/M in range(range, T))
+	for(var/turf/closed/mineral/M in range(range, T))
 		if(M.scan_state)
 			minerals += M
 	if(LAZYLEN(minerals))
-		for(var/turf/simulated/mineral/M in minerals)
+		for(var/turf/closed/mineral/M in minerals)
 			var/obj/effect/temp_visual/mining_overlay/oldC = locate(/obj/effect/temp_visual/mining_overlay) in M
 			if(oldC)
 				qdel(oldC)

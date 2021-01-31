@@ -584,7 +584,7 @@
 	H.visible_message("<span class='warning'>[H] teleports!</span>", "<span class='danger'>You teleport!</span>")
 	var/list/turfs = new/list()
 	for(var/turf/T in orange(tele_range, H))
-		if(istype(T, /turf/space))
+		if(istype(T, /turf/open/space))
 			continue
 		if(T.density)
 			continue

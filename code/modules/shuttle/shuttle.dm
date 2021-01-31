@@ -155,7 +155,7 @@
 /obj/docking_port/stationary
 	name = "dock"
 
-	var/turf_type = /turf/space
+	var/turf_type = /turf/open/space
 	var/area_type = /area/space
 
 	var/lock_shuttle_doors = 0
@@ -194,7 +194,7 @@
 
 /obj/docking_port/stationary/transit
 	name = "In transit"
-	turf_type = /turf/space/transit
+	turf_type = /turf/open/space/transit
 	var/area/shuttle/transit/assigned_area
 	lock_shuttle_doors = 1
 
@@ -380,7 +380,7 @@
 	// Destroys the docking port and the shuttle contents.
 	// Not in a fancy way, it just ceases.
 	var/obj/docking_port/stationary/S0 = get_docked()
-	var/turf_type = /turf/space
+	var/turf_type = /turf/open/space
 	var/area_type = /area/space
 	if(S0)
 		if(S0.turf_type)
@@ -452,7 +452,7 @@
 			return -1
 
 	var/obj/docking_port/stationary/S0 = get_docked()
-	var/turf_type = /turf/space
+	var/turf_type = /turf/open/space
 	var/area_type = /area/space
 	if(S0)
 		if(S0.turf_type)
@@ -497,8 +497,8 @@
 		areaInstance.contents += T1
 
 		//copy over air
-		if(istype(T1, /turf/simulated))
-			var/turf/simulated/Ts1 = T1
+		if(isopenturf(T1))
+			var/turf/open/Ts1 = T1
 			Ts1.copy_air_with_tile(T0)
 
 		areaInstance.moving = TRUE

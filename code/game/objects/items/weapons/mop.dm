@@ -24,7 +24,7 @@
 	GLOB.janitorial_equipment -= src
 	return ..()
 
-/obj/item/mop/proc/clean(turf/simulated/A)
+/obj/item/mop/proc/clean(turf/A)
 	if(reagents.has_reagent("water", 1) || reagents.has_reagent("cleaner", 1) || reagents.has_reagent("holywater", 1))
 		A.clean_blood()
 		for(var/obj/effect/O in A)
@@ -40,7 +40,7 @@
 		to_chat(user, "<span class='warning'>Your mop is dry!</span>")
 		return
 
-	var/turf/simulated/T = get_turf(A)
+	var/turf/open/T = get_turf(A)
 
 	if(istype(A, /obj/item/reagent_containers/glass/bucket) || istype(A, /obj/structure/janitorialcart))
 		return

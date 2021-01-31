@@ -123,7 +123,7 @@
 /obj/structure/alien/weeds/New(pos, node)
 	..()
 	linked_node = node
-	if(istype(loc, /turf/space))
+	if(istype(loc, /turf/open/space))
 		qdel(src)
 		return
 	if(icon_state == "weeds")
@@ -143,7 +143,7 @@
 /obj/structure/alien/weeds/proc/Life()
 	var/turf/U = get_turf(src)
 
-	if(istype(U, /turf/space))
+	if(istype(U, /turf/open/space))
 		qdel(src)
 		return
 
@@ -152,7 +152,7 @@
 
 	for(var/turf/T in U.GetAtmosAdjacentTurfs())
 
-		if(locate(/obj/structure/alien/weeds) in T || istype(T, /turf/space))
+		if(locate(/obj/structure/alien/weeds) in T || istype(T, /turf/open/space))
 			continue
 
 		new /obj/structure/alien/weeds(T, linked_node)
@@ -179,16 +179,16 @@
 	var/turf/E = get_step(src, EAST)
 	var/turf/W = get_step(src, WEST)
 	if(!locate(/obj/structure/alien) in N.contents)
-		if(istype(N, /turf/simulated/floor))
+		if(istype(N, /turf/open/floor))
 			overlays += weedImageCache[WEED_SOUTH_EDGING]
 	if(!locate(/obj/structure/alien) in S.contents)
-		if(istype(S, /turf/simulated/floor))
+		if(istype(S, /turf/open/floor))
 			overlays += weedImageCache[WEED_NORTH_EDGING]
 	if(!locate(/obj/structure/alien) in E.contents)
-		if(istype(E, /turf/simulated/floor))
+		if(istype(E, /turf/open/floor))
 			overlays += weedImageCache[WEED_WEST_EDGING]
 	if(!locate(/obj/structure/alien) in W.contents)
-		if(istype(W, /turf/simulated/floor))
+		if(istype(W, /turf/open/floor))
 			overlays += weedImageCache[WEED_EAST_EDGING]
 
 

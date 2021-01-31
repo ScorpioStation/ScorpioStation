@@ -493,33 +493,6 @@ Returns 1 if the chain up to the area contains the given typepath
 
 	return target
 
-// returns turf relative to A in given direction at set range
-// result is bounded to map size
-// note range is non-pythagorean
-// used for disposal system
-/proc/get_ranged_target_turf(var/atom/A, var/direction, var/range)
-
-	var/x = A.x
-	var/y = A.y
-	if(direction & NORTH)
-		y = min(world.maxy, y + range)
-	if(direction & SOUTH)
-		y = max(1, y - range)
-	if(direction & EAST)
-		x = min(world.maxx, x + range)
-	if(direction & WEST)
-		x = max(1, x - range)
-
-	return locate(x,y,A.z)
-
-
-// returns turf relative to A offset in dx and dy tiles
-// bound to map limits
-/proc/get_offset_target_turf(var/atom/A, var/dx, var/dy)
-	var/x = min(world.maxx, max(1, A.x + dx))
-	var/y = min(world.maxy, max(1, A.y + dy))
-	return locate(x,y,A.z)
-
 //Makes sure MIDDLE is between LOW and HIGH. If not, it adjusts it. Returns the adjusted value.
 /proc/between(var/low, var/middle, var/high)
 	return max(min(middle, high), low)
@@ -742,15 +715,12 @@ Returns 1 if the chain up to the area contains the given typepath
 					X.icon_state = old_icon_state1
 					X.icon = old_icon1 //Shuttle floors are in shuttle.dmi while the defaults are floors.dmi
 
-					// Give the new turf our air, if simulated
-					if(istype(X, /turf/simulated) && istype(T, /turf/simulated))
-						var/turf/simulated/sim = X
+					// Give the new turf our air, if open
+					if(isopenturf(X) && isopenturf(T))
+						var/turf/open/sim = X
 						sim.copy_air_with_tile(T)
-
-
 					/* Quick visual fix for some weird shuttle corner artefacts when on transit space tiles */
 					if(direction && findtext(X.icon_state, "swall_s"))
-
 						// Spawn a new shuttle corner object
 						var/obj/corner = new()
 						corner.loc = X
@@ -760,20 +730,15 @@ Returns 1 if the chain up to the area contains the given typepath
 						corner.icon_state = replacetext(X.icon_state, "_s", "_f")
 						corner.tag = "delete me"
 						corner.name = "wall"
-
 						// Find a new turf to take on the property of
 						var/turf/nextturf = get_step(corner, direction)
-						if(!nextturf || !istype(nextturf, /turf/space))
+						if(!nextturf || !istype(nextturf, /turf/open/space))
 							nextturf = get_step(corner, turn(direction, 180))
-
-
 						// Take on the icon of a neighboring scrolling space icon
 						X.icon = nextturf.icon
 						X.icon_state = nextturf.icon_state
 
-
 					for(var/obj/O in T)
-
 						// Reset the shuttle corners
 						if(O.tag == "delete me")
 							X.icon = 'icons/turf/shuttle.dmi'
@@ -781,17 +746,18 @@ Returns 1 if the chain up to the area contains the given typepath
 							X.name = "wall"
 							qdel(O) // prevents multiple shuttle corners from stacking
 							continue
-						if(!istype(O,/obj)) continue
+						if(!istype(O, /obj))
+							continue
 						O.loc.Exited(O)
-						O.setLoc(X,teleported=1)
+						O.setLoc(X, teleported = TRUE)
 						O.loc.Entered(O)
-					for(var/mob/M in T)
+					for(var/thing in T)
+						var/mob/M = thing
 						if(!M.move_on_shuttle)
 							continue
 						M.loc = X
 
 //					var/area/AR = X.loc
-
 //					if(AR.lighting_use_dynamic)							//TODO: rewrite this code so it's not messed by lighting ~Carn
 //						X.opacity = !X.opacity
 //						X.set_opacity(!X.opacity)
@@ -808,13 +774,13 @@ Returns 1 if the chain up to the area contains the given typepath
 					continue moving
 
 	if(toupdate.len)
-		for(var/turf/simulated/T1 in toupdate)
+		for(var/turf/open/T1 in toupdate)
 			SSair.remove_from_active(T1)
 			T1.CalculateAdjacentTurfs()
 			SSair.add_to_active(T1,1)
 
 	if(fromupdate.len)
-		for(var/turf/simulated/T2 in fromupdate)
+		for(var/turf/open/T2 in fromupdate)
 			SSair.remove_from_active(T2)
 			T2.CalculateAdjacentTurfs()
 			SSair.add_to_active(T2,1)
@@ -906,7 +872,7 @@ Returns 1 if the chain up to the area contains the given typepath
 					var/old_icon1 = T.icon
 
 					if(platingRequired)
-						if(istype(B, /turf/space))
+						if(istype(B, /turf/open/space))
 							continue moving
 
 					var/turf/X = new T.type(B)
@@ -971,7 +937,7 @@ Returns 1 if the chain up to the area contains the given typepath
 
 
 	if(toupdate.len)
-		for(var/turf/simulated/T1 in toupdate)
+		for(var/turf/open/T1 in toupdate)
 			T1.CalculateAdjacentTurfs()
 			SSair.add_to_active(T1,1)
 
@@ -1404,7 +1370,7 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 	move_force = 0
 	pull_force = 0
 	move_resist = INFINITY
-	simulated = 0
+	simulated = FALSE
 	canmove = FALSE
 	see_in_dark = 1e6
 
@@ -1798,10 +1764,10 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 			/obj/vehicle = "VEHICLE",
 			/obj = "O",
 			/datum = "D",
-			/turf/simulated/floor = "SIM_FLOOR",
-			/turf/simulated/wall = "SIM_WALL",
-			/turf/unsimulated/floor = "UNSIM_FLOOR",
-			/turf/unsimulated/wall = "UNSIM_WALL",
+			/turf/open/floor = "SIM_FLOOR",
+			/turf/closed/wall = "SIM_WALL",
+			/turf/open/ind_floor = "UNSIM_FLOOR",
+			/turf/closed/ind_wall = "UNSIM_WALL",
 			/turf = "T",
 			/mob/living/carbon/alien = "XENO",
 			/mob/living/carbon/human = "HUMAN",

@@ -116,8 +116,8 @@
 		if(!is_teleport_allowed(level))
 			levels -= level
 
-	T.ChangeTurf(/turf/simulated/floor/chasm)
-	var/turf/simulated/floor/chasm/C = T
+	T.ChangeTurf(/turf/open/floor/chasm)
+	var/turf/open/floor/chasm/C = T
 	C.drop_x = T.x
 	C.drop_y = T.y
 	C.drop_z = pick(levels)

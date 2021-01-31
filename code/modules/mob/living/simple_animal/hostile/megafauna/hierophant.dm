@@ -506,7 +506,7 @@ Difficulty: Hard
 /obj/effect/temp_visual/hierophant/squares/Initialize(mapload, new_caster)
 	. = ..()
 	if(ismineralturf(loc))
-		var/turf/simulated/mineral/M = loc
+		var/turf/closed/mineral/M = loc
 		M.gets_drilled(caster)
 
 /obj/effect/temp_visual/hierophant/wall //smoothing and pooling were not friends, but pooling is dead.
@@ -643,7 +643,7 @@ Difficulty: Hard
 	if(new_caster)
 		hit_things += new_caster
 	if(ismineralturf(loc)) //drill mineral turfs
-		var/turf/simulated/mineral/M = loc
+		var/turf/closed/mineral/M = loc
 		M.gets_drilled(caster)
 	INVOKE_ASYNC(src, .proc/blast)
 

@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/unsimulated/wall{
+/turf/closed/ind_wall{
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock"
 	},
@@ -9,27 +9,27 @@
 	requires_power = 0
 	})
 "ab" = (
-/turf/unsimulated/wall/metal,
+/turf/closed/ind_wall/metal,
 /area/awaymission/undersea{
 	requires_power = 0
 	})
 "ac" = (
-/turf/unsimulated/wall{
+/turf/closed/ind_wall{
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock"
 	},
 /area/awaymission/beach)
 "ad" = (
-/turf/simulated/floor/plating/lava/smooth,
+/turf/open/floor/plating/lava/smooth,
 /area/awaymission)
 "ae" = (
-/turf/unsimulated/wall/metal,
+/turf/closed/ind_wall/metal,
 /area/awaymission{
 	name = "Amazing Place";
 	requires_power = 0
 	})
 "af" = (
-/turf/unsimulated/wall{
+/turf/closed/ind_wall{
 	dynamic_lighting = 0;
 	icon = null
 	},
@@ -47,7 +47,7 @@
 /turf/template_noop,
 /area/template_noop)
 "ai" = (
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -59,7 +59,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -78,7 +78,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "al" = (
 /obj/effect/decal{
@@ -91,10 +91,10 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "am" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -105,7 +105,7 @@
 /obj/effect/view_portal{
 	id = "mazeland_111"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -119,7 +119,7 @@
 	id = "mazeland_121";
 	radius = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -133,7 +133,7 @@
 	id = "mazeland_332";
 	radius = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -148,7 +148,7 @@
 	id = "mazeland_room";
 	radius = 0
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -162,7 +162,7 @@
 	id = "mazeland_331";
 	radius = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -175,17 +175,17 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "at" = (
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "au" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -196,7 +196,7 @@
 /obj/effect/view_portal{
 	id = "mazeland_211"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -211,7 +211,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -222,7 +222,7 @@
 /obj/effect/view_portal{
 	id = "mazeland_411"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -231,7 +231,7 @@
 	})
 "ay" = (
 /mob/living/simple_animal/hostile/retaliate/carp,
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -243,7 +243,7 @@
 /obj/effect/view_portal{
 	id = "mazeland_112"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -257,7 +257,7 @@
 	id = "mazeland_122";
 	radius = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -268,7 +268,7 @@
 /obj/effect/view_portal{
 	id = "mazeland_31"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -276,13 +276,13 @@
 	requires_power = 0
 	})
 "aC" = (
-/turf/unsimulated/wall/metal,
+/turf/closed/ind_wall/metal,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
 	})
 "aD" = (
-/turf/unsimulated/wall{
+/turf/closed/ind_wall{
 	dynamic_lighting = 0;
 	icon = null
 	},
@@ -306,15 +306,15 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "aF" = (
 /obj/item/paper/hotel_scrap_5,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "aG" = (
 /mob/living/simple_animal/hostile/pirate,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "aH" = (
 /obj/effect/decal{
@@ -322,12 +322,12 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "aI" = (
 /obj/structure/bed,
 /obj/item/bedsheet,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -341,7 +341,7 @@
 	id = "snowland_room";
 	radius = 3
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -363,7 +363,7 @@
 	icon_state = "rock_side_w"
 	},
 /mob/living/simple_animal/hostile/bear,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -377,13 +377,13 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "aM" = (
 /obj/effect/decal/snow/sand/edge{
 	name = "rough sand"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "aN" = (
 /obj/effect/view_portal/visual{
@@ -392,7 +392,7 @@
 	id = "mazeland_111";
 	radius = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -403,7 +403,7 @@
 /obj/effect/view_portal{
 	id = "mazeland_121"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -414,7 +414,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -428,7 +428,7 @@
 	id = "mazeland_31";
 	radius = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -436,7 +436,7 @@
 	requires_power = 0
 	})
 "aR" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows";
 	opacity = 1
@@ -446,7 +446,7 @@
 	requires_power = 0
 	})
 "aS" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	dir = 4;
 	icon_state = "fakewindows";
 	opacity = 0
@@ -463,13 +463,13 @@
 	icon_state = "gravsnow_surround";
 	dir = 1
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
 	})
 "aU" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows";
 	opacity = 0
@@ -479,7 +479,7 @@
 	requires_power = 0
 	})
 "aV" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	dir = 4;
 	icon_state = "fakewindows";
 	opacity = 1
@@ -499,7 +499,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -518,7 +518,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -531,7 +531,7 @@
 	dir = 8
 	},
 /mob/living/simple_animal/hostile/retaliate/carp,
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -544,7 +544,7 @@
 	id = "weirddive";
 	layer = 4.5
 	},
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -557,7 +557,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -572,20 +572,20 @@
 	dir = 4
 	},
 /obj/structure/closet/athletic_mixed,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bc" = (
-/turf/unsimulated/wall{
+/turf/closed/ind_wall{
 	icon_state = "sandstone6"
 	},
 /area/awaymission/beach)
 "bd" = (
-/turf/unsimulated/wall{
+/turf/closed/ind_wall{
 	icon_state = "sandstone12"
 	},
 /area/awaymission/beach)
 "be" = (
-/turf/unsimulated/wall{
+/turf/closed/ind_wall{
 	icon_state = "sandstone10"
 	},
 /area/awaymission/beach)
@@ -595,7 +595,7 @@
 	icon_state = "gravsnow_corner";
 	dir = 8
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bg" = (
 /obj/effect/decal{
@@ -608,7 +608,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bh" = (
 /obj/effect/decal/snow/sand/edge{
@@ -623,7 +623,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -633,13 +633,13 @@
 	icon_state = "gravsnow_corner";
 	dir = 1
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
 	})
 "bj" = (
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -658,7 +658,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -675,7 +675,7 @@
 	icon_state = "rock_side_n"
 	},
 /obj/effect/decal/snow/clean/edge,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -693,7 +693,7 @@
 	icon_state = "snow_corner";
 	dir = 6
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -711,22 +711,22 @@
 /obj/item/clothing/shoes/sandal,
 /obj/item/clothing/shoes/sandal,
 /obj/structure/closet/crate,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bo" = (
-/turf/unsimulated/wall{
+/turf/closed/ind_wall{
 	icon_state = "sandstone3"
 	},
 /area/awaymission/beach)
 "bp" = (
-/turf/unsimulated/wall{
+/turf/closed/ind_wall{
 	dynamic_lighting = 0;
 	icon = null
 	},
 /area/awaymission/beach)
 "bq" = (
 /obj/item/beach_ball,
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "br" = (
 /obj/effect/view_portal/visual{
@@ -735,7 +735,7 @@
 	id = "mazeland_212";
 	radius = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -746,7 +746,7 @@
 /obj/effect/view_portal{
 	id = "mazeland_122"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -757,7 +757,7 @@
 /obj/effect/view_portal{
 	id = "mazeland_212"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -775,7 +775,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -791,7 +791,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -802,7 +802,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -813,7 +813,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -829,7 +829,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bz" = (
 /obj/effect/decal/snow/sand/edge{
@@ -837,10 +837,10 @@
 	icon_state = "gravsnow_corner";
 	dir = 4
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bA" = (
-/turf/unsimulated/wall{
+/turf/closed/ind_wall{
 	icon_state = "sandstone1"
 	},
 /area/awaymission/beach)
@@ -851,13 +851,13 @@
 	id = "beach_room";
 	radius = 2
 	},
-/turf/unsimulated/floor,
+/turf/open/ind_floor,
 /area/awaymission/beach)
 "bC" = (
 /mob/living/simple_animal/crab{
 	faction = list("neutral","pirate")
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bE" = (
 /obj/effect/decal{
@@ -876,7 +876,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -895,7 +895,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -914,7 +914,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -925,7 +925,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -941,7 +941,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -952,7 +952,7 @@
 	icon_state = "gravsnow_corner";
 	dir = 1
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bK" = (
 /obj/effect/decal/snow/sand/edge{
@@ -963,7 +963,7 @@
 /obj/effect/view_portal{
 	id = "beach"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "bL" = (
 /obj/effect/decal/snow/sand/edge{
@@ -971,7 +971,7 @@
 	icon_state = "gravsnow_corner";
 	name = "rough sand"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -982,7 +982,7 @@
 	icon_state = "gravsnow_corner";
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -993,7 +993,7 @@
 	icon_state = "gravsnow_corner";
 	name = "rough sand"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1002,7 +1002,7 @@
 /obj/effect/view_portal{
 	id = "mazeland_213"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -1014,7 +1014,7 @@
 	pixel_y = 8
 	},
 /obj/machinery/light,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -1025,7 +1025,7 @@
 /obj/effect/view_portal{
 	id = "mazeland_413"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -1047,7 +1047,7 @@
 	icon_state = "snow_corner";
 	dir = 6
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1066,27 +1066,27 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
 	})
 "bT" = (
 /obj/structure/flora/bush,
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
 	})
 "bU" = (
 /obj/structure/flora/grass/green,
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
 	})
 "bV" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1098,7 +1098,7 @@
 	id = "mazeland_213";
 	radius = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -1112,7 +1112,7 @@
 	id = "mazeland_413";
 	radius = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -1125,7 +1125,7 @@
 	id = "mazeland_131";
 	radius = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -1136,7 +1136,7 @@
 /obj/effect/view_portal{
 	id = "mazeland_331"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -1147,7 +1147,7 @@
 /obj/effect/view_portal{
 	id = "mazeland_332"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -1160,7 +1160,7 @@
 	id = "mazeland_132";
 	radius = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -1169,7 +1169,7 @@
 	})
 "cc" = (
 /obj/structure/window/reinforced/tinted,
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -1179,7 +1179,7 @@
 	})
 "cd" = (
 /obj/machinery/door/window/southright,
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -1190,7 +1190,7 @@
 "ce" = (
 /obj/structure/window/reinforced/tinted,
 /obj/machinery/light,
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -1204,7 +1204,7 @@
 	light_color = "#ffffc0";
 	light_power = 2
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1215,7 +1215,7 @@
 	icon_state = "gravsnow_corner";
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1224,7 +1224,7 @@
 /obj/effect/view_portal{
 	id = "mazeland_131"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -1235,7 +1235,7 @@
 /obj/effect/view_portal{
 	id = "mazeland_132"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -1249,7 +1249,7 @@
 	id = "mazeland_411";
 	radius = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -1263,7 +1263,7 @@
 	id = "mazeland_211";
 	radius = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -1271,7 +1271,7 @@
 	requires_power = 0
 	})
 "cl" = (
-/turf/unsimulated/wall/metal,
+/turf/closed/ind_wall/metal,
 /area/awaymission/spacehotel)
 "cm" = (
 /obj/structure/sink{
@@ -1284,7 +1284,7 @@
 	dir = 8;
 	pixel_x = -28
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -1292,7 +1292,7 @@
 /obj/structure/toilet{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -1303,7 +1303,7 @@
 	pixel_y = -24;
 	range = 2
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -1315,7 +1315,7 @@
 	anchored = 1;
 	opacity = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor";
 	opacity = 1
 	},
@@ -1326,14 +1326,14 @@
 	icon_state = "gravsnow_corner";
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
 /area/awaymission)
 "cr" = (
 /obj/item/candle/eternal,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1349,7 +1349,7 @@
 	pixel_x = -12;
 	pixel_y = 2
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -1360,7 +1360,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -1378,7 +1378,7 @@
 	pixel_x = 12;
 	pixel_y = 2
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission{
@@ -1402,7 +1402,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1412,7 +1412,7 @@
 	})
 "cw" = (
 /obj/structure/flora/tree/pine,
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1422,12 +1422,12 @@
 	id = "poolland"
 	},
 /obj/machinery/light/small,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
 "cy" = (
-/turf/unsimulated/floor,
+/turf/open/ind_floor,
 /area/awaymission/undersea{
 	requires_power = 0
 	})
@@ -1442,7 +1442,7 @@
 	light_power = 2
 	},
 /obj/effect/rune,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1459,7 +1459,7 @@
 	icon_state = "rock_side_n"
 	},
 /mob/living/simple_animal/hostile/bear,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1473,7 +1473,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1483,7 +1483,7 @@
 	})
 "cC" = (
 /obj/structure/flora/grass/both,
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1494,7 +1494,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/sand,
+/turf/open/beach/sand,
 /area/awaymission/beach)
 "cE" = (
 /obj/effect/decal/snow/sand/edge{
@@ -1502,7 +1502,7 @@
 	icon_state = "gravsnow_corner";
 	dir = 10
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1513,7 +1513,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1528,7 +1528,7 @@
 	icon_state = "rock_side_e"
 	},
 /obj/effect/decal/snow/clean/edge,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1542,38 +1542,38 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/beach/coastline,
+/turf/open/beach/coastline,
 /area/awaymission/beach)
 "cI" = (
 /obj/effect/waterfall{
 	dir = 1;
 	water_frequency = 104
 	},
-/turf/unsimulated/beach/coastline,
+/turf/open/beach/coastline,
 /area/awaymission/beach)
 "cJ" = (
-/turf/unsimulated/beach/coastline,
+/turf/open/beach/coastline,
 /area/awaymission/beach)
 "cK" = (
 /obj/effect/waterfall{
 	dir = 1;
 	water_frequency = 97
 	},
-/turf/unsimulated/beach/coastline,
+/turf/open/beach/coastline,
 /area/awaymission/beach)
 "cL" = (
 /obj/effect/waterfall{
 	dir = 1;
 	water_frequency = 94
 	},
-/turf/unsimulated/beach/coastline,
+/turf/open/beach/coastline,
 /area/awaymission/beach)
 "cM" = (
 /obj/effect/waterfall{
 	dir = 1;
 	water_frequency = 192
 	},
-/turf/unsimulated/beach/coastline,
+/turf/open/beach/coastline,
 /area/awaymission/beach)
 "cN" = (
 /obj/effect/decal{
@@ -1581,10 +1581,10 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/unsimulated/beach/coastline/dense,
+/turf/open/beach/coastline/dense,
 /area/awaymission/beach)
 "cO" = (
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/awaymission)
 "cP" = (
 /obj/effect/decal/snow/sand/edge{
@@ -1592,7 +1592,7 @@
 	icon_state = "gravsnow_corner";
 	dir = 6
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1607,7 +1607,7 @@
 	icon_state = "snow_corner";
 	dir = 6
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1617,7 +1617,7 @@
 	})
 "cR" = (
 /obj/machinery/poolcontroller/invisible/sea,
-/turf/unsimulated/wall/metal,
+/turf/closed/ind_wall/metal,
 /area/awaymission/undersea{
 	requires_power = 0
 	})
@@ -1627,10 +1627,10 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/beach)
 "cT" = (
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/beach)
 "cU" = (
 /obj/effect/decal{
@@ -1643,13 +1643,13 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/water/dense,
+/turf/open/beach/water/dense,
 /area/awaymission/beach)
 "cV" = (
 /obj/effect/decal/snow/sand/edge{
 	name = "rough sand"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1665,7 +1665,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1676,7 +1676,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1692,7 +1692,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/beach)
 "cZ" = (
 /obj/effect/decal{
@@ -1700,7 +1700,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/beach)
 "da" = (
 /obj/effect/decal{
@@ -1713,7 +1713,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/beach)
 "db" = (
 /obj/effect/decal{
@@ -1726,7 +1726,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/beach)
 "dc" = (
 /obj/effect/decal{
@@ -1734,7 +1734,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/beach)
 "dd" = (
 /obj/effect/decal/snow/sand/edge{
@@ -1747,7 +1747,7 @@
 	icon_state = "gravsnow_corner";
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
@@ -1763,14 +1763,14 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
 	})
 "df" = (
 /obj/item/mop,
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -1789,18 +1789,18 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/beach)
 "dh" = (
 /obj/effect/decal/snow/sand/edge,
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
 	})
 "di" = (
 /obj/structure/mopbucket,
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -1819,13 +1819,13 @@
 	icon_state = "gravsnow_corner";
 	dir = 6
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
 	})
 "dk" = (
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1841,7 +1841,7 @@
 	icon_state = "gravsnow_corner";
 	dir = 10
 	},
-/turf/unsimulated/floor/snow,
+/turf/open/ind_floor/snow,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1852,10 +1852,10 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/beach/water/edge_drop,
+/turf/open/beach/water/edge_drop,
 /area/awaymission/beach)
 "dn" = (
-/turf/unsimulated/beach/water/drop,
+/turf/open/beach/water/drop,
 /area/awaymission/beach)
 "do" = (
 /obj/effect/decal{
@@ -1863,7 +1863,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/unsimulated/beach/water/edge_drop,
+/turf/open/beach/water/edge_drop,
 /area/awaymission/beach)
 "dp" = (
 /obj/effect/light_emitter{
@@ -1876,7 +1876,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1887,7 +1887,7 @@
 	light_color = "#ffffc0";
 	light_power = 2
 	},
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1903,7 +1903,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1919,7 +1919,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/water/deep/dense,
+/turf/open/beach/water/deep/dense,
 /area/awaymission/beach)
 "dt" = (
 /obj/effect/decal{
@@ -1927,10 +1927,10 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/water/deep/dense,
+/turf/open/beach/water/deep/dense,
 /area/awaymission/beach)
 "du" = (
-/turf/unsimulated/beach/water/deep/dense,
+/turf/open/beach/water/deep/dense,
 /area/awaymission/beach)
 "dv" = (
 /obj/effect/decal{
@@ -1938,7 +1938,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/unsimulated/beach/water/deep/dense,
+/turf/open/beach/water/deep/dense,
 /area/awaymission/beach)
 "dw" = (
 /obj/effect/decal{
@@ -1946,7 +1946,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1962,7 +1962,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_e"
 	},
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1978,7 +1978,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_n"
 	},
-/turf/simulated/floor/chasm,
+/turf/open/floor/chasm,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -1987,7 +1987,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -1999,7 +1999,7 @@
 /obj/structure/ladder/unbreakable/dive_point/anchor{
 	layer = 4.5
 	},
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -2013,10 +2013,10 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/beach/water/deep/dense,
+/turf/open/beach/water/deep/dense,
 /area/awaymission/beach)
 "dC" = (
-/turf/unsimulated/beach/water/drop/dense,
+/turf/open/beach/water/drop/dense,
 /area/awaymission/beach)
 "dD" = (
 /obj/effect/decal{
@@ -2029,7 +2029,7 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_s"
 	},
-/turf/unsimulated/beach/water/deep/dense,
+/turf/open/beach/water/deep/dense,
 /area/awaymission/beach)
 "dE" = (
 /obj/effect/decal/snow/sand/edge{
@@ -2040,13 +2040,13 @@
 	icon_state = "gravsnow_corner";
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "asteroid";
 	name = "cave"
 	},
 /area/awaymission)
 "dF" = (
-/turf/simulated/floor/plating/lava/smooth,
+/turf/open/floor/plating/lava/smooth,
 /area/awaymission{
 	name = "Snowland";
 	requires_power = 0
@@ -2057,11 +2057,11 @@
 	icon = 'icons/turf/mining.dmi';
 	icon_state = "rock_side_w"
 	},
-/turf/unsimulated/beach/water/drop/dense,
+/turf/open/beach/water/drop/dense,
 /area/awaymission/beach)
 "dI" = (
 /obj/machinery/light,
-/turf/unsimulated/beach/water/deep/wood_floor{
+/turf/open/beach/water/deep/wood_floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor";
 	name = "Pool Floor"
@@ -2070,7 +2070,7 @@
 	requires_power = 0
 	})
 "dJ" = (
-/turf/unsimulated/wall{
+/turf/closed/ind_wall{
 	icon_state = "sandstone2"
 	},
 /area/awaymission)
@@ -2082,67 +2082,67 @@
 /turf/template_noop,
 /area/awaymission)
 "dL" = (
-/turf/unsimulated/wall{
+/turf/closed/ind_wall{
 	icon_state = "sandstone5"
 	},
 /area/awaymission)
 "dM" = (
-/turf/unsimulated/wall{
+/turf/closed/ind_wall{
 	icon_state = "sandstone12"
 	},
 /area/awaymission)
 "dN" = (
-/turf/unsimulated/wall{
+/turf/closed/ind_wall{
 	icon_state = "sandstone9"
 	},
 /area/awaymission)
 "dO" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "dP" = (
 /obj/effect/view_portal{
 	id = "turbinespace"
 	},
-/turf/space,
+/turf/open/space,
 /area/space/nearstation)
 "dQ" = (
-/turf/unsimulated/wall,
+/turf/closed/ind_wall,
 /area/space/nearstation)
 "dR" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows";
 	opacity = 0
 	},
 /area/space/nearstation)
 "dS" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/space/nearstation)
 "dT" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	dir = 4;
 	icon_state = "fakewindows";
 	opacity = 0
 	},
 /area/space/nearstation)
 "dU" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	dir = 8;
 	icon_state = "fakewindows";
 	opacity = 0
 	},
 /area/awaymission/spacehotel)
 "dV" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/awaymission/spacehotel)
 "dW" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	dir = 4;
 	icon_state = "fakewindows";
 	opacity = 0
@@ -2176,20 +2176,20 @@
 /turf/template_noop,
 /area/awaymission/spacehotel)
 "eb" = (
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "ec" = (
 /obj/structure/toilet,
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
 "ed" = (
 /obj/structure/closet/secure_closet/personal,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -2200,7 +2200,7 @@
 	c_tag_order = 999;
 	network = list("Hotel")
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -2229,7 +2229,7 @@
 /turf/template_noop,
 /area/awaymission/spacehotel)
 "ei" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -2238,7 +2238,7 @@
 	dir = 8
 	},
 /obj/item/paper/hotel_scrap_2,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -2246,7 +2246,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -2254,7 +2254,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -2264,7 +2264,7 @@
 /area/awaymission/spacehotel)
 "en" = (
 /obj/machinery/door/airlock,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -2281,7 +2281,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -2289,7 +2289,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -2298,7 +2298,7 @@
 	desc = "Probably."
 	},
 /obj/effect/decal/cleanable/pie_smudge,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -2315,7 +2315,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -2323,7 +2323,7 @@
 /obj/effect/decal/cleanable/flour{
 	desc = "Probably."
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -2332,7 +2332,7 @@
 /obj/effect/decal/cleanable/flour{
 	desc = "Probably."
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -2349,7 +2349,7 @@
 	pixel_x = 12;
 	pixel_y = 2
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission/spacehotel)
@@ -2358,45 +2358,45 @@
 	icon = 'icons/obj/doors/doorgold.dmi';
 	id = 110
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "ew" = (
 /obj/machinery/door/unpowered/hotel_door{
 	icon = 'icons/obj/doors/doorgold.dmi';
 	id = 111
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "ex" = (
 /obj/machinery/door/unpowered/hotel_door{
 	icon = 'icons/obj/doors/doorgold.dmi';
 	id = 112
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "ey" = (
 /obj/machinery/door/unpowered/hotel_door{
 	icon = 'icons/obj/doors/doorgold.dmi';
 	id = 210
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "ez" = (
 /obj/machinery/door/unpowered/hotel_door{
 	icon = 'icons/obj/doors/doorgold.dmi';
 	id = 211
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "eA" = (
 /obj/machinery/door/unpowered/hotel_door{
 	icon = 'icons/obj/doors/doorgold.dmi';
 	id = 212
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "eB" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 1
 	},
@@ -2405,28 +2405,28 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "eD" = (
 /obj/machinery/light,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "eE" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	icon_state = "fakewindows2";
 	dir = 1
 	},
 /area/space/nearstation)
 "eF" = (
 /obj/structure/closet/crate/can,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "eG" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "eH" = (
 /obj/machinery/light{
@@ -2436,33 +2436,33 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "eI" = (
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "eJ" = (
 /obj/structure/chair/comfy,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "eK" = (
 /obj/structure/window/reinforced,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "eL" = (
-/turf/unsimulated/wall/fakeglass,
+/turf/closed/ind_wall/fakeglass,
 /area/space/nearstation)
 "eM" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	dir = 2;
 	icon_state = "whitebluecorner"
 	},
 /area/awaymission/spacehotel)
 "eN" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	dir = 2;
 	icon_state = "whiteblue"
 	},
@@ -2472,7 +2472,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	dir = 8;
 	icon_state = "whitebluecorner"
 	},
@@ -2482,41 +2482,41 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "eQ" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "eR" = (
-/turf/unsimulated/floor/upperlevel,
+/turf/open/ind_floor/upperlevel,
 /area/awaymission/upperlevel)
 "eS" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor/upperlevel,
+/turf/open/ind_floor/upperlevel,
 /area/awaymission/upperlevel)
 "eT" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 107
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "eU" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 108
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "eV" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 109
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "eW" = (
 /obj/effect/decal{
@@ -2524,23 +2524,23 @@
 	icon_state = "wood_siding13";
 	name = "wood siding"
 	},
-/turf/unsimulated/floor/grass,
+/turf/open/ind_floor/grass,
 /area/awaymission/spacehotel)
 "eX" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	dir = 4;
 	icon_state = "whiteblue"
 	},
 /area/awaymission/spacehotel)
 "eY" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission/spacehotel)
 "eZ" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	dir = 8;
 	icon_state = "whiteblue"
 	},
@@ -2549,26 +2549,26 @@
 /obj/machinery/door/unpowered/hotel_door{
 	id = 207
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fb" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 208
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fc" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 209
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fd" = (
 /obj/structure/window/reinforced{
 	icon_state = "rwindow";
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fe" = (
 /obj/machinery/camera{
@@ -2600,26 +2600,26 @@
 	icon_state = "wood_siding12";
 	name = "wood siding"
 	},
-/turf/unsimulated/floor/grass,
+/turf/open/ind_floor/grass,
 /area/awaymission/spacehotel)
 "fi" = (
 /obj/structure/window/plasmabasic,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fj" = (
-/turf/unsimulated/beach/water/drop,
+/turf/open/beach/water/drop,
 /area/awaymission/spacehotel)
 "fk" = (
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/unsimulated/beach/water/drop,
+/turf/open/beach/water/drop,
 /area/awaymission/spacehotel)
 "fl" = (
-/turf/unsimulated/beach/water/deep,
+/turf/open/beach/water/deep,
 /area/awaymission/spacehotel)
 "fm" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	dir = 8;
 	icon_state = "whiteblue"
 	},
@@ -2653,10 +2653,10 @@
 	icon_state = "plasmawindow";
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fr" = (
-/turf/unsimulated/beach/water{
+/turf/open/beach/water{
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "light_on"
 	},
@@ -2666,13 +2666,13 @@
 	icon_state = "plasmawindow";
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "ft" = (
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/spacehotel)
 "fu" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	icon_state = "fakewindows3"
 	},
 /area/space/nearstation)
@@ -2684,7 +2684,7 @@
 /area/awaymission/spacehotel)
 "fw" = (
 /mob/living/simple_animal/hostile/retaliate/carp,
-/turf/unsimulated/beach/water{
+/turf/open/beach/water{
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "light_on"
 	},
@@ -2693,18 +2693,18 @@
 /obj/effect/landmark{
 	name = "awaystart"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fy" = (
 /obj/structure/window/plasmabasic{
 	icon_state = "plasmawindow";
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fz" = (
 /obj/structure/mirror,
-/turf/unsimulated/wall/metal,
+/turf/closed/ind_wall/metal,
 /area/awaymission/spacehotel)
 "fA" = (
 /obj/effect/decal{
@@ -2712,13 +2712,13 @@
 	icon_state = "wood_siding14";
 	name = "wood siding"
 	},
-/turf/unsimulated/floor/grass,
+/turf/open/ind_floor/grass,
 /area/awaymission/spacehotel)
 "fB" = (
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/unsimulated/beach/water/drop,
+/turf/open/beach/water/drop,
 /area/awaymission/spacehotel)
 "fC" = (
 /obj/structure/ladder/unbreakable/dive_point/buoy,
@@ -2726,14 +2726,14 @@
 	id = "weirddive";
 	invisibility = 101
 	},
-/turf/unsimulated/beach/water/deep,
+/turf/open/beach/water/deep,
 /area/awaymission/spacehotel)
 "fD" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/beach/water/deep,
+/turf/open/beach/water/deep,
 /area/awaymission/spacehotel)
 "fE" = (
 /obj/machinery/light,
@@ -2741,61 +2741,61 @@
 	icon_state = "rwindow";
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fF" = (
 /obj/structure/window/reinforced{
 	icon_state = "rwindow";
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fG" = (
 /obj/structure/closet/crate/can,
 /obj/item/paper/crumpled/hotel_scrap_1,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fH" = (
 /obj/effect/landmark{
 	name = "awaystart"
 	},
-/turf/unsimulated/beach/water,
+/turf/open/beach/water,
 /area/awaymission/spacehotel)
 "fI" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 104
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fJ" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 105
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fK" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 106
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fL" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 204
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fM" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 205
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fN" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 206
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "fO" = (
 /obj/machinery/camera{
@@ -2823,7 +2823,7 @@
 /area/awaymission/spacehotel)
 "fR" = (
 /obj/machinery/light,
-/turf/unsimulated/beach/water/drop,
+/turf/open/beach/water/drop,
 /area/awaymission/spacehotel)
 "fS" = (
 /obj/machinery/camera{
@@ -2851,23 +2851,23 @@
 /area/awaymission/spacehotel)
 "fV" = (
 /obj/item/beach_ball,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission/spacehotel)
 "fW" = (
-/turf/unsimulated/wall/metal,
+/turf/closed/ind_wall/metal,
 /area/awaymission)
 "fX" = (
 /obj/effect/levelref{
 	id = "hotel";
 	name = "hotel level 1"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	dir = 4;
 	icon_state = "whitebluecorner"
 	},
 /area/awaymission/spacehotel)
 "fY" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	dir = 1;
 	icon_state = "whiteblue"
 	},
@@ -2877,7 +2877,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	dir = 1;
 	icon_state = "whitebluecorner"
 	},
@@ -2887,7 +2887,7 @@
 	id = "hotel";
 	name = "hotel level 2"
 	},
-/turf/unsimulated/floor/upperlevel,
+/turf/open/ind_floor/upperlevel,
 /area/awaymission/upperlevel)
 "gb" = (
 /obj/structure/window/reinforced{
@@ -2897,7 +2897,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gc" = (
 /obj/structure/window/reinforced{
@@ -2912,7 +2912,7 @@
 	icon_state = "rwindow";
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gd" = (
 /obj/structure/window/reinforced{
@@ -2923,7 +2923,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "ge" = (
 /obj/structure/window/reinforced{
@@ -2937,7 +2937,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gf" = (
 /obj/structure/window/reinforced{
@@ -2949,23 +2949,23 @@
 	dir = 1
 	},
 /obj/item/paper/hotel_scrap_3,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gg" = (
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gh" = (
 /obj/structure/table,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gi" = (
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gj" = (
 /obj/structure/chair/sofa{
@@ -2976,11 +2976,11 @@
 	icon_state = "rwindow";
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gk" = (
 /obj/structure/table/wood,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gl" = (
 /obj/structure/chair/sofa{
@@ -2990,7 +2990,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gm" = (
 /obj/structure/chair/sofa/right{
@@ -3001,7 +3001,7 @@
 	icon_state = "rwindow";
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gn" = (
 /obj/structure/chair/sofa/left{
@@ -3011,7 +3011,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "go" = (
 /obj/machinery/light{
@@ -3021,7 +3021,7 @@
 /area/awaymission/spacehotel)
 "gp" = (
 /obj/structure/chair/stool,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gq" = (
 /obj/machinery/light{
@@ -3029,7 +3029,7 @@
 	icon_state = "tube1"
 	},
 /obj/structure/closet/crate/can,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gr" = (
 /obj/effect/landmark/map_loader/random{
@@ -3048,23 +3048,23 @@
 /obj/machinery/door/unpowered/hotel_door{
 	id = 101
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gu" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 102
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gv" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 103
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gw" = (
 /obj/structure/table/reinforced,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
@@ -3072,19 +3072,19 @@
 /obj/machinery/door/unpowered/hotel_door{
 	id = 201
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gy" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 202
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gz" = (
 /obj/machinery/door/unpowered/hotel_door{
 	id = 203
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "gA" = (
 /obj/machinery/camera{
@@ -3111,7 +3111,7 @@
 /turf/template_noop,
 /area/awaymission/spacehotel)
 "gD" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
@@ -3149,7 +3149,7 @@
 /turf/template_noop,
 /area/awaymission/spacehotel)
 "gK" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 1
 	},
@@ -3159,38 +3159,38 @@
 /obj/item/reagent_containers/food/condiment/enzyme{
 	layer = 5
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "gM" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/snacks/dough,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "gN" = (
 /obj/structure/table,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "gO" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/snacks/rawsticks,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "gP" = (
 /obj/structure/table/reinforced,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellowfull"
 	},
 /area/awaymission/spacehotel)
 "gQ" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	icon_state = "fakewindows2";
 	dir = 1
 	},
@@ -3198,7 +3198,7 @@
 "gR" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/snacks/sliceable/cheesewheel,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
@@ -3207,7 +3207,7 @@
 /obj/item/reagent_containers/glass/beaker{
 	pixel_x = 5
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
@@ -3220,156 +3220,156 @@
 /obj/item/reagent_containers/food/condiment/peppermill{
 	pixel_x = 3
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "gU" = (
 /obj/structure/table,
 /obj/item/kitchen/rollingpin,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "gV" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/snacks/salmonmeat,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "gW" = (
 /obj/structure/table,
 /obj/item/book/manual/chef_recipes,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "gX" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellowfull"
 	},
 /area/awaymission/spacehotel)
 "gY" = (
 /obj/structure/table,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellowfull"
 	},
 /area/awaymission/spacehotel)
 "gZ" = (
 /obj/machinery/vending/coffee,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellowfull"
 	},
 /area/awaymission/spacehotel)
 "hb" = (
-/turf/unsimulated/wall/fakeglass,
+/turf/closed/ind_wall/fakeglass,
 /area/awaymission/spacehotel)
 "hc" = (
 /obj/machinery/vending/dinnerware,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "hd" = (
 /obj/machinery/light,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "he" = (
 /obj/machinery/processor,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "hf" = (
 /obj/machinery/chem_master/condimaster,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "hg" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "hh" = (
 /obj/structure/table,
 /obj/machinery/kitchen_machine/microwave,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "hi" = (
 /obj/structure/closet/crate/can,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "hj" = (
 /obj/structure/closet/secure_closet/freezer/meat,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "hk" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "hl" = (
 /obj/structure/kitchenspike,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "cafeteria"
 	},
 /area/awaymission/spacehotel/kitchen)
 "hm" = (
 /obj/machinery/vending/boozeomat,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellowfull"
 	},
 /area/awaymission/spacehotel)
 "hn" = (
 /obj/machinery/light,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellowfull"
 	},
 /area/awaymission/spacehotel)
 "ho" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellowfull"
 	},
 /area/awaymission/spacehotel)
 "hp" = (
 /obj/structure/table,
 /obj/machinery/chem_dispenser/soda,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellowfull"
 	},
 /area/awaymission/spacehotel)
 "hq" = (
 /obj/structure/table,
 /obj/machinery/chem_dispenser/beer,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellowfull"
 	},
 /area/awaymission/spacehotel)
 "hr" = (
 /obj/machinery/light,
 /obj/structure/table,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellowfull"
 	},
 /area/awaymission/spacehotel)
 "hs" = (
 /obj/structure/closet/crate/can,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellowfull"
 	},
 /area/awaymission/spacehotel)
@@ -3379,7 +3379,7 @@
 	req_access_txt = "150"
 	},
 /obj/effect/decal/cleanable/blood/old,
-/turf/unsimulated/floor,
+/turf/open/ind_floor,
 /area/awaymission/spacehotel)
 "hu" = (
 /obj/machinery/door/airlock{
@@ -3387,15 +3387,15 @@
 	req_access_txt = "150"
 	},
 /obj/effect/decal/cleanable/blood/old,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellowfull"
 	},
 /area/awaymission/spacehotel)
 "hv" = (
-/turf/unsimulated/floor,
+/turf/open/ind_floor,
 /area/awaymission/spacehotel)
 "hw" = (
-/turf/unsimulated/wall{
+/turf/closed/ind_wall{
 	dynamic_lighting = 0;
 	icon = null
 	},
@@ -3407,13 +3407,13 @@
 	id = "hotel_11";
 	radius = 0
 	},
-/turf/unsimulated/floor,
+/turf/open/ind_floor,
 /area/awaymission/spacehotel)
 "hy" = (
 /obj/effect/view_portal{
 	id = "hotel_21"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "ramptop";
 	dir = 4
 	},
@@ -3422,18 +3422,18 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "rampbottom";
 	dir = 4
 	},
 /area/awaymission/spacehotel)
 "hA" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	icon_state = "fakewindows3"
 	},
 /area/awaymission/spacehotel)
 "hB" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellow";
 	dir = 1
 	},
@@ -3442,24 +3442,24 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellow";
 	dir = 1
 	},
 /area/awaymission/spacehotel)
 "hD" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellowcorner";
 	dir = 1
 	},
 /area/awaymission/spacehotel)
 "hE" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "white"
 	},
 /area/awaymission/spacehotel)
 "hF" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellowcorner";
 	dir = 4
 	},
@@ -3470,13 +3470,13 @@
 	icon_state = "ladder10";
 	id = "service"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellow";
 	dir = 5
 	},
 /area/awaymission/spacehotel)
 "hH" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "ramptop";
 	dir = 4
 	},
@@ -3485,7 +3485,7 @@
 /obj/effect/view_portal{
 	id = "hotel_11"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "rampbottom";
 	dir = 4
 	},
@@ -3498,27 +3498,27 @@
 	opacity = 0;
 	radius = 0
 	},
-/turf/unsimulated/floor,
+/turf/open/ind_floor,
 /area/awaymission/spacehotel)
 "hK" = (
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/unsimulated/floor/upperlevel,
+/turf/open/ind_floor/upperlevel,
 /area/awaymission/upperlevel)
 "hL" = (
 /obj/machinery/light/built{
 	icon_state = "tube1";
 	dir = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellow";
 	dir = 1
 	},
 /area/awaymission/spacehotel)
 "hM" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellow";
 	dir = 1
 	},
@@ -3530,7 +3530,7 @@
 	icon_state = "ladder01";
 	id = "service"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellow";
 	dir = 5
 	},
@@ -3542,19 +3542,19 @@
 	id = "hotel_12";
 	radius = 2
 	},
-/turf/unsimulated/floor,
+/turf/open/ind_floor,
 /area/awaymission/spacehotel)
 "hP" = (
 /obj/effect/view_portal{
 	id = "hotel_22"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "ramptop";
 	dir = 4
 	},
 /area/awaymission/spacehotel)
 "hQ" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "rampbottom";
 	dir = 4
 	},
@@ -3564,13 +3564,13 @@
 	name = "Employees Only";
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	dir = 8;
 	icon_state = "whitered"
 	},
 /area/awaymission/spacehotel)
 "hS" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellow";
 	dir = 4
 	},
@@ -3579,7 +3579,7 @@
 /obj/effect/view_portal{
 	id = "hotel_12"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "rampbottom";
 	dir = 4
 	},
@@ -3592,7 +3592,7 @@
 	opacity = 0;
 	radius = 0
 	},
-/turf/unsimulated/floor,
+/turf/open/ind_floor,
 /area/awaymission/spacehotel)
 "hV" = (
 /obj/machinery/door/airlock/public/glass{
@@ -3601,14 +3601,14 @@
 	name = "Employees Only";
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	dir = 8;
 	icon_state = "whitered"
 	},
 /area/awaymission/spacehotel)
 "hW" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "white"
 	},
 /area/awaymission/spacehotel)
@@ -3619,48 +3619,48 @@
 	id = "hotel_13";
 	radius = 0
 	},
-/turf/unsimulated/floor,
+/turf/open/ind_floor,
 /area/awaymission/spacehotel)
 "hY" = (
 /obj/effect/view_portal{
 	id = "hotel_23"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "ramptop";
 	dir = 4
 	},
 /area/awaymission/spacehotel)
 "hZ" = (
 /obj/machinery/light,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "rampbottom";
 	dir = 4
 	},
 /area/awaymission/spacehotel)
 "ia" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellow"
 	},
 /area/awaymission/spacehotel)
 "ib" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellowcorner";
 	dir = 8
 	},
 /area/awaymission/spacehotel)
 "ic" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellowcorner"
 	},
 /area/awaymission/spacehotel)
 "id" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellow";
 	dir = 6
 	},
 /area/awaymission/spacehotel)
 "ie" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	dir = 1;
 	icon_state = "fakewindows2"
 	},
@@ -3669,7 +3669,7 @@
 /obj/effect/view_portal{
 	id = "hotel_13"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "rampbottom";
 	dir = 4
 	},
@@ -3682,11 +3682,11 @@
 	opacity = 0;
 	radius = 0
 	},
-/turf/unsimulated/floor,
+/turf/open/ind_floor,
 /area/awaymission/spacehotel)
 "ih" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "whiteyellow"
 	},
 /area/awaymission/spacehotel)
@@ -3695,7 +3695,7 @@
 	name = "Supply";
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
@@ -3703,14 +3703,14 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Mail Room"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "ik" = (
 /obj/machinery/door/airlock{
 	name = "Security";
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "il" = (
 /obj/machinery/door/airlock{
@@ -3722,51 +3722,51 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/unsimulated/floor,
+/turf/open/ind_floor,
 /area/awaymission/spacehotel)
 "im" = (
 /obj/machinery/door/airlock{
 	name = "Employees Only";
 	req_access_txt = "150"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "in" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/unsimulated/wall/metal,
+/turf/closed/ind_wall/metal,
 /area/awaymission/spacehotel)
 "io" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/structure/falsewall,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	name = "engraved floor";
 	icon_state = "cult"
 	},
 /area/awaymission/spacehotel)
 "ip" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
 "iq" = (
 /obj/structure/closet/crate/secure/loot,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
 "ir" = (
 /obj/effect/decal/warning_stripes/west,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
 "is" = (
 /obj/machinery/vending/cigarette,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "it" = (
 /obj/machinery/vending/sovietsoda,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "iu" = (
 /obj/structure/table,
@@ -3777,7 +3777,7 @@
 	network = list("Hotel");
 	use_power = 0
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "iv" = (
 /obj/structure/chair{
@@ -3787,7 +3787,7 @@
 	desc = "Probably."
 	},
 /obj/effect/decal/cleanable/pie_smudge,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "iw" = (
 /obj/structure/table,
@@ -3797,14 +3797,14 @@
 	network = list("Hotel");
 	use_power = 0
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "ix" = (
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "iy" = (
 /obj/item/stack/cable_coil/random,
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "iz" = (
 /obj/structure/cable/heavyduty{
@@ -3812,14 +3812,14 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "iA" = (
 /obj/machinery/computer/account_database,
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "iB" = (
-/turf/unsimulated/floor/wood,
+/turf/open/ind_floor/wood,
 /area/awaymission/spacehotel)
 "iC" = (
 /obj/structure/window/basic{
@@ -3827,10 +3827,10 @@
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/fernybush,
-/turf/unsimulated/floor/grass,
+/turf/open/ind_floor/grass,
 /area/awaymission/spacehotel)
 "iD" = (
-/turf/unsimulated/wall{
+/turf/closed/ind_wall{
 	icon = 'icons/turf/walls/cult_wall.dmi';
 	icon_state = "cult";
 	desc = "The patterns engraved on the wall seem to shift as you try to focus on them. You feel sick"
@@ -3838,20 +3838,20 @@
 /area/awaymission/spacehotel)
 "iE" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	name = "engraved floor";
 	icon_state = "cult"
 	},
 /area/awaymission/spacehotel)
 "iF" = (
 /obj/structure/closet/crate/plastic,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
 "iG" = (
 /obj/machinery/vending/snack,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "iH" = (
 /obj/structure/chair{
@@ -3861,13 +3861,13 @@
 	desc = "Probably."
 	},
 /obj/effect/decal/cleanable/pie_smudge,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "iI" = (
 /obj/structure/chair{
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "iJ" = (
 /obj/structure{
@@ -3876,7 +3876,7 @@
 	icon_state = "smes";
 	name = "WaffeCo PSU"
 	},
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "iK" = (
 /obj/structure{
@@ -3885,18 +3885,18 @@
 	icon_state = "teg";
 	name = "WaffeCo PGU"
 	},
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "iL" = (
 /obj/machinery/power/supermatter_shard,
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "iM" = (
 /obj/machinery/gateway{
 	dir = 9
 	},
 /obj/effect/decal/warning_stripes/northwest,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
@@ -3905,7 +3905,7 @@
 	dir = 1
 	},
 /obj/effect/decal/warning_stripes/north,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
@@ -3914,7 +3914,7 @@
 	dir = 5
 	},
 /obj/effect/decal/warning_stripes/northeast,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
@@ -3924,10 +3924,10 @@
 	dir = 8
 	},
 /obj/structure/flora/grass/both,
-/turf/unsimulated/floor/grass,
+/turf/open/ind_floor/grass,
 /area/awaymission/spacehotel)
 "iQ" = (
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	name = "engraved floor";
 	icon_state = "cult"
 	},
@@ -3935,7 +3935,7 @@
 "iR" = (
 /obj/effect/gibspawner/human,
 /obj/effect/decal/cleanable/blood/old,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	name = "engraved floor";
 	icon_state = "cult"
 	},
@@ -3943,11 +3943,11 @@
 "iS" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "iT" = (
 /obj/machinery/vending/cola,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "iU" = (
 /obj/structure/table,
@@ -3961,13 +3961,13 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "iV" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "iW" = (
 /obj/structure/cable/heavyduty{
@@ -3980,7 +3980,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "iX" = (
 /obj/structure/cable/heavyduty{
@@ -3988,7 +3988,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "iY" = (
 /obj/structure/cable/heavyduty{
@@ -4006,7 +4006,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "iZ" = (
 /obj/structure/cable/heavyduty{
@@ -4015,7 +4015,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/landmark/damageturf,
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "ja" = (
 /obj/structure/cable/heavyduty{
@@ -4028,20 +4028,20 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "jb" = (
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "jc" = (
 /obj/machinery/gateway{
 	dir = 8
 	},
 /obj/effect/decal/warning_stripes/west,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
@@ -4049,7 +4049,7 @@
 /obj/machinery/gateway/centeraway{
 	calibrated = 0
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
@@ -4058,7 +4058,7 @@
 	dir = 4
 	},
 /obj/effect/decal/warning_stripes/east,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
@@ -4069,12 +4069,12 @@
 	},
 /obj/structure/flora/rock,
 /obj/structure/flora/grass/brown,
-/turf/unsimulated/floor/grass,
+/turf/open/ind_floor/grass,
 /area/awaymission/spacehotel)
 "jg" = (
 /obj/item/candle,
 /obj/effect/decal/cleanable/blood/old,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	name = "engraved floor";
 	icon_state = "cult"
 	},
@@ -4082,28 +4082,28 @@
 "jh" = (
 /obj/effect/rune,
 /obj/item/organ/internal/brain,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	name = "engraved floor";
 	icon_state = "cult"
 	},
 /area/awaymission/spacehotel)
 "ji" = (
 /obj/item/candle,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	name = "engraved floor";
 	icon_state = "cult"
 	},
 /area/awaymission/spacehotel)
 "jj" = (
 /obj/item/tome,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	name = "engraved floor";
 	icon_state = "cult"
 	},
 /area/awaymission/spacehotel)
 "jk" = (
 /obj/structure/closet/crate/critter,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
@@ -4111,7 +4111,7 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Lobby"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "jn" = (
 /obj/structure{
@@ -4121,47 +4121,47 @@
 	name = "WaffeCo PSU"
 	},
 /obj/effect/landmark/damageturf,
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "jo" = (
 /obj/effect/decal/remains/human,
 /obj/item/clothing/head/soft/red,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "jp" = (
 /obj/item/toy/prize/honk,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "jq" = (
 /obj/item/toy/spinningtoy,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "jr" = (
 /obj/item/grown/bananapeel,
 /obj/item/toy/spinningtoy,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "js" = (
 /obj/structure/barricade/wooden,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "jt" = (
 /obj/machinery/door/airlock/public/glass,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "ju" = (
 /obj/machinery/gateway{
 	dir = 10
 	},
 /obj/effect/decal/warning_stripes/southwest,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
 "jv" = (
 /obj/machinery/gateway,
 /obj/effect/decal/warning_stripes/south,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
@@ -4170,7 +4170,7 @@
 	dir = 6
 	},
 /obj/effect/decal/warning_stripes/southeast,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
@@ -4180,20 +4180,20 @@
 	dir = 8
 	},
 /obj/structure/flora/ausbushes/palebush,
-/turf/unsimulated/floor/grass,
+/turf/open/ind_floor/grass,
 /area/awaymission/spacehotel)
 "jy" = (
 /obj/item/flashlight/lantern{
 	on = 1
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	name = "engraved floor";
 	icon_state = "cult"
 	},
 /area/awaymission/spacehotel)
 "jz" = (
 /obj/effect/rune,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	name = "engraved floor";
 	icon_state = "cult"
 	},
@@ -4206,14 +4206,14 @@
 /obj/effect/view_portal{
 	id = "cultroom"
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	name = "engraved floor";
 	icon_state = "cult"
 	},
 /area/awaymission/spacehotel)
 "jB" = (
 /obj/effect/gibspawner/human,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	name = "engraved floor";
 	icon_state = "cult"
 	},
@@ -4222,11 +4222,11 @@
 /obj/machinery/atm{
 	pixel_y = 32
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "jD" = (
 /obj/effect/decal/warning_stripes/white/hollow,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "jE" = (
 /obj/item/paper/pamphlet{
@@ -4253,13 +4253,13 @@
 	pixel_x = 8;
 	pixel_y = -8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel/reception)
 "jF" = (
 /obj/item/latexballon,
 /obj/item/latexballon,
 /obj/structure/table/glass,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel/reception)
 "jG" = (
 /obj/structure/rack,
@@ -4268,7 +4268,7 @@
 /obj/item/key,
 /obj/item/key,
 /obj/item/key,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel/reception)
 "jH" = (
 /obj/structure/chair/comfy,
@@ -4276,7 +4276,7 @@
 	desc = "Probably."
 	},
 /obj/effect/decal/cleanable/pie_smudge,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "jI" = (
 /obj/structure/chair/comfy,
@@ -4287,7 +4287,7 @@
 	desc = "Probably."
 	},
 /obj/effect/decal/cleanable/pie_smudge,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "jJ" = (
 /obj/structure/cable/heavyduty{
@@ -4295,7 +4295,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "jK" = (
 /obj/structure/cable/heavyduty{
@@ -4308,7 +4308,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "jL" = (
 /obj/structure/cable/heavyduty{
@@ -4316,17 +4316,17 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "jM" = (
 /obj/effect/decal/remains/human,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "jN" = (
 /obj/item/trash/candle,
 /obj/item/trash/candle,
 /obj/item/trash/candle,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "jO" = (
 /obj/structure/window/basic{
@@ -4334,34 +4334,34 @@
 	dir = 8
 	},
 /obj/structure/flora/bush,
-/turf/unsimulated/floor/grass,
+/turf/open/ind_floor/grass,
 /area/awaymission/spacehotel)
 "jP" = (
 /obj/item/restraints/legcuffs,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	name = "engraved floor";
 	icon_state = "cult"
 	},
 /area/awaymission/spacehotel)
 "jQ" = (
 /obj/structure/closet/crate/secure/unknownchemicals,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
 "jR" = (
 /obj/structure/closet/crate/can,
 /obj/item/paper/crumpled/hotel_scrap_7,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "floor"
 	},
 /area/awaymission/spacehotel)
 "jS" = (
 /obj/structure/table/reinforced,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel/reception)
 "jT" = (
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel/reception)
 "jU" = (
 /obj/structure/table,
@@ -4373,7 +4373,7 @@
 	use_power = 0
 	},
 /obj/machinery/light,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "jV" = (
 /obj/structure/table,
@@ -4384,47 +4384,47 @@
 	network = list("Hotel");
 	use_power = 0
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "jW" = (
 /obj/machinery/light/small,
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "jX" = (
 /obj/item/toy/sword,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "jY" = (
 /obj/item/target/syndicate,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "jZ" = (
 /obj/item/trash/sosjerky,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "ka" = (
 /obj/item/gun/projectile/shotgun/toy/crossbow,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "kb" = (
 /obj/machinery/space_heater,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "kc" = (
 /obj/machinery/door/airlock{
 	name = "Supply Closet"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "kd" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Gateway"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "ke" = (
 /obj/item/melee/cultblade,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	name = "engraved floor";
 	icon_state = "cult"
 	},
@@ -4434,7 +4434,7 @@
 	blood_DNA = list("1e+009" = "O-")
 	},
 /obj/effect/decal/cleanable/blood/old,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	name = "engraved floor";
 	icon_state = "cult"
 	},
@@ -4447,42 +4447,42 @@
 	icon_state = "sofaend_left";
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "kh" = (
 /obj/effect/hotel_controller,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "ki" = (
 /obj/item/pen,
 /obj/structure/table/reinforced,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel/reception)
 "kj" = (
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel/reception)
 "kk" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel/reception)
 "kl" = (
 /obj/structure/chair/sofa{
 	icon_state = "sofamiddle";
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "km" = (
 /obj/item/clipboard,
 /obj/item/paper,
 /obj/structure/table/reinforced,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel/reception)
 "ko" = (
 /obj/structure/filingcabinet/filingcabinet,
@@ -4490,62 +4490,62 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel/reception)
 "kp" = (
 /obj/structure/filingcabinet/filingcabinet,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel/reception)
 "kq" = (
 /obj/structure/chair/sofa/corner{
 	dir = 4
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "kr" = (
 /obj/structure/chair/sofa{
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "ks" = (
 /obj/machinery/light,
 /obj/structure/chair/sofa/left{
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "kt" = (
 /obj/machinery/light,
 /obj/structure/chair/sofa/right{
 	dir = 1
 	},
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "ku" = (
 /obj/structure/chair/sofa/left{
 	dir = 1
 	},
 /obj/effect/decal/warning_stripes/white/hollow,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel)
 "kv" = (
 /obj/item/paper_bin,
 /obj/structure/table/glass,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel/reception)
 "kw" = (
 /obj/structure/table/glass,
-/turf/unsimulated/floor/carpet,
+/turf/open/ind_floor/carpet,
 /area/awaymission/spacehotel/reception)
 "kx" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	dir = 10;
 	icon_state = "fakewindows"
 	},
 /area/space/nearstation)
 "ky" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	dir = 4;
 	icon_state = "fakewindows";
 	opacity = 1
@@ -4555,149 +4555,149 @@
 /obj/machinery/door/airlock/external{
 	name = "Arrival Airlock"
 	},
-/turf/unsimulated/floor/plating,
+/turf/open/ind_floor/plating,
 /area/awaymission/spacehotel)
 "kA" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/space/nearstation)
 "kB" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 6
 	},
 /area/space/nearstation)
 "kC" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s6";
 	dir = 2
 	},
 /area/awaymission)
 "kD" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/awaymission)
 "kE" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	icon_state = "fakewindows";
 	dir = 8
 	},
 /area/awaymission)
 "kF" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	icon_state = "fakewindows2";
 	dir = 8
 	},
 /area/awaymission)
 "kG" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	dir = 4;
 	icon_state = "fakewindows";
 	opacity = 1
 	},
 /area/awaymission)
 "kH" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/awaymission)
 "kI" = (
 /obj/machinery/door/unpowered/shuttle,
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission)
 "kJ" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s10";
 	dir = 2
 	},
 /area/awaymission)
 "kK" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s6";
 	dir = 2
 	},
 /area/space/nearstation)
 "kL" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall12";
 	dir = 2
 	},
 /area/space/nearstation)
 "kM" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s10";
 	dir = 2
 	},
 /area/space/nearstation)
 "kN" = (
-/turf/unsimulated/wall/fakeglass{
+/turf/closed/ind_wall/fakeglass{
 	icon_state = "fakewindows3"
 	},
 /area/awaymission)
 "kO" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc4";
 	dir = 2
 	},
 /area/awaymission)
 "kP" = (
 /obj/effect/decal/remains/human,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "kQ" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "kR" = (
 /obj/item/paper/hotel_scrap_4,
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "kS" = (
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "kT" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "kU" = (
 /obj/structure/shuttle/engine/heater{
 	icon_state = "heater";
 	dir = 4
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission)
 "kV" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 4;
 	icon_state = "propulsion"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/awaymission)
 "kW" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc4";
 	dir = 2
 	},
 /area/space/nearstation)
 "kX" = (
-/turf/simulated/shuttle/wall/interior,
+/turf/closed/shuttle/wall/interior,
 /area/space/nearstation)
 "kY" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall3"
 	},
 /area/space/nearstation)
@@ -4706,7 +4706,7 @@
 	dir = 4;
 	icon_state = "propulsion"
 	},
-/turf/simulated/shuttle/plating,
+/turf/open/shuttle/plating,
 /area/space/nearstation)
 "la" = (
 /obj/effect/decal/remains/human,
@@ -4714,11 +4714,11 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "lb" = (
 /obj/machinery/door/airlock/public/glass,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "lc" = (
 /obj/structure/window/reinforced{
@@ -4726,16 +4726,16 @@
 	},
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old,
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "ld" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s5";
 	dir = 2
 	},
 /area/awaymission)
 "le" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc1";
 	dir = 2
 	},
@@ -4745,35 +4745,35 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "lg" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/turf/simulated/shuttle/floor,
+/turf/open/shuttle/floor,
 /area/awaymission)
 "lh" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s5";
 	dir = 2
 	},
 /area/space/nearstation)
 "li" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swallc1";
 	dir = 2
 	},
 /area/space/nearstation)
 "lj" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s9";
 	dir = 2
 	},
 /area/awaymission)
 "lk" = (
-/turf/simulated/shuttle/wall{
+/turf/closed/shuttle/wall{
 	icon_state = "swall_s9";
 	dir = 2
 	},
@@ -4782,7 +4782,7 @@
 /obj/machinery/shower{
 	dir = 8
 	},
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission{
@@ -4791,7 +4791,7 @@
 	})
 "lm" = (
 /obj/structure/curtain/open/shower,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	icon_state = "freezerfloor"
 	},
 /area/awaymission{
@@ -4800,7 +4800,7 @@
 	})
 "ln" = (
 /obj/item/paper/hotel_scrap_8,
-/turf/unsimulated/floor{
+/turf/open/ind_floor{
 	name = "engraved floor";
 	icon_state = "cult"
 	},
@@ -4812,7 +4812,7 @@
 	icon_state = "rock_side_w"
 	},
 /obj/machinery/poolcontroller/invisible,
-/turf/unsimulated/beach/water/deep/dense,
+/turf/open/beach/water/deep/dense,
 /area/awaymission/beach)
 
 (1,1,1) = {"

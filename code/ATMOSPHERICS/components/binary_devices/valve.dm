@@ -5,9 +5,9 @@
 	name = "manual valve"
 	desc = "A pipe valve"
 
-	can_unwrench = 1
+	can_unwrench = TRUE
 
-	var/open = 0
+	var/open = FALSE
 
 	req_one_access_txt = "24;10"
 

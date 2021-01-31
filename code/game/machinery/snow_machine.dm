@@ -76,8 +76,8 @@
 		turn_on_or_off(FALSE, TRUE)
 		return
 	for(var/turf/TF in range(1, src))
-		if(issimulatedturf(TF))
-			var/turf/simulated/S = TF
+		if(isopenturf(TF))
+			var/turf/open/S = TF
 			affect_turf_temperature(S, cooling_speed)
 		if(prob(50))
 			continue
@@ -97,9 +97,9 @@
 		icon_state = "snow_machine_[active ? "on" : "off"]"
 
 /obj/machinery/snow_machine/proc/affect_turf_temperature(turf/T, modifier)
-	if(!issimulatedturf(T) || T.density)
+	if(!isopenturf(T) || T.density)
 		return
-	var/turf/simulated/S = T
+	var/turf/open/S = T
 	var/initial_temperature = S.air.temperature
 	if(initial_temperature <= lower_temperature_limit) //Can we actually cool this?
 		return
@@ -115,8 +115,8 @@
 		return
 	if(T.density)
 		return
-	if(issimulatedturf(T))
-		var/turf/simulated/S = T
+	if(isopenturf(T))
+		var/turf/open/S = T
 		if(S.air.temperature > T0C + 1)
 			return
 	if(locate(/obj/effect/snowcloud, T)) //Ice to see you

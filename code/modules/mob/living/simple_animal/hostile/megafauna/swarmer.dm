@@ -142,18 +142,33 @@ GLOBAL_LIST_INIT(AISwarmerCapsByType, list(/mob/living/simple_animal/hostile/swa
 	if(newloc)
 		if(newloc.z == z) //so these actions are Z-specific
 			if(islava(newloc))
-				var/turf/simulated/floor/plating/lava/L = newloc
+				var/turf/open/floor/plating/lava/L = newloc
 				if(!L.is_safe())
 					StartAction(20)
 					new /obj/structure/lattice/catwalk/swarmer_catwalk(newloc)
 					return FALSE
-
 			if(ischasm(newloc) && !throwing)
 				throw_at(get_edge_target_turf(src, get_dir(src, newloc)), 7 , 3, src, FALSE) //my planet needs me
 				return FALSE
-
 		return ..()
 
+/*
+ * SWARMER CATWALKS
+ * Used so they can survive lavaland better
+ * Here so I don't have to keep switching between swarmer.dm and lattice.dm
+ */
+/obj/structure/lattice/catwalk/swarmer_catwalk
+	name = "swarmer catwalk"
+	desc = "A catwalk-like mesh, produced by swarmers to allow them to navigate hostile terrain."
+	icon = 'icons/obj/smooth_structures/swarmer_catwalk.dmi'
+	icon_state = "swarmer_catwalk"
+	resistance_flags = FIRE_PROOF | LAVA_PROOF
+
+/obj/structure/lattice/catwalk/swarmer_catwalk/swarmer_act(mob/living/simple_animal/hostile/swarmer/S)
+	to_chat(S, "<span class='warning'>We have created these for our own benefit. Aborting.</span>")
+	return FALSE
+
+/* End Swarmer Catwalks */
 
 /mob/living/simple_animal/hostile/swarmer/ai/proc/StartAction(deci = 0)
 	stop_automated_movement = TRUE
@@ -165,9 +180,6 @@ GLOBAL_LIST_INIT(AISwarmerCapsByType, list(/mob/living/simple_animal/hostile/swa
 	stop_automated_movement = FALSE
 	AIStatus = AI_ON
 
-
-
-
 //RESOURCE SWARMER:
 //Similar to the original Player-Swarmers, these dismantle things to obtain the metal inside
 //They then use this medal to produce more swarmers or traps/barricades
@@ -176,7 +188,7 @@ GLOBAL_LIST_INIT(AISwarmerCapsByType, list(/mob/living/simple_animal/hostile/swa
 	search_objects = 1
 	attack_all_objects = TRUE //attempt to nibble everything
 	lose_patience_timeout = 150
-	var/static/list/sharedWanted = typecacheof(list(/turf/simulated/mineral, /turf/simulated/wall)) //eat rocks and walls
+	var/static/list/sharedWanted = typecacheof(list(/turf/closed/mineral, /turf/closed/wall)) //eat rocks and walls
 	var/static/list/sharedIgnore = list()
 
 //This handles viable things to eat/attack
@@ -285,11 +297,3 @@ GLOBAL_LIST_INIT(AISwarmerCapsByType, list(/mob/living/simple_animal/hostile/swa
 		return TRUE
 	else
 		return ..()
-
-//SWARMER CATWALKS
-//Used so they can survive lavaland better
-/obj/structure/lattice/catwalk/swarmer_catwalk
-	name = "swarmer catwalk"
-	desc = "A catwalk-like mesh, produced by swarmers to allow them to navigate hostile terrain."
-	icon = 'icons/obj/smooth_structures/swarmer_catwalk.dmi'
-	icon_state = "swarmer_catwalk"

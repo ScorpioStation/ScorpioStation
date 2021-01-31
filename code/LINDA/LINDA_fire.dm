@@ -10,7 +10,7 @@
 	return
 
 
-/turf/simulated/hotspot_expose(exposed_temperature, exposed_volume, soh)
+/turf/open/hotspot_expose(exposed_temperature, exposed_volume, soh)
 	var/datum/gas_mixture/air_contents = return_air()
 	if(reagents)
 		reagents.temperature_reagents(exposed_temperature, 10, 300)
@@ -70,7 +70,7 @@
 	air_update_turf()
 
 /obj/effect/hotspot/proc/perform_exposure()
-	var/turf/simulated/location = loc
+	var/turf/open/location = loc
 	if(!istype(location) || !(location.air))
 		return FALSE
 
@@ -106,7 +106,7 @@
 		just_spawned = 0
 		return 0
 
-	var/turf/simulated/location = loc
+	var/turf/open/location = loc
 	if(!istype(location))
 		qdel(src)
 		return
@@ -135,11 +135,11 @@
 			var/radiated_temperature = location.air.temperature*FIRE_SPREAD_RADIOSITY_SCALE
 			for(var/direction in GLOB.cardinal)
 				if(!(location.atmos_adjacent_turfs & direction))
-					var/turf/simulated/wall/W = get_step(src, direction)
+					var/turf/closed/wall/W = get_step(src, direction)
 					if(istype(W))
 						W.adjacent_fire_act(W, radiated_temperature)
 					continue
-				var/turf/simulated/T = get_step(src, direction)
+				var/turf/open/T = get_step(src, direction)
 				if(istype(T) && !T.active_hotspot)
 					T.hotspot_expose(radiated_temperature, CELL_VOLUME/4)
 
@@ -166,16 +166,15 @@
 	SSair.hotspots -= src
 	if(!fake)
 		DestroyTurf()
-	if(istype(loc, /turf/simulated))
-		var/turf/simulated/T = loc
+	if(isopenturf(loc))
+		var/turf/open/T = loc
 		if(T.active_hotspot == src)
 			T.active_hotspot = null
 	return ..()
 
 /obj/effect/hotspot/proc/DestroyTurf()
-
-	if(istype(loc, /turf/simulated))
-		var/turf/simulated/T = loc
+	if(isopenturf(loc))
+		var/turf/open/T = loc
 		if(T.to_be_destroyed && !T.changing_turf)
 			var/chance_of_deletion
 			if(T.heat_capacity) //beware of division by zero
@@ -230,7 +229,7 @@
 				A.fire_act(null, H.temperature, H.volume)
 
 		if(isfloorturf(T))
-			var/turf/simulated/floor/F = T
+			var/turf/open/floor/F = T
 			F.burn_tile()
 
 		for(var/mob/living/L in T)
@@ -294,7 +293,7 @@
 				if(A != existing_hotspot)
 					A.fire_act(null, expose_temp, existing_hotspot.volume)
 		if(isfloorturf(T))
-			var/turf/simulated/floor/F = T
+			var/turf/open/floor/F = T
 			F.burn_tile()
 		for(var/mob/living/L in T)
 			L.adjust_fire_stacks(3)
@@ -327,7 +326,7 @@
 
 /proc/fireflash_sm(atom/center, radius, temp, falloff, capped = TRUE, bypass_rng = FALSE)
 	var/list/affected = fireflash_s(center, radius, temp, falloff)
-	for(var/turf/simulated/T in affected)
+	for(var/turf/open/T in affected)
 		var/mytemp = affected[T]
 		var/melt = 1643.15 // default steel melting point
 		var/divisor = melt

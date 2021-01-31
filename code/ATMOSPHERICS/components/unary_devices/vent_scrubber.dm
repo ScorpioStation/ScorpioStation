@@ -12,26 +12,26 @@
 	idle_power_usage = 10
 	active_power_usage = 60
 
-	can_unwrench = 1
+	can_unwrench = TRUE
 
 	var/area/initial_loc
 
 	frequency = ATMOS_VENTSCRUB
 
-	var/list/turf/simulated/adjacent_turfs = list()
+	var/list/turf/open/adjacent_turfs = list()
 
-	var/on = 0
+	var/on = FALSE
 	var/scrubbing = 1 //0 = siphoning, 1 = scrubbing
-	var/scrub_O2 = 0
-	var/scrub_N2 = 0
-	var/scrub_CO2 = 1
-	var/scrub_Toxins = 0
-	var/scrub_N2O = 0
+	var/scrub_O2 = FALSE
+	var/scrub_N2 = FALSE
+	var/scrub_CO2 = TRUE
+	var/scrub_Toxins = FALSE
+	var/scrub_N2O = FALSE
 
 	var/volume_rate = 200
-	var/widenet = 0 //is this scrubber acting on the 3x3 area around it.
+	var/widenet = FALSE //is this scrubber acting on the 3x3 area around it.
 
-	var/welded = 0
+	var/welded = FALSE
 
 	var/area_uid
 	var/radio_filter_out
@@ -69,11 +69,11 @@
 
 /obj/machinery/atmospherics/unary/vent_scrubber/auto_use_power()
 	if(!powered(power_channel))
-		return 0
+		return FALSE
 	if(!on || welded)
-		return 0
+		return FALSE
 	if(stat & (NOPOWER|BROKEN))
-		return 0
+		return FALSE
 
 	var/amount = idle_power_usage
 
@@ -92,31 +92,25 @@
 	if(widenet)
 		amount += amount*(adjacent_turfs.len*(adjacent_turfs.len/2))
 	use_power(amount, power_channel)
-	return 1
+	return TRUE
 
-/obj/machinery/atmospherics/unary/vent_scrubber/update_icon(var/safety = 0)
+/obj/machinery/atmospherics/unary/vent_scrubber/update_icon(var/safety = FALSE)
 	..()
 
 	plane = GAME_PLANE
-
 	if(!check_icon_cache())
 		return
-
 	overlays.Cut()
-
 	var/scrubber_icon = "scrubber"
-
 	var/turf/T = get_turf(src)
 	if(!istype(T))
 		return
-
 	if(!powered())
 		scrubber_icon += "off"
 	else
 		scrubber_icon += "[on ? "[scrubbing ? "on" : "in"]" : "off"]"
 	if(welded)
 		scrubber_icon = "scrubberweld"
-
 	overlays += SSair.icon_manager.get_atmos_icon("device", , , scrubber_icon)
 	update_pipe_image()
 
@@ -147,7 +141,7 @@
 
 /obj/machinery/atmospherics/unary/vent_scrubber/proc/broadcast_status()
 	if(!radio_connection)
-		return 0
+		return FALSE
 
 	var/datum/signal/signal = new
 	signal.transmission_method = 1 //radio signal
@@ -175,7 +169,7 @@
 		initial_loc.air_scrub_info[id_tag] = signal.data
 	radio_connection.post_signal(src, signal, radio_filter_out)
 
-	return 1
+	return TRUE
 
 /obj/machinery/atmospherics/unary/vent_scrubber/atmos_init()
 	..()
@@ -188,25 +182,21 @@
 
 /obj/machinery/atmospherics/unary/vent_scrubber/process_atmos()
 	..()
-
 	if(widenet)
 		check_turfs()
-
 	if(stat & (NOPOWER|BROKEN))
 		return
-
 	if(!node)
-		on = 0
-
+		on = FALSE
 	if(welded)
-		return 0
+		return FALSE
 	//broadcast_status()
 	if(!on)
-		return 0
-
+		return FALSE
 	scrub(loc)
 	if(widenet)
-		for(var/turf/simulated/tile in adjacent_turfs)
+		for(var/thing in adjacent_turfs)
+			var/turf/open/tile = thing
 			scrub(tile)
 
 //we populate a list of turfs with nonatmos-blocked cardinal turfs AND
@@ -217,9 +207,9 @@
 	if(istype(T))
 		adjacent_turfs = T.GetAtmosAdjacentTurfs(alldir=1)
 
-/obj/machinery/atmospherics/unary/vent_scrubber/proc/scrub(var/turf/simulated/tile)
+/obj/machinery/atmospherics/unary/vent_scrubber/proc/scrub(turf/open/tile)
 	if(!tile || !istype(tile))
-		return 0
+		return FALSE
 
 	var/datum/gas_mixture/environment = tile.return_air()
 
@@ -273,9 +263,9 @@
 		air_contents.merge(removed)
 		tile.air_update_turf()
 
-	parent.update = 1
+	parent.update = TRUE
 
-	return 1
+	return TRUE
 
 /obj/machinery/atmospherics/unary/vent_scrubber/hide(var/i) //to make the little pipe section invisible, the icon changes.
 	update_icon()
@@ -284,7 +274,7 @@
 	if(stat & (NOPOWER|BROKEN))
 		return
 	if(!signal.data["tag"] || (signal.data["tag"] != id_tag) || (signal.data["sigtype"]!="command"))
-		return 0
+		return FALSE
 
 	if(signal.data["power"] != null)
 		on = text2num(signal.data["power"])
@@ -387,11 +377,11 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/attackby(var/obj/item/W as obj, var/mob/user as mob, params)
 	if(istype(W, /obj/item/multitool))
 		update_multitool_menu(user)
-		return 1
+		return TRUE
 	if(istype(W, /obj/item/wrench))
 		if(!(stat & NOPOWER) && on)
 			to_chat(user, "<span class='danger'>You cannot unwrench this [src], turn it off first.</span>")
-			return 1
+			return TRUE
 
 	return ..()
 

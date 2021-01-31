@@ -145,16 +145,16 @@
 	currentlyEating = noms
 
 	var/nomDelay = 25
-	var/turf/simulated/wall/W
+	var/turf/closed/wall/W
 
 	if(noms in totalWormSegments)
 		return //Trying to eat part of self.
 
 	if(istype(noms, /turf))
-		if(istype(noms, /turf/simulated/wall))
+		if(istype(noms, /turf/closed/wall))
 			W = noms
 			nomDelay *= 2
-			if(istype(W, /turf/simulated/wall/r_wall))
+			if(istype(W, /turf/closed/wall/r_wall))
 				nomDelay *= 2
 		else
 			return
@@ -166,7 +166,7 @@
 	if(do_after(src, nomDelay, 0, target = noms))
 		if(noms && Adjacent(noms) && (currentlyEating == noms))//It exists, were next to it, and it's still the thing were eating
 			if(W)
-				W.ChangeTurf(/turf/simulated/floor/plating)
+				W.ChangeTurf(/turf/open/floor/plating)
 				new /obj/item/stack/sheet/metal(src, plasmaPoopPotential)
 				currentlyEating = null //ffs, unstore this
 				src.visible_message("<span class='userdanger'>\the [src] eats \the [noms]!</span>","<span class='notice'>You eat \the [noms]!</span>","<span class='userdanger'>You hear gnashing.</span>") //inform everyone what the fucking worm is doing.

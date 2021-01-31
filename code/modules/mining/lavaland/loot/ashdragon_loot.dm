@@ -169,9 +169,9 @@
 	hitsound = 'sound/weapons/sear.ogg'
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	needs_permit = TRUE
-	var/turf_type = /turf/simulated/floor/plating/lava/smooth
+	var/turf_type = /turf/open/floor/plating/lava/smooth
 	var/transform_string = "lava"
-	var/reset_turf_type = /turf/simulated/floor/plating/asteroid/basalt
+	var/reset_turf_type = /turf/open/floor/plating/asteroid/basalt
 	var/reset_string = "basalt"
 	var/create_cooldown = 100
 	var/create_delay = 30
@@ -181,7 +181,7 @@
 
 /obj/item/lava_staff/New()
 	. = ..()
-	banned_turfs = typecacheof(list(/turf/space/transit, /turf/unsimulated))
+	banned_turfs = typecacheof(list(/turf/open/space/transit, /turf/unsimulated))
 
 /obj/item/lava_staff/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
 	..()
@@ -199,7 +199,7 @@
 
 	if(target in view(user.client.view, get_turf(user)))
 
-		var/turf/simulated/T = get_turf(target)
+		var/turf/open/T = get_turf(target)
 		if(!istype(T))
 			return
 		if(!istype(T, turf_type))

@@ -4,7 +4,8 @@
 	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 	requires_power = FALSE
 
-// Used by /turf/unsimulated/floor/upperlevel as a reference for where the other floor is
+// Used by /turf/open/ind_floor/upperlevel as a reference for where the other floor is
+/// No more /turf/open/ind_floor >__>;
 /obj/effect/levelref
 	name = "level reference"
 	icon = 'icons/mob/screen_gen.dmi'
@@ -30,7 +31,7 @@
 			update_offset()
 			O.other = src
 			O.update_offset()
-			for(var/turf/unsimulated/floor/upperlevel/U in get_area(loc))
+			for(var/turf/open/ind_floor/upperlevel/U in get_area(loc))
 				U.init(src)
 			return
 
@@ -43,7 +44,7 @@
 	offset_y = other.y - y
 	offset_z = other.z - z
 
-// Used by /turf/unsimulated/floor/upperlevel and /obj/effect/view_portal/visual
+// Used by /turf/open/ind_floor/upperlevel and /obj/effect/view_portal/visual
 // to know if the world changed on the remote side
 /obj/effect/portal_sensor
 	invisibility = 101
@@ -87,11 +88,11 @@
 	if(istype(T) && T.lighting_object && !T.lighting_object.needs_update)
 		var/atom/movable/lighting_object/O = T.lighting_object
 		var/hash = 0
-		
+
 		for(var/lighting_corner in O)
 			var/datum/lighting_corner/C = lighting_corner
 			hash = hash + C.lum_r + C.lum_g + C.lum_b
-			
+
 		if(hash != light_hash)
 			light_hash = hash
 			trigger()
@@ -100,54 +101,6 @@
 			light_hash = -1
 			trigger()
 
-// for second floor showing floor below
-/turf/unsimulated/floor/upperlevel
-	icon = 'icons/turf/areas.dmi'
-	icon_state = "dark128"
-	layer = AREA_LAYER + 0.5
-	appearance_flags = TILE_BOUND | KEEP_TOGETHER
-	var/turf/lower_turf
-	var/obj/effect/portal_sensor/sensor
-
-/turf/unsimulated/floor/upperlevel/New()
-	..()
-	var/obj/effect/levelref/R = locate() in get_area(src)
-	if(R && R.other)
-		init(R)
-
-/turf/unsimulated/floor/upperlevel/Destroy()
-	QDEL_NULL(sensor)
-	return ..()
-
-/turf/unsimulated/floor/upperlevel/proc/init(var/obj/effect/levelref/R)
-	lower_turf = locate(x + R.offset_x, y + R.offset_y, z + R.offset_z)
-	if(lower_turf)
-		sensor = new(lower_turf, src)
-
-/turf/unsimulated/floor/upperlevel/Entered(atom/movable/AM, atom/OL, ignoreRest = 0)
-	if(isliving(AM) || istype(AM, /obj))
-		if(isliving(AM))
-			var/mob/living/M = AM
-			M.emote("scream")
-			M.SpinAnimation(5, 1)
-		AM.forceMove(lower_turf)
-
-/turf/unsimulated/floor/upperlevel/attack_ghost(mob/user)
-	user.forceMove(lower_turf)
-
-/turf/unsimulated/floor/upperlevel/proc/trigger()
-	name = lower_turf.name
-	desc = lower_turf.desc
-
-	// render each atom
-	underlays.Cut()
-	for(var/X in list(lower_turf) + lower_turf.contents)
-		var/atom/A = X
-		if(A && A.invisibility <= SEE_INVISIBLE_LIVING)
-			var/image/I = image(A, layer = AREA_LAYER + A.layer * 0.01, dir = A.dir)
-			I.pixel_x = A.pixel_x
-			I.pixel_y = A.pixel_y
-			underlays += I
 
 // remote end of narnia portal
 /obj/effect/view_portal
@@ -371,3 +324,52 @@
 
 /obj/effect/view_portal_dummy/attack_ghost(mob/user)
 	owner.attack_ghost(user)
+
+/// for second floor showing floor below
+/turf/open/ind_floor/upperlevel
+	icon = 'icons/turf/areas.dmi'
+	icon_state = "dark128"
+	layer = AREA_LAYER + 0.5
+	appearance_flags = TILE_BOUND | KEEP_TOGETHER
+	var/turf/lower_turf
+	var/obj/effect/portal_sensor/sensor
+
+/turf/open/ind_floor/upperlevel/New()
+	..()
+	var/obj/effect/levelref/R = locate() in get_area(src)
+	if(R && R.other)
+		init(R)
+
+/turf/open/ind_floor/upperlevel/Destroy()
+	QDEL_NULL(sensor)
+	return ..()
+
+/turf/open/ind_floor/upperlevel/proc/init(var/obj/effect/levelref/R)
+	lower_turf = locate(x + R.offset_x, y + R.offset_y, z + R.offset_z)
+	if(lower_turf)
+		sensor = new(lower_turf, src)
+
+/turf/open/ind_floor/upperlevel/Entered(atom/movable/AM, atom/OL, ignoreRest = 0)
+	if(isliving(AM) || istype(AM, /obj))
+		if(isliving(AM))
+			var/mob/living/M = AM
+			M.emote("scream")
+			M.SpinAnimation(5, 1)
+		AM.forceMove(lower_turf)
+
+/turf/open/ind_floor/upperlevel/attack_ghost(mob/user)
+	user.forceMove(lower_turf)
+
+/turf/open/ind_floor/upperlevel/proc/trigger()
+	name = lower_turf.name
+	desc = lower_turf.desc
+
+	// render each atom
+	underlays.Cut()
+	for(var/X in list(lower_turf) + lower_turf.contents)
+		var/atom/A = X
+		if(A && A.invisibility <= SEE_INVISIBLE_LIVING)
+			var/image/I = image(A, layer = AREA_LAYER + A.layer * 0.01, dir = A.dir)
+			I.pixel_x = A.pixel_x
+			I.pixel_y = A.pixel_y
+			underlays += I

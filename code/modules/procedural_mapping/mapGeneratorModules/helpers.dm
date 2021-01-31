@@ -10,9 +10,9 @@
 	if(!mother)
 		return
 	var/list/map = mother.map
-	for(var/turf/simulated/T in map)
+	for(var/turf/open/T in map)
 		SSair.remove_from_active(T)
-	for(var/turf/simulated/T in map)
+	for(var/turf/open/T in map)
 		if(T.air)
 			T.air.oxygen = T.oxygen
 			T.air.nitrogen = T.nitrogen

@@ -16,8 +16,8 @@
 	for(var/area/maintenance/A in world)
 		availableareas += A
 	var/area/randomarea = pick(availableareas)
-	var/list/turf/simulated/floor/turfs = list()
-	for(var/turf/simulated/floor/F in randomarea)
+	var/list/turf/open/floor/turfs = list()
+	for(var/turf/open/floor/F in randomarea)
 		if(turf_clear(F))
 			turfs += F
 	var/list/spawn_types = list()
@@ -47,7 +47,7 @@
 	var/num = rand(2,max_number)
 
 	while(turfs.len > 0 && num > 0)
-		var/turf/simulated/floor/T = pick(turfs)
+		var/turf/open/floor/T = pick(turfs)
 		turfs.Remove(T)
 		num--
 		var/spawn_type = pick(spawn_types)

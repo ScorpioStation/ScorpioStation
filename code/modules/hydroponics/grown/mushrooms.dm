@@ -249,7 +249,7 @@
 	wine_power = 0.5
 
 /obj/item/reagent_containers/food/snacks/grown/mushroom/glowshroom/attack_self(mob/user)
-	if(istype(user.loc, /turf/space))
+	if(istype(user.loc, /turf/open/space))
 		return FALSE
 	if(!isturf(user.loc))
 		to_chat(user, "<span class='warning'>You need more space to plant [src].</span>")
@@ -257,7 +257,7 @@
 	var/count = 0
 	var/maxcount = 1
 	for(var/tempdir in GLOB.cardinal)
-		var/turf/simulated/wall = get_step(user.loc, tempdir)
+		var/turf/closed/wall = get_step(user.loc, tempdir)
 		if(istype(wall))
 			maxcount++
 	for(var/obj/structure/glowshroom/G in user.loc)

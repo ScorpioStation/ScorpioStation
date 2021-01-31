@@ -3,29 +3,29 @@
 /turf/template_noop,
 /area/template_noop)
 "b" = (
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/space)
 "c" = (
-/turf/simulated/floor/plasteel/airless,
+/turf/open/floor/plasteel/airless,
 /area/space)
 "d" = (
-/turf/simulated/wall/r_wall,
+/turf/closed/wall/r_wall,
 /area/space)
 "e" = (
 /obj/item/stack/cable_coil/cut,
-/turf/space,
+/turf/open/space,
 /area/template_noop)
 "h" = (
 /obj/structure/girder,
-/turf/space,
+/turf/open/space,
 /area/template_noop)
 "j" = (
 /obj/structure/grille/broken,
-/turf/space,
+/turf/open/space,
 /area/space)
 "l" = (
 /obj/structure/girder,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/space)
 "m" = (
 /obj/structure/grille/broken,
@@ -39,27 +39,27 @@
 /obj/machinery/door/airlock/command{
 	max_integrity = 40
 	},
-/turf/simulated/floor/plating/burnt,
+/turf/open/floor/plating/burnt,
 /area/space)
 "p" = (
 /mob/living/simple_animal/hostile/carp,
-/turf/space,
+/turf/open/space,
 /area/template_noop)
 "q" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/space)
 "s" = (
 /obj/item/stack/rods,
-/turf/space,
+/turf/open/space,
 /area/template_noop)
 "t" = (
 /obj/structure/door_assembly/door_assembly_com,
-/turf/space,
+/turf/open/space,
 /area/template_noop)
 "u" = (
 /obj/item/clothing/head/bio_hood/virology,
-/turf/space,
+/turf/open/space,
 /area/space)
 "w" = (
 /obj/structure/lattice,
@@ -73,7 +73,7 @@
 /obj/structure/door_assembly/door_assembly_vault{
 	anchored = 1
 	},
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/space)
 "z" = (
 /obj/item/stack/rods,
@@ -82,29 +82,29 @@
 "A" = (
 /obj/structure/closet/crate,
 /obj/item/reagent_containers/glass/beaker/bluespace,
-/turf/simulated/floor/plasteel/airless,
+/turf/open/floor/plasteel/airless,
 /area/space)
 "B" = (
 /obj/item/shard{
 	icon_state = "small"
 	},
-/turf/space,
+/turf/open/space,
 /area/space)
 "C" = (
 /obj/item/stack/sheet/metal,
-/turf/space,
+/turf/open/space,
 /area/template_noop)
 "D" = (
 /obj/effect/landmark/burnturf,
-/turf/simulated/floor/plating/airless,
+/turf/open/floor/plating/airless,
 /area/space)
 "E" = (
 /obj/item/reagent_containers/glass/beaker/large,
-/turf/space,
+/turf/open/space,
 /area/template_noop)
 "F" = (
 /obj/effect/landmark/burnturf,
-/turf/simulated/floor,
+/turf/open/floor,
 /area/space)
 "G" = (
 /obj/structure/safe,
@@ -115,42 +115,42 @@
 	amount = 3
 	},
 /obj/item/dnainjector/comic,
-/turf/simulated/floor/plasteel/airless,
+/turf/open/floor/plasteel/airless,
 /area/space)
 "H" = (
 /obj/structure/table,
 /obj/item/shard{
 	icon_state = "medium"
 	},
-/turf/simulated/floor/plasteel/airless,
+/turf/open/floor/plasteel/airless,
 /area/space)
 "I" = (
-/turf/space,
+/turf/open/space,
 /area/template_noop)
 "J" = (
 /mob/living/simple_animal/hostile/carp,
-/turf/space,
+/turf/open/space,
 /area/space)
 "L" = (
 /obj/item/shard,
-/turf/space,
+/turf/open/space,
 /area/space)
 "M" = (
-/turf/simulated/floor,
+/turf/open/floor,
 /area/space)
 "N" = (
 /obj/item/clothing/suit/bio_suit/virology,
-/turf/space,
+/turf/open/space,
 /area/space)
 "O" = (
 /obj/item/shard{
 	icon_state = "small"
 	},
-/turf/space,
+/turf/open/space,
 /area/template_noop)
 "P" = (
 /obj/item/reagent_containers/spray/cleaner,
-/turf/space,
+/turf/open/space,
 /area/space)
 "R" = (
 /obj/item/stack/sheet/metal,
@@ -158,35 +158,35 @@
 /area/space)
 "S" = (
 /obj/item/reagent_containers/spray/cleaner,
-/turf/space,
+/turf/open/space,
 /area/template_noop)
 "T" = (
-/turf/simulated/wall,
+/turf/closed/wall,
 /area/space)
 "U" = (
 /obj/effect/landmark/burnturf,
-/turf/simulated/floor/plasteel/airless,
+/turf/open/floor/plasteel/airless,
 /area/space)
 "V" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/open/space,
 /area/template_noop)
 "W" = (
 /obj/effect/landmark/burnturf,
-/turf/simulated/floor/plating/burnt,
+/turf/open/floor/plating/burnt,
 /area/space)
 "X" = (
-/turf/space,
+/turf/open/space,
 /area/space)
 "Y" = (
 /obj/structure/girder/reinforced,
-/turf/simulated/floor/plating/damaged,
+/turf/open/floor/plating/damaged,
 /area/space)
 "Z" = (
 /obj/machinery/computer/pandemic{
 	circuit = /obj/effect/decal/cleanable/shreds
 	},
-/turf/simulated/floor/plasteel/airless,
+/turf/open/floor/plasteel/airless,
 /area/space)
 
 (1,1,1) = {"

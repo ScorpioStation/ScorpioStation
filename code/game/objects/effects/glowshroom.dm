@@ -86,7 +86,7 @@
 			if(prob(spreadIntoAdjacentChance))
 				spreadsIntoAdjacent = TRUE
 
-			for(var/turf/simulated/floor/earth in view(3,src))
+			for(var/turf/open/floor/earth in view(3,src))
 				if(!ownturf.CanAtmosPass(earth))
 					continue
 				if(spreadsIntoAdjacent || !locate(/obj/structure/glowshroom) in view(1,earth))
