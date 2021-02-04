@@ -55,7 +55,7 @@
 	return
 
 /**
-* Called when the mob says shit
+* Called when the mob says a message
 */
 /datum/dna/gene/proc/OnSay(mob/M, message)
 	return message
