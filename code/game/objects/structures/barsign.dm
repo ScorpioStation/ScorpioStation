@@ -1,4 +1,4 @@
-/obj/structure/sign/barsign // All Signs are 64 by 32 pixels, they take two tiles
+/obj/structure/sign/barsign // all Signs are 64 by 32 pixels, they take two tiles
 	name = "Bar Sign"
 	desc = "A bar sign with no writing on it"
 	icon = 'icons/obj/barsigns.dmi'
@@ -7,16 +7,16 @@
 	max_integrity = 500
 	integrity_failure = 250
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	emagged = FALSE
 	var/list/barsigns = list()
 	var/list/hiddensigns = list()
 	var/panel_open = FALSE
-	var/emagged = TRUE
 	var/prev_sign = ""
 	var/state = 0
 
-/obj/structure/sign/barsign/New()
-	..()
-	//filling the barsigns lists
+/obj/structure/sign/barsign/Initialize(mapload)
+	. = ..()
+	// filling the barsigns list
 	for(var/bartype in typesof(/datum/barsign))
 		var/datum/barsign/signinfo = new bartype
 		if(!signinfo.hidden)
@@ -123,9 +123,9 @@
 	icon = 'icons/obj/barsigns.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
 	resistance_flags = FLAMMABLE
+	emagged = FALSE
 	var/panel_open
 	var/broken
-	var/emagged
 
 /obj/item/sign/barsign/wrench_act(mob/user)	//construction
 	if(isturf(user.loc))
@@ -421,8 +421,7 @@
 	icon = "spaceasshole"
 	desc = "Open since 2125, Not much has changed since then; the engineers still release the singulo and the damn miners still are more likely to cave your face in that deliver ores."
 
-
-//Hidden signs list below this point
+// hidden signs list below this point
 /datum/barsign/empbarsign
 	name = "Haywire Barsign"
 	icon = "empbarsign"

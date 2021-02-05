@@ -4831,8 +4831,8 @@
 "alq" = (
 /obj/structure/closet/emcloset,
 /obj/item/clothing/mask/breath,
-/obj/item/tank/emergency_oxygen,
-/obj/item/tank/emergency_oxygen,
+/obj/item/tank/internals/emergency_oxygen,
+/obj/item/tank/internals/emergency_oxygen,
 /obj/item/clothing/mask/breath,
 /obj/effect/decal/warning_stripes/yellow/hollow,
 /turf/simulated/floor/plasteel/dark,
@@ -4972,7 +4972,7 @@
 "alD" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/fire/firefighter,
-/obj/item/tank/oxygen,
+/obj/item/tank/internals/oxygen,
 /obj/item/clothing/mask/gas,
 /obj/item/extinguisher,
 /obj/item/clothing/head/hardhat/red,
@@ -6496,12 +6496,12 @@
 /area/shuttle/vox)
 "aoZ" = (
 /obj/structure/rack,
-/obj/item/tank/nitrogen,
-/obj/item/tank/nitrogen,
-/obj/item/tank/nitrogen,
-/obj/item/tank/nitrogen,
-/obj/item/tank/nitrogen,
-/obj/item/tank/nitrogen,
+/obj/item/tank/internals/nitrogen,
+/obj/item/tank/internals/nitrogen,
+/obj/item/tank/internals/nitrogen,
+/obj/item/tank/internals/nitrogen,
+/obj/item/tank/internals/nitrogen,
+/obj/item/tank/internals/nitrogen,
 /turf/simulated/shuttle/floor4/vox,
 /area/shuttle/vox)
 "apa" = (
@@ -6610,7 +6610,7 @@
 /obj/item/harpoon,
 /obj/item/harpoon,
 /obj/item/harpoon,
-/obj/item/tank/nitrogen,
+/obj/item/tank/internals/nitrogen,
 /obj/machinery/light/spot{
 	tag = "icon-tube1 (EAST)";
 	icon_state = "tube1";
@@ -7272,7 +7272,7 @@
 /turf/simulated/shuttle/floor4/vox,
 /area/shuttle/vox)
 "aqP" = (
-/obj/item/tank/emergency_oxygen,
+/obj/item/tank/internals/emergency_oxygen,
 /obj/item/clothing/mask/breath,
 /turf/simulated/shuttle/floor4/vox,
 /area/shuttle/vox)
@@ -7527,8 +7527,7 @@
 /turf/simulated/floor/plasteel,
 /area/engine/engineering)
 "ars" = (
-/obj/machinery/atmospherics/unary/cold_sink/freezer{
-	current_temperature = 73;
+/obj/machinery/atmospherics/unary/thermomachine/freezer{
 	dir = 4;
 	on = 0
 	},
@@ -9545,15 +9544,15 @@
 /area/shuttle/syndicate)
 "avK" = (
 /obj/structure/closet/crate/internals,
-/obj/item/tank/oxygen/red,
+/obj/item/tank/internals/oxygen/red,
 /obj/item/clothing/mask/gas,
-/obj/item/tank/oxygen/red,
+/obj/item/tank/internals/oxygen/red,
 /obj/item/clothing/mask/gas,
-/obj/item/tank/oxygen/red,
+/obj/item/tank/internals/oxygen/red,
 /obj/item/clothing/mask/gas,
-/obj/item/tank/oxygen/red,
+/obj/item/tank/internals/oxygen/red,
 /obj/item/clothing/mask/gas,
-/obj/item/tank/oxygen/red,
+/obj/item/tank/internals/oxygen/red,
 /obj/item/clothing/mask/gas,
 /turf/simulated/shuttle/floor{
 	icon_state = "floor4"
@@ -9630,7 +9629,7 @@
 /obj/item/robot_parts/r_arm,
 /obj/item/clothing/mask/surgical,
 /obj/item/reagent_containers/iv_bag/blood/OMinus,
-/obj/item/tank/anesthetic,
+/obj/item/tank/internals/anesthetic,
 /obj/item/clothing/mask/breath/medical,
 /obj/item/robot_parts/l_leg,
 /obj/item/robot_parts/r_leg,
@@ -14693,7 +14692,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/obj/item/tank/plasma,
+/obj/item/tank/internals/plasma,
 /turf/simulated/floor/plasteel,
 /area/engine/engineering)
 "aHl" = (
@@ -15652,7 +15651,7 @@
 	layer = 2.9
 	},
 /obj/item/clothing/suit/storage/hazardvest,
-/obj/item/tank/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
 /obj/item/clothing/mask/gas,
 /obj/item/clothing/mask/gas{
 	pixel_x = -3;
@@ -15685,7 +15684,7 @@
 	dir = 1
 	},
 /obj/item/clothing/suit/fire/firefighter,
-/obj/item/tank/oxygen,
+/obj/item/tank/internals/oxygen,
 /obj/item/clothing/mask/gas,
 /obj/item/extinguisher,
 /obj/item/clothing/head/hardhat/red,
@@ -16741,8 +16740,8 @@
 /area/engine/break_room)
 "aLO" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/tank/emergency_oxygen/engi/empty,
-/obj/item/tank/emergency_oxygen/engi/empty,
+/obj/item/tank/internals/emergency_oxygen/engi/empty,
+/obj/item/tank/internals/emergency_oxygen/engi/empty,
 /obj/item/reagent_containers/iv_bag/blood/AMinus,
 /obj/item/reagent_containers/iv_bag/blood/APlus,
 /obj/item/reagent_containers/iv_bag/blood/BMinus,
@@ -17288,8 +17287,8 @@
 /area/quartermaster/sorting)
 "aMR" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/tank/emergency_oxygen/engi/empty,
-/obj/item/tank/emergency_oxygen/engi/empty,
+/obj/item/tank/internals/emergency_oxygen/engi/empty,
+/obj/item/tank/internals/emergency_oxygen/engi/empty,
 /obj/item/reagent_containers/iv_bag/blood/AMinus,
 /obj/item/reagent_containers/iv_bag/blood/APlus,
 /obj/item/reagent_containers/iv_bag/blood/BMinus,
@@ -25177,18 +25176,18 @@
 /area/engine/controlroom)
 "bcJ" = (
 /obj/structure/table,
-/obj/item/tank/emergency_oxygen/nitrogen{
+/obj/item/tank/internals/emergency_oxygen/nitrogen{
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/item/tank/emergency_oxygen/nitrogen{
+/obj/item/tank/internals/emergency_oxygen/nitrogen{
 	pixel_x = 5
 	},
-/obj/item/tank/emergency_oxygen/plasma{
+/obj/item/tank/internals/emergency_oxygen/plasma{
 	pixel_x = -5;
 	pixel_y = 5
 	},
-/obj/item/tank/emergency_oxygen/plasma{
+/obj/item/tank/internals/emergency_oxygen/plasma{
 	pixel_x = -5
 	},
 /turf/simulated/floor/plasteel{
@@ -25721,8 +25720,8 @@
 /area/hallway/primary/fore/fore_starboard)
 "bdE" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/tank/emergency_oxygen/engi/empty,
-/obj/item/tank/emergency_oxygen/engi/empty,
+/obj/item/tank/internals/emergency_oxygen/engi/empty,
+/obj/item/tank/internals/emergency_oxygen/engi/empty,
 /obj/item/reagent_containers/iv_bag/blood/AMinus,
 /obj/item/reagent_containers/iv_bag/blood/APlus,
 /obj/item/reagent_containers/iv_bag/blood/BMinus,
@@ -25745,7 +25744,7 @@
 	},
 /area/medical/virology)
 "bdF" = (
-/obj/machinery/atmospherics/unary/heat_reservoir/heater{
+obj/machinery/atmospherics/unary/thermomachine/heater/on{
 	dir = 4
 	},
 /turf/simulated/floor/plasteel,
@@ -28478,7 +28477,7 @@
 /turf/simulated/floor/plasteel/dark,
 /area/storage/eva)
 "biy" = (
-/obj/machinery/atmospherics/unary/cold_sink/freezer,
+/obj/machinery/atmospherics/unary/thermomachine/freezer,
 /obj/item/radio/intercom{
 	dir = 1;
 	name = "station intercom (General)";
@@ -29874,7 +29873,7 @@
 /area/maintenance/fsmaint2)
 "bli" = (
 /obj/structure/rack,
-/obj/item/tank/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
 /turf/simulated/floor/plating,
 /area/maintenance/fsmaint)
 "blj" = (
@@ -30890,7 +30889,7 @@
 /area/toxins/explab)
 "bng" = (
 /obj/structure/rack,
-/obj/item/tank/oxygen,
+/obj/item/tank/internals/oxygen,
 /obj/item/clothing/mask/gas,
 /obj/structure/window/reinforced{
 	dir = 8
@@ -37428,7 +37427,7 @@
 /area/maintenance/fpmaint)
 "bze" = (
 /obj/structure/rack,
-/obj/item/tank/oxygen,
+/obj/item/tank/internals/oxygen,
 /obj/item/clothing/mask/gas,
 /obj/machinery/status_display{
 	pixel_x = 0;
@@ -40092,7 +40091,7 @@
 /area/crew_quarters/courtroom)
 "bDY" = (
 /obj/structure/rack,
-/obj/item/tank/air,
+/obj/item/tank/internals/air,
 /turf/simulated/floor/plating,
 /area/maintenance/fsmaint)
 "bDZ" = (
@@ -41115,7 +41114,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/item/tank/emergency_oxygen/plasma{
+/obj/item/tank/internals/emergency_oxygen/plasma{
 	pixel_x = -5;
 	pixel_y = 5
 	},
@@ -41770,7 +41769,7 @@
 /turf/simulated/floor/plasteel,
 /area/atmos)
 "bGU" = (
-/obj/item/tank/emergency_oxygen/plasma{
+/obj/item/tank/internals/emergency_oxygen/plasma{
 	pixel_x = -5;
 	pixel_y = 5
 	},
@@ -42910,7 +42909,7 @@
 	},
 /area/medical/medbay2)
 "bIU" = (
-/obj/machinery/suit_storage_unit/Paramedic,
+/obj/machinery/suit_storage_unit/paramedic,
 /turf/simulated/floor/plasteel{
 	tag = "icon-whiteblue";
 	icon_state = "whiteblue"
@@ -53951,8 +53950,8 @@
 /area/medical/sleeper)
 "ccI" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/tank/emergency_oxygen/engi/empty,
-/obj/item/tank/emergency_oxygen/engi/empty,
+/obj/item/tank/internals/emergency_oxygen/engi/empty,
+/obj/item/tank/internals/emergency_oxygen/engi/empty,
 /obj/item/reagent_containers/iv_bag/blood/AMinus,
 /obj/item/reagent_containers/iv_bag/blood/APlus,
 /obj/item/reagent_containers/iv_bag/blood/BMinus,
@@ -53999,8 +53998,8 @@
 /area/hallway/primary/central/se)
 "ccL" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/tank/emergency_oxygen/engi/empty,
-/obj/item/tank/emergency_oxygen/engi/empty,
+/obj/item/tank/internals/emergency_oxygen/engi/empty,
+/obj/item/tank/internals/emergency_oxygen/engi/empty,
 /obj/item/reagent_containers/iv_bag/blood/AMinus,
 /obj/item/reagent_containers/iv_bag/blood/APlus,
 /obj/item/reagent_containers/iv_bag/blood/BMinus,
@@ -54222,8 +54221,8 @@
 	dir = 8;
 	layer = 2.9
 	},
-/obj/item/tank/emergency_oxygen,
-/obj/item/tank/emergency_oxygen,
+/obj/item/tank/internals/emergency_oxygen,
+/obj/item/tank/internals/emergency_oxygen,
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/mask/breath,
 /obj/machinery/light_switch{
@@ -57888,8 +57887,8 @@
 	dir = 8;
 	layer = 2.9
 	},
-/obj/item/tank/emergency_oxygen/engi,
-/obj/item/tank/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
 /obj/item/clothing/mask/gas,
 /obj/item/clothing/mask/gas{
 	pixel_x = -3;
@@ -60955,11 +60954,11 @@
 	name = "south bump";
 	pixel_y = -24
 	},
-/obj/item/tank/emergency_oxygen/nitrogen{
+/obj/item/tank/internals/emergency_oxygen/nitrogen{
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/item/tank/emergency_oxygen/nitrogen{
+/obj/item/tank/internals/emergency_oxygen/nitrogen{
 	pixel_x = 5
 	},
 /obj/item/clothing/mask/breath/vox,
@@ -67291,7 +67290,7 @@
 	},
 /obj/item/clothing/suit/storage/hazardvest,
 /obj/item/clothing/suit/storage/hazardvest,
-/obj/item/tank/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
 /obj/item/clothing/mask/gas,
 /obj/item/clothing/mask/gas{
 	pixel_x = -3;
@@ -73983,7 +73982,7 @@
 	pixel_x = 0;
 	pixel_y = 24
 	},
-/obj/machinery/atmospherics/unary/cold_sink/freezer,
+/obj/machinery/atmospherics/unary/thermomachine/freezer,
 /turf/simulated/floor/plasteel{
 	icon_state = "freezerfloor"
 	},
@@ -77726,7 +77725,7 @@
 	dir = 4
 	},
 /obj/structure/rack,
-/obj/item/tank/oxygen,
+/obj/item/tank/internals/oxygen,
 /obj/item/tank/jetpack/oxygen,
 /obj/effect/decal/warning_stripes/blue/hollow,
 /obj/effect/decal/warning_stripes/south,
@@ -82003,7 +82002,7 @@
 /obj/machinery/optable{
 	name = "Robotics Operating Table"
 	},
-/obj/item/tank/anesthetic,
+/obj/item/tank/internals/anesthetic,
 /obj/item/clothing/mask/breath/medical,
 /turf/simulated/floor/plasteel{
 	dir = 1;
@@ -83508,8 +83507,7 @@
 	pixel_x = 0;
 	pixel_y = -30
 	},
-/obj/machinery/atmospherics/unary/cold_sink/freezer{
-	current_temperature = 73;
+/obj/machinery/atmospherics/unary/thermomachine/freezer{
 	dir = 8;
 	on = 0
 	},
@@ -93148,8 +93146,7 @@
 /turf/simulated/floor/plasteel/dark,
 /area/toxins/server)
 "dtC" = (
-/obj/machinery/atmospherics/unary/cold_sink/freezer{
-	current_temperature = 73;
+/obj/machinery/atmospherics/unary/thermomachine/freezer{
 	dir = 1;
 	on = 1
 	},

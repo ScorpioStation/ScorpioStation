@@ -190,6 +190,7 @@ DROP TABLE IF EXISTS `ban`;
 CREATE TABLE `ban` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `bantime` datetime NOT NULL,
+  `ban_round_id` INT(11) NULL DEFAULT NULL,
   `serverip` varchar(32) NOT NULL,
   `bantype` varchar(32) NOT NULL,
   `reason` text NOT NULL,
@@ -208,6 +209,7 @@ CREATE TABLE `ban` (
   `edits` text,
   `unbanned` tinyint(1) DEFAULT NULL,
   `unbanned_datetime` datetime DEFAULT NULL,
+  `unbanned_round_id` INT(11) NULL DEFAULT NULL,
   `unbanned_ckey` varchar(32) DEFAULT NULL,
   `unbanned_computerid` varchar(32) DEFAULT NULL,
   `unbanned_ip` varchar(32) DEFAULT NULL,
@@ -502,11 +504,13 @@ CREATE TABLE `notes` (
   `ckey` varchar(32) NOT NULL,
   `notetext` text NOT NULL,
   `timestamp` datetime NOT NULL,
+  `round_id` INT(11) NULL DEFAULT NULL,
   `adminckey` varchar(32) NOT NULL,
   `last_editor` varchar(32),
   `edits` text,
   `server` varchar(50) NOT NULL,
   `crew_playtime` mediumint(8) UNSIGNED DEFAULT '0',
+  `automated` TINYINT(3) UNSIGNED NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -594,6 +598,7 @@ CREATE TABLE `connection_log` (
   `ckey` varchar(32) NOT NULL,
   `ip` varchar(32) NOT NULL,
   `computerid` varchar(32) NOT NULL,
+  `result` ENUM('ESTABLISHED','DROPPED - IPINTEL','DROPPED - BANNED','DROPPED - INVALID') NOT NULL DEFAULT 'ESTABLISHED' COLLATE 'utf8mb4_general_ci',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 

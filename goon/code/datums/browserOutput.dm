@@ -119,7 +119,9 @@ GLOBAL_REAL_VAR(chatDebug) = file("data/chatDebug.log")
 		to_chat(owner, message)
 
 	messageQueue = null
-	src.sendClientData()
+	// We can only store a cookie on the client if they actually accept TOS because GDPR is GDPR
+	if(owner.tos_consent)
+		sendClientData()
 
 	pingLoop()
 
@@ -191,6 +193,7 @@ GLOBAL_REAL_VAR(chatDebug) = file("data/chatDebug.log")
 			if (found.len > 0)
 				message_admins("[key_name(src.owner)] <span class='boldannounce'>has a cookie from a banned account!</span> (Matched: [found["ckey"]], [found["ip"]], [found["compid"]])")
 				log_admin("[key_name(src.owner)] has a cookie from a banned account! (Matched: [found["ckey"]], [found["ip"]], [found["compid"]])")
+				new /datum/cookie_record(owner, found["ckey"], found["ip"], found["compid"])
 
 	cookieSent = 1
 
@@ -293,13 +296,11 @@ GLOBAL_REAL_VAR(to_chat_src)
 			targetstring += ", [D.type]"
 
 		// The final output
-		log_runtime(new/exception("DEBUG: to_chat called with invalid message/target.", to_chat_filename, to_chat_line), to_chat_src, list("Message: '[message]'", "Target: [targetstring]"))
-		return
+		CRASH("DEBUG: to_chat called with invalid message/target. Message: '[message]'. Target: [targetstring].")
 
 	else if(is_valid_tochat_message(message))
 		if(istext(target))
-			log_runtime(EXCEPTION("Somehow, to_chat got a text as a target"))
-			return
+			CRASH("Somehow, to_chat got a text as a target, message: '[message]', target: '[target]'")
 
 		message = replacetext(message, "\n", "<br>")
 

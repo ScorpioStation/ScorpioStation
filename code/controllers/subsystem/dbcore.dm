@@ -180,7 +180,7 @@ SUBSYSTEM_DEF(dbcore)
 		"UPDATE [format_table_name("round")] SET start_datetime=NOW(), commit_hash=:hash WHERE id=:round_id",
 		list("hash" = GLOB.revision_info.commit_hash, "round_id" = GLOB.round_id)
 	)
-	query_round_start.Execute()
+	query_round_start.Execute(async = FALSE) // This happens during a time of intense server lag, so should be non-async
 	qdel(query_round_start)
 
 /**
@@ -264,26 +264,42 @@ SUBSYSTEM_DEF(dbcore)
   * * querys - List of queries to execute
   * * warn - Boolean to warn on query failure
   * * qdel - Boolean to enable auto qdel of queries
+  * * assoc - Boolean to enable support for an associative list of queries
+  * * log - Do we want to generate logs for these queries
   */
-/datum/controller/subsystem/dbcore/proc/MassExecute(list/querys, warn = FALSE, qdel = FALSE)
+/datum/controller/subsystem/dbcore/proc/MassExecute(list/querys, warn = FALSE, qdel = FALSE, assoc = FALSE, log = TRUE)
 	if(!islist(querys))
 		if(!istype(querys, /datum/db_query))
 			CRASH("Invalid query passed to MassExecute: [querys]")
 		querys = list(querys)
 
+	var/start_time = start_watch()
+	if(log)
+		log_debug("Mass executing [length(querys)] queries...")
+
 	for(var/thing in querys)
-		var/datum/db_query/query = thing
+		var/datum/db_query/query
+		if(assoc)
+			query = querys[thing]
+		else
+			query = thing
 		if(warn)
 			INVOKE_ASYNC(query, /datum/db_query.proc/warn_execute)
 		else
 			INVOKE_ASYNC(query, /datum/db_query.proc/Execute)
 
 	for(var/thing in querys)
-		var/datum/db_query/query = thing
+		var/datum/db_query/query
+		if(assoc)
+			query = querys[thing]
+		else
+			query = thing
 		UNTIL(!query.in_progress)
 		if(qdel)
 			qdel(query)
 
+	if(log)
+		log_debug("Executed [length(querys)] queries in [stop_watch(start_time)]s")
 
 /**
   * # db_query

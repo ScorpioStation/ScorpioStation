@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # scorpio-dmimerge.sh
-# Copyright 2020 Patrick Meade
+# Copyright 2020-2021 Patrick Meade
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -34,8 +34,13 @@ if java -jar tools/dmitool/dmitool.jar merge $ICON_ANCESTOR $ICON_OURS $ICON_THE
 then
     echo "Icon successfully merged to ${ICON_MERGED}"
     echo "cp -v ${ICON_MERGED} ${ICON_PATH}"
+    cp -v "${ICON_MERGED}" "${ICON_PATH}"
     echo "git add ${ICON_PATH}"
+    git add "${ICON_PATH}"
 else
     echo "Unable to resolve conflicts in ${ICON_PATH}"
     exit 1
 fi
+
+#-----------------------------------------------------------------------------
+# end of scorpio-dmimerge.sh
