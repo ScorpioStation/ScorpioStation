@@ -11,11 +11,13 @@ You'll need to download git or some client from [here](http://git-scm.com/).
 When that's installed, right click in any folder and click on "Git Bash".  
 When that opens, type in:
 
+```sh
     git clone https://github.com/ScorpioStation/ScorpioStation
+```
 
-(hint: hold down ctrl and press insert to paste into git bash)
+(Hint: Hold down Ctrl and press Insert to paste into git bash)
 
-This will take a while to download, but it provides an easier method for updating.
+This will take a while to download (it is the entire repo + history, not just a snapshot), but it provides an easier method for updating.
 
 ## INSTALLATION
 First-time installation should be fairly straightforward.  
@@ -37,9 +39,10 @@ click compile.
 This'll take a little while, and if everything's done right,
 you'll get a message like this:
 
+```sh
     saving paradise.dmb (DEBUG mode)
-
     paradise.dmb - 0 errors, 0 warnings
+```
 
 If you see any errors or warnings, something has gone wrong - possibly a
 corrupt download, the files extracted wrong, or the script didn't get those
@@ -47,8 +50,8 @@ extra dependencies. Ask on #coding-talk on the [Discord](https://scorpiostation.
 
 Once that's done, open up the `config` folder.  
 
-Inside the config folder is another `example` folder. Copy all of the text files
-from that folder to the `config` folder.
+Inside the `config` folder is another folder `example`. Copy all of the text files
+from the `example` folder to the `config` folder.
 
 You'll want to edit `config.txt` to set your server location,
 so that all your players don't get disconnected at the end of each round.
@@ -61,7 +64,9 @@ You'll also want to edit `admins.txt` to remove the default admins and add your
 own. "Hosting Provider" is the highest level of access, and the other
 recommended admin levels for now are "Game Admin" and "Mentor". The format is:
 
+```cfg
     byondkey - Rank
+```
 
 where the BYOND key must be in lowercase and the admin rank must be properly capitalized.  
 There are a bunch more admin ranks, but these two should be enough for most servers,
@@ -99,18 +104,18 @@ unzip it somewhere else, and then copy the /config and /data folders over.
 
 If you used the git method, you simply need to type this in to git bash:
 
+```sh
     git pull
+```
 
 When this completes, copy over your /data and /config folders again, just in case.
 
 When you have done this, you'll need to recompile the code, but then it should work fine.
 
----
-
 ### SQL Setup
 The SQL backend is required for storing character saves, preferences,
 administrative data, and many other things. We recommend running a database
-if your server is going to be used as more than juts a local test server.
+if your server is going to be used as more than just a local test server.
 
 Your database details go in `config/dbconfig.txt`,
 and the SQL schema is in `SQL/scorpio/scorpio_schema.sql`.

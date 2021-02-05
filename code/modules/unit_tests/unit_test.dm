@@ -72,7 +72,7 @@ GLOBAL_VAR(test_log)
 		CHECK_TICK
 
 	log_world("Unit Tests finished running")
-	world.Reboot("Unit Test Reboot", "tests ended", 0)
+	SSticker.reboot_helper("Unit Test Reboot", "tests ended", 0)
 
 
 // OTHER MISC PROCS RELATED TO UNIT TESTS //

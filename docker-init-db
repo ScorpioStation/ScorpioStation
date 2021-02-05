@@ -2,7 +2,7 @@
 # initialize a MariaDB container to act as a database for Scorpio Station
 
 # generate some secure passwords
-DB_VERSION="19"
+DB_VERSION="20"
 MYSQL_DATABASE="scorpio"
 MYSQL_PASSWORD=$(dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64 | head -c 32)
 MYSQL_ROOT_PASSWORD=$(dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64 | head -c 32)
