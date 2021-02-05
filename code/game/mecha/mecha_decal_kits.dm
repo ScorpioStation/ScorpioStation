@@ -6,9 +6,9 @@
 // All decals and colour palettes are applied to mechs via this item. As a base feature, users can apply base coats to ther armour of mechs and recolour their little blinkenlights.
 // Paint guns accept pattern chips (/obj/item/mecha_decal_container) which can be loaded into them by attacking the gun with the chip, similar to a magazine.
 //
-// Each pattern chip grants access to one or more decals (/datum/mecha/mecha_decal) which can then be placed onto a compatible mech as a group. It is possible to create a custom paint job 
+// Each pattern chip grants access to one or more decals (/datum/mecha/mecha_decal) which can then be placed onto a compatible mech as a group. It is possible to create a custom paint job
 // and decal conmbination, ejecting it from the paint gun as a pattern chip. This chip can then be placed in other paint guns or back into the current one to create a custom pattern.
-// 
+//
 // Standard paint guns also include a nanotrasen logo already in the memory banks. Hail corporate!
 //
 
@@ -17,8 +17,8 @@
     desc = "An automated gun-shaped device used to apply or strip off paint and other decals, compatible with most standard exosuit models."
     icon = 'icons/mecha/mecha_decals.dmi'
     icon_state = "mech-painter"
+    emagged = FALSE
 
-    var/emagged = FALSE
     var/install_sound = 'sound/items/deconstruct.ogg'
     var/spray_sound = 'sound/effects/spray2.ogg'
     var/icon/overlay_icon
@@ -108,7 +108,7 @@
                     var/found_nonapplied_decal = FALSE
                     var/list/decalstrings = current_mecha.get_decal_strings()
                     for(var/datum/mecha/mecha_decal/MD in D.decals)
-                        if(!(MD.decal_string in decalstrings)) 
+                        if(!(MD.decal_string in decalstrings))
                             found_nonapplied_decal = TRUE
                     if(found_nonapplied_decal || D.basecoat || D.glow) // If there is a base coat or glow colour, always have asn option to apply it.
                         dat += "<A href='?src=[UID()];decalapply=\ref[D]'>[D.decal_name]</A> "
@@ -119,7 +119,7 @@
                         dat += "[UI_bg_grey(D.decal_name)] Already applied!"
                     if(D.deletable)
                         dat += "<A href='?src=[UID()];decaldelete=\ref[D]'>Delete</A>"
-                    dat += "<br/>"      
+                    dat += "<br/>"
         dat += "<br/><A href='?src=[UID()];choice=decalsave'>Save Exosuit Pattern</A>"
         dat += "<br/><A href='?src=[UID()];choice=defaultdecals'>Return All To Default</A><br/><br/>"
 
@@ -180,10 +180,10 @@
                 if(current_mecha.Adjacent(usr))
                     var/input_text = copytext(reject_bad_text(input(usr,"Pattern name?","Set Pattern Name","")),1,MAX_NAME_LEN)
                     if(input_text)
-                        save_pattern(current_mecha, current_mecha.decals, input_text) 
+                        save_pattern(current_mecha, current_mecha.decals, input_text)
                         openUI(current_mecha, usr)
         current_mecha.redraw_cache()
-    
+
     if(href_list["decalcolour"])
         if(current_mecha.occupant)
             to_chat(usr, "<span class='warning'>The exosuit must be unoccupied before you can paint it!</span>")
@@ -246,7 +246,7 @@
         emagged = TRUE
 
 // Creates and spawns a new exosuit pattern on the ground featuring the current exosuit design. 30 second cooldown.
-/obj/item/mecha_paint_gun/proc/save_pattern(obj/mecha/M, list/datum/mecha/mecha_decal/decal_list, var/pattern_name) 
+/obj/item/mecha_paint_gun/proc/save_pattern(obj/mecha/M, list/datum/mecha/mecha_decal/decal_list, var/pattern_name)
     if(world.time >= next_pattern_at)
         var/obj/item/mecha_decal_container/D = new()
         D.name = "custom exosuit decal pattern ([pattern_name])"
@@ -288,13 +288,13 @@
 ////////////
 // Defines a single overlay to be applied to a mech. Icon is pulled by combining the mech's root decal string ([mech_type]-decal)
 // with the decal's decal string and a state modifier for the final form [mech_type]-decal-[decal_string] (-open, -broken).
-// 
-// A typical set of icons contains 3 states: one 4-directional one for a moving, occupied mech, one for an unoccupied open mech and 
-// one for a destroyed mech. If you do not need an icon for one or more of those states, PLEASE remember to set the corresponding 
+//
+// A typical set of icons contains 3 states: one 4-directional one for a moving, occupied mech, one for an unoccupied open mech and
+// one for a destroyed mech. If you do not need an icon for one or more of those states, PLEASE remember to set the corresponding
 // has_state flag; Failing to do so will cause issues with the layering.
 //
 /datum/mecha/mecha_decal
-    var/decal_string                        // The string which is added to the mech's decal_root in order to apply the icon. 
+    var/decal_string                        // The string which is added to the mech's decal_root in order to apply the icon.
     var/decal_name                          // The name shown by the decal UI.
     var/mutable_colour = FALSE              // Whether the colour can be set. Off for things with a set colour, like the nanotrasen logo.
     var/glowing = FALSE                     // Determines the layer the overlays are placed on. Will shine in the dark if true.
@@ -327,7 +327,7 @@
     decal_string = "stripes"
     decal_name = "Racing Stripes"
     mutable_colour = TRUE
-    decal_colour = "#A00000"  
+    decal_colour = "#A00000"
     compatible_mecha = COMPATIBLE_MECHA_RIPLEY
 
 /datum/mecha/mecha_decal/nanotrasen_logo
@@ -335,7 +335,7 @@
     decal_name = "Nanotrasen Logo"
     decal_layer = 2
     mutable_colour = FALSE
-    decal_colour = "#000000"  
+    decal_colour = "#000000"
     compatible_mecha = COMPATIBLE_MECHA_COMMON
     has_state_open = FALSE
 
@@ -344,7 +344,7 @@
     decal_name = "Syndicate Logo"
     decal_layer = 2
     mutable_colour = FALSE
-    decal_colour = "#000000"  
+    decal_colour = "#000000"
     compatible_mecha = COMPATIBLE_MECHA_COMMON
     has_state_open = FALSE
 
@@ -378,7 +378,7 @@
     mutable_colour = TRUE
     decal_layer = 1
     decal_colour = "#857149"
-    compatible_mecha = COMPATIBLE_MECHA_ODYSSEUS  
+    compatible_mecha = COMPATIBLE_MECHA_ODYSSEUS
 
 // HONKER DECALS OH GOD
 // Honker has a whopping 11 default decals allowing each individual body part to be recoloured.
@@ -559,7 +559,3 @@
 #undef COMPATIBLE_MECHA_PHAZON
 #undef COMPATIBLE_MECHA_HONKER
 #undef COMPATIBLE_MECHA_RETICENCE
-
-
-
-

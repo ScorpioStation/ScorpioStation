@@ -32,7 +32,7 @@ SUBSYSTEM_DEF(raffle)
 	if(!SSdbcore.IsConnected())
 		return
 	// award the tickets earned by the connected clients
-	num_awarded = round(wait/(1 MINUTES), 1)
+	var/num_awarded = round(wait/(1 MINUTES), 1)
 	award_raffle_tickets(num_awarded, ANNOUNCE_TICKETS_AWARDED)
 
 /datum/controller/subsystem/raffle/proc/award_raffle_tickets(num_awarded = 0, announce = FALSE)
@@ -46,15 +46,15 @@ SUBSYSTEM_DEF(raffle)
 		CHECK_TICK
 
 /datum/controller/subsystem/raffle/proc/update_raffle_client(client/L, num_awarded = 0, announce = FALSE)
-	// if we don't have a client, or the client doesn't have a ckey, bail out
-	if(!L || !L.ckey)
+	// bail if no client, no ckey, or no preferences
+	if(!L || !L.ckey || !L.prefs)
 		return
 	// determine if the person is playing a role in the round
 	var/myrole = null
 	if(L.mob.mind)
 		if(L.mob.mind.playtime_role)
 			myrole = L.mob.mind.playtime_role
-		else if(mob.mind.assigned_role)
+		else if(L.mob.mind.assigned_role)
 			myrole = L.mob.mind.assigned_role
 	// determine how many raffle tickets to award
 	var/added_raffle_tickets = 0
@@ -63,7 +63,7 @@ SUBSYSTEM_DEF(raffle)
 	else
 		added_raffle_tickets += 1
 	// reduce the award by inactivity levels (minimum 0)
-	inactive_for = round(L.inactivity / (1 MINUTES), 1)
+	var/inactive_for = round(L.inactivity / (1 MINUTES), 1)
 	added_raffle_tickets -= inactive_for
 	added_raffle_tickets = max(0, added_raffle_tickets)
 	// bail if we aren't awarding any tickets
@@ -78,8 +78,8 @@ SUBSYSTEM_DEF(raffle)
 		UPDATE [format_table_name("player")]
 		SET antag_raffle_tickets=:antag_raffle_tickets, lastseen=NOW() WHERE ckey=:ckey"},
 		list(
-			"antag_raffle_tickets" = prefs.antag_raffle_tickets,
-			"ckey" = ckey
+			"antag_raffle_tickets" = L.prefs.antag_raffle_tickets,
+			"ckey" = L.ckey
 		)
 	)
 	update_query_raffle_tickets.warn_execute()

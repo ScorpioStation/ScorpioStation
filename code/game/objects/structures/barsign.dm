@@ -7,10 +7,10 @@
 	max_integrity = 500
 	integrity_failure = 250
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 100, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	emagged = FALSE
 	var/list/barsigns = list()
 	var/list/hiddensigns = list()
 	var/panel_open = FALSE
-	var/emagged = TRUE
 	var/prev_sign = ""
 	var/state = 0
 
@@ -123,9 +123,9 @@
 	icon = 'icons/obj/barsigns.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
 	resistance_flags = FLAMMABLE
+	emagged = FALSE
 	var/panel_open
 	var/broken
-	var/emagged
 
 /obj/item/sign/barsign/wrench_act(mob/user)	//construction
 	if(isturf(user.loc))

@@ -23,9 +23,9 @@
 	var/locked = FALSE
 	var/safeties = TRUE
 	var/broken = FALSE
-	var/secure = FALSE	//set to true to enable ID locking
-	var/shocked = FALSE//is it shocking anyone that touches it?
-	req_access = list(ACCESS_EVA)	//the ID needed if ID lock is enabled
+	var/secure = FALSE // set to true to enable ID locking
+	var/shocked = FALSE // is it shocking anyone that touches it?
+	req_access = list(ACCESS_EVA) // the ID needed if ID lock is enabled
 	var/datum/wires/suitstorage/wires = null
 
 	var/uv = FALSE
@@ -34,9 +34,9 @@
 	var/message_cooldown
 	var/breakout_time = 300
 
-	//abstract these onto machinery eventually
+	// abstract these onto machinery eventually
 	var/state_open = FALSE
-	var/list/occupant_typecache //if set, turned into typecache in Initialize, other wise, defaults to mob/living typecache
+	var/list/occupant_typecache // if set, turned into typecache in Initialize, other wise, defaults to mob/living typecache
 	var/atom/movable/occupant = null
 
 
@@ -46,7 +46,7 @@
 	mask_type    = /obj/item/clothing/mask/breath
 
 /obj/machinery/suit_storage_unit/standard_unit/secure
-	secure = TRUE	//start with ID lock enabled
+	secure = TRUE // start with ID lock enabled
 
 /obj/machinery/suit_storage_unit/captain
 	name = "captain's suit storage unit"
@@ -60,16 +60,16 @@
 /obj/machinery/suit_storage_unit/captain/secure
 	secure = TRUE
 
-/obj/machinery/suit_storage_unit/Paramedic
+/obj/machinery/suit_storage_unit/paramedic
 	name = "Paramedic suit storage unit"
 	desc = "An industrial U-Stor-It Storage unit designed to accomodate all kinds of space suits. Its on-board equipment also allows the user to decontaminate the contents through a UV-ray purging cycle. There's a warning label dangling from the control pad, reading \"STRICTLY NO BIOLOGICALS IN THE CONFINES OF THE UNIT\". This one looks kind of fancy."
 	suit_type    = /obj/item/clothing/suit/space/eva/paramedic
 	helmet_type  = /obj/item/clothing/head/helmet/space/eva/paramedic
 	mask_type    = /obj/item/clothing/mask/breath
-	storage_type = /obj/item/tank/air
+	storage_type = /obj/item/tank/internals/air
 	req_access = list(ACCESS_EVA)
 
-/obj/machinery/suit_storage_unit/Paramedic/secure
+/obj/machinery/suit_storage_unit/paramedic/secure
 	secure = TRUE
 
 /obj/machinery/suit_storage_unit/engine
@@ -146,7 +146,7 @@
 /obj/machinery/suit_storage_unit/hop/secure
 	secure = TRUE
 
-//version of the SSU for medbay secondary storage. Includes magboots.
+// version of the SSU for medbay secondary storage. Includes magboots.
 /obj/machinery/suit_storage_unit/cmo/secure/sec_storage
 	name = "medical suit storage unit"
 	mask_type = /obj/item/clothing/mask/gas
@@ -230,7 +230,7 @@
 	helmet_type = /obj/item/clothing/head/radiation
 	storage_type = /obj/item/geiger_counter
 
-//copied from /obj/effect/nasavoidsuitspawner
+// copied from /obj/effect/nasavoidsuitspawner
 /obj/machinery/suit_storage_unit/telecoms/Initialize()
 	switch(pick(list("red", "green", "ntblue", "purple", "yellow", "ltblue")))
 		if("red")
@@ -272,7 +272,7 @@
 		storage = new storage_type(src)
 	update_icon()
 
-	//move this into machinery eventually...
+	// move this into machinery eventually...
 	if(occupant_typecache)
 		occupant_typecache = typecacheof(occupant_typecache)
 
