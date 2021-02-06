@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: Checkout Project
       uses: actions/checkout@v2
-      run: |
-        git branch --create-reflog master origin/master
+    - name: Add Master Branch
+      run: git branch --create-reflog master origin/master
     - name: Show Map Changes
       run: './tools/scorpio/show_map_changes/action.sh'
