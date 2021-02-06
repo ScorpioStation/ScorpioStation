@@ -11,14 +11,11 @@ jobs:
     name: "Show Map Changes"
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Main Branch
+
+    - name: Checkout Project
       uses: actions/checkout@v2
-      with:
-        ref: master
-        fetch-depth: 1
-    - name: Checkout PR Branch
-      uses: actions/checkout@v2
-      with:
-        fetch-depth: 100
+      run: |
+        git branch --create-reflog master origin/master
+
     - name: Show Map Changes
       run: './tools/scorpio/show_map_changes/action.sh'
