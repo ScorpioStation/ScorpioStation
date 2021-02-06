@@ -1,4 +1,4 @@
-name: 'Show Map Changes'
+name: 'Action'
 
 on:
   pull_request:
@@ -7,20 +7,17 @@ on:
       - master
 
 jobs:
-  CI:
+  "Show Map Changes":
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Project
+    - name: Checkout Main Branch
       uses: actions/checkout@v2
       with:
-        fetch-depth: 10
-
-    - name: Prepare Build
+        ref: master
+        fetch-depth: 1
+    - name: Checkout PR Branch
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 100
+    - name: Show Map Changes
       run: './tools/scorpio/show_map_changes/action.sh'
-
-    # - name: Show Map Changes
-    #   uses: docker/build-push-action@v2
-    #   with:
-    #     context: .
-    #     file: './tools/scorpio/show_map_changes/Dockerfile'
-    #     push: false
