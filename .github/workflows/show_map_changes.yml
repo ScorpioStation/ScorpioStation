@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Checkout Project
       uses: actions/checkout@v2
+      with:
+        fetch-depth: 10
 
     - name: Prepare Build
       run: './tools/scorpio/show_map_changes/action.sh'
