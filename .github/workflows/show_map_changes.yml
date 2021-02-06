@@ -1,0 +1,24 @@
+name: 'Show Map Changes'
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Project
+      uses: actions/checkout@v2
+
+    - name: Prepare Build
+      run: './tools/scorpio/show_map_chnages/action.sh'
+
+    # - name: Show Map Changes
+    #   uses: docker/build-push-action@v2
+    #   with:
+    #     context: .
+    #     file: './tools/scorpio/show_map_changes/Dockerfile'
+    #     push: false

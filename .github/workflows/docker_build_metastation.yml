@@ -1,7 +1,10 @@
 name: 'Build MetaStation Image'
 
 on:
-  pull_request:
+  # pull_request:
+  push:
+    branches:
+      - master
 
 jobs:
   build_metastation_image:

@@ -1,7 +1,10 @@
 name: 'Build Emerald Image'
 
 on:
-  pull_request:
+  # pull_request:
+  push:
+    branches:
+      - master
 
 jobs:
   build_emerald_image:
