@@ -15,8 +15,9 @@ echo "git log"
 git log --pretty=oneline | head -15
 
 # let's see what's changed in our PR branch...
-echo "git diff master"
-git diff master --name-only
+echo "git diff --name-only origin/master"
+git fetch --depth=1 --no-auto-gc --no-recurse-submodules --progress --prune origin +refs/heads/master:refs/remotes/origin/master
+git diff --name-only origin/master
 
 # let's generate a map for Emerald...
 echo "generate image using Docker"
