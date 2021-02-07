@@ -5,7 +5,7 @@ on:
 
 jobs:
   show_map_changes:
-    name: "CI"
+    name: "Show Map Changes"
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Project
