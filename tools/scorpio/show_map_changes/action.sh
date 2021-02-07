@@ -13,7 +13,7 @@ if [ -z "$MAPS" ]; then
 fi
 
 # install some packages
-sudo apt-get install -q=1 -y imagemagick optipng pngcrush
+sudo apt-get install -q=2 imagemagick optipng pngcrush
 
 # since we have changes, let's grab a map generation tool
 docker pull -q scorpiostation/spacemandmm:latest
@@ -62,3 +62,5 @@ echo "GITHUB_SHA: $GITHUB_SHA"
 echo "GITHUB_REF: $GITHUB_REF"
 echo "GITHUB_HEAD_REF: $GITHUB_HEAD_REF"
 echo "GITHUB_BASE_REF: $GITHUB_BASE_REF"
+echo "git log --pretty=oneline | head -20"
+git log --pretty=oneline | head -20
