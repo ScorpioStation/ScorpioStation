@@ -21,9 +21,9 @@ jobs:
       run: 'echo "${{ env.ARTIFACT_TAG }}"'
 
     - name: Upload Map Artifacts
+      if: ${{ env.ARTIFACT_TAG }}
       uses: actions/upload-artifact@v2
       with:
-        if: ${{ env.ARTIFACT_TAG }}
         name: map-artifacts-${{ env.ARTIFACT_TAG }}
         path: artifacts
         retention-days: 7

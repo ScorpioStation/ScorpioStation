@@ -54,10 +54,10 @@ for map in $MAPS; do
 	mv artifacts/diff.png artifacts/"$BASE_MAP.$index.diff.png"
 done
 
-# view what terrible carnage we have wrought
-ls -alrt artifacts
-
 # compute an artifact tag
 ARTIFACT_TAG=$(git log --pretty=oneline | head -1 | awk -- '{print $3}' | cut -c 1-12)
-echo "ARTIFACT_TAG: $ARTIFACT_TAG"
 echo "ARTIFACT_TAG=${ARTIFACT_TAG}" >> $GITHUB_ENV
+
+# view what terrible carnage we have wrought
+echo "Map artifacts will be saved as: map-artifacts-${ARTIFACT_TAG}"
+ls -alrt artifacts
