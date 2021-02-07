@@ -24,13 +24,7 @@
 
 
 /datum/dna/gene/disability/radioactive/can_activate(mob/M, flags)
-	if(!..())
-		return FALSE
-	if(ishuman(M))
-		var/mob/living/carbon/human/H = M
-		if((RADIMMUNE in H.dna.species.species_traits) && !(flags & MUTCHK_FORCED))
-			return FALSE
-	return TRUE
+	radiation_pulse(H, 20)
 
 /datum/dna/gene/disability/radioactive/OnMobLife(mob/living/carbon/human/H)
 	var/radiation_amount = abs(min(H.radiation - 20,0))
