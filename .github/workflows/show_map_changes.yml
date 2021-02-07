@@ -17,12 +17,13 @@ jobs:
     - name: Show Map Changes
       run: './tools/scorpio/show_map_changes/action.sh'
 
-    - name: Compute Artifact Tag
-      run: echo "GITHUB_SHA_SHORT=$(echo $GITHUB_SHA | cut -c 1-12)" >> $GITHUB_ENV
+    - name: Display Artifact Tag
+      run: 'echo "${{ env.ARTIFACT_TAG }}"'
 
     - name: Upload Map Artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: map-artifacts-${{ env.artifact_tag }}
+        if: ${{ env.ARTIFACT_TAG }}
+        name: map-artifacts-${{ env.ARTIFACT_TAG }}
         path: artifacts
         retention-days: 7
