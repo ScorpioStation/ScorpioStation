@@ -28,25 +28,25 @@ cp tools/scorpio/show_map_changes/package-lock.json .
 npm ci
 
 # for each map we've detected changes with
+index=0
 for map in $MAPS; do
-	# tell the log what we're up to
-	echo ""
-    echo "Processing $map"
-	# get the origin/master and PR versions of the map
-	git show origin/master:$map >1.dmm
-	git show HEAD:$map >2.dmm
-	# determine the size of the changed section
-	./dmm-tools diff-maps 1.dmm 2.dmm >dmm.diff
-	MIN_MAX=$(node_modules/.bin/coffee tools/scorpio/show_map_changes/index.coffee dmm.diff)
-	echo "MIN_MAX: $MIN_MAX"
-	echo "MIN_MAX[0]: ${MIN_MAX[0]}"
-	echo "MIN_MAX[1]: ${MIN_MAX[1]}"
-	arr=($MIN_MAX)
-	# generate some map images and compare them
-	./dmm-tools minimap --disable random --min ${arr[0]} --max ${arr[1]} -o artifacts --pngcrush 1.dmm
-	./dmm-tools minimap --disable random --min ${arr[0]} --max ${arr[1]} -o artifacts --pngcrush 2.dmm
-	convert -compare artifacts/1-1.png artifacts/2-1.png artifacts/diff.png
-	pngcrush -ow artifacts/diff.png
-	# TODO: renamery
-	ls -alrt artifacts
+    # increment index; 1-based, just like BYOND ¯\_(ツ)_/¯
+	((index++))
+    # tell the log what we're up to
+    echo ""
+    echo "Processing $index: $map"
+    # get the origin/master and PR versions of the map
+    git show origin/master:$map >1.dmm
+    git show HEAD:$map >2.dmm
+    # determine the size of the changed section
+    ./dmm-tools diff-maps 1.dmm 2.dmm >dmm.diff
+    MIN_MAX=$(node_modules/.bin/coffee tools/scorpio/show_map_changes/index.coffee dmm.diff)
+    arr=($MIN_MAX)
+    # generate some map images and compare them
+    ./dmm-tools minimap --disable random --min ${arr[0]} --max ${arr[1]} -o artifacts --pngcrush 1.dmm
+    ./dmm-tools minimap --disable random --min ${arr[0]} --max ${arr[1]} -o artifacts --pngcrush 2.dmm
+    convert -compare artifacts/1-1.png artifacts/2-1.png artifacts/diff.png
+    pngcrush -ow artifacts/diff.png
+    # TODO: renamery
+    ls -alrt artifacts
 done
