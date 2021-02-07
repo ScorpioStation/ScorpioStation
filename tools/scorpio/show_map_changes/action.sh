@@ -49,9 +49,9 @@ for map in $MAPS; do
     # I heartell you have need of my ... renameomancy!
 	# See: http://smbc-comics.com/comic/2009-07-30
 	BASE_MAP=$(basename $map)
-	mv artifacts/1-1.png "$BASE_MAP.$index.1.png"
-	mv artifacts/2-1.png "$BASE_MAP.$index.2.png"
-	mv artifacts/diff.png "$BASE_MAP.$index.diff.png"
+	mv artifacts/1-1.png artifacts/"$BASE_MAP.$index.1.png"
+	mv artifacts/2-1.png artifacts/"$BASE_MAP.$index.2.png"
+	mv artifacts/diff.png artifacts/"$BASE_MAP.$index.diff.png"
 done
 
 # view what terrible carnage we have wrought
