@@ -56,3 +56,9 @@ done
 
 # view what terrible carnage we have wrought
 ls -alrt artifacts
+
+# also output some other stuff
+echo "GITHUB_SHA: $GITHUB_SHA"
+echo "GITHUB_REF: $GITHUB_REF"
+echo "GITHUB_HEAD_REF: $GITHUB_HEAD_REF"
+echo "GITHUB_BASE_REF: $GITHUB_BASE_REF"
