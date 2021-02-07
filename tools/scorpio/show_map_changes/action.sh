@@ -3,7 +3,7 @@
 # Generate images to highlight map changes, if any
 
 # obtain what the maps look like at origin/master
-git fetch --depth=1 --no-auto-gc --no-recurse-submodules --progress --prune origin +refs/heads/master:refs/remotes/origin/master
+git fetch --depth=1 --no-auto-gc --no-recurse-submodules --prune origin +refs/heads/master:refs/remotes/origin/master
 
 # see if any maps changed on our PR branch
 MAPS=$(git diff --name-only origin/master | grep .dmm)
@@ -16,10 +16,10 @@ fi
 sudo apt-get install -q=2 imagemagick optipng pngcrush
 
 # since we have changes, let's grab a map generation tool
-docker pull scorpiostation/spacemandmm:latest
+docker pull -q scorpiostation/spacemandmm:latest
 docker create --name delete_me scorpiostation/spacemandmm:latest
 docker cp delete_me:/spacemandmm/target/release/dmm-tools dmm-tools
-#docker rm delete_me
+docker rm delete_me
 chmod +x dmm-tools
 
 # set up Node.js for parsing diff-maps output

@@ -17,5 +17,9 @@ jobs:
     - name: Show Map Changes
       run: './tools/scorpio/show_map_changes/action.sh'
 
-    # - name: Upload Map Arifacts
-    #   run: './tools/scorpio/show_map_changes/action.sh'
+    - name: Upload Map Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: map-artifacts
+        path: artifacts
+        retention-days: 7
