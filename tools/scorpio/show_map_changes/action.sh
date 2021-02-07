@@ -2,9 +2,6 @@
 # show_map_changes.sh
 # Generate images to highlight map changes, if any
 
-# install some packages
-sudo apt-get install -y imagemagick optipng pngcrush
-
 # obtain what the maps look like at origin/master
 git fetch --depth=1 --no-auto-gc --no-recurse-submodules --progress --prune origin +refs/heads/master:refs/remotes/origin/master
 
@@ -14,6 +11,9 @@ if [ -z "$MAPS" ]; then
     echo "No maps have been changed."
     exit 0
 fi
+
+# install some packages
+sudo apt-get install -q=2 imagemagick optipng pngcrush
 
 # since we have changes, let's grab a map generation tool
 docker pull scorpiostation/spacemandmm:latest
@@ -33,7 +33,6 @@ for map in $MAPS; do
     # increment index; 1-based, just like BYOND ¯\_(ツ)_/¯
 	((index++))
     # tell the log what we're up to
-    echo ""
     echo "Processing $index: $map"
     # get the origin/master and PR versions of the map
     git show origin/master:$map >1.dmm
@@ -47,6 +46,13 @@ for map in $MAPS; do
     ./dmm-tools minimap --disable random --min ${arr[0]} --max ${arr[1]} -o artifacts --pngcrush 2.dmm
     convert -compare artifacts/1-1.png artifacts/2-1.png artifacts/diff.png
     pngcrush -ow artifacts/diff.png
-    # TODO: renamery
-    ls -alrt artifacts
+    # I heartell you have need of my ... renameomancy!
+	# See: http://smbc-comics.com/comic/2009-07-30
+	BASE_MAP=$(basename $map)
+	mv artifacts/1-1.png "$BASE_MAP.$index.1.png"
+	mv artifacts/2-1.png "$BASE_MAP.$index.2.png"
+	mv artifacts/diff.png "$BASE_MAP.$index.diff.png"
 done
+
+# view what terrible carnage we have wrought
+ls -alrt artifacts
