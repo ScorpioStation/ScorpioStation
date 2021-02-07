@@ -13,7 +13,7 @@ if [ -z "$MAPS" ]; then
 fi
 
 # install some packages
-sudo apt-get install -q=2 imagemagick optipng pngcrush
+sudo apt-get install -q=1 -y imagemagick optipng pngcrush
 
 # since we have changes, let's grab a map generation tool
 docker pull -q scorpiostation/spacemandmm:latest
