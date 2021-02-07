@@ -23,6 +23,6 @@ jobs:
     - name: Upload Map Artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: map-artifacts-${{ env.GITHUB_SHA_SHORT }}
+        name: map-artifacts-${{ env.artifact_tag }}
         path: artifacts
         retention-days: 7

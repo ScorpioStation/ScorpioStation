@@ -57,10 +57,7 @@ done
 # view what terrible carnage we have wrought
 ls -alrt artifacts
 
-# also output some other stuff
-echo "GITHUB_SHA: $GITHUB_SHA"
-echo "GITHUB_REF: $GITHUB_REF"
-echo "GITHUB_HEAD_REF: $GITHUB_HEAD_REF"
-echo "GITHUB_BASE_REF: $GITHUB_BASE_REF"
-echo "git log --pretty=oneline | head -20"
-git log --pretty=oneline | head -20
+# compute an artifact tag
+ARTIFACT_TAG=$(git log --pretty=oneline | head -1 | awk -- '{print $3}' | cut -c 1-12)
+echo "ARTIFACT_TAG: $ARTIFACT_TAG"
+echo "::set-output name=artifact_tag::$ARTIFACT_TAG"
