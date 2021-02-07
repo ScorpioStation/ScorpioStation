@@ -1,0 +1,10 @@
+{
+  "name": "show_map_changes",
+  "version": "1.0.0",
+  "description": "Parse dmm-tools output to generate images showing map changes",
+  "author": "blinkdog@protonmail.com",
+  "license": "SEE LICENSE IN LICENSE-AGPL3.txt",
+  "dependencies": {
+    "coffeescript": "2.5.1"
+  }
+}
