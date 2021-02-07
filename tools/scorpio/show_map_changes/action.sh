@@ -60,4 +60,4 @@ echo "ARTIFACT_TAG=${ARTIFACT_TAG}" >> $GITHUB_ENV
 
 # view what terrible carnage we have wrought
 echo "Map artifacts will be saved as: map-artifacts-${ARTIFACT_TAG}"
-ls -alrt artifacts
+ls -l artifacts

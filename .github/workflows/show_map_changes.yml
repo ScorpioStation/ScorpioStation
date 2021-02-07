@@ -17,9 +17,6 @@ jobs:
     - name: Show Map Changes
       run: './tools/scorpio/show_map_changes/action.sh'
 
-    - name: Display Artifact Tag
-      run: 'echo "${{ env.ARTIFACT_TAG }}"'
-
     - name: Upload Map Artifacts
       if: ${{ env.ARTIFACT_TAG }}
       uses: actions/upload-artifact@v2
