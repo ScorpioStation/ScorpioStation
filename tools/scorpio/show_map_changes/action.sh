@@ -2,26 +2,49 @@
 # show_map_changes.sh
 # Generate images to highlight map changes, if any
 
-# what does the file system look like inside CI?
-echo "pwd"
-pwd
-echo "ls -l"
-ls -l
+# install some packages
+apt-get install -y imagemagick optipng pngcrush
 
-# what does git look like from inside CI?
-echo "git status"
-git status
-echo "git log"
-git log --pretty=oneline | head -15
-
-# let's see what's changed in our PR branch...
-echo "git diff --name-only origin/master"
+# obtain what the maps look like at origin/master
 git fetch --depth=1 --no-auto-gc --no-recurse-submodules --progress --prune origin +refs/heads/master:refs/remotes/origin/master
-git diff --name-only origin/master
 
-# let's generate a map for Emerald...
-echo "generate image using Docker"
+# see if any maps changed on our PR branch
+MAPS=$(git diff --name-only origin/master | grep .dmm)
+if [ -z "$MAPS" ]; then
+    echo "No maps have been changed."
+    exit 0
+fi
+
+# since we have changes, let's grab a map generation tool
 docker pull scorpiostation/spacemandmm:latest
 docker create --name delete_me scorpiostation/spacemandmm:latest
 docker cp delete_me:/spacemandmm/target/release/dmm-tools dmm-tools
-./dmm-tools minimap _maps/map_files/emerald/emerald.dmm
+#docker rm delete_me
+chmod +x dmm-tools
+
+# set up Node.js for parsing diff-maps output
+cp tools/scorpio/show_map_changes/package.json .
+cp tools/scorpio/show_map_changes/package-lock.json .
+npm ci
+
+# for each map we've detected changes with
+for map in $MAPS; do
+	# tell the log what we're up to
+	echo ""
+    echo "Processing $map"
+	# get the origin/master and PR versions of the map
+	git show origin/master:$map >1.dmm
+	git show HEAD:$map >2.dmm
+	# determine the size of the changed section
+	./dmm-tools diff-maps 1.dmm 2.dmm >dmm.diff
+	MIN_MAX=$(node_modules/.bin/coffee tools/scorpio/show_map_changes/index.coffee dmm.diff)
+	echo "MIN_MAX: ${MIN_MAX}"
+	arr=($MIN_MAX)
+	echo ${arr[1]}
+	# generate some map images and compare them
+	./dmm-tools minimap --disable random --min ${arr[0]} --max ${arr[1]} -o artifacts 1.dmm
+	./dmm-tools minimap --disable random --min ${arr[0]} --max ${arr[1]} -o artifacts 2.dmm
+	convert -compare artifacts/1-1.png artifacts/2-1.png artifacts/diff.png
+	# TODO: renamery
+	ls -alrt artifacts
+done

@@ -2,9 +2,6 @@ name: 'Action'
 
 on:
   pull_request:
-  push:
-    branches:
-      - master
 
 jobs:
   show_map_changes:
@@ -13,5 +10,12 @@ jobs:
     steps:
     - name: Checkout Project
       uses: actions/checkout@v2
+
+    - name: Setup Node
+      uses: actions/setup-node@v2
+
     - name: Show Map Changes
       run: './tools/scorpio/show_map_changes/action.sh'
+
+    # - name: Upload Map Arifacts
+    #   run: './tools/scorpio/show_map_changes/action.sh'

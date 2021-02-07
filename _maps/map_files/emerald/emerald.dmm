@@ -5849,7 +5849,7 @@
 /turf/simulated/floor/wood,
 /area/crew_quarters/mrchangs)
 "ano" = (
-/obj/machinery/vending/chinese,
+/obj/machinery/vending/snack,
 /turf/simulated/floor/wood,
 /area/crew_quarters/mrchangs)
 "anp" = (
@@ -6170,7 +6170,7 @@
 /turf/simulated/floor/plating,
 /area/turret_protected/aisat_interior)
 "aod" = (
-/obj/machinery/vending/chinese,
+/obj/machinery/vending/snack,
 /turf/simulated/floor/plasteel{
 	icon_state = "cafeteria";
 	dir = 2
