@@ -24,16 +24,16 @@
 
 
 /datum/dna/gene/disability/radioactive/can_activate(mob/M, flags)
-	radiation_pulse(H, 20)
+	if(!..())
+		return FALSE
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		if((RADIMMUNE in H.dna.species.species_traits) && !(flags & MUTCHK_FORCED))
+			return FALSE
+	return TRUE
 
 /datum/dna/gene/disability/radioactive/OnMobLife(mob/living/carbon/human/H)
-	var/radiation_amount = abs(min(H.radiation - 20,0))
-	H.apply_effect(radiation_amount, IRRADIATE)
-	for(var/mob/living/L in range(1, H))
-		if(L == H)
-			continue
-		to_chat(L, "<span class='danger'>You are enveloped by a soft green glow emanating from [H].</span>")
-		L.apply_effect(5, IRRADIATE)
+	radiation_pulse(H, 20)
 
 /datum/dna/gene/disability/radioactive/OnDrawUnderlays(mob/M, g)
 	return "rads_s"
