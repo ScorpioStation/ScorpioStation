@@ -27,7 +27,7 @@
 	var/obj/item/organ/internal/honktumor/cursed/tumor = new
 	tumor.insert(src)
 	mutations.Add(NERVOUS)
-	dna.SetDNAState(GLOB.nervousblock, 1, DNA_SE, TRUE)
+	dna.SetDNAState(GLOB.nervousblock, TRUE, DNA_SE, TRUE)
 	genemutcheck(src, GLOB.nervousblock, null, MUTCHK_FORCED)
 	rename_character(real_name, "cluwne")
 

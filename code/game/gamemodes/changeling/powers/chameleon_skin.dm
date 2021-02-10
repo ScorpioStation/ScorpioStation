@@ -15,7 +15,7 @@
 		H.dna.SetDNAState(GLOB.chameleonblock, FALSE, DNA_SE)
 		genemutcheck(H, GLOB.chameleonblock, null, MUTCHK_FORCED)
 	else
-		H.dna.SetDNAState(GLOB.chameleonblock, DNA_SE, TRUE)
+		H.dna.SetDNAState(GLOB.chameleonblock, TRUE, DNA_SE)
 		genemutcheck(H, GLOB.chameleonblock, null, MUTCHK_FORCED)
 
 	SSblackbox.record_feedback("nested tally", "changeling_powers", 1, list("[name]"))

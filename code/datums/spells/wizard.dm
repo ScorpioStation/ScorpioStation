@@ -97,7 +97,7 @@
 
 /obj/effect/proc_holder/spell/targeted/genetic/mutate/cast(list/targets, mob/user = usr)
 	for(var/mob/living/target in targets)
-		target.dna.SetDNAState(GLOB.hulkblock, DNA_SE, TRUE)
+		target.dna.SetDNAState(GLOB.hulkblock, TRUE, DNA_SE)
 		genemutcheck(target, GLOB.hulkblock, null, MUTCHK_FORCED)
 		spawn(duration)
 			target.dna.SetDNAState(GLOB.hulkblock, FALSE, DNA_SE)

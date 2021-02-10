@@ -54,10 +54,12 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 	new_dna.blood_type = blood_type
 	new_dna.real_name = real_name
 	new_dna.species = new species.type
-	for(var/b=1;b<=DNA_SE_LENGTH;b++) //Should DNA_RP be involved in here somewhere? Iunno!
-		new_dna.SE[b]=SE[b]
-		if(b<=DNA_UI_LENGTH)
-			new_dna.UI[b]=UI[b]
+	for(var/b in 1 to DNA_SE_LENGTH)
+		new_dna.SE[b] = SE[b]
+	for(var/b in 1 to DNA_UI_LENGTH)
+		new_dna.UI[b] = UI[b]
+	for(var/b in 1 to DNA_RP_LENGTH)
+		new_dna.RP[b] = RP[b]
 	new_dna.UpdateDNA(DNA_ALL)
 	return new_dna
 
@@ -69,23 +71,23 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 	ASSERT(dna_type >= 0)
 	ASSERT(dna_type <= 3)
 	switch(dna_type)
-		if(DNA_UI)					// Create a random UI
-			for(var/i =1, i <= DNA_UI_LENGTH, i++)
+		if(DNA_UI)	// Create a random UI
+			for(var/i in 1 to DNA_UI_LENGTH)
 				if(i == DNA_UI_SKIN_TONE)
-					SetDNAValueRange(DNA_UI_SKIN_TONE, rand(1, 220), 220, DNA_UI, TRUE) // Otherwise, it gets fucked
+					SetDNAValueRange(DNA_UI_SKIN_TONE, rand(1, 220), 220, DNA_UI, TRUE)	// Otherwise, it gets screwed up
 				else
 					UI[i] = rand(0, 4095)
 			if(!defer)
 				UpdateDNA(DNA_UI)
-		if(DNA_SE)				// "Zeroes out" all of the SE Blocks
-			for(var/i = 1, i <= DNA_SE_LENGTH, i++)
+		if(DNA_SE)	// "Zeroes out" all of the SE Blocks
+			for(var/i in 1 to (DNA_SE_LENGTH - 1))
 				SetDNAValue(i, rand(1, 1024), TRUE, DNA_SE)
 			UpdateDNA(DNA_SE)
 		if(DNA_RP)
-			for(var/i = 1, i <= DNA_RP_LENGTH, i++)
+			for(var/i in 1 to DNA_RP_LENGTH)
 				SetDNAValue(i, rand(1, 1024), TRUE, DNA_RP)
 			UpdateDNA(DNA_RP)
-		if(DNA_ALL) //Recurse! Reeeecccuuuuurrrrsssseeee! AHAHAHAHAHAHAHAHA!
+		if(DNA_ALL)	//Recurse! Reeeecccuuuuurrrrsssseeee! AHAHAHAHAHAHAHAHA!
 			ResetDNA(DNA_UI)
 			ResetDNA(DNA_SE)
 			ResetDNA(DNA_RP)
@@ -222,7 +224,7 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 	ASSERT(maxvalue <= 4095)
 	var/range = (4095 / maxvalue)
 	switch(dna_type)
-		if(DNA_UI)			// Used in hair and facial styles (value being the index and maxvalue being the len of the hairstyle list)
+		if(DNA_UI)	// Used in hair and facial styles (value being the index and maxvalue being the len of the hairstyle list)
 			if(value == 0)
 				value = 1
 			SetDNAValue(block, round(value * range), DNA_UI, defer)
@@ -261,7 +263,10 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 			else
 				val = rand(1, BOUNDS[DNA_OFF_UPPERBOUND])
 		if(DNA_RP)
-			val = on		// DNA_RP is simple, okay? "on" is on and "off" is off!
+			if(on)
+				val = TRUE	// DNA_RP is simple, okay? "on" is on and "off" is off!
+			else
+				val = FALSE
 	SetDNAValue(block, val, dna_type, defer)
 
 // Is the block "on" (TRUE) or "off" (FALSE)?

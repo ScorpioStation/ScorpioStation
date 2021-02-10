@@ -49,14 +49,14 @@
 		return
 	M.dna.check_integrity()
 	if(UI)
-		for(var/i = 1, i <= DNA_UI_LENGTH - 1, i++)
+		for(var/i in 1 to DNA_UI_LENGTH)
 			if(prob(prob))
 				M.dna.SetDNAValue(i, rand(1, 4095), DNA_UI, TRUE)
 		M.dna.UpdateDNA(DNA_UI)
 		M.UpdateAppearance()
 
 	else
-		for(var/i = 1, i <= DNA_SE_LENGTH - 1, i++)
+		for(var/i in 1 to (DNA_SE_LENGTH - 1))
 			if(prob(prob))
 				M.dna.SetDNAValue(i, rand(1, 4095), DNA_SE, TRUE)
 		M.dna.UpdateDNA(DNA_SE)
@@ -265,6 +265,6 @@
 	SetDNAValueRange(DNA_UI_HACC_G,		color2G(head_organ.headacc_colour),		255,	 DNA_UI,	TRUE)
 	SetDNAValueRange(DNA_UI_HACC_B,		color2B(head_organ.headacc_colour),		255,	 DNA_UI,	TRUE)
 
-	SetDNAValueRange(DNA_UI_HAIR_STYLE,	hair,		GLOB.hair_styles_full_list.len,		 DNA_UI,	TRUE)
+	SetDNAValueRange(DNA_UI_HAIR_STYLE,		hair,		GLOB.hair_styles_full_list.len,		 DNA_UI,	TRUE)
 	SetDNAValueRange(DNA_UI_BEARD_STYLE,	beard,		GLOB.facial_hair_styles_list.len,	 DNA_UI,	TRUE)
-	SetDNAValueRange(DNA_UI_HACC_STYLE,	headacc,	GLOB.head_accessory_styles_list.len, DNA_UI,	TRUE)
+	SetDNAValueRange(DNA_UI_HACC_STYLE,		headacc,	GLOB.head_accessory_styles_list.len, DNA_UI,	TRUE)
