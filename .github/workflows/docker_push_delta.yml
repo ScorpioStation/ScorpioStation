@@ -17,11 +17,9 @@ jobs:
 
     - name: "Prepare Map: Delta"
       run: |
-        rm code/game/area/emerald_areas.dm
         rm code/modules/client/asset_cache_nanomap.dm
         rm icons/_nanomaps/*
         cp tools/scorpio/build_docker_images/nanomap_delta.dm code/modules/client/asset_cache_nanomap.dm
-        cp code/game/area/ss13_areas.dm code/game/area/emerald_areas.dm
         sed -i -e "s/_maps\\\emerald.dm/_maps\\\delta.dm/" paradise.dme
 
     - name: Set up Docker Buildx
