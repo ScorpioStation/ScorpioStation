@@ -349,18 +349,6 @@
 	idle_power_usage = 10
 	active_power_usage = 400
 
-/obj/machinery/computer/scan_consolenew/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/disk/data)) //INSERT SOME diskS
-		if(!disk)
-			user.drop_item()
-			I.forceMove(src)
-			disk = I
-			to_chat(user, "You insert [I].")
-			SStgui.update_uis(src)
-			return
-	else
-		return ..()
-
 /obj/machinery/computer/scan_consolenew/New()
 	..()
 	for(var/i=0;i<3;i++)
@@ -372,6 +360,18 @@
 				break
 		spawn(250)
 			injector_ready = TRUE
+
+/obj/machinery/computer/scan_consolenew/attackby(obj/item/I, mob/user, params)
+	if(istype(I, /obj/item/disk/data)) //INSERT SOME diskS
+		if(!disk)
+			user.drop_item()
+			I.forceMove(src)
+			disk = I
+			to_chat(user, "You insert [I].")
+			SStgui.update_uis(src)
+			return
+	else
+		return ..()
 
 /obj/machinery/computer/scan_consolenew/proc/all_dna_blocks(list/buffer)
 	var/list/arr = list()

@@ -145,9 +145,48 @@ GLOBAL_LIST_INIT(cloner_biomass_items, list(\
 	//data = "0C80C80C80C80C80C8000000000000161FBDDEF" - Farmer Jeff
 	buf.dna.real_name="God Emperor of Mankind"
 	buf.dna.unique_enzymes = md5(buf.dna.real_name)
-	buf.dna.UI = list(0x066,0x000,0x033,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0xAF0,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x033,0x066,0x0FF,0x4DB,0x002,0x690,0x000,0x000,0x000,0x328,0x045,0x5FC,0x053,0x035,0x035,0x035)
+	buf.dna.UI = list(
+		0x066,	//DNA_UI_HAIR_R
+		0x000,	//DNA_UI_HAIR_G
+		0x033,	//DNA_UI_HAIR_B
+		0x000,	//DNA_UI_HAIR_R2
+		0x000,	//DNA_UI_HAIR_G2
+		0x000,	//DNA_UI_HAIR_B2
+		0x000,	//DNA_UI_BEARD_R
+		0x000,	//DNA_UI_BEARD_G
+		0x000,	//DNA_UI_BEARD_B
+		0x000,	//DNA_UI_BEARD2_R
+		0x000,	//DNA_UI_BEARD2_G
+		0x000,	//DNA_UI_BEARD2_B
+		0xAF0,	//DNA_UI_SKIN_TONE
+		0x000,	//DNA_UI_SKIN_R
+		0x000,	//DNA_UI_SKIN_G
+		0x000,	//DNA_UI_SKIN_B
+		0x000,	//DNA_UI_HACC_R
+		0x000,	//DNA_UI_HACC_G
+		0x000,	//DNA_UI_HACC_B
+		0x000,	//DNA_UI_HEAD_MARK_R
+		0x000,	//DNA_UI_HEAD_MARK_G
+		0x000,	//DNA_UI_HEAD_MARK_B
+		0x033,	//DNA_UI_BODY_MARK_R
+		0x066,	//DNA_UI_BODY_MARK_G
+		0x0FF,	//DNA_UI_BODY_MARK_B
+		0x4DB,	//DNA_UI_TAIL_MARK_R
+		0x002,	//DNA_UI_TAIL_MARK_B
+		0x690,	//DNA_UI_TAIL_MARK_G
+		0x000,	//DNA_UI_EYES_R
+		0x000,	//DNA_UI_EYES_G
+		0x000,	//DNA_UI_EYES_B
+		0x328,	//DNA_UI_GENDER
+		0x045,	//DNA_UI_BEARD_STYLE
+		0x5FC,	//DNA_UI_HAIR_STYLE
+		0x053,	//DNA_UI_HACC_STYLE
+		0x035,	//DNA_UI_HEAD_MARK_STYLE
+		0x035,	//DNA_UI_BODY_MARK_STYLE
+		0x035	//DNA_UI_TAIL_MARK_STYLE
+	)
 	//buf.dna.UI=list(0x0C8,0x0C8,0x0C8,0x0C8,0x0C8,0x0C8,0x000,0x000,0x000,0x000,0x161,0xFBD,0xDEF) // Farmer Jeff
-	if(buf.dna.UI.len != DNA_UI_LENGTH) //If there's a disparity b/w the dna UI string lengths, 0-fill the extra blocks in this UI.
+	if(length(buf.dna.UI) != DNA_UI_LENGTH) //If there's a disparity b/w the dna UI string lengths, 0-fill the extra blocks in this UI.
 		for(var/i in length(buf.dna.UI) to DNA_UI_LENGTH)
 			buf.dna.UI += 0x000
 	buf.dna.ResetDNA(DNA_SE)
