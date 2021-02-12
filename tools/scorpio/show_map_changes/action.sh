@@ -3,11 +3,6 @@
 # Generate images to highlight map changes, if any
 
 # DEBUG: output a few things that might be useful for debugging
-echo ""
-echo "git show-ref HEAD"
-git show-ref HEAD
-
-echo ""
 echo "git show-ref"
 git show-ref
 
@@ -23,7 +18,8 @@ fi
 
 # install and configure some packages
 sudo apt-get install -q=2 imagemagick pngcrush
-cp tools/scorpio/show_map_changes/policy.xml /etc/ImageMagick-6/policy.xml
+cp -v tools/scorpio/show_map_changes/policy.xml /etc/ImageMagick-6/policy.xml
+convert -list resource
 
 # since we have changes, let's grab a map generation tool
 docker pull -q scorpiostation/spacemandmm:latest
@@ -54,6 +50,7 @@ for map in $MAPS; do
     # generate some map images and compare them
     ./dmm-tools minimap --disable random --min ${arr[0]} --max ${arr[1]} -o artifacts --pngcrush 1.dmm
     ./dmm-tools minimap --disable random --min ${arr[0]} --max ${arr[1]} -o artifacts --pngcrush 2.dmm
+    convert -list resource
     convert -compare artifacts/1-1.png artifacts/2-1.png artifacts/diff.png
     pngcrush -ow artifacts/diff.png
     # I heartell you have need of my ... renameomancy!
