@@ -2,6 +2,21 @@
 # show_map_changes.sh
 # Generate images to highlight map changes, if any
 
+# DEBUG: output a few things that might be useful for debugging
+echo ""
+echo "git show-ref HEAD"
+git show-ref HEAD
+
+echo ""
+echo "git show-ref"
+git show-ref
+
+echo ""
+echo "cat /etc/ImageMagick-6/policy.xml"
+cat /etc/ImageMagick-6/policy.xml
+
+echo ""
+
 # obtain what the maps look like at origin/master
 git fetch --depth=1 --no-auto-gc --no-recurse-submodules --prune origin +refs/heads/master:refs/remotes/origin/master
 
@@ -13,7 +28,7 @@ if [ -z "$MAPS" ]; then
 fi
 
 # install some packages
-sudo apt-get install -q=2 imagemagick optipng pngcrush
+sudo apt-get install -q=2 imagemagick pngcrush
 
 # since we have changes, let's grab a map generation tool
 docker pull -q scorpiostation/spacemandmm:latest
