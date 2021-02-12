@@ -2,6 +2,10 @@
 # show_map_changes.sh
 # Generate images to highlight map changes, if any
 
+# DEBUG: output a few things that might be useful for debugging
+echo "git show-ref"
+git show-ref
+
 # obtain what the maps look like at origin/master
 git fetch --depth=1 --no-auto-gc --no-recurse-submodules --prune origin +refs/heads/master:refs/remotes/origin/master
 
@@ -12,8 +16,10 @@ if [ -z "$MAPS" ]; then
     exit 0
 fi
 
-# install some packages
-sudo apt-get install -q=2 imagemagick optipng pngcrush
+# install and configure some packages
+sudo apt-get install -q=2 imagemagick pngcrush
+sudo cp -v tools/scorpio/show_map_changes/policy.xml /etc/ImageMagick-6/policy.xml
+convert -list resource
 
 # since we have changes, let's grab a map generation tool
 docker pull -q scorpiostation/spacemandmm:latest
@@ -44,6 +50,7 @@ for map in $MAPS; do
     # generate some map images and compare them
     ./dmm-tools minimap --disable random --min ${arr[0]} --max ${arr[1]} -o artifacts --pngcrush 1.dmm
     ./dmm-tools minimap --disable random --min ${arr[0]} --max ${arr[1]} -o artifacts --pngcrush 2.dmm
+    convert -list resource
     convert -compare artifacts/1-1.png artifacts/2-1.png artifacts/diff.png
     pngcrush -ow artifacts/diff.png
     # I heartell you have need of my ... renameomancy!
@@ -55,7 +62,8 @@ for map in $MAPS; do
 done
 
 # compute an artifact tag
-ARTIFACT_TAG=$(git log --pretty=oneline | head -1 | awk -- '{print $3}' | cut -c 1-12)
+# ARTIFACT_TAG = the first 12 characters of the sha256sum of the PR ref (e.g. "refs/remotes/pull/348/merge")
+ARTIFACT_TAG=$(git show-ref | head -1 | awk -- '{print $2}' | sha256sum | awk -- '{print $1}' | cut -c 1-12)
 echo "ARTIFACT_TAG=${ARTIFACT_TAG}" >> $GITHUB_ENV
 
 # view what terrible carnage we have wrought

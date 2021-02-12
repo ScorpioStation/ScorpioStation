@@ -5296,6 +5296,14 @@
 	icon_state = "swall3"
 	},
 /area/shuttle/mining)
+"Qv" = (
+/obj/machinery/door/airlock/shuttle{
+	id_tag = "s_docking_airlock";
+	req_access_txt = "48"
+	},
+/obj/structure/fans/tiny,
+/turf/simulated/shuttle/floor,
+/area/shuttle/mining)
 "QE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -18418,7 +18426,7 @@ ab
 xC
 Qq
 tb
-Qq
+Qv
 tb
 Qq
 Rw

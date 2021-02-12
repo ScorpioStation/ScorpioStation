@@ -49,5 +49,7 @@ do ->
     # bail if there is bad multi-z mojo going on
     if minZ isnt maxZ
         process.exit 1
+    # TODO: make sure there is some minimum width x height for context;
+    #       when you change one tile, you get a one-tile diff :-/
     # otherwise output the coordinates
     process.stdout.write "#{minX},#{minY}\n#{maxX},#{maxY}\n"

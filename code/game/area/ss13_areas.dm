@@ -443,6 +443,61 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/centcom/bathroom
 	name = "\improper Centcom Emergency Shuttle Bathrooms"
 
+/area/constructionsite
+	name = "\improper Construction Site"
+	icon_state = "storage"
+
+/area/constructionsite/ai
+	name = "\improper Construction Computer Core"
+	icon_state = "ai"
+
+/area/constructionsite/atmospherics
+	name = "\improper Construction Site Atmospherics"
+	icon_state = "atmos"
+
+/area/constructionsite/bridge
+	name = "\improper Construction Site Bridge"
+	icon_state = "bridge"
+
+/area/constructionsite/engineering
+	name = "\improper Construction Site Engine Bay"
+	icon_state = "engine"
+
+/area/constructionsite/hallway/aft
+	name = "\improper Construction Site Aft"
+	icon_state = "hallA"
+
+/area/constructionsite/hallway/center
+	name = "\improper Construction Site Central Hallway"
+	icon_state = "hallC"
+
+/area/constructionsite/hallway/engcore
+	name = "\improper Construction Site Eng Core"
+	icon_state = "green"
+
+/area/constructionsite/hallway/fore
+	name = "\improper Construction Site Fore"
+	icon_state = "green"
+
+/area/constructionsite/hallway/port
+	name = "\improper Construction Site Port"
+	icon_state = "hallP"
+
+/area/constructionsite/hallway/starboard
+	name = "\improper Construction Site Starboard"
+	icon_state = "hallS"
+
+/area/constructionsite/medical
+	name = "\improper Construction Site Medbay"
+	icon_state = "medbay"
+
+/area/constructionsite/science
+	name = "\improper Construction Site Research"
+	icon_state = "medresearch"
+
+/area/constructionsite/storage
+	name = "\improper Construction Site Storage Area"
+
 //SYNDICATES
 
 /area/syndicate_mothership
@@ -607,11 +662,19 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Arrivals North Maintenance"
 	icon_state = "fpmaint"
 
+/area/maintenance/fpmaint3
+	name= "Dorms Maintenance"
+	icon_state = "fpmaint"
+
 /area/maintenance/fsmaint
 	name = "Dormitory Maintenance"
 	icon_state = "fsmaint"
 
 /area/maintenance/fsmaint2
+	name = "Bar Maintenance"
+	icon_state = "fsmaint"
+
+/area/maintenance/fsmaint3
 	name = "Bar Maintenance"
 	icon_state = "fsmaint"
 
@@ -625,6 +688,14 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/maintenance/apmaint
 	name = "Cargo Maintenance"
+	icon_state = "apmaint"
+
+/area/maintenance/apmaint2
+	name = "West Science Maintenance"
+	icon_state = "apmaint"
+
+/area/maintenance/apmaint3
+	name = "Security Maintenance"
 	icon_state = "apmaint"
 
 /area/maintenance/maintcentral
@@ -646,6 +717,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/maintenance/aft
 	name = "Engineering Maintenance"
 	icon_state = "amaint"
+
+/area/maintenance/engi_shuttle
+	name = "Engineering Shuttle Access"
+	icon_state = "maint_e_shuttle"
 
 /area/maintenance/storage
 	name = "Atmospherics Maintenance"
@@ -701,6 +776,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Fore Primary Hallway"
 	icon_state = "hallF"
 
+/area/hallway/primary/fore/fore_starboard
+	name = "\improper Engineering Primary Hallway"
+	icon_state = "hallF"
+
 /area/hallway/primary/starboard
 	name = "\improper Starboard Primary Hallway"
 	icon_state = "hallS"
@@ -740,6 +819,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Escape Shuttle Hallway"
 	icon_state = "escape"
 
+/area/hallway/secondary/exit/podbay
+	name= "\improper Public Podbay"
+	icon_state = "escape"
+
 /area/hallway/secondary/construction
 	name = "\improper Construction Area"
 	icon_state = "construction"
@@ -763,6 +846,11 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "bridge"
 	ambientsounds = list('sound/ambience/signal.ogg')
 
+/area/bridge/lounge
+	name = "\improper Bridge Lounge"
+	icon_state = "meeting"
+	ambientsounds = null
+
 /area/bridge/meeting_room
 	name = "\improper Heads of Staff Meeting Room"
 	icon_state = "meeting"
@@ -774,6 +862,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/crew_quarters/captain/bedroom
 	name = "\improper Captain's Bedroom"
 	icon_state = "captain"
+
+/area/crew_quarters/gym
+	name= "\improper Gym"
+	icon_state= "dk_yellow"
 
 /area/crew_quarters/recruit
 	name = "\improper Recruitment Office"
@@ -819,6 +911,14 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Chief Engineer's Office"
 	icon_state = "head_quarters"
 
+/area/crew_quarters/vacantoffice
+	name = "\improper Vacant Office"
+	icon_state = "bluenew"
+
+/area/crew_quarters/vacantoffice2
+	name = "\improper Vacant Market"
+	icon_state = "bluenew"
+
 /area/mint
 	name = "\improper Mint"
 	icon_state = "green"
@@ -830,6 +930,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/server
 	name = "\improper Messaging Server Room"
 	icon_state = "server"
+
+/area/arkrep
+	name = "\improper ArkSoft Representative's Office"
+	icon_state = "bluenew"
 
 /area/ntrep
 	name = "\improper Nanotrasen Representative's Office"
@@ -930,6 +1034,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "chapel"
 	ambientsounds = HOLY_SOUNDS
 	is_haunted = TRUE
+
+/area/chapel/funeral
+	name = "\improper Funeral Services"
+	icon_state = "chapel"
 
 /area/chapel/main
 	name = "\improper Chapel"
@@ -1350,6 +1458,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/security
 	ambientsounds = HIGHSEC_SOUNDS
+
+/area/security/barracks
+	name = "\improper Barracks"
+	icon_state = "securitylobby"
 
 /area/security/main
 	name = "\improper Security Office"
@@ -1795,6 +1907,17 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Derelict EVA Storage"
 	icon_state = "eva"
 
+/area/shuttle/constructionsite
+	name = "\improper Construction Site Shuttle"
+	icon_state = "yellow"
+	parallax_movedir = EAST
+
+/area/shuttle/constructionsite/station
+	name = "\improper Construction Site Shuttle"
+
+/area/shuttle/constructionsite/site
+	name = "\improper Construction Site Shuttle"
+
 /area/shuttle/derelict/ship/start
 	name = "\improper Abandoned Ship"
 	icon_state = "yellow"
@@ -1810,6 +1933,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/shuttle/derelict/ship/station
 	name = "\improper North of SS13"
 	icon_state = "yellow"
+
+/area/solar/constructionsite
+	name = "\improper Construction Site Solars"
+	icon_state = "panelsA"
 
 /area/solar/derelict_starboard
 	name = "\improper Derelict Starboard Solar Array"
@@ -2009,6 +2136,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Telecoms Central Compartment"
 	icon_state = "tcomsatcham"
 
+/area/tcommsat/entrance
+	name = "\improper Telecoms Teleporter"
+	icon_state = "tcomsatentrance"
+
 // These areas are needed for MetaStation's AI sat
 /area/turret_protected/tcomsat
 	name = "\improper Telecoms Satellite"
@@ -2171,6 +2302,51 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/awaycontent/a30
 	icon_state = "awaycontent30"
+
+/area/dynamic // Do not use.
+	name = "dynamic area"
+	icon_state = "purple"
+	var/match_tag = "none"
+	var/match_width = -1
+	var/match_height = -1
+	var/enable_lights = 0
+
+/area/dynamic/destination // Do not use.
+	name = "dynamic area destination"
+
+/area/dynamic/destination/lobby
+	name = "Arrivals Lobby"
+	match_tag = "arrivals"
+	match_width = 5
+	match_height = 4
+	enable_lights = 1
+
+/area/dynamic/source // Do not use.
+	name = "dynamic area source"
+
+/area/dynamic/source/lobby_bar
+	name = "\improper Bar Lounge"
+	match_tag = "arrivals"
+	match_width = 5
+	match_height = 4
+	requires_power = FALSE
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+
+/area/dynamic/source/lobby_russian
+	name = "\improper Russian Lounge"
+	match_tag = "arrivals"
+	match_width = 5
+	match_height = 4
+	requires_power = FALSE
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+
+/area/dynamic/source/lobby_disco
+	name = "\improper Disco Lounge"
+	match_tag = "arrivals"
+	match_width = 5
+	match_height = 4
+	requires_power = FALSE
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 
 /////////////////////////////////////////////////////////////////////
 /*
