@@ -18,7 +18,7 @@ fi
 
 # install and configure some packages
 sudo apt-get install -q=2 imagemagick pngcrush
-cp -v tools/scorpio/show_map_changes/policy.xml /etc/ImageMagick-6/policy.xml
+sudo cp -v tools/scorpio/show_map_changes/policy.xml /etc/ImageMagick-6/policy.xml
 convert -list resource
 
 # since we have changes, let's grab a map generation tool
