@@ -3803,7 +3803,7 @@
 	dir = 4;
 	dwidth = 12;
 	height = 13;
-	id = "emergency_home";
+	id = "emergency_away";
 	name = "emergency evac bay";
 	width = 27
 	},
