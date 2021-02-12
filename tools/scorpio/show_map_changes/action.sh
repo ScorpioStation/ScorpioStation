@@ -11,12 +11,6 @@ echo ""
 echo "git show-ref"
 git show-ref
 
-echo ""
-echo "cat /etc/ImageMagick-6/policy.xml"
-cat /etc/ImageMagick-6/policy.xml
-
-echo ""
-
 # obtain what the maps look like at origin/master
 git fetch --depth=1 --no-auto-gc --no-recurse-submodules --prune origin +refs/heads/master:refs/remotes/origin/master
 
@@ -27,8 +21,9 @@ if [ -z "$MAPS" ]; then
     exit 0
 fi
 
-# install some packages
+# install and configure some packages
 sudo apt-get install -q=2 imagemagick pngcrush
+cp tools/scorpio/show_map_changes/policy.xml /etc/ImageMagick-6/policy.xml
 
 # since we have changes, let's grab a map generation tool
 docker pull -q scorpiostation/spacemandmm:latest
@@ -70,7 +65,8 @@ for map in $MAPS; do
 done
 
 # compute an artifact tag
-ARTIFACT_TAG=$(git log --pretty=oneline | head -1 | awk -- '{print $3}' | cut -c 1-12)
+# ARTIFACT_TAG = the first 12 characters of the sha256sum of the PR ref (e.g. "refs/remotes/pull/348/merge")
+ARTIFACT_TAG=$(git show-ref | head -1 | awk -- '{print $2}' | sha256sum | awk -- '{print $1}' | cut -c 1-12)
 echo "ARTIFACT_TAG=${ARTIFACT_TAG}" >> $GITHUB_ENV
 
 # view what terrible carnage we have wrought
