@@ -4247,8 +4247,8 @@
 "alq" = (
 /obj/structure/closet/emcloset,
 /obj/item/clothing/mask/breath,
-/obj/item/tank/internals/emergency_oxygen,
-/obj/item/tank/internals/emergency_oxygen,
+/obj/item/melee/energy/sword/saber/blue,
+/obj/item/melee/energy/sword/saber/blue,
 /obj/item/clothing/mask/breath,
 /obj/effect/decal/warning_stripes/yellow/hollow,
 /turf/simulated/floor/plasteel/dark,
@@ -11749,7 +11749,7 @@
 	layer = 2.9
 	},
 /obj/item/clothing/suit/storage/hazardvest,
-/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/melee/energy/sword/saber/blue/engi,
 /obj/item/clothing/mask/gas,
 /obj/item/clothing/mask/gas{
 	pixel_x = -3;
@@ -12838,8 +12838,8 @@
 /area/engine/break_room)
 "aLO" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/tank/internals/emergency_oxygen/engi/empty,
-/obj/item/tank/internals/emergency_oxygen/engi/empty,
+/obj/item/melee/energy/sword/saber/blue/engi/empty,
+/obj/item/melee/energy/sword/saber/blue/engi/empty,
 /obj/item/reagent_containers/iv_bag/blood/AMinus,
 /obj/item/reagent_containers/iv_bag/blood/APlus,
 /obj/item/reagent_containers/iv_bag/blood/BMinus,
@@ -13385,8 +13385,8 @@
 /area/quartermaster/sorting)
 "aMR" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/tank/internals/emergency_oxygen/engi/empty,
-/obj/item/tank/internals/emergency_oxygen/engi/empty,
+/obj/item/melee/energy/sword/saber/blue/engi/empty,
+/obj/item/melee/energy/sword/saber/blue/engi/empty,
 /obj/item/reagent_containers/iv_bag/blood/AMinus,
 /obj/item/reagent_containers/iv_bag/blood/APlus,
 /obj/item/reagent_containers/iv_bag/blood/BMinus,
@@ -21274,18 +21274,18 @@
 /area/engine/controlroom)
 "bcJ" = (
 /obj/structure/table,
-/obj/item/tank/internals/emergency_oxygen/nitrogen{
+/obj/item/melee/energy/sword/saber/blue/nitrogen{
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/item/tank/internals/emergency_oxygen/nitrogen{
+/obj/item/melee/energy/sword/saber/blue/nitrogen{
 	pixel_x = 5
 	},
-/obj/item/tank/internals/emergency_oxygen/plasma{
+/obj/item/melee/energy/sword/saber/blue/plasma{
 	pixel_x = -5;
 	pixel_y = 5
 	},
-/obj/item/tank/internals/emergency_oxygen/plasma{
+/obj/item/melee/energy/sword/saber/blue/plasma{
 	pixel_x = -5
 	},
 /turf/simulated/floor/plasteel{
@@ -21818,8 +21818,8 @@
 /area/hallway/primary/fore/fore_starboard)
 "bdE" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/tank/internals/emergency_oxygen/engi/empty,
-/obj/item/tank/internals/emergency_oxygen/engi/empty,
+/obj/item/melee/energy/sword/saber/blue/engi/empty,
+/obj/item/melee/energy/sword/saber/blue/engi/empty,
 /obj/item/reagent_containers/iv_bag/blood/AMinus,
 /obj/item/reagent_containers/iv_bag/blood/APlus,
 /obj/item/reagent_containers/iv_bag/blood/BMinus,
@@ -25970,7 +25970,7 @@
 /area/maintenance/fsmaint2)
 "bli" = (
 /obj/structure/rack,
-/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/melee/energy/sword/saber/blue/engi,
 /turf/simulated/floor/plating,
 /area/maintenance/fsmaint)
 "blj" = (
@@ -37153,7 +37153,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/item/tank/internals/emergency_oxygen/plasma{
+/obj/item/melee/energy/sword/saber/blue/plasma{
 	pixel_x = -5;
 	pixel_y = 5
 	},
@@ -37799,7 +37799,7 @@
 /turf/simulated/floor/plasteel,
 /area/atmos)
 "bGU" = (
-/obj/item/tank/internals/emergency_oxygen/plasma{
+/obj/item/melee/energy/sword/saber/blue/plasma{
 	pixel_x = -5;
 	pixel_y = 5
 	},
@@ -49944,8 +49944,8 @@
 /area/medical/sleeper)
 "ccI" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/tank/internals/emergency_oxygen/engi/empty,
-/obj/item/tank/internals/emergency_oxygen/engi/empty,
+/obj/item/melee/energy/sword/saber/blue/engi/empty,
+/obj/item/melee/energy/sword/saber/blue/engi/empty,
 /obj/item/reagent_containers/iv_bag/blood/AMinus,
 /obj/item/reagent_containers/iv_bag/blood/APlus,
 /obj/item/reagent_containers/iv_bag/blood/BMinus,
@@ -49992,8 +49992,8 @@
 /area/hallway/primary/central/se)
 "ccL" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/tank/internals/emergency_oxygen/engi/empty,
-/obj/item/tank/internals/emergency_oxygen/engi/empty,
+/obj/item/melee/energy/sword/saber/blue/engi/empty,
+/obj/item/melee/energy/sword/saber/blue/engi/empty,
 /obj/item/reagent_containers/iv_bag/blood/AMinus,
 /obj/item/reagent_containers/iv_bag/blood/APlus,
 /obj/item/reagent_containers/iv_bag/blood/BMinus,
@@ -50215,8 +50215,8 @@
 	dir = 8;
 	layer = 2.9
 	},
-/obj/item/tank/internals/emergency_oxygen,
-/obj/item/tank/internals/emergency_oxygen,
+/obj/item/melee/energy/sword/saber/blue,
+/obj/item/melee/energy/sword/saber/blue,
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/mask/breath,
 /obj/machinery/light_switch{
@@ -53881,8 +53881,8 @@
 	dir = 8;
 	layer = 2.9
 	},
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/melee/energy/sword/saber/blue/engi,
+/obj/item/melee/energy/sword/saber/blue/engi,
 /obj/item/clothing/mask/gas,
 /obj/item/clothing/mask/gas{
 	pixel_x = -3;
@@ -56948,11 +56948,11 @@
 	name = "south bump";
 	pixel_y = -24
 	},
-/obj/item/tank/internals/emergency_oxygen/nitrogen{
+/obj/item/melee/energy/sword/saber/blue/nitrogen{
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/item/tank/internals/emergency_oxygen/nitrogen{
+/obj/item/melee/energy/sword/saber/blue/nitrogen{
 	pixel_x = 5
 	},
 /obj/item/clothing/mask/breath/vox,
@@ -63257,7 +63257,7 @@
 	},
 /obj/item/clothing/suit/storage/hazardvest,
 /obj/item/clothing/suit/storage/hazardvest,
-/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/melee/energy/sword/saber/blue/engi,
 /obj/item/clothing/mask/gas,
 /obj/item/clothing/mask/gas{
 	pixel_x = -3;

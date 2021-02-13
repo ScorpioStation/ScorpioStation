@@ -10,6 +10,8 @@ echo "ARTIFACT_TAG: ${ARTIFACT_TAG}"
 
 # obtain what the maps look like at origin/master
 git fetch --depth=1 --no-auto-gc --no-recurse-submodules --prune origin +refs/heads/master:refs/remotes/origin/master
+echo "git show-ref"
+git show-ref
 
 # see if any maps changed on our PR branch
 MAPS=$(git diff --name-only origin/master | grep .dmm)
