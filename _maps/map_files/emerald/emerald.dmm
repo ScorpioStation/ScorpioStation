@@ -914,7 +914,7 @@
 "act" = (
 /obj/machinery/power/tesla_coil,
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "acu" = (
 /obj/structure/cable/yellow{
 	d1 = 4;
@@ -1433,23 +1433,23 @@
 "adI" = (
 /obj/machinery/field/generator,
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "adJ" = (
 /obj/structure/lattice/catwalk,
 /obj/item/weldingtool,
 /turf/space,
-/area/engine/engineering)
+/area/space/nearstation)
 "adK" = (
 /obj/effect/decal/warning_stripes/northwest,
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "adL" = (
 /turf/simulated/wall/r_wall,
 /area/turret_protected/aisat_interior)
 "adM" = (
 /obj/effect/decal/warning_stripes/north,
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "adN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1787,8 +1787,15 @@
 /turf/simulated/floor/plasteel,
 /area/engine/engineering)
 "aeB" = (
-/obj/structure/lattice/catwalk,
-/turf/space,
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/power/grounding_rod{
+	anchored = 1
+	},
+/turf/simulated/floor/plating/airless,
 /area/engine/engineering)
 "aeC" = (
 /obj/structure/grille,
@@ -2368,7 +2375,7 @@
 "agq" = (
 /obj/effect/decal/warning_stripes/northeast,
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "agr" = (
 /obj/machinery/gravity_generator/main/station,
 /turf/simulated/floor/plasteel{
@@ -2403,7 +2410,7 @@
 "agv" = (
 /obj/effect/decal/warning_stripes/west,
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "agw" = (
 /obj/effect/spawner/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/visible,
@@ -2415,7 +2422,7 @@
 	name = "revenantspawn"
 	},
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "agy" = (
 /obj/machinery/access_button{
 	command = "cycle_exterior";
@@ -2693,8 +2700,13 @@
 	},
 /area/maintenance/incinerator)
 "ahe" = (
-/turf/simulated/floor/plating,
-/area/engine/engineering)
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating/airless,
+/area/space/nearstation)
 "ahf" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8;
@@ -3039,7 +3051,7 @@
 "ahX" = (
 /obj/effect/decal/warning_stripes/east,
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "ahY" = (
 /obj/structure/chair/stool,
 /turf/simulated/floor/plasteel{
@@ -3206,7 +3218,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "aiR" = (
 /obj/structure/rack{
 	dir = 8;
@@ -3561,7 +3573,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "ajG" = (
 /turf/simulated/floor/plasteel,
 /area/quartermaster/miningdock)
@@ -3633,15 +3645,15 @@
 "ajS" = (
 /obj/effect/decal/warning_stripes/southwest,
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "ajT" = (
 /obj/effect/decal/warning_stripes/south,
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "ajU" = (
 /obj/effect/decal/warning_stripes/southeast,
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "ajV" = (
 /obj/effect/landmark{
 	name = "lightsout"
@@ -3761,7 +3773,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "akg" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/mechanical,
@@ -3783,7 +3795,7 @@
 	pixel_x = 5
 	},
 /turf/space,
-/area/engine/engineering)
+/area/space/nearstation)
 "akj" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable,
@@ -5304,7 +5316,7 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "anx" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/plasteel,
@@ -5805,7 +5817,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "aoJ" = (
 /obj/effect/turf_decal/delivery,
 /turf/simulated/floor/plasteel,
@@ -8508,7 +8520,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "ayy" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -8860,7 +8872,7 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "azt" = (
 /obj/machinery/power/tesla_coil,
 /obj/structure/cable/yellow{
@@ -8869,7 +8881,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "azx" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -8883,7 +8895,7 @@
 "azz" = (
 /obj/structure/cable/yellow,
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "azA" = (
 /turf/simulated/floor/plasteel{
 	dir = 8;
@@ -9105,6 +9117,9 @@
 /area/maintenance/fpmaint2)
 "aAe" = (
 /obj/machinery/light,
+/obj/machinery/power/grounding_rod{
+	anchored = 1
+	},
 /turf/simulated/floor/plating/airless,
 /area/engine/engineering)
 "aAf" = (
@@ -11406,7 +11421,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "aIN" = (
 /obj/effect/decal/warning_stripes/northwest,
 /turf/simulated/floor/plasteel,
@@ -12633,7 +12648,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "aLo" = (
 /turf/space,
 /area/maintenance/incinerator)
@@ -12745,7 +12760,7 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "aLF" = (
 /obj/machinery/conveyor/east{
 	id = "garbage"
@@ -12974,7 +12989,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "aMg" = (
 /turf/simulated/wall,
 /area/storage/tools)
@@ -13507,7 +13522,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "aNj" = (
 /obj/structure/chair{
 	dir = 8
@@ -14260,7 +14275,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "aOZ" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
@@ -14593,7 +14608,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating/airless,
-/area/engine/engineering)
+/area/space/nearstation)
 "aPC" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable{
@@ -90734,6 +90749,14 @@
 	icon_state = "ring_32"
 	},
 /area/crew_quarters/gym)
+"jIb" = (
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/plating/airless,
+/area/space/nearstation)
 "koc" = (
 /obj/structure/table,
 /obj/item/storage/fancy/crayons,
@@ -90808,6 +90831,14 @@
 /obj/decal/wrestling/rope/pillar/nw,
 /turf/simulated/floor/rubber,
 /area/crew_quarters/gym)
+"qBt" = (
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating/airless,
+/area/space/nearstation)
 "qDG" = (
 /obj/decal/wrestling/rope/southmost{
 	icon_state = "border_31_32_33"
@@ -90845,6 +90876,14 @@
 	icon_state = "ring_26"
 	},
 /area/crew_quarters/gym)
+"rAY" = (
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/plating/airless,
+/area/space/nearstation)
 "rCC" = (
 /turf/simulated/floor/gym{
 	icon_state = "ring_11"
@@ -127749,17 +127788,17 @@ aaa
 ady
 aac
 aaI
-abe
-abe
-abe
-abe
-abe
-abe
-abe
-abe
-abe
-abe
-abe
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 adB
 adB
 ahB
@@ -128005,19 +128044,19 @@ aaQ
 aaa
 ady
 aat
-abe
+aaa
 aiQ
 azt
 azt
 aLn
-aOW
-aOW
+qBt
+qBt
 aLn
-aOW
-aOW
+qBt
+qBt
 aOY
-aOW
-aaJ
+qBt
+rAY
 adG
 aeu
 ahh
@@ -128262,19 +128301,19 @@ agn
 dbZ
 ady
 aat
-abe
+aaa
 ajF
 act
 act
 aLE
-adB
-adB
+acy
+acy
 aLE
-adB
-adB
+acy
+acy
 aLE
-adB
-aat
+acy
+ahe
 adB
 aeu
 ahh
@@ -128519,19 +128558,19 @@ dbZ
 aaa
 ady
 aat
-abe
+aaa
 ajF
 act
 act
-abe
-abe
+aaa
+aaa
+acy
+aaa
+adw
+aaa
+aaa
+acy
 ahe
-abe
-aeB
-abe
-abe
-adB
-aat
 adB
 aeu
 ahh
@@ -128776,19 +128815,19 @@ dbZ
 aaa
 ady
 aat
-abe
+aaa
 akf
 azz
-abe
-abe
-abe
-abe
-abe
-aeB
-abe
-abe
-abe
-aat
+aaa
+aaa
+aaa
+aaa
+aaa
+adw
+aaa
+aaa
+aaa
+ahe
 aAe
 aeu
 aeu
@@ -129033,19 +129072,19 @@ abt
 dbZ
 ady
 aat
-abe
-aat
-adB
-abe
-abe
-aeB
-aeB
-aeB
-aeB
-aeB
-abe
-abe
-aat
+aaa
+ahe
+acy
+aaa
+aaa
+adw
+adw
+adw
+adw
+adw
+aaa
+aaa
+ahe
 adB
 aeu
 acK
@@ -129289,20 +129328,20 @@ aaa
 aaQ
 aaa
 ady
-aat
-abe
-aat
-adB
 aeB
-aeB
-aeB
+aaa
+ahe
+acy
+adw
+adw
+adw
 adK
 agv
 ajS
 aki
-abe
-adB
-aat
+aaa
+acy
+ahe
 adB
 aeu
 ade
@@ -129547,18 +129586,18 @@ aaQ
 aaa
 ady
 aaz
-abe
+aaa
 anw
 azz
-abe
-abe
-aeB
+aaa
+aaa
+adw
 adM
 agx
 ajT
-aeB
-abe
-abe
+adw
+aaa
+aaa
 anw
 aOW
 agR
@@ -129803,20 +129842,20 @@ aaa
 aaQ
 aaa
 ady
-aat
-abe
-aat
-adB
-adB
-abe
+aeB
+aaa
+ahe
+acy
+acy
+aaa
 adJ
 agq
 ahX
 ajU
-aeB
-aeB
-aeB
-aat
+adw
+adw
+adw
+ahe
 adB
 aeu
 ade
@@ -130061,18 +130100,18 @@ abt
 dbZ
 ady
 aat
-abe
-aat
-adB
-abe
-abe
-aeB
-aeB
-aeB
-aeB
-aeB
-abe
-abe
+aaa
+ahe
+acy
+aaa
+aaa
+adw
+adw
+adw
+adw
+adw
+aaa
+aaa
 aPB
 adB
 aeu
@@ -130318,19 +130357,19 @@ dbZ
 aaa
 ady
 aat
-abe
+aaa
 aoI
 azz
-abe
-abe
-abe
-aeB
-abe
-abe
-abe
-abe
-abe
-aat
+aaa
+aaa
+aaa
+adw
+aaa
+aaa
+aaa
+aaa
+aaa
+ahe
 aAe
 aeu
 aeu
@@ -130575,19 +130614,19 @@ dbZ
 aaa
 ady
 aat
-abe
+aaa
 ayx
 adI
 adI
-abe
-abe
-aeB
-abe
-adB
-abe
-abe
-adB
-aat
+aaa
+aaa
+adw
+aaa
+acy
+aaa
+aaa
+acy
+ahe
 adB
 aeu
 ahh
@@ -130832,19 +130871,19 @@ agn
 aaa
 ady
 aat
-abe
+aaa
 ayx
 adI
-adB
+acy
 aMf
-adB
-adB
+acy
+acy
 aMf
-adB
-adB
+acy
+acy
 aMf
-adB
-aat
+acy
+ahe
 adB
 aeu
 aHk
@@ -131089,19 +131128,19 @@ ago
 aaa
 ady
 aat
-abe
+aaa
 azs
 aIM
 aIM
 aNi
-aOW
-aOW
+qBt
+qBt
 aNi
-aOW
-aOW
+qBt
+qBt
 aNi
-aOW
-aaI
+qBt
+jIb
 adG
 aeu
 ahh
@@ -131347,17 +131386,17 @@ aaa
 ady
 aaE
 aaJ
-abe
-abe
-abe
-abe
-abe
-abe
-abe
-abe
-abe
-abe
-abe
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 adB
 adB
 ahB
