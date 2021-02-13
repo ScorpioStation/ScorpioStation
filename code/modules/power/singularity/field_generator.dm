@@ -54,6 +54,7 @@ field_generator power level display
 	. = ..()
 	fields = list()
 	connected_gens = list()
+	INVOKE_ASYNC(src, .proc/turn_on)
 
 
 /obj/machinery/field/generator/process()
