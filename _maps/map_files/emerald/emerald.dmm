@@ -53,34 +53,51 @@
 /turf/simulated/wall/r_wall,
 /area/storage/secure)
 "aal" = (
-/obj/structure/particle_accelerator/particle_emitter/left,
-/turf/simulated/floor/plasteel/dark,
-/area/storage/secure)
+/obj/structure/particle_accelerator/particle_emitter/right{
+	anchored = 1;
+	construction_state = 3;
+	dir = 1
+	},
+/turf/simulated/floor/engine,
+/area/engine/engineering)
 "aam" = (
-/obj/structure/particle_accelerator/power_box,
-/turf/simulated/floor/plasteel/dark,
-/area/storage/secure)
+/obj/structure/particle_accelerator/particle_emitter/center{
+	anchored = 1;
+	construction_state = 3;
+	dir = 1
+	},
+/turf/simulated/floor/engine,
+/area/engine/engineering)
 "aan" = (
-/obj/structure/particle_accelerator/fuel_chamber,
-/turf/simulated/floor/plasteel/dark,
-/area/storage/secure)
+/obj/structure/particle_accelerator/particle_emitter/left{
+	anchored = 1;
+	construction_state = 3;
+	dir = 1
+	},
+/turf/simulated/floor/engine,
+/area/engine/engineering)
 "aao" = (
-/obj/structure/particle_accelerator/particle_emitter/center,
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/storage/secure)
 "aap" = (
-/obj/machinery/particle_accelerator/control_box{
-	tag = "particle_accelerator_control_box"
+/obj/structure/particle_accelerator/power_box{
+	anchored = 1;
+	construction_state = 3;
+	dir = 1
 	},
-/turf/simulated/floor/plasteel/dark,
-/area/storage/secure)
+/turf/simulated/floor/engine,
+/area/engine/engineering)
 "aaq" = (
-/obj/structure/particle_accelerator/particle_emitter/right,
-/turf/simulated/floor/plasteel/dark,
-/area/storage/secure)
+/obj/structure/particle_accelerator/fuel_chamber{
+	anchored = 1;
+	construction_state = 3;
+	dir = 1
+	},
+/turf/simulated/floor/engine,
+/area/engine/engineering)
 "aar" = (
 /turf/simulated/wall/r_wall,
 /area/maintenance/engi_shuttle)
@@ -911,10 +928,6 @@
 /obj/effect/landmark/damageturf,
 /turf/simulated/floor/plating,
 /area/maintenance/fsmaint)
-"act" = (
-/obj/machinery/power/tesla_coil,
-/turf/simulated/floor/plating/airless,
-/area/engine/engineering)
 "acu" = (
 /obj/structure/cable/yellow{
 	d1 = 4;
@@ -1431,7 +1444,11 @@
 /turf/simulated/wall/r_wall,
 /area/maintenance/storage)
 "adI" = (
-/obj/machinery/field/generator,
+/obj/machinery/field/generator{
+	anchored = 1;
+	power = 250;
+	state = 2
+	},
 /turf/simulated/floor/plating/airless,
 /area/engine/engineering)
 "adJ" = (
@@ -1776,6 +1793,7 @@
 	pixel_y = 0
 	},
 /obj/machinery/power/emitter{
+	active = 1;
 	anchored = 1;
 	dir = 4;
 	state = 2
@@ -2258,7 +2276,6 @@
 	},
 /area/shuttle/pod_3)
 "afZ" = (
-/obj/structure/particle_accelerator/end_cap,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -2414,6 +2431,9 @@
 /obj/effect/landmark{
 	name = "revenantspawn"
 	},
+/obj/machinery/the_singularitygen/tesla{
+	anchored = 1
+	},
 /turf/simulated/floor/plating/airless,
 /area/engine/engineering)
 "agy" = (
@@ -2456,6 +2476,7 @@
 	network = list("Singularity","SS13")
 	},
 /obj/machinery/power/emitter{
+	active = 1;
 	anchored = 1;
 	dir = 8;
 	state = 2
@@ -2693,6 +2714,11 @@
 	},
 /area/maintenance/incinerator)
 "ahe" = (
+/obj/machinery/field/generator{
+	anchored = 1;
+	power = 250;
+	state = 2
+	},
 /turf/simulated/floor/plating,
 /area/engine/engineering)
 "ahf" = (
@@ -3199,13 +3225,12 @@
 /turf/simulated/wall/r_wall,
 /area/maintenance/incinerator)
 "aiQ" = (
-/obj/machinery/power/tesla_coil,
-/obj/structure/cable/yellow{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
+/obj/structure/particle_accelerator/end_cap{
+	anchored = 1;
+	construction_state = 3;
+	dir = 1
 	},
-/turf/simulated/floor/plating/airless,
+/turf/simulated/floor/engine,
 /area/engine/engineering)
 "aiR" = (
 /obj/structure/rack{
@@ -3553,15 +3578,6 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/turret_protected/ai)
-"ajF" = (
-/obj/machinery/power/tesla_coil,
-/obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating/airless,
-/area/engine/engineering)
 "ajG" = (
 /turf/simulated/floor/plasteel,
 /area/quartermaster/miningdock)
@@ -4383,6 +4399,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/power/emitter{
+	active = 1;
 	anchored = 1;
 	dir = 4;
 	state = 2
@@ -5192,6 +5209,7 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/emitter{
+	active = 1;
 	anchored = 1;
 	dir = 8;
 	state = 2
@@ -8500,15 +8518,6 @@
 /obj/item/stack/cable_coil,
 /turf/simulated/floor/plasteel/dark,
 /area/tcommsat/server)
-"ayx" = (
-/obj/machinery/field/generator,
-/obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating/airless,
-/area/engine/engineering)
 "ayy" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -8852,24 +8861,6 @@
 "azr" = (
 /turf/simulated/floor/plasteel,
 /area/crew_quarters/gym)
-"azs" = (
-/obj/machinery/field/generator,
-/obj/structure/cable/yellow{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/plating/airless,
-/area/engine/engineering)
-"azt" = (
-/obj/machinery/power/tesla_coil,
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating/airless,
-/area/engine/engineering)
 "azx" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -8882,6 +8873,9 @@
 /area/turret_protected/aisat_interior)
 "azz" = (
 /obj/structure/cable/yellow,
+/obj/machinery/power/tesla_coil{
+	anchored = 1
+	},
 /turf/simulated/floor/plating/airless,
 /area/engine/engineering)
 "azA" = (
@@ -11398,15 +11392,6 @@
 	icon_state = "vault"
 	},
 /area/security/nuke_storage)
-"aIM" = (
-/obj/machinery/field/generator,
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating/airless,
-/area/engine/engineering)
 "aIN" = (
 /obj/effect/decal/warning_stripes/northwest,
 /turf/simulated/floor/plasteel,
@@ -12744,6 +12729,9 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
+/obj/machinery/power/tesla_coil{
+	anchored = 1
+	},
 /turf/simulated/floor/plating/airless,
 /area/engine/engineering)
 "aLF" = (
@@ -12972,6 +12960,9 @@
 /obj/structure/cable/yellow{
 	d2 = 4;
 	icon_state = "0-4"
+	},
+/obj/machinery/power/tesla_coil{
+	anchored = 1
 	},
 /turf/simulated/floor/plating/airless,
 /area/engine/engineering)
@@ -17841,6 +17832,11 @@
 /obj/structure/cable/yellow{
 	d2 = 4;
 	icon_state = "0-4"
+	},
+/obj/machinery/particle_accelerator/control_box{
+	anchored = 1;
+	construction_state = 3;
+	tag = "particle_accelerator_control_box"
 	},
 /turf/simulated/floor/engine,
 /area/engine/engineering)
@@ -128006,9 +128002,9 @@ aaa
 ady
 aat
 abe
-aiQ
-azt
-azt
+aac
+aOW
+aOW
 aLn
 aOW
 aOW
@@ -128263,9 +128259,9 @@ dbZ
 ady
 aat
 abe
-ajF
-act
-act
+aat
+adB
+adB
 aLE
 adB
 adB
@@ -128520,9 +128516,9 @@ aaa
 ady
 aat
 abe
-ajF
-act
-act
+aat
+adB
+adI
 abe
 abe
 ahe
@@ -128530,7 +128526,7 @@ abe
 aeB
 abe
 abe
-adB
+adI
 aat
 adB
 aeu
@@ -129301,12 +129297,12 @@ agv
 ajS
 aki
 abe
-adB
+adI
 aat
 adB
 aeu
 ade
-aeH
+aal
 aeH
 aeH
 aeH
@@ -129563,10 +129559,10 @@ anw
 aOW
 agR
 aga
-aeH
-aeH
-aeH
-aeH
+aam
+aap
+aaq
+aiQ
 bEp
 anf
 asX
@@ -129807,7 +129803,7 @@ aat
 abe
 aat
 adB
-adB
+adI
 abe
 adJ
 agq
@@ -129820,7 +129816,7 @@ aat
 adB
 aeu
 ade
-aeH
+aan
 aeH
 aWB
 aeH
@@ -130576,17 +130572,17 @@ aaa
 ady
 aat
 abe
-ayx
-adI
+aat
+adB
 adI
 abe
 abe
 aeB
 abe
-adB
+adI
 abe
 abe
-adB
+adI
 aat
 adB
 aeu
@@ -130833,8 +130829,8 @@ aaa
 ady
 aat
 abe
-ayx
-adI
+aat
+adB
 adB
 aMf
 adB
@@ -131090,9 +131086,9 @@ aaa
 ady
 aat
 abe
-azs
-aIM
-aIM
+aaE
+aOW
+aOW
 aNi
 aOW
 aOW
@@ -133669,7 +133665,7 @@ aaU
 aar
 aaa
 aak
-aal
+aaA
 aao
 aLA
 aav
@@ -133926,8 +133922,8 @@ aaU
 aar
 aaa
 aak
-aam
-aap
+aaA
+aaA
 aaw
 aaD
 ahc
@@ -134183,8 +134179,8 @@ aaU
 aar
 dbZ
 aak
-aan
-aaq
+aaA
+aaA
 aax
 aaA
 aaH
