@@ -2,9 +2,8 @@
 # show_map_changes.sh
 # Generate images to highlight map changes, if any
 
-# DEBUG: output a few things that might be useful for debugging
-echo "git show-ref"
-git show-ref
+# ARTIFACT_TAG = the first 12 characters of the sha256sum of the PR ref (e.g. "refs/remotes/pull/348/merge\n")
+ARTIFACT_TAG=$(git show-ref | head -1 | awk -- '{print $2}' | sha256sum | awk -- '{print $1}' | cut -c 1-12)
 
 # obtain what the maps look like at origin/master
 git fetch --depth=1 --no-auto-gc --no-recurse-submodules --prune origin +refs/heads/master:refs/remotes/origin/master
@@ -61,9 +60,7 @@ for map in $MAPS; do
 	mv artifacts/diff.png artifacts/"$BASE_MAP.$index.diff.png"
 done
 
-# compute an artifact tag
-# ARTIFACT_TAG = the first 12 characters of the sha256sum of the PR ref (e.g. "refs/remotes/pull/348/merge")
-ARTIFACT_TAG=$(git show-ref | head -1 | awk -- '{print $2}' | sha256sum | awk -- '{print $1}' | cut -c 1-12)
+# export ARTIFACT_TAG to the environment to trigger an upload
 echo "ARTIFACT_TAG=${ARTIFACT_TAG}" >> $GITHUB_ENV
 
 # view what terrible carnage we have wrought
