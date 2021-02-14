@@ -153,6 +153,9 @@ PREGAME_TIMESTART 240
 ## allow players to initate a mode-change start
 #ALLOW_VOTE_MODE
 
+## allow players to initiate a vote to select the map for next round
+#ALLOW_VOTE_NEXTMAP
+
 ## min delay (deciseconds) between voting sessions (default 10 minutes)
 VOTE_DELAY 18000
 
@@ -271,6 +274,12 @@ CHECK_RANDOMIZER
 
 ## Retirement subsystem will recommend retirement of staff absent for this many days
 # STAFF_RETIREMENT_CRITICAL_DAYS 45
+
+## JSON Web Token (JWT) used by the game server to authenticate itself with the Scorpio Hosting System
+# SCORPIO_HOSTING_TOKEN eyJhbGci ... qCw0GDo
+
+## URL of the Scorpio Hosting System
+# SCORPIO_HOSTING_URL https://scorpiostation.com/host
 
 ## Donations address
 # DONATIONSURL http://example.org

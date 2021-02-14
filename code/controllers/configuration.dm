@@ -29,6 +29,7 @@
 	var/pregame_timestart = 240			// Time it takes for the server to start the game
 	var/allow_vote_restart = 0 			// allow votes to restart
 	var/allow_vote_mode = 0				// allow votes to change mode
+	var/allow_vote_nextmap = FALSE      // allow votes to set the next map
 	var/vote_delay = 6000				// minimum time between voting sessions (deciseconds, 10 minute default)
 	var/vote_period = 600				// length of voting period (deciseconds, default 1 minute)
 	var/vote_autotransfer_initial = 72000 // Length of time before the first autotransfer vote is called
@@ -113,6 +114,9 @@
 
 	var/staff_retirement_warning_days = 30
 	var/staff_retirement_critical_days = 45
+
+	var/scorpio_hosting_token = null
+	var/scorpio_hosting_url = null
 
 	var/overflow_server_url
 	var/forbid_singulo_possession = 0
@@ -474,6 +478,9 @@
 				if("allow_vote_mode")
 					config.allow_vote_mode = 1
 
+				if("allow_vote_nextmap")
+					config.allow_vote_nextmap = TRUE
+
 				if("no_dead_vote")
 					config.vote_no_dead = 1
 
@@ -566,6 +573,12 @@
 
 				if("staff_retirement_critical_days")
 					config.staff_retirement_critical_days = text2num(value)
+
+				if("scorpio_hosting_token")
+					config.scorpio_hosting_token = value
+
+				if("scorpio_hosting_url")
+					config.scorpio_hosting_url = value
 
 				if("donationsurl")
 					config.donationsurl = value

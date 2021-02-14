@@ -1,6 +1,13 @@
 #define VOTE_SUPERCHARGE_NO "Our Power Situation Is Under Control"
 #define VOTE_SUPERCHARGE_YES "Request Emergency Power Transmission"
 
+GLOBAL_LIST_INIT(map_voting_map, list(
+	"Cyberiad" = "cyberiad",
+	"Delta" = "delta",
+	"Emerald" = "emerald",
+	"MetaStation" = "metastation",
+))
+
 SUBSYSTEM_DEF(vote)
 	name = "Vote"
 	wait = 10
@@ -161,7 +168,11 @@ SUBSYSTEM_DEF(vote)
 				text += "<b>The vote has ended.</b>" // What will be shown if it is a gamemode vote that isn't extended
 
 	else
-		text += "<b>Vote Result: Inconclusive - No Votes!</b>"
+		if(mode == VOTE_TYPE_MAP)
+			. = "Emerald"
+			text += "<b>Vote Result: Emerald (0 votes)</b>"
+		else
+			text += "<b>Vote Result: Inconclusive - No Votes!</b>"
 	log_vote(text)
 	to_chat(world, "<font color='purple'>[text]</font>")
 	return .
@@ -177,6 +188,10 @@ SUBSYSTEM_DEF(vote)
 			if("restart")
 				if(. == "Restart Round")
 					restart = 1
+			if(VOTE_TYPE_MAP)
+				// inform the Scorpio Hosting System that a new map has been voted
+				var/datum/hosting/webhook/shs = new(config.scorpio_hosting_url)
+				shs.next_map(GLOB.map_voting_map[.])
 			if("gamemode")
 				if(GLOB.master_mode != .)
 					world.save_mode(.)
@@ -225,6 +240,10 @@ SUBSYSTEM_DEF(vote)
 				choices.Add(VOTE_SUPERCHARGE_YES, VOTE_SUPERCHARGE_NO)
 			if("restart")
 				choices.Add("Restart Round","Continue Playing")
+			if(VOTE_TYPE_MAP)
+				for(var/m in GLOB.map_voting_map)
+					choices.Add(m)
+				sortList(choices)
 			if("gamemode")
 				if(SSticker.current_state >= 2)
 					return 0
@@ -259,6 +278,8 @@ SUBSYSTEM_DEF(vote)
 				log_admin("[capitalize(mode)] ([question]) vote started by [key_name(usr)].")
 		else if(mode == VOTE_TYPE_SUPERCHARGE)
 			text = "Request Emergency Bluespace Power Transmission?"
+		else if(mode == VOTE_TYPE_MAP)
+			text = "Play On Which Map Next Round?"
 		else if(usr)
 			log_admin("[capitalize(mode)] vote started by [key_name(usr)].")
 
@@ -267,6 +288,8 @@ SUBSYSTEM_DEF(vote)
 			<a href='?src=[UID()];vote=open'>Click here or type vote to place your vote.</a>
 			You have [config.vote_period/10] seconds to vote.</font>"})
 		switch(vote_type)
+			if(VOTE_TYPE_MAP)
+				world << sound('sound/ambience/alarm4.ogg')
 			if(VOTE_TYPE_SUPERCHARGE)
 				world << sound('sound/ambience/alarm4.ogg')
 			if("crew_transfer")
@@ -334,6 +357,14 @@ SUBSYSTEM_DEF(vote)
 		if(admin)
 			dat += "\t(<a href='?src=[UID()];vote=toggle_restart'>[config.allow_vote_restart?"Allowed":"Disallowed"]</a>)"
 		dat += "</li><li>"
+		//nextmap
+		if(admin || config.allow_vote_nextmap)
+			dat += "<a href='?src=[UID()];vote=nextmap'>Next Map</a>"
+		else
+			dat += "<font color='grey'>Next Map (Disallowed)</font>"
+		if(admin)
+			dat += "\t(<a href='?src=[UID()];vote=toggle_nextmap'>[config.allow_vote_nextmap?"Allowed":"Disallowed"]</a>)"
+		dat += "</li><li>"
 		//gamemode
 		if(admin || config.allow_vote_mode)
 			dat += "<a href='?src=[UID()];vote=gamemode'>GameMode</a>"
@@ -393,12 +424,18 @@ SUBSYSTEM_DEF(vote)
 		if("toggle_restart")
 			if(admin)
 				config.allow_vote_restart = !config.allow_vote_restart
+		if("toggle_nextmap")
+			if(admin)
+				config.allow_vote_nextmap = !config.allow_vote_nextmap
 		if("toggle_gamemode")
 			if(admin)
 				config.allow_vote_mode = !config.allow_vote_mode
 		if("restart")
 			if(config.allow_vote_restart || admin)
 				initiate_vote("restart",usr.key)
+		if("nextmap")
+			if(config.allow_vote_nextmap || admin)
+				initiate_vote(VOTE_TYPE_MAP, usr.key)
 		if("gamemode")
 			if(config.allow_vote_mode || admin)
 				initiate_vote("gamemode",usr.key)

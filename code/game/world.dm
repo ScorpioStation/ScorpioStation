@@ -24,6 +24,11 @@ GLOBAL_LIST_INIT(map_transition_config, MAP_TRANSITION_CONFIG)
 
 	// upstream uses TGS for hosting, but Scorpio no longer does
 	// InitTGS() // creates a new TGS object
+
+	// inform the Scorpio Hosting System that a new world has been loaded
+	var/datum/hosting/webhook/shs = new(config.scorpio_hosting_url)
+	shs.round_start()
+
 	log_world("World loaded at [time_stamp()]")
 	log_world("[length(GLOB.vars) - length(GLOB.gvars_datum_in_built_vars)] global variables")
 	GLOB.revision_info.log_info()
@@ -112,6 +117,7 @@ GLOBAL_LIST_EMPTY(world_topic_handlers)
 	return wth.invoke(input)
 
 /world/Reboot(reason, fast_track = FALSE)
+	var/datum/hosting/webhook/shs = new(config.scorpio_hosting_url)
 	// special reboot, do none of the normal stuff
 	if((reason == 1) || fast_track) // Do NOT change this to if(reason). You WILL break the entirety of world rebooting
 		if(usr)
@@ -124,6 +130,7 @@ GLOBAL_LIST_EMPTY(world_topic_handlers)
 			to_chat(world, "<span class='boldannounce'>Rebooting world immediately due to host request</span>")
 		rustg_log_close_all() // Past this point, no logging procs can be used, at risk of data loss.
 		// Now handle a reboot
+		shs.round_end()
 		if(config && config.shutdown_on_reboot)
 			sleep(0)
 			if(GLOB.shutdown_shell_command)
@@ -160,6 +167,8 @@ GLOBAL_LIST_EMPTY(world_topic_handlers)
 
 	// And begin the real shutdown
 	rustg_log_close_all() // Past this point, no logging procs can be used, at risk of data loss.
+	// Now handle a reboot
+	shs.round_end()
 	if(config && config.shutdown_on_reboot)
 		sleep(0)
 		if(GLOB.shutdown_shell_command)
