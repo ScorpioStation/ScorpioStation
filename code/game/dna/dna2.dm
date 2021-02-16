@@ -77,15 +77,15 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 					SetDNAValueRange(DNA_UI_SKIN_TONE, rand(1, 220), 220, DNA_UI, TRUE)	// Otherwise, it gets screwed up
 				else
 					UI[i] = rand(0, 4095)
-			if(!defer)
+			if(!defer)	//defer was only used in ResetUI, not ResetSE
 				UpdateDNA(DNA_UI)
 		if(DNA_SE)	// "Zeroes out" all of the SE Blocks
 			for(var/i in 1 to (DNA_SE_LENGTH - 1))
-				SetDNAValue(i, rand(1, 1024), TRUE, DNA_SE)
+				SetDNAValue(i, rand(1, 1024), DNA_SE, TRUE)
 			UpdateDNA(DNA_SE)
 		if(DNA_RP)
 			for(var/i in 1 to DNA_RP_LENGTH)
-				SetDNAValue(i, rand(1, 1024), TRUE, DNA_RP)
+				SetDNAValue(i, rand(1, 1024), DNA_RP, TRUE)
 			UpdateDNA(DNA_RP)
 		if(DNA_ALL)	//Recurse! Reeeecccuuuuurrrrsssseeee! AHAHAHAHAHAHAHAHA!
 			ResetDNA(DNA_UI)
@@ -118,7 +118,7 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 
 
 /datum/dna/proc/ResetDNAFrom(mob/living/carbon/human/character, dna_type)
-	if(dna_type != DNA_UI)
+	if(dna_type != DNA_UI)	//There was no ResetSEFrom, only ResetUIFrom
 		return
 	ResetDNA(DNA_UI, TRUE)		// INITIALIZE!
 	var/obj/item/organ/external/head/H = character.get_organ("head")	// Hair // FIXME:  Species-specific defaults pls
@@ -219,23 +219,25 @@ GLOBAL_LIST_EMPTY(bad_blocks)
 
 // Set a DNA block's value, given a value and a max possible value
 /datum/dna/proc/SetDNAValueRange(block, value, maxvalue, dna_type, defer = FALSE)
+	if(dna_type != DNA_UI)
+		return
 	if(!ValidCheck(block, dna_type) || !value)
 		return
 	ASSERT(maxvalue <= 4095)
 	var/range = (4095 / maxvalue)
-	switch(dna_type)
-		if(DNA_UI)	// Used in hair and facial styles (value being the index and maxvalue being the len of the hairstyle list)
-			if(value == 0)
-				value = 1
-			SetDNAValue(block, round(value * range), DNA_UI, defer)
-		if(DNA_SE)		// Might be used for species?
-			SetDNAValue(block, round(value * range) - rand(1, range - 1), DNA_SE)
-		if(DNA_RP)
-			SetDNAValue(block, round(value * range), DNA_RP)
+	if(value == 0)
+		value = 1
+	SetDNAValue(block, round(value * range), DNA_UI, defer)
+	//switch(dna_type)
+		//if(DNA_UI)	// Used in hair and facial styles (value being the index and maxvalue being the len of the hairstyle list)
+		/* Commented Out because there is no current case use for Setting a Value Range for an SE Block
+		*if(DNA_SE)		// Might be used for species?
+		*	SetDNAValue(block, round(value * range) - rand(1, range - 1), DNA_SE, defer)
+		*/
 
 // Getter version of above.
 /datum/dna/proc/GetDNAValueRange(block, maxvalue, dna_type)
-	if(!ValidCheck(block, dna_type))
+	if(!ValidCheck(block, dna_type) || dna_type != DNA_UI)
 		return FALSE
 	var/value = GetDNAValue(block, dna_type)
 	return round(1 + (value / 4096) * maxvalue)

@@ -140,10 +140,10 @@ GLOBAL_LIST_INIT(cloner_biomass_items, list(\
 /obj/item/disk/data/demo/New()
 	..()
 	initialize()
-	buf.types=DNA2_BUF_UE | DNA2_BUF_UI
+	buf.types = DNA2_BUF_UE | DNA2_BUF_UI
 	//data = "066000033000000000AF00330660FF4DB002690"
 	//data = "0C80C80C80C80C80C8000000000000161FBDDEF" - Farmer Jeff
-	buf.dna.real_name="God Emperor of Mankind"
+	buf.dna.real_name = "God Emperor of Mankind"
 	buf.dna.unique_enzymes = md5(buf.dna.real_name)
 	buf.dna.UI = list(
 		0x066,	//DNA_UI_HAIR_R
@@ -204,7 +204,7 @@ GLOBAL_LIST_INIT(cloner_biomass_items, list(\
 	for(var/i in length(new_SE) to DNA_SE_LENGTH)
 		new_SE += rand(1, 1024)
 	buf.dna.SE = new_SE
-	buf.dna.SetDNAValue(GLOB.monkeyblock, 3500, DNA_SE)
+	buf.dna.SetDNAValue(GLOB.monkeyblock, 0xDAC, DNA_SE)
 
 //Disk stuff.
 /obj/item/disk/data/New()
