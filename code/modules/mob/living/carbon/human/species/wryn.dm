@@ -99,16 +99,16 @@
 	var/list/names = list()
 	for(var/mob/living/carbon/human/M in orange(1))
 		names += M
-	var/target = input("Select a Target: ", "Sting Target", null) as null|anything in names
-	if(!target)		//No one's around!
+	if(!length(names))	//No one's around!
 		to_chat(user, "<span class='warning'>There's no one around to sting so you retract your stinger.</span>")
 		user.visible_message("<span class='warning'[user] retracts their stinger.</span>")
 		button_on = FALSE
 		UpdateButtonIcon()
 		return
-	else			//Get ready, aim, fire!
-		user.visible_message("<span class='warning'> [user] prepares to use their Wryn stinger!</span>")
-		sting_target(user, target)
+	var/datum/middleClickOverride/callback_invoker/wrynclick_override = new /datum/middleClickOverride/callback_invoker(CALLBACK(user, .proc/sting_target))
+	user.middleClickOverride = wrynclick_override
+	user.visible_message("<span class='warning'> [user] stings [target]  to use their Wryn stinger!</span>")
+	//	sting_target(user, target)
 	return
 
 //What does the Wryn Sting do?
@@ -123,14 +123,14 @@
 		var/obj/item/organ/external/organ = target.get_organ(pick("l_leg", "r_leg", "l_foot", "r_foot", "groin"))
 		to_chat(user, "<span class='danger'> You sting [target] in their [organ] with your stinger!</span>")
 		user.visible_message("<span class='danger'>[user] stings [target] in [organ] with their stinger! </span>")
-		user.adjustStaminaLoss(20)		//You can't sting infinitely, Wryn - take some Stamina loss
+		user.adjustStaminaLoss(10)		//You can't sting infinitely, Wryn - take some Stamina loss
 		var/dam = rand(3, 7)
 		target.apply_damage(dam, BRUTE, organ)
 		playsound(user.loc, 'sound/weapons/bladeslice.ogg', 50, 0)
 		add_attack_logs(user, target, "Stung by Wryn Stinger - [dam] Brute damage to [organ].")
 		if(target.restrained())			//Apply tiny BURN damage if target is restrained
 			if(prob(50))
-				user.apply_damage(2, BURN, target)
+				user.apply_damage(5, BURN, target)
 				to_chat(target, "<span class='danger'>You feel a little burnt! Yowch!</span>")
 				user.visible_message("<span class='danger'>[user] is looking a little burnt!</span>")
 		UpdateButtonIcon()
