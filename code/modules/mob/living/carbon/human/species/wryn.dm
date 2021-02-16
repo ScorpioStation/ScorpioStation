@@ -105,7 +105,8 @@
 		button_on = FALSE
 		UpdateButtonIcon()
 		return
-	var/datum/middleClickOverride/callback_invoker/wrynclick_override = new /datum/middleClickOverride/callback_invoker(CALLBACK(user, .proc/sting_target))
+	var/datum/middleClickOverride/callback_invoker/wrynclick_override
+	wrynclick_override = new /datum/middleClickOverride/callback_invoker(CALLBACK(src, .proc/sting_target))
 	user.middleClickOverride = wrynclick_override
 	user.visible_message("<span class='warning'> [user] stings [target]  to use their Wryn stinger!</span>")
 	//	sting_target(user, target)
