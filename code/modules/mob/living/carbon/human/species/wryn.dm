@@ -15,9 +15,9 @@
 	cold_level_2 = 150 //Default 200
 	cold_level_3 = 115 //Default 120
 
-	heat_level_1 = 300 //Default 360 - Higher is better
-	heat_level_2 = 310 //Default 400
-	heat_level_3 = 317 //Default 1000
+	heat_level_1 = 320 //Default 360 - Higher is better
+	heat_level_2 = 350 //Default 400
+	heat_level_3 = 410 //Default 460 - Even Drask is 400
 
 	body_temperature = 286
 
@@ -34,7 +34,7 @@
 	species_traits = list(HIVEMIND, IS_WHITELISTED, LIPS, NO_SCAN)
 	clothing_flags = HAS_UNDERWEAR | HAS_UNDERSHIRT | HAS_SOCKS
 	bodyflags = HAS_SKIN_COLOR | HAS_BODY_MARKINGS | HAS_WINGS
-	dietflags = DIET_HERB		//bees feed off nectar, so bee people feed off plants too
+	dietflags = DIET_HERB		//bees feed off nectar, so bee people feed off plants too - okay, sure! :O
 
 	reagent_tag = PROCESS_ORG
 	base_color = "#704300"
@@ -42,7 +42,7 @@
 	blood_color = "#FFFF99"
 	//Default styles for created mobs.
 	default_hair = "Antennae"
-	var/datum/action/innate/wryn_sting/wryn_sting
+	var/datum/action/innate/wryn_sting/wryn_sting = new /datum/action/innate/wryn_sting
 
 /datum/species/wryn/on_species_gain(mob/living/carbon/human/H)
 	..()
@@ -59,7 +59,7 @@
 /datum/action/innate/wryn_sting
 	name = "Wryn Sting"
 	desc = "Readies Wryn Sting for stinging."
-	button_icon_state = "wryn_sting_off"		//Default Button State
+	button_icon_state = "wryn_sting_off"	//Default Button State
 	check_flags = AB_CHECK_LYING | AB_CHECK_CONSCIOUS | AB_CHECK_STUNNED
 	var/button_on = FALSE
 
@@ -71,16 +71,14 @@
 	if((user.restrained() && user.pulledby) || user.buckled) //Is your Wryn restrained, pulled, or buckled? No stinging!
 		to_chat(user, "<span class='notice'>You need freedom of movement to sting someone!</span>")
 		return
-	if(user.wear_suit)	//Is your Wryn wearing a Hardsuit or a Laboat that's blocking their Stinger?
-		to_chat(user, "<span class='notice'>You must remove your hardsuit, labcoat, or jacket before using your Wryn stinger.</span>")
+	if(istype(user.wear_suit, /obj/item/clothing/suit/space))	//Is your Wryn wearing a Hardsuit?
+		to_chat(user, "<span class='notice'>You must remove your hardsuit your stinger.</span>")
 		return
-	if(user.getStaminaLoss() >= 50)	//Does your Wryn have enough Stamina to sting?
-		to_chat(user, "<span class='notice'>You feel too tired to use your Wryn Stinger at the moment.</span>")
+	if(user.getStaminaLoss() >= 55)	//Does your Wryn have enough Stamina to sting?
+		to_chat(user, "<span class='notice'>You feel too tired to use your stinger at the moment.</span>")
 		return
 	else
-		button_on = TRUE
-		UpdateButtonIcon()
-		select_target(user)
+		set_sting(user)
 
 //Update the Button Icon
 /datum/action/innate/wryn_sting/UpdateButtonIcon()
@@ -94,75 +92,61 @@
 		button.name = name
 	..()
 
-//Select a Target from a List
-/datum/action/innate/wryn_sting/proc/select_target(var/mob/living/carbon/human/user)
+//Select a Target with Middle Click or Alt-Click
+/datum/action/innate/wryn_sting/proc/set_sting(mob/living/carbon/human/user)
 	var/list/names = list()
 	for(var/mob/living/carbon/human/M in orange(1))
 		names += M
 	if(!length(names))	//No one's around!
-		to_chat(user, "<span class='warning'>There's no one around to sting so you retract your stinger.</span>")
-		user.visible_message("<span class='warning'[user] retracts their stinger.</span>")
-		button_on = FALSE
-		UpdateButtonIcon()
+		return
+	if(button_on == TRUE)
+		unset_sting(user)
 		return
 	var/datum/middleClickOverride/callback_invoker/wrynclick_override
+	button_on = TRUE
+	UpdateButtonIcon()
 	wrynclick_override = new /datum/middleClickOverride/callback_invoker(CALLBACK(src, .proc/sting_target))
 	user.middleClickOverride = wrynclick_override
-	user.visible_message("<span class='warning'> [user] stings [target]  to use their Wryn stinger!</span>")
-	//	sting_target(user, target)
+	to_chat(user, "<span class='notice'>You prepare to use your Wryn stinger. Use alt-click or middle mouse button on a target to sting them.</span>")
 	return
+
+/datum/action/innate/wryn_sting/proc/unset_sting(mob/living/carbon/human/user)
+	to_chat(user, "<span class='notice'>You retract your Wryn stinger for now.</span>")
+	button_on = FALSE
+	UpdateButtonIcon()
+	user.middleClickOverride = null
 
 //What does the Wryn Sting do?
 /datum/action/innate/wryn_sting/proc/sting_target(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	button_on = FALSE					//For when we Update the Button Icon
-	if(!(target in orange(1, user)))	//Dang, did they get away?
-		to_chat(user, "<span class='warning'>You are no longer adjacent to [target]. You retract your stinger for now.</span>")
-		user.visible_message("<span class='warning'[user] retracts their stinger.</span>")
-		UpdateButtonIcon()
+	if(!ishuman(target) || !(target in orange(1, user)))
+		unset_sting(user)
 		return
-	else								//Nah, that chump is still here! Sting 'em! Sting 'em good!
-		var/obj/item/organ/external/organ = target.get_organ(pick("l_leg", "r_leg", "l_foot", "r_foot", "groin"))
-		to_chat(user, "<span class='danger'> You sting [target] in their [organ] with your stinger!</span>")
-		user.visible_message("<span class='danger'>[user] stings [target] in [organ] with their stinger! </span>")
-		user.adjustStaminaLoss(10)		//You can't sting infinitely, Wryn - take some Stamina loss
-		var/dam = rand(3, 7)
-		target.apply_damage(dam, BRUTE, organ)
+	else
+		to_chat(user, "<span class='danger'>You sting [target] with your Wryn stinger!</span>")
+		user.visible_message("<span class='danger'>[user] stings [target] with [user.p_their()] Wryn stinger! </span>")
 		playsound(user.loc, 'sound/weapons/bladeslice.ogg', 50, 0)
-		add_attack_logs(user, target, "Stung by Wryn Stinger - [dam] Brute damage to [organ].")
-		if(target.restrained())			//Apply tiny BURN damage if target is restrained
+
+		var/loss = rand(10, 25)
+
+		var/uloss = min((55-user.getStaminaLoss()), loss)
+		user.adjustStaminaLoss(uloss)	//Don't cause over 55 StaminaLoss to the user
+		add_attack_logs(user, user, "Used Wryn Stinger on [target]: Lost [uloss] Stamina.")
+
+		var/tloss = min((55-target.getStaminaLoss()), loss)
+		target.adjustStaminaLoss(tloss)	//Don't cause over 55 StaminaLoss to the target
+		add_attack_logs(user, target, "Stung by Wryn Stinger: Lost [tloss] Stamina.")
+
+		if(target.restrained())	//Apply a little BURN damage if target is restrained
 			if(prob(50))
 				user.apply_damage(5, BURN, target)
 				to_chat(target, "<span class='danger'>You feel a little burnt! Yowch!</span>")
 				user.visible_message("<span class='danger'>[user] is looking a little burnt!</span>")
-		UpdateButtonIcon()
-		return
+	unset_sting(user)
+	return
 
 /* Wryn Sting Action End */
 
 /datum/species/wryn/handle_death(gibbed, mob/living/carbon/human/H)
 	for(var/mob/living/carbon/C in GLOB.alive_mob_list)
-		if(C.get_int_organ(/obj/item/organ/internal/wryn/hivenode))
+		if(iswryn(C) &&  C.get_int_organ(/obj/item/organ/internal/wryn/hivenode))
 			to_chat(C, "<span class='danger'><B>Your antennae tingle as you are overcome with pain...</B></span>")
-			to_chat(C, "<span class='danger'>It feels like part of you has died.</span>") // This is bullshit // Stop whining - Arnold Schwazenager
-
-/datum/species/wryn/harm(mob/living/carbon/human/user, mob/living/carbon/human/target, datum/martial_art/attacker_style)
-	if(target.handcuffed && target.get_int_organ(/obj/item/organ/internal/wryn/hivenode))
-
-		user.visible_message("<span class='notice'>[user] begins to violently pull off [target]'s antennae.</span>")
-		to_chat(target, "<span class='danger'><B>[user] grips your antennae and starts violently pulling!<B></span>")
-		if(do_mob(user, target, 250))
-			var/obj/item/organ/internal/wryn/hivenode/node = new /obj/item/organ/internal/wryn/hivenode
-			target.remove_language("Wryn Hivemind")
-			node.remove(target)
-			node.forceMove(user.loc)
-			to_chat(user, "<span class='notice'>You hear a loud crunch as you mercilessly pull off [target]'s antennae.</span>")
-			to_chat(target, "<span class='danger'>You hear a loud crunch as your antennae is ripped off your head by [user].</span>")
-			to_chat(target, "<span class='danger'><B>It's so quiet...</B></span>")
-			var/obj/item/organ/external/head/head_organ = target.get_organ("head")
-			head_organ.h_style = "Bald"
-			target.update_hair()
-
-			add_attack_logs(user, target, "Antennae removed")
-		return 0
-	else
-		..()
