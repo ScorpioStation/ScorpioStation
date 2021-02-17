@@ -18,7 +18,7 @@
 	resistance_flags = FLAMMABLE
 	origin_tech = "biotech=1"
 
-/obj/item/reagent_containers/food/snacks/grown/New(newloc, var/obj/item/seeds/new_seed = null)
+/obj/item/reagent_containers/food/snacks/grown/New(newloc, obj/item/seeds/new_seed = null, obj/item/seeds/parentseed = null)
 	..()
 	if(!tastes)
 		tastes = list("[name]" = 1)
@@ -29,6 +29,13 @@
 		// This is for adminspawn or map-placed growns. They get the default stats of their seed type.
 		seed = new seed()
 		seed.adjust_potency(50-seed.potency)
+
+	if(parentseed != null)
+		if(istype(parentseed))
+			seed.name = parentseed.name
+			seed.desc = parentseed.desc
+			seed.plantname = parentseed.plantname
+			name = parentseed.plantname
 
 	pixel_x = rand(-5, 5)
 	pixel_y = rand(-5, 5)
