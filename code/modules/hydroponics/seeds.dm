@@ -158,13 +158,13 @@
 		var/obj/item/reagent_containers/food/snacks/grown/t_prod = new product(output_loc, src, parent.myseed)
 		if(parent.myseed.plantname != initial(parent.myseed.plantname))
 			t_prod.name = lowertext(parent.myseed.plantname)
+			product_name = parent.myseed.plantname
 		if(productdesc)
 			t_prod.desc = productdesc
 		result.Add(t_prod) // User gets a consumable
 		if(!t_prod)
 			return
 		t_amount++
-		product_name = t_prod.name
 	if(getYield() >= 1)
 		SSblackbox.record_feedback("tally", "food_harvested", getYield(), product_name)
 	parent.update_tray()
@@ -345,7 +345,7 @@
 					to_chat(user, "<span class='notice'>Oh carrotsticks! That name is too long!</span>")
 					return
 				if(!newplantname)
-					to_chat(user, "<span class='notice'>That name is invalid.</span>")
+					to_chat(user, "<span class='notice'>No new plant name has been given to these seeds.</span>")
 					return
 				else
 					name = "[lowertext(newplantname)]"
@@ -356,7 +356,7 @@
 					to_chat(user, "<span class='notice'>Gosh darn crabapples! That description is too long.")
 					return
 				if(!newdesc)
-					to_chat(user, "<span class='notice'>That description is invalid.")
+					to_chat(user, "<span class='notice'>No new seed description has been set for these seeds.")
 					return
 				else
 					desc = newdesc
@@ -368,7 +368,7 @@
 					to_chat(user, "<span class='notice'>Sincerest applogies, that description is too long.</span>")
 					return
 				if(!newproductdesc)
-					to_chat(user, "<span class='notice'>That description is invalid.</span>")
+					to_chat(user, "<span class='notice'>No new product description has been assigned to these seeds.</span>")
 					return
 				else
 					productdesc = newproductdesc

@@ -35,7 +35,6 @@
 			seed.name = parentseed.name
 			seed.desc = parentseed.desc
 			seed.plantname = parentseed.plantname
-			name = parentseed.plantname
 
 	pixel_x = rand(-5, 5)
 	pixel_y = rand(-5, 5)
