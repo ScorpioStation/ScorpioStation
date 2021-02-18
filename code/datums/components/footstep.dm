@@ -11,7 +11,7 @@
 	///This can be a list OR a soundfile OR null. Determines whatever sound gets played.
 	var/footstep_sounds
 
-/datum/component/footstep/Initialize(footstep_type_ = FOOTSTEP_MOB_BAREFOOT, volume_ = 0.5, e_range_ = 1)
+/datum/component/footstep/Initialize(footstep_type_ = FOOTSTEP_MOB_BAREFOOT, volume_ = 1, e_range_ = 1)
 	if(!isliving(parent))
 		return COMPONENT_INCOMPATIBLE
 	volume = volume_
@@ -43,8 +43,7 @@
 	steps++
 	if(steps >= 6)
 		steps = 0
-	var/NS = 2
-	if((steps % NS) == 1)
+	if((steps % 2) == 1)
 		return
 	if(steps != 0 && !has_gravity(get_area(T)))// don't need to step as often when you hop around
 		return
@@ -75,7 +74,7 @@
 /datum/component/footstep/proc/play_mobstep()
 	SIGNAL_HANDLER
 	var/turf/T = prepare_step()
-	if(!T)
+	if(!T || isspaceturf(T))
 		return
 	var/mob/living/carbon/human/H = parent
 	if(H.dna.species.silent_steps)

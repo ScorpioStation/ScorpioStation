@@ -46,6 +46,8 @@
 		AddComponent(/datum/component/footstep, FOOTSTEP_MOB_CLAW, 1, 2)
 	if(isdrask(src) || isvoxarmalis(src))
 		AddComponent(/datum/component/footstep, FOOTSTEP_MOB_HEAVY, 1, 2)
+	if(isslimeperson(src))
+		AddComponent(/datum/component/footstep, FOOTSTEP_MOB_SLIME, 1, 2)
 
 /mob/living/carbon/human/OpenCraftingMenu()
 	handcrafting.ui_interact(src)
