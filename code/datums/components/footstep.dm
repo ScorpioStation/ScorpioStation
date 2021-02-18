@@ -11,7 +11,7 @@
 	///This can be a list OR a soundfile OR null. Determines whatever sound gets played.
 	var/footstep_sounds
 
-/datum/component/footstep/Initialize(footstep_type_ = FOOTSTEP_MOB_BAREFOOT, volume_ = 50, e_range_ = -1)
+/datum/component/footstep/Initialize(footstep_type_ = FOOTSTEP_MOB_BAREFOOT, volume_ = 0.5, e_range_ = 1)
 	if(!isliving(parent))
 		return COMPONENT_INCOMPATIBLE
 	volume = volume_
@@ -43,7 +43,8 @@
 	steps++
 	if(steps >= 6)
 		steps = 0
-	if(steps % 2)
+	var/NS = 2
+	if((steps % NS) == 1)
 		return
 	if(steps != 0 && !has_gravity(get_area(T)))// don't need to step as often when you hop around
 		return
@@ -69,7 +70,7 @@
 			turf_footstep = T.footstep
 	if(!turf_footstep)
 		return
-	playsound(T, pick(footstep_sounds[turf_footstep][1]), footstep_sounds[turf_footstep][2] * volume, TRUE, footstep_sounds[turf_footstep][3] + e_range)
+	playsound(T, pick(footstep_sounds[turf_footstep][1]), (footstep_sounds[turf_footstep][2] * volume), TRUE, footstep_sounds[turf_footstep][3] + e_range)
 
 /datum/component/footstep/proc/play_mobstep()
 	SIGNAL_HANDLER
@@ -80,30 +81,19 @@
 	if(H.dna.species.silent_steps)
 		return
 	var/feetCover = (H.wear_suit && (H.wear_suit.body_parts_covered & FEET)) || (H.w_uniform && (H.w_uniform.body_parts_covered & FEET))
-
 	if(H.shoes || feetCover) //are we wearing shoes
+		if(istype(H.shoes, /obj/item/clothing/shoes))
+			var/obj/item/clothing/shoes/S = H.shoes
+			if(S.silence_steps)
+				return
+			if(S.shoe_sound)
+				playsound(T, S.shoe_sound, T.shoe_running_volume, 1)
 		playsound(T, pick(GLOB.footstep[T.footstep][1]),
 			GLOB.footstep[T.footstep][2] * volume,
 			TRUE,
 			GLOB.footstep[T.footstep][3] + e_range)
 	else
-		if(H.dna.species.footstep_type)
-			var/F = H.dna.species.footstep_type
-			var/turf_footstep
-			switch(F)
-				if(FOOTSTEP_MOB_CLAW)
-					turf_footstep = T.clawfootstep
-				if(FOOTSTEP_MOB_BAREFOOT)
-					turf_footstep = T.barefootstep
-				if(FOOTSTEP_MOB_HEAVY)
-					turf_footstep = T.heavyfootstep
-				if(FOOTSTEP_MOB_SHOE)
-					turf_footstep = T.footstep
-			if(!turf_footstep)
-				return
-			playsound(T, pick(footstep_sounds[turf_footstep][1]), footstep_sounds[turf_footstep][2] * volume, TRUE, footstep_sounds[turf_footstep][3] + e_range)
-		else
-			playsound(T, pick(GLOB.barefootstep[T.barefootstep][1]),
-				GLOB.barefootstep[T.barefootstep][2] * volume,
-				TRUE,
-				GLOB.barefootstep[T.barefootstep][3] + e_range)
+		playsound(T, pick(GLOB.barefootstep[T.barefootstep][1]),
+			GLOB.barefootstep[T.barefootstep][2] * volume,
+			TRUE,
+			GLOB.barefootstep[T.barefootstep][3] + e_range)

@@ -35,9 +35,8 @@
 
 	var/list/blueprint_data //for the station blueprints, images of objects eg: pipes
 
-	var/list/footstep_sounds
-	var/shoe_running_volume = 50
-	var/shoe_walking_volume = 20
+	var/shoe_running_volume = 30
+	var/shoe_walking_volume = 15
 
 	var/footstep = null
 	var/barefootstep = null
