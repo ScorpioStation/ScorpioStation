@@ -4,6 +4,11 @@
 	var/water_overlay_image = null
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
+	footstep = FOOTSTEP_SAND
+	barefootstep = FOOTSTEP_SAND
+	clawfootstep = FOOTSTEP_SAND
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+
 /turf/unsimulated/beach/Initialize(mapload)
 	. = ..()
 	if(water_overlay_image)
@@ -37,6 +42,12 @@
 	name = "Shallow Water"
 	icon_state = "seashallow"
 	water_overlay_image = "water_shallow"
+
+	footstep = FOOTSTEP_WATER
+	barefootstep = FOOTSTEP_WATER
+	clawfootstep = FOOTSTEP_WATER
+	heavyfootstep = FOOTSTEP_WATER
+
 	var/obj/machinery/poolcontroller/linkedcontroller = null
 
 /turf/unsimulated/beach/water/Entered(atom/movable/AM, atom/OldLoc)

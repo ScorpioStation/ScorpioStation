@@ -4,10 +4,10 @@
 	prying_tool_list = list(TOOL_SCREWDRIVER)
 	broken_states = list("wood-broken", "wood-broken2", "wood-broken3", "wood-broken4", "wood-broken5", "wood-broken6", "wood-broken7")
 
-	footstep_sounds = list(
-		"human" = list('sound/effects/footstep/wood_all.ogg'), //@RonaldVanWonderen of Freesound.org
-		"xeno"  = list('sound/effects/footstep/wood_all.ogg')  //@RonaldVanWonderen of Freesound.org
-	)
+	footstep = FOOTSTEP_WOOD
+	barefootstep = FOOTSTEP_WOOD_BAREFOOT
+	clawfootstep = FOOTSTEP_WOOD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/simulated/floor/wood/screwdriver_act(mob/user, obj/item/I)
 	. = TRUE
@@ -49,6 +49,11 @@
 	floor_tile = /obj/item/stack/tile/grass
 	broken_states = list("sand")
 
+	footstep = FOOTSTEP_GRASS
+	barefootstep = FOOTSTEP_GRASS
+	clawfootstep = FOOTSTEP_GRASS
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+
 /turf/simulated/floor/grass/Initialize(mapload)
 	. = ..()
 	update_icon()
@@ -74,10 +79,10 @@
 	smooth = SMOOTH_TRUE
 	canSmoothWith = null
 
-	footstep_sounds = list(
-		"human" = list('sound/effects/footstep/carpet_human.ogg'),
-		"xeno"  = list('sound/effects/footstep/carpet_xeno.ogg')
-	)
+	footstep = FOOTSTEP_CARPET
+	barefootstep = FOOTSTEP_CARPET_BAREFOOT
+	clawfootstep = FOOTSTEP_CARPET_BAREFOOT
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 
 /turf/simulated/floor/carpet/Initialize(mapload)

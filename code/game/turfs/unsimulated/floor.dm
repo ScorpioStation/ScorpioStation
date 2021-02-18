@@ -3,6 +3,11 @@
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "Floor3"
 
+	footstep = FOOTSTEP_FLOOR
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+
 /turf/unsimulated/floor/plating/vox
 	icon_state = "plating"
 	name = "plating"

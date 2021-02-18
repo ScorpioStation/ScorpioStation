@@ -9,10 +9,10 @@
 
 	var/unfastened = FALSE
 
-	footstep_sounds = list(
-	"human" = list('sound/effects/footstep/plating_human.ogg'),
-	"xeno"  = list('sound/effects/footstep/plating_xeno.ogg')
-	)
+	footstep = FOOTSTEP_PLATING
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/simulated/floor/plating/Initialize(mapload)
 	. = ..()
@@ -128,6 +128,11 @@
 	var/insulated
 	heat_capacity = 325000
 	floor_tile = /obj/item/stack/rods
+
+	footstep = FOOTSTEP_PLATING
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/simulated/floor/engine/break_tile()
 	return //unbreakable
@@ -297,6 +302,11 @@
 	name = "snow"
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "snow"
+
+	footstep = FOOTSTEP_SAND
+	barefootstep = FOOTSTEP_SAND
+	clawfootstep = FOOTSTEP_SAND
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/simulated/floor/snow/ex_act(severity)
 	return

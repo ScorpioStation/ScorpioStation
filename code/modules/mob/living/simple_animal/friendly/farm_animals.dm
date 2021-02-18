@@ -29,6 +29,8 @@
 	blood_volume = BLOOD_VOLUME_NORMAL
 	var/obj/item/udder/udder = null
 
+	footstep_type = FOOTSTEP_MOB_SHOE
+
 /mob/living/simple_animal/hostile/retaliate/goat/New()
 	udder = new()
 	. = ..()
@@ -127,6 +129,7 @@
 	blood_volume = BLOOD_VOLUME_NORMAL
 	var/obj/item/udder/udder = null
 	gender = FEMALE
+	footstep_type = FOOTSTEP_MOB_SHOE
 
 /mob/living/simple_animal/cow/Initialize()
 	udder = new()
@@ -194,6 +197,7 @@
 	can_hide = 1
 	can_collar = 1
 	gold_core_spawnable = FRIENDLY_SPAWN
+	footstep_type = FOOTSTEP_MOB_CLAW
 
 /mob/living/simple_animal/chick/New()
 	..()
@@ -249,6 +253,7 @@ GLOBAL_VAR_INIT(chicken_count, 0)
 	var/list/layMessage = EGG_LAYING_MESSAGES
 	var/list/validColors = list("brown","black","white")
 	gold_core_spawnable = FRIENDLY_SPAWN
+	footstep_type = FOOTSTEP_MOB_CLAW
 
 /mob/living/simple_animal/chicken/New()
 	..()
@@ -330,6 +335,7 @@ GLOBAL_VAR_INIT(chicken_count, 0)
 	can_collar = 1
 	gold_core_spawnable = FRIENDLY_SPAWN
 	blood_volume = BLOOD_VOLUME_NORMAL
+	footstep_type = FOOTSTEP_MOB_SHOE
 
 /mob/living/simple_animal/turkey
 	name = "turkey"
