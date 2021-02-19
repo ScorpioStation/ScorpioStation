@@ -8,7 +8,8 @@
 	w_class = WEIGHT_CLASS_TINY
 	resistance_flags = FLAMMABLE
 	var/plantname = "Plants"		// Name of plant when planted.
-	var/product						// A type path. The thing that is created when the plant is harvested.
+	var/obj/item/product			// A type path. The thing that is created when the plant is harvested.
+	var/productdesc					// The description of the product that is harvested from the plant.
 	var/species = ""				// Used to update icons. Should match the name in the sprites unless all icon_* are overriden.
 
 	var/growing_icon = 'icons/obj/hydroponics/growing.dmi' //the file that stores the sprites of the growing plant from this seed.
@@ -69,6 +70,10 @@
 		for(var/reag_id in reagents_add)
 			genes += new /datum/plant_gene/reagent(reag_id, reagents_add[reag_id])
 
+/obj/item/seeds/examine(mob/user)
+	. = ..()
+	. += "<span class='notice'>Use a pen on this to rename it or change its description.</span>"
+
 /obj/item/seeds/Destroy()
 	QDEL_LIST(genes)
 	return ..()
@@ -84,6 +89,10 @@
 	S.potency = potency
 	S.weed_rate = weed_rate
 	S.weed_chance = weed_chance
+	S.name = name
+	S.plantname = plantname
+	S.desc = desc
+	S.productdesc = productdesc
 	S.genes = list()
 	for(var/g in genes)
 		var/datum/plant_gene/G = g
@@ -146,12 +155,16 @@
 	var/output_loc = parent.Adjacent(user) ? user.loc : parent.loc //needed for TK
 	var/product_name
 	while(t_amount < getYield())
-		var/obj/item/reagent_containers/food/snacks/grown/t_prod = new product(output_loc, src)
+		var/obj/item/reagent_containers/food/snacks/grown/t_prod = new product(output_loc, src, parent.myseed)
+		if(parent.myseed.plantname != initial(parent.myseed.plantname))
+			t_prod.name = lowertext(parent.myseed.plantname)
+			product_name = parent.myseed.plantname
+		if(productdesc)
+			t_prod.desc = productdesc
 		result.Add(t_prod) // User gets a consumable
 		if(!t_prod)
 			return
 		t_amount++
-		product_name = t_prod.name
 	if(getYield() >= 1)
 		SSblackbox.record_feedback("tally", "food_harvested", getYield(), product_name)
 	parent.update_tray()
@@ -316,20 +329,52 @@
 	return
 
 /obj/item/seeds/attackby(obj/item/O, mob/user, params)
-	if (istype(O, /obj/item/plant_analyzer))
+	if(istype(O, /obj/item/plant_analyzer))
 		to_chat(user, "<span class='info'>*---------*\n This is \a <span class='name'>[src]</span>.</span>")
 		var/text = get_analyzer_text()
 		if(text)
 			to_chat(user, "<span class='notice'>[text]</span>")
 
 		return
+	if(istype(O, /obj/item/pen))
+		var/choice = input("What would you like to change?") in list("Plant Name", "Seed Description", "Product Description", "Cancel")
+		switch(choice)
+			if("Plant Name")
+				var/newplantname = reject_bad_text(stripped_input(user, "Write a new plant name:", name, plantname))
+				if(length(newplantname) > 20)
+					to_chat(user, "<span class='notice'>Oh carrotsticks! That name is too long!</span>")
+					return
+				if(!newplantname)
+					to_chat(user, "<span class='notice'>No new plant name has been given to these seeds.</span>")
+					return
+				else
+					name = "[lowertext(newplantname)]"
+					plantname = newplantname
+			if("Seed Description")
+				var/newdesc = stripped_input(user, "Write a new description:", name, desc)
+				if(length(newdesc) > 180)
+					to_chat(user, "<span class='notice'>Gosh darn crabapples! That description is too long.")
+					return
+				if(!newdesc)
+					to_chat(user, "<span class='notice'>No new seed description has been set for these seeds.")
+					return
+				else
+					desc = newdesc
+			if("Product Description")
+				if(product && !productdesc)
+					productdesc = initial(product.desc)
+				var/newproductdesc = stripped_input(user, "Write a new description:", name, productdesc)
+				if(length(newproductdesc) > 180)
+					to_chat(user, "<span class='notice'>Sincerest applogies, that description is too long.</span>")
+					return
+				if(!newproductdesc)
+					to_chat(user, "<span class='notice'>No new product description has been assigned to these seeds.</span>")
+					return
+				else
+					productdesc = newproductdesc
+			else
+				return
 	..() // Fallthrough to item/attackby() so that bags can pick seeds up
-
-
-
-
-
-
 
 // Checks plants for broken tray icons. Use Advanced Proc Call to activate.
 // Maybe some day it would be used as unit test.

@@ -2,8 +2,8 @@
 	name = "hydroponics tray"
 	icon = 'icons/obj/hydroponics/equipment.dmi'
 	icon_state = "hydrotray"
-	density = 1
-	anchored = 1
+	density = TRUE
+	anchored = TRUE
 	pixel_y = 8
 	var/waterlevel = 100	//The amount of water in the tray (max 100)
 	var/maxwater = 100		//The maximum amount of water in the tray
@@ -15,15 +15,15 @@
 	var/mutmod = 1			//Nutriment's effect on mutations
 	var/toxic = 0			//Toxicity in the tray?
 	var/age = 0				//Current age
-	var/dead = 0			//Is it dead?
+	var/dead = FALSE		//Is it dead?
 	var/plant_health		//Its health
 	var/lastproduce = 0		//Last time it was harvested
 	var/lastcycle = 0		//Used for timing of cycles.
 	var/cycledelay = 200	//About 10 seconds / cycle
-	var/harvest = 0			//Ready to harvest?
+	var/harvest = FALSE			//Ready to harvest?
 	var/obj/item/seeds/myseed = null	//The currently planted seed
 	var/rating = 1
-	var/wrenchable = 1
+	var/wrenchable = TRUE
 	var/lid_state = 0
 	var/recent_bee_visit = FALSE //Have we been visited by a bee recently, so bees dont overpollinate one plant
 	var/using_irrigation = FALSE //If the tray is connected to other trays via irrigation hoses
@@ -62,9 +62,9 @@
 
 /obj/machinery/hydroponics/constructable/RefreshParts()
 	var/tmp_capacity = 0
-	for (var/obj/item/stock_parts/matter_bin/M in component_parts)
+	for(var/obj/item/stock_parts/matter_bin/M in component_parts)
 		tmp_capacity += M.rating
-	for (var/obj/item/stock_parts/manipulator/M in component_parts)
+	for(var/obj/item/stock_parts/manipulator/M in component_parts)
 		rating = M.rating
 	maxwater = tmp_capacity * 50 // Up to 300
 	maxnutri = tmp_capacity * 5 // Up to 30
@@ -78,13 +78,18 @@
 	QDEL_NULL(myseed)
 	return ..()
 
+/obj/machinery/hydroponics/proc/label_tray()
+	name = "hydroponics tray ([myseed.plantname])"
+	if(myseed.product)
+		desc = initial(myseed.product.desc)
+	else
+		desc = initial(desc)
+
 /obj/machinery/hydroponics/constructable/attackby(obj/item/I, mob/user, params)
 	if(default_deconstruction_screwdriver(user, "hydrotray3", "hydrotray3", I))
 		return
-
 	if(exchange_parts(user, I))
 		return
-
 	else
 		return ..()
 
@@ -100,7 +105,7 @@
 	var/list/connected = list()
 	var/list/processing_atoms = list(src)
 
-	while(processing_atoms.len)
+	while(length(processing_atoms))
 		var/atom/a = processing_atoms[1]
 		for(var/step_dir in GLOB.cardinal)
 			var/obj/machinery/hydroponics/h = locate() in get_step(a, step_dir)
@@ -139,7 +144,7 @@
 		return ..()
 
 /obj/machinery/hydroponics/process()
-	var/needs_update = 0 // Checks if the icon needs updating so we don't redraw empty trays every time
+	var/needs_update = FALSE // Checks if the icon needs updating so we don't redraw empty trays every time
 
 	if(myseed && (myseed.loc != src))
 		myseed.forceMove(src)
@@ -159,7 +164,7 @@
 			if(age < myseed.maturation)
 				lastproduce = age
 
-			needs_update = 1
+			needs_update = TRUE
 
 //Nutrients//////////////////////////////////////////////////////////////
 			// Nutrients deplete slowly
@@ -234,7 +239,7 @@
 			if(age > myseed.production && (age - lastproduce) > myseed.production && (!harvest && !dead))
 				nutrimentMutation()
 				if(myseed && myseed.yield != -1) // Unharvestable shouldn't be harvested
-					harvest = 1
+					harvest = TRUE
 					plant_hud_set_status()
 				else
 					lastproduce = age
@@ -251,27 +256,27 @@
 					weedinvasion()
 			else
 				weedinvasion() // Weed invasion into empty tray
-			needs_update = 1
-		if (needs_update)
+			needs_update = TRUE
+		if(needs_update)
 			update_icon()
 	return
 
 /obj/machinery/hydroponics/proc/nutrimentMutation()
-	if (mutmod == 0)
+	if(mutmod == 0)
 		return
-	if (mutmod == 1)
+	if(mutmod == 1)
 		if(prob(80))		//80%
 			mutate()
 		else if(prob(75))	//15%
 			hardmutate()
 		return
-	if (mutmod == 2)
+	if(mutmod == 2)
 		if(prob(50))		//50%
 			mutate()
 		else if(prob(50))	//25%
 			hardmutate()
 		else if(prob(50))	//12.5%
-			mutatespecie()
+			mutatespecies()
 		return
 	return
 
@@ -350,11 +355,11 @@
 	. = ..()
 	if(myseed)
 		. += "<span class='info'>It has <span class='name'>[myseed.plantname]</span> planted.</span>"
-		if (dead)
+		if(dead)
 			. += "<span class='warning'>It's dead!</span>"
-		else if (harvest)
+		else if(harvest)
 			. += "<span class='info'>It's ready to harvest.</span>"
-		else if (plant_health <= (myseed.endurance / 2))
+		else if(plant_health <= (myseed.endurance / 2))
 			. += "<span class='warning'>It looks unhealthy.</span>"
 	else
 		. += "<span class='info'>[src] is empty.</span>"
@@ -376,7 +381,7 @@
 
 
 /obj/machinery/hydroponics/proc/weedinvasion() // If a weed growth is sufficient, this happens.
-	dead = 0
+	dead = FALSE
 	var/oldPlantName
 	if(myseed) // In case there's nothing in the tray beforehand
 		oldPlantName = myseed.plantname
@@ -403,14 +408,14 @@
 	age = 0
 	plant_health = myseed.endurance
 	lastcycle = world.time
-	harvest = 0
+	harvest = FALSE
 	adjustWeeds(-10) // Reset
 	adjustPests(-10) // Reset
 	update_icon()
 	plant_hud_set_health()
 	plant_hud_set_status()
 	visible_message("<span class='warning'>The [oldPlantName] is overtaken by some [myseed.plantname]!</span>")
-
+	label_tray()
 
 /obj/machinery/hydroponics/proc/mutate(lifemut = 2, endmut = 5, productmut = 1, yieldmut = 2, potmut = 25, wrmut = 2, wcmut = 5, traitmut = 0) // Mutates the current seed
 	if(!myseed)
@@ -420,13 +425,12 @@
 /obj/machinery/hydroponics/proc/hardmutate()
 	mutate(4, 10, 2, 4, 50, 4, 10, 3)
 
-
-/obj/machinery/hydroponics/proc/mutatespecie() // Mutagent produced a new plant!
+/obj/machinery/hydroponics/proc/mutatespecies() // Mutagent produced a new plant!
 	if(!myseed || dead)
 		return
 
 	var/oldPlantName = myseed.plantname
-	if(myseed.mutatelist.len > 0)
+	if(length(myseed.mutatelist) > 0)
 		var/mutantseed = pick(myseed.mutatelist)
 		QDEL_NULL(myseed)
 		myseed = new mutantseed
@@ -437,7 +441,7 @@
 	age = 0
 	plant_health = myseed.endurance
 	lastcycle = world.time
-	harvest = 0
+	harvest = FALSE
 	plant_hud_set_health()
 	plant_hud_set_status()
 	adjustWeeds(-10) // Reset
@@ -445,19 +449,19 @@
 	sleep(5) // Wait a while
 	update_icon()
 	visible_message("<span class='warning'>[oldPlantName] suddenly mutates into [myseed.plantname]!</span>")
-
+	label_tray()
 
 /obj/machinery/hydroponics/proc/mutateweed() // If the weeds gets the mutagent instead. Mind you, this pretty much destroys the old plant
 	if( weedlevel > 5 )
 		QDEL_NULL(myseed)
 		var/newWeed = pick(/obj/item/seeds/liberty, /obj/item/seeds/angel, /obj/item/seeds/nettle/death, /obj/item/seeds/kudzu)
 		myseed = new newWeed
-		dead = 0
+		dead = FALSE
 		hardmutate()
 		age = 0
 		plant_health = myseed.endurance
 		lastcycle = world.time
-		harvest = 0
+		harvest = FALSE
 		plant_hud_set_health()
 		plant_hud_set_status()
 		adjustWeeds(-10) // Reset
@@ -471,10 +475,10 @@
 
 /obj/machinery/hydroponics/proc/plantdies() // OH NOES!!!!! I put this all in one function to make things easier
 	plant_health = 0
-	harvest = 0
+	harvest = FALSE
 	adjustPests(-10) // Pests die
 	if(!dead)
-		dead = 1
+		dead = TRUE
 		update_icon()
 	plant_hud_set_health()
 	plant_hud_set_status()
@@ -501,15 +505,15 @@
 		switch(rand(100))
 			if(91 to 100)
 				adjustHealth(-10)
-				to_chat(user, "<span class='warning'>The plant shrivels and burns.</span>")
+				to_chat(user, "<span class='warning'>The plant shrivels up and burns.</span>")
 			if(81 to 90)
-				mutatespecie()
+				mutatespecies()
 			if(66 to 80)
 				hardmutate()
 			if(41 to 65)
 				mutate()
 			if(21 to 41)
-				to_chat(user, "<span class='notice'>The plants don't seem to react...</span>")
+				to_chat(user, "<span class='notice'>The plant does not seem to react...</span>")
 			if(11 to 20)
 				mutateweed()
 			if(1 to 10)
@@ -676,7 +680,7 @@
 	if(S.has_reagent("saltpetre", 1))
 		var/salt = S.get_reagent_amount("saltpetre")
 		adjustHealth(round(salt * 0.25))
-		if (myseed)
+		if(myseed)
 			myseed.adjust_production(-round(salt/100)-prob(salt%100))
 			myseed.adjust_potency(round(salt*0.50))
 	// Ash is also used IRL in gardening, as a fertilizer enhancer and weed killer
@@ -726,7 +730,7 @@
 	if(S.has_reagent("adminordrazine", 5))
 		switch(rand(100))
 			if(66  to 100)
-				mutatespecie()
+				mutatespecies()
 			if(33	to 65)
 				mutateweed()
 			if(1   to 32)
@@ -782,13 +786,13 @@
 
 		if(irrigate && transfer_amount > 30 && reagent_source.reagents.total_volume >= 30 && using_irrigation)
 			trays = FindConnected()
-			if (trays.len > 1)
+			if(length(trays) > 1)
 				visi_msg += ", setting off the irrigation system"
 
 		if(visi_msg)
 			visible_message("<span class='notice'>[visi_msg].</span>")
 
-		var/split = round(transfer_amount/trays.len)
+		var/split = round(transfer_amount/length(trays))
 
 		for(var/obj/machinery/hydroponics/H in trays)
 		//cause I don't want to feel like im juggling 15 tamagotchis and I can get to my real work of ripping flooring apart in hopes of validating my life choices of becoming a space-gardener
@@ -815,7 +819,7 @@
 				investigate_log("had Kudzu planted in it by [key_name(user)] at ([x],[y],[z])","kudzu")
 			user.unEquip(O)
 			to_chat(user, "<span class='notice'>You plant [O].</span>")
-			dead = 0
+			dead = FALSE
 			myseed = O
 			myseed.planted = TRUE
 			age = 1
@@ -825,6 +829,15 @@
 			lastcycle = world.time
 			O.forceMove(src)
 			update_icon()
+			name = "hydroponics tray ([myseed.plantname])"
+			if(!myseed.productdesc) //we haven't changed our produce's description
+				if(myseed.product)
+					myseed.productdesc = initial(myseed.product.desc)
+				else if(myseed.desc)
+					myseed.productdesc = myseed.desc
+				else
+					myseed.productdesc = "A fascinating specimen."
+			desc = myseed.productdesc
 		else
 			to_chat(user, "<span class='warning'>[src] already has seeds in it!</span>")
 
@@ -877,6 +890,8 @@
 				harvest = FALSE //To make sure they can't just put in another seed and insta-harvest it
 			qdel(myseed)
 			myseed = null
+			name = initial(name)
+			desc = initial(desc)
 			plant_hud_set_health()
 			plant_hud_set_status()
 		adjustWeeds(-10) //Has a side effect of cleaning up those nasty weeds
@@ -932,17 +947,19 @@
 	if(harvest)
 		myseed.harvest(user)
 	else if(dead)
-		dead = 0
+		dead = FALSE
 		to_chat(user, "<span class='notice'>You remove the dead plant from [src].</span>")
 		QDEL_NULL(myseed)
 		update_icon()
+		name = initial(name)
+		desc = initial(desc)
 		plant_hud_set_status()
 		plant_hud_set_health()
 	else
 		examine(user)
 
 /obj/machinery/hydroponics/proc/update_tray(mob/user = usr)
-	harvest = 0
+	harvest = FALSE
 	lastproduce = age
 	if(istype(myseed,/obj/item/seeds/replicapod))
 		to_chat(user, "<span class='notice'>You harvest from the [myseed.plantname].</span>")
@@ -952,7 +969,9 @@
 		to_chat(user, "<span class='notice'>You harvest [myseed.getYield()] items from the [myseed.plantname].</span>")
 	if(!myseed.get_gene(/datum/plant_gene/trait/repeated_harvest))
 		QDEL_NULL(myseed)
-		dead = 0
+		dead = FALSE
+		name = initial(name)
+		desc = initial(desc)
 	plant_hud_set_status()
 	plant_hud_set_health()
 	update_icon()
@@ -1028,7 +1047,7 @@
 	icon_state = "soil"
 	density = 0
 	use_power = NO_POWER_USE
-	wrenchable = 0
+	wrenchable = FALSE
 
 /obj/machinery/hydroponics/soil/update_icon_hoses()
 	return // Has no hoses
