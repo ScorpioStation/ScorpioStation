@@ -95,6 +95,8 @@
 "bQ" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
 "bR" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/machinery/light{dir = 4},/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
 "bS" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light{dir = 8},/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"bT" = (/obj/effect/decal/cleanable/dirt,/obj/item/gps/ruin{gpstag = "Low-Budget Advertisement Broadcast"; pixel_y = 25},/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"bU" = (/obj/item/gps/ruin{gpstag = "Unathi Signal"; pixel_y = 25},/turf/simulated/wall/mineral/titanium/interior,/area/ruin/powered/reststop)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaababacababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -109,18 +111,18 @@ aaababababacabaaaaaaaaahadahaaaaaaaaababajabababaaaaaaaaaaaaaa
 ababakadadadaaaaaaaialamanaoalapaaadaaaaadadadababaaaaaaaaaaaa
 abadadaeaeaeaeaaaaaqaRarasatataqadadaeaeaeaeadaaabaaaaaaaaaaaa
 abadaeauauauauavavaqatatawaxayaqavavazazazazaeaaabaaaaaaaaaaaa
-abaaaaaeaeaeaeaaaaaAaBataCataraAaDaDbhaeaeaeaaaaabaaaaaaaaaaaa
+abaaaaaeaeaeaeaaaaaAaBataCataraAaaaabhaeaeaeaaaaabaaaaaaaaaaaa
 acadaeauauauauavavamatataEaFaFaGavavazazazazaeadabaaaaaaaaaaaa
 abadadaeaeaeaeadadaHaIaJaKaLaMaHaaaaaeaeaeaeadadabaaaaaaaaaaaa
 ababadaaaaaaaaaaadanananaNanananaaaaaaaaaaaaadababaaaaaaaaaaaa
 aaababananananananaOaPaSaUbnbiaOanananananaaababaaaaaaaaaaaaaa
-aaanananbSaWaYaZbjanbBaUaUaUaUbnanaTaXaVaHaaaaaaaaaaaaaaaaaaaa
+aaanananbSbTaYaZbjanbBaUaUaUaUbnanaTaXaVaHaaaaaaaaaaaaaaaaaaaa
 aaanbkbJaWaWbkbmaWblaUaUaUaUaUaUbzaQaQaVaHaaaaaaaaaaadadadaaaa
 aaaHbmaWbkaWaWbkaWblaUaUbQaUaUaUanbwbxbyaHadaaaaaaaaadaaaaaaaa
 aaaHaWaWaWbKaWbLboanbpanananbqbRanananananadadaaaaadadaaaaaaaa
 aaaHaWaWananananananaUbsbuanbvbAanaaadbOaaaaadadaaaaadaaaaaaaa
 aaaHaWbManbCbqbDaUbNbrbEbFanbaaOanaabObOadaaaaadaaaaadaaaaaaaa
-aaaHaWbPanbGbuananbDananananbbanadabbOadaaaaadadadadadaaaaaaaa
+aaaHaWbPanbGbuanbUbDananananbbanadabbOadaaaaadadadadadaaaaaaaa
 aaanaWaWananbtanbHbqanaaaaanbcanbObdadaaaaadadaaaaaaadaaaaaaaa
 aaanbebfanaaaaanbGbIanaaaaaDbgaDaaadadaaaaadaaaaaaaaadadadadaa
 aaaaaaaaaaaaaaananbtanaaaaaaaaaaaaaaadadadaaaaaaaaaaaaaaaaadaa
