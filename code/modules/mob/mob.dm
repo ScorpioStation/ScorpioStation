@@ -1,3 +1,6 @@
+#define MAXIMUM_SHIFT_DISTANCE_X 16
+#define MAXIMUM_SHIFT_DISTANCE_Y 16
+
 /mob/Destroy()//This makes sure that mobs with clients/keys are not just deleted from the game.
 	GLOB.mob_list -= src
 	GLOB.dead_mob_list -= src
@@ -1095,7 +1098,7 @@ GLOBAL_LIST_INIT(slot_equipment_priority, list( \
 	set hidden = TRUE
 	if(!canshift())
 		return FALSE
-	if(pixel_x < 10)
+	if(pixel_x < MAXIMUM_SHIFT_DISTANCE_X)
 		pixel_x++
 		is_shifted = TRUE
 
@@ -1103,7 +1106,7 @@ GLOBAL_LIST_INIT(slot_equipment_priority, list( \
 	set hidden = TRUE
 	if(!canshift())
 		return FALSE
-	if(pixel_x > -10)
+	if(pixel_x > -MAXIMUM_SHIFT_DISTANCE_X)
 		pixel_x--
 		is_shifted = TRUE
 
@@ -1111,7 +1114,7 @@ GLOBAL_LIST_INIT(slot_equipment_priority, list( \
 	set hidden = TRUE
 	if(!canshift())
 		return FALSE
-	if(pixel_y < 0)		//No vertical pixel-shifting, please
+	if(pixel_y < MAXIMUM_SHIFT_DISTANCE_Y)
 		pixel_y++
 		is_shifted = TRUE
 
@@ -1119,7 +1122,7 @@ GLOBAL_LIST_INIT(slot_equipment_priority, list( \
 	set hidden = TRUE
 	if(!canshift())
 		return FALSE
-	if(pixel_y > 0)		//No vertical pixel-shifting, please
+	if(pixel_y > -MAXIMUM_SHIFT_DISTANCE_Y)
 		pixel_y--
 		is_shifted = TRUE
 
@@ -1499,3 +1502,6 @@ GLOBAL_LIST_INIT(slot_equipment_priority, list( \
 		blood_state = BLOOD_STATE_NOT_BLOODY
 		update_inv_shoes()
 	update_icons()	//apply the now updated overlays to the mob
+
+#undef MAXIMUM_SHIFT_DISTANCE_X
+#undef MAXIMUM_SHIFT_DISTANCE_Y
