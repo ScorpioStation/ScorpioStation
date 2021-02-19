@@ -146,6 +146,12 @@
 		to investigate."
 	cost = 2
 
+/datum/map_template/ruin/space/reststop
+	id = "reststop"
+	suffix = "reststop.dmm"
+	name = "Rest Stop"
+	description = "A place for weary space travellers to stop and fix their spacepods."
+
 /datum/map_template/ruin/space/spacebar
 	id = "spacebar"
 	suffix = "spacebar.dmm"

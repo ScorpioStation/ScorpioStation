@@ -1,0 +1,119 @@
+"aa" = (/turf/template_noop,/area/template_noop)
+"ab" = (/obj/structure/grille,/turf/template_noop,/area/space/nearstation)
+"ac" = (/obj/structure/grille{density = 0; icon_state = "brokengrille"},/turf/template_noop,/area/space/nearstation)
+"ad" = (/obj/structure/lattice,/turf/template_noop,/area/space/nearstation)
+"ae" = (/obj/machinery/power/solar/fake,/turf/simulated/floor/plasteel/airless{icon_state = "solarpanel"},/area/ruin/powered/reststop)
+"af" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/structure/lattice/catwalk,/turf/template_noop,/area/ruin/powered/reststop)
+"ag" = (/obj/structure/grille{density = 0; icon_state = "brokengrille"},/obj/structure/lattice,/turf/template_noop,/area/space/nearstation)
+"ah" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/lattice/catwalk,/turf/template_noop,/area/ruin/powered/reststop)
+"ai" = (/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/wall/mineral/titanium/interior,/area/ruin/powered/reststop)
+"aj" = (/obj/structure/lattice,/obj/structure/grille{density = 0; icon_state = "brokengrille"},/turf/template_noop,/area/space/nearstation)
+"ak" = (/obj/structure/lattice,/obj/structure/lattice,/turf/template_noop,/area/space/nearstation)
+"al" = (/obj/structure/grille,/obj/structure/window/full/shuttle,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"am" = (/obj/structure/grille,/obj/structure/window/full/shuttle,/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"an" = (/turf/simulated/wall/mineral/titanium/interior,/area/ruin/powered/reststop)
+"ao" = (/obj/structure/grille,/obj/structure/window/full/shuttle,/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"ap" = (/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/wall/mineral/titanium/interior,/area/ruin/powered/reststop)
+"aq" = (/obj/structure/grille,/obj/structure/window/full/shuttle,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"ar" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"as" = (/obj/machinery/light{dir = 1},/obj/machinery/status_display{layer = 4; pixel_y = 32},/obj/machinery/tcomms/relay/ruskie,/turf/simulated/floor/plasteel{icon_state = "vault"; dir = 8},/area/ruin/powered/reststop)
+"at" = (/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"au" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/lattice/catwalk,/turf/template_noop,/area/ruin/powered/reststop)
+"av" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/lattice/catwalk,/turf/template_noop,/area/ruin/powered/reststop)
+"aw" = (/obj/machinery/power/terminal,/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"ax" = (/obj/item/multitool,/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"ay" = (/obj/item/storage/toolbox/mechanical{pixel_x = -2; pixel_y = -1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"az" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/structure/lattice/catwalk,/turf/template_noop,/area/ruin/powered/reststop)
+"aA" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/wall/mineral/titanium/interior,/area/ruin/powered/reststop)
+"aB" = (/obj/item/extinguisher,/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"aC" = (/obj/structure/cable{icon_state = "0-2"; d2 = 2},/obj/machinery/power/smes/magical{desc = "A high-capacity superconducting magnetic energy storage (SMES) unit."; name = "power storage unit"},/turf/simulated/floor/plasteel{icon_state = "vault"; dir = 8},/area/ruin/powered/reststop)
+"aD" = (/turf/template_noop,/area/ruin/powered/reststop)
+"aE" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/decal/cleanable/dirt,/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"aF" = (/obj/effect/decal/cleanable/dirt,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"aG" = (/obj/structure/grille,/obj/structure/window/full/shuttle,/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"aH" = (/obj/structure/grille,/obj/structure/window/full/shuttle,/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"aI" = (/obj/structure/cable{icon_state = "0-4"; d2 = 4},/obj/machinery/power/apc/noalarm{dir = 0; name = "Worn-out APC"; pixel_y = -24},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"aJ" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/item/storage/box/lights/mixed,/obj/structure/sign/securearea{desc = "A warning sign which reads 'HIGH VOLTAGE'"; icon_state = "shock"; name = "HIGH VOLTAGE"; pixel_y = -32},/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"aK" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"aL" = (/obj/machinery/light_switch{pixel_y = -28},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"aM" = (/obj/structure/rack,/obj/item/clothing/mask/breath,/obj/effect/decal/cleanable/dirt,/obj/item/clothing/head/helmet/space/syndicate/blue{desc = "As roughed up as it might look, it's still in working order."; name = "Emergency Space Helmet"},/obj/item/clothing/suit/space/nasavoid/ltblue{desc = "This old spacesuit might look a little rough around the edges, but it does its job just fine in a pinch."; name = "Emergency Space Suit"},/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"aN" = (/obj/machinery/door/airlock/maintenance{req_access_txt = "0"},/turf/simulated/floor/plasteel{dir = 1; icon_state = "rampbottom"; tag = "icon-stage_stairs"},/area/ruin/powered/reststop)
+"aO" = (/turf/simulated/wall/mineral/titanium/nodiagonal,/area/ruin/powered/reststop)
+"aP" = (/obj/structure/closet/emcloset,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"aQ" = (/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"aR" = (/obj/structure/table/reinforced,/obj/item/clothing/glasses/welding,/obj/item/weldingtool,/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"aS" = (/obj/machinery/vending/coffee,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"aT" = (/obj/machinery/status_display{layer = 4; pixel_y = 32},/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"aU" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"aV" = (/turf/simulated/floor/plasteel{icon_state = "grimy"},/area/ruin/powered/reststop)
+"aW" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"aX" = (/obj/machinery/vending/chinese,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"aY" = (/obj/structure/reagent_dispensers/fueltank/chem{pixel_y = 30},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"aZ" = (/obj/machinery/vending/wallmed{pixel_y = 30},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"ba" = (/obj/machinery/door/airlock/external{frequency = 1479; icon_state = "door_locked"; id_tag = "dj_station_inner"; locked = 1; name = "DJ Station Interior Access"; req_access = null; req_access_txt = "0"},/obj/machinery/atmospherics/pipe/simple/hidden,/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"bb" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 1; frequency = 1479; id_tag = "dj_station_pump"},/obj/machinery/airlock_sensor{frequency = 1479; id_tag = "dj_station_sensor"; pixel_x = 25; pixel_y = -5},/obj/machinery/embedded_controller/radio/airlock/airlock_controller{frequency = 1479; id_tag = "dj_station_airlock"; pixel_x = -25; req_access_txt = "0"; tag_airpump = "dj_station_pump"; tag_chamber_sensor = "dj_station_sensor"; tag_exterior_door = "dj_station_outer"; tag_interior_door = "dj_station_inner"},/obj/machinery/light/small{dir = 4},/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"bc" = (/obj/machinery/door/airlock/external{frequency = 1479; icon_state = "door_locked"; id_tag = "dj_station_outer"; locked = 1; name = "DJ Station External Access"; req_access = null; req_access_txt = "0"},/turf/simulated/floor/plating,/area/ruin/powered/reststop)
+"bd" = (/obj/structure/lattice,/obj/structure/grille,/turf/simulated/wall/mineral/titanium/interior,/area/space/nearstation)
+"be" = (/obj/structure/spacepoddoor{dir = 4; icon_state = "n_beam"},/obj/machinery/door/poddoor/multi_tile/two_tile_hor,/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"bf" = (/obj/structure/spacepoddoor{dir = 4; icon_state = "n_beam"},/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"bg" = (/obj/machinery/access_button{command = "cycle_exterior"; frequency = 1479; master_tag = "dj_station_airlock"; name = "exterior access button"; pixel_x = 23; pixel_y = 35; req_access_txt = "0"},/turf/template_noop,/area/ruin/powered/reststop)
+"bh" = (/obj/machinery/portable_atmospherics/canister/oxygen{name = "Canister: \[O2] (CRYO)"},/turf/simulated/floor/plasteel/airless{icon_state = "solarpanel"},/area/ruin/powered/reststop)
+"bi" = (/obj/machinery/vending/cigarette,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bj" = (/obj/machinery/portable_atmospherics/canister/oxygen,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"bk" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"bl" = (/obj/machinery/door/airlock/maintenance_hatch{name = "podbay"},/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"bm" = (/obj/effect/decal/cleanable/dirt,/obj/effect/spawner/random_spawners/oil_maybe,/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"bn" = (/obj/item/weldingtool/mini,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"bo" = (/obj/structure/closet,/obj/item/stock_parts/cell/crap,/obj/item/stock_parts/cell/crap,/obj/item/stock_parts/cell/high/empty,/obj/item/stock_parts/cell/crap,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"bp" = (/obj/machinery/door/airlock/public{name = "hotel"},/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bq" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"br" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bs" = (/obj/structure/table/wood,/obj/item/paper_bin,/obj/item/pen,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bt" = (/obj/structure/grille,/obj/structure/window/full/shuttle,/turf/simulated/shuttle/plating,/area/ruin/powered/reststop)
+"bu" = (/obj/machinery/light/small{dir = 4; icon_state = "bulb1"; tag = "icon-bulb1 (EAST)"},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bv" = (/obj/machinery/atmospherics/pipe/simple/hidden{dir = 6},/obj/machinery/access_button{command = "cycle_interior"; frequency = 1479; master_tag = "dj_station_airlock"; name = "interior access button"; pixel_x = 25; pixel_y = -25; req_access_txt = "0"},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bw" = (/obj/structure/chair{dir = 4},/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bx" = (/obj/machinery/light/small,/obj/structure/table/wood,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"by" = (/obj/structure/chair{dir = 8},/turf/simulated/floor/plasteel{icon_state = "grimy"},/area/ruin/powered/reststop)
+"bz" = (/obj/machinery/door/airlock/wood/glass,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bA" = (/obj/machinery/atmospherics/unary/portables_connector{dir = 8},/obj/machinery/portable_atmospherics/canister/air,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bB" = (/obj/item/clothing/suit/space/nasavoid/ltblue,/turf/simulated/wall/mineral/titanium/interior,/area/ruin/powered/reststop)
+"bC" = (/obj/structure/table/wood,/obj/item/flashlight/lamp/green,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bD" = (/obj/machinery/door/airlock/wood,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bE" = (/obj/structure/table/wood,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bF" = (/obj/structure/chair/office/dark{dir = 8},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bG" = (/obj/structure/bed,/obj/item/bedsheet/black{desc = "Don't think about the smell, and you might be fine."; name = "motel bedsheet"},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bH" = (/obj/structure/table/wood,/obj/item/flashlight/lamp/green,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bI" = (/obj/machinery/light/small{dir = 4; icon_state = "bulb1"; tag = "icon-bulb1 (EAST)"},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bO" = (/obj/structure/lattice,/obj/structure/grille,/turf/template_noop,/area/space/nearstation)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaababacababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaababaaaaaaaaadababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabadadaeaaaeadadabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaeafaeafaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaadaaabadaeafaeafaeaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaagaaaeafaeafaeadacaaaaadaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabaaaeafaeafaeadabaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaahaaahadaaaaadadadaaaaaaaaaaaaaaaaaaaaaa
+aaababababacabaaaaaaaaahadahaaaaaaaaababajabababaaaaaaaaaaaaaa
+ababakadadadaaaaaaaialamanaoalapaaadaaaaadadadababaaaaaaaaaaaa
+abadadaeaeaeaeaaaaaqaRarasatataqadadaeaeaeaeadaaabaaaaaaaaaaaa
+abadaeauauauauavavaqatatawaxayaqavavazazazazaeaaabaaaaaaaaaaaa
+abaaaaaeaeaeaeaaaaaAaBataCataraAaDaDbhaeaeaeaaaaabaaaaaaaaaaaa
+acadaeauauauauavavamatataEaFaFaGavavazazazazaeadabaaaaaaaaaaaa
+abadadaeaeaeaeadadaHaIaJaKaLaMaHaaaaaeaeaeaeadadabaaaaaaaaaaaa
+ababadaaaaaaaaaaadanananaNanananaaaaaaaaaaaaadababaaaaaaaaaaaa
+aaababananananananaOaPaSaUaUbiaOanananananaaababaaaaaaaaaaaaaa
+aaanananaWaWaYaZbjanaUaUaUaUaUaUanaTaXaVaHaaaaaaaaaaaaaaaaaaaa
+aaanbkaWaWaWbkbmaWblaUaUaUaUaUaUbzaQaQaVaHaaaaaaaaaaadadadaaaa
+aaaHbmaWbkaWaWbkaWblaUaUaUaUaUaUanbwbxbyaHadaaaaaaaaadaaaaaaaa
+aaaHaWaWaWbnaWaWboanbpanananbqbranbBanananadadaaaaadadaaaaaaaa
+aaaHaWaWananananananaUbsbuanbvbAanaaadbOaaaaadadaaaaadaaaaaaaa
+aaaHaWbmanbCbqbDaUbqbrbEbFanbaaOanaabObOadaaaaadaaaaadaaaaaaaa
+aaaHaWaWanbGbuananbDananananbbanadabbOadaaaaadadadadadaaaaaaaa
+aaanaWaWananbtanbHbqanaaaaanbcanbObdadaaaaadadaaaaaaadaaaaaaaa
+aaanbebfanaaaaanbGbIanaaaaaDbgaDaaadadaaaaadaaaaaaaaadadadadaa
+aaaaaaaaaaaaaaananbtanaaaaaaaaaaaaaaadadadaaaaaaaaaaaaaaaaadaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadaaaaaaaaadaaaaaaaaaaad
+"}
