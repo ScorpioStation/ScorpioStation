@@ -13,6 +13,8 @@
 	open_icon = "mw-o"
 	pass_flags = PASSTABLE
 
+	var/datum/looping_sound/microwave/soundloop
+
 // see code/modules/food/recipes_microwave.dm for recipes
 
 /*******************
@@ -21,6 +23,7 @@
 
 /obj/machinery/kitchen_machine/microwave/New()
 	..()
+	soundloop = new(list(src), FALSE)
 	component_parts = list()
 	component_parts += new /obj/item/circuitboard/microwave(null)
 	component_parts += new /obj/item/stock_parts/micro_laser(null)
@@ -30,6 +33,7 @@
 
 /obj/machinery/kitchen_machine/microwave/upgraded/New()
 	..()
+	soundloop = new(list(src), FALSE)
 	component_parts = list()
 	component_parts += new /obj/item/circuitboard/microwave(null)
 	component_parts += new /obj/item/stock_parts/micro_laser/ultra(null)
@@ -42,3 +46,27 @@
 	for(var/obj/item/stock_parts/micro_laser/M in component_parts)
 		E += M.rating
 	efficiency = E
+
+/*******************
+*   Microwave Sounds
+********************/
+
+/obj/machinery/kitchen_machine/microwave/start()
+	..()
+	soundloop.start()
+
+/obj/machinery/kitchen_machine/microwave/abort()
+	..()
+	soundloop.stop()
+
+/obj/machinery/kitchen_machine/microwave/stop()
+	..()
+	soundloop.stop()
+
+/obj/machinery/kitchen_machine/microwave/muck_finish()
+	..()
+	soundloop.stop()
+
+/obj/machinery/kitchen_machine/microwave/broke()
+	..()
+	soundloop.stop()
