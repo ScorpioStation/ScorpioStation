@@ -30,7 +30,6 @@
 	dietflags = DIET_OMNI
 	taste_sensitivity = TASTE_SENSITIVITY_SHARP
 	reagent_tag = PROCESS_ORG
-
 	footstep_type = FOOTSTEP_MOB_CLAW
 
 	flesh_color = "#b5a69b"

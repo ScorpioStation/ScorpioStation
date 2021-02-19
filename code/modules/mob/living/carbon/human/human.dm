@@ -40,14 +40,8 @@
 
 	UpdateAppearance()
 	GLOB.human_list += src
-	if(isskrell(src) || isgrey(src) || ismachineperson(src) || iskidan(src) || iswryn(src) || isabductor(src) || ishumanbasic(src) || isdiona(src) || isplasmaman(src) || isskeleton(src))
-		AddComponent(/datum/component/footstep, FOOTSTEP_MOB_HUMAN, 1, 2)
-	if(istajaran(src) || isunathi(src) || isvulpkanin(src))
-		AddComponent(/datum/component/footstep, FOOTSTEP_MOB_CLAW, 1, 2)
-	if(isdrask(src) || isvoxarmalis(src))
-		AddComponent(/datum/component/footstep, FOOTSTEP_MOB_HEAVY, 1, 2)
-	if(isslimeperson(src))
-		AddComponent(/datum/component/footstep, FOOTSTEP_MOB_SLIME, 1, 2)
+
+	AddComponent(/datum/component/footstep, dna.species.footstep_type, 1, 2)
 
 /mob/living/carbon/human/OpenCraftingMenu()
 	handcrafting.ui_interact(src)

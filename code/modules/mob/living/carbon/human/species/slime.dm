@@ -31,6 +31,7 @@
 	bodyflags = HAS_SKIN_COLOR | NO_EYES
 	dietflags = DIET_CARN
 	reagent_tag = PROCESS_ORG
+	footstep_type = FOOTSTEP_MOB_SLIME
 
 	flesh_color = "#5fe8b1"
 	blood_color = "#0064C8"
