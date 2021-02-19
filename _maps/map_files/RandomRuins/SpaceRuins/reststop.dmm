@@ -63,7 +63,7 @@
 "bk" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
 "bl" = (/obj/machinery/door/airlock/maintenance_hatch{name = "podbay"},/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
 "bm" = (/obj/effect/decal/cleanable/dirt,/obj/effect/spawner/random_spawners/oil_maybe,/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
-"bn" = (/obj/item/weldingtool/mini,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"bn" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light{dir = 1},/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
 "bo" = (/obj/structure/closet,/obj/item/stock_parts/cell/crap,/obj/item/stock_parts/cell/crap,/obj/item/stock_parts/cell/high/empty,/obj/item/stock_parts/cell/crap,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
 "bp" = (/obj/machinery/door/airlock/public{name = "hotel"},/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
 "bq" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
@@ -77,6 +77,7 @@
 "by" = (/obj/structure/chair{dir = 8},/turf/simulated/floor/plasteel{icon_state = "grimy"},/area/ruin/powered/reststop)
 "bz" = (/obj/machinery/door/airlock/wood/glass,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
 "bA" = (/obj/machinery/atmospherics/unary/portables_connector{dir = 8},/obj/machinery/portable_atmospherics/canister/air,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bB" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light{dir = 8},/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
 "bC" = (/obj/structure/table/wood,/obj/item/flashlight/lamp/green,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
 "bD" = (/obj/machinery/door/airlock/wood,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
 "bE" = (/obj/structure/table/wood,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
@@ -84,7 +85,16 @@
 "bG" = (/obj/structure/bed,/obj/item/bedsheet/black{desc = "Don't think about the smell, and you might be fine."; name = "motel bedsheet"},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
 "bH" = (/obj/structure/table/wood,/obj/item/flashlight/lamp/green,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
 "bI" = (/obj/machinery/light/small{dir = 4; icon_state = "bulb1"; tag = "icon-bulb1 (EAST)"},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bJ" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light{dir = 1},/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"bK" = (/obj/item/weldingtool/mini,/obj/effect/decal/cleanable/dirt,/obj/machinery/light,/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"bL" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light,/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"bM" = (/obj/effect/decal/cleanable/dirt,/obj/effect/spawner/random_spawners/oil_maybe,/obj/machinery/light/built{dir = 4},/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"bN" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/machinery/light{dir = 1},/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
 "bO" = (/obj/structure/lattice,/obj/structure/grille,/turf/template_noop,/area/space/nearstation)
+"bP" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light{dir = 4},/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
+"bQ" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bR" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/machinery/light{dir = 4},/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
+"bS" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light{dir = 8},/turf/simulated/floor/pod/dark,/area/ruin/powered/reststop)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaababacababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -103,14 +113,14 @@ abaaaaaeaeaeaeaaaaaAaBataCataraAaDaDbhaeaeaeaaaaabaaaaaaaaaaaa
 acadaeauauauauavavamatataEaFaFaGavavazazazazaeadabaaaaaaaaaaaa
 abadadaeaeaeaeadadaHaIaJaKaLaMaHaaaaaeaeaeaeadadabaaaaaaaaaaaa
 ababadaaaaaaaaaaadanananaNanananaaaaaaaaaaaaadababaaaaaaaaaaaa
-aaababananananananaOaPaSaUaUbiaOanananananaaababaaaaaaaaaaaaaa
-aaanananaWaWaYaZbjanaUaUaUaUaUaUanaTaXaVaHaaaaaaaaaaaaaaaaaaaa
-aaanbkaWaWaWbkbmaWblaUaUaUaUaUaUbzaQaQaVaHaaaaaaaaaaadadadaaaa
-aaaHbmaWbkaWaWbkaWblaUaUaUaUaUaUanbwbxbyaHadaaaaaaaaadaaaaaaaa
-aaaHaWaWaWbnaWaWboanbpanananbqbranananananadadaaaaadadaaaaaaaa
+aaababananananananaOaPaSaUbnbiaOanananananaaababaaaaaaaaaaaaaa
+aaanananbSaWaYaZbjanbBaUaUaUaUbnanaTaXaVaHaaaaaaaaaaaaaaaaaaaa
+aaanbkbJaWaWbkbmaWblaUaUaUaUaUaUbzaQaQaVaHaaaaaaaaaaadadadaaaa
+aaaHbmaWbkaWaWbkaWblaUaUbQaUaUaUanbwbxbyaHadaaaaaaaaadaaaaaaaa
+aaaHaWaWaWbKaWbLboanbpanananbqbRanananananadadaaaaadadaaaaaaaa
 aaaHaWaWananananananaUbsbuanbvbAanaaadbOaaaaadadaaaaadaaaaaaaa
-aaaHaWbmanbCbqbDaUbqbrbEbFanbaaOanaabObOadaaaaadaaaaadaaaaaaaa
-aaaHaWaWanbGbuananbDananananbbanadabbOadaaaaadadadadadaaaaaaaa
+aaaHaWbManbCbqbDaUbNbrbEbFanbaaOanaabObOadaaaaadaaaaadaaaaaaaa
+aaaHaWbPanbGbuananbDananananbbanadabbOadaaaaadadadadadaaaaaaaa
 aaanaWaWananbtanbHbqanaaaaanbcanbObdadaaaaadadaaaaaaadaaaaaaaa
 aaanbebfanaaaaanbGbIanaaaaaDbgaDaaadadaaaaadaaaaaaaaadadadadaa
 aaaaaaaaaaaaaaananbtanaaaaaaaaaaaaaaadadadaaaaaaaaaaaaaaaaadaa
