@@ -77,7 +77,6 @@
 "by" = (/obj/structure/chair{dir = 8},/turf/simulated/floor/plasteel{icon_state = "grimy"},/area/ruin/powered/reststop)
 "bz" = (/obj/machinery/door/airlock/wood/glass,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
 "bA" = (/obj/machinery/atmospherics/unary/portables_connector{dir = 8},/obj/machinery/portable_atmospherics/canister/air,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
-"bB" = (/obj/item/clothing/suit/space/nasavoid/ltblue,/turf/simulated/wall/mineral/titanium/interior,/area/ruin/powered/reststop)
 "bC" = (/obj/structure/table/wood,/obj/item/flashlight/lamp/green,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
 "bD" = (/obj/machinery/door/airlock/wood,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
 "bE" = (/obj/structure/table/wood,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plasteel/grimy,/area/ruin/powered/reststop)
@@ -108,7 +107,7 @@ aaababananananananaOaPaSaUaUbiaOanananananaaababaaaaaaaaaaaaaa
 aaanananaWaWaYaZbjanaUaUaUaUaUaUanaTaXaVaHaaaaaaaaaaaaaaaaaaaa
 aaanbkaWaWaWbkbmaWblaUaUaUaUaUaUbzaQaQaVaHaaaaaaaaaaadadadaaaa
 aaaHbmaWbkaWaWbkaWblaUaUaUaUaUaUanbwbxbyaHadaaaaaaaaadaaaaaaaa
-aaaHaWaWaWbnaWaWboanbpanananbqbranbBanananadadaaaaadadaaaaaaaa
+aaaHaWaWaWbnaWaWboanbpanananbqbranananananadadaaaaadadaaaaaaaa
 aaaHaWaWananananananaUbsbuanbvbAanaaadbOaaaaadadaaaaadaaaaaaaa
 aaaHaWbmanbCbqbDaUbqbrbEbFanbaaOanaabObOadaaaaadaaaaadaaaaaaaa
 aaaHaWaWanbGbuananbDananananbbanadabbOadaaaaadadadadadaaaaaaaa
