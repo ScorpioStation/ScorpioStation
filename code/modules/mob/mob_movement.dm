@@ -18,6 +18,7 @@
 	return (!mover.density || !density || lying)
 
 /mob/Moved()
+	. = ..()
 	if(is_shifted)
 		is_shifted = FALSE
 		pixel_x = get_standard_pixel_x_offset(lying)
