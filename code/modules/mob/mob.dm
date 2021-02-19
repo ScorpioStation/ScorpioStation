@@ -548,17 +548,6 @@ GLOBAL_LIST_INIT(slot_equipment_priority, list( \
 			client.screen = list()
 			hud_used.show_hud(hud_used.hud_version)
 
-/mob/setDir(new_dir)
-	if(forced_look)
-		if(isnum(forced_look))
-			dir = forced_look
-		else
-			var/atom/A = locateUID(forced_look)
-			if(istype(A))
-				dir = get_cardinal_dir(src, A)
-		return
-	. = ..()
-
 /mob/proc/show_inv(mob/user)
 	user.set_machine(src)
 	var/dat = {"<table>
@@ -1056,31 +1045,89 @@ GLOBAL_LIST_INIT(slot_equipment_priority, list( \
 
 /mob/proc/facedir(ndir)
 	if(!canface())
-		return 0
+		return FALSE
 	setDir(ndir)
 	client.move_delay += movement_delay()
-	return 1
+	return TRUE
 
+/mob/setDir(new_dir)
+	if(forced_look)
+		if(isnum(forced_look))
+			dir = forced_look
+		else
+			var/atom/A = locateUID(forced_look)
+			if(istype(A))
+				dir = get_cardinal_dir(src, A)
+		return
+	. = ..()
 
 /mob/verb/eastface()
-	set hidden = 1
+	set hidden = TRUE
 	return facedir(EAST)
 
-
 /mob/verb/westface()
-	set hidden = 1
+	set hidden = TRUE
 	return facedir(WEST)
 
-
 /mob/verb/northface()
-	set hidden = 1
+	set hidden = TRUE
 	return facedir(NORTH)
 
-
 /mob/verb/southface()
-	set hidden = 1
+	set hidden = TRUE
 	return facedir(SOUTH)
 
+/mob/proc/canshift()
+	if(!canface() || pulling || pulledby)
+		return FALSE
+	var/turf/T = get_turf(src)
+	if(!T)
+		return FALSE
+	var/list/range = view(0, T)	// Same tile as usr
+	for(var/atom/A in range)
+		if(ismob(A))
+			var/mob/M = A
+			if(M != src)
+				return FALSE
+	return TRUE
+
+/mob/verb/eastshift()
+	set hidden = TRUE
+	if(!canshift())
+		return FALSE
+	if(pixel_x < 10)
+		pixel_x++
+		is_shifted = TRUE
+
+/mob/verb/westshift()
+	set hidden = TRUE
+	if(!canshift())
+		return FALSE
+	if(pixel_x > -10)
+		pixel_x--
+		is_shifted = TRUE
+
+/mob/verb/northshift()
+	set hidden = TRUE
+	if(!canshift())
+		return FALSE
+	if(pixel_y < 0)		//No vertical pixel-shifting, please
+		pixel_y++
+		is_shifted = TRUE
+
+/mob/verb/southshift()
+	set hidden = TRUE
+	if(!canshift())
+		return FALSE
+	if(pixel_y > 0)		//No vertical pixel-shifting, please
+		pixel_y--
+		is_shifted = TRUE
+
+/mob/proc/get_standard_pixel_x_offset(lying = 0)
+	return initial(pixel_x)
+
+/mob/proc/get_standard_pixel_y_offset(lying = 0)
+	return initial(pixel_y)
 
 /mob/proc/IsAdvancedToolUser()//This might need a rename but it should replace the can this mob use things check
 	return FALSE

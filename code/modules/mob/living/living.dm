@@ -893,12 +893,6 @@
 
 	return loc_temp
 
-/mob/living/proc/get_standard_pixel_x_offset(lying = 0)
-	return initial(pixel_x)
-
-/mob/living/proc/get_standard_pixel_y_offset(lying = 0)
-	return initial(pixel_y)
-
 /mob/living/proc/spawn_dust()
 	new /obj/effect/decal/cleanable/ash(loc)
 
@@ -961,6 +955,10 @@
 		return FALSE
 	if(AM.anchored || AM.throwing)
 		return FALSE
+	if(is_shifted)
+		pixel_x = initial(pixel_x)
+		pixel_y = initial(pixel_y)
+		is_shifted = FALSE
 	if(force < ((AM.move_resist / 2) * MOVE_FORCE_PULL_RATIO)) // DWARF mobs cannot pull uncooperative strong ones.
 		if(ismob(AM))
 			var/mob/M = AM

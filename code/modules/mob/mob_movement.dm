@@ -1,12 +1,12 @@
-/mob/CanPass(atom/movable/mover, turf/target, height=0)
-	if(height==0)
-		return 1
+/mob/CanPass(atom/movable/mover, turf/target, height = 0)
+	if(height == 0)
+		return TRUE
 	if(istype(mover, /obj/item/projectile))
 		return (!density || lying)
 	if(mover.throwing)
 		return (!density || lying || (mover.throwing.thrower == src))
 	if(mover.checkpass(PASSMOB))
-		return 1
+		return TRUE
 	if(buckled == mover)
 		return TRUE
 	if(ismob(mover))
@@ -17,6 +17,11 @@
 			return TRUE
 	return (!mover.density || !density || lying)
 
+/mob/Moved()
+	if(is_shifted)
+		is_shifted = FALSE
+		pixel_x = get_standard_pixel_x_offset(lying)
+		pixel_y = get_standard_pixel_y_offset(lying)
 
 /client/verb/toggle_throw_mode()
 	set hidden = 1
