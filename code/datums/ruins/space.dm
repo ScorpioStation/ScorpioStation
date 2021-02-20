@@ -150,7 +150,9 @@
 	id = "reststop"
 	suffix = "reststop.dmm"
 	name = "Rest Stop"
-	description = "A place for weary space travellers to stop and fix their spacepods."
+	description = "Do not lay waste to homes where you must rest your weary bones."
+	always_place = TRUE
+	cost = 0
 
 /datum/map_template/ruin/space/spacebar
 	id = "spacebar"
