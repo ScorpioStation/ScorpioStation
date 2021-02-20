@@ -10,7 +10,7 @@ SUBSYSTEM_DEF(ticker)
 	/// Time the world started, relative to world.time
 	var/round_start_time = 0
 	/// Default timeout for if world.Reboot() doesnt have a time specified
-	var/const/restart_timeout = 2 MINUTES
+	var/const/restart_timeout = 1 MINUTES
 	/// Current status of the game. See code\__DEFINES\game.dm
 	var/current_state = GAME_STATE_STARTUP
 	/// Do we want to force-start as soon as we can
@@ -545,9 +545,6 @@ SUBSYSTEM_DEF(ticker)
 
 	//Ask the event manager to print round end information
 	SSevents.RoundEnd()
-
-	// ask the players which map they want to play on next
-	INVOKE_ASYNC(SSvote, /datum/controller/subsystem/vote/.proc/initiate_vote, VOTE_TYPE_MAP)
 
 	//make big obvious note in game logs that round ended
 	log_game("///////////////////////////////////////////////////////")
