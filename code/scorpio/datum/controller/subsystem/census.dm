@@ -1,3 +1,20 @@
+// census.dm
+// Copyright 2021 Patrick Meade.
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+//------------------------------------------------------------------------------
+
 #define FILE_CENSUS_BOT_CONFIG_JSON "data/census_bot_config.json"
 
 // {
@@ -57,7 +74,7 @@ SUBSYSTEM_DEF(census)
 	// if we've got a round start Discord role and there are enough people connected to play with
 	if((round_start_role_id) && (last_pop >= config.census_bot_minimum))
 		// announce round start with the current server population
-		census_bot.post_message("<[round_start_role_id]> A new round is starting; [last_pop] players reconnected when the server restarted.")
+		census_bot.post_message("<[round_start_role_id]> A new round is starting on map [GLOB.map_name]; [last_pop] players reconnected when the server restarted.")
 
 	// finish up successful initialization by returning whatever our parent returns
 	return ..()
@@ -105,3 +122,6 @@ SUBSYSTEM_DEF(census)
 			continue
 		players++
 	return players
+
+//------------------------------------------------------------------------------
+// end of census.dm
