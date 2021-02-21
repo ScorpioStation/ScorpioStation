@@ -81,13 +81,6 @@
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
 
 
-/obj/item/clothing/suit/greatcoat
-	name = "great coat"
-	desc = "A Nazi great coat."
-	icon_state = "nazi"
-	item_state = "nazi"
-
-
 /obj/item/clothing/suit/johnny_coat
 	name = "johnny~~ coat"
 	desc = "Johnny~~"

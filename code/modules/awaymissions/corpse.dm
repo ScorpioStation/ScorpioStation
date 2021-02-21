@@ -400,9 +400,9 @@
 
 
 /datum/outfit/clownsoldier
-	name = "Clown Soldier"
-	uniform = /obj/item/clothing/under/soldieruniform
-	suit = /obj/item/clothing/suit/soldiercoat
+	name = "Clown Soldati"
+	uniform = /obj/item/clothing/under/clownmafiauniform
+	suit = /obj/item/clothing/suit/jacket/motojacket
 	shoes = /obj/item/clothing/shoes/clown_shoes
 	l_ear = /obj/item/radio/headset
 	mask = /obj/item/clothing/mask/gas/clown_hat
@@ -411,15 +411,15 @@
 	head = /obj/item/clothing/head/stalhelm
 
 /datum/outfit/clownofficer
-	name = "Clown Officer"
-	uniform = /obj/item/clothing/under/officeruniform
-	suit = /obj/item/clothing/suit/officercoat
+	name = "Clown Caporegime"
+	uniform = /obj/item/clothing/under/clowncapouniform
+	suit = /obj/item/clothing/suit/jacket/motojacket
 	shoes = /obj/item/clothing/shoes/clown_shoes
 	l_ear = /obj/item/radio/headset
 	mask = /obj/item/clothing/mask/gas/clown_hat
 	l_pocket = /obj/item/bikehorn
 	back = /obj/item/storage/backpack/clown
-	head = /obj/item/clothing/head/naziofficer
+	head = /obj/item/clothing/head/clowncapo
 
 /obj/effect/mob_spawn/human/mime
 	name = "Mime"

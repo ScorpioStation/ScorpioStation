@@ -648,18 +648,18 @@
 	item_state = "colin_earle"
 	item_color = "colin_earle"
 
-/obj/item/clothing/under/officeruniform
-	name = "Clown Officer's Uniform"
-	desc = "For Clown officers, this uniform was designed by the great clown designer Hugo Boss."
-	icon_state = "officeruniform"
-	item_color = "officeruniform"
+/obj/item/clothing/under/clowncapouniform
+	name = "\improper Clown Mafia Capo's uniform"
+	desc = "For a Caporegime of the great Clown Mafia, this uniform was designed by the great clown designer Honko Boss."
+	icon_state = "mafia"
+	item_color = "mafia"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
-/obj/item/clothing/under/soldieruniform
-	name = "Clown Soldier's Uniform"
-	desc = "For the basic grunt of the Clown army."
-	icon_state = "soldieruniform"
-	item_color = "soldieruniform"
+/obj/item/clothing/under/clownmafiauniform
+	name = "\improper Clown Mafia Soldati uniform"
+	desc = "For the basic grunt of the Clown mafia."
+	icon_state = "mafiavest"
+	item_color = "mafiavest"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/pennywise

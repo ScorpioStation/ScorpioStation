@@ -19362,7 +19362,7 @@
 /turf/simulated/floor/plating,
 /area/crew_quarters/dorms)
 "aOi" = (
-/obj/item/clothing/head/naziofficer,
+/obj/item/clothing/head/clowncapo,
 /turf/simulated/floor/plating,
 /area/maintenance/fsmaint2)
 "aOj" = (
@@ -29079,7 +29079,7 @@
 /area/clownoffice)
 "bhj" = (
 /obj/structure/table/wood,
-/obj/item/clothing/under/soldieruniform,
+/obj/item/clothing/under/clownmafiauniform,
 /obj/machinery/firealarm{
 	dir = 4;
 	pixel_x = 24

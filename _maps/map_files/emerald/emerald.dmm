@@ -38582,7 +38582,7 @@
 /area/medical/virology)
 "bIF" = (
 /obj/structure/table/wood,
-/obj/item/clothing/under/soldieruniform,
+/obj/item/clothing/under/clownmafiauniform,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -84284,7 +84284,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fsmaint2)
 "dlB" = (
-/obj/item/clothing/head/naziofficer,
+/obj/item/clothing/head/clowncapo,
 /turf/simulated/floor/plating,
 /area/maintenance/fsmaint2)
 "dlC" = (
