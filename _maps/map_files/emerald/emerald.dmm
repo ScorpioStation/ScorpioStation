@@ -5624,13 +5624,8 @@
 	name = "supply bay";
 	width = 12
 	},
-/obj/docking_port/mobile/supply,
-/turf/simulated/shuttle/wall{
-	dir = 2;
-	icon_state = "swall3";
-	tag = "icon-swall3"
-	},
-/area/shuttle/supply)
+/turf/space,
+/area/space)
 "aoi" = (
 /obj/machinery/requests_console{
 	department = "Cargo Bay";
@@ -6937,13 +6932,9 @@
 	},
 /area/crew_quarters/sleep)
 "asF" = (
-/turf/space,
-/turf/simulated/shuttle/wall{
-	dir = 2;
-	icon_state = "swall_f6";
-	tag = "icon-swall_f6"
-	},
-/area/shuttle/supply)
+/obj/structure/closet/crate/can,
+/turf/simulated/floor/wood,
+/area/crew_quarters/cafeteria)
 "asG" = (
 /obj/machinery/door/airlock/external{
 	name = "Arrival Airlock"
@@ -6951,43 +6942,10 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/hallway/secondary/entry)
-"asH" = (
-/turf/simulated/shuttle/wall{
-	dir = 2;
-	icon_state = "swall12";
-	tag = "icon-swall12"
-	},
-/area/shuttle/supply)
-"asI" = (
-/turf/space,
-/turf/simulated/shuttle/wall{
-	dir = 2;
-	icon_state = "swall_f10";
-	tag = "icon-swall_f10"
-	},
-/area/shuttle/supply)
-"asR" = (
-/turf/simulated/shuttle/wall{
-	dir = 2;
-	icon_state = "swall3";
-	tag = "icon-swall3"
-	},
-/area/shuttle/supply)
 "asS" = (
 /obj/effect/decal/warning_stripes/west,
 /turf/simulated/floor/plasteel,
 /area/hallway/secondary/entry)
-"asT" = (
-/turf/simulated/shuttle/floor,
-/area/shuttle/supply)
-"asU" = (
-/obj/machinery/light/spot{
-	dir = 1;
-	icon_state = "tube1";
-	tag = "icon-tube1 (NORTH)"
-	},
-/turf/simulated/shuttle/floor,
-/area/shuttle/supply)
 "asW" = (
 /obj/effect/decal/warning_stripes/east,
 /turf/simulated/floor/plasteel,
@@ -7002,13 +6960,6 @@
 "atf" = (
 /turf/simulated/wall,
 /area/medical/psych)
-"atj" = (
-/obj/structure/plasticflaps/mining,
-/obj/machinery/conveyor/east{
-	id = "QMLoad2"
-	},
-/turf/simulated/shuttle/plating,
-/area/shuttle/supply)
 "ato" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -7023,46 +6974,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plasteel/dark,
 /area/turret_protected/aisat_interior)
-"atq" = (
-/obj/machinery/door/airlock/external{
-	id_tag = "s_docking_airlock";
-	name = "Shuttle Hatch";
-	req_access_txt = "31"
-	},
-/turf/simulated/shuttle/floor,
-/area/shuttle/supply)
-"atv" = (
-/obj/machinery/light/spot{
-	dir = 8;
-	icon_state = "tube1";
-	tag = "icon-tube1 (WEST)"
-	},
-/obj/machinery/door_control{
-	id = "QMLoaddoor2";
-	layer = 3;
-	name = "Loading Doors";
-	pixel_x = -24;
-	pixel_y = 8;
-	req_access_txt = "0"
-	},
-/obj/machinery/door_control{
-	id = "QMLoaddoor";
-	layer = 3;
-	name = "Loading Doors";
-	pixel_x = -24;
-	pixel_y = -8;
-	req_access_txt = "0"
-	},
-/turf/simulated/shuttle/floor,
-/area/shuttle/supply)
-"atw" = (
-/obj/machinery/light/spot{
-	dir = 4;
-	icon_state = "tube1";
-	tag = "icon-tube1 (EAST)"
-	},
-/turf/simulated/shuttle/floor,
-/area/shuttle/supply)
 "atA" = (
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -7076,13 +6987,6 @@
 	icon_state = "yellowcorner"
 	},
 /area/hallway/primary/fore/fore_starboard)
-"atD" = (
-/obj/structure/plasticflaps/mining,
-/obj/machinery/conveyor/west{
-	id = "QMLoad"
-	},
-/turf/simulated/shuttle/plating,
-/area/shuttle/supply)
 "atF" = (
 /obj/docking_port/stationary{
 	dir = 8;
@@ -7106,38 +7010,6 @@
 	},
 /turf/space,
 /area/space)
-"atR" = (
-/turf/simulated/shuttle/wall{
-	dir = 2;
-	icon_state = "swall7";
-	tag = "icon-swall7"
-	},
-/area/shuttle/supply)
-"atS" = (
-/turf/simulated/shuttle/floor,
-/turf/simulated/shuttle/wall/interior{
-	icon_state = "swall_f10";
-	tag = "icon-swall_f10"
-	},
-/area/shuttle/supply)
-"atT" = (
-/obj/machinery/light/spot,
-/turf/simulated/shuttle/floor,
-/area/shuttle/supply)
-"atU" = (
-/turf/simulated/shuttle/floor,
-/turf/simulated/shuttle/wall/interior{
-	icon_state = "swall_f6";
-	tag = "icon-swall_f6"
-	},
-/area/shuttle/supply)
-"atV" = (
-/turf/simulated/shuttle/wall{
-	dir = 2;
-	icon_state = "swall11";
-	tag = "icon-swall11"
-	},
-/area/shuttle/supply)
 "aue" = (
 /obj/effect/decal/warning_stripes/southwest,
 /obj/structure/chair/office/light{
@@ -7145,54 +7017,6 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/engine/mechanic_workshop)
-"auf" = (
-/turf/space,
-/turf/simulated/shuttle/wall{
-	dir = 2;
-	icon_state = "swall_f5";
-	tag = "icon-swall_f5"
-	},
-/area/shuttle/supply)
-"aug" = (
-/turf/simulated/shuttle/wall{
-	dir = 2;
-	icon_state = "swall15";
-	tag = "icon-swall15"
-	},
-/area/shuttle/supply)
-"auh" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/shuttle/engine/heater,
-/turf/simulated/shuttle/plating,
-/area/shuttle/supply)
-"aui" = (
-/turf/space,
-/turf/simulated/shuttle/wall{
-	dir = 2;
-	icon_state = "swall_f9";
-	tag = "icon-swall_f9"
-	},
-/area/shuttle/supply)
-"auq" = (
-/obj/structure/shuttle/engine/propulsion{
-	icon_state = "burst_l";
-	tag = "icon-burst_l"
-	},
-/turf/simulated/shuttle/plating,
-/area/shuttle/supply)
-"aur" = (
-/obj/structure/shuttle/engine/propulsion,
-/turf/simulated/shuttle/plating,
-/area/shuttle/supply)
-"aus" = (
-/obj/structure/shuttle/engine/propulsion{
-	icon_state = "burst_r";
-	tag = "icon-burst_r"
-	},
-/turf/simulated/shuttle/plating,
-/area/shuttle/supply)
 "auv" = (
 /obj/structure/closet/secure_closet/engineering_personal,
 /obj/machinery/light,
@@ -43259,10 +43083,6 @@
 /obj/structure/disposalpipe/trunk,
 /turf/simulated/floor/wood,
 /area/crew_quarters/cafeteria)
-"bQD" = (
-/obj/structure/closet/crate/can,
-/turf/simulated/floor/wood,
-/area/crew_quarters/cafeteria)
 "bQE" = (
 /obj/structure/table,
 /obj/item/hatchet,
@@ -70651,12 +70471,12 @@
 	},
 /area/bridge)
 "cKO" = (
-/obj/structure/table/reinforced,
 /obj/machinery/status_display{
 	layer = 4;
 	pixel_x = 0;
 	pixel_y = 32
 	},
+/obj/machinery/smartfridge/drinks,
 /turf/simulated/floor/plasteel{
 	icon_state = "grimy"
 	},
@@ -136062,17 +135882,17 @@ aae
 aaa
 aaa
 aaa
-asF
-asR
-asR
-atj
-atq
-asR
-atq
-atD
-asR
-atR
-auf
+ddx
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+ddx
 aaa
 aaa
 aaa
@@ -136319,18 +136139,18 @@ aae
 dbZ
 dbZ
 aaa
-asH
-asT
-asT
-asT
-asT
-atv
-asT
-asT
-asT
-atS
-aug
-auq
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+ddx
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -136576,18 +136396,18 @@ aae
 aae
 dbZ
 aaa
-asH
-asT
-asT
-asT
-asT
-asT
-asT
-asT
-asT
-asT
-auh
-aur
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -136833,18 +136653,18 @@ bZy
 aae
 aaa
 aaa
-asH
-asU
-asT
-asT
-asT
-asT
-asT
-asT
-asT
-atT
-auh
-aur
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 ddx
 aaa
 aaa
@@ -137090,18 +136910,18 @@ acQ
 aae
 aaa
 aaa
-asH
-asT
-asT
-asT
-asT
-asT
-asT
-asT
-asT
-asT
-auh
-aur
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -137347,18 +137167,18 @@ acA
 aae
 adl
 aaa
-asH
-asT
-asT
-asT
-asT
-atw
-asT
-asT
-asT
-atU
-aug
-aus
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+ddx
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -137604,17 +137424,17 @@ aae
 aae
 dbZ
 aaa
-asI
-asR
-asR
-asR
-asR
-asR
+ddx
+aaa
+aaa
+aaa
+aaa
+aaa
 aoh
-asR
-asR
-atV
-aui
+aaa
+aaa
+aaa
+ddx
 aaa
 aaa
 aaa
@@ -137900,7 +137720,7 @@ bGk
 bDd
 byZ
 byC
-bQD
+aSV
 bCH
 cKF
 bCH
@@ -137909,7 +137729,7 @@ bCH
 bZY
 cJX
 aSV
-aSV
+asF
 bSc
 dli
 doX
