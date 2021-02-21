@@ -346,7 +346,7 @@
 	flags = BLOCKHAIR
 
 /obj/item/clothing/head/clowncapo
-	name = "Clown Capo's Fedora"
+	name = "\improper Clown Capo's fedora"
 	desc = "The esteemed Clown Caporegime's fedora. Looks swell."
 	icon_state = "wfedora"
 	item_state = "wfedora"

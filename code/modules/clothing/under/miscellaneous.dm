@@ -649,14 +649,14 @@
 	item_color = "colin_earle"
 
 /obj/item/clothing/under/clowncapouniform
-	name = "Clown Mafia Capo's Uniform"
+	name = "\improper Clown Mafia Capo's uniform"
 	desc = "For a Caporegime of the great Clown Mafia, this uniform was designed by the great clown designer Honko Boss."
 	icon_state = "mafia"
 	item_color = "mafia"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/clownmafiauniform
-	name = "Clown Mafia Soldati Uniform"
+	name = "\improper Clown Mafia Soldati uniform"
 	desc = "For the basic grunt of the Clown mafia."
 	icon_state = "mafiavest"
 	item_color = "mafiavest"
