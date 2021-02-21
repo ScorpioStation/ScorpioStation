@@ -23,9 +23,9 @@
 	description_info = "This is an energy weapon. Most energy weapons can fire through windows harmlessly.  To switch between stun and lethal, click the weapon \
 	in your hand.  To recharge this weapon, use a weapon recharger."
 
-/obj/item/gun/energy/gun/advtaser
-	description_info = "This is an energy weapon. To recharge this weapon, use a weapon recharger. \
-	To switch between insta-stun and disabler beams, click the weapon in your hand. This weapon can only fire through glass if it is set to disabler beams."
+// /obj/item/gun/energy/gun/advtaser
+// 	description_info = "This is an energy weapon. To recharge this weapon, use a weapon recharger. \
+// 	To switch between insta-stun and disabler beams, click the weapon in your hand. This weapon can only fire through glass if it is set to disabler beams."
 
 /obj/item/gun/energy/nuclear
 	description_info = "This is an energy weapon. Most energy weapons can fire through windows harmlessly.  To switch between stun and lethal, click the weapon \

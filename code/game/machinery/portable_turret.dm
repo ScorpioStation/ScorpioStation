@@ -119,9 +119,9 @@
 		if(/obj/item/gun/energy/lasercannon)
 			iconholder = 1
 
-		if(/obj/item/gun/energy/taser)
-			eprojectile = /obj/item/projectile/beam
-			eshot_sound = 'sound/weapons/laser.ogg'
+		// if(/obj/item/gun/energy/taser)
+		// 	eprojectile = /obj/item/projectile/beam
+		// 	eshot_sound = 'sound/weapons/laser.ogg'
 
 		if(/obj/item/gun/energy/gun)
 			eprojectile = /obj/item/projectile/beam	//If it has, going to kill mode

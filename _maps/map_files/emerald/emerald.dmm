@@ -72687,17 +72687,17 @@
 /obj/structure/rack,
 /obj/effect/decal/warning_stripes/north,
 /obj/structure/window/reinforced,
-/obj/item/gun/energy/gun/advtaser{
+/obj/item/gun/projectile/automatic/pistol/enforcer{
 	layer = 2.91;
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/gun/energy/gun/advtaser{
+/obj/item/gun/projectile/automatic/pistol/enforcer{
 	layer = 2.92;
 	pixel_x = 0;
 	pixel_y = 0
 	},
-/obj/item/gun/energy/gun/advtaser{
+/obj/item/gun/projectile/automatic/pistol/enforcer{
 	layer = 2.93;
 	pixel_x = 3;
 	pixel_y = -3
@@ -79545,17 +79545,17 @@
 	tag = "icon-rwindow (EAST)"
 	},
 /obj/structure/window/reinforced,
-/obj/item/gun/energy/gun/advtaser{
+/obj/item/gun/projectile/automatic/pistol/enforcer{
 	layer = 2.91;
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/gun/energy/gun/advtaser{
+/obj/item/gun/projectile/automatic/pistol/enforcer{
 	layer = 2.92;
 	pixel_x = 0;
 	pixel_y = 0
 	},
-/obj/item/gun/energy/gun/advtaser{
+/obj/item/gun/projectile/automatic/pistol/enforcer{
 	layer = 2.93;
 	pixel_x = 3;
 	pixel_y = -3

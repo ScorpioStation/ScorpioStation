@@ -96,21 +96,21 @@
 	// Used by gamma ERT borgs
 	e_cost = 1000 // 5x that of the standard laser, for 7.5x the damage (if 6/6 shots hit) plus ignite. Efficient only if you hit with at least 4/6 of the shots.
 
-/obj/item/ammo_casing/energy/electrode
-	projectile_type = /obj/item/projectile/energy/electrode
-	muzzle_flash_color = "#FFFF00"
-	select_name = "stun"
-	fire_sound = 'sound/weapons/taser.ogg'
-	e_cost = 200
-	delay = 15
-	harmful = FALSE
+// /obj/item/ammo_casing/energy/electrode
+// 	projectile_type = /obj/item/projectile/energy/electrode
+// 	muzzle_flash_color = "#FFFF00"
+// 	select_name = "stun"
+// 	fire_sound = 'sound/weapons/taser.ogg'
+// 	e_cost = 200
+// 	delay = 15
+// 	harmful = FALSE
 
-/obj/item/ammo_casing/energy/electrode/gun
-	fire_sound = 'sound/weapons/gunshots/gunshot.ogg'
-	e_cost = 100
+// /obj/item/ammo_casing/energy/electrode/gun
+// 	fire_sound = 'sound/weapons/gunshots/gunshot.ogg'
+// 	e_cost = 100
 
-/obj/item/ammo_casing/energy/electrode/hos //allows balancing of HoS and blueshit guns seperately from other energy weapons
-	e_cost = 200
+// /obj/item/ammo_casing/energy/electrode/hos //allows balancing of HoS and blueshit guns seperately from other energy weapons
+// 	e_cost = 200
 
 /obj/item/ammo_casing/energy/ion
 	projectile_type = /obj/item/projectile/ion
