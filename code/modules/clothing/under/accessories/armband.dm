@@ -7,9 +7,7 @@
 
 /obj/item/clothing/accessory/armband/sec
 	name = "security armband"
-	desc = "An armband, worn by the crew to display which department they're assigned to. This one is white and red."
-	icon_state = "whitered"
-	item_color = "whitered"
+	desc = "An armband, worn by the crew to display which department they're assigned to. This one is red."
 
 /obj/item/clothing/accessory/armband/yb
 	name = "blue-yellow armband"

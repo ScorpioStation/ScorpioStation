@@ -345,11 +345,11 @@
 	item_state = "panzercap"
 	flags = BLOCKHAIR
 
-/obj/item/clothing/head/naziofficer
-	name = "Clown Officer Cap"
-	desc = "The peaked clown officer's cap, disturbingly similar to the warden's."
-	icon_state = "officercap"
-	item_state = "officercap"
+/obj/item/clothing/head/clowncapo
+	name = "Clown Capo's Fedora"
+	desc = "The esteemed Clown Caporegime's fedora. Looks swell."
+	icon_state = "wfedora"
+	item_state = "wfedora"
 	flags = BLOCKHAIR
 	flags_inv = HIDEEARS
 

@@ -420,8 +420,7 @@
 				. += ", <a href='?src=[UID()];common=crystals'>[crystals]</a> crystals"
 			else
 				. += ", [crystals] crystals"
-		. += "." //hiel grammar
-		//         ^ whoever left this comment is literally a grammar nazi. stalin better. in russia grammar correct you.
+		. += "."
 
 /datum/mind/proc/edit_memory()
 	if(!SSticker || !SSticker.mode)
