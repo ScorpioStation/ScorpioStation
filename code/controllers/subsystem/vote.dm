@@ -1,3 +1,4 @@
+#define VOTE_INITIATED_BY_SERVER "the server"
 #define VOTE_SUPERCHARGE_NO "Our Power Situation Is Under Control"
 #define VOTE_SUPERCHARGE_YES "Request Emergency Power Transmission"
 
@@ -51,7 +52,10 @@ SUBSYSTEM_DEF(vote)
 				CHECK_TICK
 
 /datum/controller/subsystem/vote/proc/autotransfer()
-	initiate_vote("crew_transfer","the server")
+	initiate_vote("crew_transfer", VOTE_INITIATED_BY_SERVER)
+
+/datum/controller/subsystem/vote/proc/start_vote_for_next_map()
+	initiate_vote(VOTE_TYPE_MAP, VOTE_INITIATED_BY_SERVER)
 
 /datum/controller/subsystem/vote/proc/reset()
 	initiator = null
@@ -226,13 +230,14 @@ SUBSYSTEM_DEF(vote)
 	return 0
 
 /datum/controller/subsystem/vote/proc/initiate_vote(var/vote_type, var/initiator_key)
-	log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): Entering")
+	log_game("Vote ([vote_type] by [initiator_key]) initiated.")
 	if(!mode)
-		if(started_time != null && !check_rights(R_ADMIN))
+		// if we already had a vote once, and this wasn't initiated by an admin, and this wasn't initiated by the server itself
+		if(started_time != null && !check_rights(R_ADMIN) && (initiator_key != VOTE_INITIATED_BY_SERVER))
+			// if it's too soon for another vote, bail
 			var/next_allowed_time = (started_time + config.vote_delay)
 			if(next_allowed_time > world.time)
-				log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): Vote NOT initiated (next_allowed_time=[next_allowed_time], world.time=[world.time])")
-				log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): Exiting FALSE")
+				log_game("Vote ([vote_type] by [initiator_key]) cancelled due to timing (next_allowed_time=[next_allowed_time] > world.time=[world.time])")
 				return FALSE
 
 		reset()
@@ -247,7 +252,6 @@ SUBSYSTEM_DEF(vote)
 				for(var/m in GLOB.map_voting_map)
 					choices.Add(m)
 				sortList(choices)
-				log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): VOTE_TYPE_MAP (choices=[english_list(choices)])")
 			if("gamemode")
 				if(SSticker.current_state >= 2)
 					return FALSE
@@ -272,8 +276,7 @@ SUBSYSTEM_DEF(vote)
 					if(!option || mode || !usr.client)	break
 					choices.Add(option)
 			else
-				log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): Vote NOT initiated (vote_type is default case; no handler code)")
-				log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): Exiting FALSE")
+				log_game("Vote ([vote_type] by [initiator_key]) cancelled due to unknown vote_type.")
 				return FALSE
 		mode = vote_type
 		initiator = initiator_key
@@ -328,10 +331,9 @@ SUBSYSTEM_DEF(vote)
 			message_admins("OOC has been toggled off automatically.")
 
 		time_remaining = round(config.vote_period/10)
-		log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): Exiting TRUE")
+		log_game("Vote ([vote_type] by [initiator_key]) has begun.")
 		return TRUE
-	log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): Vote NOT initiated (mode=[mode])")
-	log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): Exiting FALSE")
+	log_game("Vote ([vote_type] by [initiator_key]) cancelled due to existing vote ([mode])")
 	return FALSE
 
 /datum/controller/subsystem/vote/proc/browse_to(var/client/C)
@@ -484,5 +486,6 @@ SUBSYSTEM_DEF(vote)
 		return FALSE
 	return the_pa.active
 
+#undef VOTE_INITIATED_BY_SERVER
 #undef VOTE_SUPERCHARGE_NO
 #undef VOTE_SUPERCHARGE_YES
