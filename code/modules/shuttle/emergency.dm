@@ -232,7 +232,7 @@
 				timer = world.time
 				emergency_shuttle_docked.Announce("The Emergency Shuttle has docked with the station. You have [timeLeft(600)] minutes to board the Emergency Shuttle.")
 				// ask the players which map they want to play on next
-				INVOKE_ASYNC(SSvote, /datum/controller/subsystem/vote/.proc/initiate_vote, VOTE_TYPE_MAP)
+				INVOKE_ASYNC(SSvote, /datum/controller/subsystem/vote/.proc/initiate_vote, VOTE_TYPE_MAP, "the server")
 
 /*
 				//Gangs only have one attempt left if the shuttle has docked with the station to prevent suffering from dominator delays

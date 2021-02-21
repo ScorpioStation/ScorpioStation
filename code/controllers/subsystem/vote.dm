@@ -226,11 +226,14 @@ SUBSYSTEM_DEF(vote)
 	return 0
 
 /datum/controller/subsystem/vote/proc/initiate_vote(var/vote_type, var/initiator_key)
+	log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): Entering")
 	if(!mode)
 		if(started_time != null && !check_rights(R_ADMIN))
 			var/next_allowed_time = (started_time + config.vote_delay)
 			if(next_allowed_time > world.time)
-				return 0
+				log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): Vote NOT initiated (next_allowed_time=[next_allowed_time], world.time=[world.time])")
+				log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): Exiting FALSE")
+				return FALSE
 
 		reset()
 		switch(vote_type)
@@ -244,30 +247,34 @@ SUBSYSTEM_DEF(vote)
 				for(var/m in GLOB.map_voting_map)
 					choices.Add(m)
 				sortList(choices)
+				log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): VOTE_TYPE_MAP (choices=[english_list(choices)])")
 			if("gamemode")
 				if(SSticker.current_state >= 2)
-					return 0
+					return FALSE
 				choices.Add(config.votable_modes)
 			if("crew_transfer")
 				if(check_rights(R_ADMIN|R_MOD))
 					if(SSticker.current_state <= 2)
-						return 0
+						return FALSE
 					question = "End the shift?"
 					choices.Add("Initiate Crew Transfer", "Continue The Round")
 				else
 					if(SSticker.current_state <= 2)
-						return 0
+						return FALSE
 					question = "End the shift?"
 					choices.Add("Initiate Crew Transfer", "Continue The Round")
 			if("custom")
 				question = html_encode(input(usr,"What is the vote for?") as text|null)
-				if(!question)	return 0
+				if(!question)
+					return FALSE
 				for(var/i=1,i<=10,i++)
 					var/option = capitalize(html_encode(input(usr,"Please enter an option or hit cancel to finish") as text|null))
 					if(!option || mode || !usr.client)	break
 					choices.Add(option)
 			else
-				return 0
+				log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): Vote NOT initiated (vote_type is default case; no handler code)")
+				log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): Exiting FALSE")
+				return FALSE
 		mode = vote_type
 		initiator = initiator_key
 		started_time = world.time
@@ -321,8 +328,11 @@ SUBSYSTEM_DEF(vote)
 			message_admins("OOC has been toggled off automatically.")
 
 		time_remaining = round(config.vote_period/10)
-		return 1
-	return 0
+		log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): Exiting TRUE")
+		return TRUE
+	log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): Vote NOT initiated (mode=[mode])")
+	log_game("initiate_vote(vote_type=[vote_type], initiator_key=[initiator_key]): Exiting FALSE")
+	return FALSE
 
 /datum/controller/subsystem/vote/proc/browse_to(var/client/C)
 	if(!C)
