@@ -3,10 +3,10 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "box_0"
 	desc = "A frame to create a reflector.\n<span class='notice'>Use <b>5</b> sheets of <b>glass</b> to create a 1 way reflector.\nUse <b>10</b> sheets of <b>reinforced glass</b> to create a 2 way reflector.\nUse <b>1 diamond</b> to create a reflector cube.</span>"
-	anchored = 0
-	density = 1
+	anchored = FALSE
+	anchored = TRUE
 	layer = 3
-	var/finished = 0
+	var/finished = FALSE
 
 
 /obj/structure/reflector/bullet_act(obj/item/projectile/P)
@@ -49,7 +49,7 @@
 				return
 			else
 				S.use(5)
-				new /obj/structure/reflector/single (src.loc)
+				new /obj/structure/reflector/single (loc)
 				qdel(src)
 		if(istype(W,/obj/item/stack/sheet/rglass))
 			if(S.get_amount() < 10)
@@ -57,12 +57,12 @@
 				return
 			else
 				S.use(10)
-				new /obj/structure/reflector/double (src.loc)
+				new /obj/structure/reflector/double (loc)
 				qdel(src)
 		if(istype(W, /obj/item/stack/sheet/mineral/diamond))
 			if(S.get_amount() >= 1)
 				S.use(1)
-				new /obj/structure/reflector/box (src.loc)
+				new /obj/structure/reflector/box (loc)
 				qdel(src)
 		return
 	return ..()
@@ -79,7 +79,12 @@
 		return
 	playsound(user, 'sound/items/Ratchet.ogg', 50, 1)
 	TOOL_DISMANTLE_SUCCESS_MESSAGE
-	new /obj/item/stack/sheet/metal(src.loc, 5)
+	new /obj/item/stack/sheet/metal(loc, 5)
+	if(istype(src, /obj/structure/reflector/double))
+		new /obj/item/stack/sheet/rglass(loc, 10)
+	if(istype(src, /obj/structure/reflector/box))
+		new /obj/item/stack/sheet/rglass(loc, 10)
+		new /obj/item/stack/sheet/mineral/diamond(loc, 1)
 	qdel(src)
 
 /obj/structure/reflector/welder_act(mob/user, obj/item/I)
@@ -137,7 +142,7 @@
 	icon = 'icons/obj/reflector.dmi'
 	icon_state = "reflector"
 	desc = "A double sided angled mirror for reflecting lasers. This one does so at a 90 degree angle."
-	finished = 1
+	finished = TRUE
 	var/static/list/rotations = list("[NORTH]" = list("[SOUTH]" = WEST, "[EAST]" = NORTH),
 "[EAST]" = list("[SOUTH]" = EAST, "[WEST]" = NORTH),
 "[SOUTH]" = list("[NORTH]" = EAST, "[WEST]" = SOUTH),
@@ -154,7 +159,7 @@
 	icon = 'icons/obj/reflector.dmi'
 	icon_state = "reflector_double"
 	desc = "A double sided angled mirror for reflecting lasers. This one does so at a 90 degree angle."
-	finished = 1
+	finished = TRUE
 	var/static/list/double_rotations = list("[NORTH]" = list("[NORTH]" = WEST, "[EAST]" = SOUTH, "[SOUTH]" = EAST, "[WEST]" = NORTH),
 "[EAST]" = list("[NORTH]" = EAST, "[WEST]" = SOUTH, "[SOUTH]" = WEST, "[EAST]" = NORTH),
 "[SOUTH]" = list("[NORTH]" = EAST, "[WEST]" = SOUTH, "[SOUTH]" = WEST, "[EAST]" = NORTH),
@@ -171,7 +176,7 @@
 	icon = 'icons/obj/reflector.dmi'
 	icon_state = "reflector_box"
 	desc = "A box with an internal set of mirrors that reflects all laser fire in a single direction."
-	finished = 1
+	finished = TRUE
 	var/static/list/box_rotations = list("[NORTH]" = list("[SOUTH]" = NORTH, "[EAST]" = NORTH, "[WEST]" = NORTH, "[NORTH]" = NORTH),
 "[EAST]" = list("[SOUTH]" = EAST, "[EAST]" = EAST, "[WEST]" = EAST, "[NORTH]" = EAST),
 "[SOUTH]" = list("[SOUTH]" = SOUTH, "[EAST]" = SOUTH, "[WEST]" = SOUTH, "[NORTH]" = SOUTH),
