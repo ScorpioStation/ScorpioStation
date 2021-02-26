@@ -346,6 +346,8 @@
 							set_temp("Initiating cloning cycle...", "success")
 							records.Remove(C)
 							qdel(C)
+							active_record = pod.occupant
+							SStgui.update_uis(src)
 							menu = MENU_MAIN
 						else
 							set_temp("Error: Initialisation failure.", "danger")
