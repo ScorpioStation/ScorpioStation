@@ -249,12 +249,13 @@
 					qdel(active_record)
 					set_temp("Error: Record corrupt.", "danger")
 				else
-					var/obj/item/implant/health/H = null
-					if(active_record.implant)
-						H = locate(active_record.implant)
+					var/healthstring = "No Vitals Data Available"
+					if(ishuman(scanner.occupant))
+						var/mob/living/carbon/human/M = scanner.occupant
+						healthstring = "[round(M.getOxyLoss())] - [round(M.getFireLoss())] - [round(M.getToxLoss())] - [round(M.getBruteLoss())]"
 					var/list/payload = list(
 						activerecord = "\ref[active_record]",
-						health = (H && istype(H)) ? H.sensehealth() : "",
+						health = sanitize(healthstring),
 						realname = sanitize(active_record.dna.real_name),
 						unidentity = active_record.dna.uni_identity,
 						strucenzymes = active_record.dna.struc_enzymes,
@@ -346,8 +347,6 @@
 							set_temp("Initiating cloning cycle...", "success")
 							records.Remove(C)
 							qdel(C)
-							active_record = pod.occupant
-							SStgui.update_uis(src)
 							menu = MENU_MAIN
 						else
 							set_temp("Error: Initialisation failure.", "danger")
@@ -374,7 +373,7 @@
 
 	src.add_fingerprint(usr)
 
-/obj/machinery/computer/cloning/proc/scan_mob(mob/living/carbon/human/subject as mob, var/scan_brain = 0)
+/obj/machinery/computer/cloning/proc/scan_mob(mob/living/carbon/human/subject, var/scan_brain = 0)
 	if(stat & NOPOWER)
 		return
 	if(scanner.stat & (NOPOWER|BROKEN))
@@ -446,12 +445,6 @@
 
 	R.types=DNA2_BUF_UI|DNA2_BUF_UE|DNA2_BUF_SE
 	R.languages=subject.languages
-	//Add an implant if needed
-	var/obj/item/implant/health/imp = locate(/obj/item/implant/health, subject)
-	if(!imp)
-		imp = new /obj/item/implant/health(subject)
-		imp.implant(subject)
-	R.implant = "\ref[imp]"
 
 	if(!isnull(subject.mind)) //Save that mind so traitors can continue traitoring after cloning.
 		R.mind = "\ref[subject.mind]"
