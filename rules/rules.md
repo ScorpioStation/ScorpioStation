@@ -73,7 +73,7 @@ Choose appropriate and original names for your characters that are not vulgar or
 Do not use the names of real people or fictional characters. Inspiration is fine, but it should not be blatantly obvious that you are copying or referencing a real person or fictional character.
 
 ## Rule 5: Keeping a respectful environment
-Do not use any real life slurs (i.e. "faggot", "nigger", etc.) in any communication channel.
+Do not use any real life slurs in any communication channel.
 
 Do not use any slurs based on real life slurs (i.e. "furfag", "ligger", etc.) in any communication channel.
 

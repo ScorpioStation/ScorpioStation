@@ -12,9 +12,9 @@ In order to ensure workplace productivity, an operating knowledge of Space Law i
 
 For certain crimes, the intention of the accused is important. The difference between [Murder](#murder-502) and [Manslaughter](#manslaughter-401) can be hard to ascertain. When in doubt, you should default to the lesser crime.
 
-**Multiple Counts** - Charging someone with multiple counts of a crime is disallowed. Even if someone steals every toolbox on the station, it is only one count of **Petty Theft (107)**.
+**Multiple Counts** - Charging someone with multiple counts of a crime is disallowed. Even if someone steals every toolbox on the station, it is only one count of [Petty Theft](#petty-theft-107).
 
-Knowingly aiding a criminal is **Aiding and Abetting**. Offenders are to be charged with the same sentence as the person they helped with a minimum charge of five minutes.
+Knowingly aiding a criminal is [Aiding and Abetting](#aiding-and-abetting). Offenders are to be charged with the same sentence as the person they helped with a minimum charge of five minutes.
 
 ### Crime Stacking ###
 The rules regarding crime stacking (charging someone with multiple crimes simultaneously) are:
@@ -25,7 +25,7 @@ The rules regarding crime stacking (charging someone with multiple crimes simult
 
 * Crimes which are very similar (e.g: contraband and drug possession, for the same item) cannot be stacked together. Charge only the most serious crime.
 
-* Otherwise, crimes CAN be stacked together. e.g: you can charge someone with BOTH **Breaking and Entering (208)** AND **Petty Theft (107)** for breaking in and stealing something. The timers are added together.
+* Otherwise, crimes CAN be stacked together. e.g: you can charge someone with BOTH [Breaking and Entering](#breaking-and-entering-208) AND [Petty Theft](#petty-theft-107) for breaking in and stealing something. The timers are added together.
 
 ### Brig Procedures
 See Also: Legal Standard Operating Procedure
@@ -34,7 +34,7 @@ Special precautions are to be taken aside from Standard Brigging Procedures:
 
 * Ask Vox or Plasmamen prisoners where their Internals Tank is located. **Do not remove this tank, as it will kill them.** In such a case where their clothes have to be changed, **expedience is mandatory.**
 
-* All *Contraband* is to be confiscated and placed in Evidence Storage, this includes tools used in a crime. These are **not** to be returned.
+* All [Contraband](#contraband) is to be confiscated and placed in Evidence Storage, this includes tools used in a crime. These are **not** to be returned.
 
 * Make routine checks on the Permabrig, Solitary, and Labor Camp areas if they happen to be occupied.
 
@@ -97,461 +97,334 @@ The greater good of the station should be considered when sentencing. If someone
 
 ## Space Law
 
-### Crime Codes Quick Reference ####
-Use this to quickly find Crime Code Numbers.
+### Crime Codes Quick Reference
+Use this to quickly find Crime Code Numbers. You can click on the name of a crime to immediately navigate to it.
 
 Crime codes are organized by a Category Code `(_xx)` which is a collection of non-stackable crimes on a row, prefixed by the Severity Number `(X__)`.
 
 Code | 1XX - Minor (0-5 minutes) | 2XX - Medium (5-10 minutes) | 3XX - Major (10-15 minutes) | 4XX - Exceptional (Permabrig) | 5XX - Capital (Permabrig/Execution)
 ---|---|---|---|---|---
-00 | [Damage to Station Assets](#damage-to-station-assets-100) | Creating a Workplace Hazard | Sabotage | Grand Sabotage |
-01 | | Kidnapping | Kidnapping of an Officer | Manslaughter
-02 | Battery | Assault | Aggravated Assault | Attempted Murder | Murder
-03 | Drug Possession | Narcotics Distribution
-04 | | Possession of a Weapon | Possession of a Restricted Weapon
-05 | Indecent Exposure | Rioting | Inciting a Riot | | Mutiny
-06 | Abuse of Equipment | Abuse of Confiscated Equipment | Possession of Contraband
-07 | Petty Theft | Robbery | Theft | Grand Theft
-08 | Trespass | Breaking and Entering | Major Trespass
-09 | Resisting Arrest | | Assault of an Officer
+00 | [Damage to Station Assets](#damage-to-station-assets-100) | [Creating a Workplace Hazard](#creating-a-workplace-hazard-200) | [Sabotage](#sabotage-300) | [Grand Sabotage](#grand-sabotage-400) |
+01 | | [Kidnapping](#kidnapping-201) | [Kidnapping of an Officer](#kidnapping-of-an-officer-301) | [Manslaughter](#manslaughter-401)
+02 | [Battery](#battery-102) | [Assault](#assault-202) | [Aggravated Assault](#aggravated-assault-302) | [Attempted Murder](#attempted-murder-402) | [Murder](#murder-502)
+03 | [Drug Possession](#drug-possession-103) | [Narcotics Distribution](#narcotics-distribution-203)
+04 | | [Possession of a Weapon](#possession-of-a-weapon-204) | [Possession of a Restricted Weapon](#possession-of-a-restricted-weapon-304)
+05 | [Indecent Exposure](#indecent-exposure-105) | [Rioting](#rioting-205) | [Inciting a Riot](#inciting-a-riot-305) | | [Mutiny](#mutiny-505)
+06 | [Abuse of Equipment](#abuse-of-equipment-106) | [Abuse of Confiscated Equipment](#abuse-of-confiscated-equipment-206) | [Possession of Contraband](#possession-of-contraband-306)
+07 | [Petty Theft](#petty-theft-107) | [Robbery](#robbery-207) | [Theft](#theft-307) | [Grand Theft](#grand-theft-407)
+08 | [Trespass](#trespass-108) | [Breaking and Entering](#breaking-and-entering-208) | [Major Trespass](#major-trespass-308)
+09 | [Resisting Arrest](#resisting-arrest-109) | | [Assault of an Officer](#assault-of-an-officer-309)
 
-### Modifiers Quick Reference ###
+### Modifiers Quick Reference
+Use this to quickly find [Modifiers](#modifiers-and-special-situations) and their values. You can click on the name of a modifier to immediately navigate to it.
 
-Use this to quickly find [[#Modifiers & Special Situations|Modifiers]] and their values. You can click on the name of a modifier to immediately navigate to it.
+Some modifiers, such as [Repeat Offender](#repeat-offender), [Aiding and Abetting](#aiding-and-abetting), and [Parole](#parole) have special clauses and conditions.
 
-Some modifiers, such as [[#Repeat Offender|Repeat Offender]], [[#Aiding and Abetting|Aiding and Abetting]], and [[#Parole|Parole]] have special clauses and conditions.
-{| class="wikitable sortable" style="text-align: center; width: 70%; background-color: #B4FFA5;"
-|- style="font-weight: bold; text-align: center; background-color: #000000; color: white;"
-| style="width: 245px;" class="unsortable" | Situation
-| style="width: 210px;" class="unsortable" | Modifier
-| style="width: 245px;" class="unsortable" | Situation
-| style="width: 210px;" class="unsortable" | Modifier
-|-
-! style="font-weight: normal;" | **[[#Aiding and Abetting|Aiding and Abetting]]**
-| Partner's sentence; minimum 5
-! style="font-weight: normal;" | **[[#Medical Attention|Medical Attention]]**
-| Running Timer
-|-
-! style="font-weight: normal;" | **[[#Central Command Directive|Central Command Directive]]**
-| Sentence Overridden
-! style="font-weight: normal;" | **[[#Parole|Parole]]**
-| Parole Until Release
-|-
-! style="font-weight: normal;" | **[[#Cooperation with Security|Cooperation with Security]]**
-| 50% reduction
-! style="font-weight: normal;" | **[[#Refusal to Cooperate|Refusal to Cooperate]]**
-| 50% addition
-|-
-! style="font-weight: normal;" | **[[#Escape from Brig|Escape from Brig]]**
-| Reset Timer or +5 mins
-! style="font-weight: normal;" | **[[#Repeat Offender|Repeat Offender]]**
-| +5 mins on 3rd same offense
-|-
-! style="font-weight: normal;" | **[[#Hostile Brainwashing|Hostile Brainwashing]]**
-| Deconversion & Release
-! style="font-weight: normal;" | **[[#Self Defense|Self Defense]]**
-| Immediate Release
-|-
-! style="font-weight: normal;" | **[[#Immediate Threat to Prisoner|Immediate Threat to Prisoner]]**
-| Immediate Release/Relocation
-! style="font-weight: normal;" | **[[#Surrender|Surrender]]**
-| 50% reduction
-|}
+Situation | Modifier
+----------|---------
+[Aiding and Abetting](#aiding-and-abetting) | Partner's sentence; minimum 5
+[Central Command Directive](#central-command-directive) | Sentence Overridden
+[Cooperation with Security](#cooperation-with-security) | 50% reduction
+[Escape from Brig](#escape-from-brig) | Reset Timer or +5 mins
+[Hostile Brainwashing](#hostile-brainwashing) | Deconversion & Release
+[Immediate Threat to Prisoner](#immediate-threat-to-prisoner) | Immediate Release/Relocation
+[Medical Attention](#medical-attention) | Running Timer
+[Parole](#parole) | Parole Until Release
+[Refusal to Cooperate](#refusal-to-cooperate) | 50% addition
+[Repeat Offender](#repeat-offender) | +5 mins on 3rd same offense
+[Self Defense](#self-defense) | Immediate Release
+[Surrender](#surrender) | 50% reduction
 
 ### Minor Crimes ###
 All of these crimes are punishable by a warning or sentence up to 5 minutes at the discretion of Security.
 
 #### Damage to Station Assets (100)
-**Crime**: To deliberately damage the station or station property to a minor degree with malicious intent.
+**Definition**: To deliberately damage the station or station property to a minor degree with malicious intent.
 
-**Notes**: *Departmental Pets*, *Cyborgs*, *Xenobio golems*, and *personal pets* are station property. Graffiti is not considered Damage to Station Assets, but destruction of personal belongings or property is. For serious damage to station property, see [Sabotage](#sabotage-300).
+**Notes**: *Departmental Pets*, *Cyborgs*, Xenobio golems, and personal pets are station property. Graffiti is not considered Damage to Station Assets, but destruction of personal belongings or property is. For serious damage to station property, see [Sabotage](#sabotage-300).
 
-[[File:LawDet.png|frame|The detective files a report during his investigation on Punpun's murder.]]
-[[File:LawCell.png|frame|Security temporarily transfers a permabrig prisoner to a smaller cell due to safety concerns.]]
-{| class="wikitable" style="text-align: center; width: 75%; background-color: #B4FFA5;"
-|- style="font-weight: bold; text-align: center; background-color: #6FD15C; color: black;"
-| style="width: 2em;"  | Code
-| style="width: 1px;"  | Image
-| style="width: 9em;"  | Crime
-| style="width: 17em;" | Description
-|                      | Notes
-|-
-! 100
-|[[File:SL_Damage to Station Assets.png]]{{anchor|Damage to Station Assets}}
-|**Damage to Station Assets**
-|
-|
-|-
-! 102
-|[[File:SL_Battery.png]]{{anchor|Battery}}
-|**Battery**
-| To use minor physical force against someone without intent to seriously injure them.
-| Repeated attempts at disarming (more than 3), tabling, non-lethal chokeholds, minor punching (less than four), smashing bottles on heads, and stunning are all considered battery. For serious harm, see [[#Assault|Assault]].
-|-
-! 103
-|[[File:SL_Drug Posession.png]]{{anchor|Drug Possession}}
-|**Drug Possession**
-| To possess space drugs, ambrosia, krokodil, crank, meth, aranesp, bath salts, THC, or other narcotics, by unauthorized personnel.
-| Botanists and MedSci staff are not subject to this law so long as they are not distributing or using them for profit or recreation. For distribution, see [[#Narcotics Distribution|Narcotics Distribution]].
-|-
-! 105
-|[[File:SL_Indecent Exposure.png]]{{anchor|Indecent Exposure}}
-|**Indecent Exposure**
-| To be intentionally and publicly unclothed.
-| Running around the station naked or otherwise unclothed.
-|-
-! 106
-|[[File:SL_Abuse of Equipment.png]]{{anchor|Abuse of Equipment}}
-|**Abuse of Equipment**
-| To utilize security/non-lethal equipment in an illegitimate fashion.
-| The use of disabling devices, such as Flashes, Batons, Tasers/Disablers, and non-lethal rounds, outside the range of one's assigned duties.
-|-
-! 107
-|[[File:SL_Petty Theft.png]]{{anchor|Petty Theft}}
-|**Petty Theft**
-| To take items from areas one lacks access to, or to take items belonging to others or the station as a whole.
-| Keeping items which are in short supply where they belong is what is important here. A doctor who takes all the surgical tools and hides them is guilty of Petty Theft. Resisting demotion is considered Petty Theft. For more serious cases, see [[#Theft|Theft]] or [[#Robbery|Robbery]].
-|-
-! 108
-|[[File:SL_Trespass.png]]{{anchor|Trespass}}
-|**Trespass**
-| To be in an area which a person lacks authorized ID access for. This counts for general areas of the station.
-| Remember that people can break in, sneak in, or be let in. Always check that the suspect wasn't let in, or was otherwise given access. Trespass and [[#Theft|Theft]] are often committed together; both sentences should be applied. For restricted areas, see [[#Major Trespass|Major Trespass]].
-|-
-! 109
-|[[File:SL_Resisting Arrest.png]]{{anchor|Resisting Arrest}}
-|**Resisting Arrest**
-| To resist an officer who attempts a proper arrest or search.
-| Personnel that have been illegitimately arrested cannot be charged with this law. Screaming over comms is not Resisting Arrest. The person must be actively attempting to either run away, or attack the arresting officer.
-|}
+#### Battery (102)
+**Definition**: To use minor physical force against someone without intent to seriously injure them.
 
-#### Medium Crimes ####
-<hr>
+**Notes**: Repeated attempts at disarming (more than 3), tabling, non-lethal chokeholds, minor punching (less than four), smashing bottles on heads, and stunning are all considered battery. For serious harm, see [Assault](#assault-202).
+
+#### Drug Possession (103)
+**Definition**: To possess space drugs, ambrosia, krokodil, crank, meth, aranesp, bath salts, THC, or other narcotics, by unauthorized personnel.
+
+**Notes**: Botanists and MedSci staff are not subject to this law so long as they are not distributing or using them for profit or recreation. For distribution, see [Narcotics Distribution](#narcotics-distribution-203).
+
+#### Indecent Exposure (105)
+**Definition**: To be intentionally and publicly unclothed.
+
+**Notes**: Running around the station naked or otherwise unclothed.
+
+#### Abuse of Equipment (106)
+**Definition**: To utilize security/non-lethal equipment in an illegitimate fashion.
+
+**Notes**: The use of disabling devices, such as Flashes, Batons, Tasers/Disablers, and non-lethal rounds, outside the range of one's assigned duties.
+
+#### Petty Theft (107)
+**Definition**: To take items from areas one lacks access to, or to take items belonging to others or the station as a whole.
+
+**Notes**: Keeping items which are in short supply where they belong is what is important here. A doctor who takes all the surgical tools and hides them is guilty of Petty Theft. Resisting demotion is considered Petty Theft. For more serious cases, see [Robbery](#robbery-207) or [Theft](#theft-307).
+
+#### Trespass (108)
+**Definition**: To be in an area which a person lacks authorized ID access for. This counts for general areas of the station.
+
+**Notes**: Remember that people can break in, sneak in, or be let in. Always check that the suspect wasn't let in, or was otherwise given access. Trespass and [Theft](#theft-307) are often committed together; both sentences should be applied. For restricted areas, see [Major Trespass](#major-trespass-308).
+
+#### Resisting Arrest (109)
+**Definition**: To resist an officer who attempts a proper arrest or search.
+
+**Notes**: Personnel that have been illegitimately arrested cannot be charged with this law. Screaming over comms is not Resisting Arrest. The person must be actively attempting to either run away, or attack the arresting officer.
+
+### Medium Crimes ###
 All of these crimes are punishable by a sentence of 5 to 10 minutes at the discretion of Security.
 
-<div style="display: grid; float: right;">
-<div style="float: right;">
-[[File:LawProc.png|frame|Security processing a suspected cultist.]]
-</div>
-{{LawModifiers}}
-</div>
+#### Creating a Workplace Hazard (200)
+**Definition**: To endanger the crew or station through negligent but not deliberately malicious actions.
 
-{| class="wikitable sortable" style="text-align: center; width: 75%; background-color: #ffee99;"
-|- style="font-weight: bold; text-align: center; background-color: #EAD672; color: black;"
-| style="width: 2em;"  | Code
-| style="width: 1px;"  | Image
-| style="width: 9em;"  | Crime
-| style="width: 17em;" | Description
-|                      | Notes
-|-
-! 200
-|[[File:SL_Creating A Workplace Hazard.png]]{{anchor|Creating a Workplace Hazard}}
-|**Creating a Workplace Hazard**
-| To endanger the crew or station through negligent but not deliberately malicious actions.
-| Examples of this crime involve accidental plasma leaks, slipping hazards, accidentally shocking doors, breaking windows to space, or Security personnel not keeping their equipment secure. A banana peel in the corridor is not a hazard. A banana peel in front of the singularity is. For Workplace Hazards that lead to death, see [[#Manslaughter|Manslaughter.]] Failure to follow legal security orders during Code Red may constitute Creating a Workplace Hazard, see [[Standard_Operating_Procedure#Alert_Levels|Code Red SOP.]]
-|-
-! 201
-|[[File:SL_Kidnapping.png]]{{anchor|Kidnapping}}
-|**Kidnapping**
-| To hold a crewmember under duress or against their will.
-| Physical harm is not required for this law to apply: the crewmember must kept in, or forcefully relocated to, a location against their will and be prevented from leaving. Cuffing/Restraining any personnel against their will, outside of legal arrests, qualifies as Kidnapping. For kidnapping of Command/Security see [[#Kidnapping of an Officer|Kidnapping of an Officer]].
-|-
-! 202
-|[[File:SL_Assault.png]]{{anchor|Assault}}
-|**Assault**
-| To use excessive physical force against someone without the apparent intent to kill them.
-| To cause serious but non-critical harm to another crewmember including, but not limited to, forcible/deceptive ingestion of toxic or illicit substances. For life-threatening harm, see [[#Aggravated Assault|Aggravated Assault]].
-|-
-! 203
-|[[File:SL_Narcotics Distribution.png]]{{anchor|Narcotics Distribution}}
-|**Narcotics Distribution**
-| To distribute narcotics and other controlled substances. This includes ambrosia and space drugs. It is not illegal for them to be grown.
-| Forcing or tricking someone to consume illicit or harmful substances, such as space drugs, is [[#Assault|Assault]]. For non-distributed drugs used for recreation, see [[#Drug Possession|Drug Possession]].
-|-
-! 204
-|[[File:SL_Weapon Posession.png]]{{anchor|Possession of a Weapon}}
-|**Possession of a Weapon**
-| To be in possession of a dangerous item that is not part of one's job.
-| Items capable of a high level of damage such as saws, axes, spears, stunprods, and hatchets fit into this category. If the item is part of someone's assigned duties they are permitted to carry it. For restricted weapons, see [[#Possession of a Restricted Weapon|Possession of a Restricted Weapon]].
-|-
-! 205
-|[[File:SL_Rioting.png]]{{anchor|Rioting}}
-|**Rioting**
-| To partake in an unauthorized and disruptive assembly of crewmen.
-| It is required to order the crowd to disperse; failure to disperse is the crime, not the assembly itself. Crimes committed during the riot are considered separate offenses. For the ringleader of a riot, see [[#Inciting a Riot|Inciting a Riot]].
-|-
-! 206
-|[[File:SL_Abuse of Confiscated Equipment.png]]{{anchor|Abuse of Confiscated Equipment}}
-|**Abuse of Confiscated Equipment**
-| To take and use equipment confiscated as evidence.
-| Evidence is not to be used for anything but evidence with the exception of the Syndicate Encryption Key. Anything used in a crime is considered evidence, this includes everything from tools, to guns, to emags. For general abuse of security equipment, see [[#Abuse of Equipment|Abuse of Equipment]].
-|-
-! 207
-|[[File:SL_Robbery.png]]{{anchor|Robbery}}
-|**Robbery**
-| To steal items from another's person.
-| Remember to return the stolen items to the lawful owner. Stealing an ID is the most common and serious form of robbery. If the victim was SSD, ahelp it - this isn't allowed. For robbery of more valuable items, see [[#Theft|Theft]] or [[#Grand Theft|Grand Theft]].
-|-
-! 208
-|[[File:SL_Breaking & Entering.png]]{{anchor|Breaking and Entering}}
-|**Breaking and Entering**
-| Forced entry to areas where the subject does not have access to. This counts for general areas.
-| Actual entry needs to occur for this law to apply. Damage to external surfaces without entry is to be considered [[#Damage to Station Assets|Damage to Station Assets]]. Does not stack with [[#Damage to Station Assets|Damage to Station Assets]] unless damages also occurred after entry. For secure areas, see [[#Major Trespass|Major Trespass]].
-|}
+**Notes**: Examples of this crime involve accidental plasma leaks, slipping hazards, accidentally shocking doors, breaking windows to space, or Security personnel not keeping their equipment secure. A banana peel in the corridor is not a hazard. A banana peel in front of the singularity is. For Workplace Hazards that lead to death, see [Manslaughter](#manslaughter-401). Failure to follow legal security orders during Code Red may constitute Creating a Workplace Hazard.
 
-#### Major Crimes ####
-<hr>
+#### Kidnapping (201)
+**Definition**: To hold a crewmember under duress or against their will.
+
+**Notes**: Physical harm is not required for this law to apply: the crewmember must kept in, or forcefully relocated to, a location against their will and be prevented from leaving. Cuffing/Restraining any personnel against their will, outside of legal arrests, qualifies as Kidnapping. For kidnapping of Command/Security see [Kidnapping of an Officer](#kidnapping-of-an-officer-301).
+
+#### Assault (202)
+**Definition**: To use excessive physical force against someone without the apparent intent to kill them.
+
+**Notes**: To cause serious but non-critical harm to another crewmember including, but not limited to, forcible/deceptive ingestion of toxic or illicit substances. For life-threatening harm, see [Aggravated Assault](#aggravated-assault-302).
+
+#### Narcotics Distribution (203)
+**Definition**: To distribute narcotics and other controlled substances. This includes ambrosia and space drugs. It is not illegal for them to be grown.
+
+**Notes**: Forcing or tricking someone to consume illicit or harmful substances, such as space drugs, is [Assault](#assault-202). For non-distributed drugs used for recreation, see [Drug Possession](#drug-possession-103).
+
+#### Possession of a Weapon (204)
+**Definition**: To be in possession of a dangerous item that is not part of one's job.
+
+**Notes**: Items capable of a high level of damage such as saws, axes, spears, stunprods, and hatchets fit into this category. If the item is part of someone's assigned duties they are permitted to carry it. For restricted weapons, see [Possession of a Restricted Weapon](#possession-of-a-restricted-weapon-304).
+
+#### Rioting (205)
+**Definition**: To partake in an unauthorized and disruptive assembly of crewmen.
+
+**Notes**: It is required to order the crowd to disperse; failure to disperse is the crime, not the assembly itself. Crimes committed during the riot are considered separate offenses. For the ringleader of a riot, see [Inciting a Riot](#inciting-a-riot-305).
+
+#### Abuse of Confiscated Equipment (206)
+**Definition**: To take and use equipment confiscated as evidence.
+
+**Notes**: Evidence is not to be used for anything but evidence with the exception of the Syndicate Encryption Key. Anything used in a crime is considered evidence, this includes everything from tools, to guns, to emags. For general abuse of security equipment, see [Abuse of Equipment](#abuse-of-equipment-106).
+
+#### Robbery (207)
+**Definition**: To steal items from another's person.
+
+**Notes**: Remember to return the stolen items to the lawful owner. Stealing an ID is the most common and serious form of robbery. For robbery of more valuable items, see [Theft](#theft-307) or [Grand Theft](#grand-theft-407).
+
+#### Breaking and Entering (208)
+**Definition**: Forced entry to areas where the subject does not have access to. This counts for general areas.
+
+**Notes**: Actual entry needs to occur for this law to apply. Damage to external surfaces without entry is to be considered [Damage to Station Assets](#damage-to-station-assets-100). Does not stack with [Damage to Station Assets](#damage-to-station-assets-100) unless damages also occurred after entry. For secure areas, see [Major Trespass](#major-trespass-308).
+
+### Major Crimes ###
 All of these crimes are punishable by a sentence of 10 to 15 minutes at the discretion of Security.
-<div style="display: grid; float: right;">
-{{LawReference}}
-<div style="float: right;">
-{{LawContraband}}
-</div>
-</div>
 
-{| class="wikitable sortable" style="text-align: center; width: 75%; background-color: #ffcc99;"
-|- style="font-weight: bold; text-align: center; background-color: #ffaa55; color: black;"
-| style="width: 2em;"  | Code
-| style="width: 1px;"  | Image
-| style="width: 9em;"  | Crime
-| style="width: 17em;" | Description
-|                      | Notes
-|-
-! 300
-|[[File:SL_Sabotage.png]]{{anchor|Sabotage}}
-|**Sabotage**
-| To hinder the work of the crew or station through malicious actions.
-| Deliberately releasing N2O, bolting doors, disabling power for a small area of the station, destroying cyborgs, and constructing barricades are all examples of sabotage. For more violent forms, see [[#Grand Sabotage|Grand Sabotage]].
-|-
-! 301
-|[[File:SL_Kidnapping of an Officer.png]]{{anchor|Kidnapping of an Officer}}
-|**Kidnapping of an Officer**
-| To hold a member of Command, Security, or any Central Command VIP under duress or against their will.
-| Physical harm is not required for this law to apply: the crewmember must kept in, or forcefully relocated to, a location against their will and be prevented from leaving. Cuffing/Restraining any personnel against their will, outside of legal arrests, qualifies as Kidnapping of an Officer. For kidnapping of non-Command/Security, see [[#Kidnapping|Kidnapping]].
-|-
-! 302
-|[[File:SL_Aggravated Assault.png]]{{anchor|Aggravated Assault}}
-|**Aggravated Assault**
-| To use excessive physical force resulting in severe or life-threatening harm.
-| Breaking bones, disfiguring, causing internal bleeding, or otherwise putting someone into a critical state. If the victim dies as a result of their injuries, see [[#Manslaughter|Manslaughter]] or [[#Murder|Murder]].
-|-
-! 304
-|[[File:SL_Posession of a Restricted Weapon.png]]{{anchor|Possession of a Restricted Weapon}}
-|**Possession of a Restricted Weapon**
-| To be in possession of a restricted weapon without authorization such as: Guns, Batons, Non-Beneficial Grenades/Explosives, etc.
-| Any item that can cause severe bodily harm carried by an unauthorized person. The Bartender is permitted their shotgun and beanbag rounds. The Captain and Head of Security can issue weapon permits. For non-restricted weapons, see [[#Possession of a Weapon|Possession of a Weapon]]. For detonation of explosives, see [[#Sabotage|Sabotage]] or [[#Grand Sabotage|Grand Sabotage]].
-|-
-! 305
-|[[File:SL_Inciting a Riot.png]]{{anchor|Inciting a Riot}}
-|**Inciting a Riot**
-| To attempt to stir the crew into a riot.
-| The offender should also have restrictions placed on their radio traffic and be given a tracking implant. For second offenses or violent uprisings, see [[#Mutiny|Mutiny]].
-|-
-! 306
-|[[File:SL_Posession of Contraband.png]]{{anchor|Possession of Contraband}}
-|**Possession of Contraband**
-|To be in the possession of contraband items. Being in possession of S-grade contraband, or committing a major crime with contraband, makes you an [[#Enemies of the Corporation|Enemy of the Corporation]].
-| For information on what items are contraband see [[#Contraband|Contraband]]. Contraband items from the [[Gateway]] are covered by this law. Personnel turning in contraband to Security of their own volition are exempt from this law.
-|-
-! 307
-|[[File:SL_Theft.png]]{{anchor|Theft}}
-|**Theft**
-| To steal restricted or dangerous items from either an area or one's person.
-| Weapons fall into this category, as do valuable items that are in limited supply such as spacesuits, and jetpacks. <br>Breaking open Cargo crates to illegally arm/armor one's self, or cracking/drilling restricted area safes, is theft. For theft of minor valuables, see [[#Petty Theft|Petty Theft]].
-|-
-! 308
-|[[File:SL_Major Trespass.png]]{{anchor|Major Trespass}}
-|**Major Trespass**
-| Being in a restricted area without prior authorization. This includes Security areas, Command areas (including EVA), the Engine Room, Atmos, or Toxins Research.
-| To enter an area one lacks authorized ID access for through either forcible entry or an existing opening. For non-restricted areas, see [[#Trespass|Trespass]].
-|-
-! 309
-|[[File:SL_Assault of an Officer.png]]{{anchor|Assault of an Officer}}
-|**Assault of an Officer**
-| To use excessive physical force against a member of Command or Security without the apparent intent to kill them.
-| To cause serious but non-life threatening harm to a member of Command or Security. For disarming, grabbing, or stunning an officer during an arrest, see [[#Resisting Arrest|Resisting Arrest]]. [[#Battery|Battery]], [[#Assault|Assault]], and [[#Aggravated Assault|Aggravated Assault]] do not stack with this charge.
-|}
+#### Sabotage (300)
+**Definition**: To hinder the work of the crew or station through malicious actions.
+
+**Notes**: Deliberately releasing N2O, bolting doors, disabling power for a small area of the station, destroying cyborgs, and constructing barricades are all examples of sabotage. For more violent forms, see [Grand Sabotage](#grand-sabotage-400).
+
+#### Kidnapping of an Officer (301)
+**Definition**: To hold a member of Command, Security, or any Central Command VIP under duress or against their will.
+
+**Notes**: Physical harm is not required for this law to apply: the crewmember must kept in, or forcefully relocated to, a location against their will and be prevented from leaving. Cuffing/Restraining any personnel against their will, outside of legal arrests, qualifies as Kidnapping of an Officer. For kidnapping of non-Command/Security, see [Kidnapping](#kidnapping-201).
+
+#### Aggravated Assault (302)
+**Definition**: To use excessive physical force resulting in severe or life-threatening harm.
+
+**Notes**: Breaking bones, disfiguring, causing internal bleeding, or otherwise putting someone into a critical state. If the victim dies as a result of their injuries, see [Manslaughter](#manslaughter-401) or [Murder](#murder-502).
+
+#### Possession of a Restricted Weapon (304)
+**Definition**: To be in possession of a restricted weapon without authorization such as: Guns, Batons, Non-Beneficial Grenades/Explosives, etc.
+
+**Notes**: Any item that can cause severe bodily harm carried by an unauthorized person. The Bartender is permitted their shotgun and beanbag rounds. The Captain and Head of Security can issue weapon permits. For non-restricted weapons, see [Possession of a Weapon](#possession-of-a-weapon-204). For detonation of explosives, see [Sabotage](#sabotage-300) or [Grand Sabotage](#grand-sabotage-400).
+
+#### Inciting a Riot (305)
+**Definition**: To attempt to stir the crew into a riot.
+
+**Notes**: The offender should also have restrictions placed on their radio traffic and be given a tracking implant. For second offenses or violent uprisings, see [Mutiny](#mutiny-505).
+
+#### Possession of Contraband (306)
+**Definition**: To be in the possession of contraband items. Being in possession of S-grade contraband, or committing a major crime with contraband, makes you an [Enemy of the Corporation](#enemy-of-the-corporation).
+
+**Notes**: For information on what items are contraband see [Contraband](#contraband). Contraband items from the Gateway are covered by this law. Personnel turning in contraband to Security of their own volition are exempt from this law.
+
+#### Theft (307)
+**Definition**: To steal restricted or dangerous items from either an area or one's person.
+
+**Notes**: Weapons fall into this category, as do valuable items that are in limited supply such as spacesuits, and jetpacks. Breaking open Cargo crates to illegally arm/armor one's self, or cracking/drilling restricted area safes, is theft. For theft of minor valuables, see [Petty Theft](#petty-theft-107).
+
+#### Major Trespass (308)
+**Definition**: Being in a restricted area without prior authorization. This includes Security areas, Command areas (including EVA), the Engine Room, Atmos, or Toxins Research.
+
+**Notes**: To enter an area one lacks authorized ID access for through either forcible entry or an existing opening. For non-restricted areas, see [Trespass](#trespass-108).
+
+#### Assault of an Officer (309)
+**Definition**: To use excessive physical force against a member of Command or Security without the apparent intent to kill them.
+
+**Notes**: To cause serious but non-life threatening harm to a member of Command or Security. For disarming, grabbing, or stunning an officer during an arrest, see [Resisting Arrest](#resisting-arrest-109). [Battery](#battery-102), [Assault](#assault-202), and [Aggravated Assault](#aggravated-assault-302) do not stack with this charge.
 
 ### Exceptional Crimes ###
-<hr>
 All of these crimes can result in Permanent Prison Time, Exile, or Permanent Labor Camp Time.
-[[File:LawSabo.png|frame|The Chief Engineer ransacks the RD's office and blows the borgs in an act of Grand Sabotage.]]
 * Only the Magistrate, Captain, Head of Security, and Warden can authorize a Permanent Sentence or Exile.
-
 * If a prisoner requests an Execution or Cyborgization, they may be given one.
-
 * Any prisoners that escape Permanent Imprisonment or Exile may be detained, executed or killed on sight at the discretion of Security.
 
+#### Grand Sabotage (400)
+**Definition**: To engage in maliciously destructive actions which endanger the crew or station.
+
+**Notes**: Releasing damaging/lethal viruses, hotwiring the engine, disabling the gravity generator, disabling power for a department or equivalently large portion of the station, subverting or destroying the AI, opening several holes in the station hull, setting fire to large areas, detonating multiple cyborgs, and activating high-yield explosives all count as Grand Sabotage. For lesser acts, see [Sabotage](#sabotage-300). If death was caused, see [Murder](#murder-502).
+
 #### Manslaughter (401)
-**Crime**: To cause death to a person via deliberate attack or excessive negligence, without any intent to kill.
+**Definition**: To cause death to a person via deliberate attack or excessive negligence, without any intent to kill.
 
 **Notes**: Any effort to prevent the resuscitation or cloning of the victim raises this to [Murder](#murder-502). If any evidence of intent exists, see [Murder](#murder-502).
 
-{| class="wikitable sortable" style="text-align: center; width: 75%; background-color: #ffaa99;"
-|- style="font-weight: bold; text-align: center; background-color: #ff6655; color: black;"
-| style="width: 2em;"  | Code
-| style="width: 1px;"  | Image
-| style="width: 9em;"  | Crime
-| style="width: 17em;" | Description
-|                      | Notes
-|-
-! 400
-|[[File:Compromising_Station_Integrity.PNG]]{{anchor|Grand Sabotage}}
-|**Grand Sabotage**
-| To engage in maliciously destructive actions which endanger the crew or station.
-| Releasing damaging/lethal viruses, hotwiring the engine, disabling the gravity generator, disabling power for a department or equivalently large portion of the station, subverting or destroying the AI, opening several holes in the station hull, setting fire to large areas, detonating multiple cyborgs, and activating high-yield explosives all count as Grand Sabotage. For lesser acts, see [[#Sabotage|Sabotage]]. If death was caused, see [[#Murder|Murder]].
-|-
-! 401
-|[[File:SL_Manslaughter.png]]{{anchor|Manslaughter}}
-|**Manslaughter**
-| To cause death to a person via deliberate attack or excessive negligence, without any intent to kill.
-| Any effort to prevent the resuscitation or cloning of the victim raises this to [[#Murder|Murder]]. If any evidence of intent exists, see [[#Murder|Murder]].
-|-
-! 402
-|[[File:Attempted_Murder.PNG]]{{anchor|Attempted Murder}}
-|**Attempted Murder**
-| To use excessive physical force with intention to cause death.
-| Use of lethal weaponry such as firearms and explosives are considered as intent to murder. If aid was rendered to the victim by the perpetrator afterwards, this may actually be [[#Manslaughter|Manslaughter]].
-|-
-! 407
-|[[File:SL_Grand Theft.png‎]]{{anchor|Grand Theft}}
-|**Grand Theft**
-| To steal items of high value or sensitive nature from either an area or one's person.
-| Theft of cutting-edge technology, documents, and research samples. Examples include hand teleporters, the Captain/Head of Security's Antique Laser, Captain/HoP level ID cards, mechas, and departmental door remotes. For theft of less important property, see [[#Theft|Theft]] or [[#Petty Theft|Petty Theft]].
-|}
+#### Attempted Murder (402)
+**Definition**: To use excessive physical force with intention to cause death.
+
+**Notes**: Use of lethal weaponry such as firearms and explosives are considered as intent to murder. If aid was rendered to the victim by the perpetrator afterwards, this may actually be [Manslaughter](#manslaughter-401).
+
+#### Grand Theft (407)
+**Definition**: To steal items of high value or sensitive nature from either an area or one's person.
+
+**Notes**: Theft of cutting-edge technology, documents, and research samples. Examples include hand teleporters, the Captain/Head of Security's Antique Laser, Captain/HoP level ID cards, mechas, and departmental door remotes. For theft of less important property, see [Petty Theft](#petty-theft-107) or [Theft](#theft-307).
 
 ### Capital Crimes ###
-<hr>
 All of these crimes can result in Execution, Permanent Prison Time, Permanent Labor Camp Time, Exile or Cyborgization.
 
 * Only the Magistrate, Captain, Head of Security, and Warden can authorize a Permanent Sentence or Exile.
-
 * Only the Magistrate or Captain can authorize an Execution or Forced Cyborgization.
-
 * If a prisoner requests an Execution or Cyborgization, they may be given one.
-
 * Any prisoners that escape Permanent Imprisonment or Exile may be detained, executed or killed on sight at the discretion of Security.
-
 * Any prisoners that escape from an Execution sentence are to be killed on sight.
 
 #### Murder (502)
-**Crime**: To deliberately and maliciously cause the death of another crewmember via direct or indirect means.
+**Definition**: To deliberately and maliciously cause the death of another crewmember via direct or indirect means.
 
 **Notes**: Any effort to prevent the resuscitation or cloning of the victim is to be considered proof of Murder. Unauthorized executions are also considered Murder. If there is no evidence of intent, see [Manslaughter](#manslaughter-401).
 
-{| class="wikitable sortable" style="text-align: center; width: 75%; background-color: #cccccc;"
-|- style="font-weight: bold; text-align: center; background-color: #000000; color: white;"
-| style="width: 2em;"  | Code
-| style="width: 1px;"  | Image
-| style="width: 9em;"  | Crime
-| style="width: 17em;" | Description
-|                      | Notes
-|-
-! 502
-|[[File:Murder.PNG]]{{anchor|Murder}}
-|**Murder**
-| To deliberately and maliciously cause the death of another crewmember via direct or indirect means.
-| Any effort to prevent the resuscitation or cloning of the victim is to be considered proof of Murder. Unauthorised executions are also considered Murder. If there is no evidence of intent, see [[#Manslaughter|Manslaughter]].
-|-
-! 505
-|[[File:SL_Mutiny.png]]{{anchor|Mutiny}}
-|**Mutiny**
-| To act individually, or as a group, to overthrow or subvert the established Chain of Command without lawful and legitimate cause.
-| Mutiny is not as clear cut as it may seem, there may be a legitimate reason for their actions, such as their head of staff being utterly incompetent. Application of this crime should always be reviewed by a third party. If the perpetrator's actions are for the betterment of ArkSoft, consider a lesser sentence, pardon, or promotion.
-|}
+#### Mutiny (505)
+**Definition**: To act individually, or as a group, to overthrow or subvert the established Chain of Command without lawful and legitimate cause.
 
-#### Modifiers & Special Situations ####
-<hr>
+**Notes**: Mutiny is not as clear cut as it may seem, there may be a legitimate reason for their actions, such as their head of staff being utterly incompetent. Application of this crime should always be reviewed by a third party. If the perpetrator's actions are for the betterment of ArkSoft, consider a lesser sentence, pardon, or promotion.
 
-{| class="wikitable" style="text-align: center; width: 70%; background-color: #aaffaa;"
-|- style="font-weight: bold; text-align: center; background-color: #000000; color: white;"
-| style="width: 14em;" | Situation {{anchor|Aiding and Abetting}}
-| style="width: 20em;" | Description
-|                      | Notes
-| style="width: 14em;" | Modifier
-|-
-!**Aiding and Abetting**
-| To knowingly assist a criminal.
-| Knowingly assisting a criminal is a crime. This includes but is not limited to: interfering with an arrest, stealing a prisoner in transit, breaking a prisoner out of the brig/prison, hiding a fugitive, and willingly rendering medical aid. If the aided prisoner ends up receiving no charges, apply five minutes to the offender. {{anchor|Central Command Directive}}
-| The original criminal's sentence; 5 minute minimum
-|-
-!**Central Command Directive**
-| To be issued a pardon/sentence modification by Central Command.
-| Central Command may, under certain circumstances, legally waive sections of Space Law. Irrespective of the original crime, if a pardon or modification to a sentence is issued it is to be followed immediately. {{anchor|Cooperation with Security}}
-| Immediate Release/Modification
-|-
-!**Cooperation with Security**
-| Being helpful to the members of security, revealing things during questioning.
-| Note that the information must be true in order for this modifier to apply. Prisoners giving false information to officers should not be awarded time off. {{anchor|Escape from Brig}}
-| 50% reduction
-|-
-!**Escape from Brig**
-| To flee successfully or unsuccessfully from a lawful sentence.
-| Repeatedly damaging or otherwise destroying a cell enclosure is considered an escape attempt. Unless the prisoner was attempting to escape from an [[#Immediate Threat to Prisoner|immediate threat]], reset the timer to the original sentence or add five minutes (whichever is greater). {{anchor|Hostile Brainwashing}}
-| Reset Timer or +5 minutes.
-|-
-!**Hostile Brainwashing**
-| To be under the mind control of a Cult, Shadowling, or other mind-controlling circumstances.
-| Any brainwashed person is to be detained non-lethally and deconverted or dethralled. Deconverted/dethralled persons are to be immediately pardoned of their crimes and released. Any contraband or dangerous items found at the time of deconversion are to be confiscated without punishment. {{anchor|Immediate Threat to Prisoner}}
-| Deconversion & Release
-|-
-!**Immediate Threat to Prisoner**
-| A severe threat to a prisoner's person.
-| The singularity eats something near the brig, an explosion goes off, etc. Officer must relocate the prisoner(s) to a safe location or otherwise immediately release them. {{anchor|Medical Attention}}
-| Immediate Release/Relocation
-|-
-!**Medical Attention**
-| A sick or injured prisoner requires medical aid.
-| Prisoners are entitled to medical aid if injured or sick. In cases of self-harm, aid may be rendered at the discretion of Security. The timer continues to run during this time. {{anchor|Parole}}
-| Running Timer
-|-
-!**Parole**
-| To be released, under parole, before the allotted sentence for a crime is up.
-| For non-Capital Crimes, Parole may be offered at the discretion of the Warden, Head of Security, Captain or Magistrate. For Capital Crimes, see [[#Enemies of the Corporation|Enemy of the Corporation]]. Parolees are to be kept under surveillance and, should they commit another crime, be charged with it on top of their original sentence. Breaking parole disqualifies any chance of future parole. Prisoners breaking parole from Capital Crimes are to be executed upon capture. {{anchor|Refusal to Cooperate}}
-| Parole Until Release
-|-
-!**Refusal to Cooperate**
-| Non-cooperative behaviour/repeated attempts to escape.
-| While already detained inside the brig and awaiting a sentence, acting in a manner which makes security waste time processing you. Attempting to resist/fleeing from processing or imprisonment is refusal to cooperate. This modifier can result in Permanent Imprisonment if it brings the sentence above 60 minutes. {{anchor|Repeat Offender}}
-| 50% addition
-|-
-!**Repeat Offender**
-| To be brigged for the same offense more than twice.
-| Offenses must not be committed as part of one crime spree, and must be separate repeat offenses. Upon the third sentencing for the same crime, five minutes is to be added. An additional five minutes is to be added for every successive imprisonment. After three applications of this modifier (on their fifth same-crime offense), the perpetrator is to be permabrigged. {{anchor|Self Defense}}
-| 5 minute cumulative addition on 3rd offense.
-Permabrig on 5th offense.
-|-
-!**Self Defense**
-| Acting to protect one's self, coworkers, or workplace.
-| Persons intentionally getting involved in fights which occur in a department that isn't theirs is an act of vigilantism, not self-defense. Self-defense typically involves attempts to disarm or disengage, beating someone while they're down should be considered [[#Assault|Assault]] unless the defender's life was in danger. {{anchor|Surrender}}
-| Immediate Release
-|-
-!**Surrender**
-| Willfully surrendering to Security.
-| Coming to the brig, confessing what you've done, and taking the punishment. Getting arrested without a fuss is not surrender.
-| 50% reduction
-|}
+### Modifiers and Special Situations ###
 
-#### Contraband ####
-<hr>
+#### Aiding and Abetting
+**Definition**: To knowingly assist a criminal.
+
+**Notes**: Knowingly assisting a criminal is a crime. This includes but is not limited to: interfering with an arrest, stealing a prisoner in transit, breaking a prisoner out of the brig/prison, hiding a fugitive, and willingly rendering medical aid. If the aided prisoner ends up receiving no charges, apply five minutes to the offender.
+
+**Modifier**: The original criminal's sentence; 5 minute minimum
+
+#### Central Command Directive
+**Definition**: To be issued a pardon/sentence modification by Central Command.
+
+**Notes**: Central Command may, under certain circumstances, legally waive sections of Space Law. Irrespective of the original crime, if a pardon or modification to a sentence is issued it is to be followed immediately.
+
+**Modifier**: Immediate Release/Modification
+
+#### Cooperation with Security
+**Definition**: Being helpful to the members of security, revealing things during questioning.
+
+**Notes**: Note that the information must be true in order for this modifier to apply. Prisoners giving false information to officers should not be awarded time off.
+
+**Modifier**: 50% reduction
+
+#### Escape from Brig
+**Definition**: To flee successfully or unsuccessfully from a lawful sentence.
+
+**Notes**: Repeatedly damaging or otherwise destroying a cell enclosure is considered an escape attempt. Unless the prisoner was attempting to escape from an [immediate threat](#immediate-threat-to-prisoner), reset the timer to the original sentence or add five minutes (whichever is greater).
+
+**Modifier**: Reset Timer or +5 minutes.
+
+#### Hostile Brainwashing
+**Definition**: To be under the mind control of a Cult, Shadowling, or other mind-controlling circumstances.
+
+**Notes**: Any brainwashed person is to be detained non-lethally and deconverted or dethralled. Deconverted/dethralled persons are to be immediately pardoned of their crimes and released. Any contraband or dangerous items found at the time of deconversion are to be confiscated without punishment.
+
+**Modifier**: Deconversion & Release
+
+#### Immediate Threat to Prisoner
+**Definition**: A severe threat to a prisoner's person.
+
+**Notes**: The singularity eats something near the brig, an explosion goes off, etc. Officer must relocate the prisoner(s) to a safe location or otherwise immediately release them.
+
+**Modifier**: Immediate Release/Relocation
+
+#### Medical Attention
+**Definition**: A sick or injured prisoner requires medical aid.
+
+**Notes**: Prisoners are entitled to medical aid if injured or sick. In cases of self-harm, aid may be rendered at the discretion of Security. The timer continues to run during this time.
+
+**Modifier**: Running Timer
+
+#### Parole
+**Definition**: To be released, under parole, before the allotted sentence for a crime is up.
+
+**Notes**: For non-Capital Crimes, Parole may be offered at the discretion of the Warden, Head of Security, Captain or Magistrate. For Capital Crimes, see [Enemy of the Corporation](#enemy-of-the-corporation). Parolees are to be kept under surveillance and, should they commit another crime, be charged with it on top of their original sentence. Breaking parole disqualifies any chance of future parole. Prisoners breaking parole from Capital Crimes are to be executed upon capture.
+
+**Modifier**: Parole Until Release
+
+#### Refusal to Cooperate
+**Definition**: Non-cooperative behavior/repeated attempts to escape.
+
+**Notes**: While already detained inside the brig and awaiting a sentence, acting in a manner which makes security waste time processing you. Attempting to resist/fleeing from processing or imprisonment is refusal to cooperate. This modifier can result in Permanent Imprisonment if it brings the sentence above 60 minutes.
+
+**Modifier**: 50% addition
+
+#### Repeat Offender
+**Definition**: To be brigged for the same offense more than twice.
+
+**Notes**: Offenses must not be committed as part of one crime spree, and must be separate repeat offenses. Upon the third sentencing for the same crime, five minutes is to be added. An additional five minutes is to be added for every successive imprisonment. After three applications of this modifier (on their fifth same-crime offense), the perpetrator is to be permabrigged.
+
+**Modifier**: 5 minute cumulative addition on 3rd offense. Permabrig on 5th offense.
+
+#### Self Defense
+**Definition**: Acting to protect one's self, coworkers, or workplace.
+
+**Notes**: Persons intentionally getting involved in fights which occur in a department that isn't theirs is an act of vigilantism, not self-defense. Self-defense typically involves attempts to disarm or disengage, beating someone while they're down should be considered [Assault](#assault-202) unless the defender's life was in danger.
+
+**Modifier**: Immediate Release
+
+#### Surrender
+**Definition**: Willfully surrendering to Security.
+
+**Notes**: Coming to the brig, confessing what you've done, and taking the punishment. Getting arrested without a fuss is not surrender.
+
+**Modifier**: 50% reduction
+
+### Contraband
 * It is the duty of crew to turn in C or S grade Contraband when found. Failure to turn in Contraband will result in charges.
-{| class="wikitable sortable" style="text-align: center; width: 60%; background-color: #ffffff;"
-|- style="font-weight: bold; text-align: center; background-color: #000000; color: white;"
-| style="width: 20px;" class="unsortable" | Code
-| style="width: 300px;" class="unsortable" | Explanation
-| style="width: 400px;" class="unsortable" | Description
-|- style="text-align: center; background-color: #B4FFA5; color: black;"
-!NC
-| Non-Contraband items. These items are not to be charged as [[#Possession of Contraband|Contraband]].
-| The [[#Possession of Contraband|Contraband]] charge does not apply to any of these items. They may not be confiscated unless directly used in the commission of a crime.
+
+#### Non-Contraband (NC)
+Non-Contraband items. The [Contraband](#possession-of-contraband-306) charge does not apply to any of these items. They may not be confiscated unless directly used in the commission of a crime.
+
+#### Standard Contraband (C)
+These items are to be confiscated and the owner is to be charged for [Contraband](#possession-of-contraband-306). If used in committing a non-contraband related [[#Major Crimes|Major Crime]], the owner is to be charged as an [Enemy of the Corporation](#enemy-of-the-corporation). The amount or variety of C-grade Contraband is irrelevant to the charge, it only applies once.
+
+#### Dangerous Contraband (S)
+
+|
 |- style="text-align: center; background-color: #ffee99; color: black;"
 !C
-| Standard Contraband items. These items are chargeable as [[#Possession of Contraband|Contraband]].
-| These items are to be confiscated and the owner is to be charged for [[#Possession of Contraband|Contraband]]. If used in committing a non-contraband related [[#Major Crimes|Major Crime]], the owner is to be charged as an [[#Enemies of the Corporation|Enemy of the Corporation]]. The amount or variety of C-grade Contraband is irrelevant to the charge, it only applies once.
+| Standard Contraband items. These items are chargeable as [Contraband](#possession-of-contraband-306).
+|
 |- style="text-align: center; background-color: #ffaa99; color: black;"
 !S
-| Dangerous Contraband items. The owner is to be charged as an [[#Enemies of the Corporation|Enemy of the Corporation]].
-| Any person caught with a S-Grade contraband item is to be immediately charged as an [[#Enemies of the Corporation|Enemy of the Corporation]]. These items are considered to be highly dangerous and are to be immediately confiscated. The origin of the item is irrelevant to the charge.
+| Dangerous Contraband items. The owner is to be charged as an [Enemy of the Corporation](#enemy-of-the-corporation).
+| Any person caught with a S-Grade contraband item is to be immediately charged as an [Enemy of the Corporation](#enemy-of-the-corporation). These items are considered to be highly dangerous and are to be immediately confiscated. The origin of the item is irrelevant to the charge.
 |}
 
 {| class="wikitable" style="text-align: center; width: 60%; background-color: #B4FFA5;"
@@ -791,5 +664,3 @@ Viral Injector
 |
 |
 |}
-
-[[Category:Guides]]
