@@ -411,256 +411,113 @@ All of these crimes can result in Execution, Permanent Prison Time, Permanent La
 #### Non-Contraband (NC)
 Non-Contraband items. The [Contraband](#possession-of-contraband-306) charge does not apply to any of these items. They may not be confiscated unless directly used in the commission of a crime.
 
+* Briefcase Full of Cash
+* Donk Pockets (Stimulants)
+* No-Slip Shoes
+* Sharpened Playing Cards
+* Smuggler's Satchel
+* Space Suit
+* Surgery Duffelbag
+* Suspicious Oxygen Tank
+* Suspicious Toolbox
+* Syndicate Balloon
+* Syndicate Cigarettes
+* Syndicate Mask
+* Syndicate Soap
+
 #### Standard Contraband (C)
-These items are to be confiscated and the owner is to be charged for [Contraband](#possession-of-contraband-306). If used in committing a non-contraband related [[#Major Crimes|Major Crime]], the owner is to be charged as an [Enemy of the Corporation](#enemy-of-the-corporation). The amount or variety of C-grade Contraband is irrelevant to the charge, it only applies once.
+These items are to be confiscated and the owner is to be charged for [Contraband](#possession-of-contraband-306). If used in committing a non-contraband related [Major Crime](#major-crimes), the owner is to be charged as an [Enemy of the Corporation](#enemy-of-the-corporation). The amount or variety of C-grade Contraband is irrelevant to the charge, it only applies once.
+
+* Adrenal Implant
+* Adaptive Cardboard Cutout
+* Advanced Pinpointer
+* AI Detector
+* Ambrosia Cruciatus
+* Banana Grenade
+* Binary Translator Key
+* Boozy Shotgun Shells
+* Chameleon Jumpsuit
+* Camera Bug
+* Chameleon Stamp
+* Contortionist's Jumpsuit
+* Dart Pistol
+* DNA Scrambler
+* EMP Flashlight
+* Foam Force Riot Pistol
+* Foam Force Riot Foam Dart
+* Freedom Implant
+* Military/Traitor Belt
+* Pickpocket's Gloves
+* Poison Bottle (Non-Lethal)
+* Standard Ammunition
+* Stimulants
+* Storage Implants
+* Syndicate Pistol
+* Thermal Imaging Glasses
+* Thermal Safe Drill
+* Universal Supressor
+* Voice Changer
+* Voodoo Doll
+* All Cultist Items (e.g. cult sword, blade, dagger, tome, robes, hardsuit, soulstones except chaplain's, etc)
 
 #### Dangerous Contraband (S)
+Any person caught with a S-Grade contraband item is to be immediately charged as an [Enemy of the Corporation](#enemy-of-the-corporation). These items are considered to be highly dangerous and are to be immediately confiscated. The origin of the item is irrelevant to the charge.
 
-|
-|- style="text-align: center; background-color: #ffee99; color: black;"
-!C
-| Standard Contraband items. These items are chargeable as [Contraband](#possession-of-contraband-306).
-|
-|- style="text-align: center; background-color: #ffaa99; color: black;"
-!S
-| Dangerous Contraband items. The owner is to be charged as an [Enemy of the Corporation](#enemy-of-the-corporation).
-| Any person caught with a S-Grade contraband item is to be immediately charged as an [Enemy of the Corporation](#enemy-of-the-corporation). These items are considered to be highly dangerous and are to be immediately confiscated. The origin of the item is irrelevant to the charge.
-|}
-
-{| class="wikitable" style="text-align: center; width: 60%; background-color: #B4FFA5;"
-! colspan="7" style="font-weight: bold; text-align: center; background-color: #6FD15C;" | Non-Contraband Items (NC)
-|-
-| width = 130px | [[File:Securebriefcase.png|32px]]
-Briefcase Full of Cash
-| width = 130px | [[File:DonksBox.png|32px]]
-Donk Pockets (Stimulants)
-| width = 130px | [[File:SyndicateShoes.png|32px]]
-No-Slip Shoes
-| width = 130px | [[File:Syndicate Playing Cards.png|32px]]
-Sharpened Playing Cards
-| width = 130px | [[File:Smuggler's_Satchel.png|32px]]
-Smuggler's Satchel
-| width = 130px | [[File:SyndicateSuit.png|32px]]
-Space Suit
-| width = 130px |[[File:DuffleSyndiMed.png|32px]]
-Surgery Duffelbag
-|-
-| [[File:SyndieTank.png|32px]]
-Suspicious Oxygen Tank
-| [[File:SyndicateToolbox.png|32px]]
-Suspicious Toolbox
-| [[File:SyndicateBalloon.png|32px]]
-Syndicate Balloon
-| [[File:Syndicate Smoke.png|32px]]
-Syndicate Cigarettes
-| [[File:SWATmask.png|32px]]
-Syndicate Mask
-| [[File:SyndicateSoap.png|32px]]
-Syndicate Soap
-|
-|-
-! colspan="7" style="font-weight: bold; text-align: center; background-color: #EAD672;" | Contraband Items (C)
-|- style="background-color: #ffee99;"
-| [[File:Implant.png|32px]]
-Adrenal Implant
-| [[File:Cardboard_Cutout.png|32px]]
-Adaptive Cardboard Cutout
-| [[File:Pinpointer.png|32px]]
-Advanced Pinpointer
-| [[File:Multitool.png|32px]]
-AI Detector
-| [[File:Ambrosiavulgarisseed.png|32px]]
-Ambrosia Cruciatus
-| [[File:Grenade.png|32px]]
-Banana Grenade
-| [[File:SyndiKey.png|32px]]
-Binary Translator Key
-|- style="background-color: #ffee99;"
-| [[File:SyndicateBox.png|32px]]
-Boozy Shotgun Shells
-| [[File:Chameleon_jumpsuit.gif|32px]]
-Chameleon Jumpsuit
-| [[File:Camera_Bug.png|32px]]
-Camera Bug
-| [[File:Chameleon_Stamp.png|32px]]
-Chameleon Stamp
-| [[File:Atmosjumpsuit.png|32px]]
-Contortionist's Jumpsuit
-| [[File:DartPistol.png|32px]]
-Dart Pistol
-| [[File:DNA_Scrambler.png|32px]]
-DNA Scrambler
-|- style="background-color: #ffee99;"
-| [[File:Flashlight.png|32px]]
-EMP Flashlight
-| [[File:FoamPistol.png|32px]]
-Foam Force Riot Pistol
-| [[File:RiotDart.png|32px]]
-Foam Force Riot Foam Dart
-| [[File:Implant.png|32px]]
-Freedom Implant
-| [[File:Traitorbelt.gif|32px]]
-Military/Traitor Belt
-| [[File:Black_Gloves.png|32px]]
-Pickpocket's Gloves
-| [[File:Poison.png|32px]]
-Poison Bottle (Non-Lethal)
-|- style="background-color: #ffee99;"
-| [[File:Ammo.gif|32px]]
-Standard Ammunition
-| [[File:Stimulants.png|32px]]
-Stimulants
-| [[File:Implant.png|32px]]
-Storage Implants
-| [[File:SyndiPistol.png|32px]]
-Syndicate Pistol
-| [[File:Sunglasses.png|32px]]
-Thermal Imaging Glasses
-| [[File:ThermalDrill.png|32px]]
-Thermal Safe Drill
-| [[File:UniversalSuppressor.png|32px]]
-Universal Supressor
-|- style="background-color: #ffee99;"
-| [[File:Gas mask.png|32px]]
-Voice Changer
-| [[File:VoodooDoll.png|32px]]
-Voodoo Doll
-| [[File:Tome.png|60px]]
-All Cultist Items (e.g. cult sword, blade, dagger, tome, robes, hardsuit, soulstones except chaplain's, etc)
-|
-|
-|
-|
-|-
-! colspan="7" style="font-weight: bold; text-align: center; background-color: #ff6655;" | Dangerous Contraband Items (S)
-|- style="background-color: #ffaa99;"
-| [[File:SyndiRevolver.png|32px]]
-.357 Revolver
-| [[File:AccessTuner.gif|32px]]
-Access Tuner
-| [[File:Id_card.png|32px]]
-Agent ID Card
-| [[File:Artistic_Toolbox.png|32px]]
-Artistic Toolbox
-| [[File:clustergrenade.png|32px]]
-Atmos Grenades
-| [[File:Syndi_Hardsuit.png|32px]]
-Blood Red Hardsuit
-| [[File:Ninjastar.png|32px]]
-Box of Throwing Weapons
-|- style="background-color: #ffaa99;"
-| [[File:Shotguncane.png|32px]]
-Cane Shotgun
-| [[File:Ntflag.png|32px]]
-Chameleon Flag
-| [[File:Chameleon_projector.gif|32px]]
-Chameleon Projector
-| [[File:SecHud.png|32px]]
-Chameleon Security HUD
-| [[File:MiscCondiment.png|32px]]
-Chef's Excellence Special Sauce
-| [[File:Emag.png|32px]]
-Cryptographic Sequencer (Emag)
-| [[File:C4.gif|32px]]
-Composition C4
-|- style="background-color: #ffaa99;"
-| [[File:cqcmanual.png|32px]]
-CQC Manual
-| [[File:PlushieCarp.png|32px]]
-Dehydrated Space Carp
-| [[File:Pda_cartrige.png|32px]]
-Detomatix Cartridge
-| [[File:SyndicateBox.png|32px]]
-EMP Kit
-| [[File:Energy_crossbow.png|32px]]
-Mini Energy Crossbow
-| [[File:Edagger.gif|32px]]
-Energy Dagger
-| [[File:Sword.gif|32px]]
-Energy Sword
-|- style="background-color: #ffaa99;"
-| [[File:d20.png|32px]]
-E20
-| [[File:Grenade.png|32px]]
-Feral Cat Grenade
-| [[File:Garrote.png|32px]]
-Fibre Wire Garrote
-| [[File:Pda cartrige.png|32px]]
-F.R.A.M.E Cartridge
-| [[File:Fingerless.png|32px]]
-Gloves of the North Star
-| [[File:Uploadmodule.png|32px]]
-Hacked AI Upload Module
-| [[File:Combathypo.gif|32px]]
-Holoparasites
-|- style="background-color: #ffaa99;"
-| [[File:Meat_Cleaver.png|32px]]
-Meat Cleaver
-| [[File:Mindbatterer.png|32px]]
-Mind Batterer
-| [[File:Implant.png|32px]]
-Mindslave Implant
-| [[File:godstaff_blue.png|32px]]
-Missionary Starter Kit
-| [[File:Scroll1.png|32px]]
-Mysterious Scroll (Sleeping Carp)
-| [[File:Nanocalciuminjector.png|32px]]
-Nanocalcium Injector
-| [[File:Ammo2.gif|32px]]
-Non-Standard Ammunition
-|- style="background-color: #ffaa99;"
-| [[File:PizzaBomb.gif|32px]]
-Pizza Bomb
-| [[File:Poison.png|32px]]
-Poison Bottle (Lethal)
-| [[File:SingularityBeacon.gif|32px]]
-Power Beacon
-| [[File:Powerfist.png|32px]]
-Powerfist
-| [[File:Yellowgloves.png|32px]]
-Power Gloves
-| [[File:Powersink.gif|32px]]
-Powersink
-| [[File:WetFloorSign.png|32px]]
-Proximity Mine
-|- style="background-color: #ffaa99;"
-| [[File:Healthanalyzer.png|32px]]
-Radiation Laser
-| [[File:Rjammer.png|32px]]
-Radio Jammer
-| [[File:Rawtelecrystal.png|32px]]
-Raw Telecrystal
-| [[File:Scissors.png|32px]]
-Safety Scissors
-| [[File:Pen.png|32px]]
-Sleepy Pen
-| [[File:Syndicate_Bomb.png|32px]]
-Syndicate Bomb
-| [[File:Chainsaw.gif|32px]]
-Syndicate Chainsaw
-|- style="background-color: #ffaa99;"
-| [[File:syndicatedocs.gif|32px]]
-Syndicate Documents
-| [[File:SyndiKey.png|32px]]
-Syndicate Encryption Key
-| [[File:GunContra.gif|32px]]
-Syndicate Long Arms
-| [[File:SyndiMinibomb.png|32px]]
-Syndicate Minibomb
-| [[File:MMI empty.png|32px]]
-Syndicate MMI
-| [[File:SyndiPDA.png|32px]]
-Syndicate Uplink
-| [[File:GunTele.png|32px]]
-Telegun
-|- style="background-color: #ffaa99;"
-| [[File:Implant.png|32px]]
-Uplink Implant
-| [[File:Pipette.png|32px]]
-Viral Injector
-|
-|
-|
-|
-|
-|}
+* .357 Revolver
+* Access Tuner
+* Agent ID Card
+* Artistic Toolbox
+* Atmos Grenades
+* Blood Red Hardsuit
+* Box of Throwing Weapons
+* Cane Shotgun
+* Chameleon Flag
+* Chameleon Projector
+* Chameleon Security HUD
+* Chef's Excellence Special Sauce
+* Cryptographic Sequencer (Emag)
+* Composition C4
+* CQC Manual
+* Dehydrated Space Carp
+* Detomatix Cartridge
+* EMP Kit
+* Mini Energy Crossbow
+* Energy Dagger
+* Energy Sword
+* E20
+* Feral Cat Grenade
+* Fibre Wire Garrote
+* F.R.A.M.E Cartridge
+* Gloves of the North Star
+* Hacked AI Upload Module
+* Holoparasites
+* Meat Cleaver
+* Mind Batterer
+* Mindslave Implant
+* Missionary Starter Kit
+* Mysterious Scroll (Sleeping Carp)
+* Nanocalcium Injector
+* Non-Standard Ammunition
+* Pizza Bomb
+* Poison Bottle (Lethal)
+* Power Beacon
+* Powerfist
+* Power Gloves
+* Powersink
+* Proximity Mine
+* Radiation Laser
+* Radio Jammer
+* Raw Telecrystal
+* Safety Scissors
+* Sleepy Pen
+* Syndicate Bomb
+* Syndicate Chainsaw
+* Syndicate Documents
+* Syndicate Encryption Key
+* Syndicate Long Arms
+* Syndicate Minibomb
+* Syndicate MMI
+* Syndicate Uplink
+* Telegun
+* Uplink Implant
+* Viral Injector
