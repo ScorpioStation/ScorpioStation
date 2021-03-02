@@ -135,7 +135,7 @@ GLOBAL_LIST_INIT(body_accessory_by_species, list("None" = null))
 
 //Sprites Ported from /tg/'s Moths
 /datum/body_accessory/wings
-	icon = 'icons/mob/sprite_accessories/wryn/wryn_body_accessories.dmi'
+	icon = 'icons/mob/sprite_accessories/wryn/wryn_body_accessories2.dmi'
 	animated_icon = "null"
 	blend_mode = ICON_ADD
 	icon_state = "null"
@@ -154,7 +154,7 @@ GLOBAL_LIST_INIT(body_accessory_by_species, list("None" = null))
 	name = "Atlas Wings"
 	icon_state = "wings_atlas"
 
-/datum/sprite_accessory/wings/plain
+/datum/body_accessory/wings/plain
 	name = "Plain Wings"
 	icon_state = "wings_plain"
 
@@ -179,8 +179,8 @@ GLOBAL_LIST_INIT(body_accessory_by_species, list("None" = null))
 	icon_state = "wings_whitefly"
 
 /datum/body_accessory/wings/burnt
-	name = "Burnt Off Wings"
-	icon_state = "wings_burnt_off"
+	name = "Burnt Wings"
+	icon_state = "wings_burnt"
 
 /datum/body_accessory/wings/firewatch
 	name = "Firewatch Wings"

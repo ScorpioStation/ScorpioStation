@@ -47,7 +47,7 @@
 	icon_state = "whitefly"
 
 /datum/sprite_accessory/hair/wryn/burnt
-	name = "Burnt Off Antennae"
+	name = "Burnt Antennae"
 	icon_state = "burnt_off"
 
 /datum/sprite_accessory/hair/wryn/firewatch
