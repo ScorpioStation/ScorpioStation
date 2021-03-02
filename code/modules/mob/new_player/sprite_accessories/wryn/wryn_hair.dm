@@ -1,5 +1,5 @@
 /datum/sprite_accessory/hair/wryn
-	icon = 'icons/mob/sprite_accessories/wryn/wryn_antennae.dmi'
+	icon = 'icons/mob/sprite_accessories/wryn/wryn_antennae2.dmi'
 	species_allowed = list("Wryn")
 	do_colouration = FALSE
 	glasses_over = TRUE
