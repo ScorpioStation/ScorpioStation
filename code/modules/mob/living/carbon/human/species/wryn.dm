@@ -94,11 +94,6 @@
 
 //Select a Target with Middle Click or Alt-Click
 /datum/action/innate/wryn_sting/proc/set_sting(mob/living/carbon/human/user)
-	var/list/names = list()
-	for(var/mob/living/carbon/human/M in orange(1))
-		names += M
-	if(!length(names))	//No one's around!
-		return
 	if(button_on == TRUE)
 		unset_sting(user)
 		return
