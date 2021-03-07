@@ -130,9 +130,9 @@
 /obj/item/clothing/under/rank/centcom/representative
 	desc = "Gold trim on space-black cloth, this uniform bears \"A.R.S. Scorpius\" on the left shoulder."
 	name = "\improper Formal ArkSoft Representative's Uniform"
-	icon_state = "officer"
+	icon_state = "asrep"
 	item_state = "g_suit"
-	item_color = "officer"
+	item_color = "asrep"
 	displays_id = 0
 
 /obj/item/clothing/under/rank/centcom/representative/nanotrasen
