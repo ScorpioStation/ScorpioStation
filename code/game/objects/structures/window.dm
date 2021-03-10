@@ -166,6 +166,7 @@
 
 	add_fingerprint(user)
 	if(istype(I, /obj/item/stack/rods) && fulltile)
+		var/obj/item/stack/rods/R = I
 		var/broken = FALSE
 		var/L
 		for(var/thing in loc.contents)
@@ -176,20 +177,23 @@
 			else if(istype(L, /obj/structure/grille))
 				to_chat(user, "<span class='notice'>You cannot build a second grille underneath this window!</span>")
 				return
+		if(!broken && R.amount < 2)
+			to_chat(user, "<span class='warning'>You need two metal rods to build a new grille!</span>")
+			return
 		if((!reinf && anchored) || (reinf && state == WINDOW_SCREWED_TO_FRAME))
 			if(do_after(user, 20, target = src))
 				if((!reinf && !anchored) || (reinf && !state == WINDOW_SCREWED_TO_FRAME) || !loc)
 					return
-				var/obj/item/stack/rods/R = I
 				new /obj/structure/grille(loc)
 				if(broken && L)
+					R.use(1)
 					user.visible_message("<span class='notice'>[user] rebuilds the broken grille.</span>", \
 					"<span class='notice'>You rebuild the broken grille.</span>")
 					qdel(L)
 				else
+					R.use(2)
 					user.visible_message("<span class='notice'>[user] builds a grille beneath the window.</span>", \
 					"<span class='notice'>You build a grille beneath the window.</span>")
-				R.use(2)
 				return
 		to_chat(user, "<span class='notice'>The window must be first be secured to the floor before you can build a grille!</span>")
 		return
