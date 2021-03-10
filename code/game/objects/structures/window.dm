@@ -95,9 +95,9 @@
 
 /obj/structure/window/CanPass(atom/movable/mover, turf/target, height=0)
 	if(istype(mover) && mover.checkpass(PASSGLASS))
-		return 1
+		return TRUE
 	if(dir == FULLTILE_WINDOW_DIR)
-		return 0	//full tile window, you can't move into it!
+		return FALSE	//full tile window, you can't move into it!
 	if(get_dir(loc, target) == dir)
 		return !density
 	if(istype(mover, /obj/structure/window))
@@ -110,22 +110,21 @@
 			return FALSE
 	else if(istype(mover, /obj/machinery/door/window) && !valid_window_location(loc, mover.dir))
 		return FALSE
-	return 1
+	return TRUE
 
 /obj/structure/window/CheckExit(atom/movable/O, target)
 	if(istype(O) && O.checkpass(PASSGLASS))
-		return 1
+		return TRUE
 	if(get_dir(O.loc, target) == dir)
-		return 0
-	return 1
+		return FALSE
+	return TRUE
 
 /obj/structure/window/CanAStarPass(ID, to_dir)
 	if(!density)
-		return 1
+		return TRUE
 	if((dir == FULLTILE_WINDOW_DIR) || (dir == to_dir))
-		return 0
-
-	return 1
+		return FALSE
+	return TRUE
 
 /obj/structure/window/attack_tk(mob/user)
 	user.changeNext_move(CLICK_CD_MELEE)
@@ -135,7 +134,7 @@
 
 /obj/structure/window/attack_hulk(mob/living/carbon/human/user, does_attack_animation = 0)
 	if(!can_be_reached(user))
-		return 1
+		return TRUE
 	. = ..()
 
 /obj/structure/window/attack_hand(mob/user)
@@ -163,9 +162,38 @@
 
 /obj/structure/window/attackby(obj/item/I, mob/living/user, params)
 	if(!can_be_reached(user))
-		return 1 //skip the afterattack
+		return TRUE //skip the afterattack
 
 	add_fingerprint(user)
+	if(istype(I, /obj/item/stack/rods))
+		var/broken = FALSE
+		var/L
+		for(var/thing in loc.contents)
+			L = thing
+			if(istype(L, /obj/structure/grille/broken))
+				broken = TRUE
+				break
+			else if(istype(L, /obj/structure/grille))
+				to_chat(user, "<span class='notice'>You cannot build a second grille underneath this window!</span>")
+				return
+		if((!reinf && anchored) || (reinf && state == WINDOW_SCREWED_TO_FRAME))
+			if(do_after(user, 20, target = src))
+				if((!reinf && !anchored) || (reinf && !state == WINDOW_SCREWED_TO_FRAME) || !loc)
+					return
+				var/obj/item/stack/rods/R = I
+				new /obj/structure/grille(loc)
+				if(broken && L)
+					user.visible_message("<span class='notice'>[user] rebuilds the broken grille.</span>", \
+					"<span class='notice'>You rebuild the broken grille.</span>")
+					qdel(L)
+				else
+					user.visible_message("<span class='notice'>[user] builds a grille beneath the window.</span>", \
+					"<span class='notice'>You build a grille beneath the window.</span>")
+				R.use(2)
+				return
+		to_chat(user, "<span class='notice'>The window must be first be secured to the floor before you can build a grille!</span>")
+		return
+
 	if(istype(I, /obj/item/grab) && get_dist(src, user) < 2)
 		var/obj/item/grab/G = I
 		if(isliving(G.affecting))
@@ -417,7 +445,7 @@
 
 /obj/structure/window/Destroy()
 	density = FALSE
-	air_update_turf(1)
+	air_update_turf(TRUE)
 	update_nearby_icons()
 	return ..()
 
@@ -428,9 +456,13 @@
 	move_update_air(T)
 
 /obj/structure/window/CanAtmosPass(turf/T)
-	if(!anchored || !density)
+	if(!density)
 		return TRUE
-	return !(FULLTILE_WINDOW_DIR == dir || dir == get_dir(loc, T))
+	if(!reinf && !anchored)
+		return TRUE
+	if(reinf && !state == WINDOW_SCREWED_TO_FRAME)
+		return TRUE
+	return FALSE
 
 //This proc is used to update the icons of nearby windows.
 /obj/structure/window/proc/update_nearby_icons()
