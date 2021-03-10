@@ -165,7 +165,7 @@
 		return TRUE //skip the afterattack
 
 	add_fingerprint(user)
-	if(istype(I, /obj/item/stack/rods))
+	if(istype(I, /obj/item/stack/rods) && fulltile)
 		var/broken = FALSE
 		var/L
 		for(var/thing in loc.contents)
@@ -456,6 +456,10 @@
 	move_update_air(T)
 
 /obj/structure/window/CanAtmosPass(turf/T)
+	if(!fulltile)
+		if(!anchored || !density)
+			return TRUE
+		return !(FULLTILE_WINDOW_DIR == dir || dir == get_dir(loc, T))
 	if(!density)
 		return TRUE
 	if(!reinf && !anchored)
