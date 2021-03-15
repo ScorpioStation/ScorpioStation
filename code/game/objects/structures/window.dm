@@ -324,7 +324,7 @@
 		return TRUE
 
 /obj/structure/window/proc/check_state_and_anchored(checked_state, checked_anchored)
-	return check_state(checked_state) && check_anchored(checked_anchored)
+	return (check_state(checked_state) && check_anchored(checked_anchored))
 
 /obj/structure/window/mech_melee_attack(obj/mecha/M)
 	if(!can_be_reached())
@@ -460,17 +460,21 @@
 	move_update_air(T)
 
 /obj/structure/window/CanAtmosPass(turf/T)
-	if(!fulltile)
-		if(!anchored || !density)
-			return TRUE
-		return !(FULLTILE_WINDOW_DIR == dir || dir == get_dir(loc, T))
 	if(!density)
 		return TRUE
-	if(!reinf && !anchored)
+	if(fulltile)
+		return !Secured()
+	else
+		if(Secured())
+			if(dir == get_dir(loc, T) | get_dir(T, loc))
+				return FALSE
 		return TRUE
-	if(reinf && !state == WINDOW_SCREWED_TO_FRAME)
-		return TRUE
-	return FALSE
+
+/obj/structure/window/proc/Secured()
+	if(reinf)
+		return check_state_and_anchored(WINDOW_SCREWED_TO_FRAME, TRUE)
+	else
+		return anchored
 
 //This proc is used to update the icons of nearby windows.
 /obj/structure/window/proc/update_nearby_icons()
@@ -503,7 +507,7 @@
 	return reinf && fulltile ? real_explosion_block : 0
 
 /obj/structure/window/basic
-	desc = "It looks thin and flimsy. A few knocks with... anything, really should shatter it."
+	desc = "It looks thin and flimsy. A few knocks with ... anything, really, should shatter it."
 
 /obj/structure/window/reinforced
 	name = "reinforced window"
@@ -621,7 +625,7 @@
 	flags = PREVENT_CLICK_UNDER
 
 /obj/structure/window/full/basic
-	desc = "It looks thin and flimsy. A few knocks with... anything, really should shatter it."
+	desc = "It looks thin and flimsy. A few knocks with ... anything, really, should shatter it."
 	icon = 'icons/obj/smooth_structures/window.dmi'
 	icon_state = "window"
 	max_integrity = 50
