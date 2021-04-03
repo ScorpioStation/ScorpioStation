@@ -29,8 +29,10 @@
 	heat_level_2 = 420 //Default 400
 	heat_level_3 = 480 //Default 460
 
-	flesh_color = "#34AF10"
 	reagent_tag = PROCESS_ORG
+	footstep_type = FOOTSTEP_MOB_CLAW
+
+	flesh_color = "#34AF10"
 	base_color = "#066000"
 	//Default styles for created mobs.
 	default_headacc = "Simple"

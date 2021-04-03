@@ -188,6 +188,7 @@
 	flesh_color = "#808D11"
 
 	reagent_tag = PROCESS_ORG
+	footstep_type = FOOTSTEP_MOB_HEAVY
 
 	tail = "armalis_tail"
 	icon_template = 'icons/mob/human_races/r_armalis.dmi'

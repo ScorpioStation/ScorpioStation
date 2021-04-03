@@ -41,6 +41,8 @@
 	UpdateAppearance()
 	GLOB.human_list += src
 
+	AddComponent(/datum/component/footstep, dna.species.footstep_type, 1, 2)
+
 /mob/living/carbon/human/OpenCraftingMenu()
 	handcrafting.ui_interact(src)
 

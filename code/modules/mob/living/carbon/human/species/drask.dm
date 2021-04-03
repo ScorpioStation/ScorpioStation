@@ -39,6 +39,8 @@
 	bodyflags = HAS_SKIN_TONE | HAS_BODY_MARKINGS
 	has_gender = FALSE
 	dietflags = DIET_OMNI
+	reagent_tag = PROCESS_ORG
+	footstep_type = FOOTSTEP_MOB_HEAVY
 
 	cold_level_1 = -1 //Default 260 - Lower is better
 	cold_level_2 = -1 //Default 200
@@ -51,7 +53,6 @@
 	heatmod = 2
 
 	flesh_color = "#a3d4eb"
-	reagent_tag = PROCESS_ORG
 	base_color = "#a3d4eb"
 	blood_color = "#a3d4eb"
 	butt_sprite = "drask"

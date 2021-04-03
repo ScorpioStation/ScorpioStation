@@ -18,4 +18,4 @@
 
 	reagent_tag = PROCESS_ORG
 	//Has standard darksight of 2.
-
+	footstep_type = FOOTSTEP_MOB_HUMAN

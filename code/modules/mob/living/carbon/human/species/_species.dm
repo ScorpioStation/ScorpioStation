@@ -165,6 +165,8 @@
 	// Species specific boxes
 	var/speciesbox
 
+	var/footstep_type = FOOTSTEP_MOB_HUMAN
+
 /datum/species/New()
 	//If the species has eyes, they are the default vision organ
 	if(!vision_organ && has_organ["eyes"])

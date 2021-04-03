@@ -17,6 +17,7 @@
 	response_help = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm = "kicks"
+	footstep_type = FOOTSTEP_MOB_CLAW
 
 //Captain fox
 /mob/living/simple_animal/pet/dog/fox/Renault

@@ -47,6 +47,12 @@
 	temperature = 300
 	planetary_atmos = TRUE
 
+	footstep = FOOTSTEP_LAVA
+	barefootstep = FOOTSTEP_LAVA
+	clawfootstep = FOOTSTEP_LAVA
+	heavyfootstep = FOOTSTEP_LAVA
+
+
 /turf/simulated/floor/indestructible/necropolis/Initialize(mapload)
 	. = ..()
 	if(prob(12))

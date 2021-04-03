@@ -107,6 +107,8 @@
 
 	var/my_z // I don't want to confuse this with client registered_z
 
+	var/footstep_type
+
 /mob/living/simple_animal/Initialize(mapload)
 	. = ..()
 	GLOB.simple_animals[AIStatus] += src
@@ -183,6 +185,8 @@
 			WakeUp()
 			create_debug_log("woke up, trigger reason: [reason]")
 	med_hud_set_status()
+	if(footstep_type)
+		AddComponent(/datum/component/footstep, footstep_type)
 
 /mob/living/simple_animal/proc/handle_automated_action()
 	set waitfor = FALSE
