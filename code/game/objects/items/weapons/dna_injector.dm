@@ -25,7 +25,7 @@
 		buf = new
 		buf.dna = new
 		buf.types = datatype
-		buf.dna.ResetSE()
+		buf.dna.ResetDNA(DNA_SE)
 		SetValue(value)
 
 /obj/item/dnainjector/Destroy()
@@ -41,30 +41,30 @@
 /obj/item/dnainjector/proc/GetState(selblock = 0)
 	var/real_block = GetRealBlock(selblock)
 	if(buf.types & DNA2_BUF_SE)
-		return buf.dna.GetSEState(real_block)
+		return buf.dna.GetDNAState(real_block, DNA_SE)
 	else
-		return buf.dna.GetUIState(real_block)
+		return buf.dna.GetDNAState(real_block, DNA_UI)
 
 /obj/item/dnainjector/proc/SetState(on, selblock = 0)
 	var/real_block = GetRealBlock(selblock)
 	if(buf.types & DNA2_BUF_SE)
-		return buf.dna.SetSEState(real_block,on)
+		return buf.dna.SetDNAState(real_block, on, DNA_SE)
 	else
-		return buf.dna.SetUIState(real_block,on)
+		return buf.dna.SetDNAState(real_block, on, DNA_UI)
 
 /obj/item/dnainjector/proc/GetValue(selblock = 0)
 	var/real_block = GetRealBlock(selblock)
 	if(buf.types & DNA2_BUF_SE)
-		return buf.dna.GetSEValue(real_block)
+		return buf.dna.GetDNAValue(real_block, DNA_SE)
 	else
-		return buf.dna.GetUIValue(real_block)
+		return buf.dna.GetDNAValue(real_block, DNA_UI)
 
 /obj/item/dnainjector/proc/SetValue(val, selblock = 0)
 	var/real_block = GetRealBlock(selblock)
 	if(buf.types & DNA2_BUF_SE)
-		return buf.dna.SetSEValue(real_block,val)
+		return buf.dna.SetDNAValue(real_block, val, DNA_SE)
 	else
-		return buf.dna.SetUIValue(real_block,val)
+		return buf.dna.SetDNAValue(real_block, val, DNA_UI)
 
 /obj/item/dnainjector/proc/inject(mob/living/M, mob/user)
 	if(used)
@@ -86,7 +86,7 @@
 			if(buf.types & DNA2_BUF_UI)
 				if(!block) //isolated block?
 					M.dna.UI = buf.dna.UI.Copy()
-					M.dna.UpdateUI()
+					M.dna.UpdateDNA(DNA_UI)
 					M.UpdateAppearance()
 					if(buf.types & DNA2_BUF_UE) //unique enzymes? yes
 
@@ -95,14 +95,14 @@
 						M.dna.real_name = buf.dna.real_name
 						M.dna.unique_enzymes = buf.dna.unique_enzymes
 				else
-					M.dna.SetUIValue(block,src.GetValue())
+					M.dna.SetDNAValue(block, GetValue(), DNA_UI)
 					M.UpdateAppearance()
 			if(buf.types & DNA2_BUF_SE)
 				if(!block) //isolated block?
 					M.dna.SE = buf.dna.SE.Copy()
-					M.dna.UpdateSE()
+					M.dna.UpdateDNA(DNA_SE)
 				else
-					M.dna.SetSEValue(block,src.GetValue())
+					M.dna.SetDNAValue(block, GetValue(), DNA_SE)
 				domutcheck(M, null, forcedmutation ? MUTCHK_FORCED : 0)
 				M.update_mutations()
 			if(H)

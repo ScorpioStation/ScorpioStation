@@ -241,8 +241,8 @@
 	..()
 	M.mutations.Add(CLUMSY)
 	M.mutations.Add(GLOB.comicblock)
-	M.dna.SetSEState(GLOB.clumsyblock,1,1)
-	M.dna.SetSEState(GLOB.comicblock,1,1)
+	M.dna.SetDNAState(GLOB.clumsyblock,TRUE, DNA_SE, TRUE)
+	M.dna.SetDNAState(GLOB.comicblock,TRUE, DNA_SE, TRUE)
 	genemutcheck(M,GLOB.clumsyblock,null,MUTCHK_FORCED)
 	genemutcheck(M,GLOB.comicblock,null,MUTCHK_FORCED)
 	organhonked = world.time
@@ -254,8 +254,8 @@
 
 	M.mutations.Remove(CLUMSY)
 	M.mutations.Remove(GLOB.comicblock)
-	M.dna.SetSEState(GLOB.clumsyblock,0)
-	M.dna.SetSEState(GLOB.comicblock,0)
+	M.dna.SetDNAState(GLOB.clumsyblock, FALSE, DNA_SE)
+	M.dna.SetDNAState(GLOB.comicblock, FALSE, DNA_SE)
 	genemutcheck(M,GLOB.clumsyblock,null,MUTCHK_FORCED)
 	genemutcheck(M,GLOB.comicblock,null,MUTCHK_FORCED)
 	M.RemoveElement(/datum/element/waddling)

@@ -34,7 +34,7 @@
 	if(visualsOnly)
 		return
 
-	H.dna.SetSEState(GLOB.soberblock,1)
+	H.dna.SetDNAState(GLOB.soberblock, TRUE, DNA_SE)
 	genemutcheck(H, GLOB.soberblock, null, MUTCHK_FORCED)
 	H.dna.default_blocks.Add(GLOB.soberblock)
 	H.check_mutations = 1
@@ -370,11 +370,11 @@
 		var/obj/item/organ/internal/cyberimp/brain/clown_voice/implant = new
 		implant.insert(H)
 
-	H.dna.SetSEState(GLOB.clumsyblock, TRUE)
+	H.dna.SetDNAState(GLOB.clumsyblock, TRUE, DNA_SE)
 	genemutcheck(H, GLOB.clumsyblock, null, MUTCHK_FORCED)
 	H.dna.default_blocks.Add(GLOB.clumsyblock)
 	if(!ismachineperson(H))
-		H.dna.SetSEState(GLOB.comicblock, TRUE)
+		H.dna.SetDNAState(GLOB.comicblock, TRUE, DNA_SE)
 		genemutcheck(H, GLOB.comicblock, null, MUTCHK_FORCED)
 		H.dna.default_blocks.Add(GLOB.comicblock)
 	H.check_mutations = TRUE

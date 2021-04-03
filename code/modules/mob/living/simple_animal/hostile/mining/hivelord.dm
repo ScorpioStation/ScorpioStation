@@ -328,7 +328,7 @@
 
 /obj/effect/mob_spawn/human/corpse/damaged/legioninfested/dwarf/equip(mob/living/carbon/human/H)
 	. = ..()
-	H.dna.SetSEState(GLOB.smallsizeblock, 1, 1)
+	H.dna.SetDNAState(GLOB.smallsizeblock, TRUE, DNA_SE, TRUE)
 	H.mutations.Add(DWARF)
 	genemutcheck(H, GLOB.smallsizeblock, null, MUTCHK_FORCED)
 	H.update_mutations()

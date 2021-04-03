@@ -228,7 +228,7 @@ GLOBAL_VAR_INIT(nologevent, 0)
 					bname = GLOB.assigned_blocks[block]
 					body += "<td>"
 					if(bname)
-						var/bstate=M.dna.GetSEState(block)
+						var/bstate=M.dna.GetDNAState(block, DNA_SE)
 						var/bcolor="[(bstate)?"#006600":"#ff0000"]"
 						body += "<A href='?_src_=holder;togmutate=[M.UID()];block=[block]' style='color:[bcolor];'>[bname]</A><sub>[block]</sub>"
 					else

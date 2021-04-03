@@ -26,7 +26,7 @@
 		return
 	M.dna.check_integrity()
 	var/block = pick(GLOB.bad_blocks)
-	M.dna.SetSEState(block, 1)
+	M.dna.SetDNAState(block, TRUE, DNA_SE)
 
 // Give Random Good Mutation to M
 /proc/randmutg(mob/living/M)
@@ -34,14 +34,14 @@
 		return
 	M.dna.check_integrity()
 	var/block = pick(GLOB.good_blocks)
-	M.dna.SetSEState(block, 1)
+	M.dna.SetDNAState(block, TRUE, DNA_SE)
 
 // Random Appearance Mutation
 /proc/randmuti(mob/living/M)
 	if(!M || !M.dna)
 		return
 	M.dna.check_integrity()
-	M.dna.SetUIValue(rand(1, DNA_UI_LENGTH), rand(1, 4095))
+	M.dna.SetDNAValue(rand(1, DNA_UI_LENGTH), rand(1, 4095), DNA_UI)
 
 // Scramble UI or SE.
 /proc/scramble(UI, mob/M, prob)
@@ -49,17 +49,17 @@
 		return
 	M.dna.check_integrity()
 	if(UI)
-		for(var/i = 1, i <= DNA_UI_LENGTH - 1, i++)
+		for(var/i in 1 to DNA_UI_LENGTH)
 			if(prob(prob))
-				M.dna.SetUIValue(i, rand(1, 4095), 1)
-		M.dna.UpdateUI()
+				M.dna.SetDNAValue(i, rand(1, 4095), DNA_UI, TRUE)
+		M.dna.UpdateDNA(DNA_UI)
 		M.UpdateAppearance()
 
 	else
-		for(var/i = 1, i <= DNA_SE_LENGTH - 1, i++)
+		for(var/i in 1 to (DNA_SE_LENGTH - 1))
 			if(prob(prob))
-				M.dna.SetSEValue(i, rand(1, 4095), 1)
-		M.dna.UpdateSE()
+				M.dna.SetDNAValue(i, rand(1, 4095), DNA_SE, TRUE)
+		M.dna.UpdateDNA(DNA_SE)
 		domutcheck(M, null)
 
 // I haven't yet figured out what the fuck this is supposed to do.
@@ -129,9 +129,9 @@
 // Simpler. Don't specify UI in order for the mob to use its own.
 /mob/proc/UpdateAppearance(list/UI = null)
 	if(istype(src, /mob/living/carbon/human)) // WHY?!
-		if(UI!=null)
+		if(UI != null)
 			dna.UI = UI
-			dna.UpdateUI()
+			dna.UpdateDNA(DNA_UI)
 		dna.check_integrity()
 		var/mob/living/carbon/human/H = src
 		var/obj/item/organ/external/head/head_organ = H.get_organ("head")
@@ -142,15 +142,15 @@
 			dna.write_eyes_attributes(eye_organ)
 		H.update_eyes()
 
-		H.skin_colour = rgb(dna.GetUIValueRange(DNA_UI_SKIN_R, 255), dna.GetUIValueRange(DNA_UI_SKIN_G, 255), dna.GetUIValueRange(DNA_UI_SKIN_B, 255))
+		H.skin_colour = rgb(dna.GetDNAValueRange(DNA_UI_SKIN_R, 255, DNA_UI), dna.GetDNAValueRange(DNA_UI_SKIN_G, 255, DNA_UI), dna.GetDNAValueRange(DNA_UI_SKIN_B, 255, DNA_UI))
 
-		H.m_colours["head"] = rgb(dna.GetUIValueRange(DNA_UI_HEAD_MARK_R, 255), dna.GetUIValueRange(DNA_UI_HEAD_MARK_G, 255), dna.GetUIValueRange(DNA_UI_HEAD_MARK_B, 255))
-		H.m_colours["body"] = rgb(dna.GetUIValueRange(DNA_UI_BODY_MARK_R, 255), dna.GetUIValueRange(DNA_UI_BODY_MARK_G, 255), dna.GetUIValueRange(DNA_UI_BODY_MARK_B, 255))
-		H.m_colours["tail"] = rgb(dna.GetUIValueRange(DNA_UI_TAIL_MARK_R, 255), dna.GetUIValueRange(DNA_UI_TAIL_MARK_G, 255), dna.GetUIValueRange(DNA_UI_TAIL_MARK_B, 255))
+		H.m_colours["head"] = rgb(dna.GetDNAValueRange(DNA_UI_HEAD_MARK_R, 255, DNA_UI), dna.GetDNAValueRange(DNA_UI_HEAD_MARK_G, 255, DNA_UI), dna.GetDNAValueRange(DNA_UI_HEAD_MARK_B, 255, DNA_UI))
+		H.m_colours["body"] = rgb(dna.GetDNAValueRange(DNA_UI_BODY_MARK_R, 255, DNA_UI), dna.GetDNAValueRange(DNA_UI_BODY_MARK_G, 255, DNA_UI), dna.GetDNAValueRange(DNA_UI_BODY_MARK_B, 255, DNA_UI))
+		H.m_colours["tail"] = rgb(dna.GetDNAValueRange(DNA_UI_TAIL_MARK_R, 255, DNA_UI), dna.GetDNAValueRange(DNA_UI_TAIL_MARK_G, 255, DNA_UI), dna.GetDNAValueRange(DNA_UI_TAIL_MARK_B, 255, DNA_UI))
 
-		H.s_tone   = 35 - dna.GetUIValueRange(DNA_UI_SKIN_TONE, 220) // Value can be negative.
+		H.s_tone   = 35 - dna.GetDNAValueRange(DNA_UI_SKIN_TONE, 220, DNA_UI) // Value can be negative.
 
-		switch(dna.GetUITriState(DNA_UI_GENDER))
+		switch(dna.GetDNATriState(DNA_UI_GENDER, DNA_UI))
 			if(DNA_GENDER_FEMALE)
 				H.change_gender(FEMALE, FALSE)
 			if(DNA_GENDER_MALE)
@@ -159,16 +159,16 @@
 				H.change_gender(PLURAL, FALSE)
 
 		//Head Markings
-		var/head_marks = dna.GetUIValueRange(DNA_UI_HEAD_MARK_STYLE, GLOB.marking_styles_list.len)
-		if((head_marks > 0) && (head_marks <= GLOB.marking_styles_list.len))
+		var/head_marks = dna.GetDNAValueRange(DNA_UI_HEAD_MARK_STYLE, length(GLOB.marking_styles_list), DNA_UI)
+		if((head_marks > 0) && (head_marks <= length(GLOB.marking_styles_list)))
 			H.m_styles["head"] = GLOB.marking_styles_list[head_marks]
 		//Body Markings
-		var/body_marks = dna.GetUIValueRange(DNA_UI_BODY_MARK_STYLE, GLOB.marking_styles_list.len)
-		if((body_marks > 0) && (body_marks <= GLOB.marking_styles_list.len))
+		var/body_marks = dna.GetDNAValueRange(DNA_UI_BODY_MARK_STYLE, length(GLOB.marking_styles_list), DNA_UI)
+		if((body_marks > 0) && (body_marks <= length(GLOB.marking_styles_list)))
 			H.m_styles["body"] = GLOB.marking_styles_list[body_marks]
 		//Tail Markings
-		var/tail_marks = dna.GetUIValueRange(DNA_UI_TAIL_MARK_STYLE, GLOB.marking_styles_list.len)
-		if((tail_marks > 0) && (tail_marks <= GLOB.marking_styles_list.len))
+		var/tail_marks = dna.GetDNAValueRange(DNA_UI_TAIL_MARK_STYLE, length(GLOB.marking_styles_list), DNA_UI)
+		if((tail_marks > 0) && (tail_marks <= length(GLOB.marking_styles_list)))
 			H.m_styles["tail"] = GLOB.marking_styles_list[tail_marks]
 
 		H.regenerate_icons()
@@ -189,31 +189,31 @@
 /datum/dna/proc/write_head_attributes(obj/item/organ/external/head/head_organ)
 
 	//Hair
-	var/hair = GetUIValueRange(DNA_UI_HAIR_STYLE,GLOB.hair_styles_full_list.len)
-	if((hair > 0) && (hair <= GLOB.hair_styles_full_list.len))
+	var/hair = GetDNAValueRange(DNA_UI_HAIR_STYLE, length(GLOB.hair_styles_full_list), DNA_UI)
+	if((hair > 0) && (hair <= length(GLOB.hair_styles_full_list)))
 		head_organ.h_style = GLOB.hair_styles_full_list[hair]
 
-	head_organ.hair_colour = rgb(head_organ.dna.GetUIValueRange(DNA_UI_HAIR_R, 255), head_organ.dna.GetUIValueRange(DNA_UI_HAIR_G, 255), head_organ.dna.GetUIValueRange(DNA_UI_HAIR_B, 255))
-	head_organ.sec_hair_colour = rgb(head_organ.dna.GetUIValueRange(DNA_UI_HAIR2_R, 255), head_organ.dna.GetUIValueRange(DNA_UI_HAIR2_G, 255), head_organ.dna.GetUIValueRange(DNA_UI_HAIR2_B, 255))
+	head_organ.hair_colour = rgb(head_organ.dna.GetDNAValueRange(DNA_UI_HAIR_R, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_HAIR_G, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_HAIR_B, 255, DNA_UI))
+	head_organ.sec_hair_colour = rgb(head_organ.dna.GetDNAValueRange(DNA_UI_HAIR2_R, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_HAIR2_G, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_HAIR2_B, 255, DNA_UI))
 
 	//Facial Hair
-	var/beard = GetUIValueRange(DNA_UI_BEARD_STYLE,GLOB.facial_hair_styles_list.len)
-	if((beard > 0) && (beard <= GLOB.facial_hair_styles_list.len))
+	var/beard = GetDNAValueRange(DNA_UI_BEARD_STYLE, length(GLOB.facial_hair_styles_list), DNA_UI)
+	if((beard > 0) && (beard <= length(GLOB.facial_hair_styles_list)))
 		head_organ.f_style = GLOB.facial_hair_styles_list[beard]
 
-	head_organ.facial_colour = rgb(head_organ.dna.GetUIValueRange(DNA_UI_BEARD_R, 255), head_organ.dna.GetUIValueRange(DNA_UI_BEARD_G, 255), head_organ.dna.GetUIValueRange(DNA_UI_BEARD_B, 255))
-	head_organ.sec_facial_colour = rgb(head_organ.dna.GetUIValueRange(DNA_UI_BEARD2_R, 255), head_organ.dna.GetUIValueRange(DNA_UI_BEARD2_G, 255), head_organ.dna.GetUIValueRange(DNA_UI_BEARD2_B, 255))
+	head_organ.facial_colour = rgb(head_organ.dna.GetDNAValueRange(DNA_UI_BEARD_R, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_BEARD_G, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_BEARD_B, 255, DNA_UI))
+	head_organ.sec_facial_colour = rgb(head_organ.dna.GetDNAValueRange(DNA_UI_BEARD2_R, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_BEARD2_G, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_BEARD2_B, 255, DNA_UI))
 
 	//Head Accessories
-	var/headacc = GetUIValueRange(DNA_UI_HACC_STYLE,GLOB.head_accessory_styles_list.len)
-	if((headacc > 0) && (headacc <= GLOB.head_accessory_styles_list.len))
+	var/headacc = GetDNAValueRange(DNA_UI_HACC_STYLE, length(GLOB.head_accessory_styles_list), DNA_UI)
+	if((headacc > 0) && (headacc <= length(GLOB.head_accessory_styles_list)))
 		head_organ.ha_style = GLOB.head_accessory_styles_list[headacc]
 
-	head_organ.headacc_colour = rgb(head_organ.dna.GetUIValueRange(DNA_UI_HACC_R, 255), head_organ.dna.GetUIValueRange(DNA_UI_HACC_G, 255), head_organ.dna.GetUIValueRange(DNA_UI_HACC_B, 255))
+	head_organ.headacc_colour = rgb(head_organ.dna.GetDNAValueRange(DNA_UI_HACC_R, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_HACC_G, 255, DNA_UI), head_organ.dna.GetDNAValueRange(DNA_UI_HACC_B, 255, DNA_UI))
 
 // This proc gives the DNA info for eye color to the given eyes
 /datum/dna/proc/write_eyes_attributes(obj/item/organ/internal/eyes/eyes_organ)
-	eyes_organ.eye_colour = rgb(eyes_organ.dna.GetUIValueRange(DNA_UI_EYES_R, 255), eyes_organ.dna.GetUIValueRange(DNA_UI_EYES_G, 255), eyes_organ.dna.GetUIValueRange(DNA_UI_EYES_B, 255))
+	eyes_organ.eye_colour = rgb(eyes_organ.dna.GetDNAValueRange(DNA_UI_EYES_R, 255, DNA_UI), eyes_organ.dna.GetDNAValueRange(DNA_UI_EYES_G, 255, DNA_UI), eyes_organ.dna.GetDNAValueRange(DNA_UI_EYES_B, 255, DNA_UI))
 
 /*
 	TRAIT CHANGING PROCS
@@ -223,9 +223,9 @@
 		// In absence of eyes, possibly randomize the eye color DNA?
 		return
 
-	SetUIValueRange(DNA_UI_EYES_R,	color2R(eyes_organ.eye_colour),	255, 1)
-	SetUIValueRange(DNA_UI_EYES_G,	color2G(eyes_organ.eye_colour),	255, 1)
-	SetUIValueRange(DNA_UI_EYES_B,	color2B(eyes_organ.eye_colour),	255, 1)
+	SetDNAValueRange(DNA_UI_EYES_R,	color2R(eyes_organ.eye_colour),	255, DNA_UI, TRUE)
+	SetDNAValueRange(DNA_UI_EYES_G,	color2G(eyes_organ.eye_colour),	255, DNA_UI, TRUE)
+	SetDNAValueRange(DNA_UI_EYES_B,	color2B(eyes_organ.eye_colour),	255, DNA_UI, TRUE)
 
 /datum/dna/proc/head_traits_to_dna(obj/item/organ/external/head/head_organ)
 	if(!head_organ)
@@ -245,26 +245,26 @@
 		head_organ.ha_style = "None"
 	var/headacc	= GLOB.head_accessory_styles_list.Find(head_organ.ha_style)
 
-	SetUIValueRange(DNA_UI_HAIR_R,		color2R(head_organ.hair_colour),		255,	 1)
-	SetUIValueRange(DNA_UI_HAIR_G,		color2G(head_organ.hair_colour),		255,	 1)
-	SetUIValueRange(DNA_UI_HAIR_B,		color2B(head_organ.hair_colour),		255,	 1)
+	SetDNAValueRange(DNA_UI_HAIR_R,		color2R(head_organ.hair_colour),		255,	 DNA_UI,	TRUE)
+	SetDNAValueRange(DNA_UI_HAIR_G,		color2G(head_organ.hair_colour),		255,	 DNA_UI,	TRUE)
+	SetDNAValueRange(DNA_UI_HAIR_B,		color2B(head_organ.hair_colour),		255,	 DNA_UI,	TRUE)
 
-	SetUIValueRange(DNA_UI_HAIR2_R,		color2R(head_organ.sec_hair_colour),	255,	 1)
-	SetUIValueRange(DNA_UI_HAIR2_G,		color2G(head_organ.sec_hair_colour),	255,	 1)
-	SetUIValueRange(DNA_UI_HAIR2_B,		color2B(head_organ.sec_hair_colour),	255,	 1)
+	SetDNAValueRange(DNA_UI_HAIR2_R,		color2R(head_organ.sec_hair_colour),	255,	 DNA_UI,	TRUE)
+	SetDNAValueRange(DNA_UI_HAIR2_G,		color2G(head_organ.sec_hair_colour),	255,	 DNA_UI,	TRUE)
+	SetDNAValueRange(DNA_UI_HAIR2_B,		color2B(head_organ.sec_hair_colour),	255,	 DNA_UI,	TRUE)
 
-	SetUIValueRange(DNA_UI_BEARD_R,		color2R(head_organ.facial_colour),		255,	 1)
-	SetUIValueRange(DNA_UI_BEARD_G,		color2G(head_organ.facial_colour),		255,	 1)
-	SetUIValueRange(DNA_UI_BEARD_B,		color2B(head_organ.facial_colour),		255,	 1)
+	SetDNAValueRange(DNA_UI_BEARD_R,		color2R(head_organ.facial_colour),		255,	 DNA_UI,	TRUE)
+	SetDNAValueRange(DNA_UI_BEARD_G,		color2G(head_organ.facial_colour),		255,	 DNA_UI,	TRUE)
+	SetDNAValueRange(DNA_UI_BEARD_B,		color2B(head_organ.facial_colour),		255,	 DNA_UI,	TRUE)
 
-	SetUIValueRange(DNA_UI_BEARD2_R,	color2R(head_organ.sec_facial_colour),	255,	 1)
-	SetUIValueRange(DNA_UI_BEARD2_G,	color2G(head_organ.sec_facial_colour),	255,	 1)
-	SetUIValueRange(DNA_UI_BEARD2_B,	color2B(head_organ.sec_facial_colour),	255,	 1)
+	SetDNAValueRange(DNA_UI_BEARD2_R,	color2R(head_organ.sec_facial_colour),	255,	 DNA_UI,	TRUE)
+	SetDNAValueRange(DNA_UI_BEARD2_G,	color2G(head_organ.sec_facial_colour),	255,	 DNA_UI,	TRUE)
+	SetDNAValueRange(DNA_UI_BEARD2_B,	color2B(head_organ.sec_facial_colour),	255,	 DNA_UI,	TRUE)
 
-	SetUIValueRange(DNA_UI_HACC_R,		color2R(head_organ.headacc_colour),		255,	 1)
-	SetUIValueRange(DNA_UI_HACC_G,		color2G(head_organ.headacc_colour),		255,	 1)
-	SetUIValueRange(DNA_UI_HACC_B,		color2B(head_organ.headacc_colour),		255,	 1)
+	SetDNAValueRange(DNA_UI_HACC_R,		color2R(head_organ.headacc_colour),		255,	 DNA_UI,	TRUE)
+	SetDNAValueRange(DNA_UI_HACC_G,		color2G(head_organ.headacc_colour),		255,	 DNA_UI,	TRUE)
+	SetDNAValueRange(DNA_UI_HACC_B,		color2B(head_organ.headacc_colour),		255,	 DNA_UI,	TRUE)
 
-	SetUIValueRange(DNA_UI_HAIR_STYLE,	hair,		GLOB.hair_styles_full_list.len,		 1)
-	SetUIValueRange(DNA_UI_BEARD_STYLE,	beard,		GLOB.facial_hair_styles_list.len,	 1)
-	SetUIValueRange(DNA_UI_HACC_STYLE,	headacc,	GLOB.head_accessory_styles_list.len, 1)
+	SetDNAValueRange(DNA_UI_HAIR_STYLE,		hair,		length(GLOB.hair_styles_full_list),		 DNA_UI,	TRUE)
+	SetDNAValueRange(DNA_UI_BEARD_STYLE,	beard,		length(GLOB.facial_hair_styles_list),	 DNA_UI,	TRUE)
+	SetDNAValueRange(DNA_UI_HACC_STYLE,		headacc,	length(GLOB.head_accessory_styles_list), DNA_UI,	TRUE)

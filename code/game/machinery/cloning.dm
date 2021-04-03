@@ -140,32 +140,71 @@ GLOBAL_LIST_INIT(cloner_biomass_items, list(\
 /obj/item/disk/data/demo/New()
 	..()
 	initialize()
-	buf.types=DNA2_BUF_UE|DNA2_BUF_UI
+	buf.types = DNA2_BUF_UE | DNA2_BUF_UI
 	//data = "066000033000000000AF00330660FF4DB002690"
 	//data = "0C80C80C80C80C80C8000000000000161FBDDEF" - Farmer Jeff
-	buf.dna.real_name="God Emperor of Mankind"
+	buf.dna.real_name = "God Emperor of Mankind"
 	buf.dna.unique_enzymes = md5(buf.dna.real_name)
-	buf.dna.UI=list(0x066,0x000,0x033,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0xAF0,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x033,0x066,0x0FF,0x4DB,0x002,0x690,0x000,0x000,0x000,0x328,0x045,0x5FC,0x053,0x035,0x035,0x035)
+	buf.dna.UI = list(
+		0x066,	//DNA_UI_HAIR_R
+		0x000,	//DNA_UI_HAIR_G
+		0x033,	//DNA_UI_HAIR_B
+		0x000,	//DNA_UI_HAIR_R2
+		0x000,	//DNA_UI_HAIR_G2
+		0x000,	//DNA_UI_HAIR_B2
+		0x000,	//DNA_UI_BEARD_R
+		0x000,	//DNA_UI_BEARD_G
+		0x000,	//DNA_UI_BEARD_B
+		0x000,	//DNA_UI_BEARD2_R
+		0x000,	//DNA_UI_BEARD2_G
+		0x000,	//DNA_UI_BEARD2_B
+		0xAF0,	//DNA_UI_SKIN_TONE
+		0x000,	//DNA_UI_SKIN_R
+		0x000,	//DNA_UI_SKIN_G
+		0x000,	//DNA_UI_SKIN_B
+		0x000,	//DNA_UI_HACC_R
+		0x000,	//DNA_UI_HACC_G
+		0x000,	//DNA_UI_HACC_B
+		0x000,	//DNA_UI_HEAD_MARK_R
+		0x000,	//DNA_UI_HEAD_MARK_G
+		0x000,	//DNA_UI_HEAD_MARK_B
+		0x033,	//DNA_UI_BODY_MARK_R
+		0x066,	//DNA_UI_BODY_MARK_G
+		0x0FF,	//DNA_UI_BODY_MARK_B
+		0x4DB,	//DNA_UI_TAIL_MARK_R
+		0x002,	//DNA_UI_TAIL_MARK_B
+		0x690,	//DNA_UI_TAIL_MARK_G
+		0x000,	//DNA_UI_EYES_R
+		0x000,	//DNA_UI_EYES_G
+		0x000,	//DNA_UI_EYES_B
+		0x328,	//DNA_UI_GENDER
+		0x045,	//DNA_UI_BEARD_STYLE
+		0x5FC,	//DNA_UI_HAIR_STYLE
+		0x053,	//DNA_UI_HACC_STYLE
+		0x035,	//DNA_UI_HEAD_MARK_STYLE
+		0x035,	//DNA_UI_BODY_MARK_STYLE
+		0x035	//DNA_UI_TAIL_MARK_STYLE
+	)
 	//buf.dna.UI=list(0x0C8,0x0C8,0x0C8,0x0C8,0x0C8,0x0C8,0x000,0x000,0x000,0x000,0x161,0xFBD,0xDEF) // Farmer Jeff
-	if(buf.dna.UI.len != DNA_UI_LENGTH) //If there's a disparity b/w the dna UI string lengths, 0-fill the extra blocks in this UI.
-		for(var/i in buf.dna.UI.len to DNA_UI_LENGTH)
+	if(length(buf.dna.UI) != DNA_UI_LENGTH) //If there's a disparity b/w the dna UI string lengths, 0-fill the extra blocks in this UI.
+		for(var/i in length(buf.dna.UI) to DNA_UI_LENGTH)
 			buf.dna.UI += 0x000
-	buf.dna.ResetSE()
-	buf.dna.UpdateUI()
+	buf.dna.ResetDNA(DNA_SE)
+	buf.dna.UpdateDNA(DNA_UI)
 
 /obj/item/disk/data/monkey
 	name = "data disk - 'Mr. Muggles'"
-	read_only = 1
+	read_only = TRUE
 
 /obj/item/disk/data/monkey/New()
 	..()
 	initialize()
-	buf.types=DNA2_BUF_SE
+	buf.types = DNA2_BUF_SE
 	var/list/new_SE=list(0x098,0x3E8,0x403,0x44C,0x39F,0x4B0,0x59D,0x514,0x5FC,0x578,0x5DC,0x640,0x6A4)
-	for(var/i=new_SE.len;i<=DNA_SE_LENGTH;i++)
-		new_SE += rand(1,1024)
-	buf.dna.SE=new_SE
-	buf.dna.SetSEValueRange(GLOB.monkeyblock,0xDAC, 0xFFF)
+	for(var/i in length(new_SE) to DNA_SE_LENGTH)
+		new_SE += rand(1, 1024)
+	buf.dna.SE = new_SE
+	buf.dna.SetDNAValue(GLOB.monkeyblock, 0xDAC, DNA_SE)
 
 //Disk stuff.
 /obj/item/disk/data/New()
@@ -283,8 +322,7 @@ GLOBAL_LIST_INIT(cloner_biomass_items, list(\
 	if(efficiency < 3 && prob(50))
 		randmutb(H)
 
-	H.dna.UpdateSE()
-	H.dna.UpdateUI()
+	H.dna.UpdateDNA(DNA_ALL)
 
 	H.sync_organ_dna(1) // It's literally a fresh body as you can get, so all organs properly belong to it
 	H.UpdateAppearance()

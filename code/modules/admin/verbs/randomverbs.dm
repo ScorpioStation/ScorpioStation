@@ -424,7 +424,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		var/list/newSE= record_found.fields["enzymes"]
 		var/list/newUI = record_found.fields["identity"]
 		new_character.dna.SE = newSE.Copy() //This is the default of enzymes so I think it's safe to go with.
-		new_character.dna.UpdateSE()
+		new_character.dna.UpdateDNA(DNA_SE)
 		new_character.UpdateAppearance(newUI.Copy())//Now we configure their appearance based on their unique identity, same as with a DNA machine or somesuch.
 	else//If they have no records, we just do a random DNA for them, based on their random appearance/savefile.
 		new_character.dna.ready_dna(new_character)

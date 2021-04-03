@@ -349,18 +349,6 @@
 	idle_power_usage = 10
 	active_power_usage = 400
 
-/obj/machinery/computer/scan_consolenew/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/disk/data)) //INSERT SOME diskS
-		if(!disk)
-			user.drop_item()
-			I.forceMove(src)
-			disk = I
-			to_chat(user, "You insert [I].")
-			SStgui.update_uis(src)
-			return
-	else
-		return ..()
-
 /obj/machinery/computer/scan_consolenew/New()
 	..()
 	for(var/i=0;i<3;i++)
@@ -372,6 +360,18 @@
 				break
 		spawn(250)
 			injector_ready = TRUE
+
+/obj/machinery/computer/scan_consolenew/attackby(obj/item/I, mob/user, params)
+	if(istype(I, /obj/item/disk/data)) //INSERT SOME diskS
+		if(!disk)
+			user.drop_item()
+			I.forceMove(src)
+			disk = I
+			to_chat(user, "You insert [I].")
+			SStgui.update_uis(src)
+			return
+	else
+		return ..()
 
 /obj/machinery/computer/scan_consolenew/proc/all_dna_blocks(list/buffer)
 	var/list/arr = list()
@@ -571,7 +571,7 @@
 			selected_ui_block = clamp(select_block, 1, DNA_UI_LENGTH)
 			selected_ui_subblock = clamp(select_subblock, 1, DNA_BLOCK_SIZE)
 		if("pulseUIRadiation")
-			var/block = connected.occupant.dna.GetUISubBlock(selected_ui_block, selected_ui_subblock)
+			var/block = connected.occupant.dna.GetDNASubBlock(selected_ui_block, selected_ui_subblock, DNA_UI)
 
 			irradiating = radiation_duration
 			var/lock_state = connected.locked
@@ -594,7 +594,7 @@
 					return
 
 				block = miniscrambletarget(num2text(selected_ui_target), radiation_intensity, radiation_duration)
-				connected.occupant.dna.SetUISubBlock(selected_ui_block, selected_ui_subblock, block)
+				connected.occupant.dna.SetDNASubBlock(selected_ui_block, selected_ui_subblock, block, DNA_UI)
 				connected.occupant.UpdateAppearance()
 			else
 				var/radiation = ((radiation_intensity * 2) + radiation_duration)
@@ -627,7 +627,7 @@
 			selected_se_block = clamp(select_block, 1, DNA_SE_LENGTH)
 			selected_se_subblock = clamp(select_subblock, 1, DNA_BLOCK_SIZE)
 		if("pulseSERadiation")
-			var/block = connected.occupant.dna.GetSESubBlock(selected_se_block, selected_se_subblock)
+			var/block = connected.occupant.dna.GetDNASubBlock(selected_se_block, selected_se_subblock, DNA_SE)
 			//var/original_block=block
 			//testing("Irradiating SE block [selected_se_block]:[selected_se_subblock] ([block])...")
 
@@ -658,7 +658,7 @@
 							real_SE_block--
 
 					//testing("Irradiated SE block [real_SE_block]:[selected_se_subblock] ([original_block] now [block]) [(real_SE_block!=selected_se_block) ? "(SHIFTED)":""]!")
-					connected.occupant.dna.SetSESubBlock(real_SE_block, selected_se_subblock, block)
+					connected.occupant.dna.SetDNASubBlock(real_SE_block, selected_se_subblock, block, DNA_SE)
 					domutcheck(connected.occupant, connected)
 				else
 					var/radiation = (((radiation_intensity * 2) + radiation_duration) / connected.damage_coeff)
@@ -751,7 +751,7 @@
 						connected.occupant.UpdateAppearance(buf.dna.UI.Copy())
 					else if(buf.types & DNA2_BUF_SE)
 						connected.occupant.dna.SE = buf.dna.SE.Copy()
-						connected.occupant.dna.UpdateSE()
+						connected.occupant.dna.UpdateDNA(DNA_SE)
 						domutcheck(connected.occupant, connected)
 				if("createInjector")
 					if(!injector_ready)

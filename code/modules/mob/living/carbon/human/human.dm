@@ -1224,8 +1224,7 @@
 	domutcheck(src, null, MUTCHK_FORCED) //Ensures species that get powers by the species proc handle_dna keep them
 	if(!keep_flavor_text)
 		flavor_text = ""
-	dna.UpdateSE()
-	dna.UpdateUI()
+	dna.UpdateDNA(DNA_ALL)
 	sync_organ_dna(TRUE)
 	UpdateAppearance()
 	sec_hud_set_ID()
@@ -1960,9 +1959,9 @@ Eyes need to have significantly high darksight to shine unless the mob has the X
 	update_icons()
 /mob/living/carbon/human/proc/cleanSE()	//remove all disabilities/powers
 	for(var/block = 1; block <= DNA_SE_LENGTH; block++)
-		dna.SetSEState(block, FALSE, TRUE)
+		dna.SetDNAState(block, FALSE, DNA_SE, TRUE)
 		genemutcheck(src, block, null, MUTCHK_FORCED)
-	dna.UpdateSE()
+	dna.UpdateDNA(DNA_SE)
 
 /mob/living/carbon/human/get_spooked()
 	to_chat(src, "<span class='whisper'>[pick(GLOB.boo_phrases)]</span>")

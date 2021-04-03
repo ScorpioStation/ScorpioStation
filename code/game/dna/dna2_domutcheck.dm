@@ -32,7 +32,7 @@
 		return FALSE
 
 	// Current state
-	var/gene_active = M.dna.GetSEState(gene.block)
+	var/gene_active = M.dna.GetDNAState(gene.block, DNA_SE)
 
 	// Sanity checks, don't skip.
 	if(!gene.can_activate(M,flags) && gene_active)

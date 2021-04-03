@@ -280,13 +280,13 @@
 	..()
 	if(ishuman(owner))
 		owner.gene_stability += GENE_INSTABILITY_MODERATE // give them this gene for free
-		owner.dna.SetSEState(GLOB.shockimmunityblock, TRUE)
+		owner.dna.SetDNAState(GLOB.shockimmunityblock, TRUE, DNA_SE)
 		genemutcheck(owner, GLOB.shockimmunityblock,  null, MUTCHK_FORCED)
 
 /obj/item/organ/internal/heart/gland/electric/remove(mob/living/carbon/M, special = 0)
 	if(ishuman(owner))
 		owner.gene_stability -= GENE_INSTABILITY_MODERATE // but return it to normal once it's removed
-		owner.dna.SetSEState(GLOB.shockimmunityblock, FALSE)
+		owner.dna.SetDNAState(GLOB.shockimmunityblock, FALSE, DNA_SE)
 		genemutcheck(owner, GLOB.shockimmunityblock,  null, MUTCHK_FORCED)
 	return ..()
 

@@ -32,7 +32,7 @@
 
 /datum/species/grey/handle_dna(mob/living/carbon/human/H, remove)
 	..()
-	H.dna.SetSEState(GLOB.remotetalkblock, !remove, 1)
+	H.dna.SetDNAState(GLOB.remotetalkblock, !remove, DNA_SE, TRUE)
 	genemutcheck(H, GLOB.remotetalkblock, null, MUTCHK_FORCED)
 	H.dna.default_blocks.Add(GLOB.remotetalkblock)
 

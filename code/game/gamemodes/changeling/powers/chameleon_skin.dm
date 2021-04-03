@@ -11,11 +11,11 @@
 	var/mob/living/carbon/human/H = user //SHOULD always be human, because req_human = 1
 	if(!istype(H)) // req_human could be done in can_sting stuff.
 		return
-	if(H.dna.GetSEState(GLOB.chameleonblock))
-		H.dna.SetSEState(GLOB.chameleonblock, 0)
+	if(H.dna.GetDNAState(GLOB.chameleonblock, DNA_SE))
+		H.dna.SetDNAState(GLOB.chameleonblock, FALSE, DNA_SE)
 		genemutcheck(H, GLOB.chameleonblock, null, MUTCHK_FORCED)
 	else
-		H.dna.SetSEState(GLOB.chameleonblock, 1)
+		H.dna.SetDNAState(GLOB.chameleonblock, TRUE, DNA_SE)
 		genemutcheck(H, GLOB.chameleonblock, null, MUTCHK_FORCED)
 
 	SSblackbox.record_feedback("nested tally", "changeling_powers", 1, list("[name]"))
@@ -23,7 +23,7 @@
 
 /datum/action/changeling/chameleon_skin/Remove(mob/user)
 	var/mob/living/carbon/C = user
-	if(C.dna.GetSEState(GLOB.chameleonblock))
-		C.dna.SetSEState(GLOB.chameleonblock, 0)
+	if(C.dna.GetDNAState(GLOB.chameleonblock, DNA_SE))
+		C.dna.SetDNAState(GLOB.chameleonblock, FALSE, DNA_SE)
 		genemutcheck(C, GLOB.chameleonblock, null, MUTCHK_FORCED)
 	..()

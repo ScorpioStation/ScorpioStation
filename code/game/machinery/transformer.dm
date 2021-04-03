@@ -288,7 +288,7 @@
 	H.sync_organ_dna(assimilate = 1)
 	H.update_body()
 	H.reset_hair()
-	H.dna.ResetUIFrom(H)
+	H.dna.ResetDNAFrom(H, DNA_UI)
 
 
 /obj/machinery/transformer/gene_applier
