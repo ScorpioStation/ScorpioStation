@@ -642,7 +642,7 @@
 
 /obj/item/card/id/arksoft
 	name = "Ark Soft ID card"
-	icon_state = "nanotrasen"
+	icon_state = "arksoft"
 
 /obj/item/card/id/prisoner
 	name = "prisoner ID card"

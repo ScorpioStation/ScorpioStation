@@ -124,11 +124,11 @@
 	item_color = "internalaffairs"
 
 /obj/item/clothing/under/rank/arkrep/skirt
-	desc = "A silky smooth black and gold representative uniform with blue markings."
+	desc = "A silky smooth black and gold representative uniform with red markings."
 	name = "representative skirt"
-	icon_state = "arkrepf"
-	item_state = "arkrepf"
-	item_color = "arkrepf"
+	icon_state = "asrepf"
+	item_state = "asrepf"
+	item_color = "asrepf"
 
 /obj/item/clothing/under/rank/janitor
 	desc = "It's the official uniform of the station's janitor. It has minor protection from biohazards."
