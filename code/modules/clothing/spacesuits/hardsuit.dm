@@ -21,7 +21,6 @@
 	var/datum/looping_sound/geiger/soundloop
 
 	//Species-specific stuff.
-	species_restricted = list("exclude","Wryn")
 	sprite_sheets = list(
 		"Unathi" = 'icons/mob/species/unathi/helmet.dmi',
 		"Tajaran" = 'icons/mob/species/tajaran/helmet.dmi',
@@ -154,8 +153,7 @@
 	var/helmettype = /obj/item/clothing/head/helmet/space/hardsuit
 	var/obj/item/tank/jetpack/suit/jetpack = null
 
-	hide_tail_by_species = list("Vox" , "Vulpkanin" , "Unathi" , "Tajaran")
-	species_restricted = list("exclude", "Wryn")
+	hide_back_by_species = list("Vox" , "Vulpkanin" , "Unathi" , "Tajaran", "Wryn")
 	sprite_sheets = list(
 		"Unathi" = 'icons/mob/species/unathi/suit.dmi',
 		"Tajaran" = 'icons/mob/species/tajaran/suit.dmi',
@@ -333,7 +331,7 @@
 	on = 1
 	var/obj/item/clothing/suit/space/hardsuit/syndi/linkedsuit = null
 	actions_types = list(/datum/action/item_action/toggle_helmet_mode)
-	visor_flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDETAIL
+	visor_flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEBACK
 	visor_flags = STOPSPRESSUREDMAGE
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/update_icon()

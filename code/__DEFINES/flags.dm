@@ -73,19 +73,20 @@
 
 //Species Body Flags
 #define HAS_HEAD_ACCESSORY	1
-#define HAS_TAIL 			2
+#define HAS_TAIL			2
 #define TAIL_OVERLAPPED		4
-#define HAS_SKIN_TONE 		8
+#define HAS_SKIN_TONE		8
 #define HAS_ICON_SKIN_TONE	16
 #define HAS_SKIN_COLOR		32
 #define HAS_HEAD_MARKINGS	64
 #define HAS_BODY_MARKINGS	128
 #define HAS_TAIL_MARKINGS	256
 #define HAS_MARKINGS		HAS_HEAD_MARKINGS|HAS_BODY_MARKINGS|HAS_TAIL_MARKINGS
-#define TAIL_WAGGING    	512
+#define TAIL_WAGGING		512
 #define NO_EYES				1024
 #define HAS_ALT_HEADS		2048
 #define ALL_RPARTS			4096
+#define HAS_WINGS			8192
 
 //Species Diet Flags
 #define DIET_CARN		1

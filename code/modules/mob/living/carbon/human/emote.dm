@@ -37,7 +37,7 @@
 				on_CD = handle_emote_CD()
 				emote("gasp")
 				return
-				
+
 	switch(act)		//This switch adds cooldowns to some emotes
 		if("ping", "pings", "buzz", "buzzes", "beep", "beeps", "yes", "no", "buzz2")
 			var/found_machine_head = FALSE
@@ -274,7 +274,7 @@
 					start_tail_wagging()
 
 			else if(dna.species.bodyflags & TAIL_WAGGING)
-				if(!wear_suit || !(wear_suit.flags_inv & HIDETAIL))
+				if(!wear_suit || !(wear_suit.flags_inv & HIDEBACK))
 					message = "<B>[src]</B> starts wagging [p_their()] tail."
 					start_tail_wagging()
 				else

@@ -521,7 +521,7 @@ BLIND     // can't see anything
 	var/suit_adjusted = 0
 	var/ignore_suitadjust = 1
 	var/adjust_flavour = null
-	var/list/hide_tail_by_species = null
+	var/list/hide_back_by_species = null
 
 //Proc that opens and closes jackets.
 /obj/item/clothing/suit/proc/adjustsuit(var/mob/user)
@@ -574,13 +574,13 @@ BLIND     // can't see anything
 
 /obj/item/clothing/suit/equipped(var/mob/living/carbon/human/user, var/slot) //Handle tail-hiding on a by-species basis.
 	..()
-	if(ishuman(user) && hide_tail_by_species && slot == slot_wear_suit)
-		if(user.dna.species.name in hide_tail_by_species)
-			if(!(flags_inv & HIDETAIL)) //Hide the tail if the user's species is in the hide_tail_by_species list and the tail isn't already hidden.
-				flags_inv |= HIDETAIL
+	if(ishuman(user) && hide_back_by_species && slot == slot_wear_suit)
+		if(user.dna.species.name in hide_back_by_species)
+			if(!(flags_inv & HIDEBACK)) //Hide the tail if the user's species is in the hide_back_by_species list and the tail isn't already hidden.
+				flags_inv |= HIDEBACK
 		else
-			if(!(initial(flags_inv) & HIDETAIL) && (flags_inv & HIDETAIL)) //Otherwise, remove the HIDETAIL flag if it wasn't already in the flags_inv to start with.
-				flags_inv &= ~HIDETAIL
+			if(!(initial(flags_inv) & HIDEBACK) && (flags_inv & HIDEBACK)) //Otherwise, remove the HIDEBACK flag if it wasn't already in the flags_inv to start with.
+				flags_inv &= ~HIDEBACK
 
 /obj/item/clothing/suit/ui_action_click(mob/user) //This is what happens when you click the HUD action button to adjust your suit.
 	if(!ignore_suitadjust)
@@ -609,7 +609,6 @@ BLIND     // can't see anything
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
 	heat_protection = HEAD
 	max_heat_protection_temperature = SPACE_HELM_MAX_TEMP_PROTECT
-	species_restricted = list("exclude","Wryn")
 	flash_protect = 2
 	strip_delay = 50
 	put_on_delay = 50
@@ -630,7 +629,7 @@ BLIND     // can't see anything
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals)
 	slowdown = 1
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 100, "rad" = 50, "fire" = 80, "acid" = 70)
-	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HIDETAIL
+	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HIDEBACK
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	heat_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -638,8 +637,7 @@ BLIND     // can't see anything
 	strip_delay = 80
 	put_on_delay = 80
 	resistance_flags = NONE
-	hide_tail_by_species = null
-	species_restricted = list("exclude","Wryn")
+	hide_back_by_species = null
 
 
 //Under clothing

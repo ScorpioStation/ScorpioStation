@@ -133,6 +133,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/body_accessory = null
 
 	var/speciesprefs = 0//I hate having to do this, I really do (Using this for oldvox code, making names universal I guess
+	var/wrynloadouts = 0
 
 		//Mob preview
 	var/icon/preview_icon = null
@@ -284,6 +285,8 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			if(species == "Grey")
 				dat += "<b>Wingdings:</b> Set in disabilities<br>"
 				dat += "<b>Voice Translator:</b> <a href ='?_src_=prefs;preference=speciesprefs;task=input'>[speciesprefs ? "Yes" : "No"]</a><br>"
+			if(species == "Wryn")
+				dat += "<b>Wryn Appearance:</b> <a href='?_src_=prefs;preference=wrynloadouts;task=input'>Selections</a><br>"
 			dat += "<b>Secondary Language:</b> <a href='?_src_=prefs;preference=language;task=input'>[language]</a><br>"
 			if(S.autohiss_basic_map)
 				dat += "<b>Auto-accent:</b> <a href='?_src_=prefs;preference=autohiss_mode;task=input'>[autohiss_mode == AUTOHISS_FULL ? "Full" : (autohiss_mode == AUTOHISS_BASIC ? "Basic" : "Off")]</a><br>"
@@ -1404,6 +1407,21 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 							autohiss_mode = AUTOHISS_OFF
 				if("speciesprefs")
 					speciesprefs = !speciesprefs //Starts 0, so if someone clicks the button up top there, this won't be 0 anymore. If they click it again, it'll go back to 0.
+
+				if("wrynloadouts")
+					var/choice
+					var/wryn_types = list("None", "Atlas", "Burnt", "Deathhead", "Firewatch", "Gothic", "Jungle", "Lovers", "Luna", "Monarch", "Moonglow", "Oakworm", "Plain", "Poisonous", "Ragged", "Reddish", "Royal", "Snow", "Whitefly", "Witchwing")
+					choice = input(user, "Which body type would you like to use for your Wryn?") as null|anything in wryn_types
+					if(!choice)
+						return
+					if(choice == "None")
+						body_accessory = null
+						h_style = "bald"
+						m_styles["body"] = null
+					body_accessory = "[choice] Wings"
+					h_style = "[choice] Antennae"
+					m_styles["body"] = "[choice] Markings"
+
 				if("language")
 //						var/languages_available
 					var/list/new_languages = list("None")

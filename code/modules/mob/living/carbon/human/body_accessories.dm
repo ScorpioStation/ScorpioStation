@@ -8,7 +8,8 @@ GLOBAL_LIST_INIT(body_accessory_by_species, list("None" = null))
 		if(!istype(accessory))	continue
 
 		for(var/species in accessory.allowed_species)
-			if(!GLOB.body_accessory_by_species["[species]"])	GLOB.body_accessory_by_species["[species]"] = list()
+			if(!GLOB.body_accessory_by_species["[species]"])
+				GLOB.body_accessory_by_species["[species]"] = list()
 			GLOB.body_accessory_by_species["[species]"] += accessory
 
 	if(GLOB.body_accessory_by_species.len)
@@ -31,18 +32,13 @@ GLOBAL_LIST_INIT(body_accessory_by_species, list("None" = null))
 
 /datum/body_accessory
 	var/name = "default"
-
 	var/icon = null
 	var/icon_state = ""
-
 	var/animated_icon = null
 	var/animated_icon_state = ""
-
 	var/blend_mode = null
-
 	var/pixel_x_offset = 0
 	var/pixel_y_offset = 0
-
 	var/list/allowed_species = list()
 
 /datum/body_accessory/proc/try_restrictions(mob/living/carbon/human/H)
@@ -83,7 +79,7 @@ GLOBAL_LIST_INIT(body_accessory_by_species, list("None" = null))
 	animated_icon_state = "null"
 
 /datum/body_accessory/tail/try_restrictions(mob/living/carbon/human/H)
-	if(!H.wear_suit || !(H.wear_suit.flags_inv & HIDETAIL))
+	if(!H.wear_suit || !(H.wear_suit.flags_inv & HIDEBACK))
 		return TRUE
 	return FALSE
 
@@ -130,4 +126,94 @@ GLOBAL_LIST_INIT(body_accessory_by_species, list("None" = null))
 	name = "Bee Tail"
 	icon_state = "wryntail"
 	allowed_species = list("Wryn")
-	
+
+//Wings
+/datum/body_accessory/wings/try_restrictions(mob/living/carbon/human/H)
+	if(!H.wear_suit || !(H.wear_suit.flags_inv & HIDEBACK))
+		return TRUE
+	return FALSE
+
+//Sprites Ported from /tg/'s Moths
+/datum/body_accessory/wings
+	icon = 'icons/mob/sprite_accessories/wryn/wryn_body_accessories2.dmi'
+	animated_icon = "null"
+	blend_mode = ICON_ADD
+	icon_state = "null"
+	animated_icon_state = "null"
+	allowed_species = list("Wryn")
+
+/datum/body_accessory/wings/monarch
+	name = "Monarch Wings"
+	icon_state = "wings_monarch"
+
+/datum/body_accessory/wings/luna
+	name = "Luna Wings"
+	icon_state = "wings_luna"
+
+/datum/body_accessory/wings/atlas
+	name = "Atlas Wings"
+	icon_state = "wings_atlas"
+
+/datum/body_accessory/wings/plain
+	name = "Plain Wings"
+	icon_state = "wings_plain"
+
+/datum/body_accessory/wings/reddish
+	name = "Reddish Wings"
+	icon_state = "wings_reddish"
+
+/datum/body_accessory/wings/royal
+	name = "Royal Wings"
+	icon_state = "wings_royal"
+
+/datum/body_accessory/wings/gothic
+	name = "Gothic Wings"
+	icon_state = "wings_gothic"
+
+/datum/body_accessory/wings/lovers
+	name = "Lovers Wings"
+	icon_state = "wings_lovers"
+
+/datum/body_accessory/wings/whitefly
+	name = "Whitefly Wings"
+	icon_state = "wings_whitefly"
+
+/datum/body_accessory/wings/burnt
+	name = "Burnt Wings"
+	icon_state = "wings_burnt"
+
+/datum/body_accessory/wings/firewatch
+	name = "Firewatch Wings"
+	icon_state = "wings_firewatch"
+
+/datum/body_accessory/wings/deathhead
+	name = "Deathhead Wings"
+	icon_state = "wings_deathhead"
+
+/datum/body_accessory/wings/poisonous
+	name = "Poisonous Wings"
+	icon_state = "wings_poison"
+
+/datum/body_accessory/wings/ragged
+	name = "Ragged Wings"
+	icon_state = "wings_ragged"
+
+/datum/body_accessory/wings/moonglow
+	name = "Moonglow Wings"
+	icon_state = "wings_moonglow"
+
+/datum/body_accessory/wings/snow
+	name = "Snow Wings"
+	icon_state = "wings_snow"
+
+/datum/body_accessory/wings/oakworm
+	name = "Oakworm Wings"
+	icon_state = "wings_oakworm"
+
+/datum/body_accessory/wings/witchwing
+	name = "Witchwing Wings"
+	icon_state = "wings_witchwing"
+
+/datum/body_accessory/wings/jungle
+	name = "Jungle Wings"
+	icon_state = "wings_jungle"

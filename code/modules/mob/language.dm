@@ -435,22 +435,38 @@
 
 /datum/language/wryn
 	name = "Wryn Hivemind"
-	desc = "Wryn have the strange ability to commune over a psychic hivemind."
+	desc = "Wryn have the fascinating ability to commune over a psychic hivemind."
 	speech_verb = "chitters"
-	ask_verb = "chitters"
+	ask_verb = "churrs"
 	exclaim_verbs = list("buzzes")
-	colour = "alien"
+	colour = "clown"
 	key = "y"
 	flags = RESTRICTED | HIVEMIND | NOBABEL
 	follow = TRUE
 
-/datum/language/wryn/check_special_condition(mob/other)
-	var/mob/living/carbon/M = other
-	if(!istype(M))
-		return TRUE
+/datum/language/wryn/check_can_speak(mob/living/speaker)
+	if(ishuman(speaker))
+		var/mob/living/carbon/human/S = speaker
+		if(!iswryn(S))
+			return FALSE
+		if(!(locate(/obj/item/organ/internal/wryn/hivenode) in S.internal_organs))
+			to_chat(speaker,"<span class='warning'>You can't communicate without your antennae!</span>")
+			return FALSE
+	if(speaker.incapacitated())
+		to_chat(speaker,"<span class='warning'>You can't communicate while incapacitated!</span>")
+		return FALSE
+	speaker.visible_message("<span class='notice'>[speaker]'s antennae vibrate atop [speaker.p_their()] head.<span>") //If placed in wryn/broadcast, it will happen regardless of the success of the action.
+	return TRUE
+
+/datum/language/wryn/check_special_condition(mob/living/carbon/human/other, mob/living/carbon/human/speaker)
+	var/mob/living/carbon/human/M = other
+	var/mob/living/carbon/human/S = speaker
+	if(!atoms_share_level(M, S))
+		return FALSE
+	if(!iswryn(M))
+		return FALSE
 	if(locate(/obj/item/organ/internal/wryn/hivenode) in M.internal_organs)
 		return TRUE
-
 	return FALSE
 
 /datum/language/xenocommon

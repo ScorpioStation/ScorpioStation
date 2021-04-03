@@ -182,9 +182,10 @@
 
 	has_organ = list(	//Larvae don't have antennae
 	//New organs need to be made specifically for Wryn
-		"heart" =		/obj/item/organ/internal/heart,
-		"lungs" =		/obj/item/organ/internal/lungs/kidan,
-		"brain" =		/obj/item/organ/internal/brain,
-		"appendix" =	/obj/item/organ/internal/appendix,
-		"eyes" =		/obj/item/organ/internal/eyes/wryn,
+		"heart" =    /obj/item/organ/internal/heart/wryn,
+		"lungs" =    /obj/item/organ/internal/lungs/wryn,
+		"kidneys" =  /obj/item/organ/internal/kidneys/wryn,
+		"brain" =    /obj/item/organ/internal/brain/wryn,
+		"appendix" = /obj/item/organ/internal/appendix,
+		"eyes" =     /obj/item/organ/internal/eyes/wryn,
 	)

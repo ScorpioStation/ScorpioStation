@@ -163,6 +163,7 @@
 #define BODY_LAYER				39
 #define MUTANTRACE_LAYER		38
 #define TAIL_UNDERLIMBS_LAYER	37	//Tail split-rendering.
+#define WINGS_BEHIND_LAYER		37
 #define LIMBS_LAYER				36
 #define INTORGAN_LAYER			35
 #define MARKINGS_LAYER			34
@@ -177,6 +178,7 @@
 #define SUIT_LAYER				25
 #define BELT_LAYER				24	//Possible make this an overlay of somethign required to wear a belt?
 #define SUIT_STORE_LAYER		23
+#define WINGS_LAYER				23	// Wings go behind backpacks
 #define BACK_LAYER				22
 #define HEAD_ACCESSORY_LAYER	21
 #define FHAIR_LAYER				20
