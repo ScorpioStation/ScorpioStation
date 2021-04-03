@@ -158,7 +158,7 @@
 	new /obj/item/storage/box/flashbangs(src)
 	new /obj/item/reagent_containers/spray/pepper(src)
 	new /obj/item/melee/baton/loaded(src)
-	new /obj/item/gun/energy/gun/advtaser(src)
+	new /obj/item/gun/projectile/automatic/pistol/enforcer(src)
 	new /obj/item/storage/belt/security/sec(src)
 	new /obj/item/storage/box/holobadge(src)
 	new /obj/item/clothing/gloves/color/black/krav_maga/sec(src)

@@ -138,7 +138,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/color/black
 	suit = /obj/item/clothing/suit/armor/vest/ert/security
-	suit_store = /obj/item/gun/energy/gun/advtaser
+	suit_store = /obj/item/gun/projectile/automatic/pistol/enforcer
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	mask = /obj/item/clothing/mask/gas/sechailer
 
@@ -440,7 +440,7 @@
 	name = "RT Paranormal (Amber)"
 	suit = /obj/item/clothing/suit/armor/vest/ert/security/paranormal
 	head = /obj/item/clothing/head/helmet/ert/security/paranormal
-	suit_store = /obj/item/gun/energy/gun/advtaser
+	suit_store = /obj/item/gun/projectile/automatic/pistol/enforcer
 	r_pocket = /obj/item/nullrod
 
 /datum/outfit/job/centcom/response_team/paranormal/red

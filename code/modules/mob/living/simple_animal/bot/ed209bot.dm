@@ -396,7 +396,7 @@
 	new /obj/item/assembly/prox_sensor(Tsec)
 
 	if(!lasercolor)
-		var/obj/item/gun/energy/gun/advtaser/G = new /obj/item/gun/energy/gun/advtaser(Tsec)
+		var/obj/item/gun/energy/disabler/G = new /obj/item/gun/energy/disabler(Tsec)
 		G.cell.charge = 0
 		G.update_icon()
 	else if(lasercolor == "b")
