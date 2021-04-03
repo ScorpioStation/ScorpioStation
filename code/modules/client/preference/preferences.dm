@@ -279,12 +279,14 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			dat += "<b>Age:</b> <a href='?_src_=prefs;preference=age;task=input'>[age]</a><br>"
 			dat += "<b>Body:</b> <a href='?_src_=prefs;preference=all;task=random'>(&reg;)</a><br>"
 			dat += "<b>Species:</b> <a href='?_src_=prefs;preference=species;task=input'>[species]</a><br>"
+			dat += "<b>Secondary Language:</b> <a href='?_src_=prefs;preference=language;task=input'>[language]</a><br>"
 			if(species == "Vox")
 				dat += "<b>N2 Tank:</b> <a href='?_src_=prefs;preference=speciesprefs;task=input'>[speciesprefs ? "Large N2 Tank" : "Specialized N2 Tank"]</a><br>"
 			if(species == "Grey")
 				dat += "<b>Wingdings:</b> Set in disabilities<br>"
 				dat += "<b>Voice Translator:</b> <a href ='?_src_=prefs;preference=speciesprefs;task=input'>[speciesprefs ? "Yes" : "No"]</a><br>"
-			dat += "<b>Secondary Language:</b> <a href='?_src_=prefs;preference=language;task=input'>[language]</a><br>"
+			if(species == "Machine")
+				dat += "<b>Synthetic Shell:</b> <a href='?_src_=prefs;preference=ipcloadouts;task=input'>Selections</a><br>"
 			if(S.autohiss_basic_map)
 				dat += "<b>Auto-accent:</b> <a href='?_src_=prefs;preference=autohiss_mode;task=input'>[autohiss_mode == AUTOHISS_FULL ? "Full" : (autohiss_mode == AUTOHISS_BASIC ? "Basic" : "Off")]</a><br>"
 			dat += "<b>Blood Type:</b> <a href='?_src_=prefs;preference=b_type;task=input'>[b_type]</a><br>"
@@ -423,8 +425,10 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 						dat += "\tAmputated [organ_name]"
 					if("cybernetic")
 						dat += "\tCybernetic [organ_name]"
-			if(!ind)	dat += "\[...\]<br>"
-			else		dat += "<br>"
+			if(!ind)
+				dat += "\[...\]<br>"
+			else
+				dat += "<br>"
 
 			dat += "<h2>Clothing</h2>"
 			if(S.clothing_flags & HAS_UNDERWEAR)
@@ -859,7 +863,6 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	SetChoices(user)
 
 	return 1
-
 /datum/preferences/proc/ShowDisabilityState(mob/user, flag, label)
 	return "<li><b>[label]:</b> <a href=\"?_src_=prefs;task=input;preference=disabilities;disability=[flag]\">[disabilities & flag ? "Yes" : "No"]</a></li>"
 
@@ -1123,6 +1126,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 			else
 				SetChoices(user)
 		return 1
+
 	else if(href_list["preference"] == "disabilities")
 
 		switch(href_list["task"])
@@ -1404,6 +1408,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 							autohiss_mode = AUTOHISS_OFF
 				if("speciesprefs")
 					speciesprefs = !speciesprefs //Starts 0, so if someone clicks the button up top there, this won't be 0 anymore. If they click it again, it'll go back to 0.
+
 				if("language")
 //						var/languages_available
 					var/list/new_languages = list("None")
@@ -1797,6 +1802,31 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 
 						flavor_text = msg
 
+				if("ipcloadouts")
+					var/choice
+					var/datum/robolimb/R = new()
+					var/robolimb_companies = list()
+					var/rparts = list("chest", "groin", "head", "r_arm", "r_hand", "r_leg", "r_foot", "l_leg", "l_foot", "l_arm", "l_hand")
+					for(var/comp in typesof(/datum/robolimb))	//This loop populates a list of companies that shells
+						R = new comp()
+						if(R.has_subtypes != 0)					//No Monitor Models
+							robolimb_companies[R.company] = R
+					R = new() //Re-initialize R.
+					choice = input(user, "Which manufacturer model would you like to use?") as null|anything in robolimb_companies
+					if(!choice)
+						return
+					R.company = choice
+					R = GLOB.all_robolimbs[R.company]
+					for(var/limb in rparts)
+						if(limb == "head")
+							ha_style = "None"
+							alt_head = null
+							h_style = GLOB.hair_styles_public_list["Bald"]
+							f_style = GLOB.facial_hair_styles_list["Shaved"]
+							m_styles["head"] = "None"
+						rlimb_data[limb] = choice
+						organ_data[limb] = "cyborg"
+
 				if("limbs")
 					var/valid_limbs = list("Left Leg", "Right Leg", "Left Arm", "Right Arm", "Left Foot", "Right Foot", "Left Hand", "Right Hand")
 					if(S.bodyflags & ALL_RPARTS)
@@ -1807,20 +1837,20 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 					var/limb = null
 					var/second_limb = null // if you try to change the arm, the hand should also change
 					var/third_limb = null  // if you try to unchange the hand, the arm should also change
-					var/valid_limb_states = list("Normal", "Amputated", "Prosthesis")
-					var/no_amputate = 0
+					var/valid_limb_states = list("Normal", "Prosthesis")
+					var/no_amputate = FALSE
 
 					switch(limb_name)
 						if("Torso")
 							limb = "chest"
 							second_limb = "groin"
-							no_amputate = 1
+							no_amputate = TRUE
 						if("Lower Body")
 							limb = "groin"
-							no_amputate = 1
+							no_amputate = TRUE
 						if("Head")
 							limb = "head"
-							no_amputate = 1
+							no_amputate = TRUE
 						if("Left Leg")
 							limb = "l_leg"
 							second_limb = "l_foot"
@@ -1850,9 +1880,12 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 							if(!(S.bodyflags & ALL_RPARTS))
 								third_limb = "r_arm"
 
-					var/new_state = input(user, "What state do you wish the limb to be in?") as null|anything in valid_limb_states
-					if(!new_state) return
+					if(!no_amputate)	// I don't want this in my menu if it's not an option, heck.
+						valid_limb_states += "Amputated"
 
+					var/new_state = input(user, "What state do you wish the limb to be in?") as null|anything in valid_limb_states
+					if(!new_state)
+						return
 					switch(new_state)
 						if("Normal")
 							if(limb == "head")
@@ -1865,12 +1898,11 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 								organ_data[third_limb] = null
 								rlimb_data[third_limb] = null
 						if("Amputated")
-							if(!no_amputate)
-								organ_data[limb] = "amputated"
-								rlimb_data[limb] = null
-								if(second_limb)
-									organ_data[second_limb] = "amputated"
-									rlimb_data[second_limb] = null
+							organ_data[limb] = "amputated"
+							rlimb_data[limb] = null
+							if(second_limb)
+								organ_data[second_limb] = "amputated"
+								rlimb_data[second_limb] = null
 						if("Prosthesis")
 							var/choice
 							var/subchoice
@@ -1888,17 +1920,18 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 								return
 							R.company = choice
 							R = GLOB.all_robolimbs[R.company]
-							if(R.has_subtypes == 1) //If the company the user selected provides more than just one base model, lets handle it.
+
+							if(R.has_subtypes != 0)				//If the company the user selected provides more than just one base model, lets handle it.
 								var/list/robolimb_models = list()
-								for(var/limb_type in typesof(R)) //Handling the different models of parts that manufacturers can provide.
+								for(var/limb_type in typesof(R))	//Handling the different models of parts that manufacturers can provide.
 									var/datum/robolimb/L = new limb_type()
-									if(limb in L.parts) //Make sure that only models that provide the parts the user needs populate the list.
+									if(limb in L.parts)					//Make sure that only models that provide the parts the user needs populate the list.
 										robolimb_models[L.company] = L
-										if(robolimb_models.len == 1) //If there's only one model available in the list, autoselect it to avoid having to bother the user with a dialog that provides only one option.
-											subchoice = L.company //If there ends up being more than one model populating the list, subchoice will be overwritten later anyway, so this isn't a problem.
-										if(second_limb in L.parts) //If the child limb of the limb the user selected is also present in the model's parts list, state it's been found so the second limb can be set later.
-											in_model = 1
-								if(robolimb_models.len > 1) //If there's more than one model in the list that can provide the part the user wants, let them choose.
+										if(length(robolimb_models) == 1)	//If there's only one model available in the list, autoselect it to avoid having to bother the user with a dialog that provides only one option.
+											subchoice = L.company		//If there ends up being more than one model populating the list, subchoice will be overwritten later anyway, so this isn't a problem.
+										if(second_limb in L.parts)		//If the child limb of the limb the user selected is also present in the model's parts list, state it's been found so the second limb can be set later.
+											in_model = TRUE
+								if(length(robolimb_models) > 1)				//If there's more than one model in the list that can provide the part the user wants, let them choose.
 									subchoice = input(user, "Which model of [choice] [limb_name] do you wish to use?") as null|anything in robolimb_models
 								if(subchoice)
 									choice = subchoice
