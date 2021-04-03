@@ -1,5 +1,14 @@
+# ARCHIVED
+Scorpio Station was shut down on March 30, 2021.
+
+The code remains here as a read-only archive for those who are interested.  
+The code and other assets may be used in other projects according to the
+applicable License(s).
+
+----
+
 # Scorpio Station
-[Website](https://scorpiostation.com/) - [Code](https://github.com/ScorpioStation/ScorpioStation) - [Discord](https://scorpiostation.com/discord)
+~[Website](https://scorpiostation.com/)~ - [Code](https://github.com/ScorpioStation/ScorpioStation) - [Discord](https://scorpiostation.com/discord)
 
 ## Useful Documents
 - [Installation Guide](.github/DOWNLOADING.md)
@@ -7,8 +16,12 @@
 - [Autodocumentation Guide](.github/AUTODOC_GUIDE.md)
 
 ## Quick Troubleshooting
-If the code doesn't build, did you forget to run `prepare-dev-windows.bat`?
-You can double-click the script from the GUI. No command line required.
+~If the code doesn't build, did you forget to run `prepare-dev-windows.bat`?
+You can double-click the script from the GUI. No command line required.~  
+
+`prepare-dev-windows.bat` references online resources that are no longer
+available. You'll need to build the resources for yourself or extract them
+from a Docker image (see `prepare-dev-linux.sh`)
 
 ---
 
