@@ -11,6 +11,10 @@
 /area/ruin/powered/animal_hospital
 	icon_state = "dk_yellow"
 
+/area/ruin/powered/reststop
+	name = "Rest Stop"
+	icon_state = "dk_yellow"
+
 /area/ruin/powered/snow_biodome
 	icon_state = "dk_yellow"
 
