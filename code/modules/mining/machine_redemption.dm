@@ -441,14 +441,15 @@
 		return
 
 	var/msg = "Now available in [get_area_name(src, TRUE) || "Unknown"]:"
+	var/list/orm = list()
 	var/mats_in_stock = list()
 	var/datum/component/material_container/materials = GetComponent(/datum/component/material_container)
 	for(var/MAT in materials.materials)
 		var/datum/material/M = materials.materials[MAT]
 		var/mineral_amount = M.amount / MINERAL_MATERIAL_AMOUNT
-		if(mineral_amount)
+		if(mineral_amount > 0)
 			mats_in_stock += M.id
-		msg += "[capitalize(M.name)]: [mineral_amount] sheets"
+			orm.Add("[capitalize(M.name)]: [mineral_amount] sheets")
 
 	// No point sending a message if we're dry
 	if(!length(mats_in_stock))
@@ -460,7 +461,7 @@
 		if(!(C.department in supply_consoles))
 			continue
 		if(!supply_consoles[C.department] || length(supply_consoles[C.department] - mats_in_stock))
-			C.createMessage("Ore Redemption Machine", "New Minerals Available!", msg, 1) // RQ_NORMALPRIORITY
+			C.createMessage("Ore Redemption Machine", "New Minerals Available!", msg, 1, orm) // RQ_NORMALPRIORITY
 
 /**
   * Tries to insert the ID card held by the given user into the machine.
