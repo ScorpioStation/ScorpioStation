@@ -474,17 +474,24 @@ SUBSYSTEM_DEF(vote)
 /**
   * Determine if the station has power.
   *
-  * Actually, we'll just cheat and see if the Particle Accelerator is active.
-  * If the Particle Accelerator is active, we'll assume that we have power.
+  * Actually, we'll just cheat and see if the engine is active.
+  * If the engine is active, we'll assume that we have power.
+  *
+  * If we can't find the engine, we'll assume that we don't have power.
   * See: https://www.youtube.com/watch?v=-dJolYw8tnk
   */
 /proc/i_have_the_power()
-	var/obj/machinery/particle_accelerator/control_box/the_pa = locate("particle_accelerator_control_box")
-	if(!the_pa)
-		log_and_message_admins("Unable to locate Particle Accelerator Control Console on this map.")
-		log_and_message_admins("Missing tag: particle_accelerator_control_box")
-		return FALSE
-	return the_pa.active
+	// if we find a particle accelerator control box, we have power if it is turned on
+	var/obj/machinery/particle_accelerator/control_box/the_pa = locate()
+	if(the_pa)
+		return the_pa.active
+	// if we find a supermatter crystal, we have power if the main engine has been powered
+	var/obj/machinery/power/supermatter_crystal/the_sm = locate()
+	if(the_sm)
+		return the_sm.is_main_engine && the_sm.has_been_powered
+	// otherwise, tell the admins we couldn't find it, and say we don't have power
+	log_and_message_admins("Unable to locate Particle Accelerator Control Console or Supermatter Crystal on this map.")
+	return FALSE
 
 #undef VOTE_INITIATED_BY_SERVER
 #undef VOTE_SUPERCHARGE_NO
