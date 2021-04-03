@@ -1,0 +1,60 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/floor/plating/asteroid/airless,/area/space)
+"c" = (/turf/simulated/mineral/random/low_chance,/area/space)
+"d" = (/turf/simulated/mineral/random/labormineral,/area/space)
+"e" = (/turf/simulated/mineral/random/high_chance,/area/space)
+"f" = (/turf/simulated/wall,/area/space)
+"g" = (/turf/simulated/floor/plasteel{dir = 5; icon_state = "dark"; tag = "icon-vault (NORTHEAST)"},/area/space)
+"h" = (/obj/structure/closet,/obj/item/clothing/under/rank/psych/turtleneck,/obj/item/clothing/under/tourist_suit,/obj/item/storage/firstaid,/turf/simulated/floor/plasteel{dir = 5; icon_state = "dark"; tag = "icon-vault (NORTHEAST)"},/area/space)
+"i" = (/obj/structure/table,/obj/item/flashlight/lamp,/turf/simulated/floor/plasteel{dir = 5; icon_state = "dark"; tag = "icon-vault (NORTHEAST)"},/area/space)
+"j" = (/obj/structure/grille,/obj/structure/window/full/reinforced,/turf/space,/area/space)
+"k" = (/obj/structure/chair/office/dark{dir = 4},/turf/simulated/floor/plasteel{dir = 5; icon_state = "dark"; tag = "icon-vault (NORTHEAST)"},/area/space)
+"l" = (/obj/structure/table,/obj/item/paper,/obj/item/pen,/turf/simulated/floor/plasteel{dir = 5; icon_state = "dark"; tag = "icon-vault (NORTHEAST)"},/area/space)
+"m" = (/obj/structure/table,/obj/item/paper_bin,/turf/simulated/floor/plasteel{dir = 5; icon_state = "dark"; tag = "icon-vault (NORTHEAST)"},/area/space)
+"n" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plasteel{dir = 5; icon_state = "dark"; tag = "icon-vault (NORTHEAST)"},/area/space)
+"o" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating/asteroid/airless,/area/space)
+"p" = (/obj/machinery/portable_atmospherics/canister/oxygen,/turf/simulated/floor/plasteel{dir = 5; icon_state = "dark"; tag = "icon-vault (NORTHEAST)"},/area/space)
+"q" = (/obj/item/storage/firstaid/o2,/turf/simulated/floor/plasteel{dir = 5; icon_state = "dark"; tag = "icon-vault (NORTHEAST)"},/area/space)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaabbaaaaaaaaaaa
+aaaaaaaaaaaaaaaabbaaaaaaaabbbbbaaaaaaaaa
+aaaaaaaaaaaaaaabbbbaaaaaabbbbbbbaaaaaaaa
+aaaaaaaaaaaaaabbbbbbaaabbbbbbbbbbaaaaaaa
+aaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbaaaaaa
+aaaaaaaaaaaaabbbbbcccccccbbbbbbbbaaaaaaa
+aaaaaaaaaaaabbbbccccccccccbbbbbbaaaaaaaa
+aaaaaaaaaaabbbbccddddddddddcbbbbaaaaaaaa
+aaaaaaaaaabbbbccdeeeeeeeedcbbbbaaaaaaaaa
+aaaaaaaaabbbbccdeeeeeeeedccfbbbaaaaaaaaa
+aaaaaaaaabbbccdeeeeeeeedccgfbbaaaaaaaaaa
+aaaaaaaaabbccdeeeeeeeedchggfbbaaaaaaaaaa
+aaaaaaaaaabcddddddddddcpggijbaaaaaaaaaaa
+aaaaaaaaaaabccccccccccqggkljaaaaaaaaaaaa
+aaaaaaaaaaaaabccccbfcfggggmjaaaaaaaaaaaa
+aaaaaaaaaaaaaaabcbbfbngggggfaaaaaaaaaaaa
+aaaaaaaaaaaaaaaabbbfofffffffaaabaaaaaaaa
+aaaaabaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaa
+aaaabbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaabdbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaabddbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaabdbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaabbbaaaaaaaaaaaaaaaaaaaaabbaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaabbbaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaabbbbaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaabbbaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

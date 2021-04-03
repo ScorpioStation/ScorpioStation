@@ -275,3 +275,10 @@
 	suffix = "debris3.dmm"
 	name = "Debris field 3"
 	description = "A bunch of metal chunks, wires and space waste. It used to be an arcade."
+
+/datum/map_template/ruin/space/scenichut
+	id = "scenichut"
+	suffix = "scenichut.dmm"
+	name = "Peculiar Rock"
+	description = "A strange shelter with a beautiful view of space and no clear origin. The stones glitter with rare minerals."
+	cost = 0
