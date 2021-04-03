@@ -111,7 +111,7 @@
 
 
 /proc/get_pain_modifier(mob/living/carbon/human/M) //returns modfier to make surgery harder if patient is conscious and feels pain
-	if(M.stat) //stat=0 if CONSCIOUS, 1=UNCONSCIOUS and 2=DEAD. Operating on dead people is easy, too. Just sleeping won't work, though.
+	if(M.stat == (DEAD | ANESTHETIZED)) //stat=0 if CONSCIOUS, 1=UNCONSCIOUS, 2=DEAD, 3=ANESTHETIZED. Operating on dead people is easy, too. Just sleeping won't work, though.
 		return 1
 	if(NO_PAIN in M.dna.species.species_traits)//if you don't feel pain, you can hold still
 		return 1

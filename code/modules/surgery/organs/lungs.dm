@@ -235,12 +235,12 @@
 
 	//-- TRACES --//
 
-	if(breath.sleeping_agent)	// If there's some other shit in the air lets deal with it here.
+	if(breath.sleeping_agent)				// If there's some other shit in the air lets deal with it here.
 		if(SA_pp > SA_para_min)
-			H.Paralyse(3) // 3 gives them one second to wake up and run away a bit!
-			if(SA_pp > SA_sleep_min) // Enough to make us sleep as well
-				H.AdjustSleeping(8, bound_lower = 0, bound_upper = 10)
-		else if(SA_pp > 0.01)	// There is sleeping gas in their lungs, but only a little, so give them a bit of a warning
+			H.Paralyse(3, TRUE, 0, TRUE)	// 3 gives them one second to wake up and run away a bit!
+			if(SA_pp > SA_sleep_min)		// Enough to make us sleep as well
+				H.AdjustSleeping(8, 0, 10, TRUE, FALSE, TRUE)	//amount=8,bound_lower=0,bound_upper=10,updating=TRUE,no_alert=FALSE,ane=TRUE
+		else if(SA_pp > 0.01)				// There is sleeping gas in their lungs, but only a little, so give them a bit of a warning
 			if(prob(20))
 				H.emote(pick("giggle", "laugh"))
 

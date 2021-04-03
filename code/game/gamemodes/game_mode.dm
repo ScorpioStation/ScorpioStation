@@ -374,6 +374,8 @@
 				if(L.stat == DEAD)
 					msg += "<b>[L.name]</b> ([L.ckey]), the [L.job] (Dead)\n"
 					continue //Dead
+				if(L.stat == ANESTHETIZED)
+					msg += "<b>[L.name]</b> ([L.ckey]), the [L.job] (Anesthetized)\n"
 
 			continue //Happy connected client
 		for(var/mob/dead/observer/D in GLOB.mob_list)

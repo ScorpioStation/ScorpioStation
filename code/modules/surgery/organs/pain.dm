@@ -5,8 +5,12 @@
 // partname is the name of a body part
 // amount is a num from 1 to 100
 /mob/living/carbon/human/proc/pain(partname, amount)
-	if(stat >= UNCONSCIOUS)
-		return
+	if(stat == (DEAD | ANESTHETIZED))
+		return				//No messages when Anesthetized or Dead
+	if(status_flags & FAKEDEATH)
+		return				//No messages when Fake Dead.
+	if(stat == UNCONSCIOUS)	//You can't sleep through the pain.
+		WakeUp()			//This is going to come back to bite us hard with antags.
 	if(reagents.has_reagent("sal_acid"))
 		return
 	if(reagents.has_reagent("morphine"))
@@ -31,9 +35,12 @@
 
 // message is the custom message to be displayed
 /mob/living/carbon/human/proc/custom_pain(message)
-	if(stat >= UNCONSCIOUS)
-		return
-
+	if(stat == (DEAD | ANESTHETIZED))
+		return				//No messages when Anesthetized or Dead
+	if(status_flags & FAKEDEATH)
+		return				//No messages when Fake Dead.
+	if(stat == UNCONSCIOUS)	//You can't sleep through the pain.
+		WakeUp()			//This is going to come back to bite us hard with antags.
 	if(NO_PAIN in dna.species.species_traits)
 		return
 	if(reagents.has_reagent("morphine"))
@@ -50,9 +57,10 @@
 	next_pain_time = world.time + 100
 
 /mob/living/carbon/human/proc/handle_pain()
-	// not when sleeping
-
-	if(stat >= UNCONSCIOUS)
+	// not when Anesthetized or Dead
+	if(stat == (DEAD | ANESTHETIZED))
+		return
+	if(status_flags & FAKEDEATH)
 		return
 	if(NO_PAIN in dna.species.species_traits)
 		return
